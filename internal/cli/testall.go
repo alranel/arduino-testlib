@@ -7,6 +7,7 @@ import (
 	"os"
 	"path"
 	"strings"
+	"sync"
 
 	"github.com/alranel/arduino-testlib/internal/cliclient"
 	"github.com/alranel/arduino-testlib/internal/configuration"
@@ -24,6 +25,7 @@ var testallCmd = &cobra.Command{
 }
 
 func init() {
+	testallCmd.PersistentFlags().IntP("threads", "j", 1, "How many parallel jobs to run")
 	rootCmd.AddCommand(testallCmd)
 }
 
@@ -74,24 +76,42 @@ func runTestall(cmd *cobra.Command, cliArguments []string) {
 		}
 	}
 
-	// Proceed with testing
-	for lib := range libraries {
-		var tr test.TestResults
+	var jobs = make(chan string)
 
-		// Read previous test results from datadir
-		testResultsFile := path.Join(datadirPath, utils.SanitizeName(lib)+".json")
-		test.ReadResultsFile(testResultsFile, &tr)
+	worker := func(wg *sync.WaitGroup) {
+		for lib := range jobs {
 
-		tr = test.TestLib(lib, tr)
+			var tr test.TestResults
 
-		// Write test results to datadir
-		{
-			jsonData, _ := json.MarshalIndent(tr, "", "  ")
-			err := ioutil.WriteFile(testResultsFile, jsonData, 0644)
-			if err != nil {
-				fmt.Fprintf(os.Stderr, "Could not save test results: %v\n", err)
-				os.Exit(1)
+			// Read previous test results from datadir
+			testResultsFile := path.Join(datadirPath, utils.SanitizeName(lib)+".json")
+			test.ReadResultsFile(testResultsFile, &tr)
+
+			tr = test.TestLib(lib, tr)
+
+			// Write test results to datadir
+			{
+				jsonData, _ := json.MarshalIndent(tr, "", "  ")
+				err := ioutil.WriteFile(testResultsFile, jsonData, 0644)
+				if err != nil {
+					fmt.Fprintf(os.Stderr, "Could not save test results: %v\n", err)
+					os.Exit(1)
+				}
 			}
 		}
 	}
+
+	noOfWorkers, _ := cmd.Flags().GetInt("threads")
+	var wg sync.WaitGroup
+	for i := 0; i < noOfWorkers; i++ {
+		wg.Add(1)
+		go worker(&wg)
+	}
+
+	for lib := range libraries {
+		jobs <- lib
+	}
+	close(jobs)
+
+	wg.Wait()
 }
