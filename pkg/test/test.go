@@ -60,18 +60,20 @@ func TestLib(libName string, tr TestResults) TestResults {
 	}
 	name := properties.Section("").Key("name").String()
 	version := properties.Section("").Key("version").String()
+	nameAndVersion := name + "@" + version
 	architectures := strings.Split(properties.Section("").Key("architectures").String(), ",")
 	includes := strings.Split(properties.Section("").Key("includes").String(), ",")
 	if name == "" {
-		fmt.Println("No library name found in library.properties")
+		fmt.Printf("[%s] No library name found in library.properties\n", libName)
 		os.Exit(1)
 	}
 
 	if tr.Name != "" && tr.Name != name {
-		fmt.Fprintf(os.Stderr, "Library name mismatch; known: %s, tested: %s\n", tr.Name, name)
+		fmt.Fprintf(os.Stderr, "[%s] Library name mismatch; known: %s, tested: %s\n", nameAndVersion, tr.Name, name)
 		os.Exit(1)
 	}
 	tr.Name = name
+	fmt.Printf("[%s] Start testing\n", nameAndVersion)
 
 	// Look for a main header file
 	headerFile := utils.SanitizeName(name) + ".h"
@@ -82,7 +84,7 @@ func TestLib(libName string, tr TestResults) TestResults {
 		// otherwise just create an empty header file. This will still allow the
 		// compilation of .cpp files
 		if _, err := os.Stat(path.Join(libPath, headerFile)); err != nil {
-			fmt.Printf("Main header file not found, creating an empty one: %s\n", headerFile)
+			fmt.Printf("[%s] Main header file not found, creating an empty one: %s\n", nameAndVersion, headerFile)
 			os.Create(headerFilePath)
 			headerFileCreated = true
 		}
@@ -122,15 +124,14 @@ fqbn:
 		core := util.CoreFromFQBN(fqbn)
 		coreVersion, err := cliclient.GetInstalledCoreVersion(core)
 		if err != nil {
-			fmt.Fprintf(os.Stderr, "Failed to get core version for %s: %v\n", core, err)
+			fmt.Fprintf(os.Stderr, "[%s] Failed to get core version for %s: %v\n", nameAndVersion, core, err)
 			os.Exit(1)
 		}
-		fmt.Printf("Testing %s @ %s on %s @ %s\n", name, version, fqbn, coreVersion)
 
 		// Check if this combo was already tested
 		for _, t := range tr.Tests {
 			if t.Version == version && t.FQBN == fqbn && t.CoreVersion == coreVersion {
-				fmt.Printf("Skipping, combination already tested\n")
+				fmt.Printf("[%s] skipping %s, already tested\n", nameAndVersion, fqbn)
 				continue fqbn
 			}
 		}
@@ -180,6 +181,14 @@ fqbn:
 		}
 
 		tr.Tests = append(tr.Tests, result)
+	}
+
+	{
+		var results []string
+		for _, t := range tr.Tests {
+			results = append(results, t.FQBN+"="+string(t.Result))
+		}
+		fmt.Printf("[%s] %s\n", nameAndVersion, strings.Join(results, " "))
 	}
 
 	return tr
