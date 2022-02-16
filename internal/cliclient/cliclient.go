@@ -93,9 +93,9 @@ func InstallCores() {
 }
 
 func GetAllLibraries() []string {
-	res, err := cli_lib.LibraryList(context.Background(), &cli_rpc.LibraryListRequest{
+	res, err := cli_lib.LibrarySearch(context.Background(), &cli_rpc.LibrarySearchRequest{
 		Instance: instance,
-		All:      true,
+		Query:    "",
 	})
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error listing libraries: %v", err)
@@ -103,8 +103,8 @@ func GetAllLibraries() []string {
 	}
 
 	var libs []string
-	for _, lib := range res.GetInstalledLibraries() {
-		libs = append(libs, lib.Library.Name)
+	for _, lib := range res.GetLibraries() {
+		libs = append(libs, lib.Name)
 	}
 	return libs
 }
