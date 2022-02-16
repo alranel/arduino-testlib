@@ -18,13 +18,14 @@ import (
 	cli_lib "github.com/arduino/arduino-cli/commands/lib"
 	cli_conf "github.com/arduino/arduino-cli/configuration"
 	cli_rpc "github.com/arduino/arduino-cli/rpc/cc/arduino/cli/commands/v1"
+	"github.com/sirupsen/logrus"
 )
 
 var instance *cli_rpc.Instance
 
 func Init() {
 	cli_conf.Settings = cli_conf.Init("")
-	cli_conf.Settings.Set("logging.level", "error")
+	logrus.SetLevel(logrus.ErrorLevel)
 	cli_conf.Settings.Set("directories.Data", path.Join(configuration.CLIDataDir, "data"))
 	cli_conf.Settings.Set("directories.Downloads", path.Join(configuration.CLIDataDir, "downloads"))
 	cli_conf.Settings.Set("directories.User", path.Join(configuration.CLIDataDir, "user"))
@@ -67,7 +68,7 @@ func InstallLibrary(libName string, version string) bool {
 	}
 	err := cli_lib.LibraryInstall(context.Background(), libraryInstallRequest, cli_output.ProgressBar(), cli_output.TaskProgress())
 	if err != nil {
-		fmt.Fprintf(os.Stderr, "Error installing %s: %v", libName, err)
+		fmt.Fprintf(os.Stderr, "Error installing %s: %v\n", libName, err)
 		return false
 	}
 
