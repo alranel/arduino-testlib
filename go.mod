@@ -2,7 +2,8 @@ module github.com/alranel/arduino-testlib
 
 go 1.17
 
-replace github.com/arduino/arduino-cli => /Users/alranel/Documents/git/arduino/arduino-cli
+//replace github.com/arduino/arduino-cli => /Users/alranel/Documents/git/arduino/arduino-cli
+replace github.com/arduino/arduino-cli => github.com/alranel/arduino-cli v0.0.0-20220214125737-d8c932959634
 
 require (
 	github.com/arduino/arduino-cli v0.0.0-00010101000000-000000000000
