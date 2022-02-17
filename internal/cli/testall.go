@@ -54,12 +54,12 @@ func runTestall(cmd *cobra.Command, cliArguments []string) {
 	{
 		var libs []string
 		if len(cliArguments) == 0 {
-			libs = cliclient.GetAllLibraries()
+			libs = cliclient.GetInstalledLibraries()
 		} else {
 			// Parse arguments as glob patterns, allowing filters such as "Arduino_*"
 			for _, arg := range cliArguments {
 				g := glob.MustCompile(arg)
-				for _, lib := range cliclient.GetAllLibraries() {
+				for _, lib := range cliclient.GetInstalledLibraries() {
 					if g.Match(lib) {
 						libs = append(libs, lib)
 					}

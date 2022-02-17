@@ -109,6 +109,23 @@ func GetAllLibraries() []string {
 	return libs
 }
 
+func GetInstalledLibraries() []string {
+	res, err := cli_lib.LibraryList(context.Background(), &cli_rpc.LibraryListRequest{
+		Instance: instance,
+		All:      true,
+	})
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error listing libraries: %v", err)
+		os.Exit(1)
+	}
+
+	var libs []string
+	for _, lib := range res.GetInstalledLibraries() {
+		libs = append(libs, lib.Library.Name)
+	}
+	return libs
+}
+
 func GetInstalledCoreVersion(core string) (string, error) {
 	platforms, err := cli_core.GetPlatforms(&cli_rpc.PlatformListRequest{
 		Instance:      instance,
