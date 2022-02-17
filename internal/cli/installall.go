@@ -12,10 +12,12 @@ import (
 	"path/filepath"
 	"strings"
 
+	"github.com/alranel/arduino-testlib/internal/cliclient"
 	"github.com/alranel/arduino-testlib/internal/configuration"
 	"github.com/arduino/arduino-cli/arduino/utils"
 	"github.com/spf13/cobra"
 	semver "go.bug.st/relaxed-semver"
+	"gopkg.in/ini.v1"
 )
 
 var installallCmd = &cobra.Command{
@@ -36,11 +38,12 @@ func runInstallall(cmd *cobra.Command, cliArguments []string) {
 		os.Exit(1)
 	}
 
+	cliclient.Init()
+
 	/*
 		// This implementation based on arduino-cli works but it's quite slow because
 		// arduino-cli is not optimized for bulk install (it reloads everything after
 		// the installation of each library).
-		cliclient.Init()
 		for _, lib := range cliclient.GetAllLibraries() {
 			// Use the unsanitized name to install the library
 			cliclient.InstallLibrary(lib, "")
@@ -78,6 +81,18 @@ func runInstallall(cmd *cobra.Command, cliArguments []string) {
 	os.MkdirAll(path.Join(configuration.CLIDataDir, "downloads/libraries"), os.ModePerm)
 	os.MkdirAll(path.Join(configuration.CLIUserDir, "libraries"), os.ModePerm)
 	for libName, lib := range libraries {
+		// Check if we already have this version and skip download
+		libPath := path.Join(configuration.CLIUserDir, "libraries", utils.SanitizeName(libName))
+		if _, err := os.Stat(libPath); !os.IsNotExist(err) {
+			properties, err := ini.Load(path.Join(libPath, "library.properties"))
+			if err != nil {
+				if properties.Section("").Key("version").String() == lib.Version {
+					fmt.Printf("Skipping %s@%s\n", libName, lib.Version)
+					continue
+				}
+			}
+		}
+
 		fmt.Printf("Installing %s@%s\n", libName, lib.Version)
 
 		resp, _ := http.Get(lib.URL)
@@ -87,7 +102,6 @@ func runInstallall(cmd *cobra.Command, cliArguments []string) {
 		defer out.Close()
 		io.Copy(out, resp.Body)
 
-		libPath := path.Join(configuration.CLIUserDir, "libraries", utils.SanitizeName(libName))
 		_, err := unzip(filename, libPath)
 		if err != nil {
 			fmt.Println(err)
