@@ -95,14 +95,17 @@ func runInstallall(cmd *cobra.Command, cliArguments []string) {
 
 		fmt.Printf("Installing %s@%s\n", libName, lib.Version)
 
-		resp, _ := http.Get(lib.URL)
+		resp, err := http.Get(lib.URL)
+		if err != nil {
+			fmt.Println(err)
+		}
 		defer resp.Body.Close()
 		filename := path.Join(configuration.CLIDataDir, "downloads/libraries", lib.ArchiveFileName)
 		out, _ := os.Create(filename)
 		defer out.Close()
 		io.Copy(out, resp.Body)
 
-		_, err := unzip(filename, libPath)
+		_, err = unzip(filename, libPath)
 		if err != nil {
 			fmt.Println(err)
 		}

@@ -79,7 +79,12 @@ func runTestall(cmd *cobra.Command, cliArguments []string) {
 	var jobs = make(chan string)
 
 	worker := func(wg *sync.WaitGroup) {
-		for lib := range jobs {
+		for {
+			lib, more := <-jobs
+			if !more {
+				wg.Done()
+				return
+			}
 
 			var tr test.TestResults
 
