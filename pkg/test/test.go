@@ -48,7 +48,7 @@ type TestResults struct {
 func TestLib(libName string, tr TestResults) TestResults {
 	libPath := util.LibPathFromName(libName)
 	if _, err := os.Stat(libPath); err != nil {
-		fmt.Fprintln(os.Stderr, "[%s] Library not found in %s\n", libName, libPath)
+		fmt.Fprintf(os.Stderr, "[%s] Library not found in %s\n", libName, libPath)
 		os.Exit(1)
 	}
 
