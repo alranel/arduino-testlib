@@ -70,7 +70,7 @@ var htmlTmpl = `
 						<th>Library</th>
 						<th>Version</th>
 						{{ range .Boards }}
-						<th>{{ .Name }}</th>
+						<th><p style="writing-mode: vertical-rl">{{ .Name }}</p></th>
 						{{ end }}
 					</tr>
 					{{ range $lib := .Libraries }}
