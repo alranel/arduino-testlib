@@ -3,7 +3,7 @@ module github.com/alranel/arduino-testlib
 go 1.17
 
 //replace github.com/arduino/arduino-cli => /Users/alranel/Documents/git/arduino/arduino-cli
-replace github.com/arduino/arduino-cli => github.com/alranel/arduino-cli v0.0.0-20220214125737-d8c932959634
+replace github.com/arduino/arduino-cli => github.com/alranel/arduino-cli v0.0.0-20220220122519-83c7baef4cca
 
 require (
 	github.com/arduino/arduino-cli v0.0.0-00010101000000-000000000000
@@ -15,7 +15,7 @@ require (
 )
 
 require (
-	github.com/arduino/go-paths-helper v1.6.1 // indirect
+	github.com/arduino/go-paths-helper v1.7.0 // indirect
 	github.com/arduino/go-properties-orderedmap v1.6.0 // indirect
 	github.com/arduino/go-timeutils v0.0.0-20171220113728-d1dd9e313b1b // indirect
 	github.com/arduino/go-win32-utils v0.0.0-20180330194947-ed041402e83b // indirect
