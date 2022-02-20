@@ -1,13 +1,17 @@
 package cli
 
 import (
+	"context"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
 	"os"
 	"path"
+	"sort"
 	"strings"
 	"sync"
+	"sync/atomic"
+	"time"
 
 	"github.com/alranel/arduino-testlib/internal/cliclient"
 	"github.com/alranel/arduino-testlib/internal/configuration"
@@ -15,6 +19,7 @@ import (
 	"github.com/arduino/arduino-cli/arduino/utils"
 	"github.com/gobwas/glob"
 	"github.com/spf13/cobra"
+	"golang.org/x/sync/semaphore"
 )
 
 var testallCmd = &cobra.Command{
@@ -44,10 +49,10 @@ func runTestall(cmd *cobra.Command, cliArguments []string) {
 		os.Exit(1)
 	}
 
-	cliclient.Init()
+	instance := cliclient.NewInstance()
 
 	// Install all the required cores
-	cliclient.InstallCores()
+	instance.InstallCores()
 
 	// Define the list of the libraries to test. If no libraries were supplied as
 	// arguments, the entire list from the Library Registry will be used.
@@ -55,12 +60,12 @@ func runTestall(cmd *cobra.Command, cliArguments []string) {
 	{
 		var libs []string
 		if len(cliArguments) == 0 {
-			libs = cliclient.GetInstalledLibraries()
+			libs = instance.GetInstalledLibraries()
 		} else {
 			// Parse arguments as glob patterns, allowing filters such as "Arduino_*"
 			for _, arg := range cliArguments {
 				g := glob.MustCompile(arg)
-				for _, lib := range cliclient.GetInstalledLibraries() {
+				for _, lib := range instance.GetInstalledLibraries() {
 					if g.Match(lib) {
 						libs = append(libs, lib)
 					}
@@ -78,9 +83,23 @@ func runTestall(cmd *cobra.Command, cliArguments []string) {
 	}
 
 	var jobs = make(chan string)
+	ctx := context.TODO()
+	sem := semaphore.NewWeighted(1)
+	var done int32
+	t0 := time.Now()
 
 	force, _ := cmd.Flags().GetBool("force")
-	worker := func(wg *sync.WaitGroup) {
+	worker := func(wg *sync.WaitGroup, workerId int) {
+		// Create a new CLI instance for each worker, preventing concurrency
+		if err := sem.Acquire(ctx, 1); err != nil {
+			fmt.Fprintf(os.Stderr, "Failed to acquire semaphore: %v", err)
+			os.Exit(1)
+		}
+		fmt.Printf("[#%d] Initializing CLI\n", workerId)
+		instance := cliclient.NewInstance()
+		fmt.Printf("[#%d] Done initializing CLI\n", workerId)
+		sem.Release(1)
+
 		for {
 			lib, more := <-jobs
 			if !more {
@@ -94,7 +113,7 @@ func runTestall(cmd *cobra.Command, cliArguments []string) {
 			testResultsFile := path.Join(datadirPath, utils.SanitizeName(lib)+".json")
 			test.ReadResultsFile(testResultsFile, &tr)
 
-			tr = test.TestLib(lib, tr, force)
+			tr = test.TestLib(lib, tr, force, instance)
 
 			// Write test results to datadir
 			{
@@ -105,20 +124,32 @@ func runTestall(cmd *cobra.Command, cliArguments []string) {
 					os.Exit(1)
 				}
 			}
+
+			// Increment counter and print stats
+			atomic.AddInt32(&done, 1)
+			eta := int(time.Now().Sub(t0).Seconds() / float64(done) * float64(len(libraries)-int(done)))
+			fmt.Printf("[#%d] done %d/%d libs (ETA: %ds)\n", workerId, done, len(libraries), eta)
 		}
 	}
 
 	noOfWorkers, _ := cmd.Flags().GetInt("threads")
 	if noOfWorkers > 1 {
-		fmt.Printf("Warning: the --threads option is experimental. The process might hang because arduino-cli is not thread-safe\n")
+		fmt.Printf("Warning: the --threads option is experimental\n")
 	}
 	var wg sync.WaitGroup
 	for i := 0; i < noOfWorkers; i++ {
 		wg.Add(1)
-		go worker(&wg)
+		go worker(&wg, i)
 	}
 
+	// Sort libraries alphabetically
+	libNames := make([]string, 0, len(libraries))
 	for lib := range libraries {
+		libNames = append(libNames, lib)
+	}
+	sort.Strings(libNames)
+	fmt.Printf("Total libraries: %d\n", len(libNames))
+	for _, lib := range libNames {
 		jobs <- lib
 	}
 	close(jobs)

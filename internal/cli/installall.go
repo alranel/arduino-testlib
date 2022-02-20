@@ -12,7 +12,6 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/alranel/arduino-testlib/internal/cliclient"
 	"github.com/alranel/arduino-testlib/internal/configuration"
 	"github.com/arduino/arduino-cli/arduino/utils"
 	"github.com/spf13/cobra"
@@ -38,15 +37,14 @@ func runInstallall(cmd *cobra.Command, cliArguments []string) {
 		os.Exit(1)
 	}
 
-	cliclient.Init()
-
 	/*
 		// This implementation based on arduino-cli works but it's quite slow because
 		// arduino-cli is not optimized for bulk install (it reloads everything after
 		// the installation of each library).
-		for _, lib := range cliclient.GetAllLibraries() {
+		instance := cliclient.NewInstance()
+		for _, lib := range instance.GetAllLibraries() {
 			// Use the unsanitized name to install the library
-			cliclient.InstallLibrary(lib, "")
+			instance.InstallLibrary(lib, "")
 		}
 	*/
 

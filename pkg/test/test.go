@@ -45,7 +45,7 @@ type TestResults struct {
 	Tests []TestResult `json:"tests"`
 }
 
-func TestLib(libName string, tr TestResults, force bool) TestResults {
+func TestLib(libName string, tr TestResults, force bool, instance *cliclient.CliInstance) TestResults {
 	libPath := util.LibPathFromName(libName)
 	if _, err := os.Stat(libPath); err != nil {
 		fmt.Fprintf(os.Stderr, "[%s] Library not found in %s\n", libName, libPath)
@@ -122,7 +122,7 @@ func TestLib(libName string, tr TestResults, force bool) TestResults {
 fqbn:
 	for _, fqbn := range configuration.FQBNs {
 		core := util.CoreFromFQBN(fqbn)
-		coreVersion, err := cliclient.GetInstalledCoreVersion(core)
+		coreVersion, err := instance.GetInstalledCoreVersion(core)
 		if err != nil {
 			fmt.Fprintf(os.Stderr, "[%s] Failed to get core version for %s: %v\n", nameAndVersion, core, err)
 			os.Exit(1)
@@ -148,7 +148,7 @@ fqbn:
 		}
 
 		// Test library inclusion
-		resB, out := cliclient.CompileSketch(sketchDir, libPath, fqbn)
+		resB, out := instance.CompileSketch(sketchDir, libPath, fqbn)
 		var res CompilationResult
 		if resB {
 			res = PASS
@@ -176,7 +176,7 @@ fqbn:
 				if !example.IsDir() {
 					continue
 				}
-				resB, out := cliclient.CompileSketch(path.Join(libPath, "examples", example.Name()), libPath, fqbn)
+				resB, out := instance.CompileSketch(path.Join(libPath, "examples", example.Name()), libPath, fqbn)
 				var res CompilationResult
 				if resB {
 					res = PASS

@@ -14,6 +14,8 @@ require (
 	gopkg.in/yaml.v1 v1.0.0-20140924161607-9f9df34309c0
 )
 
+require golang.org/x/sync v0.0.0-20210220032951-036812b2e83c
+
 require (
 	github.com/arduino/go-paths-helper v1.7.0 // indirect
 	github.com/arduino/go-properties-orderedmap v1.6.0 // indirect

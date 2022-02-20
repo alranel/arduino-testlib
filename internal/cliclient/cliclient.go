@@ -21,9 +21,11 @@ import (
 	"github.com/sirupsen/logrus"
 )
 
-var instance *cli_rpc.Instance
+type CliInstance struct {
+	Instance *cli_rpc.Instance
+}
 
-func Init() {
+func NewInstance() *CliInstance {
 	cli_conf.Settings = cli_conf.Init("")
 	logrus.SetLevel(logrus.ErrorLevel)
 	cli_conf.Settings.Set("directories.Data", path.Join(configuration.CLIDataDir, "data"))
@@ -32,12 +34,13 @@ func Init() {
 	if configuration.AdditionalURLs != "" {
 		cli_conf.Settings.Set("board_manager.additional_urls", strings.Split(configuration.AdditionalURLs, ","))
 	}
-	instance = cli_instance.CreateAndInit()
+	instance := new(CliInstance)
+	instance.Instance = cli_instance.CreateAndInit()
 
 	// Update index
 	{
 		_, err := cli_commands.UpdateIndex(context.Background(), &cli_rpc.UpdateIndexRequest{
-			Instance: instance,
+			Instance: instance.Instance,
 		}, cli_output.ProgressBar())
 		if err != nil {
 			fmt.Fprintf(os.Stderr, "Error updating index: %v", err)
@@ -48,20 +51,22 @@ func Init() {
 	// Update library index
 	{
 		err := cli_commands.UpdateLibrariesIndex(context.Background(), &cli_rpc.UpdateLibrariesIndexRequest{
-			Instance: instance,
+			Instance: instance.Instance,
 		}, cli_output.ProgressBar())
 		if err != nil {
 			fmt.Fprintf(os.Stderr, "Error updating library index: %v", err)
 			os.Exit(1)
 		}
 	}
+
+	return instance
 }
 
-func InstallLibrary(libName string, version string) bool {
+func (instance *CliInstance) InstallLibrary(libName string, version string) bool {
 	fmt.Printf("=> Installing lib: %s\n", libName)
 
 	libraryInstallRequest := &cli_rpc.LibraryInstallRequest{
-		Instance: instance,
+		Instance: instance.Instance,
 		Name:     libName,
 		Version:  version,
 		NoDeps:   true,
@@ -75,11 +80,11 @@ func InstallLibrary(libName string, version string) bool {
 	return true
 }
 
-func InstallCores() {
+func (instance *CliInstance) InstallCores() {
 	for _, fqbn := range configuration.FQBNs {
 		t := strings.Split(fqbn, ":")
 		platformInstallRequest := &cli_rpc.PlatformInstallRequest{
-			Instance:        instance,
+			Instance:        instance.Instance,
 			PlatformPackage: t[0],
 			Architecture:    t[1],
 			Version:         "",
@@ -92,9 +97,9 @@ func InstallCores() {
 	}
 }
 
-func GetAllLibraries() []string {
+func (instance *CliInstance) GetAllLibraries() []string {
 	res, err := cli_lib.LibrarySearch(context.Background(), &cli_rpc.LibrarySearchRequest{
-		Instance: instance,
+		Instance: instance.Instance,
 		Query:    "",
 	})
 	if err != nil {
@@ -109,10 +114,10 @@ func GetAllLibraries() []string {
 	return libs
 }
 
-func GetInstalledLibraries() []string {
+func (instance *CliInstance) GetInstalledLibraries() []string {
 	res, err := cli_lib.LibraryList(context.Background(), &cli_rpc.LibraryListRequest{
-		Instance: instance,
-		All:      true,
+		Instance: instance.Instance,
+		All:      false,
 	})
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error listing libraries: %v", err)
@@ -126,9 +131,9 @@ func GetInstalledLibraries() []string {
 	return libs
 }
 
-func GetInstalledCoreVersion(core string) (string, error) {
+func (instance *CliInstance) GetInstalledCoreVersion(core string) (string, error) {
 	platforms, err := cli_core.GetPlatforms(&cli_rpc.PlatformListRequest{
-		Instance:      instance,
+		Instance:      instance.Instance,
 		UpdatableOnly: false,
 		All:           true,
 	})
@@ -144,9 +149,9 @@ func GetInstalledCoreVersion(core string) (string, error) {
 	return "", errors.New("Platform not found")
 }
 
-func CompileSketch(sketchPath string, libPath string, fqbn string) (result bool, out string) {
+func (instance *CliInstance) CompileSketch(sketchPath string, libPath string, fqbn string) (result bool, out string) {
 	compileRequest := &cli_rpc.CompileRequest{
-		Instance:   instance,
+		Instance:   instance.Instance,
 		Fqbn:       fqbn,
 		SketchPath: sketchPath,
 	}

@@ -29,12 +29,12 @@ func runTest(cmd *cobra.Command, cliArguments []string) {
 		os.Exit(1)
 	}
 
-	cliclient.Init()
-	cliclient.InstallCores()
+	instance := cliclient.NewInstance()
+	instance.InstallCores()
 
 	var tr test.TestResults
 	force, _ := cmd.Flags().GetBool("force")
-	tr = test.TestLib(cliArguments[0], tr, force)
+	tr = test.TestLib(cliArguments[0], tr, force, instance)
 
 	b, _ := json.MarshalIndent(tr, "", "  ")
 	fmt.Printf("%s\n", b)
