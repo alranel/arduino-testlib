@@ -45,7 +45,7 @@ type TestResults struct {
 	Tests []TestResult `json:"tests"`
 }
 
-func TestLib(libName string, tr TestResults) TestResults {
+func TestLib(libName string, tr TestResults, force bool) TestResults {
 	libPath := util.LibPathFromName(libName)
 	if _, err := os.Stat(libPath); err != nil {
 		fmt.Fprintf(os.Stderr, "[%s] Library not found in %s\n", libName, libPath)
@@ -129,10 +129,12 @@ fqbn:
 		}
 
 		// Check if this combo was already tested
-		for _, t := range tr.Tests {
-			if t.Version == version && t.FQBN == fqbn && t.CoreVersion == coreVersion {
-				fmt.Printf("[%s] skipping %s, already tested\n", nameAndVersion, fqbn)
-				continue fqbn
+		if !force {
+			for _, t := range tr.Tests {
+				if t.Version == version && t.FQBN == fqbn && t.CoreVersion == coreVersion {
+					fmt.Printf("[%s] skipping %s, already tested\n", nameAndVersion, fqbn)
+					continue fqbn
+				}
 			}
 		}
 

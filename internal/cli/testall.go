@@ -26,6 +26,7 @@ var testallCmd = &cobra.Command{
 
 func init() {
 	testallCmd.PersistentFlags().IntP("threads", "j", 1, "How many parallel jobs to run")
+	testallCmd.PersistentFlags().BoolP("force", "f", false, "Re-test all library-core combinations even if already seen")
 	rootCmd.AddCommand(testallCmd)
 }
 
@@ -78,6 +79,7 @@ func runTestall(cmd *cobra.Command, cliArguments []string) {
 
 	var jobs = make(chan string)
 
+	force, _ := cmd.Flags().GetBool("force")
 	worker := func(wg *sync.WaitGroup) {
 		for {
 			lib, more := <-jobs
@@ -92,7 +94,7 @@ func runTestall(cmd *cobra.Command, cliArguments []string) {
 			testResultsFile := path.Join(datadirPath, utils.SanitizeName(lib)+".json")
 			test.ReadResultsFile(testResultsFile, &tr)
 
-			tr = test.TestLib(lib, tr)
+			tr = test.TestLib(lib, tr, force)
 
 			// Write test results to datadir
 			{
@@ -107,6 +109,9 @@ func runTestall(cmd *cobra.Command, cliArguments []string) {
 	}
 
 	noOfWorkers, _ := cmd.Flags().GetInt("threads")
+	if noOfWorkers > 1 {
+		fmt.Printf("Warning: the --threads option is experimental. The process might hang because arduino-cli is not thread-safe\n")
+	}
 	var wg sync.WaitGroup
 	for i := 0; i < noOfWorkers; i++ {
 		wg.Add(1)

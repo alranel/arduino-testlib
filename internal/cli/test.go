@@ -19,6 +19,7 @@ var testCmd = &cobra.Command{
 }
 
 func init() {
+	testCmd.PersistentFlags().BoolP("force", "f", false, "Re-test all library-core combinations even if already seen")
 	rootCmd.AddCommand(testCmd)
 }
 
@@ -32,7 +33,8 @@ func runTest(cmd *cobra.Command, cliArguments []string) {
 	cliclient.InstallCores()
 
 	var tr test.TestResults
-	tr = test.TestLib(cliArguments[0], tr)
+	force, _ := cmd.Flags().GetBool("force")
+	tr = test.TestLib(cliArguments[0], tr, force)
 
 	b, _ := json.MarshalIndent(tr, "", "  ")
 	fmt.Printf("%s\n", b)
