@@ -136,6 +136,15 @@ fqbn:
 					continue fqbn
 				}
 			}
+		} else {
+			// Remove past test results for this combo
+			var tt []TestResult
+			for _, t := range tr.Tests {
+				if t.Version != version || t.FQBN != fqbn || t.CoreVersion != coreVersion {
+					tt = append(tt, t)
+				}
+			}
+			tr.Tests = tt
 		}
 
 		// Test library inclusion
