@@ -234,14 +234,14 @@ var htmlTmplLibrary = `
 					<br />This library has no main header file so an empty one was created.
 					{{ end }}
 				</p>
-				<pre class="pre-scrollable">{{ $t.Log }}</pre>
+				<pre class="pre-scrollable">{{ printf "%.10000s" $t.Log }}</pre>
 
 					{{ range $e := $t.Examples }}
 					<h4>examples/{{ $e.Name }}</h4>
 					<p>
 						Result: <b>{{ $e.Result }}</b>
 					</p>
-					<pre class="pre-scrollable">{{ $e.Log }}</pre>
+					<pre class="pre-scrollable">{{ printf "%.10000s" $e.Log }}</pre>
 					{{ end }}
 				{{ end }}
 			</div>
