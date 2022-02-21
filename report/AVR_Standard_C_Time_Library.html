@@ -1,0 +1,499 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>AVR Standard C Time Library - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>AVR Standard C Time Library</h2>
+				<p>
+					Version: <b>2.0.0-1</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/avr-standard-c-time-library/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>Timer2_RTC</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 506 bytes (1%) of program storage space. Maximum is 32256 bytes.
+Global variables use 13 bytes (0%) of dynamic memory, leaving 2035 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+
+					
+					<h4>examples/Timer2_RTC</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 3836 bytes (11%) of program storage space. Maximum is 32256 bytes.
+Global variables use 226 bytes (11%) of dynamic memory, leaving 1822 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:6:10: fatal error: util/atomic.h: No such file or directory
+ #include &lt;util/atomic.h&gt;
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/Timer2_RTC</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:6:10: fatal error: util/atomic.h: No such file or directory
+ #include &lt;util/atomic.h&gt;
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library AVR_Standard_C_Time_Library claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c: In function &#39;setup_RTC_interrupt&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:25:6: error: &#39;TIMSK2&#39; undeclared (first use in this function); did you mean &#39;TIME_H&#39;?
+      TIMSK2 &amp;= ~( _BV(OCIE2B)|_BV(OCIE2A)|_BV(TOIE2) );  // disable all Timer2 interrupts
+      ^~~~~~
+      TIME_H
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:25:6: note: each undeclared identifier is reported only once for each function it appears in
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/util/atomic.h:37,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:6:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:25:23: error: &#39;OCIE2B&#39; undeclared (first use in this function)
+      TIMSK2 &amp;= ~( _BV(OCIE2B)|_BV(OCIE2A)|_BV(TOIE2) );  // disable all Timer2 interrupts
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:25:35: error: &#39;OCIE2A&#39; undeclared (first use in this function); did you mean &#39;OCIE2B&#39;?
+      TIMSK2 &amp;= ~( _BV(OCIE2B)|_BV(OCIE2A)|_BV(TOIE2) );  // disable all Timer2 interrupts
+                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:25:47: error: &#39;TOIE2&#39; undeclared (first use in this function); did you mean &#39;OCIE2A&#39;?
+      TIMSK2 &amp;= ~( _BV(OCIE2B)|_BV(OCIE2A)|_BV(TOIE2) );  // disable all Timer2 interrupts
+                                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:26:6: error: &#39;TIFR2&#39; undeclared (first use in this function)
+      TIFR2 |=  _BV(OCF2B)|_BV(OCF2A)|_BV(TOV2);      // clear all pending interrupts
+      ^~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/util/atomic.h:37,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:6:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:26:20: error: &#39;OCF2B&#39; undeclared (first use in this function); did you mean &#39;OCIE2B&#39;?
+      TIFR2 |=  _BV(OCF2B)|_BV(OCF2A)|_BV(TOV2);      // clear all pending interrupts
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:26:31: error: &#39;OCF2A&#39; undeclared (first use in this function); did you mean &#39;OCF2B&#39;?
+      TIFR2 |=  _BV(OCF2B)|_BV(OCF2A)|_BV(TOV2);      // clear all pending interrupts
+                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:26:42: error: &#39;TOV2&#39; undeclared (first use in this function); did you mean &#39;TOIE2&#39;?
+      TIFR2 |=  _BV(OCF2B)|_BV(OCF2A)|_BV(TOV2);      // clear all pending interrupts
+                                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:27:9: error: &#39;ASSR&#39; undeclared (first use in this function); did you mean &#39;AVR&#39;?
+         ASSR = _BV(AS2);                          // set Timer/Counter2 to be asynchronous from the CPU clock
+         ^~~~
+         AVR
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/util/atomic.h:37,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:6:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:27:20: error: &#39;AS2&#39; undeclared (first use in this function); did you mean &#39;ASSR&#39;?
+         ASSR = _BV(AS2);                          // set Timer/Counter2 to be asynchronous from the CPU clock
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:29:9: error: &#39;TCNT2&#39; undeclared (first use in this function); did you mean &#39;TCB2&#39;?
+         TCNT2  = 0x00;                       // zero out the counter
+         ^~~~~
+         TCB2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:30:9: error: &#39;TCCR2A&#39; undeclared (first use in this function); did you mean &#39;TCNT2&#39;?
+         TCCR2A = 0x00;                      // Normal mode
+         ^~~~~~
+         TCNT2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:31:9: error: &#39;TCCR2B&#39; undeclared (first use in this function); did you mean &#39;TCCR2A&#39;?
+         TCCR2B = _BV(CS22) | _BV(CS20);            // divide timer clock by 128 so counter will roll over at MAX
+         ^~~~~~
+         TCCR2A
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/util/atomic.h:37,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:6:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:31:22: error: &#39;CS22&#39; undeclared (first use in this function); did you mean &#39;AS2&#39;?
+         TCCR2B = _BV(CS22) | _BV(CS20);            // divide timer clock by 128 so counter will roll over at MAX
+                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:31:34: error: &#39;CS20&#39; undeclared (first use in this function); did you mean &#39;CS22&#39;?
+         TCCR2B = _BV(CS22) | _BV(CS20);            // divide timer clock by 128 so counter will roll over at MAX
+                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:33:28: error: &#39;TCN2UB&#39; undeclared (first use in this function); did you mean &#39;TCCR2B&#39;?
+         while( ASSR &amp; (_BV(TCN2UB)|_BV(OCR2AUB)|_BV(TCR2AUB))); // Wait until Timer2 update complete
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:33:40: error: &#39;OCR2AUB&#39; undeclared (first use in this function); did you mean &#39;TCN2UB&#39;?
+         while( ASSR &amp; (_BV(TCN2UB)|_BV(OCR2AUB)|_BV(TCR2AUB))); // Wait until Timer2 update complete
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:33:53: error: &#39;TCR2AUB&#39; undeclared (first use in this function); did you mean &#39;OCR2AUB&#39;?
+         while( ASSR &amp; (_BV(TCN2UB)|_BV(OCR2AUB)|_BV(TCR2AUB))); // Wait until Timer2 update complete
+                                                     ^
+
+</pre>
+
+					
+					<h4>examples/Timer2_RTC</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library AVR_Standard_C_Time_Library claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c: In function &#39;setup_RTC_interrupt&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:25:6: error: &#39;TIMSK2&#39; undeclared (first use in this function); did you mean &#39;TIME_H&#39;?
+      TIMSK2 &amp;= ~( _BV(OCIE2B)|_BV(OCIE2A)|_BV(TOIE2) );  // disable all Timer2 interrupts
+      ^~~~~~
+      TIME_H
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:25:6: note: each undeclared identifier is reported only once for each function it appears in
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/util/atomic.h:37,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:6:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:25:23: error: &#39;OCIE2B&#39; undeclared (first use in this function)
+      TIMSK2 &amp;= ~( _BV(OCIE2B)|_BV(OCIE2A)|_BV(TOIE2) );  // disable all Timer2 interrupts
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:25:35: error: &#39;OCIE2A&#39; undeclared (first use in this function); did you mean &#39;OCIE2B&#39;?
+      TIMSK2 &amp;= ~( _BV(OCIE2B)|_BV(OCIE2A)|_BV(TOIE2) );  // disable all Timer2 interrupts
+                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:25:47: error: &#39;TOIE2&#39; undeclared (first use in this function); did you mean &#39;OCIE2A&#39;?
+      TIMSK2 &amp;= ~( _BV(OCIE2B)|_BV(OCIE2A)|_BV(TOIE2) );  // disable all Timer2 interrupts
+                                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:26:6: error: &#39;TIFR2&#39; undeclared (first use in this function)
+      TIFR2 |=  _BV(OCF2B)|_BV(OCF2A)|_BV(TOV2);      // clear all pending interrupts
+      ^~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/util/atomic.h:37,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:6:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:26:20: error: &#39;OCF2B&#39; undeclared (first use in this function); did you mean &#39;OCIE2B&#39;?
+      TIFR2 |=  _BV(OCF2B)|_BV(OCF2A)|_BV(TOV2);      // clear all pending interrupts
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:26:31: error: &#39;OCF2A&#39; undeclared (first use in this function); did you mean &#39;OCF2B&#39;?
+      TIFR2 |=  _BV(OCF2B)|_BV(OCF2A)|_BV(TOV2);      // clear all pending interrupts
+                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:26:42: error: &#39;TOV2&#39; undeclared (first use in this function); did you mean &#39;TOIE2&#39;?
+      TIFR2 |=  _BV(OCF2B)|_BV(OCF2A)|_BV(TOV2);      // clear all pending interrupts
+                                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:27:9: error: &#39;ASSR&#39; undeclared (first use in this function); did you mean &#39;AVR&#39;?
+         ASSR = _BV(AS2);                          // set Timer/Counter2 to be asynchronous from the CPU clock
+         ^~~~
+         AVR
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/util/atomic.h:37,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:6:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:27:20: error: &#39;AS2&#39; undeclared (first use in this function); did you mean &#39;ASSR&#39;?
+         ASSR = _BV(AS2);                          // set Timer/Counter2 to be asynchronous from the CPU clock
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:29:9: error: &#39;TCNT2&#39; undeclared (first use in this function); did you mean &#39;TCB2&#39;?
+         TCNT2  = 0x00;                       // zero out the counter
+         ^~~~~
+         TCB2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:30:9: error: &#39;TCCR2A&#39; undeclared (first use in this function); did you mean &#39;TCNT2&#39;?
+         TCCR2A = 0x00;                      // Normal mode
+         ^~~~~~
+         TCNT2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:31:9: error: &#39;TCCR2B&#39; undeclared (first use in this function); did you mean &#39;TCCR2A&#39;?
+         TCCR2B = _BV(CS22) | _BV(CS20);            // divide timer clock by 128 so counter will roll over at MAX
+         ^~~~~~
+         TCCR2A
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/util/atomic.h:37,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:6:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:31:22: error: &#39;CS22&#39; undeclared (first use in this function); did you mean &#39;AS2&#39;?
+         TCCR2B = _BV(CS22) | _BV(CS20);            // divide timer clock by 128 so counter will roll over at MAX
+                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:31:34: error: &#39;CS20&#39; undeclared (first use in this function); did you mean &#39;CS22&#39;?
+         TCCR2B = _BV(CS22) | _BV(CS20);            // divide timer clock by 128 so counter will roll over at MAX
+                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:33:28: error: &#39;TCN2UB&#39; undeclared (first use in this function); did you mean &#39;TCCR2B&#39;?
+         while( ASSR &amp; (_BV(TCN2UB)|_BV(OCR2AUB)|_BV(TCR2AUB))); // Wait until Timer2 update complete
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:33:40: error: &#39;OCR2AUB&#39; undeclared (first use in this function); did you mean &#39;TCN2UB&#39;?
+         while( ASSR &amp; (_BV(TCN2UB)|_BV(OCR2AUB)|_BV(TCR2AUB))); // Wait until Timer2 update complete
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:33:53: error: &#39;TCR2AUB&#39; undeclared (first use in this function); did you mean &#39;OCR2AUB&#39;?
+         while( ASSR &amp; (_BV(TCN2UB)|_BV(OCR2AUB)|_BV(TCR2AUB))); // Wait until Timer2 update complete
+                                                     ^
+
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:6:10: fatal error: util/atomic.h: No such file or directory
+ #include &lt;util/atomic.h&gt;
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/Timer2_RTC</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:6:10: fatal error: util/atomic.h: No such file or directory
+ #include &lt;util/atomic.h&gt;
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:6:25: fatal error: util/atomic.h: No such file or directory
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/Timer2_RTC</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AVR_Standard_C_Time_Library/src/timer2.c:6:25: fatal error: util/atomic.h: No such file or directory
+compilation terminated.
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

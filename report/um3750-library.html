@@ -1,0 +1,574 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>um3750-library - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>um3750-library</h2>
+				<p>
+					Version: <b>0.1</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/um3750-library/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library um3750-library claims to run on esp8266 architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp: In member function &#39;void UM3750::enableTransmit(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:32:3: error: &#39;timer1_isr_init&#39; was not declared in this scope
+   timer1_isr_init();
+   ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:33:3: error: &#39;timer1_attachInterrupt&#39; was not declared in this scope
+   timer1_attachInterrupt(UM3750ISRtransmit);
+   ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:33:3: note: suggested alternative: &#39;attachInterrupt&#39;
+   timer1_attachInterrupt(UM3750ISRtransmit);
+   ^~~~~~~~~~~~~~~~~~~~~~
+   attachInterrupt
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp: In member function &#39;void UM3750::disableTransmit()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:45:4: error: &#39;timer1_detachInterrupt&#39; was not declared in this scope
+    timer1_detachInterrupt();
+    ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:45:4: note: suggested alternative: &#39;detachInterrupt&#39;
+    timer1_detachInterrupt();
+    ^~~~~~~~~~~~~~~~~~~~~~
+    detachInterrupt
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp: In member function &#39;void UM3750::transmitCode(UM3750::Code, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:117:16: error: &#39;TIM_DIV16&#39; was not declared in this scope
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_LOOP);
+                ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:117:27: error: &#39;TIM_EDGE&#39; was not declared in this scope
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_LOOP);
+                           ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:117:27: note: suggested alternative: &#39;TIMER2&#39;
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_LOOP);
+                           ^~~~~~~~
+                           TIMER2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:117:37: error: &#39;TIM_LOOP&#39; was not declared in this scope
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_LOOP);
+                                     ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:117:2: error: &#39;timer1_enable&#39; was not declared in this scope
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_LOOP);
+  ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:124:2: error: &#39;timer1_write&#39; was not declared in this scope
+  timer1_write((uint32_t) ((code.symbolDurationTime * 5.0) / 3.0));
+  ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:153:22: error: expected initializer before &#39;UM3750&#39;
+ void ICACHE_RAM_ATTR UM3750::__digitalWrite(uint8_t pin, uint8_t val) {
+                      ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:163:22: error: expected initializer before &#39;UM3750&#39;
+ void ICACHE_RAM_ATTR UM3750::UM3750ISRtransmit(void) {
+                      ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:175:22: error: expected initializer before &#39;UM3750&#39;
+ void ICACHE_RAM_ATTR UM3750::UM3750ISRreceive(void) {
+                      ^~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:9:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.h:32:52: error: expected initializer before &#39;UM3750&#39;
+ #define _UM3750ISRreceivec(n) void ICACHE_RAM_ATTR UM3750::UM3750ISRreceive_##n(void) { current_receive_index = n; UM3750::UM3750ISRreceive(); }
+                                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.h:35:30: note: in expansion of macro &#39;_UM3750ISRreceivec&#39;
+ #define ISR_RECEIVE_DEFS_CPP _UM3750ISRreceivec(0); _UM3750ISRreceivec(1); _UM3750ISRreceivec(2);
+                              ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:240:1: note: in expansion of macro &#39;ISR_RECEIVE_DEFS_CPP&#39;
+ ISR_RECEIVE_DEFS_CPP
+ ^~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.h:32:52: error: expected initializer before &#39;UM3750&#39;
+ #define _UM3750ISRreceivec(n) void ICACHE_RAM_ATTR UM3750::UM3750ISRreceive_##n(void) { current_receive_index = n; UM3750::UM3750ISRreceive(); }
+                                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.h:35:53: note: in expansion of macro &#39;_UM3750ISRreceivec&#39;
+ #define ISR_RECEIVE_DEFS_CPP _UM3750ISRreceivec(0); _UM3750ISRreceivec(1); _UM3750ISRreceivec(2);
+                                                     ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:240:1: note: in expansion of macro &#39;ISR_RECEIVE_DEFS_CPP&#39;
+ ISR_RECEIVE_DEFS_CPP
+ ^~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.h:32:52: error: expected initializer before &#39;UM3750&#39;
+ #define _UM3750ISRreceivec(n) void ICACHE_RAM_ATTR UM3750::UM3750ISRreceive_##n(void) { current_receive_index = n; UM3750::UM3750ISRreceive(); }
+                                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.h:35:76: note: in expansion of macro &#39;_UM3750ISRreceivec&#39;
+ #define ISR_RECEIVE_DEFS_CPP _UM3750ISRreceivec(0); _UM3750ISRreceivec(1); _UM3750ISRreceivec(2);
+                                                                            ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:240:1: note: in expansion of macro &#39;ISR_RECEIVE_DEFS_CPP&#39;
+ ISR_RECEIVE_DEFS_CPP
+ ^~~~~~~~~~~~~~~~~~~~
+
+</pre>
+
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library um3750-library claims to run on esp8266 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp: In member function &#39;void UM3750::enableTransmit(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:32:3: error: &#39;timer1_isr_init&#39; was not declared in this scope
+   timer1_isr_init();
+   ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:32:3: note: suggested alternative: &#39;timer_hw_t&#39;
+   timer1_isr_init();
+   ^~~~~~~~~~~~~~~
+   timer_hw_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:33:3: error: &#39;timer1_attachInterrupt&#39; was not declared in this scope
+   timer1_attachInterrupt(UM3750ISRtransmit);
+   ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:33:3: note: suggested alternative: &#39;attachInterrupt&#39;
+   timer1_attachInterrupt(UM3750ISRtransmit);
+   ^~~~~~~~~~~~~~~~~~~~~~
+   attachInterrupt
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp: In member function &#39;void UM3750::disableTransmit()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:45:4: error: &#39;timer1_detachInterrupt&#39; was not declared in this scope
+    timer1_detachInterrupt();
+    ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:45:4: note: suggested alternative: &#39;detachInterrupt&#39;
+    timer1_detachInterrupt();
+    ^~~~~~~~~~~~~~~~~~~~~~
+    detachInterrupt
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp: In member function &#39;void UM3750::transmitCode(UM3750::Code, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:117:16: error: &#39;TIM_DIV16&#39; was not declared in this scope
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_LOOP);
+                ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:117:27: error: &#39;TIM_EDGE&#39; was not declared in this scope
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_LOOP);
+                           ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:117:27: note: suggested alternative: &#39;TIMER&#39;
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_LOOP);
+                           ^~~~~~~~
+                           TIMER
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:117:37: error: &#39;TIM_LOOP&#39; was not declared in this scope
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_LOOP);
+                                     ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:117:37: note: suggested alternative: &#39;ELOOP&#39;
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_LOOP);
+                                     ^~~~~~~~
+                                     ELOOP
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:117:2: error: &#39;timer1_enable&#39; was not declared in this scope
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_LOOP);
+  ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:117:2: note: suggested alternative: &#39;timerclear&#39;
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_LOOP);
+  ^~~~~~~~~~~~~
+  timerclear
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:124:2: error: &#39;timer1_write&#39; was not declared in this scope
+  timer1_write((uint32_t) ((code.symbolDurationTime * 5.0) / 3.0));
+  ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:124:2: note: suggested alternative: &#39;timer_hw_t&#39;
+  timer1_write((uint32_t) ((code.symbolDurationTime * 5.0) / 3.0));
+  ^~~~~~~~~~~~
+  timer_hw_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:153:22: error: expected initializer before &#39;UM3750&#39;
+ void ICACHE_RAM_ATTR UM3750::__digitalWrite(uint8_t pin, uint8_t val) {
+                      ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:163:22: error: expected initializer before &#39;UM3750&#39;
+ void ICACHE_RAM_ATTR UM3750::UM3750ISRtransmit(void) {
+                      ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:175:22: error: expected initializer before &#39;UM3750&#39;
+ void ICACHE_RAM_ATTR UM3750::UM3750ISRreceive(void) {
+                      ^~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:9:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.h:32:52: error: expected initializer before &#39;UM3750&#39;
+ #define _UM3750ISRreceivec(n) void ICACHE_RAM_ATTR UM3750::UM3750ISRreceive_##n(void) { current_receive_index = n; UM3750::UM3750ISRreceive(); }
+                                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.h:35:30: note: in expansion of macro &#39;_UM3750ISRreceivec&#39;
+ #define ISR_RECEIVE_DEFS_CPP _UM3750ISRreceivec(0); _UM3750ISRreceivec(1); _UM3750ISRreceivec(2);
+                              ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:240:1: note: in expansion of macro &#39;ISR_RECEIVE_DEFS_CPP&#39;
+ ISR_RECEIVE_DEFS_CPP
+ ^~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.h:32:52: error: expected initializer before &#39;UM3750&#39;
+ #define _UM3750ISRreceivec(n) void ICACHE_RAM_ATTR UM3750::UM3750ISRreceive_##n(void) { current_receive_index = n; UM3750::UM3750ISRreceive(); }
+                                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.h:35:53: note: in expansion of macro &#39;_UM3750ISRreceivec&#39;
+ #define ISR_RECEIVE_DEFS_CPP _UM3750ISRreceivec(0); _UM3750ISRreceivec(1); _UM3750ISRreceivec(2);
+                                                     ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:240:1: note: in expansion of macro &#39;ISR_RECEIVE_DEFS_CPP&#39;
+ ISR_RECEIVE_DEFS_CPP
+ ^~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.h:32:52: error: expected initializer before &#39;UM3750&#39;
+ #define _UM3750ISRreceivec(n) void ICACHE_RAM_ATTR UM3750::UM3750ISRreceive_##n(void) { current_receive_index = n; UM3750::UM3750ISRreceive(); }
+                                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.h:35:76: note: in expansion of macro &#39;_UM3750ISRreceivec&#39;
+ #define ISR_RECEIVE_DEFS_CPP _UM3750ISRreceivec(0); _UM3750ISRreceivec(1); _UM3750ISRreceivec(2);
+                                                                            ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:240:1: note: in expansion of macro &#39;ISR_RECEIVE_DEFS_CPP&#39;
+ ISR_RECEIVE_DEFS_CPP
+ ^~~~~~~~~~~~~~~~~~~~
+
+</pre>
+
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library um3750-library claims to run on esp8266 architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp: In member function &#39;void UM3750::enableTransmit(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:32:3: error: &#39;timer1_isr_init&#39; was not declared in this scope
+   timer1_isr_init();
+   ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:33:3: error: &#39;timer1_attachInterrupt&#39; was not declared in this scope
+   timer1_attachInterrupt(UM3750ISRtransmit);
+   ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:33:3: note: suggested alternative: &#39;attachInterrupt&#39;
+   timer1_attachInterrupt(UM3750ISRtransmit);
+   ^~~~~~~~~~~~~~~~~~~~~~
+   attachInterrupt
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp: In member function &#39;void UM3750::disableTransmit()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:45:4: error: &#39;timer1_detachInterrupt&#39; was not declared in this scope
+    timer1_detachInterrupt();
+    ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:45:4: note: suggested alternative: &#39;detachInterrupt&#39;
+    timer1_detachInterrupt();
+    ^~~~~~~~~~~~~~~~~~~~~~
+    detachInterrupt
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp: In member function &#39;void UM3750::transmitCode(UM3750::Code, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:117:16: error: &#39;TIM_DIV16&#39; was not declared in this scope
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_LOOP);
+                ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:117:27: error: &#39;TIM_EDGE&#39; was not declared in this scope
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_LOOP);
+                           ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:117:27: note: suggested alternative: &#39;TIMERA0&#39;
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_LOOP);
+                           ^~~~~~~~
+                           TIMERA0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:117:37: error: &#39;TIM_LOOP&#39; was not declared in this scope
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_LOOP);
+                                     ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:117:2: error: &#39;timer1_enable&#39; was not declared in this scope
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_LOOP);
+  ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:124:2: error: &#39;timer1_write&#39; was not declared in this scope
+  timer1_write((uint32_t) ((code.symbolDurationTime * 5.0) / 3.0));
+  ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:153:22: error: expected initializer before &#39;UM3750&#39;
+ void ICACHE_RAM_ATTR UM3750::__digitalWrite(uint8_t pin, uint8_t val) {
+                      ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:163:22: error: expected initializer before &#39;UM3750&#39;
+ void ICACHE_RAM_ATTR UM3750::UM3750ISRtransmit(void) {
+                      ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:175:22: error: expected initializer before &#39;UM3750&#39;
+ void ICACHE_RAM_ATTR UM3750::UM3750ISRreceive(void) {
+                      ^~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:9:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.h:32:52: error: expected initializer before &#39;UM3750&#39;
+ #define _UM3750ISRreceivec(n) void ICACHE_RAM_ATTR UM3750::UM3750ISRreceive_##n(void) { current_receive_index = n; UM3750::UM3750ISRreceive(); }
+                                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.h:35:30: note: in expansion of macro &#39;_UM3750ISRreceivec&#39;
+ #define ISR_RECEIVE_DEFS_CPP _UM3750ISRreceivec(0); _UM3750ISRreceivec(1); _UM3750ISRreceivec(2);
+                              ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:240:1: note: in expansion of macro &#39;ISR_RECEIVE_DEFS_CPP&#39;
+ ISR_RECEIVE_DEFS_CPP
+ ^~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.h:32:52: error: expected initializer before &#39;UM3750&#39;
+ #define _UM3750ISRreceivec(n) void ICACHE_RAM_ATTR UM3750::UM3750ISRreceive_##n(void) { current_receive_index = n; UM3750::UM3750ISRreceive(); }
+                                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.h:35:53: note: in expansion of macro &#39;_UM3750ISRreceivec&#39;
+ #define ISR_RECEIVE_DEFS_CPP _UM3750ISRreceivec(0); _UM3750ISRreceivec(1); _UM3750ISRreceivec(2);
+                                                     ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:240:1: note: in expansion of macro &#39;ISR_RECEIVE_DEFS_CPP&#39;
+ ISR_RECEIVE_DEFS_CPP
+ ^~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.h:32:52: error: expected initializer before &#39;UM3750&#39;
+ #define _UM3750ISRreceivec(n) void ICACHE_RAM_ATTR UM3750::UM3750ISRreceive_##n(void) { current_receive_index = n; UM3750::UM3750ISRreceive(); }
+                                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.h:35:76: note: in expansion of macro &#39;_UM3750ISRreceivec&#39;
+ #define ISR_RECEIVE_DEFS_CPP _UM3750ISRreceivec(0); _UM3750ISRreceivec(1); _UM3750ISRreceivec(2);
+                                                                            ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:240:1: note: in expansion of macro &#39;ISR_RECEIVE_DEFS_CPP&#39;
+ ISR_RECEIVE_DEFS_CPP
+ ^~~~~~~~~~~~~~~~~~~~
+
+</pre>
+
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library um3750-library claims to run on esp8266 architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp: In member function &#39;void UM3750::enableTransmit(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:32:3: error: &#39;timer1_isr_init&#39; was not declared in this scope
+   timer1_isr_init();
+   ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:32:3: note: suggested alternative: &#39;timerisset&#39;
+   timer1_isr_init();
+   ^~~~~~~~~~~~~~~
+   timerisset
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:33:3: error: &#39;timer1_attachInterrupt&#39; was not declared in this scope
+   timer1_attachInterrupt(UM3750ISRtransmit);
+   ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:33:3: note: suggested alternative: &#39;attachInterrupt&#39;
+   timer1_attachInterrupt(UM3750ISRtransmit);
+   ^~~~~~~~~~~~~~~~~~~~~~
+   attachInterrupt
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp: In member function &#39;void UM3750::disableTransmit()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:45:4: error: &#39;timer1_detachInterrupt&#39; was not declared in this scope
+    timer1_detachInterrupt();
+    ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:45:4: note: suggested alternative: &#39;detachInterrupt&#39;
+    timer1_detachInterrupt();
+    ^~~~~~~~~~~~~~~~~~~~~~
+    detachInterrupt
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp: In member function &#39;void UM3750::transmitCode(UM3750::Code, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:117:16: error: &#39;TIM_DIV16&#39; was not declared in this scope
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_LOOP);
+                ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:117:27: error: &#39;TIM_EDGE&#39; was not declared in this scope
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_LOOP);
+                           ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:117:37: error: &#39;TIM_LOOP&#39; was not declared in this scope
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_LOOP);
+                                     ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:117:2: error: &#39;timer1_enable&#39; was not declared in this scope
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_LOOP);
+  ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:117:2: note: suggested alternative: &#39;timerclear&#39;
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_LOOP);
+  ^~~~~~~~~~~~~
+  timerclear
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:124:2: error: &#39;timer1_write&#39; was not declared in this scope
+  timer1_write((uint32_t) ((code.symbolDurationTime * 5.0) / 3.0));
+  ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:124:2: note: suggested alternative: &#39;timer_t&#39;
+  timer1_write((uint32_t) ((code.symbolDurationTime * 5.0) / 3.0));
+  ^~~~~~~~~~~~
+  timer_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:153:22: error: expected initializer before &#39;UM3750&#39;
+ void ICACHE_RAM_ATTR UM3750::__digitalWrite(uint8_t pin, uint8_t val) {
+                      ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:163:22: error: expected initializer before &#39;UM3750&#39;
+ void ICACHE_RAM_ATTR UM3750::UM3750ISRtransmit(void) {
+                      ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:175:22: error: expected initializer before &#39;UM3750&#39;
+ void ICACHE_RAM_ATTR UM3750::UM3750ISRreceive(void) {
+                      ^~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:9:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.h:32:52: error: expected initializer before &#39;UM3750&#39;
+ #define _UM3750ISRreceivec(n) void ICACHE_RAM_ATTR UM3750::UM3750ISRreceive_##n(void) { current_receive_index = n; UM3750::UM3750ISRreceive(); }
+                                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.h:35:30: note: in expansion of macro &#39;_UM3750ISRreceivec&#39;
+ #define ISR_RECEIVE_DEFS_CPP _UM3750ISRreceivec(0); _UM3750ISRreceivec(1); _UM3750ISRreceivec(2);
+                              ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:240:1: note: in expansion of macro &#39;ISR_RECEIVE_DEFS_CPP&#39;
+ ISR_RECEIVE_DEFS_CPP
+ ^~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.h:32:52: error: expected initializer before &#39;UM3750&#39;
+ #define _UM3750ISRreceivec(n) void ICACHE_RAM_ATTR UM3750::UM3750ISRreceive_##n(void) { current_receive_index = n; UM3750::UM3750ISRreceive(); }
+                                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.h:35:53: note: in expansion of macro &#39;_UM3750ISRreceivec&#39;
+ #define ISR_RECEIVE_DEFS_CPP _UM3750ISRreceivec(0); _UM3750ISRreceivec(1); _UM3750ISRreceivec(2);
+                                                     ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:240:1: note: in expansion of macro &#39;ISR_RECEIVE_DEFS_CPP&#39;
+ ISR_RECEIVE_DEFS_CPP
+ ^~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.h:32:52: error: expected initializer before &#39;UM3750&#39;
+ #define _UM3750ISRreceivec(n) void ICACHE_RAM_ATTR UM3750::UM3750ISRreceive_##n(void) { current_receive_index = n; UM3750::UM3750ISRreceive(); }
+                                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.h:35:76: note: in expansion of macro &#39;_UM3750ISRreceivec&#39;
+ #define ISR_RECEIVE_DEFS_CPP _UM3750ISRreceivec(0); _UM3750ISRreceivec(1); _UM3750ISRreceivec(2);
+                                                                            ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:240:1: note: in expansion of macro &#39;ISR_RECEIVE_DEFS_CPP&#39;
+ ISR_RECEIVE_DEFS_CPP
+ ^~~~~~~~~~~~~~~~~~~~
+
+</pre>
+
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library um3750-library claims to run on esp8266 architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp: In member function &#39;void UM3750::enableTransmit(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:32:19: error: &#39;timer1_isr_init&#39; was not declared in this scope
+   timer1_isr_init();
+                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:33:43: error: &#39;timer1_attachInterrupt&#39; was not declared in this scope
+   timer1_attachInterrupt(UM3750ISRtransmit);
+                                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp: In member function &#39;void UM3750::disableTransmit()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:45:27: error: &#39;timer1_detachInterrupt&#39; was not declared in this scope
+    timer1_detachInterrupt();
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp: In member function &#39;void UM3750::transmitCode(UM3750::Code, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:117:16: error: &#39;TIM_DIV16&#39; was not declared in this scope
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_LOOP);
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:117:27: error: &#39;TIM_EDGE&#39; was not declared in this scope
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_LOOP);
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:117:37: error: &#39;TIM_LOOP&#39; was not declared in this scope
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_LOOP);
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:117:45: error: &#39;timer1_enable&#39; was not declared in this scope
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_LOOP);
+                                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:124:65: error: &#39;timer1_write&#39; was not declared in this scope
+  timer1_write((uint32_t) ((code.symbolDurationTime * 5.0) / 3.0));
+                                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp: In static member function &#39;static void UM3750::__digitalWrite(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:155:11: error: &#39;GPOS&#39; was not declared in this scope
+   if(val) GPOS = (1 &lt;&lt; pin);
+           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:156:8: error: &#39;GPOC&#39; was not declared in this scope
+   else GPOC = (1 &lt;&lt; pin);
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:158:11: error: &#39;GP16O&#39; was not declared in this scope
+   if(val) GP16O |= 1;
+           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:159:8: error: &#39;GP16O&#39; was not declared in this scope
+   else GP16O &amp;= ~1;
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp: In static member function &#39;static void UM3750::UM3750ISRtransmit()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/um3750-library/src/UM3750.cpp:172:18: error: &#39;timer1_disable&#39; was not declared in this scope
+   timer1_disable();
+                  ^
+
+</pre>
+
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

@@ -1,0 +1,533 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>Arduino_OAuth - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>Arduino_OAuth</h2>
+				<p>
+					Version: <b>0.1.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/arduino_oauth/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>GetTwitterStatus</pre></th>
+						
+						<th><pre>Tweeter</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+									
+										
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+										
+									
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library ArduinoECCX08 claims to run on samd, megaavr, mbed architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoECCX08/src/ECCX08.cpp: In member function &#39;int ECCX08Class::receiveResponse(void*, size_t)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoECCX08/src/ECCX08.cpp:724:80: error: call of overloaded &#39;requestFrom(uint8_t, size_t, bool)&#39; is ambiguous
+   while (_wire-&gt;requestFrom((uint8_t)_address, (size_t)responseSize, (bool)true) != responseSize &amp;&amp; retries--);
+                                                                                ^
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoECCX08/src/ECCX08.h:24:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoECCX08/src/ECCX08.cpp:22:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/Wire/src/Wire.h:66:13: note: candidate: uint8_t TwoWire::requestFrom(uint8_t, uint8_t, uint8_t)
+     uint8_t requestFrom(uint8_t, uint8_t, uint8_t);
+             ^~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/Wire/src/Wire.h:69:13: note: candidate: uint8_t TwoWire::requestFrom(int, int, int)
+     uint8_t requestFrom(int, int, int);
+             ^~~~~~~~~~~
+
+</pre>
+
+					
+					<h4>examples/GetTwitterStatus</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library ArduinoECCX08 claims to run on samd, megaavr, mbed architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/WiFiNINA/src/WiFiStorage.h:23:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/WiFiNINA/src/WiFi.h:38,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/WiFiNINA/src/WiFiNINA.h:23,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Arduino_OAuth/examples/GetTwitterStatus/GetTwitterStatus.ino:24:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/WiFiNINA/src/utility/wifi_drv.h:293:12: error: &#39;PinStatus&#39; does not name a type
+     static PinStatus digitalRead(uint8_t pin);
+            ^~~~~~~~~
+
+</pre>
+					
+					<h4>examples/Tweeter</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library ArduinoECCX08 claims to run on samd, megaavr, mbed architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/WiFiNINA/src/WiFiStorage.h:23:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/WiFiNINA/src/WiFi.h:38,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/WiFiNINA/src/WiFiNINA.h:23,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Arduino_OAuth/examples/Tweeter/Tweeter.ino:23:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/WiFiNINA/src/utility/wifi_drv.h:293:12: error: &#39;PinStatus&#39; does not name a type
+     static PinStatus digitalRead(uint8_t pin);
+            ^~~~~~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library ArduinoECCX08 claims to run on samd, megaavr, mbed architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+Sketch uses 93182 bytes (0%) of program storage space. Maximum is 16777216 bytes.
+Global variables use 46392 bytes (17%) of dynamic memory, leaving 223944 bytes for local variables. Maximum is 270336 bytes.
+</pre>
+
+					
+					<h4>examples/GetTwitterStatus</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library ArduinoECCX08 claims to run on samd, megaavr, mbed architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+Sketch uses 124960 bytes (0%) of program storage space. Maximum is 16777216 bytes.
+Global variables use 46948 bytes (17%) of dynamic memory, leaving 223388 bytes for local variables. Maximum is 270336 bytes.
+</pre>
+					
+					<h4>examples/Tweeter</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library ArduinoECCX08 claims to run on samd, megaavr, mbed architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+Sketch uses 107914 bytes (0%) of program storage space. Maximum is 16777216 bytes.
+Global variables use 46904 bytes (17%) of dynamic memory, leaving 223432 bytes for local variables. Maximum is 270336 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 11914 bytes (24%) of program storage space. Maximum is 49152 bytes.
+Global variables use 683 bytes (11%) of dynamic memory, leaving 5461 bytes for local variables. Maximum is 6144 bytes.
+</pre>
+
+					
+					<h4>examples/GetTwitterStatus</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">
+</pre>
+					
+					<h4>examples/Tweeter</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 26736 bytes (10%) of program storage space. Maximum is 262144 bytes.
+Global variables use 5752 bytes (17%) of dynamic memory, leaving 27016 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+
+					
+					<h4>examples/GetTwitterStatus</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 70116 bytes (26%) of program storage space. Maximum is 262144 bytes.
+Global variables use 6592 bytes (20%) of dynamic memory, leaving 26176 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+					
+					<h4>examples/Tweeter</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 42100 bytes (16%) of program storage space. Maximum is 262144 bytes.
+Global variables use 6544 bytes (19%) of dynamic memory, leaving 26224 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library ArduinoECCX08 claims to run on samd, megaavr, mbed architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+
+</pre>
+
+					
+					<h4>examples/GetTwitterStatus</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library ArduinoECCX08 claims to run on samd, megaavr, mbed architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiNINA/src/WiFiStorage.h:23:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiNINA/src/WiFi.h:38,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiNINA/src/WiFiNINA.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduino_OAuth/examples/GetTwitterStatus/GetTwitterStatus.ino:24:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiNINA/src/utility/wifi_drv.h:293:12: error: &#39;PinStatus&#39; does not name a type
+     static PinStatus digitalRead(uint8_t pin);
+            ^
+
+</pre>
+					
+					<h4>examples/Tweeter</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library ArduinoECCX08 claims to run on samd, megaavr, mbed architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiNINA/src/WiFiStorage.h:23:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiNINA/src/WiFi.h:38,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiNINA/src/WiFiNINA.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduino_OAuth/examples/Tweeter/Tweeter.ino:23:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiNINA/src/utility/wifi_drv.h:293:12: error: &#39;PinStatus&#39; does not name a type
+     static PinStatus digitalRead(uint8_t pin);
+            ^
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

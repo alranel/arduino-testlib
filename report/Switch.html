@@ -1,0 +1,743 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>Switch - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>Switch</h2>
+				<p>
+					Version: <b>1.2.1</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/switch/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>SwitchCallbackExample</pre></th>
+						
+						<th><pre>SwitchExample</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+									
+										
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+										
+									
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 1670 bytes (5%) of program storage space. Maximum is 32256 bytes.
+Global variables use 36 bytes (1%) of dynamic memory, leaving 2012 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+
+					
+					<h4>examples/SwitchCallbackExample</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 3004 bytes (9%) of program storage space. Maximum is 32256 bytes.
+Global variables use 386 bytes (18%) of dynamic memory, leaving 1662 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+					
+					<h4>examples/SwitchExample</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 3788 bytes (11%) of program storage space. Maximum is 32256 bytes.
+Global variables use 780 bytes (38%) of dynamic memory, leaving 1268 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library AskSinPP claims to run on avr, STM32F1 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/AskSinPP.h:51:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Device.h:9,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/MultiChannelDevice.h:9,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Switch.h:9,
+                 from /tmp/arduino-testlib1417864403/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Storage.h: In member function &#39;uint16_t as::InternalEprom::size()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Storage.h:93:12: error: &#39;E2END&#39; was not declared in this scope
+     return E2END &#43; 1; // last EEPROM address &#43; 1
+            ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Storage.h: In member function &#39;uint8_t as::InternalEprom::getByte(uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Storage.h:112:5: error: &#39;eeprom_read_block&#39; was not declared in this scope
+     eeprom_read_block(&amp;b,(void*)(uintptr_t)addr,1);
+     ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Storage.h:112:5: note: suggested alternative: &#39;pgm_read_float&#39;
+     eeprom_read_block(&amp;b,(void*)(uintptr_t)addr,1);
+     ^~~~~~~~~~~~~~~~~
+     pgm_read_float
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Storage.h: In member function &#39;bool as::InternalEprom::setByte(uint16_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Storage.h:118:5: error: &#39;eeprom_write_block&#39; was not declared in this scope
+     eeprom_write_block(&amp;b,(void*)(uintptr_t)addr,1);
+     ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Storage.h:118:5: note: suggested alternative: &#39;spi_write_blocking&#39;
+     eeprom_write_block(&amp;b,(void*)(uintptr_t)addr,1);
+     ^~~~~~~~~~~~~~~~~~
+     spi_write_blocking
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Storage.h: In member function &#39;bool as::InternalEprom::setData(uint16_t, uint8_t*, uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Storage.h:123:5: error: &#39;eeprom_write_block&#39; was not declared in this scope
+     eeprom_write_block(buf,(void*)(uintptr_t)addr,size);
+     ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Storage.h:123:5: note: suggested alternative: &#39;spi_write_blocking&#39;
+     eeprom_write_block(buf,(void*)(uintptr_t)addr,size);
+     ^~~~~~~~~~~~~~~~~~
+     spi_write_blocking
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Storage.h: In member function &#39;bool as::InternalEprom::getData(uint16_t, uint8_t*, uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Storage.h:128:5: error: &#39;eeprom_read_block&#39; was not declared in this scope
+     eeprom_read_block(buf,(const void*)(uintptr_t)addr,size);
+     ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Storage.h:128:5: note: suggested alternative: &#39;pgm_read_float&#39;
+     eeprom_read_block(buf,(const void*)(uintptr_t)addr,size);
+     ^~~~~~~~~~~~~~~~~
+     pgm_read_float
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Activity.h:11:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/AskSinPP.h:54,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Device.h:9,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/MultiChannelDevice.h:9,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Switch.h:9,
+                 from /tmp/arduino-testlib1417864403/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Radio.h: In member function &#39;void as::CC1101&lt;SPIType&gt;::setIdle()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Radio.h:404:7: error: there are no arguments to &#39;_delay_us&#39; that depend on a template parameter, so a declaration of &#39;_delay_us&#39; must be available [-fpermissive]
+       _delay_us(10);
+       ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Radio.h:404:7: note: (if you use &#39;-fpermissive&#39;, G&#43;&#43; will accept your code, but allowing the use of an undeclared name is deprecated)
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Radio.h: In member function &#39;uint8_t as::CC1101&lt;SPIType&gt;::reset()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Radio.h:446:5: error: there are no arguments to &#39;_delay_us&#39; that depend on a template parameter, so a declaration of &#39;_delay_us&#39; must be available [-fpermissive]
+     _delay_us(50);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Radio.h: In member function &#39;bool as::CC1101&lt;SPIType&gt;::init()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Radio.h:626:5: error: there are no arguments to &#39;_delay_ms&#39; that depend on a template parameter, so a declaration of &#39;_delay_ms&#39; must be available [-fpermissive]
+     _delay_ms(23);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Radio.h: In member function &#39;bool as::CC1101&lt;SPIType&gt;::initReg(uint8_t, uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Radio.h:647:9: error: there are no arguments to &#39;_delay_ms&#39; that depend on a template parameter, so a declaration of &#39;_delay_ms&#39; must be available [-fpermissive]
+         _delay_ms(1);
+         ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Radio.h: In member function &#39;uint8_t as::CC1101&lt;SPIType&gt;::sndData(uint8_t*, uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Radio.h:694:7: error: there are no arguments to &#39;_delay_us&#39; that depend on a template parameter, so a declaration of &#39;_delay_us&#39; must be available [-fpermissive]
+       _delay_us(100);
+       ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Radio.h:708:5: error: there are no arguments to &#39;_delay_ms&#39; that depend on a template parameter, so a declaration of &#39;_delay_ms&#39; must be available [-fpermissive]
+     _delay_ms(10);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Radio.h:710:7: error: there are no arguments to &#39;_delay_ms&#39; that depend on a template parameter, so a declaration of &#39;_delay_ms&#39; must be available [-fpermissive]
+       _delay_ms(350);    // according to ELV, devices get activated every 300ms, so send burst for 360ms
+       ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Radio.h:719:7: error: there are no arguments to &#39;_delay_us&#39; that depend on a template parameter, so a declaration of &#39;_delay_us&#39; must be available [-fpermissive]
+       _delay_us(100);
+       ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Radio.h: In member function &#39;uint8_t as::CC1101&lt;SPIType&gt;::rcvData(uint8_t*, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Radio.h:756:5: error: there are no arguments to &#39;_delay_us&#39; that depend on a template parameter, so a declaration of &#39;_delay_us&#39; must be available [-fpermissive]
+     _delay_us(190);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Radio.h: In member function &#39;void as::Radio&lt;SPIType, GDO0, SENDDELAY, HWRADIO&gt;::MinSendTimeout::waitTimeout()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Radio.h:782:11: error: there are no arguments to &#39;_delay_ms&#39; that depend on a template parameter, so a declaration of &#39;_delay_ms&#39; must be available [-fpermissive]
+           _delay_ms(1);
+           ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Radio.h: In member function &#39;bool as::Radio&lt;SPIType, GDO0, SENDDELAY, HWRADIO&gt;::detectBurst()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Radio.h:876:7: error: there are no arguments to &#39;_delay_ms&#39; that depend on a template parameter, so a declaration of &#39;_delay_ms&#39; must be available [-fpermissive]
+       _delay_ms(3);
+       ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Radio.h: In member function &#39;uint8_t as::Radio&lt;SPIType, GDO0, SENDDELAY, HWRADIO&gt;::read(as::Message&amp;, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Radio.h:931:9: error: there are no arguments to &#39;_delay_ms&#39; that depend on a template parameter, so a declaration of &#39;_delay_ms&#39; must be available [-fpermissive]
+         _delay_ms(50); // wait 50ms
+         ^~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/AskSinPP.h:59:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Device.h:9,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/MultiChannelDevice.h:9,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Switch.h:9,
+                 from /tmp/arduino-testlib1417864403/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Button.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Button.h:17:53: error: &#39;WiringPinMode&#39; has not been declared
+ template &lt;uint8_t OFFSTATE=HIGH,uint8_t ONSTATE=LOW,WiringPinMode MODE=INPUT_PULLUP&gt;
+                                                     ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Button.h: In member function &#39;void as::StateButton&lt;OFFSTATE, ONSTATE, &lt;declaration error&gt; &gt;::init(uint8_t)&#39;:
+/home/ec2-user</pre>
+
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library AskSinPP claims to run on avr, STM32F1 architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/AskSinPP.h:51:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Device.h:9,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/MultiChannelDevice.h:9,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Switch.h:9,
+                 from /tmp/arduino-testlib1417864403/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Storage.h: In member function &#39;uint8_t as::InternalEprom::getByte(uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Storage.h:112:5: error: &#39;eeprom_read_block&#39; was not declared in this scope
+     eeprom_read_block(&amp;b,(void*)(uintptr_t)addr,1);
+     ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Storage.h:112:5: note: suggested alternative: &#39;pgm_read_float&#39;
+     eeprom_read_block(&amp;b,(void*)(uintptr_t)addr,1);
+     ^~~~~~~~~~~~~~~~~
+     pgm_read_float
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Storage.h: In member function &#39;bool as::InternalEprom::setByte(uint16_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Storage.h:118:5: error: &#39;eeprom_write_block&#39; was not declared in this scope
+     eeprom_write_block(&amp;b,(void*)(uintptr_t)addr,1);
+     ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Storage.h: In member function &#39;bool as::InternalEprom::setData(uint16_t, uint8_t*, uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Storage.h:123:5: error: &#39;eeprom_write_block&#39; was not declared in this scope
+     eeprom_write_block(buf,(void*)(uintptr_t)addr,size);
+     ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Storage.h: In member function &#39;bool as::InternalEprom::getData(uint16_t, uint8_t*, uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Storage.h:128:5: error: &#39;eeprom_read_block&#39; was not declared in this scope
+     eeprom_read_block(buf,(const void*)(uintptr_t)addr,size);
+     ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Storage.h:128:5: note: suggested alternative: &#39;pgm_read_float&#39;
+     eeprom_read_block(buf,(const void*)(uintptr_t)addr,size);
+     ^~~~~~~~~~~~~~~~~
+     pgm_read_float
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Alarm.h:9:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Pins.h:6,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/AskSinPP.h:52,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Device.h:9,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/MultiChannelDevice.h:9,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Switch.h:9,
+                 from /tmp/arduino-testlib1417864403/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Link.h: In member function &#39;as::Link* as::Link::select() const&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Link.h:23:19: error: &#39;ATOMIC_RESTORESTATE&#39; was not declared in this scope
+     ATOMIC_BLOCK( ATOMIC_RESTORESTATE ) {
+                   ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Link.h:23:19: note: suggested alternative: &#39;__ATOMIC_RELEASE&#39;
+     ATOMIC_BLOCK( ATOMIC_RESTORESTATE ) {
+                   ^~~~~~~~~~~~~~~~~~~
+                   __ATOMIC_RELEASE
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Link.h:23:5: error: &#39;ATOMIC_BLOCK&#39; was not declared in this scope
+     ATOMIC_BLOCK( ATOMIC_RESTORESTATE ) {
+     ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Link.h:23:5: note: suggested alternative: &#39;ISR_BLOCK&#39;
+     ATOMIC_BLOCK( ATOMIC_RESTORESTATE ) {
+     ^~~~~~~~~~~~
+     ISR_BLOCK
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Link.h: In member function &#39;void as::Link::select(as::Link*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Link.h:31:19: error: &#39;ATOMIC_RESTORESTATE&#39; was not declared in this scope
+     ATOMIC_BLOCK( ATOMIC_RESTORESTATE ) {
+                   ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Link.h:31:19: note: suggested alternative: &#39;__ATOMIC_RELEASE&#39;
+     ATOMIC_BLOCK( ATOMIC_RESTORESTATE ) {
+                   ^~~~~~~~~~~~~~~~~~~
+                   __ATOMIC_RELEASE
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Link.h:31:5: error: &#39;ATOMIC_BLOCK&#39; was not declared in this scope
+     ATOMIC_BLOCK( ATOMIC_RESTORESTATE ) {
+     ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Link.h:31:5: note: suggested alternative: &#39;ISR_BLOCK&#39;
+     ATOMIC_BLOCK( ATOMIC_RESTORESTATE ) {
+     ^~~~~~~~~~~~
+     ISR_BLOCK
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Link.h: In member function &#39;void as::Link::append(as::Link&amp;)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Link.h:38:19: error: &#39;ATOMIC_RESTORESTATE&#39; was not declared in this scope
+     ATOMIC_BLOCK( ATOMIC_RESTORESTATE ) {
+                   ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Link.h:38:19: note: suggested alternative: &#39;__ATOMIC_RELEASE&#39;
+     ATOMIC_BLOCK( ATOMIC_RESTORESTATE ) {
+                   ^~~~~~~~~~~~~~~~~~~
+                   __ATOMIC_RELEASE
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Link.h:38:5: error: &#39;ATOMIC_BLOCK&#39; was not declared in this scope
+     ATOMIC_BLOCK( ATOMIC_RESTORESTATE ) {
+     ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Link.h:38:5: note: suggested alternative: &#39;ISR_BLOCK&#39;
+     ATOMIC_BLOCK( ATOMIC_RESTORESTATE ) {
+     ^~~~~~~~~~~~
+     ISR_BLOCK
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Link.h: In member function &#39;as::Link* as::Link::ending() const&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Link.h:47:19: error: &#39;ATOMIC_RESTORESTATE&#39; was not declared in this scope
+     ATOMIC_BLOCK( ATOMIC_RESTORESTATE ) {
+                   ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Link.h:47:19: note: suggested alternative: &#39;__ATOMIC_RELEASE&#39;
+     ATOMIC_BLOCK( ATOMIC_RESTORESTATE ) {
+                   ^~~~~~~~~~~~~~~~~~~
+                   __ATOMIC_RELEASE
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Link.h:47:5: error: &#39;ATOMIC_BLOCK&#39; was not declared in this scope
+     ATOMIC_BLOCK( ATOMIC_RESTORESTATE ) {
+     ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Link.h:47:5: note: suggested alternative: &#39;ISR_BLOCK&#39;
+     ATOMIC_BLOCK( ATOMIC_RESTORESTATE ) {
+     ^~~~~~~~~~~~
+     ISR_BLOCK
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Link.h: In member function &#39;as::Link* as::Link::unlink()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Link.h:59:19: error: &#39;ATOMIC_RESTORESTATE&#39; was not declared in this scope
+     ATOMIC_BLOCK( ATOMIC_RESTORESTATE ) {
+                   ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Link.h:59:19: note: suggested alternative: &#39;__ATOMIC_RELEASE&#39;
+     ATOMIC_BLOCK( ATOMIC_RESTORESTATE ) {
+                   ^~~~~~~~~~~~~~~~~~~
+                   __ATOMIC_RELEASE
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Link.h:59:5: error: &#39;ATOMIC_BLOCK&#39; was not declared in this scope
+     ATOMIC_BLOCK( ATOMIC_RESTORESTATE ) {
+     ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Link.h:59:5: note: suggested alternative: &#39;ISR_BLOCK&#39;
+     ATOMIC_BLOCK( ATOMIC_RESTORESTATE ) {
+     ^~~~~~~~~~~~
+     ISR_BLOCK
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Link.h: In member function &#39;as::Link* as::Link::remove()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Link.h:71:19: error: &#39;ATOMIC_RESTORESTATE&#39; was not declared in this scope
+     ATOMIC_BLOCK( ATOMIC_RESTORESTATE ) {
+                   ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Link.h:71:19: note: suggested alternative: &#39;__ATOMIC_RELEASE&#39;
+     ATOMIC_BLOCK( ATOMIC_RESTORESTATE ) {
+                   ^~~~~~~~~~~~~~~~~~~
+                   __ATOMIC_RELEASE
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Link.h:71:5: error: &#39;ATOMIC_BLOCK&#39; was not declared in this scope
+     ATOMIC_BLOCK( ATOMIC_RESTORESTATE ) {
+     ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Link.h:71:5: note: suggested alternative: &#39;ISR_BLOCK&#39;
+     ATOMIC_BLOCK( ATOMIC_RESTORESTATE ) {
+     ^~~~~~~~~~~~
+     ISR_BLOCK
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Link.h: In member function &#39;void as::Link::detach()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Link.h:80:19: error: &#39;ATOMIC_RESTORESTATE&#39; was not declared in this scope
+     ATOMIC_BLOCK( ATOMIC_RESTORESTATE ) {
+                   ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Link.h:80:19: note: suggested alternative: &#39;__ATOMIC_RELEASE&#39;
+     ATOMIC_BLOCK( ATOMIC_RESTORESTATE ) {
+                   ^~~~~~~~~~~~~~~~~~~
+                   __ATOMIC_RELEASE
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Link.h:80:5: error: &#39;ATOMIC_BLOCK&#39; was not declared in this scope
+     ATOMIC_BLOCK( A</pre>
+
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library AskSinPP claims to run on avr, STM32F1 architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AskSinPP/AskSinPP.h:51:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Device.h:9,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AskSinPP/MultiChannelDevice.h:9,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Switch.h:9,
+                 from /private/tmp/arduino-testlib4110101078/test/test.ino:1:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Storage.h: In member function &#39;uint16_t as::InternalEprom::size()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Storage.h:93:12: error: &#39;E2END&#39; was not declared in this scope
+     return E2END &#43; 1; // last EEPROM address &#43; 1
+            ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Storage.h: In member function &#39;uint8_t as::InternalEprom::getByte(uint16_t)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Storage.h:112:5: error: &#39;eeprom_read_block&#39; was not declared in this scope
+     eeprom_read_block(&amp;b,(void*)(uintptr_t)addr,1);
+     ^~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Storage.h:112:5: note: suggested alternative: &#39;pgm_read_float&#39;
+     eeprom_read_block(&amp;b,(void*)(uintptr_t)addr,1);
+     ^~~~~~~~~~~~~~~~~
+     pgm_read_float
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Storage.h: In member function &#39;bool as::InternalEprom::setByte(uint16_t, uint8_t)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Storage.h:118:5: error: &#39;eeprom_write_block&#39; was not declared in this scope
+     eeprom_write_block(&amp;b,(void*)(uintptr_t)addr,1);
+     ^~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Storage.h: In member function &#39;bool as::InternalEprom::setData(uint16_t, uint8_t*, uint16_t)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Storage.h:123:5: error: &#39;eeprom_write_block&#39; was not declared in this scope
+     eeprom_write_block(buf,(void*)(uintptr_t)addr,size);
+     ^~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Storage.h: In member function &#39;bool as::InternalEprom::getData(uint16_t, uint8_t*, uint16_t)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Storage.h:128:5: error: &#39;eeprom_read_block&#39; was not declared in this scope
+     eeprom_read_block(buf,(const void*)(uintptr_t)addr,size);
+     ^~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Storage.h:128:5: note: suggested alternative: &#39;pgm_read_float&#39;
+     eeprom_read_block(buf,(const void*)(uintptr_t)addr,size);
+     ^~~~~~~~~~~~~~~~~
+     pgm_read_float
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/samd21.h:69:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd.h:105,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:38,
+                 from /private/var/folders/47/_57rjy4111jc7dfpgjmcc93w0000gp/T/arduino-sketch-B21D4621D2524F3DCBD67251EF55BBE7/sketch/test.ino.cpp:1:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AskSinPP/AlarmClock.h: At global scope:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/samd21g18a.h:487:27: error: expected identifier before &#39;(&#39; token
+ #define RTC               ((Rtc      *)0x40001400UL) /**&lt; \brief (RTC) APB Base Address */
+                           ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AskSinPP/AlarmClock.h:185:7: note: in expansion of macro &#39;RTC&#39;
+ class RTC : public AlarmClock {
+       ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/samd21g18a.h:487:38: error: expected &#39;)&#39; before &#39;*&#39; token
+ #define RTC               ((Rtc      *)0x40001400UL) /**&lt; \brief (RTC) APB Base Address */
+                                      ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AskSinPP/AlarmClock.h:185:7: note: in expansion of macro &#39;RTC&#39;
+ class RTC : public AlarmClock {
+       ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/samd21g18a.h:487:38: error: expected &#39;)&#39; before &#39;*&#39; token
+ #define RTC               ((Rtc      *)0x40001400UL) /**&lt; \brief (RTC) APB Base Address */
+                                      ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AskSinPP/AlarmClock.h:185:7: note: in expansion of macro &#39;RTC&#39;
+ class RTC : public AlarmClock {
+       ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/samd21g18a.h:487:38: error: expected &#39;)&#39; before &#39;*&#39; token
+ #define RTC               ((Rtc      *)0x40001400UL) /**&lt; \brief (RTC) APB Base Address */
+                                      ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AskSinPP/AlarmClock.h:283:8: note: in expansion of macro &#39;RTC&#39;
+ extern RTC rtc;
+        ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/samd21g18a.h:487:38: error: expected &#39;)&#39; before &#39;*&#39; token
+ #define RTC               ((Rtc      *)0x40001400UL) /**&lt; \brief (RTC) APB Base Address */
+                                      ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AskSinPP/AlarmClock.h:283:8: note: in expansion of macro &#39;RTC&#39;
+ extern RTC rtc;
+        ^~~
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Activity.h:11:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AskSinPP/AskSinPP.h:54,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Device.h:9,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AskSinPP/MultiChannelDevice.h:9,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Switch.h:9,
+                 from /private/tmp/arduino-testlib4110101078/test/test.ino:1:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Radio.h: In member function &#39;void as::CC1101&lt;SPIType&gt;::setIdle()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Radio.h:404:7: error: there are no arguments to &#39;_delay_us&#39; that depend on a template parameter, so a declaration of &#39;_delay_us&#39; must be available [-fpermissive]
+       _delay_us(10);
+       ^~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Radio.h:404:7: note: (if you use &#39;-fpermissive&#39;, G&#43;&#43; will accept your code, but allowing the use of an undeclared name is deprecated)
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Radio.h: In member function &#39;uint8_t as::CC1101&lt;SPIType&gt;::reset()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Radio.h:446:5: error: there are no arguments to &#39;_delay_us&#39; that depend on a template parameter, so a declaration of &#39;_delay_us&#39; must be available [-fpermissive]
+     _delay_us(50);
+     ^~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Radio.h: In member function &#39;bool as::CC1101&lt;SPIType&gt;::init()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Radio.h:626:5: error: there are no arguments to &#39;_delay_ms&#39; that depend on a template parameter, so a declaration of &#39;_delay_ms&#39; must be available [-fpermissive]
+     _delay_ms(23);
+     ^~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Radio.h: In member function &#39;bool as::CC1101&lt;SPIType&gt;::initReg(uint8_t, uint8_t, uint8_t)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Radio.h:647:9: error: there are no arguments to &#39;_delay_ms&#39; that depend on a template parameter, so a declaration of &#39;_delay_ms&#39; must be available [-fpermissive]
+         _delay_ms(1);
+         ^~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Radio.h: In member function &#39;uint8_t as::CC1101&lt;SPIType&gt;::sndData(uint8_t*, uint8_t, uint8_t)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Radio.h:694:7: error: there are no arguments to &#39;_delay_us&#39; that depend on a template parameter, so a declaration of &#39;_delay_us&#39; must be available [-fpermissive]
+       _delay_us(100);
+       ^~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AskSinPP/Radio.h:708:5: error: there are n</pre>
+
+					
+					<h4>examples/SwitchCallbackExample</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 13316 bytes (5%) of program storage space. Maximum is 262144 bytes.
+Global variables use 3180 bytes (9%) of dynamic memory, leaving 29588 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+					
+					<h4>examples/SwitchExample</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 14076 bytes (5%) of program storage space. Maximum is 262144 bytes.
+Global variables use 3368 bytes (10%) of dynamic memory, leaving 29400 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP/aes_dec.cpp:26:26: fatal error: avr/pgmspace.h: No such file or directory
+compilation terminated.
+
+</pre>
+
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

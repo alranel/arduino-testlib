@@ -1,0 +1,635 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>AD7173 - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>AD7173</h2>
+				<p>
+					Version: <b>0.5.3</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/ad7173/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>Basic</pre></th>
+						
+						<th><pre>BasicSTM</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+										
+									
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+										
+									
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 1332 bytes (4%) of program storage space. Maximum is 32256 bytes.
+Global variables use 184 bytes (8%) of dynamic memory, leaving 1864 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+
+					
+					<h4>examples/Basic</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 3188 bytes (9%) of program storage space. Maximum is 32256 bytes.
+Global variables use 236 bytes (11%) of dynamic memory, leaving 1812 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+					
+					<h4>examples/BasicSTM</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino: In function &#39;void setup()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino:10:23: error: &#39;AFIO_DEBUG_NONE&#39; was not declared in this scope
+  afio_cfg_debug_ports(AFIO_DEBUG_NONE);// Stop the debug function
+                       ^~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino:10:2: error: &#39;afio_cfg_debug_ports&#39; was not declared in this scope
+  afio_cfg_debug_ports(AFIO_DEBUG_NONE);// Stop the debug function
+  ^~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino:11:10: error: &#39;PA4&#39; was not declared in this scope
+  pinMode(PA4, OUTPUT);
+          ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino:11:10: note: suggested alternative: &#39;A4&#39;
+  pinMode(PA4, OUTPUT);
+          ^~~
+          A4
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino: In function &#39;void loop()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino:82:22: error: &#39;PA6&#39; was not declared in this scope
+   while (digitalRead(PA6) == HIGH) {
+                      ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino:82:22: note: suggested alternative: &#39;A6&#39;
+   while (digitalRead(PA6) == HIGH) {
+                      ^~~
+                      A6
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino:85:32: error: no matching function for call to &#39;AD7173Class::get_data(byte [4], bool)&#39;
+   AD7173.get_data(data[i], true);
+                                ^
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino:6:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AD7173/AD7173.h:297:6: note: candidate: int AD7173Class::get_data(byte*)
+  int get_data(byte *);
+      ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AD7173/AD7173.h:297:6: note:   candidate expects 1 argument, 2 provided
+
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AD7173/AD7173.cpp: In member function &#39;void AD7173Class::init()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AD7173/AD7173.cpp:14:6: error: &#39;class arduino::MbedSPI&#39; has no member named &#39;setDataMode&#39;
+  SPI.setDataMode(SPI_MODE3);
+      ^~~~~~~~~~~
+
+</pre>
+
+					
+					<h4>examples/Basic</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AD7173/AD7173.cpp: In member function &#39;void AD7173Class::init()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AD7173/AD7173.cpp:14:6: error: &#39;class arduino::MbedSPI&#39; has no member named &#39;setDataMode&#39;
+  SPI.setDataMode(SPI_MODE3);
+      ^~~~~~~~~~~
+
+</pre>
+					
+					<h4>examples/BasicSTM</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino:10:23: error: &#39;AFIO_DEBUG_NONE&#39; was not declared in this scope
+  afio_cfg_debug_ports(AFIO_DEBUG_NONE);// Stop the debug function
+                       ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino:10:2: error: &#39;afio_cfg_debug_ports&#39; was not declared in this scope
+  afio_cfg_debug_ports(AFIO_DEBUG_NONE);// Stop the debug function
+  ^~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino:11:10: error: &#39;PA4&#39; was not declared in this scope
+  pinMode(PA4, OUTPUT);
+          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino:11:10: note: suggested alternative: &#39;A4&#39;
+  pinMode(PA4, OUTPUT);
+          ^~~
+          A4
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino:82:22: error: &#39;PA6&#39; was not declared in this scope
+   while (digitalRead(PA6) == HIGH) {
+                      ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino:82:22: note: suggested alternative: &#39;A6&#39;
+   while (digitalRead(PA6) == HIGH) {
+                      ^~~
+                      A6
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino:85:32: error: no matching function for call to &#39;AD7173Class::get_data(byte [4], bool)&#39;
+   AD7173.get_data(data[i], true);
+                                ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino:6:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AD7173/AD7173.h:297:6: note: candidate: int AD7173Class::get_data(byte*)
+  int get_data(byte *);
+      ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AD7173/AD7173.h:297:6: note:   candidate expects 1 argument, 2 provided
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 4942 bytes (10%) of program storage space. Maximum is 49152 bytes.
+Global variables use 195 bytes (3%) of dynamic memory, leaving 5949 bytes for local variables. Maximum is 6144 bytes.
+</pre>
+
+					
+					<h4>examples/Basic</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 6325 bytes (12%) of program storage space. Maximum is 49152 bytes.
+Global variables use 268 bytes (4%) of dynamic memory, leaving 5876 bytes for local variables. Maximum is 6144 bytes.
+</pre>
+					
+					<h4>examples/BasicSTM</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino:10:23: error: &#39;AFIO_DEBUG_NONE&#39; was not declared in this scope
+  afio_cfg_debug_ports(AFIO_DEBUG_NONE);// Stop the debug function
+                       ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino:10:2: error: &#39;afio_cfg_debug_ports&#39; was not declared in this scope
+  afio_cfg_debug_ports(AFIO_DEBUG_NONE);// Stop the debug function
+  ^~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino:11:10: error: &#39;PA4&#39; was not declared in this scope
+  pinMode(PA4, OUTPUT);
+          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino:11:10: note: suggested alternative: &#39;A4&#39;
+  pinMode(PA4, OUTPUT);
+          ^~~
+          A4
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino:82:22: error: &#39;PA6&#39; was not declared in this scope
+   while (digitalRead(PA6) == HIGH) {
+                      ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino:82:22: note: suggested alternative: &#39;A6&#39;
+   while (digitalRead(PA6) == HIGH) {
+                      ^~~
+                      A6
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino:85:32: error: no matching function for call to &#39;AD7173Class::get_data(byte [4], bool)&#39;
+   AD7173.get_data(data[i], true);
+                                ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino:6:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AD7173/AD7173.h:297:6: note: candidate: int AD7173Class::get_data(byte*)
+  int get_data(byte *);
+      ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AD7173/AD7173.h:297:6: note:   candidate expects 1 argument, 2 provided
+
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 13364 bytes (5%) of program storage space. Maximum is 262144 bytes.
+Global variables use 3088 bytes (9%) of dynamic memory, leaving 29680 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+
+					
+					<h4>examples/Basic</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 14668 bytes (5%) of program storage space. Maximum is 262144 bytes.
+Global variables use 3092 bytes (9%) of dynamic memory, leaving 29676 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+					
+					<h4>examples/BasicSTM</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino: In function &#39;void setup()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino:10:23: error: &#39;AFIO_DEBUG_NONE&#39; was not declared in this scope
+  afio_cfg_debug_ports(AFIO_DEBUG_NONE);// Stop the debug function
+                       ^~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino:10:2: error: &#39;afio_cfg_debug_ports&#39; was not declared in this scope
+  afio_cfg_debug_ports(AFIO_DEBUG_NONE);// Stop the debug function
+  ^~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino:11:10: error: &#39;PA4&#39; was not declared in this scope
+  pinMode(PA4, OUTPUT);
+          ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino:11:10: note: suggested alternative: &#39;A4&#39;
+  pinMode(PA4, OUTPUT);
+          ^~~
+          A4
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino: In function &#39;void loop()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino:82:22: error: &#39;PA6&#39; was not declared in this scope
+   while (digitalRead(PA6) == HIGH) {
+                      ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino:82:22: note: suggested alternative: &#39;A6&#39;
+   while (digitalRead(PA6) == HIGH) {
+                      ^~~
+                      A6
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino:85:32: error: no matching function for call to &#39;AD7173Class::get_data(byte [4], bool)&#39;
+   AD7173.get_data(data[i], true);
+                                ^
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino:6:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AD7173/AD7173.h:297:6: note: candidate: int AD7173Class::get_data(byte*)
+  int get_data(byte *);
+      ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AD7173/AD7173.h:297:6: note:   candidate expects 1 argument, 2 provided
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 201322 bytes (15%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 13224 bytes (4%) of dynamic memory, leaving 314456 bytes for local variables. Maximum is 327680 bytes.
+</pre>
+
+					
+					<h4>examples/Basic</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 208398 bytes (15%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 13512 bytes (4%) of dynamic memory, leaving 314168 bytes for local variables. Maximum is 327680 bytes.
+</pre>
+					
+					<h4>examples/BasicSTM</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino:10:23: error: &#39;AFIO_DEBUG_NONE&#39; was not declared in this scope
+  afio_cfg_debug_ports(AFIO_DEBUG_NONE);// Stop the debug function
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino:10:38: error: &#39;afio_cfg_debug_ports&#39; was not declared in this scope
+  afio_cfg_debug_ports(AFIO_DEBUG_NONE);// Stop the debug function
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino:11:10: error: &#39;PA4&#39; was not declared in this scope
+  pinMode(PA4, OUTPUT);
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino:82:22: error: &#39;PA6&#39; was not declared in this scope
+   while (digitalRead(PA6) == HIGH) {
+                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino:85:32: error: no matching function for call to &#39;AD7173Class::get_data(byte [4], bool)&#39;
+   AD7173.get_data(data[i], true);
+                                ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AD7173/examples/BasicSTM/BasicSTM.ino:6:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AD7173/AD7173.h:297:6: note: candidate: int AD7173Class::get_data(byte*)
+  int get_data(byte *);
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AD7173/AD7173.h:297:6: note:   candidate expects 1 argument, 2 provided
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

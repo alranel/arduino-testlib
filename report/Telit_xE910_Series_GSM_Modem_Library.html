@@ -1,0 +1,939 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>Telit xE910 Series GSM Modem Library - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>Telit xE910 Series GSM Modem Library</h2>
+				<p>
+					Version: <b>1.9.6</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/telit-xe910-series-gsm-modem-library/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>test</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.h:26:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:9:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp: In member function &#39;bool xE910_GSM::Power_ON(bool, bool, bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910_Structures.h:9:25: error: &#39;Serial3&#39; was not declared in this scope
+ #define  GSM_Serial     Serial3    /// GSM Serial communication defination.
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:21:2: note: in expansion of macro &#39;GSM_Serial&#39;
+  GSM_Serial.begin(GSM_Serial_Baud);
+  ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910_Structures.h:9:25: note: suggested alternative: &#39;Serial&#39;
+ #define  GSM_Serial     Serial3    /// GSM Serial communication defination.
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:21:2: note: in expansion of macro &#39;GSM_Serial&#39;
+  GSM_Serial.begin(GSM_Serial_Baud);
+  ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp: In member function &#39;bool xE910_GSM::Begin(bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:115:2: error: &#39;DDRJ&#39; was not declared in this scope
+  DDRJ &amp;= 0b11111011; PORTJ |= 0b00000100; // PJ2 - Input / Pull Down [GSM Ring]
+  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:115:2: note: suggested alternative: &#39;DDRB&#39;
+  DDRJ &amp;= 0b11111011; PORTJ |= 0b00000100; // PJ2 - Input / Pull Down [GSM Ring]
+  ^~~~
+  DDRB
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:115:22: error: &#39;PORTJ&#39; was not declared in this scope
+  DDRJ &amp;= 0b11111011; PORTJ |= 0b00000100; // PJ2 - Input / Pull Down [GSM Ring]
+                      ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:115:22: note: suggested alternative: &#39;PORT0&#39;
+  DDRJ &amp;= 0b11111011; PORTJ |= 0b00000100; // PJ2 - Input / Pull Down [GSM Ring]
+                      ^~~~~
+                      PORT0
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.h:26:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:9:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp: In member function &#39;bool xE910_GSM::Connection_Control()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910_Structures.h:9:25: error: &#39;Serial3&#39; was not declared in this scope
+ #define  GSM_Serial     Serial3    /// GSM Serial communication defination.
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1696:9: note: in expansion of macro &#39;GSM_Serial&#39;
+  while (GSM_Serial.available() &gt; 0) {
+         ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910_Structures.h:9:25: note: suggested alternative: &#39;Serial&#39;
+ #define  GSM_Serial     Serial3    /// GSM Serial communication defination.
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1696:9: note: in expansion of macro &#39;GSM_Serial&#39;
+  while (GSM_Serial.available() &gt; 0) {
+         ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910_Structures.h:9:25: error: &#39;Serial3&#39; was not declared in this scope
+ #define  GSM_Serial     Serial3    /// GSM Serial communication defination.
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1704:2: note: in expansion of macro &#39;GSM_Serial&#39;
+  GSM_Serial.print(F(&#34;AT&#43;CGATT?&#34;));
+  ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910_Structures.h:9:25: note: suggested alternative: &#39;Serial&#39;
+ #define  GSM_Serial     Serial3    /// GSM Serial communication defination.
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1704:2: note: in expansion of macro &#39;GSM_Serial&#39;
+  GSM_Serial.print(F(&#34;AT&#43;CGATT?&#34;));
+  ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp: In member function &#39;bool xE910_HARDWARE::Communication(bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1973:14: error: &#39;PORTJ&#39; was not declared in this scope
+  if (_State) PORTJ &amp;= 0b11101111;
+              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1973:14: note: suggested alternative: &#39;PORT0&#39;
+  if (_State) PORTJ &amp;= 0b11101111;
+              ^~~~~
+              PORT0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1976:15: error: &#39;PORTJ&#39; was not declared in this scope
+  if (!_State) PORTJ |= 0b00010000;
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1976:15: note: suggested alternative: &#39;PORT0&#39;
+  if (!_State) PORTJ |= 0b00010000;
+               ^~~~~
+               PORT0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1979:7: error: &#39;PINJ&#39; was not declared in this scope
+  if ((PINJ &amp; (1 &lt;&lt; PINJ4)) == (1 &lt;&lt; PINJ4)) {
+       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1979:7: note: suggested alternative: &#39;PIN0&#39;
+  if ((PINJ &amp; (1 &lt;&lt; PINJ4)) == (1 &lt;&lt; PINJ4)) {
+       ^~~~
+       PIN0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1979:20: error: &#39;PINJ4&#39; was not declared in this scope
+  if ((PINJ &amp; (1 &lt;&lt; PINJ4)) == (1 &lt;&lt; PINJ4)) {
+                    ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1979:20: note: suggested alternative: &#39;PIN4&#39;
+  if ((PINJ &amp; (1 &lt;&lt; PINJ4)) == (1 &lt;&lt; PINJ4)) {
+                    ^~~~~
+                    PIN4
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp: In member function &#39;bool xE910_HARDWARE::PowerMonitor()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1995:7: error: &#39;PINJ&#39; was not declared in this scope
+  if ((PINJ &amp; (1 &lt;&lt; PINJ3)) == (1 &lt;&lt; PINJ3)) {
+       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1995:7: note: suggested alternative: &#39;PIN0&#39;
+  if ((PINJ &amp; (1 &lt;&lt; PINJ3)) == (1 &lt;&lt; PINJ3)) {
+       ^~~~
+       PIN0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1995:20: error: &#39;PINJ3&#39; was not declared in this scope
+  if ((PINJ &amp; (1 &lt;&lt; PINJ3)) == (1 &lt;&lt; PINJ3)) {
+                    ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1995:20: note: suggested alternative: &#39;PIN3&#39;
+  if ((PINJ &amp; (1 &lt;&lt; PINJ3)) == (1 &lt;&lt; PINJ3)) {
+                    ^~~~~
+                    PIN3
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp: In member function &#39;void xE910_HARDWARE::OnOff(uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:2017:2: error: &#39;PORTJ&#39; was not declared in this scope
+  PORTJ |= 0b01000000;
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:2017:2: note: suggested alternative: &#39;PORT0&#39;
+  PORTJ |= 0b01000000;
+  ^~~~~
+  PORT0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp: In member function &#39;void xE910_HARDWARE::ShutDown(uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:2044:2: error: &#39;PORTJ&#39; was not declared in this scope
+  PORTJ |= 0b00100000;
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:2044:2: note: suggested alternative: &#39;PORT0&#39;
+  PORTJ |= 0b00100000;
+  ^~~~~
+  PORT0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp: In member function &#39;void xE910_HARDWARE::Power_Switch(bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:2056:14: error: &#39;PORTH&#39; was not declared in this scope
+  if (_State) PORTH |= 0b00000100;
+              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:2056:14: n</pre>
+
+					
+					<h4>examples/test</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino:10:2: error: &#39;DDRJ&#39; was not declared in this scope
+  DDRJ &amp;= 0b11111011; PORTJ |= 0b00000100; // PJ2 - Input / Pull Down [GSM Ring]
+  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino:10:2: note: suggested alternative: &#39;DDRB&#39;
+  DDRJ &amp;= 0b11111011; PORTJ |= 0b00000100; // PJ2 - Input / Pull Down [GSM Ring]
+  ^~~~
+  DDRB
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino:10:22: error: &#39;PORTJ&#39; was not declared in this scope
+  DDRJ &amp;= 0b11111011; PORTJ |= 0b00000100; // PJ2 - Input / Pull Down [GSM Ring]
+                      ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino:10:22: note: suggested alternative: &#39;PORT0&#39;
+  DDRJ &amp;= 0b11111011; PORTJ |= 0b00000100; // PJ2 - Input / Pull Down [GSM Ring]
+                      ^~~~~
+                      PORT0
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.h:26:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino:2:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910_Structures.h:9:25: error: &#39;Serial3&#39; was not declared in this scope
+ #define  GSM_Serial     Serial3    /// GSM Serial communication defination.
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino:26:9: note: in expansion of macro &#39;GSM_Serial&#39;
+         GSM_Serial.print(&#34;AT&#43;COPS?\r\n&#34;);
+         ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910_Structures.h:9:25: note: suggested alternative: &#39;Serial&#39;
+ #define  GSM_Serial     Serial3    /// GSM Serial communication defination.
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino:26:9: note: in expansion of macro &#39;GSM_Serial&#39;
+         GSM_Serial.print(&#34;AT&#43;COPS?\r\n&#34;);
+         ^~~~~~~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp: In member function &#39;bool xE910_GSM::Begin(bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:115:2: error: &#39;DDRJ&#39; was not declared in this scope
+  DDRJ &amp;= 0b11111011; PORTJ |= 0b00000100; // PJ2 - Input / Pull Down [GSM Ring]
+  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:115:2: note: suggested alternative: &#39;DIR&#39;
+  DDRJ &amp;= 0b11111011; PORTJ |= 0b00000100; // PJ2 - Input / Pull Down [GSM Ring]
+  ^~~~
+  DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:115:22: error: &#39;PORTJ&#39; was not declared in this scope
+  DDRJ &amp;= 0b11111011; PORTJ |= 0b00000100; // PJ2 - Input / Pull Down [GSM Ring]
+                      ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp: In member function &#39;bool xE910_HARDWARE::Communication(bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1973:14: error: &#39;PORTJ&#39; was not declared in this scope
+  if (_State) PORTJ &amp;= 0b11101111;
+              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1976:15: error: &#39;PORTJ&#39; was not declared in this scope
+  if (!_State) PORTJ |= 0b00010000;
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1979:7: error: &#39;PINJ&#39; was not declared in this scope
+  if ((PINJ &amp; (1 &lt;&lt; PINJ4)) == (1 &lt;&lt; PINJ4)) {
+       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1979:7: note: suggested alternative: &#39;SING&#39;
+  if ((PINJ &amp; (1 &lt;&lt; PINJ4)) == (1 &lt;&lt; PINJ4)) {
+       ^~~~
+       SING
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1979:20: error: &#39;PINJ4&#39; was not declared in this scope
+  if ((PINJ &amp; (1 &lt;&lt; PINJ4)) == (1 &lt;&lt; PINJ4)) {
+                    ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp: In member function &#39;bool xE910_HARDWARE::PowerMonitor()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1995:7: error: &#39;PINJ&#39; was not declared in this scope
+  if ((PINJ &amp; (1 &lt;&lt; PINJ3)) == (1 &lt;&lt; PINJ3)) {
+       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1995:7: note: suggested alternative: &#39;SING&#39;
+  if ((PINJ &amp; (1 &lt;&lt; PINJ3)) == (1 &lt;&lt; PINJ3)) {
+       ^~~~
+       SING
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1995:20: error: &#39;PINJ3&#39; was not declared in this scope
+  if ((PINJ &amp; (1 &lt;&lt; PINJ3)) == (1 &lt;&lt; PINJ3)) {
+                    ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1995:20: note: suggested alternative: &#39;PIN_A3&#39;
+  if ((PINJ &amp; (1 &lt;&lt; PINJ3)) == (1 &lt;&lt; PINJ3)) {
+                    ^~~~~
+                    PIN_A3
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp: In member function &#39;void xE910_HARDWARE::OnOff(uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:2017:2: error: &#39;PORTJ&#39; was not declared in this scope
+  PORTJ |= 0b01000000;
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp: In member function &#39;void xE910_HARDWARE::ShutDown(uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:2044:2: error: &#39;PORTJ&#39; was not declared in this scope
+  PORTJ |= 0b00100000;
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp: In member function &#39;void xE910_HARDWARE::Power_Switch(bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:2056:14: error: &#39;PORTH&#39; was not declared in this scope
+  if (_State) PORTH |= 0b00000100;
+              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:2056:14: note: suggested alternative: &#39;ERROR_TH&#39;
+  if (_State) PORTH |= 0b00000100;
+              ^~~~~
+              ERROR_TH
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:2059:15: error: &#39;PORTH&#39; was not declared in this scope
+  if (!_State) PORTH &amp;= 0b11111011;
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:2059:15: note: suggested alternative: &#39;ERROR_TH&#39;
+  if (!_State) PORTH &amp;= 0b11111011;
+               ^~~~~
+               ERROR_TH
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp: In member function &#39;void xE910_HARDWARE::LED(bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:2065:14: error: &#39;PORTH&#39; was not declared in this scope
+  if (_State) PORTH &amp;= 0b11101111;
+              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:2065:14: note: suggested alternative: &#39;ERROR_TH&#39;
+  if (_State) PORTH &amp;= 0b11101111;
+              ^~~~~
+              ERROR_TH
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:2068:15: error: &#39;PORTH&#39; was not declared in this scope
+  if (!_State) PORTH |= 0b00010000;
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:2068:15: note: suggested alternative: &#39;ERROR_TH&#39;
+  if (!_State) PORTH |= 0b00010000;
+               ^~~~~
+               ERROR_TH
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/String.h:29:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:27,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.h:15,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:9:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp: In member function &#39;uint16_t xE910_AT::SA(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:4796:7: error: expected unqualified-id before numeric constant
+  bool _N = false;
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:4812:50: error: lvalue required as left operand of assignment
+    if (_Serial_Buffer[_Read_Order] == &#39;\n&#39;) _N = true;
+                                                  ^~~~
+
+</pre>
+
+					
+					<h4>examples/test</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino:112:5: error: expected constructor, destructor, or type conversion before &#39;(&#39; token
+ ISR(PCINT1_vect) { // GSM Ring Interrupt
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino:10:2: error: &#39;DDRJ&#39; was not declared in this scope
+  DDRJ &amp;= 0b11111011; PORTJ |= 0b00000100; // PJ2 - Input / Pull Down [GSM Ring]
+  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino:10:2: note: suggested alternative: &#39;DIR&#39;
+  DDRJ &amp;= 0b11111011; PORTJ |= 0b00000100; // PJ2 - Input / Pull Down [GSM Ring]
+  ^~~~
+  DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino:10:22: error: &#39;PORTJ&#39; was not declared in this scope
+  DDRJ &amp;= 0b11111011; PORTJ |= 0b00000100; // PJ2 - Input / Pull Down [GSM Ring]
+                      ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino:79:2: error: &#39;cli&#39; was not declared in this scope
+  cli();
+  ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino:80:2: error: &#39;PCICR&#39; was not declared in this scope
+  PCICR |= 0b00000111; // Set All Interrupt
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino:81:2: error: &#39;PCMSK1&#39; was not declared in this scope
+  PCMSK1 |= 0b00001000; // GM Ring Interrupt Defination
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino:81:2: note: suggested alternative: &#39;PWM_1&#39;
+  PCMSK1 |= 0b00001000; // GM Ring Interrupt Defination
+  ^~~~~~
+  PWM_1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino:82:2: error: &#39;sei&#39; was not declared in this scope
+  sei();
+  ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino:112:4: error: expected constructor, destructor, or type conversion before &#39;(&#39; token
+ ISR(PCINT1_vect) { // GSM Ring Interrupt
+    ^
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.h:26:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:9:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp: In member function &#39;bool xE910_GSM::Power_ON(bool, bool, bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910_Structures.h:9:25: error: &#39;Serial3&#39; was not declared in this scope
+ #define  GSM_Serial     Serial3    /// GSM Serial communication defination.
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:21:2: note: in expansion of macro &#39;GSM_Serial&#39;
+  GSM_Serial.begin(GSM_Serial_Baud);
+  ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910_Structures.h:9:25: note: suggested alternative: &#39;Serial1&#39;
+ #define  GSM_Serial     Serial3    /// GSM Serial communication defination.
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:21:2: note: in expansion of macro &#39;GSM_Serial&#39;
+  GSM_Serial.begin(GSM_Serial_Baud);
+  ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp: In member function &#39;bool xE910_GSM::Begin(bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:115:2: error: &#39;DDRJ&#39; was not declared in this scope
+  DDRJ &amp;= 0b11111011; PORTJ |= 0b00000100; // PJ2 - Input / Pull Down [GSM Ring]
+  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:115:2: note: suggested alternative: &#39;DDRD&#39;
+  DDRJ &amp;= 0b11111011; PORTJ |= 0b00000100; // PJ2 - Input / Pull Down [GSM Ring]
+  ^~~~
+  DDRD
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:115:22: error: &#39;PORTJ&#39; was not declared in this scope
+  DDRJ &amp;= 0b11111011; PORTJ |= 0b00000100; // PJ2 - Input / Pull Down [GSM Ring]
+                      ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:115:22: note: suggested alternative: &#39;PORTD&#39;
+  DDRJ &amp;= 0b11111011; PORTJ |= 0b00000100; // PJ2 - Input / Pull Down [GSM Ring]
+                      ^~~~~
+                      PORTD
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.h:26:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:9:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp: In member function &#39;bool xE910_GSM::Connection_Control()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910_Structures.h:9:25: error: &#39;Serial3&#39; was not declared in this scope
+ #define  GSM_Serial     Serial3    /// GSM Serial communication defination.
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1696:9: note: in expansion of macro &#39;GSM_Serial&#39;
+  while (GSM_Serial.available() &gt; 0) {
+         ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910_Structures.h:9:25: note: suggested alternative: &#39;Serial1&#39;
+ #define  GSM_Serial     Serial3    /// GSM Serial communication defination.
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1696:9: note: in expansion of macro &#39;GSM_Serial&#39;
+  while (GSM_Serial.available() &gt; 0) {
+         ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910_Structures.h:9:25: error: &#39;Serial3&#39; was not declared in this scope
+ #define  GSM_Serial     Serial3    /// GSM Serial communication defination.
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1704:2: note: in expansion of macro &#39;GSM_Serial&#39;
+  GSM_Serial.print(F(&#34;AT&#43;CGATT?&#34;));
+  ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910_Structures.h:9:25: note: suggested alternative: &#39;Serial1&#39;
+ #define  GSM_Serial     Serial3    /// GSM Serial communication defination.
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1704:2: note: in expansion of macro &#39;GSM_Serial&#39;
+  GSM_Serial.print(F(&#34;AT&#43;CGATT?&#34;));
+  ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp: In member function &#39;bool xE910_HARDWARE::Communication(bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1973:14: error: &#39;PORTJ&#39; was not declared in this scope
+  if (_State) PORTJ &amp;= 0b11101111;
+              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1973:14: note: suggested alternative: &#39;PORTD&#39;
+  if (_State) PORTJ &amp;= 0b11101111;
+              ^~~~~
+              PORTD
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1976:15: error: &#39;PORTJ&#39; was not declared in this scope
+  if (!_State) PORTJ |= 0b00010000;
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1976:15: note: suggested alternative: &#39;PORTD&#39;
+  if (!_State) PORTJ |= 0b00010000;
+               ^~~~~
+               PORTD
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1979:7: error: &#39;PINJ&#39; was not declared in this scope
+  if ((PINJ &amp; (1 &lt;&lt; PINJ4)) == (1 &lt;&lt; PINJ4)) {
+       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1979:7: note: suggested alternative: &#39;PIN0&#39;
+  if ((PINJ &amp; (1 &lt;&lt; PINJ4)) == (1 &lt;&lt; PINJ4)) {
+       ^~~~
+       PIN0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1979:20: error: &#39;PINJ4&#39; was not declared in this scope
+  if ((PINJ &amp; (1 &lt;&lt; PINJ4)) == (1 &lt;&lt; PINJ4)) {
+                    ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1979:20: note: suggested alternative: &#39;PIN4&#39;
+  if ((PINJ &amp; (1 &lt;&lt; PINJ4)) == (1 &lt;&lt; PINJ4)) {
+                    ^~~~~
+                    PIN4
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp: In member function &#39;bool xE910_HARDWARE::PowerMonitor()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1995:7: error: &#39;PINJ&#39; was not declared in this scope
+  if ((PINJ &amp; (1 &lt;&lt; PINJ3)) == (1 &lt;&lt; PINJ3)) {
+       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1995:7: note: suggested alternative: &#39;PIN0&#39;
+  if ((PINJ &amp; (1 &lt;&lt; PINJ3)) == (1 &lt;&lt; PINJ3)) {
+       ^~~~
+       PIN0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1995:20: error: &#39;PINJ3&#39; was not declared in this scope
+  if ((PINJ &amp; (1 &lt;&lt; PINJ3)) == (1 &lt;&lt; PINJ3)) {
+                    ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1995:20: note: suggested alternative: &#39;PIN3&#39;
+  if ((PINJ &amp; (1 &lt;&lt; PINJ3)) == (1 &lt;&lt; PINJ3)) {
+                    ^~~~~
+                    PIN3
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp: In member function &#39;void xE910_HARDWARE::OnOff(uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:2017:2: error: &#39;PORTJ&#39; was not declared in this scope
+  PORTJ |= 0b01000000;
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:2017:2: note: suggested alternative: &#39;PORTD&#39;
+  PORTJ |= 0b01000000;
+  ^~~~~
+  PORTD
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp: In member function &#39;void xE910_HARDWARE::ShutDown(uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:2044:2: error: &#39;PORTJ&#39; was not declared in this scope
+  PORTJ |= 0b00100000;
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:2044:2: note: suggested alternative: &#39;PORTD&#39;
+  PORTJ |= 0b00100000;
+  ^~~~~
+  PORTD
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp: In member function &#39;void xE910_HARDWARE::Power_Switch(bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:2056:14: error: &#39;PORTH&#39; was not declared in this scope
+  if (_State) PORTH |= 0b00000100;
+              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:2056:14</pre>
+
+					
+					<h4>examples/test</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino:10:2: error: &#39;DDRJ&#39; was not declared in this scope
+  DDRJ &amp;= 0b11111011; PORTJ |= 0b00000100; // PJ2 - Input / Pull Down [GSM Ring]
+  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino:10:2: note: suggested alternative: &#39;DDRD&#39;
+  DDRJ &amp;= 0b11111011; PORTJ |= 0b00000100; // PJ2 - Input / Pull Down [GSM Ring]
+  ^~~~
+  DDRD
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino:10:22: error: &#39;PORTJ&#39; was not declared in this scope
+  DDRJ &amp;= 0b11111011; PORTJ |= 0b00000100; // PJ2 - Input / Pull Down [GSM Ring]
+                      ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino:10:22: note: suggested alternative: &#39;PORTD&#39;
+  DDRJ &amp;= 0b11111011; PORTJ |= 0b00000100; // PJ2 - Input / Pull Down [GSM Ring]
+                      ^~~~~
+                      PORTD
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.h:26:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino:2:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910_Structures.h:9:25: error: &#39;Serial3&#39; was not declared in this scope
+ #define  GSM_Serial     Serial3    /// GSM Serial communication defination.
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino:26:9: note: in expansion of macro &#39;GSM_Serial&#39;
+         GSM_Serial.print(&#34;AT&#43;COPS?\r\n&#34;);
+         ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910_Structures.h:9:25: note: suggested alternative: &#39;Serial1&#39;
+ #define  GSM_Serial     Serial3    /// GSM Serial communication defination.
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino:26:9: note: in expansion of macro &#39;GSM_Serial&#39;
+         GSM_Serial.print(&#34;AT&#43;COPS?\r\n&#34;);
+         ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino:80:2: error: &#39;PCICR&#39; was not declared in this scope
+  PCICR |= 0b00000111; // Set All Interrupt
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino:81:2: error: &#39;PCMSK1&#39; was not declared in this scope
+  PCMSK1 |= 0b00001000; // GM Ring Interrupt Defination
+  ^~~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.h:26:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:9:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp: In member function &#39;bool xE910_GSM::Power_ON(bool, bool, bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910_Structures.h:9:25: error: &#39;Serial3&#39; was not declared in this scope
+ #define  GSM_Serial     Serial3    /// GSM Serial communication defination.
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:21:2: note: in expansion of macro &#39;GSM_Serial&#39;
+  GSM_Serial.begin(GSM_Serial_Baud);
+  ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910_Structures.h:9:25: note: suggested alternative: &#39;Serial_&#39;
+ #define  GSM_Serial     Serial3    /// GSM Serial communication defination.
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:21:2: note: in expansion of macro &#39;GSM_Serial&#39;
+  GSM_Serial.begin(GSM_Serial_Baud);
+  ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp: In member function &#39;bool xE910_GSM::Begin(bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:115:2: error: &#39;DDRJ&#39; was not declared in this scope
+  DDRJ &amp;= 0b11111011; PORTJ |= 0b00000100; // PJ2 - Input / Pull Down [GSM Ring]
+  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:115:22: error: &#39;PORTJ&#39; was not declared in this scope
+  DDRJ &amp;= 0b11111011; PORTJ |= 0b00000100; // PJ2 - Input / Pull Down [GSM Ring]
+                      ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:115:22: note: suggested alternative: &#39;PORTC&#39;
+  DDRJ &amp;= 0b11111011; PORTJ |= 0b00000100; // PJ2 - Input / Pull Down [GSM Ring]
+                      ^~~~~
+                      PORTC
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.h:26:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:9:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp: In member function &#39;bool xE910_GSM::Connection_Control()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910_Structures.h:9:25: error: &#39;Serial3&#39; was not declared in this scope
+ #define  GSM_Serial     Serial3    /// GSM Serial communication defination.
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1696:9: note: in expansion of macro &#39;GSM_Serial&#39;
+  while (GSM_Serial.available() &gt; 0) {
+         ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910_Structures.h:9:25: note: suggested alternative: &#39;Serial_&#39;
+ #define  GSM_Serial     Serial3    /// GSM Serial communication defination.
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1696:9: note: in expansion of macro &#39;GSM_Serial&#39;
+  while (GSM_Serial.available() &gt; 0) {
+         ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910_Structures.h:9:25: error: &#39;Serial3&#39; was not declared in this scope
+ #define  GSM_Serial     Serial3    /// GSM Serial communication defination.
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1704:2: note: in expansion of macro &#39;GSM_Serial&#39;
+  GSM_Serial.print(F(&#34;AT&#43;CGATT?&#34;));
+  ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910_Structures.h:9:25: note: suggested alternative: &#39;Serial_&#39;
+ #define  GSM_Serial     Serial3    /// GSM Serial communication defination.
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1704:2: note: in expansion of macro &#39;GSM_Serial&#39;
+  GSM_Serial.print(F(&#34;AT&#43;CGATT?&#34;));
+  ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp: In member function &#39;bool xE910_HARDWARE::Communication(bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1973:14: error: &#39;PORTJ&#39; was not declared in this scope
+  if (_State) PORTJ &amp;= 0b11101111;
+              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1973:14: note: suggested alternative: &#39;PORTC&#39;
+  if (_State) PORTJ &amp;= 0b11101111;
+              ^~~~~
+              PORTC
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1976:15: error: &#39;PORTJ&#39; was not declared in this scope
+  if (!_State) PORTJ |= 0b00010000;
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1976:15: note: suggested alternative: &#39;PORTC&#39;
+  if (!_State) PORTJ |= 0b00010000;
+               ^~~~~
+               PORTC
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1979:7: error: &#39;PINJ&#39; was not declared in this scope
+  if ((PINJ &amp; (1 &lt;&lt; PINJ4)) == (1 &lt;&lt; PINJ4)) {
+       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1979:7: note: suggested alternative: &#39;SING&#39;
+  if ((PINJ &amp; (1 &lt;&lt; PINJ4)) == (1 &lt;&lt; PINJ4)) {
+       ^~~~
+       SING
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1979:20: error: &#39;PINJ4&#39; was not declared in this scope
+  if ((PINJ &amp; (1 &lt;&lt; PINJ4)) == (1 &lt;&lt; PINJ4)) {
+                    ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1979:20: note: suggested alternative: &#39;PIN_A4&#39;
+  if ((PINJ &amp; (1 &lt;&lt; PINJ4)) == (1 &lt;&lt; PINJ4)) {
+                    ^~~~~
+                    PIN_A4
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp: In member function &#39;bool xE910_HARDWARE::PowerMonitor()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1995:7: error: &#39;PINJ&#39; was not declared in this scope
+  if ((PINJ &amp; (1 &lt;&lt; PINJ3)) == (1 &lt;&lt; PINJ3)) {
+       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1995:7: note: suggested alternative: &#39;SING&#39;
+  if ((PINJ &amp; (1 &lt;&lt; PINJ3)) == (1 &lt;&lt; PINJ3)) {
+       ^~~~
+       SING
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1995:20: error: &#39;PINJ3&#39; was not declared in this scope
+  if ((PINJ &amp; (1 &lt;&lt; PINJ3)) == (1 &lt;&lt; PINJ3)) {
+                    ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:1995:20: note: suggested alternative: &#39;PIN_A3&#39;
+  if ((PINJ &amp; (1 &lt;&lt; PINJ3)) == (1 &lt;&lt; PINJ3)) {
+                    ^~~~~
+                    PIN_A3
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp: In member function &#39;void xE910_HARDWARE::OnOff(uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:2017:2: error: &#39;PORTJ&#39; was not declared in this scope
+  PORTJ |= 0b01000000;
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:2017:2: note: suggested alternative: &#39;PORTC&#39;
+  PORTJ |= 0b01000000;
+  ^~~~~
+  PORTC
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp: In member function &#39;void xE910_HARDWARE::ShutDown(uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:2044:2: error: &#39;PORTJ&#39; was not declared in this scope
+  PORTJ |= 0b00100000;
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:2044:2: note: suggested alternative: &#39;PORTC&#39;
+  PORTJ |= 0b00100000;
+  ^~~~~
+  PORTC
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp: In member function &#39;void xE910_HARDWARE::Power_Switch(bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:2056:14: error: &#39;PORTH&#39; was not declared in this scope
+  if (_State) PORTH |= 0b00000100;
+              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:2056:14: note: suggested alternative: &#39;PORTC&#39;
+  if (_State) PORTH |= 0b00000100;
+              ^~~~~
+              PORTC
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.cpp:2059:15: error: </pre>
+
+					
+					<h4>examples/test</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino:112:5: error: expected constructor, destructor, or type conversion before &#39;(&#39; token
+ ISR(PCINT1_vect) { // GSM Ring Interrupt
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino:10:2: error: &#39;DDRJ&#39; was not declared in this scope
+  DDRJ &amp;= 0b11111011; PORTJ |= 0b00000100; // PJ2 - Input / Pull Down [GSM Ring]
+  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino:10:22: error: &#39;PORTJ&#39; was not declared in this scope
+  DDRJ &amp;= 0b11111011; PORTJ |= 0b00000100; // PJ2 - Input / Pull Down [GSM Ring]
+                      ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino:10:22: note: suggested alternative: &#39;PORTC&#39;
+  DDRJ &amp;= 0b11111011; PORTJ |= 0b00000100; // PJ2 - Input / Pull Down [GSM Ring]
+                      ^~~~~
+                      PORTC
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.h:26:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino:2:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910_Structures.h:9:25: error: &#39;Serial3&#39; was not declared in this scope
+ #define  GSM_Serial     Serial3    /// GSM Serial communication defination.
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino:26:9: note: in expansion of macro &#39;GSM_Serial&#39;
+         GSM_Serial.print(&#34;AT&#43;COPS?\r\n&#34;);
+         ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910_Structures.h:9:25: note: suggested alternative: &#39;Serial_&#39;
+ #define  GSM_Serial     Serial3    /// GSM Serial communication defination.
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino:26:9: note: in expansion of macro &#39;GSM_Serial&#39;
+         GSM_Serial.print(&#34;AT&#43;COPS?\r\n&#34;);
+         ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino:79:2: error: &#39;cli&#39; was not declared in this scope
+  cli();
+  ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino:79:2: note: suggested alternative: &#39;Gclk&#39;
+  cli();
+  ^~~
+  Gclk
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino:80:2: error: &#39;PCICR&#39; was not declared in this scope
+  PCICR |= 0b00000111; // Set All Interrupt
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino:81:2: error: &#39;PCMSK1&#39; was not declared in this scope
+  PCMSK1 |= 0b00001000; // GM Ring Interrupt Defination
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino:81:2: note: suggested alternative: &#39;SCK1&#39;
+  PCMSK1 |= 0b00001000; // GM Ring Interrupt Defination
+  ^~~~~~
+  SCK1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino:82:2: error: &#39;sei&#39; was not declared in this scope
+  sei();
+  ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino:112:4: error: expected constructor, destructor, or type conversion before &#39;(&#39; token
+ ISR(PCINT1_vect) { // GSM Ring Interrupt
+    ^
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /tmp/arduino-testlib2972521296/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.h:19:26: fatal error: avr/pgmspace.h: No such file or directory
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/test</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/examples/test/test.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_xE910_Series_GSM_Modem_Library/src/Telit_xE910.h:19:26: fatal error: avr/pgmspace.h: No such file or directory
+compilation terminated.
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

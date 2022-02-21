@@ -1,0 +1,817 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>fastIO - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>fastIO</h2>
+				<p>
+					Version: <b>1.1.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/fastio/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>fastIOspeedTest</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 444 bytes (1%) of program storage space. Maximum is 32256 bytes.
+Global variables use 9 bytes (0%) of dynamic memory, leaving 2039 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+
+					
+					<h4>examples/fastIOspeedTest</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 3786 bytes (11%) of program storage space. Maximum is 32256 bytes.
+Global variables use 212 bytes (10%) of dynamic memory, leaving 1836 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library fastIO claims to run on avr architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp: In function &#39;void fastPinMode(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:19:7: error: &#39;DDRD&#39; was not declared in this scope
+       DDRD  |= mask[pin];
+       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:19:7: note: suggested alternative: &#39;DIR&#39;
+       DDRD  |= mask[pin];
+       ^~~~
+       DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:21:23: error: &#39;PORTD&#39; was not declared in this scope
+       (mode &amp; 0x02) ? PORTD |= mask[pin] : PORTD &amp;= ~mask[pin];
+                       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:22:7: error: &#39;DDRD&#39; was not declared in this scope
+       DDRD  &amp;= ~mask[pin];
+       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:22:7: note: suggested alternative: &#39;DIR&#39;
+       DDRD  &amp;= ~mask[pin];
+       ^~~~
+       DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:33:7: error: &#39;DDRB&#39; was not declared in this scope
+       DDRB  |= mask[pin];
+       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:33:7: note: suggested alternative: &#39;DIR&#39;
+       DDRB  |= mask[pin];
+       ^~~~
+       DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:35:23: error: &#39;PORTB&#39; was not declared in this scope
+       (mode &amp; 0x02) ? PORTB |= mask[pin] : PORTB &amp;= ~mask[pin];
+                       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:36:7: error: &#39;DDRB&#39; was not declared in this scope
+       DDRB  &amp;= ~mask[pin];
+       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:36:7: note: suggested alternative: &#39;DIR&#39;
+       DDRB  &amp;= ~mask[pin];
+       ^~~~
+       DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:47:7: error: &#39;DDRC&#39; was not declared in this scope
+       DDRC  |= mask[pin];
+       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:47:7: note: suggested alternative: &#39;DIR&#39;
+       DDRC  |= mask[pin];
+       ^~~~
+       DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:49:23: error: &#39;PORTC&#39; was not declared in this scope
+       (mode &amp; 0x02) ? PORTC |= mask[pin] : PORTC &amp;= ~mask[pin];
+                       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:50:7: error: &#39;DDRC&#39; was not declared in this scope
+       DDRC  &amp;= ~mask[pin];
+       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:50:7: note: suggested alternative: &#39;DIR&#39;
+       DDRC  &amp;= ~mask[pin];
+       ^~~~
+       DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp: In function &#39;void fastDigitalWrite(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:65:13: error: &#39;PORTD&#39; was not declared in this scope
+     state ? PORTD |= mask[pin] : PORTD &amp;= ~mask[pin];
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:70:13: error: &#39;PORTB&#39; was not declared in this scope
+     state ? PORTB |= mask[pin] : PORTB &amp;= ~mask[pin];
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:75:13: error: &#39;PORTC&#39; was not declared in this scope
+     state ? PORTC |= mask[pin] : PORTC &amp;= ~mask[pin];
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp: In function &#39;uint8_t fastDigitalRead(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:85:13: error: &#39;PIND&#39; was not declared in this scope
+     return (PIND &amp; mask[pin]) ? 1 : 0;
+             ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:85:13: note: suggested alternative: &#39;SING&#39;
+     return (PIND &amp; mask[pin]) ? 1 : 0;
+             ^~~~
+             SING
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:90:13: error: &#39;PINB&#39; was not declared in this scope
+     return (PINB &amp; mask[pin]) ? 1 : 0;
+             ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:90:13: note: suggested alternative: &#39;SING&#39;
+     return (PINB &amp; mask[pin]) ? 1 : 0;
+             ^~~~
+             SING
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:95:13: error: &#39;PINC&#39; was not declared in this scope
+     return (PINC &amp; mask[pin]) ? 1 : 0;
+             ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:95:13: note: suggested alternative: &#39;NC&#39;
+     return (PINC &amp; mask[pin]) ? 1 : 0;
+             ^~~~
+             NC
+
+</pre>
+
+					
+					<h4>examples/fastIOspeedTest</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library fastIO claims to run on avr architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp: In function &#39;void fastPinMode(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:19:7: error: &#39;DDRD&#39; was not declared in this scope
+       DDRD  |= mask[pin];
+       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:19:7: note: suggested alternative: &#39;DIR&#39;
+       DDRD  |= mask[pin];
+       ^~~~
+       DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:21:23: error: &#39;PORTD&#39; was not declared in this scope
+       (mode &amp; 0x02) ? PORTD |= mask[pin] : PORTD &amp;= ~mask[pin];
+                       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:22:7: error: &#39;DDRD&#39; was not declared in this scope
+       DDRD  &amp;= ~mask[pin];
+       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:22:7: note: suggested alternative: &#39;DIR&#39;
+       DDRD  &amp;= ~mask[pin];
+       ^~~~
+       DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:33:7: error: &#39;DDRB&#39; was not declared in this scope
+       DDRB  |= mask[pin];
+       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:33:7: note: suggested alternative: &#39;DIR&#39;
+       DDRB  |= mask[pin];
+       ^~~~
+       DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:35:23: error: &#39;PORTB&#39; was not declared in this scope
+       (mode &amp; 0x02) ? PORTB |= mask[pin] : PORTB &amp;= ~mask[pin];
+                       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:36:7: error: &#39;DDRB&#39; was not declared in this scope
+       DDRB  &amp;= ~mask[pin];
+       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:36:7: note: suggested alternative: &#39;DIR&#39;
+       DDRB  &amp;= ~mask[pin];
+       ^~~~
+       DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:47:7: error: &#39;DDRC&#39; was not declared in this scope
+       DDRC  |= mask[pin];
+       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:47:7: note: suggested alternative: &#39;DIR&#39;
+       DDRC  |= mask[pin];
+       ^~~~
+       DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:49:23: error: &#39;PORTC&#39; was not declared in this scope
+       (mode &amp; 0x02) ? PORTC |= mask[pin] : PORTC &amp;= ~mask[pin];
+                       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:50:7: error: &#39;DDRC&#39; was not declared in this scope
+       DDRC  &amp;= ~mask[pin];
+       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:50:7: note: suggested alternative: &#39;DIR&#39;
+       DDRC  &amp;= ~mask[pin];
+       ^~~~
+       DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp: In function &#39;void fastDigitalWrite(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:65:13: error: &#39;PORTD&#39; was not declared in this scope
+     state ? PORTD |= mask[pin] : PORTD &amp;= ~mask[pin];
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:70:13: error: &#39;PORTB&#39; was not declared in this scope
+     state ? PORTB |= mask[pin] : PORTB &amp;= ~mask[pin];
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:75:13: error: &#39;PORTC&#39; was not declared in this scope
+     state ? PORTC |= mask[pin] : PORTC &amp;= ~mask[pin];
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp: In function &#39;uint8_t fastDigitalRead(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:85:13: error: &#39;PIND&#39; was not declared in this scope
+     return (PIND &amp; mask[pin]) ? 1 : 0;
+             ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:85:13: note: suggested alternative: &#39;SING&#39;
+     return (PIND &amp; mask[pin]) ? 1 : 0;
+             ^~~~
+             SING
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:90:13: error: &#39;PINB&#39; was not declared in this scope
+     return (PINB &amp; mask[pin]) ? 1 : 0;
+             ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:90:13: note: suggested alternative: &#39;SING&#39;
+     return (PINB &amp; mask[pin]) ? 1 : 0;
+             ^~~~
+             SING
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:95:13: error: &#39;PINC&#39; was not declared in this scope
+     return (PINC &amp; mask[pin]) ? 1 : 0;
+             ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:95:13: note: suggested alternative: &#39;NC&#39;
+     return (PINC &amp; mask[pin]) ? 1 : 0;
+             ^~~~
+             NC
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library fastIO claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp: In function &#39;uint8_t fastDigitalRead(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:85:13: error: &#39;PIND&#39; was not declared in this scope
+     return (PIND &amp; mask[pin]) ? 1 : 0;
+             ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:85:13: note: suggested alternative: &#39;PIN0&#39;
+     return (PIND &amp; mask[pin]) ? 1 : 0;
+             ^~~~
+             PIN0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:90:13: error: &#39;PINB&#39; was not declared in this scope
+     return (PINB &amp; mask[pin]) ? 1 : 0;
+             ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:90:13: note: suggested alternative: &#39;PIN0&#39;
+     return (PINB &amp; mask[pin]) ? 1 : 0;
+             ^~~~
+             PIN0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:95:13: error: &#39;PINC&#39; was not declared in this scope
+     return (PINC &amp; mask[pin]) ? 1 : 0;
+             ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:95:13: note: suggested alternative: &#39;PIN0&#39;
+     return (PINC &amp; mask[pin]) ? 1 : 0;
+             ^~~~
+             PIN0
+
+</pre>
+
+					
+					<h4>examples/fastIOspeedTest</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library fastIO claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp: In function &#39;uint8_t fastDigitalRead(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:85:13: error: &#39;PIND&#39; was not declared in this scope
+     return (PIND &amp; mask[pin]) ? 1 : 0;
+             ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:85:13: note: suggested alternative: &#39;PIN0&#39;
+     return (PIND &amp; mask[pin]) ? 1 : 0;
+             ^~~~
+             PIN0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:90:13: error: &#39;PINB&#39; was not declared in this scope
+     return (PINB &amp; mask[pin]) ? 1 : 0;
+             ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:90:13: note: suggested alternative: &#39;PIN0&#39;
+     return (PINB &amp; mask[pin]) ? 1 : 0;
+             ^~~~
+             PIN0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:95:13: error: &#39;PINC&#39; was not declared in this scope
+     return (PINC &amp; mask[pin]) ? 1 : 0;
+             ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:95:13: note: suggested alternative: &#39;PIN0&#39;
+     return (PINC &amp; mask[pin]) ? 1 : 0;
+             ^~~~
+             PIN0
+
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library fastIO claims to run on avr architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp: In function &#39;void fastPinMode(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:19:7: error: &#39;DDRD&#39; was not declared in this scope
+       DDRD  |= mask[pin];
+       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:21:23: error: &#39;PORTD&#39; was not declared in this scope
+       (mode &amp; 0x02) ? PORTD |= mask[pin] : PORTD &amp;= ~mask[pin];
+                       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:21:23: note: suggested alternative: &#39;PORTC&#39;
+       (mode &amp; 0x02) ? PORTD |= mask[pin] : PORTD &amp;= ~mask[pin];
+                       ^~~~~
+                       PORTC
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:22:7: error: &#39;DDRD&#39; was not declared in this scope
+       DDRD  &amp;= ~mask[pin];
+       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:33:7: error: &#39;DDRB&#39; was not declared in this scope
+       DDRB  |= mask[pin];
+       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:35:29: error: no match for &#39;operator|=&#39; (operand types are &#39;_EPortType&#39; and &#39;const uint8_t {aka const unsigned char}&#39;)
+       (mode &amp; 0x02) ? PORTB |= mask[pin] : PORTB &amp;= ~mask[pin];
+                       ~~~~~~^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:35:29: note: candidate: operator|=(_EPortType&amp;, int) &lt;built-in&gt;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:35:29: note:   conversion of argument 1 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:35:40: error: cannot bind non-const lvalue reference of type &#39;_EPortType&amp;&#39; to an rvalue of type &#39;_EPortType&#39;
+       (mode &amp; 0x02) ? PORTB |= mask[pin] : PORTB &amp;= ~mask[pin];
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:35:50: error: no match for &#39;operator&amp;=&#39; (operand types are &#39;_EPortType&#39; and &#39;int&#39;)
+       (mode &amp; 0x02) ? PORTB |= mask[pin] : PORTB &amp;= ~mask[pin];
+                                            ~~~~~~^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:35:50: note: candidate: operator&amp;=(_EPortType&amp;, int) &lt;built-in&gt;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:35:50: note:   conversion of argument 1 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:35:62: error: cannot bind non-const lvalue reference of type &#39;_EPortType&amp;&#39; to an rvalue of type &#39;_EPortType&#39;
+       (mode &amp; 0x02) ? PORTB |= mask[pin] : PORTB &amp;= ~mask[pin];
+                                                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:36:7: error: &#39;DDRB&#39; was not declared in this scope
+       DDRB  &amp;= ~mask[pin];
+       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:47:7: error: &#39;DDRC&#39; was not declared in this scope
+       DDRC  |= mask[pin];
+       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:47:7: note: suggested alternative: &#39;ADC&#39;
+       DDRC  |= mask[pin];
+       ^~~~
+       ADC
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:49:29: error: no match for &#39;operator|=&#39; (operand types are &#39;_EPortType&#39; and &#39;const uint8_t {aka const unsigned char}&#39;)
+       (mode &amp; 0x02) ? PORTC |= mask[pin] : PORTC &amp;= ~mask[pin];
+                       ~~~~~~^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:49:29: note: candidate: operator|=(_EPortType&amp;, int) &lt;built-in&gt;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:49:29: note:   conversion of argument 1 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:49:40: error: cannot bind non-const lvalue reference of type &#39;_EPortType&amp;&#39; to an rvalue of type &#39;_EPortType&#39;
+       (mode &amp; 0x02) ? PORTC |= mask[pin] : PORTC &amp;= ~mask[pin];
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:49:50: error: no match for &#39;operator&amp;=&#39; (operand types are &#39;_EPortType&#39; and &#39;int&#39;)
+       (mode &amp; 0x02) ? PORTC |= mask[pin] : PORTC &amp;= ~mask[pin];
+                                            ~~~~~~^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:49:50: note: candidate: operator&amp;=(_EPortType&amp;, int) &lt;built-in&gt;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:49:50: note:   conversion of argument 1 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:49:62: error: cannot bind non-const lvalue reference of type &#39;_EPortType&amp;&#39; to an rvalue of type &#39;_EPortType&#39;
+       (mode &amp; 0x02) ? PORTC |= mask[pin] : PORTC &amp;= ~mask[pin];
+                                                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:50:7: error: &#39;DDRC&#39; was not declared in this scope
+       DDRC  &amp;= ~mask[pin];
+       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:50:7: note: suggested alternative: &#39;ADC&#39;
+       DDRC  &amp;= ~mask[pin];
+       ^~~~
+       ADC
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp: In function &#39;void fastDigitalWrite(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:65:13: error: &#39;PORTD&#39; was not declared in this scope
+     state ? PORTD |= mask[pin] : PORTD &amp;= ~mask[pin];
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:65:13: note: suggested alternative: &#39;PORTC&#39;
+     state ? PORTD |= mask[pin] : PORTD &amp;= ~mask[pin];
+             ^~~~~
+             PORTC
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:70:19: error: no match for &#39;operator|=&#39; (operand types are &#39;_EPortType&#39; and &#39;const uint8_t {aka const unsigned char}&#39;)
+     state ? PORTB |= mask[pin] : PORTB &amp;= ~mask[pin];
+             ~~~~~~^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:70:19: note: candidate: operator|=(_EPortType&amp;, int) &lt;built-in&gt;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:70:19: note:   conversion of argument 1 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:70:30: error: cannot bind non-const lvalue reference of type &#39;_EPortType&amp;&#39; to an rvalue of type &#39;_EPortType&#39;
+     state ? PORTB |= mask[pin] : PORTB &amp;= ~mask[pin];
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:70:40: error: no match for &#39;operator&amp;=&#39; (operand types are &#39;_EPortType&#39; and &#39;int&#39;)
+     state ? PORTB |= mask[pin] : PORTB &amp;= ~mask[pin];
+                                  ~~~~~~^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:70:40: note: candidate: operator&amp;=(_EPortType&amp;, int) &lt;built-in&gt;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:70:40: note:   conversion of argument 1 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:70:52: error: cannot bind non-const lvalue reference of type &#39;_EPortType&amp;&#39; to an rvalue of type &#39;_EPortType&#39;
+     state ? PORTB |= mask[pin] : PORTB &amp;= ~mask[pin];
+                                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:75:19: error: no match for &#39;operator|=&#39; (operand types are &#39;_EPortType&#39; and &#39;const uint8_t {aka const unsigned char}&#39;)
+     state ? PORTC |= mask[pin] : PORTC &amp;= ~mask[pin];
+             ~~~~~~^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:75:19: note: candidate: operator|=(_EPortType&amp;, int) &lt;built-in&gt;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:75:19: note:   conversion of argument 1 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:75:30: error: cannot bind non-const lvalue reference of type &#39;_EPortType&amp;&#39; to an rvalue of type &#39;_EPortType&#39;
+     state ? PORTC |= mask[pin] : PORTC &amp;= ~mask[pin];
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:75:40: error: no match for &#39;operator&amp;=&#39; (operand types are &#39;_EPortType&#39; and &#39;int&#39;)
+     state ? PORTC |= mask[pin] : PORTC &amp;= ~mask[pin];
+                                  ~~~~~~^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:75:40: note: candidate: operator&amp;=(_EPortType&amp;, int) &lt;built-in&gt;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:75:40: note:   conversion of argument 1 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:75:52: error: cannot bind non-const lvalue reference of type &#39;_EPortType&amp;&#39; to an rvalue of type &#39;_EPortType&#39;
+     state ? PORTC |= mask[pin] : PORTC &amp;= ~mask[pin];
+                                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp: In function &#39;uint8_t fastDigitalRead(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:85:13: error: &#39;PIND&#39; was not declared in this scope
+     return (PIND &amp; mask[pin]) ? 1 : 0;
+             ^~~~
+/home/ec2-user/arduino-testlib/cli-da</pre>
+
+					
+					<h4>examples/fastIOspeedTest</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library fastIO claims to run on avr architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp: In function &#39;void fastPinMode(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:19:7: error: &#39;DDRD&#39; was not declared in this scope
+       DDRD  |= mask[pin];
+       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:21:23: error: &#39;PORTD&#39; was not declared in this scope
+       (mode &amp; 0x02) ? PORTD |= mask[pin] : PORTD &amp;= ~mask[pin];
+                       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:21:23: note: suggested alternative: &#39;PORTC&#39;
+       (mode &amp; 0x02) ? PORTD |= mask[pin] : PORTD &amp;= ~mask[pin];
+                       ^~~~~
+                       PORTC
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:22:7: error: &#39;DDRD&#39; was not declared in this scope
+       DDRD  &amp;= ~mask[pin];
+       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:33:7: error: &#39;DDRB&#39; was not declared in this scope
+       DDRB  |= mask[pin];
+       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:35:29: error: no match for &#39;operator|=&#39; (operand types are &#39;_EPortType&#39; and &#39;const uint8_t {aka const unsigned char}&#39;)
+       (mode &amp; 0x02) ? PORTB |= mask[pin] : PORTB &amp;= ~mask[pin];
+                       ~~~~~~^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:35:29: note: candidate: operator|=(_EPortType&amp;, int) &lt;built-in&gt;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:35:29: note:   conversion of argument 1 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:35:40: error: cannot bind non-const lvalue reference of type &#39;_EPortType&amp;&#39; to an rvalue of type &#39;_EPortType&#39;
+       (mode &amp; 0x02) ? PORTB |= mask[pin] : PORTB &amp;= ~mask[pin];
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:35:50: error: no match for &#39;operator&amp;=&#39; (operand types are &#39;_EPortType&#39; and &#39;int&#39;)
+       (mode &amp; 0x02) ? PORTB |= mask[pin] : PORTB &amp;= ~mask[pin];
+                                            ~~~~~~^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:35:50: note: candidate: operator&amp;=(_EPortType&amp;, int) &lt;built-in&gt;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:35:50: note:   conversion of argument 1 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:35:62: error: cannot bind non-const lvalue reference of type &#39;_EPortType&amp;&#39; to an rvalue of type &#39;_EPortType&#39;
+       (mode &amp; 0x02) ? PORTB |= mask[pin] : PORTB &amp;= ~mask[pin];
+                                                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:36:7: error: &#39;DDRB&#39; was not declared in this scope
+       DDRB  &amp;= ~mask[pin];
+       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:47:7: error: &#39;DDRC&#39; was not declared in this scope
+       DDRC  |= mask[pin];
+       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:47:7: note: suggested alternative: &#39;ADC&#39;
+       DDRC  |= mask[pin];
+       ^~~~
+       ADC
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:49:29: error: no match for &#39;operator|=&#39; (operand types are &#39;_EPortType&#39; and &#39;const uint8_t {aka const unsigned char}&#39;)
+       (mode &amp; 0x02) ? PORTC |= mask[pin] : PORTC &amp;= ~mask[pin];
+                       ~~~~~~^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:49:29: note: candidate: operator|=(_EPortType&amp;, int) &lt;built-in&gt;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:49:29: note:   conversion of argument 1 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:49:40: error: cannot bind non-const lvalue reference of type &#39;_EPortType&amp;&#39; to an rvalue of type &#39;_EPortType&#39;
+       (mode &amp; 0x02) ? PORTC |= mask[pin] : PORTC &amp;= ~mask[pin];
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:49:50: error: no match for &#39;operator&amp;=&#39; (operand types are &#39;_EPortType&#39; and &#39;int&#39;)
+       (mode &amp; 0x02) ? PORTC |= mask[pin] : PORTC &amp;= ~mask[pin];
+                                            ~~~~~~^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:49:50: note: candidate: operator&amp;=(_EPortType&amp;, int) &lt;built-in&gt;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:49:50: note:   conversion of argument 1 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:49:62: error: cannot bind non-const lvalue reference of type &#39;_EPortType&amp;&#39; to an rvalue of type &#39;_EPortType&#39;
+       (mode &amp; 0x02) ? PORTC |= mask[pin] : PORTC &amp;= ~mask[pin];
+                                                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:50:7: error: &#39;DDRC&#39; was not declared in this scope
+       DDRC  &amp;= ~mask[pin];
+       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:50:7: note: suggested alternative: &#39;ADC&#39;
+       DDRC  &amp;= ~mask[pin];
+       ^~~~
+       ADC
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp: In function &#39;void fastDigitalWrite(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:65:13: error: &#39;PORTD&#39; was not declared in this scope
+     state ? PORTD |= mask[pin] : PORTD &amp;= ~mask[pin];
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:65:13: note: suggested alternative: &#39;PORTC&#39;
+     state ? PORTD |= mask[pin] : PORTD &amp;= ~mask[pin];
+             ^~~~~
+             PORTC
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:70:19: error: no match for &#39;operator|=&#39; (operand types are &#39;_EPortType&#39; and &#39;const uint8_t {aka const unsigned char}&#39;)
+     state ? PORTB |= mask[pin] : PORTB &amp;= ~mask[pin];
+             ~~~~~~^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:70:19: note: candidate: operator|=(_EPortType&amp;, int) &lt;built-in&gt;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:70:19: note:   conversion of argument 1 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:70:30: error: cannot bind non-const lvalue reference of type &#39;_EPortType&amp;&#39; to an rvalue of type &#39;_EPortType&#39;
+     state ? PORTB |= mask[pin] : PORTB &amp;= ~mask[pin];
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:70:40: error: no match for &#39;operator&amp;=&#39; (operand types are &#39;_EPortType&#39; and &#39;int&#39;)
+     state ? PORTB |= mask[pin] : PORTB &amp;= ~mask[pin];
+                                  ~~~~~~^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:70:40: note: candidate: operator&amp;=(_EPortType&amp;, int) &lt;built-in&gt;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:70:40: note:   conversion of argument 1 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:70:52: error: cannot bind non-const lvalue reference of type &#39;_EPortType&amp;&#39; to an rvalue of type &#39;_EPortType&#39;
+     state ? PORTB |= mask[pin] : PORTB &amp;= ~mask[pin];
+                                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:75:19: error: no match for &#39;operator|=&#39; (operand types are &#39;_EPortType&#39; and &#39;const uint8_t {aka const unsigned char}&#39;)
+     state ? PORTC |= mask[pin] : PORTC &amp;= ~mask[pin];
+             ~~~~~~^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:75:19: note: candidate: operator|=(_EPortType&amp;, int) &lt;built-in&gt;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:75:19: note:   conversion of argument 1 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:75:30: error: cannot bind non-const lvalue reference of type &#39;_EPortType&amp;&#39; to an rvalue of type &#39;_EPortType&#39;
+     state ? PORTC |= mask[pin] : PORTC &amp;= ~mask[pin];
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:75:40: error: no match for &#39;operator&amp;=&#39; (operand types are &#39;_EPortType&#39; and &#39;int&#39;)
+     state ? PORTC |= mask[pin] : PORTC &amp;= ~mask[pin];
+                                  ~~~~~~^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:75:40: note: candidate: operator&amp;=(_EPortType&amp;, int) &lt;built-in&gt;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:75:40: note:   conversion of argument 1 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:75:52: error: cannot bind non-const lvalue reference of type &#39;_EPortType&amp;&#39; to an rvalue of type &#39;_EPortType&#39;
+     state ? PORTC |= mask[pin] : PORTC &amp;= ~mask[pin];
+                                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp: In function &#39;uint8_t fastDigitalRead(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:85:13: error: &#39;PIND&#39; was not declared in this scope
+     return (PIND &amp; mask[pin]) ? 1 : 0;
+             ^~~~
+/home/ec2-user/arduino-testlib/cli-da</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library fastIO claims to run on avr architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp: In function &#39;void fastPinMode(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:19:7: error: &#39;DDRD&#39; was not declared in this scope
+       DDRD  |= mask[pin];
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:21:23: error: &#39;PORTD&#39; was not declared in this scope
+       (mode &amp; 0x02) ? PORTD |= mask[pin] : PORTD &amp;= ~mask[pin];
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:22:7: error: &#39;DDRD&#39; was not declared in this scope
+       DDRD  &amp;= ~mask[pin];
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:33:7: error: &#39;DDRB&#39; was not declared in this scope
+       DDRB  |= mask[pin];
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:35:23: error: &#39;PORTB&#39; was not declared in this scope
+       (mode &amp; 0x02) ? PORTB |= mask[pin] : PORTB &amp;= ~mask[pin];
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:36:7: error: &#39;DDRB&#39; was not declared in this scope
+       DDRB  &amp;= ~mask[pin];
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:47:7: error: &#39;DDRC&#39; was not declared in this scope
+       DDRC  |= mask[pin];
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:49:23: error: &#39;PORTC&#39; was not declared in this scope
+       (mode &amp; 0x02) ? PORTC |= mask[pin] : PORTC &amp;= ~mask[pin];
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:50:7: error: &#39;DDRC&#39; was not declared in this scope
+       DDRC  &amp;= ~mask[pin];
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp: In function &#39;void fastDigitalWrite(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:65:13: error: &#39;PORTD&#39; was not declared in this scope
+     state ? PORTD |= mask[pin] : PORTD &amp;= ~mask[pin];
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:70:13: error: &#39;PORTB&#39; was not declared in this scope
+     state ? PORTB |= mask[pin] : PORTB &amp;= ~mask[pin];
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:75:13: error: &#39;PORTC&#39; was not declared in this scope
+     state ? PORTC |= mask[pin] : PORTC &amp;= ~mask[pin];
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp: In function &#39;uint8_t fastDigitalRead(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:85:13: error: &#39;PIND&#39; was not declared in this scope
+     return (PIND &amp; mask[pin]) ? 1 : 0;
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:90:13: error: &#39;PINB&#39; was not declared in this scope
+     return (PINB &amp; mask[pin]) ? 1 : 0;
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/src/fastIO.cpp:95:13: error: &#39;PINC&#39; was not declared in this scope
+     return (PINC &amp; mask[pin]) ? 1 : 0;
+             ^
+
+</pre>
+
+					
+					<h4>examples/fastIOspeedTest</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library fastIO claims to run on avr architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/examples/fastIOspeedTest/fastIOspeedTest.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/fastIO/examples/fastIOspeedTest/fastIOspeedTest.ino:74:15: error: &#39;A1&#39; was not declared in this scope
+   fastPinMode(A1, OUTPUT);
+               ^
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

@@ -1,0 +1,561 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>MusicBuzzer - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>MusicBuzzer</h2>
+				<p>
+					Version: <b>1.0.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/musicbuzzer/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>DiscoRobot</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 926 bytes (2%) of program storage space. Maximum is 32256 bytes.
+Global variables use 26 bytes (1%) of dynamic memory, leaving 2022 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+
+					
+					<h4>examples/DiscoRobot</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 5016 bytes (15%) of program storage space. Maximum is 32256 bytes.
+Global variables use 1390 bytes (67%) of dynamic memory, leaving 658 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 78756 bytes (0%) of program storage space. Maximum is 16777216 bytes.
+Global variables use 43444 bytes (16%) of dynamic memory, leaving 226892 bytes for local variables. Maximum is 270336 bytes.
+</pre>
+
+					
+					<h4>examples/DiscoRobot</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 80200 bytes (0%) of program storage space. Maximum is 16777216 bytes.
+Global variables use 43452 bytes (16%) of dynamic memory, leaving 226884 bytes for local variables. Maximum is 270336 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 972 bytes (1%) of program storage space. Maximum is 49152 bytes.
+Global variables use 27 bytes (0%) of dynamic memory, leaving 6117 bytes for local variables. Maximum is 6144 bytes.
+</pre>
+
+					
+					<h4>examples/DiscoRobot</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 4584 bytes (9%) of program storage space. Maximum is 49152 bytes.
+Global variables use 33 bytes (0%) of dynamic memory, leaving 6111 bytes for local variables. Maximum is 6144 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 12308 bytes (4%) of program storage space. Maximum is 262144 bytes.
+Global variables use 3020 bytes (9%) of dynamic memory, leaving 29748 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+
+					
+					<h4>examples/DiscoRobot</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 54324 bytes (20%) of program storage space. Maximum is 262144 bytes.
+Global variables use 3028 bytes (9%) of dynamic memory, leaving 29740 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp: In member function &#39;void MusicBuzzerClass::asabranca()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:189:54: error: &#39;tone&#39; was not declared in this scope
+     tone(buzzer, melody[thisNote], noteDuration * 0.9);
+                                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:195:18: error: &#39;noTone&#39; was not declared in this scope
+     noTone(buzzer);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp: In member function &#39;void MusicBuzzerClass::babyelephantwalk()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:358:54: error: &#39;tone&#39; was not declared in this scope
+     tone(buzzer, melody[thisNote], noteDuration * 0.9);
+                                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:364:18: error: &#39;noTone&#39; was not declared in this scope
+     noTone(buzzer);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp: In member function &#39;void MusicBuzzerClass::bloodytears()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:672:74: error: &#39;tone&#39; was not declared in this scope
+     tone(buzzer, pgm_read_word_near(melody&#43;thisNote ), noteDuration * 0.9);
+                                                                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:678:18: error: &#39;noTone&#39; was not declared in this scope
+     noTone(buzzer);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp: In member function &#39;void MusicBuzzerClass::brahmslullaby()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:845:54: error: &#39;tone&#39; was not declared in this scope
+     tone(buzzer, melody[thisNote], noteDuration * 0.9);
+                                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:851:18: error: &#39;noTone&#39; was not declared in this scope
+     noTone(buzzer);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp: In member function &#39;void MusicBuzzerClass::cannonind()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:1034:54: error: &#39;tone&#39; was not declared in this scope
+     tone(buzzer, melody[thisNote], noteDuration * 0.9);
+                                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:1040:18: error: &#39;noTone&#39; was not declared in this scope
+     noTone(buzzer);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp: In member function &#39;void MusicBuzzerClass::cantinaband()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:1209:52: error: &#39;tone&#39; was not declared in this scope
+     tone(buzzer, melody[thisNote], noteDuration*0.9);
+                                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:1215:18: error: &#39;noTone&#39; was not declared in this scope
+     noTone(buzzer);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp: In member function &#39;void MusicBuzzerClass::doom()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:1477:73: error: &#39;tone&#39; was not declared in this scope
+     tone(buzzer, pgm_read_word_near(melody&#43;thisNote), noteDuration * 0.9);
+                                                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:1483:18: error: &#39;noTone&#39; was not declared in this scope
+     noTone(buzzer);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp: In member function &#39;void MusicBuzzerClass::furelise()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:1785:73: error: &#39;tone&#39; was not declared in this scope
+     tone(buzzer, pgm_read_word_near(melody&#43;thisNote), noteDuration * 0.9);
+                                                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:1791:18: error: &#39;noTone&#39; was not declared in this scope
+     noTone(buzzer);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp: In member function &#39;void MusicBuzzerClass::gameofthrones()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:1985:54: error: &#39;tone&#39; was not declared in this scope
+     tone(buzzer, melody[thisNote], noteDuration * 0.9);
+                                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:1991:18: error: &#39;noTone&#39; was not declared in this scope
+     noTone(buzzer);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp: In member function &#39;void MusicBuzzerClass::greenhill()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:2192:54: error: &#39;tone&#39; was not declared in this scope
+     tone(buzzer, melody[thisNote], noteDuration * 0.9);
+                                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:2198:18: error: &#39;noTone&#39; was not declared in this scope
+     noTone(buzzer);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp: In member function &#39;void MusicBuzzerClass::greensleeves()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:2392:52: error: &#39;tone&#39; was not declared in this scope
+     tone(buzzer, melody[thisNote], noteDuration*0.9);
+                                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:2398:18: error: &#39;noTone&#39; was not declared in this scope
+     noTone(buzzer);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp: In member function &#39;void MusicBuzzerClass::happybirthday()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:2557:54: error: &#39;tone&#39; was not declared in this scope
+     tone(buzzer, melody[thisNote], noteDuration * 0.9);
+                                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:2563:18: error: &#39;noTone&#39; was not declared in this scope
+     noTone(buzzer);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp: In member function &#39;void MusicBuzzerClass::harrypotter()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:2748:52: error: &#39;tone&#39; was not declared in this scope
+     tone(buzzer, melody[thisNote], noteDuration*0.9);
+                                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:2754:18: error: &#39;noTone&#39; was not declared in this scope
+     noTone(buzzer);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp: In member function &#39;void MusicBuzzerClass::imperialmarch()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:2924:52: error: &#39;tone&#39; was not declared in this scope
+     tone(buzzer, melody[thisNote], noteDuration*0.9);
+                                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:2930:18: error: &#39;noTone&#39; was not declared in this scope
+     noTone(buzzer);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp: In member function &#39;void MusicBuzzerClass::jigglypuffsong()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:3094:54: error: &#39;tone&#39; was not declared in this scope
+     tone(buzzer, melody[thisNote], noteDuration * 0.9);
+                                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:3100:18: error: &#39;noTone&#39; was not declared in this scope
+     noTone(buzzer);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp: In member function &#39;void MusicBuzzerClass::keyboardcat()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:3268:54: error: &#39;tone&#39; was not declared in this scope
+     tone(buzzer, melody[thisNote], noteDuration * 0.9);
+                                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:3274:18: error: &#39;noTone&#39; was not declared in this scope
+     noTone(buzzer);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp: In member function &#39;void MusicBuzzerClass::merrychristmas()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:3485:54: error: &#39;tone&#39; was not declared in this scope
+     tone(buzzer, melody[thisNote], noteDuration * 0.9);
+                                                 </pre>
+
+					
+					<h4>examples/DiscoRobot</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp: In member function &#39;void MusicBuzzerClass::asabranca()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:189:54: error: &#39;tone&#39; was not declared in this scope
+     tone(buzzer, melody[thisNote], noteDuration * 0.9);
+                                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:195:18: error: &#39;noTone&#39; was not declared in this scope
+     noTone(buzzer);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp: In member function &#39;void MusicBuzzerClass::babyelephantwalk()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:358:54: error: &#39;tone&#39; was not declared in this scope
+     tone(buzzer, melody[thisNote], noteDuration * 0.9);
+                                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:364:18: error: &#39;noTone&#39; was not declared in this scope
+     noTone(buzzer);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp: In member function &#39;void MusicBuzzerClass::bloodytears()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:672:74: error: &#39;tone&#39; was not declared in this scope
+     tone(buzzer, pgm_read_word_near(melody&#43;thisNote ), noteDuration * 0.9);
+                                                                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:678:18: error: &#39;noTone&#39; was not declared in this scope
+     noTone(buzzer);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp: In member function &#39;void MusicBuzzerClass::brahmslullaby()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:845:54: error: &#39;tone&#39; was not declared in this scope
+     tone(buzzer, melody[thisNote], noteDuration * 0.9);
+                                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:851:18: error: &#39;noTone&#39; was not declared in this scope
+     noTone(buzzer);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp: In member function &#39;void MusicBuzzerClass::cannonind()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:1034:54: error: &#39;tone&#39; was not declared in this scope
+     tone(buzzer, melody[thisNote], noteDuration * 0.9);
+                                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:1040:18: error: &#39;noTone&#39; was not declared in this scope
+     noTone(buzzer);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp: In member function &#39;void MusicBuzzerClass::cantinaband()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:1209:52: error: &#39;tone&#39; was not declared in this scope
+     tone(buzzer, melody[thisNote], noteDuration*0.9);
+                                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:1215:18: error: &#39;noTone&#39; was not declared in this scope
+     noTone(buzzer);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp: In member function &#39;void MusicBuzzerClass::doom()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:1477:73: error: &#39;tone&#39; was not declared in this scope
+     tone(buzzer, pgm_read_word_near(melody&#43;thisNote), noteDuration * 0.9);
+                                                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:1483:18: error: &#39;noTone&#39; was not declared in this scope
+     noTone(buzzer);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp: In member function &#39;void MusicBuzzerClass::furelise()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:1785:73: error: &#39;tone&#39; was not declared in this scope
+     tone(buzzer, pgm_read_word_near(melody&#43;thisNote), noteDuration * 0.9);
+                                                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:1791:18: error: &#39;noTone&#39; was not declared in this scope
+     noTone(buzzer);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp: In member function &#39;void MusicBuzzerClass::gameofthrones()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:1985:54: error: &#39;tone&#39; was not declared in this scope
+     tone(buzzer, melody[thisNote], noteDuration * 0.9);
+                                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:1991:18: error: &#39;noTone&#39; was not declared in this scope
+     noTone(buzzer);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp: In member function &#39;void MusicBuzzerClass::greenhill()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:2192:54: error: &#39;tone&#39; was not declared in this scope
+     tone(buzzer, melody[thisNote], noteDuration * 0.9);
+                                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:2198:18: error: &#39;noTone&#39; was not declared in this scope
+     noTone(buzzer);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp: In member function &#39;void MusicBuzzerClass::greensleeves()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:2392:52: error: &#39;tone&#39; was not declared in this scope
+     tone(buzzer, melody[thisNote], noteDuration*0.9);
+                                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:2398:18: error: &#39;noTone&#39; was not declared in this scope
+     noTone(buzzer);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp: In member function &#39;void MusicBuzzerClass::happybirthday()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:2557:54: error: &#39;tone&#39; was not declared in this scope
+     tone(buzzer, melody[thisNote], noteDuration * 0.9);
+                                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:2563:18: error: &#39;noTone&#39; was not declared in this scope
+     noTone(buzzer);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp: In member function &#39;void MusicBuzzerClass::harrypotter()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:2748:52: error: &#39;tone&#39; was not declared in this scope
+     tone(buzzer, melody[thisNote], noteDuration*0.9);
+                                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:2754:18: error: &#39;noTone&#39; was not declared in this scope
+     noTone(buzzer);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp: In member function &#39;void MusicBuzzerClass::imperialmarch()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:2924:52: error: &#39;tone&#39; was not declared in this scope
+     tone(buzzer, melody[thisNote], noteDuration*0.9);
+                                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:2930:18: error: &#39;noTone&#39; was not declared in this scope
+     noTone(buzzer);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp: In member function &#39;void MusicBuzzerClass::jigglypuffsong()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:3094:54: error: &#39;tone&#39; was not declared in this scope
+     tone(buzzer, melody[thisNote], noteDuration * 0.9);
+                                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:3100:18: error: &#39;noTone&#39; was not declared in this scope
+     noTone(buzzer);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp: In member function &#39;void MusicBuzzerClass::keyboardcat()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:3268:54: error: &#39;tone&#39; was not declared in this scope
+     tone(buzzer, melody[thisNote], noteDuration * 0.9);
+                                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:3274:18: error: &#39;noTone&#39; was not declared in this scope
+     noTone(buzzer);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp: In member function &#39;void MusicBuzzerClass::merrychristmas()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MusicBuzzer/src/MusicBuzzer.cpp:3485:54: error: &#39;tone&#39; was not declared in this scope
+     tone(buzzer, melody[thisNote], noteDuration * 0.9);
+                                                 </pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

@@ -1,0 +1,395 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>esp32_gamepad - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>esp32_gamepad</h2>
+				<p>
+					Version: <b>1.0.1</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/esp32_gamepad/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>rfcomm_test</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/esp32_gamepad/src/esp32_gamepad.cpp:21:10: fatal error: esp_bt_main.h: No such file or directory
+ #include &#34;esp_bt_main.h&#34;
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/rfcomm_test</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/esp32_gamepad/src/esp32_gamepad.cpp:21:10: fatal error: esp_bt_main.h: No such file or directory
+ #include &#34;esp_bt_main.h&#34;
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/esp32_gamepad/src/esp32_gamepad.cpp:21:10: fatal error: esp_bt_main.h: No such file or directory
+ #include &#34;esp_bt_main.h&#34;
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/rfcomm_test</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/esp32_gamepad/src/esp32_gamepad.cpp:21:10: fatal error: esp_bt_main.h: No such file or directory
+ #include &#34;esp_bt_main.h&#34;
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/esp32_gamepad/src/esp32_gamepad.cpp:21:10: fatal error: esp_bt_main.h: No such file or directory
+ #include &#34;esp_bt_main.h&#34;
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/rfcomm_test</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/esp32_gamepad/src/esp32_gamepad.cpp:21:10: fatal error: esp_bt_main.h: No such file or directory
+ #include &#34;esp_bt_main.h&#34;
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/esp32_gamepad/src/esp32_gamepad.cpp:21:10: fatal error: esp_bt_main.h: No such file or directory
+ #include &#34;esp_bt_main.h&#34;
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/rfcomm_test</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/esp32_gamepad/src/esp32_gamepad.cpp:21:10: fatal error: esp_bt_main.h: No such file or directory
+ #include &#34;esp_bt_main.h&#34;
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 411198 bytes (31%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 19428 bytes (5%) of dynamic memory, leaving 308252 bytes for local variables. Maximum is 327680 bytes.
+</pre>
+
+					
+					<h4>examples/rfcomm_test</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/esp32_gamepad/examples/rfcomm_test/rfcomm_test.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/esp32_gamepad/examples/rfcomm_test/rfcomm_test.ino:124:73: error: cannot convert &#39;&lt;anonymous enum&gt;&#39; to &#39;SPILCD* {aka tagSPILCD*}&#39; for argument &#39;1&#39; to &#39;int spilcdInit(SPILCD*, int, int, int32_t, int, int, int, int, int, int, int)&#39;
+   spilcdInit(LCD_ST7735S_B, 1, 1, 0, 32000000, 4, 21, 22, 26, -1, 23, 18); // Mike Rankin&#39;s color coin cell pin numbering
+                                                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/esp32_gamepad/examples/rfcomm_test/rfcomm_test.ino:126:25: error: &#39;LCD_ORIENTATION_ROTATED&#39; was not declared in this scope
+    spilcdSetOrientation(LCD_ORIENTATION_ROTATED);
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/esp32_gamepad/examples/rfcomm_test/rfcomm_test.ino:131:17: error: too few arguments to function &#39;int spilcdFill(SPILCD*, short unsigned int, int)&#39;
+   spilcdFill(0,1);
+                 ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/esp32_gamepad/examples/rfcomm_test/rfcomm_test.ino:11:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/bb_spi_lcd/src/bb_spi_lcd.h:160:5: note: declared here
+ int spilcdFill(SPILCD *pLCD, unsigned short usPattern, int bRender);
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/esp32_gamepad/examples/rfcomm_test/rfcomm_test.ino:132:69: error: &#39;FONT_NORMAL&#39; was not declared in this scope
+   spilcdWriteString(0,0,(char *)&#34;Starting discovery...&#34;, 0xffff, 0, FONT_NORMAL, 1);
+                                                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/esp32_gamepad/examples/rfcomm_test/rfcomm_test.ino:135:59: error: &#39;FONT_STRETCHED&#39; was not declared in this scope
+     spilcdWriteString(0,16,(char *)&#34;SS found!&#34;, 0x6e0, 0, FONT_STRETCHED, 1);
+                                                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/esp32_gamepad/examples/rfcomm_test/rfcomm_test.ino:147:60: error: &#39;FONT_STRETCHED&#39; was not declared in this scope
+     spilcdWriteString(0,16,(char *)&#34;Not found&#34;, 0xf800, 0, FONT_STRETCHED, 1);
+                                                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/esp32_gamepad/examples/rfcomm_test/rfcomm_test.ino:151:75: error: &#39;FONT_SMALL&#39; was not declared in this scope
+     spilcdWriteString(0,64,(char *)&#34;press any key to continue&#34;, 0x7ff, 0, FONT_SMALL, 1);
+                                                                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/esp32_gamepad/examples/rfcomm_test/rfcomm_test.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/esp32_gamepad/examples/rfcomm_test/rfcomm_test.ino:163:17: error: too few arguments to function &#39;int spilcdFill(SPILCD*, short unsigned int, int)&#39;
+   spilcdFill(0,1);
+                 ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/esp32_gamepad/examples/rfcomm_test/rfcomm_test.ino:11:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/bb_spi_lcd/src/bb_spi_lcd.h:160:5: note: declared here
+ int spilcdFill(SPILCD *pLCD, unsigned short usPattern, int bRender);
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/esp32_gamepad/examples/rfcomm_test/rfcomm_test.ino:167:44: error: &#39;FONT_STRETCHED&#39; was not declared in this scope
+     spilcdWriteString(0,0,szTemp, 0xffff,0,FONT_STRETCHED, 1);
+                                            ^
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

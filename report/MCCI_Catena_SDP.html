@@ -1,0 +1,676 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>MCCI Catena SDP - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>MCCI Catena SDP</h2>
+				<p>
+					Version: <b>1.0.1</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/mcci-catena-sdp/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>sdp_lorawan</pre></th>
+						
+						<th><pre>sdp_simple</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /tmp/arduino-testlib301231648/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/src/MCCI_Catena_SDP.h:20:10: fatal error: cstdint: No such file or directory
+ #include &lt;cstdint&gt;
+          ^~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/sdp_lorawan</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/examples/sdp_lorawan/sdp_lorawan.ino:17:3: error: #error &#34;This sketch targets the MCCI Catena 4801&#34;
+ # error &#34;This sketch targets the MCCI Catena 4801&#34;
+   ^~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/examples/sdp_lorawan/sdp_lorawan.h:29:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/examples/sdp_lorawan/sdp_lorawan.ino:21:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_Arduino_Platform/src/Catena.h:76:3: error: #error Architecture not supported
+ # error Architecture not supported
+   ^~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/examples/sdp_lorawan/sdp_lorawan.h:30:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/examples/sdp_lorawan/sdp_lorawan.ino:21:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_Arduino_Platform/src/Catena_Led.h:40:10: fatal error: type_traits: No such file or directory
+ #include &lt;type_traits&gt;
+          ^~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+					<h4>examples/sdp_simple</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/examples/sdp_simple/sdp_simple.ino:16:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/src/MCCI_Catena_SDP.h:20:10: fatal error: cstdint: No such file or directory
+ #include &lt;cstdint&gt;
+          ^~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 81706 bytes (0%) of program storage space. Maximum is 16777216 bytes.
+Global variables use 44220 bytes (16%) of dynamic memory, leaving 226116 bytes for local variables. Maximum is 270336 bytes.
+</pre>
+
+					
+					<h4>examples/sdp_lorawan</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library MCCI_Catena_Arduino_Platform claims to run on samd, stm32 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+WARNING: library MCCI_FRAM_I2C claims to run on samd, stm32 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/examples/sdp_lorawan/sdp_lorawan.ino:17:3: error: #error &#34;This sketch targets the MCCI Catena 4801&#34;
+ # error &#34;This sketch targets the MCCI Catena 4801&#34;
+   ^~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/examples/sdp_lorawan/sdp_lorawan.h:29:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/examples/sdp_lorawan/sdp_lorawan.ino:21:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_Arduino_Platform/src/Catena.h:76:3: error: #error Architecture not supported
+ # error Architecture not supported
+   ^~~~~
+
+</pre>
+					
+					<h4>examples/sdp_simple</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/examples/sdp_simple/sdp_simple.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/examples/sdp_simple/sdp_simple.ino:117:17: error: &#39;D11&#39; was not declared in this scope
+         pinMode(D11, OUTPUT);
+                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/examples/sdp_simple/sdp_simple.ino:117:17: note: suggested alternative: &#39;B11&#39;
+         pinMode(D11, OUTPUT);
+                 ^~~
+                 B11
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/examples/sdp_simple/sdp_simple.ino:121:17: error: &#39;D10&#39; was not declared in this scope
+         pinMode(D10, OUTPUT);
+                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/examples/sdp_simple/sdp_simple.ino:121:17: note: suggested alternative: &#39;B10&#39;
+         pinMode(D10, OUTPUT);
+                 ^~~
+                 B10
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /tmp/arduino-testlib2742955528/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/src/MCCI_Catena_SDP.h:20:10: fatal error: cstdint: No such file or directory
+ #include &lt;cstdint&gt;
+          ^~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/sdp_lorawan</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/examples/sdp_lorawan/sdp_lorawan.ino:17:3: error: #error &#34;This sketch targets the MCCI Catena 4801&#34;
+ # error &#34;This sketch targets the MCCI Catena 4801&#34;
+   ^~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/examples/sdp_lorawan/sdp_lorawan.h:29:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/examples/sdp_lorawan/sdp_lorawan.ino:21:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_Arduino_Platform/src/Catena.h:76:3: error: #error Architecture not supported
+ # error Architecture not supported
+   ^~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/examples/sdp_lorawan/sdp_lorawan.h:30:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/examples/sdp_lorawan/sdp_lorawan.ino:21:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_Arduino_Platform/src/Catena_Led.h:40:10: fatal error: type_traits: No such file or directory
+ #include &lt;type_traits&gt;
+          ^~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+					<h4>examples/sdp_simple</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/examples/sdp_simple/sdp_simple.ino:16:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/src/MCCI_Catena_SDP.h:20:10: fatal error: cstdint: No such file or directory
+ #include &lt;cstdint&gt;
+          ^~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/src/MCCI_Catena_SDP.cpp:22:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/src/MCCI_Catena_SDP.h:85:18: error: expected &#39;)&#39; before &#39;&amp;&#39; token
+     cSDP(TwoWire &amp;wire, Address Address = Address::SDP3x_A, Pin_t pinAlert = -1)
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/src/MCCI_Catena_SDP.h:292:5: error: &#39;TwoWire&#39; does not name a type; did you mean &#39;TwoWire_h&#39;?
+     TwoWire *m_wire;                /// pointer to bus to be used for this device
+     ^~~~~~~
+     TwoWire_h
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/src/MCCI_Catena_SDP.cpp: In member function &#39;bool McciCatenaSdp::cSDP::begin()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/src/MCCI_Catena_SDP.cpp:29:15: error: &#39;class McciCatenaSdp::cSDP&#39; has no member named &#39;m_wire&#39;
+     if (this-&gt;m_wire == nullptr)
+               ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/src/MCCI_Catena_SDP.cpp:35:11: error: &#39;class McciCatenaSdp::cSDP&#39; has no member named &#39;m_wire&#39;
+     this-&gt;m_wire-&gt;begin();
+           ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/src/MCCI_Catena_SDP.cpp: In member function &#39;bool McciCatenaSdp::cSDP::wakeup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/src/MCCI_Catena_SDP.cpp:87:11: error: &#39;class McciCatenaSdp::cSDP&#39; has no member named &#39;m_wire&#39;
+     this-&gt;m_wire-&gt;beginTransmission(std::uint8_t(this-&gt;m_address));
+           ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/src/MCCI_Catena_SDP.cpp:88:15: error: &#39;class McciCatenaSdp::cSDP&#39; has no member named &#39;m_wire&#39;
+     if (this-&gt;m_wire-&gt;endTransmission() != 0)
+               ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/src/MCCI_Catena_SDP.cpp:90:9: error: &#39;delay&#39; was not declared in this scope
+         delay(2);
+         ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/src/MCCI_Catena_SDP.cpp:91:15: error: &#39;class McciCatenaSdp::cSDP&#39; has no member named &#39;m_wire&#39;
+         this-&gt;m_wire-&gt;beginTransmission(std::uint8_t(this-&gt;m_address));
+               ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/src/MCCI_Catena_SDP.cpp:93:19: error: &#39;class McciCatenaSdp::cSDP&#39; has no member named &#39;m_wire&#39;
+         if (this-&gt;m_wire-&gt;endTransmission() != 0)
+                   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/src/MCCI_Catena_SDP.cpp: In member function &#39;bool McciCatenaSdp::cSDP::writeCommand(McciCatenaSdp::cSDP::Command)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/src/MCCI_Catena_SDP.cpp:105:11: error: &#39;class McciCatenaSdp::cSDP&#39; has no member named &#39;m_wire&#39;
+     this-&gt;m_wire-&gt;beginTransmission(std::uint8_t(this-&gt;m_address));
+           ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/src/MCCI_Catena_SDP.cpp:106:15: error: &#39;class McciCatenaSdp::cSDP&#39; has no member named &#39;m_wire&#39;
+     if (this-&gt;m_wire-&gt;write(cbuf, sizeof(cbuf)) != sizeof(cbuf))
+               ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/src/MCCI_Catena_SDP.cpp:108:15: error: &#39;class McciCatenaSdp::cSDP&#39; has no member named &#39;m_wire&#39;
+     if (this-&gt;m_wire-&gt;endTransmission() != 0)
+               ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/src/MCCI_Catena_SDP.cpp: In member function &#39;bool McciCatenaSdp::cSDP::readResponse(uint8_t*, size_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/src/MCCI_Catena_SDP.cpp:126:23: error: &#39;class McciCatenaSdp::cSDP&#39; has no member named &#39;m_wire&#39;
+     nReadFrom = this-&gt;m_wire-&gt;requestFrom(std::uint8_t(addr), /* bytes */ std::uint8_t(nBuf));
+                       ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/src/MCCI_Catena_SDP.cpp:132:21: error: &#39;class McciCatenaSdp::cSDP&#39; has no member named &#39;m_wire&#39;
+     nResult = this-&gt;m_wire-&gt;available();
+                     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/src/MCCI_Catena_SDP.cpp:137:24: error: &#39;class McciCatenaSdp::cSDP&#39; has no member named &#39;m_wire&#39;
+         buf[i] = this-&gt;m_wire-&gt;read();
+                        ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/src/MCCI_Catena_SDP.cpp: In member function &#39;bool McciCatenaSdp::cSDP::startTriggeredMeasurement()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/src/MCCI_Catena_SDP.cpp:160:26: error: &#39;millis&#39; was not declared in this scope
+         this-&gt;m_tReady = millis() &#43; 46;
+                          ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/src/MCCI_Catena_SDP.cpp:160:26: note: suggested alternative: &#39;malloc&#39;
+         this-&gt;m_tReady = millis() &#43; 46;
+                          ^~~~~~
+                          malloc
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/src/MCCI_Catena_SDP.cpp: In member function &#39;bool McciCatenaSdp::cSDP::queryReady()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/src/MCCI_Catena_SDP.cpp:174:22: error: &#39;millis&#39; was not declared in this scope
+     if (std::int32_t(millis() - this-&gt;m_tReady) &lt; 0)
+                      ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/src/MCCI_Catena_SDP.cpp:174:22: note: suggested alternative: &#39;malloc&#39;
+     if (std::int32_t(millis() - this-&gt;m_tReady) &lt; 0)
+                      ^~~~~~
+                      malloc
+
+</pre>
+
+					
+					<h4>examples/sdp_lorawan</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_Arduino_Platform/src/lib/samd/catena4410/Catena4410_gk_lorawan_keys.cpp:37:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_Arduino_Platform/src/Catena4410_project_config.h:37:10: fatal error: ../../arduino-lmic/src/lmic/lmic_config_preconditions.h: No such file or directory
+ #include &#34;../../arduino-lmic/src/lmic/lmic_config_preconditions.h&#34;
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+					<h4>examples/sdp_simple</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/examples/sdp_simple/sdp_simple.ino:16:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/src/MCCI_Catena_SDP.h:85:18: error: expected &#39;)&#39; before &#39;&amp;&#39; token
+     cSDP(TwoWire &amp;wire, Address Address = Address::SDP3x_A, Pin_t pinAlert = -1)
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/src/MCCI_Catena_SDP.h:292:5: error: &#39;TwoWire&#39; does not name a type; did you mean &#39;TwoWire_h&#39;?
+     TwoWire *m_wire;                /// pointer to bus to be used for this device
+     ^~~~~~~
+     TwoWire_h
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/examples/sdp_simple/sdp_simple.ino:49:39: error: no matching function for call to &#39;McciCatenaSdp::cSDP::cSDP(&lt;brace-enclosed initializer list&gt;)&#39;
+ cSDP gSdp {Wire, cSDP::Address::SDP8xx};
+                                       ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/examples/sdp_simple/sdp_simple.ino:16:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/src/MCCI_Catena_SDP.h:94:5: note: candidate: McciCatenaSdp::cSDP::cSDP(const McciCatenaSdp::cSDP&amp;&amp;) &lt;deleted&gt;
+     cSDP(const cSDP&amp;&amp;) = delete;
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/src/MCCI_Catena_SDP.h:94:5: note:   candidate expects 1 argument, 2 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/src/MCCI_Catena_SDP.h:92:5: note: candidate: McciCatenaSdp::cSDP::cSDP(const McciCatenaSdp::cSDP&amp;) &lt;deleted&gt;
+     cSDP(const cSDP&amp;) = delete;
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/src/MCCI_Catena_SDP.h:92:5: note:   candidate expects 1 argument, 2 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/examples/sdp_simple/sdp_simple.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/examples/sdp_simple/sdp_simple.ino:117:17: error: &#39;D11&#39; was not declared in this scope
+         pinMode(D11, OUTPUT);
+                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/examples/sdp_simple/sdp_simple.ino:117:17: note: suggested alternative: &#39;B11&#39;
+         pinMode(D11, OUTPUT);
+                 ^~~
+                 B11
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/examples/sdp_simple/sdp_simple.ino:121:17: error: &#39;D10&#39; was not declared in this scope
+         pinMode(D10, OUTPUT);
+                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/examples/sdp_simple/sdp_simple.ino:121:17: note: suggested alternative: &#39;B10&#39;
+         pinMode(D10, OUTPUT);
+                 ^~~
+                 B10
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 202322 bytes (15%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 13872 bytes (4%) of dynamic memory, leaving 313808 bytes for local variables. Maximum is 327680 bytes.
+</pre>
+
+					
+					<h4>examples/sdp_lorawan</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library MCCI_Catena_Arduino_Platform claims to run on samd, stm32 architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+WARNING: library MCCI_FRAM_I2C claims to run on samd, stm32 architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/examples/sdp_lorawan/sdp_lorawan.ino:17:3: error: #error &#34;This sketch targets the MCCI Catena 4801&#34;
+ # error &#34;This sketch targets the MCCI Catena 4801&#34;
+   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/examples/sdp_lorawan/sdp_lorawan.h:29:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/examples/sdp_lorawan/sdp_lorawan.ino:21:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_Arduino_Platform/src/Catena.h:76:3: error: #error Architecture not supported
+ # error Architecture not supported
+   ^
+
+</pre>
+					
+					<h4>examples/sdp_simple</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/examples/sdp_simple/sdp_simple.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/examples/sdp_simple/sdp_simple.ino:117:17: error: &#39;D11&#39; was not declared in this scope
+         pinMode(D11, OUTPUT);
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MCCI_Catena_SDP/examples/sdp_simple/sdp_simple.ino:121:17: error: &#39;D10&#39; was not declared in this scope
+         pinMode(D10, OUTPUT);
+                 ^
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

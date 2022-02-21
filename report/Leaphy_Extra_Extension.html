@@ -1,0 +1,466 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>Leaphy Extra Extension - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>Leaphy Extra Extension</h2>
+				<p>
+					Version: <b>0.0.6</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/leaphy-extra-extension/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Leaphy_Extra_Extension/Adafruit_NeoPixel.cpp.o (symbol from plugin): In function `Adafruit_NeoPixel::Adafruit_NeoPixel(unsigned int, unsigned char, unsigned char)&#39;:
+(.text&#43;0x0): multiple definition of `Adafruit_NeoPixel::~Adafruit_NeoPixel()&#39;
+/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Leaphy_Extra_Extension/Adafruit_NeoPixel.cpp.o (symbol from plugin): In function `Adafruit_NeoPixel::Adafruit_NeoPixel(unsigned int, unsigned char, unsigned char)&#39;:
+(.text&#43;0x0): multiple definition of `Adafruit_NeoPixel::~Adafruit_NeoPixel()&#39;
+/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Leaphy_Extra_Extension/Adafruit_NeoPixel.cpp.o (symbol from plugin): In function `Adafruit_NeoPixel::Adafruit_NeoPixel(unsigned int, unsigned char, unsigned char)&#39;:
+(.text&#43;0x0): multiple definition of `Adafruit_NeoPixel::begin()&#39;
+/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Leaphy_Extra_Extension/Adafruit_NeoPixel.cpp.o (symbol from plugin): In function `Adafruit_NeoPixel::Adafruit_NeoPixel(unsigned int, unsigned char, unsigned char)&#39;:
+(.text&#43;0x0): multiple definition of `Adafruit_NeoPixel::show()&#39;
+/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Leaphy_Extra_Extension/Adafruit_NeoPixel.cpp.o (symbol from plugin): In function `Adafruit_NeoPixel::Adafruit_NeoPixel(unsigned int, unsigned char, unsigned char)&#39;:
+(.text&#43;0x0): multiple definition of `Adafruit_NeoPixel::setPixelColor(unsigned int, unsigned char, unsigned char, unsigned char)&#39;
+/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Leaphy_Extra_Extension/Adafruit_NeoPixel.cpp.o (symbol from plugin): In function `Adafruit_NeoPixel::Adafruit_NeoPixel(unsigned int, unsigned char, unsigned char)&#39;:
+(.text&#43;0x0): multiple definition of `Adafruit_NeoPixel::setPixelColor(unsigned int, unsigned long)&#39;
+/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Leaphy_Extra_Extension/Adafruit_NeoPixel.cpp.o (symbol from plugin): In function `Adafruit_NeoPixel::Adafruit_NeoPixel(unsigned int, unsigned char, unsigned char)&#39;:
+(.text&#43;0x0): multiple definition of `Adafruit_NeoPixel::getPixelColor(unsigned int) const&#39;
+/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Leaphy_Extra_Extension/Adafruit_NeoPixel.cpp.o (symbol from plugin): In function `Adafruit_NeoPixel::Adafruit_NeoPixel(unsigned int, unsigned char, unsigned char)&#39;:
+(.text&#43;0x0): multiple definition of `Adafruit_NeoPixel::setBrightness(unsigned char)&#39;
+/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Leaphy_Extra_Extension/Adafruit_TCS34725.cpp.o (symbol from plugin): In function `pow(float, float)&#39;:
+(.text&#43;0x0): multiple definition of `pow(float, float)&#39;
+/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Adafruit_TCS34725/Adafruit_TCS34725.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Leaphy_Extra_Extension/Adafruit_TCS34725.cpp.o (symbol from plugin): In function `pow(float, float)&#39;:
+(.text&#43;0x0): multiple definition of `Adafruit_TCS34725::write8(unsigned char, unsigned long)&#39;
+/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Adafruit_TCS34725/Adafruit_TCS34725.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Leaphy_Extra_Extension/Adafruit_TCS34725.cpp.o (symbol from plugin): In function `pow(float, float)&#39;:
+(.text&#43;0x0): multiple definition of `Adafruit_TCS34725::read8(unsigned char)&#39;
+/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Adafruit_TCS34725/Adafruit_TCS34725.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Leaphy_Extra_Extension/Adafruit_TCS34725.cpp.o (symbol from plugin): In function `pow(float, float)&#39;:
+(.text&#43;0x0): multiple definition of `Adafruit_TCS34725::read16(unsigned char)&#39;
+/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Adafruit_TCS34725/Adafruit_TCS34725.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Leaphy_Extra_Extension/Adafruit_TCS34725.cpp.o (symbol from plugin): In function `pow(float, float)&#39;:
+(.text&#43;0x0): multiple definition of `Adafruit_TCS34725::enable()&#39;
+/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Adafruit_TCS34725/Adafruit_TCS34725.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Leaphy_Extra_Extension/Adafruit_TCS34725.cpp.o (symbol from plugin): In function `pow(float, float)&#39;:
+(.text&#43;0x0): multiple definition of `Adafruit_TCS34725::disable()&#39;
+/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Adafruit_TCS34725/Adafruit_TCS34725.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Leaphy_Extra_Extension/Adafruit_TCS34725.cpp.o (symbol from plugin): In function `pow(float, float)&#39;:
+(.text&#43;0x0): multiple definition of `Adafruit_TCS34725::setGain(tcs34725Gain_t)&#39;
+/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Adafruit_TCS34725/Adafruit_TCS34725.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Leaphy_Extra_Extension/Adafruit_TCS34725.cpp.o (symbol from plugin): In function `pow(float, float)&#39;:
+(.text&#43;0x0): multiple definition of `Adafruit_TCS34725::init()&#39;
+/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Adafruit_TCS34725/Adafruit_TCS34725.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Leaphy_Extra_Extension/Adafruit_TCS34725.cpp.o (symbol from plugin): In function `pow(float, float)&#39;:
+(.text&#43;0x0): multiple definition of `Adafruit_TCS34725::begin(unsigned char, TwoWire*)&#39;
+/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Adafruit_TCS34725/Adafruit_TCS34725.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Leaphy_Extra_Extension/Adafruit_TCS34725.cpp.o (symbol from plugin): In function `pow(float, float)&#39;:
+(.text&#43;0x0): multiple definition of `Adafruit_TCS34725::getRawData(unsigned int*, unsigned int*, unsigned int*, unsigned int*)&#39;
+/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Adafruit_TCS34725/Adafruit_TCS34725.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Leaphy_Extra_Extension/Adafruit_TCS34725.cpp.o (symbol from plugin): In function `pow(float, float)&#39;:
+(.text&#43;0x0): multiple definition of `Adafruit_TCS34725::getRawDataOneShot(unsigned int*, unsigned int*, unsigned int*, unsigned int*)&#39;
+/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Adafruit_TCS34725/Adafruit_TCS34725.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Leaphy_Extra_Extension/Adafruit_TCS34725.cpp.o (symbol from plugin): In function `pow(float, float)&#39;:
+(.text&#43;0x0): multiple definition of `Adafruit_TCS34725::getRGB(float*, float*, float*)&#39;
+/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Adafruit_TCS34725/Adafruit_TCS34725.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Leaphy_Extra_Extension/Adafruit_TCS34725.cpp.o (symbol from plugin): In function `pow(float, float)&#39;:
+(.text&#43;0x0): multiple definition of `Adafruit_TCS34725::calculateColorTemperature(unsigned int, unsigned int, unsigned int)&#39;
+/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Adafruit_TCS34725/Adafruit_TCS34725.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Leaphy_Extra_Extension/Adafruit_TCS34725.cpp.o (symbol from plugin): In function `pow(float, float)&#39;:
+(.text&#43;0x0): multiple definition of `Adafruit_TCS34725::calculateColorTemperature_dn40(unsigned int, unsigned int, unsigned int, unsigned int)&#39;
+/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Adafruit_TCS34725/Adafruit_TCS34725.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Leaphy_Extra_Extension/Adafruit_TCS34725.cpp.o (symbol from plugin): In function `pow(float, float)&#39;:
+(.text&#43;0x0): multiple definition of `Adafruit_TCS34725::calculateLux(unsigned int, unsigned int, unsigned int)&#39;
+/tmp/arduino-sketch-16D7FF90990D1D079E533814EA670486/libraries/Adafruit_TCS34725/Adafruit_TCS34725.cpp.o (symbol from plugin):(.</pre>
+
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library Leaphy_Extra_Extension claims to run on avr architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+Multiple libraries were found for &#34;Adafruit_NeoPixel.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_NeoPixel
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pinduino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Leaphy_Extra_Extension
+Multiple libraries were found for &#34;Adafruit_TCS34725.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TCS34725
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Leaphy_Extra_Extension
+</pre>
+
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library Leaphy_Extra_Extension claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Leaphy_Extra_Extension/src/Adafruit_TCS34725.h:42:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Leaphy_Extra_Extension/src/Adafruit_TCS34725.cpp:32:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h: In member function &#39;uint8_t Adafruit_TCS34725::read8(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:63:12: note: candidate 1: size_t TwoWire::requestFrom(int, int)
+     size_t requestFrom(int, int);
+            ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:61:12: note: candidate 2: virtual size_t TwoWire::requestFrom(uint8_t, size_t)
+     size_t requestFrom(uint8_t, size_t);
+            ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h: In member function &#39;uint16_t Adafruit_TCS34725::read16(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:63:12: note: candidate 1: size_t TwoWire::requestFrom(int, int)
+     size_t requestFrom(int, int);
+            ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:61:12: note: candidate 2: virtual size_t TwoWire::requestFrom(uint8_t, size_t)
+     size_t requestFrom(uint8_t, size_t);
+            ^~~~~~~~~~~
+/tmp/arduino-sketch-50481F602150BE89EE868537375396CC/libraries/Leaphy_Extra_Extension/Adafruit_NeoPixel.cpp.o (symbol from plugin): In function `Adafruit_NeoPixel::Adafruit_NeoPixel(unsigned int, unsigned char, unsigned char)&#39;:
+(.text&#43;0x0): multiple definition of `Adafruit_NeoPixel::~Adafruit_NeoPixel()&#39;
+/tmp/arduino-sketch-50481F602150BE89EE868537375396CC/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+/tmp/arduino-sketch-50481F602150BE89EE868537375396CC/libraries/Leaphy_Extra_Extension/Adafruit_NeoPixel.cpp.o (symbol from plugin): In function `Adafruit_NeoPixel::Adafruit_NeoPixel(unsigned int, unsigned char, unsigned char)&#39;:
+(.text&#43;0x0): multiple definition of `Adafruit_NeoPixel::~Adafruit_NeoPixel()&#39;
+/tmp/arduino-sketch-50481F602150BE89EE868537375396CC/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+/tmp/arduino-sketch-50481F602150BE89EE868537375396CC/libraries/Leaphy_Extra_Extension/Adafruit_NeoPixel.cpp.o (symbol from plugin): In function `Adafruit_NeoPixel::Adafruit_NeoPixel(unsigned int, unsigned char, unsigned char)&#39;:
+(.text&#43;0x0): multiple definition of `Adafruit_NeoPixel::begin()&#39;
+/tmp/arduino-sketch-50481F602150BE89EE868537375396CC/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+/tmp/arduino-sketch-50481F602150BE89EE868537375396CC/libraries/Leaphy_Extra_Extension/Adafruit_NeoPixel.cpp.o (symbol from plugin): In function `Adafruit_NeoPixel::Adafruit_NeoPixel(unsigned int, unsigned char, unsigned char)&#39;:
+(.text&#43;0x0): multiple definition of `Adafruit_NeoPixel::show()&#39;
+/tmp/arduino-sketch-50481F602150BE89EE868537375396CC/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+/tmp/arduino-sketch-50481F602150BE89EE868537375396CC/libraries/Leaphy_Extra_Extension/Adafruit_NeoPixel.cpp.o (symbol from plugin): In function `Adafruit_NeoPixel::Adafruit_NeoPixel(unsigned int, unsigned char, unsigned char)&#39;:
+(.text&#43;0x0): multiple definition of `Adafruit_NeoPixel::setPixelColor(unsigned int, unsigned char, unsigned char, unsigned char)&#39;
+/tmp/arduino-sketch-50481F602150BE89EE868537375396CC/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+/tmp/arduino-sketch-50481F602150BE89EE868537375396CC/libraries/Leaphy_Extra_Extension/Adafruit_NeoPixel.cpp.o (symbol from plugin): In function `Adafruit_NeoPixel::Adafruit_NeoPixel(unsigned int, unsigned char, unsigned char)&#39;:
+(.text&#43;0x0): multiple definition of `Adafruit_NeoPixel::setPixelColor(unsigned int, unsigned long)&#39;
+/tmp/arduino-sketch-50481F602150BE89EE868537375396CC/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+/tmp/arduino-sketch-50481F602150BE89EE868537375396CC/libraries/Leaphy_Extra_Extension/Adafruit_NeoPixel.cpp.o (symbol from plugin): In function `Adafruit_NeoPixel::Adafruit_NeoPixel(unsigned int, unsigned char, unsigned char)&#39;:
+(.text&#43;0x0): multiple definition of `Adafruit_NeoPixel::getPixelColor(unsigned int) const&#39;
+/tmp/arduino-sketch-50481F602150BE89EE868537375396CC/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+/tmp/arduino-sketch-50481F602150BE89EE868537375396CC/libraries/Leaphy_Extra_Extension/Adafruit_NeoPixel.cpp.o (symbol from plugin): In function `Adafruit_NeoPixel::Adafruit_NeoPixel(unsigned int, unsigned char, unsigned char)&#39;:
+(.text&#43;0x0): multiple definition of `Adafruit_NeoPixel::setBrightness(unsigned char)&#39;
+/tmp/arduino-sketch-50481F602150BE89EE868537375396CC/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+/tmp/arduino-sketch-50481F602150BE89EE868537375396CC/libraries/Leaphy_Extra_Extension/Adafruit_TCS34725.cpp.o (symbol from plugin): In function `pow(float, float)&#39;:
+(.text&#43;0x0): multiple definition of `pow(float, float)&#39;
+/tmp/arduino-sketch-50481F602150BE89EE868537375396CC/libraries/Adafruit_TCS34725/Adafruit_TCS34725.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+/tmp/arduino-sketch-50481F602150BE89EE868537375396CC/libraries/Leaphy_Extra_Extension/Adafruit_TCS34725.cpp.o (symbol from plugin): In function `pow(float, float)&#39;:
+(.text&#43;0x0): multiple definition of `Adafruit_TCS34725::write8(unsigned char, unsigned long)&#39;
+/tmp/arduino-sketch-50481F602150BE89EE868537375396CC/libraries/Adafruit_TCS34725/Adafruit_TCS34725.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+/tmp/arduino-sketch-50481F602150BE89EE868537375396CC/libraries/Leaphy_Extra_Extension/Adafruit_TCS34725.cpp.o (symbol from plugin): In function `pow(float, float)&#39;:
+(.text&#43;0x0): multiple definition of `Adafruit_TCS34725::read8(unsigned char)&#39;
+/tmp/arduino-sketch-50481F602150BE89EE868537375396CC/libraries/Adafruit_TCS34725/Adafruit_TCS34725.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+/tmp/arduino-sketch-50481F602150BE89EE868537375396CC/libraries/Leaphy_Extra_Extension/Adafruit_TCS34725.cpp.o (symbol from plugin): In function `pow(float, float)&#39;:
+(.text&#43;0x0): multiple definition of `Adafruit_TCS34725::read16(unsigned char)&#39;
+/tmp/arduino-sketch-50481F602150BE89EE868537375396CC/libraries/Adafruit_TCS34725/Adafruit_TCS34725.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+/tmp/arduino-sketch-50481F602150BE89EE868537375396CC/libraries/Leaphy_Extra_Extension/Adafruit_TCS34725.cpp.o (symbol from plugin): In function `pow(float, float)&#39;:
+(.text&#43;0x0): multiple definition of `Adafruit_TCS34725::enable()&#39;
+/tmp/arduino-sketch-50481F602150BE89EE868537375396CC/libraries/Adafruit_TCS34725/Adafruit_TCS34725.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+/tmp/arduino-sketch-50481F602150BE89EE868537375396CC/libraries/Leaphy_Extra_Extension/Adafruit_TCS34725.cpp.o (symbol from plugin): In function `pow(float, float)&#39;:
+(.text&#43;0x0): multiple definition of `Adafruit_TCS34725::disable()&#39;
+/tmp/arduino-sketch-50481F602150BE89EE868537375396CC/libraries/Adafruit_TCS34725/Adafruit_TCS34725.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+/tmp/arduino-sketch-50481F602150BE89EE868537375396CC/libraries/Leaphy_Extra_Extension/Adafruit_TCS34725.cpp.o (symbol from plugin): In function `pow(float, float)&#39;:
+(.text&#43;0x0): multiple definition of `Adafruit_TCS34725::setGain(tcs34725Gain_t)&#39;
+/tmp/arduino-sketch-50481F602150BE89EE868537375396CC/libraries/Adafruit_TCS34725/Adafruit_TCS34725.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+/tmp/arduino-sketch-50481F602150BE89EE868537375396CC/libraries/Leaphy_Extra_Extension/Adafruit_TCS34725.cpp.o (symbol from plugin): In function `pow(float, float)&#39;:
+(.text&#43;0x0): multiple definition of `Adafruit_TCS34725::init()&#39;
+/tmp/arduino-sketch-50481F602150BE89EE868537375396CC/libraries/Adafruit_TCS34725/Adafruit_TCS34725.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+/tmp/arduino-sketch-50481F602150BE89EE868537375396CC/libraries/Leaphy_Extra_Extension/Adafruit_TCS34725.cpp.o (symbol from plugin): In function `pow(float, float)&#39;:
+(.text&#43;0x0): multiple definition of `Adafruit_TCS34725::begin(unsigned char, TwoWire*)&#39;
+/tmp/arduino-sketch-50481F602150BE89EE868537375396CC/libraries/Adafruit_TCS34725/Adafruit_TCS34725.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+/tmp/arduino-sketch-50481F602150BE89EE868537375396CC/libraries/Leaphy_Extra_Extension/Adafruit_TCS34725.cpp.o (symbol from plugin): In function `pow(float, float)&#39;:
+(.text&#43;0x0): multiple definition of `Adafruit_TCS34725::getRawData(unsigned int*, unsigned int*, unsigned int*, unsigned int*)&#39;
+/tmp/arduino-sketch-50481F602150BE89EE868537375396CC/libraries/Adafruit_TCS34725/Adafruit_TCS34725.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+/tmp/arduino-sketch-50481F602150BE89EE868537375396CC/libraries/Leaphy_Extra_Extension/Adafruit_TCS34725.cpp.o (symbol from plugin): In function `pow(float, float)&#39;:
+(.text&#43;0x0): multiple definition of `Adafruit_TCS34725::getRawDataOneShot(unsigned int*, unsigned int*, unsigned int*, unsigned int*)&#39;
+/tmp/arduino-sketch-50481F602150BE89EE868537375396CC/libraries/Adafruit_TCS34725/Adafruit_TCS34725.cpp.o (s</pre>
+
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library Leaphy_Extra_Extension claims to run on avr architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Leaphy_Extra_Extension/src/Adafruit_NeoPixel.cpp: In member function &#39;void Adafruit_NeoPixel::show()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Leaphy_Extra_Extension/src/Adafruit_NeoPixel.cpp:736:3: error: &#39;Pio&#39; was not declared in this scope
+   Pio            *port;
+   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Leaphy_Extra_Extension/src/Adafruit_NeoPixel.cpp:736:19: error: &#39;port&#39; was not declared in this scope
+   Pio            *port;
+                   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Leaphy_Extra_Extension/src/Adafruit_NeoPixel.cpp:736:19: note: suggested alternative: &#39;Port&#39;
+   Pio            *port;
+                   ^~~~
+                   Port
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Leaphy_Extra_Extension/src/Adafruit_NeoPixel.cpp:740:3: error: &#39;pmc_set_writeprotect&#39; was not declared in this scope
+   pmc_set_writeprotect(false);
+   ^~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Leaphy_Extra_Extension/src/Adafruit_NeoPixel.cpp:741:3: error: &#39;pmc_enable_periph_clk&#39; was not declared in this scope
+   pmc_enable_periph_clk((uint32_t)TC3_IRQn);
+   ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Leaphy_Extra_Extension/src/Adafruit_NeoPixel.cpp:742:16: error: &#39;TC1&#39; was not declared in this scope
+   TC_Configure(TC1, 0,
+                ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Leaphy_Extra_Extension/src/Adafruit_NeoPixel.cpp:742:16: note: suggested alternative: &#39;TC5&#39;
+   TC_Configure(TC1, 0,
+                ^~~
+                TC5
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Leaphy_Extra_Extension/src/Adafruit_NeoPixel.cpp:743:5: error: &#39;TC_CMR_WAVE&#39; was not declared in this scope
+     TC_CMR_WAVE | TC_CMR_WAVSEL_UP | TC_CMR_TCCLKS_TIMER_CLOCK1);
+     ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Leaphy_Extra_Extension/src/Adafruit_NeoPixel.cpp:743:19: error: &#39;TC_CMR_WAVSEL_UP&#39; was not declared in this scope
+     TC_CMR_WAVE | TC_CMR_WAVSEL_UP | TC_CMR_TCCLKS_TIMER_CLOCK1);
+                   ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Leaphy_Extra_Extension/src/Adafruit_NeoPixel.cpp:743:19: note: suggested alternative: &#39;TCC_WAVE_SWAP&#39;
+     TC_CMR_WAVE | TC_CMR_WAVSEL_UP | TC_CMR_TCCLKS_TIMER_CLOCK1);
+                   ^~~~~~~~~~~~~~~~
+                   TCC_WAVE_SWAP
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Leaphy_Extra_Extension/src/Adafruit_NeoPixel.cpp:743:38: error: &#39;TC_CMR_TCCLKS_TIMER_CLOCK1&#39; was not declared in this scope
+     TC_CMR_WAVE | TC_CMR_WAVSEL_UP | TC_CMR_TCCLKS_TIMER_CLOCK1);
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Leaphy_Extra_Extension/src/Adafruit_NeoPixel.cpp:742:3: error: &#39;TC_Configure&#39; was not declared in this scope
+   TC_Configure(TC1, 0,
+   ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Leaphy_Extra_Extension/src/Adafruit_NeoPixel.cpp:744:3: error: &#39;TC_Start&#39; was not declared in this scope
+   TC_Start(TC1, 0);
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Leaphy_Extra_Extension/src/Adafruit_NeoPixel.cpp:747:38: error: &#39;const PinDescription {aka const struct _PinDescription}&#39; has no member named &#39;pPort&#39;; did you mean &#39;ulPort&#39;?
+   port      = g_APinDescription[pin].pPort; // declarations above.  Want to
+                                      ^~~~~
+                                      ulPort
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Leaphy_Extra_Extension/src/Adafruit_NeoPixel.cpp:775:18: error: &#39;TC_CCR_CLKEN&#39; was not declared in this scope
+     *timeReset = TC_CCR_CLKEN | TC_CCR_SWTRG;
+                  ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Leaphy_Extra_Extension/src/Adafruit_NeoPixel.cpp:775:18: note: suggested alternative: &#39;TC_CTRLC_CPTEN&#39;
+     *timeReset = TC_CCR_CLKEN | TC_CCR_SWTRG;
+                  ^~~~~~~~~~~~
+                  TC_CTRLC_CPTEN
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Leaphy_Extra_Extension/src/Adafruit_NeoPixel.cpp:775:33: error: &#39;TC_CCR_SWTRG&#39; was not declared in this scope
+     *timeReset = TC_CCR_CLKEN | TC_CCR_SWTRG;
+                                 ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Leaphy_Extra_Extension/src/Adafruit_NeoPixel.cpp:775:33: note: suggested alternative: &#39;TC_CTRLA_SWRST&#39;
+     *timeReset = TC_CCR_CLKEN | TC_CCR_SWTRG;
+                                 ^~~~~~~~~~~~
+                                 TC_CTRLA_SWRST
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Leaphy_Extra_Extension/src/Adafruit_NeoPixel.cpp:785:3: error: &#39;TC_Stop&#39; was not declared in this scope
+   TC_Stop(TC1, 0);
+   ^~~~~~~
+Multiple libraries were found for &#34;Adafruit_NeoPixel.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_NeoPixel
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pinduino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Leaphy_Extra_Extension
+Multiple libraries were found for &#34;Adafruit_TCS34725.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TCS34725
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Leaphy_Extra_Extension
+</pre>
+
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library Leaphy_Extra_Extension claims to run on avr architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+/tmp/arduino-sketch-7FC657BFA65937C64D4A76216512AC13/libraries/Leaphy_Extra_Extension/Adafruit_NeoPixel.cpp.o: In function `Adafruit_NeoPixel::~Adafruit_NeoPixel()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Leaphy_Extra_Extension/src/Adafruit_NeoPixel.cpp:50: multiple definition of `Adafruit_NeoPixel::~Adafruit_NeoPixel()&#39;
+/tmp/arduino-sketch-7FC657BFA65937C64D4A76216512AC13/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o:/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:119: first defined here
+/tmp/arduino-sketch-7FC657BFA65937C64D4A76216512AC13/libraries/Leaphy_Extra_Extension/Adafruit_NeoPixel.cpp.o: In function `Adafruit_NeoPixel::~Adafruit_NeoPixel()&#39;:
+Adafruit_NeoPixel.cpp:(.text._ZN17Adafruit_NeoPixelD2Ev&#43;0x0): multiple definition of `Adafruit_NeoPixel::~Adafruit_NeoPixel()&#39;
+/tmp/arduino-sketch-7FC657BFA65937C64D4A76216512AC13/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o:Adafruit_NeoPixel.cpp:(.text._ZN17Adafruit_NeoPixelD2Ev&#43;0x0): first defined here
+/tmp/arduino-sketch-7FC657BFA65937C64D4A76216512AC13/libraries/Leaphy_Extra_Extension/Adafruit_NeoPixel.cpp.o: In function `Adafruit_NeoPixel::begin()&#39;:
+Adafruit_NeoPixel.cpp:(.text._ZN17Adafruit_NeoPixel5beginEv&#43;0x0): multiple definition of `Adafruit_NeoPixel::begin()&#39;
+/tmp/arduino-sketch-7FC657BFA65937C64D4A76216512AC13/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o:Adafruit_NeoPixel.cpp:(.text._ZN17Adafruit_NeoPixel5beginEv&#43;0x0): first defined here
+/tmp/arduino-sketch-7FC657BFA65937C64D4A76216512AC13/libraries/Leaphy_Extra_Extension/Adafruit_NeoPixel.cpp.o: In function `Adafruit_NeoPixel::show()&#39;:
+Adafruit_NeoPixel.cpp:(.text._ZN17Adafruit_NeoPixel4showEv&#43;0x0): multiple definition of `Adafruit_NeoPixel::show()&#39;
+/tmp/arduino-sketch-7FC657BFA65937C64D4A76216512AC13/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o:Adafruit_NeoPixel.cpp:(.text._ZN17Adafruit_NeoPixel4showEv&#43;0x0): first defined here
+/tmp/arduino-sketch-7FC657BFA65937C64D4A76216512AC13/libraries/Leaphy_Extra_Extension/Adafruit_NeoPixel.cpp.o: In function `Adafruit_NeoPixel::setPixelColor(unsigned short, unsigned char, unsigned char, unsigned char)&#39;:
+Adafruit_NeoPixel.cpp:(.text._ZN17Adafruit_NeoPixel13setPixelColorEthhh&#43;0x0): multiple definition of `Adafruit_NeoPixel::setPixelColor(unsigned short, unsigned char, unsigned char, unsigned char)&#39;
+/tmp/arduino-sketch-7FC657BFA65937C64D4A76216512AC13/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o:Adafruit_NeoPixel.cpp:(.text._ZN17Adafruit_NeoPixel13setPixelColorEthhh&#43;0x0): first defined here
+/tmp/arduino-sketch-7FC657BFA65937C64D4A76216512AC13/libraries/Leaphy_Extra_Extension/Adafruit_NeoPixel.cpp.o: In function `Adafruit_NeoPixel::setPixelColor(unsigned short, unsigned int)&#39;:
+Adafruit_NeoPixel.cpp:(.text._ZN17Adafruit_NeoPixel13setPixelColorEtj&#43;0x0): multiple definition of `Adafruit_NeoPixel::setPixelColor(unsigned short, unsigned int)&#39;
+/tmp/arduino-sketch-7FC657BFA65937C64D4A76216512AC13/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o:Adafruit_NeoPixel.cpp:(.text._ZN17Adafruit_NeoPixel13setPixelColorEtj&#43;0x0): first defined here
+/tmp/arduino-sketch-7FC657BFA65937C64D4A76216512AC13/libraries/Leaphy_Extra_Extension/Adafruit_NeoPixel.cpp.o: In function `Adafruit_NeoPixel::getPixelColor(unsigned short) const&#39;:
+Adafruit_NeoPixel.cpp:(.text._ZNK17Adafruit_NeoPixel13getPixelColorEt&#43;0x0): multiple definition of `Adafruit_NeoPixel::getPixelColor(unsigned short) const&#39;
+/tmp/arduino-sketch-7FC657BFA65937C64D4A76216512AC13/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o:Adafruit_NeoPixel.cpp:(.text._ZNK17Adafruit_NeoPixel13getPixelColorEt&#43;0x0): first defined here
+/tmp/arduino-sketch-7FC657BFA65937C64D4A76216512AC13/libraries/Leaphy_Extra_Extension/Adafruit_NeoPixel.cpp.o: In function `Adafruit_NeoPixel::setBrightness(unsigned char)&#39;:
+Adafruit_NeoPixel.cpp:(.text._ZN17Adafruit_NeoPixel13setBrightnessEh&#43;0x0): multiple definition of `Adafruit_NeoPixel::setBrightness(unsigned char)&#39;
+/tmp/arduino-sketch-7FC657BFA65937C64D4A76216512AC13/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o:Adafruit_NeoPixel.cpp:(.text._ZN17Adafruit_NeoPixel13setBrightnessEh&#43;0x0): first defined here
+/tmp/arduino-sketch-7FC657BFA65937C64D4A76216512AC13/libraries/Leaphy_Extra_Extension/Adafruit_TCS34725.cpp.o: In function `powf&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Leaphy_Extra_Extension/src/Adafruit_TCS34725.cpp:42: multiple definition of `powf&#39;
+/tmp/arduino-sketch-7FC657BFA65937C64D4A76216512AC13/libraries/Adafruit_TCS34725/Adafruit_TCS34725.cpp.o:/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TCS34725/Adafruit_TCS34725.cpp:42: first defined here
+/tmp/arduino-sketch-7FC657BFA65937C64D4A76216512AC13/libraries/Leaphy_Extra_Extension/Adafruit_TCS34725.cpp.o: In function `Adafruit_TCS34725::write8(unsigned char, unsigned int)&#39;:
+Adafruit_TCS34725.cpp:(.text._ZN17Adafruit_TCS347256write8Ehj&#43;0x0): multiple definition of `Adafruit_TCS34725::write8(unsigned char, unsigned int)&#39;
+/tmp/arduino-sketch-7FC657BFA65937C64D4A76216512AC13/libraries/Adafruit_TCS34725/Adafruit_TCS34725.cpp.o:Adafruit_TCS34725.cpp:(.text._ZN17Adafruit_TCS347256write8Ehj&#43;0x0): first defined here
+/tmp/arduino-sketch-7FC657BFA65937C64D4A76216512AC13/libraries/Leaphy_Extra_Extension/Adafruit_TCS34725.cpp.o: In function `Adafruit_TCS34725::read8(unsigned char)&#39;:
+Adafruit_TCS34725.cpp:(.text._ZN17Adafruit_TCS347255read8Eh&#43;0x0): multiple definition of `Adafruit_TCS34725::read8(unsigned char)&#39;
+/tmp/arduino-sketch-7FC657BFA65937C64D4A76216512AC13/libraries/Adafruit_TCS34725/Adafruit_TCS34725.cpp.o:Adafruit_TCS34725.cpp:(.text._ZN17Adafruit_TCS347255read8Eh&#43;0x0): first defined here
+/tmp/arduino-sketch-7FC657BFA65937C64D4A76216512AC13/libraries/Leaphy_Extra_Extension/Adafruit_TCS34725.cpp.o: In function `Adafruit_TCS34725::read16(unsigned char)&#39;:
+Adafruit_TCS34725.cpp:(.text._ZN17Adafruit_TCS347256read16Eh&#43;0x0): multiple definition of `Adafruit_TCS34725::read16(unsigned char)&#39;
+/tmp/arduino-sketch-7FC657BFA65937C64D4A76216512AC13/libraries/Adafruit_TCS34725/Adafruit_TCS34725.cpp.o:Adafruit_TCS34725.cpp:(.text._ZN17Adafruit_TCS347256read16Eh&#43;0x0): first defined here
+/tmp/arduino-sketch-7FC657BFA65937C64D4A76216512AC13/libraries/Leaphy_Extra_Extension/Adafruit_TCS34725.cpp.o: In function `Adafruit_TCS34725::enable()&#39;:
+Adafruit_TCS34725.cpp:(.text._ZN17Adafruit_TCS347256enableEv&#43;0x0): multiple definition of `Adafruit_TCS34725::enable()&#39;
+/tmp/arduino-sketch-7FC657BFA65937C64D4A76216512AC13/libraries/Adafruit_TCS34725/Adafruit_TCS34725.cpp.o:Adafruit_TCS34725.cpp:(.text._ZN17Adafruit_TCS347256enableEv&#43;0x0): first defined here
+/tmp/arduino-sketch-7FC657BFA65937C64D4A76216512AC13/libraries/Leaphy_Extra_Extension/Adafruit_TCS34725.cpp.o: In function `Adafruit_TCS34725::disable()&#39;:
+Adafruit_TCS34725.cpp:(.text._ZN17Adafruit_TCS347257disableEv&#43;0x0): multiple definition of `Adafruit_TCS34725::disable()&#39;
+/tmp/arduino-sketch-7FC657BFA65937C64D4A76216512AC13/libraries/Adafruit_TCS34725/Adafruit_TCS34725.cpp.o:Adafruit_TCS34725.cpp:(.text._ZN17Adafruit_TCS347257disableEv&#43;0x0): first defined here
+/tmp/arduino-sketch-7FC657BFA65937C64D4A76216512AC13/libraries/Leaphy_Extra_Extension/Adafruit_TCS34725.cpp.o: In function `Adafruit_TCS34725::setGain(tcs34725Gain_t)&#39;:
+Adafruit_TCS34725.cpp:(.text._ZN17Adafruit_TCS347257setGainE14tcs34725Gain_t&#43;0x0): multiple definition of `Adafruit_TCS34725::setGain(tcs34725Gain_t)&#39;
+/tmp/arduino-sketch-7FC657BFA65937C64D4A76216512AC13/libraries/Adafruit_TCS34725/Adafruit_TCS34725.cpp.o:Adafruit_TCS34725.cpp:(.text._ZN17Adafruit_TCS347257setGainE14tcs34725Gain_t&#43;0x0): first defined here
+/tmp/arduino-sketch-7FC657BFA65937C64D4A76216512AC13/libraries/Leaphy_Extra_Extension/Adafruit_TCS34725.cpp.o: In function `Adafruit_TCS34725::init()&#39;:
+Adafruit_TCS34725.cpp:(.text._ZN17Adafruit_TCS347254initEv&#43;0x0): multiple definition of `Adafruit_TCS34725::init()&#39;
+/tmp/arduino-sketch-7FC657BFA65937C64D4A76216512AC13/libraries/Adafruit_TCS34725/Adafruit_TCS34725.cpp.o:Adafruit_TCS34725.cpp:(.text._ZN17Adafruit_TCS347254initEv&#43;0x0): first defined here
+/tmp/arduino-sketch-7FC657BFA65937C64D4A76216512AC13/libraries/Leaphy_Extra_Extension/Adafruit_TCS34725.cpp.o: In function `Adafruit_TCS34725::begin(unsigned char, TwoWire*)&#39;:
+Adafruit_TCS34725.cpp:(.text._ZN17Adafruit_TCS347255beginEhP7TwoWire&#43;0x0): multiple definition of `Adafruit_TCS34725::begin(unsigned char, TwoWire*)&#39;
+/tmp/arduino-sketch-7FC657BFA65937C64D4A76216512AC13/libraries/Adafruit_TCS34725/Adafruit_TCS34725.cpp.o:Adafruit_TCS34725.cpp:(.text._ZN17Adafruit_TCS347255beginEhP7TwoWire&#43;0x0): first defined here
+/tmp/arduino-sketch-7FC657BFA65937C64D4A76216512AC13/libraries/Leaphy_Extra_Extension/Adafruit_TCS34725.cpp.o: In function `Adafruit_TCS34725::getRawData(unsigned short*, unsigned short*, unsigned short*, unsigned short*)&#39;:
+Adafruit_TCS34725.cpp:(.text._ZN17Adafruit_TCS3472510getRawDataEPtS0_S0_S0_&#43;0x0): multiple definition of `Adafruit_TCS34725::getRawData(unsigned short*, unsigned short*, unsigned short*, unsigned short*)&#39;
+/tmp/arduino-sketch-7FC657BFA65937C64D4A76216512AC13/libraries/Adafruit_TCS34725/Adafruit_TCS34725.cpp.o:Adafruit_TCS34725.cpp:(.text._ZN17Adafruit_TCS3472510getRawDataEPtS0_S0_S0_&#43;0x0): first defined here
+/tmp/arduino-sketch-7FC657BFA65937C64D4A76216512AC13/libraries/Leaphy_Extra_Extension/Adafruit_TCS34725.cpp.o: In function `Adafruit_TCS34725::getRawDataOneShot(unsigned short*, unsigned short*, unsigned short*, unsigned short*)&#39;:
+Adafruit_TCS34725.cpp:(.text._ZN17Adafruit_TCS3472517getRawDataOneShotEPtS0_S0_S0_&#43;0x0): multiple definition of `Adafruit_TCS34725::getRawDataOneShot(unsigned short*, unsigned short*, unsigned short*, unsigned short*)&#39;
+/tmp/arduino-sketch-7FC657BFA65937C64D4A76216512AC13/libraries/Adafruit_TCS34725/Adafruit_TCS34725.cpp.o:Adafruit_TCS</pre>
+
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

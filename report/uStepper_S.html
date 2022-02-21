@@ -1,0 +1,367 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>uStepper S - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>uStepper S</h2>
+				<p>
+					Version: <b>2.3.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/ustepper-s/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperDriver.cpp:34:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperS.h:142:3: error: #error !!This library only supports the uStepper S board!!
+  #error !!This library only supports the uStepper S board!!
+   ^/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperS.h:146:3: error: #error !!This library only supports the ATmega328PB MCU!!
+  #error !!This library only supports the ATmega328PB MCU!!
+   ^~~~~
+~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperDriver.cpp: In member function &#39;void uStepperDriver::chipSelect(bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperDriver.cpp:357:3: error: &#39;PORTE&#39; was not declared in this scope
+   PORTE &amp;=/home/ec2-user/arduino-testlib/cli-/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperS.h:146:3: error: #error !!This library only supports the ATmega328PB MCU!!
+  #error !!This library only supports the ATmega328PB MCU!!
+   ^~~~~
+Multiple libraries were found for &#34;EEPROM.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/EEPROM
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/arduino-NVM
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum
+</pre>
+
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperDriver.cpp:34:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperS.h:142:3: error: #error !!This library only supports the uStepper S board!!
+  #error !!This library only supports the uStepper S board!!
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperS.h:146:3: error: #error !!This library only supports the ATmega328PB MCU!!
+  #error !!This library only supports the ATmega328PB MCU!!
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperS.h:149:10: fatal error: avr/io.h: No such file or directory
+ #include &lt;avr/io.h&gt;
+          ^~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperDriver.cpp:34:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperS.h:142:3: error: #error !!This library only supports the uStepper S board!!
+  #error !!This library only supports the uStepper S board!!
+   ^�����//home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperS.h:146:3: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperServo.cpp:86:5: error: &#39;TCCR4B&#39; was not declareIn file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperS.cpp:33:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperS.cpp: In member function &#39;void uStepperS::init()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperS.h:228:14: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperEncoder.cpp:56:2: note: suggested alternative: &#39;TCB1&#39;
+  TCCR1A = (1 &lt;&lt; WGM11);
+  ^~~~~~
+  TCB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperEncoder.cpp:56:17: error: &#39;WGM11&#39; was not declared in this scope
+  /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperServo.cpp: In member function &#39;void uStepperServo::write(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperServo.cpp:119:5: error: &#39;OCR4/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperEncoder.cpp:57:2: note: suggested alternative: &#39;TCB1&#39;
+  TCCR1B = (1 &lt;&lt; WGM12) | (1 &lt;&lt; WGM13) | (1 &lt;&lt; CS10);
+  ^~~~~~
+  TCB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperEncoder.cpp:57:17: error: &#39;WGM12&#39; was not declared in this scope
+  TCCR1B = (1 &lt;&lt; WGM12) | (1 &lt;&lt; WGM13) | (1 &lt;&lt; CS10);
+                 ^~~~~
+1 &amp;= ~(1 &lt;&lt; OCIE1A);
+                   ^~~~~~
+/user/libraries/uStepper_S/src/uStepperS.cpp:64:23: note: in expansion of macro &#39;MOSI_ENC&#39;
+  DDRC = (1&lt;&lt;SCK1)|(1&lt;&lt;MOSI_ENC);
+                       ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperEncoder.cpp:57:47: error: &#39;CS10&#39; was not declared in this scope
+  TCCR1B/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperDriver.cpp:320:2: note: suggested alternative: &#39;TIMERB1&#39;
+  TIMSK1 &amp;= ~(1 &lt;&lt; OCIE1A);
+  ^~~~~~
+  TIMERB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperDriver.cpp:320:19: error: &#39;OCIE1A&#39; was not declared in this scope
+  TIMSK1 &amp;= ~(1 &lt;&lt; OCIE1A);
+                   ^~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperDriver.cpp:34:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperDriver.cpp: In member function &#39;void uStepperDriver::chipSelect(bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperS.h:222:19: error: &#39;PE2&#39; was not declared in this scope
+ #define CS_DRIVER PE2 /**&lt; Define label for driver chip select pin. Not normally needed for users */
+                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperDriver.cpp:357:19: note: in expansion of macro &#39;CS_DRIVER&#39;
+   PORTE &amp;= ~(1 &lt;&lt; CS_DRIVER);  // Set CS LOW
+                   ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperS.h:222:19: note: suggested alternative: &#39;PE&#39;
+ #define CS_DRIVER PE2 /**&lt; Define label for driver chip select pin. Not normally needed for users */
+                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperDriver.cpp:357:19: note: in expansion of macro &#39;CS_DRIVER&#39;
+   PORTE &amp;= ~(1 &lt;&lt; CS_DRIVER);  // Set CS LOW
+                   ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperS.h:222:19: error: &#39;PE2&#39; was not declared in this scope
+ #de/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperEncoder.cpp:73:2: note: suggested alternative: &#39;TIMERB1&#39;
+  TIMSK1 = (1 &lt;&lt; OCIE1A);
+  ^~~~~~
+  TIMERB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperEncoder.cpp:73:17: error: &#39;OCIE1A&#39; was not declared in this scope
+  TIMSK1 = (1 &lt;&lt; OCIE1A);
+                 ^~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperEncoder.cpp:33:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperS.h:226:18: error: &#39;PC2&#39; was not declared in this scope
+ #define MOSI_ENC PC2 /**&lt; Define label for encoder chip MOSI pin. Not normally needed for users */
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperEncoder.cpp:76:18: note: in expansion of macro &#39;MOSI_ENC&#39;
+  PORTC &amp;= ~(1 &lt;&lt; MOSI_ENC);
+                  ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperS.h:226:18: note: suggested alternative: &#39;PC&#39;
+ #define MOSI_ENC PC2 /**&lt; Define label for encoder chip MOSI pin. Not normally needed for users */
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperEncoder.cpp:76:18: note: in expansion of macro &#39;MOSI_ENC&#39;
+  PORTC &amp;= ~(1 &lt;&lt; MOSI_ENC);
+                  ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperEncoder.cpp: In member function &#39;void uStepperEncoder::setHome(float)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperEncoder.cpp:85:2: error: &#39;TCNT1&#39; was not declared in this scope
+  TCNT1 = 0;
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperEncoder.cpp:85:2: note: suggested alternative: &#39;TCB1&#39;
+  TCNT1 = 0;
+  ^~~~~
+  TCB1
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperEncoder.cpp:33:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperEncoder.cpp: In member function &#39;void uStepperEncoder::chipSelect(bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperS.h:223:20: error: &#39;PD7&#39; was not declared in this scope
+ #define CS_ENCODER PD7  /**&lt; Define label for encoder chip select pin. Not normally needed for users */
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperEncoder.cpp:231:18: note: in expansion of macro &#39;CS_ENCODER&#39;
+   PORTD |= (1 &lt;&lt; CS_ENCODER); // Set CS HIGH
+                  ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperS.h:223:20: note: suggested alternative: &#39;PD&#39;
+ #define CS_ENCODER PD7  /**&lt; Define label for encoder chip select pin. Not normally needed for users */
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperEncoder.cpp:231:18: note: in expansion of macro &#39;CS_ENCODER&#39;
+   PORTD |= (1 &lt;&lt; CS_ENCODER); // Set CS HIGH
+                  ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperS.h:223:20: error: &#39;PD7&#39; was not declared in this scope
+ #define CS_ENCODER PD7  /**&lt; Define label for encoder chip select pin. Not normally needed for users */
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperEncoder.cpp:233:19: note: in expansion of macro &#39;CS_ENCODER&#39;
+   PORTD &amp;= ~(1 &lt;&lt; CS_ENCODER);  // Set CS LOW
+                   ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperS.h:223:20: note: suggested alternative: &#39;PD&#39;
+ #define CS_ENCODER PD7  /**&lt; Define label for encoder chip select pin. Not normally needed for users */
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperEncoder.cpp:233:19: note: in expansion of macro &#39;CS_ENCODER&#39;
+   PORTD &amp;= ~(1 &lt;&lt; CS_ENCODER);  // Set CS LOW
+                   ^~~~~~~~~~
+ror: &#39;SPE1&#39; was not declared in this scope
+  SPCR1 = (1&lt;&lt;SPE1)|(1&lt;&lt;MSTR1);
+              ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperS.cpp:77:14: note: suggested alternative: &#39;SPI&#39;
+  SPCR1 = (1&lt;&lt;SPE1)|(1&lt;&lt;MSTR1);
+              ^~~~
+              SPI
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperS.cpp:77:24: error: &#39;MSTR1&#39; was not declared in this scope
+  SPCR1 = (1&lt;&lt;SPE1)|(1&lt;&lt;MSTR1);
+                        ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperS.cpp:77:24: note: suggested alternative: &#39;PSTR&#39;
+  SPCR1 = (1&lt;&lt;SPE1)|(1&lt;&lt;MSTR1);
+                        ^~~~~
+                        PSTR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperS.cpp: In member function &#39;void uStepperS::setSPIMode(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperS.cpp:404:4: error: &#39;SPCR1&#39; was not declared in this scope
+    SPCR1 |= (1&lt;&lt;CPOL1);  // Set CPOL HIGH = 1
+    ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperS.cpp:404:4: note: suggested alternative: &#39;SCK1&#39;
+    SPCR1 |= (1&lt;&lt;CPOL1);  // Set CPOL HIGH = 1
+    ^~~~~
+    SCK1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperS.cpp:404:17: error: &#39;CPOL1&#39; was not declared in this scope
+    SPCR1 |= (1&lt;&lt;CPOL1);  // Set CPOL HIGH = 1
+                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperS.cpp:405:18: error: &#39;CPHA1&#39; was not declared in this scope
+    SPCR1 &amp;= ~(1&lt;&lt;CPHA1);  // Set CPHA LOW = 0
+                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperS.cpp: In member function &#39;uint8_t uStepperS::SPI(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src</pre>
+
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperDriver.cpp:34:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperS.h:142:3: error: #error !!This library only supports the uStepper S board!!
+  #error !!This library only supports the uStepper S board!!
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperS.h:146:3: error: #error !!This library only supports the ATmega328PB MCU!!
+  #error !!This library only supports the ATmega328PB MCU!!
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperS.h:149:10: fatal error: avr/io.h: No such file or directory
+ #include &lt;avr/io.h&gt;
+          ^~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperDriver.cpp:34:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperS.h:142:3: error: #error !!This library only supports the uStepper S board!!
+  #error !!This library only supports the uStepper S board!!
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperS.h:146:3: error: #error !!This library only supports the ATmega328PB MCU!!
+  #error !!This library only supports the ATmega328PB MCU!!
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S/src/uStepperS.h:149:20: fatal error: avr/io.h: No such file or directory
+compilation terminated.
+
+</pre>
+
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

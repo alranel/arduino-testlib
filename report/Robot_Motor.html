@@ -1,0 +1,1432 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>Robot Motor - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>Robot Motor</h2>
+				<p>
+					Version: <b>1.0.3</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/robot-motor/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>Robot_IR_Array_Test</pre></th>
+						
+						<th><pre>Robot_Motor_Core</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp: In member function &#39;void RobotMotorBoard::begin()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:32:2: error: &#39;Serial1&#39; was not declared in this scope
+  Serial1.begin(9600);
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:32:2: note: suggested alternative: &#39;Serial&#39;
+  Serial1.begin(9600);
+  ^~~~~~~
+  Serial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:37:21: error: &#39;MUXA&#39; was not declared in this scope
+  uint8_t MuxPins[]={MUXA,MUXB,MUXC};
+                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:37:21: note: suggested alternative: &#39;MUX0&#39;
+  uint8_t MuxPins[]={MUXA,MUXB,MUXC};
+                     ^~~~
+                     MUX0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:37:26: error: &#39;MUXB&#39; was not declared in this scope
+  uint8_t MuxPins[]={MUXA,MUXB,MUXC};
+                          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:37:26: note: suggested alternative: &#39;MUX0&#39;
+  uint8_t MuxPins[]={MUXA,MUXB,MUXC};
+                          ^~~~
+                          MUX0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:37:31: error: &#39;MUXC&#39; was not declared in this scope
+  uint8_t MuxPins[]={MUXA,MUXB,MUXC};
+                               ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:37:31: note: suggested alternative: &#39;MUX0&#39;
+  uint8_t MuxPins[]={MUXA,MUXB,MUXC};
+                               ^~~~
+                               MUX0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:38:26: error: &#39;MUX_IN&#39; was not declared in this scope
+  this-&gt;IRs.begin(MuxPins,MUX_IN,3);
+                          ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:38:26: note: suggested alternative: &#39;MUX0&#39;
+  this-&gt;IRs.begin(MuxPins,MUX_IN,3);
+                          ^~~~~~
+                          MUX0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:39:10: error: &#39;MUXI&#39; was not declared in this scope
+  pinMode(MUXI,INPUT);
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:39:10: note: suggested alternative: &#39;MUX0&#39;
+  pinMode(MUXI,INPUT);
+          ^~~~
+          MUX0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp: In member function &#39;uint8_t RobotMotorBoard::parseCodename(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:136:11: error: &#39;TK1&#39; was not declared in this scope
+    return TK1;
+           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:138:11: error: &#39;TK2&#39; was not declared in this scope
+    return TK2;
+           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:140:11: error: &#39;TK3&#39; was not declared in this scope
+    return TK3;
+           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:142:11: error: &#39;TK4&#39; was not declared in this scope
+    return TK4;
+           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp: In member function &#39;uint8_t RobotMotorBoard::codenameToAPin(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:154:11: error: &#39;A11&#39; was not declared in this scope
+    return A11;
+           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:154:11: note: suggested alternative: &#39;A1&#39;
+    return A11;
+           ^~~
+           A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp: In member function &#39;void RobotMotorBoard::motorsWrite(int, int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:192:15: error: &#39;IN_A1&#39; was not declared in this scope
+   analogWrite(IN_A1,speedR);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:192:15: note: suggested alternative: &#39;PIN_A1&#39;
+   analogWrite(IN_A1,speedR);
+               ^~~~~
+               PIN_A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:193:15: error: &#39;IN_A2&#39; was not declared in this scope
+   analogWrite(IN_A2,0);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:193:15: note: suggested alternative: &#39;PIN_A2&#39;
+   analogWrite(IN_A2,0);
+               ^~~~~
+               PIN_A2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:195:15: error: &#39;IN_A1&#39; was not declared in this scope
+   analogWrite(IN_A1,0);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:195:15: note: suggested alternative: &#39;PIN_A1&#39;
+   analogWrite(IN_A1,0);
+               ^~~~~
+               PIN_A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:196:15: error: &#39;IN_A2&#39; was not declared in this scope
+   analogWrite(IN_A2,-speedR);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:196:15: note: suggested alternative: &#39;PIN_A2&#39;
+   analogWrite(IN_A2,-speedR);
+               ^~~~~
+               PIN_A2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:200:15: error: &#39;IN_B1&#39; was not declared in this scope
+   analogWrite(IN_B1,speedL);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:200:15: note: suggested alternative: &#39;INT1&#39;
+   analogWrite(IN_B1,speedL);
+               ^~~~~
+               INT1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:201:15: error: &#39;IN_B2&#39; was not declared in this scope
+   analogWrite(IN_B2,0);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:201:15: note: suggested alternative: &#39;PINB2&#39;
+   analogWrite(IN_B2,0);
+               ^~~~~
+               PINB2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:203:15: error: &#39;IN_B1&#39; was not declared in this scope
+   analogWrite(IN_B1,0);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:203:15: note: suggested alternative: &#39;INT1&#39;
+   analogWrite(IN_B1,0);
+               ^~~~~
+               INT1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:204:15: error: &#39;IN_B2&#39; was not declared in this scope
+   analogWrite(IN_B2,-speedL);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:204:15: note: suggested alternative: &#39;PINB2&#39;
+   analogWrite(IN_B2,-speedL);
+               ^~~~~
+               PINB2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp: In member function &#39;virtual void RobotMotorBoard::motorsStop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:212:14: error: &#39;IN_A1&#39; was not declared in this scope
+  analogWrite(IN_A1,255);
+              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:212:14: note: suggested alternative: &#39;PIN_A1&#39;
+  analogWrite(IN_A1,255);
+              ^~~~~
+              PIN_A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:213:14: error: &#39;IN_A2&#39; was not declared in this scope
+  analogWrite(IN_A2,255);
+              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:213:14: note: suggested alternative: &#39;PIN_A2&#39;
+  analogWrite(IN_A2,255);
+              ^~~~~
+              PIN_A2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:215:14: error: &#39;IN_B1&#39; was not declared in this scope
+  analogWrite(IN_B1,255);
+              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:215:14: note: suggested alternative: &#39;INT1&#39;
+  analogWrite(IN_B1,255);
+              ^~~~~
+              INT1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:216:14: error: &#39;IN_B2&#39; was not declared in this scope
+  analogWrite(IN_B2,255);
+              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:216:14: note: suggested alternative: &#39;PINB2&#39;
+  analogWrite(IN_B2,255);
+              ^~~~~
+              PINB2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp: In member function &#39;void RobotMotorBoard::_readTrim()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:271:23: error: &#39;TRIM&#39; was not declared in this scope
+  int value=analogRead(TRIM);
+                       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/</pre>
+
+					
+					<h4>examples/Robot_IR_Array_Test</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp: In member function &#39;void RobotMotorBoard::begin()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:32:2: error: &#39;Serial1&#39; was not declared in this scope
+  Serial1.begin(9600);
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:32:2: note: suggested alternative: &#39;Serial&#39;
+  Serial1.begin(9600);
+  ^~~~~~~
+  Serial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:37:21: error: &#39;MUXA&#39; was not declared in this scope
+  uint8_t MuxPins[]={MUXA,MUXB,MUXC};
+                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:37:21: note: suggested alternative: &#39;MUX0&#39;
+  uint8_t MuxPins[]={MUXA,MUXB,MUXC};
+                     ^~~~
+                     MUX0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:37:26: error: &#39;MUXB&#39; was not declared in this scope
+  uint8_t MuxPins[]={MUXA,MUXB,MUXC};
+                          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:37:26: note: suggested alternative: &#39;MUX0&#39;
+  uint8_t MuxPins[]={MUXA,MUXB,MUXC};
+                          ^~~~
+                          MUX0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:37:31: error: &#39;MUXC&#39; was not declared in this scope
+  uint8_t MuxPins[]={MUXA,MUXB,MUXC};
+                               ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:37:31: note: suggested alternative: &#39;MUX0&#39;
+  uint8_t MuxPins[]={MUXA,MUXB,MUXC};
+                               ^~~~
+                               MUX0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:38:26: error: &#39;MUX_IN&#39; was not declared in this scope
+  this-&gt;IRs.begin(MuxPins,MUX_IN,3);
+                          ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:38:26: note: suggested alternative: &#39;MUX0&#39;
+  this-&gt;IRs.begin(MuxPins,MUX_IN,3);
+                          ^~~~~~
+                          MUX0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:39:10: error: &#39;MUXI&#39; was not declared in this scope
+  pinMode(MUXI,INPUT);
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:39:10: note: suggested alternative: &#39;MUX0&#39;
+  pinMode(MUXI,INPUT);
+          ^~~~
+          MUX0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp: In member function &#39;uint8_t RobotMotorBoard::parseCodename(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:136:11: error: &#39;TK1&#39; was not declared in this scope
+    return TK1;
+           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:138:11: error: &#39;TK2&#39; was not declared in this scope
+    return TK2;
+           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:140:11: error: &#39;TK3&#39; was not declared in this scope
+    return TK3;
+           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:142:11: error: &#39;TK4&#39; was not declared in this scope
+    return TK4;
+           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp: In member function &#39;uint8_t RobotMotorBoard::codenameToAPin(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:154:11: error: &#39;A11&#39; was not declared in this scope
+    return A11;
+           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:154:11: note: suggested alternative: &#39;A1&#39;
+    return A11;
+           ^~~
+           A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp: In member function &#39;void RobotMotorBoard::motorsWrite(int, int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:192:15: error: &#39;IN_A1&#39; was not declared in this scope
+   analogWrite(IN_A1,speedR);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:192:15: note: suggested alternative: &#39;PIN_A1&#39;
+   analogWrite(IN_A1,speedR);
+               ^~~~~
+               PIN_A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:193:15: error: &#39;IN_A2&#39; was not declared in this scope
+   analogWrite(IN_A2,0);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:193:15: note: suggested alternative: &#39;PIN_A2&#39;
+   analogWrite(IN_A2,0);
+               ^~~~~
+               PIN_A2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:195:15: error: &#39;IN_A1&#39; was not declared in this scope
+   analogWrite(IN_A1,0);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:195:15: note: suggested alternative: &#39;PIN_A1&#39;
+   analogWrite(IN_A1,0);
+               ^~~~~
+               PIN_A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:196:15: error: &#39;IN_A2&#39; was not declared in this scope
+   analogWrite(IN_A2,-speedR);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:196:15: note: suggested alternative: &#39;PIN_A2&#39;
+   analogWrite(IN_A2,-speedR);
+               ^~~~~
+               PIN_A2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:200:15: error: &#39;IN_B1&#39; was not declared in this scope
+   analogWrite(IN_B1,speedL);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:200:15: note: suggested alternative: &#39;INT1&#39;
+   analogWrite(IN_B1,speedL);
+               ^~~~~
+               INT1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:201:15: error: &#39;IN_B2&#39; was not declared in this scope
+   analogWrite(IN_B2,0);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:201:15: note: suggested alternative: &#39;PINB2&#39;
+   analogWrite(IN_B2,0);
+               ^~~~~
+               PINB2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:203:15: error: &#39;IN_B1&#39; was not declared in this scope
+   analogWrite(IN_B1,0);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:203:15: note: suggested alternative: &#39;INT1&#39;
+   analogWrite(IN_B1,0);
+               ^~~~~
+               INT1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:204:15: error: &#39;IN_B2&#39; was not declared in this scope
+   analogWrite(IN_B2,-speedL);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:204:15: note: suggested alternative: &#39;PINB2&#39;
+   analogWrite(IN_B2,-speedL);
+               ^~~~~
+               PINB2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp: In member function &#39;virtual void RobotMotorBoard::motorsStop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:212:14: error: &#39;IN_A1&#39; was not declared in this scope
+  analogWrite(IN_A1,255);
+              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:212:14: note: suggested alternative: &#39;PIN_A1&#39;
+  analogWrite(IN_A1,255);
+              ^~~~~
+              PIN_A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:213:14: error: &#39;IN_A2&#39; was not declared in this scope
+  analogWrite(IN_A2,255);
+              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:213:14: note: suggested alternative: &#39;PIN_A2&#39;
+  analogWrite(IN_A2,255);
+              ^~~~~
+              PIN_A2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:215:14: error: &#39;IN_B1&#39; was not declared in this scope
+  analogWrite(IN_B1,255);
+              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:215:14: note: suggested alternative: &#39;INT1&#39;
+  analogWrite(IN_B1,255);
+              ^~~~~
+              INT1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:216:14: error: &#39;IN_B2&#39; was not declared in this scope
+  analogWrite(IN_B2,255);
+              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:216:14: note: suggested alternative: &#39;PINB2&#39;
+  analogWrite(IN_B2,255);
+              ^~~~~
+              PINB2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp: In member function &#39;void RobotMotorBoard::_readTrim()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:271:23: error: &#39;TRIM&#39; was not declared in this scope
+  int value=analogRead(TRIM);
+                       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/</pre>
+					
+					<h4>examples/Robot_Motor_Core</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp: In member function &#39;void RobotMotorBoard::begin()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:32:2: error: &#39;Serial1&#39; was not declared in this scope
+  Serial1.begin(9600);
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:32:2: note: suggested alternative: &#39;Serial&#39;
+  Serial1.begin(9600);
+  ^~~~~~~
+  Serial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:37:21: error: &#39;MUXA&#39; was not declared in this scope
+  uint8_t MuxPins[]={MUXA,MUXB,MUXC};
+                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:37:21: note: suggested alternative: &#39;MUX0&#39;
+  uint8_t MuxPins[]={MUXA,MUXB,MUXC};
+                     ^~~~
+                     MUX0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:37:26: error: &#39;MUXB&#39; was not declared in this scope
+  uint8_t MuxPins[]={MUXA,MUXB,MUXC};
+                          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:37:26: note: suggested alternative: &#39;MUX0&#39;
+  uint8_t MuxPins[]={MUXA,MUXB,MUXC};
+                          ^~~~
+                          MUX0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:37:31: error: &#39;MUXC&#39; was not declared in this scope
+  uint8_t MuxPins[]={MUXA,MUXB,MUXC};
+                               ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:37:31: note: suggested alternative: &#39;MUX0&#39;
+  uint8_t MuxPins[]={MUXA,MUXB,MUXC};
+                               ^~~~
+                               MUX0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:38:26: error: &#39;MUX_IN&#39; was not declared in this scope
+  this-&gt;IRs.begin(MuxPins,MUX_IN,3);
+                          ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:38:26: note: suggested alternative: &#39;MUX0&#39;
+  this-&gt;IRs.begin(MuxPins,MUX_IN,3);
+                          ^~~~~~
+                          MUX0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:39:10: error: &#39;MUXI&#39; was not declared in this scope
+  pinMode(MUXI,INPUT);
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:39:10: note: suggested alternative: &#39;MUX0&#39;
+  pinMode(MUXI,INPUT);
+          ^~~~
+          MUX0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp: In member function &#39;uint8_t RobotMotorBoard::parseCodename(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:136:11: error: &#39;TK1&#39; was not declared in this scope
+    return TK1;
+           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:138:11: error: &#39;TK2&#39; was not declared in this scope
+    return TK2;
+           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:140:11: error: &#39;TK3&#39; was not declared in this scope
+    return TK3;
+           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:142:11: error: &#39;TK4&#39; was not declared in this scope
+    return TK4;
+           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp: In member function &#39;uint8_t RobotMotorBoard::codenameToAPin(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:154:11: error: &#39;A11&#39; was not declared in this scope
+    return A11;
+           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:154:11: note: suggested alternative: &#39;A1&#39;
+    return A11;
+           ^~~
+           A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp: In member function &#39;void RobotMotorBoard::motorsWrite(int, int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:192:15: error: &#39;IN_A1&#39; was not declared in this scope
+   analogWrite(IN_A1,speedR);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:192:15: note: suggested alternative: &#39;PIN_A1&#39;
+   analogWrite(IN_A1,speedR);
+               ^~~~~
+               PIN_A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:193:15: error: &#39;IN_A2&#39; was not declared in this scope
+   analogWrite(IN_A2,0);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:193:15: note: suggested alternative: &#39;PIN_A2&#39;
+   analogWrite(IN_A2,0);
+               ^~~~~
+               PIN_A2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:195:15: error: &#39;IN_A1&#39; was not declared in this scope
+   analogWrite(IN_A1,0);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:195:15: note: suggested alternative: &#39;PIN_A1&#39;
+   analogWrite(IN_A1,0);
+               ^~~~~
+               PIN_A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:196:15: error: &#39;IN_A2&#39; was not declared in this scope
+   analogWrite(IN_A2,-speedR);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:196:15: note: suggested alternative: &#39;PIN_A2&#39;
+   analogWrite(IN_A2,-speedR);
+               ^~~~~
+               PIN_A2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:200:15: error: &#39;IN_B1&#39; was not declared in this scope
+   analogWrite(IN_B1,speedL);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:200:15: note: suggested alternative: &#39;INT1&#39;
+   analogWrite(IN_B1,speedL);
+               ^~~~~
+               INT1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:201:15: error: &#39;IN_B2&#39; was not declared in this scope
+   analogWrite(IN_B2,0);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:201:15: note: suggested alternative: &#39;PINB2&#39;
+   analogWrite(IN_B2,0);
+               ^~~~~
+               PINB2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:203:15: error: &#39;IN_B1&#39; was not declared in this scope
+   analogWrite(IN_B1,0);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:203:15: note: suggested alternative: &#39;INT1&#39;
+   analogWrite(IN_B1,0);
+               ^~~~~
+               INT1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:204:15: error: &#39;IN_B2&#39; was not declared in this scope
+   analogWrite(IN_B2,-speedL);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:204:15: note: suggested alternative: &#39;PINB2&#39;
+   analogWrite(IN_B2,-speedL);
+               ^~~~~
+               PINB2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp: In member function &#39;virtual void RobotMotorBoard::motorsStop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:212:14: error: &#39;IN_A1&#39; was not declared in this scope
+  analogWrite(IN_A1,255);
+              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:212:14: note: suggested alternative: &#39;PIN_A1&#39;
+  analogWrite(IN_A1,255);
+              ^~~~~
+              PIN_A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:213:14: error: &#39;IN_A2&#39; was not declared in this scope
+  analogWrite(IN_A2,255);
+              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:213:14: note: suggested alternative: &#39;PIN_A2&#39;
+  analogWrite(IN_A2,255);
+              ^~~~~
+              PIN_A2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:215:14: error: &#39;IN_B1&#39; was not declared in this scope
+  analogWrite(IN_B1,255);
+              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:215:14: note: suggested alternative: &#39;INT1&#39;
+  analogWrite(IN_B1,255);
+              ^~~~~
+              INT1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:216:14: error: &#39;IN_B2&#39; was not declared in this scope
+  analogWrite(IN_B2,255);
+              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:216:14: note: suggested alternative: &#39;PINB2&#39;
+  analogWrite(IN_B2,255);
+              ^~~~~
+              PINB2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp: In member function &#39;void RobotMotorBoard::_readTrim()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:271:23: error: &#39;TRIM&#39; was not declared in this scope
+  int value=analogRead(TRIM);
+                       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.h:22:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:19:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/EasyTransfer2.h:42:10: fatal error: avr/io.h: No such file or directory
+ #include &lt;avr/io.h&gt;
+          ^~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/Robot_IR_Array_Test</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.h:22:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/examples/Robot_IR_Array_Test/Robot_IR_Array_Test.ino:9:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/EasyTransfer2.h:42:10: fatal error: avr/io.h: No such file or directory
+ #include &lt;avr/io.h&gt;
+          ^~~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+					<h4>examples/Robot_Motor_Core</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.h:22:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/examples/Robot_Motor_Core/Robot_Motor_Core.ino:10:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/EasyTransfer2.h:42:10: fatal error: avr/io.h: No such file or directory
+ #include &lt;avr/io.h&gt;
+          ^~~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library Robot_Motor claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp: In member function &#39;void RobotMotorBoard::begin()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:37:21: error: &#39;MUXA&#39; was not declared in this scope
+  uint8_t MuxPins[]={MUXA,MUXB,MUXC};
+                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:37:26: error: &#39;MUXB&#39; was not declared in this scope
+  uint8_t MuxPins[]={MUXA,MUXB,MUXC};
+                          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:37:31: error: &#39;MUXC&#39; was not declared in this scope
+  uint8_t MuxPins[]={MUXA,MUXB,MUXC};
+                               ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:38:26: error: &#39;MUX_IN&#39; was not declared in this scope
+  this-&gt;IRs.begin(MuxPins,MUX_IN,3);
+                          ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:38:26: note: suggested alternative: &#39;MUX_SPI&#39;
+  this-&gt;IRs.begin(MuxPins,MUX_IN,3);
+                          ^~~~~~
+                          MUX_SPI
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:39:10: error: &#39;MUXI&#39; was not declared in this scope
+  pinMode(MUXI,INPUT);
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:39:10: note: suggested alternative: &#39;MOSI&#39;
+  pinMode(MUXI,INPUT);
+          ^~~~
+          MOSI
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp: In member function &#39;uint8_t RobotMotorBoard::parseCodename(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:136:11: error: &#39;TK1&#39; was not declared in this scope
+    return TK1;
+           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:138:11: error: &#39;TK2&#39; was not declared in this scope
+    return TK2;
+           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:140:11: error: &#39;TK3&#39; was not declared in this scope
+    return TK3;
+           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:142:11: error: &#39;TK4&#39; was not declared in this scope
+    return TK4;
+           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp: In member function &#39;uint8_t RobotMotorBoard::codenameToAPin(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:154:11: error: &#39;A11&#39; was not declared in this scope
+    return A11;
+           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:154:11: note: suggested alternative: &#39;A1&#39;
+    return A11;
+           ^~~
+           A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp: In member function &#39;void RobotMotorBoard::motorsWrite(int, int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:192:15: error: &#39;IN_A1&#39; was not declared in this scope
+   analogWrite(IN_A1,speedR);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:192:15: note: suggested alternative: &#39;PIN_A1&#39;
+   analogWrite(IN_A1,speedR);
+               ^~~~~
+               PIN_A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:193:15: error: &#39;IN_A2&#39; was not declared in this scope
+   analogWrite(IN_A2,0);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:193:15: note: suggested alternative: &#39;PIN_A2&#39;
+   analogWrite(IN_A2,0);
+               ^~~~~
+               PIN_A2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:195:15: error: &#39;IN_A1&#39; was not declared in this scope
+   analogWrite(IN_A1,0);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:195:15: note: suggested alternative: &#39;PIN_A1&#39;
+   analogWrite(IN_A1,0);
+               ^~~~~
+               PIN_A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:196:15: error: &#39;IN_A2&#39; was not declared in this scope
+   analogWrite(IN_A2,-speedR);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:196:15: note: suggested alternative: &#39;PIN_A2&#39;
+   analogWrite(IN_A2,-speedR);
+               ^~~~~
+               PIN_A2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:200:15: error: &#39;IN_B1&#39; was not declared in this scope
+   analogWrite(IN_B1,speedL);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:200:15: note: suggested alternative: &#39;PIN_A1&#39;
+   analogWrite(IN_B1,speedL);
+               ^~~~~
+               PIN_A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:201:15: error: &#39;IN_B2&#39; was not declared in this scope
+   analogWrite(IN_B2,0);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:201:15: note: suggested alternative: &#39;PIN_A2&#39;
+   analogWrite(IN_B2,0);
+               ^~~~~
+               PIN_A2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:203:15: error: &#39;IN_B1&#39; was not declared in this scope
+   analogWrite(IN_B1,0);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:203:15: note: suggested alternative: &#39;PIN_A1&#39;
+   analogWrite(IN_B1,0);
+               ^~~~~
+               PIN_A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:204:15: error: &#39;IN_B2&#39; was not declared in this scope
+   analogWrite(IN_B2,-speedL);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:204:15: note: suggested alternative: &#39;PIN_A2&#39;
+   analogWrite(IN_B2,-speedL);
+               ^~~~~
+               PIN_A2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp: In member function &#39;virtual void RobotMotorBoard::motorsStop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:212:14: error: &#39;IN_A1&#39; was not declared in this scope
+  analogWrite(IN_A1,255);
+              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:212:14: note: suggested alternative: &#39;PIN_A1&#39;
+  analogWrite(IN_A1,255);
+              ^~~~~
+              PIN_A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:213:14: error: &#39;IN_A2&#39; was not declared in this scope
+  analogWrite(IN_A2,255);
+              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:213:14: note: suggested alternative: &#39;PIN_A2&#39;
+  analogWrite(IN_A2,255);
+              ^~~~~
+              PIN_A2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:215:14: error: &#39;IN_B1&#39; was not declared in this scope
+  analogWrite(IN_B1,255);
+              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:215:14: note: suggested alternative: &#39;PIN_A1&#39;
+  analogWrite(IN_B1,255);
+              ^~~~~
+              PIN_A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:216:14: error: &#39;IN_B2&#39; was not declared in this scope
+  analogWrite(IN_B2,255);
+              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:216:14: note: suggested alternative: &#39;PIN_A2&#39;
+  analogWrite(IN_B2,255);
+              ^~~~~
+              PIN_A2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp: In member function &#39;void RobotMotorBoard::_readTrim()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:271:23: error: &#39;TRIM&#39; was not declared in this scope
+  int value=analogRead(TRIM);
+                       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:271:23: note: suggested alternative: &#39;TWI0&#39;
+  int value=analogRead(TRIM);
+                       ^~~~
+                       TWI0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp: In member function &#39;void RobotMotorBoard::_refreshMotorAdjustment()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:278:33: error: &#39;TRIM&#39; was not declared in this scope
+  motorAdjustment=map(analogRead(TRIM),0,1023,-30,30)/100.0;
+                                 ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:278:33: note: suggested alternative: &#39;TWI0&#39;
+  motorAdjustment=map(analogRead(TRIM),0,1023,-30,30)/100.0;
+                                 ^~~~
+                                 TWI0
+
+</pre>
+
+					
+					<h4>examples/Robot_IR_Array_Test</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library Robot_Motor claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp: In member function &#39;void RobotMotorBoard::begin()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:37:21: error: &#39;MUXA&#39; was not declared in this scope
+  uint8_t MuxPins[]={MUXA,MUXB,MUXC};
+                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:37:26: error: &#39;MUXB&#39; was not declared in this scope
+  uint8_t MuxPins[]={MUXA,MUXB,MUXC};
+                          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:37:31: error: &#39;MUXC&#39; was not declared in this scope
+  uint8_t MuxPins[]={MUXA,MUXB,MUXC};
+                               ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:38:26: error: &#39;MUX_IN&#39; was not declared in this scope
+  this-&gt;IRs.begin(MuxPins,MUX_IN,3);
+                          ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:38:26: note: suggested alternative: &#39;MUX_SPI&#39;
+  this-&gt;IRs.begin(MuxPins,MUX_IN,3);
+                          ^~~~~~
+                          MUX_SPI
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:39:10: error: &#39;MUXI&#39; was not declared in this scope
+  pinMode(MUXI,INPUT);
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:39:10: note: suggested alternative: &#39;MOSI&#39;
+  pinMode(MUXI,INPUT);
+          ^~~~
+          MOSI
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp: In member function &#39;uint8_t RobotMotorBoard::parseCodename(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:136:11: error: &#39;TK1&#39; was not declared in this scope
+    return TK1;
+           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:138:11: error: &#39;TK2&#39; was not declared in this scope
+    return TK2;
+           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:140:11: error: &#39;TK3&#39; was not declared in this scope
+    return TK3;
+           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:142:11: error: &#39;TK4&#39; was not declared in this scope
+    return TK4;
+           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp: In member function &#39;uint8_t RobotMotorBoard::codenameToAPin(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:154:11: error: &#39;A11&#39; was not declared in this scope
+    return A11;
+           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:154:11: note: suggested alternative: &#39;A1&#39;
+    return A11;
+           ^~~
+           A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp: In member function &#39;void RobotMotorBoard::motorsWrite(int, int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:192:15: error: &#39;IN_A1&#39; was not declared in this scope
+   analogWrite(IN_A1,speedR);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:192:15: note: suggested alternative: &#39;PIN_A1&#39;
+   analogWrite(IN_A1,speedR);
+               ^~~~~
+               PIN_A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:193:15: error: &#39;IN_A2&#39; was not declared in this scope
+   analogWrite(IN_A2,0);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:193:15: note: suggested alternative: &#39;PIN_A2&#39;
+   analogWrite(IN_A2,0);
+               ^~~~~
+               PIN_A2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:195:15: error: &#39;IN_A1&#39; was not declared in this scope
+   analogWrite(IN_A1,0);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:195:15: note: suggested alternative: &#39;PIN_A1&#39;
+   analogWrite(IN_A1,0);
+               ^~~~~
+               PIN_A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:196:15: error: &#39;IN_A2&#39; was not declared in this scope
+   analogWrite(IN_A2,-speedR);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:196:15: note: suggested alternative: &#39;PIN_A2&#39;
+   analogWrite(IN_A2,-speedR);
+               ^~~~~
+               PIN_A2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:200:15: error: &#39;IN_B1&#39; was not declared in this scope
+   analogWrite(IN_B1,speedL);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:200:15: note: suggested alternative: &#39;PIN_A1&#39;
+   analogWrite(IN_B1,speedL);
+               ^~~~~
+               PIN_A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:201:15: error: &#39;IN_B2&#39; was not declared in this scope
+   analogWrite(IN_B2,0);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:201:15: note: suggested alternative: &#39;PIN_A2&#39;
+   analogWrite(IN_B2,0);
+               ^~~~~
+               PIN_A2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:203:15: error: &#39;IN_B1&#39; was not declared in this scope
+   analogWrite(IN_B1,0);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:203:15: note: suggested alternative: &#39;PIN_A1&#39;
+   analogWrite(IN_B1,0);
+               ^~~~~
+               PIN_A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:204:15: error: &#39;IN_B2&#39; was not declared in this scope
+   analogWrite(IN_B2,-speedL);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:204:15: note: suggested alternative: &#39;PIN_A2&#39;
+   analogWrite(IN_B2,-speedL);
+               ^~~~~
+               PIN_A2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp: In member function &#39;virtual void RobotMotorBoard::motorsStop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:212:14: error: &#39;IN_A1&#39; was not declared in this scope
+  analogWrite(IN_A1,255);
+              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:212:14: note: suggested alternative: &#39;PIN_A1&#39;
+  analogWrite(IN_A1,255);
+              ^~~~~
+              PIN_A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:213:14: error: &#39;IN_A2&#39; was not declared in this scope
+  analogWrite(IN_A2,255);
+              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:213:14: note: suggested alternative: &#39;PIN_A2&#39;
+  analogWrite(IN_A2,255);
+              ^~~~~
+              PIN_A2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:215:14: error: &#39;IN_B1&#39; was not declared in this scope
+  analogWrite(IN_B1,255);
+              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:215:14: note: suggested alternative: &#39;PIN_A1&#39;
+  analogWrite(IN_B1,255);
+              ^~~~~
+              PIN_A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:216:14: error: &#39;IN_B2&#39; was not declared in this scope
+  analogWrite(IN_B2,255);
+              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:216:14: note: suggested alternative: &#39;PIN_A2&#39;
+  analogWrite(IN_B2,255);
+              ^~~~~
+              PIN_A2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp: In member function &#39;void RobotMotorBoard::_readTrim()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:271:23: error: &#39;TRIM&#39; was not declared in this scope
+  int value=analogRead(TRIM);
+                       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:271:23: note: suggested alternative: &#39;TWI0&#39;
+  int value=analogRead(TRIM);
+                       ^~~~
+                       TWI0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp: In member function &#39;void RobotMotorBoard::_refreshMotorAdjustment()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:278:33: error: &#39;TRIM&#39; was not declared in this scope
+  motorAdjustment=map(analogRead(TRIM),0,1023,-30,30)/100.0;
+                                 ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:278:33: note: suggested alternative: &#39;TWI0&#39;
+  motorAdjustment=map(analogRead(TRIM),0,1023,-30,30)/100.0;
+                                 ^~~~
+                                 TWI0
+
+</pre>
+					
+					<h4>examples/Robot_Motor_Core</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library Robot_Motor claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp: In member function &#39;void RobotMotorBoard::begin()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:37:21: error: &#39;MUXA&#39; was not declared in this scope
+  uint8_t MuxPins[]={MUXA,MUXB,MUXC};
+                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:37:26: error: &#39;MUXB&#39; was not declared in this scope
+  uint8_t MuxPins[]={MUXA,MUXB,MUXC};
+                          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:37:31: error: &#39;MUXC&#39; was not declared in this scope
+  uint8_t MuxPins[]={MUXA,MUXB,MUXC};
+                               ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:38:26: error: &#39;MUX_IN&#39; was not declared in this scope
+  this-&gt;IRs.begin(MuxPins,MUX_IN,3);
+                          ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:38:26: note: suggested alternative: &#39;MUX_SPI&#39;
+  this-&gt;IRs.begin(MuxPins,MUX_IN,3);
+                          ^~~~~~
+                          MUX_SPI
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:39:10: error: &#39;MUXI&#39; was not declared in this scope
+  pinMode(MUXI,INPUT);
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:39:10: note: suggested alternative: &#39;MOSI&#39;
+  pinMode(MUXI,INPUT);
+          ^~~~
+          MOSI
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp: In member function &#39;uint8_t RobotMotorBoard::parseCodename(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:136:11: error: &#39;TK1&#39; was not declared in this scope
+    return TK1;
+           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:138:11: error: &#39;TK2&#39; was not declared in this scope
+    return TK2;
+           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:140:11: error: &#39;TK3&#39; was not declared in this scope
+    return TK3;
+           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:142:11: error: &#39;TK4&#39; was not declared in this scope
+    return TK4;
+           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp: In member function &#39;uint8_t RobotMotorBoard::codenameToAPin(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:154:11: error: &#39;A11&#39; was not declared in this scope
+    return A11;
+           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:154:11: note: suggested alternative: &#39;A1&#39;
+    return A11;
+           ^~~
+           A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp: In member function &#39;void RobotMotorBoard::motorsWrite(int, int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:192:15: error: &#39;IN_A1&#39; was not declared in this scope
+   analogWrite(IN_A1,speedR);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:192:15: note: suggested alternative: &#39;PIN_A1&#39;
+   analogWrite(IN_A1,speedR);
+               ^~~~~
+               PIN_A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:193:15: error: &#39;IN_A2&#39; was not declared in this scope
+   analogWrite(IN_A2,0);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:193:15: note: suggested alternative: &#39;PIN_A2&#39;
+   analogWrite(IN_A2,0);
+               ^~~~~
+               PIN_A2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:195:15: error: &#39;IN_A1&#39; was not declared in this scope
+   analogWrite(IN_A1,0);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:195:15: note: suggested alternative: &#39;PIN_A1&#39;
+   analogWrite(IN_A1,0);
+               ^~~~~
+               PIN_A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:196:15: error: &#39;IN_A2&#39; was not declared in this scope
+   analogWrite(IN_A2,-speedR);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:196:15: note: suggested alternative: &#39;PIN_A2&#39;
+   analogWrite(IN_A2,-speedR);
+               ^~~~~
+               PIN_A2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:200:15: error: &#39;IN_B1&#39; was not declared in this scope
+   analogWrite(IN_B1,speedL);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:200:15: note: suggested alternative: &#39;PIN_A1&#39;
+   analogWrite(IN_B1,speedL);
+               ^~~~~
+               PIN_A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:201:15: error: &#39;IN_B2&#39; was not declared in this scope
+   analogWrite(IN_B2,0);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:201:15: note: suggested alternative: &#39;PIN_A2&#39;
+   analogWrite(IN_B2,0);
+               ^~~~~
+               PIN_A2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:203:15: error: &#39;IN_B1&#39; was not declared in this scope
+   analogWrite(IN_B1,0);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:203:15: note: suggested alternative: &#39;PIN_A1&#39;
+   analogWrite(IN_B1,0);
+               ^~~~~
+               PIN_A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:204:15: error: &#39;IN_B2&#39; was not declared in this scope
+   analogWrite(IN_B2,-speedL);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:204:15: note: suggested alternative: &#39;PIN_A2&#39;
+   analogWrite(IN_B2,-speedL);
+               ^~~~~
+               PIN_A2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp: In member function &#39;virtual void RobotMotorBoard::motorsStop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:212:14: error: &#39;IN_A1&#39; was not declared in this scope
+  analogWrite(IN_A1,255);
+              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:212:14: note: suggested alternative: &#39;PIN_A1&#39;
+  analogWrite(IN_A1,255);
+              ^~~~~
+              PIN_A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:213:14: error: &#39;IN_A2&#39; was not declared in this scope
+  analogWrite(IN_A2,255);
+              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:213:14: note: suggested alternative: &#39;PIN_A2&#39;
+  analogWrite(IN_A2,255);
+              ^~~~~
+              PIN_A2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:215:14: error: &#39;IN_B1&#39; was not declared in this scope
+  analogWrite(IN_B1,255);
+              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:215:14: note: suggested alternative: &#39;PIN_A1&#39;
+  analogWrite(IN_B1,255);
+              ^~~~~
+              PIN_A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:216:14: error: &#39;IN_B2&#39; was not declared in this scope
+  analogWrite(IN_B2,255);
+              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:216:14: note: suggested alternative: &#39;PIN_A2&#39;
+  analogWrite(IN_B2,255);
+              ^~~~~
+              PIN_A2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp: In member function &#39;void RobotMotorBoard::_readTrim()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:271:23: error: &#39;TRIM&#39; was not declared in this scope
+  int value=analogRead(TRIM);
+                       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:271:23: note: suggested alternative: &#39;TWI0&#39;
+  int value=analogRead(TRIM);
+                       ^~~~
+                       TWI0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp: In member function &#39;void RobotMotorBoard::_refreshMotorAdjustment()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:278:33: error: &#39;TRIM&#39; was not declared in this scope
+  motorAdjustment=map(analogRead(TRIM),0,1023,-30,30)/100.0;
+                                 ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:278:33: note: suggested alternative: &#39;TWI0&#39;
+  motorAdjustment=map(analogRead(TRIM),0,1023,-30,30)/100.0;
+                                 ^~~~
+                                 TWI0
+
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.h:22:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:19:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/EasyTransfer2.h:42:10: fatal error: avr/io.h: No such file or directory
+ #include &lt;avr/io.h&gt;
+          ^~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/Robot_IR_Array_Test</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.h:22:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/examples/Robot_IR_Array_Test/Robot_IR_Array_Test.ino:9:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/EasyTransfer2.h:42:10: fatal error: avr/io.h: No such file or directory
+ #include &lt;avr/io.h&gt;
+          ^~~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+					<h4>examples/Robot_Motor_Core</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.h:22:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/examples/Robot_Motor_Core/Robot_Motor_Core.ino:10:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/EasyTransfer2.h:42:10: fatal error: avr/io.h: No such file or directory
+ #include &lt;avr/io.h&gt;
+          ^~~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.h:22:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.cpp:19:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/EasyTransfer2.h:42:20: fatal error: avr/io.h: No such file or directory
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/Robot_IR_Array_Test</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.h:22:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/examples/Robot_IR_Array_Test/Robot_IR_Array_Test.ino:9:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/EasyTransfer2.h:42:20: fatal error: avr/io.h: No such file or directory
+compilation terminated.
+
+</pre>
+					
+					<h4>examples/Robot_Motor_Core</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/ArduinoRobotMotorBoard.h:22:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/examples/Robot_Motor_Core/Robot_Motor_Core.ino:10:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robot_Motor/src/EasyTransfer2.h:42:20: fatal error: avr/io.h: No such file or directory
+compilation terminated.
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

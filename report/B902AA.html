@@ -1,0 +1,959 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>B902AA - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>B902AA</h2>
+				<p>
+					Version: <b>1.0.2</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/b902aa/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>Test</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp: In member function &#39;void STF_B902AA::LED(uint8_t, uint8_t, bool)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:119:17: error: &#39;PORTF&#39; was not declared in this scope
+     if (_State) PORTF |= 0b00000001;
+                 ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:119:17: note: suggested alternative: &#39;PORT0&#39;
+     if (_State) PORTF |= 0b00000001;
+                 ^~~~~
+                 PORT0
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:120:18: error: &#39;PORTF&#39; was not declared in this scope
+     if (!_State) PORTF &amp;= 0b11111110;
+                  ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:120:18: note: suggested alternative: &#39;PORT0&#39;
+     if (!_State) PORTF &amp;= 0b11111110;
+                  ^~~~~
+                  PORT0
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:125:17: error: &#39;PORTF&#39; was not declared in this scope
+     if (_State) PORTF |= 0b00001000;
+                 ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:125:17: note: suggested alternative: &#39;PORT0&#39;
+     if (_State) PORTF |= 0b00001000;
+                 ^~~~~
+                 PORT0
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:126:18: error: &#39;PORTF&#39; was not declared in this scope
+     if (!_State) PORTF &amp;= 0b11110111;
+                  ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:126:18: note: suggested alternative: &#39;PORT0&#39;
+     if (!_State) PORTF &amp;= 0b11110111;
+                  ^~~~~
+                  PORT0
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:138:17: error: &#39;PORTF&#39; was not declared in this scope
+     if (_State) PORTF |= 0b00000010;
+                 ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:138:17: note: suggested alternative: &#39;PORT0&#39;
+     if (_State) PORTF |= 0b00000010;
+                 ^~~~~
+                 PORT0
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:139:18: error: &#39;PORTF&#39; was not declared in this scope
+     if (!_State) PORTF &amp;= 0b11111101;
+                  ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:139:18: note: suggested alternative: &#39;PORT0&#39;
+     if (!_State) PORTF &amp;= 0b11111101;
+                  ^~~~~
+                  PORT0
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:144:17: error: &#39;PORTF&#39; was not declared in this scope
+     if (_State) PORTF |= 0b00010000;
+                 ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:144:17: note: suggested alternative: &#39;PORT0&#39;
+     if (_State) PORTF |= 0b00010000;
+                 ^~~~~
+                 PORT0
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:145:18: error: &#39;PORTF&#39; was not declared in this scope
+     if (!_State) PORTF &amp;= 0b11101111;
+                  ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:145:18: note: suggested alternative: &#39;PORT0&#39;
+     if (!_State) PORTF &amp;= 0b11101111;
+                  ^~~~~
+                  PORT0
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:157:17: error: &#39;PORTF&#39; was not declared in this scope
+     if (_State) PORTF |= 0b00000100;
+                 ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:157:17: note: suggested alternative: &#39;PORT0&#39;
+     if (_State) PORTF |= 0b00000100;
+                 ^~~~~
+                 PORT0
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:158:18: error: &#39;PORTF&#39; was not declared in this scope
+     if (!_State) PORTF &amp;= 0b11111011;
+                  ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:158:18: note: suggested alternative: &#39;PORT0&#39;
+     if (!_State) PORTF &amp;= 0b11111011;
+                  ^~~~~
+                  PORT0
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:163:17: error: &#39;PORTF&#39; was not declared in this scope
+     if (_State) PORTF |= 0b00100000;
+                 ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:163:17: note: suggested alternative: &#39;PORT0&#39;
+     if (_State) PORTF |= 0b00100000;
+                 ^~~~~
+                 PORT0
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:164:18: error: &#39;PORTF&#39; was not declared in this scope
+     if (!_State) PORTF &amp;= 0b11011111;
+                  ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:164:18: note: suggested alternative: &#39;PORT0&#39;
+     if (!_State) PORTF &amp;= 0b11011111;
+                  ^~~~~
+                  PORT0
+Multiple libraries were found for &#34;Battery.h&#34;
+  Used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Battery
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Battery_Sense
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MKRMotorCarrier
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoMotorCarrier
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri
+</pre>
+
+					
+					<h4>examples/Test</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/examples/Test/Test.ino: In function &#39;void setup()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/examples/Test/Test.ino:5:25: error: &#39;Serial1&#39; was not declared in this scope
+ #define  UART_Terminal  Serial1
+                         ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/examples/Test/Test.ino:17:18: note: in expansion of macro &#39;UART_Terminal&#39;
+  if (DIAGNOSTIC) UART_Terminal.begin(UART_Terminal_Baud);
+                  ^~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/examples/Test/Test.ino:5:25: note: suggested alternative: &#39;Serial&#39;
+ #define  UART_Terminal  Serial1
+                         ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/examples/Test/Test.ino:17:18: note: in expansion of macro &#39;UART_Terminal&#39;
+  if (DIAGNOSTIC) UART_Terminal.begin(UART_Terminal_Baud);
+                  ^~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/examples/Test/Test.ino:5:25: error: &#39;Serial1&#39; was not declared in this scope
+ #define  UART_Terminal  Serial1
+                         ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/examples/Test/Test.ino:28:3: note: in expansion of macro &#39;UART_Terminal&#39;
+   UART_Terminal.println(F(&#34;******************************************&#34;));
+   ^~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/examples/Test/Test.ino:5:25: note: suggested alternative: &#39;Serial&#39;
+ #define  UART_Terminal  Serial1
+                         ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/examples/Test/Test.ino:28:3: note: in expansion of macro &#39;UART_Terminal&#39;
+   UART_Terminal.println(F(&#34;******************************************&#34;));
+   ^~~~~~~~~~~~~
+Multiple libraries were found for &#34;Battery.h&#34;
+  Used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Battery
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoMotorCarrier
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Battery_Sense
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MKRMotorCarrier
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library B902AA claims to run on avr architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp: In member function &#39;void STF_B902AA::LED(uint8_t, uint8_t, bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:119:17: error: &#39;PORTF&#39; was not declared in this scope
+     if (_State) PORTF |= 0b00000001;
+                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:120:18: error: &#39;PORTF&#39; was not declared in this scope
+     if (!_State) PORTF &amp;= 0b11111110;
+                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:125:17: error: &#39;PORTF&#39; was not declared in this scope
+     if (_State) PORTF |= 0b00001000;
+                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:126:18: error: &#39;PORTF&#39; was not declared in this scope
+     if (!_State) PORTF &amp;= 0b11110111;
+                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:138:17: error: &#39;PORTF&#39; was not declared in this scope
+     if (_State) PORTF |= 0b00000010;
+                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:139:18: error: &#39;PORTF&#39; was not declared in this scope
+     if (!_State) PORTF &amp;= 0b11111101;
+                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:144:17: error: &#39;PORTF&#39; was not declared in this scope
+     if (_State) PORTF |= 0b00010000;
+                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:145:18: error: &#39;PORTF&#39; was not declared in this scope
+     if (!_State) PORTF &amp;= 0b11101111;
+                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:157:17: error: &#39;PORTF&#39; was not declared in this scope
+     if (_State) PORTF |= 0b00000100;
+                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:158:18: error: &#39;PORTF&#39; was not declared in this scope
+     if (!_State) PORTF &amp;= 0b11111011;
+                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:163:17: error: &#39;PORTF&#39; was not declared in this scope
+     if (_State) PORTF |= 0b00100000;
+                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:164:18: error: &#39;PORTF&#39; was not declared in this scope
+     if (!_State) PORTF &amp;= 0b11011111;
+                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:173:4: error: &#39;PORTD&#39; was not declared in this scope
+    PORTD &amp;= 0b10001111;
+    ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp: In member function &#39;void STF_B902AA::Gauge_Initialize()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:258:24: error: &#39;Gauge&#39; was not declared in this scope
+  if (Diagnostic.Gauge) Gauge.Begin(2000);
+                        ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:258:24: note: suggested alternative: &#39;fpurge&#39;
+  if (Diagnostic.Gauge) Gauge.Begin(2000);
+                        ^~~~~
+                        fpurge
+Multiple libraries were found for &#34;Battery.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Battery_Sense
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoMotorCarrier
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Battery
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MKRMotorCarrier
+</pre>
+
+					
+					<h4>examples/Test</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library B902AA claims to run on avr architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp: In member function &#39;void STF_B902AA::LED(uint8_t, uint8_t, bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:119:17: error: &#39;PORTF&#39; was not declared in this scope
+     if (_State) PORTF |= 0b00000001;
+                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:120:18: error: &#39;PORTF&#39; was not declared in this scope
+     if (!_State) PORTF &amp;= 0b11111110;
+                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:125:17: error: &#39;PORTF&#39; was not declared in this scope
+     if (_State) PORTF |= 0b00001000;
+                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:126:18: error: &#39;PORTF&#39; was not declared in this scope
+     if (!_State) PORTF &amp;= 0b11110111;
+                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:138:17: error: &#39;PORTF&#39; was not declared in this scope
+     if (_State) PORTF |= 0b00000010;
+                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:139:18: error: &#39;PORTF&#39; was not declared in this scope
+     if (!_State) PORTF &amp;= 0b11111101;
+                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:144:17: error: &#39;PORTF&#39; was not declared in this scope
+     if (_State) PORTF |= 0b00010000;
+                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:145:18: error: &#39;PORTF&#39; was not declared in this scope
+     if (!_State) PORTF &amp;= 0b11101111;
+                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:157:17: error: &#39;PORTF&#39; was not declared in this scope
+     if (_State) PORTF |= 0b00000100;
+                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:158:18: error: &#39;PORTF&#39; was not declared in this scope
+     if (!_State) PORTF &amp;= 0b11111011;
+                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:163:17: error: &#39;PORTF&#39; was not declared in this scope
+     if (_State) PORTF |= 0b00100000;
+                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:164:18: error: &#39;PORTF&#39; was not declared in this scope
+     if (!_State) PORTF &amp;= 0b11011111;
+                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:173:4: error: &#39;PORTD&#39; was not declared in this scope
+    PORTD &amp;= 0b10001111;
+    ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp: In member function &#39;void STF_B902AA::Gauge_Initialize()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:258:24: error: &#39;Gauge&#39; was not declared in this scope
+  if (Diagnostic.Gauge) Gauge.Begin(2000);
+                        ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:258:24: note: suggested alternative: &#39;fpurge&#39;
+  if (Diagnostic.Gauge) Gauge.Begin(2000);
+                        ^~~~~
+                        fpurge
+Multiple libraries were found for &#34;Battery.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Battery_Sense
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Battery
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MKRMotorCarrier
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoMotorCarrier
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library B902AA claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp: In member function &#39;void STF_B902AA::LED(uint8_t, uint8_t, bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:119:23: error: no match for &#39;operator|=&#39; (operand types are &#39;PORT_t {aka PORT_struct}&#39; and &#39;int&#39;)
+     if (_State) PORTF |= 0b00000001;
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:120:24: error: no match for &#39;operator&amp;=&#39; (operand types are &#39;PORT_t {aka PORT_struct}&#39; and &#39;int&#39;)
+     if (!_State) PORTF &amp;= 0b11111110;
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:125:23: error: no match for &#39;operator|=&#39; (operand types are &#39;PORT_t {aka PORT_struct}&#39; and &#39;int&#39;)
+     if (_State) PORTF |= 0b00001000;
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:126:24: error: no match for &#39;operator&amp;=&#39; (operand types are &#39;PORT_t {aka PORT_struct}&#39; and &#39;int&#39;)
+     if (!_State) PORTF &amp;= 0b11110111;
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:138:23: error: no match for &#39;operator|=&#39; (operand types are &#39;PORT_t {aka PORT_struct}&#39; and &#39;int&#39;)
+     if (_State) PORTF |= 0b00000010;
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:139:24: error: no match for &#39;operator&amp;=&#39; (operand types are &#39;PORT_t {aka PORT_struct}&#39; and &#39;int&#39;)
+     if (!_State) PORTF &amp;= 0b11111101;
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:144:23: error: no match for &#39;operator|=&#39; (operand types are &#39;PORT_t {aka PORT_struct}&#39; and &#39;int&#39;)
+     if (_State) PORTF |= 0b00010000;
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:145:24: error: no match for &#39;operator&amp;=&#39; (operand types are &#39;PORT_t {aka PORT_struct}&#39; and &#39;int&#39;)
+     if (!_State) PORTF &amp;= 0b11101111;
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:157:23: error: no match for &#39;operator|=&#39; (operand types are &#39;PORT_t {aka PORT_struct}&#39; and &#39;int&#39;)
+     if (_State) PORTF |= 0b00000100;
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:158:24: error: no match for &#39;operator&amp;=&#39; (operand types are &#39;PORT_t {aka PORT_struct}&#39; and &#39;int&#39;)
+     if (!_State) PORTF &amp;= 0b11111011;
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:163:23: error: no match for &#39;operator|=&#39; (operand types are &#39;PORT_t {aka PORT_struct}&#39; and &#39;int&#39;)
+     if (_State) PORTF |= 0b00100000;
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:164:24: error: no match for &#39;operator&amp;=&#39; (operand types are &#39;PORT_t {aka PORT_struct}&#39; and &#39;int&#39;)
+     if (!_State) PORTF &amp;= 0b11011111;
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp: In member function &#39;void STF_B902AA::Gauge_Initialize()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:258:24: error: &#39;Gauge&#39; was not declared in this scope
+  if (Diagnostic.Gauge) Gauge.Begin(2000);
+                        ^~~~~
+Multiple libraries were found for &#34;Battery.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Battery_Sense
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoMotorCarrier
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MKRMotorCarrier
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Battery
+</pre>
+
+					
+					<h4>examples/Test</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library B902AA claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp: In member function &#39;void STF_B902AA::LED(uint8_t, uint8_t, bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:119:23: error: no match for &#39;operator|=&#39; (operand types are &#39;PORT_t {aka PORT_struct}&#39; and &#39;int&#39;)
+     if (_State) PORTF |= 0b00000001;
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:120:24: error: no match for &#39;operator&amp;=&#39; (operand types are &#39;PORT_t {aka PORT_struct}&#39; and &#39;int&#39;)
+     if (!_State) PORTF &amp;= 0b11111110;
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:125:23: error: no match for &#39;operator|=&#39; (operand types are &#39;PORT_t {aka PORT_struct}&#39; and &#39;int&#39;)
+     if (_State) PORTF |= 0b00001000;
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:126:24: error: no match for &#39;operator&amp;=&#39; (operand types are &#39;PORT_t {aka PORT_struct}&#39; and &#39;int&#39;)
+     if (!_State) PORTF &amp;= 0b11110111;
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:138:23: error: no match for &#39;operator|=&#39; (operand types are &#39;PORT_t {aka PORT_struct}&#39; and &#39;int&#39;)
+     if (_State) PORTF |= 0b00000010;
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:139:24: error: no match for &#39;operator&amp;=&#39; (operand types are &#39;PORT_t {aka PORT_struct}&#39; and &#39;int&#39;)
+     if (!_State) PORTF &amp;= 0b11111101;
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:144:23: error: no match for &#39;operator|=&#39; (operand types are &#39;PORT_t {aka PORT_struct}&#39; and &#39;int&#39;)
+     if (_State) PORTF |= 0b00010000;
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:145:24: error: no match for &#39;operator&amp;=&#39; (operand types are &#39;PORT_t {aka PORT_struct}&#39; and &#39;int&#39;)
+     if (!_State) PORTF &amp;= 0b11101111;
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:157:23: error: no match for &#39;operator|=&#39; (operand types are &#39;PORT_t {aka PORT_struct}&#39; and &#39;int&#39;)
+     if (_State) PORTF |= 0b00000100;
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:158:24: error: no match for &#39;operator&amp;=&#39; (operand types are &#39;PORT_t {aka PORT_struct}&#39; and &#39;int&#39;)
+     if (!_State) PORTF &amp;= 0b11111011;
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:163:23: error: no match for &#39;operator|=&#39; (operand types are &#39;PORT_t {aka PORT_struct}&#39; and &#39;int&#39;)
+     if (_State) PORTF |= 0b00100000;
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:164:24: error: no match for &#39;operator&amp;=&#39; (operand types are &#39;PORT_t {aka PORT_struct}&#39; and &#39;int&#39;)
+     if (!_State) PORTF &amp;= 0b11011111;
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp: In member function &#39;void STF_B902AA::Gauge_Initialize()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:258:24: error: &#39;Gauge&#39; was not declared in this scope
+  if (Diagnostic.Gauge) Gauge.Begin(2000);
+                        ^~~~~
+Multiple libraries were found for &#34;Battery.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Battery_Sense
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoMotorCarrier
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MKRMotorCarrier
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Battery
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library B902AA claims to run on avr architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp: In member function &#39;void STF_B902AA::LED(uint8_t, uint8_t, bool)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:119:17: error: &#39;PORTF&#39; was not declared in this scope
+     if (_State) PORTF |= 0b00000001;
+                 ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:119:17: note: suggested alternative: &#39;PORTC&#39;
+     if (_State) PORTF |= 0b00000001;
+                 ^~~~~
+                 PORTC
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:120:18: error: &#39;PORTF&#39; was not declared in this scope
+     if (!_State) PORTF &amp;= 0b11111110;
+                  ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:120:18: note: suggested alternative: &#39;PORTC&#39;
+     if (!_State) PORTF &amp;= 0b11111110;
+                  ^~~~~
+                  PORTC
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:125:17: error: &#39;PORTF&#39; was not declared in this scope
+     if (_State) PORTF |= 0b00001000;
+                 ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:125:17: note: suggested alternative: &#39;PORTC&#39;
+     if (_State) PORTF |= 0b00001000;
+                 ^~~~~
+                 PORTC
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:126:18: error: &#39;PORTF&#39; was not declared in this scope
+     if (!_State) PORTF &amp;= 0b11110111;
+                  ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:126:18: note: suggested alternative: &#39;PORTC&#39;
+     if (!_State) PORTF &amp;= 0b11110111;
+                  ^~~~~
+                  PORTC
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:138:17: error: &#39;PORTF&#39; was not declared in this scope
+     if (_State) PORTF |= 0b00000010;
+                 ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:138:17: note: suggested alternative: &#39;PORTC&#39;
+     if (_State) PORTF |= 0b00000010;
+                 ^~~~~
+                 PORTC
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:139:18: error: &#39;PORTF&#39; was not declared in this scope
+     if (!_State) PORTF &amp;= 0b11111101;
+                  ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:139:18: note: suggested alternative: &#39;PORTC&#39;
+     if (!_State) PORTF &amp;= 0b11111101;
+                  ^~~~~
+                  PORTC
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:144:17: error: &#39;PORTF&#39; was not declared in this scope
+     if (_State) PORTF |= 0b00010000;
+                 ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:144:17: note: suggested alternative: &#39;PORTC&#39;
+     if (_State) PORTF |= 0b00010000;
+                 ^~~~~
+                 PORTC
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:145:18: error: &#39;PORTF&#39; was not declared in this scope
+     if (!_State) PORTF &amp;= 0b11101111;
+                  ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:145:18: note: suggested alternative: &#39;PORTC&#39;
+     if (!_State) PORTF &amp;= 0b11101111;
+                  ^~~~~
+                  PORTC
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:157:17: error: &#39;PORTF&#39; was not declared in this scope
+     if (_State) PORTF |= 0b00000100;
+                 ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:157:17: note: suggested alternative: &#39;PORTC&#39;
+     if (_State) PORTF |= 0b00000100;
+                 ^~~~~
+                 PORTC
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:158:18: error: &#39;PORTF&#39; was not declared in this scope
+     if (!_State) PORTF &amp;= 0b11111011;
+                  ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:158:18: note: suggested alternative: &#39;PORTC&#39;
+     if (!_State) PORTF &amp;= 0b11111011;
+                  ^~~~~
+                  PORTC
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:163:17: error: &#39;PORTF&#39; was not declared in this scope
+     if (_State) PORTF |= 0b00100000;
+                 ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:163:17: note: suggested alternative: &#39;PORTC&#39;
+     if (_State) PORTF |= 0b00100000;
+                 ^~~~~
+                 PORTC
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:164:18: error: &#39;PORTF&#39; was not declared in this scope
+     if (!_State) PORTF &amp;= 0b11011111;
+                  ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:164:18: note: suggested alternative: &#39;PORTC&#39;
+     if (!_State) PORTF &amp;= 0b11011111;
+                  ^~~~~
+                  PORTC
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:173:4: error: &#39;PORTD&#39; was not declared in this scope
+    PORTD &amp;= 0b10001111;
+    ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:173:4: note: suggested alternative: &#39;PORTC&#39;
+    PORTD &amp;= 0b10001111;
+    ^~~~~
+    PORTC
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp: In member function &#39;void STF_B902AA::Gauge_Initialize()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:258:24: error: &#39;Gauge&#39; was not declared in this scope
+  if (Diagnostic.Gauge) Gauge.Begin(2000);
+                        ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:258:24: note: suggested alternative: &#39;fpurge&#39;
+  if (Diagnostic.Gauge) Gauge.Begin(2000);
+                        ^~~~~
+                        fpurge
+Multiple libraries were found for &#34;Battery.h&#34;
+  Used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Battery_Sense
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Battery
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoMotorCarrier
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MKRMotorCarrier
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri
+</pre>
+
+					
+					<h4>examples/Test</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library B902AA claims to run on avr architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp: In member function &#39;void STF_B902AA::LED(uint8_t, uint8_t, bool)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:119:17: error: &#39;PORTF&#39; was not declared in this scope
+     if (_State) PORTF |= 0b00000001;
+                 ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:119:17: note: suggested alternative: &#39;PORTC&#39;
+     if (_State) PORTF |= 0b00000001;
+                 ^~~~~
+                 PORTC
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:120:18: error: &#39;PORTF&#39; was not declared in this scope
+     if (!_State) PORTF &amp;= 0b11111110;
+                  ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:120:18: note: suggested alternative: &#39;PORTC&#39;
+     if (!_State) PORTF &amp;= 0b11111110;
+                  ^~~~~
+                  PORTC
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:125:17: error: &#39;PORTF&#39; was not declared in this scope
+     if (_State) PORTF |= 0b00001000;
+                 ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:125:17: note: suggested alternative: &#39;PORTC&#39;
+     if (_State) PORTF |= 0b00001000;
+                 ^~~~~
+                 PORTC
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:126:18: error: &#39;PORTF&#39; was not declared in this scope
+     if (!_State) PORTF &amp;= 0b11110111;
+                  ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:126:18: note: suggested alternative: &#39;PORTC&#39;
+     if (!_State) PORTF &amp;= 0b11110111;
+                  ^~~~~
+                  PORTC
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:138:17: error: &#39;PORTF&#39; was not declared in this scope
+     if (_State) PORTF |= 0b00000010;
+                 ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:138:17: note: suggested alternative: &#39;PORTC&#39;
+     if (_State) PORTF |= 0b00000010;
+                 ^~~~~
+                 PORTC
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:139:18: error: &#39;PORTF&#39; was not declared in this scope
+     if (!_State) PORTF &amp;= 0b11111101;
+                  ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:139:18: note: suggested alternative: &#39;PORTC&#39;
+     if (!_State) PORTF &amp;= 0b11111101;
+                  ^~~~~
+                  PORTC
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:144:17: error: &#39;PORTF&#39; was not declared in this scope
+     if (_State) PORTF |= 0b00010000;
+                 ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:144:17: note: suggested alternative: &#39;PORTC&#39;
+     if (_State) PORTF |= 0b00010000;
+                 ^~~~~
+                 PORTC
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:145:18: error: &#39;PORTF&#39; was not declared in this scope
+     if (!_State) PORTF &amp;= 0b11101111;
+                  ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:145:18: note: suggested alternative: &#39;PORTC&#39;
+     if (!_State) PORTF &amp;= 0b11101111;
+                  ^~~~~
+                  PORTC
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:157:17: error: &#39;PORTF&#39; was not declared in this scope
+     if (_State) PORTF |= 0b00000100;
+                 ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:157:17: note: suggested alternative: &#39;PORTC&#39;
+     if (_State) PORTF |= 0b00000100;
+                 ^~~~~
+                 PORTC
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:158:18: error: &#39;PORTF&#39; was not declared in this scope
+     if (!_State) PORTF &amp;= 0b11111011;
+                  ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:158:18: note: suggested alternative: &#39;PORTC&#39;
+     if (!_State) PORTF &amp;= 0b11111011;
+                  ^~~~~
+                  PORTC
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:163:17: error: &#39;PORTF&#39; was not declared in this scope
+     if (_State) PORTF |= 0b00100000;
+                 ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:163:17: note: suggested alternative: &#39;PORTC&#39;
+     if (_State) PORTF |= 0b00100000;
+                 ^~~~~
+                 PORTC
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:164:18: error: &#39;PORTF&#39; was not declared in this scope
+     if (!_State) PORTF &amp;= 0b11011111;
+                  ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:164:18: note: suggested alternative: &#39;PORTC&#39;
+     if (!_State) PORTF &amp;= 0b11011111;
+                  ^~~~~
+                  PORTC
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:173:4: error: &#39;PORTD&#39; was not declared in this scope
+    PORTD &amp;= 0b10001111;
+    ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:173:4: note: suggested alternative: &#39;PORTC&#39;
+    PORTD &amp;= 0b10001111;
+    ^~~~~
+    PORTC
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp: In member function &#39;void STF_B902AA::Gauge_Initialize()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:258:24: error: &#39;Gauge&#39; was not declared in this scope
+  if (Diagnostic.Gauge) Gauge.Begin(2000);
+                        ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:258:24: note: suggested alternative: &#39;fpurge&#39;
+  if (Diagnostic.Gauge) Gauge.Begin(2000);
+                        ^~~~~
+                        fpurge
+Multiple libraries were found for &#34;Battery.h&#34;
+  Used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Battery_Sense
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Battery
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MKRMotorCarrier
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoMotorCarrier
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library B902AA claims to run on avr architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp: In member function &#39;void STF_B902AA::LED(uint8_t, uint8_t, bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:119:17: error: &#39;PORTF&#39; was not declared in this scope
+     if (_State) PORTF |= 0b00000001;
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:120:18: error: &#39;PORTF&#39; was not declared in this scope
+     if (!_State) PORTF &amp;= 0b11111110;
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:125:17: error: &#39;PORTF&#39; was not declared in this scope
+     if (_State) PORTF |= 0b00001000;
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:126:18: error: &#39;PORTF&#39; was not declared in this scope
+     if (!_State) PORTF &amp;= 0b11110111;
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:138:17: error: &#39;PORTF&#39; was not declared in this scope
+     if (_State) PORTF |= 0b00000010;
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:139:18: error: &#39;PORTF&#39; was not declared in this scope
+     if (!_State) PORTF &amp;= 0b11111101;
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:144:17: error: &#39;PORTF&#39; was not declared in this scope
+     if (_State) PORTF |= 0b00010000;
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:145:18: error: &#39;PORTF&#39; was not declared in this scope
+     if (!_State) PORTF &amp;= 0b11101111;
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:157:17: error: &#39;PORTF&#39; was not declared in this scope
+     if (_State) PORTF |= 0b00000100;
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:158:18: error: &#39;PORTF&#39; was not declared in this scope
+     if (!_State) PORTF &amp;= 0b11111011;
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:163:17: error: &#39;PORTF&#39; was not declared in this scope
+     if (_State) PORTF |= 0b00100000;
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:164:18: error: &#39;PORTF&#39; was not declared in this scope
+     if (!_State) PORTF &amp;= 0b11011111;
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:173:4: error: &#39;PORTD&#39; was not declared in this scope
+    PORTD &amp;= 0b10001111;
+    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp: In member function &#39;void STF_B902AA::Gauge_Initialize()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:258:24: error: &#39;Gauge&#39; was not declared in this scope
+  if (Diagnostic.Gauge) Gauge.Begin(2000);
+                        ^
+Multiple libraries were found for &#34;Battery.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Battery_Sense
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MKRMotorCarrier
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Battery
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoMotorCarrier
+</pre>
+
+					
+					<h4>examples/Test</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library B902AA claims to run on avr architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp: In member function &#39;void STF_B902AA::LED(uint8_t, uint8_t, bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:119:17: error: &#39;PORTF&#39; was not declared in this scope
+     if (_State) PORTF |= 0b00000001;
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:120:18: error: &#39;PORTF&#39; was not declared in this scope
+     if (!_State) PORTF &amp;= 0b11111110;
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:125:17: error: &#39;PORTF&#39; was not declared in this scope
+     if (_State) PORTF |= 0b00001000;
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:126:18: error: &#39;PORTF&#39; was not declared in this scope
+     if (!_State) PORTF &amp;= 0b11110111;
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:138:17: error: &#39;PORTF&#39; was not declared in this scope
+     if (_State) PORTF |= 0b00000010;
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:139:18: error: &#39;PORTF&#39; was not declared in this scope
+     if (!_State) PORTF &amp;= 0b11111101;
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:144:17: error: &#39;PORTF&#39; was not declared in this scope
+     if (_State) PORTF |= 0b00010000;
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:145:18: error: &#39;PORTF&#39; was not declared in this scope
+     if (!_State) PORTF &amp;= 0b11101111;
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:157:17: error: &#39;PORTF&#39; was not declared in this scope
+     if (_State) PORTF |= 0b00000100;
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:158:18: error: &#39;PORTF&#39; was not declared in this scope
+     if (!_State) PORTF &amp;= 0b11111011;
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:163:17: error: &#39;PORTF&#39; was not declared in this scope
+     if (_State) PORTF |= 0b00100000;
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:164:18: error: &#39;PORTF&#39; was not declared in this scope
+     if (!_State) PORTF &amp;= 0b11011111;
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:173:4: error: &#39;PORTD&#39; was not declared in this scope
+    PORTD &amp;= 0b10001111;
+    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp: In member function &#39;void STF_B902AA::Gauge_Initialize()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B902AA/src/B902AA.cpp:258:24: error: &#39;Gauge&#39; was not declared in this scope
+  if (Diagnostic.Gauge) Gauge.Begin(2000);
+                        ^
+Multiple libraries were found for &#34;Battery.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Battery_Sense
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Battery
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoMotorCarrier
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MKRMotorCarrier
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

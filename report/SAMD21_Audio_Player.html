@@ -1,0 +1,988 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>SAMD21 Audio Player - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>SAMD21 Audio Player</h2>
+				<p>
+					Version: <b>0.7.1</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/samd21-audio-player/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>audioplayer</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library SAMD21_Audio_Player claims to run on samd architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp: In function &#39;void DACSetup(uint32_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:16:3: error: &#39;REG_GCLK_GENDIV&#39; was not declared in this scope
+   REG_GCLK_GENDIV = GCLK_GENDIV_DIV(1) |                  // Divide the 48MHz clock source by 1 for 48MHz
+   ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:16:21: error: &#39;GCLK_GENDIV_DIV&#39; was not declared in this scope
+   REG_GCLK_GENDIV = GCLK_GENDIV_DIV(1) |                  // Divide the 48MHz clock source by 1 for 48MHz
+                     ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:17:21: error: &#39;GCLK_GENDIV_ID&#39; was not declared in this scope
+                     GCLK_GENDIV_ID(3);                    // Select GCLK3
+                     ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:18:10: error: &#39;GCLK&#39; was not declared in this scope
+   while (GCLK-&gt;STATUS.bit.SYNCBUSY);                      // Wait for synchronization
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:18:10: note: suggested alternative: &#39;SCL&#39;
+   while (GCLK-&gt;STATUS.bit.SYNCBUSY);                      // Wait for synchronization
+          ^~~~
+          SCL
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:20:3: error: &#39;REG_GCLK_GENCTRL&#39; was not declared in this scope
+   REG_GCLK_GENCTRL = GCLK_GENCTRL_IDC |                   // Set the duty cycle to 50/50
+   ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:20:22: error: &#39;GCLK_GENCTRL_IDC&#39; was not declared in this scope
+   REG_GCLK_GENCTRL = GCLK_GENCTRL_IDC |                   // Set the duty cycle to 50/50
+                      ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:21:22: error: &#39;GCLK_GENCTRL_GENEN&#39; was not declared in this scope
+                      GCLK_GENCTRL_GENEN |                 // Enable GCLK3
+                      ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:22:22: error: &#39;GCLK_GENCTRL_SRC_DFLL48M&#39; was not declared in this scope
+                      GCLK_GENCTRL_SRC_DFLL48M |           // Set the 48MHz clock source
+                      ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:23:22: error: &#39;GCLK_GENCTRL_ID&#39; was not declared in this scope
+                      GCLK_GENCTRL_ID(3);                  // Select GCLK3
+                      ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:24:10: error: &#39;GCLK&#39; was not declared in this scope
+   while (GCLK-&gt;STATUS.bit.SYNCBUSY);                      // Wait for synchronization
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:24:10: note: suggested alternative: &#39;SCL&#39;
+   while (GCLK-&gt;STATUS.bit.SYNCBUSY);                      // Wait for synchronization
+          ^~~~
+          SCL
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:26:3: error: &#39;REG_GCLK_CLKCTRL&#39; was not declared in this scope
+   REG_GCLK_CLKCTRL = GCLK_CLKCTRL_CLKEN |                 // Enable clock
+   ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:26:22: error: &#39;GCLK_CLKCTRL_CLKEN&#39; was not declared in this scope
+   REG_GCLK_CLKCTRL = GCLK_CLKCTRL_CLKEN |                 // Enable clock
+                      ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:27:22: error: &#39;GCLK_CLKCTRL_GEN_GCLK3&#39; was not declared in this scope
+                      GCLK_CLKCTRL_GEN_GCLK3 |             // Select GCLK3
+                      ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:28:22: error: &#39;GCLK_CLKCTRL_ID_TC4_TC5&#39; was not declared in this scope
+                      GCLK_CLKCTRL_ID_TC4_TC5;             // Feed the GCLK3 to TC4 and TC5
+                      ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:29:10: error: &#39;GCLK&#39; was not declared in this scope
+   while (GCLK-&gt;STATUS.bit.SYNCBUSY);                      // Wait for synchronization
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:29:10: note: suggested alternative: &#39;SCL&#39;
+   while (GCLK-&gt;STATUS.bit.SYNCBUSY);                      // Wait for synchronization
+          ^~~~
+          SCL
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:31:3: error: &#39;REG_TC4_COUNT16_CC0&#39; was not declared in this scope
+   REG_TC4_COUNT16_CC0 = top;                              // Set the TC4 CC0 register to top
+   ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:32:10: error: &#39;TC4&#39; was not declared in this scope
+   while (TC4-&gt;COUNT16.STATUS.bit.SYNCBUSY);               // Wait for synchronization
+          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:32:10: note: suggested alternative: &#39;PC4&#39;
+   while (TC4-&gt;COUNT16.STATUS.bit.SYNCBUSY);               // Wait for synchronization
+          ^~~
+          PC4
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:34:20: error: &#39;TC4_IRQn&#39; was not declared in this scope
+   NVIC_SetPriority(TC4_IRQn, 0);                          // Set the interrupt priority for TC4 to 0 (highest)
+                    ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:34:3: error: &#39;NVIC_SetPriority&#39; was not declared in this scope
+   NVIC_SetPriority(TC4_IRQn, 0);                          // Set the interrupt priority for TC4 to 0 (highest)
+   ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:35:3: error: &#39;NVIC_EnableIRQ&#39; was not declared in this scope
+   NVIC_EnableIRQ(TC4_IRQn);                               // Connect TC4 to Nested Vector Interrupt Controller
+   ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:37:3: error: &#39;REG_TC4_INTFLAG&#39; was not declared in this scope
+   REG_TC4_INTFLAG |= TC_INTFLAG_OVF;                      // Clear the interrupt flags
+   ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:37:22: error: &#39;TC_INTFLAG_OVF&#39; was not declared in this scope
+   REG_TC4_INTFLAG |= TC_INTFLAG_OVF;                      // Clear the interrupt flags
+                      ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:38:3: error: &#39;REG_TC4_INTENSET&#39; was not declared in this scope
+   REG_TC4_INTENSET = TC_INTENCLR_OVF;                     // Enable TC4 interrupts
+   ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:38:22: error: &#39;TC_INTENCLR_OVF&#39; was not declared in this scope
+   REG_TC4_INTENSET = TC_INTENCLR_OVF;                     // Enable TC4 interrupts
+                      ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:40:3: error: &#39;REG_TC4_CTRLA&#39; was not declared in this scope
+   REG_TC4_CTRLA |= TC_CTRLA_PRESCALER_DIV1 |              // Set prescaler to 1 for 48MHz
+   ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:40:20: error: &#39;TC_CTRLA_PRESCALER_DIV1&#39; was not declared in this scope
+   REG_TC4_CTRLA |= TC_CTRLA_PRESCALER_DIV1 |              // Set prescaler to 1 for 48MHz
+                    ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:41:20: error: &#39;TC_CTRLA_WAVEGEN_MFRQ&#39; was not declared in this scope
+                    TC_CTRLA_WAVEGEN_MFRQ;                 // Put the timer TC4 into Match Frequency Mode
+                    ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:42:10: error: &#39;TC4&#39; was not declared in this scope
+   while (TC4-&gt;COUNT16.STATUS.bit.SYNCBUSY);               // Wait for synchronization
+          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:42:10: note: suggested alternative: &#39;PC4&#39;
+   while (TC4-&gt;COUNT16.STATUS.bit.SYNCBUSY);               // Wait for synchronization
+          ^~~
+          PC4
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp: In function &#39;void playSample(const uint8_t*, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:48:3: error: &#39;REG_TC4_CTRLA&#39; was not declared in this scope
+   REG_TC4_CTRLA |= TC_CTRLA_ENABLE;                       // Enable timer TC4
+   ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:48:20: error: &#39;TC_CTRLA_ENABLE&#39; was not declared in this scope
+   REG_TC4_CTRLA |= TC_CTRLA_ENA</pre>
+
+					
+					<h4>examples/audioplayer</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library SAMD21_Audio_Player claims to run on samd architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/examples/audioplayer/audioplayer.ino:9:0: error: too many initializers for &#39;const uint8_t [0] {aka const unsigned char [0]}&#39;
+ const uint8_t Eurythmics[] = {0x80, 0x7F, 0x80, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x80, 0x7F, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x80, 0x7F, 0x80, 0x7F, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x80, 0x7F, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x7F, 0x80, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x81, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x7F, 0x7F, 0x7F, 0x7F, 0x7E, 0x7F, 0x7F, 0x7E, 0x7E, 0x7E, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7E, 0x7E, 0x7F, 0x7F, 0x7F, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x81, 0x81, 0x80, 0x81, 0x81, 0x81, 0x81, 0x80, 0x80, 0x80, 0x80, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x81, 0x81, 0x80, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x80, 0x80, 0x80, 0x80, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7C, 0x7C, 0x7C, 0x7C, 0x7C, 0x7C, 0x7C, 0x7C, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7E, 0x7E, 0x7F, 0x7F, 0x7F, 0x7F, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x7F, 0x7F, 0x7F, 0x7F, 0x7E, 0x7E, 0x7E, 0x7E, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7E, 0x7E, 0x7E, 0x7E, 0x7F, 0x7F, 0x80, 0x80, 0x80, 0x81, 0x81, 0x81, 0x81, 0x82, 0x82, 0x82, 0x82, 0x82, 0x82, 0x82, 0x82, 0x82, 0x83, 0x82, 0x82, 0x82, 0x82, 0x82, 0x82, 0x82, 0x82, 0x81, 0x82, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x80, 0x80, 0x80, 0x80, 0x7F, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x7F, 0x80, 0x80, 0x80, 0x80, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x82, 0x82, 0x82, 0x82, 0x82, 0x82, 0x82, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x80, 0x80, 0x80, 0x80, 0x80, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7E, 0x7E, 0x7E, 0x7D, 0x7D, 0x7D, 0x7D, 0x7C, 0x7C, 0x7C, 0x7B, 0x7B, 0x7B, 0x7B, 0x7B, 0x7B, 0x7C, 0x7C, 0x7C, 0x7C, 0x7D, 0x7D, 0x7D, 0x7E, 0x7E, 0x7F, 0x7F, 0x7F, 0x80, 0x80, 0x80, 0x80, 0x81, 0x80, 0x80, 0x80, 0x7F, 0x7F, 0x7F, 0x7F, 0x7E, 0x7D, 0x7D, 0x7D, 0x7C, 0x7C, 0x7B, 0x7B, 0x7B, 0x7B, 0x7B, 0x7B, 0x7B, 0x7A, 0x7B, 0x7B, 0x7A, 0x7B, 0x7B, 0x7B, 0x7B, 0x7B, 0x7B, 0x7C, 0x7C, 0x7C, 0x7C, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7F, 0x7F, 0x7F, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x81, 0x81, 0x81, 0x81, 0x82, 0x82, 0x82, 0x81, 0x81, 0x81, 0x81, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7E, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x80, 0x80, 0x80, 0x81, 0x81, 0x81, 0x82, 0x82, 0x82, 0x83, 0x83, 0x83, 0x84, 0x84, 0x84, 0x84, 0x84, 0x85, 0x85, 0x85, 0x85, 0x85, 0x85, 0x85, 0x86, 0x85, 0x86, 0x86, 0x85, 0x85, 0x85, 0x84, 0x84, 0x83, 0x83, 0x82, 0x82, 0x81, 0x80, 0x80, 0x7F, 0x7E, 0x7E, 0x7D, 0x7D, 0x7C, 0x7C, 0x7C, 0x7C, 0x7C, 0x7C, 0x7D, 0x7D, 0x7D, 0x7E, 0x7E, 0x7F, 0x80, 0x81, 0x81, 0x82, 0x83, 0x84, 0x84, 0x84, 0x84, 0x84, 0x84, 0x84, 0x83, 0x83, 0x83, 0x83, 0x82, 0x82, 0x81, 0x80, 0x80, 0x7F, 0x7E, 0x7D, 0x7D, 0x7D, 0x7C, 0x7C, 0x7C, 0x7C, 0x7C, 0x7C, 0x7C, 0x7C, 0x7C, 0x7C, 0x7C, 0x7C, 0x7C, 0x7C, 0x7B, 0x7B, 0x7B, 0x7C, 0x7B, 0x7B, 0x7C, 0x7B, 0x7C, 0x7C, 0x7B, 0x7C, 0x7C, 0x7C, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7E, 0x7E, 0x7E, 0x7F, 0x7F, 0x80, 0x80, 0x80, 0x80, 0x80, 0x7F, 0x7F, 0x7F, 0x7E, 0x7F, 0x7F, 0x7E, 0x7E, 0x7E, 0x7E, 0x7D, 0x7D, 0x7D, 0x7C, 0x7C, 0x7C, 0x7C, 0x7C, 0x7B, 0x7B, 0x7B, 0x7B, 0x7B, 0x7A, 0x7A, 0x7A, 0x7A, 0x79, 0x79, 0x7A, 0x7A, 0x7A, 0x7B, 0x7B, 0x7C, 0x7D, 0x7D, 0x7E, 0x7E, 0x7E, 0x7F, 0x7F, 0x81, 0x81, 0x82, 0x82, 0x83, 0x84, 0x84, 0x84, 0x85, 0x85, 0x85, 0x85, 0x84, 0x84, 0x83, 0x83, 0x82, 0x81, 0x80, 0x7F, 0x7F, 0x7E, 0x7D, 0x7C, 0x7B, 0x7B, 0x7A, 0x7A, 0x7A, 0x7A, 0x79, 0x7A, 0x7A, 0x7A, 0x7B, 0x7B, 0x7C, 0x7D, 0x7E, 0x7F, 0x80, 0x81, 0x81, 0x83, 0x83, 0x83, 0x84, 0x84, 0x85, 0x85, 0x85, 0x86, 0x85, 0x86, 0x86, 0x86, 0x85, 0x85, 0x84, 0x84, 0x83, 0x82, 0x82, 0x81, 0x81, 0x81, 0x81, 0x81, 0x80, 0x80, 0x80, 0x7F, 0x7F, 0x7F, 0x7F, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7E, 0x7E, 0x7E, 0x7F, 0x7F, 0x7F, 0x80, 0x7F, 0x7F, 0x80, 0x80, 0x80, 0x80, 0x81, 0x81, 0x81, 0x81, 0x81, 0x82, 0x82, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x80, 0x80, 0x80, 0x80, 0x80, 0x7F, 0x7E, 0x7E, 0x7E, 0x7D, 0x7D, 0x7C, 0x7C, 0x7B, 0x7B, 0x7A, 0x79, 0x79, 0x78, 0x79, 0x79, 0x7A, 0x7A, 0x7A, 0x7C, 0x7B, 0x7C, 0x7D, 0x7D, 0x7F, 0x7F, 0x80, 0x81, 0x82, 0x84, 0x84, 0x85, 0x85, 0x86, 0x86, 0x86, 0x86, 0x85, 0x85, 0x84, 0x83, 0x83, 0x82, 0x81, 0x80, 0x7F, 0x7E, 0x7D, 0x7B, 0x7A, 0x79, 0x78, 0x78, 0x77, 0x77, 0x77, 0x77, 0x77, 0x77, 0x78, 0x77, 0x78, 0x78, 0x79, 0x79, 0x7A, 0x7A, 0x7B, 0x7D, 0x7D, 0x7E, 0x7F, 0x7F, 0x7F, 0x80, 0x80, 0x80, 0x80, 0x81, 0x81, 0x81, 0x82, 0x82, 0x81, 0x81, 0x81, 0x81, 0x80, 0x80, 0x80, 0x80, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7E, 0x7E, 0x7E, 0x7E, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7E, 0x7D, 0x7D, 0x7E, 0x7D, 0x7E, 0x7D, 0x7D, 0x7D, 0x7E, 0x7E, 0x7E, 0x80, 0x7F, 0x80, 0x80, 0x80, 0x7F, 0x80, 0x7F, 0x7F, 0x80, 0x80, 0x80, 0x81, 0x81, 0x82, 0x83, 0x82, 0x82, 0x82, 0x82, 0x82, 0x82, 0x82, 0x83, 0x83, 0x84, 0x84, 0x84, 0x84, 0x83, 0x83, 0x82, 0x82, 0x81, 0x80, 0x80, 0x80, 0x7F, 0x7F, 0x7E, 0x7D, 0x7C, 0x7B, 0x7A, 0x79, 0x79, 0x78, 0x78, 0x78, 0x78, 0x79, 0x79, 0x7B, 0x7B, 0x7C, 0x7D, 0x7E, 0x7E, 0x7F, 0x80, 0x81, 0x82, 0x84, 0x84, 0x85, 0x86, 0x87, 0x87, 0x86, 0x87, 0x86, 0x86, 0x85, 0x84, 0x84, 0x83, 0x83, 0x83, 0x81, 0x80, 0x7F, 0x7D, 0x7C, 0x7C, 0x7B, 0x7A, 0x79, 0x79, 0x79, 0x7A, 0x7A, 0x7A, 0x7A, 0x7A, 0x7B, 0x7A, 0x7B, 0x7A, 0x7B, 0x7B, 0x7C, 0x7E, 0x7E, 0x7F, 0x80, 0x80, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x82, 0x83, 0x83, 0x83, 0x83, 0x83, 0x83, 0x83, 0x81, 0x81, 0x81, 0x80, 0x80, 0x80, 0x80, 0x80, 0x81, 0x80, 0x80, 0x7F, 0x7F, 0x7D, 0x7E, 0x7E, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7E, 0x7E, 0x7E, 0x7D, 0x7D, 0x7D, 0x7C, 0x7C, 0x7C, 0x7C, 0x7C, 0x7D, 0x7E, 0x7D, 0x7D, 0x7D, 0x7E, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7F, 0x7F, 0x80, 0x81, 0x82, 0x82, 0x82, 0x83, 0x83, 0x83, 0x83, 0x84, 0x84, 0x85, 0x85, 0x86, 0x86, 0x85, 0x86, 0x85, 0x84, 0x83, 0x82, 0x81, 0x80, 0x7F, 0x7D, 0x7D, 0x7C, 0x7B, 0x7B, 0x7A, 0x78, 0x78, 0x77, 0x76, 0x76, 0x76, 0x76, 0x76, 0x78, 0x79, 0x7A, 0x7B, 0x7C, 0x7D, 0x7E, 0x7E, 0x80, 0x81, 0x81, 0x83, 0x84, 0x85, 0x85, 0x86, 0x86, 0x86, 0x86, 0x85, 0x85, 0x83, 0x83, 0x83, 0x82, 0x81, 0x80, 0x80, 0x7E, 0x7E, 0x7D, 0x7B, 0x7B, 0x7A, 0x7A, 0x7A, 0x79, 0x79, 0x7A, 0x7A, 0x7A, 0x7A, 0x7B, 0x7A, 0x7A, 0x7C, 0x7B, 0x7C, 0x7C, 0x7D, 0x7E, 0x7E, 0x7F, 0x80, 0x80, 0x80, 0x81, 0x82, 0x81, 0x81, 0x82, 0x82, 0x82, 0x83, 0x82, 0x82, 0x82, 0x81, 0x81, 0x80, 0x80, 0x7F, 0x7F, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7D, 0x7E, 0x7D, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7D, 0x7D, 0x7C, 0x7D, 0x7C, 0x7B, 0x7C, 0x7A, 0x7B, 0x7A, 0x7A, 0x7A, 0x79, 0x79, 0x79, 0x7B, 0x7A, 0x7B, 0x7C, 0x7D, 0x7E, 0x7F, 0x7F, 0x80, 0x81, 0x82, 0x82, 0x83, 0x84, 0x84, 0x85, 0x85, 0x86, 0x86, 0x86, 0x86, 0x85, 0x85, 0x83, 0x83, 0x81, 0x80, 0x80, 0x7F, 0x7E, 0x7E, 0x7C, 0x7B, 0x7A, 0x79, 0x78, 0x77, 0x77, 0x76, 0x77, 0x77, 0x77, 0x79, 0x79, 0x7B, 0x7C, 0x7C, 0x7D, 0x7F, 0x80, 0x81, 0x82, 0x83, 0x84, 0x86, 0x87, 0x88, 0x89, 0x89, 0x89, 0x8A, 0x89, 0x88, 0x87, 0x86, 0x86, 0x85, 0x84, 0x83, 0x82, 0x81, 0x80, 0x7F, 0x7D, 0x7C, 0x7B, 0x7A, 0x79, 0x79, 0x79, 0x79, 0x79, 0x79, 0x79, 0x79, 0x79, 0x79, 0x79, 0x79, 0x7A, 0x7A, 0x7B, 0x7C, 0x7D, 0x7D, 0x7D, 0x80, 0x7F, 0x81, 0x80, 0x80, 0x80, 0x81, 0x81, 0x81, 0x82, 0x81, 0x81, 0x82, 0x82, 0x80, 0x80, 0x7F, 0x7F, 0x7E, 0x7E, 0x7E, 0x7D, 0x7E, 0x7E, 0x7F, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7F, 0x80, 0x80, 0x80, 0x80, 0x80, 0x81, 0x80, 0x80, 0x80, 0x7E, 0x7E, 0x7E, 0x7D, 0x7C, 0x7B, 0x7B, 0x7B, 0x7B, 0x7B, 0x7A, 0x7B, 0x7A, 0x7A, 0x7B, 0x7A, 0x7B, 0x7B, 0x7D, 0x7E, 0x7F, 0x80, 0x81, 0x82, 0x83, 0x84, 0x85, 0x84, 0x85, 0x86, 0x87, 0x87, 0x86, 0x87, 0x85, 0x86, 0x85, 0x83, 0x83, 0x81, 0x81, 0x80, 0x7F, 0x7E, 0x7C, 0x7B, 0x7A, 0x78, 0x</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library SAMD21_Audio_Player claims to run on samd architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp: In function &#39;void DACSetup(uint32_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:16:3: error: &#39;REG_GCLK_GENDIV&#39; was not declared in this scope
+   REG_GCLK_GENDIV = GCLK_GENDIV_DIV(1) |                  // Divide the 48MHz clock source by 1 for 48MHz
+   ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:16:21: error: &#39;GCLK_GENDIV_DIV&#39; was not declared in this scope
+   REG_GCLK_GENDIV = GCLK_GENDIV_DIV(1) |                  // Divide the 48MHz clock source by 1 for 48MHz
+                     ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:17:21: error: &#39;GCLK_GENDIV_ID&#39; was not declared in this scope
+                     GCLK_GENDIV_ID(3);                    // Select GCLK3
+                     ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:18:10: error: &#39;GCLK&#39; was not declared in this scope
+   while (GCLK-&gt;STATUS.bit.SYNCBUSY);                      // Wait for synchronization
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:18:10: note: suggested alternative: &#39;SCK&#39;
+   while (GCLK-&gt;STATUS.bit.SYNCBUSY);                      // Wait for synchronization
+          ^~~~
+          SCK
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:20:3: error: &#39;REG_GCLK_GENCTRL&#39; was not declared in this scope
+   REG_GCLK_GENCTRL = GCLK_GENCTRL_IDC |                   // Set the duty cycle to 50/50
+   ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:20:22: error: &#39;GCLK_GENCTRL_IDC&#39; was not declared in this scope
+   REG_GCLK_GENCTRL = GCLK_GENCTRL_IDC |                   // Set the duty cycle to 50/50
+                      ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:21:22: error: &#39;GCLK_GENCTRL_GENEN&#39; was not declared in this scope
+                      GCLK_GENCTRL_GENEN |                 // Enable GCLK3
+                      ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:22:22: error: &#39;GCLK_GENCTRL_SRC_DFLL48M&#39; was not declared in this scope
+                      GCLK_GENCTRL_SRC_DFLL48M |           // Set the 48MHz clock source
+                      ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:23:22: error: &#39;GCLK_GENCTRL_ID&#39; was not declared in this scope
+                      GCLK_GENCTRL_ID(3);                  // Select GCLK3
+                      ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:24:10: error: &#39;GCLK&#39; was not declared in this scope
+   while (GCLK-&gt;STATUS.bit.SYNCBUSY);                      // Wait for synchronization
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:24:10: note: suggested alternative: &#39;SCK&#39;
+   while (GCLK-&gt;STATUS.bit.SYNCBUSY);                      // Wait for synchronization
+          ^~~~
+          SCK
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:26:3: error: &#39;REG_GCLK_CLKCTRL&#39; was not declared in this scope
+   REG_GCLK_CLKCTRL = GCLK_CLKCTRL_CLKEN |                 // Enable clock
+   ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:26:22: error: &#39;GCLK_CLKCTRL_CLKEN&#39; was not declared in this scope
+   REG_GCLK_CLKCTRL = GCLK_CLKCTRL_CLKEN |                 // Enable clock
+                      ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:27:22: error: &#39;GCLK_CLKCTRL_GEN_GCLK3&#39; was not declared in this scope
+                      GCLK_CLKCTRL_GEN_GCLK3 |             // Select GCLK3
+                      ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:28:22: error: &#39;GCLK_CLKCTRL_ID_TC4_TC5&#39; was not declared in this scope
+                      GCLK_CLKCTRL_ID_TC4_TC5;             // Feed the GCLK3 to TC4 and TC5
+                      ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:29:10: error: &#39;GCLK&#39; was not declared in this scope
+   while (GCLK-&gt;STATUS.bit.SYNCBUSY);                      // Wait for synchronization
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:29:10: note: suggested alternative: &#39;SCK&#39;
+   while (GCLK-&gt;STATUS.bit.SYNCBUSY);                      // Wait for synchronization
+          ^~~~
+          SCK
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:31:3: error: &#39;REG_TC4_COUNT16_CC0&#39; was not declared in this scope
+   REG_TC4_COUNT16_CC0 = top;                              // Set the TC4 CC0 register to top
+   ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:32:10: error: &#39;TC4&#39; was not declared in this scope
+   while (TC4-&gt;COUNT16.STATUS.bit.SYNCBUSY);               // Wait for synchronization
+          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:34:20: error: &#39;TC4_IRQn&#39; was not declared in this scope
+   NVIC_SetPriority(TC4_IRQn, 0);                          // Set the interrupt priority for TC4 to 0 (highest)
+                    ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:34:20: note: suggested alternative: &#39;RTC_IRQn&#39;
+   NVIC_SetPriority(TC4_IRQn, 0);                          // Set the interrupt priority for TC4 to 0 (highest)
+                    ^~~~~~~~
+                    RTC_IRQn
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:37:3: error: &#39;REG_TC4_INTFLAG&#39; was not declared in this scope
+   REG_TC4_INTFLAG |= TC_INTFLAG_OVF;                      // Clear the interrupt flags
+   ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:37:22: error: &#39;TC_INTFLAG_OVF&#39; was not declared in this scope
+   REG_TC4_INTFLAG |= TC_INTFLAG_OVF;                      // Clear the interrupt flags
+                      ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:38:3: error: &#39;REG_TC4_INTENSET&#39; was not declared in this scope
+   REG_TC4_INTENSET = TC_INTENCLR_OVF;                     // Enable TC4 interrupts
+   ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:38:22: error: &#39;TC_INTENCLR_OVF&#39; was not declared in this scope
+   REG_TC4_INTENSET = TC_INTENCLR_OVF;                     // Enable TC4 interrupts
+                      ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:40:3: error: &#39;REG_TC4_CTRLA&#39; was not declared in this scope
+   REG_TC4_CTRLA |= TC_CTRLA_PRESCALER_DIV1 |              // Set prescaler to 1 for 48MHz
+   ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:40:20: error: &#39;TC_CTRLA_PRESCALER_DIV1&#39; was not declared in this scope
+   REG_TC4_CTRLA |= TC_CTRLA_PRESCALER_DIV1 |              // Set prescaler to 1 for 48MHz
+                    ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:41:20: error: &#39;TC_CTRLA_WAVEGEN_MFRQ&#39; was not declared in this scope
+                    TC_CTRLA_WAVEGEN_MFRQ;                 // Put the timer TC4 into Match Frequency Mode
+                    ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:42:10: error: &#39;TC4&#39; was not declared in this scope
+   while (TC4-&gt;COUNT16.STATUS.bit.SYNCBUSY);               // Wait for synchronization
+          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp: In function &#39;void playSample(const uint8_t*, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:48:3: error: &#39;REG_TC4_CTRLA&#39; was not declared in this scope
+   REG_TC4_CTRLA |= TC_CTRLA_ENABLE;                       // Enable timer TC4
+   ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:48:20: error: &#39;TC_CTRLA_ENABLE&#39; was not declared in this scope
+   REG_TC4_CTRLA |= TC_CTRLA_ENABLE;                       // Enable timer TC4
+                    ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:49:10: error: &#39;TC4&#39; was not declared in this scope
+   while (TC4-&gt;COUNT16.STATUS.bit.SYNCBUSY);               // Wait for synchronization
+          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp: In function &#39;void pauseSample()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:53:3: error: &#39;REG_TC4_CTRLA&#39; was not declared in this scope
+   REG_TC4_CTRLA &amp;= ~TC_CTRLA_ENABLE;                      // Disable timer TC4
+   ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/li</pre>
+
+					
+					<h4>examples/audioplayer</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library SAMD21_Audio_Player claims to run on samd architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp: In function &#39;void DACSetup(uint32_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:16:3: error: &#39;REG_GCLK_GENDIV&#39; was not declared in this scope
+   REG_GCLK_GENDIV = GCLK_GENDIV_DIV(1) |                  // Divide the 48MHz clock source by 1 for 48MHz
+   ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:16:21: error: &#39;GCLK_GENDIV_DIV&#39; was not declared in this scope
+   REG_GCLK_GENDIV = GCLK_GENDIV_DIV(1) |                  // Divide the 48MHz clock source by 1 for 48MHz
+                     ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:17:21: error: &#39;GCLK_GENDIV_ID&#39; was not declared in this scope
+                     GCLK_GENDIV_ID(3);                    // Select GCLK3
+                     ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:18:10: error: &#39;GCLK&#39; was not declared in this scope
+   while (GCLK-&gt;STATUS.bit.SYNCBUSY);                      // Wait for synchronization
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:18:10: note: suggested alternative: &#39;SCK&#39;
+   while (GCLK-&gt;STATUS.bit.SYNCBUSY);                      // Wait for synchronization
+          ^~~~
+          SCK
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:20:3: error: &#39;REG_GCLK_GENCTRL&#39; was not declared in this scope
+   REG_GCLK_GENCTRL = GCLK_GENCTRL_IDC |                   // Set the duty cycle to 50/50
+   ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:20:22: error: &#39;GCLK_GENCTRL_IDC&#39; was not declared in this scope
+   REG_GCLK_GENCTRL = GCLK_GENCTRL_IDC |                   // Set the duty cycle to 50/50
+                      ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:21:22: error: &#39;GCLK_GENCTRL_GENEN&#39; was not declared in this scope
+                      GCLK_GENCTRL_GENEN |                 // Enable GCLK3
+                      ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:22:22: error: &#39;GCLK_GENCTRL_SRC_DFLL48M&#39; was not declared in this scope
+                      GCLK_GENCTRL_SRC_DFLL48M |           // Set the 48MHz clock source
+                      ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:23:22: error: &#39;GCLK_GENCTRL_ID&#39; was not declared in this scope
+                      GCLK_GENCTRL_ID(3);                  // Select GCLK3
+                      ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:24:10: error: &#39;GCLK&#39; was not declared in this scope
+   while (GCLK-&gt;STATUS.bit.SYNCBUSY);                      // Wait for synchronization
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:24:10: note: suggested alternative: &#39;SCK&#39;
+   while (GCLK-&gt;STATUS.bit.SYNCBUSY);                      // Wait for synchronization
+          ^~~~
+          SCK
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:26:3: error: &#39;REG_GCLK_CLKCTRL&#39; was not declared in this scope
+   REG_GCLK_CLKCTRL = GCLK_CLKCTRL_CLKEN |                 // Enable clock
+   ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:26:22: error: &#39;GCLK_CLKCTRL_CLKEN&#39; was not declared in this scope
+   REG_GCLK_CLKCTRL = GCLK_CLKCTRL_CLKEN |                 // Enable clock
+                      ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:27:22: error: &#39;GCLK_CLKCTRL_GEN_GCLK3&#39; was not declared in this scope
+                      GCLK_CLKCTRL_GEN_GCLK3 |             // Select GCLK3
+                      ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:28:22: error: &#39;GCLK_CLKCTRL_ID_TC4_TC5&#39; was not declared in this scope
+                      GCLK_CLKCTRL_ID_TC4_TC5;             // Feed the GCLK3 to TC4 and TC5
+                      ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:29:10: error: &#39;GCLK&#39; was not declared in this scope
+   while (GCLK-&gt;STATUS.bit.SYNCBUSY);                      // Wait for synchronization
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:29:10: note: suggested alternative: &#39;SCK&#39;
+   while (GCLK-&gt;STATUS.bit.SYNCBUSY);                      // Wait for synchronization
+          ^~~~
+          SCK
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:31:3: error: &#39;REG_TC4_COUNT16_CC0&#39; was not declared in this scope
+   REG_TC4_COUNT16_CC0 = top;                              // Set the TC4 CC0 register to top
+   ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:32:10: error: &#39;TC4&#39; was not declared in this scope
+   while (TC4-&gt;COUNT16.STATUS.bit.SYNCBUSY);               // Wait for synchronization
+          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:34:20: error: &#39;TC4_IRQn&#39; was not declared in this scope
+   NVIC_SetPriority(TC4_IRQn, 0);                          // Set the interrupt priority for TC4 to 0 (highest)
+                    ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:34:20: note: suggested alternative: &#39;RTC_IRQn&#39;
+   NVIC_SetPriority(TC4_IRQn, 0);                          // Set the interrupt priority for TC4 to 0 (highest)
+                    ^~~~~~~~
+                    RTC_IRQn
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:37:3: error: &#39;REG_TC4_INTFLAG&#39; was not declared in this scope
+   REG_TC4_INTFLAG |= TC_INTFLAG_OVF;                      // Clear the interrupt flags
+   ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:37:22: error: &#39;TC_INTFLAG_OVF&#39; was not declared in this scope
+   REG_TC4_INTFLAG |= TC_INTFLAG_OVF;                      // Clear the interrupt flags
+                      ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:38:3: error: &#39;REG_TC4_INTENSET&#39; was not declared in this scope
+   REG_TC4_INTENSET = TC_INTENCLR_OVF;                     // Enable TC4 interrupts
+   ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:38:22: error: &#39;TC_INTENCLR_OVF&#39; was not declared in this scope
+   REG_TC4_INTENSET = TC_INTENCLR_OVF;                     // Enable TC4 interrupts
+                      ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:40:3: error: &#39;REG_TC4_CTRLA&#39; was not declared in this scope
+   REG_TC4_CTRLA |= TC_CTRLA_PRESCALER_DIV1 |              // Set prescaler to 1 for 48MHz
+   ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:40:20: error: &#39;TC_CTRLA_PRESCALER_DIV1&#39; was not declared in this scope
+   REG_TC4_CTRLA |= TC_CTRLA_PRESCALER_DIV1 |              // Set prescaler to 1 for 48MHz
+                    ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:41:20: error: &#39;TC_CTRLA_WAVEGEN_MFRQ&#39; was not declared in this scope
+                    TC_CTRLA_WAVEGEN_MFRQ;                 // Put the timer TC4 into Match Frequency Mode
+                    ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:42:10: error: &#39;TC4&#39; was not declared in this scope
+   while (TC4-&gt;COUNT16.STATUS.bit.SYNCBUSY);               // Wait for synchronization
+          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp: In function &#39;void playSample(const uint8_t*, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:48:3: error: &#39;REG_TC4_CTRLA&#39; was not declared in this scope
+   REG_TC4_CTRLA |= TC_CTRLA_ENABLE;                       // Enable timer TC4
+   ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:48:20: error: &#39;TC_CTRLA_ENABLE&#39; was not declared in this scope
+   REG_TC4_CTRLA |= TC_CTRLA_ENABLE;                       // Enable timer TC4
+                    ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:49:10: error: &#39;TC4&#39; was not declared in this scope
+   while (TC4-&gt;COUNT16.STATUS.bit.SYNCBUSY);               // Wait for synchronization
+          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp: In function &#39;void pauseSample()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:53:3: error: &#39;REG_TC4_CTRLA&#39; was not declared in this scope
+   REG_TC4_CTRLA &amp;= ~TC_CTRLA_ENABLE;                      // Disable timer TC4
+   ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/li</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library SAMD21_Audio_Player claims to run on samd architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp: In function &#39;void DACSetup(uint32_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:16:3: error: &#39;REG_GCLK_GENDIV&#39; was not declared in this scope
+   REG_GCLK_GENDIV = GCLK_GENDIV_DIV(1) |                  // Divide the 48MHz clock source by 1 for 48MHz
+   ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:16:21: error: &#39;GCLK_GENDIV_DIV&#39; was not declared in this scope
+   REG_GCLK_GENDIV = GCLK_GENDIV_DIV(1) |                  // Divide the 48MHz clock source by 1 for 48MHz
+                     ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:17:21: error: &#39;GCLK_GENDIV_ID&#39; was not declared in this scope
+                     GCLK_GENDIV_ID(3);                    // Select GCLK3
+                     ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:18:10: error: &#39;GCLK&#39; was not declared in this scope
+   while (GCLK-&gt;STATUS.bit.SYNCBUSY);                      // Wait for synchronization
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:18:10: note: suggested alternative: &#39;SCL&#39;
+   while (GCLK-&gt;STATUS.bit.SYNCBUSY);                      // Wait for synchronization
+          ^~~~
+          SCL
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:20:3: error: &#39;REG_GCLK_GENCTRL&#39; was not declared in this scope
+   REG_GCLK_GENCTRL = GCLK_GENCTRL_IDC |                   // Set the duty cycle to 50/50
+   ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:20:22: error: &#39;GCLK_GENCTRL_IDC&#39; was not declared in this scope
+   REG_GCLK_GENCTRL = GCLK_GENCTRL_IDC |                   // Set the duty cycle to 50/50
+                      ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:20:22: note: suggested alternative: &#39;CLKCTRL_t&#39;
+   REG_GCLK_GENCTRL = GCLK_GENCTRL_IDC |                   // Set the duty cycle to 50/50
+                      ^~~~~~~~~~~~~~~~
+                      CLKCTRL_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:21:22: error: &#39;GCLK_GENCTRL_GENEN&#39; was not declared in this scope
+                      GCLK_GENCTRL_GENEN |                 // Enable GCLK3
+                      ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:21:22: note: suggested alternative: &#39;CLKCTRL_PEN_bp&#39;
+                      GCLK_GENCTRL_GENEN |                 // Enable GCLK3
+                      ^~~~~~~~~~~~~~~~~~
+                      CLKCTRL_PEN_bp
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:22:22: error: &#39;GCLK_GENCTRL_SRC_DFLL48M&#39; was not declared in this scope
+                      GCLK_GENCTRL_SRC_DFLL48M |           // Set the 48MHz clock source
+                      ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:23:22: error: &#39;GCLK_GENCTRL_ID&#39; was not declared in this scope
+                      GCLK_GENCTRL_ID(3);                  // Select GCLK3
+                      ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:23:22: note: suggested alternative: &#39;CLKCTRL_t&#39;
+                      GCLK_GENCTRL_ID(3);                  // Select GCLK3
+                      ^~~~~~~~~~~~~~~
+                      CLKCTRL_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:24:10: error: &#39;GCLK&#39; was not declared in this scope
+   while (GCLK-&gt;STATUS.bit.SYNCBUSY);                      // Wait for synchronization
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:24:10: note: suggested alternative: &#39;SCL&#39;
+   while (GCLK-&gt;STATUS.bit.SYNCBUSY);                      // Wait for synchronization
+          ^~~~
+          SCL
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:26:3: error: &#39;REG_GCLK_CLKCTRL&#39; was not declared in this scope
+   REG_GCLK_CLKCTRL = GCLK_CLKCTRL_CLKEN |                 // Enable clock
+   ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:26:22: error: &#39;GCLK_CLKCTRL_CLKEN&#39; was not declared in this scope
+   REG_GCLK_CLKCTRL = GCLK_CLKCTRL_CLKEN |                 // Enable clock
+                      ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:26:22: note: suggested alternative: &#39;CLKCTRL_CLKSEL_t&#39;
+   REG_GCLK_CLKCTRL = GCLK_CLKCTRL_CLKEN |                 // Enable clock
+                      ^~~~~~~~~~~~~~~~~~
+                      CLKCTRL_CLKSEL_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:27:22: error: &#39;GCLK_CLKCTRL_GEN_GCLK3&#39; was not declared in this scope
+                      GCLK_CLKCTRL_GEN_GCLK3 |             // Select GCLK3
+                      ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:27:22: note: suggested alternative: &#39;CLKCTRL_PEN_bp&#39;
+                      GCLK_CLKCTRL_GEN_GCLK3 |             // Select GCLK3
+                      ^~~~~~~~~~~~~~~~~~~~~~
+                      CLKCTRL_PEN_bp
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:28:22: error: &#39;GCLK_CLKCTRL_ID_TC4_TC5&#39; was not declared in this scope
+                      GCLK_CLKCTRL_ID_TC4_TC5;             // Feed the GCLK3 to TC4 and TC5
+                      ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:29:10: error: &#39;GCLK&#39; was not declared in this scope
+   while (GCLK-&gt;STATUS.bit.SYNCBUSY);                      // Wait for synchronization
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:29:10: note: suggested alternative: &#39;SCL&#39;
+   while (GCLK-&gt;STATUS.bit.SYNCBUSY);                      // Wait for synchronization
+          ^~~~
+          SCL
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:31:3: error: &#39;REG_TC4_COUNT16_CC0&#39; was not declared in this scope
+   REG_TC4_COUNT16_CC0 = top;                              // Set the TC4 CC0 register to top
+   ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:32:10: error: &#39;TC4&#39; was not declared in this scope
+   while (TC4-&gt;COUNT16.STATUS.bit.SYNCBUSY);               // Wait for synchronization
+          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:34:20: error: &#39;TC4_IRQn&#39; was not declared in this scope
+   NVIC_SetPriority(TC4_IRQn, 0);                          // Set the interrupt priority for TC4 to 0 (highest)
+                    ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:34:3: error: &#39;NVIC_SetPriority&#39; was not declared in this scope
+   NVIC_SetPriority(TC4_IRQn, 0);                          // Set the interrupt priority for TC4 to 0 (highest)
+   ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:35:3: error: &#39;NVIC_EnableIRQ&#39; was not declared in this scope
+   NVIC_EnableIRQ(TC4_IRQn);                               // Connect TC4 to Nested Vector Interrupt Controller
+   ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:37:3: error: &#39;REG_TC4_INTFLAG&#39; was not declared in this scope
+   REG_TC4_INTFLAG |= TC_INTFLAG_OVF;                      // Clear the interrupt flags
+   ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:37:3: note: suggested alternative: &#39;RTC_INTFLAGS&#39;
+   REG_TC4_INTFLAG |= TC_INTFLAG_OVF;                      // Clear the interrupt flags
+   ^~~~~~~~~~~~~~~
+   RTC_INTFLAGS
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:37:22: error: &#39;TC_INTFLAG_OVF&#39; was not declared in this scope
+   REG_TC4_INTFLAG |= TC_INTFLAG_OVF;                      // Clear the interrupt flags
+                      ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:37:22: note: suggested alternative: &#39;RTC_INTFLAGS&#39;
+   REG_TC4_INTFLAG |= TC_INTFLAG_OVF;                      // Clear the interrupt flags
+                      ^~~~~~~~~~~~~~
+                      RTC_INTFLAGS
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:38:3: error: &#39;REG_TC4_INTENSET&#39; was not declared in this scope
+   REG_TC4_INTENSET = TC_INTENCLR_OVF;                     // Enable TC4 interrupts
+   ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:38:22: error: &#39;TC_INTENCLR_OVF&#39; was not declared in this scope
+   REG_TC4_INTENSET = TC_INTENCLR_OVF;                     // Enable TC4 interrupts
+                      ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:40:3: error: &#39;REG_TC4_CTRLA&#39; was not declared in</pre>
+
+					
+					<h4>examples/audioplayer</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library SAMD21_Audio_Player claims to run on samd architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/examples/audioplayer/audioplayer.ino:9:0: error: too many initializers for &#39;const uint8_t [0] {aka const unsigned char [0]}&#39;
+ const uint8_t Eurythmics[] = {0x80, 0x7F, 0x80, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x80, 0x7F, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x80, 0x7F, 0x80, 0x7F, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x80, 0x7F, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x7F, 0x80, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x81, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x7F, 0x7F, 0x7F, 0x7F, 0x7E, 0x7F, 0x7F, 0x7E, 0x7E, 0x7E, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7E, 0x7E, 0x7F, 0x7F, 0x7F, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x81, 0x81, 0x80, 0x81, 0x81, 0x81, 0x81, 0x80, 0x80, 0x80, 0x80, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x81, 0x81, 0x80, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x80, 0x80, 0x80, 0x80, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7C, 0x7C, 0x7C, 0x7C, 0x7C, 0x7C, 0x7C, 0x7C, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7E, 0x7E, 0x7F, 0x7F, 0x7F, 0x7F, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x7F, 0x7F, 0x7F, 0x7F, 0x7E, 0x7E, 0x7E, 0x7E, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7E, 0x7E, 0x7E, 0x7E, 0x7F, 0x7F, 0x80, 0x80, 0x80, 0x81, 0x81, 0x81, 0x81, 0x82, 0x82, 0x82, 0x82, 0x82, 0x82, 0x82, 0x82, 0x82, 0x83, 0x82, 0x82, 0x82, 0x82, 0x82, 0x82, 0x82, 0x82, 0x81, 0x82, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x80, 0x80, 0x80, 0x80, 0x7F, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x7F, 0x80, 0x80, 0x80, 0x80, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x82, 0x82, 0x82, 0x82, 0x82, 0x82, 0x82, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x80, 0x80, 0x80, 0x80, 0x80, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7E, 0x7E, 0x7E, 0x7D, 0x7D, 0x7D, 0x7D, 0x7C, 0x7C, 0x7C, 0x7B, 0x7B, 0x7B, 0x7B, 0x7B, 0x7B, 0x7C, 0x7C, 0x7C, 0x7C, 0x7D, 0x7D, 0x7D, 0x7E, 0x7E, 0x7F, 0x7F, 0x7F, 0x80, 0x80, 0x80, 0x80, 0x81, 0x80, 0x80, 0x80, 0x7F, 0x7F, 0x7F, 0x7F, 0x7E, 0x7D, 0x7D, 0x7D, 0x7C, 0x7C, 0x7B, 0x7B, 0x7B, 0x7B, 0x7B, 0x7B, 0x7B, 0x7A, 0x7B, 0x7B, 0x7A, 0x7B, 0x7B, 0x7B, 0x7B, 0x7B, 0x7B, 0x7C, 0x7C, 0x7C, 0x7C, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7F, 0x7F, 0x7F, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x81, 0x81, 0x81, 0x81, 0x82, 0x82, 0x82, 0x81, 0x81, 0x81, 0x81, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7E, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x80, 0x80, 0x80, 0x81, 0x81, 0x81, 0x82, 0x82, 0x82, 0x83, 0x83, 0x83, 0x84, 0x84, 0x84, 0x84, 0x84, 0x85, 0x85, 0x85, 0x85, 0x85, 0x85, 0x85, 0x86, 0x85, 0x86, 0x86, 0x85, 0x85, 0x85, 0x84, 0x84, 0x83, 0x83, 0x82, 0x82, 0x81, 0x80, 0x80, 0x7F, 0x7E, 0x7E, 0x7D, 0x7D, 0x7C, 0x7C, 0x7C, 0x7C, 0x7C, 0x7C, 0x7D, 0x7D, 0x7D, 0x7E, 0x7E, 0x7F, 0x80, 0x81, 0x81, 0x82, 0x83, 0x84, 0x84, 0x84, 0x84, 0x84, 0x84, 0x84, 0x83, 0x83, 0x83, 0x83, 0x82, 0x82, 0x81, 0x80, 0x80, 0x7F, 0x7E, 0x7D, 0x7D, 0x7D, 0x7C, 0x7C, 0x7C, 0x7C, 0x7C, 0x7C, 0x7C, 0x7C, 0x7C, 0x7C, 0x7C, 0x7C, 0x7C, 0x7C, 0x7B, 0x7B, 0x7B, 0x7C, 0x7B, 0x7B, 0x7C, 0x7B, 0x7C, 0x7C, 0x7B, 0x7C, 0x7C, 0x7C, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7E, 0x7E, 0x7E, 0x7F, 0x7F, 0x80, 0x80, 0x80, 0x80, 0x80, 0x7F, 0x7F, 0x7F, 0x7E, 0x7F, 0x7F, 0x7E, 0x7E, 0x7E, 0x7E, 0x7D, 0x7D, 0x7D, 0x7C, 0x7C, 0x7C, 0x7C, 0x7C, 0x7B, 0x7B, 0x7B, 0x7B, 0x7B, 0x7A, 0x7A, 0x7A, 0x7A, 0x79, 0x79, 0x7A, 0x7A, 0x7A, 0x7B, 0x7B, 0x7C, 0x7D, 0x7D, 0x7E, 0x7E, 0x7E, 0x7F, 0x7F, 0x81, 0x81, 0x82, 0x82, 0x83, 0x84, 0x84, 0x84, 0x85, 0x85, 0x85, 0x85, 0x84, 0x84, 0x83, 0x83, 0x82, 0x81, 0x80, 0x7F, 0x7F, 0x7E, 0x7D, 0x7C, 0x7B, 0x7B, 0x7A, 0x7A, 0x7A, 0x7A, 0x79, 0x7A, 0x7A, 0x7A, 0x7B, 0x7B, 0x7C, 0x7D, 0x7E, 0x7F, 0x80, 0x81, 0x81, 0x83, 0x83, 0x83, 0x84, 0x84, 0x85, 0x85, 0x85, 0x86, 0x85, 0x86, 0x86, 0x86, 0x85, 0x85, 0x84, 0x84, 0x83, 0x82, 0x82, 0x81, 0x81, 0x81, 0x81, 0x81, 0x80, 0x80, 0x80, 0x7F, 0x7F, 0x7F, 0x7F, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7E, 0x7E, 0x7E, 0x7F, 0x7F, 0x7F, 0x80, 0x7F, 0x7F, 0x80, 0x80, 0x80, 0x80, 0x81, 0x81, 0x81, 0x81, 0x81, 0x82, 0x82, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x80, 0x80, 0x80, 0x80, 0x80, 0x7F, 0x7E, 0x7E, 0x7E, 0x7D, 0x7D, 0x7C, 0x7C, 0x7B, 0x7B, 0x7A, 0x79, 0x79, 0x78, 0x79, 0x79, 0x7A, 0x7A, 0x7A, 0x7C, 0x7B, 0x7C, 0x7D, 0x7D, 0x7F, 0x7F, 0x80, 0x81, 0x82, 0x84, 0x84, 0x85, 0x85, 0x86, 0x86, 0x86, 0x86, 0x85, 0x85, 0x84, 0x83, 0x83, 0x82, 0x81, 0x80, 0x7F, 0x7E, 0x7D, 0x7B, 0x7A, 0x79, 0x78, 0x78, 0x77, 0x77, 0x77, 0x77, 0x77, 0x77, 0x78, 0x77, 0x78, 0x78, 0x79, 0x79, 0x7A, 0x7A, 0x7B, 0x7D, 0x7D, 0x7E, 0x7F, 0x7F, 0x7F, 0x80, 0x80, 0x80, 0x80, 0x81, 0x81, 0x81, 0x82, 0x82, 0x81, 0x81, 0x81, 0x81, 0x80, 0x80, 0x80, 0x80, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7E, 0x7E, 0x7E, 0x7E, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7E, 0x7D, 0x7D, 0x7E, 0x7D, 0x7E, 0x7D, 0x7D, 0x7D, 0x7E, 0x7E, 0x7E, 0x80, 0x7F, 0x80, 0x80, 0x80, 0x7F, 0x80, 0x7F, 0x7F, 0x80, 0x80, 0x80, 0x81, 0x81, 0x82, 0x83, 0x82, 0x82, 0x82, 0x82, 0x82, 0x82, 0x82, 0x83, 0x83, 0x84, 0x84, 0x84, 0x84, 0x83, 0x83, 0x82, 0x82, 0x81, 0x80, 0x80, 0x80, 0x7F, 0x7F, 0x7E, 0x7D, 0x7C, 0x7B, 0x7A, 0x79, 0x79, 0x78, 0x78, 0x78, 0x78, 0x79, 0x79, 0x7B, 0x7B, 0x7C, 0x7D, 0x7E, 0x7E, 0x7F, 0x80, 0x81, 0x82, 0x84, 0x84, 0x85, 0x86, 0x87, 0x87, 0x86, 0x87, 0x86, 0x86, 0x85, 0x84, 0x84, 0x83, 0x83, 0x83, 0x81, 0x80, 0x7F, 0x7D, 0x7C, 0x7C, 0x7B, 0x7A, 0x79, 0x79, 0x79, 0x7A, 0x7A, 0x7A, 0x7A, 0x7A, 0x7B, 0x7A, 0x7B, 0x7A, 0x7B, 0x7B, 0x7C, 0x7E, 0x7E, 0x7F, 0x80, 0x80, 0x81, 0x81, 0x81, 0x81, 0x81, 0x81, 0x82, 0x83, 0x83, 0x83, 0x83, 0x83, 0x83, 0x83, 0x81, 0x81, 0x81, 0x80, 0x80, 0x80, 0x80, 0x80, 0x81, 0x80, 0x80, 0x7F, 0x7F, 0x7D, 0x7E, 0x7E, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7E, 0x7E, 0x7E, 0x7D, 0x7D, 0x7D, 0x7C, 0x7C, 0x7C, 0x7C, 0x7C, 0x7D, 0x7E, 0x7D, 0x7D, 0x7D, 0x7E, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7D, 0x7F, 0x7F, 0x80, 0x81, 0x82, 0x82, 0x82, 0x83, 0x83, 0x83, 0x83, 0x84, 0x84, 0x85, 0x85, 0x86, 0x86, 0x85, 0x86, 0x85, 0x84, 0x83, 0x82, 0x81, 0x80, 0x7F, 0x7D, 0x7D, 0x7C, 0x7B, 0x7B, 0x7A, 0x78, 0x78, 0x77, 0x76, 0x76, 0x76, 0x76, 0x76, 0x78, 0x79, 0x7A, 0x7B, 0x7C, 0x7D, 0x7E, 0x7E, 0x80, 0x81, 0x81, 0x83, 0x84, 0x85, 0x85, 0x86, 0x86, 0x86, 0x86, 0x85, 0x85, 0x83, 0x83, 0x83, 0x82, 0x81, 0x80, 0x80, 0x7E, 0x7E, 0x7D, 0x7B, 0x7B, 0x7A, 0x7A, 0x7A, 0x79, 0x79, 0x7A, 0x7A, 0x7A, 0x7A, 0x7B, 0x7A, 0x7A, 0x7C, 0x7B, 0x7C, 0x7C, 0x7D, 0x7E, 0x7E, 0x7F, 0x80, 0x80, 0x80, 0x81, 0x82, 0x81, 0x81, 0x82, 0x82, 0x82, 0x83, 0x82, 0x82, 0x82, 0x81, 0x81, 0x80, 0x80, 0x7F, 0x7F, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7D, 0x7E, 0x7D, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7D, 0x7D, 0x7C, 0x7D, 0x7C, 0x7B, 0x7C, 0x7A, 0x7B, 0x7A, 0x7A, 0x7A, 0x79, 0x79, 0x79, 0x7B, 0x7A, 0x7B, 0x7C, 0x7D, 0x7E, 0x7F, 0x7F, 0x80, 0x81, 0x82, 0x82, 0x83, 0x84, 0x84, 0x85, 0x85, 0x86, 0x86, 0x86, 0x86, 0x85, 0x85, 0x83, 0x83, 0x81, 0x80, 0x80, 0x7F, 0x7E, 0x7E, 0x7C, 0x7B, 0x7A, 0x79, 0x78, 0x77, 0x77, 0x76, 0x77, 0x77, 0x77, 0x79, 0x79, 0x7B, 0x7C, 0x7C, 0x7D, 0x7F, 0x80, 0x81, 0x82, 0x83, 0x84, 0x86, 0x87, 0x88, 0x89, 0x89, 0x89, 0x8A, 0x89, 0x88, 0x87, 0x86, 0x86, 0x85, 0x84, 0x83, 0x82, 0x81, 0x80, 0x7F, 0x7D, 0x7C, 0x7B, 0x7A, 0x79, 0x79, 0x79, 0x79, 0x79, 0x79, 0x79, 0x79, 0x79, 0x79, 0x79, 0x79, 0x7A, 0x7A, 0x7B, 0x7C, 0x7D, 0x7D, 0x7D, 0x80, 0x7F, 0x81, 0x80, 0x80, 0x80, 0x81, 0x81, 0x81, 0x82, 0x81, 0x81, 0x82, 0x82, 0x80, 0x80, 0x7F, 0x7F, 0x7E, 0x7E, 0x7E, 0x7D, 0x7E, 0x7E, 0x7F, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7E, 0x7F, 0x80, 0x80, 0x80, 0x80, 0x80, 0x81, 0x80, 0x80, 0x80, 0x7E, 0x7E, 0x7E, 0x7D, 0x7C, 0x7B, 0x7B, 0x7B, 0x7B, 0x7B, 0x7A, 0x7B, 0x7A, 0x7A, 0x7B, 0x7A, 0x7B, 0x7B, 0x7D, 0x7E, 0x7F, 0x80, 0x81, 0x82, 0x83, 0x84, 0x85, 0x84, 0x85, 0x86, 0x87, 0x87, 0x86, 0x87, 0x85, 0x86, 0x85, 0x83, 0x83, 0x81, 0x81, 0x80, 0x7F, 0x7E, 0x7C, 0x7B, 0x7A, 0x78</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 12404 bytes (4%) of program storage space. Maximum is 262144 bytes.
+Global variables use 3012 bytes (9%) of dynamic memory, leaving 29756 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+
+					
+					<h4>examples/audioplayer</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 191620 bytes (73%) of program storage space. Maximum is 262144 bytes.
+Global variables use 3012 bytes (9%) of dynamic memory, leaving 29756 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library SAMD21_Audio_Player claims to run on samd architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp: In function &#39;void DACSetup(uint32_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:16:3: error: &#39;REG_GCLK_GENDIV&#39; was not declared in this scope
+   REG_GCLK_GENDIV = GCLK_GENDIV_DIV(1) |                  // Divide the 48MHz clock source by 1 for 48MHz
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:16:38: error: &#39;GCLK_GENDIV_DIV&#39; was not declared in this scope
+   REG_GCLK_GENDIV = GCLK_GENDIV_DIV(1) |                  // Divide the 48MHz clock source by 1 for 48MHz
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:17:37: error: &#39;GCLK_GENDIV_ID&#39; was not declared in this scope
+                     GCLK_GENDIV_ID(3);                    // Select GCLK3
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:18:10: error: &#39;GCLK&#39; was not declared in this scope
+   while (GCLK-&gt;STATUS.bit.SYNCBUSY);                      // Wait for synchronization
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:20:3: error: &#39;REG_GCLK_GENCTRL&#39; was not declared in this scope
+   REG_GCLK_GENCTRL = GCLK_GENCTRL_IDC |                   // Set the duty cycle to 50/50
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:20:22: error: &#39;GCLK_GENCTRL_IDC&#39; was not declared in this scope
+   REG_GCLK_GENCTRL = GCLK_GENCTRL_IDC |                   // Set the duty cycle to 50/50
+                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:21:22: error: &#39;GCLK_GENCTRL_GENEN&#39; was not declared in this scope
+                      GCLK_GENCTRL_GENEN |                 // Enable GCLK3
+                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:22:22: error: &#39;GCLK_GENCTRL_SRC_DFLL48M&#39; was not declared in this scope
+                      GCLK_GENCTRL_SRC_DFLL48M |           // Set the 48MHz clock source
+                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:23:39: error: &#39;GCLK_GENCTRL_ID&#39; was not declared in this scope
+                      GCLK_GENCTRL_ID(3);                  // Select GCLK3
+                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:24:10: error: &#39;GCLK&#39; was not declared in this scope
+   while (GCLK-&gt;STATUS.bit.SYNCBUSY);                      // Wait for synchronization
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:26:3: error: &#39;REG_GCLK_CLKCTRL&#39; was not declared in this scope
+   REG_GCLK_CLKCTRL = GCLK_CLKCTRL_CLKEN |                 // Enable clock
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:26:22: error: &#39;GCLK_CLKCTRL_CLKEN&#39; was not declared in this scope
+   REG_GCLK_CLKCTRL = GCLK_CLKCTRL_CLKEN |                 // Enable clock
+                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:27:22: error: &#39;GCLK_CLKCTRL_GEN_GCLK3&#39; was not declared in this scope
+                      GCLK_CLKCTRL_GEN_GCLK3 |             // Select GCLK3
+                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:28:22: error: &#39;GCLK_CLKCTRL_ID_TC4_TC5&#39; was not declared in this scope
+                      GCLK_CLKCTRL_ID_TC4_TC5;             // Feed the GCLK3 to TC4 and TC5
+                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:29:10: error: &#39;GCLK&#39; was not declared in this scope
+   while (GCLK-&gt;STATUS.bit.SYNCBUSY);                      // Wait for synchronization
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:31:3: error: &#39;REG_TC4_COUNT16_CC0&#39; was not declared in this scope
+   REG_TC4_COUNT16_CC0 = top;                              // Set the TC4 CC0 register to top
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:32:10: error: &#39;TC4&#39; was not declared in this scope
+   while (TC4-&gt;COUNT16.STATUS.bit.SYNCBUSY);               // Wait for synchronization
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:34:20: error: &#39;TC4_IRQn&#39; was not declared in this scope
+   NVIC_SetPriority(TC4_IRQn, 0);                          // Set the interrupt priority for TC4 to 0 (highest)
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:34:31: error: &#39;NVIC_SetPriority&#39; was not declared in this scope
+   NVIC_SetPriority(TC4_IRQn, 0);                          // Set the interrupt priority for TC4 to 0 (highest)
+                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:35:26: error: &#39;NVIC_EnableIRQ&#39; was not declared in this scope
+   NVIC_EnableIRQ(TC4_IRQn);                               // Connect TC4 to Nested Vector Interrupt Controller
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:37:3: error: &#39;REG_TC4_INTFLAG&#39; was not declared in this scope
+   REG_TC4_INTFLAG |= TC_INTFLAG_OVF;                      // Clear the interrupt flags
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:37:22: error: &#39;TC_INTFLAG_OVF&#39; was not declared in this scope
+   REG_TC4_INTFLAG |= TC_INTFLAG_OVF;                      // Clear the interrupt flags
+                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:38:3: error: &#39;REG_TC4_INTENSET&#39; was not declared in this scope
+   REG_TC4_INTENSET = TC_INTENCLR_OVF;                     // Enable TC4 interrupts
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:38:22: error: &#39;TC_INTENCLR_OVF&#39; was not declared in this scope
+   REG_TC4_INTENSET = TC_INTENCLR_OVF;                     // Enable TC4 interrupts
+                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:40:3: error: &#39;REG_TC4_CTRLA&#39; was not declared in this scope
+   REG_TC4_CTRLA |= TC_CTRLA_PRESCALER_DIV1 |              // Set prescaler to 1 for 48MHz
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:40:20: error: &#39;TC_CTRLA_PRESCALER_DIV1&#39; was not declared in this scope
+   REG_TC4_CTRLA |= TC_CTRLA_PRESCALER_DIV1 |              // Set prescaler to 1 for 48MHz
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:41:20: error: &#39;TC_CTRLA_WAVEGEN_MFRQ&#39; was not declared in this scope
+                    TC_CTRLA_WAVEGEN_MFRQ;                 // Put the timer TC4 into Match Frequency Mode
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:42:10: error: &#39;TC4&#39; was not declared in this scope
+   while (TC4-&gt;COUNT16.STATUS.bit.SYNCBUSY);               // Wait for synchronization
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp: In function &#39;void playSample(const uint8_t*, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:48:3: error: &#39;REG_TC4_CTRLA&#39; was not declared in this scope
+   REG_TC4_CTRLA |= TC_CTRLA_ENABLE;                       // Enable timer TC4
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:48:20: error: &#39;TC_CTRLA_ENABLE&#39; was not declared in this scope
+   REG_TC4_CTRLA |= TC_CTRLA_ENABLE;                       // Enable timer TC4
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:49:10: error: &#39;TC4&#39; was not declared in this scope
+   while (TC4-&gt;COUNT16.STATUS.bit.SYNCBUSY);               // Wait for synchronization
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp: In function &#39;void pauseSample()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:53:3: error: &#39;REG_TC4_CTRLA&#39; was not declared in this scope
+   REG_TC4_CTRLA &amp;= ~TC_CTRLA_ENABLE;                      // Disable timer TC4
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:53:21: error: &#39;TC_CTRLA_ENABLE&#39; was not declared in this scope
+   REG_TC4_CTRLA &amp;= ~TC_CTRLA_ENABLE;                      // Disable timer TC4
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:54:10: error: &#39;TC4&#39; was not declared in this scope
+   while (TC4-&gt;COUNT16.STATUS.bit.SYNCBUSY);               // Wait for synchronization
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp: In function &#39;void DACWrite(uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:58:5: error: &#39;DAC&#39; was not declared in this scope
+     DAC-&gt;DATA.reg = sample;                               // Shortene</pre>
+
+					
+					<h4>examples/audioplayer</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library SAMD21_Audio_Player claims to run on samd architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp: In function &#39;void DACSetup(uint32_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:16:3: error: &#39;REG_GCLK_GENDIV&#39; was not declared in this scope
+   REG_GCLK_GENDIV = GCLK_GENDIV_DIV(1) |                  // Divide the 48MHz clock source by 1 for 48MHz
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:16:38: error: &#39;GCLK_GENDIV_DIV&#39; was not declared in this scope
+   REG_GCLK_GENDIV = GCLK_GENDIV_DIV(1) |                  // Divide the 48MHz clock source by 1 for 48MHz
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:17:37: error: &#39;GCLK_GENDIV_ID&#39; was not declared in this scope
+                     GCLK_GENDIV_ID(3);                    // Select GCLK3
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:18:10: error: &#39;GCLK&#39; was not declared in this scope
+   while (GCLK-&gt;STATUS.bit.SYNCBUSY);                      // Wait for synchronization
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:20:3: error: &#39;REG_GCLK_GENCTRL&#39; was not declared in this scope
+   REG_GCLK_GENCTRL = GCLK_GENCTRL_IDC |                   // Set the duty cycle to 50/50
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:20:22: error: &#39;GCLK_GENCTRL_IDC&#39; was not declared in this scope
+   REG_GCLK_GENCTRL = GCLK_GENCTRL_IDC |                   // Set the duty cycle to 50/50
+                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:21:22: error: &#39;GCLK_GENCTRL_GENEN&#39; was not declared in this scope
+                      GCLK_GENCTRL_GENEN |                 // Enable GCLK3
+                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:22:22: error: &#39;GCLK_GENCTRL_SRC_DFLL48M&#39; was not declared in this scope
+                      GCLK_GENCTRL_SRC_DFLL48M |           // Set the 48MHz clock source
+                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:23:39: error: &#39;GCLK_GENCTRL_ID&#39; was not declared in this scope
+                      GCLK_GENCTRL_ID(3);                  // Select GCLK3
+                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:24:10: error: &#39;GCLK&#39; was not declared in this scope
+   while (GCLK-&gt;STATUS.bit.SYNCBUSY);                      // Wait for synchronization
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:26:3: error: &#39;REG_GCLK_CLKCTRL&#39; was not declared in this scope
+   REG_GCLK_CLKCTRL = GCLK_CLKCTRL_CLKEN |                 // Enable clock
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:26:22: error: &#39;GCLK_CLKCTRL_CLKEN&#39; was not declared in this scope
+   REG_GCLK_CLKCTRL = GCLK_CLKCTRL_CLKEN |                 // Enable clock
+                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:27:22: error: &#39;GCLK_CLKCTRL_GEN_GCLK3&#39; was not declared in this scope
+                      GCLK_CLKCTRL_GEN_GCLK3 |             // Select GCLK3
+                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:28:22: error: &#39;GCLK_CLKCTRL_ID_TC4_TC5&#39; was not declared in this scope
+                      GCLK_CLKCTRL_ID_TC4_TC5;             // Feed the GCLK3 to TC4 and TC5
+                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:29:10: error: &#39;GCLK&#39; was not declared in this scope
+   while (GCLK-&gt;STATUS.bit.SYNCBUSY);                      // Wait for synchronization
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:31:3: error: &#39;REG_TC4_COUNT16_CC0&#39; was not declared in this scope
+   REG_TC4_COUNT16_CC0 = top;                              // Set the TC4 CC0 register to top
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:32:10: error: &#39;TC4&#39; was not declared in this scope
+   while (TC4-&gt;COUNT16.STATUS.bit.SYNCBUSY);               // Wait for synchronization
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:34:20: error: &#39;TC4_IRQn&#39; was not declared in this scope
+   NVIC_SetPriority(TC4_IRQn, 0);                          // Set the interrupt priority for TC4 to 0 (highest)
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:34:31: error: &#39;NVIC_SetPriority&#39; was not declared in this scope
+   NVIC_SetPriority(TC4_IRQn, 0);                          // Set the interrupt priority for TC4 to 0 (highest)
+                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:35:26: error: &#39;NVIC_EnableIRQ&#39; was not declared in this scope
+   NVIC_EnableIRQ(TC4_IRQn);                               // Connect TC4 to Nested Vector Interrupt Controller
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:37:3: error: &#39;REG_TC4_INTFLAG&#39; was not declared in this scope
+   REG_TC4_INTFLAG |= TC_INTFLAG_OVF;                      // Clear the interrupt flags
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:37:22: error: &#39;TC_INTFLAG_OVF&#39; was not declared in this scope
+   REG_TC4_INTFLAG |= TC_INTFLAG_OVF;                      // Clear the interrupt flags
+                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:38:3: error: &#39;REG_TC4_INTENSET&#39; was not declared in this scope
+   REG_TC4_INTENSET = TC_INTENCLR_OVF;                     // Enable TC4 interrupts
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:38:22: error: &#39;TC_INTENCLR_OVF&#39; was not declared in this scope
+   REG_TC4_INTENSET = TC_INTENCLR_OVF;                     // Enable TC4 interrupts
+                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:40:3: error: &#39;REG_TC4_CTRLA&#39; was not declared in this scope
+   REG_TC4_CTRLA |= TC_CTRLA_PRESCALER_DIV1 |              // Set prescaler to 1 for 48MHz
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:40:20: error: &#39;TC_CTRLA_PRESCALER_DIV1&#39; was not declared in this scope
+   REG_TC4_CTRLA |= TC_CTRLA_PRESCALER_DIV1 |              // Set prescaler to 1 for 48MHz
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:41:20: error: &#39;TC_CTRLA_WAVEGEN_MFRQ&#39; was not declared in this scope
+                    TC_CTRLA_WAVEGEN_MFRQ;                 // Put the timer TC4 into Match Frequency Mode
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:42:10: error: &#39;TC4&#39; was not declared in this scope
+   while (TC4-&gt;COUNT16.STATUS.bit.SYNCBUSY);               // Wait for synchronization
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp: In function &#39;void playSample(const uint8_t*, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:48:3: error: &#39;REG_TC4_CTRLA&#39; was not declared in this scope
+   REG_TC4_CTRLA |= TC_CTRLA_ENABLE;                       // Enable timer TC4
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:48:20: error: &#39;TC_CTRLA_ENABLE&#39; was not declared in this scope
+   REG_TC4_CTRLA |= TC_CTRLA_ENABLE;                       // Enable timer TC4
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:49:10: error: &#39;TC4&#39; was not declared in this scope
+   while (TC4-&gt;COUNT16.STATUS.bit.SYNCBUSY);               // Wait for synchronization
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp: In function &#39;void pauseSample()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:53:3: error: &#39;REG_TC4_CTRLA&#39; was not declared in this scope
+   REG_TC4_CTRLA &amp;= ~TC_CTRLA_ENABLE;                      // Disable timer TC4
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:53:21: error: &#39;TC_CTRLA_ENABLE&#39; was not declared in this scope
+   REG_TC4_CTRLA &amp;= ~TC_CTRLA_ENABLE;                      // Disable timer TC4
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:54:10: error: &#39;TC4&#39; was not declared in this scope
+   while (TC4-&gt;COUNT16.STATUS.bit.SYNCBUSY);               // Wait for synchronization
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp: In function &#39;void DACWrite(uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SAMD21_Audio_Player/src/AudioPlayer.cpp:58:5: error: &#39;DAC&#39; was not declared in this scope
+     DAC-&gt;DATA.reg = sample;                               // Shortene</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

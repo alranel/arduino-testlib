@@ -1,0 +1,911 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>Adafruit TinyFlash - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>Adafruit TinyFlash</h2>
+				<p>
+					Version: <b>1.0.4</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/adafruit-tinyflash/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>AudioLoader</pre></th>
+						
+						<th><pre>TrinketPlayer</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 444 bytes (1%) of program storage space. Maximum is 32256 bytes.
+Global variables use 9 bytes (0%) of dynamic memory, leaving 2039 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+
+					
+					<h4>examples/AudioLoader</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 3716 bytes (11%) of program storage space. Maximum is 32256 bytes.
+Global variables use 213 bytes (10%) of dynamic memory, leaving 1835 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+					
+					<h4>examples/TrinketPlayer</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:10:2: error: #error &#34;Compile for 8 MHz Trinket&#34;
+ #error &#34;Compile for 8 MHz Trinket&#34;
+  ^~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/Adafruit_TinyFlash.cpp: In constructor &#39;Adafruit_TinyFlash::Adafruit_TinyFlash(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/Adafruit_TinyFlash.cpp:67:13: error: &#39;portOutputRegister&#39; was not declared in this scope
+   cs_port = portOutputRegister(digitalPinToPort(cs));
+             ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/Adafruit_TinyFlash.cpp:70:13: error: &#39;digitalPinToBitMask&#39; was not declared in this scope
+   cs_mask = digitalPinToBitMask(cs);
+             ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/Adafruit_TinyFlash.cpp:70:13: note: suggested alternative: &#39;digitalPinToPinName&#39;
+   cs_mask = digitalPinToBitMask(cs);
+             ^~~~~~~~~~~~~~~~~~~
+             digitalPinToPinName
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/Adafruit_TinyFlash.cpp: In member function &#39;uint32_t Adafruit_TinyFlash::begin()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/Adafruit_TinyFlash.cpp:100:7: error: &#39;class arduino::MbedSPI&#39; has no member named &#39;setClockDivider&#39;
+   SPI.setClockDivider(SPI_CLOCK_DIV8); // 500 KHz
+       ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/Adafruit_TinyFlash.cpp:100:23: error: &#39;SPI_CLOCK_DIV8&#39; was not declared in this scope
+   SPI.setClockDivider(SPI_CLOCK_DIV8); // 500 KHz
+                       ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/Adafruit_TinyFlash.cpp:100:23: note: suggested alternative: &#39;SPI_CPOL_1&#39;
+   SPI.setClockDivider(SPI_CLOCK_DIV8); // 500 KHz
+                       ^~~~~~~~~~~~~~
+                       SPI_CPOL_1
+
+</pre>
+
+					
+					<h4>examples/AudioLoader</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/Adafruit_TinyFlash.cpp: In constructor &#39;Adafruit_TinyFlash::Adafruit_TinyFlash(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/Adafruit_TinyFlash.cpp:67:13: error: &#39;portOutputRegister&#39; was not declared in this scope
+   cs_port = portOutputRegister(digitalPinToPort(cs));
+             ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/Adafruit_TinyFlash.cpp:70:13: error: &#39;digitalPinToBitMask&#39; was not declared in this scope
+   cs_mask = digitalPinToBitMask(cs);
+             ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/Adafruit_TinyFlash.cpp:70:13: note: suggested alternative: &#39;digitalPinToPinName&#39;
+   cs_mask = digitalPinToBitMask(cs);
+             ^~~~~~~~~~~~~~~~~~~
+             digitalPinToPinName
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/Adafruit_TinyFlash.cpp: In member function &#39;uint32_t Adafruit_TinyFlash::begin()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/Adafruit_TinyFlash.cpp:100:7: error: &#39;class arduino::MbedSPI&#39; has no member named &#39;setClockDivider&#39;
+   SPI.setClockDivider(SPI_CLOCK_DIV8); // 500 KHz
+       ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/Adafruit_TinyFlash.cpp:100:23: error: &#39;SPI_CLOCK_DIV8&#39; was not declared in this scope
+   SPI.setClockDivider(SPI_CLOCK_DIV8); // 500 KHz
+                       ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/Adafruit_TinyFlash.cpp:100:23: note: suggested alternative: &#39;SPI_CPOL_1&#39;
+   SPI.setClockDivider(SPI_CLOCK_DIV8); // 500 KHz
+                       ^~~~~~~~~~~~~~
+                       SPI_CPOL_1
+
+</pre>
+					
+					<h4>examples/TrinketPlayer</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:16:20: error: &#39;volatile uint32_t index&#39; redeclared as different kind of symbol
+ volatile uint32_t  index = 0L;
+                    ^~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/string.h:24:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/String.h:28,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:27,
+                 from /tmp/arduino-sketch-D54B62E42E91985C149EB3233858E5C6/sketch/TrinketPlayer.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/strings.h:64:7: note: previous declaration &#39;char* index(const char*, int)&#39;
+ char *index(const char *, int) __pure;   /* LEGACY */
+       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:73:5: error: expected constructor, destructor, or type conversion before &#39;(&#39; token
+ ISR(TIMER0_COMPA_vect) {
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:23:12: error: &#39;PORTB&#39; was not declared in this scope
+     for(;; PORTB ^= 2, delay(250));  // Blink 2x/sec
+            ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:37:3: error: &#39;PLLCSR&#39; was not declared in this scope
+   PLLCSR |= _BV(PLLE);               // Enable 64 MHz PLL
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:37:3: note: suggested alternative: &#39;POLLERR&#39;
+   PLLCSR |= _BV(PLLE);               // Enable 64 MHz PLL
+   ^~~~~~
+   POLLERR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:37:17: error: &#39;PLLE&#39; was not declared in this scope
+   PLLCSR |= _BV(PLLE);               // Enable 64 MHz PLL
+                 ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:37:17: note: suggested alternative: &#39;FILE&#39;
+   PLLCSR |= _BV(PLLE);               // Enable 64 MHz PLL
+                 ^~~~
+                 FILE
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:37:13: error: &#39;_BV&#39; was not declared in this scope
+   PLLCSR |= _BV(PLLE);               // Enable 64 MHz PLL
+             ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:37:13: note: suggested alternative: &#39;_B&#39;
+   PLLCSR |= _BV(PLLE);               // Enable 64 MHz PLL
+             ^~~
+             _B
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:39:24: error: &#39;PLOCK&#39; was not declared in this scope
+   while(!(PLLCSR &amp; _BV(PLOCK)));     // Wait for it...
+                        ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:39:24: note: suggested alternative: &#39;PLOSS&#39;
+   while(!(PLLCSR &amp; _BV(PLOCK)));     // Wait for it...
+                        ^~~~~
+                        PLOSS
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:40:17: error: &#39;PCKE&#39; was not declared in this scope
+   PLLCSR |= _BV(PCKE);               // Timer1 source = PLL
+                 ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:40:17: note: suggested alternative: &#39;SCK&#39;
+   PLLCSR |= _BV(PCKE);               // Timer1 source = PLL
+                 ^~~~
+                 SCK
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:43:3: error: &#39;TIMSK&#39; was not declared in this scope
+   TIMSK  = 0;                        // Timer interrupts OFF
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:43:3: note: suggested alternative: &#39;TIMER&#39;
+   TIMSK  = 0;                        // Timer interrupts OFF
+   ^~~~~
+   TIMER
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:44:3: error: &#39;TCCR1&#39; was not declared in this scope
+   TCCR1  = _BV(CS10);                // 1:1 prescale
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:44:16: error: &#39;CS10&#39; was not declared in this scope
+   TCCR1  = _BV(CS10);                // 1:1 prescale
+                ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:44:16: note: suggested alternative: &#39;B110&#39;
+   TCCR1  = _BV(CS10);                // 1:1 prescale
+                ^~~~
+                B110
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:45:3: error: &#39;GTCCR&#39; was not declared in this scope
+   GTCCR  = _BV(PWM1B) | _BV(COM1B1); // PWM B, clear on match
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:45:3: note: suggested alternative: &#39;DT_CHR&#39;
+   GTCCR  = _BV(PWM1B) | _BV(COM1B1); // PWM B, clear on match
+   ^~~~~
+   DT_CHR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:45:16: error: &#39;PWM1B&#39; was not declared in this scope
+   GTCCR  = _BV(PWM1B) | _BV(COM1B1); // PWM B, clear on match
+                ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:45:16: note: suggested alternative: &#39;PWM_7&#39;
+   GTCCR  = _BV(PWM1B) | _BV(COM1B1); // PWM B, clear on match
+                ^~~~~
+                PWM_7
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:45:29: error: &#39;COM1B1&#39; was not declared in this scope
+   GTCCR  = _BV(PWM1B) | _BV(COM1B1); // PWM B, clear on match
+                             ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:46:3: error: &#39;OCR1C&#39; was not declared in this scope
+   OCR1C  = 255;                      // Full 8-bit PWM cycle
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:47:3: error: &#39;OCR1B&#39; was not declared in this scope
+   OCR1B  = 127;                      // 50% duty at start
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:60:3: error: &#39;TCCR0A&#39; was not declared in this scope
+   TCCR0A = _BV(WGM01) | _BV(WGM00);  // Mode 7 (fast PWM)
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:60:16: error: &#39;WGM01&#39; was not declared in this scope
+   TCCR0A = _BV(WGM01) | _BV(WGM00);  // Mode 7 (fast PWM)
+                ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:60:29: error: &#39;WGM00&#39; was not declared in this scope
+   TCCR0A = _BV(WGM01) | _BV(WGM00);  // Mode 7 (fast PWM)
+                             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:62:5: error: &#39;TCCR0B&#39; was not declared in this scope
+     TCCR0B = _BV(WGM02) | _BV(CS00); // 1:1 prescale
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:62:18: error: &#39;WGM02&#39; was not declared in this scope
+     TCCR0B = _BV(WGM02) | _BV(CS00); // 1:1 prescale
+                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:62:31: error: &#39;CS00&#39; was not declared in this scope
+     TCCR0B = _BV(WGM02) | _BV(CS00); // 1:1 prescale
+                               ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:62:31: note: suggested alternative: &#39;B100&#39;
+     TCCR0B = _BV(WGM02) | _BV(CS00); // 1:1 prescale
+                               ^~~~
+                               B100
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:63:5: error: &#39;OCR0A&#39; was not declared in this scope
+     OCR0A  = ((F_CPU &#43; (sample_rate / 2)) / sample_rate) - 1;
+     ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:63:16: error: &#39;F_CPU&#39; was not declared in this scope
+     OCR0A  = ((F_CPU &#43; (sample_rate / 2)) / sample_rate) - 1;
+                ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:65:5: error: &#39;TCCR0B&#39; was not declared in this scope
+     TCCR0B = _BV(WGM02) | _BV(CS</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 3246 bytes (6%) of program storage space. Maximum is 49152 bytes.
+Global variables use 40 bytes (0%) of dynamic memory, leaving 6104 bytes for local variables. Maximum is 6144 bytes.
+</pre>
+
+					
+					<h4>examples/AudioLoader</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 6849 bytes (13%) of program storage space. Maximum is 49152 bytes.
+Global variables use 261 bytes (4%) of dynamic memory, leaving 5883 bytes for local variables. Maximum is 6144 bytes.
+</pre>
+					
+					<h4>examples/TrinketPlayer</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:10:2: error: #error &#34;Compile for 8 MHz Trinket&#34;
+ #error &#34;Compile for 8 MHz Trinket&#34;
+  ^~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:51:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/Adafruit_TinyFlash.h:4,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/Adafruit_TinyFlash.cpp:13:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/Adafruit_TinyFlash.cpp: In constructor &#39;Adafruit_TinyFlash::Adafruit_TinyFlash(uint8_t)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/variants/mkrwifi1010/variant.h:52:51: error: cannot convert &#39;volatile uint32_t* {aka volatile long unsigned int*}&#39; to &#39;volatile uint8_t* {aka volatile unsigned char*}&#39; in assignment
+ #define portOutputRegister(port) (&amp;(port-&gt;OUT.reg))
+                                                   ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/Adafruit_TinyFlash.cpp:67:13: note: in expansion of macro &#39;portOutputRegister&#39;
+   cs_port = portOutputRegister(digitalPinToPort(cs));
+             ^~~~~~~~~~~~~~~~~~
+
+</pre>
+
+					
+					<h4>examples/AudioLoader</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:51:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/Adafruit_TinyFlash.h:4,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/Adafruit_TinyFlash.cpp:13:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/Adafruit_TinyFlash.cpp: In constructor &#39;Adafruit_TinyFlash::Adafruit_TinyFlash(uint8_t)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/variants/mkrwifi1010/variant.h:52:51: error: cannot convert &#39;volatile uint32_t* {aka volatile long unsigned int*}&#39; to &#39;volatile uint8_t* {aka volatile unsigned char*}&#39; in assignment
+ #define portOutputRegister(port) (&amp;(port-&gt;OUT.reg))
+                                                   ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/Adafruit_TinyFlash.cpp:67:13: note: in expansion of macro &#39;portOutputRegister&#39;
+   cs_port = portOutputRegister(digitalPinToPort(cs));
+             ^~~~~~~~~~~~~~~~~~
+
+</pre>
+					
+					<h4>examples/TrinketPlayer</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:16:20: error: &#39;volatile uint32_t index&#39; redeclared as different kind of symbol
+ volatile uint32_t  index = 0L;
+                    ^~~~~
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/string.h:24:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/String.h:28,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/IPAddress.h:24,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/ArduinoAPI.h:30,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:23,
+                 from /private/var/folders/47/_57rjy4111jc7dfpgjmcc93w0000gp/T/arduino-sketch-DC1D8CB81E76B489DE962137F14A9E24/sketch/TrinketPlayer.ino.cpp:1:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/strings.h:64:7: note: previous declaration &#39;char* index(const char*, int)&#39;
+ char *index(const char *, int) __pure;   /* LEGACY */
+       ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:73:5: error: expected constructor, destructor, or type conversion before &#39;(&#39; token
+ ISR(TIMER0_COMPA_vect) {
+     ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino: In function &#39;void setup()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:23:18: error: no match for &#39;operator^=&#39; (operand types are &#39;_EPortType&#39; and &#39;int&#39;)
+     for(;; PORTB ^= 2, delay(250));  // Blink 2x/sec
+            ~~~~~~^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:23:18: note: candidate: operator^=(_EPortType&amp;, int) &lt;built-in&gt;
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:23:18: note:   conversion of argument 1 would be ill-formed:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:23:21: error: cannot bind non-const lvalue reference of type &#39;_EPortType&amp;&#39; to an rvalue of type &#39;_EPortType&#39;
+     for(;; PORTB ^= 2, delay(250));  // Blink 2x/sec
+                     ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:37:3: error: &#39;PLLCSR&#39; was not declared in this scope
+   PLLCSR |= _BV(PLLE);               // Enable 64 MHz PLL
+   ^~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:37:3: note: suggested alternative: &#39;PLOSS&#39;
+   PLLCSR |= _BV(PLLE);               // Enable 64 MHz PLL
+   ^~~~~~
+   PLOSS
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:37:17: error: &#39;PLLE&#39; was not declared in this scope
+   PLLCSR |= _BV(PLLE);               // Enable 64 MHz PLL
+                 ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:37:17: note: suggested alternative: &#39;FILE&#39;
+   PLLCSR |= _BV(PLLE);               // Enable 64 MHz PLL
+                 ^~~~
+                 FILE
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:37:13: error: &#39;_BV&#39; was not declared in this scope
+   PLLCSR |= _BV(PLLE);               // Enable 64 MHz PLL
+             ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:37:13: note: suggested alternative: &#39;_B&#39;
+   PLLCSR |= _BV(PLLE);               // Enable 64 MHz PLL
+             ^~~
+             _B
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:39:24: error: &#39;PLOCK&#39; was not declared in this scope
+   while(!(PLLCSR &amp; _BV(PLOCK)));     // Wait for it...
+                        ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:39:24: note: suggested alternative: &#39;PLOSS&#39;
+   while(!(PLLCSR &amp; _BV(PLOCK)));     // Wait for it...
+                        ^~~~~
+                        PLOSS
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:40:17: error: &#39;PCKE&#39; was not declared in this scope
+   PLLCSR |= _BV(PCKE);               // Timer1 source = PLL
+                 ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:40:17: note: suggested alternative: &#39;SCK1&#39;
+   PLLCSR |= _BV(PCKE);               // Timer1 source = PLL
+                 ^~~~
+                 SCK1
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:43:3: error: &#39;TIMSK&#39; was not declared in this scope
+   TIMSK  = 0;                        // Timer interrupts OFF
+   ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:44:3: error: &#39;TCCR1&#39; was not declared in this scope
+   TCCR1  = _BV(CS10);                // 1:1 prescale
+   ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:44:3: note: suggested alternative: &#39;TCC1&#39;
+   TCCR1  = _BV(CS10);                // 1:1 prescale
+   ^~~~~
+   TCC1
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:44:16: error: &#39;CS10&#39; was not declared in this scope
+   TCCR1  = _BV(CS10);                // 1:1 prescale
+                ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:44:16: note: suggested alternative: &#39;SS1&#39;
+   TCCR1  = _BV(CS10);                // 1:1 prescale
+                ^~~~
+                SS1
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:45:3: error: &#39;GTCCR&#39; was not declared in this scope
+   GTCCR  = _BV(PWM1B) | _BV(COM1B1); // PWM B, clear on match
+   ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:45:3: note: suggested alternative: &#39;TCC0&#39;
+   GTCCR  = _BV(PWM1B) | _BV(COM1B1); // PWM B, clear on match
+   ^~~~~
+   TCC0
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:45:16: error: &#39;PWM1B&#39; was not declared in this scope
+   GTCCR  = _BV(PWM1B) | _BV(COM1B1); // PWM B, clear on match
+                ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:45:29: error: &#39;COM1B1&#39; was not declared in this scope
+   GTCCR  = _BV(PWM1B) | _BV(COM1B1); // PWM B, clear on match
+                             ^~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:46:3: error: &#39;OCR1C&#39; was not declared in this scope
+   OCR1C  = 255;                      // Full 8-bit PWM cycle
+   ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:47:3: error: &#39;OCR1B&#39; was not declared in this scope
+   OCR1B  = 127;                      // 50% duty at start
+   ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:60:3: error: &#39;TCCR0A&#39; was not declared in this scope
+   TCCR0A = _BV(WGM01) | _BV(WGM00);  // Mode 7 (fast PWM)
+   ^~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:60:3: note: suggested alternative: &#39;TCC0&#39;
+   TCCR0A = _BV(WGM01) | _BV(WGM00);  // Mode 7 (fast PWM)
+   ^~~~~~
+   TCC0
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:60:16: error: &#39;WGM01&#39; was not declared in this scope
+   TCCR0A = _BV(WGM01) | _BV(WGM00);  // Mode 7 (fast PWM)
+                ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:60:29: error: &#39;WGM00&#39; was not declared in this scope
+   TCCR0A = _BV(WGM01) | _BV(WGM00);  // Mode 7 (fast PWM)
+                             ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:62:5: error: &#39;TCCR0B&#39; was not declared in this scope
+     TCCR0B = _BV(WGM0</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/Adafruit_TinyFlash.cpp: In constructor &#39;Adafruit_TinyFlash::Adafruit_TinyFlash(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/Adafruit_TinyFlash.cpp:67:11: error: cannot convert &#39;volatile uint32_t* {aka volatile unsigned int*}&#39; to &#39;volatile uint8_t* {aka volatile unsigned char*}&#39; in assignment
+   cs_port = portOutputRegister(digitalPinToPort(cs));
+           ^
+
+</pre>
+
+					
+					<h4>examples/AudioLoader</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/Adafruit_TinyFlash.cpp: In constructor &#39;Adafruit_TinyFlash::Adafruit_TinyFlash(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/Adafruit_TinyFlash.cpp:67:11: error: cannot convert &#39;volatile uint32_t* {aka volatile unsigned int*}&#39; to &#39;volatile uint8_t* {aka volatile unsigned char*}&#39; in assignment
+   cs_port = portOutputRegister(digitalPinToPort(cs));
+           ^
+
+</pre>
+					
+					<h4>examples/TrinketPlayer</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:16:20: error: &#39;volatile uint32_t index&#39; redeclared as different kind of symbol
+ volatile uint32_t  index = 0L;
+                    ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/stdio.h:29:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:27,
+                 from /tmp/arduino-sketch-D54B62E42E91985C149EB3233858E5C6/sketch/TrinketPlayer.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/string.h:54:15: note: previous declaration &#39;char* index(const char*, int)&#39;
+ char  *_EXFUN(index,(const char *, int));
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/_ansi.h:65:30: note: in definition of macro &#39;_EXFUN&#39;
+ #define _EXFUN(name, proto)  name proto
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:73:5: error: expected constructor, destructor, or type conversion before &#39;(&#39; token
+ ISR(TIMER0_COMPA_vect) {
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:23:12: error: &#39;PORTB&#39; was not declared in this scope
+     for(;; PORTB ^= 2, delay(250));  // Blink 2x/sec
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:37:3: error: &#39;PLLCSR&#39; was not declared in this scope
+   PLLCSR |= _BV(PLLE);               // Enable 64 MHz PLL
+   ^
+In file included from /tmp/arduino-sketch-D54B62E42E91985C149EB3233858E5C6/sketch/TrinketPlayer.ino.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:37:17: error: &#39;PLLE&#39; was not declared in this scope
+   PLLCSR |= _BV(PLLE);               // Enable 64 MHz PLL
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:39:24: error: &#39;PLOCK&#39; was not declared in this scope
+   while(!(PLLCSR &amp; _BV(PLOCK)));     // Wait for it...
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:40:17: error: &#39;PCKE&#39; was not declared in this scope
+   PLLCSR |= _BV(PCKE);               // Timer1 source = PLL
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:43:3: error: &#39;TIMSK&#39; was not declared in this scope
+   TIMSK  = 0;                        // Timer interrupts OFF
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:44:3: error: &#39;TCCR1&#39; was not declared in this scope
+   TCCR1  = _BV(CS10);                // 1:1 prescale
+   ^
+In file included from /tmp/arduino-sketch-D54B62E42E91985C149EB3233858E5C6/sketch/TrinketPlayer.ino.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:44:16: error: &#39;CS10&#39; was not declared in this scope
+   TCCR1  = _BV(CS10);                // 1:1 prescale
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:45:3: error: &#39;GTCCR&#39; was not declared in this scope
+   GTCCR  = _BV(PWM1B) | _BV(COM1B1); // PWM B, clear on match
+   ^
+In file included from /tmp/arduino-sketch-D54B62E42E91985C149EB3233858E5C6/sketch/TrinketPlayer.ino.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:45:16: error: &#39;PWM1B&#39; was not declared in this scope
+   GTCCR  = _BV(PWM1B) | _BV(COM1B1); // PWM B, clear on match
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:45:29: error: &#39;COM1B1&#39; was not declared in this scope
+   GTCCR  = _BV(PWM1B) | _BV(COM1B1); // PWM B, clear on match
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:46:3: error: &#39;OCR1C&#39; was not declared in this scope
+   OCR1C  = 255;                      // Full 8-bit PWM cycle
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:47:3: error: &#39;OCR1B&#39; was not declared in this scope
+   OCR1B  = 127;                      // 50% duty at start
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:60:3: error: &#39;TCCR0A&#39; was not declared in this scope
+   TCCR0A = _BV(WGM01) | _BV(WGM00);  // Mode 7 (fast PWM)
+   ^
+In file included from /tmp/arduino-sketch-D54B62E42E91985C149EB3233858E5C6/sketch/TrinketPlayer.ino.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:60:16: error: &#39;WGM01&#39; was not declared in this scope
+   TCCR0A = _BV(WGM01) | _BV(WGM00);  // Mode 7 (fast PWM)
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:60:29: error: &#39;WGM00&#39; was not declared in this scope
+   TCCR0A = _BV(WGM01) | _BV(WGM00);  // Mode 7 (fast PWM)
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:62:5: error: &#39;TCCR0B&#39; was not declared in this scope
+     TCCR0B = _BV(WGM02) | _BV(CS00); // 1:1 prescale
+     ^
+In file included from /tmp/arduino-sketch-D54B62E42E91985C149EB3233858E5C6/sketch/TrinketPlayer.ino.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:62:18: error: &#39;WGM02&#39; was not declared in this scope
+     TCCR0B = _BV(WGM02) | _BV(CS00); // 1:1 prescale
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:62:31: error: &#39;CS00&#39; was not declared in this scope
+     TCCR0B = _BV(WGM02) | _BV(CS00); // 1:1 prescale
+                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:63:5: error: &#39;OCR0A&#39; was not declared in this scope
+     OCR0A  = ((F_CPU &#43; (sample_rate / 2)) / sample_rate) - 1;
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:65:5: error: &#39;TCCR0B&#39; was not declared in this scope
+     TCCR0B = _BV(WGM02) | _BV(CS01); // 1:8 prescale
+     ^
+In file included from /tmp/arduino-sketch-D54B62E42E91985C149EB3233858E5C6/sketch/TrinketPlayer.ino.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:65:18: error: &#39;WGM02&#39; was not declared in this scope
+     TCCR0B = _BV(WGM02) | _BV(CS01); // 1:8 prescale
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_TinyFlash/examples/TrinketPlayer/TrinketPlayer.ino:65:31: error: &#39;CS01&#39; was not declared in this scope
+     TCCR0B = _BV(WGM02) | _BV(CS01); // 1:8 prescale
+                            </pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

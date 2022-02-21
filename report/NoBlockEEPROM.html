@@ -1,0 +1,525 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>NoBlockEEPROM - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>NoBlockEEPROM</h2>
+				<p>
+					Version: <b>0.0.2</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/noblockeeprom/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>WriteRead</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 668 bytes (2%) of program storage space. Maximum is 32256 bytes.
+Global variables use 29 bytes (1%) of dynamic memory, leaving 2019 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+
+					
+					<h4>examples/WriteRead</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/examples/WriteRead/WriteRead.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/examples/WriteRead/WriteRead.ino:17:3: error: &#39;NoBlkEEPROM&#39; was not declared in this scope
+   NoBlkEEPROM.Begin();
+   ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/examples/WriteRead/WriteRead.ino:17:3: note: suggested alternative: &#39;EEPROM&#39;
+   NoBlkEEPROM.Begin();
+   ^~~~~~~~~~~
+   EEPROM
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/examples/WriteRead/WriteRead.ino:28:3: error: &#39;NoBlkEEPROMClass&#39; has not been declared
+   NoBlkEEPROMClass::EEPROMResult result;
+   ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/examples/WriteRead/WriteRead.ino:29:3: error: &#39;result&#39; was not declared in this scope
+   result = NoBlkEEPROM.Write(write_addr, write_buffer, buffer_size);
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/examples/WriteRead/WriteRead.ino:30:17: error: &#39;NoBlkEEPROMClass&#39; has not been declared
+   if (result != NoBlkEEPROMClass::eeprom_ok)
+                 ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/examples/WriteRead/WriteRead.ino:38:17: error: &#39;NoBlkEEPROMClass&#39; has not been declared
+   if (result != NoBlkEEPROMClass::eeprom_busy)
+                 ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/examples/WriteRead/WriteRead.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/examples/WriteRead/WriteRead.ino:57:5: error: &#39;NoBlkEEPROM&#39; was not declared in this scope
+     NoBlkEEPROM.Read(0, read_buff, buffer_size);
+     ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/examples/WriteRead/WriteRead.ino:57:5: note: suggested alternative: &#39;EEPROM&#39;
+     NoBlkEEPROM.Read(0, read_buff, buffer_size);
+     ^~~~~~~~~~~
+     EEPROM
+Multiple libraries were found for &#34;EEPROM.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/EEPROM
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/arduino-NVM
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/src/NoBlockEEPROM.cpp:20:10: fatal error: util/atomic.h: No such file or directory
+ #include &lt;util/atomic.h&gt;
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/WriteRead</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/examples/WriteRead/WriteRead.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum/src/EEPROM.h:25:10: fatal error: avr/eeprom.h: No such file or directory
+ #include &lt;avr/eeprom.h&gt;
+          ^~~~~~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;EEPROM.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/arduino-NVM
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library NoBlockEEPROM claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/src/NoBlockEEPROM.cpp: In member function &#39;void NoBlkEEPROMClass::Begin()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/src/NoBlockEEPROM.cpp:28:3: error: &#39;EECR&#39; was not declared in this scope
+   EECR = (static_cast&lt;uint8_t&gt;(EraseWrite) &lt;&lt; EEPM0); //Programming mode Write&#43;Erase
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/src/NoBlockEEPROM.cpp:28:3: note: suggested alternative: &#39;DEC&#39;
+   EECR = (static_cast&lt;uint8_t&gt;(EraseWrite) &lt;&lt; EEPM0); //Programming mode Write&#43;Erase
+   ^~~~
+   DEC
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/src/NoBlockEEPROM.cpp:28:47: error: &#39;EEPM0&#39; was not declared in this scope
+   EECR = (static_cast&lt;uint8_t&gt;(EraseWrite) &lt;&lt; EEPM0); //Programming mode Write&#43;Erase
+                                               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/src/NoBlockEEPROM.cpp: In member function &#39;void NoBlkEEPROMClass::WriteByte(uint16_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/src/NoBlockEEPROM.cpp:42:3: error: &#39;EEAR&#39; was not declared in this scope
+   EEAR = addr ;
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/src/NoBlockEEPROM.cpp:43:3: error: &#39;EEDR&#39; was not declared in this scope
+   EEDR = data;
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/src/NoBlockEEPROM.cpp:44:3: error: &#39;EECR&#39; was not declared in this scope
+   EECR |= (1 &lt;&lt; EEMPE); //Write Enable
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/src/NoBlockEEPROM.cpp:44:3: note: suggested alternative: &#39;DEC&#39;
+   EECR |= (1 &lt;&lt; EEMPE); //Write Enable
+   ^~~~
+   DEC
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/src/NoBlockEEPROM.cpp:44:17: error: &#39;EEMPE&#39; was not declared in this scope
+   EECR |= (1 &lt;&lt; EEMPE); //Write Enable
+                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/src/NoBlockEEPROM.cpp:45:20: error: &#39;EEPE&#39; was not declared in this scope
+   EECR |= ( (1U &lt;&lt; EEPE)   //Start eeprom write
+                    ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/src/NoBlockEEPROM.cpp:45:20: note: suggested alternative: &#39;PE&#39;
+   EECR |= ( (1U &lt;&lt; EEPE)   //Start eeprom write
+                    ^~~~
+                    PE
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/src/NoBlockEEPROM.cpp:46:22: error: &#39;EERIE&#39; was not declared in this scope
+             | (1U &lt;&lt; EERIE) ); //Enable Interrupt
+                      ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/src/NoBlockEEPROM.cpp:46:22: note: suggested alternative: &#39;SERIAL&#39;
+             | (1U &lt;&lt; EERIE) ); //Enable Interrupt
+                      ^~~~~
+                      SERIAL
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/src/NoBlockEEPROM.cpp: In member function &#39;uint8_t NoBlkEEPROMClass::ReadByte(uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/src/NoBlockEEPROM.cpp:51:3: error: &#39;EEAR&#39; was not declared in this scope
+   EEAR = addr ;
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/src/NoBlockEEPROM.cpp:53:3: error: &#39;EECR&#39; was not declared in this scope
+   EECR |= (1 &lt;&lt; EERE);
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/src/NoBlockEEPROM.cpp:53:3: note: suggested alternative: &#39;DEC&#39;
+   EECR |= (1 &lt;&lt; EERE);
+   ^~~~
+   DEC
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/src/NoBlockEEPROM.cpp:53:17: error: &#39;EERE&#39; was not declared in this scope
+   EECR |= (1 &lt;&lt; EERE);
+                 ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/src/NoBlockEEPROM.cpp:54:10: error: &#39;EEDR&#39; was not declared in this scope
+   return EEDR;
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/src/NoBlockEEPROM.cpp: In member function &#39;NoBlkEEPROMClass::EEPROMResult NoBlkEEPROMClass::Write(uint16_t, const uint8_t*, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/src/NoBlockEEPROM.cpp:69:12: error: &#39;EECR&#39; was not declared in this scope
+       if ( EECR &amp; (1 &lt;&lt; EEPE) )
+            ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/src/NoBlockEEPROM.cpp:69:12: note: suggested alternative: &#39;DEC&#39;
+       if ( EECR &amp; (1 &lt;&lt; EEPE) )
+            ^~~~
+            DEC
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/src/NoBlockEEPROM.cpp:69:25: error: &#39;EEPE&#39; was not declared in this scope
+       if ( EECR &amp; (1 &lt;&lt; EEPE) )
+                         ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/src/NoBlockEEPROM.cpp:69:25: note: suggested alternative: &#39;PE&#39;
+       if ( EECR &amp; (1 &lt;&lt; EEPE) )
+                         ^~~~
+                         PE
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/src/NoBlockEEPROM.cpp: In member function &#39;NoBlkEEPROMClass::EEPROMResult NoBlkEEPROMClass::Read(uint16_t, uint8_t*, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/src/NoBlockEEPROM.cpp:110:12: error: &#39;EECR&#39; was not declared in this scope
+       if ( EECR &amp; (1 &lt;&lt; EEPE) )
+            ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/src/NoBlockEEPROM.cpp:110:12: note: suggested alternative: &#39;DEC&#39;
+       if ( EECR &amp; (1 &lt;&lt; EEPE) )
+            ^~~~
+            DEC
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/src/NoBlockEEPROM.cpp:110:25: error: &#39;EEPE&#39; was not declared in this scope
+       if ( EECR &amp; (1 &lt;&lt; EEPE) )
+                         ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/src/NoBlockEEPROM.cpp:110:25: note: suggested alternative: &#39;PE&#39;
+       if ( EECR &amp; (1 &lt;&lt; EEPE) )
+                         ^~~~
+                         PE
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/src/NoBlockEEPROM.cpp: In function &#39;void EE_READY_vect()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/src/NoBlockEEPROM.cpp:131:5: error: &#39;EECR&#39; was not declared in this scope
+     EECR &amp;= ~(1U &lt;&lt; EERIE);  //Disable interrupt
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/src/NoBlockEEPROM.cpp:131:5: note: suggested alternative: &#39;DEC&#39;
+     EECR &amp;= ~(1U &lt;&lt; EERIE);  //Disable interrupt
+     ^~~~
+     DEC
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/src/NoBlockEEPROM.cpp:131:21: error: &#39;EERIE&#39; was not declared in this scope
+     EECR &amp;= ~(1U &lt;&lt; EERIE);  //Disable interrupt
+                     ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/src/NoBlockEEPROM.cpp:131:21: note: suggested alternative: &#39;SERIAL&#39;
+     EECR &amp;= ~(1U &lt;&lt; EERIE);  //Disable interrupt
+                     ^~~~~
+                     SERIAL
+
+</pre>
+
+					
+					<h4>examples/WriteRead</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library NoBlockEEPROM claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/examples/WriteRead/WriteRead.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/examples/WriteRead/WriteRead.ino:17:3: error: &#39;NoBlkEEPROM&#39; was not declared in this scope
+   NoBlkEEPROM.Begin();
+   ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/examples/WriteRead/WriteRead.ino:17:3: note: suggested alternative: &#39;EEPROM&#39;
+   NoBlkEEPROM.Begin();
+   ^~~~~~~~~~~
+   EEPROM
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/examples/WriteRead/WriteRead.ino:28:3: error: &#39;NoBlkEEPROMClass&#39; has not been declared
+   NoBlkEEPROMClass::EEPROMResult result;
+   ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/examples/WriteRead/WriteRead.ino:29:3: error: &#39;result&#39; was not declared in this scope
+   result = NoBlkEEPROM.Write(write_addr, write_buffer, buffer_size);
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/examples/WriteRead/WriteRead.ino:30:17: error: &#39;NoBlkEEPROMClass&#39; has not been declared
+   if (result != NoBlkEEPROMClass::eeprom_ok)
+                 ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/examples/WriteRead/WriteRead.ino:38:17: error: &#39;NoBlkEEPROMClass&#39; has not been declared
+   if (result != NoBlkEEPROMClass::eeprom_busy)
+                 ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/examples/WriteRead/WriteRead.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/examples/WriteRead/WriteRead.ino:57:5: error: &#39;NoBlkEEPROM&#39; was not declared in this scope
+     NoBlkEEPROM.Read(0, read_buff, buffer_size);
+     ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/examples/WriteRead/WriteRead.ino:57:5: note: suggested alternative: &#39;EEPROM&#39;
+     NoBlkEEPROM.Read(0, read_buff, buffer_size);
+     ^~~~~~~~~~~
+     EEPROM
+Multiple libraries were found for &#34;EEPROM.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/EEPROM
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/arduino-NVM
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/src/NoBlockEEPROM.cpp:20:10: fatal error: util/atomic.h: No such file or directory
+ #include &lt;util/atomic.h&gt;
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/WriteRead</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/examples/WriteRead/WriteRead.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum/src/EEPROM.h:25:10: fatal error: avr/eeprom.h: No such file or directory
+ #include &lt;avr/eeprom.h&gt;
+          ^~~~~~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;EEPROM.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/arduino-NVM
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /tmp/arduino-testlib3223996979/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/src/NoBlockEEPROM.hpp:22:27: fatal error: avr/interrupt.h: No such file or directory
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/WriteRead</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/src/NoBlockEEPROM.cpp:18:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NoBlockEEPROM/src/NoBlockEEPROM.hpp:22:27: fatal error: avr/interrupt.h: No such file or directory
+compilation terminated.
+Multiple libraries were found for &#34;EEPROM.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/EEPROM
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/arduino-NVM
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

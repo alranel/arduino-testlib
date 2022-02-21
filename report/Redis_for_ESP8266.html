@@ -1,0 +1,689 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>Redis for ESP8266 - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>Redis for ESP8266</h2>
+				<p>
+					Version: <b>1.1.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/redis-for-esp8266/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>Simple</pre></th>
+						
+						<th><pre>Pub_Sub</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-testlib1726272524/test/test.ino:1:10: fatal error: Redis_for_ESP8266.h: No such file or directory
+ #include &lt;Redis_for_ESP8266.h&gt;
+          ^~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/Pub_Sub</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Pub_Sub/Pub_Sub.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_Arduino/Redis.h:27:10: fatal error: vector: No such file or directory
+ #include &lt;vector&gt;
+          ^~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;Redis.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_Arduino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266
+</pre>
+					
+					<h4>examples/Simple</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Simple/Simple.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/Redis.h:4:10: fatal error: ESP8266WiFi.h: No such file or directory
+ #include &lt;ESP8266WiFi.h&gt;
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;Redis.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_Arduino
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-testlib1551918162/test/test.ino:1:10: fatal error: Redis_for_ESP8266.h: No such file or directory
+ #include &lt;Redis_for_ESP8266.h&gt;
+          ^~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/Pub_Sub</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library Redis_for_Arduino claims to run on esp8266, Arduino_ESP8266, esp32 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Pub_Sub/Pub_Sub.ino:10:35: error: no matching function for call to &#39;Redis::Redis(const char [10], int)&#39;
+ Redis redis(REDIS_ADDR, REDIS_PORT);
+                                   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Pub_Sub/Pub_Sub.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_Arduino/Redis.h:85:3: note: candidate: Redis::Redis(arduino::Client&amp;)
+   Redis(Client &amp;client) : conn(client) {}
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_Arduino/Redis.h:85:3: note:   candidate expects 1 argument, 2 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Pub_Sub/Pub_Sub.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Pub_Sub/Pub_Sub.ino:17:5: error: &#39;WiFi&#39; was not declared in this scope
+     WiFi.mode(WIFI_STA);
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Pub_Sub/Pub_Sub.ino:17:15: error: &#39;WIFI_STA&#39; was not declared in this scope
+     WiFi.mode(WIFI_STA);
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Pub_Sub/Pub_Sub.ino:17:15: note: suggested alternative: &#39;WIFI_SSID&#39;
+     WiFi.mode(WIFI_STA);
+               ^~~~~~~~
+               WIFI_SSID
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Pub_Sub/Pub_Sub.ino:20:29: error: &#39;WL_CONNECTED&#39; was not declared in this scope
+     while (WiFi.status() != WL_CONNECTED)
+                             ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Pub_Sub/Pub_Sub.ino:29:15: error: &#39;class Redis&#39; has no member named &#39;begin&#39;
+     if (redis.begin(REDIS_PASSWORD))
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Pub_Sub/Pub_Sub.ino:42:11: error: &#39;class Redis&#39; has no member named &#39;close&#39;
+     redis.close();
+           ^~~~~
+Multiple libraries were found for &#34;Redis.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_Arduino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266
+</pre>
+					
+					<h4>examples/Simple</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library Redis_for_Arduino claims to run on esp8266, Arduino_ESP8266, esp32 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Simple/Simple.ino:10:35: error: no matching function for call to &#39;Redis::Redis(const char [10], int)&#39;
+ Redis redis(REDIS_ADDR, REDIS_PORT);
+                                   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Simple/Simple.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_Arduino/Redis.h:85:3: note: candidate: Redis::Redis(arduino::Client&amp;)
+   Redis(Client &amp;client) : conn(client) {}
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_Arduino/Redis.h:85:3: note:   candidate expects 1 argument, 2 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Simple/Simple.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Simple/Simple.ino:17:5: error: &#39;WiFi&#39; was not declared in this scope
+     WiFi.mode(WIFI_STA);
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Simple/Simple.ino:17:15: error: &#39;WIFI_STA&#39; was not declared in this scope
+     WiFi.mode(WIFI_STA);
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Simple/Simple.ino:17:15: note: suggested alternative: &#39;WIFI_SSID&#39;
+     WiFi.mode(WIFI_STA);
+               ^~~~~~~~
+               WIFI_SSID
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Simple/Simple.ino:20:29: error: &#39;WL_CONNECTED&#39; was not declared in this scope
+     while (WiFi.status() != WL_CONNECTED)
+                             ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Simple/Simple.ino:29:15: error: &#39;class Redis&#39; has no member named &#39;begin&#39;
+     if (redis.begin(REDIS_PASSWORD))
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Simple/Simple.ino:52:11: error: &#39;class Redis&#39; has no member named &#39;close&#39;
+     redis.close();
+           ^~~~~
+Multiple libraries were found for &#34;Redis.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_Arduino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-testlib1551918162/test/test.ino:1:10: fatal error: Redis_for_ESP8266.h: No such file or directory
+ #include &lt;Redis_for_ESP8266.h&gt;
+          ^~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/Pub_Sub</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Pub_Sub/Pub_Sub.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_Arduino/Redis.h:27:10: fatal error: vector: No such file or directory
+ #include &lt;vector&gt;
+          ^~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;Redis.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_Arduino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266
+</pre>
+					
+					<h4>examples/Simple</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Simple/Simple.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/Redis.h:4:10: fatal error: ESP8266WiFi.h: No such file or directory
+ #include &lt;ESP8266WiFi.h&gt;
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;Redis.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_Arduino
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-testlib1726272524/test/test.ino:1:10: fatal error: Redis_for_ESP8266.h: No such file or directory
+ #include &lt;Redis_for_ESP8266.h&gt;
+          ^~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/Pub_Sub</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Pub_Sub/Pub_Sub.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/Redis.h:4:10: fatal error: ESP8266WiFi.h: No such file or directory
+ #include &lt;ESP8266WiFi.h&gt;
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;Redis.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_Arduino
+</pre>
+					
+					<h4>examples/Simple</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library Redis_for_Arduino claims to run on esp8266, Arduino_ESP8266, esp32 architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Simple/Simple.ino:10:35: error: no matching function for call to &#39;Redis::Redis(const char [10], int)&#39;
+ Redis redis(REDIS_ADDR, REDIS_PORT);
+                                   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Simple/Simple.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_Arduino/Redis.h:85:3: note: candidate: Redis::Redis(arduino::Client&amp;)
+   Redis(Client &amp;client) : conn(client) {}
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_Arduino/Redis.h:85:3: note:   candidate expects 1 argument, 2 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Simple/Simple.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Simple/Simple.ino:17:5: error: &#39;WiFi&#39; was not declared in this scope
+     WiFi.mode(WIFI_STA);
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Simple/Simple.ino:17:15: error: &#39;WIFI_STA&#39; was not declared in this scope
+     WiFi.mode(WIFI_STA);
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Simple/Simple.ino:17:15: note: suggested alternative: &#39;WIFI_SSID&#39;
+     WiFi.mode(WIFI_STA);
+               ^~~~~~~~
+               WIFI_SSID
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Simple/Simple.ino:20:29: error: &#39;WL_CONNECTED&#39; was not declared in this scope
+     while (WiFi.status() != WL_CONNECTED)
+                             ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Simple/Simple.ino:20:29: note: suggested alternative: &#39;UHD_STATE_CONNECTED&#39;
+     while (WiFi.status() != WL_CONNECTED)
+                             ^~~~~~~~~~~~
+                             UHD_STATE_CONNECTED
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Simple/Simple.ino:29:15: error: &#39;class Redis&#39; has no member named &#39;begin&#39;
+     if (redis.begin(REDIS_PASSWORD))
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Simple/Simple.ino:52:11: error: &#39;class Redis&#39; has no member named &#39;close&#39;
+     redis.close();
+           ^~~~~
+Multiple libraries were found for &#34;Redis.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_Arduino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-testlib45245539/test/test.ino:1:31: fatal error: Redis_for_ESP8266.h: No such file or directory
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/Pub_Sub</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Pub_Sub/Pub_Sub.ino:10:35: error: no matching function for call to &#39;Redis::Redis(const char [10], int)&#39;
+ Redis redis(REDIS_ADDR, REDIS_PORT);
+                                   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Pub_Sub/Pub_Sub.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_Arduino/Redis.h:85:3: note: candidate: Redis::Redis(Client&amp;)
+   Redis(Client &amp;client) : conn(client) {}
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_Arduino/Redis.h:85:3: note:   candidate expects 1 argument, 2 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Pub_Sub/Pub_Sub.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Pub_Sub/Pub_Sub.ino:17:5: error: &#39;WiFi&#39; was not declared in this scope
+     WiFi.mode(WIFI_STA);
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Pub_Sub/Pub_Sub.ino:17:15: error: &#39;WIFI_STA&#39; was not declared in this scope
+     WiFi.mode(WIFI_STA);
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Pub_Sub/Pub_Sub.ino:20:29: error: &#39;WL_CONNECTED&#39; was not declared in this scope
+     while (WiFi.status() != WL_CONNECTED)
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Pub_Sub/Pub_Sub.ino:29:15: error: &#39;class Redis&#39; has no member named &#39;begin&#39;
+     if (redis.begin(REDIS_PASSWORD))
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Pub_Sub/Pub_Sub.ino:42:11: error: &#39;class Redis&#39; has no member named &#39;close&#39;
+     redis.close();
+           ^
+Multiple libraries were found for &#34;Redis.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_Arduino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266
+</pre>
+					
+					<h4>examples/Simple</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Simple/Simple.ino:10:35: error: no matching function for call to &#39;Redis::Redis(const char [10], int)&#39;
+ Redis redis(REDIS_ADDR, REDIS_PORT);
+                                   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Simple/Simple.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_Arduino/Redis.h:85:3: note: candidate: Redis::Redis(Client&amp;)
+   Redis(Client &amp;client) : conn(client) {}
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_Arduino/Redis.h:85:3: note:   candidate expects 1 argument, 2 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Simple/Simple.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Simple/Simple.ino:17:5: error: &#39;WiFi&#39; was not declared in this scope
+     WiFi.mode(WIFI_STA);
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Simple/Simple.ino:17:15: error: &#39;WIFI_STA&#39; was not declared in this scope
+     WiFi.mode(WIFI_STA);
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Simple/Simple.ino:20:29: error: &#39;WL_CONNECTED&#39; was not declared in this scope
+     while (WiFi.status() != WL_CONNECTED) 
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Simple/Simple.ino:29:15: error: &#39;class Redis&#39; has no member named &#39;begin&#39;
+     if (redis.begin(REDIS_PASSWORD)) 
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266/examples/Simple/Simple.ino:52:11: error: &#39;class Redis&#39; has no member named &#39;close&#39;
+     redis.close();
+           ^
+Multiple libraries were found for &#34;Redis.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_Arduino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Redis_for_ESP8266
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

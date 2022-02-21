@@ -1,0 +1,796 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>Boodskap Message library - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>Boodskap Message library</h2>
+				<p>
+					Version: <b>1.0.2</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/boodskap-message-library/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>SimpleMessageUsage</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:1:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.h:17:11: error: JsonBuffer is a class from ArduinoJson 5. Please see https://arduinojson.org/upgrade to learn how to upgrade your program to ArduinoJson version 6
+     BoodskapMessage(JsonBuffer&amp; buffer);
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                                                                                       
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:1:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.h:19:11: error: JsonBuffer is a class from ArduinoJson 5. Please see https://arduinojson.org/upgrade to learn how to upgrade your program to ArduinoJson version 6
+     BoodskapMessage(JsonBuffer&amp; buffer, long messageId, const char* domainKey, const char* assetId, const char* apiKey, const char* fwVersion, const char* devModel);
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:4:11: error: JsonBuffer is a class from ArduinoJson 5. Please see https://arduinojson.org/upgrade to learn how to upgrade your program to ArduinoJson version 6
+ BoodskapMessage::BoodskapMessage(JsonBuffer&amp; buffer, long messageId, const char* domainKey, const char* assetId, const char* apiKey, const char* fwVersion, const char* devModel):
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:27:11: error: JsonBuffer is a class from ArduinoJson 5. Please see https://arduinojson.org/upgrade to learn how to upgrade your program to ArduinoJson version 6
+ BoodskapMessage::BoodskapMessage(JsonBuffer&amp; buffer): BoodskapMessage(buffer, -1, &#34;&#34;, &#34;&#34;, &#34;&#34;, &#34;&#34;, &#34;&#34;)
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                          
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:63:11: error: DynamicJsonBuffer is a class from ArduinoJson 5. Please see https://arduinojson.org/upgrade to learn how to upgrade your program to ArduinoJson version 6
+   DynamicJsonBuffer jsonBuffer;
+           ^~~~~~~~~~~~~~~~~~~~~                                                                                                                                       
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:1:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.h:19:39: error: expected &#39;)&#39; before &#39;,&#39; token
+     BoodskapMessage(JsonBuffer&amp; buffer, long messageId, const char* domainKey, const char* assetId, const char* apiKey, const char* fwVersion, const char* devModel);
+                                       ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:4:33: error: expected constructor, destructor, or type conversion before &#39;(&#39; token
+ BoodskapMessage::BoodskapMessage(JsonBuffer&amp; buffer, long messageId, const char* domainKey, const char* assetId, const char* apiKey, const char* fwVersion, const char* devModel):
+                                 ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:27:33: error: expected constructor, destructor, or type conversion before &#39;(&#39; token
+ BoodskapMessage::BoodskapMessage(JsonBuffer&amp; buffer): BoodskapMessage(buffer, -1, &#34;&#34;, &#34;&#34;, &#34;&#34;, &#34;&#34;, &#34;&#34;)
+                                 ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp: In static member function &#39;static bool BoodskapMessage::parse(BoodskapMessage&amp;, const char*)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:63:21: error: &#39;jsonBuffer&#39; was not declared in this scope
+   DynamicJsonBuffer jsonBuffer;
+                     ^~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:63:21: note: suggested alternative: &#39;JsonBuffer&#39;
+   DynamicJsonBuffer jsonBuffer;
+                     ^~~~~~~~~~
+                     JsonBuffer
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:66:14: error: &#39;ArduinoJson::JsonObject {aka class ArduinoJson6192_1::ObjectRef}&#39; has no member named &#39;success&#39;
+   if (!root-&gt;success()) {
+              ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:73:35: error: cannot bind non-const lvalue reference of type &#39;ArduinoJson::JsonObject&amp; {aka ArduinoJson6192_1::ObjectRef&amp;}&#39; to an rvalue of type &#39;ArduinoJson6192_1::ObjectRef&#39;
+   JsonObject&amp; h = (*root)[&#34;header&#34;];
+                                   ^
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Document/JsonDocument.hpp:9:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Document/BasicJsonDocument.hpp:7,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Document/DynamicJsonDocument.hpp:7,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson.hpp:28,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson.h:9,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.h:4,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:1:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Object/MemberProxy.hpp:84:16: note:   after user-defined conversion: ArduinoJson6192_1::MemberProxy&lt;TParent, TStringRef&gt;::operator T() const [with T = ArduinoJson6192_1::ObjectRef; TObject = ArduinoJson6192_1::ObjectRef; TStringRef = const char*]
+   FORCE_INLINE operator T() const {
+                ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:74:33: error: cannot bind non-const lvalue reference of type &#39;ArduinoJson::JsonObject&amp; {aka ArduinoJson6192_1::ObjectRef&amp;}&#39; to an rvalue of type &#39;ArduinoJson6192_1::ObjectRef&#39;
+   JsonObject&amp; d = (*root)[&#34;data&#34;];
+                                 ^
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Document/JsonDocument.hpp:9:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Document/BasicJsonDocument.hpp:7,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Document/DynamicJsonDocument.hpp:7,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson.hpp:28,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson.h:9,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.h:4,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:1:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Object/MemberProxy.hpp:84:16: note:   after user-defined conversion: ArduinoJson6192_1::MemberProxy&lt;TParent, TStringRef&gt;::operator T() const [with T = ArduinoJson6192_1::ObjectRef; TObject = ArduinoJson6192_1::ObjectRef; TStringRef = const char*]
+   FORCE_INLINE operator T() const {
+                ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:91:15: error: invalid use of non-static member function &#39;ArduinoJson6192_1::String ArduinoJson6192_1::Pair::key() const&#39;
+     msg.data()[dataobj.key] = d[dataobj.key];
+               ^
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Object/ObjectIterator.hpp:7:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Object/ObjectRef.hpp:8,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson.hpp:25,
+                 from /Users/alranel/Documents/g</pre>
+
+					
+					<h4>examples/SimpleMessageUsage</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/examples/SimpleMessageUsage/SimpleMessageUsage.ino:2:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.h:17:11: error: JsonBuffer is a class from ArduinoJson 5. Please see https://arduinojson.org/upgrade to learn how to upgrade your program to ArduinoJson version 6
+     BoodskapMessage(JsonBuffer&amp; buffer);
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                                                                                       
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/examples/SimpleMessageUsage/SimpleMessageUsage.ino:2:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.h:19:11: error: JsonBuffer is a class from ArduinoJson 5. Please see https://arduinojson.org/upgrade to learn how to upgrade your program to ArduinoJson version 6
+     BoodskapMessage(JsonBuffer&amp; buffer, long messageId, const char* domainKey, const char* assetId, const char* apiKey, const char* fwVersion, const char* devModel);
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/examples/SimpleMessageUsage/SimpleMessageUsage.ino:16:11: error: StaticJsonBuffer is a class from ArduinoJson 5. Please see https://arduinojson.org/upgrade to learn how to upgrade your program to ArduinoJson version 6
+   StaticJsonBuffer&lt;300&gt; buffer;
+           ^~~~~~~~~~~~~~~~~~~~~                                                                                                                                      
+Multiple libraries were found for &#34;ArduinoJson.h&#34;
+  Used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CMMC_MQTT_Connector
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ThingESP
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Antares_ESP8266_MQTT
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ThingsIoT
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Antares_ESP8266_HTTP
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/BaleMessengerBot_Arduino
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CoogleIOT
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.h:17:11: error: JsonBuffer is a class from ArduinoJson 5. Please see https://arduinojson.org/upgrade to learn how to upgrade your program to ArduinoJson version 6
+     BoodskapMessage(JsonBuffer&amp; buffer);
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                                                                                       
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.h:19:11: error: JsonBuffer is a class from ArduinoJson 5. Please see https://arduinojson.org/upgrade to learn how to upgrade your program to ArduinoJson version 6
+     BoodskapMessage(JsonBuffer&amp; buffer, long messageId, const char* domainKey, const char* assetId, const char* apiKey, const char* fwVersion, const char* devModel);
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:4:11: error: JsonBuffer is a class from ArduinoJson 5. Please see https://arduinojson.org/upgrade to learn how to upgrade your program to ArduinoJson version 6
+ BoodskapMessage::BoodskapMessage(JsonBuffer&amp; buffer, long messageId, const char* domainKey, const char* assetId, const char* apiKey, const char* fwVersion, const char* devModel):
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:27:11: error: JsonBuffer is a class from ArduinoJson 5. Please see https://arduinojson.org/upgrade to learn how to upgrade your program to ArduinoJson version 6
+ BoodskapMessage::BoodskapMessage(JsonBuffer&amp; buffer): BoodskapMessage(buffer, -1, &#34;&#34;, &#34;&#34;, &#34;&#34;, &#34;&#34;, &#34;&#34;)
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                          
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:63:11: error: DynamicJsonBuffer is a class from ArduinoJson 5. Please see https://arduinojson.org/upgrade to learn how to upgrade your program to ArduinoJson version 6
+   DynamicJsonBuffer jsonBuffer;
+           ^~~~~~~~~~~~~~~~~~~~~                                                                                                                                       
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.h:19:39: error: expected &#39;)&#39; before &#39;,&#39; token
+     BoodskapMessage(JsonBuffer&amp; buffer, long messageId, const char* domainKey, const char* assetId, const char* apiKey, const char* fwVersion, const char* devModel);
+                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:4:33: error: expected constructor, destructor, or type conversion before &#39;(&#39; token
+ BoodskapMessage::BoodskapMessage(JsonBuffer&amp; buffer, long messageId, const char* domainKey, const char* assetId, const char* apiKey, const char* fwVersion, const char* devModel):
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:27:33: error: expected constructor, destructor, or type conversion before &#39;(&#39; token
+ BoodskapMessage::BoodskapMessage(JsonBuffer&amp; buffer): BoodskapMessage(buffer, -1, &#34;&#34;, &#34;&#34;, &#34;&#34;, &#34;&#34;, &#34;&#34;)
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp: In static member function &#39;static bool BoodskapMessage::parse(BoodskapMessage&amp;, const char*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:63:21: error: &#39;jsonBuffer&#39; was not declared in this scope
+   DynamicJsonBuffer jsonBuffer;
+                     ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:63:21: note: suggested alternative: &#39;JsonBuffer&#39;
+   DynamicJsonBuffer jsonBuffer;
+                     ^~~~~~~~~~
+                     JsonBuffer
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:66:14: error: &#39;ArduinoJson::JsonObject {aka class ArduinoJson6192_F1::ObjectRef}&#39; has no member named &#39;success&#39;
+   if (!root-&gt;success()) {
+              ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:73:35: error: cannot bind non-const lvalue reference of type &#39;ArduinoJson::JsonObject&amp; {aka ArduinoJson6192_F1::ObjectRef&amp;}&#39; to an rvalue of type &#39;ArduinoJson6192_F1::ObjectRef&#39;
+   JsonObject&amp; h = (*root)[&#34;header&#34;];
+                                   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Document/JsonDocument.hpp:9:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Document/BasicJsonDocument.hpp:7,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Document/DynamicJsonDocument.hpp:7,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson.hpp:28,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson.h:9,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.h:4,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Object/MemberProxy.hpp:84:16: note:   after user-defined conversion: ArduinoJson6192_F1::MemberProxy&lt;TParent, TStringRef&gt;::operator T() const [with T = ArduinoJson6192_F1::ObjectRef; TObject = ArduinoJson6192_F1::ObjectRef; TStringRef = const char*]
+   FORCE_INLINE operator T() const {
+                ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:74:33: error: cannot bind non-const lvalue reference of type &#39;ArduinoJson::JsonObject&amp; {aka ArduinoJson6192_F1::ObjectRef&amp;}&#39; to an rvalue of type &#39;ArduinoJson6192_F1::ObjectRef&#39;
+   JsonObject&amp; d = (*root)[&#34;data&#34;];
+                                 ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Document/JsonDocument.hpp:9:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Document/BasicJsonDocument.hpp:7,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Document/DynamicJsonDocument.hpp:7,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson.hpp:28,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson.h:9,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.h:4,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Object/MemberProxy.hpp:84:16: note:   after user-defined conversion: ArduinoJson6192_F1::MemberProxy&lt;TParent, TStringRef&gt;::operator T() const [with T = ArduinoJson6192_F1::ObjectRef; TObject = ArduinoJson6192_F1::ObjectRef; TStringRef = const char*]
+   FORCE_INLINE operator T() const {
+                ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:91:15: error: invalid use of non-static member function &#39;ArduinoJson6192_F1::String ArduinoJson6192_F1::Pair::key() const&#39;
+     msg.data()[dataobj.key] = d[dataobj.key];
+               ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Object/ObjectIterator.hpp:7:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Object/ObjectRef.hpp:8,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson.hpp:25,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson.h:9,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.h:4,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Object/Pair.hpp:21:10: note: declared here
+   String key() const {
+          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:91:32: error: invalid use of non-static member function &#39;ArduinoJson6192_F1::String ArduinoJson6192_F1::Pair::key() const&#39;
+     msg.data()[dataobj.key] = d[dataobj.key];
+                              </pre>
+
+					
+					<h4>examples/SimpleMessageUsage</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/examples/SimpleMessageUsage/SimpleMessageUsage.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.h:17:11: error: JsonBuffer is a class from ArduinoJson 5. Please see https://arduinojson.org/upgrade to learn how to upgrade your program to ArduinoJson version 6
+     BoodskapMessage(JsonBuffer&amp; buffer);
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                                                                                       
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/examples/SimpleMessageUsage/SimpleMessageUsage.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.h:19:11: error: JsonBuffer is a class from ArduinoJson 5. Please see https://arduinojson.org/upgrade to learn how to upgrade your program to ArduinoJson version 6
+     BoodskapMessage(JsonBuffer&amp; buffer, long messageId, const char* domainKey, const char* assetId, const char* apiKey, const char* fwVersion, const char* devModel);
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/examples/SimpleMessageUsage/SimpleMessageUsage.ino:16:11: error: StaticJsonBuffer is a class from ArduinoJson 5. Please see https://arduinojson.org/upgrade to learn how to upgrade your program to ArduinoJson version 6
+   StaticJsonBuffer&lt;300&gt; buffer;
+           ^~~~~~~~~~~~~~~~~~~~~                                                                                                                                      
+Multiple libraries were found for &#34;ArduinoJson.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Antares_ESP8266_HTTP
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ThingsIoT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ThingESP
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CoogleIOT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CMMC_MQTT_Connector
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/BaleMessengerBot_Arduino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Antares_ESP8266_MQTT
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.h:17:11: error: JsonBuffer is a class from ArduinoJson 5. Please see https://arduinojson.org/upgrade to learn how to upgrade your program to ArduinoJson version 6
+     BoodskapMessage(JsonBuffer&amp; buffer);
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                                                                                       
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.h:19:11: error: JsonBuffer is a class from ArduinoJson 5. Please see https://arduinojson.org/upgrade to learn how to upgrade your program to ArduinoJson version 6
+     BoodskapMessage(JsonBuffer&amp; buffer, long messageId, const char* domainKey, const char* assetId, const char* apiKey, const char* fwVersion, const char* devModel);
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:4:11: error: JsonBuffer is a class from ArduinoJson 5. Please see https://arduinojson.org/upgrade to learn how to upgrade your program to ArduinoJson version 6
+ BoodskapMessage::BoodskapMessage(JsonBuffer&amp; buffer, long messageId, const char* domainKey, const char* assetId, const char* apiKey, const char* fwVersion, const char* devModel):
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:27:11: error: JsonBuffer is a class from ArduinoJson 5. Please see https://arduinojson.org/upgrade to learn how to upgrade your program to ArduinoJson version 6
+ BoodskapMessage::BoodskapMessage(JsonBuffer&amp; buffer): BoodskapMessage(buffer, -1, &#34;&#34;, &#34;&#34;, &#34;&#34;, &#34;&#34;, &#34;&#34;)
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                          
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:63:11: error: DynamicJsonBuffer is a class from ArduinoJson 5. Please see https://arduinojson.org/upgrade to learn how to upgrade your program to ArduinoJson version 6
+   DynamicJsonBuffer jsonBuffer;
+           ^~~~~~~~~~~~~~~~~~~~~                                                                                                                                       
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.h:19:39: error: expected &#39;)&#39; before &#39;,&#39; token
+     BoodskapMessage(JsonBuffer&amp; buffer, long messageId, const char* domainKey, const char* assetId, const char* apiKey, const char* fwVersion, const char* devModel);
+                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:4:33: error: expected constructor, destructor, or type conversion before &#39;(&#39; token
+ BoodskapMessage::BoodskapMessage(JsonBuffer&amp; buffer, long messageId, const char* domainKey, const char* assetId, const char* apiKey, const char* fwVersion, const char* devModel):
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:27:33: error: expected constructor, destructor, or type conversion before &#39;(&#39; token
+ BoodskapMessage::BoodskapMessage(JsonBuffer&amp; buffer): BoodskapMessage(buffer, -1, &#34;&#34;, &#34;&#34;, &#34;&#34;, &#34;&#34;, &#34;&#34;)
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp: In static member function &#39;static bool BoodskapMessage::parse(BoodskapMessage&amp;, const char*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:63:21: error: &#39;jsonBuffer&#39; was not declared in this scope
+   DynamicJsonBuffer jsonBuffer;
+                     ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:63:21: note: suggested alternative: &#39;JsonBuffer&#39;
+   DynamicJsonBuffer jsonBuffer;
+                     ^~~~~~~~~~
+                     JsonBuffer
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:66:14: error: &#39;ArduinoJson::JsonObject {aka class ArduinoJson6192_B1::ObjectRef}&#39; has no member named &#39;success&#39;
+   if (!root-&gt;success()) {
+              ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:73:35: error: cannot bind non-const lvalue reference of type &#39;ArduinoJson::JsonObject&amp; {aka ArduinoJson6192_B1::ObjectRef&amp;}&#39; to an rvalue of type &#39;ArduinoJson6192_B1::ObjectRef&#39;
+   JsonObject&amp; h = (*root)[&#34;header&#34;];
+                                   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Document/JsonDocument.hpp:9:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Document/BasicJsonDocument.hpp:7,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Document/DynamicJsonDocument.hpp:7,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson.hpp:28,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson.h:9,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.h:4,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Object/MemberProxy.hpp:84:16: note:   after user-defined conversion: ArduinoJson6192_B1::MemberProxy&lt;TParent, TStringRef&gt;::operator T() const [with T = ArduinoJson6192_B1::ObjectRef; TObject = ArduinoJson6192_B1::ObjectRef; TStringRef = const char*]
+   FORCE_INLINE operator T() const {
+                ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:74:33: error: cannot bind non-const lvalue reference of type &#39;ArduinoJson::JsonObject&amp; {aka ArduinoJson6192_B1::ObjectRef&amp;}&#39; to an rvalue of type &#39;ArduinoJson6192_B1::ObjectRef&#39;
+   JsonObject&amp; d = (*root)[&#34;data&#34;];
+                                 ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Document/JsonDocument.hpp:9:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Document/BasicJsonDocument.hpp:7,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Document/DynamicJsonDocument.hpp:7,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson.hpp:28,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson.h:9,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.h:4,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Object/MemberProxy.hpp:84:16: note:   after user-defined conversion: ArduinoJson6192_B1::MemberProxy&lt;TParent, TStringRef&gt;::operator T() const [with T = ArduinoJson6192_B1::ObjectRef; TObject = ArduinoJson6192_B1::ObjectRef; TStringRef = const char*]
+   FORCE_INLINE operator T() const {
+                ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:91:15: error: invalid use of non-static member function &#39;ArduinoJson6192_B1::String ArduinoJson6192_B1::Pair::key() const&#39;
+     msg.data()[dataobj.key] = d[dataobj.key];
+               ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Object/ObjectIterator.hpp:7:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Object/ObjectRef.hpp:8,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson.hpp:25,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson.h:9,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.h:4,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Object/Pair.hpp:21:10: note: declared here
+   String key() const {
+          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:91:32: error: invalid use of non-static member function &#39;ArduinoJson6192_B1::String ArduinoJson6192_B1::Pair::key() const&#39;
+     msg.data()[dataobj.key] = d[dataobj.key];
+                              </pre>
+
+					
+					<h4>examples/SimpleMessageUsage</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/examples/SimpleMessageUsage/SimpleMessageUsage.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.h:17:11: error: JsonBuffer is a class from ArduinoJson 5. Please see https://arduinojson.org/upgrade to learn how to upgrade your program to ArduinoJson version 6
+     BoodskapMessage(JsonBuffer&amp; buffer);
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                                                                                       
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/examples/SimpleMessageUsage/SimpleMessageUsage.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.h:19:11: error: JsonBuffer is a class from ArduinoJson 5. Please see https://arduinojson.org/upgrade to learn how to upgrade your program to ArduinoJson version 6
+     BoodskapMessage(JsonBuffer&amp; buffer, long messageId, const char* domainKey, const char* assetId, const char* apiKey, const char* fwVersion, const char* devModel);
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/examples/SimpleMessageUsage/SimpleMessageUsage.ino:16:11: error: StaticJsonBuffer is a class from ArduinoJson 5. Please see https://arduinojson.org/upgrade to learn how to upgrade your program to ArduinoJson version 6
+   StaticJsonBuffer&lt;300&gt; buffer;
+           ^~~~~~~~~~~~~~~~~~~~~                                                                                                                                      
+Multiple libraries were found for &#34;ArduinoJson.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CMMC_MQTT_Connector
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ThingsIoT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Antares_ESP8266_MQTT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Antares_ESP8266_HTTP
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CoogleIOT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ThingESP
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/BaleMessengerBot_Arduino
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:1:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.h:17:11: error: JsonBuffer is a class from ArduinoJson 5. Please see https://arduinojson.org/upgrade to learn how to upgrade your program to ArduinoJson version 6
+     BoodskapMessage(JsonBuffer&amp; buffer);
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                                                                                       
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:1:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.h:19:11: error: JsonBuffer is a class from ArduinoJson 5. Please see https://arduinojson.org/upgrade to learn how to upgrade your program to ArduinoJson version 6
+     BoodskapMessage(JsonBuffer&amp; buffer, long messageId, const char* domainKey, const char* assetId, const char* apiKey, const char* fwVersion, const char* devModel);
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:4:11: error: JsonBuffer is a class from ArduinoJson 5. Please see https://arduinojson.org/upgrade to learn how to upgrade your program to ArduinoJson version 6
+ BoodskapMessage::BoodskapMessage(JsonBuffer&amp; buffer, long messageId, const char* domainKey, const char* assetId, const char* apiKey, const char* fwVersion, const char* devModel):
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:27:11: error: JsonBuffer is a class from ArduinoJson 5. Please see https://arduinojson.org/upgrade to learn how to upgrade your program to ArduinoJson version 6
+ BoodskapMessage::BoodskapMessage(JsonBuffer&amp; buffer): BoodskapMessage(buffer, -1, &#34;&#34;, &#34;&#34;, &#34;&#34;, &#34;&#34;, &#34;&#34;)
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                          
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:63:11: error: DynamicJsonBuffer is a class from ArduinoJson 5. Please see https://arduinojson.org/upgrade to learn how to upgrade your program to ArduinoJson version 6
+   DynamicJsonBuffer jsonBuffer;
+           ^~~~~~~~~~~~~~~~~~~~~                                                                                                                                       
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:1:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.h:19:39: error: expected &#39;)&#39; before &#39;,&#39; token
+     BoodskapMessage(JsonBuffer&amp; buffer, long messageId, const char* domainKey, const char* assetId, const char* apiKey, const char* fwVersion, const char* devModel);
+                                       ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:4:33: error: expected constructor, destructor, or type conversion before &#39;(&#39; token
+ BoodskapMessage::BoodskapMessage(JsonBuffer&amp; buffer, long messageId, const char* domainKey, const char* assetId, const char* apiKey, const char* fwVersion, const char* devModel):
+                                 ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:27:33: error: expected constructor, destructor, or type conversion before &#39;(&#39; token
+ BoodskapMessage::BoodskapMessage(JsonBuffer&amp; buffer): BoodskapMessage(buffer, -1, &#34;&#34;, &#34;&#34;, &#34;&#34;, &#34;&#34;, &#34;&#34;)
+                                 ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp: In static member function &#39;static bool BoodskapMessage::parse(BoodskapMessage&amp;, const char*)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:63:21: error: &#39;jsonBuffer&#39; was not declared in this scope
+   DynamicJsonBuffer jsonBuffer;
+                     ^~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:63:21: note: suggested alternative: &#39;JsonBuffer&#39;
+   DynamicJsonBuffer jsonBuffer;
+                     ^~~~~~~~~~
+                     JsonBuffer
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:66:14: error: &#39;ArduinoJson::JsonObject {aka class ArduinoJson6192_F1::ObjectRef}&#39; has no member named &#39;success&#39;
+   if (!root-&gt;success()) {
+              ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:73:35: error: cannot bind non-const lvalue reference of type &#39;ArduinoJson::JsonObject&amp; {aka ArduinoJson6192_F1::ObjectRef&amp;}&#39; to an rvalue of type &#39;ArduinoJson6192_F1::ObjectRef&#39;
+   JsonObject&amp; h = (*root)[&#34;header&#34;];
+                                   ^
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Document/JsonDocument.hpp:9:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Document/BasicJsonDocument.hpp:7,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Document/DynamicJsonDocument.hpp:7,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson.hpp:28,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson.h:9,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.h:4,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:1:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Object/MemberProxy.hpp:84:16: note:   after user-defined conversion: ArduinoJson6192_F1::MemberProxy&lt;TParent, TStringRef&gt;::operator T() const [with T = ArduinoJson6192_F1::ObjectRef; TObject = ArduinoJson6192_F1::ObjectRef; TStringRef = const char*]
+   FORCE_INLINE operator T() const {
+                ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:74:33: error: cannot bind non-const lvalue reference of type &#39;ArduinoJson::JsonObject&amp; {aka ArduinoJson6192_F1::ObjectRef&amp;}&#39; to an rvalue of type &#39;ArduinoJson6192_F1::ObjectRef&#39;
+   JsonObject&amp; d = (*root)[&#34;data&#34;];
+                                 ^
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Document/JsonDocument.hpp:9:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Document/BasicJsonDocument.hpp:7,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Document/DynamicJsonDocument.hpp:7,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson.hpp:28,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson.h:9,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.h:4,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:1:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Object/MemberProxy.hpp:84:16: note:   after user-defined conversion: ArduinoJson6192_F1::MemberProxy&lt;TParent, TStringRef&gt;::operator T() const [with T = ArduinoJson6192_F1::ObjectRef; TObject = ArduinoJson6192_F1::ObjectRef; TStringRef = const char*]
+   FORCE_INLINE operator T() const {
+                ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:91:15: error: invalid use of non-static member function &#39;ArduinoJson6192_F1::String ArduinoJson6192_F1::Pair::key() const&#39;
+     msg.data()[dataobj.key] = d[dataobj.key];
+               ^
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Object/ObjectIterator.hpp:7:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Object/ObjectRef.hpp:8,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson.hpp:25,
+                 from /Users/alrane</pre>
+
+					
+					<h4>examples/SimpleMessageUsage</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/examples/SimpleMessageUsage/SimpleMessageUsage.ino:2:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.h:17:11: error: JsonBuffer is a class from ArduinoJson 5. Please see https://arduinojson.org/upgrade to learn how to upgrade your program to ArduinoJson version 6
+     BoodskapMessage(JsonBuffer&amp; buffer);
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                                                                                       
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/examples/SimpleMessageUsage/SimpleMessageUsage.ino:2:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.h:19:11: error: JsonBuffer is a class from ArduinoJson 5. Please see https://arduinojson.org/upgrade to learn how to upgrade your program to ArduinoJson version 6
+     BoodskapMessage(JsonBuffer&amp; buffer, long messageId, const char* domainKey, const char* assetId, const char* apiKey, const char* fwVersion, const char* devModel);
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/examples/SimpleMessageUsage/SimpleMessageUsage.ino:16:11: error: StaticJsonBuffer is a class from ArduinoJson 5. Please see https://arduinojson.org/upgrade to learn how to upgrade your program to ArduinoJson version 6
+   StaticJsonBuffer&lt;300&gt; buffer;
+           ^~~~~~~~~~~~~~~~~~~~~                                                                                                                                      
+Multiple libraries were found for &#34;ArduinoJson.h&#34;
+  Used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ThingsIoT
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CMMC_MQTT_Connector
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CoogleIOT
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/BaleMessengerBot_Arduino
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ThingESP
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Antares_ESP8266_MQTT
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Antares_ESP8266_HTTP
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.h:17:11: error: JsonBuffer is a class from ArduinoJson 5. Please see https://arduinojson.org/upgrade to learn how to upgrade your program to ArduinoJson version 6
+     BoodskapMessage(JsonBuffer&amp; buffer);
+           ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.h:19:11: error: JsonBuffer is a class from ArduinoJson 5. Please see https://arduinojson.org/upgrade to learn how to upgrade your program to ArduinoJson version 6
+     BoodskapMessage(JsonBuffer&amp; buffer, long messageId, const char* domainKey, const char* assetId, const char* apiKey, const char* fwVersion, const char* devModel);
+           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:4:11: error: JsonBuffer is a class from ArduinoJson 5. Please see https://arduinojson.org/upgrade to learn how to upgrade your program to ArduinoJson version 6
+ BoodskapMessage::BoodskapMessage(JsonBuffer&amp; buffer, long messageId, const char* domainKey, const char* assetId, const char* apiKey, const char* fwVersion, const char* devModel):
+           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:27:11: error: JsonBuffer is a class from ArduinoJson 5. Please see https://arduinojson.org/upgrade to learn how to upgrade your program to ArduinoJson version 6
+ BoodskapMessage::BoodskapMessage(JsonBuffer&amp; buffer): BoodskapMessage(buffer, -1, &#34;&#34;, &#34;&#34;, &#34;&#34;, &#34;&#34;, &#34;&#34;)
+           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:63:11: error: DynamicJsonBuffer is a class from ArduinoJson 5. Please see https://arduinojson.org/upgrade to learn how to upgrade your program to ArduinoJson version 6
+   DynamicJsonBuffer jsonBuffer;
+           ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.h:19:39: error: expected &#39;)&#39; before &#39;,&#39; token
+     BoodskapMessage(JsonBuffer&amp; buffer, long messageId, const char* domainKey, const char* assetId, const char* apiKey, const char* fwVersion, const char* devModel);
+                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:4:33: error: expected constructor, destructor, or type conversion before &#39;(&#39; token
+ BoodskapMessage::BoodskapMessage(JsonBuffer&amp; buffer, long messageId, const char* domainKey, const char* assetId, const char* apiKey, const char* fwVersion, const char* devModel):
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:27:33: error: expected constructor, destructor, or type conversion before &#39;(&#39; token
+ BoodskapMessage::BoodskapMessage(JsonBuffer&amp; buffer): BoodskapMessage(buffer, -1, &#34;&#34;, &#34;&#34;, &#34;&#34;, &#34;&#34;, &#34;&#34;)
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp: In static member function &#39;static bool BoodskapMessage::parse(BoodskapMessage&amp;, const char*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:63:21: error: &#39;jsonBuffer&#39; was not declared in this scope
+   DynamicJsonBuffer jsonBuffer;
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:66:14: error: &#39;ArduinoJson::JsonObject {aka class ArduinoJson6192_F1::ObjectRef}&#39; has no member named &#39;success&#39;
+   if (!root-&gt;success()) {
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:73:35: error: invalid initialization of non-const reference of type &#39;ArduinoJson::JsonObject&amp; {aka ArduinoJson6192_F1::ObjectRef&amp;}&#39; from an rvalue of type &#39;ArduinoJson6192_F1::ObjectRef&#39;
+   JsonObject&amp; h = (*root)[&#34;header&#34;];
+                                   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Document/JsonDocument.hpp:9:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Document/BasicJsonDocument.hpp:7,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Document/DynamicJsonDocument.hpp:7,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson.hpp:28,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson.h:9,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.h:4,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Object/MemberProxy.hpp:84:16: note:   after user-defined conversion: ArduinoJson6192_F1::MemberProxy&lt;TParent, TStringRef&gt;::operator T() const [with T = ArduinoJson6192_F1::ObjectRef; TObject = ArduinoJson6192_F1::ObjectRef; TStringRef = const char*]
+   FORCE_INLINE operator T() const {
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:74:33: error: invalid initialization of non-const reference of type &#39;ArduinoJson::JsonObject&amp; {aka ArduinoJson6192_F1::ObjectRef&amp;}&#39; from an rvalue of type &#39;ArduinoJson6192_F1::ObjectRef&#39;
+   JsonObject&amp; d = (*root)[&#34;data&#34;];
+                                 ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Document/JsonDocument.hpp:9:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Document/BasicJsonDocument.hpp:7,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Document/DynamicJsonDocument.hpp:7,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson.hpp:28,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson.h:9,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.h:4,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Object/MemberProxy.hpp:84:16: note:   after user-defined conversion: ArduinoJson6192_F1::MemberProxy&lt;TParent, TStringRef&gt;::operator T() const [with T = ArduinoJson6192_F1::ObjectRef; TObject = ArduinoJson6192_F1::ObjectRef; TStringRef = const char*]
+   FORCE_INLINE operator T() const {
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:91:27: error: invalid use of non-static member function
+     msg.data()[dataobj.key] = d[dataobj.key];
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.cpp:91:44: error: invalid use of non-static member function
+     msg.data()[dataobj.key] = d[dataobj.key];
+                                            ^
+Multiple libraries were found for &#34;ArduinoJson.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ThingESP
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CMMC_MQTT_Connector
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Antares_ESP8266_HTTP
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CoogleIOT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/BaleMessengerBot_Arduino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Antares_ESP8266_MQTT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ThingsIoT
+</pre>
+
+					
+					<h4>examples/SimpleMessageUsage</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/examples/SimpleMessageUsage/SimpleMessageUsage.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.h:17:11: error: JsonBuffer is a class from ArduinoJson 5. Please see https://arduinojson.org/upgrade to learn how to upgrade your program to ArduinoJson version 6
+     BoodskapMessage(JsonBuffer&amp; buffer);
+           ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/examples/SimpleMessageUsage/SimpleMessageUsage.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/src/BoodskapMessage.h:19:11: error: JsonBuffer is a class from ArduinoJson 5. Please see https://arduinojson.org/upgrade to learn how to upgrade your program to ArduinoJson version 6
+     BoodskapMessage(JsonBuffer&amp; buffer, long messageId, const char* domainKey, const char* assetId, const char* apiKey, const char* fwVersion, const char* devModel);
+           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Boodskap_Message_library/examples/SimpleMessageUsage/SimpleMessageUsage.ino:16:11: error: StaticJsonBuffer is a class from ArduinoJson 5. Please see https://arduinojson.org/upgrade to learn how to upgrade your program to ArduinoJson version 6
+   StaticJsonBuffer&lt;300&gt; buffer;
+           ^
+Multiple libraries were found for &#34;ArduinoJson.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ThingsIoT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CMMC_MQTT_Connector
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ThingESP
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Antares_ESP8266_MQTT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Antares_ESP8266_HTTP
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CoogleIOT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/BaleMessengerBot_Arduino
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

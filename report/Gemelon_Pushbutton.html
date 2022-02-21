@@ -1,0 +1,1281 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>Gemelon Pushbutton - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>Gemelon Pushbutton</h2>
+				<p>
+					Version: <b>1.1.3</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/gemelon-pushbutton/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>CallBack</pre></th>
+						
+						<th><pre>TwoButtons</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+							<td>No ⚠️</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+							<td>No ⚠️</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+							<td>No ⚠️</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+							<td>No ⚠️</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 556 bytes (1%) of program storage space. Maximum is 32256 bytes.
+Global variables use 29 bytes (1%) of dynamic memory, leaving 2019 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+
+					
+					<h4>examples/CallBack</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:3:12: error: no matching function for call to &#39;Pushbutton::Pushbutton()&#39;
+ Pushbutton Button1;
+            ^~~~~~~
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:1:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:154:3: note: candidate: Pushbutton::Pushbutton(uint8_t, uint8_t, uint8_t)
+   Pushbutton(uint8_t pin, uint8_t pullUp = PULL_UP_ENABLED,
+   ^~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:154:3: note:   candidate expects 3 arguments, 0 provided
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note: candidate: constexpr Pushbutton::Pushbutton(const Pushbutton&amp;)
+ class Pushbutton : public PushbuttonBase
+       ^~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note:   candidate expects 1 argument, 0 provided
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note: candidate: constexpr Pushbutton::Pushbutton(Pushbutton&amp;&amp;)
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note:   candidate expects 1 argument, 0 provided
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino: In function &#39;void setup()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:12:11: error: &#39;class Pushbutton&#39; has no member named &#39;begin&#39;
+   Button1.begin(8, PullDown, &amp;btn1Callback, 1000, 500);
+           ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:12:20: error: &#39;PullDown&#39; was not declared in this scope
+   Button1.begin(8, PullDown, &amp;btn1Callback, 1000, 500);
+                    ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino: In function &#39;void loop()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:20:13: error: &#39;class Pushbutton&#39; has no member named &#39;update&#39;
+     Button1.update();
+             ^~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino: In function &#39;void btn1Callback(byte)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:25:10: error: &#39;ButtonStateNothing&#39; was not declared in this scope
+     case ButtonStateNothing:
+          ^~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:25:10: note: suggested alternative: &#39;ButtonState&#39;
+     case ButtonStateNothing:
+          ^~~~~~~~~~~~~~~~~~
+          ButtonState
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:29:10: error: &#39;ButtonStateTouch&#39; was not declared in this scope
+     case ButtonStateTouch:
+          ^~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:29:10: note: suggested alternative: &#39;ButtonState&#39;
+     case ButtonStateTouch:
+          ^~~~~~~~~~~~~~~~
+          ButtonState
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:33:10: error: &#39;ButtonStateHold&#39; was not declared in this scope
+     case ButtonStateHold:
+          ^~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:33:10: note: suggested alternative: &#39;ButtonState&#39;
+     case ButtonStateHold:
+          ^~~~~~~~~~~~~~~
+          ButtonState
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:37:10: error: &#39;ButtonStateInterval&#39; was not declared in this scope
+     case ButtonStateInterval:
+          ^~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:37:10: note: suggested alternative: &#39;ButtonState&#39;
+     case ButtonStateInterval:
+          ^~~~~~~~~~~~~~~~~~~
+          ButtonState
+Multiple libraries were found for &#34;Pushbutton.h&#34;
+  Used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Pushbutton
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AStar32U4
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ZumoShield
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Balboa32U4
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/wpi-32u4-library
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Romi32U4
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton
+</pre>
+					
+					<h4>examples/TwoButtons</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:3:12: error: no matching function for call to &#39;Pushbutton::Pushbutton()&#39;
+ Pushbutton button1;
+            ^~~~~~~
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:1:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:154:3: note: candidate: Pushbutton::Pushbutton(uint8_t, uint8_t, uint8_t)
+   Pushbutton(uint8_t pin, uint8_t pullUp = PULL_UP_ENABLED,
+   ^~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:154:3: note:   candidate expects 3 arguments, 0 provided
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note: candidate: constexpr Pushbutton::Pushbutton(const Pushbutton&amp;)
+ class Pushbutton : public PushbuttonBase
+       ^~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note:   candidate expects 1 argument, 0 provided
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note: candidate: constexpr Pushbutton::Pushbutton(Pushbutton&amp;&amp;)
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note:   candidate expects 1 argument, 0 provided
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:4:12: error: no matching function for call to &#39;Pushbutton::Pushbutton()&#39;
+ Pushbutton button2;
+            ^~~~~~~
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:1:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:154:3: note: candidate: Pushbutton::Pushbutton(uint8_t, uint8_t, uint8_t)
+   Pushbutton(uint8_t pin, uint8_t pullUp = PULL_UP_ENABLED,
+   ^~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:154:3: note:   candidate expects 3 arguments, 0 provided
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note: candidate: constexpr Pushbutton::Pushbutton(const Pushbutton&amp;)
+ class Pushbutton : public PushbuttonBase
+       ^~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note:   candidate expects 1 argument, 0 provided
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note: candidate: constexpr Pushbutton::Pushbutton(Pushbutton&amp;&amp;)
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note:   candidate expects 1 argument, 0 provided
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino: In function &#39;void setup()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:12:11: error: &#39;class Pushbutton&#39; has no member named &#39;begin&#39;
+   button1.begin(8, PullDown, 1000, 500);
+           ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:12:20: error: &#39;PullDown&#39; was not declared in this scope
+   button1.begin(8, PullDown, 1000, 500);
+                    ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:13:11: error: &#39;class Pushbutton&#39; has no member named &#39;begin&#39;
+   button2.begin(9, PullDown, 1000, 500);
+           ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino: In function &#39;void loop()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:21:26: error: &#39;class Pushbutton&#39; has no member named &#39;update&#39;
+   ButtonState1 = button1.update();
+                          ^~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:22:26: error: &#39;class Pushbutton&#39; has no member named &#39;update&#39;
+   ButtonState2 = button2.update();
+                          ^~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:25:10: error: &#39;ButtonStateNothing&#39; was not declared in this scope
+     case ButtonStateNothing:
+          ^~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:25:10: note: suggested alternative: &#39;ButtonState2&#39;
+     case ButtonStateNothing:
+          ^~~~~~~~~~~~~~~~~~
+          ButtonState2
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:30:10: error: &#39;ButtonStateTouch&#39; was not declared in this scope
+     case ButtonStateTouch:
+          ^~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:30:10: note: suggested alternative: &#39;ButtonState2&#39;
+     case ButtonStateTouch:
+          ^~~~~~~~~~~~~~~~
+          ButtonState2
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:34:10: error: &#39;ButtonStateHold&#39; was not declared in this scope
+     case ButtonStateHold:
+          ^~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:34:10: note: suggested alternative: &#39;ButtonState2&#39;
+     case ButtonStateHold:
+          ^~~~~~~~~~~~~~~
+          ButtonState2
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:38:10: error: &#39;ButtonStateInterval&#39; was not declared in this scope
+     case ButtonStateInterval:
+          ^~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:38:10: note: suggested alternative: &#39;ButtonState2&#39;
+     case ButtonStateInterval:
+          ^~~~~~~~~~~~~~~~~~~
+          ButtonState2
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:44:10: error: &#39;ButtonStateNothing&#39; was not declared in this scope
+     case ButtonStateNothing:
+          ^~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:44:10: note: suggested alternative: &#39;ButtonState2&#39;
+     case ButtonStateNothing:
+          ^~~~~~~~~~~~~~~~~~
+          ButtonState2
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:49:10: error: &#39;ButtonStateTouch&#39; was not declared in this scope
+     case ButtonStateTouch:
+          ^~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:49:10: note: suggested alternative: &#39;ButtonState2&#39;
+     case ButtonStateTouch:
+          ^~~~~~~~~~~~~~~~
+          ButtonState2
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:53:10: error: &#39;ButtonStateHold&#39; was not declared in this scope
+     case ButtonStateHold:
+          ^~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:53:10: note: suggested alternative: &#39;ButtonState2&#39;
+     case ButtonStateHold:
+          ^~~~~~~~~~~~~~~
+          ButtonState2
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:57:10: error: &#39;ButtonStateInterval&#39; was not declared in this scope
+     case ButtonStateInterval:
+          ^~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:57:10: note: suggested alternative: &#39;ButtonState2&#39;
+     case ButtonStateInterval:
+          ^~~~~~~~~~~~~~~~~~~
+          ButtonState2
+Multiple libraries were found for &#34;Pushbutton.h&#34;
+  Used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Pushbutton
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Romi32U4
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ZumoShield
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Balboa32U4
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/wpi-32u4-library
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AStar32U4
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library Gemelon_Pushbutton claims to run on avr architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+Sketch uses 78818 bytes (0%) of program storage space. Maximum is 16777216 bytes.
+Global variables use 43484 bytes (16%) of dynamic memory, leaving 226852 bytes for local variables. Maximum is 270336 bytes.
+</pre>
+
+					
+					<h4>examples/CallBack</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:3:12: error: no matching function for call to &#39;Pushbutton::Pushbutton()&#39;
+ Pushbutton Button1;
+            ^~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:154:3: note: candidate: Pushbutton::Pushbutton(uint8_t, uint8_t, uint8_t)
+   Pushbutton(uint8_t pin, uint8_t pullUp = PULL_UP_ENABLED,
+   ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:154:3: note:   candidate expects 3 arguments, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note: candidate: constexpr Pushbutton::Pushbutton(const Pushbutton&amp;)
+ class Pushbutton : public PushbuttonBase
+       ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note: candidate: constexpr Pushbutton::Pushbutton(Pushbutton&amp;&amp;)
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:12:11: error: &#39;class Pushbutton&#39; has no member named &#39;begin&#39;
+   Button1.begin(8, PullDown, &amp;btn1Callback, 1000, 500);
+           ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:20:13: error: &#39;class Pushbutton&#39; has no member named &#39;update&#39;
+     Button1.update();
+             ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino: In function &#39;void btn1Callback(byte)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:25:10: error: &#39;ButtonStateNothing&#39; was not declared in this scope
+     case ButtonStateNothing:
+          ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:25:10: note: suggested alternative: &#39;ButtonState&#39;
+     case ButtonStateNothing:
+          ^~~~~~~~~~~~~~~~~~
+          ButtonState
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:29:10: error: &#39;ButtonStateTouch&#39; was not declared in this scope
+     case ButtonStateTouch:
+          ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:29:10: note: suggested alternative: &#39;ButtonState&#39;
+     case ButtonStateTouch:
+          ^~~~~~~~~~~~~~~~
+          ButtonState
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:33:10: error: &#39;ButtonStateHold&#39; was not declared in this scope
+     case ButtonStateHold:
+          ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:33:10: note: suggested alternative: &#39;ButtonState&#39;
+     case ButtonStateHold:
+          ^~~~~~~~~~~~~~~
+          ButtonState
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:37:10: error: &#39;ButtonStateInterval&#39; was not declared in this scope
+     case ButtonStateInterval:
+          ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:37:10: note: suggested alternative: &#39;ButtonState&#39;
+     case ButtonStateInterval:
+          ^~~~~~~~~~~~~~~~~~~
+          ButtonState
+Multiple libraries were found for &#34;Pushbutton.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wpi-32u4-library
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Balboa32U4
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Romi32U4
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ZumoShield
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AStar32U4
+</pre>
+					
+					<h4>examples/TwoButtons</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:3:12: error: no matching function for call to &#39;Pushbutton::Pushbutton()&#39;
+ Pushbutton button1;
+            ^~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:154:3: note: candidate: Pushbutton::Pushbutton(uint8_t, uint8_t, uint8_t)
+   Pushbutton(uint8_t pin, uint8_t pullUp = PULL_UP_ENABLED,
+   ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:154:3: note:   candidate expects 3 arguments, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note: candidate: constexpr Pushbutton::Pushbutton(const Pushbutton&amp;)
+ class Pushbutton : public PushbuttonBase
+       ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note: candidate: constexpr Pushbutton::Pushbutton(Pushbutton&amp;&amp;)
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:4:12: error: no matching function for call to &#39;Pushbutton::Pushbutton()&#39;
+ Pushbutton button2;
+            ^~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:154:3: note: candidate: Pushbutton::Pushbutton(uint8_t, uint8_t, uint8_t)
+   Pushbutton(uint8_t pin, uint8_t pullUp = PULL_UP_ENABLED,
+   ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:154:3: note:   candidate expects 3 arguments, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note: candidate: constexpr Pushbutton::Pushbutton(const Pushbutton&amp;)
+ class Pushbutton : public PushbuttonBase
+       ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note: candidate: constexpr Pushbutton::Pushbutton(Pushbutton&amp;&amp;)
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:12:11: error: &#39;class Pushbutton&#39; has no member named &#39;begin&#39;
+   button1.begin(8, PullDown, 1000, 500);
+           ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:13:11: error: &#39;class Pushbutton&#39; has no member named &#39;begin&#39;
+   button2.begin(9, PullDown, 1000, 500);
+           ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:21:26: error: &#39;class Pushbutton&#39; has no member named &#39;update&#39;
+   ButtonState1 = button1.update();
+                          ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:22:26: error: &#39;class Pushbutton&#39; has no member named &#39;update&#39;
+   ButtonState2 = button2.update();
+                          ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:25:10: error: &#39;ButtonStateNothing&#39; was not declared in this scope
+     case ButtonStateNothing:
+          ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:25:10: note: suggested alternative: &#39;ButtonState2&#39;
+     case ButtonStateNothing:
+          ^~~~~~~~~~~~~~~~~~
+          ButtonState2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:30:10: error: &#39;ButtonStateTouch&#39; was not declared in this scope
+     case ButtonStateTouch:
+          ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:30:10: note: suggested alternative: &#39;ButtonState2&#39;
+     case ButtonStateTouch:
+          ^~~~~~~~~~~~~~~~
+          ButtonState2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:34:10: error: &#39;ButtonStateHold&#39; was not declared in this scope
+     case ButtonStateHold:
+          ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:34:10: note: suggested alternative: &#39;ButtonState2&#39;
+     case ButtonStateHold:
+          ^~~~~~~~~~~~~~~
+          ButtonState2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:38:10: error: &#39;ButtonStateInterval&#39; was not declared in this scope
+     case ButtonStateInterval:
+          ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:38:10: note: suggested alternative: &#39;ButtonState2&#39;
+     case ButtonStateInterval:
+          ^~~~~~~~~~~~~~~~~~~
+          ButtonState2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:44:10: error: &#39;ButtonStateNothing&#39; was not declared in this scope
+     case ButtonStateNothing:
+          ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:44:10: note: suggested alternative: &#39;ButtonState2&#39;
+     case ButtonStateNothing:
+          ^~~~~~~~~~~~~~~~~~
+          ButtonState2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:49:10: error: &#39;ButtonStateTouch&#39; was not declared in this scope
+     case ButtonStateTouch:
+          ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:49:10: note: suggested alternative: &#39;ButtonState2&#39;
+     case ButtonStateTouch:
+          ^~~~~~~~~~~~~~~~
+          ButtonState2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:53:10: error: &#39;ButtonStateHold&#39; was not declared in this scope
+     case ButtonStateHold:
+          ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:53:10: note: suggested alternative: &#39;ButtonState2&#39;
+     case ButtonStateHold:
+          ^~~~~~~~~~~~~~~
+          ButtonState2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:57:10: error: &#39;ButtonStateInterval&#39; was not declared in this scope
+     case ButtonStateInterval:
+          ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:57:10: note: suggested alternative: &#39;ButtonState2&#39;
+     case ButtonStateInterval:
+          ^~~~~~~~~~~~~~~~~~~
+          ButtonState2
+Multiple libraries were found for &#34;Pushbutton.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ZumoShield
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Romi32U4
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Balboa32U4
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AStar32U4
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wpi-32u4-library
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library Gemelon_Pushbutton claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+Sketch uses 914 bytes (1%) of program storage space. Maximum is 49152 bytes.
+Global variables use 42 bytes (0%) of dynamic memory, leaving 6102 bytes for local variables. Maximum is 6144 bytes.
+</pre>
+
+					
+					<h4>examples/CallBack</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:3:12: error: no matching function for call to &#39;Pushbutton::Pushbutton()&#39;
+ Pushbutton Button1;
+            ^~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:154:3: note: candidate: Pushbutton::Pushbutton(uint8_t, uint8_t, uint8_t)
+   Pushbutton(uint8_t pin, uint8_t pullUp = PULL_UP_ENABLED,
+   ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:154:3: note:   candidate expects 3 arguments, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note: candidate: constexpr Pushbutton::Pushbutton(const Pushbutton&amp;)
+ class Pushbutton : public PushbuttonBase
+       ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note: candidate: constexpr Pushbutton::Pushbutton(Pushbutton&amp;&amp;)
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:12:11: error: &#39;class Pushbutton&#39; has no member named &#39;begin&#39;
+   Button1.begin(8, PullDown, &amp;btn1Callback, 1000, 500);
+           ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:12:20: error: &#39;PullDown&#39; was not declared in this scope
+   Button1.begin(8, PullDown, &amp;btn1Callback, 1000, 500);
+                    ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:20:13: error: &#39;class Pushbutton&#39; has no member named &#39;update&#39;
+     Button1.update();
+             ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino: In function &#39;void btn1Callback(byte)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:25:10: error: &#39;ButtonStateNothing&#39; was not declared in this scope
+     case ButtonStateNothing:
+          ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:25:10: note: suggested alternative: &#39;ButtonState&#39;
+     case ButtonStateNothing:
+          ^~~~~~~~~~~~~~~~~~
+          ButtonState
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:29:10: error: &#39;ButtonStateTouch&#39; was not declared in this scope
+     case ButtonStateTouch:
+          ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:29:10: note: suggested alternative: &#39;ButtonState&#39;
+     case ButtonStateTouch:
+          ^~~~~~~~~~~~~~~~
+          ButtonState
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:33:10: error: &#39;ButtonStateHold&#39; was not declared in this scope
+     case ButtonStateHold:
+          ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:33:10: note: suggested alternative: &#39;ButtonState&#39;
+     case ButtonStateHold:
+          ^~~~~~~~~~~~~~~
+          ButtonState
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:37:10: error: &#39;ButtonStateInterval&#39; was not declared in this scope
+     case ButtonStateInterval:
+          ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:37:10: note: suggested alternative: &#39;ButtonState&#39;
+     case ButtonStateInterval:
+          ^~~~~~~~~~~~~~~~~~~
+          ButtonState
+Multiple libraries were found for &#34;Pushbutton.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ZumoShield
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Balboa32U4
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AStar32U4
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Romi32U4
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wpi-32u4-library
+</pre>
+					
+					<h4>examples/TwoButtons</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:3:12: error: no matching function for call to &#39;Pushbutton::Pushbutton()&#39;
+ Pushbutton button1;
+            ^~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:154:3: note: candidate: Pushbutton::Pushbutton(uint8_t, uint8_t, uint8_t)
+   Pushbutton(uint8_t pin, uint8_t pullUp = PULL_UP_ENABLED,
+   ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:154:3: note:   candidate expects 3 arguments, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note: candidate: constexpr Pushbutton::Pushbutton(const Pushbutton&amp;)
+ class Pushbutton : public PushbuttonBase
+       ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note: candidate: constexpr Pushbutton::Pushbutton(Pushbutton&amp;&amp;)
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:4:12: error: no matching function for call to &#39;Pushbutton::Pushbutton()&#39;
+ Pushbutton button2;
+            ^~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:154:3: note: candidate: Pushbutton::Pushbutton(uint8_t, uint8_t, uint8_t)
+   Pushbutton(uint8_t pin, uint8_t pullUp = PULL_UP_ENABLED,
+   ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:154:3: note:   candidate expects 3 arguments, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note: candidate: constexpr Pushbutton::Pushbutton(const Pushbutton&amp;)
+ class Pushbutton : public PushbuttonBase
+       ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note: candidate: constexpr Pushbutton::Pushbutton(Pushbutton&amp;&amp;)
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:12:11: error: &#39;class Pushbutton&#39; has no member named &#39;begin&#39;
+   button1.begin(8, PullDown, 1000, 500);
+           ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:12:20: error: &#39;PullDown&#39; was not declared in this scope
+   button1.begin(8, PullDown, 1000, 500);
+                    ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:13:11: error: &#39;class Pushbutton&#39; has no member named &#39;begin&#39;
+   button2.begin(9, PullDown, 1000, 500);
+           ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:21:26: error: &#39;class Pushbutton&#39; has no member named &#39;update&#39;
+   ButtonState1 = button1.update();
+                          ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:22:26: error: &#39;class Pushbutton&#39; has no member named &#39;update&#39;
+   ButtonState2 = button2.update();
+                          ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:25:10: error: &#39;ButtonStateNothing&#39; was not declared in this scope
+     case ButtonStateNothing:
+          ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:25:10: note: suggested alternative: &#39;ButtonState2&#39;
+     case ButtonStateNothing:
+          ^~~~~~~~~~~~~~~~~~
+          ButtonState2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:30:10: error: &#39;ButtonStateTouch&#39; was not declared in this scope
+     case ButtonStateTouch:
+          ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:30:10: note: suggested alternative: &#39;ButtonState2&#39;
+     case ButtonStateTouch:
+          ^~~~~~~~~~~~~~~~
+          ButtonState2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:34:10: error: &#39;ButtonStateHold&#39; was not declared in this scope
+     case ButtonStateHold:
+          ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:34:10: note: suggested alternative: &#39;ButtonState2&#39;
+     case ButtonStateHold:
+          ^~~~~~~~~~~~~~~
+          ButtonState2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:38:10: error: &#39;ButtonStateInterval&#39; was not declared in this scope
+     case ButtonStateInterval:
+          ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:38:10: note: suggested alternative: &#39;ButtonState2&#39;
+     case ButtonStateInterval:
+          ^~~~~~~~~~~~~~~~~~~
+          ButtonState2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:44:10: error: &#39;ButtonStateNothing&#39; was not declared in this scope
+     case ButtonStateNothing:
+          ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:44:10: note: suggested alternative: &#39;ButtonState2&#39;
+     case ButtonStateNothing:
+          ^~~~~~~~~~~~~~~~~~
+          ButtonState2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:49:10: error: &#39;ButtonStateTouch&#39; was not declared in this scope
+     case ButtonStateTouch:
+          ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:49:10: note: suggested alternative: &#39;ButtonState2&#39;
+     case ButtonStateTouch:
+          ^~~~~~~~~~~~~~~~
+          ButtonState2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:53:10: error: &#39;ButtonStateHold&#39; was not declared in this scope
+     case ButtonStateHold:
+          ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:53:10: note: suggested alternative: &#39;ButtonState2&#39;
+     case ButtonStateHold:
+          ^~~~~~~~~~~~~~~
+          ButtonState2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:57:10: error: &#39;ButtonStateInterval&#39; was not declared in this scope
+     case ButtonStateInterval:
+          ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:57:10: note: suggested alternative: &#39;ButtonState2&#39;
+     case ButtonStateInterval:
+          ^~~~~~~~~~~~~~~~~~~
+          ButtonState2
+Multiple libraries were found for &#34;Pushbutton.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Balboa32U4
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Romi32U4
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AStar32U4
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wpi-32u4-library
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ZumoShield
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library Gemelon_Pushbutton claims to run on avr architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+Sketch uses 12228 bytes (4%) of program storage space. Maximum is 262144 bytes.
+Global variables use 3032 bytes (9%) of dynamic memory, leaving 29736 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+
+					
+					<h4>examples/CallBack</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:3:12: error: no matching function for call to &#39;Pushbutton::Pushbutton()&#39;
+ Pushbutton Button1;
+            ^~~~~~~
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:1:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:154:3: note: candidate: Pushbutton::Pushbutton(uint8_t, uint8_t, uint8_t)
+   Pushbutton(uint8_t pin, uint8_t pullUp = PULL_UP_ENABLED,
+   ^~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:154:3: note:   candidate expects 3 arguments, 0 provided
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note: candidate: constexpr Pushbutton::Pushbutton(const Pushbutton&amp;)
+ class Pushbutton : public PushbuttonBase
+       ^~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note:   candidate expects 1 argument, 0 provided
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note: candidate: constexpr Pushbutton::Pushbutton(Pushbutton&amp;&amp;)
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note:   candidate expects 1 argument, 0 provided
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino: In function &#39;void setup()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:12:11: error: &#39;class Pushbutton&#39; has no member named &#39;begin&#39;
+   Button1.begin(8, PullDown, &amp;btn1Callback, 1000, 500);
+           ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:12:20: error: &#39;PullDown&#39; was not declared in this scope
+   Button1.begin(8, PullDown, &amp;btn1Callback, 1000, 500);
+                    ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino: In function &#39;void loop()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:20:13: error: &#39;class Pushbutton&#39; has no member named &#39;update&#39;
+     Button1.update();
+             ^~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino: In function &#39;void btn1Callback(byte)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:25:10: error: &#39;ButtonStateNothing&#39; was not declared in this scope
+     case ButtonStateNothing:
+          ^~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:25:10: note: suggested alternative: &#39;ButtonState&#39;
+     case ButtonStateNothing:
+          ^~~~~~~~~~~~~~~~~~
+          ButtonState
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:29:10: error: &#39;ButtonStateTouch&#39; was not declared in this scope
+     case ButtonStateTouch:
+          ^~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:29:10: note: suggested alternative: &#39;ButtonState&#39;
+     case ButtonStateTouch:
+          ^~~~~~~~~~~~~~~~
+          ButtonState
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:33:10: error: &#39;ButtonStateHold&#39; was not declared in this scope
+     case ButtonStateHold:
+          ^~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:33:10: note: suggested alternative: &#39;ButtonState&#39;
+     case ButtonStateHold:
+          ^~~~~~~~~~~~~~~
+          ButtonState
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:37:10: error: &#39;ButtonStateInterval&#39; was not declared in this scope
+     case ButtonStateInterval:
+          ^~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:37:10: note: suggested alternative: &#39;ButtonState&#39;
+     case ButtonStateInterval:
+          ^~~~~~~~~~~~~~~~~~~
+          ButtonState
+Multiple libraries were found for &#34;Pushbutton.h&#34;
+  Used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Pushbutton
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AStar32U4
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/wpi-32u4-library
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ZumoShield
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Balboa32U4
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Romi32U4
+</pre>
+					
+					<h4>examples/TwoButtons</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:3:12: error: no matching function for call to &#39;Pushbutton::Pushbutton()&#39;
+ Pushbutton button1;
+            ^~~~~~~
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:1:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:154:3: note: candidate: Pushbutton::Pushbutton(uint8_t, uint8_t, uint8_t)
+   Pushbutton(uint8_t pin, uint8_t pullUp = PULL_UP_ENABLED,
+   ^~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:154:3: note:   candidate expects 3 arguments, 0 provided
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note: candidate: constexpr Pushbutton::Pushbutton(const Pushbutton&amp;)
+ class Pushbutton : public PushbuttonBase
+       ^~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note:   candidate expects 1 argument, 0 provided
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note: candidate: constexpr Pushbutton::Pushbutton(Pushbutton&amp;&amp;)
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note:   candidate expects 1 argument, 0 provided
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:4:12: error: no matching function for call to &#39;Pushbutton::Pushbutton()&#39;
+ Pushbutton button2;
+            ^~~~~~~
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:1:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:154:3: note: candidate: Pushbutton::Pushbutton(uint8_t, uint8_t, uint8_t)
+   Pushbutton(uint8_t pin, uint8_t pullUp = PULL_UP_ENABLED,
+   ^~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:154:3: note:   candidate expects 3 arguments, 0 provided
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note: candidate: constexpr Pushbutton::Pushbutton(const Pushbutton&amp;)
+ class Pushbutton : public PushbuttonBase
+       ^~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note:   candidate expects 1 argument, 0 provided
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note: candidate: constexpr Pushbutton::Pushbutton(Pushbutton&amp;&amp;)
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note:   candidate expects 1 argument, 0 provided
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino: In function &#39;void setup()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:12:11: error: &#39;class Pushbutton&#39; has no member named &#39;begin&#39;
+   button1.begin(8, PullDown, 1000, 500);
+           ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:12:20: error: &#39;PullDown&#39; was not declared in this scope
+   button1.begin(8, PullDown, 1000, 500);
+                    ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:13:11: error: &#39;class Pushbutton&#39; has no member named &#39;begin&#39;
+   button2.begin(9, PullDown, 1000, 500);
+           ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino: In function &#39;void loop()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:21:26: error: &#39;class Pushbutton&#39; has no member named &#39;update&#39;
+   ButtonState1 = button1.update();
+                          ^~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:22:26: error: &#39;class Pushbutton&#39; has no member named &#39;update&#39;
+   ButtonState2 = button2.update();
+                          ^~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:25:10: error: &#39;ButtonStateNothing&#39; was not declared in this scope
+     case ButtonStateNothing:
+          ^~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:25:10: note: suggested alternative: &#39;ButtonState2&#39;
+     case ButtonStateNothing:
+          ^~~~~~~~~~~~~~~~~~
+          ButtonState2
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:30:10: error: &#39;ButtonStateTouch&#39; was not declared in this scope
+     case ButtonStateTouch:
+          ^~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:30:10: note: suggested alternative: &#39;ButtonState2&#39;
+     case ButtonStateTouch:
+          ^~~~~~~~~~~~~~~~
+          ButtonState2
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:34:10: error: &#39;ButtonStateHold&#39; was not declared in this scope
+     case ButtonStateHold:
+          ^~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:34:10: note: suggested alternative: &#39;ButtonState2&#39;
+     case ButtonStateHold:
+          ^~~~~~~~~~~~~~~
+          ButtonState2
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:38:10: error: &#39;ButtonStateInterval&#39; was not declared in this scope
+     case ButtonStateInterval:
+          ^~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:38:10: note: suggested alternative: &#39;ButtonState2&#39;
+     case ButtonStateInterval:
+          ^~~~~~~~~~~~~~~~~~~
+          ButtonState2
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:44:10: error: &#39;ButtonStateNothing&#39; was not declared in this scope
+     case ButtonStateNothing:
+          ^~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:44:10: note: suggested alternative: &#39;ButtonState2&#39;
+     case ButtonStateNothing:
+          ^~~~~~~~~~~~~~~~~~
+          ButtonState2
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:49:10: error: &#39;ButtonStateTouch&#39; was not declared in this scope
+     case ButtonStateTouch:
+          ^~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:49:10: note: suggested alternative: &#39;ButtonState2&#39;
+     case ButtonStateTouch:
+          ^~~~~~~~~~~~~~~~
+          ButtonState2
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:53:10: error: &#39;ButtonStateHold&#39; was not declared in this scope
+     case ButtonStateHold:
+          ^~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:53:10: note: suggested alternative: &#39;ButtonState2&#39;
+     case ButtonStateHold:
+          ^~~~~~~~~~~~~~~
+          ButtonState2
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:57:10: error: &#39;ButtonStateInterval&#39; was not declared in this scope
+     case ButtonStateInterval:
+          ^~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:57:10: note: suggested alternative: &#39;ButtonState2&#39;
+     case ButtonStateInterval:
+          ^~~~~~~~~~~~~~~~~~~
+          ButtonState2
+Multiple libraries were found for &#34;Pushbutton.h&#34;
+  Used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Pushbutton
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/wpi-32u4-library
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Romi32U4
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Balboa32U4
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AStar32U4
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ZumoShield
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library Gemelon_Pushbutton claims to run on avr architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+Sketch uses 198486 bytes (15%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 13136 bytes (4%) of dynamic memory, leaving 314544 bytes for local variables. Maximum is 327680 bytes.
+</pre>
+
+					
+					<h4>examples/CallBack</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:3:12: error: no matching function for call to &#39;Pushbutton::Pushbutton()&#39;
+ Pushbutton Button1;
+            ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:154:3: note: candidate: Pushbutton::Pushbutton(uint8_t, uint8_t, uint8_t)
+   Pushbutton(uint8_t pin, uint8_t pullUp = PULL_UP_ENABLED,
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:154:3: note:   candidate expects 3 arguments, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note: candidate: constexpr Pushbutton::Pushbutton(const Pushbutton&amp;)
+ class Pushbutton : public PushbuttonBase
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note: candidate: constexpr Pushbutton::Pushbutton(Pushbutton&amp;&amp;)
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:12:11: error: &#39;class Pushbutton&#39; has no member named &#39;begin&#39;
+   Button1.begin(8, PullDown, &amp;btn1Callback, 1000, 500);
+           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:12:20: error: &#39;PullDown&#39; was not declared in this scope
+   Button1.begin(8, PullDown, &amp;btn1Callback, 1000, 500);
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:20:13: error: &#39;class Pushbutton&#39; has no member named &#39;update&#39;
+     Button1.update();
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino: In function &#39;void btn1Callback(byte)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:25:10: error: &#39;ButtonStateNothing&#39; was not declared in this scope
+     case ButtonStateNothing:
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:29:10: error: &#39;ButtonStateTouch&#39; was not declared in this scope
+     case ButtonStateTouch:
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:33:10: error: &#39;ButtonStateHold&#39; was not declared in this scope
+     case ButtonStateHold:
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/CallBack/CallBack.ino:37:10: error: &#39;ButtonStateInterval&#39; was not declared in this scope
+     case ButtonStateInterval:
+          ^
+Multiple libraries were found for &#34;Pushbutton.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wpi-32u4-library
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AStar32U4
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Balboa32U4
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Romi32U4
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ZumoShield
+</pre>
+					
+					<h4>examples/TwoButtons</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:3:12: error: no matching function for call to &#39;Pushbutton::Pushbutton()&#39;
+ Pushbutton button1;
+            ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:154:3: note: candidate: Pushbutton::Pushbutton(uint8_t, uint8_t, uint8_t)
+   Pushbutton(uint8_t pin, uint8_t pullUp = PULL_UP_ENABLED,
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:154:3: note:   candidate expects 3 arguments, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note: candidate: constexpr Pushbutton::Pushbutton(const Pushbutton&amp;)
+ class Pushbutton : public PushbuttonBase
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note: candidate: constexpr Pushbutton::Pushbutton(Pushbutton&amp;&amp;)
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:4:12: error: no matching function for call to &#39;Pushbutton::Pushbutton()&#39;
+ Pushbutton button2;
+            ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:154:3: note: candidate: Pushbutton::Pushbutton(uint8_t, uint8_t, uint8_t)
+   Pushbutton(uint8_t pin, uint8_t pullUp = PULL_UP_ENABLED,
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:154:3: note:   candidate expects 3 arguments, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note: candidate: constexpr Pushbutton::Pushbutton(const Pushbutton&amp;)
+ class Pushbutton : public PushbuttonBase
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note: candidate: constexpr Pushbutton::Pushbutton(Pushbutton&amp;&amp;)
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton/Pushbutton.h:137:7: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:12:11: error: &#39;class Pushbutton&#39; has no member named &#39;begin&#39;
+   button1.begin(8, PullDown, 1000, 500);
+           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:12:20: error: &#39;PullDown&#39; was not declared in this scope
+   button1.begin(8, PullDown, 1000, 500);
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:13:11: error: &#39;class Pushbutton&#39; has no member named &#39;begin&#39;
+   button2.begin(9, PullDown, 1000, 500);
+           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:21:26: error: &#39;class Pushbutton&#39; has no member named &#39;update&#39;
+   ButtonState1 = button1.update();
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:22:26: error: &#39;class Pushbutton&#39; has no member named &#39;update&#39;
+   ButtonState2 = button2.update();
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:25:10: error: &#39;ButtonStateNothing&#39; was not declared in this scope
+     case ButtonStateNothing:
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:30:10: error: &#39;ButtonStateTouch&#39; was not declared in this scope
+     case ButtonStateTouch:
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:34:10: error: &#39;ButtonStateHold&#39; was not declared in this scope
+     case ButtonStateHold:
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:38:10: error: &#39;ButtonStateInterval&#39; was not declared in this scope
+     case ButtonStateInterval:
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:44:10: error: &#39;ButtonStateNothing&#39; was not declared in this scope
+     case ButtonStateNothing:
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:49:10: error: &#39;ButtonStateTouch&#39; was not declared in this scope
+     case ButtonStateTouch:
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:53:10: error: &#39;ButtonStateHold&#39; was not declared in this scope
+     case ButtonStateHold:
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton/examples/TwoButtons/TwoButtons.ino:57:10: error: &#39;ButtonStateInterval&#39; was not declared in this scope
+     case ButtonStateInterval:
+          ^
+Multiple libraries were found for &#34;Pushbutton.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pushbutton
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Romi32U4
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AStar32U4
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Gemelon_Pushbutton
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wpi-32u4-library
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ZumoShield
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Balboa32U4
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

@@ -1,0 +1,809 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>sensirion-sps - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>sensirion-sps</h2>
+				<p>
+					Version: <b>1.0.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/sensirion-sps/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>sps30</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 1332 bytes (4%) of program storage space. Maximum is 32256 bytes.
+Global variables use 184 bytes (8%) of dynamic memory, leaving 1864 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+
+					
+					<h4>examples/sps30</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 5630 bytes (17%) of program storage space. Maximum is 32256 bytes.
+Global variables use 600 bytes (29%) of dynamic memory, leaving 1448 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/SingletonPtr.h:24:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/drivers/include/drivers/I2C.h:26,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/libraries/Wire/Wire.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/sensirion_hw_i2c_implementation.cpp:78:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:902:1: error: template with C linkage
+ template&lt;typename T&gt; T core_util_atomic_load(const volatile T *valuePtr) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:904:1: error: template with C linkage
+ template&lt;typename T&gt; T core_util_atomic_load(const T *valuePtr) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:906:1: error: template with C linkage
+ template&lt;typename T&gt; void core_util_atomic_store(volatile T *valuePtr, mstd::type_identity_t&lt;T&gt; desiredValue) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:908:1: error: template with C linkage
+ template&lt;typename T&gt; void core_util_atomic_store(T *valuePtr, mstd::type_identity_t&lt;T&gt; desiredValue) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:910:1: error: template with C linkage
+ template&lt;typename T&gt; T core_util_atomic_exchange(volatile T *ptr, mstd::type_identity_t&lt;T&gt; desiredValue) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:912:1: error: template with C linkage
+ template&lt;typename T&gt; bool core_util_atomic_compare_exchange_strong(volatile T *ptr, mstd::type_identity_t&lt;T&gt; *expectedCurrentValue, mstd::type_identity_t&lt;T&gt; desiredValue) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:914:1: error: template with C linkage
+ template&lt;typename T&gt; bool core_util_atomic_compare_exchange_weak(volatile T *ptr, mstd::type_identity_t&lt;T&gt; *expectedCurrentValue, mstd::type_identity_t&lt;T&gt; desiredValue) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:916:1: error: template with C linkage
+ template&lt;typename T&gt; T core_util_atomic_fetch_add(volatile T *valuePtr, mstd::type_identity_t&lt;T&gt; arg) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:918:1: error: template with C linkage
+ template&lt;typename T&gt; T core_util_atomic_fetch_sub(volatile T *valuePtr, mstd::type_identity_t&lt;T&gt; arg) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:920:1: error: template with C linkage
+ template&lt;typename T&gt; T core_util_atomic_fetch_and(volatile T *valuePtr, mstd::type_identity_t&lt;T&gt; arg) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:922:1: error: template with C linkage
+ template&lt;typename T&gt; T core_util_atomic_fetch_or(volatile T *valuePtr, mstd::type_identity_t&lt;T&gt; arg) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:924:1: error: template with C linkage
+ template&lt;typename T&gt; T core_util_atomic_fetch_xor(volatile T *valuePtr, mstd::type_identity_t&lt;T&gt; arg) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:927:1: error: template with C linkage
+ template&lt;typename T&gt; T core_util_atomic_load_explicit(const volatile T *valuePtr, mbed_memory_order order) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:929:1: error: template with C linkage
+ template&lt;typename T&gt; T core_util_atomic_load_explicit(const T *valuePtr, mbed_memory_order order) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:931:1: error: template with C linkage
+ template&lt;typename T&gt; void core_util_atomic_store_explicit(volatile T *valuePtr, mstd::type_identity_t&lt;T&gt; desiredValue, mbed_memory_order order) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:933:1: error: template with C linkage
+ template&lt;typename T&gt; void core_util_atomic_store_explicit(T *valuePtr, mstd::type_identity_t&lt;T&gt; desiredValue, mbed_memory_order order) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:935:1: error: template with C linkage
+ template&lt;typename T&gt; T core_util_atomic_exchange_explicit(volatile T *ptr, mstd::type_identity_t&lt;T&gt; desiredValue, mbed_memory_order order) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:937:1: error: template with C linkage
+ template&lt;typename T&gt; bool core_util_atomic_compare_exchange_strong_explicit(volatile T *ptr, mstd::type_identity_t&lt;T&gt; *expectedCurrentValue, mstd::type_identity_t&lt;T&gt; desiredValue, mbed_memory_order success, mbed_memory_order failure) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:939:1: error: template with C linkage
+ template&lt;typename T&gt; bool core_util_atomic_compare_exchange_weak_explicit(volatile T *ptr, mstd::type_identity_t&lt;T&gt; *expectedCurrentValue, mstd::type_identity_t&lt;T&gt; desiredValue, mbed_memory_order success, mbed_memory_order failure) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:941:1: error: template with C linkage
+ template&lt;typename T&gt; T core_util_atomic_fetch_add_explicit(volatile T *valuePtr, mstd::type_identity_t&lt;T&gt; arg, mbed_memory_order order) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:943:1: error: template with C linkage
+ template&lt;typename T&gt; T core_util_atomic_fetch_sub_explicit(volatile T *valuePtr, mstd::type_identity_t&lt;T&gt; arg, mbed_memory_order order) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:945:1: error: template with C linkage
+ template&lt;typename T&gt; T core_util_atomic_fetch_and_explicit(volatile T *valuePtr, mstd::type_identity_t&lt;T&gt; arg, mbed_memory_order order) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:947:1: error: template with C linkage
+ template&lt;typename T&gt; T core_util_atomic_fetch_or_explicit(volatile T *valuePtr, mstd::type_identity_t&lt;T&gt; arg, mbed_memory_order order) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:949:1: error: template with C linkage
+ template&lt;typename T&gt; T core_util_atomic_fetch_xor_explicit(volatile T *valuePtr, mstd::type_identity_t&lt;T&gt; arg, mbed_memory_order order) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:952:1: error: template with C linkage
+ template&lt;typename T&gt; inline T *core_util_atomic_load(T *const volatile *valuePtr) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:954:1: error: template with C linkage
+ template&lt;typename T&gt; inline T *core_util_atomic_load(T *const *valuePtr) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:956:1: error: template with C linkage
+ template&lt;typename T&gt; inline void core_util_atomic_store(T *volatile *valuePtr, mstd::type_identity_t&lt;T&gt; *desiredValue) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:958:1: error: template with C linkage
+ template&lt;typename T&gt; inline void core_util_atomic_store(T **valuePtr, mstd::type_identity_t&lt;T&gt; *desiredValue) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbe</pre>
+
+					
+					<h4>examples/sps30</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/SingletonPtr.h:24:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/drivers/include/drivers/I2C.h:26,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/libraries/Wire/Wire.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/sensirion_hw_i2c_implementation.cpp:78:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:902:1: error: template with C linkage
+ template&lt;typename T&gt; T core_util_atomic_load(const volatile T *valuePtr) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:904:1: error: template with C linkage
+ template&lt;typename T&gt; T core_util_atomic_load(const T *valuePtr) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:906:1: error: template with C linkage
+ template&lt;typename T&gt; void core_util_atomic_store(volatile T *valuePtr, mstd::type_identity_t&lt;T&gt; desiredValue) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:908:1: error: template with C linkage
+ template&lt;typename T&gt; void core_util_atomic_store(T *valuePtr, mstd::type_identity_t&lt;T&gt; desiredValue) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:910:1: error: template with C linkage
+ template&lt;typename T&gt; T core_util_atomic_exchange(volatile T *ptr, mstd::type_identity_t&lt;T&gt; desiredValue) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:912:1: error: template with C linkage
+ template&lt;typename T&gt; bool core_util_atomic_compare_exchange_strong(volatile T *ptr, mstd::type_identity_t&lt;T&gt; *expectedCurrentValue, mstd::type_identity_t&lt;T&gt; desiredValue) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:914:1: error: template with C linkage
+ template&lt;typename T&gt; bool core_util_atomic_compare_exchange_weak(volatile T *ptr, mstd::type_identity_t&lt;T&gt; *expectedCurrentValue, mstd::type_identity_t&lt;T&gt; desiredValue) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:916:1: error: template with C linkage
+ template&lt;typename T&gt; T core_util_atomic_fetch_add(volatile T *valuePtr, mstd::type_identity_t&lt;T&gt; arg) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:918:1: error: template with C linkage
+ template&lt;typename T&gt; T core_util_atomic_fetch_sub(volatile T *valuePtr, mstd::type_identity_t&lt;T&gt; arg) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:920:1: error: template with C linkage
+ template&lt;typename T&gt; T core_util_atomic_fetch_and(volatile T *valuePtr, mstd::type_identity_t&lt;T&gt; arg) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:922:1: error: template with C linkage
+ template&lt;typename T&gt; T core_util_atomic_fetch_or(volatile T *valuePtr, mstd::type_identity_t&lt;T&gt; arg) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:924:1: error: template with C linkage
+ template&lt;typename T&gt; T core_util_atomic_fetch_xor(volatile T *valuePtr, mstd::type_identity_t&lt;T&gt; arg) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:927:1: error: template with C linkage
+ template&lt;typename T&gt; T core_util_atomic_load_explicit(const volatile T *valuePtr, mbed_memory_order order) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:929:1: error: template with C linkage
+ template&lt;typename T&gt; T core_util_atomic_load_explicit(const T *valuePtr, mbed_memory_order order) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:931:1: error: template with C linkage
+ template&lt;typename T&gt; void core_util_atomic_store_explicit(volatile T *valuePtr, mstd::type_identity_t&lt;T&gt; desiredValue, mbed_memory_order order) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:933:1: error: template with C linkage
+ template&lt;typename T&gt; void core_util_atomic_store_explicit(T *valuePtr, mstd::type_identity_t&lt;T&gt; desiredValue, mbed_memory_order order) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:935:1: error: template with C linkage
+ template&lt;typename T&gt; T core_util_atomic_exchange_explicit(volatile T *ptr, mstd::type_identity_t&lt;T&gt; desiredValue, mbed_memory_order order) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:937:1: error: template with C linkage
+ template&lt;typename T&gt; bool core_util_atomic_compare_exchange_strong_explicit(volatile T *ptr, mstd::type_identity_t&lt;T&gt; *expectedCurrentValue, mstd::type_identity_t&lt;T&gt; desiredValue, mbed_memory_order success, mbed_memory_order failure) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:939:1: error: template with C linkage
+ template&lt;typename T&gt; bool core_util_atomic_compare_exchange_weak_explicit(volatile T *ptr, mstd::type_identity_t&lt;T&gt; *expectedCurrentValue, mstd::type_identity_t&lt;T&gt; desiredValue, mbed_memory_order success, mbed_memory_order failure) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:941:1: error: template with C linkage
+ template&lt;typename T&gt; T core_util_atomic_fetch_add_explicit(volatile T *valuePtr, mstd::type_identity_t&lt;T&gt; arg, mbed_memory_order order) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:943:1: error: template with C linkage
+ template&lt;typename T&gt; T core_util_atomic_fetch_sub_explicit(volatile T *valuePtr, mstd::type_identity_t&lt;T&gt; arg, mbed_memory_order order) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:945:1: error: template with C linkage
+ template&lt;typename T&gt; T core_util_atomic_fetch_and_explicit(volatile T *valuePtr, mstd::type_identity_t&lt;T&gt; arg, mbed_memory_order order) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:947:1: error: template with C linkage
+ template&lt;typename T&gt; T core_util_atomic_fetch_or_explicit(volatile T *valuePtr, mstd::type_identity_t&lt;T&gt; arg, mbed_memory_order order) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:949:1: error: template with C linkage
+ template&lt;typename T&gt; T core_util_atomic_fetch_xor_explicit(volatile T *valuePtr, mstd::type_identity_t&lt;T&gt; arg, mbed_memory_order order) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:952:1: error: template with C linkage
+ template&lt;typename T&gt; inline T *core_util_atomic_load(T *const volatile *valuePtr) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:954:1: error: template with C linkage
+ template&lt;typename T&gt; inline T *core_util_atomic_load(T *const *valuePtr) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:956:1: error: template with C linkage
+ template&lt;typename T&gt; inline void core_util_atomic_store(T *volatile *valuePtr, mstd::type_identity_t&lt;T&gt; *desiredValue) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/mbed_atomic.h:958:1: error: template with C linkage
+ template&lt;typename T&gt; inline void core_util_atomic_store(T **valuePtr, mstd::type_identity_t&lt;T&gt; *desiredValue) noexcept;
+ ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbe</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:64:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp: In member function &#39;void I2C::begin()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:102:7: error: &#39;TWSR&#39; was not declared in this scope
+   cbi(TWSR, TWPS0);
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:102:3: note: in expansion of macro &#39;cbi&#39;
+   cbi(TWSR, TWPS0);
+   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:102:7: note: suggested alternative: &#39;TWI0&#39;
+   cbi(TWSR, TWPS0);
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:102:3: note: in expansion of macro &#39;cbi&#39;
+   cbi(TWSR, TWPS0);
+   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:102:13: error: &#39;TWPS0&#39; was not declared in this scope
+   cbi(TWSR, TWPS0);
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:102:3: note: in expansion of macro &#39;cbi&#39;
+   cbi(TWSR, TWPS0);
+   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:102:13: note: suggested alternative: &#39;TWI0&#39;
+   cbi(TWSR, TWPS0);
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:102:3: note: in expansion of macro &#39;cbi&#39;
+   cbi(TWSR, TWPS0);
+   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:103:13: error: &#39;TWPS1&#39; was not declared in this scope
+   cbi(TWSR, TWPS1);
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:103:3: note: in expansion of macro &#39;cbi&#39;
+   cbi(TWSR, TWPS1);
+   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:104:3: error: &#39;TWBR&#39; was not declared in this scope
+   TWBR = ((F_CPU / 100000) - 16) / 2;
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:104:3: note: suggested alternative: &#39;TWI0&#39;
+   TWBR = ((F_CPU / 100000) - 16) / 2;
+   ^~~~
+   TWI0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:106:3: error: &#39;TWCR&#39; was not declared in this scope
+   TWCR = _BV(TWEN) | _BV(TWEA);
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:106:3: note: suggested alternative: &#39;TWI0&#39;
+   TWCR = _BV(TWEN) | _BV(TWEA);
+   ^~~~
+   TWI0
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:64:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:106:14: error: &#39;TWEN&#39; was not declared in this scope
+   TWCR = _BV(TWEN) | _BV(TWEA);
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:106:14: note: suggested alternative: &#39;TWI0&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:106:26: error: &#39;TWEA&#39; was not declared in this scope
+   TWCR = _BV(TWEN) | _BV(TWEA);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:106:26: note: suggested alternative: &#39;TWI0&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp: In member function &#39;void I2C::end()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:111:3: error: &#39;TWCR&#39; was not declared in this scope
+   TWCR = 0;
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:111:3: note: suggested alternative: &#39;TWI0&#39;
+   TWCR = 0;
+   ^~~~
+   TWI0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp: In member function &#39;void I2C::setSpeed(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:123:5: error: &#39;TWBR&#39; was not declared in this scope
+     TWBR = ((F_CPU / 100000) - 16) / 2;
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:123:5: note: suggested alternative: &#39;TWI0&#39;
+     TWBR = ((F_CPU / 100000) - 16) / 2;
+     ^~~~
+     TWI0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:127:5: error: &#39;TWBR&#39; was not declared in this scope
+     TWBR = ((F_CPU / 400000) - 16) / 2;
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:127:5: note: suggested alternative: &#39;TWI0&#39;
+     TWBR = ((F_CPU / 400000) - 16) / 2;
+     ^~~~
+     TWI0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp: In member function &#39;uint8_t I2C::read(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:387:15: error: &#39;TWDR&#39; was not declared in this scope
+     data[i] = TWDR;
+               ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:387:15: note: suggested alternative: &#39;TWI0&#39;
+     data[i] = TWDR;
+               ^~~~
+               TWI0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp: In member function &#39;uint8_t I2C::read(uint8_t, uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:452:15: error: &#39;TWDR&#39; was not declared in this scope
+     data[i] = TWDR;
+               ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:452:15: note: suggested alternative: &#39;TWI0&#39;
+     data[i] = TWDR;
+               ^~~~
+               TWI0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp: In member function &#39;uint8_t I2C::read(uint8_t, uint8_t, uint8_t*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:494:21: error: &#39;TWDR&#39; was not declared in this scope
+     dataBuffer[i] = TWDR;
+                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:494:21: note: suggested alternative: &#39;TWI0&#39;
+     dataBuffer[i] = TWDR;
+                     ^~~~
+                     TWI0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp: In member function &#39;uint8_t I2C::read(uint8_t, uint8_t, uint8_t, uint8_t*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:554:21: error: &#39;TWDR&#39; was not declared in this scope
+     dataBuffer[i] = TWDR;
+                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:554:21: note: suggested alternative: &#39;TWI0&#39;
+     dataBuffer[i] = TWDR;
+                     ^~~~
+                     TWI0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp: In member function &#39;uint8_t I2C::start()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:574:3: error: &#39;TWCR&#39; was not declared in this scope
+   TWCR = (1&lt;&lt;TWINT)|(1&lt;&lt;TWSTA)|(1&lt;&lt;TWEN);
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:574:3: note: suggested alternative: &#39;TWI0&#39;
+   TWCR = (1&lt;&lt;TWINT)|(1&lt;&lt;TWSTA)|(1&lt;&lt;TWEN);
+   ^~~~
+   TWI0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:574:14: error: &#39;TWINT&#39; was not declared in this scope
+   TWCR = (1&lt;&lt;TWINT)|(1&lt;&lt;TWSTA)|(1&lt;&lt;TWEN);
+              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:574:14: note: suggested alternative: &#39;TWI_t&#39;
+   TWCR = (1&lt;&lt;TWINT)|(1&lt;&lt;TWSTA)|(1&lt;&lt;TWEN);
+              ^~~~~
+              TWI_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:574:25: error: &#39;TWSTA&#39; was not declared in this scope
+   TWCR = (1&lt;&lt;TWINT)|(1&lt;&lt;TWSTA)|(1&lt;&lt;TWEN);
+                         ^~~~~
+/home/ec2-user/arduino-</pre>
+
+					
+					<h4>examples/sps30</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:64:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp: In member function &#39;void I2C::begin()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:102:7: error: &#39;TWSR&#39; was not declared in this scope
+   cbi(TWSR, TWPS0);
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:102:3: note: in expansion of macro &#39;cbi&#39;
+   cbi(TWSR, TWPS0);
+   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:102:7: note: suggested alternative: &#39;TWI0&#39;
+   cbi(TWSR, TWPS0);
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:102:3: note: in expansion of macro &#39;cbi&#39;
+   cbi(TWSR, TWPS0);
+   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:102:13: error: &#39;TWPS0&#39; was not declared in this scope
+   cbi(TWSR, TWPS0);
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:102:3: note: in expansion of macro &#39;cbi&#39;
+   cbi(TWSR, TWPS0);
+   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:102:13: note: suggested alternative: &#39;TWI0&#39;
+   cbi(TWSR, TWPS0);
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:102:3: note: in expansion of macro &#39;cbi&#39;
+   cbi(TWSR, TWPS0);
+   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:103:13: error: &#39;TWPS1&#39; was not declared in this scope
+   cbi(TWSR, TWPS1);
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:103:3: note: in expansion of macro &#39;cbi&#39;
+   cbi(TWSR, TWPS1);
+   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:104:3: error: &#39;TWBR&#39; was not declared in this scope
+   TWBR = ((F_CPU / 100000) - 16) / 2;
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:104:3: note: suggested alternative: &#39;TWI0&#39;
+   TWBR = ((F_CPU / 100000) - 16) / 2;
+   ^~~~
+   TWI0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:106:3: error: &#39;TWCR&#39; was not declared in this scope
+   TWCR = _BV(TWEN) | _BV(TWEA);
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:106:3: note: suggested alternative: &#39;TWI0&#39;
+   TWCR = _BV(TWEN) | _BV(TWEA);
+   ^~~~
+   TWI0
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:64:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:106:14: error: &#39;TWEN&#39; was not declared in this scope
+   TWCR = _BV(TWEN) | _BV(TWEA);
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:106:14: note: suggested alternative: &#39;TWI0&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:106:26: error: &#39;TWEA&#39; was not declared in this scope
+   TWCR = _BV(TWEN) | _BV(TWEA);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:106:26: note: suggested alternative: &#39;TWI0&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp: In member function &#39;void I2C::end()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:111:3: error: &#39;TWCR&#39; was not declared in this scope
+   TWCR = 0;
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:111:3: note: suggested alternative: &#39;TWI0&#39;
+   TWCR = 0;
+   ^~~~
+   TWI0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp: In member function &#39;void I2C::setSpeed(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:123:5: error: &#39;TWBR&#39; was not declared in this scope
+     TWBR = ((F_CPU / 100000) - 16) / 2;
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:123:5: note: suggested alternative: &#39;TWI0&#39;
+     TWBR = ((F_CPU / 100000) - 16) / 2;
+     ^~~~
+     TWI0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:127:5: error: &#39;TWBR&#39; was not declared in this scope
+     TWBR = ((F_CPU / 400000) - 16) / 2;
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:127:5: note: suggested alternative: &#39;TWI0&#39;
+     TWBR = ((F_CPU / 400000) - 16) / 2;
+     ^~~~
+     TWI0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp: In member function &#39;uint8_t I2C::read(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:387:15: error: &#39;TWDR&#39; was not declared in this scope
+     data[i] = TWDR;
+               ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:387:15: note: suggested alternative: &#39;TWI0&#39;
+     data[i] = TWDR;
+               ^~~~
+               TWI0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp: In member function &#39;uint8_t I2C::read(uint8_t, uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:452:15: error: &#39;TWDR&#39; was not declared in this scope
+     data[i] = TWDR;
+               ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:452:15: note: suggested alternative: &#39;TWI0&#39;
+     data[i] = TWDR;
+               ^~~~
+               TWI0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp: In member function &#39;uint8_t I2C::read(uint8_t, uint8_t, uint8_t*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:494:21: error: &#39;TWDR&#39; was not declared in this scope
+     dataBuffer[i] = TWDR;
+                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:494:21: note: suggested alternative: &#39;TWI0&#39;
+     dataBuffer[i] = TWDR;
+                     ^~~~
+                     TWI0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp: In member function &#39;uint8_t I2C::read(uint8_t, uint8_t, uint8_t, uint8_t*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:554:21: error: &#39;TWDR&#39; was not declared in this scope
+     dataBuffer[i] = TWDR;
+                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:554:21: note: suggested alternative: &#39;TWI0&#39;
+     dataBuffer[i] = TWDR;
+                     ^~~~
+                     TWI0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp: In member function &#39;uint8_t I2C::start()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:574:3: error: &#39;TWCR&#39; was not declared in this scope
+   TWCR = (1&lt;&lt;TWINT)|(1&lt;&lt;TWSTA)|(1&lt;&lt;TWEN);
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:574:3: note: suggested alternative: &#39;TWI0&#39;
+   TWCR = (1&lt;&lt;TWINT)|(1&lt;&lt;TWSTA)|(1&lt;&lt;TWEN);
+   ^~~~
+   TWI0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:574:14: error: &#39;TWINT&#39; was not declared in this scope
+   TWCR = (1&lt;&lt;TWINT)|(1&lt;&lt;TWSTA)|(1&lt;&lt;TWEN);
+              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:574:14: note: suggested alternative: &#39;TWI_t&#39;
+   TWCR = (1&lt;&lt;TWINT)|(1&lt;&lt;TWSTA)|(1&lt;&lt;TWEN);
+              ^~~~~
+              TWI_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/i2c_master_lib.cpp:574:25: error: &#39;TWSTA&#39; was not declared in this scope
+   TWCR = (1&lt;&lt;TWINT)|(1&lt;&lt;TWSTA)|(1&lt;&lt;TWEN);
+                         ^~~~~
+/home/ec2-user/arduino-</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 13588 bytes (5%) of program storage space. Maximum is 262144 bytes.
+Global variables use 3568 bytes (10%) of dynamic memory, leaving 29200 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+
+					
+					<h4>examples/sps30</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 23484 bytes (8%) of program storage space. Maximum is 262144 bytes.
+Global variables use 3568 bytes (10%) of dynamic memory, leaving 29200 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 203082 bytes (15%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 13888 bytes (4%) of dynamic memory, leaving 313792 bytes for local variables. Maximum is 327680 bytes.
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/sensirion_hw_i2c_implementation.cpp:78:0:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/Wire/src/Wire.h: In function &#39;int8_t sensirion_i2c_read(uint8_t, uint8_t*, uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/Wire/src/Wire.h:103:13: note: candidate 1: uint8_t TwoWire::requestFrom(int, int)
+     uint8_t requestFrom(int address, int size);
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/Wire/src/Wire.h:101:13: note: candidate 2: uint8_t TwoWire::requestFrom(uint8_t, uint8_t)
+     uint8_t requestFrom(uint8_t address, uint8_t size);
+             ^
+</pre>
+
+					
+					<h4>examples/sps30</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 216214 bytes (16%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 14144 bytes (4%) of dynamic memory, leaving 313536 bytes for local variables. Maximum is 327680 bytes.
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/sensirion-sps/sensirion_hw_i2c_implementation.cpp:78:0:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/Wire/src/Wire.h: In function &#39;int8_t sensirion_i2c_read(uint8_t, uint8_t*, uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/Wire/src/Wire.h:103:13: note: candidate 1: uint8_t TwoWire::requestFrom(int, int)
+     uint8_t requestFrom(int address, int size);
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/Wire/src/Wire.h:101:13: note: candidate 2: uint8_t TwoWire::requestFrom(uint8_t, uint8_t)
+     uint8_t requestFrom(uint8_t address, uint8_t size);
+             ^
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

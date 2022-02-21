@@ -1,0 +1,899 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>Accelerometer ADXL345 - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>Accelerometer ADXL345</h2>
+				<p>
+					Version: <b>1.0.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/accelerometer-adxl345/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>ADXL345_demo_code</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /private/tmp/arduino-testlib3921866674/test/test.ino:1:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:79:5: error: &#39;TwoWire&#39; does not name a type
+     TwoWire *_wire;
+     ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:96:33: error: &#39;TwoWire&#39; has not been declared
+     ADXL345(uint8_t i2cAddress, TwoWire *wire=&amp;Wire);
+                                 ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:96:48: error: &#39;Wire&#39; was not declared in this scope
+     ADXL345(uint8_t i2cAddress, TwoWire *wire=&amp;Wire);
+                                                ^~~~
+Multiple libraries were found for &#34;ADXL345.h&#34;
+  Used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ADXL345
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345
+</pre>
+
+					
+					<h4>examples/ADXL345_demo_code</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:31:9: error: no matching function for call to &#39;ADXL345::ADXL345()&#39;
+ ADXL345 adxl; //variable adxl is an instance of the ADXL345 library
+         ^~~~
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:28:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:96:5: note: candidate: ADXL345::ADXL345(uint8_t, TwoWire*)
+     ADXL345(uint8_t i2cAddress, TwoWire *wire=&amp;Wire);
+     ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:96:5: note:   candidate expects 2 arguments, 0 provided
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:35:7: note: candidate: constexpr ADXL345::ADXL345(const ADXL345&amp;)
+ class ADXL345 {
+       ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:35:7: note:   candidate expects 1 argument, 0 provided
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:35:7: note: candidate: constexpr ADXL345::ADXL345(ADXL345&amp;&amp;)
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:35:7: note:   candidate expects 1 argument, 0 provided
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino: In function &#39;void setup()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:35:8: error: &#39;class ADXL345&#39; has no member named &#39;powerOn&#39;
+   adxl.powerOn();
+        ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:38:8: error: &#39;class ADXL345&#39; has no member named &#39;setActivityThreshold&#39;
+   adxl.setActivityThreshold(75); //62.5mg per increment
+        ^~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:39:8: error: &#39;class ADXL345&#39; has no member named &#39;setInactivityThreshold&#39;
+   adxl.setInactivityThreshold(75); //62.5mg per increment
+        ^~~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:40:8: error: &#39;class ADXL345&#39; has no member named &#39;setTimeInactivity&#39;
+   adxl.setTimeInactivity(10); // how many seconds of no activity is inactive?
+        ^~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:43:8: error: &#39;class ADXL345&#39; has no member named &#39;setActivityX&#39;
+   adxl.setActivityX(1);
+        ^~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:44:8: error: &#39;class ADXL345&#39; has no member named &#39;setActivityY&#39;
+   adxl.setActivityY(1);
+        ^~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:45:8: error: &#39;class ADXL345&#39; has no member named &#39;setActivityZ&#39;
+   adxl.setActivityZ(1);
+        ^~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:48:8: error: &#39;class ADXL345&#39; has no member named &#39;setInactivityX&#39;
+   adxl.setInactivityX(1);
+        ^~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:49:8: error: &#39;class ADXL345&#39; has no member named &#39;setInactivityY&#39;
+   adxl.setInactivityY(1);
+        ^~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:50:8: error: &#39;class ADXL345&#39; has no member named &#39;setInactivityZ&#39;
+   adxl.setInactivityZ(1);
+        ^~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:53:8: error: &#39;class ADXL345&#39; has no member named &#39;setTapDetectionOnX&#39;
+   adxl.setTapDetectionOnX(0);
+        ^~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:54:8: error: &#39;class ADXL345&#39; has no member named &#39;setTapDetectionOnY&#39;
+   adxl.setTapDetectionOnY(0);
+        ^~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:55:8: error: &#39;class ADXL345&#39; has no member named &#39;setTapDetectionOnZ&#39;
+   adxl.setTapDetectionOnZ(1);
+        ^~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:58:8: error: &#39;class ADXL345&#39; has no member named &#39;setTapThreshold&#39;
+   adxl.setTapThreshold(50); //62.5mg per increment
+        ^~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:59:8: error: &#39;class ADXL345&#39; has no member named &#39;setTapDuration&#39;
+   adxl.setTapDuration(15); //625us per increment
+        ^~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:60:8: error: &#39;class ADXL345&#39; has no member named &#39;setDoubleTapLatency&#39;
+   adxl.setDoubleTapLatency(80); //1.25ms per increment
+        ^~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:61:8: error: &#39;class ADXL345&#39; has no member named &#39;setDoubleTapWindow&#39;
+   adxl.setDoubleTapWindow(200); //1.25ms per increment
+        ^~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:64:8: error: &#39;class ADXL345&#39; has no member named &#39;setFreeFallThreshold&#39;
+   adxl.setFreeFallThreshold(7); //(5 - 9) recommended - 62.5mg per increment
+        ^~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:65:8: error: &#39;class ADXL345&#39; has no member named &#39;setFreeFallDuration&#39;
+   adxl.setFreeFallDuration(45); //(20 - 70) recommended - 5ms per increment
+        ^~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:69:8: error: &#39;class ADXL345&#39; has no member named &#39;setInterruptMapping&#39;
+   adxl.setInterruptMapping( ADXL345_INT_SINGLE_TAP_BIT,   ADXL345_INT1_PIN );
+        ^~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:69:29: error: &#39;ADXL345_INT_SINGLE_TAP_BIT&#39; was not declared in this scope
+   adxl.setInterruptMapping( ADXL345_INT_SINGLE_TAP_BIT,   ADXL345_INT1_PIN );
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:69:59: error: &#39;ADXL345_INT1_PIN&#39; was not declared in this scope
+   adxl.setInterruptMapping( ADXL345_INT_SINGLE_TAP_BIT,   ADXL345_INT1_PIN );
+                                                           ^~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:69:59: note: suggested alternative: &#39;ADXL345_STD&#39;
+   adxl.setInterruptMapping( ADXL345_INT_SINGLE_TAP_BIT,   ADXL345_INT1_PIN );
+                                                           ^~~~~~~~~~~~~~~~
+                                                           ADXL345_STD
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:70:8: error: &#39;class ADXL345&#39; has no member named &#39;setInterruptMapping&#39;
+   adxl.setInterruptMapping( ADXL345_INT_DOUBLE_TAP_BIT,   ADXL345_INT1_PIN );
+        ^~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:70:29: error: &#39;ADXL345_INT_DOUBLE_TAP_BIT&#39; was not declared in this scope
+   adxl.setInterruptMapping( ADXL345_INT_DOUBLE_TAP_BIT,   ADXL345_INT1_PIN );
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:71:8: error: &#39;class ADXL345&#39; has no member named &#39;setInterruptMapping&#39;
+   adxl.setInterruptMapping( ADXL345_INT_FREE_FALL_BIT,    ADXL345_INT1_PIN );
+        ^~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:71:29: error: &#39;ADXL345_INT_FREE_FALL_BIT&#39; was not declared in this scope
+   adxl.setInterruptMapping( ADXL345_INT_FREE_FALL_BIT,    ADXL345_INT1_PIN );
+   </pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /tmp/arduino-testlib854331274/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:79:5: error: &#39;TwoWire&#39; does not name a type
+     TwoWire *_wire;
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:96:33: error: &#39;TwoWire&#39; has not been declared
+     ADXL345(uint8_t i2cAddress, TwoWire *wire=&amp;Wire);
+                                 ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:96:48: error: &#39;Wire&#39; was not declared in this scope
+     ADXL345(uint8_t i2cAddress, TwoWire *wire=&amp;Wire);
+                                                ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:96:48: note: suggested alternative: &#39;time&#39;
+     ADXL345(uint8_t i2cAddress, TwoWire *wire=&amp;Wire);
+                                                ^~~~
+                                                time
+Multiple libraries were found for &#34;ADXL345.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADXL345
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345
+</pre>
+
+					
+					<h4>examples/ADXL345_demo_code</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:31:9: error: no matching function for call to &#39;ADXL345::ADXL345()&#39;
+ ADXL345 adxl; //variable adxl is an instance of the ADXL345 library
+         ^~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:28:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:96:5: note: candidate: ADXL345::ADXL345(uint8_t, TwoWire*)
+     ADXL345(uint8_t i2cAddress, TwoWire *wire=&amp;Wire);
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:96:5: note:   candidate expects 2 arguments, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:35:7: note: candidate: constexpr ADXL345::ADXL345(const ADXL345&amp;)
+ class ADXL345 {
+       ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:35:7: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:35:7: note: candidate: constexpr ADXL345::ADXL345(ADXL345&amp;&amp;)
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:35:7: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:35:8: error: &#39;class ADXL345&#39; has no member named &#39;powerOn&#39;
+   adxl.powerOn();
+        ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:38:8: error: &#39;class ADXL345&#39; has no member named &#39;setActivityThreshold&#39;
+   adxl.setActivityThreshold(75); //62.5mg per increment
+        ^~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:39:8: error: &#39;class ADXL345&#39; has no member named &#39;setInactivityThreshold&#39;
+   adxl.setInactivityThreshold(75); //62.5mg per increment
+        ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:40:8: error: &#39;class ADXL345&#39; has no member named &#39;setTimeInactivity&#39;
+   adxl.setTimeInactivity(10); // how many seconds of no activity is inactive?
+        ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:43:8: error: &#39;class ADXL345&#39; has no member named &#39;setActivityX&#39;
+   adxl.setActivityX(1);
+        ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:44:8: error: &#39;class ADXL345&#39; has no member named &#39;setActivityY&#39;
+   adxl.setActivityY(1);
+        ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:45:8: error: &#39;class ADXL345&#39; has no member named &#39;setActivityZ&#39;
+   adxl.setActivityZ(1);
+        ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:48:8: error: &#39;class ADXL345&#39; has no member named &#39;setInactivityX&#39;
+   adxl.setInactivityX(1);
+        ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:49:8: error: &#39;class ADXL345&#39; has no member named &#39;setInactivityY&#39;
+   adxl.setInactivityY(1);
+        ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:50:8: error: &#39;class ADXL345&#39; has no member named &#39;setInactivityZ&#39;
+   adxl.setInactivityZ(1);
+        ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:53:8: error: &#39;class ADXL345&#39; has no member named &#39;setTapDetectionOnX&#39;
+   adxl.setTapDetectionOnX(0);
+        ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:54:8: error: &#39;class ADXL345&#39; has no member named &#39;setTapDetectionOnY&#39;
+   adxl.setTapDetectionOnY(0);
+        ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:55:8: error: &#39;class ADXL345&#39; has no member named &#39;setTapDetectionOnZ&#39;
+   adxl.setTapDetectionOnZ(1);
+        ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:58:8: error: &#39;class ADXL345&#39; has no member named &#39;setTapThreshold&#39;
+   adxl.setTapThreshold(50); //62.5mg per increment
+        ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:59:8: error: &#39;class ADXL345&#39; has no member named &#39;setTapDuration&#39;
+   adxl.setTapDuration(15); //625us per increment
+        ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:60:8: error: &#39;class ADXL345&#39; has no member named &#39;setDoubleTapLatency&#39;
+   adxl.setDoubleTapLatency(80); //1.25ms per increment
+        ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:61:8: error: &#39;class ADXL345&#39; has no member named &#39;setDoubleTapWindow&#39;
+   adxl.setDoubleTapWindow(200); //1.25ms per increment
+        ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:64:8: error: &#39;class ADXL345&#39; has no member named &#39;setFreeFallThreshold&#39;
+   adxl.setFreeFallThreshold(7); //(5 - 9) recommended - 62.5mg per increment
+        ^~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:65:8: error: &#39;class ADXL345&#39; has no member named &#39;setFreeFallDuration&#39;
+   adxl.setFreeFallDuration(45); //(20 - 70) recommended - 5ms per increment
+        ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:69:8: error: &#39;class ADXL345&#39; has no member named &#39;setInterruptMapping&#39;
+   adxl.setInterruptMapping( ADXL345_INT_SINGLE_TAP_BIT,   ADXL345_INT1_PIN );
+        ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:69:29: error: &#39;ADXL345_INT_SINGLE_TAP_BIT&#39; was not declared in this scope
+   adxl.setInterruptMapping( ADXL345_INT_SINGLE_TAP_BIT,   ADXL345_INT1_PIN );
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:69:59: error: &#39;ADXL345_INT1_PIN&#39; was not declared in this scope
+   adxl.setInterruptMapping( ADXL345_INT_SINGLE_TAP_BIT,   ADXL345_INT1_PIN );
+                                                           ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:69:59: note: suggested alternative: &#39;ADXL345_ALT&#39;
+   adxl.setInterruptMapping( ADXL345_INT_SINGLE_TAP_BIT,   ADXL345_INT1_PIN );
+                                                           ^~~~~~~~~~~~~~~~
+                                                           ADXL345_ALT
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:70:8: error: &#39;class ADXL345&#39; has no member named &#39;setInterruptMapping&#39;
+   adxl.setInterruptMapping( ADXL345_INT_DOUBLE_TAP_BIT,   ADXL345_INT1_PIN );
+        ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:70:29: error: &#39;ADXL345_INT_DOUBLE_TAP_BIT&#39; was not declared in this scope
+   adxl.setInterruptMapping( ADXL345_INT_DOUBLE_TAP_BIT,   ADXL345_INT1_PIN );
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:71:8: error: &#39;class ADXL345&#39; has no member named &#39;setInterruptMapping&#39;
+   adxl.setInterruptMapping( ADXL345_INT_FREE_FALL_BIT,    ADXL345_INT1_PIN );
+        ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:71:29: error: &#39;ADXL345_INT_FREE_FALL_BIT&#39; was not declared in this scope
+   adxl.setInterruptMapping( ADXL345_INT_FREE_FALL_BIT,    ADXL345_INT1_PIN );
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:72:8: error: &#39;class ADXL345&#39; has no member named &#39;setInterruptMapping&#39;
+   adxl.setInterruptMapping( ADXL345_INT_ACTIVITY_BIT,     ADXL345_INT1_PIN );
+        ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:72:29: error: &#39;ADXL345_INT_ACTIVITY_BIT&#39; was not declared in this scope
+   adxl.setInterruptMapping( ADXL345_INT_ACTIVITY_BIT,     ADXL345_INT1_PIN );
+                             ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_de</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /tmp/arduino-testlib854331274/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:79:5: error: &#39;TwoWire&#39; does not name a type
+     TwoWire *_wire;
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:96:33: error: &#39;TwoWire&#39; has not been declared
+     ADXL345(uint8_t i2cAddress, TwoWire *wire=&amp;Wire);
+                                 ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:96:48: error: &#39;Wire&#39; was not declared in this scope
+     ADXL345(uint8_t i2cAddress, TwoWire *wire=&amp;Wire);
+                                                ^~~~
+Multiple libraries were found for &#34;ADXL345.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADXL345
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345
+</pre>
+
+					
+					<h4>examples/ADXL345_demo_code</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:31:9: error: no matching function for call to &#39;ADXL345::ADXL345()&#39;
+ ADXL345 adxl; //variable adxl is an instance of the ADXL345 library
+         ^~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:28:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:96:5: note: candidate: ADXL345::ADXL345(uint8_t, TwoWire*)
+     ADXL345(uint8_t i2cAddress, TwoWire *wire=&amp;Wire);
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:96:5: note:   candidate expects 2 arguments, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:35:7: note: candidate: constexpr ADXL345::ADXL345(const ADXL345&amp;)
+ class ADXL345 {
+       ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:35:7: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:35:7: note: candidate: constexpr ADXL345::ADXL345(ADXL345&amp;&amp;)
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:35:7: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:35:8: error: &#39;class ADXL345&#39; has no member named &#39;powerOn&#39;
+   adxl.powerOn();
+        ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:38:8: error: &#39;class ADXL345&#39; has no member named &#39;setActivityThreshold&#39;
+   adxl.setActivityThreshold(75); //62.5mg per increment
+        ^~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:39:8: error: &#39;class ADXL345&#39; has no member named &#39;setInactivityThreshold&#39;
+   adxl.setInactivityThreshold(75); //62.5mg per increment
+        ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:40:8: error: &#39;class ADXL345&#39; has no member named &#39;setTimeInactivity&#39;
+   adxl.setTimeInactivity(10); // how many seconds of no activity is inactive?
+        ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:43:8: error: &#39;class ADXL345&#39; has no member named &#39;setActivityX&#39;
+   adxl.setActivityX(1);
+        ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:44:8: error: &#39;class ADXL345&#39; has no member named &#39;setActivityY&#39;
+   adxl.setActivityY(1);
+        ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:45:8: error: &#39;class ADXL345&#39; has no member named &#39;setActivityZ&#39;
+   adxl.setActivityZ(1);
+        ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:48:8: error: &#39;class ADXL345&#39; has no member named &#39;setInactivityX&#39;
+   adxl.setInactivityX(1);
+        ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:49:8: error: &#39;class ADXL345&#39; has no member named &#39;setInactivityY&#39;
+   adxl.setInactivityY(1);
+        ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:50:8: error: &#39;class ADXL345&#39; has no member named &#39;setInactivityZ&#39;
+   adxl.setInactivityZ(1);
+        ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:53:8: error: &#39;class ADXL345&#39; has no member named &#39;setTapDetectionOnX&#39;
+   adxl.setTapDetectionOnX(0);
+        ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:54:8: error: &#39;class ADXL345&#39; has no member named &#39;setTapDetectionOnY&#39;
+   adxl.setTapDetectionOnY(0);
+        ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:55:8: error: &#39;class ADXL345&#39; has no member named &#39;setTapDetectionOnZ&#39;
+   adxl.setTapDetectionOnZ(1);
+        ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:58:8: error: &#39;class ADXL345&#39; has no member named &#39;setTapThreshold&#39;
+   adxl.setTapThreshold(50); //62.5mg per increment
+        ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:59:8: error: &#39;class ADXL345&#39; has no member named &#39;setTapDuration&#39;
+   adxl.setTapDuration(15); //625us per increment
+        ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:60:8: error: &#39;class ADXL345&#39; has no member named &#39;setDoubleTapLatency&#39;
+   adxl.setDoubleTapLatency(80); //1.25ms per increment
+        ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:61:8: error: &#39;class ADXL345&#39; has no member named &#39;setDoubleTapWindow&#39;
+   adxl.setDoubleTapWindow(200); //1.25ms per increment
+        ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:64:8: error: &#39;class ADXL345&#39; has no member named &#39;setFreeFallThreshold&#39;
+   adxl.setFreeFallThreshold(7); //(5 - 9) recommended - 62.5mg per increment
+        ^~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:65:8: error: &#39;class ADXL345&#39; has no member named &#39;setFreeFallDuration&#39;
+   adxl.setFreeFallDuration(45); //(20 - 70) recommended - 5ms per increment
+        ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:69:8: error: &#39;class ADXL345&#39; has no member named &#39;setInterruptMapping&#39;
+   adxl.setInterruptMapping( ADXL345_INT_SINGLE_TAP_BIT,   ADXL345_INT1_PIN );
+        ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:69:29: error: &#39;ADXL345_INT_SINGLE_TAP_BIT&#39; was not declared in this scope
+   adxl.setInterruptMapping( ADXL345_INT_SINGLE_TAP_BIT,   ADXL345_INT1_PIN );
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:69:59: error: &#39;ADXL345_INT1_PIN&#39; was not declared in this scope
+   adxl.setInterruptMapping( ADXL345_INT_SINGLE_TAP_BIT,   ADXL345_INT1_PIN );
+                                                           ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:69:59: note: suggested alternative: &#39;ADXL345_STD&#39;
+   adxl.setInterruptMapping( ADXL345_INT_SINGLE_TAP_BIT,   ADXL345_INT1_PIN );
+                                                           ^~~~~~~~~~~~~~~~
+                                                           ADXL345_STD
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:70:8: error: &#39;class ADXL345&#39; has no member named &#39;setInterruptMapping&#39;
+   adxl.setInterruptMapping( ADXL345_INT_DOUBLE_TAP_BIT,   ADXL345_INT1_PIN );
+        ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:70:29: error: &#39;ADXL345_INT_DOUBLE_TAP_BIT&#39; was not declared in this scope
+   adxl.setInterruptMapping( ADXL345_INT_DOUBLE_TAP_BIT,   ADXL345_INT1_PIN );
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:71:8: error: &#39;class ADXL345&#39; has no member named &#39;setInterruptMapping&#39;
+   adxl.setInterruptMapping( ADXL345_INT_FREE_FALL_BIT,    ADXL345_INT1_PIN );
+        ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:71:29: error: &#39;ADXL345_INT_FREE_FALL_BIT&#39; was not declared in this scope
+   adxl.setInterruptMapping( ADXL345_INT_FREE_FALL_BIT,    ADXL345_INT1_PIN );
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:72:8: error: &#39;class ADXL345&#39; has no member named &#39;setInterruptMapping&#39;
+   adxl.setInterruptMapping( ADXL345_INT_ACTIVITY_BIT,     ADXL345_INT1_PIN );
+        ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:72:29: error: &#39;ADXL345_INT_ACTIVITY_BIT&#39; was not declared in this scope
+   adxl.setInterruptMapping( ADXL345_INT_ACTIVITY_BIT,     ADXL345_INT1_PIN );
+                             ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_de</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /private/tmp/arduino-testlib3921866674/test/test.ino:1:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:79:5: error: &#39;TwoWire&#39; does not name a type
+     TwoWire *_wire;
+     ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:96:33: error: &#39;TwoWire&#39; has not been declared
+     ADXL345(uint8_t i2cAddress, TwoWire *wire=&amp;Wire);
+                                 ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:96:48: error: &#39;Wire&#39; was not declared in this scope
+     ADXL345(uint8_t i2cAddress, TwoWire *wire=&amp;Wire);
+                                                ^~~~
+Multiple libraries were found for &#34;ADXL345.h&#34;
+  Used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ADXL345
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345
+</pre>
+
+					
+					<h4>examples/ADXL345_demo_code</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:31:9: error: no matching function for call to &#39;ADXL345::ADXL345()&#39;
+ ADXL345 adxl; //variable adxl is an instance of the ADXL345 library
+         ^~~~
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:28:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:96:5: note: candidate: ADXL345::ADXL345(uint8_t, arduino::TwoWire*)
+     ADXL345(uint8_t i2cAddress, TwoWire *wire=&amp;Wire);
+     ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:96:5: note:   candidate expects 2 arguments, 0 provided
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:35:7: note: candidate: constexpr ADXL345::ADXL345(const ADXL345&amp;)
+ class ADXL345 {
+       ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:35:7: note:   candidate expects 1 argument, 0 provided
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:35:7: note: candidate: constexpr ADXL345::ADXL345(ADXL345&amp;&amp;)
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:35:7: note:   candidate expects 1 argument, 0 provided
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino: In function &#39;void setup()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:35:8: error: &#39;class ADXL345&#39; has no member named &#39;powerOn&#39;
+   adxl.powerOn();
+        ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:38:8: error: &#39;class ADXL345&#39; has no member named &#39;setActivityThreshold&#39;
+   adxl.setActivityThreshold(75); //62.5mg per increment
+        ^~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:39:8: error: &#39;class ADXL345&#39; has no member named &#39;setInactivityThreshold&#39;
+   adxl.setInactivityThreshold(75); //62.5mg per increment
+        ^~~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:40:8: error: &#39;class ADXL345&#39; has no member named &#39;setTimeInactivity&#39;
+   adxl.setTimeInactivity(10); // how many seconds of no activity is inactive?
+        ^~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:43:8: error: &#39;class ADXL345&#39; has no member named &#39;setActivityX&#39;
+   adxl.setActivityX(1);
+        ^~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:44:8: error: &#39;class ADXL345&#39; has no member named &#39;setActivityY&#39;
+   adxl.setActivityY(1);
+        ^~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:45:8: error: &#39;class ADXL345&#39; has no member named &#39;setActivityZ&#39;
+   adxl.setActivityZ(1);
+        ^~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:48:8: error: &#39;class ADXL345&#39; has no member named &#39;setInactivityX&#39;
+   adxl.setInactivityX(1);
+        ^~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:49:8: error: &#39;class ADXL345&#39; has no member named &#39;setInactivityY&#39;
+   adxl.setInactivityY(1);
+        ^~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:50:8: error: &#39;class ADXL345&#39; has no member named &#39;setInactivityZ&#39;
+   adxl.setInactivityZ(1);
+        ^~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:53:8: error: &#39;class ADXL345&#39; has no member named &#39;setTapDetectionOnX&#39;
+   adxl.setTapDetectionOnX(0);
+        ^~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:54:8: error: &#39;class ADXL345&#39; has no member named &#39;setTapDetectionOnY&#39;
+   adxl.setTapDetectionOnY(0);
+        ^~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:55:8: error: &#39;class ADXL345&#39; has no member named &#39;setTapDetectionOnZ&#39;
+   adxl.setTapDetectionOnZ(1);
+        ^~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:58:8: error: &#39;class ADXL345&#39; has no member named &#39;setTapThreshold&#39;
+   adxl.setTapThreshold(50); //62.5mg per increment
+        ^~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:59:8: error: &#39;class ADXL345&#39; has no member named &#39;setTapDuration&#39;
+   adxl.setTapDuration(15); //625us per increment
+        ^~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:60:8: error: &#39;class ADXL345&#39; has no member named &#39;setDoubleTapLatency&#39;
+   adxl.setDoubleTapLatency(80); //1.25ms per increment
+        ^~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:61:8: error: &#39;class ADXL345&#39; has no member named &#39;setDoubleTapWindow&#39;
+   adxl.setDoubleTapWindow(200); //1.25ms per increment
+        ^~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:64:8: error: &#39;class ADXL345&#39; has no member named &#39;setFreeFallThreshold&#39;
+   adxl.setFreeFallThreshold(7); //(5 - 9) recommended - 62.5mg per increment
+        ^~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:65:8: error: &#39;class ADXL345&#39; has no member named &#39;setFreeFallDuration&#39;
+   adxl.setFreeFallDuration(45); //(20 - 70) recommended - 5ms per increment
+        ^~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:69:8: error: &#39;class ADXL345&#39; has no member named &#39;setInterruptMapping&#39;
+   adxl.setInterruptMapping( ADXL345_INT_SINGLE_TAP_BIT,   ADXL345_INT1_PIN );
+        ^~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:69:29: error: &#39;ADXL345_INT_SINGLE_TAP_BIT&#39; was not declared in this scope
+   adxl.setInterruptMapping( ADXL345_INT_SINGLE_TAP_BIT,   ADXL345_INT1_PIN );
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:69:59: error: &#39;ADXL345_INT1_PIN&#39; was not declared in this scope
+   adxl.setInterruptMapping( ADXL345_INT_SINGLE_TAP_BIT,   ADXL345_INT1_PIN );
+                                                           ^~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:69:59: note: suggested alternative: &#39;ADXL345_RATE_50HZ&#39;
+   adxl.setInterruptMapping( ADXL345_INT_SINGLE_TAP_BIT,   ADXL345_INT1_PIN );
+                                                           ^~~~~~~~~~~~~~~~
+                                                           ADXL345_RATE_50HZ
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:70:8: error: &#39;class ADXL345&#39; has no member named &#39;setInterruptMapping&#39;
+   adxl.setInterruptMapping( ADXL345_INT_DOUBLE_TAP_BIT,   ADXL345_INT1_PIN );
+        ^~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:70:29: error: &#39;ADXL345_INT_DOUBLE_TAP_BIT&#39; was not declared in this scope
+   adxl.setInterruptMapping( ADXL345_INT_DOUBLE_TAP_BIT,   ADXL345_INT1_PIN );
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:71:8: error: &#39;class ADXL345&#39; has no member named &#39;setInterruptMapping&#39;
+   adxl.setInterruptMapping( ADXL345_INT_FREE_FALL_BIT,    ADXL345_INT1_PIN );
+        ^~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:71:29: error: &#39;ADXL345_INT_FREE_FALL_BIT&#39; was not declared in this scope
+   adxl.setInterruptMapping( ADXL345_INT_FREE_FALL_BIT,    AD</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /tmp/arduino-testlib1928873463/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:79:5: error: &#39;TwoWire&#39; does not name a type
+     TwoWire *_wire;
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:96:33: error: &#39;TwoWire&#39; has not been declared
+     ADXL345(uint8_t i2cAddress, TwoWire *wire=&amp;Wire);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:96:48: error: &#39;Wire&#39; was not declared in this scope
+     ADXL345(uint8_t i2cAddress, TwoWire *wire=&amp;Wire);
+                                                ^
+Multiple libraries were found for &#34;ADXL345.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADXL345
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345
+</pre>
+
+					
+					<h4>examples/ADXL345_demo_code</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:31:9: error: no matching function for call to &#39;ADXL345::ADXL345()&#39;
+ ADXL345 adxl; //variable adxl is an instance of the ADXL345 library
+         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:28:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:96:5: note: candidate: ADXL345::ADXL345(uint8_t, TwoWire*)
+     ADXL345(uint8_t i2cAddress, TwoWire *wire=&amp;Wire);
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:96:5: note:   candidate expects 2 arguments, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:35:7: note: candidate: constexpr ADXL345::ADXL345(const ADXL345&amp;)
+ class ADXL345 {
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:35:7: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:35:7: note: candidate: constexpr ADXL345::ADXL345(ADXL345&amp;&amp;)
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADXL345/src/ADXL345.h:35:7: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:35:8: error: &#39;class ADXL345&#39; has no member named &#39;powerOn&#39;
+   adxl.powerOn();
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:38:8: error: &#39;class ADXL345&#39; has no member named &#39;setActivityThreshold&#39;
+   adxl.setActivityThreshold(75); //62.5mg per increment
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:39:8: error: &#39;class ADXL345&#39; has no member named &#39;setInactivityThreshold&#39;
+   adxl.setInactivityThreshold(75); //62.5mg per increment
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:40:8: error: &#39;class ADXL345&#39; has no member named &#39;setTimeInactivity&#39;
+   adxl.setTimeInactivity(10); // how many seconds of no activity is inactive?
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:43:8: error: &#39;class ADXL345&#39; has no member named &#39;setActivityX&#39;
+   adxl.setActivityX(1);
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:44:8: error: &#39;class ADXL345&#39; has no member named &#39;setActivityY&#39;
+   adxl.setActivityY(1);
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:45:8: error: &#39;class ADXL345&#39; has no member named &#39;setActivityZ&#39;
+   adxl.setActivityZ(1);
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:48:8: error: &#39;class ADXL345&#39; has no member named &#39;setInactivityX&#39;
+   adxl.setInactivityX(1);
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:49:8: error: &#39;class ADXL345&#39; has no member named &#39;setInactivityY&#39;
+   adxl.setInactivityY(1);
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:50:8: error: &#39;class ADXL345&#39; has no member named &#39;setInactivityZ&#39;
+   adxl.setInactivityZ(1);
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:53:8: error: &#39;class ADXL345&#39; has no member named &#39;setTapDetectionOnX&#39;
+   adxl.setTapDetectionOnX(0);
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:54:8: error: &#39;class ADXL345&#39; has no member named &#39;setTapDetectionOnY&#39;
+   adxl.setTapDetectionOnY(0);
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:55:8: error: &#39;class ADXL345&#39; has no member named &#39;setTapDetectionOnZ&#39;
+   adxl.setTapDetectionOnZ(1);
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:58:8: error: &#39;class ADXL345&#39; has no member named &#39;setTapThreshold&#39;
+   adxl.setTapThreshold(50); //62.5mg per increment
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:59:8: error: &#39;class ADXL345&#39; has no member named &#39;setTapDuration&#39;
+   adxl.setTapDuration(15); //625us per increment
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:60:8: error: &#39;class ADXL345&#39; has no member named &#39;setDoubleTapLatency&#39;
+   adxl.setDoubleTapLatency(80); //1.25ms per increment
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:61:8: error: &#39;class ADXL345&#39; has no member named &#39;setDoubleTapWindow&#39;
+   adxl.setDoubleTapWindow(200); //1.25ms per increment
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:64:8: error: &#39;class ADXL345&#39; has no member named &#39;setFreeFallThreshold&#39;
+   adxl.setFreeFallThreshold(7); //(5 - 9) recommended - 62.5mg per increment
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:65:8: error: &#39;class ADXL345&#39; has no member named &#39;setFreeFallDuration&#39;
+   adxl.setFreeFallDuration(45); //(20 - 70) recommended - 5ms per increment
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:69:8: error: &#39;class ADXL345&#39; has no member named &#39;setInterruptMapping&#39;
+   adxl.setInterruptMapping( ADXL345_INT_SINGLE_TAP_BIT,   ADXL345_INT1_PIN );
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:69:29: error: &#39;ADXL345_INT_SINGLE_TAP_BIT&#39; was not declared in this scope
+   adxl.setInterruptMapping( ADXL345_INT_SINGLE_TAP_BIT,   ADXL345_INT1_PIN );
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:69:59: error: &#39;ADXL345_INT1_PIN&#39; was not declared in this scope
+   adxl.setInterruptMapping( ADXL345_INT_SINGLE_TAP_BIT,   ADXL345_INT1_PIN );
+                                                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:70:8: error: &#39;class ADXL345&#39; has no member named &#39;setInterruptMapping&#39;
+   adxl.setInterruptMapping( ADXL345_INT_DOUBLE_TAP_BIT,   ADXL345_INT1_PIN );
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:70:29: error: &#39;ADXL345_INT_DOUBLE_TAP_BIT&#39; was not declared in this scope
+   adxl.setInterruptMapping( ADXL345_INT_DOUBLE_TAP_BIT,   ADXL345_INT1_PIN );
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:71:8: error: &#39;class ADXL345&#39; has no member named &#39;setInterruptMapping&#39;
+   adxl.setInterruptMapping( ADXL345_INT_FREE_FALL_BIT,    ADXL345_INT1_PIN );
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:71:29: error: &#39;ADXL345_INT_FREE_FALL_BIT&#39; was not declared in this scope
+   adxl.setInterruptMapping( ADXL345_INT_FREE_FALL_BIT,    ADXL345_INT1_PIN );
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:72:8: error: &#39;class ADXL345&#39; has no member named &#39;setInterruptMapping&#39;
+   adxl.setInterruptMapping( ADXL345_INT_ACTIVITY_BIT,     ADXL345_INT1_PIN );
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:72:29: error: &#39;ADXL345_INT_ACTIVITY_BIT&#39; was not declared in this scope
+   adxl.setInterruptMapping( ADXL345_INT_ACTIVITY_BIT,     ADXL345_INT1_PIN );
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:73:8: error: &#39;class ADXL345&#39; has no member named &#39;setInterruptMapping&#39;
+   adxl.setInterruptMapping( ADXL345_INT_INACTIVITY_BIT,   ADXL345_INT1_PIN );
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:73:29: error: &#39;ADXL345_INT_INACTIVITY_BIT&#39; was not declared in this scope
+   adxl.setInterruptMapping( ADXL345_INT_INACTIVITY_BIT,   ADXL345_INT1_PIN );
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino:76:8: error: &#39;class ADXL345&#39; has no member named &#39;setInterrupt&#39;
+   adxl.setInterrupt( ADXL345_INT_SINGLE_TAP_BIT, 1);
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Accelerometer_ADXL345/examples/ADXL345_demo_code/ADXL345_demo_code.ino</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

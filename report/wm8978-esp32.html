@@ -1,0 +1,578 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>wm8978-esp32 - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>wm8978-esp32</h2>
+				<p>
+					Version: <b>1.0.4</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/wm8978-esp32/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>M5Stack_wm8978</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library wm8978-esp32 claims to run on esp32 architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp: In member function &#39;bool WM8978::begin()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:318:14: error: &#39;TAG&#39; was not declared in this scope
+     ESP_LOGE(TAG, &#34;No WM8978 dac @ i2c address: 0x%X&#34;, WM8978_ADDR);
+              ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:318:5: error: &#39;ESP_LOGE&#39; was not declared in this scope
+     ESP_LOGE(TAG, &#34;No WM8978 dac @ i2c address: 0x%X&#34;, WM8978_ADDR);
+     ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:318:5: note: suggested alternative: &#39;M_LOG2E&#39;
+     ESP_LOGE(TAG, &#34;No WM8978 dac @ i2c address: 0x%X&#34;, WM8978_ADDR);
+     ^~~~~~~~
+     M_LOG2E
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:323:14: error: &#39;TAG&#39; was not declared in this scope
+     ESP_LOGE(TAG, &#34;WM8978 init err: 0x%X&#34;, err);
+              ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:323:5: error: &#39;ESP_LOGE&#39; was not declared in this scope
+     ESP_LOGE(TAG, &#34;WM8978 init err: 0x%X&#34;, err);
+     ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:323:5: note: suggested alternative: &#39;M_LOG2E&#39;
+     ESP_LOGE(TAG, &#34;WM8978 init err: 0x%X&#34;, err);
+     ^~~~~~~~
+     M_LOG2E
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp: In member function &#39;bool WM8978::begin(uint8_t, uint8_t, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:345:12: error: &#39;TAG&#39; was not declared in this scope
+   ESP_LOGD(TAG, &#34;i2c init sda=%i scl=%i frequency=%i&#34;, sda, scl, frequency);
+            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:345:3: error: &#39;ESP_LOGD&#39; was not declared in this scope
+   ESP_LOGD(TAG, &#34;i2c init sda=%i scl=%i frequency=%i&#34;, sda, scl, frequency);
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:346:38: error: no matching function for call to &#39;TwoWire::begin(const uint8_t&amp;, const uint8_t&amp;, const uint32_t&amp;)&#39;
+   if (!Wire.begin(sda, scl, frequency)) {
+                                      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:3:0:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/Wire/src/Wire.h:53:10: note: candidate: void TwoWire::begin()
+     void begin();
+          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/Wire/src/Wire.h:53:10: note:   candidate expects 0 arguments, 3 provided
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/Wire/src/Wire.h:54:10: note: candidate: void TwoWire::begin(uint8_t)
+     void begin(uint8_t);
+          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/Wire/src/Wire.h:54:10: note:   candidate expects 1 argument, 3 provided
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/Wire/src/Wire.h:55:10: note: candidate: void TwoWire::begin(int)
+     void begin(int);
+          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/Wire/src/Wire.h:55:10: note:   candidate expects 1 argument, 3 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:347:5: error: &#39;ESP_LOGE&#39; was not declared in this scope
+     ESP_LOGE(TAG, &#34;Wire setup error sda=%i scl=%i frequency=%i&#34;, sda, scl, frequency);
+     ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:347:5: note: suggested alternative: &#39;M_LOG2E&#39;
+     ESP_LOGE(TAG, &#34;Wire setup error sda=%i scl=%i frequency=%i&#34;, sda, scl, frequency);
+     ^~~~~~~~
+     M_LOG2E
+
+</pre>
+
+					
+					<h4>examples/M5Stack_wm8978</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Audio_-_Adafruit_Fork/analyze_fft256.h:31:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Audio_-_Adafruit_Fork/Audio.h:66,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/examples/M5Stack_wm8978/M5Stack_wm8978.ino:2:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Audio_-_Adafruit_Fork/AudioStream.h:71:10: fatal error: kinetis.h: No such file or directory
+ #include &#34;kinetis.h&#34;
+          ^~~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;Audio.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Audio_-_Adafruit_Fork
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Audio
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Seeed_Arduino_Audio
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library wm8978-esp32 claims to run on esp32 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp: In member function &#39;bool WM8978::begin()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:318:14: error: &#39;TAG&#39; was not declared in this scope
+     ESP_LOGE(TAG, &#34;No WM8978 dac @ i2c address: 0x%X&#34;, WM8978_ADDR);
+              ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:318:5: error: &#39;ESP_LOGE&#39; was not declared in this scope
+     ESP_LOGE(TAG, &#34;No WM8978 dac @ i2c address: 0x%X&#34;, WM8978_ADDR);
+     ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:318:5: note: suggested alternative: &#39;ESTALE&#39;
+     ESP_LOGE(TAG, &#34;No WM8978 dac @ i2c address: 0x%X&#34;, WM8978_ADDR);
+     ^~~~~~~~
+     ESTALE
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:323:14: error: &#39;TAG&#39; was not declared in this scope
+     ESP_LOGE(TAG, &#34;WM8978 init err: 0x%X&#34;, err);
+              ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:323:5: error: &#39;ESP_LOGE&#39; was not declared in this scope
+     ESP_LOGE(TAG, &#34;WM8978 init err: 0x%X&#34;, err);
+     ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:323:5: note: suggested alternative: &#39;ESTALE&#39;
+     ESP_LOGE(TAG, &#34;WM8978 init err: 0x%X&#34;, err);
+     ^~~~~~~~
+     ESTALE
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp: In member function &#39;bool WM8978::begin(uint8_t, uint8_t, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:345:12: error: &#39;TAG&#39; was not declared in this scope
+   ESP_LOGD(TAG, &#34;i2c init sda=%i scl=%i frequency=%i&#34;, sda, scl, frequency);
+            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:345:3: error: &#39;ESP_LOGD&#39; was not declared in this scope
+   ESP_LOGD(TAG, &#34;i2c init sda=%i scl=%i frequency=%i&#34;, sda, scl, frequency);
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:346:38: error: no matching function for call to &#39;arduino::MbedI2C::begin(const uint8_t&amp;, const uint8_t&amp;, const uint32_t&amp;)&#39;
+   if (!Wire.begin(sda, scl, frequency)) {
+                                      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:3:0:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/libraries/Wire/Wire.h:39:18: note: candidate: virtual void arduino::MbedI2C::begin()
+     virtual void begin();
+                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/libraries/Wire/Wire.h:39:18: note:   candidate expects 0 arguments, 3 provided
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/libraries/Wire/Wire.h:43:18: note: candidate: virtual void arduino::MbedI2C::begin(uint8_t)
+     virtual void begin(uint8_t address);
+                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/libraries/Wire/Wire.h:43:18: note:   candidate expects 1 argument, 3 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:347:5: error: &#39;ESP_LOGE&#39; was not declared in this scope
+     ESP_LOGE(TAG, &#34;Wire setup error sda=%i scl=%i frequency=%i&#34;, sda, scl, frequency);
+     ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:347:5: note: suggested alternative: &#39;ESTALE&#39;
+     ESP_LOGE(TAG, &#34;Wire setup error sda=%i scl=%i frequency=%i&#34;, sda, scl, frequency);
+     ^~~~~~~~
+     ESTALE
+
+</pre>
+
+					
+					<h4>examples/M5Stack_wm8978</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Audio_-_Adafruit_Fork/analyze_fft256.h:31:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Audio_-_Adafruit_Fork/Audio.h:66,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/examples/M5Stack_wm8978/M5Stack_wm8978.ino:2:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Audio_-_Adafruit_Fork/AudioStream.h:71:10: fatal error: kinetis.h: No such file or directory
+ #include &#34;kinetis.h&#34;
+          ^~~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;Audio.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Audio_-_Adafruit_Fork
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Seeed_Arduino_Audio
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Audio
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library wm8978-esp32 claims to run on esp32 architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp: In member function &#39;bool WM8978::begin()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:318:14: error: &#39;TAG&#39; was not declared in this scope
+     ESP_LOGE(TAG, &#34;No WM8978 dac @ i2c address: 0x%X&#34;, WM8978_ADDR);
+              ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:318:5: error: &#39;ESP_LOGE&#39; was not declared in this scope
+     ESP_LOGE(TAG, &#34;No WM8978 dac @ i2c address: 0x%X&#34;, WM8978_ADDR);
+     ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:318:5: note: suggested alternative: &#39;TEST_MODE&#39;
+     ESP_LOGE(TAG, &#34;No WM8978 dac @ i2c address: 0x%X&#34;, WM8978_ADDR);
+     ^~~~~~~~
+     TEST_MODE
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:323:14: error: &#39;TAG&#39; was not declared in this scope
+     ESP_LOGE(TAG, &#34;WM8978 init err: 0x%X&#34;, err);
+              ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:323:5: error: &#39;ESP_LOGE&#39; was not declared in this scope
+     ESP_LOGE(TAG, &#34;WM8978 init err: 0x%X&#34;, err);
+     ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:323:5: note: suggested alternative: &#39;TEST_MODE&#39;
+     ESP_LOGE(TAG, &#34;WM8978 init err: 0x%X&#34;, err);
+     ^~~~~~~~
+     TEST_MODE
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp: In member function &#39;bool WM8978::begin(uint8_t, uint8_t, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:345:12: error: &#39;TAG&#39; was not declared in this scope
+   ESP_LOGD(TAG, &#34;i2c init sda=%i scl=%i frequency=%i&#34;, sda, scl, frequency);
+            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:345:3: error: &#39;ESP_LOGD&#39; was not declared in this scope
+   ESP_LOGD(TAG, &#34;i2c init sda=%i scl=%i frequency=%i&#34;, sda, scl, frequency);
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:346:38: error: no matching function for call to &#39;TwoWire::begin(const uint8_t&amp;, const uint8_t&amp;, const uint32_t&amp;)&#39;
+   if (!Wire.begin(sda, scl, frequency)) {
+                                      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:3:0:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:52:10: note: candidate: virtual void TwoWire::begin()
+     void begin();
+          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:52:10: note:   candidate expects 0 arguments, 3 provided
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:53:10: note: candidate: virtual void TwoWire::begin(uint8_t)
+     void begin(uint8_t);
+          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:53:10: note:   candidate expects 1 argument, 3 provided
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:54:10: note: candidate: void TwoWire::begin(int)
+     void begin(int);
+          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:54:10: note:   candidate expects 1 argument, 3 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:347:5: error: &#39;ESP_LOGE&#39; was not declared in this scope
+     ESP_LOGE(TAG, &#34;Wire setup error sda=%i scl=%i frequency=%i&#34;, sda, scl, frequency);
+     ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:347:5: note: suggested alternative: &#39;TEST_MODE&#39;
+     ESP_LOGE(TAG, &#34;Wire setup error sda=%i scl=%i frequency=%i&#34;, sda, scl, frequency);
+     ^~~~~~~~
+     TEST_MODE
+
+</pre>
+
+					
+					<h4>examples/M5Stack_wm8978</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Audio_-_Adafruit_Fork/analyze_fft256.h:31:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Audio_-_Adafruit_Fork/Audio.h:66,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/examples/M5Stack_wm8978/M5Stack_wm8978.ino:2:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Audio_-_Adafruit_Fork/AudioStream.h:71:10: fatal error: kinetis.h: No such file or directory
+ #include &#34;kinetis.h&#34;
+          ^~~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;Audio.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Audio_-_Adafruit_Fork
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Seeed_Arduino_Audio
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Audio
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library wm8978-esp32 claims to run on esp32 architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp: In member function &#39;bool WM8978::begin()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:318:14: error: &#39;TAG&#39; was not declared in this scope
+     ESP_LOGE(TAG, &#34;No WM8978 dac @ i2c address: 0x%X&#34;, WM8978_ADDR);
+              ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:318:5: error: &#39;ESP_LOGE&#39; was not declared in this scope
+     ESP_LOGE(TAG, &#34;No WM8978 dac @ i2c address: 0x%X&#34;, WM8978_ADDR);
+     ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:318:5: note: suggested alternative: &#39;M_LOG2E&#39;
+     ESP_LOGE(TAG, &#34;No WM8978 dac @ i2c address: 0x%X&#34;, WM8978_ADDR);
+     ^~~~~~~~
+     M_LOG2E
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:323:14: error: &#39;TAG&#39; was not declared in this scope
+     ESP_LOGE(TAG, &#34;WM8978 init err: 0x%X&#34;, err);
+              ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:323:5: error: &#39;ESP_LOGE&#39; was not declared in this scope
+     ESP_LOGE(TAG, &#34;WM8978 init err: 0x%X&#34;, err);
+     ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:323:5: note: suggested alternative: &#39;M_LOG2E&#39;
+     ESP_LOGE(TAG, &#34;WM8978 init err: 0x%X&#34;, err);
+     ^~~~~~~~
+     M_LOG2E
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp: In member function &#39;bool WM8978::begin(uint8_t, uint8_t, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:345:12: error: &#39;TAG&#39; was not declared in this scope
+   ESP_LOGD(TAG, &#34;i2c init sda=%i scl=%i frequency=%i&#34;, sda, scl, frequency);
+            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:345:3: error: &#39;ESP_LOGD&#39; was not declared in this scope
+   ESP_LOGD(TAG, &#34;i2c init sda=%i scl=%i frequency=%i&#34;, sda, scl, frequency);
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:346:38: error: no matching function for call to &#39;arduino::TwoWire::begin(const uint8_t&amp;, const uint8_t&amp;, const uint32_t&amp;)&#39;
+   if (!Wire.begin(sda, scl, frequency)) {
+                                      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:3:0:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/libraries/Wire/Wire.h:36:10: note: candidate: virtual void arduino::TwoWire::begin()
+     void begin();
+          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/libraries/Wire/Wire.h:36:10: note:   candidate expects 0 arguments, 3 provided
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/libraries/Wire/Wire.h:37:10: note: candidate: void arduino::TwoWire::begin(uint8_t, bool)
+     void begin(uint8_t address, bool enableGeneralCall);
+          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/libraries/Wire/Wire.h:37:10: note:   candidate expects 2 arguments, 3 provided
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/libraries/Wire/Wire.h:38:10: note: candidate: virtual void arduino::TwoWire::begin(uint8_t)
+     void begin(uint8_t address) {
+          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/libraries/Wire/Wire.h:38:10: note:   candidate expects 1 argument, 3 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:347:5: error: &#39;ESP_LOGE&#39; was not declared in this scope
+     ESP_LOGE(TAG, &#34;Wire setup error sda=%i scl=%i frequency=%i&#34;, sda, scl, frequency);
+     ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/src/WM8978.cpp:347:5: note: suggested alternative: &#39;M_LOG2E&#39;
+     ESP_LOGE(TAG, &#34;Wire setup error sda=%i scl=%i frequency=%i&#34;, sda, scl, frequency);
+     ^~~~~~~~
+     M_LOG2E
+
+</pre>
+
+					
+					<h4>examples/M5Stack_wm8978</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Audio_-_Adafruit_Fork/analyze_fft256.h:31:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Audio_-_Adafruit_Fork/Audio.h:66,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/examples/M5Stack_wm8978/M5Stack_wm8978.ino:2:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Audio_-_Adafruit_Fork/AudioStream.h:71:10: fatal error: kinetis.h: No such file or directory
+ #include &#34;kinetis.h&#34;
+          ^~~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;Audio.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Audio_-_Adafruit_Fork
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Audio
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Seeed_Arduino_Audio
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 202922 bytes (15%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 13880 bytes (4%) of dynamic memory, leaving 313800 bytes for local variables. Maximum is 327680 bytes.
+</pre>
+
+					
+					<h4>examples/M5Stack_wm8978</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Audio_-_Adafruit_Fork/analyze_fft256.h:31:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Audio_-_Adafruit_Fork/Audio.h:66,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wm8978-esp32/examples/M5Stack_wm8978/M5Stack_wm8978.ino:2:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Audio_-_Adafruit_Fork/AudioStream.h:71:21: fatal error: kinetis.h: No such file or directory
+compilation terminated.
+Multiple libraries were found for &#34;Audio.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Audio_-_Adafruit_Fork
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Seeed_Arduino_Audio
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Audio
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

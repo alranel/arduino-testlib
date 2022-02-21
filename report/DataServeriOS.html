@@ -1,0 +1,429 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>DataServeriOS - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>DataServeriOS</h2>
+				<p>
+					Version: <b>2.0.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/dataserverios/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>Arduino_Control</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /tmp/arduino-testlib4142586241/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DataServeriOS/src/DataServeriOS.h:39:28: error: flexible array member &#39;DataServeriOS::_customFunctionArray&#39; not at end of &#39;class DataServeriOS&#39;
+   int _customFunctionArray[];
+                            ^
+Multiple libraries were found for &#34;Ethernet.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ethernet
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EthernetENC
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/UIPEthernet
+</pre>
+
+					
+					<h4>examples/Arduino_Control</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DataServeriOS/examples/Arduino_Control/Arduino_Control.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DataServeriOS/src/DataServeriOS.h:39:28: error: flexible array member &#39;DataServeriOS::_customFunctionArray&#39; not at end of &#39;class DataServeriOS&#39;
+   int _customFunctionArray[];
+                            ^
+Multiple libraries were found for &#34;Ethernet.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ethernet
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EthernetENC
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/UIPEthernet
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /tmp/arduino-testlib2820573324/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DataServeriOS/src/DataServeriOS.h:39:28: error: flexible array member &#39;DataServeriOS::_customFunctionArray&#39; not at end of &#39;class DataServeriOS&#39;
+   int _customFunctionArray[];
+                            ^
+Multiple libraries were found for &#34;Ethernet.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ethernet
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/UIPEthernet
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EthernetENC
+</pre>
+
+					
+					<h4>examples/Arduino_Control</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DataServeriOS/examples/Arduino_Control/Arduino_Control.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DataServeriOS/src/DataServeriOS.h:39:28: error: flexible array member &#39;DataServeriOS::_customFunctionArray&#39; not at end of &#39;class DataServeriOS&#39;
+   int _customFunctionArray[];
+                            ^
+Multiple libraries were found for &#34;Ethernet.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ethernet
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/UIPEthernet
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EthernetENC
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /tmp/arduino-testlib2820573324/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DataServeriOS/src/DataServeriOS.h:39:28: error: flexible array member &#39;DataServeriOS::_customFunctionArray&#39; not at end of &#39;class DataServeriOS&#39;
+   int _customFunctionArray[];
+                            ^
+Multiple libraries were found for &#34;Ethernet.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ethernet
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/UIPEthernet
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EthernetENC
+</pre>
+
+					
+					<h4>examples/Arduino_Control</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DataServeriOS/examples/Arduino_Control/Arduino_Control.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DataServeriOS/src/DataServeriOS.h:39:28: error: flexible array member &#39;DataServeriOS::_customFunctionArray&#39; not at end of &#39;class DataServeriOS&#39;
+   int _customFunctionArray[];
+                            ^
+Multiple libraries were found for &#34;Ethernet.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ethernet
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/UIPEthernet
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EthernetENC
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /tmp/arduino-testlib4142586241/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DataServeriOS/src/DataServeriOS.h:39:28: error: flexible array member &#39;DataServeriOS::_customFunctionArray&#39; not at end of &#39;class DataServeriOS&#39;
+   int _customFunctionArray[];
+                            ^
+Multiple libraries were found for &#34;Ethernet.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ethernet
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EthernetENC
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/UIPEthernet
+</pre>
+
+					
+					<h4>examples/Arduino_Control</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DataServeriOS/examples/Arduino_Control/Arduino_Control.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DataServeriOS/src/DataServeriOS.h:39:28: error: flexible array member &#39;DataServeriOS::_customFunctionArray&#39; not at end of &#39;class DataServeriOS&#39;
+   int _customFunctionArray[];
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DataServeriOS/examples/Arduino_Control/Arduino_Control.ino:14:5: error: &#39;int Port&#39; redeclared as different kind of symbol
+ int Port = 80; // Port 80 is http
+     ^~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/samd21g18a.h:264:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/samd21.h:69,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd.h:105,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:38,
+                 from /tmp/arduino-sketch-2EF661B5960ED663B43D8780D3233BBF/sketch/Arduino_Control.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/component/port.h:389:3: note: previous declaration &#39;typedef struct Port Port&#39;
+ } Port;
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DataServeriOS/examples/Arduino_Control/Arduino_Control.ino:23:176: error: no matching function for call to &#39;DataServeriOS::DataServeriOS(EthernetServer (*)(Port), char [9], bool, char*, void (*)(), int [2], int, int [2], int, void (*)(int), char* (*)(int), int [2], int, char* (*)(int))&#39;
+ DataServeriOS dataServer(&amp;server,secpass,true,(char*)&#34;UNO&#34;,&amp;substitudeLoop,PWMPorts,2,ownFunctionForPorts,2,&amp;ownFunction,&amp;ownDigitalReturn,ownReturnForPorts,2,&amp;ownAnalogReturn);
+                                                                                                                                                                                ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DataServeriOS/examples/Arduino_Control/Arduino_Control.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DataServeriOS/src/DataServeriOS.h:21:3: note: candidate: DataServeriOS::DataServeriOS(EthernetServer*, char*, boolean, char*, void (*)(), int*, byte, int*, byte, void (*)(int), char* (*)(int), int*, byte, char* (*)(int))
+   DataServeriOS(EthernetServer *server, char *pass, boolean serial, char *Arduino, void (*substitudeLoop)(void),int pwmports[],byte nports,int cfports[],byte ncfports,void(*customfunction)(int),char*(*customdigitalreturn)(int),int crports[],byte ncrports,char*(*customanalogreturn)(int));
+   ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DataServeriOS/src/DataServeriOS.h:21:3: note:   no known conversion for argument 1 from &#39;EthernetServer (*)(Port)&#39; to &#39;EthernetServer*&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DataServeriOS/src/DataServeriOS.h:18:7: note: candidate: constexpr DataServeriOS::DataServeriOS(const DataServeriOS&amp;)
+ class DataServeriOS
+       ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DataServeriOS/src/DataServeriOS.h:18:7: note:   candidate expects 1 argument, 14 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DataServeriOS/src/DataServeriOS.h:18:7: note: candidate: constexpr DataServeriOS::DataServeriOS(DataServeriOS&amp;&amp;)
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DataServeriOS/src/DataServeriOS.h:18:7: note:   candidate expects 1 argument, 14 provided
+Multiple libraries were found for &#34;Ethernet.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ethernet
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EthernetENC
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/UIPEthernet
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DataServeriOS/src/DataServeriOS.cpp: In member function &#39;void DataServeriOS::RemotePWMWrite()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DataServeriOS/src/DataServeriOS.cpp:328:24: error: &#39;analogWrite&#39; was not declared in this scope
+   analogWrite(pin,value);
+                        ^
+Multiple libraries were found for &#34;Ethernet.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ethernet
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EthernetENC
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/UIPEthernet
+</pre>
+
+					
+					<h4>examples/Arduino_Control</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DataServeriOS/examples/Arduino_Control/Arduino_Control.ino:22:16: error: cannot declare variable &#39;server&#39; to be of abstract type &#39;EthernetServer&#39;
+ EthernetServer server(Port);
+                ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DataServeriOS/src/DataServeriOS.h:16:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DataServeriOS/examples/Arduino_Control/Arduino_Control.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ethernet/src/Ethernet.h:253:7: note:   because the following virtual functions are pure within &#39;EthernetServer&#39;:
+ class EthernetServer : public Server {
+       ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:152:0,
+                 from /tmp/arduino-sketch-2EF661B5960ED663B43D8780D3233BBF/sketch/Arduino_Control.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Server.h:28:18: note: 	virtual void Server::begin(uint16_t)
+     virtual void begin(uint16_t port=0) =0;
+                  ^
+Multiple libraries were found for &#34;Ethernet.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ethernet
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/UIPEthernet
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EthernetENC
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

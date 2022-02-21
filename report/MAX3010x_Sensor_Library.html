@@ -1,0 +1,1037 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>MAX3010x Sensor Library - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>MAX3010x Sensor Library</h2>
+				<p>
+					Version: <b>1.0.1</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/max3010x-sensor-library/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>MAX30100Pulseoximeter</pre></th>
+						
+						<th><pre>MAX30105PulseoximeterMultiLED</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+									
+										
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 1636 bytes (5%) of program storage space. Maximum is 32256 bytes.
+Global variables use 122 bytes (5%) of dynamic memory, leaving 1926 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+
+					
+					<h4>examples/MAX30100Pulseoximeter</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 5246 bytes (16%) of program storage space. Maximum is 32256 bytes.
+Global variables use 434 bytes (21%) of dynamic memory, leaving 1614 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+					
+					<h4>examples/MAX30105PulseoximeterMultiLED</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 5790 bytes (17%) of program storage space. Maximum is 32256 bytes.
+Global variables use 461 bytes (22%) of dynamic memory, leaving 1587 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX30101.h:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x.h:23,
+                 from /tmp/arduino-testlib2189873311/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setMultiLedConfigurationInternal(uint8_t, uint8_t*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:85:12: error: there are no arguments to &#39;clearFIFO&#39; that depend on a template parameter, so a declaration of &#39;clearFIFO&#39; must be available [-fpermissive]
+     return clearFIFO();
+            ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:85:12: note: (if you use &#39;-fpermissive&#39;, G&#43;&#43; will accept your code, but allowing the use of an undeclared name is deprecated)
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX30101.h:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x.h:23,
+                 from /tmp/arduino-testlib2189873311/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setMode(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::Mode)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:113:9: error: there are no arguments to &#39;setModeInternal&#39; that depend on a template parameter, so a declaration of &#39;setModeInternal&#39; must be available [-fpermissive]
+     if(!setModeInternal(static_cast&lt;uint8_t&gt;(mode))) return false;
+         ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setSamplingRate(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::SamplingRate)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:143:9: error: there are no arguments to &#39;readByte&#39; that depend on a template parameter, so a declaration of &#39;readByte&#39; must be available [-fpermissive]
+     if(!readByte(SPO2_CFG_REG, cfg)) return false;
+         ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:148:12: error: there are no arguments to &#39;writeByte&#39; that depend on a template parameter, so a declaration of &#39;writeByte&#39; must be available [-fpermissive]
+     return writeByte(SPO2_CFG_REG, cfg);
+            ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setADCRange(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::ADCRange)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:170:9: error: there are no arguments to &#39;readByte&#39; that depend on a template parameter, so a declaration of &#39;readByte&#39; must be available [-fpermissive]
+     if(!readByte(SPO2_CFG_REG, cfg)) return false;
+         ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:175:12: error: there are no arguments to &#39;writeByte&#39; that depend on a template parameter, so a declaration of &#39;writeByte&#39; must be available [-fpermissive]
+     return writeByte(SPO2_CFG_REG, cfg);
+            ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setResolution(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::Resolution)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:197:9: error: there are no arguments to &#39;readByte&#39; that depend on a template parameter, so a declaration of &#39;readByte&#39; must be available [-fpermissive]
+     if(!readByte(SPO2_CFG_REG, cfg)) return false;
+         ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:202:12: error: there are no arguments to &#39;writeByte&#39; that depend on a template parameter, so a declaration of &#39;writeByte&#39; must be available [-fpermissive]
+     return writeByte(SPO2_CFG_REG, cfg);
+            ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::enableFIFORollover()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:210:12: error: there are no arguments to &#39;setBit&#39; that depend on a template parameter, so a declaration of &#39;setBit&#39; must be available [-fpermissive]
+     return setBit(FIFO_CFG_REG, FIFO_ROLLOVER_EN_BIT, true);
+            ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::disableFIFORollover()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:218:12: error: there are no arguments to &#39;setBit&#39; that depend on a template parameter, so a declaration of &#39;setBit&#39; must be available [-fpermissive]
+     return setBit(FIFO_CFG_REG, FIFO_ROLLOVER_EN_BIT, false);
+            ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setSampleAveraging(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::SampleAveraging)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:243:9: error: there are no arguments to &#39;readByte&#39; that depend on a template parameter, so a declaration of &#39;readByte&#39; must be available [-fpermissive]
+     if(!readByte(FIFO_CFG_REG, cfg)) return false;
+         ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:248:12: error: there are no arguments to &#39;writeByte&#39; that depend on a template parameter, so a declaration of &#39;writeByte&#39; must be available [-fpermissive]
+     return writeByte(FIFO_CFG_REG, cfg);
+            ^~~~~~~~~
+
+</pre>
+
+					
+					<h4>examples/MAX30100Pulseoximeter</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX30101.h:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/examples/MAX30100Pulseoximeter/MAX30100Pulseoximeter.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setMultiLedConfigurationInternal(uint8_t, uint8_t*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:85:12: error: there are no arguments to &#39;clearFIFO&#39; that depend on a template parameter, so a declaration of &#39;clearFIFO&#39; must be available [-fpermissive]
+     return clearFIFO();
+            ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:85:12: note: (if you use &#39;-fpermissive&#39;, G&#43;&#43; will accept your code, but allowing the use of an undeclared name is deprecated)
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX30101.h:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/examples/MAX30100Pulseoximeter/MAX30100Pulseoximeter.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setMode(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::Mode)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:113:9: error: there are no arguments to &#39;setModeInternal&#39; that depend on a template parameter, so a declaration of &#39;setModeInternal&#39; must be available [-fpermissive]
+     if(!setModeInternal(static_cast&lt;uint8_t&gt;(mode))) return false;
+         ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setSamplingRate(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::SamplingRate)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:143:9: error: there are no arguments to &#39;readByte&#39; that depend on a template parameter, so a declaration of &#39;readByte&#39; must be available [-fpermissive]
+     if(!readByte(SPO2_CFG_REG, cfg)) return false;
+         ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:148:12: error: there are no arguments to &#39;writeByte&#39; that depend on a template parameter, so a declaration of &#39;writeByte&#39; must be available [-fpermissive]
+     return writeByte(SPO2_CFG_REG, cfg);
+            ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setADCRange(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::ADCRange)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:170:9: error: there are no arguments to &#39;readByte&#39; that depend on a template parameter, so a declaration of &#39;readByte&#39; must be available [-fpermissive]
+     if(!readByte(SPO2_CFG_REG, cfg)) return false;
+         ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:175:12: error: there are no arguments to &#39;writeByte&#39; that depend on a template parameter, so a declaration of &#39;writeByte&#39; must be available [-fpermissive]
+     return writeByte(SPO2_CFG_REG, cfg);
+            ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setResolution(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::Resolution)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:197:9: error: there are no arguments to &#39;readByte&#39; that depend on a template parameter, so a declaration of &#39;readByte&#39; must be available [-fpermissive]
+     if(!readByte(SPO2_CFG_REG, cfg)) return false;
+         ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:202:12: error: there are no arguments to &#39;writeByte&#39; that depend on a template parameter, so a declaration of &#39;writeByte&#39; must be available [-fpermissive]
+     return writeByte(SPO2_CFG_REG, cfg);
+            ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::enableFIFORollover()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:210:12: error: there are no arguments to &#39;setBit&#39; that depend on a template parameter, so a declaration of &#39;setBit&#39; must be available [-fpermissive]
+     return setBit(FIFO_CFG_REG, FIFO_ROLLOVER_EN_BIT, true);
+            ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::disableFIFORollover()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:218:12: error: there are no arguments to &#39;setBit&#39; that depend on a template parameter, so a declaration of &#39;setBit&#39; must be available [-fpermissive]
+     return setBit(FIFO_CFG_REG, FIFO_ROLLOVER_EN_BIT, false);
+            ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setSampleAveraging(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::SampleAveraging)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:243:9: error: there are no arguments to &#39;readByte&#39; that depend on a template parameter, so a declaration of &#39;readByte&#39; must be available [-fpermissive]
+     if(!readByte(FIFO_CFG_REG, cfg)) return false;
+         ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:248:12: error: there are no arguments to &#39;writeByte&#39; that depend on a template parameter, so a declaration of &#39;writeByte&#39; must be available [-fpermissive]
+     return writeByte(FIFO_CFG_REG, cfg);
+            ^~~~~~~~~
+
+</pre>
+					
+					<h4>examples/MAX30105PulseoximeterMultiLED</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX30101.h:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/examples/MAX30105PulseoximeterMultiLED/MAX30105PulseoximeterMultiLED.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setMultiLedConfigurationInternal(uint8_t, uint8_t*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:85:12: error: there are no arguments to &#39;clearFIFO&#39; that depend on a template parameter, so a declaration of &#39;clearFIFO&#39; must be available [-fpermissive]
+     return clearFIFO();
+            ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:85:12: note: (if you use &#39;-fpermissive&#39;, G&#43;&#43; will accept your code, but allowing the use of an undeclared name is deprecated)
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX30101.h:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/examples/MAX30105PulseoximeterMultiLED/MAX30105PulseoximeterMultiLED.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setMode(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::Mode)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:113:9: error: there are no arguments to &#39;setModeInternal&#39; that depend on a template parameter, so a declaration of &#39;setModeInternal&#39; must be available [-fpermissive]
+     if(!setModeInternal(static_cast&lt;uint8_t&gt;(mode))) return false;
+         ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setSamplingRate(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::SamplingRate)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:143:9: error: there are no arguments to &#39;readByte&#39; that depend on a template parameter, so a declaration of &#39;readByte&#39; must be available [-fpermissive]
+     if(!readByte(SPO2_CFG_REG, cfg)) return false;
+         ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:148:12: error: there are no arguments to &#39;writeByte&#39; that depend on a template parameter, so a declaration of &#39;writeByte&#39; must be available [-fpermissive]
+     return writeByte(SPO2_CFG_REG, cfg);
+            ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setADCRange(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::ADCRange)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:170:9: error: there are no arguments to &#39;readByte&#39; that depend on a template parameter, so a declaration of &#39;readByte&#39; must be available [-fpermissive]
+     if(!readByte(SPO2_CFG_REG, cfg)) return false;
+         ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:175:12: error: there are no arguments to &#39;writeByte&#39; that depend on a template parameter, so a declaration of &#39;writeByte&#39; must be available [-fpermissive]
+     return writeByte(SPO2_CFG_REG, cfg);
+            ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setResolution(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::Resolution)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:197:9: error: there are no arguments to &#39;readByte&#39; that depend on a template parameter, so a declaration of &#39;readByte&#39; must be available [-fpermissive]
+     if(!readByte(SPO2_CFG_REG, cfg)) return false;
+         ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:202:12: error: there are no arguments to &#39;writeByte&#39; that depend on a template parameter, so a declaration of &#39;writeByte&#39; must be available [-fpermissive]
+     return writeByte(SPO2_CFG_REG, cfg);
+            ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::enableFIFORollover()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:210:12: error: there are no arguments to &#39;setBit&#39; that depend on a template parameter, so a declaration of &#39;setBit&#39; must be available [-fpermissive]
+     return setBit(FIFO_CFG_REG, FIFO_ROLLOVER_EN_BIT, true);
+            ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::disableFIFORollover()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:218:12: error: there are no arguments to &#39;setBit&#39; that depend on a template parameter, so a declaration of &#39;setBit&#39; must be available [-fpermissive]
+     return setBit(FIFO_CFG_REG, FIFO_ROLLOVER_EN_BIT, false);
+            ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setSampleAveraging(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::SampleAveraging)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:243:9: error: there are no arguments to &#39;readByte&#39; that depend on a template parameter, so a declaration of &#39;readByte&#39; must be available [-fpermissive]
+     if(!readByte(FIFO_CFG_REG, cfg)) return false;
+         ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:248:12: error: there are no arguments to &#39;writeByte&#39; that depend on a template parameter, so a declaration of &#39;writeByte&#39; must be available [-fpermissive]
+     return writeByte(FIFO_CFG_REG, cfg);
+            ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In instantiation of &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setMode(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::Mode) [with MAX3010xImpl = MAX30105; MAX3010xSample = MAX30105Sample]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/examples/MAX30105PulseoximeterMultiLED/MAX30105PulseoximeterMultiLED.ino:16:44:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:113:24: error: &#39;setModeInternal&#39; was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+     if(!setModeInternal(static_cast&lt;uint8_t&gt;(mode))) return false;
+         ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:113:24: note: declarations in dependent base &#39;MAX3010x&lt;MAX30105, MAX30105Sample&gt;&#39; are not found by unqualified lookup
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:113:24: note: use &#39;this-&gt;setModeInternal&#39; instead
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 3104 bytes (6%) of program storage space. Maximum is 49152 bytes.
+Global variables use 317 bytes (5%) of dynamic memory, leaving 5827 bytes for local variables. Maximum is 6144 bytes.
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_core.h:10:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX30100.h:8,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX30100.cpp:5:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_core.h: In instantiation of &#39;bool MAX3010/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_core.h: In instantiation of &#39;bool MAX3010x&lt;MAX3010xImpl, MAX3010xSample&gt;::readBlock(uint8_t, uint8_t, uint8_t*) [with MAX3010xImpl = MAX30102; MAX3010xSample = MAX30102Sample; uint8_t = unsigned char]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_core.h:65:21:   required from &#39;bool MAX3010x&lt;MAX3010xImpl, MAX3010xSample&gt;::readByte(uint8_t, uint8_t&amp;) [with MAX3010xImpl = MAX30102; MAX3010xSample = MAX30102Sample; uint8_t = unsigned char]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:197:17:   required from &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setResolution(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::Resolution) [with MAX3010xImpl = MAX30102; MAX3010xSample = MAX30102Sample]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX30102.cpp:61:44:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:63:12: note: candidate 1: size_t TwoWire::requestFrom(int, int)
+     size_t requestFrom(int, int);
+            ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:61:12: note: candidate 2: virtual size_t TwoWire::requestFrom(uint8_t, size_t)
+     size_t requestFrom(uint8_t, size_t);
+            ^~~~~~~~~~~
+</pre>
+
+					
+					<h4>examples/MAX30100Pulseoximeter</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 6205 bytes (12%) of program storage space. Maximum is 49152 bytes.
+Global variables use 488 bytes (7%) of dynamic memory, leaving 5656 bytes for local variables. Maximum is 6144 bytes.
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_core.h:10:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX30100.h:8,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x.h:22,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/examples/MAX30100Pulseoximeter/MAX30100Pulseoximeter.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_core.h: In instantiation of &#39;bool MAX3010x&lt;MAX3010xImpl, MAX3010xSample&gt;::readBlock(uint8_t, uint8_t, uint8_t*) [with MAX3010xImpl = MAX30100; MAX3010xSample = MAX30100Sample; uint8_t = unsigned char]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_core.h:371:20:   required from &#39;MAX3010xSample MAX3010x&lt;MAX3010xImpl, MAX3010xSample&gt;::readSample(int) [with MAX3010xImpl = MAX30100; MAX3010xSample = MAX30100Sample]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/examples/MAX30100Pulseoximeter/MAX30100Pulseoximeter.ino:18:39:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:63:12: note: candidate 1: size_t TwoWire::requestFrom(int, int)
+     size_t requestFrom(int, int);
+            ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:61:12: note: candidate 2: virtual size_t TwoWire::requestFrom(uint8_t, size_t)
+     size_t requestFrom(uint8_t, size_t);
+            ^~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_core.h:10:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX30100.h:8,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX30100.cpp:5:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_core.h: In instantiation of &#39;bool MAX3010x&lt;MAX3010xImpl, MAX3010xSample&gt;::readBlock(uint8_t, uint8_t, uint8_t*) [with MAX3010xImpl = MAX30100; MAX3010xSample = MAX30100Sample; uint8_t = unsigned char]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_core.h:65:21:   required from &#39;bool MAX3010x&lt;MAX3010xImpl, MAX3010xSample&gt;::readByte(uint8_t, uint8_t&amp;) [with MAX3010xImpl = MAX30100; MAX3010xSample = MAX30100Sample; uint8_t = unsigned char]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX30100.cpp:93:32:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:63:12: note: candidate 1: size_t TwoWire::requestFrom(int, int)
+     size_t requestFrom(int, int);
+            ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:61:12: note: candidate 2: virtual size_t TwoWire::requestFrom(uint8_t, size_t)
+     size_t requestFrom(uint8_t, size_t);
+            ^~~~~~~~~~~
+�������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:61:12: note: candidate 2: virtual size_t TwoWire::requestFrom(uint8_t, size_t)
+     size_t requestFrom(uint8_t, size_t);
+            ^~~~~~~~~~~
+</pre>
+					
+					<h4>examples/MAX30105PulseoximeterMultiLED</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 6726 bytes (13%) of program storage space. Maximum is 49152 bytes.
+Global variables use 499 bytes (8%) of dynamic memory, leaving 5645 bytes for local variables. Maximum is 6144 bytes.
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_core.h:10:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX30100.h:8,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x.h:22,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/examples/MAX30105PulseoximeterMultiLED/MAX30105PulseoximeterMultiLED.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_core.h: In instantiation of &#39;bool MAX3010x&lt;MAX3010xImpl, MAX3010xSample&gt;::readBlock(uint8_t, uint8_t, uint8_t*) [with MAX3010xImpl = MAX30105; MAX3010xSample = MAX30105Sample; uint8_t = unsigned char]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_core.h:371:20:   required from &#39;MAX3010xSample MAX3010x&lt;MAX3010xImpl, MAX3010xSample&gt;::readSample(int) [with MAX3010xImpl = MAX30105; MAX3010xSample = MAX30105Sample]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/examples/MAX30105PulseoximeterMultiLED/MAX30105PulseoximeterMultiLED.ino:26:39:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:63:12: note: candidate 1: size_t TwoWire::requestFrom(int, int)
+     size_t requestFrom(int, int);
+            ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:61:12: note: candidate 2: virtual size_t TwoWire::requestFrom(uint8_t, size_t)
+     size_t requestFrom(uint8_t, size_t);
+            ^~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_core.h:10:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX30100.h:8,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX30100.cpp:5:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_core.h: In instantiation of &#39;bool MAX3010x&lt;MAX3010xImpl, MAX3010xSample&gt;::readBlock(uint8_t, uint8_t, uint8_t*) [with MAX3010xImpl = MAX30100; MAX3010xSample = MAX30100Sample; uint8_t = unsigned char]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_core.h:65:21:   required from &#39;bool MAX3010x&lt;MAX3010xImpl, MAX3010xSample&gt;::readByte(uint8_t, uint8_t&amp;) [with MAX3010xImpl = MAX30100; MAX3010xSample = MAX30100Sample; uint8_t = unsigned char]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX30100.cpp:93:32:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:63:12: note: candidate 1: size_t TwoWire::requestFrom(int, int)
+     size_t requestFrom(int, int);
+            ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:61:12: note: candidate 2: virtual size_t TwoWire::requestFrom(uint8_t, size_t)
+     size_t requestFrom(uint8_t, size_t);
+            ^~~~~~~~~~~
+�����������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:61:12: note: candidate 2: virtual size_t TwoWire::requestFrom(uint8_t, size_t)
+     size_t requestFrom(uint8_t, size_t);
+            ^~~~~~~~~~~
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX30101.h:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x.h:23,
+                 from /tmp/arduino-testlib1598474920/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setMultiLedConfigurationInternal(uint8_t, uint8_t*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:85:12: error: there are no arguments to &#39;clearFIFO&#39; that depend on a template parameter, so a declaration of &#39;clearFIFO&#39; must be available [-fpermissive]
+     return clearFIFO();
+            ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:85:12: note: (if you use &#39;-fpermissive&#39;, G&#43;&#43; will accept your code, but allowing the use of an undeclared name is deprecated)
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX30101.h:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x.h:23,
+                 from /tmp/arduino-testlib1598474920/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setMode(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::Mode)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:113:9: error: there are no arguments to &#39;setModeInternal&#39; that depend on a template parameter, so a declaration of &#39;setModeInternal&#39; must be available [-fpermissive]
+     if(!setModeInternal(static_cast&lt;uint8_t&gt;(mode))) return false;
+         ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setSamplingRate(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::SamplingRate)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:143:9: error: there are no arguments to &#39;readByte&#39; that depend on a template parameter, so a declaration of &#39;readByte&#39; must be available [-fpermissive]
+     if(!readByte(SPO2_CFG_REG, cfg)) return false;
+         ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:148:12: error: there are no arguments to &#39;writeByte&#39; that depend on a template parameter, so a declaration of &#39;writeByte&#39; must be available [-fpermissive]
+     return writeByte(SPO2_CFG_REG, cfg);
+            ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setADCRange(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::ADCRange)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:170:9: error: there are no arguments to &#39;readByte&#39; that depend on a template parameter, so a declaration of &#39;readByte&#39; must be available [-fpermissive]
+     if(!readByte(SPO2_CFG_REG, cfg)) return false;
+         ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:175:12: error: there are no arguments to &#39;writeByte&#39; that depend on a template parameter, so a declaration of &#39;writeByte&#39; must be available [-fpermissive]
+     return writeByte(SPO2_CFG_REG, cfg);
+            ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setResolution(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::Resolution)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:197:9: error: there are no arguments to &#39;readByte&#39; that depend on a template parameter, so a declaration of &#39;readByte&#39; must be available [-fpermissive]
+     if(!readByte(SPO2_CFG_REG, cfg)) return false;
+         ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:202:12: error: there are no arguments to &#39;writeByte&#39; that depend on a template parameter, so a declaration of &#39;writeByte&#39; must be available [-fpermissive]
+     return writeByte(SPO2_CFG_REG, cfg);
+            ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::enableFIFORollover()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:210:12: error: there are no arguments to &#39;setBit&#39; that depend on a template parameter, so a declaration of &#39;setBit&#39; must be available [-fpermissive]
+     return setBit(FIFO_CFG_REG, FIFO_ROLLOVER_EN_BIT, true);
+            ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::disableFIFORollover()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:218:12: error: there are no arguments to &#39;setBit&#39; that depend on a template parameter, so a declaration of &#39;setBit&#39; must be available [-fpermissive]
+     return setBit(FIFO_CFG_REG, FIFO_ROLLOVER_EN_BIT, false);
+            ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setSampleAveraging(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::SampleAveraging)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:243:9: error: there are no arguments to &#39;readByte&#39; that depend on a template parameter, so a declaration of &#39;readByte&#39; must be available [-fpermissive]
+     if(!readByte(FIFO_CFG_REG, cfg)) return false;
+         ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:248:12: error: there are no arguments to &#39;writeByte&#39; that depend on a template parameter, so a declaration of &#39;writeByte&#39; must be available [-fpermissive]
+     return writeByte(FIFO_CFG_REG, cfg);
+            ^~~~~~~~~
+
+</pre>
+
+					
+					<h4>examples/MAX30100Pulseoximeter</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX30101.h:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/examples/MAX30100Pulseoximeter/MAX30100Pulseoximeter.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setMultiLedConfigurationInternal(uint8_t, uint8_t*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:85:12: error: there are no arguments to &#39;clearFIFO&#39; that depend on a template parameter, so a declaration of &#39;clearFIFO&#39; must be available [-fpermissive]
+     return clearFIFO();
+            ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:85:12: note: (if you use &#39;-fpermissive&#39;, G&#43;&#43; will accept your code, but allowing the use of an undeclared name is deprecated)
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX30101.h:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/examples/MAX30100Pulseoximeter/MAX30100Pulseoximeter.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setMode(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::Mode)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:113:9: error: there are no arguments to &#39;setModeInternal&#39; that depend on a template parameter, so a declaration of &#39;setModeInternal&#39; must be available [-fpermissive]
+     if(!setModeInternal(static_cast&lt;uint8_t&gt;(mode))) return false;
+         ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setSamplingRate(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::SamplingRate)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:143:9: error: there are no arguments to &#39;readByte&#39; that depend on a template parameter, so a declaration of &#39;readByte&#39; must be available [-fpermissive]
+     if(!readByte(SPO2_CFG_REG, cfg)) return false;
+         ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:148:12: error: there are no arguments to &#39;writeByte&#39; that depend on a template parameter, so a declaration of &#39;writeByte&#39; must be available [-fpermissive]
+     return writeByte(SPO2_CFG_REG, cfg);
+            ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setADCRange(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::ADCRange)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:170:9: error: there are no arguments to &#39;readByte&#39; that depend on a template parameter, so a declaration of &#39;readByte&#39; must be available [-fpermissive]
+     if(!readByte(SPO2_CFG_REG, cfg)) return false;
+         ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:175:12: error: there are no arguments to &#39;writeByte&#39; that depend on a template parameter, so a declaration of &#39;writeByte&#39; must be available [-fpermissive]
+     return writeByte(SPO2_CFG_REG, cfg);
+            ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setResolution(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::Resolution)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:197:9: error: there are no arguments to &#39;readByte&#39; that depend on a template parameter, so a declaration of &#39;readByte&#39; must be available [-fpermissive]
+     if(!readByte(SPO2_CFG_REG, cfg)) return false;
+         ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:202:12: error: there are no arguments to &#39;writeByte&#39; that depend on a template parameter, so a declaration of &#39;writeByte&#39; must be available [-fpermissive]
+     return writeByte(SPO2_CFG_REG, cfg);
+            ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::enableFIFORollover()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:210:12: error: there are no arguments to &#39;setBit&#39; that depend on a template parameter, so a declaration of &#39;setBit&#39; must be available [-fpermissive]
+     return setBit(FIFO_CFG_REG, FIFO_ROLLOVER_EN_BIT, true);
+            ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::disableFIFORollover()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:218:12: error: there are no arguments to &#39;setBit&#39; that depend on a template parameter, so a declaration of &#39;setBit&#39; must be available [-fpermissive]
+     return setBit(FIFO_CFG_REG, FIFO_ROLLOVER_EN_BIT, false);
+            ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setSampleAveraging(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::SampleAveraging)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:243:9: error: there are no arguments to &#39;readByte&#39; that depend on a template parameter, so a declaration of &#39;readByte&#39; must be available [-fpermissive]
+     if(!readByte(FIFO_CFG_REG, cfg)) return false;
+         ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:248:12: error: there are no arguments to &#39;writeByte&#39; that depend on a template parameter, so a declaration of &#39;writeByte&#39; must be available [-fpermissive]
+     return writeByte(FIFO_CFG_REG, cfg);
+            ^~~~~~~~~
+
+</pre>
+					
+					<h4>examples/MAX30105PulseoximeterMultiLED</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX30101.h:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/examples/MAX30105PulseoximeterMultiLED/MAX30105PulseoximeterMultiLED.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setMultiLedConfigurationInternal(uint8_t, uint8_t*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:85:12: error: there are no arguments to &#39;clearFIFO&#39; that depend on a template parameter, so a declaration of &#39;clearFIFO&#39; must be available [-fpermissive]
+     return clearFIFO();
+            ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:85:12: note: (if you use &#39;-fpermissive&#39;, G&#43;&#43; will accept your code, but allowing the use of an undeclared name is deprecated)
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX30101.h:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/examples/MAX30105PulseoximeterMultiLED/MAX30105PulseoximeterMultiLED.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setMode(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::Mode)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:113:9: error: there are no arguments to &#39;setModeInternal&#39; that depend on a template parameter, so a declaration of &#39;setModeInternal&#39; must be available [-fpermissive]
+     if(!setModeInternal(static_cast&lt;uint8_t&gt;(mode))) return false;
+         ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setSamplingRate(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::SamplingRate)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:143:9: error: there are no arguments to &#39;readByte&#39; that depend on a template parameter, so a declaration of &#39;readByte&#39; must be available [-fpermissive]
+     if(!readByte(SPO2_CFG_REG, cfg)) return false;
+         ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:148:12: error: there are no arguments to &#39;writeByte&#39; that depend on a template parameter, so a declaration of &#39;writeByte&#39; must be available [-fpermissive]
+     return writeByte(SPO2_CFG_REG, cfg);
+            ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setADCRange(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::ADCRange)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:170:9: error: there are no arguments to &#39;readByte&#39; that depend on a template parameter, so a declaration of &#39;readByte&#39; must be available [-fpermissive]
+     if(!readByte(SPO2_CFG_REG, cfg)) return false;
+         ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:175:12: error: there are no arguments to &#39;writeByte&#39; that depend on a template parameter, so a declaration of &#39;writeByte&#39; must be available [-fpermissive]
+     return writeByte(SPO2_CFG_REG, cfg);
+            ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setResolution(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::Resolution)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:197:9: error: there are no arguments to &#39;readByte&#39; that depend on a template parameter, so a declaration of &#39;readByte&#39; must be available [-fpermissive]
+     if(!readByte(SPO2_CFG_REG, cfg)) return false;
+         ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:202:12: error: there are no arguments to &#39;writeByte&#39; that depend on a template parameter, so a declaration of &#39;writeByte&#39; must be available [-fpermissive]
+     return writeByte(SPO2_CFG_REG, cfg);
+            ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::enableFIFORollover()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:210:12: error: there are no arguments to &#39;setBit&#39; that depend on a template parameter, so a declaration of &#39;setBit&#39; must be available [-fpermissive]
+     return setBit(FIFO_CFG_REG, FIFO_ROLLOVER_EN_BIT, true);
+            ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::disableFIFORollover()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:218:12: error: there are no arguments to &#39;setBit&#39; that depend on a template parameter, so a declaration of &#39;setBit&#39; must be available [-fpermissive]
+     return setBit(FIFO_CFG_REG, FIFO_ROLLOVER_EN_BIT, false);
+            ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setSampleAveraging(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::SampleAveraging)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:243:9: error: there are no arguments to &#39;readByte&#39; that depend on a template parameter, so a declaration of &#39;readByte&#39; must be available [-fpermissive]
+     if(!readByte(FIFO_CFG_REG, cfg)) return false;
+         ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:248:12: error: there are no arguments to &#39;writeByte&#39; that depend on a template parameter, so a declaration of &#39;writeByte&#39; must be available [-fpermissive]
+     return writeByte(FIFO_CFG_REG, cfg);
+            ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In instantiation of &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setMode(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::Mode) [with MAX3010xImpl = MAX30105; MAX3010xSample = MAX30105Sample]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/examples/MAX30105PulseoximeterMultiLED/MAX30105PulseoximeterMultiLED.ino:16:44:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:113:24: error: &#39;setModeInternal&#39; was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+     if(!setModeInternal(static_cast&lt;uint8_t&gt;(mode))) return false;
+         ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:113:24: note: declarations in dependent base &#39;MAX3010x&lt;MAX30105, MAX30105Sample&gt;&#39; are not found by unqualified lookup
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:113:24: note: use &#39;this-&gt;setModeInternal&#39; instead
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX30101.h:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x.h:23,
+                 from /tmp/arduino-testlib3491904118/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setMultiLedConfigurationInternal(uint8_t, uint8_t*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:85:22: error: there are no arguments to &#39;clearFIFO&#39; that depend on a template parameter, so a declaration of &#39;clearFIFO&#39; must be available [-fpermissive]
+     return clearFIFO();
+                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:85:22: note: (if you use &#39;-fpermissive&#39;, G&#43;&#43; will accept your code, but allowing the use of an undeclared name is deprecated)
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX30101.h:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x.h:23,
+                 from /tmp/arduino-testlib3491904118/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setMode(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::Mode)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:113:51: error: there are no arguments to &#39;setModeInternal&#39; that depend on a template parameter, so a declaration of &#39;setModeInternal&#39; must be available [-fpermissive]
+     if(!setModeInternal(static_cast&lt;uint8_t&gt;(mode))) return false;
+                                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setSamplingRate(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::SamplingRate)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:143:35: error: there are no arguments to &#39;readByte&#39; that depend on a template parameter, so a declaration of &#39;readByte&#39; must be available [-fpermissive]
+     if(!readByte(SPO2_CFG_REG, cfg)) return false;
+                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:148:39: error: there are no arguments to &#39;writeByte&#39; that depend on a template parameter, so a declaration of &#39;writeByte&#39; must be available [-fpermissive]
+     return writeByte(SPO2_CFG_REG, cfg);
+                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setADCRange(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::ADCRange)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:170:35: error: there are no arguments to &#39;readByte&#39; that depend on a template parameter, so a declaration of &#39;readByte&#39; must be available [-fpermissive]
+     if(!readByte(SPO2_CFG_REG, cfg)) return false;
+                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:175:39: error: there are no arguments to &#39;writeByte&#39; that depend on a template parameter, so a declaration of &#39;writeByte&#39; must be available [-fpermissive]
+     return writeByte(SPO2_CFG_REG, cfg);
+                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setResolution(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::Resolution)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:197:35: error: there are no arguments to &#39;readByte&#39; that depend on a template parameter, so a declaration of &#39;readByte&#39; must be available [-fpermissive]
+     if(!readByte(SPO2_CFG_REG, cfg)) return false;
+                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:202:39: error: there are no arguments to &#39;writeByte&#39; that depend on a template parameter, so a declaration of &#39;writeByte&#39; must be available [-fpermissive]
+     return writeByte(SPO2_CFG_REG, cfg);
+                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::enableFIFORollover()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:210:59: error: there are no arguments to &#39;setBit&#39; that depend on a template parameter, so a declaration of &#39;setBit&#39; must be available [-fpermissive]
+     return setBit(FIFO_CFG_REG, FIFO_ROLLOVER_EN_BIT, true);
+                                                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::disableFIFORollover()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:218:60: error: there are no arguments to &#39;setBit&#39; that depend on a template parameter, so a declaration of &#39;setBit&#39; must be available [-fpermissive]
+     return setBit(FIFO_CFG_REG, FIFO_ROLLOVER_EN_BIT, false);
+                                                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setSampleAveraging(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::SampleAveraging)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:243:35: error: there are no arguments to &#39;readByte&#39; that depend on a template parameter, so a declaration of &#39;readByte&#39; must be available [-fpermissive]
+     if(!readByte(FIFO_CFG_REG, cfg)) return false;
+                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:248:39: error: there are no arguments to &#39;writeByte&#39; that depend on a template parameter, so a declaration of &#39;writeByte&#39; must be available [-fpermissive]
+     return writeByte(FIFO_CFG_REG, cfg);
+                                       ^
+
+</pre>
+
+					
+					<h4>examples/MAX30100Pulseoximeter</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX30101.h:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/examples/MAX30100Pulseoximeter/MAX30100Pulseoximeter.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setMultiLedConfigurationInternal(uint8_t, uint8_t*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:85:22: error: there are no arguments to &#39;clearFIFO&#39; that depend on a template parameter, so a declaration of &#39;clearFIFO&#39; must be available [-fpermissive]
+     return clearFIFO();
+                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:85:22: note: (if you use &#39;-fpermissive&#39;, G&#43;&#43; will accept your code, but allowing the use of an undeclared name is deprecated)
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX30101.h:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/examples/MAX30100Pulseoximeter/MAX30100Pulseoximeter.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setMode(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::Mode)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:113:51: error: there are no arguments to &#39;setModeInternal&#39; that depend on a template parameter, so a declaration of &#39;setModeInternal&#39; must be available [-fpermissive]
+     if(!setModeInternal(static_cast&lt;uint8_t&gt;(mode))) return false;
+                                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setSamplingRate(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::SamplingRate)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:143:35: error: there are no arguments to &#39;readByte&#39; that depend on a template parameter, so a declaration of &#39;readByte&#39; must be available [-fpermissive]
+     if(!readByte(SPO2_CFG_REG, cfg)) return false;
+                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:148:39: error: there are no arguments to &#39;writeByte&#39; that depend on a template parameter, so a declaration of &#39;writeByte&#39; must be available [-fpermissive]
+     return writeByte(SPO2_CFG_REG, cfg);
+                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setADCRange(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::ADCRange)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:170:35: error: there are no arguments to &#39;readByte&#39; that depend on a template parameter, so a declaration of &#39;readByte&#39; must be available [-fpermissive]
+     if(!readByte(SPO2_CFG_REG, cfg)) return false;
+                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:175:39: error: there are no arguments to &#39;writeByte&#39; that depend on a template parameter, so a declaration of &#39;writeByte&#39; must be available [-fpermissive]
+     return writeByte(SPO2_CFG_REG, cfg);
+                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setResolution(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::Resolution)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:197:35: error: there are no arguments to &#39;readByte&#39; that depend on a template parameter, so a declaration of &#39;readByte&#39; must be available [-fpermissive]
+     if(!readByte(SPO2_CFG_REG, cfg)) return false;
+                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:202:39: error: there are no arguments to &#39;writeByte&#39; that depend on a template parameter, so a declaration of &#39;writeByte&#39; must be available [-fpermissive]
+     return writeByte(SPO2_CFG_REG, cfg);
+                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::enableFIFORollover()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:210:59: error: there are no arguments to &#39;setBit&#39; that depend on a template parameter, so a declaration of &#39;setBit&#39; must be available [-fpermissive]
+     return setBit(FIFO_CFG_REG, FIFO_ROLLOVER_EN_BIT, true);
+                                                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::disableFIFORollover()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:218:60: error: there are no arguments to &#39;setBit&#39; that depend on a template parameter, so a declaration of &#39;setBit&#39; must be available [-fpermissive]
+     return setBit(FIFO_CFG_REG, FIFO_ROLLOVER_EN_BIT, false);
+                                                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setSampleAveraging(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::SampleAveraging)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:243:35: error: there are no arguments to &#39;readByte&#39; that depend on a template parameter, so a declaration of &#39;readByte&#39; must be available [-fpermissive]
+     if(!readByte(FIFO_CFG_REG, cfg)) return false;
+                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:248:39: error: there are no arguments to &#39;writeByte&#39; that depend on a template parameter, so a declaration of &#39;writeByte&#39; must be available [-fpermissive]
+     return writeByte(FIFO_CFG_REG, cfg);
+                                       ^
+
+</pre>
+					
+					<h4>examples/MAX30105PulseoximeterMultiLED</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX30101.h:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/examples/MAX30105PulseoximeterMultiLED/MAX30105PulseoximeterMultiLED.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setMultiLedConfigurationInternal(uint8_t, uint8_t*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:85:22: error: there are no arguments to &#39;clearFIFO&#39; that depend on a template parameter, so a declaration of &#39;clearFIFO&#39; must be available [-fpermissive]
+     return clearFIFO();
+                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:85:22: note: (if you use &#39;-fpermissive&#39;, G&#43;&#43; will accept your code, but allowing the use of an undeclared name is deprecated)
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX30101.h:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/examples/MAX30105PulseoximeterMultiLED/MAX30105PulseoximeterMultiLED.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setMode(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::Mode)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:113:51: error: there are no arguments to &#39;setModeInternal&#39; that depend on a template parameter, so a declaration of &#39;setModeInternal&#39; must be available [-fpermissive]
+     if(!setModeInternal(static_cast&lt;uint8_t&gt;(mode))) return false;
+                                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setSamplingRate(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::SamplingRate)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:143:35: error: there are no arguments to &#39;readByte&#39; that depend on a template parameter, so a declaration of &#39;readByte&#39; must be available [-fpermissive]
+     if(!readByte(SPO2_CFG_REG, cfg)) return false;
+                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:148:39: error: there are no arguments to &#39;writeByte&#39; that depend on a template parameter, so a declaration of &#39;writeByte&#39; must be available [-fpermissive]
+     return writeByte(SPO2_CFG_REG, cfg);
+                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setADCRange(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::ADCRange)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:170:35: error: there are no arguments to &#39;readByte&#39; that depend on a template parameter, so a declaration of &#39;readByte&#39; must be available [-fpermissive]
+     if(!readByte(SPO2_CFG_REG, cfg)) return false;
+                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:175:39: error: there are no arguments to &#39;writeByte&#39; that depend on a template parameter, so a declaration of &#39;writeByte&#39; must be available [-fpermissive]
+     return writeByte(SPO2_CFG_REG, cfg);
+                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setResolution(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::Resolution)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:197:35: error: there are no arguments to &#39;readByte&#39; that depend on a template parameter, so a declaration of &#39;readByte&#39; must be available [-fpermissive]
+     if(!readByte(SPO2_CFG_REG, cfg)) return false;
+                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:202:39: error: there are no arguments to &#39;writeByte&#39; that depend on a template parameter, so a declaration of &#39;writeByte&#39; must be available [-fpermissive]
+     return writeByte(SPO2_CFG_REG, cfg);
+                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::enableFIFORollover()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:210:59: error: there are no arguments to &#39;setBit&#39; that depend on a template parameter, so a declaration of &#39;setBit&#39; must be available [-fpermissive]
+     return setBit(FIFO_CFG_REG, FIFO_ROLLOVER_EN_BIT, true);
+                                                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::disableFIFORollover()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:218:60: error: there are no arguments to &#39;setBit&#39; that depend on a template parameter, so a declaration of &#39;setBit&#39; must be available [-fpermissive]
+     return setBit(FIFO_CFG_REG, FIFO_ROLLOVER_EN_BIT, false);
+                                                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In member function &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setSampleAveraging(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::SampleAveraging)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:243:35: error: there are no arguments to &#39;readByte&#39; that depend on a template parameter, so a declaration of &#39;readByte&#39; must be available [-fpermissive]
+     if(!readByte(FIFO_CFG_REG, cfg)) return false;
+                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:248:39: error: there are no arguments to &#39;writeByte&#39; that depend on a template parameter, so a declaration of &#39;writeByte&#39; must be available [-fpermissive]
+     return writeByte(FIFO_CFG_REG, cfg);
+                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h: In instantiation of &#39;bool MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::setMode(MAX3010xMultiLed&lt;MAX3010xImpl, MAX3010xSample&gt;::Mode) [with MAX3010xImpl = MAX30105; MAX3010xSample = MAX30105Sample]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/examples/MAX30105PulseoximeterMultiLED/MAX30105PulseoximeterMultiLED.ino:16:44:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:113:24: error: &#39;setModeInternal&#39; was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+     if(!setModeInternal(static_cast&lt;uint8_t&gt;(mode))) return false;
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:113:24: note: declarations in dependent base &#39;MAX3010x&lt;MAX30105, MAX30105Sample&gt;&#39; are not found by unqualified lookup
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MAX3010x_Sensor_Library/src/MAX3010x_multiLed_core.h:113:24: note: use &#39;this-&gt;setModeInternal&#39; instead
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

@@ -1,0 +1,571 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>WroobImp - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>WroobImp</h2>
+				<p>
+					Version: <b>2.0.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/wroobimp/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>WroobImpGpio</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits.hpp:14:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Strings/StringAdapters.hpp:7,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Memory/MemoryPool.hpp:10,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Variant/VariantData.hpp:7,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Variant/SlotFunctions.hpp:8,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Array/ArrayIterator.hpp:7,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Array/ArrayRef.hpp:8,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson.hpp:24,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson.h:9,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/WroobImp/src/WroobImp.h:12,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/WroobImp/src/WroobImp.cpp:8:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/is_convertible.hpp: In instantiation of &#39;const bool ArduinoJson6192_1::is_convertible&lt;ArduinoJson6192_1::JsonDocument, int&gt;::value&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Variant/VariantRef.hpp:88:25:   recursively required by substitution of &#39;template&lt;class T&gt; struct ArduinoJson6192_1::Converter&lt;T, typename ArduinoJson6192_1::enable_if&lt;ArduinoJson6192_1::is_enum&lt;T&gt;::value&gt;::type&gt; [with T = ArduinoJson6192_1::JsonDocument]&#39;
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Variant/VariantRef.hpp:88:25:   required from &#39;bool ArduinoJson6192_1::VariantRef::set(const T&amp;) const [with T = ArduinoJson6192_1::JsonDocument]&#39;
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Object/MemberProxy.hpp:49:5:   required from &#39;typename ArduinoJson6192_1::enable_if&lt;(! ArduinoJson6192_1::is_array&lt;T&gt;::value), ArduinoJson6192_1::MemberProxy&lt;TParent, TStringRef&gt;&amp;&gt;::type ArduinoJson6192_1::MemberProxy&lt;TParent, TStringRef&gt;::operator=(const TValue&amp;) [with TValue = ArduinoJson6192_1::JsonDocument; TObject = ArduinoJson6192_1::JsonDocument&amp;; TStringRef = const char*; typename ArduinoJson6192_1::enable_if&lt;(! ArduinoJson6192_1::is_array&lt;T&gt;::value), ArduinoJson6192_1::MemberProxy&lt;TParent, TStringRef&gt;&amp;&gt;::type = ArduinoJson6192_1::MemberProxy&lt;ArduinoJson6192_1::JsonDocument&amp;, const char*&gt;&amp;]&#39;
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/WroobImp/src/WroobImp.cpp:211:25:   required from here
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/is_convertible.hpp:34:55: error: &#39;ArduinoJson6192_1::JsonDocument::~JsonDocument()&#39; is protected within this context
+   static const bool value = sizeof(probe(declval&lt;From&gt;())) == sizeof(Yes);
+                                          ~~~~~~~~~~~~~^~
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Document/BasicJsonDocument.hpp:7:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Document/DynamicJsonDocument.hpp:7,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson.hpp:28,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson.h:9,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/WroobImp/src/WroobImp.h:12,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/WroobImp/src/WroobImp.cpp:8:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Document/JsonDocument.hpp:323:3: note: declared protected here
+   ~JsonDocument() {}
+   ^
+Multiple libraries were found for &#34;ArduinoJson.h&#34;
+  Used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CMMC_MQTT_Connector
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ThingESP
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/BaleMessengerBot_Arduino
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Antares_ESP8266_HTTP
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CoogleIOT
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ThingsIoT
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Antares_ESP8266_MQTT
+Multiple libraries were found for &#34;TimerOne.h&#34;
+  Used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/TimerOne
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Volume_3
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AIStarter
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MP3Player
+</pre>
+
+					
+					<h4>examples/WroobImpGpio</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits.hpp:14:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Strings/StringAdapters.hpp:7,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Memory/MemoryPool.hpp:10,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Variant/VariantData.hpp:7,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Variant/SlotFunctions.hpp:8,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Array/ArrayIterator.hpp:7,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Array/ArrayRef.hpp:8,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson.hpp:24,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson.h:9,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/WroobImp/src/WroobImp.h:12,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/WroobImp/src/WroobImp.cpp:8:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/is_convertible.hpp: In instantiation of &#39;const bool ArduinoJson6192_1::is_convertible&lt;ArduinoJson6192_1::JsonDocument, int&gt;::value&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Variant/VariantRef.hpp:88:25:   recursively required by substitution of &#39;template&lt;class T&gt; struct ArduinoJson6192_1::Converter&lt;T, typename ArduinoJson6192_1::enable_if&lt;ArduinoJson6192_1::is_enum&lt;T&gt;::value&gt;::type&gt; [with T = ArduinoJson6192_1::JsonDocument]&#39;
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Variant/VariantRef.hpp:88:25:   required from &#39;bool ArduinoJson6192_1::VariantRef::set(const T&amp;) const [with T = ArduinoJson6192_1::JsonDocument]&#39;
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Object/MemberProxy.hpp:49:5:   required from &#39;typename ArduinoJson6192_1::enable_if&lt;(! ArduinoJson6192_1::is_array&lt;T&gt;::value), ArduinoJson6192_1::MemberProxy&lt;TParent, TStringRef&gt;&amp;&gt;::type ArduinoJson6192_1::MemberProxy&lt;TParent, TStringRef&gt;::operator=(const TValue&amp;) [with TValue = ArduinoJson6192_1::JsonDocument; TObject = ArduinoJson6192_1::JsonDocument&amp;; TStringRef = const char*; typename ArduinoJson6192_1::enable_if&lt;(! ArduinoJson6192_1::is_array&lt;T&gt;::value), ArduinoJson6192_1::MemberProxy&lt;TParent, TStringRef&gt;&amp;&gt;::type = ArduinoJson6192_1::MemberProxy&lt;ArduinoJson6192_1::JsonDocument&amp;, const char*&gt;&amp;]&#39;
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/WroobImp/src/WroobImp.cpp:211:25:   required from here
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/is_convertible.hpp:34:55: error: &#39;ArduinoJson6192_1::JsonDocument::~JsonDocument()&#39; is protected within this context
+   static const bool value = sizeof(probe(declval&lt;From&gt;())) == sizeof(Yes);
+                                          ~~~~~~~~~~~~~^~
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Document/BasicJsonDocument.hpp:7:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Document/DynamicJsonDocument.hpp:7,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson.hpp:28,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson.h:9,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/WroobImp/src/WroobImp.h:12,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/WroobImp/src/WroobImp.cpp:8:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson/src/ArduinoJson/Document/JsonDocument.hpp:323:3: note: declared protected here
+   ~JsonDocument() {}
+   ^
+Multiple libraries were found for &#34;ArduinoJson.h&#34;
+  Used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ThingsIoT
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CoogleIOT
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ThingESP
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Antares_ESP8266_HTTP
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CMMC_MQTT_Connector
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/BaleMessengerBot_Arduino
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Antares_ESP8266_MQTT
+Multiple libraries were found for &#34;TimerOne.h&#34;
+  Used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/TimerOne
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Volume_3
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AIStarter
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MP3Player
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WroobImp/src/WroobImp.h:13:0,
+                 from /tmp/arduino-testlib3323098934/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoUniqueID/src/ArduinoUniqueID.h:24:2: error: #error &#34;ArduinoUniqueID only works on AVR, SAM, SAMD, STM32, Teensy, RP2040, megaAVR and ESP Architecture&#34;
+ #error &#34;ArduinoUniqueID only works on AVR, SAM, SAMD, STM32, Teensy, RP2040, megaAVR and ESP Architecture&#34;
+  ^~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WroobImp/src/WroobImp.h:15:0,
+                 from /tmp/arduino-testlib3323098934/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AIStarter/src/TimerOne.h:39:10: fatal error: avr/io.h: No such file or directory
+ #include &lt;avr/io.h&gt;
+          ^~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;ArduinoJson.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ThingsIoT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CoogleIOT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/BaleMessengerBot_Arduino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CMMC_MQTT_Connector
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ThingESP
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Antares_ESP8266_MQTT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Antares_ESP8266_HTTP
+Multiple libraries were found for &#34;TimerOne.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AIStarter
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Volume_3
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerOne
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MP3Player
+</pre>
+
+					
+					<h4>examples/WroobImpGpio</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WroobImp/src/WroobImp.h:13:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WroobImp/examples/WroobImpGpio/WroobImpGpio.ino:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoUniqueID/src/ArduinoUniqueID.h:24:2: error: #error &#34;ArduinoUniqueID only works on AVR, SAM, SAMD, STM32, Teensy, RP2040, megaAVR and ESP Architecture&#34;
+ #error &#34;ArduinoUniqueID only works on AVR, SAM, SAMD, STM32, Teensy, RP2040, megaAVR and ESP Architecture&#34;
+  ^~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WroobImp/src/WroobImp.h:15:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WroobImp/examples/WroobImpGpio/WroobImpGpio.ino:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AIStarter/src/TimerOne.h:39:10: fatal error: avr/io.h: No such file or directory
+ #include &lt;avr/io.h&gt;
+          ^~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;ArduinoJson.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Antares_ESP8266_HTTP
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Antares_ESP8266_MQTT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ThingsIoT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CoogleIOT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CMMC_MQTT_Connector
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ThingESP
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/BaleMessengerBot_Arduino
+Multiple libraries were found for &#34;TimerOne.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AIStarter
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerOne
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Volume_3
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MP3Player
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AIStarter/src/Beep.cpp:1:10: fatal error: arduino.h: No such file or directory
+ #include &#34;arduino.h&#34;
+          ^~~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;ArduinoJson.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ThingESP
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Antares_ESP8266_MQTT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ThingsIoT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CoogleIOT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/BaleMessengerBot_Arduino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CMMC_MQTT_Connector
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Antares_ESP8266_HTTP
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK
+Multiple libraries were found for &#34;TimerOne.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AIStarter
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerOne
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MP3Player
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Volume_3
+</pre>
+
+					
+					<h4>examples/WroobImpGpio</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AIStarter/src/Beep.cpp:1:10: fatal error: arduino.h: No such file or directory
+ #include &#34;arduino.h&#34;
+          ^~~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;ArduinoJson.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CoogleIOT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/BaleMessengerBot_Arduino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ThingsIoT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Antares_ESP8266_HTTP
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ThingESP
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Antares_ESP8266_MQTT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CMMC_MQTT_Connector
+Multiple libraries were found for &#34;TimerOne.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AIStarter
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Volume_3
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MP3Player
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerOne
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/WroobImp/src/WroobImp.h:15:0,
+                 from /private/tmp/arduino-testlib1491582369/test/test.ino:1:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AIStarter/src/TimerOne.h:39:10: fatal error: avr/io.h: No such file or directory
+ #include &lt;avr/io.h&gt;
+          ^~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;ArduinoJson.h&#34;
+  Used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CMMC_MQTT_Connector
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/BaleMessengerBot_Arduino
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ThingsIoT
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CoogleIOT
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Antares_ESP8266_MQTT
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Antares_ESP8266_HTTP
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ThingESP
+Multiple libraries were found for &#34;TimerOne.h&#34;
+  Used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AIStarter
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/TimerOne
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Volume_3
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MP3Player
+</pre>
+
+					
+					<h4>examples/WroobImpGpio</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/WroobImp/src/WroobImp.h:15:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/WroobImp/examples/WroobImpGpio/WroobImpGpio.ino:7:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AIStarter/src/TimerOne.h:39:10: fatal error: avr/io.h: No such file or directory
+ #include &lt;avr/io.h&gt;
+          ^~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;ArduinoJson.h&#34;
+  Used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduinoJson
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CMMC_MQTT_Connector
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Antares_ESP8266_MQTT
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/BaleMessengerBot_Arduino
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CoogleIOT
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ThingESP
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ThingsIoT
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Antares_ESP8266_HTTP
+Multiple libraries were found for &#34;TimerOne.h&#34;
+  Used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AIStarter
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MP3Player
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Volume_3
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/TimerOne
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WroobImp/src/WroobImp.h:15:0,
+                 from /tmp/arduino-testlib1801083497/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AIStarter/src/TimerOne.h:39:20: fatal error: avr/io.h: No such file or directory
+compilation terminated.
+Multiple libraries were found for &#34;ArduinoJson.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CMMC_MQTT_Connector
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/BaleMessengerBot_Arduino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ThingsIoT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ThingESP
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CoogleIOT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Antares_ESP8266_MQTT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Antares_ESP8266_HTTP
+Multiple libraries were found for &#34;TimerOne.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AIStarter
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Volume_3
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerOne
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MP3Player
+</pre>
+
+					
+					<h4>examples/WroobImpGpio</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WroobImp/src/WroobImp.h:15:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WroobImp/examples/WroobImpGpio/WroobImpGpio.ino:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AIStarter/src/TimerOne.h:39:20: fatal error: avr/io.h: No such file or directory
+compilation terminated.
+Multiple libraries were found for &#34;ArduinoJson.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Antares_ESP8266_MQTT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ThingESP
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Antares_ESP8266_HTTP
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/BaleMessengerBot_Arduino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ThingsIoT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CMMC_MQTT_Connector
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CoogleIOT
+Multiple libraries were found for &#34;TimerOne.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AIStarter
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MP3Player
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Volume_3
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerOne
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

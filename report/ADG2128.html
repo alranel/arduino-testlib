@@ -1,0 +1,453 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>ADG2128 - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>ADG2128</h2>
+				<p>
+					Version: <b>1.0.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/adg2128/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>ADG2128-Example</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADG2128/src/ADG2128.h:44:0,
+                 from /tmp/arduino-testlib578530410/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:117:17: error: &#39;uint&#39; has not been declared
+     void concat(uint nu);
+                 ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:117:10: error: &#39;void StringBuilder::concat(int)&#39; cannot be overloaded
+     void concat(uint nu);
+          ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:116:10: error: with &#39;void StringBuilder::concat(int)&#39;
+     void concat(int nu);
+          ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:152:28: error: &#39;uint&#39; has not been declared
+     bool     drop_position(uint pos);   // And use this to reap the tokens that you&#39;ve used.
+                            ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:164:66: error: &#39;uint&#39; has not been declared
+     static void printBuffer(StringBuilder* output, uint8_t* buf, uint len, const char* indent = &#34;\t&#34;);
+                                                                  ^~~~
+
+</pre>
+
+					
+					<h4>examples/ADG2128-Example</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADG2128/src/ADG2128.h:44:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADG2128/examples/ADG2128-Example/ADG2128-Example.ino:11:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:117:17: error: &#39;uint&#39; has not been declared
+     void concat(uint nu);
+                 ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:117:10: error: &#39;void StringBuilder::concat(int)&#39; cannot be overloaded
+     void concat(uint nu);
+          ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:116:10: error: with &#39;void StringBuilder::concat(int)&#39;
+     void concat(int nu);
+          ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:152:28: error: &#39;uint&#39; has not been declared
+     bool     drop_position(uint pos);   // And use this to reap the tokens that you&#39;ve used.
+                            ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:164:66: error: &#39;uint&#39; has not been declared
+     static void printBuffer(StringBuilder* output, uint8_t* buf, uint len, const char* indent = &#34;\t&#34;);
+                                                                  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADG2128/examples/ADG2128-Example/ADG2128-Example.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADG2128/examples/ADG2128-Example/ADG2128-Example.ino:82:8: error: &#39;class TwoWire&#39; has no member named &#39;setSDA&#39;
+   Wire.setSDA(SDA_PIN);
+        ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADG2128/examples/ADG2128-Example/ADG2128-Example.ino:83:8: error: &#39;class TwoWire&#39; has no member named &#39;setSCL&#39;
+   Wire.setSCL(SCL_PIN);
+        ^~~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADG2128/src/ADG2128.cpp: In member function &#39;int8_t ADG2128::_read_device()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADG2128/src/ADG2128.cpp:276:25: error: &#39;TwoWire {aka class arduino::MbedI2C}&#39; has no member named &#39;receive&#39;; did you mean &#39;receiveThd&#39;?
+           bytes = _bus-&gt;receive();
+                         ^~~~~~~
+                         receiveThd
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADG2128/src/ADG2128.cpp:277:32: error: &#39;TwoWire {aka class arduino::MbedI2C}&#39; has no member named &#39;receive&#39;; did you mean &#39;receiveThd&#39;?
+           _values[row] = _bus-&gt;receive();
+                                ^~~~~~~
+                                receiveThd
+
+</pre>
+
+					
+					<h4>examples/ADG2128-Example</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADG2128/examples/ADG2128-Example/ADG2128-Example.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADG2128/examples/ADG2128-Example/ADG2128-Example.ino:82:8: error: &#39;class arduino::MbedI2C&#39; has no member named &#39;setSDA&#39;
+   Wire.setSDA(SDA_PIN);
+        ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADG2128/examples/ADG2128-Example/ADG2128-Example.ino:83:8: error: &#39;class arduino::MbedI2C&#39; has no member named &#39;setSCL&#39;
+   Wire.setSCL(SCL_PIN);
+        ^~~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADG2128/src/ADG2128.h:44:0,
+                 from /tmp/arduino-testlib1186381066/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:117:17: error: &#39;uint&#39; has not been declared
+     void concat(uint nu);
+                 ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:117:10: error: &#39;void StringBuilder::concat(int)&#39; cannot be overloaded
+     void concat(uint nu);
+          ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:116:10: error: with &#39;void StringBuilder::concat(int)&#39;
+     void concat(int nu);
+          ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:152:28: error: &#39;uint&#39; has not been declared
+     bool     drop_position(uint pos);   // And use this to reap the tokens that you&#39;ve used.
+                            ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:164:66: error: &#39;uint&#39; has not been declared
+     static void printBuffer(StringBuilder* output, uint8_t* buf, uint len, const char* indent = &#34;\t&#34;);
+                                                                  ^~~~
+
+</pre>
+
+					
+					<h4>examples/ADG2128-Example</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADG2128/src/ADG2128.h:44:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADG2128/examples/ADG2128-Example/ADG2128-Example.ino:11:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:117:17: error: &#39;uint&#39; has not been declared
+     void concat(uint nu);
+                 ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:117:10: error: &#39;void StringBuilder::concat(int)&#39; cannot be overloaded
+     void concat(uint nu);
+          ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:116:10: error: with &#39;void StringBuilder::concat(int)&#39;
+     void concat(int nu);
+          ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:152:28: error: &#39;uint&#39; has not been declared
+     bool     drop_position(uint pos);   // And use this to reap the tokens that you&#39;ve used.
+                            ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:164:66: error: &#39;uint&#39; has not been declared
+     static void printBuffer(StringBuilder* output, uint8_t* buf, uint len, const char* indent = &#34;\t&#34;);
+                                                                  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADG2128/examples/ADG2128-Example/ADG2128-Example.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADG2128/examples/ADG2128-Example/ADG2128-Example.ino:82:8: error: &#39;class TwoWire&#39; has no member named &#39;setSDA&#39;
+   Wire.setSDA(SDA_PIN);
+        ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADG2128/examples/ADG2128-Example/ADG2128-Example.ino:83:8: error: &#39;class TwoWire&#39; has no member named &#39;setSCL&#39;
+   Wire.setSCL(SCL_PIN);
+        ^~~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADG2128/src/ADG2128.cpp: In member function &#39;int8_t ADG2128::_read_device()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADG2128/src/ADG2128.cpp:276:25: error: &#39;class arduino::TwoWire&#39; has no member named &#39;receive&#39;; did you mean &#39;onReceive&#39;?
+           bytes = _bus-&gt;receive();
+                         ^~~~~~~
+                         onReceive
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADG2128/src/ADG2128.cpp:277:32: error: &#39;class arduino::TwoWire&#39; has no member named &#39;receive&#39;; did you mean &#39;onReceive&#39;?
+           _values[row] = _bus-&gt;receive();
+                                ^~~~~~~
+                                onReceive
+
+</pre>
+
+					
+					<h4>examples/ADG2128-Example</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADG2128/examples/ADG2128-Example/ADG2128-Example.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADG2128/examples/ADG2128-Example/ADG2128-Example.ino:82:8: error: &#39;class arduino::TwoWire&#39; has no member named &#39;setSDA&#39;
+   Wire.setSDA(SDA_PIN);
+        ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADG2128/examples/ADG2128-Example/ADG2128-Example.ino:83:8: error: &#39;class arduino::TwoWire&#39; has no member named &#39;setSCL&#39;
+   Wire.setSCL(SCL_PIN);
+        ^~~~~~
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADG2128/src/ADG2128.cpp: In member function &#39;int8_t ADG2128::_read_device()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADG2128/src/ADG2128.cpp:276:25: error: &#39;class TwoWire&#39; has no member named &#39;receive&#39;
+           bytes = _bus-&gt;receive();
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADG2128/src/ADG2128.cpp:277:32: error: &#39;class TwoWire&#39; has no member named &#39;receive&#39;
+           _values[row] = _bus-&gt;receive();
+                                ^
+
+</pre>
+
+					
+					<h4>examples/ADG2128-Example</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADG2128/examples/ADG2128-Example/ADG2128-Example.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADG2128/examples/ADG2128-Example/ADG2128-Example.ino:82:8: error: &#39;class TwoWire&#39; has no member named &#39;setSDA&#39;
+   Wire.setSDA(SDA_PIN);
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADG2128/examples/ADG2128-Example/ADG2128-Example.ino:83:8: error: &#39;class TwoWire&#39; has no member named &#39;setSCL&#39;
+   Wire.setSCL(SCL_PIN);
+        ^
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

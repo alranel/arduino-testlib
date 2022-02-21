@@ -1,0 +1,297 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>Sodaq_N2X - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>Sodaq_N2X</h2>
+				<p>
+					Version: <b>1.0.1</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/sodaq_n2x/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+							<td>No ⚠️</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library Sodaq_N2X claims to run on samd architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+Sketch uses 474 bytes (1%) of program storage space. Maximum is 32256 bytes.
+Global variables use 10 bytes (0%) of dynamic memory, leaving 2038 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library Sodaq_N2X claims to run on samd architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+In file included from /tmp/arduino-testlib2207115286/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_N2X/src/Sodaq_N2X.h:188:70: error: reference to &#39;UDP&#39; is ambiguous
+     int    socketCreate(uint16_t localPort = 0, Protocols protocol = UDP);
+                                                                      ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_N2X/src/Sodaq_N2X.h:54:5: note: candidates are: Protocols UDP
+     UDP
+     ^~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/ArduinoAPI.h:37:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:27,
+                 from /tmp/arduino-sketch-2602D905AB07A92F67F0256A5F820EE2/sketch/test.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Udp.h:42:7: note:                 class arduino::UDP
+ class UDP : public Stream {
+       ^~~
+Multiple libraries were found for &#34;Sodaq_wdt.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt
+</pre>
+
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library Sodaq_N2X claims to run on samd architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /tmp/arduino-testlib2207115286/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_N2X/src/Sodaq_N2X.h:188:70: error: reference to &#39;UDP&#39; is ambiguous
+     int    socketCreate(uint16_t localPort = 0, Protocols protocol = UDP);
+                                                                      ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_N2X/src/Sodaq_N2X.h:54:5: note: candidates are: Protocols UDP
+     UDP
+     ^~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:37:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /tmp/arduino-sketch-2602D905AB07A92F67F0256A5F820EE2/sketch/test.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Udp.h:42:7: note:                 class arduino::UDP
+ class UDP : public Stream {
+       ^~~
+Multiple libraries were found for &#34;Sodaq_wdt.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt
+</pre>
+
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /tmp/arduino-testlib2207115286/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_N2X/src/Sodaq_N2X.h:188:70: error: reference to &#39;UDP&#39; is ambiguous
+     int    socketCreate(uint16_t localPort = 0, Protocols protocol = UDP);
+                                                                      ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_N2X/src/Sodaq_N2X.h:54:5: note: candidates are: Protocols UDP
+     UDP
+     ^~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/ArduinoAPI.h:37:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:23,
+                 from /tmp/arduino-sketch-2602D905AB07A92F67F0256A5F820EE2/sketch/test.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Udp.h:42:7: note:                 class arduino::UDP
+ class UDP : public Stream {
+       ^~~
+Multiple libraries were found for &#34;Sodaq_wdt.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK
+</pre>
+
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library Sodaq_N2X claims to run on samd architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_N2X/src/Sodaq_N2X.cpp:33:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK/src/Sodaq_wdt.h:105:43: error: &#39;WDT_PERIOD_1X&#39; was not declared in this scope
+ void sodaq_wdt_enable(wdt_period period = WDT_PERIOD_1X);
+                                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_N2X/src/Sodaq_N2X.cpp: In member function &#39;size_t Sodaq_N2X::socketReceive(uint8_t, uint8_t*, size_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_N2X/src/Sodaq_N2X.cpp:629:81: error: no matching function for call to &#39;min(int, size_t&amp;)&#39;
+     size = min(size, min(SODAQ_N2X_MAX_UDP_BUFFER, _socketPendingBytes[socketID]));
+                                                                                 ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/algorithm:62:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:142,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_N2X/src/Sodaq_N2X.h:41,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_N2X/src/Sodaq_N2X.cpp:32:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algo.h:3451:5: note: candidate: template&lt;class _Tp, class _Compare&gt; _Tp std::min(std::initializer_list&lt;_Tp&gt;, _Compare)
+     min(initializer_list&lt;_Tp&gt; __l, _Compare __comp)
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algo.h:3451:5: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_N2X/src/Sodaq_N2X.cpp:629:81: note:   mismatched types &#39;std::initializer_list&lt;_Tp&gt;&#39; and &#39;int&#39;
+     size = min(size, min(SODAQ_N2X_MAX_UDP_BUFFER, _socketPendingBytes[socketID]));
+                                                                                 ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/algorithm:62:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:142,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_N2X/src/Sodaq_N2X.h:41,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_N2X/src/Sodaq_N2X.cpp:32:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algo.h:3445:5: note: candidate: template&lt;class _Tp&gt; _Tp std::min(std::initializer_list&lt;_Tp&gt;)
+     min(initializer_list&lt;_Tp&gt; __l)
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algo.h:3445:5: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_N2X/src/Sodaq_N2X.cpp:629:81: note:   mismatched types &#39;std::initializer_list&lt;_Tp&gt;&#39; and &#39;int&#39;
+     size = min(size, min(SODAQ_N2X_MAX_UDP_BUFFER, _socketPendingBytes[socketID]));
+                                                                                 ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/algorithm:61:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:142,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_N2X/src/Sodaq_N2X.h:41,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_N2X/src/Sodaq_N2X.cpp:32:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algobase.h:243:5: note: candidate: template&lt;class _Tp, class _Compare&gt; const _Tp&amp; std::min(const _Tp&amp;, const _Tp&amp;, _Compare)
+     min(const _Tp&amp; __a, const _Tp&amp; __b, _Compare __comp)
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algobase.h:243:5: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_N2X/src/Sodaq_N2X.cpp:629:81: note:   deduced conflicting types for parameter &#39;const _Tp&#39; (&#39;int&#39; and &#39;size_t {aka unsigned int}&#39;)
+     size = min(size, min(SODAQ_N2X_MAX_UDP_BUFFER, _socketPendingBytes[socketID]));
+                                                                                 ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/algorithm:61:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:142,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_N2X/src/Sodaq_N2X.h:41,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_N2X/src/Sodaq_N2X.cpp:32:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algobase.h:195:5: note: candidate: template&lt;class _Tp&gt; const _Tp&amp; std::min(const _Tp&amp;, const _Tp&amp;)
+     min(const _Tp&amp; __a, const _Tp&amp; __b)
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algobase.h:195:5: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_N2X/src/Sodaq_N2X.cpp:629:81: note:   deduced conflicting types for parameter &#39;const _Tp&#39; (&#39;int&#39; and &#39;size_t {aka unsigned int}&#39;)
+     size = min(size, min(SODAQ_N2X_MAX_UDP_BUFFER, _socketPendingBytes[socketID]));
+                                                                                 ^
+Multiple libraries were found for &#34;Sodaq_wdt.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt
+</pre>
+
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

@@ -1,0 +1,441 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>FSerial - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>FSerial</h2>
+				<p>
+					Version: <b>1.0.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/fserial/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:7:1: error: &#39;FSerial&#39; does not name a type; did you mean &#39;Serial&#39;?
+ FSerial::FSerial(int baud, int dp) {
+ ^~~~~~~
+ Serial
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:12:6: error: &#39;FSerial&#39; has not been declared
+ bool FSerial::Initialize() {
+      ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp: In function &#39;bool Initialize()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:13:18: error: &#39;baudrate&#39; was not declared in this scope
+     Serial.begin(baudrate);
+                  ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:13:18: note: suggested alternative: &#39;bitWrite&#39;
+     Serial.begin(baudrate);
+                  ^~~~~~~~
+                  bitWrite
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:14:12: error: &#39;True&#39; was not declared in this scope
+     return True;
+            ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:14:12: note: suggested alternative: &#39;free&#39;
+     return True;
+            ^~~~
+            free
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp: At global scope:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:17:6: error: &#39;FSerial&#39; has not been declared
+ bool FSerial::Send(String data_to_send[]) {
+      ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp: In function &#39;bool Send(String*)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:22:24: error: expected &#39;;&#39; before &#39;&lt;&#39; token
+         for (int i=0, i&lt;datapoints, i&#43;&#43;) {
+                        ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:22:24: error: expected primary-expression before &#39;&lt;&#39; token
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:22:25: error: &#39;datapoints&#39; was not declared in this scope
+         for (int i=0, i&lt;datapoints, i&#43;&#43;) {
+                         ^~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:22:40: error: expected &#39;;&#39; before &#39;)&#39; token
+         for (int i=0, i&lt;datapoints, i&#43;&#43;) {
+                                        ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:28:30: error: &#39;ack&#39; was not declared in this scope
+         if (incoming_slip == ack) {
+                              ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:34:35: error: &#39;nac&#39; was not declared in this scope
+         else if (incoming_slip == nac) {
+                                   ^~~
+
+</pre>
+
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:7:1: error: &#39;FSerial&#39; does not name a type; did you mean &#39;Serial&#39;?
+ FSerial::FSerial(int baud, int dp) {
+ ^~~~~~~
+ Serial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:12:6: error: &#39;FSerial&#39; has not been declared
+ bool FSerial::Initialize() {
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp: In function &#39;bool Initialize()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:13:18: error: &#39;baudrate&#39; was not declared in this scope
+     Serial.begin(baudrate);
+                  ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:13:18: note: suggested alternative: &#39;caddr_t&#39;
+     Serial.begin(baudrate);
+                  ^~~~~~~~
+                  caddr_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:14:12: error: &#39;True&#39; was not declared in this scope
+     return True;
+            ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:14:12: note: suggested alternative: &#39;free&#39;
+     return True;
+            ^~~~
+            free
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:17:6: error: &#39;FSerial&#39; has not been declared
+ bool FSerial::Send(String data_to_send[]) {
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp: In function &#39;bool Send(arduino::String*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:22:24: error: expected &#39;;&#39; before &#39;&lt;&#39; token
+         for (int i=0, i&lt;datapoints, i&#43;&#43;) {
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:22:24: error: expected primary-expression before &#39;&lt;&#39; token
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:22:25: error: &#39;datapoints&#39; was not declared in this scope
+         for (int i=0, i&lt;datapoints, i&#43;&#43;) {
+                         ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:22:25: note: suggested alternative: &#39;analogin_s&#39;
+         for (int i=0, i&lt;datapoints, i&#43;&#43;) {
+                         ^~~~~~~~~~
+                         analogin_s
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:22:40: error: expected &#39;;&#39; before &#39;)&#39; token
+         for (int i=0, i&lt;datapoints, i&#43;&#43;) {
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:26:52: error: invalid conversion from &#39;const char*&#39; to &#39;char&#39; [-fpermissive]
+         incoming_slip = Serial.readStringUntil(&#34;\n&#34;);
+                                                    ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/ArduinoAPI.h:36:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:27,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:4:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Stream.h:109:10: note:   initializing argument 1 of &#39;arduino::String arduino::Stream::readStringUntil(char)&#39;
+   String readStringUntil(char terminator);
+          ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:28:30: error: &#39;ack&#39; was not declared in this scope
+         if (incoming_slip == ack) {
+                              ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:34:35: error: &#39;nac&#39; was not declared in this scope
+         else if (incoming_slip == nac) {
+                                   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:34:35: note: suggested alternative: &#39;nan&#39;
+         else if (incoming_slip == nac) {
+                                   ^~~
+                                   nan
+
+</pre>
+
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:7:1: error: &#39;FSerial&#39; does not name a type; did you mean &#39;Serial&#39;?
+ FSerial::FSerial(int baud, int dp) {
+ ^~~~~~~
+ Serial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:12:6: error: &#39;FSerial&#39; has not been declared
+ bool FSerial::Initialize() {
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp: In function &#39;bool Initialize()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:13:18: error: &#39;baudrate&#39; was not declared in this scope
+     Serial.begin(baudrate);
+                  ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:13:18: note: suggested alternative: &#39;bitWrite&#39;
+     Serial.begin(baudrate);
+                  ^~~~~~~~
+                  bitWrite
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:14:12: error: &#39;True&#39; was not declared in this scope
+     return True;
+            ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:14:12: note: suggested alternative: &#39;free&#39;
+     return True;
+            ^~~~
+            free
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:17:6: error: &#39;FSerial&#39; has not been declared
+ bool FSerial::Send(String data_to_send[]) {
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp: In function &#39;bool Send(arduino::String*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:22:24: error: expected &#39;;&#39; before &#39;&lt;&#39; token
+         for (int i=0, i&lt;datapoints, i&#43;&#43;) {
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:22:24: error: expected primary-expression before &#39;&lt;&#39; token
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:22:25: error: &#39;datapoints&#39; was not declared in this scope
+         for (int i=0, i&lt;datapoints, i&#43;&#43;) {
+                         ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:22:40: error: expected &#39;;&#39; before &#39;)&#39; token
+         for (int i=0, i&lt;datapoints, i&#43;&#43;) {
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:28:30: error: &#39;ack&#39; was not declared in this scope
+         if (incoming_slip == ack) {
+                              ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:34:35: error: &#39;nac&#39; was not declared in this scope
+         else if (incoming_slip == nac) {
+                                   ^~~
+
+</pre>
+
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:7:1: error: &#39;FSerial&#39; does not name a type; did you mean &#39;Serial&#39;?
+ FSerial::FSerial(int baud, int dp) {
+ ^~~~~~~
+ Serial
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:12:6: error: &#39;FSerial&#39; has not been declared
+ bool FSerial::Initialize() {
+      ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp: In function &#39;bool Initialize()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:13:18: error: &#39;baudrate&#39; was not declared in this scope
+     Serial.begin(baudrate);
+                  ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:13:18: note: suggested alternative: &#39;caddr_t&#39;
+     Serial.begin(baudrate);
+                  ^~~~~~~~
+                  caddr_t
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:14:12: error: &#39;True&#39; was not declared in this scope
+     return True;
+            ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:14:12: note: suggested alternative: &#39;free&#39;
+     return True;
+            ^~~~
+            free
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp: At global scope:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:17:6: error: &#39;FSerial&#39; has not been declared
+ bool FSerial::Send(String data_to_send[]) {
+      ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp: In function &#39;bool Send(arduino::String*)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:22:24: error: expected &#39;;&#39; before &#39;&lt;&#39; token
+         for (int i=0, i&lt;datapoints, i&#43;&#43;) {
+                        ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:22:24: error: expected primary-expression before &#39;&lt;&#39; token
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:22:25: error: &#39;datapoints&#39; was not declared in this scope
+         for (int i=0, i&lt;datapoints, i&#43;&#43;) {
+                         ^~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:22:25: note: suggested alternative: &#39;dprintf&#39;
+         for (int i=0, i&lt;datapoints, i&#43;&#43;) {
+                         ^~~~~~~~~~
+                         dprintf
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:22:40: error: expected &#39;;&#39; before &#39;)&#39; token
+         for (int i=0, i&lt;datapoints, i&#43;&#43;) {
+                                        ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:26:52: error: invalid conversion from &#39;const char*&#39; to &#39;char&#39; [-fpermissive]
+         incoming_slip = Serial.readStringUntil(&#34;\n&#34;);
+                                                    ^
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/ArduinoAPI.h:36:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:23,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:4:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Stream.h:109:10: note:   initializing argument 1 of &#39;arduino::String arduino::Stream::readStringUntil(char)&#39;
+   String readStringUntil(char terminator);
+          ^~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:28:30: error: &#39;ack&#39; was not declared in this scope
+         if (incoming_slip == ack) {
+                              ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:34:35: error: &#39;nac&#39; was not declared in this scope
+         else if (incoming_slip == nac) {
+                                   ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:34:35: note: suggested alternative: &#39;Pac&#39;
+         else if (incoming_slip == nac) {
+                                   ^~~
+                                   Pac
+
+</pre>
+
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:7:1: error: &#39;FSerial&#39; does not name a type
+ FSerial::FSerial(int baud, int dp) {
+ ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:12:6: error: &#39;FSerial&#39; has not been declared
+ bool FSerial::Initialize() {
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp: In function &#39;bool Initialize()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:13:18: error: &#39;baudrate&#39; was not declared in this scope
+     Serial.begin(baudrate);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:14:12: error: &#39;True&#39; was not declared in this scope
+     return True;
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:17:6: error: &#39;FSerial&#39; has not been declared
+ bool FSerial::Send(String data_to_send[]) {
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp: In function &#39;bool Send(String*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:22:24: error: expected &#39;;&#39; before &#39;&lt;&#39; token
+         for (int i=0, i&lt;datapoints, i&#43;&#43;) {
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:22:24: error: expected primary-expression before &#39;&lt;&#39; token
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:22:25: error: &#39;datapoints&#39; was not declared in this scope
+         for (int i=0, i&lt;datapoints, i&#43;&#43;) {
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:22:40: error: expected &#39;;&#39; before &#39;)&#39; token
+         for (int i=0, i&lt;datapoints, i&#43;&#43;) {
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:26:52: error: invalid conversion from &#39;const char*&#39; to &#39;char&#39; [-fpermissive]
+         incoming_slip = Serial.readStringUntil(&#34;\n&#34;);
+                                                    ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:147:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:4:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Stream.h:119:12: note:   initializing argument 1 of &#39;String Stream::readStringUntil(char)&#39;
+     String readStringUntil(char terminator);
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:28:30: error: &#39;ack&#39; was not declared in this scope
+         if (incoming_slip == ack) {
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FSerial/FSerial.cpp:34:35: error: &#39;nac&#39; was not declared in this scope
+         else if (incoming_slip == nac) {
+                                   ^
+
+</pre>
+
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

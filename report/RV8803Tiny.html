@@ -1,0 +1,577 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>RV8803Tiny - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>RV8803Tiny</h2>
+				<p>
+					Version: <b>0.0.5</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/rv8803tiny/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>basic</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library RV8803Tiny claims to run on megaavr architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+WARNING: library TinyMegaI2C claims to run on megaavr architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp: In member function &#39;void TinyMegaI2CMaster::init()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:27:3: error: &#39;TWI0&#39; was not declared in this scope
+   TWI0.MBAUD = (uint8_t)baud;
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:27:3: note: suggested alternative: &#39;TWA0&#39;
+   TWI0.MBAUD = (uint8_t)baud;
+   ^~~~
+   TWA0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:28:17: error: &#39;TWI_ENABLE_bm&#39; was not declared in this scope
+   TWI0.MCTRLA = TWI_ENABLE_bm; // Enable as master, no interrupts
+                 ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:29:18: error: &#39;TWI_BUSSTATE_IDLE_gc&#39; was not declared in this scope
+   TWI0.MSTATUS = TWI_BUSSTATE_IDLE_gc;
+                  ^~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp: In member function &#39;uint8_t TinyMegaI2CMaster::read()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:36:12: error: &#39;TWI0&#39; was not declared in this scope
+   while (!(TWI0.MSTATUS &amp; TWI_RIF_bm))
+            ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:36:12: note: suggested alternative: &#39;TWA0&#39;
+   while (!(TWI0.MSTATUS &amp; TWI_RIF_bm))
+            ^~~~
+            TWA0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:36:27: error: &#39;TWI_RIF_bm&#39; was not declared in this scope
+   while (!(TWI0.MSTATUS &amp; TWI_RIF_bm))
+                           ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:38:18: error: &#39;TWI0&#39; was not declared in this scope
+   uint8_t data = TWI0.MDATA;
+                  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:38:18: note: suggested alternative: &#39;TWA0&#39;
+   uint8_t data = TWI0.MDATA;
+                  ^~~~
+                  TWA0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:41:19: error: &#39;TWI_MCMD_RECVTRANS_gc&#39; was not declared in this scope
+     TWI0.MCTRLB = TWI_MCMD_RECVTRANS_gc; // if ACK = more bytes to read
+                   ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:43:19: error: &#39;TWI_ACKACT_bm&#39; was not declared in this scope
+     TWI0.MCTRLB = TWI_ACKACT_bm | TWI_MCMD_RECVTRANS_gc; // else Send NAK
+                   ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:43:35: error: &#39;TWI_MCMD_RECVTRANS_gc&#39; was not declared in this scope
+     TWI0.MCTRLB = TWI_ACKACT_bm | TWI_MCMD_RECVTRANS_gc; // else Send NAK
+                                   ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp: In member function &#39;bool TinyMegaI2CMaster::write(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:55:12: error: &#39;TWI0&#39; was not declared in this scope
+   while (!(TWI0.MSTATUS &amp; TWI_WIF_bm))
+            ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:55:12: note: suggested alternative: &#39;TWA0&#39;
+   while (!(TWI0.MSTATUS &amp; TWI_WIF_bm))
+            ^~~~
+            TWA0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:55:27: error: &#39;TWI_WIF_bm&#39; was not declared in this scope
+   while (!(TWI0.MSTATUS &amp; TWI_WIF_bm))
+                           ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:55:27: note: suggested alternative: &#39;TWI_vect_num&#39;
+   while (!(TWI0.MSTATUS &amp; TWI_WIF_bm))
+                           ^~~~~~~~~~
+                           TWI_vect_num
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:57:3: error: &#39;TWI0&#39; was not declared in this scope
+   TWI0.MDATA = data;
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:57:3: note: suggested alternative: &#39;TWA0&#39;
+   TWI0.MDATA = data;
+   ^~~~
+   TWA0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:58:17: error: &#39;TWI_MCMD_RECVTRANS_gc&#39; was not declared in this scope
+   TWI0.MCTRLB = TWI_MCMD_RECVTRANS_gc;   // Do nothing
+                 ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:59:27: error: &#39;TWI_RXACK_bm&#39; was not declared in this scope
+   return !(TWI0.MSTATUS &amp; TWI_RXACK_bm); // Returns true if slave gave an ACK
+                           ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp: In member function &#39;bool TinyMegaI2CMaster::start(uint8_t, int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:73:3: error: &#39;TWI0&#39; was not declared in this scope
+   TWI0.MADDR = address &lt;&lt; 1 | read; // Send START condition
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:73:3: note: suggested alternative: &#39;TWA0&#39;
+   TWI0.MADDR = address &lt;&lt; 1 | read; // Send START condition
+   ^~~~
+   TWA0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:74:28: error: &#39;TWI_WIF_bm&#39; was not declared in this scope
+   while (!(TWI0.MSTATUS &amp; (TWI_WIF_bm | TWI_RIF_bm)))
+                            ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:74:28: note: suggested alternative: &#39;TWI_vect_num&#39;
+   while (!(TWI0.MSTATUS &amp; (TWI_WIF_bm | TWI_RIF_bm)))
+                            ^~~~~~~~~~
+                            TWI_vect_num
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:74:41: error: &#39;TWI_RIF_bm&#39; was not declared in this scope
+   while (!(TWI0.MSTATUS &amp; (TWI_WIF_bm | TWI_RIF_bm)))
+                                         ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:76:23: error: &#39;TWI_ARBLOST_bm&#39; was not declared in this scope
+   if ((TWI0.MSTATUS &amp; TWI_ARBLOST_bm))
+                       ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:78:27: error: &#39;TWI_RXACK_bm&#39; was not declared in this scope
+   return !(TWI0.MSTATUS &amp; TWI_RXACK_bm); // Return true if slave gave an ACK
+                           ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp: In member function &#39;void TinyMegaI2CMaster::stop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:88:3: error: &#39;TWI0&#39; was not declared in this scope
+   TWI0.MCTRLB = TWI_ACKACT_bm | TWI_MCMD_STOP_gc; // Send STOP
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:88:3: note: suggested alternative: &#39;TWA0&#39;
+   TWI0.MCTRLB = TWI_ACKACT_bm | TWI_MCMD_STOP_gc; // Send STOP
+   ^~~~
+   TWA0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:88:17: error: &#39;TWI_ACKACT_bm&#39; was not declared in this scope
+   TWI0.MCTRLB = TWI_ACKACT_bm | TWI_MCMD_STOP_gc; // Send STOP
+                 ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:88:33: error: &#39;TWI_MCMD_STOP_gc&#39; was not declared in this scope
+   TWI0.MCTRLB = TWI_ACKACT_bm | TWI_MCMD_STOP_gc; // Send STOP
+                                 ^~~~~~~~~~~~~~~~
+
+</pre>
+
+					
+					<h4>examples/basic</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library RV8803Tiny claims to run on megaavr architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+WARNING: library TinyMegaI2C claims to run on megaavr architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp: In member function &#39;void TinyMegaI2CMaster::init()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:27:3: error: &#39;TWI0&#39; was not declared in this scope
+   TWI0.MBAUD = (uint8_t)baud;
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:27:3: note: suggested alternative: &#39;TWA0&#39;
+   TWI0.MBAUD = (uint8_t)baud;
+   ^~~~
+   TWA0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:28:17: error: &#39;TWI_ENABLE_bm&#39; was not declared in this scope
+   TWI0.MCTRLA = TWI_ENABLE_bm; // Enable as master, no interrupts
+                 ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:29:18: error: &#39;TWI_BUSSTATE_IDLE_gc&#39; was not declared in this scope
+   TWI0.MSTATUS = TWI_BUSSTATE_IDLE_gc;
+                  ^~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp: In member function &#39;uint8_t TinyMegaI2CMaster::read()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:36:12: error: &#39;TWI0&#39; was not declared in this scope
+   while (!(TWI0.MSTATUS &amp; TWI_RIF_bm))
+            ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:36:12: note: suggested alternative: &#39;TWA0&#39;
+   while (!(TWI0.MSTATUS &amp; TWI_RIF_bm))
+            ^~~~
+            TWA0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:36:27: error: &#39;TWI_RIF_bm&#39; was not declared in this scope
+   while (!(TWI0.MSTATUS &amp; TWI_RIF_bm))
+                           ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:38:18: error: &#39;TWI0&#39; was not declared in this scope
+   uint8_t data = TWI0.MDATA;
+                  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:38:18: note: suggested alternative: &#39;TWA0&#39;
+   uint8_t data = TWI0.MDATA;
+                  ^~~~
+                  TWA0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:41:19: error: &#39;TWI_MCMD_RECVTRANS_gc&#39; was not declared in this scope
+     TWI0.MCTRLB = TWI_MCMD_RECVTRANS_gc; // if ACK = more bytes to read
+                   ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:43:19: error: &#39;TWI_ACKACT_bm&#39; was not declared in this scope
+     TWI0.MCTRLB = TWI_ACKACT_bm | TWI_MCMD_RECVTRANS_gc; // else Send NAK
+                   ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:43:35: error: &#39;TWI_MCMD_RECVTRANS_gc&#39; was not declared in this scope
+     TWI0.MCTRLB = TWI_ACKACT_bm | TWI_MCMD_RECVTRANS_gc; // else Send NAK
+                                   ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp: In member function &#39;bool TinyMegaI2CMaster::write(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:55:12: error: &#39;TWI0&#39; was not declared in this scope
+   while (!(TWI0.MSTATUS &amp; TWI_WIF_bm))
+            ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:55:12: note: suggested alternative: &#39;TWA0&#39;
+   while (!(TWI0.MSTATUS &amp; TWI_WIF_bm))
+            ^~~~
+            TWA0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:55:27: error: &#39;TWI_WIF_bm&#39; was not declared in this scope
+   while (!(TWI0.MSTATUS &amp; TWI_WIF_bm))
+                           ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:55:27: note: suggested alternative: &#39;TWI_vect_num&#39;
+   while (!(TWI0.MSTATUS &amp; TWI_WIF_bm))
+                           ^~~~~~~~~~
+                           TWI_vect_num
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:57:3: error: &#39;TWI0&#39; was not declared in this scope
+   TWI0.MDATA = data;
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:57:3: note: suggested alternative: &#39;TWA0&#39;
+   TWI0.MDATA = data;
+   ^~~~
+   TWA0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:58:17: error: &#39;TWI_MCMD_RECVTRANS_gc&#39; was not declared in this scope
+   TWI0.MCTRLB = TWI_MCMD_RECVTRANS_gc;   // Do nothing
+                 ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:59:27: error: &#39;TWI_RXACK_bm&#39; was not declared in this scope
+   return !(TWI0.MSTATUS &amp; TWI_RXACK_bm); // Returns true if slave gave an ACK
+                           ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp: In member function &#39;bool TinyMegaI2CMaster::start(uint8_t, int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:73:3: error: &#39;TWI0&#39; was not declared in this scope
+   TWI0.MADDR = address &lt;&lt; 1 | read; // Send START condition
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:73:3: note: suggested alternative: &#39;TWA0&#39;
+   TWI0.MADDR = address &lt;&lt; 1 | read; // Send START condition
+   ^~~~
+   TWA0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:74:28: error: &#39;TWI_WIF_bm&#39; was not declared in this scope
+   while (!(TWI0.MSTATUS &amp; (TWI_WIF_bm | TWI_RIF_bm)))
+                            ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:74:28: note: suggested alternative: &#39;TWI_vect_num&#39;
+   while (!(TWI0.MSTATUS &amp; (TWI_WIF_bm | TWI_RIF_bm)))
+                            ^~~~~~~~~~
+                            TWI_vect_num
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:74:41: error: &#39;TWI_RIF_bm&#39; was not declared in this scope
+   while (!(TWI0.MSTATUS &amp; (TWI_WIF_bm | TWI_RIF_bm)))
+                                         ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:76:23: error: &#39;TWI_ARBLOST_bm&#39; was not declared in this scope
+   if ((TWI0.MSTATUS &amp; TWI_ARBLOST_bm))
+                       ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:78:27: error: &#39;TWI_RXACK_bm&#39; was not declared in this scope
+   return !(TWI0.MSTATUS &amp; TWI_RXACK_bm); // Return true if slave gave an ACK
+                           ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp: In member function &#39;void TinyMegaI2CMaster::stop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:88:3: error: &#39;TWI0&#39; was not declared in this scope
+   TWI0.MCTRLB = TWI_ACKACT_bm | TWI_MCMD_STOP_gc; // Send STOP
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:88:3: note: suggested alternative: &#39;TWA0&#39;
+   TWI0.MCTRLB = TWI_ACKACT_bm | TWI_MCMD_STOP_gc; // Send STOP
+   ^~~~
+   TWA0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:88:17: error: &#39;TWI_ACKACT_bm&#39; was not declared in this scope
+   TWI0.MCTRLB = TWI_ACKACT_bm | TWI_MCMD_STOP_gc; // Send STOP
+                 ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.cpp:88:33: error: &#39;TWI_MCMD_STOP_gc&#39; was not declared in this scope
+   TWI0.MCTRLB = TWI_ACKACT_bm | TWI_MCMD_STOP_gc; // Send STOP
+                                 ^~~~~~~~~~~~~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RV8803Tiny/src/RV8803Tiny.h:24:0,
+                 from /tmp/arduino-testlib369869487/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.h:21:10: fatal error: avr/io.h: No such file or directory
+ #include &lt;avr/io.h&gt;
+          ^~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/basic</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RV8803Tiny/src/RV8803Tiny.h:24:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RV8803Tiny/examples/basic/basic.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.h:21:10: fatal error: avr/io.h: No such file or directory
+ #include &lt;avr/io.h&gt;
+          ^~~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 802 bytes (1%) of program storage space. Maximum is 49152 bytes.
+Global variables use 22 bytes (0%) of dynamic memory, leaving 6122 bytes for local variables. Maximum is 6144 bytes.
+</pre>
+
+					
+					<h4>examples/basic</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 5499 bytes (11%) of program storage space. Maximum is 49152 bytes.
+Global variables use 195 bytes (3%) of dynamic memory, leaving 5949 bytes for local variables. Maximum is 6144 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RV8803Tiny/src/RV8803Tiny.h:24:0,
+                 from /tmp/arduino-testlib4175368762/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.h:21:10: fatal error: avr/io.h: No such file or directory
+ #include &lt;avr/io.h&gt;
+          ^~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/basic</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RV8803Tiny/src/RV8803Tiny.h:24:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RV8803Tiny/examples/basic/basic.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.h:21:10: fatal error: avr/io.h: No such file or directory
+ #include &lt;avr/io.h&gt;
+          ^~~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RV8803Tiny/src/RV8803Tiny.h:24:0,
+                 from /tmp/arduino-testlib4211829624/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.h:21:20: fatal error: avr/io.h: No such file or directory
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/basic</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RV8803Tiny/src/RV8803Tiny.h:24:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RV8803Tiny/examples/basic/basic.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyMegaI2C/src/TinyMegaI2C.h:21:20: fatal error: avr/io.h: No such file or directory
+compilation terminated.
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

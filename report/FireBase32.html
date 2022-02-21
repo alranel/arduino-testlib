@@ -1,0 +1,809 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>FireBase32 - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>FireBase32</h2>
+				<p>
+					Version: <b>1.0.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/firebase32/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>GetAndSendData</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library FireBase32 claims to run on esp32 architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.cpp:10:6: error: prototype for &#39;void FireBase32::wifi(char*, char*)&#39; does not match any in class &#39;FireBase32&#39;
+ void FireBase32::wifi(char* ssid, char* password){
+      ^~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:25:5: error: candidate is: int FireBase32::wifi(char*, char*)
+     wifi(char* ssid, char* password);
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.cpp:32:6: error: prototype for &#39;void FireBase32::WriteData(String, char*)&#39; does not match any in class &#39;FireBase32&#39;
+ void FireBase32::WriteData(String info, char* path){
+      ^~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:30:5: error: candidates are: int FireBase32::WriteData(FirebaseJson, char*)
+     WriteData(FirebaseJson info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:29:5: error:                 int FireBase32::WriteData(bool, char*)
+     WriteData(bool info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:28:5: error:                 int FireBase32::WriteData(float, char*)
+     WriteData(float info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:27:5: error:                 int FireBase32::WriteData(int, char*)
+     WriteData(int info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:26:5: error:                 int FireBase32::WriteData(String, char*)
+     WriteData(String info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.cpp:36:6: error: prototype for &#39;void FireBase32::WriteData(int, char*)&#39; does not match any in class &#39;FireBase32&#39;
+ void FireBase32::WriteData(int info, char* path){
+      ^~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:30:5: error: candidates are: int FireBase32::WriteData(FirebaseJson, char*)
+     WriteData(FirebaseJson info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:29:5: error:                 int FireBase32::WriteData(bool, char*)
+     WriteData(bool info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:28:5: error:                 int FireBase32::WriteData(float, char*)
+     WriteData(float info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:27:5: error:                 int FireBase32::WriteData(int, char*)
+     WriteData(int info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:26:5: error:                 int FireBase32::WriteData(String, char*)
+     WriteData(String info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.cpp:44:6: error: prototype for &#39;void FireBase32::WriteData(float, char*)&#39; does not match any in class &#39;FireBase32&#39;
+ void FireBase32::WriteData(float info, char* path){
+      ^~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:30:5: error: candidates are: int FireBase32::WriteData(FirebaseJson, char*)
+     WriteData(FirebaseJson info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:29:5: error:                 int FireBase32::WriteData(bool, char*)
+     WriteData(bool info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:28:5: error:                 int FireBase32::WriteData(float, char*)
+     WriteData(float info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:27:5: error:                 int FireBase32::WriteData(int, char*)
+     WriteData(int info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:26:5: error:                 int FireBase32::WriteData(String, char*)
+     WriteData(String info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.cpp:48:6: error: prototype for &#39;void FireBase32::WriteData(bool, char*)&#39; does not match any in class &#39;FireBase32&#39;
+ void FireBase32::WriteData(bool info, char* path){
+      ^~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:30:5: error: candidates are: int FireBase32::WriteData(FirebaseJson, char*)
+     WriteData(FirebaseJson info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:29:5: error:                 int FireBase32::WriteData(bool, char*)
+     WriteData(bool info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:28:5: error:                 int FireBase32::WriteData(float, char*)
+     WriteData(float info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:27:5: error:                 int FireBase32::WriteData(int, char*)
+     WriteData(int info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:26:5: error:                 int FireBase32::WriteData(String, char*)
+     WriteData(String info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.cpp:52:6: error: prototype for &#39;void FireBase32::WriteData(FirebaseJson, char*)&#39; does not match any in class &#39;FireBase32&#39;
+ void FireBase32::WriteData(FirebaseJson info, char* path){
+      ^~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:30:5: error: candidates are: int FireBase32::WriteData(FirebaseJson, char*)
+     WriteData(FirebaseJson info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:29:5: error:                 int FireBase32::WriteData(bool, char*)
+     WriteData(bool info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:28:5: error:                 int FireBase32::WriteData(float, char*)
+     WriteData(float info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:27:5: error:                 int FireBase32::WriteData(int, char*)
+     WriteData(int info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:26:5: error:                 int FireBase32::WriteData(String, char*)
+     WriteData(String info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.cpp:57:6: error: prototype for &#39;void FireBase32::GetData(char*, String*)&#39; does not match any in class &#39;FireBase32&#39;
+ void FireBase32::GetData(char* path, String *dbData){
+      ^~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:34:5: error: candidates are: int FireBase32::GetData(char*, float*)
+     GetData(char* path, float *dbData);
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:33:5: error:                 int FireBase32::GetData(char*, int*)
+     GetData(char* path, int *dbData);
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:32:5: error:                 int FireBase32::GetData(char*, bool*)
+     GetData(char* path, bool *dbData);
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:31:5: error:                 int FireBase32::GetData(char*, String*)
+     GetData(char* path, String *dbData);
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.cpp:62:6: error: prototype for &#39;void FireBase32::GetData(char*, bool*)&#39; does not match any in class &#39;FireBase32&#39;
+ void FireBase32::GetData(char* path, bool *dbData){
+      ^~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:34:5: error: candidates are: int FireBase32::GetData(char*, float*)
+     GetData(char* path, float *dbData);
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:33:5: error:                 int FireBase32::GetData(char*, int*)
+     GetData(char* path, int *dbData);
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-da</pre>
+
+					
+					<h4>examples/GetAndSendData</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library FireBase32 claims to run on esp32 architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/examples/GetAndSendData/GetAndSendData.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/examples/GetAndSendData/GetAndSendData.ino:9:16: error: &#39;DATA_TO_SEND&#39; was not declared in this scope
+   db.WriteData(DATA_TO_SEND, &#34;PATH_IN_DB&#34;);
+                ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/examples/GetAndSendData/GetAndSendData.ino:9:16: note: suggested alternative: &#39;RAD_TO_DEG&#39;
+   db.WriteData(DATA_TO_SEND, &#34;PATH_IN_DB&#34;);
+                ^~~~~~~~~~~~
+                RAD_TO_DEG
+Multiple libraries were found for &#34;WiFi.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiEspAT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Seeed_Arduino_rpcWiFi
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiNINA
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library FireBase32 claims to run on esp32 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+In file included from /tmp/arduino-testlib310517302/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:25:36: error: ISO C&#43;&#43; forbids declaration of &#39;wifi&#39; with no type [-fpermissive]
+     wifi(char* ssid, char* password);
+                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:26:38: error: ISO C&#43;&#43; forbids declaration of &#39;WriteData&#39; with no type [-fpermissive]
+     WriteData(String info, char* path);
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:27:35: error: ISO C&#43;&#43; forbids declaration of &#39;WriteData&#39; with no type [-fpermissive]
+     WriteData(int info, char* path);
+                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:28:37: error: ISO C&#43;&#43; forbids declaration of &#39;WriteData&#39; with no type [-fpermissive]
+     WriteData(float info, char* path);
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:29:36: error: ISO C&#43;&#43; forbids declaration of &#39;WriteData&#39; with no type [-fpermissive]
+     WriteData(bool info, char* path);
+                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:30:44: error: ISO C&#43;&#43; forbids declaration of &#39;WriteData&#39; with no type [-fpermissive]
+     WriteData(FirebaseJson info, char* path);
+                                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:31:39: error: ISO C&#43;&#43; forbids declaration of &#39;GetData&#39; with no type [-fpermissive]
+     GetData(char* path, String *dbData);
+                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:32:37: error: ISO C&#43;&#43; forbids declaration of &#39;GetData&#39; with no type [-fpermissive]
+     GetData(char* path, bool *dbData);
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:33:36: error: ISO C&#43;&#43; forbids declaration of &#39;GetData&#39; with no type [-fpermissive]
+     GetData(char* path, int *dbData);
+                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:34:38: error: ISO C&#43;&#43; forbids declaration of &#39;GetData&#39; with no type [-fpermissive]
+     GetData(char* path, float *dbData);
+                                      ^
+Multiple libraries were found for &#34;WiFi.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Seeed_Arduino_rpcWiFi
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiEspAT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiNINA
+</pre>
+
+					
+					<h4>examples/GetAndSendData</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library FireBase32 claims to run on esp32 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/examples/GetAndSendData/GetAndSendData.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:25:36: error: ISO C&#43;&#43; forbids declaration of &#39;wifi&#39; with no type [-fpermissive]
+     wifi(char* ssid, char* password);
+                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:26:38: error: ISO C&#43;&#43; forbids declaration of &#39;WriteData&#39; with no type [-fpermissive]
+     WriteData(String info, char* path);
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:27:35: error: ISO C&#43;&#43; forbids declaration of &#39;WriteData&#39; with no type [-fpermissive]
+     WriteData(int info, char* path);
+                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:28:37: error: ISO C&#43;&#43; forbids declaration of &#39;WriteData&#39; with no type [-fpermissive]
+     WriteData(float info, char* path);
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:29:36: error: ISO C&#43;&#43; forbids declaration of &#39;WriteData&#39; with no type [-fpermissive]
+     WriteData(bool info, char* path);
+                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:30:44: error: ISO C&#43;&#43; forbids declaration of &#39;WriteData&#39; with no type [-fpermissive]
+     WriteData(FirebaseJson info, char* path);
+                                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:31:39: error: ISO C&#43;&#43; forbids declaration of &#39;GetData&#39; with no type [-fpermissive]
+     GetData(char* path, String *dbData);
+                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:32:37: error: ISO C&#43;&#43; forbids declaration of &#39;GetData&#39; with no type [-fpermissive]
+     GetData(char* path, bool *dbData);
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:33:36: error: ISO C&#43;&#43; forbids declaration of &#39;GetData&#39; with no type [-fpermissive]
+     GetData(char* path, int *dbData);
+                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:34:38: error: ISO C&#43;&#43; forbids declaration of &#39;GetData&#39; with no type [-fpermissive]
+     GetData(char* path, float *dbData);
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/examples/GetAndSendData/GetAndSendData.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/examples/GetAndSendData/GetAndSendData.ino:9:16: error: &#39;DATA_TO_SEND&#39; was not declared in this scope
+   db.WriteData(DATA_TO_SEND, &#34;PATH_IN_DB&#34;);
+                ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/examples/GetAndSendData/GetAndSendData.ino:9:16: note: suggested alternative: &#39;RAD_TO_DEG&#39;
+   db.WriteData(DATA_TO_SEND, &#34;PATH_IN_DB&#34;);
+                ^~~~~~~~~~~~
+                RAD_TO_DEG
+Multiple libraries were found for &#34;WiFi.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiEspAT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiNINA
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Seeed_Arduino_rpcWiFi
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library FireBase32 claims to run on esp32 architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.cpp:10:6: error: prototype for &#39;void FireBase32::wifi(char*, char*)&#39; does not match any in class &#39;FireBase32&#39;
+ void FireBase32::wifi(char* ssid, char* password){
+      ^~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:25:5: error: candidate is: int FireBase32::wifi(char*, char*)
+     wifi(char* ssid, char* password);
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.cpp:32:6: error: prototype for &#39;void FireBase32::WriteData(arduino::String, char*)&#39; does not match any in class &#39;FireBase32&#39;
+ void FireBase32::WriteData(String info, char* path){
+      ^~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:30:5: error: candidates are: int FireBase32::WriteData(FirebaseJson, char*)
+     WriteData(FirebaseJson info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:29:5: error:                 int FireBase32::WriteData(bool, char*)
+     WriteData(bool info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:28:5: error:                 int FireBase32::WriteData(float, char*)
+     WriteData(float info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:27:5: error:                 int FireBase32::WriteData(int, char*)
+     WriteData(int info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:26:5: error:                 int FireBase32::WriteData(arduino::String, char*)
+     WriteData(String info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.cpp:36:6: error: prototype for &#39;void FireBase32::WriteData(int, char*)&#39; does not match any in class &#39;FireBase32&#39;
+ void FireBase32::WriteData(int info, char* path){
+      ^~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:30:5: error: candidates are: int FireBase32::WriteData(FirebaseJson, char*)
+     WriteData(FirebaseJson info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:29:5: error:                 int FireBase32::WriteData(bool, char*)
+     WriteData(bool info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:28:5: error:                 int FireBase32::WriteData(float, char*)
+     WriteData(float info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:27:5: error:                 int FireBase32::WriteData(int, char*)
+     WriteData(int info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:26:5: error:                 int FireBase32::WriteData(arduino::String, char*)
+     WriteData(String info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.cpp:44:6: error: prototype for &#39;void FireBase32::WriteData(float, char*)&#39; does not match any in class &#39;FireBase32&#39;
+ void FireBase32::WriteData(float info, char* path){
+      ^~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:30:5: error: candidates are: int FireBase32::WriteData(FirebaseJson, char*)
+     WriteData(FirebaseJson info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:29:5: error:                 int FireBase32::WriteData(bool, char*)
+     WriteData(bool info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:28:5: error:                 int FireBase32::WriteData(float, char*)
+     WriteData(float info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:27:5: error:                 int FireBase32::WriteData(int, char*)
+     WriteData(int info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:26:5: error:                 int FireBase32::WriteData(arduino::String, char*)
+     WriteData(String info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.cpp:48:6: error: prototype for &#39;void FireBase32::WriteData(bool, char*)&#39; does not match any in class &#39;FireBase32&#39;
+ void FireBase32::WriteData(bool info, char* path){
+      ^~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:30:5: error: candidates are: int FireBase32::WriteData(FirebaseJson, char*)
+     WriteData(FirebaseJson info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:29:5: error:                 int FireBase32::WriteData(bool, char*)
+     WriteData(bool info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:28:5: error:                 int FireBase32::WriteData(float, char*)
+     WriteData(float info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:27:5: error:                 int FireBase32::WriteData(int, char*)
+     WriteData(int info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:26:5: error:                 int FireBase32::WriteData(arduino::String, char*)
+     WriteData(String info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.cpp:52:6: error: prototype for &#39;void FireBase32::WriteData(FirebaseJson, char*)&#39; does not match any in class &#39;FireBase32&#39;
+ void FireBase32::WriteData(FirebaseJson info, char* path){
+      ^~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:30:5: error: candidates are: int FireBase32::WriteData(FirebaseJson, char*)
+     WriteData(FirebaseJson info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:29:5: error:                 int FireBase32::WriteData(bool, char*)
+     WriteData(bool info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:28:5: error:                 int FireBase32::WriteData(float, char*)
+     WriteData(float info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:27:5: error:                 int FireBase32::WriteData(int, char*)
+     WriteData(int info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:26:5: error:                 int FireBase32::WriteData(arduino::String, char*)
+     WriteData(String info, char* path);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.cpp:57:6: error: prototype for &#39;void FireBase32::GetData(char*, arduino::String*)&#39; does not match any in class &#39;FireBase32&#39;
+ void FireBase32::GetData(char* path, String *dbData){
+      ^~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:34:5: error: candidates are: int FireBase32::GetData(char*, float*)
+     GetData(char* path, float *dbData);
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:33:5: error:                 int FireBase32::GetData(char*, int*)
+     GetData(char* path, int *dbData);
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:32:5: error:                 int FireBase32::GetData(char*, bool*)
+     GetData(char* path, bool *dbData);
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:31:5: error:                 int FireBase32::GetData(char*, arduino::String*)
+     GetData(char* path, String *dbData);
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.cpp:62:6: error: prototype for &#39;void FireBase32::GetData(char*, bool*)&#39; does not match any in class &#39;FireBase32&#39;
+ void FireBase32::GetData(char* path, bool *dbData){
+      ^~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:34:5: error: candidates are: int FireBase32::GetData(char*, float*)
+     GetData(char* path, float *dbData);
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:33:5: error:                 int FireBase32::GetData(char*, int*)
+     GetData(</pre>
+
+					
+					<h4>examples/GetAndSendData</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library FireBase32 claims to run on esp32 architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/examples/GetAndSendData/GetAndSendData.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/examples/GetAndSendData/GetAndSendData.ino:9:16: error: &#39;DATA_TO_SEND&#39; was not declared in this scope
+   db.WriteData(DATA_TO_SEND, &#34;PATH_IN_DB&#34;);
+                ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/examples/GetAndSendData/GetAndSendData.ino:9:16: note: suggested alternative: &#39;DATAMEM_END&#39;
+   db.WriteData(DATA_TO_SEND, &#34;PATH_IN_DB&#34;);
+                ^~~~~~~~~~~~
+                DATAMEM_END
+Multiple libraries were found for &#34;WiFi.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiNINA
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiEspAT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Seeed_Arduino_rpcWiFi
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library FireBase32 claims to run on esp32 architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+In file included from /tmp/arduino-testlib3218957922/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:25:36: error: ISO C&#43;&#43; forbids declaration of &#39;wifi&#39; with no type [-fpermissive]
+     wifi(char* ssid, char* password);
+                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:26:38: error: ISO C&#43;&#43; forbids declaration of &#39;WriteData&#39; with no type [-fpermissive]
+     WriteData(String info, char* path);
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:27:35: error: ISO C&#43;&#43; forbids declaration of &#39;WriteData&#39; with no type [-fpermissive]
+     WriteData(int info, char* path);
+                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:28:37: error: ISO C&#43;&#43; forbids declaration of &#39;WriteData&#39; with no type [-fpermissive]
+     WriteData(float info, char* path);
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:29:36: error: ISO C&#43;&#43; forbids declaration of &#39;WriteData&#39; with no type [-fpermissive]
+     WriteData(bool info, char* path);
+                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:30:44: error: ISO C&#43;&#43; forbids declaration of &#39;WriteData&#39; with no type [-fpermissive]
+     WriteData(FirebaseJson info, char* path);
+                                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:31:39: error: ISO C&#43;&#43; forbids declaration of &#39;GetData&#39; with no type [-fpermissive]
+     GetData(char* path, String *dbData);
+                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:32:37: error: ISO C&#43;&#43; forbids declaration of &#39;GetData&#39; with no type [-fpermissive]
+     GetData(char* path, bool *dbData);
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:33:36: error: ISO C&#43;&#43; forbids declaration of &#39;GetData&#39; with no type [-fpermissive]
+     GetData(char* path, int *dbData);
+                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:34:38: error: ISO C&#43;&#43; forbids declaration of &#39;GetData&#39; with no type [-fpermissive]
+     GetData(char* path, float *dbData);
+                                      ^
+Multiple libraries were found for &#34;WiFi.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiNINA
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiEspAT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Seeed_Arduino_rpcWiFi
+</pre>
+
+					
+					<h4>examples/GetAndSendData</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library FireBase32 claims to run on esp32 architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/examples/GetAndSendData/GetAndSendData.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:25:36: error: ISO C&#43;&#43; forbids declaration of &#39;wifi&#39; with no type [-fpermissive]
+     wifi(char* ssid, char* password);
+                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:26:38: error: ISO C&#43;&#43; forbids declaration of &#39;WriteData&#39; with no type [-fpermissive]
+     WriteData(String info, char* path);
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:27:35: error: ISO C&#43;&#43; forbids declaration of &#39;WriteData&#39; with no type [-fpermissive]
+     WriteData(int info, char* path);
+                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:28:37: error: ISO C&#43;&#43; forbids declaration of &#39;WriteData&#39; with no type [-fpermissive]
+     WriteData(float info, char* path);
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:29:36: error: ISO C&#43;&#43; forbids declaration of &#39;WriteData&#39; with no type [-fpermissive]
+     WriteData(bool info, char* path);
+                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:30:44: error: ISO C&#43;&#43; forbids declaration of &#39;WriteData&#39; with no type [-fpermissive]
+     WriteData(FirebaseJson info, char* path);
+                                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:31:39: error: ISO C&#43;&#43; forbids declaration of &#39;GetData&#39; with no type [-fpermissive]
+     GetData(char* path, String *dbData);
+                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:32:37: error: ISO C&#43;&#43; forbids declaration of &#39;GetData&#39; with no type [-fpermissive]
+     GetData(char* path, bool *dbData);
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:33:36: error: ISO C&#43;&#43; forbids declaration of &#39;GetData&#39; with no type [-fpermissive]
+     GetData(char* path, int *dbData);
+                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:34:38: error: ISO C&#43;&#43; forbids declaration of &#39;GetData&#39; with no type [-fpermissive]
+     GetData(char* path, float *dbData);
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/examples/GetAndSendData/GetAndSendData.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/examples/GetAndSendData/GetAndSendData.ino:9:16: error: &#39;DATA_TO_SEND&#39; was not declared in this scope
+   db.WriteData(DATA_TO_SEND, &#34;PATH_IN_DB&#34;);
+                ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/examples/GetAndSendData/GetAndSendData.ino:9:16: note: suggested alternative: &#39;RAD_TO_DEG&#39;
+   db.WriteData(DATA_TO_SEND, &#34;PATH_IN_DB&#34;);
+                ^~~~~~~~~~~~
+                RAD_TO_DEG
+Multiple libraries were found for &#34;WiFi.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiNINA
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Seeed_Arduino_rpcWiFi
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiEspAT
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SD/src/utility/Sd2Card.h:26:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SD/src/utility/SdFat.h:29,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SD/src/SD.h:20,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Firebase_ESP32_Client/src/FirebaseFS.h:60,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Firebase_ESP32_Client/src/Firebase.h:32,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Firebase_ESP32_Client/src/FirebaseESP32.h:49,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:5,
+                 from /tmp/arduino-testlib186783753/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SD/src/utility/Sd2PinMap.h:524:2: error: #error Architecture or board not supported.
+ #error Architecture or board not supported.
+  ^
+Multiple libraries were found for &#34;WiFiClientSecure.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/WiFiClientSecure
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Seeed_Arduino_rpcWiFi
+Multiple libraries were found for &#34;WiFi.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/WiFi
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiEspAT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiNINA
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Seeed_Arduino_rpcWiFi
+Multiple libraries were found for &#34;SD.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SD
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/SD
+</pre>
+
+					
+					<h4>examples/GetAndSendData</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SD/src/utility/Sd2Card.h:26:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SD/src/utility/SdFat.h:29,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SD/src/SD.h:20,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Firebase_ESP32_Client/src/FirebaseFS.h:60,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Firebase_ESP32_Client/src/Firebase.h:32,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Firebase_ESP32_Client/src/FirebaseESP32.h:49,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/src/FireBase32.h:5,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FireBase32/examples/GetAndSendData/GetAndSendData.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SD/src/utility/Sd2PinMap.h:524:2: error: #error Architecture or board not supported.
+ #error Architecture or board not supported.
+  ^
+Multiple libraries were found for &#34;WiFi.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/WiFi
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Seeed_Arduino_rpcWiFi
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiEspAT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiNINA
+Multiple libraries were found for &#34;WiFiClientSecure.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/WiFiClientSecure
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Seeed_Arduino_rpcWiFi
+Multiple libraries were found for &#34;SD.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SD
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/SD
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

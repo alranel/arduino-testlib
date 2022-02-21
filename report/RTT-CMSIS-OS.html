@@ -1,0 +1,244 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>RTT-CMSIS-OS - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>RTT-CMSIS-OS</h2>
+				<p>
+					Version: <b>1.0.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/rtt-cmsis-os/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RT-Thread/src/include/rtlibc.h:15:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RT-Thread/src/include/rtdef.h:1066,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RT-Thread/src/include/rtthread.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RT-Thread/src/rtt.h:9,
+                 from /tmp/arduino-testlib4089956327/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RT-Thread/src/include/libc/libc_stat.h:14:10: fatal error: sys/stat.h: No such file or directory
+ #include &lt;sys/stat.h&gt;
+          ^~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library RT-Thread claims to run on sam, samd, gd32v, stm32 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RT-Thread/src/rtt.cpp: In function &#39;void rt_driver_init()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RT-Thread/src/rtt.cpp:252:9: error: &#39;CONSOLE_DEVICE&#39; was not declared in this scope
+         CONSOLE_DEVICE.begin(CONFIG_USART_SPEED);
+         ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RT-Thread/src/rtt.cpp:252:9: note: suggested alternative: &#39;CONSOLE_RX&#39;
+         CONSOLE_DEVICE.begin(CONFIG_USART_SPEED);
+         ^~~~~~~~~~~~~~
+         CONSOLE_RX
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RT-Thread/src/rtt.cpp: In function &#39;void rt_components_init()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RT-Thread/src/rtt.cpp:325:9: error: &#39;arduino_serial_init&#39; was not declared in this scope
+         arduino_serial_init();
+         ^~~~~~~~~~~~~~~~~~~
+
+</pre>
+
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RT-Thread/src/include/rtlibc.h:15:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RT-Thread/src/include/rtdef.h:1066,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RT-Thread/src/include/rtthread.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RT-Thread/src/rtt.h:9,
+                 from /tmp/arduino-testlib1075011696/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RT-Thread/src/include/libc/libc_stat.h:14:10: fatal error: sys/stat.h: No such file or directory
+ #include &lt;sys/stat.h&gt;
+          ^~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTT-CMSIS-OS/src/os_systick.c:30:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Magellan_BC95/src/board.h:125:5: error: unknown type name &#39;AltSoftSerial&#39;
+     AltSoftSerial serialPort;
+     ^~~~~~~~~~~~~
+Multiple libraries were found for &#34;cmsis_os.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTT-CMSIS-OS
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_FreeRTOS
+Multiple libraries were found for &#34;board.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Magellan_BC95
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Magellan_SIM7020E
+</pre>
+
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library RT-Thread claims to run on sam, samd, gd32v, stm32 architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+WARNING: library RTT-CMSIS-OS claims to run on sam, samd, gd32v, stm32 architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+Multiple libraries were found for &#34;cmsis_os.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTT-CMSIS-OS
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_FreeRTOS
+Multiple libraries were found for &#34;board.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Magellan_BC95
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Magellan_SIM7020E
+</pre>
+
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

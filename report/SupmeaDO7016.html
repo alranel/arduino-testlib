@@ -1,0 +1,745 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>SupmeaDO7016 - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>SupmeaDO7016</h2>
+				<p>
+					Version: <b>0.3.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/supmeado7016/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>ODCalibrationGain</pre></th>
+						
+						<th><pre>ReadParams</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 1332 bytes (4%) of program storage space. Maximum is 32256 bytes.
+Global variables use 184 bytes (8%) of dynamic memory, leaving 1864 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+
+					
+					<h4>examples/ODCalibrationGain</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/examples/ODCalibrationGain/ODCalibrationGain.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/examples/ODCalibrationGain/ODCalibrationGain.ino:53:26: error: &#39;Serial2&#39; was not declared in this scope
+     ret = SupProbe.begin(Serial2, preTransmission, postTransmission);
+                          ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/examples/ODCalibrationGain/ODCalibrationGain.ino:53:26: note: suggested alternative: &#39;Serial&#39;
+     ret = SupProbe.begin(Serial2, preTransmission, postTransmission);
+                          ^~~~~~~
+                          Serial
+
+</pre>
+					
+					<h4>examples/ReadParams</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/examples/ReadParams/ReadParams.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/examples/ReadParams/ReadParams.ino:48:26: error: &#39;Serial2&#39; was not declared in this scope
+     ret = SupProbe.begin(Serial2, preTransmission, postTransmission);
+                          ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/examples/ReadParams/ReadParams.ino:48:26: note: suggested alternative: &#39;Serial&#39;
+     ret = SupProbe.begin(Serial2, preTransmission, postTransmission);
+                          ^~~~~~~
+                          Serial
+
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library NoDelay claims to run on avr, esp8266, esp32 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:36:38: error: default argument given for parameter 4 of &#39;uint8_t SupmeaDO7016::begin(arduino::Stream&amp;, void (*)(), void (*)(), uint8_t, uint16_t, uint16_t)&#39; [-fpermissive]
+     uint16_t serial_conf = SERIAL_8N2){
+                                      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:11:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.h:84:17: note: previous specification in &#39;uint8_t SupmeaDO7016::begin(arduino::Stream&amp;, void (*)(), void (*)(), uint8_t, uint16_t, uint16_t)&#39; here
+         uint8_t begin(Stream &amp;port, void (*preT)(), void (*posT)(), uint8_t probe_addr = 10, uint16_t serial_speed = 9600, uint16_t serial_conf = SERIAL_8N2);
+                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:36:38: error: default argument given for parameter 5 of &#39;uint8_t SupmeaDO7016::begin(arduino::Stream&amp;, void (*)(), void (*)(), uint8_t, uint16_t, uint16_t)&#39; [-fpermissive]
+     uint16_t serial_conf = SERIAL_8N2){
+                                      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:11:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.h:84:17: note: previous specification in &#39;uint8_t SupmeaDO7016::begin(arduino::Stream&amp;, void (*)(), void (*)(), uint8_t, uint16_t, uint16_t)&#39; here
+         uint8_t begin(Stream &amp;port, void (*preT)(), void (*posT)(), uint8_t probe_addr = 10, uint16_t serial_speed = 9600, uint16_t serial_conf = SERIAL_8N2);
+                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:36:38: error: default argument given for parameter 6 of &#39;uint8_t SupmeaDO7016::begin(arduino::Stream&amp;, void (*)(), void (*)(), uint8_t, uint16_t, uint16_t)&#39; [-fpermissive]
+     uint16_t serial_conf = SERIAL_8N2){
+                                      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:11:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.h:84:17: note: previous specification in &#39;uint8_t SupmeaDO7016::begin(arduino::Stream&amp;, void (*)(), void (*)(), uint8_t, uint16_t, uint16_t)&#39; here
+         uint8_t begin(Stream &amp;port, void (*preT)(), void (*posT)(), uint8_t probe_addr = 10, uint16_t serial_speed = 9600, uint16_t serial_conf = SERIAL_8N2);
+                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:66:71: error: default argument given for parameter 1 of &#39;uint8_t SupmeaDO7016::startMeasurement(uint8_t)&#39; [-fpermissive]
+ uint8_t SupmeaDO7016::startMeasurement(uint8_t param = MEASUREMENT_ALL){
+                                                                       ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:11:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.h:85:17: note: previous specification in &#39;uint8_t SupmeaDO7016::startMeasurement(uint8_t)&#39; here
+         uint8_t startMeasurement(uint8_t param = MEASUREMENT_ALL);
+                 ^~~~~~~~~~~~~~~~
+
+</pre>
+
+					
+					<h4>examples/ODCalibrationGain</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library NoDelay claims to run on avr, esp8266, esp32 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/examples/ODCalibrationGain/ODCalibrationGain.ino: In function &#39;void stop(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/examples/ODCalibrationGain/ODCalibrationGain.ino:100:5: error: &#39;cli&#39; was not declared in this scope
+     cli();
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/examples/ODCalibrationGain/ODCalibrationGain.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/examples/ODCalibrationGain/ODCalibrationGain.ino:153:37: error: invalid conversion from &#39;const char*&#39; to &#39;char*&#39; [-fpermissive]
+     SupProbe.send_frame_210(op, date);
+                                     ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/examples/ODCalibrationGain/ODCalibrationGain.ino:19:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.h:100:17: note:   initializing argument 1 of &#39;uint8_t SupmeaDO7016::send_frame_210(char*, char*)&#39;
+         uint8_t send_frame_210(char *op, char *date);
+                 ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/examples/ODCalibrationGain/ODCalibrationGain.ino:153:37: error: invalid conversion from &#39;const char*&#39; to &#39;char*&#39; [-fpermissive]
+     SupProbe.send_frame_210(op, date);
+                                     ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/examples/ODCalibrationGain/ODCalibrationGain.ino:19:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.h:100:17: note:   initializing argument 2 of &#39;uint8_t SupmeaDO7016::send_frame_210(char*, char*)&#39;
+         uint8_t send_frame_210(char *op, char *date);
+                 ^~~~~~~~~~~~~~
+
+</pre>
+					
+					<h4>examples/ReadParams</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library NoDelay claims to run on avr, esp8266, esp32 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:36:38: error: default argument given for parameter 4 of &#39;uint8_t SupmeaDO7016::begin(arduino::Stream&amp;, void (*)(), void (*)(), uint8_t, uint16_t, uint16_t)&#39; [-fpermissive]
+     uint16_t serial_conf = SERIAL_8N2){
+                                      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:11:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.h:84:17: note: previous specification in &#39;uint8_t SupmeaDO7016::begin(arduino::Stream&amp;, void (*)(), void (*)(), uint8_t, uint16_t, uint16_t)&#39; here
+         uint8_t begin(Stream &amp;port, void (*preT)(), void (*posT)(), uint8_t probe_addr = 10, uint16_t serial_speed = 9600, uint16_t serial_conf = SERIAL_8N2);
+                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:36:38: error: default argument given for parameter 5 of &#39;uint8_t SupmeaDO7016::begin(arduino::Stream&amp;, void (*)(), void (*)(), uint8_t, uint16_t, uint16_t)&#39; [-fpermissive]
+     uint16_t serial_conf = SERIAL_8N2){
+                                      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:11:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.h:84:17: note: previous specification in &#39;uint8_t SupmeaDO7016::begin(arduino::Stream&amp;, void (*)(), void (*)(), uint8_t, uint16_t, uint16_t)&#39; here
+         uint8_t begin(Stream &amp;port, void (*preT)(), void (*posT)(), uint8_t probe_addr = 10, uint16_t serial_speed = 9600, uint16_t serial_conf = SERIAL_8N2);
+                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:36:38: error: default argument given for parameter 6 of &#39;uint8_t SupmeaDO7016::begin(arduino::Stream&amp;, void (*)(), void (*)(), uint8_t, uint16_t, uint16_t)&#39; [-fpermissive]
+     uint16_t serial_conf = SERIAL_8N2){
+                                      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:11:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.h:84:17: note: previous specification in &#39;uint8_t SupmeaDO7016::begin(arduino::Stream&amp;, void (*)(), void (*)(), uint8_t, uint16_t, uint16_t)&#39; here
+         uint8_t begin(Stream &amp;port, void (*preT)(), void (*posT)(), uint8_t probe_addr = 10, uint16_t serial_speed = 9600, uint16_t serial_conf = SERIAL_8N2);
+                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:66:71: error: default argument given for parameter 1 of &#39;uint8_t SupmeaDO7016::startMeasurement(uint8_t)&#39; [-fpermissive]
+ uint8_t SupmeaDO7016::startMeasurement(uint8_t param = MEASUREMENT_ALL){
+                                                                       ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:11:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.h:85:17: note: previous specification in &#39;uint8_t SupmeaDO7016::startMeasurement(uint8_t)&#39; here
+         uint8_t startMeasurement(uint8_t param = MEASUREMENT_ALL);
+                 ^~~~~~~~~~~~~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library NoDelay claims to run on avr, esp8266, esp32 architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+Sketch uses 2614 bytes (5%) of program storage space. Maximum is 49152 bytes.
+Global variables use 177 bytes (2%) of dynamic memory, leaving 5967 bytes for local variables. Maximum is 6144 bytes.
+</pre>
+
+					
+					<h4>examples/ODCalibrationGain</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library NoDelay claims to run on avr, esp8266, esp32 architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/examples/ODCalibrationGain/ODCalibrationGain.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/examples/ODCalibrationGain/ODCalibrationGain.ino:53:26: error: &#39;Serial2&#39; was not declared in this scope
+     ret = SupProbe.begin(Serial2, preTransmission, postTransmission);
+                          ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/examples/ODCalibrationGain/ODCalibrationGain.ino:53:26: note: suggested alternative: &#39;Serial1&#39;
+     ret = SupProbe.begin(Serial2, preTransmission, postTransmission);
+                          ^~~~~~~
+                          Serial1
+
+</pre>
+					
+					<h4>examples/ReadParams</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library NoDelay claims to run on avr, esp8266, esp32 architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/examples/ReadParams/ReadParams.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/examples/ReadParams/ReadParams.ino:48:26: error: &#39;Serial2&#39; was not declared in this scope
+     ret = SupProbe.begin(Serial2, preTransmission, postTransmission);
+                          ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/examples/ReadParams/ReadParams.ino:48:26: note: suggested alternative: &#39;Serial1&#39;
+     ret = SupProbe.begin(Serial2, preTransmission, postTransmission);
+                          ^~~~~~~
+                          Serial1
+
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library NoDelay claims to run on avr, esp8266, esp32 architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:36:38: error: default argument given for parameter 4 of &#39;uint8_t SupmeaDO7016::begin(arduino::Stream&amp;, void (*)(), void (*)(), uint8_t, uint16_t, uint16_t)&#39; [-fpermissive]
+     uint16_t serial_conf = SERIAL_8N2){
+                                      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:11:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.h:84:17: note: previous specification in &#39;uint8_t SupmeaDO7016::begin(arduino::Stream&amp;, void (*)(), void (*)(), uint8_t, uint16_t, uint16_t)&#39; here
+         uint8_t begin(Stream &amp;port, void (*preT)(), void (*posT)(), uint8_t probe_addr = 10, uint16_t serial_speed = 9600, uint16_t serial_conf = SERIAL_8N2);
+                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:36:38: error: default argument given for parameter 5 of &#39;uint8_t SupmeaDO7016::begin(arduino::Stream&amp;, void (*)(), void (*)(), uint8_t, uint16_t, uint16_t)&#39; [-fpermissive]
+     uint16_t serial_conf = SERIAL_8N2){
+                                      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:11:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.h:84:17: note: previous specification in &#39;uint8_t SupmeaDO7016::begin(arduino::Stream&amp;, void (*)(), void (*)(), uint8_t, uint16_t, uint16_t)&#39; here
+         uint8_t begin(Stream &amp;port, void (*preT)(), void (*posT)(), uint8_t probe_addr = 10, uint16_t serial_speed = 9600, uint16_t serial_conf = SERIAL_8N2);
+                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:36:38: error: default argument given for parameter 6 of &#39;uint8_t SupmeaDO7016::begin(arduino::Stream&amp;, void (*)(), void (*)(), uint8_t, uint16_t, uint16_t)&#39; [-fpermissive]
+     uint16_t serial_conf = SERIAL_8N2){
+                                      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:11:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.h:84:17: note: previous specification in &#39;uint8_t SupmeaDO7016::begin(arduino::Stream&amp;, void (*)(), void (*)(), uint8_t, uint16_t, uint16_t)&#39; here
+         uint8_t begin(Stream &amp;port, void (*preT)(), void (*posT)(), uint8_t probe_addr = 10, uint16_t serial_speed = 9600, uint16_t serial_conf = SERIAL_8N2);
+                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:66:71: error: default argument given for parameter 1 of &#39;uint8_t SupmeaDO7016::startMeasurement(uint8_t)&#39; [-fpermissive]
+ uint8_t SupmeaDO7016::startMeasurement(uint8_t param = MEASUREMENT_ALL){
+                                                                       ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:11:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.h:85:17: note: previous specification in &#39;uint8_t SupmeaDO7016::startMeasurement(uint8_t)&#39; here
+         uint8_t startMeasurement(uint8_t param = MEASUREMENT_ALL);
+                 ^~~~~~~~~~~~~~~~
+
+</pre>
+
+					
+					<h4>examples/ODCalibrationGain</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library NoDelay claims to run on avr, esp8266, esp32 architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/examples/ODCalibrationGain/ODCalibrationGain.ino: In function &#39;void stop(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/examples/ODCalibrationGain/ODCalibrationGain.ino:100:5: error: &#39;cli&#39; was not declared in this scope
+     cli();
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/examples/ODCalibrationGain/ODCalibrationGain.ino:100:5: note: suggested alternative: &#39;Gclk&#39;
+     cli();
+     ^~~
+     Gclk
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/examples/ODCalibrationGain/ODCalibrationGain.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/examples/ODCalibrationGain/ODCalibrationGain.ino:153:37: error: invalid conversion from &#39;const char*&#39; to &#39;char*&#39; [-fpermissive]
+     SupProbe.send_frame_210(op, date);
+                                     ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/examples/ODCalibrationGain/ODCalibrationGain.ino:19:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.h:100:17: note:   initializing argument 1 of &#39;uint8_t SupmeaDO7016::send_frame_210(char*, char*)&#39;
+         uint8_t send_frame_210(char *op, char *date);
+                 ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/examples/ODCalibrationGain/ODCalibrationGain.ino:153:37: error: invalid conversion from &#39;const char*&#39; to &#39;char*&#39; [-fpermissive]
+     SupProbe.send_frame_210(op, date);
+                                     ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/examples/ODCalibrationGain/ODCalibrationGain.ino:19:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.h:100:17: note:   initializing argument 2 of &#39;uint8_t SupmeaDO7016::send_frame_210(char*, char*)&#39;
+         uint8_t send_frame_210(char *op, char *date);
+                 ^~~~~~~~~~~~~~
+
+</pre>
+					
+					<h4>examples/ReadParams</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library NoDelay claims to run on avr, esp8266, esp32 architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:36:38: error: default argument given for parameter 4 of &#39;uint8_t SupmeaDO7016::begin(arduino::Stream&amp;, void (*)(), void (*)(), uint8_t, uint16_t, uint16_t)&#39; [-fpermissive]
+     uint16_t serial_conf = SERIAL_8N2){
+                                      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:11:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.h:84:17: note: previous specification in &#39;uint8_t SupmeaDO7016::begin(arduino::Stream&amp;, void (*)(), void (*)(), uint8_t, uint16_t, uint16_t)&#39; here
+         uint8_t begin(Stream &amp;port, void (*preT)(), void (*posT)(), uint8_t probe_addr = 10, uint16_t serial_speed = 9600, uint16_t serial_conf = SERIAL_8N2);
+                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:36:38: error: default argument given for parameter 5 of &#39;uint8_t SupmeaDO7016::begin(arduino::Stream&amp;, void (*)(), void (*)(), uint8_t, uint16_t, uint16_t)&#39; [-fpermissive]
+     uint16_t serial_conf = SERIAL_8N2){
+                                      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:11:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.h:84:17: note: previous specification in &#39;uint8_t SupmeaDO7016::begin(arduino::Stream&amp;, void (*)(), void (*)(), uint8_t, uint16_t, uint16_t)&#39; here
+         uint8_t begin(Stream &amp;port, void (*preT)(), void (*posT)(), uint8_t probe_addr = 10, uint16_t serial_speed = 9600, uint16_t serial_conf = SERIAL_8N2);
+                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:36:38: error: default argument given for parameter 6 of &#39;uint8_t SupmeaDO7016::begin(arduino::Stream&amp;, void (*)(), void (*)(), uint8_t, uint16_t, uint16_t)&#39; [-fpermissive]
+     uint16_t serial_conf = SERIAL_8N2){
+                                      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:11:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.h:84:17: note: previous specification in &#39;uint8_t SupmeaDO7016::begin(arduino::Stream&amp;, void (*)(), void (*)(), uint8_t, uint16_t, uint16_t)&#39; here
+         uint8_t begin(Stream &amp;port, void (*preT)(), void (*posT)(), uint8_t probe_addr = 10, uint16_t serial_speed = 9600, uint16_t serial_conf = SERIAL_8N2);
+                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:66:71: error: default argument given for parameter 1 of &#39;uint8_t SupmeaDO7016::startMeasurement(uint8_t)&#39; [-fpermissive]
+ uint8_t SupmeaDO7016::startMeasurement(uint8_t param = MEASUREMENT_ALL){
+                                                                       ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:11:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.h:85:17: note: previous specification in &#39;uint8_t SupmeaDO7016::startMeasurement(uint8_t)&#39; here
+         uint8_t startMeasurement(uint8_t param = MEASUREMENT_ALL);
+                 ^~~~~~~~~~~~~~~~
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:36:38: error: default argument given for parameter 4 of &#39;uint8_t SupmeaDO7016::begin(Stream&amp;, void (*)(), void (*)(), uint8_t, uint16_t, uint16_t)&#39; [-fpermissive]
+     uint16_t serial_conf = SERIAL_8N2){
+                                      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:11:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.h:84:17: note: previous specification in &#39;uint8_t SupmeaDO7016::begin(Stream&amp;, void (*)(), void (*)(), uint8_t, uint16_t, uint16_t)&#39; here
+         uint8_t begin(Stream &amp;port, void (*preT)(), void (*posT)(), uint8_t probe_addr = 10, uint16_t serial_speed = 9600, uint16_t serial_conf = SERIAL_8N2);
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:36:38: error: default argument given for parameter 5 of &#39;uint8_t SupmeaDO7016::begin(Stream&amp;, void (*)(), void (*)(), uint8_t, uint16_t, uint16_t)&#39; [-fpermissive]
+     uint16_t serial_conf = SERIAL_8N2){
+                                      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:11:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.h:84:17: note: previous specification in &#39;uint8_t SupmeaDO7016::begin(Stream&amp;, void (*)(), void (*)(), uint8_t, uint16_t, uint16_t)&#39; here
+         uint8_t begin(Stream &amp;port, void (*preT)(), void (*posT)(), uint8_t probe_addr = 10, uint16_t serial_speed = 9600, uint16_t serial_conf = SERIAL_8N2);
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:36:38: error: default argument given for parameter 6 of &#39;uint8_t SupmeaDO7016::begin(Stream&amp;, void (*)(), void (*)(), uint8_t, uint16_t, uint16_t)&#39; [-fpermissive]
+     uint16_t serial_conf = SERIAL_8N2){
+                                      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:11:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.h:84:17: note: previous specification in &#39;uint8_t SupmeaDO7016::begin(Stream&amp;, void (*)(), void (*)(), uint8_t, uint16_t, uint16_t)&#39; here
+         uint8_t begin(Stream &amp;port, void (*preT)(), void (*posT)(), uint8_t probe_addr = 10, uint16_t serial_speed = 9600, uint16_t serial_conf = SERIAL_8N2);
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:66:71: error: default argument given for parameter 1 of &#39;uint8_t SupmeaDO7016::startMeasurement(uint8_t)&#39; [-fpermissive]
+ uint8_t SupmeaDO7016::startMeasurement(uint8_t param = MEASUREMENT_ALL){
+                                                                       ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:11:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.h:85:17: note: previous specification in &#39;uint8_t SupmeaDO7016::startMeasurement(uint8_t)&#39; here
+         uint8_t startMeasurement(uint8_t param = MEASUREMENT_ALL);
+                 ^
+
+</pre>
+
+					
+					<h4>examples/ODCalibrationGain</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/examples/ODCalibrationGain/ODCalibrationGain.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/examples/ODCalibrationGain/ODCalibrationGain.ino:153:37: error: invalid conversion from &#39;const char*&#39; to &#39;char*&#39; [-fpermissive]
+     SupProbe.send_frame_210(op, date);
+                                     ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/examples/ODCalibrationGain/ODCalibrationGain.ino:19:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.h:100:17: note:   initializing argument 1 of &#39;uint8_t SupmeaDO7016::send_frame_210(char*, char*)&#39;
+         uint8_t send_frame_210(char *op, char *date);
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/examples/ODCalibrationGain/ODCalibrationGain.ino:153:37: error: invalid conversion from &#39;const char*&#39; to &#39;char*&#39; [-fpermissive]
+     SupProbe.send_frame_210(op, date);
+                                     ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/examples/ODCalibrationGain/ODCalibrationGain.ino:19:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.h:100:17: note:   initializing argument 2 of &#39;uint8_t SupmeaDO7016::send_frame_210(char*, char*)&#39;
+         uint8_t send_frame_210(char *op, char *date);
+                 ^
+
+</pre>
+					
+					<h4>examples/ReadParams</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:36:38: error: default argument given for parameter 4 of &#39;uint8_t SupmeaDO7016::begin(Stream&amp;, void (*)(), void (*)(), uint8_t, uint16_t, uint16_t)&#39; [-fpermissive]
+     uint16_t serial_conf = SERIAL_8N2){
+                                      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:11:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.h:84:17: note: previous specification in &#39;uint8_t SupmeaDO7016::begin(Stream&amp;, void (*)(), void (*)(), uint8_t, uint16_t, uint16_t)&#39; here
+         uint8_t begin(Stream &amp;port, void (*preT)(), void (*posT)(), uint8_t probe_addr = 10, uint16_t serial_speed = 9600, uint16_t serial_conf = SERIAL_8N2);
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:36:38: error: default argument given for parameter 5 of &#39;uint8_t SupmeaDO7016::begin(Stream&amp;, void (*)(), void (*)(), uint8_t, uint16_t, uint16_t)&#39; [-fpermissive]
+     uint16_t serial_conf = SERIAL_8N2){
+                                      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:11:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.h:84:17: note: previous specification in &#39;uint8_t SupmeaDO7016::begin(Stream&amp;, void (*)(), void (*)(), uint8_t, uint16_t, uint16_t)&#39; here
+         uint8_t begin(Stream &amp;port, void (*preT)(), void (*posT)(), uint8_t probe_addr = 10, uint16_t serial_speed = 9600, uint16_t serial_conf = SERIAL_8N2);
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:36:38: error: default argument given for parameter 6 of &#39;uint8_t SupmeaDO7016::begin(Stream&amp;, void (*)(), void (*)(), uint8_t, uint16_t, uint16_t)&#39; [-fpermissive]
+     uint16_t serial_conf = SERIAL_8N2){
+                                      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:11:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.h:84:17: note: previous specification in &#39;uint8_t SupmeaDO7016::begin(Stream&amp;, void (*)(), void (*)(), uint8_t, uint16_t, uint16_t)&#39; here
+         uint8_t begin(Stream &amp;port, void (*preT)(), void (*posT)(), uint8_t probe_addr = 10, uint16_t serial_speed = 9600, uint16_t serial_conf = SERIAL_8N2);
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:66:71: error: default argument given for parameter 1 of &#39;uint8_t SupmeaDO7016::startMeasurement(uint8_t)&#39; [-fpermissive]
+ uint8_t SupmeaDO7016::startMeasurement(uint8_t param = MEASUREMENT_ALL){
+                                                                       ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.cpp:11:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SupmeaDO7016/src/SupmeaDO7016.h:85:17: note: previous specification in &#39;uint8_t SupmeaDO7016::startMeasurement(uint8_t)&#39; here
+         uint8_t startMeasurement(uint8_t param = MEASUREMENT_ALL);
+                 ^
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

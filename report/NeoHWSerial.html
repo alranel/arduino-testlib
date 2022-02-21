@@ -1,0 +1,455 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>NeoHWSerial - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>NeoHWSerial</h2>
+				<p>
+					Version: <b>1.6.6</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/neohwserial/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>echo</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 1430 bytes (4%) of program storage space. Maximum is 32256 bytes.
+Global variables use 186 bytes (9%) of dynamic memory, leaving 1862 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+
+					
+					<h4>examples/echo</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 2110 bytes (6%) of program storage space. Maximum is 32256 bytes.
+Global variables use 192 bytes (9%) of dynamic memory, leaving 1856 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/src/NeoHWSerial.cpp:31:10: fatal error: util/atomic.h: No such file or directory
+ #include &lt;util/atomic.h&gt;
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/echo</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/src/NeoHWSerial.cpp:31:10: fatal error: util/atomic.h: No such file or directory
+ #include &lt;util/atomic.h&gt;
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library NeoHWSerial claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/src/NeoHWSerial1.cpp:29:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/src/NeoHWSerial_private.h:64:6: error: #error No UART found in NeoHWSerial.cpp
+     #error No UART found in NeoHWSerial.cpp
+      ^~~~~In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/util/atomic.h:37,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/src/NeoHWSerial.cpp:31:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/src/NeoHWSerial_private.h: In member function &#39;void NeoHWSerial::_rx_complete_irq()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/src/NeoHWSerial_private.h:117:31: error: &#39;UPE0&#39; was not declared in this scope
+     if (bit_is_clear(*_ucsra, UPE0)) {
+                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/src/NeoHWSerial_private.h:117:31: note: suggested alternative: &#39;SPI0&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/src/NeoHWSerial.cpp: In member function &#39;void NeoHWSerial::_tx_udr_empty_irq()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/src/NeoHWSerial.cpp:109:33: error: &#39;U2X0&#39; was not declared in this scope
+   *_ucsra = ((*_ucsra) &amp; ((1 &lt;&lt; U2X0) | (1 &lt;&lt; TXC0)));
+                                 ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/src/NeoHWSerial.cpp:109:47: error: &#39;TXC0&#39; was not declared in this scope
+   *_ucsra = ((*_ucsra) &amp; ((1 &lt;&lt; U2X0) | (1 &lt;&lt; TXC0)));
+                                               ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/src/NeoHWSerial.cpp:109:47: note: suggested alternative: &#39;ADC0&#39;
+   *_ucsra = ((*_ucsra) &amp; ((1 &lt;&lt; U2X0) | (1 &lt;&lt; TXC0)));
+                                               ^~~~
+                                               ADC0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/src/NeoHWSerial.cpp:114:18: error: &#39;UDRIE0&#39; was not declared in this scope
+     cbi(*_ucsrb, UDRIE0);
+                  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/src/NeoHWSerial.cpp:114:5: error: &#39;cbi&#39; was not declared in this scope
+     cbi(*_ucsrb, UDRIE0);
+     ^~~
+/ho/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/src/NeoHWSerial_private.h:117:31: note: suggested alternative: &#39;SPI0&#39;
+ucsrb, UDRIE0);
+     ^~~
+     cli
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/src/NeoHWSerial.cpp: In member function &#39;void NeoHWSerial::begin(long unsigned int, byte)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/src/NeoHWSerial.cpp:125:18: error: &#39;U2X0&#39; was not declared in this scope
+   *_ucsra = 1 &lt;&lt; U2X0;
+                  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/src/NeoHWSerial.cpp:150:16: error: &#39;RXEN0&#39; was not declared in this scope
+   sbi(*_ucsrb, RXEN0);
+                ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/src/NeoHWSerial.cpp:150:3: error: &#39;sbi&#39; was not declared in this scope
+   sbi(*_ucsrb, RXEN0);
+   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/src/NeoHWSerial.cpp:150:3: note: suggested alternative: &#39;sei&#39;
+   sbi(*_ucsrb, RXEN0);
+   ^~~
+   sei
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/src/NeoHWSerial.cpp:151:16: error: &#39;TXEN0&#39; was not declared in this scope
+   sbi(*_ucsrb, TXEN0);
+                ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/src/NeoHWSerial.cpp:152:16: error: &#39;RXCIE0&#39; was n/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/src/NeoHWSerial0.cpp:72:37: error: &#39;UBRR0L&#39; was not declared in this scope
+     NeoHWSerial NeoSerial(&amp;UBRR0H, &amp;UBRR0L, &amp;UCSR0A, &amp;UCSR0B, &amp;UCSR0C, &amp;UDR0);
+                                     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/src/NeoHWSerial0.cpp:72:46: error: &#39;UCSR0A&#39; was not declared in this scope
+     NeoHWSerial NeoSerial(&amp;UBRR0H, &amp;UBRR0L, &amp;UCSR0A, &amp;UCSR0B, &amp;UCSR0C, &amp;UDR0);
+                                              ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/src/NeoHWSerial0.cpp:72:55: error: &#39;UCSR0B&#39; was not declared in this scope
+     NeoHWSerial NeoSerial(&amp;UBRR0H, &amp;UBRR0L, &amp;UCSR0A, &amp;UCSR0B, &amp;UCSR0C, &amp;UDR0);
+                                                       ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/src/NeoHWSerial0.cpp:72:64: error: &#39;UCSR0C&#39; was not declared in this scope
+     NeoHWSerial NeoSerial(&amp;UBRR0H, &amp;UBRR0L, &amp;UCSR0A, &amp;UCSR0B, &amp;UCSR0C, &amp;UDR0);
+                                                                ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/src/NeoHWSerial0.cpp:72:73: error: &#39;UDR0&#39; was not declared in this scope
+     NeoHWSerial NeoSerial(&amp;UBRR0H, &amp;UBRR0L, &amp;UCSR0A, &amp;UCSR0B, &amp;UCSR0C, &amp;UDR0);
+                                                                         ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/src/NeoHWSerial0.cpp:72:73: note: suggested alternative: &#39;DDRD&#39;
+     NeoHWSerial NeoSerial(&amp;UBRR0H, &amp;UBRR0L, &amp;UCSR0A, &amp;UCSR0B, &amp;UCSR0C, &amp;UDR0);
+                                                                         ^~~~
+                                                                         DDRD
+
+</pre>
+
+					
+					<h4>examples/echo</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library NeoHWSerial claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/examples/echo/echo.ino: In function &#39;bool char_received(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/examples/echo/echo.ino:16:3: error: &#39;NeoSerial&#39; was not declared in this scope
+   NeoSerial.write( c );
+   ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/examples/echo/echo.ino:16:3: note: suggested alternative: &#39;NeoHWSerial&#39;
+   NeoSerial.write( c );
+   ^~~~~~~~~
+   NeoHWSerial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/examples/echo/echo.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/examples/echo/echo.ino:23:3: error: &#39;NeoSerial&#39; was not declared in this scope
+   NeoSerial.begin( 9600 );
+   ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/examples/echo/echo.ino:23:3: note: suggested alternative: &#39;NeoHWSerial&#39;
+   NeoSerial.begin( 9600 );
+   ^~~~~~~~~
+   NeoHWSerial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/examples/echo/echo.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/examples/echo/echo.ino:40:5: error: &#39;NeoSerial&#39; was not declared in this scope
+     NeoSerial.print( &#39;\n&#39; );
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/examples/echo/echo.ino:40:5: note: suggested alternative: &#39;NeoHWSerial&#39;
+     NeoSerial.print( &#39;\n&#39; );
+     ^~~~~~~~~
+     NeoHWSerial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/examples/echo/echo.ino:46:5: error: &#39;NeoSerial&#39; was not declared in this scope
+     NeoSerial.print( &#39;.&#39; );
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/examples/echo/echo.ino:46:5: note: suggested alternative: &#39;NeoHWSerial&#39;
+     NeoSerial.print( &#39;.&#39; );
+     ^~~~~~~~~
+     NeoHWSerial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/examples/echo/echo.ino:48:3: error: &#39;NeoSerial&#39; was not declared in this scope
+   NeoSerial.flush();
+   ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/examples/echo/echo.ino:48:3: note: suggested alternative: &#39;NeoHWSerial&#39;
+   NeoSerial.flush();
+   ^~~~~~~~~
+   NeoHWSerial
+
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/src/NeoHWSerial.cpp:31:10: fatal error: util/atomic.h: No such file or directory
+ #include &lt;util/atomic.h&gt;
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/echo</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/src/NeoHWSerial.cpp:31:10: fatal error: util/atomic.h: No such file or directory
+ #include &lt;util/atomic.h&gt;
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/src/NeoHWSerial.cpp:31:25: fatal error: util/atomic.h: No such file or directory
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/echo</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/src/NeoHWSerial.cpp:31:25: fatal error: util/atomic.h: No such file or directory
+compilation terminated.
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

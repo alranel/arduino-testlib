@@ -1,0 +1,523 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>ArduinoSTL - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>ArduinoSTL</h2>
+				<p>
+					Version: <b>1.3.3</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/arduinostl/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">new.cpp.o (symbol from plugin): In function `operator new(unsigned int)&#39;:
+(.text&#43;0x0): multiple definition of `std::nothrow&#39;
+/tmp/arduino-sketch-2AACF52BCBDD31788E7F4650DE9B88A1/libraries/ArduinoSTL/new_handler.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+collect2: error: ld returned 1 exit status
+Multiple libraries were found for &#34;ArduinoSTL.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSTL
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl
+</pre>
+
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library ArduinoSTL claims to run on avr, megaavr architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/stdlib.h:36:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Interrupts.h:5,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/ArduinoAPI.h:29,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:27,
+                 from /tmp/arduino-sketch-9E5115652D283B6411F39A83B9C59352/sketch/test.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSTL/src/cstdlib:27:10: error: &#39;::abort&#39; has not been declared
+  using ::abort;
+          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSTL/src/cstdlib:28:10: error: &#39;::abs&#39; has not been declared
+  using ::abs;
+          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSTL/src/cstdlib:30:10: error: &#39;::atol&#39; has not been declared
+  using ::atol;
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSTL/src/cstdlib:31:10: error: &#39;::atof&#39; has not been declared
+  using ::atof;
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSTL/src/cstdlib:32:10: error: &#39;::atoi&#39; has not been declared
+  using ::atoi;
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSTL/src/cstdlib:33:10: error: &#39;::bsearch&#39; has not been declared
+  using ::bsearch;
+          ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSTL/src/cstdlib:34:10: error: &#39;::calloc&#39; has not been declared
+  using ::calloc;
+          ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSTL/src/cstdlib:35:10: error: &#39;::div&#39; has not been declared
+  using ::div;
+          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSTL/src/cstdlib:36:10: error: &#39;::exit&#39; has not been declared
+  using ::exit;
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSTL/src/cstdlib:37:10: error: &#39;::free&#39; has not been declared
+  using ::free;
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSTL/src/cstdlib:38:10: error: &#39;::getenv&#39; has not been declared
+  using ::getenv;
+          ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSTL/src/cstdlib:39:10: error: &#39;::labs&#39; has not been declared
+  using ::labs;
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSTL/src/cstdlib:40:10: error: &#39;::ldiv&#39; has not been declared
+  using ::ldiv;
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSTL/src/cstdlib:41:10: error: &#39;::malloc&#39; has not been declared
+  using ::malloc;
+          ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSTL/src/cstdlib:42:10: error: &#39;::qsort&#39; has not been declared
+  using ::qsort;
+          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSTL/src/cstdlib:43:10: error: &#39;::rand&#39; has not been declared
+  using ::rand;
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSTL/src/cstdlib:44:10: error: &#39;::realloc&#39; has not been declared
+  using ::realloc;
+          ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSTL/src/cstdlib:45:10: error: &#39;::srand&#39; has not been declared
+  using ::srand;
+          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSTL/src/cstdlib:46:10: error: &#39;::strtod&#39; has not been declared
+  using ::strtod;
+          ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSTL/src/cstdlib:47:10: error: &#39;::strtol&#39; has not been declared
+  using ::strtol;
+          ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSTL/src/cstdlib:48:10: error: &#39;::strtoul&#39; has not been declared
+  using ::strtoul;
+          ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSTL/src/cstdlib:49:10: error: &#39;::system&#39; has not been declared
+  using ::system;
+          ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSTL/src/cstdlib:63:9: error: &#39;ldiv_t&#39; does not name a type
+  inline ldiv_t div(long i, long j){
+         ^~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Interrupts.h:5:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/ArduinoAPI.h:29,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:27,
+                 from /tmp/arduino-sketch-9E5115652D283B6411F39A83B9C59352/sketch/test.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/stdlib.h:38:12: error: &#39;std::abort&#39; has not been declared
+ using std::abort;
+            ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/stdlib.h:40:12: error: &#39;std::exit&#39; has not been declared
+ using std::exit;
+            ^~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/IPAddress.h:23:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:27,
+                 from /tmp/arduino-sketch-9E5115652D283B6411F39A83B9C59352/sketch/test.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Printable.h:36:13: error: &#39;size_t&#39; does not name a type; did you mean &#39;pin_size_t&#39;?
+     virtual size_t printTo(Print&amp; p) const = 0;
+             ^~~~~~
+             pin_size_t
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/math.h:36:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/ArduinoAPI.h:47,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:27,
+                 from /tmp/arduino-sketch-9E5115652D283B6411F39A83B9C59352/sketch/test.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSTL/src/cmath:51:10: error: &#39;::acos&#39; has not been declared
+  using ::acos;
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSTL/src/cmath:52:10: error: &#39;::asin&#39; has not been declared
+  using ::asin;
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSTL/src/cmath:53:10: error: &#39;::atan&#39; has not been declared
+  using ::atan;
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSTL/src/cmath:54:10: error: &#39;::atan2&#39; has not been declared
+  using ::atan2;
+          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSTL/src/cmath:55:10: error: &#39;::ceil&#39; has not been declared
+  using ::ceil;
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSTL/src/cmath:56:10: error: &#39;::cos&#39; has not been declared
+  using ::cos;
+          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSTL/src/cmath:57:10: error: &#39;::cosh&#39; has not been declared
+  using ::cosh;
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSTL/src/cmath:58:10: error: &#39;::exp&#39; has not been declared
+  using ::exp;
+          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSTL/src/cmath:59:10: error: &#39;::fabs&#39; has not been declared
+  using ::fabs;
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSTL/src/cmath:60:10: error: &#39;::floor&#39; has not been declared
+  using ::floor;
+          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSTL/src/cmath:61:10: error: &#39;::fmod&#39; has not been declared
+  using ::fmod;
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSTL/src/cmath:62:10: error: &#39;::frexp&#39; has not been declared
+  using ::frexp;
+          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSTL/src/cmath:63:10: error: &#39;::ldexp&#39; has not been declared
+  using ::ldexp;
+          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSTL/src/cmath:64:10: error: &#39;::log&#39; has not been declared
+  using ::log;
+          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSTL/src/cmath:65:10: error: &#39;::log10&#39; has not been declared
+  using ::log10;
+          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSTL/src/cmath:66:10: error: &#39;::modf&#39; has not been declared
+  using ::modf;
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSTL/src/cmath:67:10: error: &#39;::pow&#39; has not been declared
+  using ::pow;
+          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSTL/src/cmath:68:10: error: &#39;::sin&#39; has not been declared
+  using ::sin;
+          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSTL/src/cmath:69:10: error: &#39;::sinh&#39; has not been declared
+  using ::sinh;
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSTL/src/cmath:70:10: error: &#39;::sqrt&#39; has not been declared
+  using ::sqrt;
+         </pre>
+
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 5038 bytes (10%) of program storage space. Maximum is 49152 bytes.
+Global variables use 275 bytes (4%) of dynamic memory, leaving 5869 bytes for local variables. Maximum is 6144 bytes.
+</pre>
+
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/stdlib.h:36:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Interrupts.h:5,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/ArduinoAPI.h:29,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:23,
+                 from /tmp/arduino-sketch-2AACF52BCBDD31788E7F4650DE9B88A1/sketch/test.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl/src/cstdlib:27:10: error: &#39;::abort&#39; has not been declared
+  using ::abort;
+          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl/src/cstdlib:28:10: error: &#39;::abs&#39; has not been declared
+  using ::abs;
+          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl/src/cstdlib:29:10: error: &#39;::atexit&#39; has not been declared
+  using ::atexit;
+          ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl/src/cstdlib:30:10: error: &#39;::atol&#39; has not been declared
+  using ::atol;
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl/src/cstdlib:31:10: error: &#39;::atof&#39; has not been declared
+  using ::atof;
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl/src/cstdlib:32:10: error: &#39;::atoi&#39; has not been declared
+  using ::atoi;
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl/src/cstdlib:33:10: error: &#39;::bsearch&#39; has not been declared
+  using ::bsearch;
+          ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl/src/cstdlib:34:10: error: &#39;::calloc&#39; has not been declared
+  using ::calloc;
+          ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl/src/cstdlib:35:10: error: &#39;::div&#39; has not been declared
+  using ::div;
+          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl/src/cstdlib:36:10: error: &#39;::exit&#39; has not been declared
+  using ::exit;
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl/src/cstdlib:37:10: error: &#39;::free&#39; has not been declared
+  using ::free;
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl/src/cstdlib:38:10: error: &#39;::getenv&#39; has not been declared
+  using ::getenv;
+          ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl/src/cstdlib:39:10: error: &#39;::labs&#39; has not been declared
+  using ::labs;
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl/src/cstdlib:40:10: error: &#39;::ldiv&#39; has not been declared
+  using ::ldiv;
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl/src/cstdlib:41:10: error: &#39;::malloc&#39; has not been declared
+  using ::malloc;
+          ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl/src/cstdlib:42:10: error: &#39;::qsort&#39; has not been declared
+  using ::qsort;
+          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl/src/cstdlib:43:10: error: &#39;::rand&#39; has not been declared
+  using ::rand;
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl/src/cstdlib:44:10: error: &#39;::realloc&#39; has not been declared
+  using ::realloc;
+          ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl/src/cstdlib:45:10: error: &#39;::srand&#39; has not been declared
+  using ::srand;
+          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl/src/cstdlib:46:10: error: &#39;::strtod&#39; has not been declared
+  using ::strtod;
+          ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl/src/cstdlib:47:10: error: &#39;::strtol&#39; has not been declared
+  using ::strtol;
+          ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl/src/cstdlib:48:10: error: &#39;::strtoul&#39; has not been declared
+  using ::strtoul;
+          ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl/src/cstdlib:49:10: error: &#39;::system&#39; has not been declared
+  using ::system;
+          ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl/src/cstdlib:63:9: error: &#39;ldiv_t&#39; does not name a type
+  inline ldiv_t div(long i, long j){
+         ^~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Interrupts.h:5:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/ArduinoAPI.h:29,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:23,
+                 from /tmp/arduino-sketch-2AACF52BCBDD31788E7F4650DE9B88A1/sketch/test.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/stdlib.h:38:12: error: &#39;std::abort&#39; has not been declared
+ using std::abort;
+            ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/stdlib.h:39:12: error: &#39;std::atexit&#39; has not been declared
+ using std::atexit;
+            ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/stdlib.h:40:12: error: &#39;std::exit&#39; has not been declared
+ using std::exit;
+            ^~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/IPAddress.h:23:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:23,
+                 from /tmp/arduino-sketch-2AACF52BCBDD31788E7F4650DE9B88A1/sketch/test.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Printable.h:36:13: error: &#39;size_t&#39; does not name a type; did you mean &#39;pin_size_t&#39;?
+     virtual size_t printTo(Print&amp; p) const = 0;
+             ^~~~~~
+             pin_size_t
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/math.h:36:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/ArduinoAPI.h:47,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:23,
+                 from /tmp/arduino-sketch-2AACF52BCBDD31788E7F4650DE9B88A1/sketch/test.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl/src/cmath:51:10: error: &#39;::acos&#39; has not been declared
+  using ::acos;
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl/src/cmath:52:10: error: &#39;::asin&#39; has not been declared
+  using ::asin;
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl/src/cmath:53:10: error: &#39;::atan&#39; has not been declared
+  using ::atan;
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl/src/cmath:54:10: error: &#39;::atan2&#39; has not been declared
+  using ::atan2;
+          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl/src/cmath:55:10: error: &#39;::ceil&#39; has not been declared
+  using ::ceil;
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl/src/cmath:56:10: error: &#39;::cos&#39; has not been declared
+  using ::cos;
+          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl/src/cmath:57:10: error: &#39;::cosh&#39; has not been declared
+  using ::cosh;
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl/src/cmath:58:10: error: &#39;::exp&#39; has not been declared
+  using ::exp;
+          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl/src/cmath:59:10: error: &#39;::fabs&#39; has not been declared
+  using ::fabs;
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl/src/cmath:60:10: error: &#39;::floor&#39; has not been declared
+  using ::floor;
+          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl/src/cmath:61:10: error: &#39;::fmod&#39; has not been declared
+  using ::fmod;
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl/src/cmath:62:10: error: &#39;::frexp&#39; has not been declared
+  using ::frexp;
+          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl/src/cmath:63:10: error: &#39;::ldexp&#39; has not been declared
+  using ::ldexp;
+          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl/src/cmath:64:10: error: &#39;::log&#39; has not been declared
+  using ::log;
+          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl/src/cmath:65:10: error: &#39;::log10&#39; has not been declared
+  using ::log10;
+          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl/src/cmath:66:10: error: &#39;::modf&#39; has not been declared
+  using ::modf;
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl/src/cmath:67:10: error: &#39;::pow&#39; has not been declared
+  using ::pow;
+          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl/src/cmath:68:10: error: &#39;::sin&#39; has not been declared
+  using ::sin;
+          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl/src/cmath:69:10: error: &#39;::sinh&#39; has not been declared
+  using ::sinh;
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl/src/cmath:70:10: error: &#39;::sqrt&#39;</pre>
+
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library ArduinoSTL claims to run on avr, megaavr architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+In file included from /tmp/arduino-sketch-DA12B20109C63B5E694EBAEC6099B3EC/sketch/test.ino.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:158:12: error: &#39;std::isinf&#39; has not been declared
+ using std::isinf;
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:159:12: error: &#39;std::isnan&#39; has not been declared
+ using std::isnan;
+            ^
+Multiple libraries were found for &#34;ArduinoSTL.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSTL
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/avr_stl
+</pre>
+
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

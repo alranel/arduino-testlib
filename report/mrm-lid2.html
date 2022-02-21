@@ -1,0 +1,1509 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>mrm-lid2 - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>mrm-lid2</h2>
+				<p>
+					Version: <b>0.0.3</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/mrm-lid2/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>mrm-lid2</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library mrm-lid2 claims to run on esp32 architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp: In member function &#39;void VL53L1Xs::add(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:23:18: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;I2cDevAddr&#39;
+  pDev[nextFree]-&gt;I2cDevAddr = i2c_addr &lt;&lt; 1;
+                  ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:24:18: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;comms_type&#39;
+  pDev[nextFree]-&gt;comms_type = 1;
+                  ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:25:18: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;comms_speed_khz&#39;
+  pDev[nextFree]-&gt;comms_speed_khz = 400;
+                  ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp: In member function &#39;void VL53L1Xs::begin(boolean)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:36:33: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;I2cDevAddr&#39;
+   uint8_t i2cAddress = pDev[i]-&gt;I2cDevAddr;
+                                 ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:37:12: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;I2cDevAddr&#39;
+   pDev[i]-&gt;I2cDevAddr = 0x52; //0x29 x 2
+            ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:44:7: error: &#39;VL53L1_WaitDeviceBooted&#39; was not declared in this scope
+   if (VL53L1_WaitDeviceBooted(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:44:7: note: suggested alternative: &#39;VL53L1_WriteMulti&#39;
+   if (VL53L1_WaitDeviceBooted(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~~~~
+       VL53L1_WriteMulti
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:44:43: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_WaitDeviceBooted(pDev[i]) != VL53L1_ERROR_NONE)
+                                           ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:44:43: note: suggested alternative: &#39;VL53L1X_ERROR&#39;
+   if (VL53L1_WaitDeviceBooted(pDev[i]) != VL53L1_ERROR_NONE)
+                                           ^~~~~~~~~~~~~~~~~
+                                           VL53L1X_ERROR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:49:4: error: &#39;VL53L1_SetDeviceAddress&#39; was not declared in this scope
+    VL53L1_SetDeviceAddress(pDev[i], i2cAddress);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:49:4: note: suggested alternative: &#39;VL53L1X_SetI2CAddress&#39;
+    VL53L1_SetDeviceAddress(pDev[i], i2cAddress);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+    VL53L1X_SetI2CAddress
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:50:13: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;I2cDevAddr&#39;
+    pDev[i]-&gt;I2cDevAddr = i2cAddress;
+             ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:54:7: error: &#39;VL53L1_DataInit&#39; was not declared in this scope
+   if (VL53L1_DataInit(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:54:7: note: suggested alternative: &#39;VL53L1_Dev_t&#39;
+   if (VL53L1_DataInit(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~
+       VL53L1_Dev_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:54:35: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_DataInit(pDev[i]) != VL53L1_ERROR_NONE)
+                                   ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:54:35: note: suggested alternative: &#39;VL53L1X_ERROR&#39;
+   if (VL53L1_DataInit(pDev[i]) != VL53L1_ERROR_NONE)
+                                   ^~~~~~~~~~~~~~~~~
+                                   VL53L1X_ERROR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:58:3: error: &#39;VL53L1_DeviceInfo_t&#39; was not declared in this scope
+   VL53L1_DeviceInfo_t DeviceInfo;
+   ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:58:3: note: suggested alternative: &#39;VL53L1_Dev_t&#39;
+   VL53L1_DeviceInfo_t DeviceInfo;
+   ^~~~~~~~~~~~~~~~~~~
+   VL53L1_Dev_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:38: error: &#39;DeviceInfo&#39; was not declared in this scope
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+                                      ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:7: error: &#39;VL53L1_GetDeviceInfo&#39; was not declared in this scope
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:7: note: suggested alternative: &#39;VL53L1X_GetDistance&#39;
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~
+       VL53L1X_GetDistance
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:53: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+                                                     ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:53: note: suggested alternative: &#39;VL53L1X_ERROR&#39;
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+                                                     ^~~~~~~~~~~~~~~~~
+                                                     VL53L1X_ERROR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:62:40: error: &#39;DeviceInfo&#39; was not declared in this scope
+    Serial.println(&#34;VL53L1X &#34; &#43; (String)DeviceInfo.Name &#43; &#34;, type: &#34; &#43; (String)DeviceInfo.Type &#43; &#34;, id: &#34; &#43; (String)(int)DeviceInfo.ProductId &#43;
+                                        ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:67:7: error: &#39;VL53L1_StaticInit&#39; was not declared in this scope
+   if (VL53L1_StaticInit(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:67:7: note: suggested alternative: &#39;VL53L1X_SensorInit&#39;
+   if (VL53L1_StaticInit(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~
+       VL53L1X_SensorInit
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:67:37: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_StaticInit(pDev[i]) != VL53L1_ERROR_NONE)
+                                     ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:67:37: note: suggested alternative: &#39;VL53L1X_ERROR&#39;
+   if (VL53L1_StaticInit(pDev[i]) != VL53L1_ERROR_NONE)
+                                     ^~~~~~~~~~~~~~~~~
+                                     VL53L1X_ERROR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:39: error: &#39;VL53L1_DISTANCEMODE_SHORT&#39; was not declared in this scope
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+                                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:7: error: &#39;VL53L1_SetDistanceMode&#39; was not declared in this scope
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:7: note: suggested alternative: &#39;VL53L1X_SetDistanceMode&#39;
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~~~
+       VL53L1X_SetDistanceMode
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:69: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+                                                                     ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:69: note: suggested alternative: &#39;VL53L1X_ERROR&#39;
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+                                                                     ^~~~~~~~~~~~~~~~~
+                                                                     VL53L1X_ERROR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:95:7: error: &#39;VL53L1_SetMeasurementTimingBudgetMicroSeconds&#39; was not declared in this scope
+   if (VL53L1_SetMeasurementTimingBudgetMicroSeconds(pDev[i], 20000) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:95:7: note: suggested alternative: &#39;VL53L1X_SetTimingBudgetInMs&#39;
+   if (VL53L1_SetMeasurementTimingBudgetMicroSeconds(pDev[i], 20000) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+       VL53L1X_SetTimingBudgetInMs
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:95:72: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_SetMeasurementTimingBudgetMicroSeco</pre>
+
+					
+					<h4>examples/mrm-lid2</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library mrm-lid2 claims to run on esp32 architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp: In member function &#39;void VL53L1Xs::add(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:23:18: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;I2cDevAddr&#39;
+  pDev[nextFree]-&gt;I2cDevAddr = i2c_addr &lt;&lt; 1;
+                  ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:24:18: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;comms_type&#39;
+  pDev[nextFree]-&gt;comms_type = 1;
+                  ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:25:18: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;comms_speed_khz&#39;
+  pDev[nextFree]-&gt;comms_speed_khz = 400;
+                  ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp: In member function &#39;void VL53L1Xs::begin(boolean)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:36:33: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;I2cDevAddr&#39;
+   uint8_t i2cAddress = pDev[i]-&gt;I2cDevAddr;
+                                 ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:37:12: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;I2cDevAddr&#39;
+   pDev[i]-&gt;I2cDevAddr = 0x52; //0x29 x 2
+            ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:44:7: error: &#39;VL53L1_WaitDeviceBooted&#39; was not declared in this scope
+   if (VL53L1_WaitDeviceBooted(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:44:7: note: suggested alternative: &#39;VL53L1_WriteMulti&#39;
+   if (VL53L1_WaitDeviceBooted(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~~~~
+       VL53L1_WriteMulti
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:44:43: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_WaitDeviceBooted(pDev[i]) != VL53L1_ERROR_NONE)
+                                           ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:44:43: note: suggested alternative: &#39;VL53L1X_ERROR&#39;
+   if (VL53L1_WaitDeviceBooted(pDev[i]) != VL53L1_ERROR_NONE)
+                                           ^~~~~~~~~~~~~~~~~
+                                           VL53L1X_ERROR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:49:4: error: &#39;VL53L1_SetDeviceAddress&#39; was not declared in this scope
+    VL53L1_SetDeviceAddress(pDev[i], i2cAddress);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:49:4: note: suggested alternative: &#39;VL53L1X_SetI2CAddress&#39;
+    VL53L1_SetDeviceAddress(pDev[i], i2cAddress);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+    VL53L1X_SetI2CAddress
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:50:13: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;I2cDevAddr&#39;
+    pDev[i]-&gt;I2cDevAddr = i2cAddress;
+             ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:54:7: error: &#39;VL53L1_DataInit&#39; was not declared in this scope
+   if (VL53L1_DataInit(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:54:7: note: suggested alternative: &#39;VL53L1_Dev_t&#39;
+   if (VL53L1_DataInit(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~
+       VL53L1_Dev_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:54:35: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_DataInit(pDev[i]) != VL53L1_ERROR_NONE)
+                                   ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:54:35: note: suggested alternative: &#39;VL53L1X_ERROR&#39;
+   if (VL53L1_DataInit(pDev[i]) != VL53L1_ERROR_NONE)
+                                   ^~~~~~~~~~~~~~~~~
+                                   VL53L1X_ERROR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:58:3: error: &#39;VL53L1_DeviceInfo_t&#39; was not declared in this scope
+   VL53L1_DeviceInfo_t DeviceInfo;
+   ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:58:3: note: suggested alternative: &#39;VL53L1_Dev_t&#39;
+   VL53L1_DeviceInfo_t DeviceInfo;
+   ^~~~~~~~~~~~~~~~~~~
+   VL53L1_Dev_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:38: error: &#39;DeviceInfo&#39; was not declared in this scope
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+                                      ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:7: error: &#39;VL53L1_GetDeviceInfo&#39; was not declared in this scope
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:7: note: suggested alternative: &#39;VL53L1X_GetDistance&#39;
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~
+       VL53L1X_GetDistance
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:53: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+                                                     ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:53: note: suggested alternative: &#39;VL53L1X_ERROR&#39;
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+                                                     ^~~~~~~~~~~~~~~~~
+                                                     VL53L1X_ERROR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:62:40: error: &#39;DeviceInfo&#39; was not declared in this scope
+    Serial.println(&#34;VL53L1X &#34; &#43; (String)DeviceInfo.Name &#43; &#34;, type: &#34; &#43; (String)DeviceInfo.Type &#43; &#34;, id: &#34; &#43; (String)(int)DeviceInfo.ProductId &#43;
+                                        ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:67:7: error: &#39;VL53L1_StaticInit&#39; was not declared in this scope
+   if (VL53L1_StaticInit(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:67:7: note: suggested alternative: &#39;VL53L1X_SensorInit&#39;
+   if (VL53L1_StaticInit(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~
+       VL53L1X_SensorInit
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:67:37: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_StaticInit(pDev[i]) != VL53L1_ERROR_NONE)
+                                     ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:67:37: note: suggested alternative: &#39;VL53L1X_ERROR&#39;
+   if (VL53L1_StaticInit(pDev[i]) != VL53L1_ERROR_NONE)
+                                     ^~~~~~~~~~~~~~~~~
+                                     VL53L1X_ERROR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:39: error: &#39;VL53L1_DISTANCEMODE_SHORT&#39; was not declared in this scope
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+                                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:7: error: &#39;VL53L1_SetDistanceMode&#39; was not declared in this scope
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:7: note: suggested alternative: &#39;VL53L1X_SetDistanceMode&#39;
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~~~
+       VL53L1X_SetDistanceMode
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:69: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+                                                                     ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:69: note: suggested alternative: &#39;VL53L1X_ERROR&#39;
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+                                                                     ^~~~~~~~~~~~~~~~~
+                                                                     VL53L1X_ERROR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:95:7: error: &#39;VL53L1_SetMeasurementTimingBudgetMicroSeconds&#39; was not declared in this scope
+   if (VL53L1_SetMeasurementTimingBudgetMicroSeconds(pDev[i], 20000) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:95:7: note: suggested alternative: &#39;VL53L1X_SetTimingBudgetInMs&#39;
+   if (VL53L1_SetMeasurementTimingBudgetMicroSeconds(pDev[i], 20000) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+       VL53L1X_SetTimingBudgetInMs
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:95:72: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_SetMeasurementTimingBudgetMicroSeco</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library mrm-lid2 claims to run on esp32 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp: In member function &#39;void VL53L1Xs::add(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:23:18: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;I2cDevAddr&#39;
+  pDev[nextFree]-&gt;I2cDevAddr = i2c_addr &lt;&lt; 1;
+                  ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:24:18: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;comms_type&#39;
+  pDev[nextFree]-&gt;comms_type = 1;
+                  ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:25:18: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;comms_speed_khz&#39;
+  pDev[nextFree]-&gt;comms_speed_khz = 400;
+                  ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp: In member function &#39;void VL53L1Xs::begin(boolean)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:36:33: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;I2cDevAddr&#39;
+   uint8_t i2cAddress = pDev[i]-&gt;I2cDevAddr;
+                                 ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:37:12: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;I2cDevAddr&#39;
+   pDev[i]-&gt;I2cDevAddr = 0x52; //0x29 x 2
+            ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:44:7: error: &#39;VL53L1_WaitDeviceBooted&#39; was not declared in this scope
+   if (VL53L1_WaitDeviceBooted(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:44:7: note: suggested alternative: &#39;VL53L1_WriteMulti&#39;
+   if (VL53L1_WaitDeviceBooted(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~~~~
+       VL53L1_WriteMulti
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:44:43: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_WaitDeviceBooted(pDev[i]) != VL53L1_ERROR_NONE)
+                                           ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:44:43: note: suggested alternative: &#39;VL53L1X_ERROR&#39;
+   if (VL53L1_WaitDeviceBooted(pDev[i]) != VL53L1_ERROR_NONE)
+                                           ^~~~~~~~~~~~~~~~~
+                                           VL53L1X_ERROR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:49:4: error: &#39;VL53L1_SetDeviceAddress&#39; was not declared in this scope
+    VL53L1_SetDeviceAddress(pDev[i], i2cAddress);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:49:4: note: suggested alternative: &#39;VL53L1X_SetI2CAddress&#39;
+    VL53L1_SetDeviceAddress(pDev[i], i2cAddress);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+    VL53L1X_SetI2CAddress
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:50:13: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;I2cDevAddr&#39;
+    pDev[i]-&gt;I2cDevAddr = i2cAddress;
+             ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:54:7: error: &#39;VL53L1_DataInit&#39; was not declared in this scope
+   if (VL53L1_DataInit(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:54:7: note: suggested alternative: &#39;VL53L1_Dev_t&#39;
+   if (VL53L1_DataInit(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~
+       VL53L1_Dev_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:54:35: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_DataInit(pDev[i]) != VL53L1_ERROR_NONE)
+                                   ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:54:35: note: suggested alternative: &#39;VL53L1X_ERROR&#39;
+   if (VL53L1_DataInit(pDev[i]) != VL53L1_ERROR_NONE)
+                                   ^~~~~~~~~~~~~~~~~
+                                   VL53L1X_ERROR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:58:3: error: &#39;VL53L1_DeviceInfo_t&#39; was not declared in this scope
+   VL53L1_DeviceInfo_t DeviceInfo;
+   ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:58:3: note: suggested alternative: &#39;VL53L1_Dev_t&#39;
+   VL53L1_DeviceInfo_t DeviceInfo;
+   ^~~~~~~~~~~~~~~~~~~
+   VL53L1_Dev_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:38: error: &#39;DeviceInfo&#39; was not declared in this scope
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+                                      ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:7: error: &#39;VL53L1_GetDeviceInfo&#39; was not declared in this scope
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:7: note: suggested alternative: &#39;VL53L1X_GetDistance&#39;
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~
+       VL53L1X_GetDistance
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:53: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+                                                     ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:53: note: suggested alternative: &#39;VL53L1X_ERROR&#39;
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+                                                     ^~~~~~~~~~~~~~~~~
+                                                     VL53L1X_ERROR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:62:40: error: &#39;DeviceInfo&#39; was not declared in this scope
+    Serial.println(&#34;VL53L1X &#34; &#43; (String)DeviceInfo.Name &#43; &#34;, type: &#34; &#43; (String)DeviceInfo.Type &#43; &#34;, id: &#34; &#43; (String)(int)DeviceInfo.ProductId &#43;
+                                        ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:67:7: error: &#39;VL53L1_StaticInit&#39; was not declared in this scope
+   if (VL53L1_StaticInit(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:67:7: note: suggested alternative: &#39;VL53L1X_SensorInit&#39;
+   if (VL53L1_StaticInit(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~
+       VL53L1X_SensorInit
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:67:37: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_StaticInit(pDev[i]) != VL53L1_ERROR_NONE)
+                                     ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:67:37: note: suggested alternative: &#39;VL53L1X_ERROR&#39;
+   if (VL53L1_StaticInit(pDev[i]) != VL53L1_ERROR_NONE)
+                                     ^~~~~~~~~~~~~~~~~
+                                     VL53L1X_ERROR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:39: error: &#39;VL53L1_DISTANCEMODE_SHORT&#39; was not declared in this scope
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+                                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:7: error: &#39;VL53L1_SetDistanceMode&#39; was not declared in this scope
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:7: note: suggested alternative: &#39;VL53L1X_SetDistanceMode&#39;
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~~~
+       VL53L1X_SetDistanceMode
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:69: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+                                                                     ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:69: note: suggested alternative: &#39;VL53L1X_ERROR&#39;
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+                                                                     ^~~~~~~~~~~~~~~~~
+                                                                     VL53L1X_ERROR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:95:7: error: &#39;VL53L1_SetMeasurementTimingBudgetMicroSeconds&#39; was not declared in this scope
+   if (VL53L1_SetMeasurementTimingBudgetMicroSeconds(pDev[i], 20000) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:95:7: note: suggested alternative: &#39;VL53L1X_SetTimingBudgetInMs&#39;
+   if (VL53L1_SetMeasurementTimingBudgetMicroSeconds(pDev[i], 20000) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+       VL53L1X_SetTimingBudgetInMs
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:95:72: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_SetMeasurementTimingBudgetMic</pre>
+
+					
+					<h4>examples/mrm-lid2</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library mrm-lid2 claims to run on esp32 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp: In member function &#39;void VL53L1Xs::add(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:23:18: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;I2cDevAddr&#39;
+  pDev[nextFree]-&gt;I2cDevAddr = i2c_addr &lt;&lt; 1;
+                  ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:24:18: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;comms_type&#39;
+  pDev[nextFree]-&gt;comms_type = 1;
+                  ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:25:18: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;comms_speed_khz&#39;
+  pDev[nextFree]-&gt;comms_speed_khz = 400;
+                  ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp: In member function &#39;void VL53L1Xs::begin(boolean)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:36:33: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;I2cDevAddr&#39;
+   uint8_t i2cAddress = pDev[i]-&gt;I2cDevAddr;
+                                 ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:37:12: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;I2cDevAddr&#39;
+   pDev[i]-&gt;I2cDevAddr = 0x52; //0x29 x 2
+            ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:44:7: error: &#39;VL53L1_WaitDeviceBooted&#39; was not declared in this scope
+   if (VL53L1_WaitDeviceBooted(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:44:7: note: suggested alternative: &#39;VL53L1_WriteMulti&#39;
+   if (VL53L1_WaitDeviceBooted(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~~~~
+       VL53L1_WriteMulti
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:44:43: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_WaitDeviceBooted(pDev[i]) != VL53L1_ERROR_NONE)
+                                           ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:44:43: note: suggested alternative: &#39;VL53L1X_ERROR&#39;
+   if (VL53L1_WaitDeviceBooted(pDev[i]) != VL53L1_ERROR_NONE)
+                                           ^~~~~~~~~~~~~~~~~
+                                           VL53L1X_ERROR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:49:4: error: &#39;VL53L1_SetDeviceAddress&#39; was not declared in this scope
+    VL53L1_SetDeviceAddress(pDev[i], i2cAddress);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:49:4: note: suggested alternative: &#39;VL53L1X_SetI2CAddress&#39;
+    VL53L1_SetDeviceAddress(pDev[i], i2cAddress);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+    VL53L1X_SetI2CAddress
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:50:13: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;I2cDevAddr&#39;
+    pDev[i]-&gt;I2cDevAddr = i2cAddress;
+             ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:54:7: error: &#39;VL53L1_DataInit&#39; was not declared in this scope
+   if (VL53L1_DataInit(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:54:7: note: suggested alternative: &#39;VL53L1_Dev_t&#39;
+   if (VL53L1_DataInit(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~
+       VL53L1_Dev_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:54:35: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_DataInit(pDev[i]) != VL53L1_ERROR_NONE)
+                                   ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:54:35: note: suggested alternative: &#39;VL53L1X_ERROR&#39;
+   if (VL53L1_DataInit(pDev[i]) != VL53L1_ERROR_NONE)
+                                   ^~~~~~~~~~~~~~~~~
+                                   VL53L1X_ERROR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:58:3: error: &#39;VL53L1_DeviceInfo_t&#39; was not declared in this scope
+   VL53L1_DeviceInfo_t DeviceInfo;
+   ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:58:3: note: suggested alternative: &#39;VL53L1_Dev_t&#39;
+   VL53L1_DeviceInfo_t DeviceInfo;
+   ^~~~~~~~~~~~~~~~~~~
+   VL53L1_Dev_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:38: error: &#39;DeviceInfo&#39; was not declared in this scope
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+                                      ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:7: error: &#39;VL53L1_GetDeviceInfo&#39; was not declared in this scope
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:7: note: suggested alternative: &#39;VL53L1X_GetDistance&#39;
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~
+       VL53L1X_GetDistance
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:53: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+                                                     ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:53: note: suggested alternative: &#39;VL53L1X_ERROR&#39;
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+                                                     ^~~~~~~~~~~~~~~~~
+                                                     VL53L1X_ERROR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:62:40: error: &#39;DeviceInfo&#39; was not declared in this scope
+    Serial.println(&#34;VL53L1X &#34; &#43; (String)DeviceInfo.Name &#43; &#34;, type: &#34; &#43; (String)DeviceInfo.Type &#43; &#34;, id: &#34; &#43; (String)(int)DeviceInfo.ProductId &#43;
+                                        ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:67:7: error: &#39;VL53L1_StaticInit&#39; was not declared in this scope
+   if (VL53L1_StaticInit(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:67:7: note: suggested alternative: &#39;VL53L1X_SensorInit&#39;
+   if (VL53L1_StaticInit(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~
+       VL53L1X_SensorInit
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:67:37: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_StaticInit(pDev[i]) != VL53L1_ERROR_NONE)
+                                     ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:67:37: note: suggested alternative: &#39;VL53L1X_ERROR&#39;
+   if (VL53L1_StaticInit(pDev[i]) != VL53L1_ERROR_NONE)
+                                     ^~~~~~~~~~~~~~~~~
+                                     VL53L1X_ERROR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:39: error: &#39;VL53L1_DISTANCEMODE_SHORT&#39; was not declared in this scope
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+                                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:7: error: &#39;VL53L1_SetDistanceMode&#39; was not declared in this scope
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:7: note: suggested alternative: &#39;VL53L1X_SetDistanceMode&#39;
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~~~
+       VL53L1X_SetDistanceMode
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:69: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+                                                                     ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:69: note: suggested alternative: &#39;VL53L1X_ERROR&#39;
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+                                                                     ^~~~~~~~~~~~~~~~~
+                                                                     VL53L1X_ERROR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:95:7: error: &#39;VL53L1_SetMeasurementTimingBudgetMicroSeconds&#39; was not declared in this scope
+   if (VL53L1_SetMeasurementTimingBudgetMicroSeconds(pDev[i], 20000) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:95:7: note: suggested alternative: &#39;VL53L1X_SetTimingBudgetInMs&#39;
+   if (VL53L1_SetMeasurementTimingBudgetMicroSeconds(pDev[i], 20000) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+       VL53L1X_SetTimingBudgetInMs
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:95:72: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_SetMeasurementTimingBudgetMic</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library mrm-lid2 claims to run on esp32 architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp: In member function &#39;void VL53L1Xs::add(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:23:18: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;I2cDevAddr&#39;
+  pDev[nextFree]-&gt;I2cDevAddr = i2c_addr &lt;&lt; 1;
+                  ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:24:18: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;comms_type&#39;
+  pDev[nextFree]-&gt;comms_type = 1;
+                  ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:25:18: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;comms_speed_khz&#39;
+  pDev[nextFree]-&gt;comms_speed_khz = 400;
+                  ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp: In member function &#39;void VL53L1Xs::begin(boolean)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:36:33: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;I2cDevAddr&#39;
+   uint8_t i2cAddress = pDev[i]-&gt;I2cDevAddr;
+                                 ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:37:12: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;I2cDevAddr&#39;
+   pDev[i]-&gt;I2cDevAddr = 0x52; //0x29 x 2
+            ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:44:7: error: &#39;VL53L1_WaitDeviceBooted&#39; was not declared in this scope
+   if (VL53L1_WaitDeviceBooted(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:44:7: note: suggested alternative: &#39;VL53L1_WriteMulti&#39;
+   if (VL53L1_WaitDeviceBooted(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~~~~
+       VL53L1_WriteMulti
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:44:43: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_WaitDeviceBooted(pDev[i]) != VL53L1_ERROR_NONE)
+                                           ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:44:43: note: suggested alternative: &#39;VL53L1X_ERROR&#39;
+   if (VL53L1_WaitDeviceBooted(pDev[i]) != VL53L1_ERROR_NONE)
+                                           ^~~~~~~~~~~~~~~~~
+                                           VL53L1X_ERROR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:49:4: error: &#39;VL53L1_SetDeviceAddress&#39; was not declared in this scope
+    VL53L1_SetDeviceAddress(pDev[i], i2cAddress);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:49:4: note: suggested alternative: &#39;VL53L1X_SetI2CAddress&#39;
+    VL53L1_SetDeviceAddress(pDev[i], i2cAddress);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+    VL53L1X_SetI2CAddress
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:50:13: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;I2cDevAddr&#39;
+    pDev[i]-&gt;I2cDevAddr = i2cAddress;
+             ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:54:7: error: &#39;VL53L1_DataInit&#39; was not declared in this scope
+   if (VL53L1_DataInit(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:54:7: note: suggested alternative: &#39;VL53L1_Dev_t&#39;
+   if (VL53L1_DataInit(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~
+       VL53L1_Dev_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:54:35: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_DataInit(pDev[i]) != VL53L1_ERROR_NONE)
+                                   ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:54:35: note: suggested alternative: &#39;VL53L1X_ERROR&#39;
+   if (VL53L1_DataInit(pDev[i]) != VL53L1_ERROR_NONE)
+                                   ^~~~~~~~~~~~~~~~~
+                                   VL53L1X_ERROR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:58:3: error: &#39;VL53L1_DeviceInfo_t&#39; was not declared in this scope
+   VL53L1_DeviceInfo_t DeviceInfo;
+   ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:58:3: note: suggested alternative: &#39;VL53L1_Dev_t&#39;
+   VL53L1_DeviceInfo_t DeviceInfo;
+   ^~~~~~~~~~~~~~~~~~~
+   VL53L1_Dev_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:38: error: &#39;DeviceInfo&#39; was not declared in this scope
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+                                      ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:7: error: &#39;VL53L1_GetDeviceInfo&#39; was not declared in this scope
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:7: note: suggested alternative: &#39;VL53L1X_GetDistance&#39;
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~
+       VL53L1X_GetDistance
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:53: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+                                                     ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:53: note: suggested alternative: &#39;VL53L1X_ERROR&#39;
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+                                                     ^~~~~~~~~~~~~~~~~
+                                                     VL53L1X_ERROR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:62:40: error: &#39;DeviceInfo&#39; was not declared in this scope
+    Serial.println(&#34;VL53L1X &#34; &#43; (String)DeviceInfo.Name &#43; &#34;, type: &#34; &#43; (String)DeviceInfo.Type &#43; &#34;, id: &#34; &#43; (String)(int)DeviceInfo.ProductId &#43;
+                                        ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:67:7: error: &#39;VL53L1_StaticInit&#39; was not declared in this scope
+   if (VL53L1_StaticInit(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:67:7: note: suggested alternative: &#39;VL53L1X_SensorInit&#39;
+   if (VL53L1_StaticInit(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~
+       VL53L1X_SensorInit
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:67:37: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_StaticInit(pDev[i]) != VL53L1_ERROR_NONE)
+                                     ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:67:37: note: suggested alternative: &#39;VL53L1X_ERROR&#39;
+   if (VL53L1_StaticInit(pDev[i]) != VL53L1_ERROR_NONE)
+                                     ^~~~~~~~~~~~~~~~~
+                                     VL53L1X_ERROR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:39: error: &#39;VL53L1_DISTANCEMODE_SHORT&#39; was not declared in this scope
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+                                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:7: error: &#39;VL53L1_SetDistanceMode&#39; was not declared in this scope
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:7: note: suggested alternative: &#39;VL53L1X_SetDistanceMode&#39;
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~~~
+       VL53L1X_SetDistanceMode
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:69: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+                                                                     ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:69: note: suggested alternative: &#39;VL53L1X_ERROR&#39;
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+                                                                     ^~~~~~~~~~~~~~~~~
+                                                                     VL53L1X_ERROR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:95:7: error: &#39;VL53L1_SetMeasurementTimingBudgetMicroSeconds&#39; was not declared in this scope
+   if (VL53L1_SetMeasurementTimingBudgetMicroSeconds(pDev[i], 20000) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:95:7: note: suggested alternative: &#39;VL53L1X_SetTimingBudgetInMs&#39;
+   if (VL53L1_SetMeasurementTimingBudgetMicroSeconds(pDev[i], 20000) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+       VL53L1X_SetTimingBudgetInMs
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:95:72: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_SetMeasurementTimingBudgetMicro</pre>
+
+					
+					<h4>examples/mrm-lid2</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library mrm-lid2 claims to run on esp32 architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp: In member function &#39;void VL53L1Xs::add(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:23:18: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;I2cDevAddr&#39;
+  pDev[nextFree]-&gt;I2cDevAddr = i2c_addr &lt;&lt; 1;
+                  ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:24:18: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;comms_type&#39;
+  pDev[nextFree]-&gt;comms_type = 1;
+                  ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:25:18: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;comms_speed_khz&#39;
+  pDev[nextFree]-&gt;comms_speed_khz = 400;
+                  ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp: In member function &#39;void VL53L1Xs::begin(boolean)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:36:33: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;I2cDevAddr&#39;
+   uint8_t i2cAddress = pDev[i]-&gt;I2cDevAddr;
+                                 ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:37:12: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;I2cDevAddr&#39;
+   pDev[i]-&gt;I2cDevAddr = 0x52; //0x29 x 2
+            ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:44:7: error: &#39;VL53L1_WaitDeviceBooted&#39; was not declared in this scope
+   if (VL53L1_WaitDeviceBooted(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:44:7: note: suggested alternative: &#39;VL53L1_WriteMulti&#39;
+   if (VL53L1_WaitDeviceBooted(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~~~~
+       VL53L1_WriteMulti
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:44:43: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_WaitDeviceBooted(pDev[i]) != VL53L1_ERROR_NONE)
+                                           ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:44:43: note: suggested alternative: &#39;VL53L1X_ERROR&#39;
+   if (VL53L1_WaitDeviceBooted(pDev[i]) != VL53L1_ERROR_NONE)
+                                           ^~~~~~~~~~~~~~~~~
+                                           VL53L1X_ERROR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:49:4: error: &#39;VL53L1_SetDeviceAddress&#39; was not declared in this scope
+    VL53L1_SetDeviceAddress(pDev[i], i2cAddress);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:49:4: note: suggested alternative: &#39;VL53L1X_SetI2CAddress&#39;
+    VL53L1_SetDeviceAddress(pDev[i], i2cAddress);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+    VL53L1X_SetI2CAddress
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:50:13: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;I2cDevAddr&#39;
+    pDev[i]-&gt;I2cDevAddr = i2cAddress;
+             ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:54:7: error: &#39;VL53L1_DataInit&#39; was not declared in this scope
+   if (VL53L1_DataInit(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:54:7: note: suggested alternative: &#39;VL53L1_Dev_t&#39;
+   if (VL53L1_DataInit(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~
+       VL53L1_Dev_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:54:35: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_DataInit(pDev[i]) != VL53L1_ERROR_NONE)
+                                   ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:54:35: note: suggested alternative: &#39;VL53L1X_ERROR&#39;
+   if (VL53L1_DataInit(pDev[i]) != VL53L1_ERROR_NONE)
+                                   ^~~~~~~~~~~~~~~~~
+                                   VL53L1X_ERROR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:58:3: error: &#39;VL53L1_DeviceInfo_t&#39; was not declared in this scope
+   VL53L1_DeviceInfo_t DeviceInfo;
+   ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:58:3: note: suggested alternative: &#39;VL53L1_Dev_t&#39;
+   VL53L1_DeviceInfo_t DeviceInfo;
+   ^~~~~~~~~~~~~~~~~~~
+   VL53L1_Dev_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:38: error: &#39;DeviceInfo&#39; was not declared in this scope
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+                                      ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:7: error: &#39;VL53L1_GetDeviceInfo&#39; was not declared in this scope
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:7: note: suggested alternative: &#39;VL53L1X_GetDistance&#39;
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~
+       VL53L1X_GetDistance
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:53: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+                                                     ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:53: note: suggested alternative: &#39;VL53L1X_ERROR&#39;
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+                                                     ^~~~~~~~~~~~~~~~~
+                                                     VL53L1X_ERROR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:62:40: error: &#39;DeviceInfo&#39; was not declared in this scope
+    Serial.println(&#34;VL53L1X &#34; &#43; (String)DeviceInfo.Name &#43; &#34;, type: &#34; &#43; (String)DeviceInfo.Type &#43; &#34;, id: &#34; &#43; (String)(int)DeviceInfo.ProductId &#43;
+                                        ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:67:7: error: &#39;VL53L1_StaticInit&#39; was not declared in this scope
+   if (VL53L1_StaticInit(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:67:7: note: suggested alternative: &#39;VL53L1X_SensorInit&#39;
+   if (VL53L1_StaticInit(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~
+       VL53L1X_SensorInit
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:67:37: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_StaticInit(pDev[i]) != VL53L1_ERROR_NONE)
+                                     ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:67:37: note: suggested alternative: &#39;VL53L1X_ERROR&#39;
+   if (VL53L1_StaticInit(pDev[i]) != VL53L1_ERROR_NONE)
+                                     ^~~~~~~~~~~~~~~~~
+                                     VL53L1X_ERROR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:39: error: &#39;VL53L1_DISTANCEMODE_SHORT&#39; was not declared in this scope
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+                                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:7: error: &#39;VL53L1_SetDistanceMode&#39; was not declared in this scope
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:7: note: suggested alternative: &#39;VL53L1X_SetDistanceMode&#39;
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~~~
+       VL53L1X_SetDistanceMode
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:69: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+                                                                     ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:69: note: suggested alternative: &#39;VL53L1X_ERROR&#39;
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+                                                                     ^~~~~~~~~~~~~~~~~
+                                                                     VL53L1X_ERROR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:95:7: error: &#39;VL53L1_SetMeasurementTimingBudgetMicroSeconds&#39; was not declared in this scope
+   if (VL53L1_SetMeasurementTimingBudgetMicroSeconds(pDev[i], 20000) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:95:7: note: suggested alternative: &#39;VL53L1X_SetTimingBudgetInMs&#39;
+   if (VL53L1_SetMeasurementTimingBudgetMicroSeconds(pDev[i], 20000) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+       VL53L1X_SetTimingBudgetInMs
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:95:72: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_SetMeasurementTimingBudgetMicro</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library mrm-lid2 claims to run on esp32 architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp: In member function &#39;void VL53L1Xs::add(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:23:18: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;I2cDevAddr&#39;
+  pDev[nextFree]-&gt;I2cDevAddr = i2c_addr &lt;&lt; 1;
+                  ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:24:18: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;comms_type&#39;
+  pDev[nextFree]-&gt;comms_type = 1;
+                  ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:25:18: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;comms_speed_khz&#39;
+  pDev[nextFree]-&gt;comms_speed_khz = 400;
+                  ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp: In member function &#39;void VL53L1Xs::begin(boolean)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:36:33: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;I2cDevAddr&#39;
+   uint8_t i2cAddress = pDev[i]-&gt;I2cDevAddr;
+                                 ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:37:12: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;I2cDevAddr&#39;
+   pDev[i]-&gt;I2cDevAddr = 0x52; //0x29 x 2
+            ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:44:7: error: &#39;VL53L1_WaitDeviceBooted&#39; was not declared in this scope
+   if (VL53L1_WaitDeviceBooted(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:44:7: note: suggested alternative: &#39;VL53L1_WriteMulti&#39;
+   if (VL53L1_WaitDeviceBooted(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~~~~
+       VL53L1_WriteMulti
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:44:43: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_WaitDeviceBooted(pDev[i]) != VL53L1_ERROR_NONE)
+                                           ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:44:43: note: suggested alternative: &#39;VL53L1X_ERROR&#39;
+   if (VL53L1_WaitDeviceBooted(pDev[i]) != VL53L1_ERROR_NONE)
+                                           ^~~~~~~~~~~~~~~~~
+                                           VL53L1X_ERROR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:49:4: error: &#39;VL53L1_SetDeviceAddress&#39; was not declared in this scope
+    VL53L1_SetDeviceAddress(pDev[i], i2cAddress);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:49:4: note: suggested alternative: &#39;VL53L1X_SetI2CAddress&#39;
+    VL53L1_SetDeviceAddress(pDev[i], i2cAddress);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+    VL53L1X_SetI2CAddress
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:50:13: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;I2cDevAddr&#39;
+    pDev[i]-&gt;I2cDevAddr = i2cAddress;
+             ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:54:7: error: &#39;VL53L1_DataInit&#39; was not declared in this scope
+   if (VL53L1_DataInit(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:54:7: note: suggested alternative: &#39;VL53L1_Dev_t&#39;
+   if (VL53L1_DataInit(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~
+       VL53L1_Dev_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:54:35: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_DataInit(pDev[i]) != VL53L1_ERROR_NONE)
+                                   ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:54:35: note: suggested alternative: &#39;VL53L1X_ERROR&#39;
+   if (VL53L1_DataInit(pDev[i]) != VL53L1_ERROR_NONE)
+                                   ^~~~~~~~~~~~~~~~~
+                                   VL53L1X_ERROR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:58:3: error: &#39;VL53L1_DeviceInfo_t&#39; was not declared in this scope
+   VL53L1_DeviceInfo_t DeviceInfo;
+   ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:58:3: note: suggested alternative: &#39;VL53L1_Dev_t&#39;
+   VL53L1_DeviceInfo_t DeviceInfo;
+   ^~~~~~~~~~~~~~~~~~~
+   VL53L1_Dev_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:38: error: &#39;DeviceInfo&#39; was not declared in this scope
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+                                      ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:38: note: suggested alternative: &#39;DeviceVectors&#39;
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+                                      ^~~~~~~~~~
+                                      DeviceVectors
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:7: error: &#39;VL53L1_GetDeviceInfo&#39; was not declared in this scope
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:7: note: suggested alternative: &#39;VL53L1X_GetDistance&#39;
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~
+       VL53L1X_GetDistance
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:53: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+                                                     ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:53: note: suggested alternative: &#39;VL53L1X_ERROR&#39;
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+                                                     ^~~~~~~~~~~~~~~~~
+                                                     VL53L1X_ERROR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:62:40: error: &#39;DeviceInfo&#39; was not declared in this scope
+    Serial.println(&#34;VL53L1X &#34; &#43; (String)DeviceInfo.Name &#43; &#34;, type: &#34; &#43; (String)DeviceInfo.Type &#43; &#34;, id: &#34; &#43; (String)(int)DeviceInfo.ProductId &#43;
+                                        ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:62:40: note: suggested alternative: &#39;DeviceVectors&#39;
+    Serial.println(&#34;VL53L1X &#34; &#43; (String)DeviceInfo.Name &#43; &#34;, type: &#34; &#43; (String)DeviceInfo.Type &#43; &#34;, id: &#34; &#43; (String)(int)DeviceInfo.ProductId &#43;
+                                        ^~~~~~~~~~
+                                        DeviceVectors
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:67:7: error: &#39;VL53L1_StaticInit&#39; was not declared in this scope
+   if (VL53L1_StaticInit(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:67:7: note: suggested alternative: &#39;VL53L1X_SensorInit&#39;
+   if (VL53L1_StaticInit(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~
+       VL53L1X_SensorInit
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:67:37: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_StaticInit(pDev[i]) != VL53L1_ERROR_NONE)
+                                     ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:67:37: note: suggested alternative: &#39;VL53L1X_ERROR&#39;
+   if (VL53L1_StaticInit(pDev[i]) != VL53L1_ERROR_NONE)
+                                     ^~~~~~~~~~~~~~~~~
+                                     VL53L1X_ERROR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:39: error: &#39;VL53L1_DISTANCEMODE_SHORT&#39; was not declared in this scope
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+                                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:7: error: &#39;VL53L1_SetDistanceMode&#39; was not declared in this scope
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:7: note: suggested alternative: &#39;VL53L1X_SetDistanceMode&#39;
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~~~
+       VL53L1X_SetDistanceMode
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:69: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+                                                                     ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:69: note: suggested alternative: &#39;VL53L1X_ERROR&#39;
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+                                                                     ^~~~~~~~~~~~~~~~~
+                                                                     VL53L1X_ERROR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:95:7: error: &#39;VL53L1_SetMeasurementTimingBudgetMicroSeconds&#39; was no</pre>
+
+					
+					<h4>examples/mrm-lid2</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library mrm-lid2 claims to run on esp32 architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp: In member function &#39;void VL53L1Xs::add(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:23:18: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;I2cDevAddr&#39;
+  pDev[nextFree]-&gt;I2cDevAddr = i2c_addr &lt;&lt; 1;
+                  ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:24:18: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;comms_type&#39;
+  pDev[nextFree]-&gt;comms_type = 1;
+                  ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:25:18: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;comms_speed_khz&#39;
+  pDev[nextFree]-&gt;comms_speed_khz = 400;
+                  ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp: In member function &#39;void VL53L1Xs::begin(boolean)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:36:33: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;I2cDevAddr&#39;
+   uint8_t i2cAddress = pDev[i]-&gt;I2cDevAddr;
+                                 ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:37:12: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;I2cDevAddr&#39;
+   pDev[i]-&gt;I2cDevAddr = 0x52; //0x29 x 2
+            ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:44:7: error: &#39;VL53L1_WaitDeviceBooted&#39; was not declared in this scope
+   if (VL53L1_WaitDeviceBooted(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:44:7: note: suggested alternative: &#39;VL53L1_WriteMulti&#39;
+   if (VL53L1_WaitDeviceBooted(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~~~~
+       VL53L1_WriteMulti
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:44:43: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_WaitDeviceBooted(pDev[i]) != VL53L1_ERROR_NONE)
+                                           ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:44:43: note: suggested alternative: &#39;VL53L1X_ERROR&#39;
+   if (VL53L1_WaitDeviceBooted(pDev[i]) != VL53L1_ERROR_NONE)
+                                           ^~~~~~~~~~~~~~~~~
+                                           VL53L1X_ERROR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:49:4: error: &#39;VL53L1_SetDeviceAddress&#39; was not declared in this scope
+    VL53L1_SetDeviceAddress(pDev[i], i2cAddress);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:49:4: note: suggested alternative: &#39;VL53L1X_SetI2CAddress&#39;
+    VL53L1_SetDeviceAddress(pDev[i], i2cAddress);
+    ^~~~~~~~~~~~~~~~~~~~~~~
+    VL53L1X_SetI2CAddress
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:50:13: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;I2cDevAddr&#39;
+    pDev[i]-&gt;I2cDevAddr = i2cAddress;
+             ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:54:7: error: &#39;VL53L1_DataInit&#39; was not declared in this scope
+   if (VL53L1_DataInit(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:54:7: note: suggested alternative: &#39;VL53L1_Dev_t&#39;
+   if (VL53L1_DataInit(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~
+       VL53L1_Dev_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:54:35: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_DataInit(pDev[i]) != VL53L1_ERROR_NONE)
+                                   ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:54:35: note: suggested alternative: &#39;VL53L1X_ERROR&#39;
+   if (VL53L1_DataInit(pDev[i]) != VL53L1_ERROR_NONE)
+                                   ^~~~~~~~~~~~~~~~~
+                                   VL53L1X_ERROR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:58:3: error: &#39;VL53L1_DeviceInfo_t&#39; was not declared in this scope
+   VL53L1_DeviceInfo_t DeviceInfo;
+   ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:58:3: note: suggested alternative: &#39;VL53L1_Dev_t&#39;
+   VL53L1_DeviceInfo_t DeviceInfo;
+   ^~~~~~~~~~~~~~~~~~~
+   VL53L1_Dev_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:38: error: &#39;DeviceInfo&#39; was not declared in this scope
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+                                      ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:38: note: suggested alternative: &#39;DeviceVectors&#39;
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+                                      ^~~~~~~~~~
+                                      DeviceVectors
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:7: error: &#39;VL53L1_GetDeviceInfo&#39; was not declared in this scope
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:7: note: suggested alternative: &#39;VL53L1X_GetDistance&#39;
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~
+       VL53L1X_GetDistance
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:53: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+                                                     ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:53: note: suggested alternative: &#39;VL53L1X_ERROR&#39;
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+                                                     ^~~~~~~~~~~~~~~~~
+                                                     VL53L1X_ERROR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:62:40: error: &#39;DeviceInfo&#39; was not declared in this scope
+    Serial.println(&#34;VL53L1X &#34; &#43; (String)DeviceInfo.Name &#43; &#34;, type: &#34; &#43; (String)DeviceInfo.Type &#43; &#34;, id: &#34; &#43; (String)(int)DeviceInfo.ProductId &#43;
+                                        ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:62:40: note: suggested alternative: &#39;DeviceVectors&#39;
+    Serial.println(&#34;VL53L1X &#34; &#43; (String)DeviceInfo.Name &#43; &#34;, type: &#34; &#43; (String)DeviceInfo.Type &#43; &#34;, id: &#34; &#43; (String)(int)DeviceInfo.ProductId &#43;
+                                        ^~~~~~~~~~
+                                        DeviceVectors
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:67:7: error: &#39;VL53L1_StaticInit&#39; was not declared in this scope
+   if (VL53L1_StaticInit(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:67:7: note: suggested alternative: &#39;VL53L1X_SensorInit&#39;
+   if (VL53L1_StaticInit(pDev[i]) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~
+       VL53L1X_SensorInit
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:67:37: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_StaticInit(pDev[i]) != VL53L1_ERROR_NONE)
+                                     ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:67:37: note: suggested alternative: &#39;VL53L1X_ERROR&#39;
+   if (VL53L1_StaticInit(pDev[i]) != VL53L1_ERROR_NONE)
+                                     ^~~~~~~~~~~~~~~~~
+                                     VL53L1X_ERROR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:39: error: &#39;VL53L1_DISTANCEMODE_SHORT&#39; was not declared in this scope
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+                                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:7: error: &#39;VL53L1_SetDistanceMode&#39; was not declared in this scope
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:7: note: suggested alternative: &#39;VL53L1X_SetDistanceMode&#39;
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+       ^~~~~~~~~~~~~~~~~~~~~~
+       VL53L1X_SetDistanceMode
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:69: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+                                                                     ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:69: note: suggested alternative: &#39;VL53L1X_ERROR&#39;
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+                                                                     ^~~~~~~~~~~~~~~~~
+                                                                     VL53L1X_ERROR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:95:7: error: &#39;VL53L1_SetMeasurementTimingBudgetMicroSeconds&#39; was no</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp: In member function &#39;void VL53L1Xs::add(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:23:18: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;I2cDevAddr&#39;
+  pDev[nextFree]-&gt;I2cDevAddr = i2c_addr &lt;&lt; 1;
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:24:18: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;comms_type&#39;
+  pDev[nextFree]-&gt;comms_type = 1;
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:25:18: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;comms_speed_khz&#39;
+  pDev[nextFree]-&gt;comms_speed_khz = 400;
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp: In member function &#39;void VL53L1Xs::begin(boolean)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:36:33: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;I2cDevAddr&#39;
+   uint8_t i2cAddress = pDev[i]-&gt;I2cDevAddr;
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:37:12: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;I2cDevAddr&#39;
+   pDev[i]-&gt;I2cDevAddr = 0x52; //0x29 x 2
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:44:38: error: &#39;VL53L1_WaitDeviceBooted&#39; was not declared in this scope
+   if (VL53L1_WaitDeviceBooted(pDev[i]) != VL53L1_ERROR_NONE)
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:44:43: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_WaitDeviceBooted(pDev[i]) != VL53L1_ERROR_NONE)
+                                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:49:47: error: &#39;VL53L1_SetDeviceAddress&#39; was not declared in this scope
+    VL53L1_SetDeviceAddress(pDev[i], i2cAddress);
+                                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:50:13: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;I2cDevAddr&#39;
+    pDev[i]-&gt;I2cDevAddr = i2cAddress;
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:54:30: error: &#39;VL53L1_DataInit&#39; was not declared in this scope
+   if (VL53L1_DataInit(pDev[i]) != VL53L1_ERROR_NONE)
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:54:35: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_DataInit(pDev[i]) != VL53L1_ERROR_NONE)
+                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:58:3: error: &#39;VL53L1_DeviceInfo_t&#39; was not declared in this scope
+   VL53L1_DeviceInfo_t DeviceInfo;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:38: error: &#39;DeviceInfo&#39; was not declared in this scope
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:48: error: &#39;VL53L1_GetDeviceInfo&#39; was not declared in this scope
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+                                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:53: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+                                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:62:40: error: &#39;DeviceInfo&#39; was not declared in this scope
+    Serial.println(&#34;VL53L1X &#34; &#43; (String)DeviceInfo.Name &#43; &#34;, type: &#34; &#43; (String)DeviceInfo.Type &#43; &#34;, id: &#34; &#43; (String)(int)DeviceInfo.ProductId &#43; 
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:67:32: error: &#39;VL53L1_StaticInit&#39; was not declared in this scope
+   if (VL53L1_StaticInit(pDev[i]) != VL53L1_ERROR_NONE)
+                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:67:37: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_StaticInit(pDev[i]) != VL53L1_ERROR_NONE)
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:39: error: &#39;VL53L1_DISTANCEMODE_SHORT&#39; was not declared in this scope
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:64: error: &#39;VL53L1_SetDistanceMode&#39; was not declared in this scope
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+                                                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:69: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+                                                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:95:67: error: &#39;VL53L1_SetMeasurementTimingBudgetMicroSeconds&#39; was not declared in this scope
+   if (VL53L1_SetMeasurementTimingBudgetMicroSeconds(pDev[i], 20000) != VL53L1_ERROR_NONE)
+                                                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:95:72: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_SetMeasurementTimingBudgetMicroSeconds(pDev[i], 20000) != VL53L1_ERROR_NONE)
+                                                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:99:63: error: &#39;VL53L1_SetInterMeasurementPeriodMilliSeconds&#39; was not declared in this scope
+   if (VL53L1_SetInterMeasurementPeriodMilliSeconds(pDev[i], 50) != VL53L1_ERROR_NONE)
+                                                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:99:68: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_SetInterMeasurementPeriodMilliSeconds(pDev[i], 50) != VL53L1_ERROR_NONE)
+                                                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:102:38: error: &#39;VL53L1_StartMeasurement&#39; was not declared in this scope
+   if (VL53L1_StartMeasurement(pDev[i]) != VL53L1_ERROR_NONE)
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:102:43: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_StartMeasurement(pDev[i]) != VL53L1_ERROR_NONE)
+                                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp: In member function &#39;uint16_t VL53L1Xs::distance(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:130:10: error: &#39;VL53L1_RangingMeasurementData_t&#39; does not name a type
+   static VL53L1_RangingMeasurementData_t RangingData;
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:139:61: error: &#39;RangingData&#39; was not declared in this scope
+   if (VL53L1_GetRangingMeasurementData(pDev[sensorNumber], &amp;RangingData) != VL53L1_ERROR_NONE)
+                                                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:139:72: error: &#39;VL53L1_GetRangingMeasurementData&#39; was not declared in this scope
+   if (VL53L1_GetRangingMeasurementData(pDev[sensorNumber], &amp;RangingData) != VL53L1_ERROR_NONE)
+                                                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:139:77: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_GetRangingMeasurementData(pDev[sensorNumber], &amp;RangingData) != VL53L1_ERROR_NONE)
+                                                                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:141:8: error: &#39;RangingData&#39; was not declared in this scope
+   mm = RangingData.RangeMilliMeter;
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:142:66: error: &#39;VL53L1_ClearInterruptAndStartMeasurement&#39; was not declared in this scope
+   if (VL53L1_ClearInterruptAndStartMeasurement(pDev[sensorNumber]) != VL53L1_ERROR_NONE)
+                                                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:142:71: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_ClearInterruptAndStartMeasurement(pDev[sensorNumber]) != VL53L1_ERROR_NONE)
+                                                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:146:9: error: &#39;VL53L1_RANGESTATUS_RANGE_VALID&#39; was not declared in this scope
+    case VL53L1_RANGESTATUS_RANGE_VALID: // Ranging measurement is valid
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:149:9: error: &#39;VL53L1_RANGESTATUS_SIGMA_FAIL&#39; was not declared in this scope
+    case VL53L1_RANGESTATUS_SIGMA_FAIL: // Raised if sigma estimator check is above the internal defined thre</pre>
+
+					
+					<h4>examples/mrm-lid2</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp: In member function &#39;void VL53L1Xs::add(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:23:18: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;I2cDevAddr&#39;
+  pDev[nextFree]-&gt;I2cDevAddr = i2c_addr &lt;&lt; 1;
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:24:18: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;comms_type&#39;
+  pDev[nextFree]-&gt;comms_type = 1;
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:25:18: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;comms_speed_khz&#39;
+  pDev[nextFree]-&gt;comms_speed_khz = 400;
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp: In member function &#39;void VL53L1Xs::begin(boolean)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:36:33: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;I2cDevAddr&#39;
+   uint8_t i2cAddress = pDev[i]-&gt;I2cDevAddr;
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:37:12: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;I2cDevAddr&#39;
+   pDev[i]-&gt;I2cDevAddr = 0x52; //0x29 x 2
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:44:38: error: &#39;VL53L1_WaitDeviceBooted&#39; was not declared in this scope
+   if (VL53L1_WaitDeviceBooted(pDev[i]) != VL53L1_ERROR_NONE)
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:44:43: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_WaitDeviceBooted(pDev[i]) != VL53L1_ERROR_NONE)
+                                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:49:47: error: &#39;VL53L1_SetDeviceAddress&#39; was not declared in this scope
+    VL53L1_SetDeviceAddress(pDev[i], i2cAddress);
+                                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:50:13: error: &#39;struct VL53L1_Dev_t&#39; has no member named &#39;I2cDevAddr&#39;
+    pDev[i]-&gt;I2cDevAddr = i2cAddress;
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:54:30: error: &#39;VL53L1_DataInit&#39; was not declared in this scope
+   if (VL53L1_DataInit(pDev[i]) != VL53L1_ERROR_NONE)
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:54:35: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_DataInit(pDev[i]) != VL53L1_ERROR_NONE)
+                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:58:3: error: &#39;VL53L1_DeviceInfo_t&#39; was not declared in this scope
+   VL53L1_DeviceInfo_t DeviceInfo;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:38: error: &#39;DeviceInfo&#39; was not declared in this scope
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:48: error: &#39;VL53L1_GetDeviceInfo&#39; was not declared in this scope
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+                                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:59:53: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_GetDeviceInfo(pDev[i], &amp;DeviceInfo) != VL53L1_ERROR_NONE)
+                                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:62:40: error: &#39;DeviceInfo&#39; was not declared in this scope
+    Serial.println(&#34;VL53L1X &#34; &#43; (String)DeviceInfo.Name &#43; &#34;, type: &#34; &#43; (String)DeviceInfo.Type &#43; &#34;, id: &#34; &#43; (String)(int)DeviceInfo.ProductId &#43; 
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:67:32: error: &#39;VL53L1_StaticInit&#39; was not declared in this scope
+   if (VL53L1_StaticInit(pDev[i]) != VL53L1_ERROR_NONE)
+                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:67:37: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_StaticInit(pDev[i]) != VL53L1_ERROR_NONE)
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:39: error: &#39;VL53L1_DISTANCEMODE_SHORT&#39; was not declared in this scope
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:64: error: &#39;VL53L1_SetDistanceMode&#39; was not declared in this scope
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+                                                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:91:69: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_SetDistanceMode(pDev[i], VL53L1_DISTANCEMODE_SHORT) != VL53L1_ERROR_NONE)
+                                                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:95:67: error: &#39;VL53L1_SetMeasurementTimingBudgetMicroSeconds&#39; was not declared in this scope
+   if (VL53L1_SetMeasurementTimingBudgetMicroSeconds(pDev[i], 20000) != VL53L1_ERROR_NONE)
+                                                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:95:72: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_SetMeasurementTimingBudgetMicroSeconds(pDev[i], 20000) != VL53L1_ERROR_NONE)
+                                                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:99:63: error: &#39;VL53L1_SetInterMeasurementPeriodMilliSeconds&#39; was not declared in this scope
+   if (VL53L1_SetInterMeasurementPeriodMilliSeconds(pDev[i], 50) != VL53L1_ERROR_NONE)
+                                                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:99:68: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_SetInterMeasurementPeriodMilliSeconds(pDev[i], 50) != VL53L1_ERROR_NONE)
+                                                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:102:38: error: &#39;VL53L1_StartMeasurement&#39; was not declared in this scope
+   if (VL53L1_StartMeasurement(pDev[i]) != VL53L1_ERROR_NONE)
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:102:43: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_StartMeasurement(pDev[i]) != VL53L1_ERROR_NONE)
+                                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp: In member function &#39;uint16_t VL53L1Xs::distance(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:130:10: error: &#39;VL53L1_RangingMeasurementData_t&#39; does not name a type
+   static VL53L1_RangingMeasurementData_t RangingData;
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:139:61: error: &#39;RangingData&#39; was not declared in this scope
+   if (VL53L1_GetRangingMeasurementData(pDev[sensorNumber], &amp;RangingData) != VL53L1_ERROR_NONE)
+                                                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:139:72: error: &#39;VL53L1_GetRangingMeasurementData&#39; was not declared in this scope
+   if (VL53L1_GetRangingMeasurementData(pDev[sensorNumber], &amp;RangingData) != VL53L1_ERROR_NONE)
+                                                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:139:77: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_GetRangingMeasurementData(pDev[sensorNumber], &amp;RangingData) != VL53L1_ERROR_NONE)
+                                                                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:141:8: error: &#39;RangingData&#39; was not declared in this scope
+   mm = RangingData.RangeMilliMeter;
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:142:66: error: &#39;VL53L1_ClearInterruptAndStartMeasurement&#39; was not declared in this scope
+   if (VL53L1_ClearInterruptAndStartMeasurement(pDev[sensorNumber]) != VL53L1_ERROR_NONE)
+                                                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:142:71: error: &#39;VL53L1_ERROR_NONE&#39; was not declared in this scope
+   if (VL53L1_ClearInterruptAndStartMeasurement(pDev[sensorNumber]) != VL53L1_ERROR_NONE)
+                                                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:146:9: error: &#39;VL53L1_RANGESTATUS_RANGE_VALID&#39; was not declared in this scope
+    case VL53L1_RANGESTATUS_RANGE_VALID: // Ranging measurement is valid
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-lid2/src/mrm-lid2.cpp:149:9: error: &#39;VL53L1_RANGESTATUS_SIGMA_FAIL&#39; was not declared in this scope
+    case VL53L1_RANGESTATUS_SIGMA_FAIL: // Raised if sigma estimator check is above the internal defined thre</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

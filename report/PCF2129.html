@@ -1,0 +1,769 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>PCF2129 - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>PCF2129</h2>
+				<p>
+					Version: <b>0.1.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/pcf2129/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /tmp/arduino-testlib25819948/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:30:23: error: expected &#39;}&#39; before &#39;-&#39; token
+             DAY_ALARM - 0x0D,
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:30:23: error: expected unqualified-id before &#39;-&#39; token
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:67:5: error: expected unqualified-id before &#39;public&#39;
+     public:
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;uint8_t EmbeddedDevices::second()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:76:42: error: &#39;REG&#39; has not been declared
+         uint8_t second()  { return (read(REG::SECONDS)  &amp; 0x7F); }
+                                          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:76:37: error: &#39;read&#39; was not declared in this scope
+         uint8_t second()  { return (read(REG::SECONDS)  &amp; 0x7F); }
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:76:37: note: suggested alternative: &#39;fread&#39;
+         uint8_t second()  { return (read(REG::SECONDS)  &amp; 0x7F); }
+                                     ^~~~
+                                     fread
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;uint8_t EmbeddedDevices::minute()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:77:42: error: &#39;REG&#39; has not been declared
+         uint8_t minute()  { return (read(REG::MINUTES)  &amp; 0x7F); }
+                                          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:77:37: error: &#39;read&#39; was not declared in this scope
+         uint8_t minute()  { return (read(REG::MINUTES)  &amp; 0x7F); }
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:77:37: note: suggested alternative: &#39;fread&#39;
+         uint8_t minute()  { return (read(REG::MINUTES)  &amp; 0x7F); }
+                                     ^~~~
+                                     fread
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;uint8_t EmbeddedDevices::hour()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:78:42: error: &#39;REG&#39; has not been declared
+         uint8_t hour()    { return (read(REG::HOURS)    &amp; 0x1F); }
+                                          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:78:37: error: &#39;read&#39; was not declared in this scope
+         uint8_t hour()    { return (read(REG::HOURS)    &amp; 0x1F); }
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:78:37: note: suggested alternative: &#39;fread&#39;
+         uint8_t hour()    { return (read(REG::HOURS)    &amp; 0x1F); }
+                                     ^~~~
+                                     fread
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;uint8_t EmbeddedDevices::day()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:79:42: error: &#39;REG&#39; has not been declared
+         uint8_t day()     { return (read(REG::DAYS)     &amp; 0x3F); }
+                                          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:79:37: error: &#39;read&#39; was not declared in this scope
+         uint8_t day()     { return (read(REG::DAYS)     &amp; 0x3F); }
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:79:37: note: suggested alternative: &#39;fread&#39;
+         uint8_t day()     { return (read(REG::DAYS)     &amp; 0x3F); }
+                                     ^~~~
+                                     fread
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;uint8_t EmbeddedDevices::weekday()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:80:42: error: &#39;REG&#39; has not been declared
+         uint8_t weekday() { return (read(REG::WEEKDAYS) &amp; 0x07); }
+                                          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:80:37: error: &#39;read&#39; was not declared in this scope
+         uint8_t weekday() { return (read(REG::WEEKDAYS) &amp; 0x07); }
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:80:37: note: suggested alternative: &#39;fread&#39;
+         uint8_t weekday() { return (read(REG::WEEKDAYS) &amp; 0x07); }
+                                     ^~~~
+                                     fread
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;uint8_t EmbeddedDevices::month()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:81:42: error: &#39;REG&#39; has not been declared
+         uint8_t month()   { return (read(REG::MONTHS)   &amp; 0x1F); }
+                                          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:81:37: error: &#39;read&#39; was not declared in this scope
+         uint8_t month()   { return (read(REG::MONTHS)   &amp; 0x1F); }
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:81:37: note: suggested alternative: &#39;fread&#39;
+         uint8_t month()   { return (read(REG::MONTHS)   &amp; 0x1F); }
+                                     ^~~~
+                                     fread
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;uint8_t EmbeddedDevices::year()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:82:42: error: &#39;REG&#39; has not been declared
+         uint8_t year()    { return (read(REG::YEARS)    &amp; 0xFF); }
+                                          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:82:37: error: &#39;read&#39; was not declared in this scope
+         uint8_t year()    { return (read(REG::YEARS)    &amp; 0xFF); }
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:82:37: note: suggested alternative: &#39;fread&#39;
+         uint8_t year()    { return (read(REG::YEARS)    &amp; 0xFF); }
+                                     ^~~~
+                                     fread
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;void EmbeddedDevices::setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:90:33: error: &#39;REG&#39; has not been declared
+             Wire.write((uint8_t)REG::WATCHDG_TIM_CTL);
+                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:93:13: error: &#39;stop&#39; was not declared in this scope
+             stop();
+             ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:93:13: note: suggested alternative: &#39;setup&#39;
+             stop();
+             ^~~~
+             setup
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;void EmbeddedDevices::start()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:99:33: error: &#39;REG&#39; has not been declared
+             Wire.write((uint8_t)REG::CONTROL1);
+                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:102:13: error: &#39;resumeInterrupt&#39; was not declared in this scope
+             resumeInterrupt();
+             ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:102:13: note: suggested alternative: &#39;detachInterrupt&#39;
+             resumeInterrupt();
+             ^~~~~~~~~~~~~~~
+             detachInterrupt
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;void EmbeddedDevices::stop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:108:33: error: &#39;REG&#39; has not been declared
+             Wire.write((uint8_t)REG::CONTROL1);
+                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:111:13: error: &#39;resumeInterrupt&#39; was not declared in this scope
+             resumeInterrupt();
+             ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:111:13: note: suggested alternative: &#39;detachInterrupt&#39;
+             resumeInterrupt();
+             ^~~~~~~~~~~~~~~
+             detachInterrupt
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:114:29: error: non-member function &#39;uint8_t EmbeddedDevices::getIntPin()&#39; cannot have cv-qualifier
+         uint8_t getIntPin() const { return pin_INT; }
+                             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;void EmbeddedDevices::resumeInterrupt()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:119:33: error: &#39;REG&#39; has not been declared
+             Wire.write((uint8_t)REG::CONTROL2);
+                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:124:30: error: non-member function &#39;bool EmbeddedDevices::isInterrupted()&#39; cannot have cv-qualifier
+         bool isInterrupted() const { return b_interrupt; }
+                              ^~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:8:0,
+                 from /tmp/arduino-testlib25819948/tes</pre>
+
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /tmp/arduino-testlib447639093/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:30:23: error: expected &#39;}&#39; before &#39;-&#39; token
+             DAY_ALARM - 0x0D,
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:30:23: error: expected unqualified-id before &#39;-&#39; token
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:52:23: error: uninitialized const &#39;EmbeddedDevices::I2C_ADDR&#39; [-fpermissive]
+         const uint8_t I2C_ADDR;
+                       ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:53:23: error: uninitialized const &#39;EmbeddedDevices::pin_INT&#39; [-fpermissive]
+         const uint8_t pin_INT;
+                       ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:67:5: error: expected unqualified-id before &#39;public&#39;
+     public:
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;uint8_t EmbeddedDevices::second()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:76:42: error: &#39;REG&#39; has not been declared
+         uint8_t second()  { return (read(REG::SECONDS)  &amp; 0x7F); }
+                                          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;uint8_t EmbeddedDevices::minute()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:77:42: error: &#39;REG&#39; has not been declared
+         uint8_t minute()  { return (read(REG::MINUTES)  &amp; 0x7F); }
+                                          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;uint8_t EmbeddedDevices::hour()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:78:42: error: &#39;REG&#39; has not been declared
+         uint8_t hour()    { return (read(REG::HOURS)    &amp; 0x1F); }
+                                          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;uint8_t EmbeddedDevices::day()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:79:42: error: &#39;REG&#39; has not been declared
+         uint8_t day()     { return (read(REG::DAYS)     &amp; 0x3F); }
+                                          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;uint8_t EmbeddedDevices::weekday()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:80:42: error: &#39;REG&#39; has not been declared
+         uint8_t weekday() { return (read(REG::WEEKDAYS) &amp; 0x07); }
+                                          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;uint8_t EmbeddedDevices::month()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:81:42: error: &#39;REG&#39; has not been declared
+         uint8_t month()   { return (read(REG::MONTHS)   &amp; 0x1F); }
+                                          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;uint8_t EmbeddedDevices::year()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:82:42: error: &#39;REG&#39; has not been declared
+         uint8_t year()    { return (read(REG::YEARS)    &amp; 0xFF); }
+                                          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;void EmbeddedDevices::setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:90:33: error: &#39;REG&#39; has not been declared
+             Wire.write((uint8_t)REG::WATCHDG_TIM_CTL);
+                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:93:13: error: &#39;stop&#39; was not declared in this scope
+             stop();
+             ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:93:13: note: suggested alternative: &#39;setup&#39;
+             stop();
+             ^~~~
+             setup
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;void EmbeddedDevices::start()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:99:33: error: &#39;REG&#39; has not been declared
+             Wire.write((uint8_t)REG::CONTROL1);
+                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:102:13: error: &#39;resumeInterrupt&#39; was not declared in this scope
+             resumeInterrupt();
+             ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:102:13: note: suggested alternative: &#39;detachInterrupt&#39;
+             resumeInterrupt();
+             ^~~~~~~~~~~~~~~
+             detachInterrupt
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;void EmbeddedDevices::stop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:108:33: error: &#39;REG&#39; has not been declared
+             Wire.write((uint8_t)REG::CONTROL1);
+                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:111:13: error: &#39;resumeInterrupt&#39; was not declared in this scope
+             resumeInterrupt();
+             ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:111:13: note: suggested alternative: &#39;detachInterrupt&#39;
+             resumeInterrupt();
+             ^~~~~~~~~~~~~~~
+             detachInterrupt
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:114:29: error: non-member function &#39;uint8_t EmbeddedDevices::getIntPin()&#39; cannot have cv-qualifier
+         uint8_t getIntPin() const { return pin_INT; }
+                             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;void EmbeddedDevices::resumeInterrupt()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:119:33: error: &#39;REG&#39; has not been declared
+             Wire.write((uint8_t)REG::CONTROL2);
+                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:124:30: error: non-member function &#39;bool EmbeddedDevices::isInterrupted()&#39; cannot have cv-qualifier
+         bool isInterrupted() const { return b_interrupt; }
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:139:1: error: expected declaration before &#39;}&#39; token
+ } // namespace EmbeddedDevices
+ ^
+
+</pre>
+
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /tmp/arduino-testlib447639093/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:30:23: error: expected &#39;}&#39; before &#39;-&#39; token
+             DAY_ALARM - 0x0D,
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:30:23: error: expected unqualified-id before &#39;-&#39; token
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:67:5: error: expected unqualified-id before &#39;public&#39;
+     public:
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;uint8_t EmbeddedDevices::second()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:76:42: error: &#39;REG&#39; has not been declared
+         uint8_t second()  { return (read(REG::SECONDS)  &amp; 0x7F); }
+                                          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:76:37: error: &#39;read&#39; was not declared in this scope
+         uint8_t second()  { return (read(REG::SECONDS)  &amp; 0x7F); }
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:76:37: note: suggested alternative: &#39;fread&#39;
+         uint8_t second()  { return (read(REG::SECONDS)  &amp; 0x7F); }
+                                     ^~~~
+                                     fread
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;uint8_t EmbeddedDevices::minute()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:77:42: error: &#39;REG&#39; has not been declared
+         uint8_t minute()  { return (read(REG::MINUTES)  &amp; 0x7F); }
+                                          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:77:37: error: &#39;read&#39; was not declared in this scope
+         uint8_t minute()  { return (read(REG::MINUTES)  &amp; 0x7F); }
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:77:37: note: suggested alternative: &#39;fread&#39;
+         uint8_t minute()  { return (read(REG::MINUTES)  &amp; 0x7F); }
+                                     ^~~~
+                                     fread
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;uint8_t EmbeddedDevices::hour()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:78:42: error: &#39;REG&#39; has not been declared
+         uint8_t hour()    { return (read(REG::HOURS)    &amp; 0x1F); }
+                                          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:78:37: error: &#39;read&#39; was not declared in this scope
+         uint8_t hour()    { return (read(REG::HOURS)    &amp; 0x1F); }
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:78:37: note: suggested alternative: &#39;fread&#39;
+         uint8_t hour()    { return (read(REG::HOURS)    &amp; 0x1F); }
+                                     ^~~~
+                                     fread
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;uint8_t EmbeddedDevices::day()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:79:42: error: &#39;REG&#39; has not been declared
+         uint8_t day()     { return (read(REG::DAYS)     &amp; 0x3F); }
+                                          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:79:37: error: &#39;read&#39; was not declared in this scope
+         uint8_t day()     { return (read(REG::DAYS)     &amp; 0x3F); }
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:79:37: note: suggested alternative: &#39;fread&#39;
+         uint8_t day()     { return (read(REG::DAYS)     &amp; 0x3F); }
+                                     ^~~~
+                                     fread
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;uint8_t EmbeddedDevices::weekday()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:80:42: error: &#39;REG&#39; has not been declared
+         uint8_t weekday() { return (read(REG::WEEKDAYS) &amp; 0x07); }
+                                          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:80:37: error: &#39;read&#39; was not declared in this scope
+         uint8_t weekday() { return (read(REG::WEEKDAYS) &amp; 0x07); }
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:80:37: note: suggested alternative: &#39;fread&#39;
+         uint8_t weekday() { return (read(REG::WEEKDAYS) &amp; 0x07); }
+                                     ^~~~
+                                     fread
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;uint8_t EmbeddedDevices::month()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:81:42: error: &#39;REG&#39; has not been declared
+         uint8_t month()   { return (read(REG::MONTHS)   &amp; 0x1F); }
+                                          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:81:37: error: &#39;read&#39; was not declared in this scope
+         uint8_t month()   { return (read(REG::MONTHS)   &amp; 0x1F); }
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:81:37: note: suggested alternative: &#39;fread&#39;
+         uint8_t month()   { return (read(REG::MONTHS)   &amp; 0x1F); }
+                                     ^~~~
+                                     fread
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;uint8_t EmbeddedDevices::year()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:82:42: error: &#39;REG&#39; has not been declared
+         uint8_t year()    { return (read(REG::YEARS)    &amp; 0xFF); }
+                                          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:82:37: error: &#39;read&#39; was not declared in this scope
+         uint8_t year()    { return (read(REG::YEARS)    &amp; 0xFF); }
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:82:37: note: suggested alternative: &#39;fread&#39;
+         uint8_t year()    { return (read(REG::YEARS)    &amp; 0xFF); }
+                                     ^~~~
+                                     fread
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;void EmbeddedDevices::setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:90:33: error: &#39;REG&#39; has not been declared
+             Wire.write((uint8_t)REG::WATCHDG_TIM_CTL);
+                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:93:13: error: &#39;stop&#39; was not declared in this scope
+             stop();
+             ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:93:13: note: suggested alternative: &#39;setup&#39;
+             stop();
+             ^~~~
+             setup
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;void EmbeddedDevices::start()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:99:33: error: &#39;REG&#39; has not been declared
+             Wire.write((uint8_t)REG::CONTROL1);
+                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:102:13: error: &#39;resumeInterrupt&#39; was not declared in this scope
+             resumeInterrupt();
+             ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:102:13: note: suggested alternative: &#39;detachInterrupt&#39;
+             resumeInterrupt();
+             ^~~~~~~~~~~~~~~
+             detachInterrupt
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;void EmbeddedDevices::stop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:108:33: error: &#39;REG&#39; has not been declared
+             Wire.write((uint8_t)REG::CONTROL1);
+                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:111:13: error: &#39;resumeInterrupt&#39; was not declared in this scope
+             resumeInterrupt();
+             ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:111:13: note: suggested alternative: &#39;detachInterrupt&#39;
+             resumeInterrupt();
+             ^~~~~~~~~~~~~~~
+             detachInterrupt
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:114:29: error: non-member function &#39;uint8_t EmbeddedDevices::getIntPin()&#39; cannot have cv-qualifier
+         uint8_t getIntPin() const { return pin_INT; }
+                             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;void EmbeddedDevices::resumeInterrupt()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:119:33: error: &#39;REG&#39; has not been declared
+             Wire.write((uint8_t)REG::CONTROL2);
+                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:124:30: error: non-member function &#39;bool EmbeddedDevices::isInterrupted()&#39; cannot have cv-qualifier
+         bool isInterrupted() const { return b_interrupt; }
+                              ^~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:8:0,
+                 from /tmp/arduino-testlib447639093/t</pre>
+
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /tmp/arduino-testlib25819948/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:30:23: error: expected &#39;}&#39; before &#39;-&#39; token
+             DAY_ALARM - 0x0D,
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:30:23: error: expected unqualified-id before &#39;-&#39; token
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:52:23: error: uninitialized const &#39;EmbeddedDevices::I2C_ADDR&#39; [-fpermissive]
+         const uint8_t I2C_ADDR;
+                       ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:53:23: error: uninitialized const &#39;EmbeddedDevices::pin_INT&#39; [-fpermissive]
+         const uint8_t pin_INT;
+                       ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:67:5: error: expected unqualified-id before &#39;public&#39;
+     public:
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;uint8_t EmbeddedDevices::second()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:76:42: error: &#39;REG&#39; has not been declared
+         uint8_t second()  { return (read(REG::SECONDS)  &amp; 0x7F); }
+                                          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:76:37: error: &#39;read&#39; was not declared in this scope
+         uint8_t second()  { return (read(REG::SECONDS)  &amp; 0x7F); }
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:76:37: note: suggested alternative: &#39;fread&#39;
+         uint8_t second()  { return (read(REG::SECONDS)  &amp; 0x7F); }
+                                     ^~~~
+                                     fread
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;uint8_t EmbeddedDevices::minute()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:77:42: error: &#39;REG&#39; has not been declared
+         uint8_t minute()  { return (read(REG::MINUTES)  &amp; 0x7F); }
+                                          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:77:37: error: &#39;read&#39; was not declared in this scope
+         uint8_t minute()  { return (read(REG::MINUTES)  &amp; 0x7F); }
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:77:37: note: suggested alternative: &#39;fread&#39;
+         uint8_t minute()  { return (read(REG::MINUTES)  &amp; 0x7F); }
+                                     ^~~~
+                                     fread
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;uint8_t EmbeddedDevices::hour()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:78:42: error: &#39;REG&#39; has not been declared
+         uint8_t hour()    { return (read(REG::HOURS)    &amp; 0x1F); }
+                                          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:78:37: error: &#39;read&#39; was not declared in this scope
+         uint8_t hour()    { return (read(REG::HOURS)    &amp; 0x1F); }
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:78:37: note: suggested alternative: &#39;fread&#39;
+         uint8_t hour()    { return (read(REG::HOURS)    &amp; 0x1F); }
+                                     ^~~~
+                                     fread
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;uint8_t EmbeddedDevices::day()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:79:42: error: &#39;REG&#39; has not been declared
+         uint8_t day()     { return (read(REG::DAYS)     &amp; 0x3F); }
+                                          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:79:37: error: &#39;read&#39; was not declared in this scope
+         uint8_t day()     { return (read(REG::DAYS)     &amp; 0x3F); }
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:79:37: note: suggested alternative: &#39;fread&#39;
+         uint8_t day()     { return (read(REG::DAYS)     &amp; 0x3F); }
+                                     ^~~~
+                                     fread
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;uint8_t EmbeddedDevices::weekday()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:80:42: error: &#39;REG&#39; has not been declared
+         uint8_t weekday() { return (read(REG::WEEKDAYS) &amp; 0x07); }
+                                          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:80:37: error: &#39;read&#39; was not declared in this scope
+         uint8_t weekday() { return (read(REG::WEEKDAYS) &amp; 0x07); }
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:80:37: note: suggested alternative: &#39;fread&#39;
+         uint8_t weekday() { return (read(REG::WEEKDAYS) &amp; 0x07); }
+                                     ^~~~
+                                     fread
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;uint8_t EmbeddedDevices::month()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:81:42: error: &#39;REG&#39; has not been declared
+         uint8_t month()   { return (read(REG::MONTHS)   &amp; 0x1F); }
+                                          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:81:37: error: &#39;read&#39; was not declared in this scope
+         uint8_t month()   { return (read(REG::MONTHS)   &amp; 0x1F); }
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:81:37: note: suggested alternative: &#39;fread&#39;
+         uint8_t month()   { return (read(REG::MONTHS)   &amp; 0x1F); }
+                                     ^~~~
+                                     fread
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;uint8_t EmbeddedDevices::year()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:82:42: error: &#39;REG&#39; has not been declared
+         uint8_t year()    { return (read(REG::YEARS)    &amp; 0xFF); }
+                                          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:82:37: error: &#39;read&#39; was not declared in this scope
+         uint8_t year()    { return (read(REG::YEARS)    &amp; 0xFF); }
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:82:37: note: suggested alternative: &#39;fread&#39;
+         uint8_t year()    { return (read(REG::YEARS)    &amp; 0xFF); }
+                                     ^~~~
+                                     fread
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;void EmbeddedDevices::setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:90:33: error: &#39;REG&#39; has not been declared
+             Wire.write((uint8_t)REG::WATCHDG_TIM_CTL);
+                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:93:13: error: &#39;stop&#39; was not declared in this scope
+             stop();
+             ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:93:13: note: suggested alternative: &#39;setup&#39;
+             stop();
+             ^~~~
+             setup
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;void EmbeddedDevices::start()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:99:33: error: &#39;REG&#39; has not been declared
+             Wire.write((uint8_t)REG::CONTROL1);
+                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:102:13: error: &#39;resumeInterrupt&#39; was not declared in this scope
+             resumeInterrupt();
+             ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:102:13: note: suggested alternative: &#39;detachInterrupt&#39;
+             resumeInterrupt();
+             ^~~~~~~~~~~~~~~
+             detachInterrupt
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;void EmbeddedDevices::stop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:108:33: error: &#39;REG&#39; has not been declared
+             Wire.write((uint8_t)REG::CONTROL1);
+                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:111:13: error: &#39;resumeInterrupt&#39; was not declared in this scope
+             resumeInterrupt();
+             ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:111:13: note: suggested alternative: &#39;detachInterrupt&#39;
+             resumeInterrupt();
+             ^~~~~~~~~~~~~~~
+             detachInterrupt
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:114:29: error: non-member function &#39;uint8_t EmbeddedDevices::getIntPin()&#39; cannot have cv-qualifier
+         uint8_t getIntPin() const { return pin_INT; }
+                             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;void EmbeddedDevices::resumeInterrupt()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:119:33: error: &#39;REG&#39; has not been declared
+             Wire.write((uint8_t)REG::CONTROL2);
+                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: At global sco</pre>
+
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /tmp/arduino-testlib2969602083/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:30:23: error: expected &#39;}&#39; before &#39;-&#39; token
+             DAY_ALARM - 0x0D,
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:30:23: error: expected unqualified-id before &#39;-&#39; token
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:52:23: error: uninitialized const &#39;EmbeddedDevices::I2C_ADDR&#39; [-fpermissive]
+         const uint8_t I2C_ADDR;
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:53:23: error: uninitialized const &#39;EmbeddedDevices::pin_INT&#39; [-fpermissive]
+         const uint8_t pin_INT;
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:67:5: error: expected unqualified-id before &#39;public&#39;
+     public:
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;uint8_t EmbeddedDevices::second()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:76:42: error: &#39;REG&#39; has not been declared
+         uint8_t second()  { return (read(REG::SECONDS)  &amp; 0x7F); }
+                                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;uint8_t EmbeddedDevices::minute()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:77:42: error: &#39;REG&#39; has not been declared
+         uint8_t minute()  { return (read(REG::MINUTES)  &amp; 0x7F); }
+                                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;uint8_t EmbeddedDevices::hour()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:78:42: error: &#39;REG&#39; has not been declared
+         uint8_t hour()    { return (read(REG::HOURS)    &amp; 0x1F); }
+                                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;uint8_t EmbeddedDevices::day()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:79:42: error: &#39;REG&#39; has not been declared
+         uint8_t day()     { return (read(REG::DAYS)     &amp; 0x3F); }
+                                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;uint8_t EmbeddedDevices::weekday()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:80:42: error: &#39;REG&#39; has not been declared
+         uint8_t weekday() { return (read(REG::WEEKDAYS) &amp; 0x07); }
+                                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;uint8_t EmbeddedDevices::month()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:81:42: error: &#39;REG&#39; has not been declared
+         uint8_t month()   { return (read(REG::MONTHS)   &amp; 0x1F); }
+                                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;uint8_t EmbeddedDevices::year()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:82:42: error: &#39;REG&#39; has not been declared
+         uint8_t year()    { return (read(REG::YEARS)    &amp; 0xFF); }
+                                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;void EmbeddedDevices::setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:90:33: error: &#39;REG&#39; has not been declared
+             Wire.write((uint8_t)REG::WATCHDG_TIM_CTL);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:93:18: error: &#39;stop&#39; was not declared in this scope
+             stop();
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;void EmbeddedDevices::start()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:99:33: error: &#39;REG&#39; has not been declared
+             Wire.write((uint8_t)REG::CONTROL1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:102:29: error: &#39;resumeInterrupt&#39; was not declared in this scope
+             resumeInterrupt();
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;void EmbeddedDevices::stop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:108:33: error: &#39;REG&#39; has not been declared
+             Wire.write((uint8_t)REG::CONTROL1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:111:29: error: &#39;resumeInterrupt&#39; was not declared in this scope
+             resumeInterrupt();
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:114:29: error: non-member function &#39;uint8_t EmbeddedDevices::getIntPin()&#39; cannot have cv-qualifier
+         uint8_t getIntPin() const { return pin_INT; }
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: In function &#39;void EmbeddedDevices::resumeInterrupt()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:119:33: error: &#39;REG&#39; has not been declared
+             Wire.write((uint8_t)REG::CONTROL2);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:124:30: error: non-member function &#39;bool EmbeddedDevices::isInterrupted()&#39; cannot have cv-qualifier
+         bool isInterrupted() const { return b_interrupt; }
+                              ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:8:0,
+                 from /tmp/arduino-testlib2969602083/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/Wire/src/Wire.h: In function &#39;uint8_t EmbeddedDevices::read(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/Wire/src/Wire.h:102:13: note: candidate 1: uint8_t TwoWire::requestFrom(int, int, int)
+     uint8_t requestFrom(int address, int size, int sendStop);
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/Wire/src/Wire.h:100:13: note: candidate 2: uint8_t TwoWire::requestFrom(uint8_t, uint8_t, uint8_t)
+     uint8_t requestFrom(uint8_t address, uint8_t size, uint8_t sendStop);
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/Wire/src/Wire.h:102:13: note: candidate 1: uint8_t TwoWire::requestFrom(int, int, int)
+     uint8_t requestFrom(int address, int size, int sendStop);
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/Wire/src/Wire.h:97:13: note: candidate 2: uint8_t TwoWire::requestFrom(uint16_t, uint8_t, bool)
+     uint8_t requestFrom(uint16_t address, uint8_t size, bool sendStop);
+             ^
+In file included from /tmp/arduino-testlib2969602083/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCF2129/PCF2129.h:139:1: error: expected declaration before &#39;}&#39; token
+ } // namespace EmbeddedDevices
+ ^
+
+</pre>
+
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

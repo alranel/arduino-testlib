@@ -1,0 +1,1149 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>ArduboyTones - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>ArduboyTones</h2>
+				<p>
+					Version: <b>1.0.3</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/arduboytones/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>ArduboyTonesTest</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.h:42:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:39:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp: In constructor &#39;ArduboyTones::ArduboyTones(boolean (*)())&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.h:131:21: error: &#39;PORTC7&#39; was not declared in this scope
+   #define TONE_PIN2 PORTC7
+                     ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:113:52: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                                    ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:68:28: note: in expansion of macro &#39;TONE_PIN2&#39;
+   bitClear(TONE_PIN2_PORT, TONE_PIN2); // set pin 2 low
+                            ^~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.h:131:21: note: suggested alternative: &#39;PORTB7&#39;
+   #define TONE_PIN2 PORTC7
+                     ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:113:52: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                                    ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:68:28: note: in expansion of macro &#39;TONE_PIN2&#39;
+   bitClear(TONE_PIN2_PORT, TONE_PIN2); // set pin 2 low
+                            ^~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp: In static member function &#39;static void ArduboyTones::tone(uint16_t, uint16_t)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:75:12: error: &#39;TIMSK3&#39; was not declared in this scope
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+            ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:75:3: note: in expansion of macro &#39;bitWrite&#39;
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+   ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:75:12: note: suggested alternative: &#39;TIMSK0&#39;
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+            ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:75:3: note: in expansion of macro &#39;bitWrite&#39;
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+   ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:75:20: error: &#39;OCIE3A&#39; was not declared in this scope
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+                    ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:75:3: note: in expansion of macro &#39;bitWrite&#39;
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+   ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:75:20: note: suggested alternative: &#39;OCIE0A&#39;
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+                    ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:75:3: note: in expansion of macro &#39;bitWrite&#39;
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+   ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp: In static member function &#39;static void ArduboyTones::tone(uint16_t, uint16_t, uint16_t, uint16_t)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:87:12: error: &#39;TIMSK3&#39; was not declared in this scope
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+            ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:87:3: note: in expansion of macro &#39;bitWrite&#39;
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+   ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:87:12: note: suggested alternative: &#39;TIMSK0&#39;
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+            ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:87:3: note: in expansion of macro &#39;bitWrite&#39;
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+   ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:87:20: error: &#39;OCIE3A&#39; was not declared in this scope
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+                    ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:87:3: note: in expansion of macro &#39;bitWrite&#39;
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+   ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:87:20: note: suggested alternative: &#39;OCIE0A&#39;
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+                    ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:87:3: note: in expansion of macro &#39;bitWrite&#39;
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+   ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp: In static member function &#39;static void ArduboyTones::tone(uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:102:12: error: &#39;TIMSK3&#39; was not declared in this scope
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+            ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:102:3: note: in expansion of macro &#39;bitWrite&#39;
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+   ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:102:12: note: suggested alternative: &#39;TIMSK0&#39;
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+            ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir</pre>
+
+					
+					<h4>examples/ArduboyTonesTest</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2.cpp: In static member function &#39;static bool Arduboy2Base::nextFrameDEV()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2.cpp:271:7: error: &#39;TXLED1&#39; was not declared in this scope
+       TXLED1;
+      /Users/alranel/Documen/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Core.cpp:142:3: note: suggestedibraries/Arduboy2/src/Arduboy2Core.h:119:23: error: &#39;PORTC7&#39; was not declared in this scope
+ #define SPEAKER_2_BIT PORTC7
+                       ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Audio.cpp:16:25: note: in expansion of macro &#39;SPEAKER_2_BIT&#39;
+   bitSet(SPEAKER_2_DDR, SPEAKER_2_BIT);
+                         ^~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Core.h:119:23: note: suggested alternative: &#39;PORTB7&#39;
+ #define SPEAKER_2_BIT PORTC7
+                       ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Audio.cpp:16:25: note: in expansion of macro &#39;SPEAKER_2_BIT&#39;
+   bitSet(SPEAKER_2_DDR, SPEAKER_2_BIT);
+                         ^~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Audio.cpp: In static member function &#39;static void Arduboy2Audio::off()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Core.h:119:23: error: &#39;PORTC7&#39; was not declared in this scope
+ #define SPEAKER_2_BIT PORTC7
+                       ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:113:52: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                                    ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Audio.cpp:29:27: note: in expansion of macro &#39;SPEAKER_2_BIT&#39;
+   bitClear(SPEAKER_2_DDR, SPEAKER_2_BIT);
+                           ^~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Core.h:119:23: note: suggested alternative: &#39;PORTB7&#39;
+ #define SPEAKER_2_BIT PORTC7
+                       ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:113:52: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                                    ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Audio.cpp:29:27: note: in expansion of macro &#39;SPEAKER_2_BIT&#39;
+   bitClear(SPEAKER_2_DDR, SPEAKER_2_BIT);
+                           ^~~~~~~~~~~~~
+.h:28,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Core.h:10,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Core.cpp:7:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Core.h:78:25: error: &#39;PORTF5&#39; was not declared in this scope
+ #define LEFT_BUTTON_BIT PORTF5
+                         ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Core.cpp:149:16: note: in expansion of macro &#39;LEFT_BUTTON_BIT&#39;
+   PORTF |= _BV(LEFT_BUTTON_BIT) | _BV(RIGHT_BUTTON_BIT) |
+                ^~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Core.h:78:25: note: suggested alternative: &#39;PORTB5&#39;
+ #define LEFT_BUTTON_BIT PORTF5
+                         ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Core.cpp:149:16: note: in expansion of macro &#39;LEFT_BUTTON_BIT&#39;
+   PORTF |= _BV(LEFT_BUTTON_BIT) | _BV(RIGHT_BUTTON_BIT) |
+                ^~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Core.h:84:26: error: &#39;PORTF6&#39; was not declared in this scope
+ #define RIGHT_BUTTON_BIT PORTF6
+                          ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Core.cpp:149:39: note: in expansion of macro &#39;RIGHT_BUTTON_BIT&#39;
+   PORTF |= _BV(LEFT_BUTTON_BIT) | _BV(RIGHT_BUTTON_BIT) |
+                                       ^~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Core.h:84:26: note: suggested alternative: &#39;PORTB6&#39;
+ #define RIGHT_BUTTON_BIT PORTF6
+                          ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Core.cpp:149:39: note: in expansion of macro &#39;RIGHT_BUTTON_BIT&#39;
+   PORTF |= _BV(LEFT_BUTTON_BIT) | _BV(RIGHT_BUTTON_BIT) |
+                                       ^~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Core.h:90:23: error: &#39;PORTF7&#39; was not declared in this scope
+ #define UP_BUTTON_BIT PORTF7
+                       ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Core.cpp:150:16: note: in expansion of macro &#39;UP_BUTTON_BIT&#39;
+            _BV(UP_BUTTON_BIT) | _BV(DOWN_BUTTON_BIT);
+                ^~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Core.h:90:23: note: suggested alternative: &#39;PORTB7&#39;
+ #define UP_BUTTON_BIT PORTF7
+                       ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Core.cpp:150:16: note: in expansion of macro &#39;UP_BUTTON_BIT&#39;
+            _BV(UP_BUTTON_BIT) | _BV(DOWN_BUTTON_BIT);
+                ^~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Core.h:96:25: error: &#39;PORTF4&#39; was not declared in this scope
+ #define DOWN_BUTTON_BIT PORTF4
+                         ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Core.cpp:150:37: note: in expansion of macro &#39;DOWN_BUTTON_BIT&#39;
+            _BV(UP_BUTTON_BIT) | _BV(DOWN_BUTTON_BIT);
+                                     ^~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Core.h:96:25: note: suggested alternative: &#39;PORTB4&#39;
+ #define DOWN_BUTTON_BIT PORTF4
+                         ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Core.cpp:150:37: note: in expansion of macro &#39;DOWN_BUTTON_BIT&#39;
+            _BV(UP_BUTTON_BIT) | _BV(DOWN_BUTTON_BIT);
+                                     ^~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Core.h:208:26: error: &#39;PORTF1&#39; was not declared in this scope
+ #define RAND_SEED_IN_BIT PORTF1
+                          ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Core.cpp:152:18: note: in expansion of macro &#39;RAND_SEED_IN_BIT&#39;
+   PORTF &amp;= ~(_BV(RAND_SEED_IN_BIT));
+                  ^~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Core.h:208:26: note: suggested alternative: &#39;PORTB1&#39;
+ #define RAND_SEED_IN_BIT PORTF1
+                          ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Core.cpp:152:18: note: in expansion of macro &#39;RAND_SEED_IN_BIT&#39;
+   PORTF &amp;= ~(_BV(RAND_SEED_IN_BIT));
+                  ^~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Core.cpp:154:3: error: &#39;DDRF&#39; was not declared in this scope
+   DDRF &amp;= ~(_BV(LEFT_BUTTON_BIT) | _BV(RIGHT_BUTTON_BIT) |
+   ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Core.cpp:154:3: note: suggested alternative: &#39;WDRF&#39;
+   DDRF &amp;= ~(_BV(LEFT_BUTTON_BIT) | _BV(RIGHT_BUTTON_BIT) |
+   ^~~~
+   WDRF
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Core.cpp: In static member function &#39;static void Arduboy2Core::bootPowerSaving()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Core.cpp:289:3: error: &#39;PRR0&#39; was not declared in this scope
+   PRR0 = _BV(PRTWI) | _BV(PRADC);
+   ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Core.cpp:289:3: note: suggested alternative: &#39;PRR&#39;
+   PRR0 = _BV(PRTWI) | _BV(PRADC);
+   ^~~~
+   PRR
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Core.cpp:291:3: error: &#39;PRR1&#39; was not declared in this scope
+   PRR1 |= _BV(PRUSART1);
+   ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Core.cpp:291:3: note: sug</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library ArduboyTones claims to run on avr architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/variants/NANO_RP2040_CONNECT/pinmode_arduino.h:30:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:26,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.h:42,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:39:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp: In constructor &#39;ArduboyTones::ArduboyTones(boolean (*)())&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.h:124:25: error: &#39;PORTC&#39; was not declared in this scope
+   #define TONE_PIN_PORT PORTC
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:67:32: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:65:12: note: in expansion of macro &#39;TONE_PIN_PORT&#39;
+   bitClear(TONE_PIN_PORT, TONE_PIN); // set the pin low
+            ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.h:126:20: error: &#39;PORTC6&#39; was not declared in this scope
+   #define TONE_PIN PORTC6
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:67:52: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                                    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:65:27: note: in expansion of macro &#39;TONE_PIN&#39;
+   bitClear(TONE_PIN_PORT, TONE_PIN); // set the pin low
+                           ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.h:125:24: error: &#39;DDRC&#39; was not declared in this scope
+   #define TONE_PIN_DDR DDRC
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:66:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:66:10: note: in expansion of macro &#39;TONE_PIN_DDR&#39;
+   bitSet(TONE_PIN_DDR, TONE_PIN); // set the pin to output mode
+          ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.h:125:24: note: suggested alternative: &#39;DIR&#39;
+   #define TONE_PIN_DDR DDRC
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:66:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:66:10: note: in expansion of macro &#39;TONE_PIN_DDR&#39;
+   bitSet(TONE_PIN_DDR, TONE_PIN); // set the pin to output mode
+          ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.h:131:21: error: &#39;PORTC7&#39; was not declared in this scope
+   #define TONE_PIN2 PORTC7
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:67:52: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                                    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:68:28: note: in expansion of macro &#39;TONE_PIN2&#39;
+   bitClear(TONE_PIN2_PORT, TONE_PIN2); // set pin 2 low
+                            ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp: In static member function &#39;static void ArduboyTones::tone(uint16_t, uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:75:12: error: &#39;TIMSK3&#39; was not declared in this scope
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:66:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:75:3: note: in expansion of macro &#39;bitWrite&#39;
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:75:12: note: suggested alternative: &#39;TIMER&#39;
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:66:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:75:3: note: in expansion of macro &#39;bitWrite&#39;
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:75:20: error: &#39;OCIE3A&#39; was not declared in this scope
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:66:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:75:3: note: in expansion of macro &#39;bitWrite&#39;
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp: In static member function &#39;static void ArduboyTones::tone(uint16_t, uint16_t, uint16_t, uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:87:12: error: &#39;TIMSK3&#39; was not declared in this scope
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:66:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:87:3: note: in expansion of macro &#39;bitWrite&#39;
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:87:12: note: suggested alternative: &#39;TIMER&#39;
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:66:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:87:3: note: in expansion of macro &#39;bitWrite&#39;
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:87:20: error: &#39;OCIE3A&#39; was not declared in this scope
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:66:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:87:3: note: in expansion of macro &#39;bitWrite&#39;
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp: In static member function &#39;static void ArduboyTones::tone(uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:102:12: error: &#39;TIMSK3&#39; was not declared in this scope
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:66:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:102:3: note: in expansion of macro &#39;bitWrite&#39;
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libr</pre>
+
+					
+					<h4>examples/ArduboyTonesTest</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2.h:11:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/examples/ArduboyTonesTest/ArduboyTonesTest.ino:3:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum/src/EEPROM.h:25:10: fatal error: avr/eeprom.h: No such file or directory
+ #include &lt;avr/eeprom.h&gt;
+          ^~~~~~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;EEPROM.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/arduino-NVM
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library ArduboyTones claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Interrupts.h:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:29,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.h:42,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:39:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp: In constructor &#39;ArduboyTones::ArduboyTones(boolean (*)())&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.h:126:20: error: &#39;PORTC6&#39; was not declared in this scope
+   #define TONE_PIN PORTC6
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:66:52: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                                    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:65:27: note: in expansion of macro &#39;TONE_PIN&#39;
+   bitClear(TONE_PIN_PORT, TONE_PIN); // set the pin low
+                           ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.h:126:20: note: suggested alternative: &#39;PORTC&#39;
+   #define TONE_PIN PORTC6
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:66:52: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                                    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:65:27: note: in expansion of macro &#39;TONE_PIN&#39;
+   bitClear(TONE_PIN_PORT, TONE_PIN); // set the pin low
+                           ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.h:131:21: error: &#39;PORTC7&#39; was not declared in this scope
+   #define TONE_PIN2 PORTC7
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:66:52: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                                    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:68:28: note: in expansion of macro &#39;TONE_PIN2&#39;
+   bitClear(TONE_PIN2_PORT, TONE_PIN2); // set pin 2 low
+                            ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.h:131:21: note: suggested alternative: &#39;PORTC&#39;
+   #define TONE_PIN2 PORTC7
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:66:52: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                                    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:68:28: note: in expansion of macro &#39;TONE_PIN2&#39;
+   bitClear(TONE_PIN2_PORT, TONE_PIN2); // set pin 2 low
+                            ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp: In static member function &#39;static void ArduboyTones::tone(uint16_t, uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:75:12: error: &#39;TIMSK3&#39; was not declared in this scope
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:75:3: note: in expansion of macro &#39;bitWrite&#39;
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:75:12: note: suggested alternative: &#39;TIMERB3&#39;
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:75:3: note: in expansion of macro &#39;bitWrite&#39;
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:75:20: error: &#39;OCIE3A&#39; was not declared in this scope
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:75:3: note: in expansion of macro &#39;bitWrite&#39;
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp: In static member function &#39;static void ArduboyTones::tone(uint16_t, uint16_t, uint16_t, uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:87:12: error: &#39;TIMSK3&#39; was not declared in this scope
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:87:3: note: in expansion of macro &#39;bitWrite&#39;
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:87:12: note: suggested alternative: &#39;TIMERB3&#39;
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:87:3: note: in expansion of macro &#39;bitWrite&#39;
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:87:20: error: &#39;OCIE3A&#39; was not declared in this scope
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:87:3: note: in expansion of macro &#39;bitWrite&#39;
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp: In static member function &#39;static void ArduboyTones::tone(uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:102:12: error: &#39;TIMSK3&#39; was not declared in this scope
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:102:3: note: in expansion of macro &#39;bitWrite&#39;
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:102:12: note: suggested alternative: &#39;TIMERB3&#39;
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:102:3: note: in expansi</pre>
+
+					
+					<h4>examples/ArduboyTonesTest</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library Arduboy2 claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+WARNING: library ArduboyTones claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Beep.cpp: In static member function &#39;static void BeepPin1::begin()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Beep.cpp:18:3: error: &#39;TCCR3A&#39; was not declared in this scope
+   TCCR3A = 0;
+   ^~~~~~
+/home/ec2-user/arIn file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /homeuboy2/src/Arduboy2.h:10,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Audio.cpp:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Audio.cpp: In static member function &#39;static void Arduboy2Audio::on()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Core.h:/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2.cpp:273:7: error: &#39;TXLED0&#39; was not declared in this scope
+       TXLED0;
+       ^~~~~~
+arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Audio.cpp:15:25: note: in expansion of macro &#39;SPEAKER_1_BIT&#39;
+   bitSet(SPEAKER_1_DDR, SPEAKER_1_BIT);
+                         ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Core.h:115:23: note: suggested alternative: &#39;PORTC&#39;
+ #define SPEAKER_1_BIT PORTC6
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Audio.cpp:15:25: note: in expansion of macro &#39;SPEAKER_1_BIT&#39;
+   bitSet(SPEAKER_1_DDR, SPEAKER_1_BIT);
+                         ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Core.h:119:23: error: &#39;PORTC7&#39; was not declared in this scope
+ #define SPEAKER_2_BIT PORTC7
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Audio.cpp:16:25: note: in expansion of macro &#39;SPEAKER_2_BIT&#39;
+   bitSet(SPEAKER_2_DDR, SPEAKER_2_BIT);
+                         ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Core.h:119:23: note: suggested alternative: &#39;PORTC&#39;
+ #define SPEAKER_2_BIT PORTC7
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Audio.cpp:16:25: note: in expansion of macro &#39;SPEAKER_2_BIT&#39;
+   bitSet(SPEAKER_2_DDR, SPEAKER_2_BIT);
+                         ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Audio.cpp: In static member function &#39;static void Arduboy2Audio::off()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Core.h:115:23: error: &#39;PORTC6&#39; was not declared in this scope
+ #define SPEAKER_1_BIT PORTC6
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:66:52: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                                    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Audio.cpp:28:27: note: in expansion of macro &#39;SPEAKER_1_BIT&#39;
+   bitClear(SPEAKER_1_DDR, SPEAKER_1_BIT);
+                           ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Core.h:115:23: note: suggested alternative: &#39;PORTC&#39;
+ #define SPEAKER_1_BIT PORTC6
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:66:52: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                                    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Audio.cpp:28:27: note: in expansion of macro &#39;SPEAKER_1_BIT&#39;
+   bitClear(SPEAKER_1_DDR, SPEAKER_1_BIT);
+                           ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Core.h:119:23: error: &#39;PORTC7&#39; was not declared in this scope
+ #define SPEAKER_2_BIT PORTC7
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:66:52: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                                    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Audio.cpp:29:27: note: in expansion of macro &#39;SPEAKER_2_BIT&#39;
+   bitClear(SPEAKER_2_DDR, SPEAKER_2_BIT);
+                           ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Core.h:119:23: note: suggested alternative: &#39;PORTC&#39;
+ #define SPEAKER_2_BIT PORTC7
+                  In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Interrupts.h:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:29,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Beep.cpp:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Beep.cpp:55:16: error: &#39;CS43&#39; was not declared in this scope
+   TCCR4B = bit(CS43); // divide by 128 clock prescale
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:71:25: note: in definition of macro &#39;bit&#39;
+ #define bit(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Beep.cpp:56:3: error: &#39;TCCR4D&#39; was not declared in this scope
+   TCCR4D = 0; // normal mode
+   ^~~~~~
+_BIT PORTB4
+                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Core.cpp:122:16: note: in expansion of macro &#39;B_BUTTON_BIT&#39;
+            _/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Beep.cpp:57:3: note: suggested alternative: &#39;TCA0&#39;
+   TC4H = 0;  // toggle pin at count = 0
+   ^~~~
+   TCA0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Beep.cpp:58:3: error: &#39;OCR4A&#39; was not declared in this scope
+   OCR4A = 0; //  &#34;
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Beep.cpp: In static member function &#39;static void BeepPin2::tone(uint16_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Beep.cpp:69:3: error: &#39;TCCR4A&#39; was not declared in this scope
+   TCCR4A = bit(COM4A0); // set toggle on compare mode (which connects the pin)
+   ^~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Interrupts.h:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:29,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Beep.cpp:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Beep.cpp:69:16: error: &#39;COM4A0&#39; was not declared in this scope
+   TCCR4A = bit(COM4A0); // set toggle on compare mode (which connects the pin)
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:71:25: note: in definition of macro &#39;bit&#39;
+ #define bit(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Beep.cpp:70:3: error: &#39;TC4H&#39; was not declared in this scope
+   TC4H = highByte(count); // load the count (10 bits),
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Beep.cpp:70:3: note: suggested alternative: &#39;TCA0&#39;
+   TC4H = highByte(count); // load the count (10 bits),
+   ^~~~
+   TCA0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Beep.cpp:71:3: error: &#39;OCR4C&#39; was not declared in this scope
+   OCR4C = lowByte(count); //  which determines the frequency
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ardub</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library ArduboyTones claims to run on avr architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Interrupts.h:8:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/ArduinoAPI.h:29,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:23,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.h:42,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:39:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp: In constructor &#39;ArduboyTones::ArduboyTones(boolean (*)())&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.h:126:20: error: &#39;PORTC6&#39; was not declared in this scope
+   #define TONE_PIN PORTC6
+                    ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:66:52: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                                    ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:65:27: note: in expansion of macro &#39;TONE_PIN&#39;
+   bitClear(TONE_PIN_PORT, TONE_PIN); // set the pin low
+                           ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.h:126:20: note: suggested alternative: &#39;PORTC&#39;
+   #define TONE_PIN PORTC6
+                    ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:66:52: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                                    ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:65:27: note: in expansion of macro &#39;TONE_PIN&#39;
+   bitClear(TONE_PIN_PORT, TONE_PIN); // set the pin low
+                           ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.h:125:24: error: &#39;DDRC&#39; was not declared in this scope
+   #define TONE_PIN_DDR DDRC
+                        ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:65:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:66:10: note: in expansion of macro &#39;TONE_PIN_DDR&#39;
+   bitSet(TONE_PIN_DDR, TONE_PIN); // set the pin to output mode
+          ^~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.h:125:24: note: suggested alternative: &#39;ADC&#39;
+   #define TONE_PIN_DDR DDRC
+                        ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:65:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:66:10: note: in expansion of macro &#39;TONE_PIN_DDR&#39;
+   bitSet(TONE_PIN_DDR, TONE_PIN); // set the pin to output mode
+          ^~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.h:131:21: error: &#39;PORTC7&#39; was not declared in this scope
+   #define TONE_PIN2 PORTC7
+                     ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:66:52: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                                    ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:68:28: note: in expansion of macro &#39;TONE_PIN2&#39;
+   bitClear(TONE_PIN2_PORT, TONE_PIN2); // set pin 2 low
+                            ^~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.h:131:21: note: suggested alternative: &#39;PORTC&#39;
+   #define TONE_PIN2 PORTC7
+                     ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:66:52: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                                    ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:68:28: note: in expansion of macro &#39;TONE_PIN2&#39;
+   bitClear(TONE_PIN2_PORT, TONE_PIN2); // set pin 2 low
+                            ^~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp: In static member function &#39;static void ArduboyTones::tone(uint16_t, uint16_t)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:75:12: error: &#39;TIMSK3&#39; was not declared in this scope
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+            ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:65:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:75:3: note: in expansion of macro &#39;bitWrite&#39;
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+   ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:75:20: error: &#39;OCIE3A&#39; was not declared in this scope
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+                    ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:65:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:75:3: note: in expansion of macro &#39;bitWrite&#39;
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+   ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp: In static member function &#39;static void ArduboyTones::tone(uint16_t, uint16_t, uint16_t, uint16_t)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:87:12: error: &#39;TIMSK3&#39; was not declared in this scope
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+            ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:65:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:87:3: note: in expansion of macro &#39;bitWrite&#39;
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+   ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:87:20: error: &#39;OCIE3A&#39; was not declared in this scope
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+                    ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:65:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:87:3: note: in expansion of macro &#39;bitWrite&#39;
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+   ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp: In static member function &#39;static void ArduboyTones::tone(uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:102:12: error: &#39;TIMSK3&#39; was not declared in this scope
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+            ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:65:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/Users/alranel/Document</pre>
+
+					
+					<h4>examples/ArduboyTonesTest</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2.h:11:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/examples/ArduboyTonesTest/ArduboyTonesTest.ino:3:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Hello_Drum/src/EEPROM.h:25:10: fatal error: avr/eeprom.h: No such file or directory
+ #include &lt;avr/eeprom.h&gt;
+          ^~~~~~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;EEPROM.h&#34;
+  Used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Hello_Drum
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/arduino-NVM
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library ArduboyTones claims to run on avr architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.h:42:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:39:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp: In constructor &#39;ArduboyTones::ArduboyTones(boolean (*)())&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.h:124:25: error: &#39;PORTC&#39; was not declared in this scope
+   #define TONE_PIN_PORT PORTC
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:90:32: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:65:12: note: in expansion of macro &#39;TONE_PIN_PORT&#39;
+   bitClear(TONE_PIN_PORT, TONE_PIN); // set the pin low
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.h:126:20: error: &#39;PORTC6&#39; was not declared in this scope
+   #define TONE_PIN PORTC6
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:90:52: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:65:27: note: in expansion of macro &#39;TONE_PIN&#39;
+   bitClear(TONE_PIN_PORT, TONE_PIN); // set the pin low
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.h:125:24: error: &#39;DDRC&#39; was not declared in this scope
+   #define TONE_PIN_DDR DDRC
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:89:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:66:10: note: in expansion of macro &#39;TONE_PIN_DDR&#39;
+   bitSet(TONE_PIN_DDR, TONE_PIN); // set the pin to output mode
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.h:131:21: error: &#39;PORTC7&#39; was not declared in this scope
+   #define TONE_PIN2 PORTC7
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:90:52: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:68:28: note: in expansion of macro &#39;TONE_PIN2&#39;
+   bitClear(TONE_PIN2_PORT, TONE_PIN2); // set pin 2 low
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp: In static member function &#39;static void ArduboyTones::tone(uint16_t, uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:75:12: error: &#39;TIMSK3&#39; was not declared in this scope
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:89:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:75:3: note: in expansion of macro &#39;bitWrite&#39;
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:75:20: error: &#39;OCIE3A&#39; was not declared in this scope
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:89:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:75:3: note: in expansion of macro &#39;bitWrite&#39;
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp: In static member function &#39;static void ArduboyTones::tone(uint16_t, uint16_t, uint16_t, uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:87:12: error: &#39;TIMSK3&#39; was not declared in this scope
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:89:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:87:3: note: in expansion of macro &#39;bitWrite&#39;
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:87:20: error: &#39;OCIE3A&#39; was not declared in this scope
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:89:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:87:3: note: in expansion of macro &#39;bitWrite&#39;
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp: In static member function &#39;static void ArduboyTones::tone(uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:102:12: error: &#39;TIMSK3&#39; was not declared in this scope
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:89:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:102:3: note: in expansion of macro &#39;bitWrite&#39;
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:102:20: error: &#39;OCIE3A&#39; was not declared in this scope
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:89:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:102:3: note: in expansion of macro &#39;bitWrite&#39;
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp: In static member function &#39;static void ArduboyTones::tones(const uint16_t*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:117:12: error: &#39;TIMSK3&#39; was not declared in this scope
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:89:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:117:3: note: in expansion of macro &#39;bitWrite&#39;
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:117:20: error: &#39;OCIE3A&#39; was not declared in this scope
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:89:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:117:3: note: in expansion of macro &#39;bitWrite&#39;
+   bitWrite(TIMSK3, OCIE3A, 0); // disable the output compare match interrupt
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp: In static member function &#39;static void ArduboyTones::tonesInRAM(uint16_t*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/src/ArduboyTones.cpp:125:12: error: &#39;TIMSK3&#39; was not declared in this scope
+   bitWrit</pre>
+
+					
+					<h4>examples/ArduboyTonesTest</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2.h:12:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyTones/examples/ArduboyTonesTest/ArduboyTonesTest.ino:3:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduboy2/src/Arduboy2Core.h:11:23: fatal error: avr/power.h: No such file or directory
+compilation terminated.
+Multiple libraries were found for &#34;EEPROM.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/EEPROM
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/arduino-NVM
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

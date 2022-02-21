@@ -1,0 +1,858 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>Brief - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>Brief</h2>
+				<p>
+					Version: <b>1.0.6</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/brief/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>Brief</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 2684 bytes (8%) of program storage space. Maximum is 32256 bytes.
+Global variables use 301 bytes (14%) of dynamic memory, leaving 1747 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+
+					
+					<h4>examples/Brief</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 7332 bytes (22%) of program storage space. Maximum is 32256 bytes.
+Global variables use 1641 bytes (80%) of dynamic memory, leaving 407 bytes for local variables. Maximum is 2048 bytes.
+Low memory available, stability problems may occur.
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp: In function &#39;void brief::pinMode()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:647:31: error: no matching function for call to &#39;pinMode(int16_t, int16_t)&#39;
+         ::pinMode(pop(), pop());
+                               ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/variants/NANO_RP2040_CONNECT/pinmode_arduino.h:30:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:26,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:7,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:95:6: note: candidate: void pinMode(pin_size_t, ArduinoPinMode) &lt;near match&gt;
+ void pinMode(pin_size_t pinNumber, PinMode pinMode);
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:95:6: note:   conversion of argument 2 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:647:29: error: invalid conversion from &#39;int16_t {aka short int}&#39; to &#39;ArduinoPinMode&#39; [-fpermissive]
+         ::pinMode(pop(), pop());
+                          ~~~^~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:26:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:7,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/variants/NANO_RP2040_CONNECT/pinmode_arduino.h:72:6: note: candidate: void pinMode(pin_size_t, PinMode) &lt;near match&gt;
+ void pinMode(pin_size_t pinNumber, PinMode pinMode);
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/variants/NANO_RP2040_CONNECT/pinmode_arduino.h:72:6: note:   conversion of argument 2 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:647:29: error: invalid conversion from &#39;int16_t {aka short int}&#39; to &#39;PinMode&#39; [-fpermissive]
+         ::pinMode(pop(), pop());
+                          ~~~^~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/variants/NANO_RP2040_CONNECT/pins_arduino.h:127:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:76,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:7,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/variants/NANO_RP2040_CONNECT/nina_pins.h:58:26: note: candidate: void pinMode(NinaPin, PinMode) &lt;near match&gt;
+ void      NINA_ATTRIBUTE pinMode     (NinaPin pin, PinMode mode);
+                          ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/variants/NANO_RP2040_CONNECT/nina_pins.h:58:26: note:   conversion of argument 2 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:647:29: error: invalid conversion from &#39;int16_t {aka short int}&#39; to &#39;PinMode&#39; [-fpermissive]
+         ::pinMode(pop(), pop());
+                          ~~~^~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:115:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:7,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/overloads.h:23:6: note: candidate: void pinMode(PinName, PinMode) &lt;near match&gt;
+ void pinMode(PinName pinNumber, PinMode pinMode);
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/overloads.h:23:6: note:   conversion of argument 2 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:647:29: error: invalid conversion from &#39;int16_t {aka short int}&#39; to &#39;PinMode&#39; [-fpermissive]
+         ::pinMode(pop(), pop());
+                          ~~~^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp: In function &#39;void brief::wireSetOnReceive()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:727:37: error: invalid conversion from &#39;void (*)(int16_t) {aka void (*)(short int)}&#39; to &#39;void (*)(int)&#39; [-fpermissive]
+         Wire.onReceive(wireOnReceive);
+                                     ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/libraries/Wire/Wire.h:56:18: note:   initializing argument 1 of &#39;virtual void arduino::MbedI2C::onReceive(void (*)(int))&#39;
+     virtual void onReceive(void(*)(int));
+                  ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp: In function &#39;void brief::attachISR()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:803:57: error: no matching function for call to &#39;attachInterrupt(int, void (&amp;)(), uint8_t&amp;)&#39;
+             case 0 : attachInterrupt(0, interrupt0, mode);
+                                                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/variants/NANO_RP2040_CONNECT/pinmode_arduino.h:30:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:26,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:7,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:112:6: note: candidate: void attachInterrupt(pin_size_t, voidFuncPtr, PinStatus) &lt;near match&gt;
+ void attachInterrupt(pin_size_t interruptNumber, voidFuncPtr callback, PinStatus mode);
+      ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:112:6: note:   conversion of argument 3 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:803:57: error: invalid conversion from &#39;uint8_t {aka unsigned char}&#39; to &#39;PinStatus&#39; [-fpermissive]
+             case 0 : attachInterrupt(0, interrupt0, mode);
+                                                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:115:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:7,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/overloads.h:35:6: note: candidate: void attachInterrupt(PinName, voidFuncPtr, PinStatus) &lt;near match&gt;
+ void attachInterrupt(PinName interruptNumber, voidFuncPtr callback, PinStatus mode);
+      ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/overloads.h:35:6: note:   conversion of argument 3 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:803:57: error: invalid conversion from &#39;uint8_t {aka unsigned char}&#39; to &#39;PinStatus&#39; [-fpermissive]
+             case 0 : attachInterrupt(0, interrupt0, mode);
+                                                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/ArduinoAPI.h:29:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:27,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:7,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Interrupts.h:38:27: note: candidate: template&lt;class T&gt; void arduino::attachInterrupt(pin_size_t, arduino::voidTemplateFuncPtrParam&lt;T*&gt;, PinStatus, T*)
+ template&lt;typename T&gt; void attachInterrupt(pin_size_t interruptNum, voidTemplateFuncPtrParam&lt;T*&gt; userFunc, PinStatus mode, T* param) {
+                           ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Interrupts.h:38:27: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:803:57: note:   candidate expects 1 argument, 0 provided
+             case 0 : attachInterrupt(0, interrupt0, mode);
+                                                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-</pre>
+
+					
+					<h4>examples/Brief</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp: In function &#39;void brief::pinMode()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:647:31: error: no matching function for call to &#39;pinMode(int16_t, int16_t)&#39;
+         ::pinMode(pop(), pop());
+                               ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/variants/NANO_RP2040_CONNECT/pinmode_arduino.h:30:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:26,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:7,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:95:6: note: candidate: void pinMode(pin_size_t, ArduinoPinMode) &lt;near match&gt;
+ void pinMode(pin_size_t pinNumber, PinMode pinMode);
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:95:6: note:   conversion of argument 2 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:647:29: error: invalid conversion from &#39;int16_t {aka short int}&#39; to &#39;ArduinoPinMode&#39; [-fpermissive]
+         ::pinMode(pop(), pop());
+                          ~~~^~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:26:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:7,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/variants/NANO_RP2040_CONNECT/pinmode_arduino.h:72:6: note: candidate: void pinMode(pin_size_t, PinMode) &lt;near match&gt;
+ void pinMode(pin_size_t pinNumber, PinMode pinMode);
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/variants/NANO_RP2040_CONNECT/pinmode_arduino.h:72:6: note:   conversion of argument 2 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:647:29: error: invalid conversion from &#39;int16_t {aka short int}&#39; to &#39;PinMode&#39; [-fpermissive]
+         ::pinMode(pop(), pop());
+                          ~~~^~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/variants/NANO_RP2040_CONNECT/pins_arduino.h:127:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:76,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:7,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/variants/NANO_RP2040_CONNECT/nina_pins.h:58:26: note: candidate: void pinMode(NinaPin, PinMode) &lt;near match&gt;
+ void      NINA_ATTRIBUTE pinMode     (NinaPin pin, PinMode mode);
+                          ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/variants/NANO_RP2040_CONNECT/nina_pins.h:58:26: note:   conversion of argument 2 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:647:29: error: invalid conversion from &#39;int16_t {aka short int}&#39; to &#39;PinMode&#39; [-fpermissive]
+         ::pinMode(pop(), pop());
+                          ~~~^~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:115:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:7,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/overloads.h:23:6: note: candidate: void pinMode(PinName, PinMode) &lt;near match&gt;
+ void pinMode(PinName pinNumber, PinMode pinMode);
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/overloads.h:23:6: note:   conversion of argument 2 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:647:29: error: invalid conversion from &#39;int16_t {aka short int}&#39; to &#39;PinMode&#39; [-fpermissive]
+         ::pinMode(pop(), pop());
+                          ~~~^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp: In function &#39;void brief::wireSetOnReceive()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:727:37: error: invalid conversion from &#39;void (*)(int16_t) {aka void (*)(short int)}&#39; to &#39;void (*)(int)&#39; [-fpermissive]
+         Wire.onReceive(wireOnReceive);
+                                     ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/libraries/Wire/Wire.h:56:18: note:   initializing argument 1 of &#39;virtual void arduino::MbedI2C::onReceive(void (*)(int))&#39;
+     virtual void onReceive(void(*)(int));
+                  ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp: In function &#39;void brief::attachISR()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:803:57: error: no matching function for call to &#39;attachInterrupt(int, void (&amp;)(), uint8_t&amp;)&#39;
+             case 0 : attachInterrupt(0, interrupt0, mode);
+                                                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/variants/NANO_RP2040_CONNECT/pinmode_arduino.h:30:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:26,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:7,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:112:6: note: candidate: void attachInterrupt(pin_size_t, voidFuncPtr, PinStatus) &lt;near match&gt;
+ void attachInterrupt(pin_size_t interruptNumber, voidFuncPtr callback, PinStatus mode);
+      ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:112:6: note:   conversion of argument 3 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:803:57: error: invalid conversion from &#39;uint8_t {aka unsigned char}&#39; to &#39;PinStatus&#39; [-fpermissive]
+             case 0 : attachInterrupt(0, interrupt0, mode);
+                                                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:115:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:7,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/overloads.h:35:6: note: candidate: void attachInterrupt(PinName, voidFuncPtr, PinStatus) &lt;near match&gt;
+ void attachInterrupt(PinName interruptNumber, voidFuncPtr callback, PinStatus mode);
+      ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/overloads.h:35:6: note:   conversion of argument 3 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:803:57: error: invalid conversion from &#39;uint8_t {aka unsigned char}&#39; to &#39;PinStatus&#39; [-fpermissive]
+             case 0 : attachInterrupt(0, interrupt0, mode);
+                                                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/ArduinoAPI.h:29:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:27,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:7,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Interrupts.h:38:27: note: candidate: template&lt;class T&gt; void arduino::attachInterrupt(pin_size_t, arduino::voidTemplateFuncPtrParam&lt;T*&gt;, PinStatus, T*)
+ template&lt;typename T&gt; void attachInterrupt(pin_size_t interruptNum, voidTemplateFuncPtrParam&lt;T*&gt; userFunc, PinStatus mode, T* param) {
+                           ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Interrupts.h:38:27: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:803:57: note:   candidate expects 1 argument, 0 provided
+             case 0 : attachInterrupt(0, interrupt0, mode);
+                                                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp: In function &#39;void brief::attachISR()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:803:57: error: no matching function for call to &#39;attachInterrupt(int, void (&amp;)(), uint8_t&amp;)&#39;
+             case 0 : attachInterrupt(0, interrupt0, mode);
+                                                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Interrupts.h:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:29,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:7,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:111:6: note: candidate: void attachInterrupt(pin_size_t, voidFuncPtr, PinStatus) &lt;near match&gt;
+ void attachInterrupt(pin_size_t interruptNumber, voidFuncPtr callback, PinStatus mode);
+      ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:111:6: note:   conversion of argument 3 would be ill-formed:
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:29:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:7,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Interrupts.h:38:27: note: candidate: template&lt;class T&gt; void arduino::attachInterrupt(pin_size_t, arduino::voidTemplateFuncPtrParam&lt;T*&gt;, PinStatus, T*)
+ template&lt;typename T&gt; void attachInterrupt(pin_size_t interruptNum, voidTemplateFuncPtrParam&lt;T*&gt; userFunc, PinStatus mode, T* param) {
+                           ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Interrupts.h:38:27: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:803:57: note:   candidate expects 1 argument, 0 provided
+             case 0 : attachInterrupt(0, interrupt0, mode);
+                                                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:29:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:7,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Interrupts.h:21:27: note: candidate: template&lt;class T&gt; void arduino::attachInterrupt(pin_size_t, arduino::voidTemplateFuncPtrParam&lt;T&gt;, PinStatus, T&amp;)
+ template&lt;typename T&gt; void attachInterrupt(pin_size_t interruptNum, voidTemplateFuncPtrParam&lt;T&gt; userFunc, PinStatus mode, T&amp; param) {
+                           ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Interrupts.h:21:27: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:803:57: note:   candidate expects 1 argument, 0 provided
+             case 0 : attachInterrupt(0, interrupt0, mode);
+                                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:804:57: error: no matching function for call to &#39;attachInterrupt(int, void (&amp;)(), uint8_t&amp;)&#39;
+             case 1 : attachInterrupt(1, interrupt1, mode);
+                                                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Interrupts.h:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:29,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:7,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:111:6: note: candidate: void attachInterrupt(pin_size_t, voidFuncPtr, PinStatus) &lt;near match&gt;
+ void attachInterrupt(pin_size_t interruptNumber, voidFuncPtr callback, PinStatus mode);
+      ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:111:6: note:   conversion of argument 3 would be ill-formed:
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:29:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:7,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Interrupts.h:38:27: note: candidate: template&lt;class T&gt; void arduino::attachInterrupt(pin_size_t, arduino::voidTemplateFuncPtrParam&lt;T*&gt;, PinStatus, T*)
+ template&lt;typename T&gt; void attachInterrupt(pin_size_t interruptNum, voidTemplateFuncPtrParam&lt;T*&gt; userFunc, PinStatus mode, T* param) {
+                           ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Interrupts.h:38:27: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:804:57: note:   candidate expects 1 argument, 0 provided
+             case 1 : attachInterrupt(1, interrupt1, mode);
+                                                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:29:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:7,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Interrupts.h:21:27: note: candidate: template&lt;class T&gt; void arduino::attachInterrupt(pin_size_t, arduino::voidTemplateFuncPtrParam&lt;T&gt;, PinStatus, T&amp;)
+ template&lt;typename T&gt; void attachInterrupt(pin_size_t interruptNum, voidTemplateFuncPtrParam&lt;T&gt; userFunc, PinStatus mode, T&amp; param) {
+                           ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Interrupts.h:21:27: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:804:57: note:   candidate expects 1 argument, 0 provided
+             case 1 : attachInterrupt(1, interrupt1, mode);
+                                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:805:57: error: no matching function for call to &#39;attachInterrupt(int, void (&amp;)(), uint8_t&amp;)&#39;
+             case 2 : attachInterrupt(2, interrupt2, mode);
+                                                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Interrupts.h:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:29,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:7,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:111:6: note: candidate: void attachInterrupt(pin_size_t, voidFuncPtr, PinStatus) &lt;near match&gt;
+ void attachInterrupt(pin_size_t interruptNumber, voidFuncPtr callback, PinStatus mode);
+      ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:111:6: note:   conversion of argument 3 would be ill-formed:
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:29:0,
+                 from /home/ec2</pre>
+
+					
+					<h4>examples/Brief</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp: In function &#39;void brief::attachISR()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:803:57: error: no matching function for call to &#39;attachInterrupt(int, void (&amp;)(), uint8_t&amp;)&#39;
+             case 0 : attachInterrupt(0, interrupt0, mode);
+                                                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Interrupts.h:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:29,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:7,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:111:6: note: candidate: void attachInterrupt(pin_size_t, voidFuncPtr, PinStatus) &lt;near match&gt;
+ void attachInterrupt(pin_size_t interruptNumber, voidFuncPtr callback, PinStatus mode);
+      ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:111:6: note:   conversion of argument 3 would be ill-formed:
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:29:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:7,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Interrupts.h:38:27: note: candidate: template&lt;class T&gt; void arduino::attachInterrupt(pin_size_t, arduino::voidTemplateFuncPtrParam&lt;T*&gt;, PinStatus, T*)
+ template&lt;typename T&gt; void attachInterrupt(pin_size_t interruptNum, voidTemplateFuncPtrParam&lt;T*&gt; userFunc, PinStatus mode, T* param) {
+                           ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Interrupts.h:38:27: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:803:57: note:   candidate expects 1 argument, 0 provided
+             case 0 : attachInterrupt(0, interrupt0, mode);
+                                                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:29:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:7,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Interrupts.h:21:27: note: candidate: template&lt;class T&gt; void arduino::attachInterrupt(pin_size_t, arduino::voidTemplateFuncPtrParam&lt;T&gt;, PinStatus, T&amp;)
+ template&lt;typename T&gt; void attachInterrupt(pin_size_t interruptNum, voidTemplateFuncPtrParam&lt;T&gt; userFunc, PinStatus mode, T&amp; param) {
+                           ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Interrupts.h:21:27: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:803:57: note:   candidate expects 1 argument, 0 provided
+             case 0 : attachInterrupt(0, interrupt0, mode);
+                                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:804:57: error: no matching function for call to &#39;attachInterrupt(int, void (&amp;)(), uint8_t&amp;)&#39;
+             case 1 : attachInterrupt(1, interrupt1, mode);
+                                                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Interrupts.h:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:29,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:7,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:111:6: note: candidate: void attachInterrupt(pin_size_t, voidFuncPtr, PinStatus) &lt;near match&gt;
+ void attachInterrupt(pin_size_t interruptNumber, voidFuncPtr callback, PinStatus mode);
+      ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:111:6: note:   conversion of argument 3 would be ill-formed:
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:29:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:7,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Interrupts.h:38:27: note: candidate: template&lt;class T&gt; void arduino::attachInterrupt(pin_size_t, arduino::voidTemplateFuncPtrParam&lt;T*&gt;, PinStatus, T*)
+ template&lt;typename T&gt; void attachInterrupt(pin_size_t interruptNum, voidTemplateFuncPtrParam&lt;T*&gt; userFunc, PinStatus mode, T* param) {
+                           ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Interrupts.h:38:27: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:804:57: note:   candidate expects 1 argument, 0 provided
+             case 1 : attachInterrupt(1, interrupt1, mode);
+                                                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:29:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:7,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Interrupts.h:21:27: note: candidate: template&lt;class T&gt; void arduino::attachInterrupt(pin_size_t, arduino::voidTemplateFuncPtrParam&lt;T&gt;, PinStatus, T&amp;)
+ template&lt;typename T&gt; void attachInterrupt(pin_size_t interruptNum, voidTemplateFuncPtrParam&lt;T&gt; userFunc, PinStatus mode, T&amp; param) {
+                           ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Interrupts.h:21:27: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:804:57: note:   candidate expects 1 argument, 0 provided
+             case 1 : attachInterrupt(1, interrupt1, mode);
+                                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:805:57: error: no matching function for call to &#39;attachInterrupt(int, void (&amp;)(), uint8_t&amp;)&#39;
+             case 2 : attachInterrupt(2, interrupt2, mode);
+                                                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Interrupts.h:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:29,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:7,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:111:6: note: candidate: void attachInterrupt(pin_size_t, voidFuncPtr, PinStatus) &lt;near match&gt;
+ void attachInterrupt(pin_size_t interruptNumber, voidFuncPtr callback, PinStatus mode);
+      ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:111:6: note:   conversion of argument 3 would be ill-formed:
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:29:0,
+                 from /home/ec2</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp: In function &#39;void brief::pinMode()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:647:29: error: invalid conversion from &#39;int16_t {aka short int}&#39; to &#39;PinMode&#39; [-fpermissive]
+         ::pinMode(pop(), pop());
+                          ~~~^~
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Interrupts.h:8:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/ArduinoAPI.h:29,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:23,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:7,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:94:6: note:   initializing argument 2 of &#39;void pinMode(pin_size_t, PinMode)&#39;
+ void pinMode(pin_size_t pinNumber, PinMode pinMode);
+      ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp: In function &#39;void brief::wireSetOnReceive()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:727:37: error: invalid conversion from &#39;void (*)(int16_t) {aka void (*)(short int)}&#39; to &#39;void (*)(int)&#39; [-fpermissive]
+         Wire.onReceive(wireOnReceive);
+                                     ^
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:8:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/libraries/Wire/Wire.h:58:10: note:   initializing argument 1 of &#39;virtual void arduino::TwoWire::onReceive(void (*)(int))&#39;
+     void onReceive(void(*)(int));
+          ^~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp: In function &#39;void brief::attachISR()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:803:57: error: no matching function for call to &#39;attachInterrupt(int, void (&amp;)(), uint8_t&amp;)&#39;
+             case 0 : attachInterrupt(0, interrupt0, mode);
+                                                         ^
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Interrupts.h:8:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/ArduinoAPI.h:29,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:23,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:7,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:111:6: note: candidate: void attachInterrupt(pin_size_t, voidFuncPtr, PinStatus) &lt;near match&gt;
+ void attachInterrupt(pin_size_t interruptNumber, voidFuncPtr callback, PinStatus mode);
+      ^~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:111:6: note:   conversion of argument 3 would be ill-formed:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:803:57: error: invalid conversion from &#39;uint8_t {aka unsigned char}&#39; to &#39;PinStatus&#39; [-fpermissive]
+             case 0 : attachInterrupt(0, interrupt0, mode);
+                                                         ^
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/ArduinoAPI.h:29:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:23,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:7,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Interrupts.h:38:27: note: candidate: template&lt;class T&gt; void arduino::attachInterrupt(pin_size_t, arduino::voidTemplateFuncPtrParam&lt;T*&gt;, PinStatus, T*)
+ template&lt;typename T&gt; void attachInterrupt(pin_size_t interruptNum, voidTemplateFuncPtrParam&lt;T*&gt; userFunc, PinStatus mode, T* param) {
+                           ^~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Interrupts.h:38:27: note:   template argument deduction/substitution failed:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:803:57: note:   candidate expects 1 argument, 0 provided
+             case 0 : attachInterrupt(0, interrupt0, mode);
+                                                         ^
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/ArduinoAPI.h:29:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:23,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:7,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Interrupts.h:21:27: note: candidate: template&lt;class T&gt; void arduino::attachInterrupt(pin_size_t, arduino::voidTemplateFuncPtrParam&lt;T&gt;, PinStatus, T&amp;)
+ template&lt;typename T&gt; void attachInterrupt(pin_size_t interruptNum, voidTemplateFuncPtrParam&lt;T&gt; userFunc, PinStatus mode, T&amp; param) {
+                           ^~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Interrupts.h:21:27: note:   template argument deduction/substitution failed:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:803:57: note:   candidate expects 1 argument, 0 provided
+             case 0 : attachInterrupt(0, interrupt0, mode);
+                                                         ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:804:57: error: no matching function for call to &#39;attachInterrupt(int, void (&amp;)(), uint8_t&amp;)&#39;
+             case 1 : attachInterrupt(1, interrupt1, mode);
+                                                         ^
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Interrupts.h:8:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/ArduinoAPI.h:29,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:23,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:7,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:111:6: note: candidate: void attachInterrupt(pin_size_t, voidFuncPtr, PinStatus) &lt;near match&gt;
+ void attachInterrupt(pin_size_t interruptNumber, voidFuncPtr callback, PinStatus mode);
+      ^~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:111:6: note:   conversion of argument 3 would be ill-formed:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:804:57: error: invalid conversion from &#39;uint8_t {aka unsigned char}&#39; to &#39;PinStatus&#39; [-fpermissive]
+             case 1 : attachInterrupt(1, interrupt1, mode);
+                                                         ^
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/ArduinoAPI.h:29:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:23,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:7,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/da</pre>
+
+					
+					<h4>examples/Brief</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp: In function &#39;void brief::pinMode()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:647:29: error: invalid conversion from &#39;int16_t {aka short int}&#39; to &#39;PinMode&#39; [-fpermissive]
+         ::pinMode(pop(), pop());
+                          ~~~^~
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Interrupts.h:8:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/ArduinoAPI.h:29,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:23,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:7,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:94:6: note:   initializing argument 2 of &#39;void pinMode(pin_size_t, PinMode)&#39;
+ void pinMode(pin_size_t pinNumber, PinMode pinMode);
+      ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp: In function &#39;void brief::wireSetOnReceive()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:727:37: error: invalid conversion from &#39;void (*)(int16_t) {aka void (*)(short int)}&#39; to &#39;void (*)(int)&#39; [-fpermissive]
+         Wire.onReceive(wireOnReceive);
+                                     ^
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:8:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/libraries/Wire/Wire.h:58:10: note:   initializing argument 1 of &#39;virtual void arduino::TwoWire::onReceive(void (*)(int))&#39;
+     void onReceive(void(*)(int));
+          ^~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp: In function &#39;void brief::attachISR()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:803:57: error: no matching function for call to &#39;attachInterrupt(int, void (&amp;)(), uint8_t&amp;)&#39;
+             case 0 : attachInterrupt(0, interrupt0, mode);
+                                                         ^
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Interrupts.h:8:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/ArduinoAPI.h:29,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:23,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:7,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:111:6: note: candidate: void attachInterrupt(pin_size_t, voidFuncPtr, PinStatus) &lt;near match&gt;
+ void attachInterrupt(pin_size_t interruptNumber, voidFuncPtr callback, PinStatus mode);
+      ^~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:111:6: note:   conversion of argument 3 would be ill-formed:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:803:57: error: invalid conversion from &#39;uint8_t {aka unsigned char}&#39; to &#39;PinStatus&#39; [-fpermissive]
+             case 0 : attachInterrupt(0, interrupt0, mode);
+                                                         ^
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/ArduinoAPI.h:29:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:23,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:7,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Interrupts.h:38:27: note: candidate: template&lt;class T&gt; void arduino::attachInterrupt(pin_size_t, arduino::voidTemplateFuncPtrParam&lt;T*&gt;, PinStatus, T*)
+ template&lt;typename T&gt; void attachInterrupt(pin_size_t interruptNum, voidTemplateFuncPtrParam&lt;T*&gt; userFunc, PinStatus mode, T* param) {
+                           ^~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Interrupts.h:38:27: note:   template argument deduction/substitution failed:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:803:57: note:   candidate expects 1 argument, 0 provided
+             case 0 : attachInterrupt(0, interrupt0, mode);
+                                                         ^
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/ArduinoAPI.h:29:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:23,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:7,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Interrupts.h:21:27: note: candidate: template&lt;class T&gt; void arduino::attachInterrupt(pin_size_t, arduino::voidTemplateFuncPtrParam&lt;T&gt;, PinStatus, T&amp;)
+ template&lt;typename T&gt; void attachInterrupt(pin_size_t interruptNum, voidTemplateFuncPtrParam&lt;T&gt; userFunc, PinStatus mode, T&amp; param) {
+                           ^~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Interrupts.h:21:27: note:   template argument deduction/substitution failed:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:803:57: note:   candidate expects 1 argument, 0 provided
+             case 0 : attachInterrupt(0, interrupt0, mode);
+                                                         ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:804:57: error: no matching function for call to &#39;attachInterrupt(int, void (&amp;)(), uint8_t&amp;)&#39;
+             case 1 : attachInterrupt(1, interrupt1, mode);
+                                                         ^
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Interrupts.h:8:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/ArduinoAPI.h:29,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:23,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:7,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:111:6: note: candidate: void attachInterrupt(pin_size_t, voidFuncPtr, PinStatus) &lt;near match&gt;
+ void attachInterrupt(pin_size_t interruptNumber, voidFuncPtr callback, PinStatus mode);
+      ^~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:111:6: note:   conversion of argument 3 would be ill-formed:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:804:57: error: invalid conversion from &#39;uint8_t {aka unsigned char}&#39; to &#39;PinStatus&#39; [-fpermissive]
+             case 1 : attachInterrupt(1, interrupt1, mode);
+                                                         ^
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/ArduinoAPI.h:29:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:23,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:7,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/da</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp: In function &#39;void brief::analogWrite()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:667:9: error: &#39;::analogWrite&#39; has not been declared
+         ::analogWrite(pop(), pop());
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:667:9: note: suggested alternative:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:665:10: note:   &#39;brief::analogWrite&#39;
+     void analogWrite()
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp: In function &#39;void brief::wireSetOnReceive()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:727:37: error: invalid conversion from &#39;void (*)(int16_t) {aka void (*)(short int)}&#39; to &#39;void (*)(int)&#39; [-fpermissive]
+         Wire.onReceive(wireOnReceive);
+                                     ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/Wire/src/Wire.h:133:10: note:   initializing argument 1 of &#39;void TwoWire::onReceive(void (*)(int))&#39;
+     void onReceive( void (*)(int) );
+          ^
+
+</pre>
+
+					
+					<h4>examples/Brief</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp: In function &#39;void brief::analogWrite()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:667:9: error: &#39;::analogWrite&#39; has not been declared
+         ::analogWrite(pop(), pop());
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:667:9: note: suggested alternative:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:665:10: note:   &#39;brief::analogWrite&#39;
+     void analogWrite()
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp: In function &#39;void brief::wireSetOnReceive()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:727:37: error: invalid conversion from &#39;void (*)(int16_t) {aka void (*)(short int)}&#39; to &#39;void (*)(int)&#39; [-fpermissive]
+         Wire.onReceive(wireOnReceive);
+                                     ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.h:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Brief/src/Brief.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/Wire/src/Wire.h:133:10: note:   initializing argument 1 of &#39;void TwoWire::onReceive(void (*)(int))&#39;
+     void onReceive( void (*)(int) );
+          ^
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

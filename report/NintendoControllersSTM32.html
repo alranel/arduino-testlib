@@ -1,0 +1,1976 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>NintendoControllersSTM32 - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>NintendoControllersSTM32</h2>
+				<p>
+					Version: <b>0.0.2</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/nintendocontrollersstm32/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>ControllerTest</pre></th>
+						
+						<th><pre>GameportToUSB</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library NintendoControllersSTM32 claims to run on STM32F1, STM32 architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:5:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/nunchuck.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/debouncer.h: In constructor &#39;Debouncer::Debouncer(int, uint8_t, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/debouncer.h:55:16: error: &#39;PIN_MAP&#39; was not declared in this scope
+       port = &amp;(PIN_MAP[p].gpio_device-&gt;regs-&gt;IDR);
+                ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/debouncer.h:55:16: note: suggested alternative: &#39;PIN_A3&#39;
+       port = &amp;(PIN_MAP[p].gpio_device-&gt;regs-&gt;IDR);
+                ^~~~~~~
+                PIN_A3
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/nunchuck.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:23:5: error: &#39;gpio_dev&#39; does not name a type
+     gpio_dev* device;
+     ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h: In member function &#39;void GameController::setPortData(PortData*, unsigned int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:53:20: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+                 p-&gt;device = NULL;
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:56:20: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+                 p-&gt;device = digitalPinToPort(pin);
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:58:32: error: &#39;PIN_MAP&#39; was not declared in this scope
+                 p-&gt;pinNumber = PIN_MAP[pin].gpio_bit;
+                                ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:58:32: note: suggested alternative: &#39;PIN_A3&#39;
+                 p-&gt;pinNumber = PIN_MAP[pin].gpio_bit;
+                                ^~~~~~~
+                                PIN_A3
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:79:9: error: &#39;TwoWire&#39; does not name a type; did you mean &#39;SoftWire&#39;?
+         TwoWire* wire;
+         ^~~~~~~
+         SoftWire
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/nunchuck.cpp: In member function &#39;bool NunchuckController::begin()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/nunchuck.cpp:13:9: error: &#39;wire&#39; was not declared in this scope
+     if (wire == NULL) {
+         ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/us/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gameport.cpp:48:23: note: suggested alternative: &#39;INPUT_PULLUP&#39;
+         pinMode(xPin, INPUT_ANALOG);
+                       ^~~~~~~~~~~~
+                       INPUT_PULLUP
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamep/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:15:3: error: &#39;gpio_set_mode&#39; was not declar/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gameport.cpp:50:23: note: suggested/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp: In member function &#39;void GameCubeController::sendBits(uint32_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:28:25: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+     gpio_write_bit(port.device, port.pinNumber,/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gameport.cpp:52:28: note: suggested alternative: &#39;INPUT_PULLUP&#39;
+         pinMode(sliderPin, INPUT_ANALOG);
+                            ^~~~~~~~~~~~
+                            INPUT_P/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:28:5: note: suggested alternative: &#39;eeprom_write_byte&#39;
+     gpio_write_bit(port.device, port.pinNumber, 0);
+     ^~~~~~~~~~~~~~
+     eeprom_wri/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gameport.cpp:54:24: note: suggested alternative: &#39;INPUT_PULLUP&#39;
+         pinMode(rzPin, INPUT_ANALOG);
+                        ^~~~~~~~~~~~
+                        INPUT_PULLUP
+ser/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp: In member function &#39;bool GameCubeController::receiveBits(void*, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:55:31: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+       if (!gpio_read_bit(port.device, port.pinNumber)) {
+                               ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:55:12: error: &#39;gpio_read_bit&#39; was not declared in this scope
+       if (!gpio_read_bit(port.device, port.pinNumber)) {
+            ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:55:12: note: suggested alternative: &#39;pgm_read_byte&#39;
+       if (!gpio_read_bit(port.device, port.pinNumber)) {
+            ^~~~~~~~~~~~~
+            pgm_read_byte
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:59:32: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+         if (gpio_read_bit(port.device, port.pinNumber)) {
+                                ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:71:34: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+       while (!gpio_read_bit(port.device, port.pinNumber) &amp;&amp; --timeout) ;
+                                  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp: In member function &#39;bool GameCubeController::readWithRumble(GameControllerData_t*, bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:83:5: error: &#39;nvic_globalirq_disable&#39; was not declared in this scope
+     nvic_globalirq_disable();
+     ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:85:5: error: &#39;nvic_globalirq_enable&#39; was not declared in this scope
+     nvic_globalirq_enable();
+     ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:89:3: error: &#39;nvic_globalirq_disable&#39; was not declared in this scope
+   nvic_globalirq_disable();
+   ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:92:3: error: &#39;nvic_globalirq_enable&#39; was not declared in this scope
+   nvic_globalirq_enable();
+   ^~~~~~~~~~~~~~~~~~~~~
+Multiple libraries were found for &#34;SoftWire.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoftWire
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoftI2CMaster
+</pre>
+
+					
+					<h4>examples/ControllerTest</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library NintendoControllersSTM32 claims to run on STM32F1, STM32 architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:5:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/debouncer.h: In constructor &#39;Debouncer::Debouncer(int, uint8_t, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/debouncer.h:55:16: error: &#39;PIN_MAP&#39; was not declared in this scope
+       port = &amp;(PIN_MAP[p].gpio_device-&gt;regs-&gt;IDR);
+                ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/debouncer.h:55:16: note: suggested alternative: &#39;PIN_A3&#39;
+       port = &amp;(PIN_MAP[p].gpio_device-&gt;regs-&gt;IDR);
+                ^~~~~~~
+                PIN_A3
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:23:5: error: &#39;gpio_dev&#39; does not name a type
+     gpio_dev* device;
+     ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h: In member function &#39;void GameController::setPortData(PortData*, unsigned int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:53:20: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+                 p-&gt;device = NULL;
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:56:20: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+                 p-&gt;device = digitalPinToPort(pin);
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:58:32: error: &#39;PIN_MAP&#39; was not declared in this scope
+                 p-&gt;pinNumber = PIN_MAP[pin].gpio_bit;
+                                ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:58:32: note: suggested alternative: &#39;PIN_A3&#39;
+                 p-&gt;pinNumber = PIN_MAP[pin].gpio_bit;
+                                ^~~~~~~
+                                PIN_A3
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:79:9: error: &#39;TwoWire&#39; does not name a type; did you mean &#39;SoftWire&#39;?
+         TwoWire* wire;
+         ^~~~~~~
+         SoftWire
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:31: error: &#39;PA0&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                               ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:31: note: suggested alternative: &#39;A0&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                               ^~~
+                               A0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:35: error: &#39;PA1&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:35: note: suggested alternative: &#39;A1&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                   ^~~
+                                   A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:39: error: &#39;PA2&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                       ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:39: note: suggested alternative: &#39;A2&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                       ^~~
+                                       A2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:43: error: &#39;PA3&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:43: note: suggested alternative: &#39;A3&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                           ^~~
+                                           A3
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:47: error: &#39;PA4&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                               ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:47: note: suggested alternative: &#39;A4&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                               ^~~
+                                               A4
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:51: error: &#39;PA5&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:51: note: suggested alternative: &#39;A5&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                   ^~~
+                                                   A5
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:55: error: &#39;PA6&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                       ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:55: note: suggested alternative: &#39;A6&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                       ^~~
+                                                       A6
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:59: error: &#39;PA7&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:59: note: suggested alternative: &#39;A7&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                           ^~~
+                                                           A7
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:6:16: error: no matching function for call to &#39;HardwareSerial::begin()&#39;
+   Serial.begin();
+                ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:233:0,
+                 from /tmp/arduino-sketch-DA79380208D18C0CE018C1C17D4B1C3C/sketch/ControllerTest.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/HardwareSerial.h:121:10: note: candidate: void HardwareSerial::begin(long unsigned int)
+     void begin(unsigned long baud) { begin(baud, SERIAL_8N1); }
+          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/HardwareSerial.h:121:10: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/HardwareSerial.h:122:10: note: candidate: void HardwareSerial::begin(long unsigned int, uint8_t)
+     void begin(unsigned long, uint8_t);
+          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/HardwareSerial.h:122:10: note:   candidate expects 2 arguments, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:12:36: error: &#39;PA3&#39; was not declared in this scope
+   Serial.println(String(analogRead(PA3)));
+                                    ^~~
+/home/ec2-user/arduino-tes</pre>
+					
+					<h4>examples/GameportToUSB</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library NintendoControllersSTM32 claims to run on STM32F1, STM32 architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:5:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/debouncer.h: In constructor &#39;Debouncer::Debouncer(int, uint8_t, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/debouncer.h:55:16: error: &#39;PIN_MAP&#39; was not declared in this scope
+       port = &amp;(PIN_MAP[p].gpio_device-&gt;regs-&gt;IDR);
+                ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/debouncer.h:55:16: note: suggested alternative: &#39;PIN_A3&#39;
+       port = &amp;(PIN_MAP[p].gpio_device-&gt;regs-&gt;IDR);
+                ^~~~~~~
+                PIN_A3
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:23:5: error: &#39;gpio_dev&#39; does not name a type
+     gpio_dev* device;
+     ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h: In member function &#39;void GameController::setPortData(PortData*, unsigned int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:53:20: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+                 p-&gt;device = NULL;
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:56:20: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+                 p-&gt;device = digitalPinToPort(pin);
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:58:32: error: &#39;PIN_MAP&#39; was not declared in this scope
+                 p-&gt;pinNumber = PIN_MAP[pin].gpio_bit;
+                                ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:58:32: note: suggested alternative: &#39;PIN_A3&#39;
+                 p-&gt;pinNumber = PIN_MAP[pin].gpio_bit;
+                                ^~~~~~~
+                                PIN_A3
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:79:9: error: &#39;TwoWire&#39; does not name a type; did you mean &#39;SoftWire&#39;?
+         TwoWire* wire;
+         ^~~~~~~
+         SoftWire
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:31: error: &#39;PA0&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                               ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:31: note: suggested alternative: &#39;A0&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                               ^~~
+                               A0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:35: error: &#39;PA1&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:35: note: suggested alternative: &#39;A1&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                   ^~~
+                                   A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:39: error: &#39;PA2&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                       ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:39: note: suggested alternative: &#39;A2&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                       ^~~
+                                       A2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:43: error: &#39;PA3&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:43: note: suggested alternative: &#39;A3&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                           ^~~
+                                           A3
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:47: error: &#39;PA4&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                               ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:47: note: suggested alternative: &#39;A4&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                               ^~~
+                                               A4
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:51: error: &#39;PA5&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:51: note: suggested alternative: &#39;A5&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                   ^~~
+                                                   A5
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:55: error: &#39;PA6&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                       ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:55: note: suggested alternative: &#39;A6&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                       ^~~
+                                                       A6
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:59: error: &#39;PA7&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:59: note: suggested alternative: &#39;A7&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                           ^~~
+                                                           A7
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:3:21: error: &#39;PB12&#39; was not declared in this scope
+ #define LED_BUILTIN PB12 // change to match your board
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:28:13: note: in expansion of macro &#39;LED_BUILTIN&#39;
+     pinMode(LED_BUILTIN, OUTPUT);
+             ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:3:21: note: suggested alternative: &#39;PB2&#39;
+ #define LED_BUILTIN PB12 // change to match your board
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:28:13: note: in expansion of macro &#39;LED_BUILTIN&#39;
+     pinMode(LED_BUILTIN, OUTPUT);
+             ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:32:25: error: &#39;ADC1&#39; was not declared in this scope
+     adc_set_sample_rate(ADC1, ADC_SMPR_13_5); // ADC_SMPR_13_5, ADC_SMPR_1_5
+                         ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:32:25: note: suggested alternative: &#39;ADCH&#39;
+     adc_set_sample_rate(ADC1, ADC_SMPR_13_5); // ADC_SMPR_13_5, ADC_SMPR_1_5
+                         ^~~~
+                         ADCH
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:32:31: error: &#39;ADC_SMPR_13_5&#39; was not declared in this scope
+     adc_set_sample_rate(ADC1, ADC_SMPR_13_5); // ADC_SMPR_13_5, ADC_</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library NintendoControllersSTM32 claims to run on STM32F1, STM32 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:5:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gameport.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/debouncer.h: In constructor &#39;Debouncer::Debouncer(int, uint8_t, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/debouncer.h:55:16: error: &#39;PIN_MAP&#39; was not declared in this scope
+       port = &amp;(PIN_MAP[p].gpio_device-&gt;regs-&gt;IDR);
+                ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/debouncer.h:55:16: note: suggested alternative: &#39;PIN_A1&#39;
+       port = &amp;(PIN_MAP[p].gpio_device-&gt;regs-&gt;IDR);
+                ^~~~~~~
+                PIN_A1
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/nunchuck.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:23:5: error: &#39;gpio_dev&#39; does not name a type; did you mean &#39;gpio_get&#39;?
+     gpio_dev* device;
+     ^~~~~~~~
+     gpio_get
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h: In member function &#39;void GameController::setPortData(PortData*, unsigned int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:53:20: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+                 p-&gt;device = NULL;
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:56:20: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+                 p-&gt;device = digitalPinToPort(pin);
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:57:27: error: &#39;digitalPinToBitMask&#39; was not declared in this scope
+                 p-&gt;mask = digitalPinToBitMask(pin);
+                           ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:57:27: note: suggested alternative: &#39;digitalPinToPinName&#39;
+                 p-&gt;mask = digitalPinToBitMask(pin);
+                           ^~~~~~~~~~~~~~~~~~~
+                           digitalPinToPinName
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:58:32: error: &#39;PIN_MAP&#39; was not declared in this scope
+                 p-&gt;pinNumber = PIN_MAP[pin].gpio_bit;
+                                ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:58:32: note: suggested alternative: &#39;PIN_A1&#39;
+                 p-&gt;pinNumber = PIN_MAP[pin].gpio_bit;
+                                ^~~~~~~
+                                PIN_A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:79:9: error: &#39;TwoWire&#39; does not name a type; did you mean &#39;SoftWire&#39;?
+         TwoWire* wire;
+         ^~~~~~~
+         SoftWire
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:88:41: error: &#39;PB6&#39; was not declared in this scope
+         NunchuckController(unsigned scl=PB6, unsigned sda=PB7);
+                                         ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:88:59: error: &#39;PB7&#39; was not declared in this scope
+         NunchuckController(unsigned scl=PB6, unsigned sda=PB7);
+                                                           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/nunchuck.cpp: In member function &#39;bool NunchuckController::begin()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/nunchuck.cpp:13:9: error: &#39;wire&#39; was not declared in this scope
+     if (wire == NULL) {
+         ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/nunchuck.cpp:13:9: note: suggested alternative: &#39;write&#39;
+     if (wire == NULL) {
+         ^~~~
+         write
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/nunchuck.cpp:15:20: error: expected type-specifier before &#39;TwoWire&#39;
+         wire = new TwoWire(scl, sda, SOFT_STANDARD);
+                    ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/nunchuck.cpp: In member function &#39;uint8_t NunchuckController::sendBytes(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/nunchuck.cpp:41:5: error: &#39;wire&#39; was not declared in this scope
+     wire-&gt;beginTransmission(i2cAddress);
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/nunchuck.cpp:41:5: note: suggested alternative: &#39;write&#39;
+     wire-&gt;beginTransmission(i2cAddress);
+     ^~~~
+     write
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/nunchuck.cpp: In member function &#39;bool NunchuckController::read(GameControllerData_t*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/nunchuck.cpp:58:5: error: &#39;wire&#39; was not declared in this scope
+     wire-&gt;beginTransmission(i2cAddress);
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/nunchuck.cpp:58:5: note: suggested alternative: &#39;write&#39;
+     wire-&gt;beginTransmission(i2cAddress);
+     ^~~~
+     write
+ser/libraries/NintendoControllersSTM32/src/gameport.cpp:54:24: note: suggested alternative: &#39;INPUT_PULLUP&#39;
+         pinMode(rzPin, INPUT_ANALOG);
+                        ^~~~~~~~~~~~
+                        INPUT_PULLUP
+PUT_OD); // set open drain output
+   ^~~~~~~~~~~~~
+   gpio_set_mask
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp: In member function &#39;void GameCubeController::sendBits(uint32_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:28:25: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+     gpio_write_bit(port.device, port.pinNumber, 0);
+                         ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:28:5: error: &#39;gpio_write_bit&#39; was not declared in this scope
+     gpio_write_bit(port.device, port.pinNumber, 0);
+     ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:28:5: note: suggested alternative: &#39;gpio_get_dir&#39;
+     gpio_write_bit(port.device, port.pinNumber, 0);
+     ^~~~~~~~~~~~~~
+     gpio_get_dir
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:34:25: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+     gpio_write_bit(port.device, port.pinNumber, 1);
+                         ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp: In member function &#39;bool GameCubeController::receiveBits(void*, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:55:31: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+       if (!gpio_read_bit(port.device, port.pinNumber)) {
+                               ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:55:12: error: &#39;gpio_read_bit&#39; was not declared in this scope
+       if (!gpio_read_bit(port.device, port.pinNumber)) {
+            ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:55:12: note: suggested alternative: &#39;gpio_get_dir&#39;
+       if (!gpio_read_bit(port.device, port.pinNumber)) {
+            ^~~~~~~~~~~~~
+            gpio_get_dir
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:59:32: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+         if (gpio_read_bit(port.device, port.pinNumber)) {
+                                ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:71:34: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+       while (!gpio_read_bit(port.device, port.pinNumber) &amp;&amp; --timeout) ;
+                                  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp: In member function &#39;bool GameCubeController::readWithRumble(GameControllerData_t*, bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:83:5: error: &#39;nvic_globalirq_disable&#39; was not declared in this scope
+     nvic_globalirq_disable();
+     ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:85:5: error: &#39;nvic_globalirq_enable&#39; was not declared in this scope
+     nvic_globalirq_enable();
+     ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:85:5: note: suggested alternative: &#39;gpio_set_irq_enabled&#39;
+     nvic_globalirq_enable();
+     ^~~~~~~~~~~~~~~~~~~~~
+     gpio_set_irq_enabled
+/home/ec2</pre>
+
+					
+					<h4>examples/ControllerTest</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library NintendoControllersSTM32 claims to run on STM32F1, STM32 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:5:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/debouncer.h: In constructor &#39;Debouncer::Debouncer(int, uint8_t, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/debouncer.h:55:16: error: &#39;PIN_MAP&#39; was not declared in this scope
+       port = &amp;(PIN_MAP[p].gpio_device-&gt;regs-&gt;IDR);
+                ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/debouncer.h:55:16: note: suggested alternative: &#39;PIN_A1&#39;
+       port = &amp;(PIN_MAP[p].gpio_device-&gt;regs-&gt;IDR);
+                ^~~~~~~
+                PIN_A1
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:23:5: error: &#39;gpio_dev&#39; does not name a type; did you mean &#39;gpio_get&#39;?
+     gpio_dev* device;
+     ^~~~~~~~
+     gpio_get
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h: In member function &#39;void GameController::setPortData(PortData*, unsigned int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:53:20: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+                 p-&gt;device = NULL;
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:56:20: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+                 p-&gt;device = digitalPinToPort(pin);
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:57:27: error: &#39;digitalPinToBitMask&#39; was not declared in this scope
+                 p-&gt;mask = digitalPinToBitMask(pin);
+                           ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:57:27: note: suggested alternative: &#39;digitalPinToPinName&#39;
+                 p-&gt;mask = digitalPinToBitMask(pin);
+                           ^~~~~~~~~~~~~~~~~~~
+                           digitalPinToPinName
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:58:32: error: &#39;PIN_MAP&#39; was not declared in this scope
+                 p-&gt;pinNumber = PIN_MAP[pin].gpio_bit;
+                                ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:58:32: note: suggested alternative: &#39;PIN_A1&#39;
+                 p-&gt;pinNumber = PIN_MAP[pin].gpio_bit;
+                                ^~~~~~~
+                                PIN_A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:79:9: error: &#39;TwoWire&#39; does not name a type; did you mean &#39;SoftWire&#39;?
+         TwoWire* wire;
+         ^~~~~~~
+         SoftWire
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:88:41: error: &#39;PB6&#39; was not declared in this scope
+         NunchuckController(unsigned scl=PB6, unsigned sda=PB7);
+                                         ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:88:59: error: &#39;PB7&#39; was not declared in this scope
+         NunchuckController(unsigned scl=PB6, unsigned sda=PB7);
+                                                           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:31: error: &#39;PA0&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                               ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:31: note: suggested alternative: &#39;A0&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                               ^~~
+                               A0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:35: error: &#39;PA1&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:35: note: suggested alternative: &#39;A1&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                   ^~~
+                                   A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:39: error: &#39;PA2&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                       ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:39: note: suggested alternative: &#39;A2&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                       ^~~
+                                       A2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:43: error: &#39;PA3&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:43: note: suggested alternative: &#39;A3&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                           ^~~
+                                           A3
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:47: error: &#39;PA4&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                               ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:47: note: suggested alternative: &#39;A4&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                               ^~~
+                                               A4
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:51: error: &#39;PA5&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:51: note: suggested alternative: &#39;A5&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                   ^~~
+                                                   A5
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:55: error: &#39;PA6&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                       ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:55: note: suggested alternative: &#39;A6&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                       ^~~
+                                                       A6
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:59: error: &#39;PA7&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:59: note: suggested alternative: &#39;A7&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                           ^~~
+                                                           A7
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:6:16: error: no matching function for call to &#39;arduino::UART::begin()&#39;
+   Serial.begin();
+                ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:102:0,
+                 from /tmp/arduino-sketch-DA79380208D18C0CE018C1C17D4B1C3C/sketch/ControllerTest.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Serial.h:46:8:</pre>
+					
+					<h4>examples/GameportToUSB</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library NintendoControllersSTM32 claims to run on STM32F1, STM32 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:5:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/debouncer.h: In constructor &#39;Debouncer::Debouncer(int, uint8_t, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/debouncer.h:55:16: error: &#39;PIN_MAP&#39; was not declared in this scope
+       port = &amp;(PIN_MAP[p].gpio_device-&gt;regs-&gt;IDR);
+                ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/debouncer.h:55:16: note: suggested alternative: &#39;PIN_A1&#39;
+       port = &amp;(PIN_MAP[p].gpio_device-&gt;regs-&gt;IDR);
+                ^~~~~~~
+                PIN_A1
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:23:5: error: &#39;gpio_dev&#39; does not name a type; did you mean &#39;gpio_get&#39;?
+     gpio_dev* device;
+     ^~~~~~~~
+     gpio_get
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h: In member function &#39;void GameController::setPortData(PortData*, unsigned int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:53:20: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+                 p-&gt;device = NULL;
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:56:20: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+                 p-&gt;device = digitalPinToPort(pin);
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:57:27: error: &#39;digitalPinToBitMask&#39; was not declared in this scope
+                 p-&gt;mask = digitalPinToBitMask(pin);
+                           ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:57:27: note: suggested alternative: &#39;digitalPinToPinName&#39;
+                 p-&gt;mask = digitalPinToBitMask(pin);
+                           ^~~~~~~~~~~~~~~~~~~
+                           digitalPinToPinName
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:58:32: error: &#39;PIN_MAP&#39; was not declared in this scope
+                 p-&gt;pinNumber = PIN_MAP[pin].gpio_bit;
+                                ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:58:32: note: suggested alternative: &#39;PIN_A1&#39;
+                 p-&gt;pinNumber = PIN_MAP[pin].gpio_bit;
+                                ^~~~~~~
+                                PIN_A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:79:9: error: &#39;TwoWire&#39; does not name a type; did you mean &#39;SoftWire&#39;?
+         TwoWire* wire;
+         ^~~~~~~
+         SoftWire
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:88:41: error: &#39;PB6&#39; was not declared in this scope
+         NunchuckController(unsigned scl=PB6, unsigned sda=PB7);
+                                         ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:88:59: error: &#39;PB7&#39; was not declared in this scope
+         NunchuckController(unsigned scl=PB6, unsigned sda=PB7);
+                                                           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:31: error: &#39;PA0&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                               ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:31: note: suggested alternative: &#39;A0&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                               ^~~
+                               A0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:35: error: &#39;PA1&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:35: note: suggested alternative: &#39;A1&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                   ^~~
+                                   A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:39: error: &#39;PA2&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                       ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:39: note: suggested alternative: &#39;A2&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                       ^~~
+                                       A2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:43: error: &#39;PA3&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:43: note: suggested alternative: &#39;A3&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                           ^~~
+                                           A3
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:47: error: &#39;PA4&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                               ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:47: note: suggested alternative: &#39;A4&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                               ^~~
+                                               A4
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:51: error: &#39;PA5&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:51: note: suggested alternative: &#39;A5&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                   ^~~
+                                                   A5
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:55: error: &#39;PA6&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                       ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:55: note: suggested alternative: &#39;A6&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                       ^~~
+                                                       A6
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:59: error: &#39;PA7&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:59: note: suggested alternative: &#39;A7&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                           ^~~
+                                                           A7
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:3:21: error: &#39;PB12&#39; was not declared in this scope
+ #define LED_BUILTIN PB12 // change to match your board
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:28:13: note: in expansion of macro &#39;LED_BUILTIN&#39;
+     pinMode(LED_BUILTIN, OUTPUT);
+             ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:3:21: note: su</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library NintendoControllersSTM32 claims to run on STM32F1, STM32 architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:5:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/debouncer.h: In constructor &#39;Debouncer::Debouncer(int, uint8_t, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/debouncer.h:55:16: error: &#39;PIN_MAP&#39; was not declared in this scope
+       port = &amp;(PIN_MAP[p].gpio_device-&gt;regs-&gt;IDR);
+                ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/debouncer.h:55:16: note: suggested alternative: &#39;PIN_A3&#39;
+       port = &amp;(PIN_MAP[p].gpio_device-&gt;regs-&gt;IDR);
+                ^~~~~~~
+                PIN_A3
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/nunchuck.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:23:5: error: &#39;gpio_dev&#39; does not name a type
+     gpio_dev* device;
+     ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h: In member function &#39;void GameController::setPortData(PortData*, unsigned int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:53:20: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+                 p-&gt;device = NULL;
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:56:20: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+                 p-&gt;device = digitalPinToPort(pin);
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:58:32: error: &#39;PIN_MAP&#39; was not declared in this scope
+                 p-&gt;pinNumber = PIN_MAP[pin].gpio_bit;
+                                ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:58:32: note: suggested alternative: &#39;PIN_A3&#39;
+                 p-&gt;pinNumber = PIN_MAP[pin].gpio_bit;
+                                ^~~~~~~
+                                PIN_A3
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:79:9: error: &#39;TwoWire&#39; does not name a type; did you mean &#39;SoftWire&#39;?
+         TwoWire* wire;
+         ^~~~~~~
+         SoftWire
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:88:41: error: &#39;PB6&#39; was not declared in this scope
+         NunchuckController(unsigned scl=PB6, unsigned sda=PB7);
+                                         ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:88:41: note: suggested alternative: &#39;PB&#39;
+         NunchuckController(unsigned scl=PB6, unsigned sda=PB7);
+                                         ^~~
+                                         PB
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:88:59: error: &#39;PB7&#39; was not declared in this scope
+         NunchuckController(unsigned scl=PB6, unsigned sda=PB7);
+                                                           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:88:59: note: suggested alternative: &#39;PB&#39;
+         NunchuckController(unsigned scl=PB6, unsigned sda=PB7);
+                                                           ^~~
+                                                           PB
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gameport.cpp: In member function &#39;bool GamePortController::begin()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gameport.cpp:48:23: error: &#39;INPUT_ANALOG&#39; was not declared in this scope
+         pinMode(xPin, INPUT_ANALOG);
+                       ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gameport.cpp:48:23: note: suggested alternative: &#39;INPUT_PULLUP&#39;
+         pinMode(xPin, INPUT_ANALOG);
+                       ^~~~~~~~~~~~
+                       INPUT_PULLUP
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamep/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:15:46: note: suggested alternative: &#39;GPIO_G/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gameport.cpp:50:23: note: suggested alternative: &#39;INPUT_PULLUP&#39;
+         pinMode(yPin, INPUT_ANALOG);
+                       ^~~~~~~~~~~~
+                       INPUT_PULLUP
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gameport.cpp:52:28: error: &#39;INPUT_ANALOG&#39; was not declared in this scope
+         pinMode(sliderPin, INPUT_ANALOG);
+           /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp: In member function &#39;void GameCubeController::sendBits(uint32_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:28:25: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+     gpio_write_bit(port.device, port.pinNumber, 0);
+                         ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:28:5: error: &#39;gpio_wri/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gameport.cpp:54:24: note:/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:28:5: note: suggested alternative: &#39;pin_size_t&#39;
+     gpio_write_bit(port.device, port.pinNumber, 0);
+     ^~~~~~~~~~~~~~
+     pin_size_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:34:25: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+     gpio_write_bit(port.device, port.pinNumber, 1);
+                         ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp: In member function &#39;bool GameCubeController::receiveBits(void*, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:55:31: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+       if (!gpio_read_bit(port.device, port.pinNumber)) {
+                               ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:55:12: error: &#39;gpio_read_bit&#39; was not declared in this scope
+       if (!gpio_read_bit(port.device, port.pinNumber)) {
+            ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:55:12: note: suggested alternative: &#39;pgm_read_byte&#39;
+       if (!gpio_read_bit(port.device, port.pinNumber)) {
+            ^~~~~~~~~~~~~
+            pgm_read_byte
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:59:32: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+         if (gpio_read_bit(port.device, port.pinNumber)) {
+                                ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:71:34: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+       while (!gpio_read_bit(port.device, port.pinNumber) &amp;&amp; --timeout) ;
+                                  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp: In member function &#39;bool GameCubeController::readWithRumble(GameControllerData_t*, bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:83:5: error: &#39;nvic_globalirq_disable&#39; was not declared in this scope
+     nvic_globalirq_disable();
+     ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:85:5: error: &#39;nvic_globalirq_enable&#39; was not declared in this scope
+     nvic_globalirq_enable();
+     ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:89:3: error: &#39;nvic_globalirq_disable&#39; was not declared in this scope
+   nvic_globalirq_disable();
+   ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:92:3: error: &#39;nvic_globalirq_enable&#39; was not declared in this scope
+   nvic_globalirq_enable();
+   ^~~~~~~~~~~~~~~~~~~~~
+Multiple libraries were found for &#34;SoftWire.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoftWire
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoftI2CMaster
+</pre>
+
+					
+					<h4>examples/ControllerTest</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library NintendoControllersSTM32 claims to run on STM32F1, STM32 architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:5:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/debouncer.h: In constructor &#39;Debouncer::Debouncer(int, uint8_t, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/debouncer.h:55:16: error: &#39;PIN_MAP&#39; was not declared in this scope
+       port = &amp;(PIN_MAP[p].gpio_device-&gt;regs-&gt;IDR);
+                ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/debouncer.h:55:16: note: suggested alternative: &#39;PIN_A3&#39;
+       port = &amp;(PIN_MAP[p].gpio_device-&gt;regs-&gt;IDR);
+                ^~~~~~~
+                PIN_A3
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:23:5: error: &#39;gpio_dev&#39; does not name a type
+     gpio_dev* device;
+     ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h: In member function &#39;void GameController::setPortData(PortData*, unsigned int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:53:20: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+                 p-&gt;device = NULL;
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:56:20: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+                 p-&gt;device = digitalPinToPort(pin);
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:58:32: error: &#39;PIN_MAP&#39; was not declared in this scope
+                 p-&gt;pinNumber = PIN_MAP[pin].gpio_bit;
+                                ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:58:32: note: suggested alternative: &#39;PIN_A3&#39;
+                 p-&gt;pinNumber = PIN_MAP[pin].gpio_bit;
+                                ^~~~~~~
+                                PIN_A3
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:79:9: error: &#39;TwoWire&#39; does not name a type; did you mean &#39;SoftWire&#39;?
+         TwoWire* wire;
+         ^~~~~~~
+         SoftWire
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:88:41: error: &#39;PB6&#39; was not declared in this scope
+         NunchuckController(unsigned scl=PB6, unsigned sda=PB7);
+                                         ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:88:41: note: suggested alternative: &#39;PB&#39;
+         NunchuckController(unsigned scl=PB6, unsigned sda=PB7);
+                                         ^~~
+                                         PB
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:88:59: error: &#39;PB7&#39; was not declared in this scope
+         NunchuckController(unsigned scl=PB6, unsigned sda=PB7);
+                                                           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:88:59: note: suggested alternative: &#39;PB&#39;
+         NunchuckController(unsigned scl=PB6, unsigned sda=PB7);
+                                                           ^~~
+                                                           PB
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:31: error: &#39;PA0&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                               ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:31: note: suggested alternative: &#39;A0&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                               ^~~
+                               A0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:35: error: &#39;PA1&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:35: note: suggested alternative: &#39;A1&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                   ^~~
+                                   A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:39: error: &#39;PA2&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                       ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:39: note: suggested alternative: &#39;A2&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                       ^~~
+                                       A2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:43: error: &#39;PA3&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:43: note: suggested alternative: &#39;A3&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                           ^~~
+                                           A3
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:47: error: &#39;PA4&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                               ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:47: note: suggested alternative: &#39;A4&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                               ^~~
+                                               A4
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:51: error: &#39;PA5&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:51: note: suggested alternative: &#39;A5&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                   ^~~
+                                                   A5
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:55: error: &#39;PA6&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                       ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:55: note: suggested alternative: &#39;A6&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                       ^~~
+                                                       A6
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:59: error: &#39;PA7&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:59: note: suggested alternative: &#39;A7&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                           ^~~
+                                                           A7
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:6:16: error: no matching function for call to &#39;UartClass::begin()&#39;
+   Serial.begin();
+                ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:140:0,
+                 from /tmp/arduino-sketch-DA79380208D18C0CE018C1C17D4B1C3C/sketch/ControllerTest.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/UART.h:155</pre>
+					
+					<h4>examples/GameportToUSB</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library NintendoControllersSTM32 claims to run on STM32F1, STM32 architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:5:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/debouncer.h: In constructor &#39;Debouncer::Debouncer(int, uint8_t, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/debouncer.h:55:16: error: &#39;PIN_MAP&#39; was not declared in this scope
+       port = &amp;(PIN_MAP[p].gpio_device-&gt;regs-&gt;IDR);
+                ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/debouncer.h:55:16: note: suggested alternative: &#39;PIN_A3&#39;
+       port = &amp;(PIN_MAP[p].gpio_device-&gt;regs-&gt;IDR);
+                ^~~~~~~
+                PIN_A3
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:23:5: error: &#39;gpio_dev&#39; does not name a type
+     gpio_dev* device;
+     ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h: In member function &#39;void GameController::setPortData(PortData*, unsigned int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:53:20: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+                 p-&gt;device = NULL;
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:56:20: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+                 p-&gt;device = digitalPinToPort(pin);
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:58:32: error: &#39;PIN_MAP&#39; was not declared in this scope
+                 p-&gt;pinNumber = PIN_MAP[pin].gpio_bit;
+                                ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:58:32: note: suggested alternative: &#39;PIN_A3&#39;
+                 p-&gt;pinNumber = PIN_MAP[pin].gpio_bit;
+                                ^~~~~~~
+                                PIN_A3
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:79:9: error: &#39;TwoWire&#39; does not name a type; did you mean &#39;SoftWire&#39;?
+         TwoWire* wire;
+         ^~~~~~~
+         SoftWire
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:88:41: error: &#39;PB6&#39; was not declared in this scope
+         NunchuckController(unsigned scl=PB6, unsigned sda=PB7);
+                                         ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:88:41: note: suggested alternative: &#39;PB&#39;
+         NunchuckController(unsigned scl=PB6, unsigned sda=PB7);
+                                         ^~~
+                                         PB
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:88:59: error: &#39;PB7&#39; was not declared in this scope
+         NunchuckController(unsigned scl=PB6, unsigned sda=PB7);
+                                                           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:88:59: note: suggested alternative: &#39;PB&#39;
+         NunchuckController(unsigned scl=PB6, unsigned sda=PB7);
+                                                           ^~~
+                                                           PB
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:31: error: &#39;PA0&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                               ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:31: note: suggested alternative: &#39;A0&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                               ^~~
+                               A0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:35: error: &#39;PA1&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:35: note: suggested alternative: &#39;A1&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                   ^~~
+                                   A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:39: error: &#39;PA2&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                       ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:39: note: suggested alternative: &#39;A2&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                       ^~~
+                                       A2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:43: error: &#39;PA3&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:43: note: suggested alternative: &#39;A3&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                           ^~~
+                                           A3
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:47: error: &#39;PA4&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                               ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:47: note: suggested alternative: &#39;A4&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                               ^~~
+                                               A4
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:51: error: &#39;PA5&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:51: note: suggested alternative: &#39;A5&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                   ^~~
+                                                   A5
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:55: error: &#39;PA6&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                       ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:55: note: suggested alternative: &#39;A6&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                       ^~~
+                                                       A6
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:59: error: &#39;PA7&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:59: note: suggested alternative: &#39;A7&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                           ^~~
+                                                           A7
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:3:21: error: &#39;PB12&#39; was not declared in this scope
+ #define LED_BUILTIN PB12 // change to match your board
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:28:13: note: in expansion of macro &#39;LED_BUILTIN&#39;
+     pinMode(LED_BUILTIN, OUTPUT);
+             ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:3:</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library NintendoControllersSTM32 claims to run on STM32F1, STM32 architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:5:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gameport.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/debouncer.h: In constructor &#39;Debouncer::Debouncer(int, uint8_t, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/debouncer.h:55:16: error: &#39;PIN_MAP&#39; was not declared in this scope
+       port = &amp;(PIN_MAP[p].gpio_device-&gt;regs-&gt;IDR);
+                ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/debouncer.h:55:16: note: suggested alternative: &#39;PIN_A0&#39;
+       port = &amp;(PIN_MAP[p].gpio_device-&gt;regs-&gt;IDR);
+                ^~~~~~~
+                PIN_A0
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/nunchuck.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:23:5: error: &#39;gpio_dev&#39; does not name a type
+     gpio_dev* device;
+     ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h: In member function &#39;void GameController::setPortData(PortData*, unsigned int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:53:20: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+                 p-&gt;device = NULL;
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:56:20: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+                 p-&gt;device = digitalPinToPort(pin);
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:58:32: error: &#39;PIN_MAP&#39; was not declared in this scope
+                 p-&gt;pinNumber = PIN_MAP[pin].gpio_bit;
+                                ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:58:32: note: suggested alternative: &#39;PIN_A0&#39;
+                 p-&gt;pinNumber = PIN_MAP[pin].gpio_bit;
+                                ^~~~~~~
+                                PIN_A0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:79:9: error: &#39;TwoWire&#39; does not name a type; did you mean &#39;SoftWire&#39;?
+         TwoWire* wire;
+         ^~~~~~~
+         SoftWire
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:88:41: error: &#39;PB6&#39; was not declared in this scope
+         NunchuckController(unsigned scl=PB6, unsigned sda=PB7);
+                                         ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:88:59: error: &#39;PB7&#39; was not declared in this scope
+         NunchuckController(unsigned scl=PB6, unsigned sda=PB7);
+                                                           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gameport.cpp: In member function &#39;bool GamePortController::begin()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gameport.cpp:48:23: error: &#39;INPUT_ANALOG&#39; was not declared in this scope
+         pinMode(xPin, INPUT_A/home/ec2-user/arduino-testlib/cli-datadir/us/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gameport.cpp:48:23: note: suggested alternative: &#39;PIO_ANALOG&#39;
+         pinMode(xPin, INPUT_ANALOG);
+                       ^~~~~~~~~~~~
+                       PIO_ANALOG
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gameport./home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:15:46: note: suggested alternative: &#39;PI/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gameport.cpp:50:23: note: suggested alternative: &#39;PIO_ANALOG&#39;
+         pinMode(yPin, INPUT_ANALOG);
+                       ^~~~~~~~~~~~
+                       PIO_ANALOG
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gameport.cpp:52:28: error: &#39;INPUT_ANALOG&#39; was not declared in this scope
+         pinMode(sliderPin, INPUT_ANALOG);
+                   /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp: In member function &#39;void GameCubeController::sendBits(uint32_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:28:25: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+     gpio_write_bit(port.device, port.pinNumber, 0);
+                         ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:28:5: erro/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gameport.cpp:54:24: note: suggested a/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:28:5: note: suggested alternative: &#39;pin_size_t&#39;
+     gpio_write_bit(port.device, port.pinNumber, 0);
+     ^~~~~~~~~~~~~~
+     pin_size_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:34:25: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+     gpio_write_bit(port.device, port.pinNumber, 1);
+                         ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp: In member function &#39;bool GameCubeController::receiveBits(void*, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:55:31: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+       if (!gpio_read_bit(port.device, port.pinNumber)) {
+                               ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:55:12: error: &#39;gpio_read_bit&#39; was not declared in this scope
+       if (!gpio_read_bit(port.device, port.pinNumber)) {
+            ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:55:12: note: suggested alternative: &#39;pgm_read_byte&#39;
+       if (!gpio_read_bit(port.device, port.pinNumber)) {
+            ^~~~~~~~~~~~~
+            pgm_read_byte
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:59:32: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+         if (gpio_read_bit(port.device, port.pinNumber)) {
+                                ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:71:34: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+       while (!gpio_read_bit(port.device, port.pinNumber) &amp;&amp; --timeout) ;
+                                  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp: In member function &#39;bool GameCubeController::readWithRumble(GameControllerData_t*, bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:83:5: error: &#39;nvic_globalirq_disable&#39; was not declared in this scope
+     nvic_globalirq_disable();
+     ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:85:5: error: &#39;nvic_globalirq_enable&#39; was not declared in this scope
+     nvic_globalirq_enable();
+     ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:89:3: error: &#39;nvic_globalirq_disable&#39; was not declared in this scope
+   nvic_globalirq_disable();
+   ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gamecube.cpp:92:3: error: &#39;nvic_globalirq_enable&#39; was not declared in this scope
+   nvic_globalirq_enable();
+   ^~~~~~~~~~~~~~~~~~~~~
+Multiple libraries were found for &#34;SoftWire.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoftWire
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoftI2CMaster
+</pre>
+
+					
+					<h4>examples/ControllerTest</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library NintendoControllersSTM32 claims to run on STM32F1, STM32 architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:5:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/debouncer.h: In constructor &#39;Debouncer::Debouncer(int, uint8_t, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/debouncer.h:55:16: error: &#39;PIN_MAP&#39; was not declared in this scope
+       port = &amp;(PIN_MAP[p].gpio_device-&gt;regs-&gt;IDR);
+                ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/debouncer.h:55:16: note: suggested alternative: &#39;PIN_A0&#39;
+       port = &amp;(PIN_MAP[p].gpio_device-&gt;regs-&gt;IDR);
+                ^~~~~~~
+                PIN_A0
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:23:5: error: &#39;gpio_dev&#39; does not name a type
+     gpio_dev* device;
+     ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h: In member function &#39;void GameController::setPortData(PortData*, unsigned int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:53:20: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+                 p-&gt;device = NULL;
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:56:20: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+                 p-&gt;device = digitalPinToPort(pin);
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:58:32: error: &#39;PIN_MAP&#39; was not declared in this scope
+                 p-&gt;pinNumber = PIN_MAP[pin].gpio_bit;
+                                ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:58:32: note: suggested alternative: &#39;PIN_A0&#39;
+                 p-&gt;pinNumber = PIN_MAP[pin].gpio_bit;
+                                ^~~~~~~
+                                PIN_A0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:79:9: error: &#39;TwoWire&#39; does not name a type; did you mean &#39;SoftWire&#39;?
+         TwoWire* wire;
+         ^~~~~~~
+         SoftWire
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:88:41: error: &#39;PB6&#39; was not declared in this scope
+         NunchuckController(unsigned scl=PB6, unsigned sda=PB7);
+                                         ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:88:59: error: &#39;PB7&#39; was not declared in this scope
+         NunchuckController(unsigned scl=PB6, unsigned sda=PB7);
+                                                           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:31: error: &#39;PA0&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                               ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:31: note: suggested alternative: &#39;A0&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                               ^~~
+                               A0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:35: error: &#39;PA1&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:35: note: suggested alternative: &#39;A1&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                   ^~~
+                                   A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:39: error: &#39;PA2&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                       ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:39: note: suggested alternative: &#39;A2&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                       ^~~
+                                       A2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:43: error: &#39;PA3&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:43: note: suggested alternative: &#39;A3&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                           ^~~
+                                           A3
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:47: error: &#39;PA4&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                               ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:47: note: suggested alternative: &#39;A4&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                               ^~~
+                                               A4
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:51: error: &#39;PA5&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:51: note: suggested alternative: &#39;A5&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                   ^~~
+                                                   A5
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:55: error: &#39;PA6&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                       ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:55: note: suggested alternative: &#39;A6&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                       ^~~
+                                                       A6
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:59: error: &#39;PA7&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:6:16: error: no matching function for call to &#39;Serial_::begin()&#39;
+   Serial.begin();
+                ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:112:0,
+                 from /tmp/arduino-sketch-DA79380208D18C0CE018C1C17D4B1C3C/sketch/ControllerTest.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/USB/USBAPI.h:103:7: note: candidate: void Serial_::begin(uint32_t)
+  void begin(uint32_t baud_count);
+       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/USB/USBAPI.h:103:7: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/USB/USBAPI.h:104:7: note: candidate: void Serial_::begin(long unsigned int, uint8_t)
+  void begin(unsigned long, uint8_t);
+       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/USB/USBAPI.h:104:7: note:   candidate expects 2 arguments, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:12:36: error: &#39;PA3&#39; was not declared in thi</pre>
+					
+					<h4>examples/GameportToUSB</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library NintendoControllersSTM32 claims to run on STM32F1, STM32 architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:5:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/debouncer.h: In constructor &#39;Debouncer::Debouncer(int, uint8_t, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/debouncer.h:55:16: error: &#39;PIN_MAP&#39; was not declared in this scope
+       port = &amp;(PIN_MAP[p].gpio_device-&gt;regs-&gt;IDR);
+                ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/debouncer.h:55:16: note: suggested alternative: &#39;PIN_A0&#39;
+       port = &amp;(PIN_MAP[p].gpio_device-&gt;regs-&gt;IDR);
+                ^~~~~~~
+                PIN_A0
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:23:5: error: &#39;gpio_dev&#39; does not name a type
+     gpio_dev* device;
+     ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h: In member function &#39;void GameController::setPortData(PortData*, unsigned int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:53:20: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+                 p-&gt;device = NULL;
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:56:20: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+                 p-&gt;device = digitalPinToPort(pin);
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:58:32: error: &#39;PIN_MAP&#39; was not declared in this scope
+                 p-&gt;pinNumber = PIN_MAP[pin].gpio_bit;
+                                ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:58:32: note: suggested alternative: &#39;PIN_A0&#39;
+                 p-&gt;pinNumber = PIN_MAP[pin].gpio_bit;
+                                ^~~~~~~
+                                PIN_A0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:79:9: error: &#39;TwoWire&#39; does not name a type; did you mean &#39;SoftWire&#39;?
+         TwoWire* wire;
+         ^~~~~~~
+         SoftWire
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:88:41: error: &#39;PB6&#39; was not declared in this scope
+         NunchuckController(unsigned scl=PB6, unsigned sda=PB7);
+                                         ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:88:59: error: &#39;PB7&#39; was not declared in this scope
+         NunchuckController(unsigned scl=PB6, unsigned sda=PB7);
+                                                           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:31: error: &#39;PA0&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                               ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:31: note: suggested alternative: &#39;A0&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                               ^~~
+                               A0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:35: error: &#39;PA1&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:35: note: suggested alternative: &#39;A1&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                   ^~~
+                                   A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:39: error: &#39;PA2&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                       ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:39: note: suggested alternative: &#39;A2&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                       ^~~
+                                       A2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:43: error: &#39;PA3&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:43: note: suggested alternative: &#39;A3&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                           ^~~
+                                           A3
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:47: error: &#39;PA4&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                               ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:47: note: suggested alternative: &#39;A4&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                               ^~~
+                                               A4
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:51: error: &#39;PA5&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:51: note: suggested alternative: &#39;A5&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                   ^~~
+                                                   A5
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:55: error: &#39;PA6&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                       ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:55: note: suggested alternative: &#39;A6&#39;
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                       ^~~
+                                                       A6
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:59: error: &#39;PA7&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:3:21: error: &#39;PB12&#39; was not declared in this scope
+ #define LED_BUILTIN PB12 // change to match your board
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:28:13: note: in expansion of macro &#39;LED_BUILTIN&#39;
+     pinMode(LED_BUILTIN, OUTPUT);
+             ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:3:21: note: suggested alternative: &#39;._12&#39;
+ #define LED_BUILTIN PB12 // change to match your board
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:28:13: note: in expansion of macro &#39;LED_BUILTIN&#39;
+     pinMode(LED_BUILTIN, OUTPUT);
+             ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:32:25: error: &#39;ADC1&#39; was not declared in this scope
+     adc_set_sample_rate(ADC1, ADC_SMPR_13_5); // ADC_SMPR_13_5, ADC_SMPR_1_5
+                         ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:32:25: note: suggested alternative: &#39;ADC&#39;
+     adc_set_sample_rate(ADC1, ADC_SMPR_13_5); // ADC_SMPR_13_5, ADC_SMPR_1_5
+                         ^~~~
+                         ADC
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library NintendoControllersSTM32 claims to run on STM32F1, STM32 architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:5:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/gameport.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/debouncer.h: In constructor &#39;Debouncer::Debouncer(int, uint8_t, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/debouncer.h:55:16: error: &#39;PIN_MAP&#39; was not declared in this scope
+       port = &amp;(PIN_MAP[p].gpio_device-&gt;regs-&gt;IDR);
+                ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/nunchuck.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:23:5: error: &#39;gpio_dev&#39; does not name a type
+     gpio_dev* device;
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h: In member function &#39;void GameController::setPortData(PortData*, unsigned int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:53:20: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+                 p-&gt;device = NULL;
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:56:20: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+                 p-&gt;device = digitalPinToPort(pin);
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:58:32: error: &#39;PIN_MAP&#39; was not declared in this scope
+                 p-&gt;pinNumber = PIN_MAP[pin].gpio_bit;
+                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:79:9: error: &#39;TwoWire&#39; does not name a type
+         TwoWire* wire;
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:88:41: error: &#39;PB6&#39; was not declared in this scope
+         NunchuckController(unsigned scl=PB6, unsigned sda=PB7);
+                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:88:59: error: &#39;PB7&#39; was not declared in this scope
+         NunchuckController(unsigned scl=PB6, unsigned sda=PB7);
+                                                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/nunchuck.cpp: In member function &#39;bool NunchuckController::begin()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/nunchuck.cpp:13:9: error: &#39;wire&#39; was not declared in this scope
+     if (wire == NULL) {
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/nunchuck.cpp:15:20: error: expected type-specifier before &#39;TwoWire&#39;
+         wire = new TwoWire(scl, sda, SOFT_STANDARD);
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/nunchuck.cpp: In member function &#39;uint8_t NunchuckController::sendBytes(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/nunchuck.cpp:41:5: error: &#39;wire&#39; was not declared in this scope
+     wire-&gt;beginTransmission(i2cAddress);
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/nunchuck.cpp: In member function &#39;bool NunchuckController::read(GameControllerData_t*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/nunchuck.cpp:58:5: error: &#39;wire&#39; was not declared in this scope
+     wire-&gt;beginTransmission(i2cAddress);
+     ^
+Multiple libraries were found for &#34;SoftWire.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoftWire
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoftI2CMaster
+</pre>
+
+					
+					<h4>examples/ControllerTest</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library NintendoControllersSTM32 claims to run on STM32F1, STM32 architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:5:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/debouncer.h: In constructor &#39;Debouncer::Debouncer(int, uint8_t, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/debouncer.h:55:16: error: &#39;PIN_MAP&#39; was not declared in this scope
+       port = &amp;(PIN_MAP[p].gpio_device-&gt;regs-&gt;IDR);
+                ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:23:5: error: &#39;gpio_dev&#39; does not name a type
+     gpio_dev* device;
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h: In member function &#39;void GameController::setPortData(PortData*, unsigned int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:53:20: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+                 p-&gt;device = NULL;
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:56:20: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+                 p-&gt;device = digitalPinToPort(pin);
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:58:32: error: &#39;PIN_MAP&#39; was not declared in this scope
+                 p-&gt;pinNumber = PIN_MAP[pin].gpio_bit;
+                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:79:9: error: &#39;TwoWire&#39; does not name a type
+         TwoWire* wire;
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:88:41: error: &#39;PB6&#39; was not declared in this scope
+         NunchuckController(unsigned scl=PB6, unsigned sda=PB7);
+                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:88:59: error: &#39;PB7&#39; was not declared in this scope
+         NunchuckController(unsigned scl=PB6, unsigned sda=PB7);
+                                                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:31: error: &#39;PA0&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:35: error: &#39;PA1&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:39: error: &#39;PA2&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:43: error: &#39;PA3&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:47: error: &#39;PA4&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:51: error: &#39;PA5&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:55: error: &#39;PA6&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:3:59: error: &#39;PA7&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:6:16: error: no matching function for call to &#39;HardwareSerial::begin()&#39;
+   Serial.begin();
+                ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:154:0,
+                 from /tmp/arduino-sketch-DA79380208D18C0CE018C1C17D4B1C3C/sketch/ControllerTest.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/HardwareSerial.h:58:10: note: candidate: void HardwareSerial::begin(long unsigned int, uint32_t, int8_t, int8_t, bool, long unsigned int)
+     void begin(unsigned long baud, uint32_t config=SERIAL_8N1, int8_t rxPin=-1, int8_t txPin=-1, bool invert=false, unsigned long timeout_ms = 20000UL);
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/HardwareSerial.h:58:10: note:   candidate expects 6 arguments, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/ControllerTest/ControllerTest.ino:12:36: error: &#39;PA3&#39; was not declared in this scope
+   Serial.println(String(analogRead(PA3)));
+                                    ^
+Multiple libraries were found for &#34;SoftWire.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoftWire
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoftI2CMaster
+</pre>
+					
+					<h4>examples/GameportToUSB</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library NintendoControllersSTM32 claims to run on STM32F1, STM32 architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:5:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/debouncer.h: In constructor &#39;Debouncer::Debouncer(int, uint8_t, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/debouncer.h:55:16: error: &#39;PIN_MAP&#39; was not declared in this scope
+       port = &amp;(PIN_MAP[p].gpio_device-&gt;regs-&gt;IDR);
+                ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:23:5: error: &#39;gpio_dev&#39; does not name a type
+     gpio_dev* device;
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h: In member function &#39;void GameController::setPortData(PortData*, unsigned int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:53:20: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+                 p-&gt;device = NULL;
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:56:20: error: &#39;struct PortData&#39; has no member named &#39;device&#39;
+                 p-&gt;device = digitalPinToPort(pin);
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:58:32: error: &#39;PIN_MAP&#39; was not declared in this scope
+                 p-&gt;pinNumber = PIN_MAP[pin].gpio_bit;
+                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:79:9: error: &#39;TwoWire&#39; does not name a type
+         TwoWire* wire;
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:88:41: error: &#39;PB6&#39; was not declared in this scope
+         NunchuckController(unsigned scl=PB6, unsigned sda=PB7);
+                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/src/GameControllers.h:88:59: error: &#39;PB7&#39; was not declared in this scope
+         NunchuckController(unsigned scl=PB6, unsigned sda=PB7);
+                                                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:31: error: &#39;PA0&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:35: error: &#39;PA1&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:39: error: &#39;PA2&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:43: error: &#39;PA3&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:47: error: &#39;PA4&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:51: error: &#39;PA5&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:55: error: &#39;PA6&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:24:59: error: &#39;PA7&#39; was not declared in this scope
+ GamePortController controller(PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7);
+                                                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:3:21: error: &#39;PB12&#39; was not declared in this scope
+ #define LED_BUILTIN PB12 // change to match your board
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:28:13: note: in expansion of macro &#39;LED_BUILTIN&#39;
+     pinMode(LED_BUILTIN, OUTPUT);
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:32:25: error: &#39;ADC1&#39; was not declared in this scope
+     adc_set_sample_rate(ADC1, ADC_SMPR_13_5); // ADC_SMPR_13_5, ADC_SMPR_1_5
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:32:31: error: &#39;ADC_SMPR_13_5&#39; was not declared in this scope
+     adc_set_sample_rate(ADC1, ADC_SMPR_13_5); // ADC_SMPR_13_5, ADC_SMPR_1_5
+                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:32:44: error: &#39;adc_set_sample_rate&#39; was not declared in this scope
+     adc_set_sample_rate(ADC1, ADC_SMPR_13_5); // ADC_SMPR_13_5, ADC_SMPR_1_5
+                                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:33:5: error: &#39;Joystick&#39; was not declared in this scope
+     Joystick.setManualReportMode(true);
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NintendoControllersSTM32/examples/GameportToUSB/GameportToUSB.ino:40:7: error: &#39;Joystick&#39; was not declared in this scope
+       Joystick.X(data.joystickX);
+       ^
+Multiple libraries were found for &#34;SoftWire.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoftWire
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoftI2CMaster
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

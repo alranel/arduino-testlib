@@ -1,0 +1,403 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>EmbeddedUtils - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>EmbeddedUtils</h2>
+				<p>
+					Version: <b>0.1.1</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/embeddedutils/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/EmbeddedUtils.h:38:0,
+                 from /tmp/arduino-testlib1611719357/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/avr/Gamma.h:46:19: error: wrong number of template arguments (1, should be 2)
+     RingQueue&lt;TYPE&gt; gamma_array {size};
+                   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/EmbeddedUtils.h:36:0,
+                 from /tmp/arduino-testlib1611719357/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/avr/RingQueue.h:7:7: note: provided for &#39;template&lt;class T, unsigned int SIZE&gt; class RingQueue&#39;
+ class RingQueue
+       ^~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/EmbeddedUtils.h:38:0,
+                 from /tmp/arduino-testlib1611719357/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/avr/Gamma.h: In member function &#39;const TYPE&amp; GammaTable&lt;TYPE, SIZE&gt;::operator[](size_t) const&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/avr/Gamma.h:28:81: error: invalid types &#39;const int[const size_t {aka const unsigned int}]&#39; for array subscript
+     const TYPE&amp; operator [](const size_t index) const { return gamma_array[index]; }
+                                                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/avr/Gamma.h: In member function &#39;const size_t GammaTable&lt;TYPE, SIZE&gt;::size() const&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/avr/Gamma.h:29:52: error: request for member &#39;size&#39; in &#39;((const GammaTable&lt;TYPE, SIZE&gt;*)this)-&gt;GammaTable&lt;TYPE, SIZE&gt;::gamma_array&#39;, which is of non-class type &#39;const int&#39;
+     const size_t size() const { return gamma_array.size(); }
+                                                    ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/avr/Gamma.h: In member function &#39;void GammaTable&lt;TYPE, SIZE&gt;::create()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/avr/Gamma.h:38:44: error: request for member &#39;size&#39; in &#39;((GammaTable&lt;TYPE, SIZE&gt;*)this)-&gt;GammaTable&lt;TYPE, SIZE&gt;::gamma_array&#39;, which is of non-class type &#39;int&#39;
+         for (size_t i = 0; i &lt; gamma_array.size(); &#43;&#43;i)
+                                            ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/avr/Gamma.h:40:26: error: invalid types &#39;int[size_t {aka unsigned int}]&#39; for array subscript
+             gamma_array[i] = static_cast&lt;TYPE&gt;(pow(static_cast&lt;float&gt;(i) / static_cast&lt;float&gt;(SIZE), gamma) * scale);
+                          ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/EmbeddedUtils.h:39:0,
+                 from /tmp/arduino-testlib1611719357/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/I2CHelper.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/I2CHelper.h:125:2: error: expected &#39;;&#39; after class definition
+ }
+  ^
+  ;
+
+</pre>
+
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/EmbeddedUtils.h:20:0,
+                 from /tmp/arduino-testlib573092529/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/Debug.h: In function &#39;void Debug::Assert(bool, const char*, int, const char*, const char*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/Debug.h:15:20: error: &#39;class arduino::UART&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+             Serial.printf(&#34;[ASSERT] %s:%d:%s() : %s\n&#34;, file, line, func, expr);
+                    ^~~~~~
+                    print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/Convert.h: In function &#39;bool Convert::toBool(const arduino::String&amp;)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/Debug.h:33:35: error: &#39;class arduino::UART&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+ #define LOG_WARNING(s,...) Serial.printf(&#34;[Warning] %s:%d:%s() : &#34; s &#34;\n&#34;, __FILE__, __LINE__, __func__, ##__VA_ARGS__)
+                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/Convert.h:86:9: note: in expansion of macro &#39;LOG_WARNING&#39;
+         LOG_WARNING(&#34;can not recognize the string&#34;);
+         ^~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/EmbeddedUtils.h:22:0,
+                 from /tmp/arduino-testlib573092529/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/Convert.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/Convert.h:99:65: error: &#39;std::vector&#39; has not been declared
+     void splitString(const String&amp; s, const String&amp; delim, std::vector&lt;String&gt;&amp; result)
+                                                                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/Convert.h:99:71: error: expected &#39;,&#39; or &#39;...&#39; before &#39;&lt;&#39; token
+     void splitString(const String&amp; s, const String&amp; delim, std::vector&lt;String&gt;&amp; result)
+                                                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/Convert.h: In function &#39;void Convert::splitString(const arduino::String&amp;, const arduino::String&amp;, int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/Convert.h:101:9: error: &#39;result&#39; was not declared in this scope
+         result.clear();
+         ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/Convert.h:103:14: error: &#39;vector&#39; is not a member of &#39;std&#39;
+         std::vector&lt;size_t&gt; pos;
+              ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/Convert.h:103:27: error: expected primary-expression before &#39;&gt;&#39; token
+         std::vector&lt;size_t&gt; pos;
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/Convert.h:103:29: error: &#39;pos&#39; was not declared in this scope
+         std::vector&lt;size_t&gt; pos;
+                             ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/Convert.h:103:29: note: suggested alternative: &#39;pow&#39;
+         std::vector&lt;size_t&gt; pos;
+                             ^~~
+                             pow
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/Convert.h:104:14: error: &#39;vector&#39; is not a member of &#39;std&#39;
+         std::vector&lt;size_t&gt; length;
+              ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/Convert.h:104:27: error: expected primary-expression before &#39;&gt;&#39; token
+         std::vector&lt;size_t&gt; length;
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/Convert.h:104:29: error: &#39;length&#39; was not declared in this scope
+         std::vector&lt;size_t&gt; length;
+                             ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/Convert.h:104:29: note: suggested alternative: &#39;long&#39;
+         std::vector&lt;size_t&gt; length;
+                             ^~~~~~
+                             long
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/EmbeddedUtils.h:25:0,
+                 from /tmp/arduino-testlib573092529/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/RingQueue.h: In member function &#39;size_type RingQueue&lt;T, QUEUE_SIZE, size_type&gt;::capacity() const&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/RingQueue.h:21:48: error: &#39;size_&#39; was not declared in this scope
+     inline size_type capacity() const { return size_; };
+                                                ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/RingQueue.h:21:48: note: suggested alternative: &#39;size&#39;
+     inline size_type capacity() const { return size_; };
+                                                ^~~~~
+                                                size
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/EmbeddedUtils.h:28:0,
+                 from /tmp/arduino-testlib573092529/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/I2CHelper.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/I2CHelper.h:125:2: error: expected &#39;;&#39; after class definition
+ }
+  ^
+  ;
+
+</pre>
+
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/EmbeddedUtils.h:38:0,
+                 from /tmp/arduino-testlib573092529/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/avr/Gamma.h:46:19: error: wrong number of template arguments (1, should be 2)
+     RingQueue&lt;TYPE&gt; gamma_array {size};
+                   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/EmbeddedUtils.h:36:0,
+                 from /tmp/arduino-testlib573092529/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/avr/RingQueue.h:7:7: note: provided for &#39;template&lt;class T, unsigned int SIZE&gt; class RingQueue&#39;
+ class RingQueue
+       ^~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/EmbeddedUtils.h:38:0,
+                 from /tmp/arduino-testlib573092529/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/avr/Gamma.h: In member function &#39;const TYPE&amp; GammaTable&lt;TYPE, SIZE&gt;::operator[](size_t) const&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/avr/Gamma.h:28:81: error: invalid types &#39;const int[const size_t {aka const unsigned int}]&#39; for array subscript
+     const TYPE&amp; operator [](const size_t index) const { return gamma_array[index]; }
+                                                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/avr/Gamma.h: In member function &#39;const size_t GammaTable&lt;TYPE, SIZE&gt;::size() const&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/avr/Gamma.h:29:52: error: request for member &#39;size&#39; in &#39;((const GammaTable&lt;TYPE, SIZE&gt;*)this)-&gt;GammaTable&lt;TYPE, SIZE&gt;::gamma_array&#39;, which is of non-class type &#39;const int&#39;
+     const size_t size() const { return gamma_array.size(); }
+                                                    ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/avr/Gamma.h: In member function &#39;void GammaTable&lt;TYPE, SIZE&gt;::create()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/avr/Gamma.h:38:44: error: request for member &#39;size&#39; in &#39;((GammaTable&lt;TYPE, SIZE&gt;*)this)-&gt;GammaTable&lt;TYPE, SIZE&gt;::gamma_array&#39;, which is of non-class type &#39;int&#39;
+         for (size_t i = 0; i &lt; gamma_array.size(); &#43;&#43;i)
+                                            ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/avr/Gamma.h:40:26: error: invalid types &#39;int[size_t {aka unsigned int}]&#39; for array subscript
+             gamma_array[i] = static_cast&lt;TYPE&gt;(pow(static_cast&lt;float&gt;(i) / static_cast&lt;float&gt;(SIZE), gamma) * scale);
+                          ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/EmbeddedUtils.h:39:0,
+                 from /tmp/arduino-testlib573092529/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/I2CHelper.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/I2CHelper.h:125:2: error: expected &#39;;&#39; after class definition
+ }
+  ^
+  ;
+
+</pre>
+
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/EmbeddedUtils.h:22:0,
+                 from /tmp/arduino-testlib1611719357/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/Convert.h: In function &#39;bool Convert::toBool(const arduino::String&amp;)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/Convert.h:86:9: error: &#39;LOG_WARNING&#39; was not declared in this scope
+         LOG_WARNING(&#34;can not recognize the string&#34;);
+         ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/Convert.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/Convert.h:99:65: error: &#39;std::vector&#39; has not been declared
+     void splitString(const String&amp; s, const String&amp; delim, std::vector&lt;String&gt;&amp; result)
+                                                                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/Convert.h:99:71: error: expected &#39;,&#39; or &#39;...&#39; before &#39;&lt;&#39; token
+     void splitString(const String&amp; s, const String&amp; delim, std::vector&lt;String&gt;&amp; result)
+                                                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/Convert.h: In function &#39;void Convert::splitString(const arduino::String&amp;, const arduino::String&amp;, int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/Convert.h:101:9: error: &#39;result&#39; was not declared in this scope
+         result.clear();
+         ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/Convert.h:103:14: error: &#39;vector&#39; is not a member of &#39;std&#39;
+         std::vector&lt;size_t&gt; pos;
+              ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/Convert.h:103:27: error: expected primary-expression before &#39;&gt;&#39; token
+         std::vector&lt;size_t&gt; pos;
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/Convert.h:103:29: error: &#39;pos&#39; was not declared in this scope
+         std::vector&lt;size_t&gt; pos;
+                             ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/Convert.h:103:29: note: suggested alternative: &#39;pow&#39;
+         std::vector&lt;size_t&gt; pos;
+                             ^~~
+                             pow
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/Convert.h:104:14: error: &#39;vector&#39; is not a member of &#39;std&#39;
+         std::vector&lt;size_t&gt; length;
+              ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/Convert.h:104:27: error: expected primary-expression before &#39;&gt;&#39; token
+         std::vector&lt;size_t&gt; length;
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/Convert.h:104:29: error: &#39;length&#39; was not declared in this scope
+         std::vector&lt;size_t&gt; length;
+                             ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/Convert.h:104:29: note: suggested alternative: &#39;long&#39;
+         std::vector&lt;size_t&gt; length;
+                             ^~~~~~
+                             long
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/EmbeddedUtils.h:25:0,
+                 from /tmp/arduino-testlib1611719357/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/RingQueue.h: In member function &#39;size_type RingQueue&lt;T, QUEUE_SIZE, size_type&gt;::capacity() const&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/RingQueue.h:21:48: error: &#39;size_&#39; was not declared in this scope
+     inline size_type capacity() const { return size_; };
+                                                ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/RingQueue.h:21:48: note: suggested alternative: &#39;size&#39;
+     inline size_type capacity() const { return size_; };
+                                                ^~~~~
+                                                size
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/EmbeddedUtils.h:28:0,
+                 from /tmp/arduino-testlib1611719357/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/I2CHelper.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/I2CHelper.h:125:2: error: expected &#39;;&#39; after class definition
+ }
+  ^
+  ;
+
+</pre>
+
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/EmbeddedUtils.h:25:0,
+                 from /tmp/arduino-testlib887114463/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/RingQueue.h: In member function &#39;size_type RingQueue&lt;T, QUEUE_SIZE, size_type&gt;::capacity() const&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/RingQueue.h:21:48: error: &#39;size_&#39; was not declared in this scope
+     inline size_type capacity() const { return size_; };
+                                                ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/EmbeddedUtils.h:28:0,
+                 from /tmp/arduino-testlib887114463/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/I2CHelper.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EmbeddedUtils/lib/I2CHelper.h:125:1: error: expected &#39;;&#39; after class definition
+ }
+ ^
+
+</pre>
+
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

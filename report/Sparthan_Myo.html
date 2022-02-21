@@ -1,0 +1,1107 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>Sparthan Myo - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>Sparthan Myo</h2>
+				<p>
+					Version: <b>0.1</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/sparthan-myo/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>myo_print</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.h:31:5: error: &#39;BLEClient&#39; does not name a type; did you mean &#39;BLECentral&#39;?
+     BLEClient* pClient;
+     ^~~~~~~~~
+     BLECentral
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:6:8: error: &#39;BLEUUID&#39; does not name a type
+ static BLEUUID serviceUUID(&#34;d5060001-a904-deb9-4748-2c7f4a124842&#34;);
+        ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:8:8: error: &#39;BLEAddress&#39; does not name a type
+ static BLEAddress *pServerAddress;
+        ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:20:73: error: expected class-name before &#39;{&#39; token
+ class MyoAdvertisedDeviceCallbacks: public BLEAdvertisedDeviceCallbacks {
+                                                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:23:19: error: &#39;BLEAdvertisedDevice&#39; has not been declared
+     void onResult(BLEAdvertisedDevice advertisedDevice) {
+                   ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp: In member function &#39;void MyoAdvertisedDeviceCallbacks::onResult(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:26:56: error: request for member &#39;toString&#39; in &#39;advertisedDevice&#39;, which is of non-class type &#39;int&#39;
+       armband::debug ? Serial.println(advertisedDevice.toString().c_str()) : 0;
+                                                        ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:29:28: error: request for member &#39;haveServiceUUID&#39; in &#39;advertisedDevice&#39;, which is of non-class type &#39;int&#39;
+       if (advertisedDevice.haveServiceUUID() &amp;&amp; advertisedDevice.getServiceUUID().equals(serviceUUID)) {
+                            ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:29:66: error: request for member &#39;getServiceUUID&#39; in &#39;advertisedDevice&#39;, which is of non-class type &#39;int&#39;
+       if (advertisedDevice.haveServiceUUID() &amp;&amp; advertisedDevice.getServiceUUID().equals(serviceUUID)) {
+                                                                  ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:29:90: error: &#39;serviceUUID&#39; was not declared in this scope
+       if (advertisedDevice.haveServiceUUID() &amp;&amp; advertisedDevice.getServiceUUID().equals(serviceUUID)) {
+                                                                                          ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:33:26: error: request for member &#39;getScan&#39; in &#39;advertisedDevice&#39;, which is of non-class type &#39;int&#39;
+         advertisedDevice.getScan()-&gt;stop();
+                          ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:35:9: error: &#39;pServerAddress&#39; was not declared in this scope
+         pServerAddress = new BLEAddress(advertisedDevice.getAddress());
+         ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:35:30: error: expected type-specifier before &#39;BLEAddress&#39;
+         pServerAddress = new BLEAddress(advertisedDevice.getAddress());
+                              ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:43:54: error: expected class-name before &#39;{&#39; token
+ class MyoClientCallbacks : public BLEClientCallbacks {
+                                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:45:20: error: &#39;BLEClient&#39; has not been declared
+     void onConnect(BLEClient* pClient) {
+                    ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:49:23: error: &#39;BLEClient&#39; has not been declared
+     void onDisconnect(BLEClient* pClient) {
+                       ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp: In member function &#39;void MyoClientCallbacks::onDisconnect(int*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:55:16: error: request for member &#39;disconnect&#39; in &#39;* pClient&#39;, which is of non-class type &#39;int&#39;
+       pClient-&gt;disconnect();
+                ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:65:22: error: &#39;BLEClient&#39; was not declared in this scope
+ bool connectToServer(BLEClient*  pClient, BLEAddress pAddress) {
+                      ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:65:22: note: suggested alternative: &#39;BLECentral&#39;
+ bool connectToServer(BLEClient*  pClient, BLEAddress pAddress) {
+                      ^~~~~~~~~
+                      BLECentral
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:65:34: error: &#39;pClient&#39; was not declared in this scope
+ bool connectToServer(BLEClient*  pClient, BLEAddress pAddress) {
+                                  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:65:43: error: &#39;BLEAddress&#39; was not declared in this scope
+ bool connectToServer(BLEClient*  pClient, BLEAddress pAddress) {
+                                           ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp: In member function &#39;void armband::connect()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:86:16: error: &#39;init&#39; is not a member of &#39;BLEDevice&#39;
+     BLEDevice::init(&#34;&#34;);
+                ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:87:5: error: &#39;BLEScan&#39; was not declared in this scope
+     BLEScan* pBLEScan = BLEDevice::getScan();
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:87:5: note: suggested alternative: &#39;BLERead&#39;
+     BLEScan* pBLEScan = BLEDevice::getScan();
+     ^~~~~~~
+     BLERead
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:87:14: error: &#39;pBLEScan&#39; was not declared in this scope
+     BLEScan* pBLEScan = BLEDevice::getScan();
+              ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:87:14: note: suggested alternative: &#39;BLERead&#39;
+     BLEScan* pBLEScan = BLEDevice::getScan();
+              ^~~~~~~~
+              BLERead
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:87:36: error: &#39;getScan&#39; is not a member of &#39;BLEDevice&#39;
+     BLEScan* pBLEScan = BLEDevice::getScan();
+                                    ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:98:14: error: &#39;pClient&#39; is not a member of &#39;armband&#39;
+     armband::pClient = BLEDevice::createClient();
+              ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:98:35: error: &#39;createClient&#39; is not a member of &#39;BLEDevice&#39;
+     armband::pClient = BLEDevice::createClient();
+                                   ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:99:14: error: &#39;pClient&#39; is not a member of &#39;armband&#39;
+     armband::pClient-&gt;setClientCallbacks(new MyoClientCallbacks());
+              ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:102:30: error: &#39;pClient&#39; is not a member of &#39;armband&#39;
+     connectToServer(armband::pClient, *pServerAddress);
+                              ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:102:40: error: &#39;pServerAddress&#39; was not declared in this scope
+     connectToServer(armband::pClient, *pServerAddress);
+                                        ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:102:54: error: &#39;connectToServer&#39; cannot be used as a function
+     connectToServer(armband::pClient, *pServerAddress);
+                                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp: In member function &#39;void armband::get_info()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:113:5: error: &#39;BLEUUID&#39; was not declared in this scope
+     BLEUUID tservice = BLEUUID(&#34;d5060001-a904-deb9-4748-2c7f4a124842&#34;);
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:114:13: error: expected &#39;;&#39; before &#39;tcharacteristic&#39;
+     BLEUUID tcharacteristic = BLEUUID(&#34;d5060101-a904-deb9-4748-2c7f4a124842&#34;);
+             ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:115:10: error: &#39;string&#39; is not a member of &#39;std&#39;
+     std::string stringt;
+          ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:116:5: error: &#39;stringt&#39; was not declared in this scope
+     stringt = armband::pClient-&gt;getService(tservice)-&gt;getCharacteristic(tcharacteristic)-&gt;readValue();
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:116:5: note: suggested alternative: &#39;String&#39;
+     stringt = armband::pClient-&gt;getService(tservice)-&gt;getCharacteristic(tcharacteristic)-&gt;readValue();
+     ^~~~~~~
+     String
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:116:24: error: &#39;pClient&#39; is not a me</pre>
+
+					
+					<h4>examples/myo_print</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.h:31:5: error: &#39;BLEClient&#39; does not name a type; did you mean &#39;BLECentral&#39;?
+     BLEClient* pClient;
+     ^~~~~~~~~
+     BLECentral
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:88:38: error: &#39;class BLERemoteCharacteristic&#39; has no member named &#39;registerForNotify&#39;
+   myo.battery_notification(TURN_ON)-&gt;registerForNotify(batteryCallback);
+                                      ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:89:38: error: &#39;class BLERemoteCharacteristic&#39; has no member named &#39;registerForNotify&#39;
+   myo.gesture_notification(TURN_ON)-&gt;registerForNotify(gestureCallback);
+                                      ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:102:40: error: &#39;class BLERemoteCharacteristic&#39; has no member named &#39;registerForNotify&#39;
+     myo.battery_notification(TURN_ON)-&gt;registerForNotify(batteryCallback);
+                                        ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:103:40: error: &#39;class BLERemoteCharacteristic&#39; has no member named &#39;registerForNotify&#39;
+     myo.gesture_notification(TURN_ON)-&gt;registerForNotify(gestureCallback);
+                                        ^~~~~~~~~~~~~~~~~
+Multiple libraries were found for &#34;BLEDevice.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/BLEPeripheral
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duinoBLE
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Seeed_Arduino_rpcBLE
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_BLE_Arduino
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.h:31:5: error: &#39;BLEClient&#39; does not name a type; did you mean &#39;DNSClient&#39;?
+     BLEClient* pClient;
+     ^~~~~~~~~
+     DNSClient
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:6:8: error: &#39;BLEUUID&#39; does not name a type
+ static BLEUUID serviceUUID(&#34;d5060001-a904-deb9-4748-2c7f4a124842&#34;);
+        ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:8:8: error: &#39;BLEAddress&#39; does not name a type
+ static BLEAddress *pServerAddress;
+        ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:20:73: error: expected class-name before &#39;{&#39; token
+ class MyoAdvertisedDeviceCallbacks: public BLEAdvertisedDeviceCallbacks {
+                                                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:23:19: error: &#39;BLEAdvertisedDevice&#39; has not been declared
+     void onResult(BLEAdvertisedDevice advertisedDevice) {
+                   ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp: In member function &#39;void MyoAdvertisedDeviceCallbacks::onResult(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:26:56: error: request for member &#39;toString&#39; in &#39;advertisedDevice&#39;, which is of non-class type &#39;int&#39;
+       armband::debug ? Serial.println(advertisedDevice.toString().c_str()) : 0;
+                                                        ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:29:28: error: request for member &#39;haveServiceUUID&#39; in &#39;advertisedDevice&#39;, which is of non-class type &#39;int&#39;
+       if (advertisedDevice.haveServiceUUID() &amp;&amp; advertisedDevice.getServiceUUID().equals(serviceUUID)) {
+                            ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:29:66: error: request for member &#39;getServiceUUID&#39; in &#39;advertisedDevice&#39;, which is of non-class type &#39;int&#39;
+       if (advertisedDevice.haveServiceUUID() &amp;&amp; advertisedDevice.getServiceUUID().equals(serviceUUID)) {
+                                                                  ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:29:90: error: &#39;serviceUUID&#39; was not declared in this scope
+       if (advertisedDevice.haveServiceUUID() &amp;&amp; advertisedDevice.getServiceUUID().equals(serviceUUID)) {
+                                                                                          ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:33:26: error: request for member &#39;getScan&#39; in &#39;advertisedDevice&#39;, which is of non-class type &#39;int&#39;
+         advertisedDevice.getScan()-&gt;stop();
+                          ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:35:9: error: &#39;pServerAddress&#39; was not declared in this scope
+         pServerAddress = new BLEAddress(advertisedDevice.getAddress());
+         ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:35:30: error: expected type-specifier before &#39;BLEAddress&#39;
+         pServerAddress = new BLEAddress(advertisedDevice.getAddress());
+                              ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:43:54: error: expected class-name before &#39;{&#39; token
+ class MyoClientCallbacks : public BLEClientCallbacks {
+                                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:45:20: error: &#39;BLEClient&#39; has not been declared
+     void onConnect(BLEClient* pClient) {
+                    ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:49:23: error: &#39;BLEClient&#39; has not been declared
+     void onDisconnect(BLEClient* pClient) {
+                       ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp: In member function &#39;void MyoClientCallbacks::onDisconnect(int*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:55:16: error: request for member &#39;disconnect&#39; in &#39;* pClient&#39;, which is of non-class type &#39;int&#39;
+       pClient-&gt;disconnect();
+                ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:65:22: error: &#39;BLEClient&#39; was not declared in this scope
+ bool connectToServer(BLEClient*  pClient, BLEAddress pAddress) {
+                      ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:65:22: note: suggested alternative: &#39;DNSClient&#39;
+ bool connectToServer(BLEClient*  pClient, BLEAddress pAddress) {
+                      ^~~~~~~~~
+                      DNSClient
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:65:34: error: &#39;pClient&#39; was not declared in this scope
+ bool connectToServer(BLEClient*  pClient, BLEAddress pAddress) {
+                                  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:65:34: note: suggested alternative: &#39;DNSClient&#39;
+ bool connectToServer(BLEClient*  pClient, BLEAddress pAddress) {
+                                  ^~~~~~~
+                                  DNSClient
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:65:43: error: &#39;BLEAddress&#39; was not declared in this scope
+ bool connectToServer(BLEClient*  pClient, BLEAddress pAddress) {
+                                           ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:65:62: error: expression list treated as compound expression in initializer [-fpermissive]
+ bool connectToServer(BLEClient*  pClient, BLEAddress pAddress) {
+                                                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp: In member function &#39;void armband::connect()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:86:16: error: &#39;init&#39; is not a member of &#39;BLEDevice&#39;
+     BLEDevice::init(&#34;&#34;);
+                ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:87:5: error: &#39;BLEScan&#39; was not declared in this scope
+     BLEScan* pBLEScan = BLEDevice::getScan();
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:87:14: error: &#39;pBLEScan&#39; was not declared in this scope
+     BLEScan* pBLEScan = BLEDevice::getScan();
+              ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:87:36: error: &#39;getScan&#39; is not a member of &#39;BLEDevice&#39;
+     BLEScan* pBLEScan = BLEDevice::getScan();
+                                    ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:98:14: error: &#39;pClient&#39; is not a member of &#39;armband&#39;
+     armband::pClient = BLEDevice::createClient();
+              ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:98:35: error: &#39;createClient&#39; is not a member of &#39;BLEDevice&#39;
+     armband::pClient = BLEDevice::createClient();
+                                   ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:99:14: error: &#39;pClient&#39; is not a member of &#39;armband&#39;
+     armband::pClient-&gt;setClientCallbacks(new MyoClientCallbacks());
+              ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:102:30: error: &#39;pClient&#39; is not a member of &#39;armband&#39;
+     connectToServer(armband::pClient, *pServerAddress);
+                              ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:102:40: error: &#39;pServerAddress&#39; was not declared in this scope
+     connectToServer(armband::pClient, *pServerAddress);
+                                        ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:102:54: error: &#39;connectToServer&#39; cannot be used as a function
+     connectToServer(armband::pClient, *pServerAddress);
+                                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp: In member function &#39;void armband::get_info()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:113:5: error: &#39;BLEUUID&#39; was not declared in this scope
+     BLEUUID tservice = BLEUUID(&#34;d5060001-a904-deb9-4748-2c7f4a124842&#34;);
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:114:13: error: expected &#39;;&#39; before &#39;tcharacteristic&#39;
+     BLEUUID tcharacteristic = BLEUUID(&#34;d5060101-a904-deb9-4748-2c7f4a124842&#34;);
+             ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:116:24: error: &#39;pClient&#39; is not a member of &#39;armband&#39;
+     stringt = armband::pClient-&gt;getService(tservice)-&gt;getCharacteristic(tcharacteristic)-&gt;readValue();
+                        ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:116:44: error: &#39;tservice&#39; was not declared in this scope
+     stringt = armband::pClient-&gt;getService(tservice)-&gt;getCharacteristic(tcharacteristic)-&gt;readValue();
+                                            ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/</pre>
+
+					
+					<h4>examples/myo_print</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.h:31:5: error: &#39;BLEClient&#39; does not name a type; did you mean &#39;DNSClient&#39;?
+     BLEClient* pClient;
+     ^~~~~~~~~
+     DNSClient
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:88:36: error: invalid use of incomplete type &#39;class BLERemoteCharacteristic&#39;
+   myo.battery_notification(TURN_ON)-&gt;registerForNotify(batteryCallback);
+                                    ^~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEService.h:23:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEDevice.h:25,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.h:6,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLECharacteristic.h:43:7: note: forward declaration of &#39;class BLERemoteCharacteristic&#39;
+ class BLERemoteCharacteristic;
+       ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:88:38: error: invalid use of incomplete type &#39;class BLERemoteCharacteristic&#39;
+   myo.battery_notification(TURN_ON)-&gt;registerForNotify(batteryCallback);
+                                      ^~~~~~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEService.h:23:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEDevice.h:25,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.h:6,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLECharacteristic.h:43:7: note: forward declaration of &#39;class BLERemoteCharacteristic&#39;
+ class BLERemoteCharacteristic;
+       ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:89:36: error: invalid use of incomplete type &#39;class BLERemoteCharacteristic&#39;
+   myo.gesture_notification(TURN_ON)-&gt;registerForNotify(gestureCallback);
+                                    ^~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEService.h:23:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEDevice.h:25,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.h:6,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLECharacteristic.h:43:7: note: forward declaration of &#39;class BLERemoteCharacteristic&#39;
+ class BLERemoteCharacteristic;
+       ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:89:38: error: invalid use of incomplete type &#39;class BLERemoteCharacteristic&#39;
+   myo.gesture_notification(TURN_ON)-&gt;registerForNotify(gestureCallback);
+                                      ^~~~~~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEService.h:23:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEDevice.h:25,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.h:6,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLECharacteristic.h:43:7: note: forward declaration of &#39;class BLERemoteCharacteristic&#39;
+ class BLERemoteCharacteristic;
+       ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:102:38: error: invalid use of incomplete type &#39;class BLERemoteCharacteristic&#39;
+     myo.battery_notification(TURN_ON)-&gt;registerForNotify(batteryCallback);
+                                      ^~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEService.h:23:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEDevice.h:25,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.h:6,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLECharacteristic.h:43:7: note: forward declaration of &#39;class BLERemoteCharacteristic&#39;
+ class BLERemoteCharacteristic;
+       ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:102:40: error: invalid use of incomplete type &#39;class BLERemoteCharacteristic&#39;
+     myo.battery_notification(TURN_ON)-&gt;registerForNotify(batteryCallback);
+                                        ^~~~~~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEService.h:23:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEDevice.h:25,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.h:6,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLECharacteristic.h:43:7: note: forward declaration of &#39;class BLERemoteCharacteristic&#39;
+ class BLERemoteCharacteristic;
+       ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:103:38: error: invalid use of incomplete type &#39;class BLERemoteCharacteristic&#39;
+     myo.gesture_notification(TURN_ON)-&gt;registerForNotify(gestureCallback);
+                                      ^~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEService.h:23:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEDevice.h:25,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.h:6,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLECharacteristic.h:43:7: note: forward declaration of &#39;class BLERemoteCharacteristic&#39;
+ class BLERemoteCharacteristic;
+       ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:103:40: error: invalid use of incomplete type &#39;class BLERemoteCharacteristic&#39;
+     myo.gesture_notification(TURN_ON)-&gt;registerForNotify(gestureCallback);
+                                        ^~~~~~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEService.h:23:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEDevice.h:25,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.h:6,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLECharacteristic.h:43:7: note: forward declaration of &#39;class BLERemoteCharacteristic&#39;
+ class BLERemoteCharacteristic;
+       ^~~~~~~~~~~~~~~~~~~~~~~
+Multiple libraries were found for &#34;BLEDevice.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/BLEPeripheral
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_BLE_Arduino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Seeed_Arduino_rpcBLE
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duinoBLE
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.h:31:5: error: &#39;BLEClient&#39; does not name a type; did you mean &#39;DNSClient&#39;?
+     BLEClient* pClient;
+     ^~~~~~~~~
+     DNSClient
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:6:8: error: &#39;BLEUUID&#39; does not name a type
+ static BLEUUID serviceUUID(&#34;d5060001-a904-deb9-4748-2c7f4a124842&#34;);
+        ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:8:8: error: &#39;BLEAddress&#39; does not name a type
+ static BLEAddress *pServerAddress;
+        ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:20:73: error: expected class-name before &#39;{&#39; token
+ class MyoAdvertisedDeviceCallbacks: public BLEAdvertisedDeviceCallbacks {
+                                                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:23:19: error: &#39;BLEAdvertisedDevice&#39; has not been declared
+     void onResult(BLEAdvertisedDevice advertisedDevice) {
+                   ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp: In member function &#39;void MyoAdvertisedDeviceCallbacks::onResult(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:26:56: error: request for member &#39;toString&#39; in &#39;advertisedDevice&#39;, which is of non-class type &#39;int&#39;
+       armband::debug ? Serial.println(advertisedDevice.toString().c_str()) : 0;
+                                                        ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:29:28: error: request for member &#39;haveServiceUUID&#39; in &#39;advertisedDevice&#39;, which is of non-class type &#39;int&#39;
+       if (advertisedDevice.haveServiceUUID() &amp;&amp; advertisedDevice.getServiceUUID().equals(serviceUUID)) {
+                            ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:29:66: error: request for member &#39;getServiceUUID&#39; in &#39;advertisedDevice&#39;, which is of non-class type &#39;int&#39;
+       if (advertisedDevice.haveServiceUUID() &amp;&amp; advertisedDevice.getServiceUUID().equals(serviceUUID)) {
+                                                                  ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:29:90: error: &#39;serviceUUID&#39; was not declared in this scope
+       if (advertisedDevice.haveServiceUUID() &amp;&amp; advertisedDevice.getServiceUUID().equals(serviceUUID)) {
+                                                                                          ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:33:26: error: request for member &#39;getScan&#39; in &#39;advertisedDevice&#39;, which is of non-class type &#39;int&#39;
+         advertisedDevice.getScan()-&gt;stop();
+                          ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:35:9: error: &#39;pServerAddress&#39; was not declared in this scope
+         pServerAddress = new BLEAddress(advertisedDevice.getAddress());
+         ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:35:30: error: expected type-specifier before &#39;BLEAddress&#39;
+         pServerAddress = new BLEAddress(advertisedDevice.getAddress());
+                              ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:43:54: error: expected class-name before &#39;{&#39; token
+ class MyoClientCallbacks : public BLEClientCallbacks {
+                                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:45:20: error: &#39;BLEClient&#39; has not been declared
+     void onConnect(BLEClient* pClient) {
+                    ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:49:23: error: &#39;BLEClient&#39; has not been declared
+     void onDisconnect(BLEClient* pClient) {
+                       ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp: In member function &#39;void MyoClientCallbacks::onDisconnect(int*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:55:16: error: request for member &#39;disconnect&#39; in &#39;* pClient&#39;, which is of non-class type &#39;int&#39;
+       pClient-&gt;disconnect();
+                ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:65:22: error: &#39;BLEClient&#39; was not declared in this scope
+ bool connectToServer(BLEClient*  pClient, BLEAddress pAddress) {
+                      ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:65:22: note: suggested alternative: &#39;DNSClient&#39;
+ bool connectToServer(BLEClient*  pClient, BLEAddress pAddress) {
+                      ^~~~~~~~~
+                      DNSClient
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:65:34: error: &#39;pClient&#39; was not declared in this scope
+ bool connectToServer(BLEClient*  pClient, BLEAddress pAddress) {
+                                  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:65:34: note: suggested alternative: &#39;DNSClient&#39;
+ bool connectToServer(BLEClient*  pClient, BLEAddress pAddress) {
+                                  ^~~~~~~
+                                  DNSClient
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:65:43: error: &#39;BLEAddress&#39; was not declared in this scope
+ bool connectToServer(BLEClient*  pClient, BLEAddress pAddress) {
+                                           ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp: In member function &#39;void armband::connect()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:86:16: error: &#39;init&#39; is not a member of &#39;BLEDevice&#39;
+     BLEDevice::init(&#34;&#34;);
+                ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:87:5: error: &#39;BLEScan&#39; was not declared in this scope
+     BLEScan* pBLEScan = BLEDevice::getScan();
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:87:14: error: &#39;pBLEScan&#39; was not declared in this scope
+     BLEScan* pBLEScan = BLEDevice::getScan();
+              ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:87:36: error: &#39;getScan&#39; is not a member of &#39;BLEDevice&#39;
+     BLEScan* pBLEScan = BLEDevice::getScan();
+                                    ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:98:14: error: &#39;pClient&#39; is not a member of &#39;armband&#39;
+     armband::pClient = BLEDevice::createClient();
+              ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:98:35: error: &#39;createClient&#39; is not a member of &#39;BLEDevice&#39;
+     armband::pClient = BLEDevice::createClient();
+                                   ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:99:14: error: &#39;pClient&#39; is not a member of &#39;armband&#39;
+     armband::pClient-&gt;setClientCallbacks(new MyoClientCallbacks());
+              ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:102:30: error: &#39;pClient&#39; is not a member of &#39;armband&#39;
+     connectToServer(armband::pClient, *pServerAddress);
+                              ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:102:40: error: &#39;pServerAddress&#39; was not declared in this scope
+     connectToServer(armband::pClient, *pServerAddress);
+                                        ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:102:54: error: &#39;connectToServer&#39; cannot be used as a function
+     connectToServer(armband::pClient, *pServerAddress);
+                                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp: In member function &#39;void armband::get_info()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:113:5: error: &#39;BLEUUID&#39; was not declared in this scope
+     BLEUUID tservice = BLEUUID(&#34;d5060001-a904-deb9-4748-2c7f4a124842&#34;);
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:114:13: error: expected &#39;;&#39; before &#39;tcharacteristic&#39;
+     BLEUUID tcharacteristic = BLEUUID(&#34;d5060101-a904-deb9-4748-2c7f4a124842&#34;);
+             ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:115:10: error: &#39;string&#39; is not a member of &#39;std&#39;
+     std::string stringt;
+          ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:116:5: error: &#39;stringt&#39; was not declared in this scope
+     stringt = armband::pClient-&gt;getService(tservice)-&gt;getCharacteristic(tcharacteristic)-&gt;readValue();
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:116:5: note: suggested alternative: &#39;strlcat&#39;
+     stringt = armband::pClient-&gt;getService(tservice)-&gt;getCharacteristic(tcharacteristic)-&gt;readValue();
+     ^~~~~~~
+     strlcat
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:116:24: error: &#39;pClient&#39; is not a member of &#39;armband&#39;
+     stringt = armband::pClient-&gt;getService(tservice)-&gt;getCharacteristic(tcharacteristic)-&gt;readValue();
+                   </pre>
+
+					
+					<h4>examples/myo_print</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.h:31:5: error: &#39;BLEClient&#39; does not name a type; did you mean &#39;DNSClient&#39;?
+     BLEClient* pClient;
+     ^~~~~~~~~
+     DNSClient
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:88:36: error: invalid use of incomplete type &#39;class BLERemoteCharacteristic&#39;
+   myo.battery_notification(TURN_ON)-&gt;registerForNotify(batteryCallback);
+                                    ^~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEService.h:23:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEDevice.h:25,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.h:6,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLECharacteristic.h:43:7: note: forward declaration of &#39;class BLERemoteCharacteristic&#39;
+ class BLERemoteCharacteristic;
+       ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:88:38: error: invalid use of incomplete type &#39;class BLERemoteCharacteristic&#39;
+   myo.battery_notification(TURN_ON)-&gt;registerForNotify(batteryCallback);
+                                      ^~~~~~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEService.h:23:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEDevice.h:25,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.h:6,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLECharacteristic.h:43:7: note: forward declaration of &#39;class BLERemoteCharacteristic&#39;
+ class BLERemoteCharacteristic;
+       ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:89:36: error: invalid use of incomplete type &#39;class BLERemoteCharacteristic&#39;
+   myo.gesture_notification(TURN_ON)-&gt;registerForNotify(gestureCallback);
+                                    ^~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEService.h:23:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEDevice.h:25,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.h:6,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLECharacteristic.h:43:7: note: forward declaration of &#39;class BLERemoteCharacteristic&#39;
+ class BLERemoteCharacteristic;
+       ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:89:38: error: invalid use of incomplete type &#39;class BLERemoteCharacteristic&#39;
+   myo.gesture_notification(TURN_ON)-&gt;registerForNotify(gestureCallback);
+                                      ^~~~~~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEService.h:23:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEDevice.h:25,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.h:6,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLECharacteristic.h:43:7: note: forward declaration of &#39;class BLERemoteCharacteristic&#39;
+ class BLERemoteCharacteristic;
+       ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:102:38: error: invalid use of incomplete type &#39;class BLERemoteCharacteristic&#39;
+     myo.battery_notification(TURN_ON)-&gt;registerForNotify(batteryCallback);
+                                      ^~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEService.h:23:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEDevice.h:25,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.h:6,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLECharacteristic.h:43:7: note: forward declaration of &#39;class BLERemoteCharacteristic&#39;
+ class BLERemoteCharacteristic;
+       ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:102:40: error: invalid use of incomplete type &#39;class BLERemoteCharacteristic&#39;
+     myo.battery_notification(TURN_ON)-&gt;registerForNotify(batteryCallback);
+                                        ^~~~~~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEService.h:23:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEDevice.h:25,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.h:6,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLECharacteristic.h:43:7: note: forward declaration of &#39;class BLERemoteCharacteristic&#39;
+ class BLERemoteCharacteristic;
+       ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:103:38: error: invalid use of incomplete type &#39;class BLERemoteCharacteristic&#39;
+     myo.gesture_notification(TURN_ON)-&gt;registerForNotify(gestureCallback);
+                                      ^~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEService.h:23:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEDevice.h:25,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.h:6,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLECharacteristic.h:43:7: note: forward declaration of &#39;class BLERemoteCharacteristic&#39;
+ class BLERemoteCharacteristic;
+       ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:103:40: error: invalid use of incomplete type &#39;class BLERemoteCharacteristic&#39;
+     myo.gesture_notification(TURN_ON)-&gt;registerForNotify(gestureCallback);
+                                        ^~~~~~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEService.h:23:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEDevice.h:25,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.h:6,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLECharacteristic.h:43:7: note: forward declaration of &#39;class BLERemoteCharacteristic&#39;
+ class BLERemoteCharacteristic;
+       ^~~~~~~~~~~~~~~~~~~~~~~
+Multiple libraries were found for &#34;BLEDevice.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_BLE_Arduino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duinoBLE
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Seeed_Arduino_rpcBLE
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/BLEPeripheral
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.h:31:5: error: &#39;BLEClient&#39; does not name a type; did you mean &#39;DNSClient&#39;?
+     BLEClient* pClient;
+     ^~~~~~~~~
+     DNSClient
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:6:8: error: &#39;BLEUUID&#39; does not name a type
+ static BLEUUID serviceUUID(&#34;d5060001-a904-deb9-4748-2c7f4a124842&#34;);
+        ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:8:8: error: &#39;BLEAddress&#39; does not name a type
+ static BLEAddress *pServerAddress;
+        ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:20:73: error: expected class-name before &#39;{&#39; token
+ class MyoAdvertisedDeviceCallbacks: public BLEAdvertisedDeviceCallbacks {
+                                                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:23:19: error: &#39;BLEAdvertisedDevice&#39; has not been declared
+     void onResult(BLEAdvertisedDevice advertisedDevice) {
+                   ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp: In member function &#39;void MyoAdvertisedDeviceCallbacks::onResult(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:26:56: error: request for member &#39;toString&#39; in &#39;advertisedDevice&#39;, which is of non-class type &#39;int&#39;
+       armband::debug ? Serial.println(advertisedDevice.toString().c_str()) : 0;
+                                                        ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:29:28: error: request for member &#39;haveServiceUUID&#39; in &#39;advertisedDevice&#39;, which is of non-class type &#39;int&#39;
+       if (advertisedDevice.haveServiceUUID() &amp;&amp; advertisedDevice.getServiceUUID().equals(serviceUUID)) {
+                            ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:29:66: error: request for member &#39;getServiceUUID&#39; in &#39;advertisedDevice&#39;, which is of non-class type &#39;int&#39;
+       if (advertisedDevice.haveServiceUUID() &amp;&amp; advertisedDevice.getServiceUUID().equals(serviceUUID)) {
+                                                                  ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:29:90: error: &#39;serviceUUID&#39; was not declared in this scope
+       if (advertisedDevice.haveServiceUUID() &amp;&amp; advertisedDevice.getServiceUUID().equals(serviceUUID)) {
+                                                                                          ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:33:26: error: request for member &#39;getScan&#39; in &#39;advertisedDevice&#39;, which is of non-class type &#39;int&#39;
+         advertisedDevice.getScan()-&gt;stop();
+                          ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:35:9: error: &#39;pServerAddress&#39; was not declared in this scope
+         pServerAddress = new BLEAddress(advertisedDevice.getAddress());
+         ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:35:30: error: expected type-specifier before &#39;BLEAddress&#39;
+         pServerAddress = new BLEAddress(advertisedDevice.getAddress());
+                              ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:43:54: error: expected class-name before &#39;{&#39; token
+ class MyoClientCallbacks : public BLEClientCallbacks {
+                                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:45:20: error: &#39;BLEClient&#39; has not been declared
+     void onConnect(BLEClient* pClient) {
+                    ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:49:23: error: &#39;BLEClient&#39; has not been declared
+     void onDisconnect(BLEClient* pClient) {
+                       ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp: In member function &#39;void MyoClientCallbacks::onDisconnect(int*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:55:16: error: request for member &#39;disconnect&#39; in &#39;* pClient&#39;, which is of non-class type &#39;int&#39;
+       pClient-&gt;disconnect();
+                ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:65:22: error: &#39;BLEClient&#39; was not declared in this scope
+ bool connectToServer(BLEClient*  pClient, BLEAddress pAddress) {
+                      ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:65:22: note: suggested alternative: &#39;DNSClient&#39;
+ bool connectToServer(BLEClient*  pClient, BLEAddress pAddress) {
+                      ^~~~~~~~~
+                      DNSClient
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:65:34: error: &#39;pClient&#39; was not declared in this scope
+ bool connectToServer(BLEClient*  pClient, BLEAddress pAddress) {
+                                  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:65:34: note: suggested alternative: &#39;DNSClient&#39;
+ bool connectToServer(BLEClient*  pClient, BLEAddress pAddress) {
+                                  ^~~~~~~
+                                  DNSClient
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:65:43: error: &#39;BLEAddress&#39; was not declared in this scope
+ bool connectToServer(BLEClient*  pClient, BLEAddress pAddress) {
+                                           ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:65:62: error: expression list treated as compound expression in initializer [-fpermissive]
+ bool connectToServer(BLEClient*  pClient, BLEAddress pAddress) {
+                                                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp: In member function &#39;void armband::connect()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:86:16: error: &#39;init&#39; is not a member of &#39;BLEDevice&#39;
+     BLEDevice::init(&#34;&#34;);
+                ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:87:5: error: &#39;BLEScan&#39; was not declared in this scope
+     BLEScan* pBLEScan = BLEDevice::getScan();
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:87:14: error: &#39;pBLEScan&#39; was not declared in this scope
+     BLEScan* pBLEScan = BLEDevice::getScan();
+              ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:87:36: error: &#39;getScan&#39; is not a member of &#39;BLEDevice&#39;
+     BLEScan* pBLEScan = BLEDevice::getScan();
+                                    ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:98:14: error: &#39;pClient&#39; is not a member of &#39;armband&#39;
+     armband::pClient = BLEDevice::createClient();
+              ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:98:35: error: &#39;createClient&#39; is not a member of &#39;BLEDevice&#39;
+     armband::pClient = BLEDevice::createClient();
+                                   ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:99:14: error: &#39;pClient&#39; is not a member of &#39;armband&#39;
+     armband::pClient-&gt;setClientCallbacks(new MyoClientCallbacks());
+              ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:102:30: error: &#39;pClient&#39; is not a member of &#39;armband&#39;
+     connectToServer(armband::pClient, *pServerAddress);
+                              ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:102:40: error: &#39;pServerAddress&#39; was not declared in this scope
+     connectToServer(armband::pClient, *pServerAddress);
+                                        ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:102:54: error: &#39;connectToServer&#39; cannot be used as a function
+     connectToServer(armband::pClient, *pServerAddress);
+                                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp: In member function &#39;void armband::get_info()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:113:5: error: &#39;BLEUUID&#39; was not declared in this scope
+     BLEUUID tservice = BLEUUID(&#34;d5060001-a904-deb9-4748-2c7f4a124842&#34;);
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:114:13: error: expected &#39;;&#39; before &#39;tcharacteristic&#39;
+     BLEUUID tcharacteristic = BLEUUID(&#34;d5060101-a904-deb9-4748-2c7f4a124842&#34;);
+             ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:115:10: error: &#39;string&#39; is not a member of &#39;std&#39;
+     std::string stringt;
+          ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:115:10: note: suggested alternative: &#39;trunc&#39;
+     std::string stringt;
+          ^~~~~~
+          trunc
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.cpp:116:5: error: &#39;stringt&#39; was not declared in this scope
+     stringt = armband::pClient-&gt;getService(tservice)-&gt;getCharacteristic(tcharacteristic)-&gt;readValue();
+     ^~~~~~~
+/home/ec2-user/arduino-testl</pre>
+
+					
+					<h4>examples/myo_print</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.h:31:5: error: &#39;BLEClient&#39; does not name a type; did you mean &#39;DNSClient&#39;?
+     BLEClient* pClient;
+     ^~~~~~~~~
+     DNSClient
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:88:36: error: invalid use of incomplete type &#39;class BLERemoteCharacteristic&#39;
+   myo.battery_notification(TURN_ON)-&gt;registerForNotify(batteryCallback);
+                                    ^~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEService.h:23:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEDevice.h:25,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.h:6,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLECharacteristic.h:43:7: note: forward declaration of &#39;class BLERemoteCharacteristic&#39;
+ class BLERemoteCharacteristic;
+       ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:88:38: error: invalid use of incomplete type &#39;class BLERemoteCharacteristic&#39;
+   myo.battery_notification(TURN_ON)-&gt;registerForNotify(batteryCallback);
+                                      ^~~~~~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEService.h:23:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEDevice.h:25,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.h:6,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLECharacteristic.h:43:7: note: forward declaration of &#39;class BLERemoteCharacteristic&#39;
+ class BLERemoteCharacteristic;
+       ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:89:36: error: invalid use of incomplete type &#39;class BLERemoteCharacteristic&#39;
+   myo.gesture_notification(TURN_ON)-&gt;registerForNotify(gestureCallback);
+                                    ^~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEService.h:23:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEDevice.h:25,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.h:6,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLECharacteristic.h:43:7: note: forward declaration of &#39;class BLERemoteCharacteristic&#39;
+ class BLERemoteCharacteristic;
+       ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:89:38: error: invalid use of incomplete type &#39;class BLERemoteCharacteristic&#39;
+   myo.gesture_notification(TURN_ON)-&gt;registerForNotify(gestureCallback);
+                                      ^~~~~~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEService.h:23:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEDevice.h:25,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.h:6,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLECharacteristic.h:43:7: note: forward declaration of &#39;class BLERemoteCharacteristic&#39;
+ class BLERemoteCharacteristic;
+       ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:102:38: error: invalid use of incomplete type &#39;class BLERemoteCharacteristic&#39;
+     myo.battery_notification(TURN_ON)-&gt;registerForNotify(batteryCallback);
+                                      ^~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEService.h:23:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEDevice.h:25,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.h:6,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLECharacteristic.h:43:7: note: forward declaration of &#39;class BLERemoteCharacteristic&#39;
+ class BLERemoteCharacteristic;
+       ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:102:40: error: invalid use of incomplete type &#39;class BLERemoteCharacteristic&#39;
+     myo.battery_notification(TURN_ON)-&gt;registerForNotify(batteryCallback);
+                                        ^~~~~~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEService.h:23:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEDevice.h:25,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.h:6,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLECharacteristic.h:43:7: note: forward declaration of &#39;class BLERemoteCharacteristic&#39;
+ class BLERemoteCharacteristic;
+       ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:103:38: error: invalid use of incomplete type &#39;class BLERemoteCharacteristic&#39;
+     myo.gesture_notification(TURN_ON)-&gt;registerForNotify(gestureCallback);
+                                      ^~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEService.h:23:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEDevice.h:25,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.h:6,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLECharacteristic.h:43:7: note: forward declaration of &#39;class BLERemoteCharacteristic&#39;
+ class BLERemoteCharacteristic;
+       ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:103:40: error: invalid use of incomplete type &#39;class BLERemoteCharacteristic&#39;
+     myo.gesture_notification(TURN_ON)-&gt;registerForNotify(gestureCallback);
+                                        ^~~~~~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEService.h:23:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLEDevice.h:25,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/src/myo.h:6,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sparthan_Myo/examples/myo_print/myo_print.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE/src/BLECharacteristic.h:43:7: note: forward declaration of &#39;class BLERemoteCharacteristic&#39;
+ class BLERemoteCharacteristic;
+       ^~~~~~~~~~~~~~~~~~~~~~~
+Multiple libraries were found for &#34;BLEDevice.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoBLE
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_BLE_Arduino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duinoBLE
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Seeed_Arduino_rpcBLE
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/BLEPeripheral
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 268598 bytes (20%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 13576 bytes (4%) of dynamic memory, leaving 314104 bytes for local variables. Maximum is 327680 bytes.
+</pre>
+
+					
+					<h4>examples/myo_print</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 1122310 bytes (85%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 34520 bytes (10%) of dynamic memory, leaving 293160 bytes for local variables. Maximum is 327680 bytes.
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

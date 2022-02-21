@@ -1,0 +1,513 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>ILI9341-Layout-Manager - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>ILI9341-Layout-Manager</h2>
+				<p>
+					Version: <b>1.0.5</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/ili9341-layout-manager/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>ilm-demo</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/src/LayoutManager.h:22:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/src/LayoutManager.cpp:14:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/src/obj/Primitive.h:22:10: fatal error: string: No such file or directory
+ #include &lt;string&gt;
+          ^~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/ilm-demo</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/src/LayoutManager.h:22:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/examples/ilm-demo/ilm-demo.ino:10:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/src/obj/Primitive.h:22:10: fatal error: string: No such file or directory
+ #include &lt;string&gt;
+          ^~~~~~~~
+compilation terminated.
+
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 83784 bytes (0%) of program storage space. Maximum is 16777216 bytes.
+Global variables use 44452 bytes (16%) of dynamic memory, leaving 225884 bytes for local variables. Maximum is 270336 bytes.
+</pre>
+
+					
+					<h4>examples/ilm-demo</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/examples/ilm-demo/ilm-demo.ino:74:8: error: &#39;Panel* p1&#39; redeclared as different kind of symbol
+ Panel *p1;
+        ^~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/targets/TARGET_RASPBERRYPI/TARGET_RP2040/PeripheralNames.h:21:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/variants/NANO_RP2040_CONNECT/pinmode_arduino.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:26,
+                 from /tmp/arduino-sketch-A6E42A9EEEC878A0720F3DF3CE4FB5C9/sketch/ilm-demo.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/targets/TARGET_RASPBERRYPI/TARGET_RP2040/TARGET_NANO_RP2040_CONNECT/PinNames.h:13:5: note: previous declaration &#39;PinName p1&#39;
+     p1  = 1,
+     ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/examples/ilm-demo/ilm-demo.ino:78:8: error: &#39;Panel* p2&#39; redeclared as different kind of symbol
+ Panel *p2;
+        ^~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/targets/TARGET_RASPBERRYPI/TARGET_RP2040/PeripheralNames.h:21:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/variants/NANO_RP2040_CONNECT/pinmode_arduino.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:26,
+                 from /tmp/arduino-sketch-A6E42A9EEEC878A0720F3DF3CE4FB5C9/sketch/ilm-demo.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/targets/TARGET_RASPBERRYPI/TARGET_RP2040/TARGET_NANO_RP2040_CONNECT/PinNames.h:14:5: note: previous declaration &#39;PinName p2&#39;
+     p2  = 2,
+     ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/examples/ilm-demo/ilm-demo.ino:83:8: error: &#39;Panel* p3&#39; redeclared as different kind of symbol
+ Panel *p3;
+        ^~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/targets/TARGET_RASPBERRYPI/TARGET_RP2040/PeripheralNames.h:21:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/variants/NANO_RP2040_CONNECT/pinmode_arduino.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:26,
+                 from /tmp/arduino-sketch-A6E42A9EEEC878A0720F3DF3CE4FB5C9/sketch/ilm-demo.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/targets/TARGET_RASPBERRYPI/TARGET_RP2040/TARGET_NANO_RP2040_CONNECT/PinNames.h:15:5: note: previous declaration &#39;PinName p3&#39;
+     p3  = 3,
+     ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/examples/ilm-demo/ilm-demo.ino: In function &#39;void initPeripherals()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/examples/ilm-demo/ilm-demo.ino:181:10: error: &#39;class arduino::UART&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+   Serial.printf(&#34;ILI9341-Layout-Manager v%s\r\n&#34;, man-&gt;version());
+          ^~~~~~
+          print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/examples/ilm-demo/ilm-demo.ino:185:10: error: &#39;class arduino::UART&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+   Serial.printf(&#34;creating panel (%u)\r\n&#34;, 1);
+          ^~~~~~
+          print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/examples/ilm-demo/ilm-demo.ino:197:3: error: lvalue required as left operand of assignment
+   );
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/examples/ilm-demo/ilm-demo.ino:199:5: error: base operand of &#39;-&gt;&#39; is not a pointer
+   p1-&gt;setAxis(LayoutAxis::Vertical);
+     ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/examples/ilm-demo/ilm-demo.ino:200:5: error: base operand of &#39;-&gt;&#39; is not a pointer
+   p1-&gt;setMargin(8);
+     ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/examples/ilm-demo/ilm-demo.ino:201:5: error: base operand of &#39;-&gt;&#39; is not a pointer
+   p1-&gt;setPadding(8);
+     ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/examples/ilm-demo/ilm-demo.ino:204:5: error: base operand of &#39;-&gt;&#39; is not a pointer
+   p1-&gt;setTouchPress(p1_press);
+     ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/examples/ilm-demo/ilm-demo.ino:218:3: error: no matching function for call to &#39;LayoutManager::addField(PinName, const char [4], int, int, int, int, int, int, int, int, int, int)&#39;
+   );
+   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/examples/ilm-demo/ilm-demo.ino:10:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/src/LayoutManager.h:120:10: note: candidate: Field* LayoutManager::addField(Panel*, std::__cxx11::string, uint8_t, Color, Radius, Color)
+   Field *addField(
+          ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/src/LayoutManager.h:120:10: note:   candidate expects 6 arguments, 12 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/src/LayoutManager.h:128:10: note: candidate: Field* LayoutManager::addField(Panel*, std::__cxx11::string, uint8_t, Color, Color, Radius, Color, Color)
+   Field *addField(
+          ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/src/LayoutManager.h:128:10: note:   candidate expects 8 arguments, 12 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/src/LayoutManager.h:136:10: note: candidate: Field* LayoutManager::addField(Panel*, std::__cxx11::string, uint8_t, Color, Radius, Color, Radius, int8_t, Color)
+   Field *addField(
+          ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/src/LayoutManager.h:136:10: note:   candidate expects 9 arguments, 12 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/src/LayoutManager.h:146:10: note: candidate: Field* LayoutManager::addField(Panel*, std::__cxx11::string, uint8_t, Color, Color, Radius, Color, Color, Radius, int8_t, Color, Color)
+   Field *addField(
+          ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/src/LayoutManager.h:146:10: note:   no known conversion for argument 1 from &#39;PinName&#39; to &#39;Panel*&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/src/LayoutManager.h:157:10: note: candidate: Field* LayoutManager::addField(Panel*, std::__cxx11::string, uint8_t, const GFXfont*, Color, Radius, Color)
+   Field *addField(
+          ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/src/LayoutManager.h:157:10: note:   candidate expects 7 arguments, 12 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/src/LayoutManager.h:166:10: note: candidate: Field* LayoutManager::addField(Panel*, std::__cxx11::string, uint8_t, const GFXfont*, Color, Color, Radius, Color, Color)
+   Field *addField(
+          ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/src/LayoutManager.h:166:10: note:   candidate expects 9 arguments, 12 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/src/LayoutManager.h:175:10: note: candidate: Field* LayoutManager::addField(Panel*, std::__cxx11::string, uint8_t, const GFXfont*, Color, Radius, Color, Radius, int8_t, Color)
+   Field *addField(
+          ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/src/LayoutManager.h:175:10: note:   candidate expects 10 arguments, 12 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/src/LayoutManager.h:186:10: note: candidate: Field* LayoutManager::addField(Panel*, std::__cxx11::string, uint8_t, const GFXfont*, Color, Color, Radius, Color, Color, Radius, int8_t, Color, Color)
+   Field *addField(
+          ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/src/LayoutManager.h:186:10: note:   candidate expects 13 arguments, 12 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/examples/ilm-demo/ilm-demo.ino:226:3: error: no matching function for call to &#39;LayoutManager::addField(PinName, const char [3], int, int, int, int, int, int)&#39;
+   );
+   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/examples/ilm-demo/ilm-demo.ino:10:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/src/LayoutManager.h:120:10: note: candidate: Field* LayoutManager::addField(Panel*, std::__cxx11::string, uint8_t, Color, Radius, Color)
+   Field *addField(
+          ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/src/LayoutManager.h:120:10: note:   candidate expects 6 arguments, 8 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/src/LayoutManager.h:128:10: note: candidate: Field* LayoutManager::addField(Panel*, std::__cxx11::string, uint8_t, Color, Color, Radius, Color, Color)
+   Field *addField(
+          ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadi</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/src/LayoutManager.h:22:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/src/LayoutManager.cpp:14:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/src/obj/Primitive.h:22:10: fatal error: string: No such file or directory
+ #include &lt;string&gt;
+          ^~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/ilm-demo</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/src/LayoutManager.h:22:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/examples/ilm-demo/ilm-demo.ino:10:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/src/obj/Primitive.h:22:10: fatal error: string: No such file or directory
+ #include &lt;string&gt;
+          ^~~~~~~~
+compilation terminated.
+
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 14964 bytes (5%) of program storage space. Maximum is 262144 bytes.
+Global variables use 3832 bytes (11%) of dynamic memory, leaving 28936 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+
+					
+					<h4>examples/ilm-demo</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/examples/ilm-demo/ilm-demo.ino: In function &#39;void initPeripherals()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/examples/ilm-demo/ilm-demo.ino:181:10: error: &#39;class Serial_&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+   Serial.printf(&#34;ILI9341-Layout-Manager v%s\r\n&#34;, man-&gt;version());
+          ^~~~~~
+          print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/examples/ilm-demo/ilm-demo.ino:185:10: error: &#39;class Serial_&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+   Serial.printf(&#34;creating panel (%u)\r\n&#34;, 1);
+          ^~~~~~
+          print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/examples/ilm-demo/ilm-demo.ino:234:10: error: &#39;class Serial_&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+   Serial.printf(&#34;creating panel (%u)\r\n&#34;, 2);
+          ^~~~~~
+          print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/examples/ilm-demo/ilm-demo.ino:289:10: error: &#39;class Serial_&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+   Serial.printf(&#34;creating panel (%u)\r\n&#34;, 3);
+          ^~~~~~
+          print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/examples/ilm-demo/ilm-demo.ino: In function &#39;void p1_press(const Frame&amp;, const Touch&amp;)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/examples/ilm-demo/ilm-demo.ino:336:10: error: &#39;class Serial_&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+   Serial.printf(&#34;p1_press {%u,%u}\r\n&#34;, t.x(), t.y());
+          ^~~~~~
+          print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/examples/ilm-demo/ilm-demo.ino: In function &#39;void p2_press(const Frame&amp;, const Touch&amp;)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/examples/ilm-demo/ilm-demo.ino:341:10: error: &#39;class Serial_&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+   Serial.printf(&#34;p2_press {%u,%u}\r\n&#34;, t.x(), t.y());
+          ^~~~~~
+          print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/examples/ilm-demo/ilm-demo.ino: In function &#39;void p1f1_begin(const Frame&amp;, const Touch&amp;)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/examples/ilm-demo/ilm-demo.ino:346:10: error: &#39;class Serial_&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+   Serial.printf(&#34;p1f1_begin: {%u,%u}\r\n&#34;, t.x(), t.y());
+          ^~~~~~
+          print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/examples/ilm-demo/ilm-demo.ino: In function &#39;void p1f1_end(const Frame&amp;, const Touch&amp;)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/examples/ilm-demo/ilm-demo.ino:351:10: error: &#39;class Serial_&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+   Serial.printf(&#34;p1f1_end: {%u,%u}\r\n&#34;, t.x(), t.y());
+          ^~~~~~
+          print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/examples/ilm-demo/ilm-demo.ino: In function &#39;void p1f1_press(const Frame&amp;, const Touch&amp;)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/examples/ilm-demo/ilm-demo.ino:356:10: error: &#39;class Serial_&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+   Serial.printf(&#34;p1f1_press: {%u,%u}\r\n&#34;, t.x(), t.y());
+          ^~~~~~
+          print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/examples/ilm-demo/ilm-demo.ino:358:10: error: &#39;class Serial_&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+   Serial.printf(&#34;p1f1_press: {%u,%u}: adding new layer\r\n&#34;, t.x(), t.y());
+          ^~~~~~
+          print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/examples/ilm-demo/ilm-demo.ino: In function &#39;void screenTouchEnd(const Screen&amp;, const Touch&amp;)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/examples/ilm-demo/ilm-demo.ino:410:10: error: &#39;class Serial_&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+   Serial.printf(&#34;screen: ({%u,%u}, %u)\r\n&#34;, t.x(), t.y(), t.pressure());
+          ^~~~~~
+          print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/examples/ilm-demo/ilm-demo.ino: In function &#39;void popupButton_press(const Frame&amp;, const Touch&amp;)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ILI9341-Layout-Manager/examples/ilm-demo/ilm-demo.ino:415:10: error: &#39;class Serial_&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+   Serial.printf(&#34;popupButton_press: {%u,%u}: removing top layer\r\n&#34;, t.x(), t.y());
+          ^~~~~~
+          print
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 259142 bytes (19%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 14376 bytes (4%) of dynamic memory, leaving 313304 bytes for local variables. Maximum is 327680 bytes.
+</pre>
+
+					
+					<h4>examples/ilm-demo</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 291346 bytes (22%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 15260 bytes (4%) of dynamic memory, leaving 312420 bytes for local variables. Maximum is 327680 bytes.
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

@@ -1,0 +1,837 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>ArduinoSerialToTCPBridgeClient - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>ArduinoSerialToTCPBridgeClient</h2>
+				<p>
+					Version: <b>1.1.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/arduinoserialtotcpbridgeclient/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>MQTTClient</pre></th>
+						
+						<th><pre>WebClient</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+									
+										
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 2570 bytes (7%) of program storage space. Maximum is 32256 bytes.
+Global variables use 204 bytes (9%) of dynamic memory, leaving 1844 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+
+					
+					<h4>examples/MQTTClient</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 9878 bytes (30%) of program storage space. Maximum is 32256 bytes.
+Global variables use 391 bytes (19%) of dynamic memory, leaving 1657 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+					
+					<h4>examples/WebClient</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 5446 bytes (16%) of program storage space. Maximum is 32256 bytes.
+Global variables use 358 bytes (17%) of dynamic memory, leaving 1690 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/src/NeoHWSerial.cpp:31:10: fatal error: util/atomic.h: No such file or directory
+ #include &lt;util/atomic.h&gt;
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;CRC32.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CRC32
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CRC
+</pre>
+
+					
+					<h4>examples/MQTTClient</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/src/NeoHWSerial.cpp:31:10: fatal error: util/atomic.h: No such file or directory
+ #include &lt;util/atomic.h&gt;
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;PubSubClient.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PubSubClient
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_WiFi_SDK
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CMMC_MQTT_Connector
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AzureIoTHubMQTTClient
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Antares_ESP8266_MQTT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AIS_4G_board
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ACS-M1128
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_Microgear
+Multiple libraries were found for &#34;CRC32.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CRC32
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CRC
+</pre>
+					
+					<h4>examples/WebClient</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/src/NeoHWSerial.cpp:31:10: fatal error: util/atomic.h: No such file or directory
+ #include &lt;util/atomic.h&gt;
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;CRC32.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CRC32
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CRC
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library NeoHWSerial claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp: In constructor &#39;ArduinoSerialToTCPBridgeClient::ArduinoSerialToTCPBridgeClient()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:32:2: error: &#39;NeoSerial&#39; was not declared in this scope
+  NeoSerial.attachInterrupt(rxISR0);
+  ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:32:2: note: suggested alternative: &#39;NeoHWSerial&#39;
+  NeoSerial.attachInterrupt(rxISR0);
+  ^~~~~~~~~
+  NeoHWSerial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp: In member function &#39;virtual void ArduinoSerialToTCPBridgeClient::flush()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:185:2: error: &#39;NeoSerial&#39; was not declared in this scope
+  NeoSerial.flush();
+  ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:185:2: note: suggested alternative: &#39;NeoHWSerial&#39;
+  NeoSerial.flush();
+  ^~~~~~~~~
+  NeoHWSerial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp: In member function &#39;boolean ArduinoSerialToTCPBridgeClient::writePacket(uint8_t, uint8_t*, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:222:8: error: &#39;NeoSerial&#39; was not declared in this scope
+  while(NeoSerial.availableForWrite() &lt; 2);
+        ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:222:8: note: suggested alternative: &#39;NeoHWSerial&#39;
+  while(NeoSerial.availableForWrite() &lt; 2);
+        ^~~~~~~~~
+        NeoHWSerial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:223:2: error: &#39;NeoSerial&#39; was not declared in this scope
+  NeoSerial.write(h_length);
+  ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:223:2: note: suggested alternative: &#39;NeoHWSerial&#39;
+  NeoSerial.write(h_length);
+  ^~~~~~~~~
+  NeoHWSerial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp: In member function &#39;void ArduinoSerialToTCPBridgeClient::setupAckTimer()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:351:2: error: &#39;TCCR1A&#39; was not declared in this scope
+  TCCR1A = 0;
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:351:2: note: suggested alternative: &#39;TCB1&#39;
+  TCCR1A = 0;
+  ^~~~~~
+  TCB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:352:2: error: &#39;TCCR1B&#39; was not declared in this scope
+  TCCR1B = 0;
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:352:2: note: suggested alternative: &#39;TCB1&#39;
+  TCCR1B = 0;
+  ^~~~~~
+  TCB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:353:2: error: &#39;OCR1A&#39; was not declared in this scope
+  OCR1A = 12499; // 200ms
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:354:18: error: &#39;WGM12&#39; was not declared in this scope
+  TCCR1B |= (1 &lt;&lt; WGM12); // ctc mode
+                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:355:2: error: &#39;TIMSK1&#39; was not declared in this scope
+  TIMSK1 |= (1 &lt;&lt; OCIE1A);
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:355:2: note: suggested alternative: &#39;TIMERB1&#39;
+  TIMSK1 |= (1 &lt;&lt; OCIE1A);
+  ^~~~~~
+  TIMERB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:355:18: error: &#39;OCIE1A&#39; was not declared in this scope
+  TIMSK1 |= (1 &lt;&lt; OCIE1A);
+                  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp: In member function &#39;void ArduinoSerialToTCPBridgeClient::startAckTimer()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:360:2: error: &#39;TCCR1B&#39; was not declared in this scope
+  TCCR1B |= (1 &lt;&lt; CS12); // 256 prescaler
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:360:2: note: suggested alternative: &#39;TCB1&#39;
+  TCCR1B |= (1 &lt;&lt; CS12); // 256 prescaler
+  ^~~~~~
+  TCB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:360:18: error: &#39;CS12&#39; was not declared in this scope
+  TCCR1B |= (1 &lt;&lt; CS12); // 256 prescaler
+                  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp: In member function &#39;void ArduinoSerialToTCPBridgeClient::stopAckTimer()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:364:2: error: &#39;TCCR1B&#39; was not declared in this scope
+  TCCR1B &amp;= 0xF8; // remove clk source
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:364:2: note: suggested alternative: &#39;TCB1&#39;
+  TCCR1B &amp;= 0xF8; // remove clk source
+  ^~~~~~
+  TCB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:365:2: error: &#39;TCNT1&#39; was not declared in this scope
+  TCNT1 = 0; // reset counter
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:365:2: note: suggested alternative: &#39;TCB1&#39;
+  TCNT1 = 0; // reset counter
+  ^~~~~
+  TCB1
+Multiple libraries were found for &#34;CRC32.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CRC32
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CRC
+</pre>
+
+					
+					<h4>examples/MQTTClient</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library NeoHWSerial claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp: In constructor &#39;ArduinoSerialToTCPBridgeClient::ArduinoSerialToTCPBridgeClient()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:32:2: error: &#39;NeoSerial&#39; was not declared in this scope
+  NeoSerial.attachInterrupt(rxISR0);
+  ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:32:2: note: suggested alternative: &#39;NeoHWSerial&#39;
+  NeoSerial.attachInterrupt(rxISR0);
+  ^~~~~~~~~
+  NeoHWSerial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp: In member function &#39;virtual void ArduinoSerialToTCPBridgeClient::flush()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:185:2: error: &#39;NeoSerial&#39; was not declared in this scope
+  NeoSerial.flush();
+  ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:185:2: note: suggested alternative: &#39;NeoHWSerial&#39;
+  NeoSerial.flush();
+  ^~~~~~~~~
+  NeoHWSerial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp: In member function &#39;boolean ArduinoSerialToTCPBridgeClient::writePacket(uint8_t, uint8_t*, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:222:8: error: &#39;NeoSerial&#39; was not declared in this scope
+  while(NeoSerial.availableForWrite() &lt; 2);
+        ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:222:8: note: suggested alternative: &#39;NeoHWSerial&#39;
+  while(NeoSerial.availableForWrite() &lt; 2);
+        ^~~~~~~~~
+        NeoHWSerial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:223:2: error: &#39;NeoSerial&#39; was not declared in this scope
+  NeoSerial.write(h_length);
+  ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:223:2: note: suggested alternative: &#39;NeoHWSerial&#39;
+  NeoSerial.write(h_length);
+  ^~~~~~~~~
+  NeoHWSerial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp: In member function &#39;void ArduinoSerialToTCPBridgeClient::setupAckTimer()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:351:2: error: &#39;TCCR1A&#39; was not declared in this scope
+  TCCR1A = 0;
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:351:2: note: suggested alternative: &#39;TCB1&#39;
+  TCCR1A = 0;
+  ^~~~~~
+  TCB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:352:2: error: &#39;TCCR1B&#39; was not declared in this scope
+  TCCR1B = 0;
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:352:2: note: suggested alternative: &#39;TCB1&#39;
+  TCCR1B = 0;
+  ^~~~~~
+  TCB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:353:2: error: &#39;OCR1A&#39; was not declared in this scope
+  OCR1A = 12499; // 200ms
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:354:18: error: &#39;WGM12&#39; was not declared in this scope
+  TCCR1B |= (1 &lt;&lt; WGM12); // ctc mode
+                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:355:2: error: &#39;TIMSK1&#39; was not declared in this scope
+  TIMSK1 |= (1 &lt;&lt; OCIE1A);
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:355:2: note: suggested alternative: &#39;TIMERB1&#39;
+  TIMSK1 |= (1 &lt;&lt; OCIE1A);
+  ^~~~~~
+  TIMERB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:355:18: error: &#39;OCIE1A&#39; was not declared in this scope
+  TIMSK1 |= (1 &lt;&lt; OCIE1A);
+                  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp: In member function &#39;void ArduinoSerialToTCPBridgeClient::startAckTimer()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:360:2: error: &#39;TCCR1B&#39; was not declared in this scope
+  TCCR1B |= (1 &lt;&lt; CS12); // 256 prescaler
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:360:2: note: suggested alternative: &#39;TCB1&#39;
+  TCCR1B |= (1 &lt;&lt; CS12); // 256 prescaler
+  ^~~~~~
+  TCB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:360:18: error: &#39;CS12&#39; was not declared in this scope
+  TCCR1B |= (1 &lt;&lt; CS12); // 256 prescaler
+                  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp: In member function &#39;void ArduinoSerialToTCPBridgeClient::stopAckTimer()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:364:2: error: &#39;TCCR1B&#39; was not declared in this scope
+  TCCR1B &amp;= 0xF8; // remove clk source
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:364:2: note: suggested alternative: &#39;TCB1&#39;
+  TCCR1B &amp;= 0xF8; // remove clk source
+  ^~~~~~
+  TCB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:365:2: error: &#39;TCNT1&#39; was not declared in this scope
+  TCNT1 = 0; // reset counter
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:365:2: note: suggested alternative: &#39;TCB1&#39;
+  TCNT1 = 0; // reset counter
+  ^~~~~
+  TCB1
+Multiple libraries were found for &#34;PubSubClient.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PubSubClient
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_WiFi_SDK
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Antares_ESP8266_MQTT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ACS-M1128
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AzureIoTHubMQTTClient
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AIS_4G_board
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CMMC_MQTT_Connector
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_Microgear
+Multiple libraries were found for &#34;CRC32.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CRC32
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CRC
+</pre>
+					
+					<h4>examples/WebClient</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library NeoHWSerial claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp: In constructor &#39;ArduinoSerialToTCPBridgeClient::ArduinoSerialToTCPBridgeClient()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:32:2: error: &#39;NeoSerial&#39; was not declared in this scope
+  NeoSerial.attachInterrupt(rxISR0);
+  ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:32:2: note: suggested alternative: &#39;NeoHWSerial&#39;
+  NeoSerial.attachInterrupt(rxISR0);
+  ^~~~~~~~~
+  NeoHWSerial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp: In member function &#39;virtual void ArduinoSerialToTCPBridgeClient::flush()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:185:2: error: &#39;NeoSerial&#39; was not declared in this scope
+  NeoSerial.flush();
+  ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:185:2: note: suggested alternative: &#39;NeoHWSerial&#39;
+  NeoSerial.flush();
+  ^~~~~~~~~
+  NeoHWSerial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp: In member function &#39;boolean ArduinoSerialToTCPBridgeClient::writePacket(uint8_t, uint8_t*, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:222:8: error: &#39;NeoSerial&#39; was not declared in this scope
+  while(NeoSerial.availableForWrite() &lt; 2);
+        ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:222:8: note: suggested alternative: &#39;NeoHWSerial&#39;
+  while(NeoSerial.availableForWrite() &lt; 2);
+        ^~~~~~~~~
+        NeoHWSerial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:223:2: error: &#39;NeoSerial&#39; was not declared in this scope
+  NeoSerial.write(h_length);
+  ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:223:2: note: suggested alternative: &#39;NeoHWSerial&#39;
+  NeoSerial.write(h_length);
+  ^~~~~~~~~
+  NeoHWSerial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp: In member function &#39;void ArduinoSerialToTCPBridgeClient::setupAckTimer()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:351:2: error: &#39;TCCR1A&#39; was not declared in this scope
+  TCCR1A = 0;
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:351:2: note: suggested alternative: &#39;TCB1&#39;
+  TCCR1A = 0;
+  ^~~~~~
+  TCB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:352:2: error: &#39;TCCR1B&#39; was not declared in this scope
+  TCCR1B = 0;
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:352:2: note: suggested alternative: &#39;TCB1&#39;
+  TCCR1B = 0;
+  ^~~~~~
+  TCB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:353:2: error: &#39;OCR1A&#39; was not declared in this scope
+  OCR1A = 12499; // 200ms
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:354:18: error: &#39;WGM12&#39; was not declared in this scope
+  TCCR1B |= (1 &lt;&lt; WGM12); // ctc mode
+                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:355:2: error: &#39;TIMSK1&#39; was not declared in this scope
+  TIMSK1 |= (1 &lt;&lt; OCIE1A);
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:355:2: note: suggested alternative: &#39;TIMERB1&#39;
+  TIMSK1 |= (1 &lt;&lt; OCIE1A);
+  ^~~~~~
+  TIMERB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:355:18: error: &#39;OCIE1A&#39; was not declared in this scope
+  TIMSK1 |= (1 &lt;&lt; OCIE1A);
+                  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp: In member function &#39;void ArduinoSerialToTCPBridgeClient::startAckTimer()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:360:2: error: &#39;TCCR1B&#39; was not declared in this scope
+  TCCR1B |= (1 &lt;&lt; CS12); // 256 prescaler
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:360:2: note: suggested alternative: &#39;TCB1&#39;
+  TCCR1B |= (1 &lt;&lt; CS12); // 256 prescaler
+  ^~~~~~
+  TCB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:360:18: error: &#39;CS12&#39; was not declared in this scope
+  TCCR1B |= (1 &lt;&lt; CS12); // 256 prescaler
+                  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp: In member function &#39;void ArduinoSerialToTCPBridgeClient::stopAckTimer()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:364:2: error: &#39;TCCR1B&#39; was not declared in this scope
+  TCCR1B &amp;= 0xF8; // remove clk source
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:364:2: note: suggested alternative: &#39;TCB1&#39;
+  TCCR1B &amp;= 0xF8; // remove clk source
+  ^~~~~~
+  TCB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:365:2: error: &#39;TCNT1&#39; was not declared in this scope
+  TCNT1 = 0; // reset counter
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoSerialToTCPBridgeClient/src/ArduinoSerialToTCPBridgeClient.cpp:365:2: note: suggested alternative: &#39;TCB1&#39;
+  TCNT1 = 0; // reset counter
+  ^~~~~
+  TCB1
+Multiple libraries were found for &#34;CRC32.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CRC32
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CRC
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/src/NeoHWSerial.cpp:31:10: fatal error: util/atomic.h: No such file or directory
+ #include &lt;util/atomic.h&gt;
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;CRC32.h&#34;
+  Used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CRC32
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CRC
+</pre>
+
+					
+					<h4>examples/MQTTClient</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/src/NeoHWSerial.cpp:31:10: fatal error: util/atomic.h: No such file or directory
+ #include &lt;util/atomic.h&gt;
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;PubSubClient.h&#34;
+  Used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PubSubClient
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Antares_ESP8266_MQTT
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_Microgear
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CMMC_MQTT_Connector
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AIS_4G_board
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ACS-M1128
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_WiFi_SDK
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AzureIoTHubMQTTClient
+Multiple libraries were found for &#34;CRC32.h&#34;
+  Used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CRC32
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CRC
+</pre>
+					
+					<h4>examples/WebClient</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/src/NeoHWSerial.cpp:31:10: fatal error: util/atomic.h: No such file or directory
+ #include &lt;util/atomic.h&gt;
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;CRC32.h&#34;
+  Used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CRC32
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CRC
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/src/NeoHWSerial.cpp:31:25: fatal error: util/atomic.h: No such file or directory
+compilation terminated.
+Multiple libraries were found for &#34;CRC32.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CRC32
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CRC
+</pre>
+
+					
+					<h4>examples/MQTTClient</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/src/NeoHWSerial.cpp:31:25: fatal error: util/atomic.h: No such file or directory
+compilation terminated.
+Multiple libraries were found for &#34;PubSubClient.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PubSubClient
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_Microgear
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_WiFi_SDK
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Antares_ESP8266_MQTT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AzureIoTHubMQTTClient
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ACS-M1128
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AIS_4G_board
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CMMC_MQTT_Connector
+Multiple libraries were found for &#34;CRC32.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CRC32
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CRC
+</pre>
+					
+					<h4>examples/WebClient</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoHWSerial/src/NeoHWSerial.cpp:31:25: fatal error: util/atomic.h: No such file or directory
+compilation terminated.
+Multiple libraries were found for &#34;CRC32.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CRC32
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CRC
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

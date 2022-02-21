@@ -1,0 +1,595 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>PCM - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>PCM</h2>
+				<p>
+					Version: <b>1.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/pcm/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>playback</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 778 bytes (2%) of program storage space. Maximum is 32256 bytes.
+Global variables use 11 bytes (0%) of dynamic memory, leaving 2037 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+
+					
+					<h4>examples/playback</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 20124 bytes (62%) of program storage space. Maximum is 32256 bytes.
+Global variables use 16 bytes (0%) of dynamic memory, leaving 2032 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:30:10: fatal error: avr/io.h: No such file or directory
+ #include &lt;avr/io.h&gt;
+          ^~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/playback</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:30:10: fatal error: avr/io.h: No such file or directory
+ #include &lt;avr/io.h&gt;
+          ^~~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library PCM claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c: In function &#39;TIMER1_COMPA_vect&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:81:7: error: &#39;OCR2A&#39; undeclared (first use in this function)
+       OCR2A = sounddata_length &#43; lastSample - sample;
+       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:81:7: note: each undeclared identifier is reported only once for each function it appears in
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c: In function &#39;startPlayback&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:102:3: error: &#39;ASSR&#39; undeclared (first use in this function); did you mean &#39;SS&#39;?
+   ASSR &amp;= ~(_BV(EXCLK) | _BV(AS2));
+   ^~~~
+   SS
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/interrupt.h:38,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:29:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:102:17: error: &#39;EXCLK&#39; undeclared (first use in this function)
+   ASSR &amp;= ~(_BV(EXCLK) | _BV(AS2));
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:102:30: error: &#39;AS2&#39; undeclared (first use in this function); did you mean &#39;A2&#39;?
+   ASSR &amp;= ~(_BV(EXCLK) | _BV(AS2));
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:105:3: error: &#39;TCCR2A&#39; undeclared (first use in this function); did you mean &#39;TCB2&#39;?
+   TCCR2A |= _BV(WGM21) | _BV(WGM20);
+   ^~~~~~
+   TCB2
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/interrupt.h:38,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:29:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:105:17: error: &#39;WGM21&#39; undeclared (first use in this function)
+   TCCR2A |= _BV(WGM21) | _BV(WGM20);
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:105:30: error: &#39;WGM20&#39; undeclared (first use in this function); did you mean &#39;WGM21&#39;?
+   TCCR2A |= _BV(WGM21) | _BV(WGM20);
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:106:3: error: &#39;TCCR2B&#39; undeclared (first use in this function); did you mean &#39;TCCR2A&#39;?
+   TCCR2B &amp;= ~_BV(WGM22);
+   ^~~~~~
+   TCCR2A
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/interrupt.h:38,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:29:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:106:18: error: &#39;WGM22&#39; undeclared (first use in this function); did you mean &#39;WGM20&#39;?
+   TCCR2B &amp;= ~_BV(WGM22);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:110:26: error: &#39;COM2A1&#39; undeclared (first use in this function); did you mean &#39;WGM21&#39;?
+   TCCR2A = (TCCR2A | _BV(COM2A1)) &amp; ~_BV(COM2A0);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:110:42: error: &#39;COM2A0&#39; undeclared (first use in this function); did you mean &#39;COM2A1&#39;?
+   TCCR2A = (TCCR2A | _BV(COM2A1)) &amp; ~_BV(COM2A0);
+                                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:111:19: error: &#39;COM2B1&#39; undeclared (first use in this function); did you mean &#39;COM2A1&#39;?
+   TCCR2A &amp;= ~(_BV(COM2B1) | _BV(COM2B0));
+                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:111:33: error: &#39;COM2B0&#39; undeclared (first use in this function); did you mean &#39;COM2B1&#39;?
+   TCCR2A &amp;= ~(_BV(COM2B1) | _BV(COM2B0));
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:114:28: error: &#39;CS12&#39; undeclared (first use in this function); did you mean &#39;AS2&#39;?
+   TCCR2B = (TCCR2B &amp; ~(_BV(CS12) | _BV(CS11))) | _BV(CS10);
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:114:40: error: &#39;CS11&#39; undeclared (first use in this function); did you mean &#39;CS12&#39;?
+   TCCR2B = (TCCR2B &amp; ~(_BV(CS12) | _BV(CS11))) | _BV(CS10);
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:114:54: error: &#39;CS10&#39; undeclared (first use in this function); did you mean &#39;CS11&#39;?
+   TCCR2B = (TCCR2B &amp; ~(_BV(CS12) | _BV(CS11))) | _BV(CS10);
+                                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:117:3: error: &#39;OCR2A&#39; undeclared (first use in this function); did you mean &#39;TCCR2A&#39;?
+   OCR2A = pgm_read_byte(&amp;sounddata_data[0]);
+   ^~~~~
+   TCCR2A
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:126:3: error: &#39;TCCR1B&#39; undeclared (first use in this function); did you mean &#39;TCCR2B&#39;?
+   TCCR1B = (TCCR1B &amp; ~_BV(WGM13)) | _BV(WGM12);
+   ^~~~~~
+   TCCR2B
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/interrupt.h:38,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:29:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:126:27: error: &#39;WGM13&#39; undeclared (first use in this function); did you mean &#39;WGM22&#39;?
+   TCCR1B = (TCCR1B &amp; ~_BV(WGM13)) | _BV(WGM12);
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:126:41: error: &#39;WGM12&#39; undeclared (first use in this function); did you mean &#39;WGM13&#39;?
+   TCCR1B = (TCCR1B &amp; ~_BV(WGM13)) | _BV(WGM12);
+                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:127:3: error: &#39;TCCR1A&#39; undeclared (first use in this function); did you mean &#39;TCCR1B&#39;?
+   TCCR1A = TCCR1A &amp; ~(_BV(WGM11) | _BV(WGM10));
+   ^~~~~~
+   TCCR1B
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/interrupt.h:38,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:29:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:127:27: error: &#39;WGM11&#39; undeclared (first use in this function); did you mean &#39;WGM12&#39;?
+   TCCR1A = TCCR1A &amp; ~(_BV(WGM11) | _BV(WGM10));
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:127:40: error: &#39;WGM10&#39; undeclared (first use in this function); did you mean &#39;WGM11&#39;?
+   TCCR1A = TCCR1A &amp; ~(_BV(WGM11) | _BV(WGM10));
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:135:3: error: &#39;OCR1A&#39; undeclared (first use in this function); did you mean &#39;OCR2A&#39;?
+   OCR1A = F_CPU / SAMPLE_RATE;    // 16e6 / 8000 = 2000
+   ^~~~~
+   OCR2A
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:138:3: error: &#39;TIMSK1&#39; undeclared (first use in this function); did you mean &#39;TIMERB1&#39;?
+   TIMSK1 |= _BV(OCIE1A);
+   ^~~~~~
+   TIMERB1
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/interrupt.h:38,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:29:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:138:17: error: &#39;OCIE1A&#39; undeclared (first use in this function); did you mean &#39;OCR1A&#39;?
+   TIMSK1 |= _BV(OCIE1A);
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c: In function &#39;stopPlayback&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:148:3: error: &#39;TIMSK1&#39; undeclared (first use in this function); did you mean &#39;TIMERB1&#39;?
+   TIMSK1 &amp;= ~_BV(OCIE1A);
+   ^~~~~~
+   TIMERB1
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/interrupt.h:38,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:29:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:148:18: error: &#39;OCIE1A&#39; undeclared (first use in this function)
+   TIMSK1 &amp;= ~_BV(OCIE1A);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:151:3: error: &#39;TCCR1B&#39; undeclared (first use in this function); did you mean &#39;TCB1&#39;?
+   TCCR1B &amp;= ~_BV(CS10);
+   ^~~~~~
+   TCB1
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-u</pre>
+
+					
+					<h4>examples/playback</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library PCM claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c: In function &#39;TIMER1_COMPA_vect&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:81:7: error: &#39;OCR2A&#39; undeclared (first use in this function)
+       OCR2A = sounddata_length &#43; lastSample - sample;
+       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:81:7: note: each undeclared identifier is reported only once for each function it appears in
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c: In function &#39;startPlayback&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:102:3: error: &#39;ASSR&#39; undeclared (first use in this function); did you mean &#39;SS&#39;?
+   ASSR &amp;= ~(_BV(EXCLK) | _BV(AS2));
+   ^~~~
+   SS
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/interrupt.h:38,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:29:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:102:17: error: &#39;EXCLK&#39; undeclared (first use in this function)
+   ASSR &amp;= ~(_BV(EXCLK) | _BV(AS2));
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:102:30: error: &#39;AS2&#39; undeclared (first use in this function); did you mean &#39;A2&#39;?
+   ASSR &amp;= ~(_BV(EXCLK) | _BV(AS2));
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:105:3: error: &#39;TCCR2A&#39; undeclared (first use in this function); did you mean &#39;TCB2&#39;?
+   TCCR2A |= _BV(WGM21) | _BV(WGM20);
+   ^~~~~~
+   TCB2
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/interrupt.h:38,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:29:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:105:17: error: &#39;WGM21&#39; undeclared (first use in this function)
+   TCCR2A |= _BV(WGM21) | _BV(WGM20);
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:105:30: error: &#39;WGM20&#39; undeclared (first use in this function); did you mean &#39;WGM21&#39;?
+   TCCR2A |= _BV(WGM21) | _BV(WGM20);
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:106:3: error: &#39;TCCR2B&#39; undeclared (first use in this function); did you mean &#39;TCCR2A&#39;?
+   TCCR2B &amp;= ~_BV(WGM22);
+   ^~~~~~
+   TCCR2A
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/interrupt.h:38,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:29:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:106:18: error: &#39;WGM22&#39; undeclared (first use in this function); did you mean &#39;WGM20&#39;?
+   TCCR2B &amp;= ~_BV(WGM22);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:110:26: error: &#39;COM2A1&#39; undeclared (first use in this function); did you mean &#39;WGM21&#39;?
+   TCCR2A = (TCCR2A | _BV(COM2A1)) &amp; ~_BV(COM2A0);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:110:42: error: &#39;COM2A0&#39; undeclared (first use in this function); did you mean &#39;COM2A1&#39;?
+   TCCR2A = (TCCR2A | _BV(COM2A1)) &amp; ~_BV(COM2A0);
+                                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:111:19: error: &#39;COM2B1&#39; undeclared (first use in this function); did you mean &#39;COM2A1&#39;?
+   TCCR2A &amp;= ~(_BV(COM2B1) | _BV(COM2B0));
+                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:111:33: error: &#39;COM2B0&#39; undeclared (first use in this function); did you mean &#39;COM2B1&#39;?
+   TCCR2A &amp;= ~(_BV(COM2B1) | _BV(COM2B0));
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:114:28: error: &#39;CS12&#39; undeclared (first use in this function); did you mean &#39;AS2&#39;?
+   TCCR2B = (TCCR2B &amp; ~(_BV(CS12) | _BV(CS11))) | _BV(CS10);
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:114:40: error: &#39;CS11&#39; undeclared (first use in this function); did you mean &#39;CS12&#39;?
+   TCCR2B = (TCCR2B &amp; ~(_BV(CS12) | _BV(CS11))) | _BV(CS10);
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:114:54: error: &#39;CS10&#39; undeclared (first use in this function); did you mean &#39;CS11&#39;?
+   TCCR2B = (TCCR2B &amp; ~(_BV(CS12) | _BV(CS11))) | _BV(CS10);
+                                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:117:3: error: &#39;OCR2A&#39; undeclared (first use in this function); did you mean &#39;TCCR2A&#39;?
+   OCR2A = pgm_read_byte(&amp;sounddata_data[0]);
+   ^~~~~
+   TCCR2A
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:126:3: error: &#39;TCCR1B&#39; undeclared (first use in this function); did you mean &#39;TCCR2B&#39;?
+   TCCR1B = (TCCR1B &amp; ~_BV(WGM13)) | _BV(WGM12);
+   ^~~~~~
+   TCCR2B
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/interrupt.h:38,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:29:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:126:27: error: &#39;WGM13&#39; undeclared (first use in this function); did you mean &#39;WGM22&#39;?
+   TCCR1B = (TCCR1B &amp; ~_BV(WGM13)) | _BV(WGM12);
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:126:41: error: &#39;WGM12&#39; undeclared (first use in this function); did you mean &#39;WGM13&#39;?
+   TCCR1B = (TCCR1B &amp; ~_BV(WGM13)) | _BV(WGM12);
+                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:127:3: error: &#39;TCCR1A&#39; undeclared (first use in this function); did you mean &#39;TCCR1B&#39;?
+   TCCR1A = TCCR1A &amp; ~(_BV(WGM11) | _BV(WGM10));
+   ^~~~~~
+   TCCR1B
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/interrupt.h:38,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:29:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:127:27: error: &#39;WGM11&#39; undeclared (first use in this function); did you mean &#39;WGM12&#39;?
+   TCCR1A = TCCR1A &amp; ~(_BV(WGM11) | _BV(WGM10));
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:127:40: error: &#39;WGM10&#39; undeclared (first use in this function); did you mean &#39;WGM11&#39;?
+   TCCR1A = TCCR1A &amp; ~(_BV(WGM11) | _BV(WGM10));
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:135:3: error: &#39;OCR1A&#39; undeclared (first use in this function); did you mean &#39;OCR2A&#39;?
+   OCR1A = F_CPU / SAMPLE_RATE;    // 16e6 / 8000 = 2000
+   ^~~~~
+   OCR2A
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:138:3: error: &#39;TIMSK1&#39; undeclared (first use in this function); did you mean &#39;TIMERB1&#39;?
+   TIMSK1 |= _BV(OCIE1A);
+   ^~~~~~
+   TIMERB1
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/interrupt.h:38,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:29:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:138:17: error: &#39;OCIE1A&#39; undeclared (first use in this function); did you mean &#39;OCR1A&#39;?
+   TIMSK1 |= _BV(OCIE1A);
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c: In function &#39;stopPlayback&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:148:3: error: &#39;TIMSK1&#39; undeclared (first use in this function); did you mean &#39;TIMERB1&#39;?
+   TIMSK1 &amp;= ~_BV(OCIE1A);
+   ^~~~~~
+   TIMERB1
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/interrupt.h:38,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:29:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:148:18: error: &#39;OCIE1A&#39; undeclared (first use in this function)
+   TIMSK1 &amp;= ~_BV(OCIE1A);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:151:3: error: &#39;TCCR1B&#39; undeclared (first use in this function); did you mean &#39;TCB1&#39;?
+   TCCR1B &amp;= ~_BV(CS10);
+   ^~~~~~
+   TCB1
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-u</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:30:10: fatal error: avr/io.h: No such file or directory
+ #include &lt;avr/io.h&gt;
+          ^~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/playback</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.c:30:10: fatal error: avr/io.h: No such file or directory
+ #include &lt;avr/io.h&gt;
+          ^~~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /tmp/arduino-testlib576215854/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.h:52:26: fatal error: avr/pgmspace.h: No such file or directory
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/playback</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/examples/playback/playback.pde:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PCM/PCM.h:52:26: fatal error: avr/pgmspace.h: No such file or directory
+compilation terminated.
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

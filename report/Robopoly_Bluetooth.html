@@ -1,0 +1,1483 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>Robopoly Bluetooth - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>Robopoly Bluetooth</h2>
+				<p>
+					Version: <b>1.5.1</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/robopoly-bluetooth/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>RemoteLED</pre></th>
+						
+						<th><pre>BluetoothConfig</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+							<td>No ⚠️</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+							<td>No ⚠️</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+							<td>No ⚠️</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+							<td>No ⚠️</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:10:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp: In member function &#39;void BT::begin(uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.h:16:18: error: &#39;Serial1&#39; was not declared in this scope
+ #define btSerial Serial1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:47:5: note: in expansion of macro &#39;btSerial&#39;
+     btSerial.begin(baud);
+     ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.h:16:18: note: suggested alternative: &#39;Serial&#39;
+ #define btSerial Serial1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:47:5: note: in expansion of macro &#39;btSerial&#39;
+     btSerial.begin(baud);
+     ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp: In member function &#39;virtual int BT::available()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.h:16:18: error: &#39;Serial1&#39; was not declared in this scope
+ #define btSerial Serial1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:56:10: note: in expansion of macro &#39;btSerial&#39;
+   return btSerial.available();
+          ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.h:16:18: note: suggested alternative: &#39;Serial&#39;
+ #define btSerial Serial1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:56:10: note: in expansion of macro &#39;btSerial&#39;
+   return btSerial.available();
+          ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp: In member function &#39;virtual int BT::read()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.h:16:18: error: &#39;Serial1&#39; was not declared in this scope
+ #define btSerial Serial1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:61:10: note: in expansion of macro &#39;btSerial&#39;
+   return btSerial.read();
+          ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.h:16:18: note: suggested alternative: &#39;Serial&#39;
+ #define btSerial Serial1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:61:10: note: in expansion of macro &#39;btSerial&#39;
+   return btSerial.read();
+          ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp: In member function &#39;virtual int BT::peek()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.h:16:18: error: &#39;Serial1&#39; was not declared in this scope
+ #define btSerial Serial1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:66:10: note: in expansion of macro &#39;btSerial&#39;
+   return btSerial.peek();
+          ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.h:16:18: note: suggested alternative: &#39;Serial&#39;
+ #define btSerial Serial1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:66:10: note: in expansion of macro &#39;btSerial&#39;
+   return btSerial.peek();
+          ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp: In member function &#39;virtual void BT::flush()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.h:16:18: error: &#39;Serial1&#39; was not declared in this scope
+ #define btSerial Serial1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:71:3: note: in expansion of macro &#39;btSerial&#39;
+   btSerial.flush();
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.h:16:18: note: suggested alternative: &#39;Serial&#39;
+ #define btSerial Serial1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:71:3: note: in expansion of macro &#39;btSerial&#39;
+   btSerial.flush();
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp: In member function &#39;virtual size_t BT::write(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.h:16:18: error: &#39;Serial1&#39; was not declared in this scope
+ #define btSerial Serial1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:76:3: note: in expansion of macro &#39;btSerial&#39;
+   btSerial.write(byte);
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.h:16:18: note: suggested alternative: &#39;Serial&#39;
+ #define btSerial Serial1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:76:3: note: in expansion of macro &#39;btSerial&#39;
+   btSerial.write(byte);
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp: In member function &#39;uint16_t BT::findBaud()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.h:16:18: error: &#39;Serial1&#39; was not declared in this scope
+ #define btSerial Serial1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:87:5: note: in expansion of macro &#39;btSerial&#39;
+     btSerial.begin(baudRates[i]);
+     ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.h:16:18: note: suggested alternative: &#39;Serial&#39;
+ #define btSerial Serial1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:87:5: note: in expansion of macro &#39;btSerial&#39;
+     btSerial.begin(baudRates[i]);
+     ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.h:16:18: error: &#39;Serial1&#39; was not declared in this scope
+ #define btSerial Serial1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:100:3: note: in expansion of macro &#39;btSerial&#39;
+   btSerial.end();
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.h:16:18: note: suggested alternative: &#39;Serial&#39;
+ #define btSerial Serial1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:100:3: note: in expansion of macro &#39;btSerial&#39;
+   btSerial.end();
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp: In member function &#39;bool BT::connect(const char*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.h:16:18: error: &#39;Serial1&#39; was not declared in this scope
+ #define btSerial Serial1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:162:3: note: in expansion of macro &#39;btSerial&#39;
+   btSerial.write(this-&gt;buffer);
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.h:16:18: note: suggested alternative: &#39;Serial&#39;
+ #define btSerial Serial1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:162:3: note: in expansion of macro &#39;btSerial&#39;
+   btSerial.write(this-&gt;buffer);
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp: In member function &#39;bool BT::search()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.h:16:18: error: &#39;Serial1&#39; was not declared in this scope
+ #define btSerial Serial1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:209:3: note: in expansion of macro &#39;btSerial&#39;
+   btSerial.setTimeout(3000);
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.h:16:18: note: suggested alternative: &#39;Serial&#39;
+ #define btSerial Serial1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:209:3: note: in expansion of macro &#39;btSerial&#39;
+   btSerial.setTimeout(3000);
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp: In member function &#39;bool BT::command(const char*, const char*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.h:16:18: error: &#39;Serial1&#39; was not declared in this scope
+ #define btSerial Serial1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:229:3: note: in expansion of macro &#39;btSerial&#39;
+   btSerial.write(cmd);
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.h:16:18: note: suggested alternative: &#39;Serial&#39;
+ #define btSerial Serial1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:229:3: note: in expansion of macro &#39;btSerial&#39;
+   btSerial.write(cmd);
+   ^~~~~~~~
+
+</pre>
+
+					
+					<h4>examples/BluetoothConfig</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:10:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp: In member function &#39;void BT::begin(uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.h:16:18: error: &#39;Serial1&#39; was not declared in this scope
+ #define btSerial Serial1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:47:5: note: in expansion of macro &#39;btSerial&#39;
+     btSerial.begin(baud);
+     ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.h:16:18: note: suggested alternative: &#39;Serial&#39;
+ #define btSerial Serial1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:47:5: note: in expansion of macro &#39;btSerial&#39;
+     btSerial.begin(baud);
+     ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp: In member function &#39;virtual int BT::available()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.h:16:18: error: &#39;Serial1&#39; was not declared in this scope
+ #define btSerial Serial1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:56:10: note: in expansion of macro &#39;btSerial&#39;
+   return btSerial.available();
+          ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.h:16:18: note: suggested alternative: &#39;Serial&#39;
+ #define btSerial Serial1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:56:10: note: in expansion of macro &#39;btSerial&#39;
+   return btSerial.available();
+          ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp: In member function &#39;virtual int BT::read()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.h:16:18: error: &#39;Serial1&#39; was not declared in this scope
+ #define btSerial Serial1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:61:10: note: in expansion of macro &#39;btSerial&#39;
+   return btSerial.read();
+          ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.h:16:18: note: suggested alternative: &#39;Serial&#39;
+ #define btSerial Serial1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:61:10: note: in expansion of macro &#39;btSerial&#39;
+   return btSerial.read();
+          ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp: In member function &#39;virtual int BT::peek()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.h:16:18: error: &#39;Serial1&#39; was not declared in this scope
+ #define btSerial Serial1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:66:10: note: in expansion of macro &#39;btSerial&#39;
+   return btSerial.peek();
+          ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.h:16:18: note: suggested alternative: &#39;Serial&#39;
+ #define btSerial Serial1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:66:10: note: in expansion of macro &#39;btSerial&#39;
+   return btSerial.peek();
+          ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp: In member function &#39;virtual void BT::flush()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.h:16:18: error: &#39;Serial1&#39; was not declared in this scope
+ #define btSerial Serial1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:71:3: note: in expansion of macro &#39;btSerial&#39;
+   btSerial.flush();
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.h:16:18: note: suggested alternative: &#39;Serial&#39;
+ #define btSerial Serial1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:71:3: note: in expansion of macro &#39;btSerial&#39;
+   btSerial.flush();
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp: In member function &#39;virtual size_t BT::write(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.h:16:18: error: &#39;Serial1&#39; was not declared in this scope
+ #define btSerial Serial1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:76:3: note: in expansion of macro &#39;btSerial&#39;
+   btSerial.write(byte);
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.h:16:18: note: suggested alternative: &#39;Serial&#39;
+ #define btSerial Serial1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:76:3: note: in expansion of macro &#39;btSerial&#39;
+   btSerial.write(byte);
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp: In member function &#39;uint16_t BT::findBaud()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.h:16:18: error: &#39;Serial1&#39; was not declared in this scope
+ #define btSerial Serial1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:87:5: note: in expansion of macro &#39;btSerial&#39;
+     btSerial.begin(baudRates[i]);
+     ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.h:16:18: note: suggested alternative: &#39;Serial&#39;
+ #define btSerial Serial1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:87:5: note: in expansion of macro &#39;btSerial&#39;
+     btSerial.begin(baudRates[i]);
+     ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.h:16:18: error: &#39;Serial1&#39; was not declared in this scope
+ #define btSerial Serial1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:100:3: note: in expansion of macro &#39;btSerial&#39;
+   btSerial.end();
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.h:16:18: note: suggested alternative: &#39;Serial&#39;
+ #define btSerial Serial1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:100:3: note: in expansion of macro &#39;btSerial&#39;
+   btSerial.end();
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp: In member function &#39;bool BT::connect(const char*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.h:16:18: error: &#39;Serial1&#39; was not declared in this scope
+ #define btSerial Serial1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:162:3: note: in expansion of macro &#39;btSerial&#39;
+   btSerial.write(this-&gt;buffer);
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.h:16:18: note: suggested alternative: &#39;Serial&#39;
+ #define btSerial Serial1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:162:3: note: in expansion of macro &#39;btSerial&#39;
+   btSerial.write(this-&gt;buffer);
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp: In member function &#39;bool BT::search()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.h:16:18: error: &#39;Serial1&#39; was not declared in this scope
+ #define btSerial Serial1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:209:3: note: in expansion of macro &#39;btSerial&#39;
+   btSerial.setTimeout(3000);
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.h:16:18: note: suggested alternative: &#39;Serial&#39;
+ #define btSerial Serial1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:209:3: note: in expansion of macro &#39;btSerial&#39;
+   btSerial.setTimeout(3000);
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp: In member function &#39;bool BT::command(const char*, const char*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.h:16:18: error: &#39;Serial1&#39; was not declared in this scope
+ #define btSerial Serial1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:229:3: note: in expansion of macro &#39;btSerial&#39;
+   btSerial.write(cmd);
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.h:16:18: note: suggested alternative: &#39;Serial&#39;
+ #define btSerial Serial1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_Bluetooth/src/Bluetooth.cpp:229:3: note: in expansion of macro &#39;btSerial&#39;
+   btSerial.write(cmd);
+   ^~~~~~~~
+
+</pre>
+					
+					<h4>examples/RemoteLED</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp: In function &#39;void setSpeed(int8_t, int8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:21:3: error: &#39;TCCR4A&#39; was not declared in this scope
+   TCCR4A = 0;
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:21:3: note: suggested alternative: &#39;TCCR0A&#39;
+   TCCR4A = 0;
+   ^~~~~~
+   TCCR0A
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:22:3: error: &#39;TCCR4B&#39; was not declared in this scope
+   TCCR4B = 0;
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:22:3: note: suggested alternative: &#39;TCCR0B&#39;
+   TCCR4B = 0;
+   ^~~~~~
+   TCCR0B
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:23:3: error: &#39;TCCR4C&#39; was not declared in this scope
+   TCCR4C = 0;
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:23:3: note: suggested alternative: &#39;TCCR1C&#39;
+   TCCR4C = 0;
+   ^~~~~~
+   TCCR1C
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:25:3: error: &#39;TCCR4D&#39; was not declared in this scope
+   TCCR4D = 0;
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:25:3: note: suggested alternative: &#39;TCCR0A&#39;
+   TCCR4D = 0;
+   ^~~~~~
+   TCCR0A
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:26:3: error: &#39;TCCR4E&#39; was not declared in this scope
+   TCCR4E = 0;
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:26:3: note: suggested alternative: &#39;TCCR0A&#39;
+   TCCR4E = 0;
+   ^~~~~~
+   TCCR0A
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:53:3: error: &#39;TC4H&#39; was not declared in this scope
+   TC4H = temp &gt;&gt; 8;
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:53:3: note: suggested alternative: &#39;PC4&#39;
+   TC4H = temp &gt;&gt; 8;
+   ^~~~
+   PC4
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:54:3: error: &#39;OCR4A&#39; was not declared in this scope
+   OCR4A = temp &amp; 0xff;
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:54:3: note: suggested alternative: &#39;OCR2A&#39;
+   OCR4A = temp &amp; 0xff;
+   ^~~~~
+   OCR2A
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:59:3: error: &#39;OCR4B&#39; was not declared in this scope
+   OCR4B = temp &amp; 0xff;
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:59:3: note: suggested alternative: &#39;OCR0B&#39;
+   OCR4B = temp &amp; 0xff;
+   ^~~~~
+   OCR0B
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:63:3: error: &#39;TCNT4&#39; was not declared in this scope
+   TCNT4 = 0;
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:63:3: note: suggested alternative: &#39;TCNT0&#39;
+   TCNT4 = 0;
+   ^~~~~
+   TCNT0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:67:3: error: &#39;OCR4C&#39; was not declared in this scope
+   OCR4C = 0xff;
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:67:3: note: suggested alternative: &#39;OCR2A&#39;
+   OCR4C = 0xff;
+   ^~~~~
+   OCR2A
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:84:3: error: &#39;TIMSK4&#39; was not declared in this scope
+   TIMSK4 = (1 &lt;&lt; OCIE4A) | (1 &lt;&lt; OCIE4B) | (1 &lt;&lt; TOIE4);
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:84:3: note: suggested alternative: &#39;TIMSK0&#39;
+   TIMSK4 = (1 &lt;&lt; OCIE4A) | (1 &lt;&lt; OCIE4B) | (1 &lt;&lt; TOIE4);
+   ^~~~~~
+   TIMSK0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:84:18: error: &#39;OCIE4A&#39; was not declared in this scope
+   TIMSK4 = (1 &lt;&lt; OCIE4A) | (1 &lt;&lt; OCIE4B) | (1 &lt;&lt; TOIE4);
+                  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:84:18: note: suggested alternative: &#39;OCIE0A&#39;
+   TIMSK4 = (1 &lt;&lt; OCIE4A) | (1 &lt;&lt; OCIE4B) | (1 &lt;&lt; TOIE4);
+                  ^~~~~~
+                  OCIE0A
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:84:34: error: &#39;OCIE4B&#39; was not declared in this scope
+   TIMSK4 = (1 &lt;&lt; OCIE4A) | (1 &lt;&lt; OCIE4B) | (1 &lt;&lt; TOIE4);
+                                  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:84:34: note: suggested alternative: &#39;OCIE0B&#39;
+   TIMSK4 = (1 &lt;&lt; OCIE4A) | (1 &lt;&lt; OCIE4B) | (1 &lt;&lt; TOIE4);
+                                  ^~~~~~
+                                  OCIE0B
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:84:50: error: &#39;TOIE4&#39; was not declared in this scope
+   TIMSK4 = (1 &lt;&lt; OCIE4A) | (1 &lt;&lt; OCIE4B) | (1 &lt;&lt; TOIE4);
+                                                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:84:50: note: suggested alternative: &#39;TOIE0&#39;
+   TIMSK4 = (1 &lt;&lt; OCIE4A) | (1 &lt;&lt; OCIE4B) | (1 &lt;&lt; TOIE4);
+                                                  ^~~~~
+                                                  TOIE0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:86:3: error: &#39;TIFR4&#39; was not declared in this scope
+   TIFR4 = (1 &lt;&lt; OCF4A) | (1 &lt;&lt; OCF4B) | (1 &lt;&lt; TOV4);
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:86:3: note: suggested alternative: &#39;TIFR0&#39;
+   TIFR4 = (1 &lt;&lt; OCF4A) | (1 &lt;&lt; OCF4B) | (1 &lt;&lt; TOV4);
+   ^~~~~
+   TIFR0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:86:17: error: &#39;OCF4A&#39; was not declared in this scope
+   TIFR4 = (1 &lt;&lt; OCF4A) | (1 &lt;&lt; OCF4B) | (1 &lt;&lt; TOV4);
+                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:86:17: note: suggested alternative: &#39;OCF1A&#39;
+   TIFR4 = (1 &lt;&lt; OCF4A) | (1 &lt;&lt; OCF4B) | (1 &lt;&lt; TOV4);
+                 ^~~~~
+                 OCF1A
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:86:32: error: &#39;OCF4B&#39; was not declared in this scope
+   TIFR4 = (1 &lt;&lt; OCF4A) | (1 &lt;&lt; OCF4B) | (1 &lt;&lt; TOV4);
+                                ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:86:32: note: suggested alternative: &#39;OCF0B&#39;
+   TIFR4 = (1 &lt;&lt; OCF4A) | (1 &lt;&lt; OCF4B) | (1 &lt;&lt; TOV4);
+                                ^~~~~
+                                OCF0B
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:86:47: error: &#39;TOV4&#39; was not declared in this scope
+   TIFR4 = (1 &lt;&lt; OCF4A) | (1 &lt;&lt; OCF4B) | (1 &lt;&lt; TOV4);
+                                               ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:86:47: note: suggested alternative: &#39;TOV0&#39;
+   TIFR4 = (1 &lt;&lt; OCF4A) | (1 &lt;&lt; OCF4B) | (1 &lt;&lt; TOV4);
+                                               ^~~~
+                                               TOV0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:89:18: error: &#39;CS40&#39; was not declared in this scope
+   TCCR4B = (1 &lt;&lt; CS40);
+                  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:89:18: note: suggested alternative: &#39;CS00&#39;
+   TCCR4B = (1 &lt;&lt; CS40);
+                  ^~~~
+                  CS00
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp: In function &#39;void TIMER4_OVF_vect()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:179:7: error: &#39;TCCR4B&#39; was not declared in this scope
+       TCCR4B = 0;
+       ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:179:7: note: suggested alternative: &#39;TCCR0B&#39;
+       TCCR4B = 0;
+       ^~~~~~
+       TCCR0B
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp: In function &#39;int8_t setTimer(void (*)(), uint16_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:271:20: error: &#39;OCIE1C&#39; was not declared in this scope
+     TIMSK1 = (1 &lt;&lt; OCIE1C);
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:271:20: note: suggested alternative: &#39;OCIE1A&#39;
+     TIMSK1 = (1 &lt;&lt; OCIE1C);
+                    ^~~~~~
+                    OCIE1A
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:272:19: error: &#39;OCF1C&#39; was not declared in this scope
+     TIFR1 = (1 &lt;&lt; OCF1C);
+                   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:272:19: note: suggested alternative: &#39;OCF1A&#39;
+     TIFR1 = (1 &lt;&lt; OCF1C);
+                   ^~~~~
+                   OCF1A
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp: In member function &#39;void Stepper::moveSteps(int16_t, uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:371:3: error: &#39;TCCR4A&#39; was not declared in this scope
+   TCCR4A = 0;
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:371:3: note: suggested alternative: &#39;TCCR0A&#39;
+   TCCR4A = 0;
+   ^~~~~~
+   TCCR0A
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:3</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library Robopoly_Bluetooth claims to run on avr architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+Sketch uses 78898 bytes (0%) of program storage space. Maximum is 16777216 bytes.
+Global variables use 43596 bytes (16%) of dynamic memory, leaving 226740 bytes for local variables. Maximum is 270336 bytes.
+</pre>
+
+					
+					<h4>examples/BluetoothConfig</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library Robopoly_Bluetooth claims to run on avr architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+Sketch uses 82928 bytes (0%) of program storage space. Maximum is 16777216 bytes.
+Global variables use 43628 bytes (16%) of dynamic memory, leaving 226708 bytes for local variables. Maximum is 270336 bytes.
+</pre>
+					
+					<h4>examples/RemoteLED</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library Robopoly_PRismino claims to run on avr architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+WARNING: library Robopoly_Bluetooth claims to run on avr architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp: In function &#39;void setSpeed(int8_t, int8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:21:3: error: &#39;TCCR4A&#39; was not declared in this scope
+   TCCR4A = 0;
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:22:3: error: &#39;TCCR4B&#39; was not declared in this scope
+   TCCR4B = 0;
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:23:3: error: &#39;TCCR4C&#39; was not declared in this scope
+   TCCR4C = 0;
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:25:3: error: &#39;TCCR4D&#39; was not declared in this scope
+   TCCR4D = 0;
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:26:3: error: &#39;TCCR4E&#39; was not declared in this scope
+   TCCR4E = 0;
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:53:3: error: &#39;TC4H&#39; was not declared in this scope
+   TC4H = temp &gt;&gt; 8;
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:54:3: error: &#39;OCR4A&#39; was not declared in this scope
+   OCR4A = temp &amp; 0xff;
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:59:3: error: &#39;OCR4B&#39; was not declared in this scope
+   OCR4B = temp &amp; 0xff;
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:63:3: error: &#39;TCNT4&#39; was not declared in this scope
+   TCNT4 = 0;
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:63:3: note: suggested alternative: &#39;SCNd64&#39;
+   TCNT4 = 0;
+   ^~~~~
+   SCNd64
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:67:3: error: &#39;OCR4C&#39; was not declared in this scope
+   OCR4C = 0xff;
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:70:3: error: &#39;DDRB&#39; was not declared in this scope
+   DDRB |= (1 &lt;&lt; 7) | (1 &lt;&lt; 6) | (1 &lt;&lt; 5);
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:70:3: note: suggested alternative: &#39;DIR&#39;
+   DDRB |= (1 &lt;&lt; 7) | (1 &lt;&lt; 6) | (1 &lt;&lt; 5);
+   ^~~~
+   DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:71:3: error: &#39;DDRD&#39; was not declared in this scope
+   DDRD |= (1 &lt;&lt; 6);
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:71:3: note: suggested alternative: &#39;DIR&#39;
+   DDRD |= (1 &lt;&lt; 6);
+   ^~~~
+   DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:79:3: error: &#39;PORTB&#39; was not declared in this scope
+   PORTB |= (1 &lt;&lt; 7) | (1 &lt;&lt; 6) | (1 &lt;&lt; 5);
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:79:3: note: suggested alternative: &#39;POT&#39;
+   PORTB |= (1 &lt;&lt; 7) | (1 &lt;&lt; 6) | (1 &lt;&lt; 5);
+   ^~~~~
+   POT
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:80:3: error: &#39;PORTD&#39; was not declared in this scope
+   PORTD |= (1 &lt;&lt; 6);
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:80:3: note: suggested alternative: &#39;POT&#39;
+   PORTD |= (1 &lt;&lt; 6);
+   ^~~~~
+   POT
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:84:3: error: &#39;TIMSK4&#39; was not declared in this scope
+   TIMSK4 = (1 &lt;&lt; OCIE4A) | (1 &lt;&lt; OCIE4B) | (1 &lt;&lt; TOIE4);
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:84:3: note: suggested alternative: &#39;TIMER&#39;
+   TIMSK4 = (1 &lt;&lt; OCIE4A) | (1 &lt;&lt; OCIE4B) | (1 &lt;&lt; TOIE4);
+   ^~~~~~
+   TIMER
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:84:18: error: &#39;OCIE4A&#39; was not declared in this scope
+   TIMSK4 = (1 &lt;&lt; OCIE4A) | (1 &lt;&lt; OCIE4B) | (1 &lt;&lt; TOIE4);
+                  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:84:34: error: &#39;OCIE4B&#39; was not declared in this scope
+   TIMSK4 = (1 &lt;&lt; OCIE4A) | (1 &lt;&lt; OCIE4B) | (1 &lt;&lt; TOIE4);
+                                  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:84:50: error: &#39;TOIE4&#39; was not declared in this scope
+   TIMSK4 = (1 &lt;&lt; OCIE4A) | (1 &lt;&lt; OCIE4B) | (1 &lt;&lt; TOIE4);
+                                                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:86:3: error: &#39;TIFR4&#39; was not declared in this scope
+   TIFR4 = (1 &lt;&lt; OCF4A) | (1 &lt;&lt; OCF4B) | (1 &lt;&lt; TOV4);
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:86:17: error: &#39;OCF4A&#39; was not declared in this scope
+   TIFR4 = (1 &lt;&lt; OCF4A) | (1 &lt;&lt; OCF4B) | (1 &lt;&lt; TOV4);
+                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:86:32: error: &#39;OCF4B&#39; was not declared in this scope
+   TIFR4 = (1 &lt;&lt; OCF4A) | (1 &lt;&lt; OCF4B) | (1 &lt;&lt; TOV4);
+                                ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:86:47: error: &#39;TOV4&#39; was not declared in this scope
+   TIFR4 = (1 &lt;&lt; OCF4A) | (1 &lt;&lt; OCF4B) | (1 &lt;&lt; TOV4);
+                                               ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:89:18: error: &#39;CS40&#39; was not declared in this scope
+   TCCR4B = (1 &lt;&lt; CS40);
+                  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:89:18: note: suggested alternative: &#39;._40&#39;
+   TCCR4B = (1 &lt;&lt; CS40);
+                  ^~~~
+                  ._40
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:94:4: error: expected constructor, destructor, or type conversion before &#39;(&#39; token
+ ISR(TIMER4_COMPA_vect)
+    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:114:4: error: expected constructor, destructor, or type conversion before &#39;(&#39; token
+ ISR(TIMER4_COMPB_vect)
+    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:134:4: error: expected constructor, destructor, or type conversion before &#39;(&#39; token
+ ISR(TIMER4_OVF_vect)
+    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp: In function &#39;int8_t setTimer(void (*)(), uint16_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:265:5: error: &#39;TCCR1A&#39; was not declared in this scope
+     TCCR1A = 0;
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:266:5: error: &#39;TCCR1B&#39; was not declared in this scope
+     TCCR1B = (1 &lt;&lt; WGM12) | (1 &lt;&lt; CS12);
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:266:20: error: &#39;WGM12&#39; was not declared in this scope
+     TCCR1B = (1 &lt;&lt; WGM12) | (1 &lt;&lt; CS12);
+                    ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:266:35: error: &#39;CS12&#39; was not declared in this scope
+     TCCR1B = (1 &lt;&lt; WGM12) | (1 &lt;&lt; CS12);
+                                   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:266:35: note: suggested alternative: &#39;p12&#39;
+     TCCR1B = (1 &lt;&lt; WGM12) | (1 &lt;&lt; CS12);
+                                   ^~~~
+                                   p12
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:267:5: error: &#39;TCNT1&#39; was not declared in this scope
+     TCNT1 = 0;
+     ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:267:5: note: suggested alternative: &#39;SCNd16&#39;
+     TCNT1 = 0;
+     ^~~~~
+     SCNd16
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:270:5: error: &#39;OCR1A&#39; was not declared in this scope
+     OCR1A = 6250;
+     ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:271:5: error: &#39;TIMSK1&#39; was not declared in this scope
+     TIMSK1 = (1 &lt;&lt; OCIE1C);
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:271:5: note: suggested alternative: &#39;TIMER&#39;
+     TIMSK1 = (1 &lt;&lt; OCIE1C);
+     ^~~~~~
+     TIMER
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:271:20: error: &#39;OCIE1C&#39; was not declared in this scope
+     TIMSK1 = (1 &lt;&lt; OCIE1C);
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:272:5: error: &#39;TIFR1&#39; was not declared in this scope
+     TIFR1 = (1 &lt;&lt; OCF1C);
+     ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:272:19: error: &#39;OCF1C&#39; was not declared in this scope
+     TIFR1 = (1 &lt;&lt; OCF1C);
+                   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:303:4: error: expected constructor, </pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library Robopoly_Bluetooth claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+Sketch uses 2930 bytes (5%) of program storage space. Maximum is 49152 bytes.
+Global variables use 474 bytes (7%) of dynamic memory, leaving 5670 bytes for local variables. Maximum is 6144 bytes.
+</pre>
+
+					
+					<h4>examples/BluetoothConfig</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library Robopoly_Bluetooth claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+Sketch uses 5873 bytes (11%) of program storage space. Maximum is 49152 bytes.
+Global variables use 506 bytes (8%) of dynamic memory, leaving 5638 bytes for local variables. Maximum is 6144 bytes.
+</pre>
+					
+					<h4>examples/RemoteLED</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library Robopoly_PRismino claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+WARNING: library Robopoly_Bluetooth claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp: In function &#39;void setSpeed(int8_t, int8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:21:3: error: &#39;TCCR4A&#39; was not declared in this scope
+   TCCR4A = 0;
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:22:3: error: &#39;TCCR4B&#39; was not declared in this scope
+   TCCR4B = 0;
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:23:3: error: &#39;TCCR4C&#39; was not declared in this scope
+   TCCR4C = 0;
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:25:3: error: &#39;TCCR4D&#39; was not declared in this scope
+   TCCR4D = 0;
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:26:3: error: &#39;TCCR4E&#39; was not declared in this scope
+   TCCR4E = 0;
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:53:3: error: &#39;TC4H&#39; was not declared in this scope
+   TC4H = temp &gt;&gt; 8;
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:53:3: note: suggested alternative: &#39;TCA0&#39;
+   TC4H = temp &gt;&gt; 8;
+   ^~~~
+   TCA0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:54:3: error: &#39;OCR4A&#39; was not declared in this scope
+   OCR4A = temp &amp; 0xff;
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:59:3: error: &#39;OCR4B&#39; was not declared in this scope
+   OCR4B = temp &amp; 0xff;
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:63:3: error: &#39;TCNT4&#39; was not declared in this scope
+   TCNT4 = 0;
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:67:3: error: &#39;OCR4C&#39; was not declared in this scope
+   OCR4C = 0xff;
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:84:3: error: &#39;TIMSK4&#39; was not declared in this scope
+   TIMSK4 = (1 &lt;&lt; OCIE4A) | (1 &lt;&lt; OCIE4B) | (1 &lt;&lt; TOIE4);
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:84:18: error: &#39;OCIE4A&#39; was not declared in this scope
+   TIMSK4 = (1 &lt;&lt; OCIE4A) | (1 &lt;&lt; OCIE4B) | (1 &lt;&lt; TOIE4);
+                  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:84:34: error: &#39;OCIE4B&#39; was not declared in this scope
+   TIMSK4 = (1 &lt;&lt; OCIE4A) | (1 &lt;&lt; OCIE4B) | (1 &lt;&lt; TOIE4);
+                                  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:84:50: error: &#39;TOIE4&#39; was not declared in this scope
+   TIMSK4 = (1 &lt;&lt; OCIE4A) | (1 &lt;&lt; OCIE4B) | (1 &lt;&lt; TOIE4);
+                                                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:86:3: error: &#39;TIFR4&#39; was not declared in this scope
+   TIFR4 = (1 &lt;&lt; OCF4A) | (1 &lt;&lt; OCF4B) | (1 &lt;&lt; TOV4);
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:86:17: error: &#39;OCF4A&#39; was not declared in this scope
+   TIFR4 = (1 &lt;&lt; OCF4A) | (1 &lt;&lt; OCF4B) | (1 &lt;&lt; TOV4);
+                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:86:32: error: &#39;OCF4B&#39; was not declared in this scope
+   TIFR4 = (1 &lt;&lt; OCF4A) | (1 &lt;&lt; OCF4B) | (1 &lt;&lt; TOV4);
+                                ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:86:47: error: &#39;TOV4&#39; was not declared in this scope
+   TIFR4 = (1 &lt;&lt; OCF4A) | (1 &lt;&lt; OCF4B) | (1 &lt;&lt; TOV4);
+                                               ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:89:18: error: &#39;CS40&#39; was not declared in this scope
+   TCCR4B = (1 &lt;&lt; CS40);
+                  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp: In function &#39;void TIMER4_OVF_vect()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:179:7: error: &#39;TCCR4B&#39; was not declared in this scope
+       TCCR4B = 0;
+       ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp: In function &#39;int8_t setTimer(void (*)(), uint16_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:265:5: error: &#39;TCCR1A&#39; was not declared in this scope
+     TCCR1A = 0;
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:265:5: note: suggested alternative: &#39;TCB1&#39;
+     TCCR1A = 0;
+     ^~~~~~
+     TCB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:266:5: error: &#39;TCCR1B&#39; was not declared in this scope
+     TCCR1B = (1 &lt;&lt; WGM12) | (1 &lt;&lt; CS12);
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:266:5: note: suggested alternative: &#39;TCB1&#39;
+     TCCR1B = (1 &lt;&lt; WGM12) | (1 &lt;&lt; CS12);
+     ^~~~~~
+     TCB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:266:20: error: &#39;WGM12&#39; was not declared in this scope
+     TCCR1B = (1 &lt;&lt; WGM12) | (1 &lt;&lt; CS12);
+                    ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:266:35: error: &#39;CS12&#39; was not declared in this scope
+     TCCR1B = (1 &lt;&lt; WGM12) | (1 &lt;&lt; CS12);
+                                   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:266:35: note: suggested alternative: &#39;S2&#39;
+     TCCR1B = (1 &lt;&lt; WGM12) | (1 &lt;&lt; CS12);
+                                   ^~~~
+                                   S2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:267:5: error: &#39;TCNT1&#39; was not declared in this scope
+     TCNT1 = 0;
+     ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:267:5: note: suggested alternative: &#39;TCB1&#39;
+     TCNT1 = 0;
+     ^~~~~
+     TCB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:270:5: error: &#39;OCR1A&#39; was not declared in this scope
+     OCR1A = 6250;
+     ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:271:5: error: &#39;TIMSK1&#39; was not declared in this scope
+     TIMSK1 = (1 &lt;&lt; OCIE1C);
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:271:5: note: suggested alternative: &#39;TIMERB1&#39;
+     TIMSK1 = (1 &lt;&lt; OCIE1C);
+     ^~~~~~
+     TIMERB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:271:20: error: &#39;OCIE1C&#39; was not declared in this scope
+     TIMSK1 = (1 &lt;&lt; OCIE1C);
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:272:5: error: &#39;TIFR1&#39; was not declared in this scope
+     TIFR1 = (1 &lt;&lt; OCF1C);
+     ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:272:19: error: &#39;OCF1C&#39; was not declared in this scope
+     TIFR1 = (1 &lt;&lt; OCF1C);
+                   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp: In member function &#39;void Stepper::moveSteps(int16_t, uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:371:3: error: &#39;TCCR4A&#39; was not declared in this scope
+   TCCR4A = 0;
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:372:3: error: &#39;TCCR4B&#39; was not declared in this scope
+   TCCR4B = 0;
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:373:3: error: &#39;TCCR4C&#39; was not declared in this scope
+   TCCR4C = 0;
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:375:3: error: &#39;TCCR4D&#39; was not declared in this scope
+   TCCR4D = (1 &lt;&lt; WGM40);
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:375:18: error: &#39;WGM40&#39; was not declared in this scope
+   TCCR4D = (1 &lt;&lt; WGM40);
+                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:376:3: error: &#39;TCCR4E&#39; was not declared in this scope
+   TCCR4E = 0;
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:379:3: error: &#39;TC4H&#39; was not declared in this scope
+   TC4H = 0;
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:379:3: note: suggested alternative: &#39;TCA0&#39;
+   TC4H = 0;
+   ^~~~
+   TCA0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:380:3: error: &#39;TCNT4&#39; was not declared in this scope
+   TCNT4 = 0;
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:387:3: error: &#39;TIMSK4&#39; was not declared in this scope
+   TIMSK4 = (1 &lt;&lt; TOIE4);
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:387:18: error: &#39;TOIE4&#39; was not declared in this scope
+   TIMSK4 = (1 &lt;&lt; TOIE4);
+                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PR</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library Robopoly_Bluetooth claims to run on avr architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+Sketch uses 12304 bytes (4%) of program storage space. Maximum is 262144 bytes.
+Global variables use 3144 bytes (9%) of dynamic memory, leaving 29624 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+
+					
+					<h4>examples/BluetoothConfig</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library Robopoly_Bluetooth claims to run on avr architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+Sketch uses 16152 bytes (6%) of program storage space. Maximum is 262144 bytes.
+Global variables use 3544 bytes (10%) of dynamic memory, leaving 29224 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+					
+					<h4>examples/RemoteLED</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library Robopoly_PRismino claims to run on avr architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+WARNING: library Robopoly_Bluetooth claims to run on avr architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp: In function &#39;void setSpeed(int8_t, int8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:21:3: error: &#39;TCCR4A&#39; was not declared in this scope
+   TCCR4A = 0;
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:21:3: note: suggested alternative: &#39;TCC0&#39;
+   TCCR4A = 0;
+   ^~~~~~
+   TCC0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:22:3: error: &#39;TCCR4B&#39; was not declared in this scope
+   TCCR4B = 0;
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:22:3: note: suggested alternative: &#39;TCC0&#39;
+   TCCR4B = 0;
+   ^~~~~~
+   TCC0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:23:3: error: &#39;TCCR4C&#39; was not declared in this scope
+   TCCR4C = 0;
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:23:3: note: suggested alternative: &#39;TCC0&#39;
+   TCCR4C = 0;
+   ^~~~~~
+   TCC0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:25:3: error: &#39;TCCR4D&#39; was not declared in this scope
+   TCCR4D = 0;
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:25:3: note: suggested alternative: &#39;TCC0&#39;
+   TCCR4D = 0;
+   ^~~~~~
+   TCC0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:26:3: error: &#39;TCCR4E&#39; was not declared in this scope
+   TCCR4E = 0;
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:26:3: note: suggested alternative: &#39;TCC0&#39;
+   TCCR4E = 0;
+   ^~~~~~
+   TCC0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:53:3: error: &#39;TC4H&#39; was not declared in this scope
+   TC4H = temp &gt;&gt; 8;
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:53:3: note: suggested alternative: &#39;TC4&#39;
+   TC4H = temp &gt;&gt; 8;
+   ^~~~
+   TC4
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:54:3: error: &#39;OCR4A&#39; was not declared in this scope
+   OCR4A = temp &amp; 0xff;
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:59:3: error: &#39;OCR4B&#39; was not declared in this scope
+   OCR4B = temp &amp; 0xff;
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:63:3: error: &#39;TCNT4&#39; was not declared in this scope
+   TCNT4 = 0;
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:63:3: note: suggested alternative: &#39;TC4&#39;
+   TCNT4 = 0;
+   ^~~~~
+   TC4
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:67:3: error: &#39;OCR4C&#39; was not declared in this scope
+   OCR4C = 0xff;
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:70:3: error: &#39;DDRB&#39; was not declared in this scope
+   DDRB |= (1 &lt;&lt; 7) | (1 &lt;&lt; 6) | (1 &lt;&lt; 5);
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:71:3: error: &#39;DDRD&#39; was not declared in this scope
+   DDRD |= (1 &lt;&lt; 6);
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:79:9: error: no match for &#39;operator|=&#39; (operand types are &#39;_EPortType&#39; and &#39;int&#39;)
+   PORTB |= (1 &lt;&lt; 7) | (1 &lt;&lt; 6) | (1 &lt;&lt; 5);
+   ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:79:9: note: candidate: operator|=(_EPortType&amp;, int) &lt;built-in&gt;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:79:9: note:   conversion of argument 1 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:79:41: error: cannot bind non-const lvalue reference of type &#39;_EPortType&amp;&#39; to an rvalue of type &#39;_EPortType&#39;
+   PORTB |= (1 &lt;&lt; 7) | (1 &lt;&lt; 6) | (1 &lt;&lt; 5);
+                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:80:3: error: &#39;PORTD&#39; was not declared in this scope
+   PORTD |= (1 &lt;&lt; 6);
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:80:3: note: suggested alternative: &#39;PORTC&#39;
+   PORTD |= (1 &lt;&lt; 6);
+   ^~~~~
+   PORTC
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:84:3: error: &#39;TIMSK4&#39; was not declared in this scope
+   TIMSK4 = (1 &lt;&lt; OCIE4A) | (1 &lt;&lt; OCIE4B) | (1 &lt;&lt; TOIE4);
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:84:18: error: &#39;OCIE4A&#39; was not declared in this scope
+   TIMSK4 = (1 &lt;&lt; OCIE4A) | (1 &lt;&lt; OCIE4B) | (1 &lt;&lt; TOIE4);
+                  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:84:34: error: &#39;OCIE4B&#39; was not declared in this scope
+   TIMSK4 = (1 &lt;&lt; OCIE4A) | (1 &lt;&lt; OCIE4B) | (1 &lt;&lt; TOIE4);
+                                  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:84:50: error: &#39;TOIE4&#39; was not declared in this scope
+   TIMSK4 = (1 &lt;&lt; OCIE4A) | (1 &lt;&lt; OCIE4B) | (1 &lt;&lt; TOIE4);
+                                                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:86:3: error: &#39;TIFR4&#39; was not declared in this scope
+   TIFR4 = (1 &lt;&lt; OCF4A) | (1 &lt;&lt; OCF4B) | (1 &lt;&lt; TOV4);
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:86:17: error: &#39;OCF4A&#39; was not declared in this scope
+   TIFR4 = (1 &lt;&lt; OCF4A) | (1 &lt;&lt; OCF4B) | (1 &lt;&lt; TOV4);
+                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:86:32: error: &#39;OCF4B&#39; was not declared in this scope
+   TIFR4 = (1 &lt;&lt; OCF4A) | (1 &lt;&lt; OCF4B) | (1 &lt;&lt; TOV4);
+                                ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:86:47: error: &#39;TOV4&#39; was not declared in this scope
+   TIFR4 = (1 &lt;&lt; OCF4A) | (1 &lt;&lt; OCF4B) | (1 &lt;&lt; TOV4);
+                                               ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:86:47: note: suggested alternative: &#39;TC4&#39;
+   TIFR4 = (1 &lt;&lt; OCF4A) | (1 &lt;&lt; OCF4B) | (1 &lt;&lt; TOV4);
+                                               ^~~~
+                                               TC4
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:89:18: error: &#39;CS40&#39; was not declared in this scope
+   TCCR4B = (1 &lt;&lt; CS40);
+                  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:94:4: error: expected constructor, destructor, or type conversion before &#39;(&#39; token
+ ISR(TIMER4_COMPA_vect)
+    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:114:4: error: expected constructor, destructor, or type conversion before &#39;(&#39; token
+ ISR(TIMER4_COMPB_vect)
+    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:134:4: error: expected constructor, destructor, or type conversion before &#39;(&#39; token
+ ISR(TIMER4_OVF_vect)
+    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp: In function &#39;int8_t setTimer(void (*)(), uint16_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:265:5: error: &#39;TCCR1A&#39; was not declared in this scope
+     TCCR1A = 0;
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:265:5: note: suggested alternative: &#39;TCC1&#39;
+     TCCR1A = 0;
+     ^~~~~~
+     TCC1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:266:5: error: &#39;TCCR1B&#39; was not declared in this scope
+     TCCR1B = (1 &lt;&lt; WGM12) | (1 &lt;&lt; CS12);
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:266:5: note: suggested alternative: &#39;TCC1&#39;
+     TCCR1B = (1 &lt;&lt; WGM12) | (1 &lt;&lt; CS12);
+     ^~~~~~
+     TCC1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:266:20: error: &#39;WGM12&#39; was not declared in this scope
+     TCCR1B = (1 &lt;&lt; WGM12) | (1 &lt;&lt; CS12);
+                    ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:266:35: error: &#39;CS12&#39; was not declared in this scope
+     TCCR1B = (1 &lt;&lt; WGM12) | (1 &lt;&lt; CS12);
+                                   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:266:35: note: suggested alternative: &#39;SS1&#39;
+     TCCR1B = (1 &lt;&lt; WGM12) | (1 &lt;&lt; CS12);
+                                   ^~~~
+                                   SS1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:267:5: error: &#39;TCNT1&#39; was not declared in this scope
+     TCNT1 = 0;
+     ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:267:5: note: suggested alternative: &#39;TCC1&#39;
+     TCNT1 = 0;
+     ^~~~~
+     TCC1
+/home/ec2-user/arduino-testlib/cl</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library Robopoly_Bluetooth claims to run on avr architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+Sketch uses 200974 bytes (15%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 13336 bytes (4%) of dynamic memory, leaving 314344 bytes for local variables. Maximum is 327680 bytes.
+</pre>
+
+					
+					<h4>examples/BluetoothConfig</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library Robopoly_Bluetooth claims to run on avr architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+Sketch uses 207910 bytes (15%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 13600 bytes (4%) of dynamic memory, leaving 314080 bytes for local variables. Maximum is 327680 bytes.
+</pre>
+					
+					<h4>examples/RemoteLED</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library Robopoly_PRismino claims to run on avr architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+WARNING: library Robopoly_Bluetooth claims to run on avr architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp: In function &#39;void setSpeed(int8_t, int8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:21:3: error: &#39;TCCR4A&#39; was not declared in this scope
+   TCCR4A = 0;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:22:3: error: &#39;TCCR4B&#39; was not declared in this scope
+   TCCR4B = 0;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:23:3: error: &#39;TCCR4C&#39; was not declared in this scope
+   TCCR4C = 0;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:25:3: error: &#39;TCCR4D&#39; was not declared in this scope
+   TCCR4D = 0;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:26:3: error: &#39;TCCR4E&#39; was not declared in this scope
+   TCCR4E = 0;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:53:3: error: &#39;TC4H&#39; was not declared in this scope
+   TC4H = temp &gt;&gt; 8;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:54:3: error: &#39;OCR4A&#39; was not declared in this scope
+   OCR4A = temp &amp; 0xff;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:59:3: error: &#39;OCR4B&#39; was not declared in this scope
+   OCR4B = temp &amp; 0xff;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:63:3: error: &#39;TCNT4&#39; was not declared in this scope
+   TCNT4 = 0;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:67:3: error: &#39;OCR4C&#39; was not declared in this scope
+   OCR4C = 0xff;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:70:3: error: &#39;DDRB&#39; was not declared in this scope
+   DDRB |= (1 &lt;&lt; 7) | (1 &lt;&lt; 6) | (1 &lt;&lt; 5);
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:71:3: error: &#39;DDRD&#39; was not declared in this scope
+   DDRD |= (1 &lt;&lt; 6);
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:79:3: error: &#39;PORTB&#39; was not declared in this scope
+   PORTB |= (1 &lt;&lt; 7) | (1 &lt;&lt; 6) | (1 &lt;&lt; 5);
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:80:3: error: &#39;PORTD&#39; was not declared in this scope
+   PORTD |= (1 &lt;&lt; 6);
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:84:3: error: &#39;TIMSK4&#39; was not declared in this scope
+   TIMSK4 = (1 &lt;&lt; OCIE4A) | (1 &lt;&lt; OCIE4B) | (1 &lt;&lt; TOIE4);
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:84:18: error: &#39;OCIE4A&#39; was not declared in this scope
+   TIMSK4 = (1 &lt;&lt; OCIE4A) | (1 &lt;&lt; OCIE4B) | (1 &lt;&lt; TOIE4);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:84:34: error: &#39;OCIE4B&#39; was not declared in this scope
+   TIMSK4 = (1 &lt;&lt; OCIE4A) | (1 &lt;&lt; OCIE4B) | (1 &lt;&lt; TOIE4);
+                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:84:50: error: &#39;TOIE4&#39; was not declared in this scope
+   TIMSK4 = (1 &lt;&lt; OCIE4A) | (1 &lt;&lt; OCIE4B) | (1 &lt;&lt; TOIE4);
+                                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:86:3: error: &#39;TIFR4&#39; was not declared in this scope
+   TIFR4 = (1 &lt;&lt; OCF4A) | (1 &lt;&lt; OCF4B) | (1 &lt;&lt; TOV4);
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:86:17: error: &#39;OCF4A&#39; was not declared in this scope
+   TIFR4 = (1 &lt;&lt; OCF4A) | (1 &lt;&lt; OCF4B) | (1 &lt;&lt; TOV4);
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:86:32: error: &#39;OCF4B&#39; was not declared in this scope
+   TIFR4 = (1 &lt;&lt; OCF4A) | (1 &lt;&lt; OCF4B) | (1 &lt;&lt; TOV4);
+                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:86:47: error: &#39;TOV4&#39; was not declared in this scope
+   TIFR4 = (1 &lt;&lt; OCF4A) | (1 &lt;&lt; OCF4B) | (1 &lt;&lt; TOV4);
+                                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:89:18: error: &#39;CS40&#39; was not declared in this scope
+   TCCR4B = (1 &lt;&lt; CS40);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Robopoly_PRismino/src/prismino.cpp:94:4: error: expected constructor, destructor, or type conversion before &#39;(&#39; token
+ ISR(TIMER4_COMPA_vect)
+    ^
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

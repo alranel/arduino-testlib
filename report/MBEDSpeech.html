@@ -1,0 +1,359 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>MBEDSpeech - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>MBEDSpeech</h2>
+				<p>
+					Version: <b>1.0.9</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/mbedspeech/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>nano_ble33_sense_microphone_continuous</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MBEDSpeech/src/edge-impulse-sdk/dsp/dct/fast-dct-fft.cpp:29:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MBEDSpeech/src/edge-impulse-sdk/dsp/dct/../numpy.hpp:29:10: fatal error: cfloat: No such file or directory
+ #include &lt;cfloat&gt;
+          ^~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/nano_ble33_sense_microphone_continuous</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MBEDSpeech/examples/nano_ble33_sense_microphone_continuous/nano_ble33_sense_microphone_continuous.ino:16:10: fatal error: PDM.h: No such file or directory
+ #include &lt;PDM.h&gt;
+          ^~~~~~~
+compilation terminated.
+
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 79520 bytes (0%) of program storage space. Maximum is 16777216 bytes.
+Global variables use 44040 bytes (16%) of dynamic memory, leaving 226296 bytes for local variables. Maximum is 270336 bytes.
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MBEDSpeech/src/edge-impulse-sdk/tensorflow/lite/micro/kernels/depthwise_conv.cpp:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MBEDSpeech/src/edge-impulse-sdk/tensorflow/lite/micro/kernels/../../../../classifier/ei_classifier_config.h:30:107: note: #pragma message: CMSIS-NN enabled, but neither __ARM_FEATURE_DSP nor __ARM_FEATURE_MVE defined. Falling back.
+             &#34;CMSIS-NN enabled, but neither __ARM_FEATURRE_DSP nor __ARM_FEATURE_MVE defined. Falling back.&#34;)
+                                                                                                           ^</pre>
+
+					
+					<h4>examples/nano_ble33_sense_microphone_continuous</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 143920 bytes (0%) of program storage space. Maximum is 16777216 bytes.
+Global variables use 102776 bytes (38%) of dynamic memory, leaving 167560 bytes for local variables. Maximum is 270336 bytes.
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MBEDSpeech/src/edge-impulse-sdk/tensorflow/lite/micro/kernels/conv.cpp:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MBEDSpeech/src/edge-impulse-sdk/tensorflow/lite/micro/kernels/../../../../classifier/ei_classifier_config.h:30:107: note: #pragma message: CMSIS-NN enabled, but neither __ARM_FEATURE_DSP nor __ARM_FEATURE_MVE defined. Falling back.
+             &#34;CMSIS-NN enabled, but neither __ARM_FEATURE_DSP nor RE_DSP nor __ARM_FEATURE_MVE defined. Falling back.&#34;)
+                                                                                                         </pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MBEDSpeech/src/edge-impulse-sdk/dsp/dct/fast-dct-fft.cpp:29:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MBEDSpeech/src/edge-impulse-sdk/dsp/dct/../numpy.hpp:29:10: fatal error: cfloat: No such file or directory
+ #include &lt;cfloat&gt;
+          ^~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/nano_ble33_sense_microphone_continuous</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MBEDSpeech/examples/nano_ble33_sense_microphone_continuous/nano_ble33_sense_microphone_continuous.ino:16:10: fatal error: PDM.h: No such file or directory
+ #include &lt;PDM.h&gt;
+          ^~~~~~~
+compilation terminated.
+
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 17608 bytes (6%) of program storage space. Maximum is 262144 bytes.
+Global variables use 3584 bytes (10%) of dynamic memory, leaving 29184 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+
+					
+					<h4>examples/nano_ble33_sense_microphone_continuous</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MBEDSpeech/examples/nano_ble33_sense_microphone_continuous/nano_ble33_sense_microphone_continuous.ino:16:10: fatal error: PDM.h: No such file or directory
+ #include &lt;PDM.h&gt;
+          ^~~~~~~
+compilation terminated.
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 273230 bytes (20%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 14184 bytes (4%) of dynamic memory, leaving 313496 bytes for local variables. Maximum is 327680 bytes.
+</pre>
+
+					
+					<h4>examples/nano_ble33_sense_microphone_continuous</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MBEDSpeech/examples/nano_ble33_sense_microphone_continuous/nano_ble33_sense_microphone_continuous.ino:16:17: fatal error: PDM.h: No such file or directory
+compilation terminated.
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

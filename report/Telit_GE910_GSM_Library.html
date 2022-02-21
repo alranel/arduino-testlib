@@ -1,0 +1,390 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>Telit GE910 GSM Library - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>Telit GE910 GSM Library</h2>
+				<p>
+					Version: <b>1.7.2</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/telit-ge910-gsm-library/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 1332 bytes (4%) of program storage space. Maximum is 32256 bytes.
+Global variables use 184 bytes (8%) of dynamic memory, leaving 1864 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library Telit_GE910_GSM_Library claims to run on avr architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp: In member function &#39;bool GE910::Module_ON()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:25:2: error: &#39;DDRB&#39; was not declared in this scope
+  DDRB |= 0b00000010; PORTB &amp;= 0b11111101;
+  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:25:2: note: suggested alternative: &#39;DIR&#39;
+  DDRB |= 0b00000010; PORTB &amp;= 0b11111101;
+  ^~~~
+  DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:25:22: error: &#39;PORTB&#39; was not declared in this scope
+  DDRB |= 0b00000010; PORTB &amp;= 0b11111101;
+                      ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:26:2: error: &#39;DDRC&#39; was not declared in this scope
+  DDRC |= 0b00000001; PORTC |= 0b00000001;
+  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:26:2: note: suggested alternative: &#39;DIR&#39;
+  DDRC |= 0b00000001; PORTC |= 0b00000001;
+  ^~~~
+  DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:26:22: error: &#39;PORTC&#39; was not declared in this scope
+  DDRC |= 0b00000001; PORTC |= 0b00000001;
+                      ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:30:2: error: &#39;DDRD&#39; was not declared in this scope
+  DDRD |= 0b00100000; PORTD &amp;= 0b11011111;
+  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:30:2: note: suggested alternative: &#39;DIR&#39;
+  DDRD |= 0b00100000; PORTD &amp;= 0b11011111;
+  ^~~~
+  DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:30:22: error: &#39;PORTD&#39; was not declared in this scope
+  DDRD |= 0b00100000; PORTD &amp;= 0b11011111;
+                      ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:49:7: error: &#39;PINC&#39; was not declared in this scope
+  if ((PINC &amp; 0b00001000) == 0b00001000) {
+       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:49:7: note: suggested alternative: &#39;NC&#39;
+  if ((PINC &amp; 0b00001000) == 0b00001000) {
+       ^~~~
+       NC
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:110:7: error: &#39;PINC&#39; was not declared in this scope
+  if ((PINC &amp; 0b00001000) == 0b00001000) {
+       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:110:7: note: suggested alternative: &#39;NC&#39;
+  if ((PINC &amp; 0b00001000) == 0b00001000) {
+       ^~~~
+       NC
+
+</pre>
+
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library Telit_GE910_GSM_Library claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp: In member function &#39;bool GE910::Module_ON()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:49:7: error: &#39;PINC&#39; was not declared in this scope
+  if ((PINC &amp; 0b00001000) == 0b00001000) {
+       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:49:7: note: suggested alternative: &#39;PIN0&#39;
+  if ((PINC &amp; 0b00001000) == 0b00001000) {
+       ^~~~
+       PIN0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:110:7: error: &#39;PINC&#39; was not declared in this scope
+  if ((PINC &amp; 0b00001000) == 0b00001000) {
+       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:110:7: note: suggested alternative: &#39;PIN0&#39;
+  if ((PINC &amp; 0b00001000) == 0b00001000) {
+       ^~~~
+       PIN0
+
+</pre>
+
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library Telit_GE910_GSM_Library claims to run on avr architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp: In member function &#39;bool GE910::Module_ON()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:25:2: error: &#39;DDRB&#39; was not declared in this scope
+  DDRB |= 0b00000010; PORTB &amp;= 0b11111101;
+  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:25:28: error: no match for &#39;operator&amp;=&#39; (operand types are &#39;_EPortType&#39; and &#39;int&#39;)
+  DDRB |= 0b00000010; PORTB &amp;= 0b11111101;
+                      ~~~~~~^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:25:28: note: candidate: operator&amp;=(_EPortType&amp;, int) &lt;built-in&gt;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:25:28: note:   conversion of argument 1 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:25:31: error: cannot bind non-const lvalue reference of type &#39;_EPortType&amp;&#39; to an rvalue of type &#39;_EPortType&#39;
+  DDRB |= 0b00000010; PORTB &amp;= 0b11111101;
+                               ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:26:2: error: &#39;DDRC&#39; was not declared in this scope
+  DDRC |= 0b00000001; PORTC |= 0b00000001;
+  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:26:2: note: suggested alternative: &#39;ADC&#39;
+  DDRC |= 0b00000001; PORTC |= 0b00000001;
+  ^~~~
+  ADC
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:26:28: error: no match for &#39;operator|=&#39; (operand types are &#39;_EPortType&#39; and &#39;int&#39;)
+  DDRC |= 0b00000001; PORTC |= 0b00000001;
+                      ~~~~~~^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:26:28: note: candidate: operator|=(_EPortType&amp;, int) &lt;built-in&gt;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:26:28: note:   conversion of argument 1 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:26:31: error: cannot bind non-const lvalue reference of type &#39;_EPortType&amp;&#39; to an rvalue of type &#39;_EPortType&#39;
+  DDRC |= 0b00000001; PORTC |= 0b00000001;
+                               ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:27:28: error: no match for &#39;operator&amp;=&#39; (operand types are &#39;_EPortType&#39; and &#39;int&#39;)
+  DDRC |= 0b00000010; PORTC &amp;= 0b11111101;
+                      ~~~~~~^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:27:28: note: candidate: operator&amp;=(_EPortType&amp;, int) &lt;built-in&gt;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:27:28: note:   conversion of argument 1 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:27:31: error: cannot bind non-const lvalue reference of type &#39;_EPortType&amp;&#39; to an rvalue of type &#39;_EPortType&#39;
+  DDRC |= 0b00000010; PORTC &amp;= 0b11111101;
+                               ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:28:28: error: no match for &#39;operator&amp;=&#39; (operand types are &#39;_EPortType&#39; and &#39;int&#39;)
+  DDRC |= 0b00000100; PORTC &amp;= 0b11111011;
+                      ~~~~~~^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:28:28: note: candidate: operator&amp;=(_EPortType&amp;, int) &lt;built-in&gt;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:28:28: note:   conversion of argument 1 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:28:31: error: cannot bind non-const lvalue reference of type &#39;_EPortType&amp;&#39; to an rvalue of type &#39;_EPortType&#39;
+  DDRC |= 0b00000100; PORTC &amp;= 0b11111011;
+                               ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:29:28: error: no match for &#39;operator&amp;=&#39; (operand types are &#39;_EPortType&#39; and &#39;int&#39;)
+  DDRC &amp;= 0b11110111; PORTC &amp;= 0b11110111;
+                      ~~~~~~^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:29:28: note: candidate: operator&amp;=(_EPortType&amp;, int) &lt;built-in&gt;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:29:28: note:   conversion of argument 1 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:29:31: error: cannot bind non-const lvalue reference of type &#39;_EPortType&amp;&#39; to an rvalue of type &#39;_EPortType&#39;
+  DDRC &amp;= 0b11110111; PORTC &amp;= 0b11110111;
+                               ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:30:2: error: &#39;DDRD&#39; was not declared in this scope
+  DDRD |= 0b00100000; PORTD &amp;= 0b11011111;
+  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:30:22: error: &#39;PORTD&#39; was not declared in this scope
+  DDRD |= 0b00100000; PORTD &amp;= 0b11011111;
+                      ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:30:22: note: suggested alternative: &#39;PORTC&#39;
+  DDRD |= 0b00100000; PORTD &amp;= 0b11011111;
+                      ^~~~~
+                      PORTC
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:43:8: error: no match for &#39;operator&amp;=&#39; (operand types are &#39;_EPortType&#39; and &#39;int&#39;)
+  PORTC &amp;= 0b11111110;
+  ~~~~~~^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:43:8: note: candidate: operator&amp;=(_EPortType&amp;, int) &lt;built-in&gt;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:43:8: note:   conversion of argument 1 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:43:11: error: cannot bind non-const lvalue reference of type &#39;_EPortType&amp;&#39; to an rvalue of type &#39;_EPortType&#39;
+  PORTC &amp;= 0b11111110;
+           ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:46:8: error: no match for &#39;operator|=&#39; (operand types are &#39;_EPortType&#39; and &#39;int&#39;)
+  PORTB |= 0b00000010;
+  ~~~~~~^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:46:8: note: candidate: operator|=(_EPortType&amp;, int) &lt;built-in&gt;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:46:8: note:   conversion of argument 1 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:46:11: error: cannot bind non-const lvalue reference of type &#39;_EPortType&amp;&#39; to an rvalue of type &#39;_EPortType&#39;
+  PORTB |= 0b00000010;
+           ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:49:7: error: &#39;PINC&#39; was not declared in this scope
+  if ((PINC &amp; 0b00001000) == 0b00001000) {
+       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:49:7: note: suggested alternative: &#39;EIC&#39;
+  if ((PINC &amp; 0b00001000) == 0b00001000) {
+       ^~~~
+       EIC
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:68:9: error: no match for &#39;operator|=&#39; (operand types are &#39;_EPortType&#39; and &#39;int&#39;)
+   PORTC |= 0b00000010;
+   ~~~~~~^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:68:9: note: candidate: operator|=(_EPortType&amp;, int) &lt;built-in&gt;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:68:9: note:   conversion of argument 1 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:68:12: error: cannot bind non-const lvalue reference of type &#39;_EPortType&amp;&#39; to an rvalue of type &#39;_EPortType&#39;
+   PORTC |= 0b00000010;
+            ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:74:9: error: no match for &#39;operator&amp;=&#39; (operand types are &#39;_EPortType&#39; and &#39;int&#39;)
+   PORTC &amp;= 0b11111101;
+   ~~~~~~^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:74:9: note: candidate: operator&amp;=(_EPortType&amp;, int) &lt;built-in&gt;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:74:9: note:   conversion of argument 1 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:74:12: error: cannot bind non-const lvalue reference of type &#39;_EPortType&amp;&#39; to an rvalue of type &#39;_EPortType&#39;
+   PORTC &amp;= 0b11111101;
+            ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:101:8: error: no match for &#39;operator|=&#39; (operand types are &#39;_EPortType&#39; and &#39;int&#39;)
+  PORTC |= 0b00000100;
+  ~~~~~~^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:101:8: note: candidate: operator|=(_EPortType&amp;, int) &lt;built-in&gt;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:101:8: note:   conversion of argument 1 would be ill</pre>
+
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library Telit_GE910_GSM_Library claims to run on avr architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp: In member function &#39;bool GE910::Module_ON()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:25:2: error: &#39;DDRB&#39; was not declared in this scope
+  DDRB |= 0b00000010; PORTB &amp;= 0b11111101;
+  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:25:22: error: &#39;PORTB&#39; was not declared in this scope
+  DDRB |= 0b00000010; PORTB &amp;= 0b11111101;
+                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:26:2: error: &#39;DDRC&#39; was not declared in this scope
+  DDRC |= 0b00000001; PORTC |= 0b00000001;
+  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:26:22: error: &#39;PORTC&#39; was not declared in this scope
+  DDRC |= 0b00000001; PORTC |= 0b00000001;
+                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:30:2: error: &#39;DDRD&#39; was not declared in this scope
+  DDRD |= 0b00100000; PORTD &amp;= 0b11011111;
+  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:30:22: error: &#39;PORTD&#39; was not declared in this scope
+  DDRD |= 0b00100000; PORTD &amp;= 0b11011111;
+                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:49:7: error: &#39;PINC&#39; was not declared in this scope
+  if ((PINC &amp; 0b00001000) == 0b00001000) {
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Telit_GE910_GSM_Library/src/GE910.cpp:110:7: error: &#39;PINC&#39; was not declared in this scope
+  if ((PINC &amp; 0b00001000) == 0b00001000) {
+       ^
+
+</pre>
+
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

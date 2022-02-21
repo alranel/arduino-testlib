@@ -1,0 +1,1491 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>Dimmer class for ATmega32U4 - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>Dimmer class for ATmega32U4</h2>
+				<p>
+					Version: <b>1.0.1</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/dimmer-class-for-atmega32u4/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>DimmerTest</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:134:6: error: #error &#34;This library only supports ATmega32U4 based boards (e.g. Leonardo/Micro...)&#34;
+     #error &#34;This library only supports ATmega32U4 based boards (e.g. Leonardo/Micro...)&#34;
+      ^~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:7:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp: In member function &#39;void Dimmer32u4::init()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:45:33: error: &#39;COM1C1&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:45:33: note: suggested alternative: &#39;COM1B1&#39;
+                 bitSet  (TCCR1A,COM1C1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:46:33: error: &#39;COM1C0&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:46:33: note: suggested alternative: &#39;COM1A0&#39;
+                 bitSet  (TCCR1A,COM1C0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:48:33: error: &#39;COM1C1&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:48:33: note: suggested alternative: &#39;COM1B1&#39;
+                 bitSet  (TCCR1A,COM1C1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:49:33: error: &#39;COM1C0&#39; was not declared in this scope
+                 bitClear(TCCR1A,COM1C0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:113:52: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                                    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:49:33: note: suggested alternative: &#39;COM1A0&#39;
+                 bitClear(TCCR1A,COM1C0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:113:52: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                                    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:75:26: error: &#39;TCCR3A&#39; was not declared in this scope
+                 bitSet  (TCCR3A,COM3A1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:75:26: note: suggested alternative: &#39;TCCR0A&#39;
+                 bitSet  (TCCR3A,COM3A1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:75:33: error: &#39;COM3A1&#39; was not declared in this scope
+                 bitSet  (TCCR3A,COM3A1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:75:33: note: suggested alternative: &#39;COM0A1&#39;
+                 bitSet  (TCCR3A,COM3A1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:76:33: error: &#39;COM3A0&#39; was not declared in this scope
+                 bitSet  (TCCR3A,COM3A0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:76:33: note: suggested alternative: &#39;COM0A0&#39;
+                 bitSet  (TCCR3A,COM3A0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:78:26: error: &#39;TCCR3A&#39; was not declared in this scope
+                 bitSet  (TCCR3A,COM3A1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:78:26: note: suggested alternative: &#39;TCCR0A&#39;
+                 bitSet  (TCCR3A,COM3A1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:78:33: error: &#39;COM3A1&#39; was not declared in this scope
+                 bitSet  (TCCR3A,COM3A1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:78:33: note: suggested alternative: &#39;COM0A1&#39;
+                 bitSet  (TCCR3A,COM3A1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:79:33: error: &#39;COM3A0&#39; was not declared in this scope
+                 bitClear(TCCR3A,COM3A0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:113:52: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                                    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega3</pre>
+
+					
+					<h4>examples/DimmerTest</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:134:6: error: #error &#34;This library only supports ATmega32U4 based boards (e.g. Leonardo/Micro...)&#34;
+     #error &#34;This library only supports ATmega32U4 based boards (e.g. Leonardo/Micro...)&#34;
+      ^~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:7:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp: In member function &#39;void Dimmer32u4::init()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:45:33: error: &#39;COM1C1&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:45:33: note: suggested alternative: &#39;COM1B1&#39;
+                 bitSet  (TCCR1A,COM1C1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:46:33: error: &#39;COM1C0&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:46:33: note: suggested alternative: &#39;COM1A0&#39;
+                 bitSet  (TCCR1A,COM1C0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:48:33: error: &#39;COM1C1&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:48:33: note: suggested alternative: &#39;COM1B1&#39;
+                 bitSet  (TCCR1A,COM1C1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:49:33: error: &#39;COM1C0&#39; was not declared in this scope
+                 bitClear(TCCR1A,COM1C0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:113:52: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                                    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:49:33: note: suggested alternative: &#39;COM1A0&#39;
+                 bitClear(TCCR1A,COM1C0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:113:52: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                                    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:75:26: error: &#39;TCCR3A&#39; was not declared in this scope
+                 bitSet  (TCCR3A,COM3A1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:75:26: note: suggested alternative: &#39;TCCR0A&#39;
+                 bitSet  (TCCR3A,COM3A1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:75:33: error: &#39;COM3A1&#39; was not declared in this scope
+                 bitSet  (TCCR3A,COM3A1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:75:33: note: suggested alternative: &#39;COM0A1&#39;
+                 bitSet  (TCCR3A,COM3A1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:76:33: error: &#39;COM3A0&#39; was not declared in this scope
+                 bitSet  (TCCR3A,COM3A0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:76:33: note: suggested alternative: &#39;COM0A0&#39;
+                 bitSet  (TCCR3A,COM3A0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:78:26: error: &#39;TCCR3A&#39; was not declared in this scope
+                 bitSet  (TCCR3A,COM3A1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:78:26: note: suggested alternative: &#39;TCCR0A&#39;
+                 bitSet  (TCCR3A,COM3A1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:78:33: error: &#39;COM3A1&#39; was not declared in this scope
+                 bitSet  (TCCR3A,COM3A1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:78:33: note: suggested alternative: &#39;COM0A1&#39;
+                 bitSet  (TCCR3A,COM3A1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:79:33: error: &#39;COM3A0&#39; was not declared in this scope
+                 bitClear(TCCR3A,COM3A0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:113:52: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                                    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega3</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library Dimmer_class_for_ATmega32U4 claims to run on avr architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:134:6: error: #error &#34;This library only supports ATmega32U4 based boards (e.g. Leonardo/Micro...)&#34;
+     #error &#34;This library only supports ATmega32U4 based boards (e.g. Leonardo/Micro...)&#34;
+      ^~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/variants/NANO_RP2040_CONNECT/pinmode_arduino.h:30:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:26,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp: In member function &#39;void Dimmer32u4::init()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:45:26: error: &#39;TCCR1A&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:66:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:45:33: error: &#39;COM1C1&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:66:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:46:33: error: &#39;COM1C0&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:66:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:48:26: error: &#39;TCCR1A&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:66:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:48:33: error: &#39;COM1C1&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:66:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:49:33: error: &#39;COM1C0&#39; was not declared in this scope
+                 bitClear(TCCR1A,COM1C0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:67:52: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                                    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:55:26: error: &#39;TCCR1A&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1B1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:66:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:55:33: error: &#39;COM1B1&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1B1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:66:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:56:33: error: &#39;COM1B0&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1B0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:66:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:58:26: error: &#39;TCCR1A&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1B1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:66:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:58:33: error: &#39;COM1B1&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1B1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:66:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:59:33: error: &#39;COM1B0&#39; was not declared in this scope
+                 bitClear(TCCR1A,COM1B0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:67:52: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                                    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:65:26: error: &#39;TCCR1A&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1A1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:66:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:65:33: error: &#39;COM1A1&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1A1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:66:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:66:33: error: &#39;COM1A0&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1A0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:66:17: note: in expansion of macro &#39;bitSet&#39;
+                 bitSet  (TCCR1A,COM1A0);
+                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:68:26: error: &#39;TCCR1A&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1A1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:66:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:68:33: error: &#39;COM1A1&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1A1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:66:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:69:33: error: &#39;COM1A0&#39; was not declared in this scope
+                 bitClear(TCCR1A,COM1A0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:67:52: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                          </pre>
+
+					
+					<h4>examples/DimmerTest</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library Dimmer_class_for_ATmega32U4 claims to run on avr architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:134:6: error: #error &#34;This library only supports ATmega32U4 based boards (e.g. Leonardo/Micro...)&#34;
+     #error &#34;This library only supports ATmega32U4 based boards (e.g. Leonardo/Micro...)&#34;
+      ^~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/variants/NANO_RP2040_CONNECT/pinmode_arduino.h:30:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:26,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp: In member function &#39;void Dimmer32u4::init()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:45:26: error: &#39;TCCR1A&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:66:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:45:33: error: &#39;COM1C1&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:66:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:46:33: error: &#39;COM1C0&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:66:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:48:26: error: &#39;TCCR1A&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:66:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:48:33: error: &#39;COM1C1&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:66:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:49:33: error: &#39;COM1C0&#39; was not declared in this scope
+                 bitClear(TCCR1A,COM1C0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:67:52: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                                    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:55:26: error: &#39;TCCR1A&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1B1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:66:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:55:33: error: &#39;COM1B1&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1B1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:66:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:56:33: error: &#39;COM1B0&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1B0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:66:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:58:26: error: &#39;TCCR1A&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1B1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:66:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:58:33: error: &#39;COM1B1&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1B1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:66:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:59:33: error: &#39;COM1B0&#39; was not declared in this scope
+                 bitClear(TCCR1A,COM1B0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:67:52: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                                    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:65:26: error: &#39;TCCR1A&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1A1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:66:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:65:33: error: &#39;COM1A1&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1A1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:66:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:66:33: error: &#39;COM1A0&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1A0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:66:17: note: in expansion of macro &#39;bitSet&#39;
+                 bitSet  (TCCR1A,COM1A0);
+                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:68:26: error: &#39;TCCR1A&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1A1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:66:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:68:33: error: &#39;COM1A1&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1A1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:66:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:69:33: error: &#39;COM1A0&#39; was not declared in this scope
+                 bitClear(TCCR1A,COM1A0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Common.h:67:52: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                          </pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library Dimmer_class_for_ATmega32U4 claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:134:6: error: #error &#34;This library only supports ATmega32U4 based boards (e.g. Leonardo/Micro...)&#34;
+     #error &#34;This library only supports ATmega32U4 based boards (e.g. Leonardo/Micro...)&#34;
+      ^~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Interrupts.h:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:29,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp: In member function &#39;void Dimmer32u4::init()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:45:26: error: &#39;TCCR1A&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:45:26: note: suggested alternative: &#39;TCB1&#39;
+                 bitSet  (TCCR1A,COM1C1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:45:33: error: &#39;COM1C1&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:46:33: error: &#39;COM1C0&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:48:26: error: &#39;TCCR1A&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:48:26: note: suggested alternative: &#39;TCB1&#39;
+                 bitSet  (TCCR1A,COM1C1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:48:33: error: &#39;COM1C1&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:49:33: error: &#39;COM1C0&#39; was not declared in this scope
+                 bitClear(TCCR1A,COM1C0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:66:52: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                                    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:55:26: error: &#39;TCCR1A&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1B1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:55:26: note: suggested alternative: &#39;TCB1&#39;
+                 bitSet  (TCCR1A,COM1B1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:55:33: error: &#39;COM1B1&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1B1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:56:33: error: &#39;COM1B0&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1B0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:58:26: error: &#39;TCCR1A&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1B1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:58:26: note: suggested alternative: &#39;TCB1&#39;
+                 bitSet  (TCCR1A,COM1B1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:58:33: error: &#39;COM1B1&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1B1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:59:33: error: &#39;COM1B0&#39; was not declared in this scope
+                 bitClear(TCCR1A,COM1B0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:66:52: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                                    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:65:26: error: &#39;TCCR1A&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1A1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:65:17: note: in expansion of macro &#39;bitSet&#39;
+                 bitSet  (TCCR1A,COM1A1);
+                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:65:26: note: suggested alternative: &#39;TCB1&#39;
+                 bitSet  (TCCR1A,COM1A1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:65:17: note: in expansion of macro &#39;bitSet&#39;
+                 bitSet  (TCCR1A,COM1A1);
+                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_AT</pre>
+
+					
+					<h4>examples/DimmerTest</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library Dimmer_class_for_ATmega32U4 claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:134:6: error: #error &#34;This library only supports ATmega32U4 based boards (e.g. Leonardo/Micro...)&#34;
+     #error &#34;This library only supports ATmega32U4 based boards (e.g. Leonardo/Micro...)&#34;
+      ^~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Interrupts.h:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:29,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp: In member function &#39;void Dimmer32u4::init()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:45:26: error: &#39;TCCR1A&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:45:26: note: suggested alternative: &#39;TCB1&#39;
+                 bitSet  (TCCR1A,COM1C1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:45:33: error: &#39;COM1C1&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:46:33: error: &#39;COM1C0&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:48:26: error: &#39;TCCR1A&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:48:26: note: suggested alternative: &#39;TCB1&#39;
+                 bitSet  (TCCR1A,COM1C1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:48:33: error: &#39;COM1C1&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:49:33: error: &#39;COM1C0&#39; was not declared in this scope
+                 bitClear(TCCR1A,COM1C0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:66:52: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                                    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:55:26: error: &#39;TCCR1A&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1B1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:55:26: note: suggested alternative: &#39;TCB1&#39;
+                 bitSet  (TCCR1A,COM1B1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:55:33: error: &#39;COM1B1&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1B1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:56:33: error: &#39;COM1B0&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1B0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:58:26: error: &#39;TCCR1A&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1B1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:58:26: note: suggested alternative: &#39;TCB1&#39;
+                 bitSet  (TCCR1A,COM1B1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:58:33: error: &#39;COM1B1&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1B1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:59:33: error: &#39;COM1B0&#39; was not declared in this scope
+                 bitClear(TCCR1A,COM1B0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:66:52: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                                    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:65:26: error: &#39;TCCR1A&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1A1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:65:17: note: in expansion of macro &#39;bitSet&#39;
+                 bitSet  (TCCR1A,COM1A1);
+                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:65:26: note: suggested alternative: &#39;TCB1&#39;
+                 bitSet  (TCCR1A,COM1A1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:65:17: note: in expansion of macro &#39;bitSet&#39;
+                 bitSet  (TCCR1A,COM1A1);
+                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_AT</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library Dimmer_class_for_ATmega32U4 claims to run on avr architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:134:6: error: #error &#34;This library only supports ATmega32U4 based boards (e.g. Leonardo/Micro...)&#34;
+     #error &#34;This library only supports ATmega32U4 based boards (e.g. Leonardo/Micro...)&#34;
+      ^~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Interrupts.h:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/ArduinoAPI.h:29,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp: In member function &#39;void Dimmer32u4::init()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:45:26: error: &#39;TCCR1A&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:65:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:45:26: note: suggested alternative: &#39;TCC1&#39;
+                 bitSet  (TCCR1A,COM1C1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:65:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:45:33: error: &#39;COM1C1&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:65:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:46:33: error: &#39;COM1C0&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:65:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:48:26: error: &#39;TCCR1A&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:65:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:48:26: note: suggested alternative: &#39;TCC1&#39;
+                 bitSet  (TCCR1A,COM1C1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:65:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:48:33: error: &#39;COM1C1&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:65:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:49:33: error: &#39;COM1C0&#39; was not declared in this scope
+                 bitClear(TCCR1A,COM1C0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:66:52: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                                    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:55:26: error: &#39;TCCR1A&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1B1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:65:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:55:26: note: suggested alternative: &#39;TCC1&#39;
+                 bitSet  (TCCR1A,COM1B1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:65:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:55:33: error: &#39;COM1B1&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1B1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:65:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:56:33: error: &#39;COM1B0&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1B0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:65:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:58:26: error: &#39;TCCR1A&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1B1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:65:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:58:26: note: suggested alternative: &#39;TCC1&#39;
+                 bitSet  (TCCR1A,COM1B1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:65:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:58:33: error: &#39;COM1B1&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1B1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:65:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:59:33: error: &#39;COM1B0&#39; was not declared in this scope
+                 bitClear(TCCR1A,COM1B0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:66:52: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                                    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:65:26: error: &#39;TCCR1A&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1A1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:65:17: note: in expansion of macro &#39;bitSet&#39;
+                 bitSet  (TCCR1A,COM1A1);
+                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:65:26: note: suggested alternative: &#39;TCC1&#39;
+                 bitSet  (TCCR1A,COM1A1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:65:17: note: in expansion of macro &#39;bitSet&#39;
+                 bitSet  (TCCR1A,COM1A1);
+                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:65:33: error:</pre>
+
+					
+					<h4>examples/DimmerTest</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library Dimmer_class_for_ATmega32U4 claims to run on avr architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:134:6: error: #error &#34;This library only supports ATmega32U4 based boards (e.g. Leonardo/Micro...)&#34;
+     #error &#34;This library only supports ATmega32U4 based boards (e.g. Leonardo/Micro...)&#34;
+      ^~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Interrupts.h:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/ArduinoAPI.h:29,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp: In member function &#39;void Dimmer32u4::init()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:45:26: error: &#39;TCCR1A&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:65:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:45:26: note: suggested alternative: &#39;TCC1&#39;
+                 bitSet  (TCCR1A,COM1C1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:65:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:45:33: error: &#39;COM1C1&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:65:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:46:33: error: &#39;COM1C0&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:65:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:48:26: error: &#39;TCCR1A&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:65:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:48:26: note: suggested alternative: &#39;TCC1&#39;
+                 bitSet  (TCCR1A,COM1C1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:65:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:48:33: error: &#39;COM1C1&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:65:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:49:33: error: &#39;COM1C0&#39; was not declared in this scope
+                 bitClear(TCCR1A,COM1C0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:66:52: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                                    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:55:26: error: &#39;TCCR1A&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1B1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:65:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:55:26: note: suggested alternative: &#39;TCC1&#39;
+                 bitSet  (TCCR1A,COM1B1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:65:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:55:33: error: &#39;COM1B1&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1B1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:65:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:56:33: error: &#39;COM1B0&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1B0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:65:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:58:26: error: &#39;TCCR1A&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1B1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:65:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:58:26: note: suggested alternative: &#39;TCC1&#39;
+                 bitSet  (TCCR1A,COM1B1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:65:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:58:33: error: &#39;COM1B1&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1B1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:65:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:59:33: error: &#39;COM1B0&#39; was not declared in this scope
+                 bitClear(TCCR1A,COM1B0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Common.h:66:52: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                                    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:65:26: error: &#39;TCCR1A&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1A1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:65:17: note: in expansion of macro &#39;bitSet&#39;
+                 bitSet  (TCCR1A,COM1A1);
+                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:65:26: note: suggested alternative: &#39;TCC1&#39;
+                 bitSet  (TCCR1A,COM1A1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:65:17: note: in expansion of macro &#39;bitSet&#39;
+                 bitSet  (TCCR1A,COM1A1);
+                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:65:33: error:</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library Dimmer_class_for_ATmega32U4 claims to run on avr architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:134:6: error: #error &#34;This library only supports ATmega32U4 based boards (e.g. Leonardo/Micro...)&#34;
+     #error &#34;This library only supports ATmega32U4 based boards (e.g. Leonardo/Micro...)&#34;
+      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:7:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp: In member function &#39;void Dimmer32u4::init()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:45:26: error: &#39;TCCR1A&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:89:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:45:33: error: &#39;COM1C1&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:89:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:46:33: error: &#39;COM1C0&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:89:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:48:26: error: &#39;TCCR1A&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:89:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:48:33: error: &#39;COM1C1&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:89:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:49:33: error: &#39;COM1C0&#39; was not declared in this scope
+                 bitClear(TCCR1A,COM1C0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:90:52: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:55:26: error: &#39;TCCR1A&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1B1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:89:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:55:33: error: &#39;COM1B1&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1B1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:89:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:56:33: error: &#39;COM1B0&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1B0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:89:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:58:26: error: &#39;TCCR1A&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1B1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:89:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:58:33: error: &#39;COM1B1&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1B1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:89:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:59:33: error: &#39;COM1B0&#39; was not declared in this scope
+                 bitClear(TCCR1A,COM1B0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:90:52: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:65:26: error: &#39;TCCR1A&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1A1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:89:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:65:33: error: &#39;COM1A1&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1A1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:89:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:66:33: error: &#39;COM1A0&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1A0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:89:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:68:26: error: &#39;TCCR1A&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1A1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:89:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:68:33: error: &#39;COM1A1&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1A1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:89:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:69:33: error: &#39;COM1A0&#39; was not declared in this scope
+                 bitClear(TCCR1A,COM1A0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:90:52: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:75:26: error: &#39;TCCR3A&#39; was not declared in this scope
+                 bitSet  (TCCR3A,COM3A1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:89:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^
+/home/ec2-user/ardu</pre>
+
+					
+					<h4>examples/DimmerTest</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library Dimmer_class_for_ATmega32U4 claims to run on avr architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:134:6: error: #error &#34;This library only supports ATmega32U4 based boards (e.g. Leonardo/Micro...)&#34;
+     #error &#34;This library only supports ATmega32U4 based boards (e.g. Leonardo/Micro...)&#34;
+      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:7:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp: In member function &#39;void Dimmer32u4::init()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:45:26: error: &#39;TCCR1A&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:89:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:45:33: error: &#39;COM1C1&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:89:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:46:33: error: &#39;COM1C0&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:89:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:48:26: error: &#39;TCCR1A&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:89:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:48:33: error: &#39;COM1C1&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1C1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:89:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:49:33: error: &#39;COM1C0&#39; was not declared in this scope
+                 bitClear(TCCR1A,COM1C0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:90:52: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:55:26: error: &#39;TCCR1A&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1B1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:89:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:55:33: error: &#39;COM1B1&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1B1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:89:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:56:33: error: &#39;COM1B0&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1B0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:89:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:58:26: error: &#39;TCCR1A&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1B1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:89:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:58:33: error: &#39;COM1B1&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1B1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:89:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:59:33: error: &#39;COM1B0&#39; was not declared in this scope
+                 bitClear(TCCR1A,COM1B0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:90:52: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:65:26: error: &#39;TCCR1A&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1A1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:89:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:65:33: error: &#39;COM1A1&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1A1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:89:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:66:33: error: &#39;COM1A0&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1A0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:89:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:68:26: error: &#39;TCCR1A&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1A1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:89:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:68:33: error: &#39;COM1A1&#39; was not declared in this scope
+                 bitSet  (TCCR1A,COM1A1);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:89:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:69:33: error: &#39;COM1A0&#39; was not declared in this scope
+                 bitClear(TCCR1A,COM1A0);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:90:52: note: in definition of macro &#39;bitClear&#39;
+ #define bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))
+                                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dimmer_class_for_ATmega32U4/src/Dimmer32u4.cpp:75:26: error: &#39;TCCR3A&#39; was not declared in this scope
+                 bitSet  (TCCR3A,COM3A1);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:89:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^
+/home/ec2-user/ardu</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

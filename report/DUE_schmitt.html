@@ -1,0 +1,979 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>DUE_schmitt - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>DUE_schmitt</h2>
+				<p>
+					Version: <b>1.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/due_schmitt/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>Schmitt_examples</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library DUE_schmitt claims to run on sam architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+In file included from /private/tmp/arduino-testlib4162325000/test/test.ino:1:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.h:7:5: error: #error &#34;This libraries is for arduino DUE only !!!&#34;
+    #error &#34;This libraries is for arduino DUE only !!!&#34;
+     ^~~~~
+
+</pre>
+
+					
+					<h4>examples/Schmitt_examples</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library DUE_schmitt claims to run on sam architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:1:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.h:7:5: error: #error &#34;This libraries is for arduino DUE only !!!&#34;
+    #error &#34;This libraries is for arduino DUE only !!!&#34;
+     ^~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library DUE_schmitt claims to run on sam architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:34:6: error: &#39;Schmitt&#39; has not been declared
+ void Schmitt::debounceEnable(uint8_t pin) {
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp: In function &#39;void debounceEnable(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:35:2: error: &#39;Pio&#39; was not declared in this scope
+  Pio *port = digitalPinToPort(pin);
+  ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:35:7: error: &#39;port&#39; was not declared in this scope
+  Pio *port = digitalPinToPort(pin);
+       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:35:7: note: suggested alternative: &#39;port_s&#39;
+  Pio *port = digitalPinToPort(pin);
+       ^~~~
+       port_s
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:36:21: error: &#39;digitalPinToBitMask&#39; was not declared in this scope
+  uint32_t pinMask = digitalPinToBitMask(pin);
+                     ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:36:21: note: suggested alternative: &#39;digitalPinToPinName&#39;
+  uint32_t pinMask = digitalPinToBitMask(pin);
+                     ^~~~~~~~~~~~~~~~~~~
+                     digitalPinToPinName
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:38:7: error: &#39;validatePin&#39; was not declared in this scope
+  if ( validatePin(port, pinMask) ) {
+       ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:45:6: error: &#39;Schmitt&#39; has not been declared
+ void Schmitt::glitchEnable(uint8_t pin) {
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp: In function &#39;void glitchEnable(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:46:2: error: &#39;Pio&#39; was not declared in this scope
+  Pio *port = digitalPinToPort(pin);
+  ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:46:7: error: &#39;port&#39; was not declared in this scope
+  Pio *port = digitalPinToPort(pin);
+       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:46:7: note: suggested alternative: &#39;port_s&#39;
+  Pio *port = digitalPinToPort(pin);
+       ^~~~
+       port_s
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:47:21: error: &#39;digitalPinToBitMask&#39; was not declared in this scope
+  uint32_t pinMask = digitalPinToBitMask(pin);
+                     ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:47:21: note: suggested alternative: &#39;digitalPinToPinName&#39;
+  uint32_t pinMask = digitalPinToBitMask(pin);
+                     ^~~~~~~~~~~~~~~~~~~
+                     digitalPinToPinName
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:49:8: error: &#39;validatePin&#39; was not declared in this scope
+   if ( validatePin(port, pinMask) ) {
+        ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:56:6: error: &#39;Schmitt&#39; has not been declared
+ void Schmitt::disable(uint8_t pin) {
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp: In function &#39;void disable(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:57:2: error: &#39;Pio&#39; was not declared in this scope
+  Pio *port = digitalPinToPort(pin);
+  ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:57:7: error: &#39;port&#39; was not declared in this scope
+  Pio *port = digitalPinToPort(pin);
+       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:57:7: note: suggested alternative: &#39;port_s&#39;
+  Pio *port = digitalPinToPort(pin);
+       ^~~~
+       port_s
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:58:21: error: &#39;digitalPinToBitMask&#39; was not declared in this scope
+  uint32_t pinMask = digitalPinToBitMask(pin);
+                     ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:58:21: note: suggested alternative: &#39;digitalPinToPinName&#39;
+  uint32_t pinMask = digitalPinToBitMask(pin);
+                     ^~~~~~~~~~~~~~~~~~~
+                     digitalPinToPinName
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:60:7: error: &#39;validatePin&#39; was not declared in this scope
+  if ( validatePin(port, pinMask) ) {
+       ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:67:6: error: &#39;Schmitt&#39; has not been declared
+ void Schmitt::debouncePeriodSet(Pio * port, uint16_t DIV) {
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:67:33: error: variable or field &#39;debouncePeriodSet&#39; declared void
+ void Schmitt::debouncePeriodSet(Pio * port, uint16_t DIV) {
+                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:67:33: error: &#39;Pio&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:67:39: error: &#39;port&#39; was not declared in this scope
+ void Schmitt::debouncePeriodSet(Pio * port, uint16_t DIV) {
+                                       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:67:39: note: suggested alternative: &#39;port_s&#39;
+ void Schmitt::debouncePeriodSet(Pio * port, uint16_t DIV) {
+                                       ^~~~
+                                       port_s
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:67:54: error: expected primary-expression before &#39;DIV&#39;
+ void Schmitt::debouncePeriodSet(Pio * port, uint16_t DIV) {
+                                                      ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:72:6: error: &#39;Schmitt&#39; has not been declared
+ void Schmitt::debouncePeriodSet(uint8_t pin, uint16_t DIV) {
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp: In function &#39;void debouncePeriodSet(uint8_t, uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:73:2: error: &#39;Pio&#39; was not declared in this scope
+  Pio *port = digitalPinToPort(pin);
+  ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:73:7: error: &#39;port&#39; was not declared in this scope
+  Pio *port = digitalPinToPort(pin);
+       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:73:7: note: suggested alternative: &#39;port_s&#39;
+  Pio *port = digitalPinToPort(pin);
+       ^~~~
+       port_s
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:77:6: error: &#39;Schmitt&#39; has not been declared
+ void Schmitt::pioDebouncePeriod() {
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp: In function &#39;void pioDebouncePeriod()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:79:57: error: &#39;PIOA&#39; was not declared in this scope
+  Serial.print(&#34;PIOA: &#34;); Serial.print(debouncePeriodGet(PIOA),2);Serial.println(&#34;ms&#34;);
+                                                         ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:79:57: note: suggested alternative: &#39;EIO&#39;
+  Serial.print(&#34;PIOA: &#34;); Serial.print(debouncePeriodGet(PIOA),2);Serial.println(&#34;ms&#34;);
+                                                         ^~~~
+                                                         EIO
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:79:39: error: &#39;debouncePeriodGet&#39; was not declared in this scope
+  Serial.print(&#34;PIOA: &#34;); Serial.print(debouncePeriodGet(PIOA),2);Serial.println(&#34;ms&#34;);
+                                       ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:79:39: note: suggested alternative: &#39;debouncePeriodSet&#39;
+  Serial.print(&#34;PIOA: &#34;); Serial.print(debouncePeriodGet(PIOA),2);Serial.println(&#34;ms&#34;);
+                                       ^~~~~~~~~~~~~~~~~
+                                       debouncePeriodSet
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:80:57: error: &#39;PIOB&#39; was not declared in this scope
+  Serial.print(&#34;PIOB: &#34;); Serial.print(debouncePeriodGet(PIOB),2); Serial.println(&#34;ms&#34;);
+                                                         ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:80:57: note: suggested alternative: &#39;EIO&#39;
+  Serial.print(&#34;PIOB: &#34;); Serial.print(debouncePeriodGet(PIOB),2); Serial.println(&#34;ms&#34;);
+                                                         ^~~~
+                                            </pre>
+
+					
+					<h4>examples/Schmitt_examples</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library DUE_schmitt claims to run on sam architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:8:2: error: &#39;Schmitt&#39; has not been declared
+  Schmitt::debounceEnable(13); ////PIOB[27]
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:9:2: error: &#39;Schmitt&#39; has not been declared
+  Schmitt::debounceEnable(46); ///PIOC[17]
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:10:2: error: &#39;Schmitt&#39; has not been declared
+  Schmitt::debounceEnable(48); ///PIOC[15]
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:11:2: error: &#39;Schmitt&#39; has not been declared
+  Schmitt::debounceEnable(22); ///PIOB[26]
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:12:2: error: &#39;Schmitt&#39; has not been declared
+  Schmitt::glitchEnable(52); //PIOB[21]
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:14:2: error: &#39;Schmitt&#39; has not been declared
+  Schmitt::disable(22);
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:15:2: error: &#39;Schmitt&#39; has not been declared
+  Schmitt::disable(52);
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:18:2: error: &#39;Schmitt&#39; has not been declared
+  Schmitt::debouncePeriodSet(PIOB, 4096); //set with port
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:18:29: error: &#39;PIOB&#39; was not declared in this scope
+  Schmitt::debouncePeriodSet(PIOB, 4096); //set with port
+                             ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:18:29: note: suggested alternative: &#39;EIO&#39;
+  Schmitt::debouncePeriodSet(PIOB, 4096); //set with port
+                             ^~~~
+                             EIO
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:19:2: error: &#39;Schmitt&#39; has not been declared
+  Schmitt::debouncePeriodSet(48, 8191); //max //set with pin
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:20:2: error: &#39;Schmitt&#39; has not been declared
+  Schmitt::pioDebouncePeriod();
+  ^~~~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library DUE_schmitt claims to run on sam architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:34:6: error: &#39;Schmitt&#39; has not been declared
+ void Schmitt::debounceEnable(uint8_t pin) {
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp: In function &#39;void debounceEnable(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:35:2: error: &#39;Pio&#39; was not declared in this scope
+  Pio *port = digitalPinToPort(pin);
+  ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:35:7: error: &#39;port&#39; was not declared in this scope
+  Pio *port = digitalPinToPort(pin);
+       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:35:7: note: suggested alternative: &#39;word&#39;
+  Pio *port = digitalPinToPort(pin);
+       ^~~~
+       word
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:38:7: error: &#39;validatePin&#39; was not declared in this scope
+  if ( validatePin(port, pinMask) ) {
+       ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:45:6: error: &#39;Schmitt&#39; has not been declared
+ void Schmitt::glitchEnable(uint8_t pin) {
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp: In function &#39;void glitchEnable(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:46:2: error: &#39;Pio&#39; was not declared in this scope
+  Pio *port = digitalPinToPort(pin);
+  ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:46:7: error: &#39;port&#39; was not declared in this scope
+  Pio *port = digitalPinToPort(pin);
+       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:46:7: note: suggested alternative: &#39;word&#39;
+  Pio *port = digitalPinToPort(pin);
+       ^~~~
+       word
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:49:8: error: &#39;validatePin&#39; was not declared in this scope
+   if ( validatePin(port, pinMask) ) {
+        ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:56:6: error: &#39;Schmitt&#39; has not been declared
+ void Schmitt::disable(uint8_t pin) {
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp: In function &#39;void disable(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:57:2: error: &#39;Pio&#39; was not declared in this scope
+  Pio *port = digitalPinToPort(pin);
+  ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:57:7: error: &#39;port&#39; was not declared in this scope
+  Pio *port = digitalPinToPort(pin);
+       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:57:7: note: suggested alternative: &#39;word&#39;
+  Pio *port = digitalPinToPort(pin);
+       ^~~~
+       word
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:60:7: error: &#39;validatePin&#39; was not declared in this scope
+  if ( validatePin(port, pinMask) ) {
+       ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:67:6: error: &#39;Schmitt&#39; has not been declared
+ void Schmitt::debouncePeriodSet(Pio * port, uint16_t DIV) {
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:67:33: error: variable or field &#39;debouncePeriodSet&#39; declared void
+ void Schmitt::debouncePeriodSet(Pio * port, uint16_t DIV) {
+                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:67:33: error: &#39;Pio&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:67:39: error: &#39;port&#39; was not declared in this scope
+ void Schmitt::debouncePeriodSet(Pio * port, uint16_t DIV) {
+                                       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:67:39: note: suggested alternative: &#39;word&#39;
+ void Schmitt::debouncePeriodSet(Pio * port, uint16_t DIV) {
+                                       ^~~~
+                                       word
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:67:54: error: expected primary-expression before &#39;DIV&#39;
+ void Schmitt::debouncePeriodSet(Pio * port, uint16_t DIV) {
+                                                      ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:72:6: error: &#39;Schmitt&#39; has not been declared
+ void Schmitt::debouncePeriodSet(uint8_t pin, uint16_t DIV) {
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp: In function &#39;void debouncePeriodSet(uint8_t, uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:73:2: error: &#39;Pio&#39; was not declared in this scope
+  Pio *port = digitalPinToPort(pin);
+  ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:73:7: error: &#39;port&#39; was not declared in this scope
+  Pio *port = digitalPinToPort(pin);
+       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:73:7: note: suggested alternative: &#39;word&#39;
+  Pio *port = digitalPinToPort(pin);
+       ^~~~
+       word
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:77:6: error: &#39;Schmitt&#39; has not been declared
+ void Schmitt::pioDebouncePeriod() {
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp: In function &#39;void pioDebouncePeriod()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:79:57: error: &#39;PIOA&#39; was not declared in this scope
+  Serial.print(&#34;PIOA: &#34;); Serial.print(debouncePeriodGet(PIOA),2);Serial.println(&#34;ms&#34;);
+                                                         ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:79:57: note: suggested alternative: &#39;PIN0&#39;
+  Serial.print(&#34;PIOA: &#34;); Serial.print(debouncePeriodGet(PIOA),2);Serial.println(&#34;ms&#34;);
+                                                         ^~~~
+                                                         PIN0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:79:39: error: &#39;debouncePeriodGet&#39; was not declared in this scope
+  Serial.print(&#34;PIOA: &#34;); Serial.print(debouncePeriodGet(PIOA),2);Serial.println(&#34;ms&#34;);
+                                       ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:79:39: note: suggested alternative: &#39;debouncePeriodSet&#39;
+  Serial.print(&#34;PIOA: &#34;); Serial.print(debouncePeriodGet(PIOA),2);Serial.println(&#34;ms&#34;);
+                                       ^~~~~~~~~~~~~~~~~
+                                       debouncePeriodSet
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:80:57: error: &#39;PIOB&#39; was not declared in this scope
+  Serial.print(&#34;PIOB: &#34;); Serial.print(debouncePeriodGet(PIOB),2); Serial.println(&#34;ms&#34;);
+                                                         ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:80:57: note: suggested alternative: &#39;PIN0&#39;
+  Serial.print(&#34;PIOB: &#34;); Serial.print(debouncePeriodGet(PIOB),2); Serial.println(&#34;ms&#34;);
+                                                         ^~~~
+                                                         PIN0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:81:57: error: &#39;PIOC&#39; was not declared in this scope
+  Serial.print(&#34;PIOC: &#34;); Serial.print(debouncePeriodGet(PIOC),2); Serial.println(&#34;ms&#34;);
+                                                         ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:81:57: note: suggested alternative: &#39;PIN0&#39;
+  Serial.print(&#34;PIOC: &#34;); Serial.print(debouncePeriodGet(PIOC),2); Serial.println(&#34;ms&#34;);
+                                                         ^~~~
+                                                         PIN0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:82:57: error: &#39;PIOD&#39; was not declared in this scope
+  Serial.print(&#34;PIOD: &#34;); Serial.print(debouncePeriodGet(PIOD),2); Serial.println(&#34;ms&#34;);
+                                                         ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:82:57: note: suggested alternative: &#39;PIN0&#39;
+  Serial.print(&#34;PIOD: &#34;); Serial.print(debouncePeriodGet(PIOD),2); Serial.println(&#34;ms&#34;);
+                                                         ^~~~
+                                                         PIN0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:87:6: error: &#39;Schmitt&#39; has not been declared
+ bool Schmitt::validatePin(Pio *port, uint32_t</pre>
+
+					
+					<h4>examples/Schmitt_examples</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library DUE_schmitt claims to run on sam architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:8:2: error: &#39;Schmitt&#39; has not been declared
+  Schmitt::debounceEnable(13); ////PIOB[27]
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:9:2: error: &#39;Schmitt&#39; has not been declared
+  Schmitt::debounceEnable(46); ///PIOC[17]
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:10:2: error: &#39;Schmitt&#39; has not been declared
+  Schmitt::debounceEnable(48); ///PIOC[15]
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:11:2: error: &#39;Schmitt&#39; has not been declared
+  Schmitt::debounceEnable(22); ///PIOB[26]
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:12:2: error: &#39;Schmitt&#39; has not been declared
+  Schmitt::glitchEnable(52); //PIOB[21]
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:14:2: error: &#39;Schmitt&#39; has not been declared
+  Schmitt::disable(22);
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:15:2: error: &#39;Schmitt&#39; has not been declared
+  Schmitt::disable(52);
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:18:2: error: &#39;Schmitt&#39; has not been declared
+  Schmitt::debouncePeriodSet(PIOB, 4096); //set with port
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:18:29: error: &#39;PIOB&#39; was not declared in this scope
+  Schmitt::debouncePeriodSet(PIOB, 4096); //set with port
+                             ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:18:29: note: suggested alternative: &#39;PIN0&#39;
+  Schmitt::debouncePeriodSet(PIOB, 4096); //set with port
+                             ^~~~
+                             PIN0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:19:2: error: &#39;Schmitt&#39; has not been declared
+  Schmitt::debouncePeriodSet(48, 8191); //max //set with pin
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:20:2: error: &#39;Schmitt&#39; has not been declared
+  Schmitt::pioDebouncePeriod();
+  ^~~~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library DUE_schmitt claims to run on sam architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:34:6: error: &#39;Schmitt&#39; has not been declared
+ void Schmitt::debounceEnable(uint8_t pin) {
+      ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp: In function &#39;void debounceEnable(uint8_t)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:35:2: error: &#39;Pio&#39; was not declared in this scope
+  Pio *port = digitalPinToPort(pin);
+  ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:35:7: error: &#39;port&#39; was not declared in this scope
+  Pio *port = digitalPinToPort(pin);
+       ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:35:7: note: suggested alternative: &#39;Port&#39;
+  Pio *port = digitalPinToPort(pin);
+       ^~~~
+       Port
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:38:7: error: &#39;validatePin&#39; was not declared in this scope
+  if ( validatePin(port, pinMask) ) {
+       ^~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp: At global scope:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:45:6: error: &#39;Schmitt&#39; has not been declared
+ void Schmitt::glitchEnable(uint8_t pin) {
+      ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp: In function &#39;void glitchEnable(uint8_t)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:46:2: error: &#39;Pio&#39; was not declared in this scope
+  Pio *port = digitalPinToPort(pin);
+  ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:46:7: error: &#39;port&#39; was not declared in this scope
+  Pio *port = digitalPinToPort(pin);
+       ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:46:7: note: suggested alternative: &#39;Port&#39;
+  Pio *port = digitalPinToPort(pin);
+       ^~~~
+       Port
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:49:8: error: &#39;validatePin&#39; was not declared in this scope
+   if ( validatePin(port, pinMask) ) {
+        ^~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp: At global scope:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:56:6: error: &#39;Schmitt&#39; has not been declared
+ void Schmitt::disable(uint8_t pin) {
+      ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp: In function &#39;void disable(uint8_t)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:57:2: error: &#39;Pio&#39; was not declared in this scope
+  Pio *port = digitalPinToPort(pin);
+  ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:57:7: error: &#39;port&#39; was not declared in this scope
+  Pio *port = digitalPinToPort(pin);
+       ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:57:7: note: suggested alternative: &#39;Port&#39;
+  Pio *port = digitalPinToPort(pin);
+       ^~~~
+       Port
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:60:7: error: &#39;validatePin&#39; was not declared in this scope
+  if ( validatePin(port, pinMask) ) {
+       ^~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp: At global scope:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:67:6: error: &#39;Schmitt&#39; has not been declared
+ void Schmitt::debouncePeriodSet(Pio * port, uint16_t DIV) {
+      ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:67:33: error: variable or field &#39;debouncePeriodSet&#39; declared void
+ void Schmitt::debouncePeriodSet(Pio * port, uint16_t DIV) {
+                                 ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:67:33: error: &#39;Pio&#39; was not declared in this scope
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:67:39: error: &#39;port&#39; was not declared in this scope
+ void Schmitt::debouncePeriodSet(Pio * port, uint16_t DIV) {
+                                       ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:67:39: note: suggested alternative: &#39;Port&#39;
+ void Schmitt::debouncePeriodSet(Pio * port, uint16_t DIV) {
+                                       ^~~~
+                                       Port
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:67:54: error: expected primary-expression before &#39;DIV&#39;
+ void Schmitt::debouncePeriodSet(Pio * port, uint16_t DIV) {
+                                                      ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:72:6: error: &#39;Schmitt&#39; has not been declared
+ void Schmitt::debouncePeriodSet(uint8_t pin, uint16_t DIV) {
+      ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp: In function &#39;void debouncePeriodSet(uint8_t, uint16_t)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:73:2: error: &#39;Pio&#39; was not declared in this scope
+  Pio *port = digitalPinToPort(pin);
+  ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:73:7: error: &#39;port&#39; was not declared in this scope
+  Pio *port = digitalPinToPort(pin);
+       ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:73:7: note: suggested alternative: &#39;Port&#39;
+  Pio *port = digitalPinToPort(pin);
+       ^~~~
+       Port
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp: At global scope:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:77:6: error: &#39;Schmitt&#39; has not been declared
+ void Schmitt::pioDebouncePeriod() {
+      ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp: In function &#39;void pioDebouncePeriod()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:79:57: error: &#39;PIOA&#39; was not declared in this scope
+  Serial.print(&#34;PIOA: &#34;); Serial.print(debouncePeriodGet(PIOA),2);Serial.println(&#34;ms&#34;);
+                                                         ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:79:57: note: suggested alternative: &#39;PI&#39;
+  Serial.print(&#34;PIOA: &#34;); Serial.print(debouncePeriodGet(PIOA),2);Serial.println(&#34;ms&#34;);
+                                                         ^~~~
+                                                         PI
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:79:39: error: &#39;debouncePeriodGet&#39; was not declared in this scope
+  Serial.print(&#34;PIOA: &#34;); Serial.print(debouncePeriodGet(PIOA),2);Serial.println(&#34;ms&#34;);
+                                       ^~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:79:39: note: suggested alternative: &#39;debouncePeriodSet&#39;
+  Serial.print(&#34;PIOA: &#34;); Serial.print(debouncePeriodGet(PIOA),2);Serial.println(&#34;ms&#34;);
+                                       ^~~~~~~~~~~~~~~~~
+                                       debouncePeriodSet
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:80:57: error: &#39;PIOB&#39; was not declared in this scope
+  Serial.print(&#34;PIOB: &#34;); Serial.print(debouncePeriodGet(PIOB),2); Serial.println(&#34;ms&#34;);
+                                                         ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:80:57: note: suggested alternative: &#39;PI&#39;
+  Serial.print(&#34;PIOB: &#34;); Serial.print(debouncePeriodGet(PIOB),2); Serial.println(&#34;ms&#34;);
+                                                         ^~~~
+                                                         PI
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:81:57: error: &#39;PIOC&#39; was not declared in this scope
+  Serial.print(&#34;PIOC: &#34;); Serial.print(debouncePeriodGet(PIOC),2); Serial.println(&#34;ms&#34;);
+                                                         ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:81:57: note: suggested alternative: &#39;EIC&#39;
+  Serial.print(&#34;PIOC: &#34;); Serial.print(debouncePeriodGet(PIOC),2); Serial.println(&#34;ms&#34;);
+                                                         ^~~~
+                                                        </pre>
+
+					
+					<h4>examples/Schmitt_examples</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library DUE_schmitt claims to run on sam architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino: In function &#39;void setup()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:8:2: error: &#39;Schmitt&#39; has not been declared
+  Schmitt::debounceEnable(13); ////PIOB[27]
+  ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:9:2: error: &#39;Schmitt&#39; has not been declared
+  Schmitt::debounceEnable(46); ///PIOC[17]
+  ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:10:2: error: &#39;Schmitt&#39; has not been declared
+  Schmitt::debounceEnable(48); ///PIOC[15]
+  ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:11:2: error: &#39;Schmitt&#39; has not been declared
+  Schmitt::debounceEnable(22); ///PIOB[26]
+  ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:12:2: error: &#39;Schmitt&#39; has not been declared
+  Schmitt::glitchEnable(52); //PIOB[21]
+  ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:14:2: error: &#39;Schmitt&#39; has not been declared
+  Schmitt::disable(22);
+  ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:15:2: error: &#39;Schmitt&#39; has not been declared
+  Schmitt::disable(52);
+  ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:18:2: error: &#39;Schmitt&#39; has not been declared
+  Schmitt::debouncePeriodSet(PIOB, 4096); //set with port
+  ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:18:29: error: &#39;PIOB&#39; was not declared in this scope
+  Schmitt::debouncePeriodSet(PIOB, 4096); //set with port
+                             ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:18:29: note: suggested alternative: &#39;PI&#39;
+  Schmitt::debouncePeriodSet(PIOB, 4096); //set with port
+                             ^~~~
+                             PI
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:19:2: error: &#39;Schmitt&#39; has not been declared
+  Schmitt::debouncePeriodSet(48, 8191); //max //set with pin
+  ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:20:2: error: &#39;Schmitt&#39; has not been declared
+  Schmitt::pioDebouncePeriod();
+  ^~~~~~~
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library DUE_schmitt claims to run on sam architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:34:6: error: &#39;Schmitt&#39; has not been declared
+ void Schmitt::debounceEnable(uint8_t pin) {
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp: In function &#39;void debounceEnable(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:35:2: error: &#39;Pio&#39; was not declared in this scope
+  Pio *port = digitalPinToPort(pin);
+  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:35:7: error: &#39;port&#39; was not declared in this scope
+  Pio *port = digitalPinToPort(pin);
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:38:32: error: &#39;validatePin&#39; was not declared in this scope
+  if ( validatePin(port, pinMask) ) {
+                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:45:6: error: &#39;Schmitt&#39; has not been declared
+ void Schmitt::glitchEnable(uint8_t pin) {
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp: In function &#39;void glitchEnable(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:46:2: error: &#39;Pio&#39; was not declared in this scope
+  Pio *port = digitalPinToPort(pin);
+  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:46:7: error: &#39;port&#39; was not declared in this scope
+  Pio *port = digitalPinToPort(pin);
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:49:33: error: &#39;validatePin&#39; was not declared in this scope
+   if ( validatePin(port, pinMask) ) {
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:56:6: error: &#39;Schmitt&#39; has not been declared
+ void Schmitt::disable(uint8_t pin) {
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp: In function &#39;void disable(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:57:2: error: &#39;Pio&#39; was not declared in this scope
+  Pio *port = digitalPinToPort(pin);
+  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:57:7: error: &#39;port&#39; was not declared in this scope
+  Pio *port = digitalPinToPort(pin);
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:60:32: error: &#39;validatePin&#39; was not declared in this scope
+  if ( validatePin(port, pinMask) ) {
+                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:67:6: error: &#39;Schmitt&#39; has not been declared
+ void Schmitt::debouncePeriodSet(Pio * port, uint16_t DIV) {
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:67:33: error: variable or field &#39;debouncePeriodSet&#39; declared void
+ void Schmitt::debouncePeriodSet(Pio * port, uint16_t DIV) {
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:67:33: error: &#39;Pio&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:67:39: error: &#39;port&#39; was not declared in this scope
+ void Schmitt::debouncePeriodSet(Pio * port, uint16_t DIV) {
+                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:67:54: error: expected primary-expression before &#39;DIV&#39;
+ void Schmitt::debouncePeriodSet(Pio * port, uint16_t DIV) {
+                                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:72:6: error: &#39;Schmitt&#39; has not been declared
+ void Schmitt::debouncePeriodSet(uint8_t pin, uint16_t DIV) {
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp: In function &#39;void debouncePeriodSet(uint8_t, uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:73:2: error: &#39;Pio&#39; was not declared in this scope
+  Pio *port = digitalPinToPort(pin);
+  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:73:7: error: &#39;port&#39; was not declared in this scope
+  Pio *port = digitalPinToPort(pin);
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:77:6: error: &#39;Schmitt&#39; has not been declared
+ void Schmitt::pioDebouncePeriod() {
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp: In function &#39;void pioDebouncePeriod()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:79:57: error: &#39;PIOA&#39; was not declared in this scope
+  Serial.print(&#34;PIOA: &#34;); Serial.print(debouncePeriodGet(PIOA),2);Serial.println(&#34;ms&#34;);
+                                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:79:61: error: &#39;debouncePeriodGet&#39; was not declared in this scope
+  Serial.print(&#34;PIOA: &#34;); Serial.print(debouncePeriodGet(PIOA),2);Serial.println(&#34;ms&#34;);
+                                                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:80:57: error: &#39;PIOB&#39; was not declared in this scope
+  Serial.print(&#34;PIOB: &#34;); Serial.print(debouncePeriodGet(PIOB),2); Serial.println(&#34;ms&#34;);
+                                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:81:57: error: &#39;PIOC&#39; was not declared in this scope
+  Serial.print(&#34;PIOC: &#34;); Serial.print(debouncePeriodGet(PIOC),2); Serial.println(&#34;ms&#34;);
+                                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:82:57: error: &#39;PIOD&#39; was not declared in this scope
+  Serial.print(&#34;PIOD: &#34;); Serial.print(debouncePeriodGet(PIOD),2); Serial.println(&#34;ms&#34;);
+                                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:87:6: error: &#39;Schmitt&#39; has not been declared
+ bool Schmitt::validatePin(Pio *port, uint32_t pinMask) { //Discard pin that are not schmmitt capable
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:87:27: error: &#39;Pio&#39; was not declared in this scope
+ bool Schmitt::validatePin(Pio *port, uint32_t pinMask) { //Discard pin that are not schmmitt capable
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:87:32: error: &#39;port&#39; was not declared in this scope
+ bool Schmitt::validatePin(Pio *port, uint32_t pinMask) { //Discard pin that are not schmmitt capable
+                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:87:47: error: expected primary-expression before &#39;pinMask&#39;
+ bool Schmitt::validatePin(Pio *port, uint32_t pinMask) { //Discard pin that are not schmmitt capable
+                                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:87:54: error: expression list treated as compound expression in initializer [-fpermissive]
+ bool Schmitt::validatePin(Pio *port, uint32_t pinMask) { //Discard pin that are not schmmitt capable
+                                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:87:56: error: expected &#39;,&#39; or &#39;;&#39; before &#39;{&#39; token
+ bool Schmitt::validatePin(Pio *port, uint32_t pinMask) { //Discard pin that are not schmmitt capable
+                                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:96:7: error: &#39;Schmitt&#39; has not been declared
+ float Schmitt::debouncePeriodGet(Pio *port) {
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:96:34: error: &#39;Pio&#39; was not declared in this scope
+ float Schmitt::debouncePeriodGet(Pio *port) {
+                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:96:39: error: &#39;port&#39; was not declared in this scope
+ float Schmitt::debouncePeriodGet(Pio *port) {
+                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/src/DUE_schmitt.cpp:96:45: error: expected &#39;,&#39; or &#39;;&#39; before &#39;{&#39; token
+ float Schmitt::debouncePeriodGet(Pio *port) {
+                                             ^
+
+</pre>
+
+					
+					<h4>examples/Schmitt_examples</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library DUE_schmitt claims to run on sam architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:8:2: error: &#39;Schmitt&#39; has not been declared
+  Schmitt::debounceEnable(13); ////PIOB[27]
+  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:9:2: error: &#39;Schmitt&#39; has not been declared
+  Schmitt::debounceEnable(46); ///PIOC[17]
+  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:10:2: error: &#39;Schmitt&#39; has not been declared
+  Schmitt::debounceEnable(48); ///PIOC[15]
+  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:11:2: error: &#39;Schmitt&#39; has not been declared
+  Schmitt::debounceEnable(22); ///PIOB[26]
+  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:12:2: error: &#39;Schmitt&#39; has not been declared
+  Schmitt::glitchEnable(52); //PIOB[21]
+  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:14:2: error: &#39;Schmitt&#39; has not been declared
+  Schmitt::disable(22);
+  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:15:2: error: &#39;Schmitt&#39; has not been declared
+  Schmitt::disable(52);
+  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:18:2: error: &#39;Schmitt&#39; has not been declared
+  Schmitt::debouncePeriodSet(PIOB, 4096); //set with port
+  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:18:29: error: &#39;PIOB&#39; was not declared in this scope
+  Schmitt::debouncePeriodSet(PIOB, 4096); //set with port
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:19:2: error: &#39;Schmitt&#39; has not been declared
+  Schmitt::debouncePeriodSet(48, 8191); //max //set with pin
+  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DUE_schmitt/examples/Schmitt_examples/Schmitt_examples.ino:20:2: error: &#39;Schmitt&#39; has not been declared
+  Schmitt::pioDebouncePeriod();
+  ^
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

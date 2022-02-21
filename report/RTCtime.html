@@ -1,0 +1,911 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>RTCtime - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>RTCtime</h2>
+				<p>
+					Version: <b>1.0.5</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/rtctime/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>DS3231_Alarms_and_Temperature</pre></th>
+						
+						<th><pre>RTCtime_Example</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+									
+										
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-testlib3400776748/test/test.ino:1:10: fatal error: RTCtime.h: No such file or directory
+ #include &lt;RTCtime.h&gt;
+          ^~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/DS3231_Alarms_and_Temperature</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:141:9: error: &#39;class RtcDS3231&lt;TwoWire&gt;&#39; has no member named &#39;SetTime&#39;; did you mean &#39;SetDateTime&#39;?
+     Rtc.SetTime(&amp;compiled_time_t);
+         ^~~~~~~
+         SetDateTime
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:152:20: error: &#39;class RtcDS3231&lt;TwoWire&gt;&#39; has no member named &#39;GetTime&#39;; did you mean &#39;GetDateTime&#39;?
+   time_t now = Rtc.GetTime();
+                    ^~~~~~~
+                    GetDateTime
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:158:9: error: &#39;class RtcDS3231&lt;TwoWire&gt;&#39; has no member named &#39;SetTime&#39;; did you mean &#39;SetDateTime&#39;?
+     Rtc.SetTime(&amp;compiled_time_t);
+         ^~~~~~~
+         SetDateTime
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:229:11: error: &#39;class RtcDS3231&lt;TwoWire&gt;&#39; has no member named &#39;GetLocalTime&#39;; did you mean &#39;GetDateTime&#39;?
+       Rtc.GetLocalTime(&amp;local_tm);                  // GetLocalTime() compiles a &#34;struct tm&#34; pointer with local time
+           ^~~~~~~~~~~~
+           GetDateTime
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:251:46: error: cannot convert &#39;RtcTemperature&#39; to &#39;float&#39; in initialization
+       float temperature = Rtc.GetTemperature();
+                                              ^
+Multiple libraries were found for &#34;RtcDS3231.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Rtc_by_Makuna
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime
+</pre>
+					
+					<h4>examples/RTCtime_Example</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 8708 bytes (26%) of program storage space. Maximum is 32256 bytes.
+Global variables use 464 bytes (22%) of dynamic memory, leaving 1584 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-testlib1081957487/test/test.ino:1:10: fatal error: RTCtime.h: No such file or directory
+ #include &lt;RTCtime.h&gt;
+          ^~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/DS3231_Alarms_and_Temperature</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:92:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/RtcDS3231.h: In member function &#39;void RtcDS3231&lt;T_WIRE_METHOD&gt;::SetTimeUX(time_t*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/RtcDS3231.h:307:29: error: &#39;UNIX_OFFSET&#39; was not declared in this scope
+       time_t now = *UXnow - UNIX_OFFSET;
+                             ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/RtcDS3231.h:307:29: note: suggested alternative: &#39;ADC_CS_OFFSET&#39;
+       time_t now = *UXnow - UNIX_OFFSET;
+                             ^~~~~~~~~~~
+                             ADC_CS_OFFSET
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/RtcDS3231.h: In member function &#39;time_t RtcDS3231&lt;T_WIRE_METHOD&gt;::GetTime()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/RtcDS3231.h:343:14: error: there are no arguments to &#39;mk_gmtime&#39; that depend on a template parameter, so a declaration of &#39;mk_gmtime&#39; must be available [-fpermissive]
+       return mk_gmtime(&amp;now);
+              ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/RtcDS3231.h:343:14: note: (if you use &#39;-fpermissive&#39;, G&#43;&#43; will accept your code, but allowing the use of an undeclared name is deprecated)
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/RtcDS3231.h: In member function &#39;time_t RtcDS3231&lt;T_WIRE_METHOD&gt;::GetTimeUX()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/RtcDS3231.h:354:27: error: &#39;UNIX_OFFSET&#39; was not declared in this scope
+       return (GetTime() &#43; UNIX_OFFSET);
+                           ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/RtcDS3231.h:354:27: note: suggested alternative: &#39;ADC_CS_OFFSET&#39;
+       return (GetTime() &#43; UNIX_OFFSET);
+                           ^~~~~~~~~~~
+                           ADC_CS_OFFSET
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:62:47: error: &#39;ONE_HOUR&#39; was not declared in this scope
+ #define MY_TIMEZONE_IN_SECONDS (MY_TIMEZONE * ONE_HOUR)
+                                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:111:12: note: in expansion of macro &#39;MY_TIMEZONE_IN_SECONDS&#39;
+   set_zone(MY_TIMEZONE_IN_SECONDS);
+            ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:111:3: error: &#39;set_zone&#39; was not declared in this scope
+   set_zone(MY_TIMEZONE_IN_SECONDS);
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:111:3: note: suggested alternative: &#39;setstate&#39;
+   set_zone(MY_TIMEZONE_IN_SECONDS);
+   ^~~~~~~~
+   setstate
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:231:31: error: &#39;isotime&#39; was not declared in this scope
+       strcpy(local_timestamp, isotime(&amp;local_tm));  // We use the standard isotime() function to build the ISO timestamp
+                               ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:231:31: note: suggested alternative: &#39;asctime&#39;
+       strcpy(local_timestamp, isotime(&amp;local_tm));  // We use the standard isotime() function to build the ISO timestamp
+                               ^~~~~~~
+                               asctime
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:92:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/RtcDS3231.h: In instantiation of &#39;time_t RtcDS3231&lt;T_WIRE_METHOD&gt;::GetTime() [with T_WIRE_METHOD = arduino::MbedI2C; time_t = long long int]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:152:28:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/RtcDS3231.h:343:23: error: &#39;mk_gmtime&#39; was not declared in this scope
+       return mk_gmtime(&amp;now);
+              ~~~~~~~~~^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/RtcDS3231.h:343:23: note: suggested alternative: &#39;gmtime&#39;
+       return mk_gmtime(&amp;now);
+              ~~~~~~~~~^~~~~~
+              gmtime
+Multiple libraries were found for &#34;RtcDS3231.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Rtc_by_Makuna
+</pre>
+					
+					<h4>examples/RTCtime_Example</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino:42:47: error: &#39;ONE_HOUR&#39; was not declared in this scope
+ #define MY_TIMEZONE_IN_SECONDS (MY_TIMEZONE * ONE_HOUR)
+                                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino:93:12: note: in expansion of macro &#39;MY_TIMEZONE_IN_SECONDS&#39;
+   set_zone(MY_TIMEZONE_IN_SECONDS);
+            ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino:93:3: error: &#39;set_zone&#39; was not declared in this scope
+   set_zone(MY_TIMEZONE_IN_SECONDS);
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino:93:3: note: suggested alternative: &#39;setstate&#39;
+   set_zone(MY_TIMEZONE_IN_SECONDS);
+   ^~~~~~~~
+   setstate
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino:123:9: error: &#39;class RtcDS1307&lt;arduino::MbedI2C&gt;&#39; has no member named &#39;SetTime&#39;; did you mean &#39;SetDateTime&#39;?
+     Rtc.SetTime(&amp;compiled_time_t);
+         ^~~~~~~
+         SetDateTime
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino:134:20: error: &#39;class RtcDS1307&lt;arduino::MbedI2C&gt;&#39; has no member named &#39;GetTime&#39;; did you mean &#39;GetDateTime&#39;?
+   time_t now = Rtc.GetTime();
+                    ^~~~~~~
+                    GetDateTime
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino:140:9: error: &#39;class RtcDS1307&lt;arduino::MbedI2C&gt;&#39; has no member named &#39;SetTime&#39;; did you mean &#39;SetDateTime&#39;?
+     Rtc.SetTime(&amp;compiled_time_t);
+         ^~~~~~~
+         SetDateTime
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino:176:24: error: &#39;class RtcDS1307&lt;arduino::MbedI2C&gt;&#39; has no member named &#39;GetTime&#39;; did you mean &#39;GetDateTime&#39;?
+       time_t now = Rtc.GetTime();   // counted as seconds since Jan 1, 2000 00:00:00.
+                        ^~~~~~~
+                        GetDateTime
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino:185:28: error: &#39;UNIX_OFFSET&#39; was not declared in this scope
+       Serial.println(now &#43; UNIX_OFFSET);
+                            ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino:185:28: note: suggested alternative: &#39;ADC_CS_OFFSET&#39;
+       Serial.println(now &#43; UNIX_OFFSET);
+                            ^~~~~~~~~~~
+                            ADC_CS_OFFSET
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino:197:29: error: &#39;isotime&#39; was not declared in this scope
+       strcpy(utc_timestamp, isotime(&amp;utc_tm));
+                             ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino:197:29: note: suggested alternative: &#39;asctime&#39;
+       strcpy(utc_timestamp, isotime(&amp;utc_tm));
+                             ^~~~~~~
+                             asctime
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino:213:11: error: &#39;class RtcDS1307&lt;arduino::MbedI2C&gt;&#39; has no member named &#39;GetTime&#39;; did you mean &#39;GetDateTime&#39;?
+       Rtc.GetTime(&amp;utc_tm);                         // GetTime(), when passed a &#34;struct tm&#34; pointer, compiles it with UTC time
+           ^~~~~~~
+           GetDateTime
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino:219:11: error: &#39;class RtcDS1307&lt;arduino::MbedI2C&gt;&#39; has no member named &#39;GetLocalTime&#39;; did you mean &#39;GetDateTime&#39;?
+       Rtc.GetLocalTime(&amp;local_tm);                  // GetLocalTime() compiles a &#34;struct tm&#34; pointer with local time
+           ^~~~~~~~~~~~
+           GetDateTime
+Multiple libraries were found for &#34;RtcDS1307.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Rtc_by_Makuna
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-testlib1081957487/test/test.ino:1:10: fatal error: RTCtime.h: No such file or directory
+ #include &lt;RTCtime.h&gt;
+          ^~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/DS3231_Alarms_and_Temperature</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 11212 bytes (22%) of program storage space. Maximum is 49152 bytes.
+Global variables use 721 bytes (11%) of dynamic memory, leaving 5423 bytes for local variables. Maximum is 6144 bytes.
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:86:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/RtcDS3231.h: In instantiation of &#39;time_t RtcDS3231&lt;T_WIRE_METHOD&gt;::GetTime() [with T_WIRE_METHOD = TwoWire; time_t = long unsigned int]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:152:28:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:63:12: note: candidate 1: size_t TwoWire::requestFrom(int, int)
+     size_t requestFrom(int, int);
+            ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:61:12: note: candidate 2: virtual size_t TwoWire::requestFrom(uint8_t, size_t)
+     size_t requestFrom(uint8_t, size_t);
+            ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/RtcDS3231.h: In instantiation of &#39;float RtcDS3231&lt;T_WIRE_METHOD&gt;::GetTemperature() [with T_WIRE_METHOD = TwoWire]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:251:46:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:63:12: note: candidate 1: size_t TwoWire::requestFrom(int, int)
+     size_t requestFrom(int, int);
+            ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:61:12: note: candidate 2: virtual size_t TwoWire::requestFrom(uint8_t, size_t)
+     size_t requestFrom(uint8_t, size_t);
+            ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/RtcDS3231.h: In instantiation of &#39;uint8_t RtcDS3231&lt;T_WIRE_METHOD&gt;::getReg(uint8_t) [with T_WIRE_METHOD = TwoWire; uint8_t = unsigned char]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/RtcDS3231.h:246:30:   required from &#39;bool RtcDS3231&lt;T_WIRE_METHOD&gt;::GetIsRunning() [with T_WIRE_METHOD = TwoWire]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:145:25:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:63:12: note: candidate 1: size_t TwoWire::requestFrom(int, int)
+     size_t requestFrom(int, int);
+            ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:61:12: note: candidate 2: virtual size_t TwoWire::requestFrom(uint8_t, size_t)
+     size_t requestFrom(uint8_t, size_t);
+            ^~~~~~~~~~~
+</pre>
+					
+					<h4>examples/RTCtime_Example</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 9418 bytes (19%) of program storage space. Maximum is 49152 bytes.
+Global variables use 524 bytes (8%) of dynamic memory, leaving 5620 bytes for local variables. Maximum is 6144 bytes.
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino:60:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/RtcDS1307.h: In instantiation of &#39;time_t RtcDS1307&lt;T_WIRE_METHOD&gt;::GetTime() [with T_WIRE_METHOD = TwoWire; time_t = long unsigned int]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino:134:28:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:63:12: note: candidate 1: size_t TwoWire::requestFrom(int, int)
+     size_t requestFrom(int, int);
+            ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:61:12: note: candidate 2: virtual size_t TwoWire::requestFrom(uint8_t, size_t)
+     size_t requestFrom(uint8_t, size_t);
+            ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/RtcDS1307.h: In instantiation of &#39;uint8_t RtcDS1307&lt;T_WIRE_METHOD&gt;::getReg(uint8_t) [with T_WIRE_METHOD = TwoWire; uint8_t = unsigned char]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/RtcDS1307.h:68:30:   required from &#39;bool RtcDS1307&lt;T_WIRE_METHOD&gt;::GetIsRunning() [with T_WIRE_METHOD = TwoWire]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino:127:25:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:63:12: note: candidate 1: size_t TwoWire::requestFrom(int, int)
+     size_t requestFrom(int, int);
+            ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:61:12: note: candidate 2: virtual size_t TwoWire::requestFrom(uint8_t, size_t)
+     size_t requestFrom(uint8_t, size_t);
+            ^~~~~~~~~~~
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-testlib3400776748/test/test.ino:1:10: fatal error: RTCtime.h: No such file or directory
+ #include &lt;RTCtime.h&gt;
+          ^~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/DS3231_Alarms_and_Temperature</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:93:28: error: &#39;RtcDS3231&lt;arduino::TwoWire&gt; Rtc&#39; redeclared as different kind of symbol
+   RtcDS3231&lt;myWire&gt; Rtc(I2C);
+                            ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/samd21g18a.h:265:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/samd21.h:69,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd.h:105,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:38,
+                 from /tmp/arduino-sketch-C80B2BDE8F841D39B67D7A3D723B4CED/sketch/DS3231_Alarms_and_Temperature.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/component/rtc.h:1057:3: note: previous declaration &#39;typedef union Rtc Rtc&#39;
+ } Rtc;
+   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:110:6: error: expected unqualified-id before &#39;.&#39; token
+   Rtc.Begin();
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:62:47: error: &#39;ONE_HOUR&#39; was not declared in this scope
+ #define MY_TIMEZONE_IN_SECONDS (MY_TIMEZONE * ONE_HOUR)
+                                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:111:12: note: in expansion of macro &#39;MY_TIMEZONE_IN_SECONDS&#39;
+   set_zone(MY_TIMEZONE_IN_SECONDS);
+            ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:111:3: error: &#39;set_zone&#39; was not declared in this scope
+   set_zone(MY_TIMEZONE_IN_SECONDS);
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:111:3: note: suggested alternative: &#39;tone&#39;
+   set_zone(MY_TIMEZONE_IN_SECONDS);
+   ^~~~~~~~
+   tone
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:141:8: error: expected unqualified-id before &#39;.&#39; token
+     Rtc.SetTime(&amp;compiled_time_t);
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:145:11: error: expected primary-expression before &#39;.&#39; token
+   if (!Rtc.GetIsRunning())
+           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:148:8: error: expected unqualified-id before &#39;.&#39; token
+     Rtc.SetIsRunning(true);
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:152:19: error: expected primary-expression before &#39;.&#39; token
+   time_t now = Rtc.GetTime();
+                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:158:8: error: expected unqualified-id before &#39;.&#39; token
+     Rtc.SetTime(&amp;compiled_time_t);
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:162:6: error: expected unqualified-id before &#39;.&#39; token
+   Rtc.Enable32kHzPin(false);
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:165:6: error: expected unqualified-id before &#39;.&#39; token
+   Rtc.SetSquareWavePin(DS3231SquareWavePin_ModeAlarmBoth);
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:170:6: error: expected unqualified-id before &#39;.&#39; token
+   Rtc.SetAlarmOne(alarm1);
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:175:6: error: expected unqualified-id before &#39;.&#39; token
+   Rtc.SetAlarmTwo(alarm2);
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:178:6: error: expected unqualified-id before &#39;.&#39; token
+   Rtc.LatchAlarmsTriggeredFlags();
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:219:37: error: expected primary-expression before &#39;.&#39; token
+     DS3231AlarmFlag alarm_flag = Rtc.LatchAlarmsTriggeredFlags();
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:225:14: error: expected primary-expression before &#39;.&#39; token
+       if (Rtc.IsDateTimeValid())
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:229:10: error: expected unqualified-id before &#39;.&#39; token
+       Rtc.GetLocalTime(&amp;local_tm);                  // GetLocalTime() compiles a &#34;struct tm&#34; pointer with local time
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:231:31: error: &#39;isotime&#39; was not declared in this scope
+       strcpy(local_timestamp, isotime(&amp;local_tm));  // We use the standard isotime() function to build the ISO timestamp
+                               ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:231:31: note: suggested alternative: &#39;asctime&#39;
+       strcpy(local_timestamp, isotime(&amp;local_tm));  // We use the standard isotime() function to build the ISO timestamp
+                               ^~~~~~~
+                               asctime
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:251:30: error: expected primary-expression before &#39;.&#39; token
+       float temperature = Rtc.GetTemperature();
+                              ^
+Multiple libraries were found for &#34;RtcDS3231.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Rtc_by_Makuna
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime
+</pre>
+					
+					<h4>examples/RTCtime_Example</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino:71:28: error: &#39;RtcDS1307&lt;arduino::TwoWire&gt; Rtc&#39; redeclared as different kind of symbol
+   RtcDS1307&lt;myWire&gt; Rtc(I2C);
+                            ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/samd21g18a.h:265:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/samd21.h:69,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd.h:105,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:38,
+                 from /tmp/arduino-sketch-C5295F1D1D5D5341776FF4CCAFF3EA3C/sketch/RTCtime_Example.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/component/rtc.h:1057:3: note: previous declaration &#39;typedef union Rtc Rtc&#39;
+ } Rtc;
+   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino:92:6: error: expected unqualified-id before &#39;.&#39; token
+   Rtc.Begin();
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino:42:47: error: &#39;ONE_HOUR&#39; was not declared in this scope
+ #define MY_TIMEZONE_IN_SECONDS (MY_TIMEZONE * ONE_HOUR)
+                                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino:93:12: note: in expansion of macro &#39;MY_TIMEZONE_IN_SECONDS&#39;
+   set_zone(MY_TIMEZONE_IN_SECONDS);
+            ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino:93:3: error: &#39;set_zone&#39; was not declared in this scope
+   set_zone(MY_TIMEZONE_IN_SECONDS);
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino:93:3: note: suggested alternative: &#39;tone&#39;
+   set_zone(MY_TIMEZONE_IN_SECONDS);
+   ^~~~~~~~
+   tone
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino:123:8: error: expected unqualified-id before &#39;.&#39; token
+     Rtc.SetTime(&amp;compiled_time_t);
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino:127:11: error: expected primary-expression before &#39;.&#39; token
+   if (!Rtc.GetIsRunning())
+           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino:130:8: error: expected unqualified-id before &#39;.&#39; token
+     Rtc.SetIsRunning(true);
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino:134:19: error: expected primary-expression before &#39;.&#39; token
+   time_t now = Rtc.GetTime();
+                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino:140:8: error: expected unqualified-id before &#39;.&#39; token
+     Rtc.SetTime(&amp;compiled_time_t);
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino:172:12: error: expected primary-expression before &#39;.&#39; token
+     if (Rtc.IsDateTimeValid())      // Check if the RTC is still reliable...
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino:176:23: error: expected primary-expression before &#39;.&#39; token
+       time_t now = Rtc.GetTime();   // counted as seconds since Jan 1, 2000 00:00:00.
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino:185:28: error: &#39;UNIX_OFFSET&#39; was not declared in this scope
+       Serial.println(now &#43; UNIX_OFFSET);
+                            ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino:185:28: note: suggested alternative: &#39;DSU_DID_OFFSET&#39;
+       Serial.println(now &#43; UNIX_OFFSET);
+                            ^~~~~~~~~~~
+                            DSU_DID_OFFSET
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino:197:29: error: &#39;isotime&#39; was not declared in this scope
+       strcpy(utc_timestamp, isotime(&amp;utc_tm));
+                             ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino:197:29: note: suggested alternative: &#39;asctime&#39;
+       strcpy(utc_timestamp, isotime(&amp;utc_tm));
+                             ^~~~~~~
+                             asctime
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino:213:10: error: expected unqualified-id before &#39;.&#39; token
+       Rtc.GetTime(&amp;utc_tm);                         // GetTime(), when passed a &#34;struct tm&#34; pointer, compiles it with UTC time
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino:219:10: error: expected unqualified-id before &#39;.&#39; token
+       Rtc.GetLocalTime(&amp;local_tm);                  // GetLocalTime() compiles a &#34;struct tm&#34; pointer with local time
+          ^
+Multiple libraries were found for &#34;RtcDS1307.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Rtc_by_Makuna
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-testlib2269916583/test/test.ino:1:21: fatal error: RTCtime.h: No such file or directory
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/DS3231_Alarms_and_Temperature</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/RTCtimeUtils.cpp: In function &#39;time_t str20ToTime(const char*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/RTCtimeUtils.cpp:75:22: error: &#39;int8_t&#39; was not declared in this scope
+   tm_time.tm_mday = (int8_t) StringToInt(date &#43; 4);
+                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/RtcDS3231.h: In member function &#39;time_t RtcDS3231&lt;T_WIRE_METHOD&gt;::GetTime()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/RtcDS3231.h:343:28: error: there are no arguments to &#39;mk_gmtime&#39; that depend on a template parameter, so a declaration of &#39;mk_gmtime&#39; must be available [-fpermissive]
+       return mk_gmtime(&amp;now);
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/RtcDS3231.h:343:28: note: (if you use &#39;-fpermissive&#39;, G&#43;&#43; will accept your code, but allowing the use of an undeclared name is deprecated)
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/RtcDS3231.h: In member function &#39;time_t RtcDS3231&lt;T_WIRE_METHOD&gt;::GetTimeUX()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/RtcDS3231.h:354:27: error: &#39;UNIX_OFFSET&#39; was not declared in this scope
+       return (GetTime() &#43; UNIX_OFFSET);
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:62:47: error: &#39;ONE_HOUR&#39; was not declared in this scope
+ #define MY_TIMEZONE_IN_SECONDS (MY_TIMEZONE * ONE_HOUR)
+                                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:111:12: note: in expansion of macro &#39;MY_TIMEZONE_IN_SECONDS&#39;
+   set_zone(MY_TIMEZONE_IN_SECONDS);
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:111:34: error: &#39;set_zone&#39; was not declared in this scope
+   set_zone(MY_TIMEZONE_IN_SECONDS);
+                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:231:48: error: &#39;isotime&#39; was not declared in this scope
+       strcpy(local_timestamp, isotime(&amp;local_tm));  // We use the standard isotime() function to build the ISO timestamp
+                                                ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:92:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/RtcDS3231.h: In instantiation of &#39;time_t RtcDS3231&lt;T_WIRE_METHOD&gt;::GetTime() [with T_WIRE_METHOD = TwoWire; time_t = long int]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/DS3231_Alarms_and_Temperature/DS3231_Alarms_and_Temperature.ino:152:28:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/RtcDS3231.h:343:23: error: &#39;mk_gmtime&#39; was not declared in this scope
+       return mk_gmtime(&amp;now);
+                       ^
+Multiple libraries were found for &#34;RtcDS3231.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Rtc_by_Makuna
+</pre>
+					
+					<h4>examples/RTCtime_Example</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtimeUtils.cpp: In function &#39;time_t str20ToTime(const char*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtimeUtils.cpp:75:22: error: &#39;int8_t&#39; was not declared in this scope
+   tm_time.tm_mday = (int8_t) StringToInt(date &#43; 4);
+                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtimeUtils.cpp:78:3: errExample.ino:93:12: note: in expansion of macro &#39;MY_TIMEZONE_IN_SECONDS&#39;
+   set_zone(MY_TIMEZONE_IN_SECONDS);
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino:93:34: error: &#39;set_zone&#39; was not declared in this scope
+   set_zone(MY_TIMEZONE_IN_SECONDS);
+                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino:123:9: error: &#39;class RtcDS1307&lt;TwoWire&gt;&#39; has no member named &#39;SetTime&#39;
+     Rtc.SetTime(&amp;compiled_time_t);
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino:134:20: error: &#39;class RtcDS1307&lt;TwoWire&gt;&#39; has no member named &#39;GetTime&#39;
+   time_t now = Rtc.GetTime();
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino:140:9: error: &#39;class RtcDS1307&lt;TwoWire&gt;&#39; has no member named &#39;SetTime&#39;
+     Rtc.SetTime(&amp;compiled_time_t);
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino:176:24: error: &#39;class RtcDS1307&lt;TwoWire&gt;&#39; has no member named &#39;GetTime&#39;
+       time_t now = Rtc.GetTime();   // counted as seconds since Jan 1, 2000 00:00:00.
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino:185:28: error: &#39;UNIX_OFFSET&#39; was not declared in this scope
+       Serial.println(now &#43; UNIX_OFFSET);
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino:197:44: error: &#39;isotime&#39; was not declared in this scope
+       strcpy(utc_timestamp, isotime(&amp;utc_tm));
+                                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino:213:11: error: &#39;class RtcDS1307&lt;TwoWire&gt;&#39; has no member named &#39;GetTime&#39;
+       Rtc.GetTime(&amp;utc_tm);                         // GetTime(), when passed a &#34;struct tm&#34; pointer, compiles it with UTC time
+           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime/examples/RTCtime_Example/RTCtime_Example.ino:219:11: error: &#39;class RtcDS1307&lt;TwoWire&gt;&#39; has no member named &#39;GetLocalTime&#39;
+       Rtc.GetLocalTime(&amp;local_tm);                  // GetLocalTime() compiles a &#34;struct tm&#34; pointer with local time
+           ^
+Multiple libraries were found for &#34;RtcDS1307.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Rtc_by_Makuna
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCtime
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

@@ -1,0 +1,403 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>TS4231 Library - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>TS4231 Library</h2>
+				<p>
+					Version: <b>1.0.4</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/ts4231-library/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>ts4231_config_example</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-testlib2384479067/test/test.ino:1:10: fatal error: TS4231_Library.h: No such file or directory
+ #include &lt;TS4231_Library.h&gt;
+          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/ts4231_config_example</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TS4231_Library/examples/ts4231_config_example/ts4231_config_example.ino:21:25: error: &#39;your_E_pin&#39; was not declared in this scope
+ #define device1_E_pin   your_E_pin   //User must replace your_E_pin with their pin number (compile error will occur if no number defined)
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TS4231_Library/examples/ts4231_config_example/ts4231_config_example.ino:26:17: note: in expansion of macro &#39;device1_E_pin&#39;
+ TS4231  device1(device1_E_pin, device1_D_pin);  //instantiate the class as device1 and assign pins
+                 ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TS4231_Library/examples/ts4231_config_example/ts4231_config_example.ino:22:25: error: &#39;your_D_pin&#39; was not declared in this scope
+ #define device1_D_pin   your_D_pin   //User must replace your_D_pin with their pin number (compile error will occur if no number defined)
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TS4231_Library/examples/ts4231_config_example/ts4231_config_example.ino:26:32: note: in expansion of macro &#39;device1_D_pin&#39;
+ TS4231  device1(device1_E_pin, device1_D_pin);  //instantiate the class as device1 and assign pins
+                                ^~~~~~~~~~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-testlib2143532309/test/test.ino:1:10: fatal error: TS4231_Library.h: No such file or directory
+ #include &lt;TS4231_Library.h&gt;
+          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/ts4231_config_example</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TS4231_Library/examples/ts4231_config_example/ts4231_config_example.ino:21:25: error: &#39;your_E_pin&#39; was not declared in this scope
+ #define device1_E_pin   your_E_pin   //User must replace your_E_pin with their pin number (compile error will occur if no number defined)
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TS4231_Library/examples/ts4231_config_example/ts4231_config_example.ino:26:17: note: in expansion of macro &#39;device1_E_pin&#39;
+ TS4231  device1(device1_E_pin, device1_D_pin);  //instantiate the class as device1 and assign pins
+                 ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TS4231_Library/examples/ts4231_config_example/ts4231_config_example.ino:22:25: error: &#39;your_D_pin&#39; was not declared in this scope
+ #define device1_D_pin   your_D_pin   //User must replace your_D_pin with their pin number (compile error will occur if no number defined)
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TS4231_Library/examples/ts4231_config_example/ts4231_config_example.ino:26:32: note: in expansion of macro &#39;device1_D_pin&#39;
+ TS4231  device1(device1_E_pin, device1_D_pin);  //instantiate the class as device1 and assign pins
+                                ^~~~~~~~~~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-testlib2143532309/test/test.ino:1:10: fatal error: TS4231_Library.h: No such file or directory
+ #include &lt;TS4231_Library.h&gt;
+          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/ts4231_config_example</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TS4231_Library/examples/ts4231_config_example/ts4231_config_example.ino:21:25: error: &#39;your_E_pin&#39; was not declared in this scope
+ #define device1_E_pin   your_E_pin   //User must replace your_E_pin with their pin number (compile error will occur if no number defined)
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TS4231_Library/examples/ts4231_config_example/ts4231_config_example.ino:26:17: note: in expansion of macro &#39;device1_E_pin&#39;
+ TS4231  device1(device1_E_pin, device1_D_pin);  //instantiate the class as device1 and assign pins
+                 ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TS4231_Library/examples/ts4231_config_example/ts4231_config_example.ino:22:25: error: &#39;your_D_pin&#39; was not declared in this scope
+ #define device1_D_pin   your_D_pin   //User must replace your_D_pin with their pin number (compile error will occur if no number defined)
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TS4231_Library/examples/ts4231_config_example/ts4231_config_example.ino:26:32: note: in expansion of macro &#39;device1_D_pin&#39;
+ TS4231  device1(device1_E_pin, device1_D_pin);  //instantiate the class as device1 and assign pins
+                                ^~~~~~~~~~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-testlib2384479067/test/test.ino:1:10: fatal error: TS4231_Library.h: No such file or directory
+ #include &lt;TS4231_Library.h&gt;
+          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/ts4231_config_example</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TS4231_Library/examples/ts4231_config_example/ts4231_config_example.ino:21:25: error: &#39;your_E_pin&#39; was not declared in this scope
+ #define device1_E_pin   your_E_pin   //User must replace your_E_pin with their pin number (compile error will occur if no number defined)
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TS4231_Library/examples/ts4231_config_example/ts4231_config_example.ino:26:17: note: in expansion of macro &#39;device1_E_pin&#39;
+ TS4231  device1(device1_E_pin, device1_D_pin);  //instantiate the class as device1 and assign pins
+                 ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TS4231_Library/examples/ts4231_config_example/ts4231_config_example.ino:22:25: error: &#39;your_D_pin&#39; was not declared in this scope
+ #define device1_D_pin   your_D_pin   //User must replace your_D_pin with their pin number (compile error will occur if no number defined)
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TS4231_Library/examples/ts4231_config_example/ts4231_config_example.ino:26:32: note: in expansion of macro &#39;device1_D_pin&#39;
+ TS4231  device1(device1_E_pin, device1_D_pin);  //instantiate the class as device1 and assign pins
+                                ^~~~~~~~~~~~~
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-testlib3406501292/test/test.ino:1:28: fatal error: TS4231_Library.h: No such file or directory
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/ts4231_config_example</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">&lt;built-in&gt;: fatal error: when writing output to /tmp/arduino-sketch-F939E3E41DD212ED645606EEE1AC7DCB/preproc/ctags_target_for_gcc_minus_e.cpp: No space left on device
+compilation terminated.
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

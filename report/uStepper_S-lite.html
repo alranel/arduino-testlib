@@ -1,0 +1,526 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>uStepper S-lite - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>uStepper S-lite</h2>
+				<p>
+					Version: <b>1.1.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/ustepper-s-lite/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:71:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.h:131:2: error: #error !!This library only supports the ATmega328pb MCU!!
+ #error !!This library only supports the ATmega328pb MCU!!
+  ^~~~~
+��������������������������������/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/i2cMaster.cpp:45:41: note: suggested alternative: &#39;TWINT&#39;
+  while (!(_SFR_MEM8(this-&gt;twcr) &amp; (1 &lt;&lt; TWINT1)))
+                                         ^~~~~~
+                                         TWINT
+/home/ec/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:370:5: note: suggested alternative: &#39;TCCR0B&#39;
+     TCCR3B &amp;= ~(1 &lt;&lt; CS30);
+     ^~~~~~
+     TCCR0B
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:370:22: error: &#39;CS30&#39; was not declared in this scope
+     TCCR3B &amp;= ~(1 &lt;&lt; CS30);
+                      ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:370:22: note: suggested alternative: &#39;CS00&#39;
+     TCCR3B &amp;= ~(1 &lt;&lt; CS30);
+                      ^~~~
+                      CS00
+   ^~~~~~
+                      TWINT
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/i2cMaster.cpp:132:38: error: &#39;TWEN1&#39; was not declared in this scope
+   if(this-&gt;cmd((1 &lt;&lt; TWINT1) | (1 &lt;&lt; TWEN1) | (1 &lt;&lt; TWEA1)) == false)
+                                      ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir//home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:679:2: note: suggested alternative: &#39;TCCR0B&#39;
+  TCCR3B |= (1 &lt;&lt; CS30);
+  ^~~~~~
+  TCCR0B
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:679:18: error: &#39;CS30&#39; was not declared in this scope
+  TCCR3B |= (1 &lt;&lt; CS30);
+                  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:679:18: note: suggested alternative: &#39;CS00&#39;
+  TCCR3B |= (1 &lt;&lt; CS30);
+                  ^~~~
+                  CS00
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp: In member function &#39;void uStepperSLite::moveSteps(int32_t, bool, bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:870:2: error: &#39;TCCR3B&#39; was not declared in this scope
+  TCCR3B |= (1 &lt;&lt; CS30);
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:870:2: note: suggested alternative: &#39;TCCR0B&#39;
+  TCCR3B |= (1 &lt;&lt; CS30);
+  ^~~~~~
+  TCCR0B
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:870:18: error: &#39;CS30&#39; was not declared in this scope
+  TCCR3B |= (1 &lt;&lt; CS30);
+                  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:870:18: note: suggested alternative: &#39;CS00&#39;
+  TCCR3B |= (1 &lt;&lt; CS30);
+                  ^~~~
+                  CS00
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp: In member function &#39;void uStepperSLite::hardStop(bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:895:2: error: &#39;TCCR3B&#39; was not declared in this scope
+  TCCR3B |= (1 &lt;&lt; CS30);
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:895:2: note: suggested alternative: &#39;TCCR0B&#39;
+  TCCR3B |= (1 &lt;&lt; CS30);
+  ^~~~~~
+  TCCR0B
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:895:18: error: &#39;CS30&#39; was not declared in this scope
+  TCCR3B |= (1 &lt;&lt; CS30);
+                  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:895:18: note: suggested alternative: &#39;CS00&#39;
+  TCCR3B |= (1 &lt;&lt; CS30);
+                  ^~~~
+                  CS00
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp: In member function &#39;void uStepperSLite::softStop(bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:946:2: error: &#39;TCCR3B&#39; was not declared in this scope
+  TCCR3B |= (1 &lt;&lt; CS30);
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:946:2: note: suggested alternative: &#39;TCCR0B&#39;
+  TCCR3B |= (1 &lt;&lt; CS30);
+  ^~~~~~
+  TCCR0B
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:946:18: error: &#39;CS30&#39; was not declared in this scope
+  TCCR3B |= (1 &lt;&lt; CS30);
+                  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:946:18: note: suggested alternative: &#39;CS00&#39;
+  TCCR3B |= (1 &lt;&lt; CS30);
+                  ^~~~
+                  CS00
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp: In member function &#39;void uStepperSLite::setup(uint8_t, float, float, float, float, bool, uint8_t, uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:1129:2: error: &#39;TCNT3&#39; was not declared in this scope
+  TCNT3 = 0;
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:1129:2: note: suggested alternative: &#39;TCNT0&#39;
+  TCNT3 = 0;
+  ^~~~~
+  TCNT0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:1130:2: error: &#39;ICR3&#39; was not declared in this scope
+  ICR3 = 159;
+  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:1130:2: note: suggested alternative: &#39;ICR1&#39;
+  ICR3 = 159;
+  ^~~~
+  ICR1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:1131:2: error: &#39;TIFR3&#39; was not declared in this scope
+  TIFR3 = 0;
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:1131:2: note: suggested alternative: &#39;TIFR0&#39;
+  TIFR3 = 0;
+  ^~~~~
+  TIFR0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:1132:2: error: &#39;TIMSK3&#39; was not declared in this scope
+  TIMSK3 = (1 &lt;&lt; OCIE3A);
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:1132:2: note: suggested alternative: &#39;TIMSK0&#39;
+  TIMSK3 = (1 &lt;&lt; OCIE3A);
+  ^~~~~~
+  TIMSK0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:1132:17: error: &#39;OCIE3A&#39; was not declared in this scope
+  TIMSK3 = (1 &lt;&lt; OCIE3A);
+                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:1132:17: note: suggested alternative: &#39;OCIE0A&#39;
+  TIMSK3 = (1 &lt;&lt; OCIE3A);
+                 ^~~~~~
+                 OCIE0A
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:1133:2: error: &#39;TCCR3A&#39; was not declared in this scope
+  TCCR3A = (1 &lt;&lt; WGM31);
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:1133:2: note: suggested alternative: &#39;TCCR0A&#39;
+  TCCR3A = (1 &lt;&lt; WGM31);
+  ^~~~~~
+  TCCR0A
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:1133:17: error: &#39;WGM31&#39; was not declared in this scope
+  TCCR3A = (1 &lt;&lt; WGM31);
+                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:1133:17: note: suggested alternative: &#39;WGM21&#39;
+  TCCR3A = (1 &lt;&lt; WGM31);
+                 ^~~~~
+                 WGM21
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:1134:2: error: &#39;TCCR3B&#39; was not declared in this scope
+  TCCR3B = (1 &lt;&lt; WGM32) | (1 &lt;&lt; WGM33);
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:1134:2: note: suggested alternative: &#39;TCCR0B&#39;
+  TCCR3B = (1 &lt;&lt; WGM32) | (1 &lt;&lt; WGM33);
+  ^~~~~~
+  TCCR0B
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:1134:17: error: &#39;WGM32&#39; was not declared in this scope
+  TCCR3B = (1 &lt;&lt; WGM32) | (1 &lt;&lt; WGM33);
+                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:1134:17: note: suggested alternative: &#39;WGM12&#39;
+  TCCR3B = (1 &lt;&lt; WGM32) | (1 &lt;&lt; WGM33);
+                 ^~~~~
+                 WGM12
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:1134:32: error: &#39;WGM33&#39; was not declared in this scope
+  TCCR3B = (1 &lt;&lt; WGM32) | (1 &lt;&lt; WGM33);
+                                ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:1134:32: note: suggested alternative: &#39;WGM13&#39;
+  TCCR3B = (1 &lt;&lt; WGM32) | (1 &lt;&lt; WGM33);
+                                ^~~~~
+                                WGM13
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp: In member function &#39;void uStepperSLite::pid(float)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:1352:3: error: &#39;TCCR3B&#39; was not declared in this scope
+   TCCR3B |= (1 &lt;&lt; CS30);
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:1352:3: note: suggested alternative: &#39;TCCR0B&#39;
+   TCCR3B |= (1 &lt;&lt; CS30);
+   ^~~~~~
+   TCCR0B
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:1352:19: error: &#39;CS30&#39; was not declared in this scope
+   TCCR3B |= (1 &lt;&lt; CS30);
+                   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:1</pre>
+
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/TMC2208.cpp:39:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/TMC2208.h:41:11: fatal error: util/delay.h: No such file or directory
+  #include &lt;util/delay.h&gt;
+           ^~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:71:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.h:131:2: error: #error !!This library only supports the ATmega328pb MCU!!
+ #error !!This library only supports the ATmega328pb MCU!!
+  ^~~~~
+�����������/home/ec2-user/arduin/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/i2cMaster.cpp:45:41: note: suggested alternative: &#39;TWI_t&#39;
+  while (!(_SFR_MEM8(this-&gt;twcr) &amp; (1 &lt;&lt; TWINT1)))
+                                         ^~~~~~
+                                     /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:80:5: note: suggested alternative: &#39;PIN0&#39;
+  if(PIND &amp; 0x04)
+     ^~~~
+     PIN0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:88:6: error: &#39;PINB&#39; was not declared in this scope
+  if((PINB &amp; (0x08)))   //CCW
+      ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:88:6: note: suggested alternative: &#39;PIN0&#39;
+  if((PINB &amp; (0x08)))   //CCW
+      ^~~~
+      PIN0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp: In function &#39;void INT1_vect()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:115:5: error: &#39;PIND&#39; was not declared in this scope
+  if(PIND &amp; 0x04)
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:115:5: note: suggested alternative: &#39;PIN0&#39;
+  if(PIND &amp; 0x04)
+     ^~~~
+     PIN0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp: In function &#39;void TIMER1_COMPA_vect()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:370:5: error: &#39;TCCR3B&#39; was not declared in this scope
+     TCCR3B &amp;= ~(1 &lt;&lt; CS30);
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:370:5: note: suggested alternative: &#39;TWCR&#39;
+     TCCR3B &amp;= ~(1 &lt;&lt; CS30);
+     ^~~~~~
+     TWCR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:370:22: error: &#39;CS30&#39; was not declared in this scope
+     TCCR3B &amp;= ~(1 &lt;&lt; CS30);
+                      ^~~~
+pper_S-lite/src/i2cMaster.cpp:141:38: error: &#39;TWEN1&#39; was not declared in this scope
+   if(this-&gt;cmd((1 &lt;&lt; TWINT1) | (1 &lt;&lt; TWEN1)) == false)
+                                      ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/i2cMaster.cpp: In member function &#39;bool i2cMaster::start(/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:443:2: note: suggested alternative: &#39;TCB1&#39;
+  TCNT1 = 0;
+  ^~~~~
+  TCB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:444:2: error: &#39;ICR1&#39; was not declared in this scope
+  ICR1 = 32000;
+  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:444:2: note: suggested alternative: &#39;TCB1&#39;
+  ICR1 = 32000;
+  ^~~~
+  TCB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:445:2: error: &#39;TIFR1&#39; was not declared in this scope
+  TIFR1 = 0;
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:446:2: error: &#39;TIMSK1&#39; was not declared in this scope
+  TIMSK1 = (1 &lt;&lt; OCIE1A);
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:446:2: note: suggested alternative: &#39;TIMERB1&#39;
+  TIMSK1 = (1 &lt;&lt; OCIE1A);
+  ^~~~~~
+  TIMERB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:446:17: error: &#39;OCIE1A&#39; was not declared in this scope
+  TIMSK1 = (1 &lt;&lt; OCIE1A);
+                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:447:2: error: &#39;TCCR1A&#39; was not declared in this scope
+  TCCR1A = (1 &lt;&lt; WGM11);
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:447:2: note: suggested alternative: &#39;TWCR&#39;
+  TCCR1A = (1 &lt;&lt; WGM11);
+  ^~~~~~
+  TWCR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:447:17: error: &#39;WGM11&#39; was not declared in this scope
+  TCCR1A = (1 &lt;&lt; WGM11);
+                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:448:2: error: &#39;TCCR1B&#39; was not declared in this scope
+  TCCR1B = (1 &lt;&lt; WGM12) | (1 &lt;&lt; WGM13) | (1 &lt;&lt; CS10);
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:448:2: note: suggested alternative: &#39;TWCR&#39;
+  TCCR1B = (1 &lt;&lt; WGM12) | (1 &lt;&lt; WGM13) | (1 &lt;&lt; CS10);
+  ^~~~~~
+  TWCR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:448:17: error: &#39;WGM12&#39; was not declared in this scope
+  TCCR1B = (1 &lt;&lt; WGM12) | (1 &lt;&lt; WGM13) | (1 &lt;&lt; CS10);
+                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:448:32: error: &#39;WGM13&#39; was not declared in this scope
+  TCCR1B = (1 &lt;&lt; WGM12) | (1 &lt;&lt; WGM13) | (1 &lt;&lt; CS10);
+                                ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:448:47: error: &#39;CS10&#39; was not declared in this scope
+  TCCR1B = (1 &lt;&lt; WGM12) | (1 &lt;&lt; WGM13) | (1 &lt;&lt; CS10);
+                                               ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:448:47: note: suggested alternative: &#39;B110&#39;
+  TCCR1B = (1 &lt;&lt; WGM12) | (1 &lt;&lt; WGM13) | (1 &lt;&lt; CS10);
+                                               ^~~~
+                                               B110
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp: In member function &#39;void uStepperEncoder::setHome()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:455:9: error: &#39;TIMSK1&#39; was not declared in this scope
+         TIMSK1 &amp;= ~(1 &lt;&lt; OCIE1A);
+         ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:455:9: note: suggested alternative: &#39;TIMERB1&#39;
+         TIMSK1 &amp;= ~(1 &lt;&lt; OCIE1A);
+         ^~~~~~
+         TIMERB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:455:26: error: &#39;OCIE1A&#39; was not declared in this scope
+         TIMSK1 &amp;= ~(1 &lt;&lt; OCIE1A);
+                          ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp: In member function &#39;uint16_t uStepperEncoder::getStrength()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:478:2: error: &#39;TIMSK1&#39; was not declared in this scope
+  TIMSK1 &amp;= ~(1 &lt;&lt; OCIE1A);
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:478:2: note: suggested alternative: &#39;TIMERB1&#39;
+  TIMSK1 &amp;= ~(1 &lt;&lt; OCIE1A);
+  ^~~~~~
+  TIMERB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:478:19: error: &#39;OCIE1A&#39; was not declared in this scope
+  TIMSK1 &amp;= ~(1 &lt;&lt; OCIE1A);
+                   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp: In member function &#39;uint8_t uStepperEncoder::getAgc()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:488:2: error: &#39;TIMSK1&#39; was not declared in this scope
+  TIMSK1 &amp;= ~(1 &lt;&lt; OCIE1A);
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:488:2: note: suggested alternative: &#39;TIMERB1&#39;
+  TIMSK1 &amp;= ~(1 &lt;&lt; OCIE1A);
+  ^~~~~~
+  TIMERB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:488:19: error: &#39;OCIE1A&#39; was not declared in this scope
+  TIMSK1 &amp;= ~(1 &lt;&lt; OCIE1A);
+                   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp: In member function &#39;uint8_t uStepperEncoder::detectMagnet()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:497:2: error: &#39;TIMSK1&#39; was not declared in this scope
+  TIMSK1 &amp;= ~(1 &lt;&lt; OCIE1A);
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:497:2: note: suggested alternative: &#39;TIMERB1&#39;
+  TIMSK1 &amp;= ~(1 &lt;&lt; OCIE1A);
+  ^~~~~~
+  TIMERB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:497:19: error: &#39;OCIE1A&#39; was not declared in this scope
+  TIMSK1 &amp;= ~(1 &lt;&lt; OCIE1A);
+                   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp: In member function &#39;void uStepperSLite::runContinous(bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:679:2: error: &#39;TCCR3B&#39; was not declared in this scope
+  TCCR3B |= (1 &lt;&lt; CS30);
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:679:2: note: suggested alternative: &#39;TWCR&#39;
+  TCCR3B |= (1 &lt;&lt; CS30);
+  ^~~~~~
+  TWCR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:679:18: error: &#39;CS30&#39; was not declared in this scope
+  TCCR3B |= (1 &lt;&lt; CS30);
+                  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp: In member function &#39;void uStepperSLite::moveSteps(int32_t, bool, bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/uStepperSLite.cpp:870:2: error: &#39;TCCR3B&#39; wa</pre>
+
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/TMC2208.cpp:39:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/TMC2208.h:41:11: fatal error: util/delay.h: No such file or directory
+  #include &lt;util/delay.h&gt;
+           ^~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/TMC2208.cpp:39:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper_S-lite/src/TMC2208.h:39:27: fatal error: avr/pgmspace.h: No such file or directory
+compilation terminated.
+
+</pre>
+
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

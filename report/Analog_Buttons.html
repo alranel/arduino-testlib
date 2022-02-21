@@ -1,0 +1,370 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>Analog Buttons - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>Analog Buttons</h2>
+				<p>
+					Version: <b>1.2.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/analog-buttons/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>AnalogButtons</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-testlib1956039221/test/test.ino:1:10: fatal error: Analog_Buttons.h: No such file or directory
+ #include &lt;Analog_Buttons.h&gt;
+          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/AnalogButtons</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 3132 bytes (9%) of program storage space. Maximum is 32256 bytes.
+Global variables use 543 bytes (26%) of dynamic memory, leaving 1505 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-testlib2661509401/test/test.ino:1:10: fatal error: Analog_Buttons.h: No such file or directory
+ #include &lt;Analog_Buttons.h&gt;
+          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/AnalogButtons</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 80492 bytes (0%) of program storage space. Maximum is 16777216 bytes.
+Global variables use 43804 bytes (16%) of dynamic memory, leaving 226532 bytes for local variables. Maximum is 270336 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-testlib2661509401/test/test.ino:1:10: fatal error: Analog_Buttons.h: No such file or directory
+ #include &lt;Analog_Buttons.h&gt;
+          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/AnalogButtons</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 4116 bytes (8%) of program storage space. Maximum is 49152 bytes.
+Global variables use 364 bytes (5%) of dynamic memory, leaving 5780 bytes for local variables. Maximum is 6144 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-testlib1956039221/test/test.ino:1:10: fatal error: Analog_Buttons.h: No such file or directory
+ #include &lt;Analog_Buttons.h&gt;
+          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/AnalogButtons</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 13364 bytes (5%) of program storage space. Maximum is 262144 bytes.
+Global variables use 3280 bytes (10%) of dynamic memory, leaving 29488 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-testlib2661509401/test/test.ino:1:28: fatal error: Analog_Buttons.h: No such file or directory
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/AnalogButtons</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Analog_Buttons/examples/AnalogButtons/AnalogButtons.ino:3:20: error: &#39;A1&#39; was not declared in this scope
+ #define ANALOG_PIN A1
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Analog_Buttons/examples/AnalogButtons/AnalogButtons.ino:40:29: note: in expansion of macro &#39;ANALOG_PIN&#39;
+ AnalogButtons analogButtons(ANALOG_PIN, INPUT);
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Analog_Buttons/examples/AnalogButtons/AnalogButtons.ino: In function &#39;void configure()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Analog_Buttons/examples/AnalogButtons/AnalogButtons.ino:3:20: error: &#39;A1&#39; was not declared in this scope
+ #define ANALOG_PIN A1
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Analog_Buttons/examples/AnalogButtons/AnalogButtons.ino:73:34: note: in expansion of macro &#39;ANALOG_PIN&#39;
+  unsigned int value = analogRead(ANALOG_PIN);
+                                  ^
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

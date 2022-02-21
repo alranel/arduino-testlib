@@ -1,0 +1,251 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>Arduino_CMSIS-DSP - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>Arduino_CMSIS-DSP</h2>
+				<p>
+					Version: <b>5.7.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/arduino_cmsis-dsp/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /private/tmp/arduino-testlib164965644/test/test.ino:1:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Arduino_CMSIS-DSP/src/arm_math.h:390:10: fatal error: cmsis_compiler.h: No such file or directory
+ #include &#34;cmsis_compiler.h&#34;
+          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduino_CMSIS-DSP/src/Source/TransformFunctions/arm_bitreversal2.S: Assembler messages:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduino_CMSIS-DSP/src/Source/TransformFunctions/arm_bitreversal2.S:145: Error: selected processor does not support `it LS&#39; in Thumb mode
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduino_CMSIS-DSP/src/Source/TransformFunctions/arm_bitreversal2.S:146: Error: thumb conditional instruction should be in IT block -- `bxls lr&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduino_CMSIS-DSP/src/Source/TransformFunctions/arm_bitreversal2.S:147: Error: cannot honor width suffix -- `push {r4-r9}&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduino_CMSIS-DSP/src/Source/TransformFunctions/arm_bitreversal2.S:151: Error: cannot honor width suffix -- `ldrh r8,[r1,#4]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduino_CMSIS-DSP/src/Source/TransformFunctions/arm_bitreversal2.S:152: Error: cannot honor width suffix -- `ldrh r9,[r1,#2]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduino_CMSIS-DSP/src/Source/TransformFunctions/arm_bitreversal2.S:154: Error: cannot honor width suffix -- `ldrh r12,[r1,#-2]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduino_CMSIS-DSP/src/Source/TransformFunctions/arm_bitreversal2.S:159: Error: cannot honor width suffix -- `ldr r7,[r9,#0]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduino_CMSIS-DSP/src/Source/TransformFunctions/arm_bitreversal2.S:160: Error: cannot honor width suffix -- `ldr r6,[r8,#0]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduino_CMSIS-DSP/src/Source/TransformFunctions/arm_bitreversal2.S:162: Error: cannot honor width suffix -- `ldr r4,[r12,#0]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduino_CMSIS-DSP/src/Source/TransformFunctions/arm_bitreversal2.S:163: Error: cannot honor width suffix -- `str r6,[r9,#0]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduino_CMSIS-DSP/src/Source/TransformFunctions/arm_bitreversal2.S:164: Error: cannot honor width suffix -- `str r7,[r8,#0]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduino_CMSIS-DSP/src/Source/TransformFunctions/arm_bitreversal2.S:165: Error: cannot honor width suffix -- `str r5,[r12,#0]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduino_CMSIS-DSP/src/Source/TransformFunctions/arm_bitreversal2.S:167: Error: cannot honor width suffix -- `ldr r7,[r9,#4]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduino_CMSIS-DSP/src/Source/TransformFunctions/arm_bitreversal2.S:168: Error: cannot honor width suffix -- `ldr r6,[r8,#4]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduino_CMSIS-DSP/src/Source/TransformFunctions/arm_bitreversal2.S:170: Error: cannot honor width suffix -- `ldr r4,[r12,#4]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduino_CMSIS-DSP/src/Source/TransformFunctions/arm_bitreversal2.S:171: Error: cannot honor width suffix -- `str r6,[r9,#4]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduino_CMSIS-DSP/src/Source/TransformFunctions/arm_bitreversal2.S:172: Error: cannot honor width suffix -- `str r7,[r8,#4]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduino_CMSIS-DSP/src/Source/TransformFunctions/arm_bitreversal2.S:173: Error: cannot honor width suffix -- `str r5,[r12,#4]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduino_CMSIS-DSP/src/Source/TransformFunctions/arm_bitreversal2.S:178: Error: cannot honor width suffix -- `pop {r4-r9}&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduino_CMSIS-DSP/src/Source/TransformFunctions/arm_bitreversal2.S:185: Error: selected processor does not support `it LS&#39; in Thumb mode
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduino_CMSIS-DSP/src/Source/TransformFunctions/arm_bitreversal2.S:186: Error: thumb conditional instruction should be in IT block -- `bxls lr&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduino_CMSIS-DSP/src/Source/TransformFunctions/arm_bitreversal2.S:187: Error: cannot honor width suffix -- `push {r4-r9}&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduino_CMSIS-DSP/src/Source/TransformFunctions/arm_bitreversal2.S:191: Error: cannot honor width suffix -- `ldrh r8,[r1,#4]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduino_CMSIS-DSP/src/Source/TransformFunctions/arm_bitreversal2.S:192: Error: cannot honor width suffix -- `ldrh r9,[r1,#2]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduino_CMSIS-DSP/src/Source/TransformFunctions/arm_bitreversal2.S:194: Error: cannot honor width suffix -- `ldrh r12,[r1,#-2]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduino_CMSIS-DSP/src/Source/TransformFunctions/arm_bitreversal2.S:195: Error: cannot honor width suffix -- `add r8,r0,r8,LSR#1&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduino_CMSIS-DSP/src/Source/TransformFunctions/arm_bitreversal2.S:196: Error: cannot honor width suffix -- `add r9,r0,r9,LSR#1&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduino_CMSIS-DSP/src/Source/TransformFunctions/arm_bitreversal2.S:197: Error: cannot honor width suffix -- `add r2,r0,r2,LSR#1&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduino_CMSIS-DSP/src/Source/TransformFunctions/arm_bitreversal2.S:198: Error: cannot honor width suffix -- `add r12,r0,r12,LSR#1&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduino_CMSIS-DSP/src/Source/TransformFunctions/arm_bitreversal2.S:199: Error: cannot honor width suffix -- `ldr r7,[r9,#0]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduino_CMSIS-DSP/src/Source/TransformFunctions/arm_bitreversal2.S:200: Error: cannot honor width suffix -- `ldr r6,[r8,#0]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduino_CMSIS-DSP/src/Source/TransformFunctions/arm_bitreversal2.S:202: Error: cannot honor width suffix -- `ldr r4,[r12,#0]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduino_CMSIS-DSP/src/Source/TransformFunctions/arm_bitreversal2.S:203: Error: cannot honor width suffix -- `str r6,[r9,#0]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduino_CMSIS-DSP/src/Source/TransformFunctions/arm_bitreversal2.S:204: Error: cannot honor width suffix -- `str r7,[r8,#0]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduino_CMSIS-DSP/src/Source/TransformFunctions/arm_bitreversal2.S:205: Error: cannot honor width suffix -- `str r5,[r12,#0]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduino_CMSIS-DSP/src/Source/TransformFunctions/arm_bitreversal2.S:210: Error: cannot honor width suffix -- `pop {r4-r9}&#39;
+
+</pre>
+
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /tmp/arduino-testlib2893524059/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduino_CMSIS-DSP/src/arm_math.h:390:10: fatal error: cmsis_compiler.h: No such file or directory
+ #include &#34;cmsis_compiler.h&#34;
+          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /private/tmp/arduino-testlib164965644/test/test.ino:1:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS/4.5.0/CMSIS/Include/arm_math.h:314:4: error: #error &#34;Define according the used Cortex core ARM_MATH_CM7, ARM_MATH_CM4, ARM_MATH_CM3, ARM_MATH_CM0PLUS or ARM_MATH_CM0&#34;
+   #error &#34;Define according the used Cortex core ARM_MATH_CM7, ARM_MATH_CM4, ARM_MATH_CM3, ARM_MATH_CM0PLUS or ARM_MATH_CM0&#34;
+    ^~~~~
+
+</pre>
+
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /tmp/arduino-testlib3936767926/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Arduino_CMSIS-DSP/src/arm_math.h:390:28: fatal error: cmsis_compiler.h: No such file or directory
+compilation terminated.
+
+</pre>
+
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

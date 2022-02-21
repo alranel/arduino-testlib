@@ -1,0 +1,712 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>AS5200L - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>AS5200L</h2>
+				<p>
+					Version: <b>1.0.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/as5200l/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>as5200l_test</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/src/AS5200L.cpp: In constructor &#39;AS5200L::AS5200L(uint16_t, uint16_t, uint16_t)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/src/AS5200L.cpp:15:44: error: no matching function for call to &#39;TwoWire::begin(uint8_t&amp;, uint8_t&amp;)&#39;
+     Wire.begin(_sensorSDAPin, _sensorSCLPin);
+                                            ^
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/src/AS5200L.h:11:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/src/AS5200L.cpp:2:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/Wire/src/Wire.h:53:10: note: candidate: void TwoWire::begin()
+     void begin();
+          ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/Wire/src/Wire.h:53:10: note:   candidate expects 0 arguments, 2 provided
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/Wire/src/Wire.h:54:10: note: candidate: void TwoWire::begin(uint8_t)
+     void begin(uint8_t);
+          ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/Wire/src/Wire.h:54:10: note:   candidate expects 1 argument, 2 provided
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/Wire/src/Wire.h:55:10: note: candidate: void TwoWire::begin(int)
+     void begin(int);
+          ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/Wire/src/Wire.h:55:10: note:   candidate expects 1 argument, 2 provided
+
+</pre>
+
+					
+					<h4>examples/as5200l_test</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:15:1: error: &#39;AS5200L&#39; does not name a type
+ AS5200L magneticEncoderBottom(bottomSensorAddress);
+ ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:16:1: error: &#39;AS5200L&#39; does not name a type
+ AS5200L magneticEncoderTop(topSensorAddress);
+ ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino: In function &#39;void setup()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:30:16: error: &#39;magneticEncoderBottom&#39; was not declared in this scope
+ magnetStatus = magneticEncoderBottom.getMagnetStatus();
+                ^~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:31:21: error: &#39;AS5200L_magnet_notDetected&#39; was not declared in this scope
+ if (magnetStatus == AS5200L_magnet_notDetected) {
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:34:26: error: &#39;AS5200L_magnet_tooWeak&#39; was not declared in this scope
+ else if (magnetStatus == AS5200L_magnet_tooWeak) {
+                          ^~~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:37:26: error: &#39;AS5200L_magnet_tooStrong&#39; was not declared in this scope
+ else if (magnetStatus == AS5200L_magnet_tooStrong) {
+                          ^~~~~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:40:26: error: &#39;AS5200L_magnet_correct&#39; was not declared in this scope
+ else if (magnetStatus == AS5200L_magnet_correct) {
+                          ^~~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:42:10: error: &#39;class HardwareSerial&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+   Serial.printf(&#34;Sensor gain: %d\n&#34;, magneticEncoderBottom.getGain());
+          ^~~~~~
+          print
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:43:10: error: &#39;class HardwareSerial&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+   Serial.printf(&#34;Sensor magnitude: %d\n&#34;, magneticEncoderBottom.getMagnitude());
+          ^~~~~~
+          print
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:46:26: error: &#39;AS5200L_magnet_correct&#39; was not declared in this scope
+ } while (magnetStatus != AS5200L_magnet_correct);
+                          ^~~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:48:16: error: &#39;magneticEncoderBottom&#39; was not declared in this scope
+ Serial.println(magneticEncoderBottom.getStartPosition());
+                ^~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:50:8: error: &#39;class HardwareSerial&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+ Serial.printf(&#34;New start position: %d\n&#34;, magneticEncoderBottom.getStartPosition());
+        ^~~~~~
+        print
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:54:8: error: &#39;class HardwareSerial&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+ Serial.printf(&#34;New stop position: %d\n&#34;, magneticEncoderBottom.getStopPosition());
+        ^~~~~~
+        print
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:56:36: error: &#39;AS5200L_power_mode_normal&#39; was not declared in this scope
+ magneticEncoderBottom.setPowerMode(AS5200L_power_mode_normal);
+                                    ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:57:37: error: &#39;AS5200L_hysteresis_off&#39; was not declared in this scope
+ magneticEncoderBottom.setHysteresis(AS5200L_hysteresis_off);
+                                     ^~~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:58:37: error: &#39;AS5200L_slow_filter_lsbx16&#39; was not declared in this scope
+ magneticEncoderBottom.setSlowFilter(AS5200L_slow_filter_lsbx16);
+                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:59:37: error: &#39;AS5200L_fast_filter_lsbx24&#39; was not declared in this scope
+ magneticEncoderBottom.setFastFilter(AS5200L_fast_filter_lsbx24);
+                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino: In function &#39;void loop()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:65:15: error: &#39;magneticEncoderBottom&#39; was not declared in this scope
+ angleBottom = magneticEncoderBottom.getAngle();
+               ^~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:66:12: error: &#39;magneticEncoderTop&#39; was not declared in this scope
+ angleTop = magneticEncoderTop.getAngle();
+            ^~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:67:8: error: &#39;class HardwareSerial&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+ Serial.printf(&#34;%d, %d\n&#34;, angleBottom, angleTop);
+        ^~~~~~
+        print
+
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/src/AS5200L.cpp: In constructor &#39;AS5200L::AS5200L(uint16_t, uint16_t, uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/src/AS5200L.cpp:15:44: error: no matching function for call to &#39;arduino::MbedI2C::begin(uint8_t&amp;, uint8_t&amp;)&#39;
+     Wire.begin(_sensorSDAPin, _sensorSCLPin);
+                                            ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/src/AS5200L.h:11:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/src/AS5200L.cpp:2:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/libraries/Wire/Wire.h:39:18: note: candidate: virtual void arduino::MbedI2C::begin()
+     virtual void begin();
+                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/libraries/Wire/Wire.h:39:18: note:   candidate expects 0 arguments, 2 provided
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/libraries/Wire/Wire.h:43:18: note: candidate: virtual void arduino::MbedI2C::begin(uint8_t)
+     virtual void begin(uint8_t address);
+                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/libraries/Wire/Wire.h:43:18: note:   candidate expects 1 argument, 2 provided
+
+</pre>
+
+					
+					<h4>examples/as5200l_test</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:15:1: error: &#39;AS5200L&#39; does not name a type
+ AS5200L magneticEncoderBottom(bottomSensorAddress);
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:16:1: error: &#39;AS5200L&#39; does not name a type
+ AS5200L magneticEncoderTop(topSensorAddress);
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:30:16: error: &#39;magneticEncoderBottom&#39; was not declared in this scope
+ magnetStatus = magneticEncoderBottom.getMagnetStatus();
+                ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:31:21: error: &#39;AS5200L_magnet_notDetected&#39; was not declared in this scope
+ if (magnetStatus == AS5200L_magnet_notDetected) {
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:34:26: error: &#39;AS5200L_magnet_tooWeak&#39; was not declared in this scope
+ else if (magnetStatus == AS5200L_magnet_tooWeak) {
+                          ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:37:26: error: &#39;AS5200L_magnet_tooStrong&#39; was not declared in this scope
+ else if (magnetStatus == AS5200L_magnet_tooStrong) {
+                          ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:40:26: error: &#39;AS5200L_magnet_correct&#39; was not declared in this scope
+ else if (magnetStatus == AS5200L_magnet_correct) {
+                          ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:42:10: error: &#39;class arduino::UART&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+   Serial.printf(&#34;Sensor gain: %d\n&#34;, magneticEncoderBottom.getGain());
+          ^~~~~~
+          print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:43:10: error: &#39;class arduino::UART&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+   Serial.printf(&#34;Sensor magnitude: %d\n&#34;, magneticEncoderBottom.getMagnitude());
+          ^~~~~~
+          print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:46:26: error: &#39;AS5200L_magnet_correct&#39; was not declared in this scope
+ } while (magnetStatus != AS5200L_magnet_correct);
+                          ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:48:16: error: &#39;magneticEncoderBottom&#39; was not declared in this scope
+ Serial.println(magneticEncoderBottom.getStartPosition());
+                ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:50:8: error: &#39;class arduino::UART&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+ Serial.printf(&#34;New start position: %d\n&#34;, magneticEncoderBottom.getStartPosition());
+        ^~~~~~
+        print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:54:8: error: &#39;class arduino::UART&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+ Serial.printf(&#34;New stop position: %d\n&#34;, magneticEncoderBottom.getStopPosition());
+        ^~~~~~
+        print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:56:36: error: &#39;AS5200L_power_mode_normal&#39; was not declared in this scope
+ magneticEncoderBottom.setPowerMode(AS5200L_power_mode_normal);
+                                    ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:57:37: error: &#39;AS5200L_hysteresis_off&#39; was not declared in this scope
+ magneticEncoderBottom.setHysteresis(AS5200L_hysteresis_off);
+                                     ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:58:37: error: &#39;AS5200L_slow_filter_lsbx16&#39; was not declared in this scope
+ magneticEncoderBottom.setSlowFilter(AS5200L_slow_filter_lsbx16);
+                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:59:37: error: &#39;AS5200L_fast_filter_lsbx24&#39; was not declared in this scope
+ magneticEncoderBottom.setFastFilter(AS5200L_fast_filter_lsbx24);
+                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:65:15: error: &#39;magneticEncoderBottom&#39; was not declared in this scope
+ angleBottom = magneticEncoderBottom.getAngle();
+               ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:66:12: error: &#39;magneticEncoderTop&#39; was not declared in this scope
+ angleTop = magneticEncoderTop.getAngle();
+            ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:67:8: error: &#39;class arduino::UART&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+ Serial.printf(&#34;%d, %d\n&#34;, angleBottom, angleTop);
+        ^~~~~~
+        print
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/src/AS5200L.cpp: In constructor &#39;AS5200L::AS5200L(uint16_t, uint16_t, uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/src/AS5200L.cpp:15:44: error: no matching function for call to &#39;TwoWire::begin(uint8_t&amp;, uint8_t&amp;)&#39;
+     Wire.begin(_sensorSDAPin, _sensorSCLPin);
+                                            ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/src/AS5200L.h:11:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/src/AS5200L.cpp:2:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:52:10: note: candidate: virtual void TwoWire::begin()
+     void begin();
+          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:52:10: note:   candidate expects 0 arguments, 2 provided
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:53:10: note: candidate: virtual void TwoWire::begin(uint8_t)
+     void begin(uint8_t);
+          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:53:10: note:   candidate expects 1 argument, 2 provided
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:54:10: note: candidate: void TwoWire::begin(int)
+     void begin(int);
+          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:54:10: note:   candidate expects 1 argument, 2 provided
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h: In member function &#39;uint8_t AS5200L::_get8BitRegister(byte)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:63:12: note: candidate 1: size_t TwoWire::requestFrom(int, int)
+     size_t requestFrom(int, int);
+            ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:61:12: note: candidate 2: virtual size_t TwoWire::requestFrom(uint8_t, size_t)
+     size_t requestFrom(uint8_t, size_t);
+            ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h: In member function &#39;uint16_t AS5200L::_get12BitRegister(byte, byte)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:63:12: note: candidate 1: size_t TwoWire::requestFrom(int, int)
+     size_t requestFrom(int, int);
+            ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:61:12: note: candidate 2: virtual size_t TwoWire::requestFrom(uint8_t, size_t)
+     size_t requestFrom(uint8_t, size_t);
+            ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:63:12: note: candidate 1: size_t TwoWire::requestFrom(int, int)
+     size_t requestFrom(int, int);
+            ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:61:12: note: candidate 2: virtual size_t TwoWire::requestFrom(uint8_t, size_t)
+     size_t requestFrom(uint8_t, size_t);
+            ^~~~~~~~~~~
+
+</pre>
+
+					
+					<h4>examples/as5200l_test</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:15:1: error: &#39;AS5200L&#39; does not name a type
+ AS5200L magneticEncoderBottom(bottomSensorAddress);
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:16:1: error: &#39;AS5200L&#39; does not name a type
+ AS5200L magneticEncoderTop(topSensorAddress);
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:30:16: error: &#39;magneticEncoderBottom&#39; was not declared in this scope
+ magnetStatus = magneticEncoderBottom.getMagnetStatus();
+                ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:31:21: error: &#39;AS5200L_magnet_notDetected&#39; was not declared in this scope
+ if (magnetStatus == AS5200L_magnet_notDetected) {
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:34:26: error: &#39;AS5200L_magnet_tooWeak&#39; was not declared in this scope
+ else if (magnetStatus == AS5200L_magnet_tooWeak) {
+                          ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:37:26: error: &#39;AS5200L_magnet_tooStrong&#39; was not declared in this scope
+ else if (magnetStatus == AS5200L_magnet_tooStrong) {
+                          ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:40:26: error: &#39;AS5200L_magnet_correct&#39; was not declared in this scope
+ else if (magnetStatus == AS5200L_magnet_correct) {
+                          ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:42:10: error: &#39;class UartClass&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+   Serial.printf(&#34;Sensor gain: %d\n&#34;, magneticEncoderBottom.getGain());
+          ^~~~~~
+          print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:43:10: error: &#39;class UartClass&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+   Serial.printf(&#34;Sensor magnitude: %d\n&#34;, magneticEncoderBottom.getMagnitude());
+          ^~~~~~
+          print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:46:26: error: &#39;AS5200L_magnet_correct&#39; was not declared in this scope
+ } while (magnetStatus != AS5200L_magnet_correct);
+                          ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:48:16: error: &#39;magneticEncoderBottom&#39; was not declared in this scope
+ Serial.println(magneticEncoderBottom.getStartPosition());
+                ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:50:8: error: &#39;class UartClass&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+ Serial.printf(&#34;New start position: %d\n&#34;, magneticEncoderBottom.getStartPosition());
+        ^~~~~~
+        print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:54:8: error: &#39;class UartClass&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+ Serial.printf(&#34;New stop position: %d\n&#34;, magneticEncoderBottom.getStopPosition());
+        ^~~~~~
+        print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:56:36: error: &#39;AS5200L_power_mode_normal&#39; was not declared in this scope
+ magneticEncoderBottom.setPowerMode(AS5200L_power_mode_normal);
+                                    ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:57:37: error: &#39;AS5200L_hysteresis_off&#39; was not declared in this scope
+ magneticEncoderBottom.setHysteresis(AS5200L_hysteresis_off);
+                                     ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:58:37: error: &#39;AS5200L_slow_filter_lsbx16&#39; was not declared in this scope
+ magneticEncoderBottom.setSlowFilter(AS5200L_slow_filter_lsbx16);
+                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:59:37: error: &#39;AS5200L_fast_filter_lsbx24&#39; was not declared in this scope
+ magneticEncoderBottom.setFastFilter(AS5200L_fast_filter_lsbx24);
+                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:65:15: error: &#39;magneticEncoderBottom&#39; was not declared in this scope
+ angleBottom = magneticEncoderBottom.getAngle();
+               ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:66:12: error: &#39;magneticEncoderTop&#39; was not declared in this scope
+ angleTop = magneticEncoderTop.getAngle();
+            ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:67:8: error: &#39;class UartClass&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+ Serial.printf(&#34;%d, %d\n&#34;, angleBottom, angleTop);
+        ^~~~~~
+        print
+
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 13588 bytes (5%) of program storage space. Maximum is 262144 bytes.
+Global variables use 3568 bytes (10%) of dynamic memory, leaving 29200 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+
+					
+					<h4>examples/as5200l_test</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:15:1: error: &#39;AS5200L&#39; does not name a type
+ AS5200L magneticEncoderBottom(bottomSensorAddress);
+ ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:16:1: error: &#39;AS5200L&#39; does not name a type
+ AS5200L magneticEncoderTop(topSensorAddress);
+ ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino: In function &#39;void setup()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:30:16: error: &#39;magneticEncoderBottom&#39; was not declared in this scope
+ magnetStatus = magneticEncoderBottom.getMagnetStatus();
+                ^~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:31:21: error: &#39;AS5200L_magnet_notDetected&#39; was not declared in this scope
+ if (magnetStatus == AS5200L_magnet_notDetected) {
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:34:26: error: &#39;AS5200L_magnet_tooWeak&#39; was not declared in this scope
+ else if (magnetStatus == AS5200L_magnet_tooWeak) {
+                          ^~~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:37:26: error: &#39;AS5200L_magnet_tooStrong&#39; was not declared in this scope
+ else if (magnetStatus == AS5200L_magnet_tooStrong) {
+                          ^~~~~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:40:26: error: &#39;AS5200L_magnet_correct&#39; was not declared in this scope
+ else if (magnetStatus == AS5200L_magnet_correct) {
+                          ^~~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:42:10: error: &#39;class Serial_&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+   Serial.printf(&#34;Sensor gain: %d\n&#34;, magneticEncoderBottom.getGain());
+          ^~~~~~
+          print
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:43:10: error: &#39;class Serial_&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+   Serial.printf(&#34;Sensor magnitude: %d\n&#34;, magneticEncoderBottom.getMagnitude());
+          ^~~~~~
+          print
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:46:26: error: &#39;AS5200L_magnet_correct&#39; was not declared in this scope
+ } while (magnetStatus != AS5200L_magnet_correct);
+                          ^~~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:48:16: error: &#39;magneticEncoderBottom&#39; was not declared in this scope
+ Serial.println(magneticEncoderBottom.getStartPosition());
+                ^~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:50:8: error: &#39;class Serial_&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+ Serial.printf(&#34;New start position: %d\n&#34;, magneticEncoderBottom.getStartPosition());
+        ^~~~~~
+        print
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:54:8: error: &#39;class Serial_&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+ Serial.printf(&#34;New stop position: %d\n&#34;, magneticEncoderBottom.getStopPosition());
+        ^~~~~~
+        print
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:56:36: error: &#39;AS5200L_power_mode_normal&#39; was not declared in this scope
+ magneticEncoderBottom.setPowerMode(AS5200L_power_mode_normal);
+                                    ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:57:37: error: &#39;AS5200L_hysteresis_off&#39; was not declared in this scope
+ magneticEncoderBottom.setHysteresis(AS5200L_hysteresis_off);
+                                     ^~~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:58:37: error: &#39;AS5200L_slow_filter_lsbx16&#39; was not declared in this scope
+ magneticEncoderBottom.setSlowFilter(AS5200L_slow_filter_lsbx16);
+                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:59:37: error: &#39;AS5200L_fast_filter_lsbx24&#39; was not declared in this scope
+ magneticEncoderBottom.setFastFilter(AS5200L_fast_filter_lsbx24);
+                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino: In function &#39;void loop()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:65:15: error: &#39;magneticEncoderBottom&#39; was not declared in this scope
+ angleBottom = magneticEncoderBottom.getAngle();
+               ^~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:66:12: error: &#39;magneticEncoderTop&#39; was not declared in this scope
+ angleTop = magneticEncoderTop.getAngle();
+            ^~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:67:8: error: &#39;class Serial_&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+ Serial.printf(&#34;%d, %d\n&#34;, angleBottom, angleTop);
+        ^~~~~~
+        print
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 202970 bytes (15%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 13880 bytes (4%) of dynamic memory, leaving 313800 bytes for local variables. Maximum is 327680 bytes.
+</pre>
+
+					
+					<h4>examples/as5200l_test</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:15:1: error: &#39;AS5200L&#39; does not name a type
+ AS5200L magneticEncoderBottom(bottomSensorAddress);
+ ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:16:1: error: &#39;AS5200L&#39; does not name a type
+ AS5200L magneticEncoderTop(topSensorAddress);
+ ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:30:16: error: &#39;magneticEncoderBottom&#39; was not declared in this scope
+ magnetStatus = magneticEncoderBottom.getMagnetStatus();
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:31:21: error: &#39;AS5200L_magnet_notDetected&#39; was not declared in this scope
+ if (magnetStatus == AS5200L_magnet_notDetected) {
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:34:26: error: &#39;AS5200L_magnet_tooWeak&#39; was not declared in this scope
+ else if (magnetStatus == AS5200L_magnet_tooWeak) {
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:37:26: error: &#39;AS5200L_magnet_tooStrong&#39; was not declared in this scope
+ else if (magnetStatus == AS5200L_magnet_tooStrong) {
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:40:26: error: &#39;AS5200L_magnet_correct&#39; was not declared in this scope
+ else if (magnetStatus == AS5200L_magnet_correct) {
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:46:26: error: &#39;AS5200L_magnet_correct&#39; was not declared in this scope
+ } while (magnetStatus != AS5200L_magnet_correct);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:48:16: error: &#39;magneticEncoderBottom&#39; was not declared in this scope
+ Serial.println(magneticEncoderBottom.getStartPosition());
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:56:36: error: &#39;AS5200L_power_mode_normal&#39; was not declared in this scope
+ magneticEncoderBottom.setPowerMode(AS5200L_power_mode_normal);
+                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:57:37: error: &#39;AS5200L_hysteresis_off&#39; was not declared in this scope
+ magneticEncoderBottom.setHysteresis(AS5200L_hysteresis_off);
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:58:37: error: &#39;AS5200L_slow_filter_lsbx16&#39; was not declared in this scope
+ magneticEncoderBottom.setSlowFilter(AS5200L_slow_filter_lsbx16);
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:59:37: error: &#39;AS5200L_fast_filter_lsbx24&#39; was not declared in this scope
+ magneticEncoderBottom.setFastFilter(AS5200L_fast_filter_lsbx24);
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:65:15: error: &#39;magneticEncoderBottom&#39; was not declared in this scope
+ angleBottom = magneticEncoderBottom.getAngle();
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AS5200L/examples/as5200l_test/as5200l_test.ino:66:12: error: &#39;magneticEncoderTop&#39; was not declared in this scope
+ angleTop = magneticEncoderTop.getAngle();
+            ^
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

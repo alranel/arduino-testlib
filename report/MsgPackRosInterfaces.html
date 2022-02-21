@@ -1,0 +1,835 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>MsgPackRosInterfaces - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>MsgPackRosInterfaces</h2>
+				<p>
+					Version: <b>0.1.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/msgpackrosinterfaces/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>arduino</pre></th>
+						
+						<th><pre>ros2_foxy</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+										
+									
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+										
+									
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosGeometryMsgs.h:6:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces.h:7,
+                 from /tmp/arduino-testlib1184078094/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/geometry_msgs.h:5:10: fatal error: array: No such file or directory
+ #include &lt;array&gt;
+          ^~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/arduino</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosGeometryMsgs.h:6:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces.h:7,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/examples/arduino/arduino.ino:3:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/geometry_msgs.h:5:10: fatal error: array: No such file or directory
+ #include &lt;array&gt;
+          ^~~~~~~
+compilation terminated.
+
+</pre>
+					
+					<h4>examples/ros2_foxy</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable"></pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/std_msgs.h:5:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:5,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosDiagnosticMsgs.h:6,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces.h:6,
+                 from /tmp/arduino-testlib2200379086/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/../rcl_interfaces/builtin_interfaces.h:28:24: error: &#39;sec&#39; is not a type
+         MSGPACK_DEFINE(sec, nanosec);
+                        ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/../rcl_interfaces/builtin_interfaces.h:28:29: error: &#39;nanosec&#39; is not a type
+         MSGPACK_DEFINE(sec, nanosec);
+                             ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/../rcl_interfaces/builtin_interfaces.h:28:36: error: ISO C&#43;&#43; forbids declaration of &#39;MSGPACK_DEFINE&#39; with no type [-fpermissive]
+         MSGPACK_DEFINE(sec, nanosec);
+                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/../rcl_interfaces/builtin_interfaces.h:55:24: error: &#39;sec&#39; is not a type
+         MSGPACK_DEFINE(sec, nanosec);
+                        ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/../rcl_interfaces/builtin_interfaces.h:55:29: error: &#39;nanosec&#39; is not a type
+         MSGPACK_DEFINE(sec, nanosec);
+                             ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/../rcl_interfaces/builtin_interfaces.h:55:36: error: ISO C&#43;&#43; forbids declaration of &#39;MSGPACK_DEFINE&#39; with no type [-fpermissive]
+         MSGPACK_DEFINE(sec, nanosec);
+                                    ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:5:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosDiagnosticMsgs.h:6,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces.h:6,
+                 from /tmp/arduino-testlib2200379086/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/std_msgs.h:32:9: error: &#39;MsgPack&#39; does not name a type
+         MsgPack::str_t frame_id;
+         ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/std_msgs.h:33:24: error: &#39;stamp&#39; is not a type
+         MSGPACK_DEFINE(stamp, frame_id);
+                        ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/std_msgs.h:33:31: error: &#39;frame_id&#39; has not been declared
+         MSGPACK_DEFINE(stamp, frame_id);
+                               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/std_msgs.h:33:39: error: ISO C&#43;&#43; forbids declaration of &#39;MSGPACK_DEFINE&#39; with no type [-fpermissive]
+         MSGPACK_DEFINE(stamp, frame_id);
+                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/std_msgs.h:58:24: error: &#39;r&#39; is not a type
+         MSGPACK_DEFINE(r, g, b, a);
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/std_msgs.h:58:27: error: &#39;g&#39; is not a type
+         MSGPACK_DEFINE(r, g, b, a);
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/std_msgs.h:58:30: error: &#39;b&#39; is not a type
+         MSGPACK_DEFINE(r, g, b, a);
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/std_msgs.h:58:33: error: &#39;a&#39; is not a type
+         MSGPACK_DEFINE(r, g, b, a);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/std_msgs.h:58:34: error: ISO C&#43;&#43; forbids declaration of &#39;MSGPACK_DEFINE&#39; with no type [-fpermissive]
+         MSGPACK_DEFINE(r, g, b, a);
+                                  ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosDiagnosticMsgs.h:6:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces.h:6,
+                 from /tmp/arduino-testlib2200379086/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:24:9: error: &#39;MsgPack&#39; does not name a type
+         MsgPack::str_t key;
+         ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:25:9: error: &#39;MsgPack&#39; does not name a type
+         MsgPack::str_t value;
+         ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:26:24: error: &#39;key&#39; has not been declared
+         MSGPACK_DEFINE(key, value);
+                        ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:26:29: error: &#39;value&#39; has not been declared
+         MSGPACK_DEFINE(key, value);
+                             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:26:34: error: ISO C&#43;&#43; forbids declaration of &#39;MSGPACK_DEFINE&#39; with no type [-fpermissive]
+         MSGPACK_DEFINE(key, value);
+                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:67:9: error: &#39;MsgPack&#39; does not name a type
+         MsgPack::str_t name;
+         ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:68:9: error: &#39;MsgPack&#39; does not name a type
+         MsgPack::str_t message;
+         ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:69:9: error: &#39;MsgPack&#39; does not name a type
+         MsgPack::str_t hardware_id;
+         ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:71:24: error: &#39;level&#39; is not a type
+         MSGPACK_DEFINE(level, name, message, hardware_id);
+                        ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:71:31: error: &#39;name&#39; has not been declared
+         MSGPACK_DEFINE(level, name, message, hardware_id);
+                               ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:71:37: error: &#39;message&#39; has not been declared
+         MSGPACK_DEFINE(level, name, message, hardware_id);
+                                     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:71:46: error: &#39;hardware_id&#39; has not been declared
+         MSGPACK_DEFINE(level, name, message, hardware_id);
+                                              ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:71:57: error: ISO C&#43;&#43; forbids declaration of &#39;MSGPACK_DEFINE&#39; with no type [-fpermissive]
+         MSGPACK_DEFINE(level, name, message, hardware_id);
+                                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:98:9: error: &#39;MsgPack&#39; does not name a type
+         MsgPack::arr_t&lt;DiagnosticStatus&gt; status;
+         ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:99:24: error: &#39;header&#39; is not a type
+         MSGPACK_DEFINE(header, status);
+                        ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:99:32: error: &#39;status&#39; has not been declared
+         MSGPACK_DEFINE(header, status);
+                                ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:99:38: error: ISO C&#43;&#43; forbids declaration of &#39;MSGPACK_DEFINE&#39; with no type [-fpermissive]
+         MSGPACK_DEFINE(header, status);
+                                      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosGeometryMsgs.h:6:0</pre>
+
+					
+					<h4>examples/arduino</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPacketizer/MsgPacketizer/util/Packetizer/Packetizer/util/CRCx/FastCRC/FastCRCsw.h:71:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPacketizer/MsgPacketizer/util/Packetizer/Packetizer/util/CRCx/FastCRC/FastCRC.h:8,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPacketizer/MsgPacketizer/util/Packetizer/Packetizer/util/CRCx/CRCx.h:8,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPacketizer/MsgPacketizer/util/Packetizer/Packetizer/Encoding.h:6,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPacketizer/MsgPacketizer/util/Packetizer/Packetizer.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPacketizer/MsgPacketizer.h:72,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/examples/arduino/arduino.ino:2:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPacketizer/MsgPacketizer/util/Packetizer/Packetizer/util/CRCx/FastCRC/FastCRC_tables.h:38:10: fatal error: pgmspace.h: No such file or directory
+ #include &lt;pgmspace.h&gt;
+          ^~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+					<h4>examples/ros2_foxy</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable"></pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosGeometryMsgs.h:6:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces.h:7,
+                 from /tmp/arduino-testlib2200379086/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/geometry_msgs.h:5:10: fatal error: array: No such file or directory
+ #include &lt;array&gt;
+          ^~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/arduino</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosGeometryMsgs.h:6:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces.h:7,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/examples/arduino/arduino.ino:3:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/geometry_msgs.h:5:10: fatal error: array: No such file or directory
+ #include &lt;array&gt;
+          ^~~~~~~
+compilation terminated.
+
+</pre>
+					
+					<h4>examples/ros2_foxy</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable"></pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/std_msgs.h:5:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:5,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosDiagnosticMsgs.h:6,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces.h:6,
+                 from /tmp/arduino-testlib1184078094/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/../rcl_interfaces/builtin_interfaces.h:28:24: error: &#39;sec&#39; is not a type
+         MSGPACK_DEFINE(sec, nanosec);
+                        ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/../rcl_interfaces/builtin_interfaces.h:28:29: error: &#39;nanosec&#39; is not a type
+         MSGPACK_DEFINE(sec, nanosec);
+                             ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/../rcl_interfaces/builtin_interfaces.h:28:36: error: ISO C&#43;&#43; forbids declaration of &#39;MSGPACK_DEFINE&#39; with no type [-fpermissive]
+         MSGPACK_DEFINE(sec, nanosec);
+                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/../rcl_interfaces/builtin_interfaces.h:55:24: error: &#39;sec&#39; is not a type
+         MSGPACK_DEFINE(sec, nanosec);
+                        ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/../rcl_interfaces/builtin_interfaces.h:55:29: error: &#39;nanosec&#39; is not a type
+         MSGPACK_DEFINE(sec, nanosec);
+                             ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/../rcl_interfaces/builtin_interfaces.h:55:36: error: ISO C&#43;&#43; forbids declaration of &#39;MSGPACK_DEFINE&#39; with no type [-fpermissive]
+         MSGPACK_DEFINE(sec, nanosec);
+                                    ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:5:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosDiagnosticMsgs.h:6,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces.h:6,
+                 from /tmp/arduino-testlib1184078094/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/std_msgs.h:32:9: error: &#39;MsgPack&#39; does not name a type
+         MsgPack::str_t frame_id;
+         ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/std_msgs.h:33:24: error: &#39;stamp&#39; is not a type
+         MSGPACK_DEFINE(stamp, frame_id);
+                        ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/std_msgs.h:33:31: error: &#39;frame_id&#39; has not been declared
+         MSGPACK_DEFINE(stamp, frame_id);
+                               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/std_msgs.h:33:39: error: ISO C&#43;&#43; forbids declaration of &#39;MSGPACK_DEFINE&#39; with no type [-fpermissive]
+         MSGPACK_DEFINE(stamp, frame_id);
+                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/std_msgs.h:58:24: error: &#39;r&#39; is not a type
+         MSGPACK_DEFINE(r, g, b, a);
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/std_msgs.h:58:27: error: &#39;g&#39; is not a type
+         MSGPACK_DEFINE(r, g, b, a);
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/std_msgs.h:58:30: error: &#39;b&#39; is not a type
+         MSGPACK_DEFINE(r, g, b, a);
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/std_msgs.h:58:33: error: &#39;a&#39; is not a type
+         MSGPACK_DEFINE(r, g, b, a);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/std_msgs.h:58:34: error: ISO C&#43;&#43; forbids declaration of &#39;MSGPACK_DEFINE&#39; with no type [-fpermissive]
+         MSGPACK_DEFINE(r, g, b, a);
+                                  ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosDiagnosticMsgs.h:6:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces.h:6,
+                 from /tmp/arduino-testlib1184078094/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:24:9: error: &#39;MsgPack&#39; does not name a type
+         MsgPack::str_t key;
+         ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:25:9: error: &#39;MsgPack&#39; does not name a type
+         MsgPack::str_t value;
+         ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:26:24: error: &#39;key&#39; has not been declared
+         MSGPACK_DEFINE(key, value);
+                        ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:26:29: error: &#39;value&#39; has not been declared
+         MSGPACK_DEFINE(key, value);
+                             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:26:34: error: ISO C&#43;&#43; forbids declaration of &#39;MSGPACK_DEFINE&#39; with no type [-fpermissive]
+         MSGPACK_DEFINE(key, value);
+                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:67:9: error: &#39;MsgPack&#39; does not name a type
+         MsgPack::str_t name;
+         ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:68:9: error: &#39;MsgPack&#39; does not name a type
+         MsgPack::str_t message;
+         ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:69:9: error: &#39;MsgPack&#39; does not name a type
+         MsgPack::str_t hardware_id;
+         ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:71:24: error: &#39;level&#39; is not a type
+         MSGPACK_DEFINE(level, name, message, hardware_id);
+                        ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:71:31: error: &#39;name&#39; has not been declared
+         MSGPACK_DEFINE(level, name, message, hardware_id);
+                               ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:71:37: error: &#39;message&#39; has not been declared
+         MSGPACK_DEFINE(level, name, message, hardware_id);
+                                     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:71:46: error: &#39;hardware_id&#39; has not been declared
+         MSGPACK_DEFINE(level, name, message, hardware_id);
+                                              ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:71:57: error: ISO C&#43;&#43; forbids declaration of &#39;MSGPACK_DEFINE&#39; with no type [-fpermissive]
+         MSGPACK_DEFINE(level, name, message, hardware_id);
+                                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:98:9: error: &#39;MsgPack&#39; does not name a type
+         MsgPack::arr_t&lt;DiagnosticStatus&gt; status;
+         ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:99:24: error: &#39;header&#39; is not a type
+         MSGPACK_DEFINE(header, status);
+                        ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:99:32: error: &#39;status&#39; has not been declared
+         MSGPACK_DEFINE(header, status);
+                                ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:99:38: error: ISO C&#43;&#43; forbids declaration of &#39;MSGPACK_DEFINE&#39; with no type [-fpermissive]
+         MSGPACK_DEFINE(header, status);
+                                      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosGeometryMsgs.h:6:0</pre>
+
+					
+					<h4>examples/arduino</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 27220 bytes (10%) of program storage space. Maximum is 262144 bytes.
+Global variables use 3360 bytes (10%) of dynamic memory, leaving 29408 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+					
+					<h4>examples/ros2_foxy</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable"></pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/std_msgs.h:5:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:5,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosDiagnosticMsgs.h:6,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces.h:6,
+                 from /tmp/arduino-testlib3999950547/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/../rcl_interfaces/builtin_interfaces.h:28:24: error: &#39;sec&#39; is not a type
+         MSGPACK_DEFINE(sec, nanosec);
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/../rcl_interfaces/builtin_interfaces.h:28:29: error: &#39;nanosec&#39; is not a type
+         MSGPACK_DEFINE(sec, nanosec);
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/../rcl_interfaces/builtin_interfaces.h:28:36: error: ISO C&#43;&#43; forbids declaration of &#39;MSGPACK_DEFINE&#39; with no type [-fpermissive]
+         MSGPACK_DEFINE(sec, nanosec);
+                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/../rcl_interfaces/builtin_interfaces.h:55:24: error: &#39;sec&#39; is not a type
+         MSGPACK_DEFINE(sec, nanosec);
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/../rcl_interfaces/builtin_interfaces.h:55:29: error: &#39;nanosec&#39; is not a type
+         MSGPACK_DEFINE(sec, nanosec);
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/../rcl_interfaces/builtin_interfaces.h:55:36: error: ISO C&#43;&#43; forbids declaration of &#39;MSGPACK_DEFINE&#39; with no type [-fpermissive]
+         MSGPACK_DEFINE(sec, nanosec);
+                                    ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:5:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosDiagnosticMsgs.h:6,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces.h:6,
+                 from /tmp/arduino-testlib3999950547/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/std_msgs.h:32:9: error: &#39;MsgPack&#39; does not name a type
+         MsgPack::str_t frame_id;
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/std_msgs.h:33:24: error: &#39;stamp&#39; is not a type
+         MSGPACK_DEFINE(stamp, frame_id);
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/std_msgs.h:33:31: error: &#39;frame_id&#39; has not been declared
+         MSGPACK_DEFINE(stamp, frame_id);
+                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/std_msgs.h:33:39: error: ISO C&#43;&#43; forbids declaration of &#39;MSGPACK_DEFINE&#39; with no type [-fpermissive]
+         MSGPACK_DEFINE(stamp, frame_id);
+                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/std_msgs.h:58:24: error: &#39;r&#39; is not a type
+         MSGPACK_DEFINE(r, g, b, a);
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/std_msgs.h:58:27: error: &#39;g&#39; is not a type
+         MSGPACK_DEFINE(r, g, b, a);
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/std_msgs.h:58:30: error: &#39;b&#39; is not a type
+         MSGPACK_DEFINE(r, g, b, a);
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/std_msgs.h:58:33: error: &#39;a&#39; is not a type
+         MSGPACK_DEFINE(r, g, b, a);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/std_msgs.h:58:34: error: ISO C&#43;&#43; forbids declaration of &#39;MSGPACK_DEFINE&#39; with no type [-fpermissive]
+         MSGPACK_DEFINE(r, g, b, a);
+                                  ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosDiagnosticMsgs.h:6:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces.h:6,
+                 from /tmp/arduino-testlib3999950547/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:24:9: error: &#39;MsgPack&#39; does not name a type
+         MsgPack::str_t key;
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:25:9: error: &#39;MsgPack&#39; does not name a type
+         MsgPack::str_t value;
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:26:24: error: &#39;key&#39; has not been declared
+         MSGPACK_DEFINE(key, value);
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:26:29: error: &#39;value&#39; has not been declared
+         MSGPACK_DEFINE(key, value);
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:26:34: error: ISO C&#43;&#43; forbids declaration of &#39;MSGPACK_DEFINE&#39; with no type [-fpermissive]
+         MSGPACK_DEFINE(key, value);
+                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:67:9: error: &#39;MsgPack&#39; does not name a type
+         MsgPack::str_t name;
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:68:9: error: &#39;MsgPack&#39; does not name a type
+         MsgPack::str_t message;
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:69:9: error: &#39;MsgPack&#39; does not name a type
+         MsgPack::str_t hardware_id;
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:71:24: error: &#39;level&#39; is not a type
+         MSGPACK_DEFINE(level, name, message, hardware_id);
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:71:31: error: &#39;name&#39; has not been declared
+         MSGPACK_DEFINE(level, name, message, hardware_id);
+                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:71:37: error: &#39;message&#39; has not been declared
+         MSGPACK_DEFINE(level, name, message, hardware_id);
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:71:46: error: &#39;hardware_id&#39; has not been declared
+         MSGPACK_DEFINE(level, name, message, hardware_id);
+                                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:71:57: error: ISO C&#43;&#43; forbids declaration of &#39;MSGPACK_DEFINE&#39; with no type [-fpermissive]
+         MSGPACK_DEFINE(level, name, message, hardware_id);
+                                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:98:9: error: &#39;MsgPack&#39; does not name a type
+         MsgPack::arr_t&lt;DiagnosticStatus&gt; status;
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:99:24: error: &#39;header&#39; is not a type
+         MSGPACK_DEFINE(header, status);
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:99:32: error: &#39;status&#39; has not been declared
+         MSGPACK_DEFINE(header, status);
+                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosInterfaces/common_interfaces/diagnostic_msgs.h:99:38: error: ISO C&#43;&#43; forbids declaration of &#39;MSGPACK_DEFINE&#39; with no type [-fpermissive]
+         MSGPACK_DEFINE(header, status);
+                                      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPackRosGeometryMsgs.h:6:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MsgPackRosInterfaces/MsgPa</pre>
+
+					
+					<h4>examples/arduino</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 275242 bytes (20%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 14184 bytes (4%) of dynamic memory, leaving 313496 bytes for local variables. Maximum is 327680 bytes.
+</pre>
+					
+					<h4>examples/ros2_foxy</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable"></pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

@@ -1,0 +1,699 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>iBit_Arduino - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>iBit_Arduino</h2>
+				<p>
+					Version: <b>1.0.2</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/ibit_arduino/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>ibit_sample</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library iBit_Arduino claims to run on nRF5 architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp: In function &#39;void TIMER0_IRQHandler()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:85:9: error: &#39;NRF_TIMER0&#39; was not declared in this scope
+         NRF_TIMER0-&gt;EVENTS_COMPARE[0] = 0;
+         ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:85:9: note: suggested alternative: &#39;TIMER2&#39;
+         NRF_TIMER0-&gt;EVENTS_COMPARE[0] = 0;
+         ^~~~~~~~~~
+         TIMER2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:91:17: error: &#39;NRF_GPIO&#39; was not declared in this scope
+                 NRF_GPIO-&gt;OUTCLR = (1 &lt;&lt; (uint32_t)(SERVO(_timer0,Channel[_timer0]).Pin.nbr) );
+                 ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:100:17: error: &#39;NRF_GPIO&#39; was not declared in this scope
+                 NRF_GPIO-&gt;OUTSET = ( 1 &lt;&lt; (uint32_t)(SERVO(_timer0,Channel[_timer0]).Pin.nbr) );
+                 ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp: In function &#39;void InitISR_handler()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:120:5: error: &#39;__disable_irq&#39; was not declared in this scope
+     __disable_irq();
+     ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:122:5: error: &#39;NRF_TIMER0&#39; was not declared in this scope
+     NRF_TIMER0-&gt;TASKS_STOP = 1;
+     ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:122:5: note: suggested alternative: &#39;TIMER2&#39;
+     NRF_TIMER0-&gt;TASKS_STOP = 1;
+     ^~~~~~~~~~
+     TIMER2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:123:24: error: &#39;TIMER_MODE_MODE_Timer&#39; was not declared in this scope
+     NRF_TIMER0-&gt;MODE = TIMER_MODE_MODE_Timer;
+                        ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:125:27: error: &#39;TIMER_BITMODE_BITMODE_16Bit&#39; was not declared in this scope
+     NRF_TIMER0-&gt;BITMODE = TIMER_BITMODE_BITMODE_16Bit;
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:127:36: error: &#39;VARIANT_MCK&#39; was not declared in this scope
+     NRF_TIMER0-&gt;CC[0] = (uint32_t)(VARIANT_MCK/8/1000); // 1ms
+                                    ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:129:29: error: &#39;TIMER_INTENSET_COMPARE0_Set&#39; was not declared in this scope
+     NRF_TIMER0-&gt;INTENSET = (TIMER_INTENSET_COMPARE0_Set &lt;&lt; TIMER_INTENSET_COMPARE0_Pos);
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:129:60: error: &#39;TIMER_INTENSET_COMPARE0_Pos&#39; was not declared in this scope
+     NRF_TIMER0-&gt;INTENSET = (TIMER_INTENSET_COMPARE0_Set &lt;&lt; TIMER_INTENSET_COMPARE0_Pos);
+                                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:131:22: error: &#39;TIMER0_IRQn&#39; was not declared in this scope
+     NVIC_SetPriority(TIMER0_IRQn, 1);
+                      ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:131:22: note: suggested alternative: &#39;TIMER0A&#39;
+     NVIC_SetPriority(TIMER0_IRQn, 1);
+                      ^~~~~~~~~~~
+                      TIMER0A
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:131:5: error: &#39;NVIC_SetPriority&#39; was not declared in this scope
+     NVIC_SetPriority(TIMER0_IRQn, 1);
+     ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:132:5: error: &#39;NVIC_EnableIRQ&#39; was not declared in this scope
+     NVIC_EnableIRQ(TIMER0_IRQn);
+     ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:134:5: error: &#39;__enable_irq&#39; was not declared in this scope
+     __enable_irq();
+     ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp: In function &#39;void finISR(timer16_Sequence_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:155:9: error: &#39;NRF_TIMER0&#39; was not declared in this scope
+         NRF_TIMER0-&gt;TASKS_STOP = 1;
+         ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:155:9: note: suggested alternative: &#39;TIMER2&#39;
+         NRF_TIMER0-&gt;TASKS_STOP = 1;
+         ^~~~~~~~~~
+         TIMER2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp: In member function &#39;uint8_t Servo::attach(uint32_t, uint16_t, uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:213:19: error: &#39;g_ADigitalPinMap&#39; was not declared in this scope
+         nrf_pin = g_ADigitalPinMap[pin];
+                   ^~~~~~~~~~~~~~~~
+
+</pre>
+
+					
+					<h4>examples/ibit_sample</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library iBit_Arduino claims to run on nRF5 architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/examples/ibit_sample/ibit_sample.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/IBIT.h: In function &#39;void IBIT()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/IBIT.h:11:5: error: &#39;analogReadResolution&#39; was not declared in this scope
+     analogReadResolution(12);
+     ^~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/IBIT.h:11:5: note: suggested alternative: &#39;analogRead&#39;
+     analogReadResolution(12);
+     ^~~~~~~~~~~~~~~~~~~~
+     analogRead
+
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library iBit_Arduino claims to run on nRF5 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+
+</pre>
+
+					
+					<h4>examples/ibit_sample</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library iBit_Arduino claims to run on nRF5 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library iBit_Arduino claims to run on nRF5 architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp: In function &#39;void TIMER0_IRQHandler()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:85:9: error: &#39;NRF_TIMER0&#39; was not declared in this scope
+         NRF_TIMER0-&gt;EVENTS_COMPARE[0] = 0;
+         ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:85:9: note: suggested alternative: &#39;TIMERA0&#39;
+         NRF_TIMER0-&gt;EVENTS_COMPARE[0] = 0;
+         ^~~~~~~~~~
+         TIMERA0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:91:17: error: &#39;NRF_GPIO&#39; was not declared in this scope
+                 NRF_GPIO-&gt;OUTCLR = (1 &lt;&lt; (uint32_t)(SERVO(_timer0,Channel[_timer0]).Pin.nbr) );
+                 ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:100:17: error: &#39;NRF_GPIO&#39; was not declared in this scope
+                 NRF_GPIO-&gt;OUTSET = ( 1 &lt;&lt; (uint32_t)(SERVO(_timer0,Channel[_timer0]).Pin.nbr) );
+                 ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp: In function &#39;void InitISR_handler()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:120:5: error: &#39;__disable_irq&#39; was not declared in this scope
+     __disable_irq();
+     ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:122:5: error: &#39;NRF_TIMER0&#39; was not declared in this scope
+     NRF_TIMER0-&gt;TASKS_STOP = 1;
+     ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:122:5: note: suggested alternative: &#39;TIMERA0&#39;
+     NRF_TIMER0-&gt;TASKS_STOP = 1;
+     ^~~~~~~~~~
+     TIMERA0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:123:24: error: &#39;TIMER_MODE_MODE_Timer&#39; was not declared in this scope
+     NRF_TIMER0-&gt;MODE = TIMER_MODE_MODE_Timer;
+                        ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:125:27: error: &#39;TIMER_BITMODE_BITMODE_16Bit&#39; was not declared in this scope
+     NRF_TIMER0-&gt;BITMODE = TIMER_BITMODE_BITMODE_16Bit;
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:127:36: error: &#39;VARIANT_MCK&#39; was not declared in this scope
+     NRF_TIMER0-&gt;CC[0] = (uint32_t)(VARIANT_MCK/8/1000); // 1ms
+                                    ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:129:29: error: &#39;TIMER_INTENSET_COMPARE0_Set&#39; was not declared in this scope
+     NRF_TIMER0-&gt;INTENSET = (TIMER_INTENSET_COMPARE0_Set &lt;&lt; TIMER_INTENSET_COMPARE0_Pos);
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:129:60: error: &#39;TIMER_INTENSET_COMPARE0_Pos&#39; was not declared in this scope
+     NRF_TIMER0-&gt;INTENSET = (TIMER_INTENSET_COMPARE0_Set &lt;&lt; TIMER_INTENSET_COMPARE0_Pos);
+                                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:131:22: error: &#39;TIMER0_IRQn&#39; was not declared in this scope
+     NVIC_SetPriority(TIMER0_IRQn, 1);
+                      ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:131:22: note: suggested alternative: &#39;TIMER0_IRQHandler&#39;
+     NVIC_SetPriority(TIMER0_IRQn, 1);
+                      ^~~~~~~~~~~
+                      TIMER0_IRQHandler
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:131:5: error: &#39;NVIC_SetPriority&#39; was not declared in this scope
+     NVIC_SetPriority(TIMER0_IRQn, 1);
+     ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:132:5: error: &#39;NVIC_EnableIRQ&#39; was not declared in this scope
+     NVIC_EnableIRQ(TIMER0_IRQn);
+     ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:134:5: error: &#39;__enable_irq&#39; was not declared in this scope
+     __enable_irq();
+     ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp: In function &#39;void finISR(timer16_Sequence_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:155:9: error: &#39;NRF_TIMER0&#39; was not declared in this scope
+         NRF_TIMER0-&gt;TASKS_STOP = 1;
+         ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:155:9: note: suggested alternative: &#39;TIMERA0&#39;
+         NRF_TIMER0-&gt;TASKS_STOP = 1;
+         ^~~~~~~~~~
+         TIMERA0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp: In member function &#39;uint8_t Servo::attach(uint32_t, uint16_t, uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:213:19: error: &#39;g_ADigitalPinMap&#39; was not declared in this scope
+         nrf_pin = g_ADigitalPinMap[pin];
+                   ^~~~~~~~~~~~~~~~
+
+</pre>
+
+					
+					<h4>examples/ibit_sample</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library iBit_Arduino claims to run on nRF5 architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/examples/ibit_sample/ibit_sample.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/IBIT.h: In function &#39;void IBIT()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/IBIT.h:11:5: error: &#39;analogReadResolution&#39; was not declared in this scope
+     analogReadResolution(12);
+     ^~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/IBIT.h:11:5: note: suggested alternative: &#39;analogRead&#39;
+     analogReadResolution(12);
+     ^~~~~~~~~~~~~~~~~~~~
+     analogRead
+
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library iBit_Arduino claims to run on nRF5 architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp: In function &#39;void TIMER0_IRQHandler()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:85:9: error: &#39;NRF_TIMER0&#39; was not declared in this scope
+         NRF_TIMER0-&gt;EVENTS_COMPARE[0] = 0;
+         ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:85:9: note: suggested alternative: &#39;PIO_TIMER&#39;
+         NRF_TIMER0-&gt;EVENTS_COMPARE[0] = 0;
+         ^~~~~~~~~~
+         PIO_TIMER
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:91:17: error: &#39;NRF_GPIO&#39; was not declared in this scope
+                 NRF_GPIO-&gt;OUTCLR = (1 &lt;&lt; (uint32_t)(SERVO(_timer0,Channel[_timer0]).Pin.nbr) );
+                 ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:91:17: note: suggested alternative: &#39;NINA_GPIO0&#39;
+                 NRF_GPIO-&gt;OUTCLR = (1 &lt;&lt; (uint32_t)(SERVO(_timer0,Channel[_timer0]).Pin.nbr) );
+                 ^~~~~~~~
+                 NINA_GPIO0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:100:17: error: &#39;NRF_GPIO&#39; was not declared in this scope
+                 NRF_GPIO-&gt;OUTSET = ( 1 &lt;&lt; (uint32_t)(SERVO(_timer0,Channel[_timer0]).Pin.nbr) );
+                 ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:100:17: note: suggested alternative: &#39;NINA_GPIO0&#39;
+                 NRF_GPIO-&gt;OUTSET = ( 1 &lt;&lt; (uint32_t)(SERVO(_timer0,Channel[_timer0]).Pin.nbr) );
+                 ^~~~~~~~
+                 NINA_GPIO0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp: In function &#39;void InitISR_handler()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:122:5: error: &#39;NRF_TIMER0&#39; was not declared in this scope
+     NRF_TIMER0-&gt;TASKS_STOP = 1;
+     ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:122:5: note: suggested alternative: &#39;PIO_TIMER&#39;
+     NRF_TIMER0-&gt;TASKS_STOP = 1;
+     ^~~~~~~~~~
+     PIO_TIMER
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:123:24: error: &#39;TIMER_MODE_MODE_Timer&#39; was not declared in this scope
+     NRF_TIMER0-&gt;MODE = TIMER_MODE_MODE_Timer;
+                        ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:125:27: error: &#39;TIMER_BITMODE_BITMODE_16Bit&#39; was not declared in this scope
+     NRF_TIMER0-&gt;BITMODE = TIMER_BITMODE_BITMODE_16Bit;
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:129:29: error: &#39;TIMER_INTENSET_COMPARE0_Set&#39; was not declared in this scope
+     NRF_TIMER0-&gt;INTENSET = (TIMER_INTENSET_COMPARE0_Set &lt;&lt; TIMER_INTENSET_COMPARE0_Pos);
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:129:29: note: suggested alternative: &#39;AC_INTENSET_COMP0_Pos&#39;
+     NRF_TIMER0-&gt;INTENSET = (TIMER_INTENSET_COMPARE0_Set &lt;&lt; TIMER_INTENSET_COMPARE0_Pos);
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                             AC_INTENSET_COMP0_Pos
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:129:60: error: &#39;TIMER_INTENSET_COMPARE0_Pos&#39; was not declared in this scope
+     NRF_TIMER0-&gt;INTENSET = (TIMER_INTENSET_COMPARE0_Set &lt;&lt; TIMER_INTENSET_COMPARE0_Pos);
+                                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:129:60: note: suggested alternative: &#39;AC_INTENSET_COMP0_Pos&#39;
+     NRF_TIMER0-&gt;INTENSET = (TIMER_INTENSET_COMPARE0_Set &lt;&lt; TIMER_INTENSET_COMPARE0_Pos);
+                                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                            AC_INTENSET_COMP0_Pos
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:131:22: error: &#39;TIMER0_IRQn&#39; was not declared in this scope
+     NVIC_SetPriority(TIMER0_IRQn, 1);
+                      ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:131:22: note: suggested alternative: &#39;TCC0_IRQn&#39;
+     NVIC_SetPriority(TIMER0_IRQn, 1);
+                      ^~~~~~~~~~~
+                      TCC0_IRQn
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp: In function &#39;void finISR(timer16_Sequence_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:155:9: error: &#39;NRF_TIMER0&#39; was not declared in this scope
+         NRF_TIMER0-&gt;TASKS_STOP = 1;
+         ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:155:9: note: suggested alternative: &#39;PIO_TIMER&#39;
+         NRF_TIMER0-&gt;TASKS_STOP = 1;
+         ^~~~~~~~~~
+         PIO_TIMER
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp: In member function &#39;uint8_t Servo::attach(uint32_t, uint16_t, uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:213:19: error: &#39;g_ADigitalPinMap&#39; was not declared in this scope
+         nrf_pin = g_ADigitalPinMap[pin];
+                   ^~~~~~~~~~~~~~~~
+
+</pre>
+
+					
+					<h4>examples/ibit_sample</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library iBit_Arduino claims to run on nRF5 architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp: In function &#39;void TIMER0_IRQHandler()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:85:9: error: &#39;NRF_TIMER0&#39; was not declared in this scope
+         NRF_TIMER0-&gt;EVENTS_COMPARE[0] = 0;
+         ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:85:9: note: suggested alternative: &#39;PIO_TIMER&#39;
+         NRF_TIMER0-&gt;EVENTS_COMPARE[0] = 0;
+         ^~~~~~~~~~
+         PIO_TIMER
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:91:17: error: &#39;NRF_GPIO&#39; was not declared in this scope
+                 NRF_GPIO-&gt;OUTCLR = (1 &lt;&lt; (uint32_t)(SERVO(_timer0,Channel[_timer0]).Pin.nbr) );
+                 ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:91:17: note: suggested alternative: &#39;NINA_GPIO0&#39;
+                 NRF_GPIO-&gt;OUTCLR = (1 &lt;&lt; (uint32_t)(SERVO(_timer0,Channel[_timer0]).Pin.nbr) );
+                 ^~~~~~~~
+                 NINA_GPIO0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:100:17: error: &#39;NRF_GPIO&#39; was not declared in this scope
+                 NRF_GPIO-&gt;OUTSET = ( 1 &lt;&lt; (uint32_t)(SERVO(_timer0,Channel[_timer0]).Pin.nbr) );
+                 ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:100:17: note: suggested alternative: &#39;NINA_GPIO0&#39;
+                 NRF_GPIO-&gt;OUTSET = ( 1 &lt;&lt; (uint32_t)(SERVO(_timer0,Channel[_timer0]).Pin.nbr) );
+                 ^~~~~~~~
+                 NINA_GPIO0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp: In function &#39;void InitISR_handler()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:122:5: error: &#39;NRF_TIMER0&#39; was not declared in this scope
+     NRF_TIMER0-&gt;TASKS_STOP = 1;
+     ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:122:5: note: suggested alternative: &#39;PIO_TIMER&#39;
+     NRF_TIMER0-&gt;TASKS_STOP = 1;
+     ^~~~~~~~~~
+     PIO_TIMER
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:123:24: error: &#39;TIMER_MODE_MODE_Timer&#39; was not declared in this scope
+     NRF_TIMER0-&gt;MODE = TIMER_MODE_MODE_Timer;
+                        ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:125:27: error: &#39;TIMER_BITMODE_BITMODE_16Bit&#39; was not declared in this scope
+     NRF_TIMER0-&gt;BITMODE = TIMER_BITMODE_BITMODE_16Bit;
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:129:29: error: &#39;TIMER_INTENSET_COMPARE0_Set&#39; was not declared in this scope
+     NRF_TIMER0-&gt;INTENSET = (TIMER_INTENSET_COMPARE0_Set &lt;&lt; TIMER_INTENSET_COMPARE0_Pos);
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:129:29: note: suggested alternative: &#39;AC_INTENSET_COMP0_Pos&#39;
+     NRF_TIMER0-&gt;INTENSET = (TIMER_INTENSET_COMPARE0_Set &lt;&lt; TIMER_INTENSET_COMPARE0_Pos);
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                             AC_INTENSET_COMP0_Pos
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:129:60: error: &#39;TIMER_INTENSET_COMPARE0_Pos&#39; was not declared in this scope
+     NRF_TIMER0-&gt;INTENSET = (TIMER_INTENSET_COMPARE0_Set &lt;&lt; TIMER_INTENSET_COMPARE0_Pos);
+                                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:129:60: note: suggested alternative: &#39;AC_INTENSET_COMP0_Pos&#39;
+     NRF_TIMER0-&gt;INTENSET = (TIMER_INTENSET_COMPARE0_Set &lt;&lt; TIMER_INTENSET_COMPARE0_Pos);
+                                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                            AC_INTENSET_COMP0_Pos
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:131:22: error: &#39;TIMER0_IRQn&#39; was not declared in this scope
+     NVIC_SetPriority(TIMER0_IRQn, 1);
+                      ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:131:22: note: suggested alternative: &#39;TCC0_IRQn&#39;
+     NVIC_SetPriority(TIMER0_IRQn, 1);
+                      ^~~~~~~~~~~
+                      TCC0_IRQn
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp: In function &#39;void finISR(timer16_Sequence_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:155:9: error: &#39;NRF_TIMER0&#39; was not declared in this scope
+         NRF_TIMER0-&gt;TASKS_STOP = 1;
+         ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:155:9: note: suggested alternative: &#39;PIO_TIMER&#39;
+         NRF_TIMER0-&gt;TASKS_STOP = 1;
+         ^~~~~~~~~~
+         PIO_TIMER
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp: In member function &#39;uint8_t Servo::attach(uint32_t, uint16_t, uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/mbitServo.cpp:213:19: error: &#39;g_ADigitalPinMap&#39; was not declared in this scope
+         nrf_pin = g_ADigitalPinMap[pin];
+                   ^~~~~~~~~~~~~~~~
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library iBit_Arduino claims to run on nRF5 architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+
+</pre>
+
+					
+					<h4>examples/ibit_sample</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library iBit_Arduino claims to run on nRF5 architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/IBIT.h:3:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/examples/ibit_sample/ibit_sample.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/IBIT_Motor.h: In function &#39;void motor(char, int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/IBIT_Motor.h:19:29: error: &#39;analogWrite&#39; was not declared in this scope
+         analogWrite(PWM1,Pow);
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/IBIT_Motor.h:23:29: error: &#39;analogWrite&#39; was not declared in this scope
+         analogWrite(PWM2,Pow);
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/IBIT_Motor.h:27:29: error: &#39;analogWrite&#39; was not declared in this scope
+         analogWrite(PWM1,Pow);
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/IBIT_Motor.h: In function &#39;void motor_stop(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/IBIT_Motor.h:35:28: error: &#39;analogWrite&#39; was not declared in this scope
+         analogWrite(PWM1, 0);
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/IBIT_Motor.h:38:28: error: &#39;analogWrite&#39; was not declared in this scope
+         analogWrite(PWM2, 0);
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/IBIT_Motor.h:41:28: error: &#39;analogWrite&#39; was not declared in this scope
+         analogWrite(PWM1, 0);
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/IBIT_Motor.h: In function &#39;void motor1(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/IBIT_Motor.h:50:25: error: &#39;analogWrite&#39; was not declared in this scope
+     analogWrite(PWM1,Pow);
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/IBIT_Motor.h: In function &#39;void motor2(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/IBIT_Motor.h:57:25: error: &#39;analogWrite&#39; was not declared in this scope
+     analogWrite(PWM2,Pow);
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/IBIT_Motor.h: In function &#39;void fd2(int, int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/IBIT_Motor.h:62:48: error: &#39;analogWrite&#39; was not declared in this scope
+   digitalWrite(DIR1,1);analogWrite(PWM1,_speed1);
+                                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/IBIT_Motor.h: In function &#39;void bk2(int, int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/IBIT_Motor.h:67:48: error: &#39;analogWrite&#39; was not declared in this scope
+   digitalWrite(DIR1,0);analogWrite(PWM1,_speed1);
+                                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/IBIT_Motor.h: In function &#39;void fd(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/IBIT_Motor.h:73:48: error: &#39;analogWrite&#39; was not declared in this scope
+   digitalWrite(DIR1,1);analogWrite(PWM1,_speed1);
+                                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/IBIT_Motor.h: In function &#39;void bk(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/IBIT_Motor.h:77:48: error: &#39;analogWrite&#39; was not declared in this scope
+   digitalWrite(DIR1,0);analogWrite(PWM1,_speed1);
+                                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/IBIT_Motor.h: In function &#39;void sl(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/IBIT_Motor.h:82:48: error: &#39;analogWrite&#39; was not declared in this scope
+   digitalWrite(DIR1,0);analogWrite(PWM1,_speeds);
+                                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/IBIT_Motor.h: In function &#39;void sr(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/IBIT_Motor.h:87:48: error: &#39;analogWrite&#39; was not declared in this scope
+   digitalWrite(DIR1,1);analogWrite(PWM1,_speeds);
+                                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/IBIT_Motor.h: In function &#39;void tl(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/IBIT_Motor.h:93:42: error: &#39;analogWrite&#39; was not declared in this scope
+   digitalWrite(DIR1,1);analogWrite(PWM1,0);
+                                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/IBIT_Motor.h: In function &#39;void tr(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/iBit_Arduino/src/IBIT_Motor.h:98:48: error: &#39;analogWrite&#39; was not declared in this scope
+   digitalWrite(DIR1,1);analogWrite(PWM1,_speeds);
+                                                ^
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

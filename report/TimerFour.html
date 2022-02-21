@@ -1,0 +1,1274 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>TimerFour - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>TimerFour</h2>
+				<p>
+					Version: <b>1.1</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/timerfour/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>TestTimer4</pre></th>
+						
+						<th><pre>Interrupt</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /tmp/arduino-testlib1019083797/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h: In member function &#39;void TimerFour::initialize(long unsigned int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:47:2: error: &#39;TCCR4B&#39; was not declared in this scope
+  TCCR4B = _BV(WGM43);        // set mode as phase and frequency correct pwm, stop the timer
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:47:2: note: suggested alternative: &#39;TCCR0B&#39;
+  TCCR4B = _BV(WGM43);        // set mode as phase and frequency correct pwm, stop the timer
+  ^~~~~~
+  TCCR0B
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:28,
+                 from /tmp/arduino-sketch-13CF1C9077C0A61E2F2975E95A1CB992/sketch/test.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:47:15: error: &#39;WGM43&#39; was not declared in this scope
+  TCCR4B = _BV(WGM43);        // set mode as phase and frequency correct pwm, stop the timer
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:47:15: note: suggested alternative: &#39;WGM13&#39;
+In file included from /tmp/arduino-testlib1019083797/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:48:2: error: &#39;TCCR4A&#39; was not declared in this scope
+  TCCR4A = 0;                 // clear control register A
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:48:2: note: suggested alternative: &#39;TCCR0A&#39;
+  TCCR4A = 0;                 // clear control register A
+  ^~~~~~
+  TCCR0A
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:28,
+                 from /tmp/arduino-sketch-13CF1C9077C0A61E2F2975E95A1CB992/sketch/test.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h: In member function &#39;void TimerFour::setPeriod(long unsigned int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:58:25: error: &#39;CS40&#39; was not declared in this scope
+   clockSelectBits = _BV(CS40);
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:58:25: note: suggested alternative: &#39;CS00&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:62:25: error: &#39;CS41&#39; was not declared in this scope
+   clockSelectBits = _BV(CS41);
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:62:25: note: suggested alternative: &#39;CS01&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:66:25: error: &#39;CS41&#39; was not declared in this scope
+   clockSelectBits = _BV(CS41) | _BV(CS40);
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:66:25: note: suggested alternative: &#39;CS01&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:66:37: error: &#39;CS40&#39; was not declared in this scope
+   clockSelectBits = _BV(CS41) | _BV(CS40);
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:66:37: note: suggested alternative: &#39;CS00&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:70:25: error: &#39;CS42&#39; was not declared in this scope
+   clockSelectBits = _BV(CS42);
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:70:25: note: suggested alternative: &#39;CS12&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:74:25: error: &#39;CS42&#39; was not declared in this scope
+   clockSelectBits = _BV(CS42) | _BV(CS40);
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:74:25: note: suggested alternative: &#39;CS12&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:74:37: error: &#39;CS40&#39; was not declared in this scope
+   clockSelectBits = _BV(CS42) | _BV(CS40);
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:74:37: note: suggested alternative: &#39;CS00&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:77:25: error: &#39;CS42&#39; was not declared in this scope
+   clockSelectBits = _BV(CS42) | _BV(CS40);
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:77:25: note: suggested alternative: &#39;CS12&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:77:37: error: &#39;CS40&#39; was not declared in this scope
+   clockSelectBits = _BV(CS42) | _BV(CS40);
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:77:37: note: suggested alternative: &#39;CS00&#39;
+In file included from /tmp/arduino-testlib1019083797/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:80:2: error: &#39;ICR4&#39; was not declared in this scope
+  ICR4 = pwmPeriod;
+  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:80:2: note: suggested alternative: &#39;ICR1&#39;
+  ICR4 = pwmPeriod;
+  ^~~~
+  ICR1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:81:2: error: &#39;TCCR4B&#39; was not declared in this scope
+  TCCR4B = _BV(WGM43) | clockSelectBits;
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:81:2: note: suggested alternative: &#39;TCCR0B&#39;
+  TCCR4B = _BV(WGM43) | clockSelectBits;
+  ^~~~~~
+  TCCR0B
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:28,
+                 from /tmp/arduino-sketch-13CF1C9077C0A61E2F2975E95A1CB992/sketch/test.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:81:15: error: &#39;WGM43&#39; was not declared in this scope
+  TCCR4B = _BV(WGM43) | clockSelectBits;
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:81:15: note: suggested alternative: &#39;WGM13&#39;
+In file included from /tmp/arduino-testlib1019083797/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h: In member function &#39;void TimerFour::start()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:88:2: error: &#39;TCCR4B&#39; was not declared in this scope
+  TCCR4B = 0;
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:88:2: note: suggested alternative: &#39;TCCR0B&#39;
+  TCCR4B = 0;
+  ^~~~~~
+  TCCR0B
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:89:2: error: &#39;TCNT4&#39; was not declared in this scope
+  TCNT4 = 0;  // TODO: does this cause an undesired interrupt?
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:89:2: note: suggested alternative: &#39;TCNT0&#39;
+  TCNT4 = 0;  // TODO: does this cause an undesired interrupt?
+  ^~~~~
+  TCNT0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h: In member function &#39;void TimerFour::stop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:93:2: error: &#39;TCCR4B&#39; was not declared in this scope
+  TCCR4B = _BV(WGM43);
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:93:2: note: suggested alternative: &#39;TCCR0B&#39;
+  TCCR4B = _BV(WGM43);
+  ^~~~~~
+  TCCR0B
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:28,
+                 from /tmp/arduino-sketch-13CF1C9077C0A61E2F2975E95A1CB992/sketch/test.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:93:15: error: &#39;WGM43&#39; was not declared in this scope
+  TCCR4B = _BV(WGM43);
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:93:15: note: suggested alternative: &#39;WGM13&#39;
+In file included from /tmp/arduino-testlib1019083797/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h: In member function &#39;void TimerFour::resume()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:99:2: error: &#39;TCCR4B&#39; was not declared in this scope
+  TCCR4B = _BV(WGM43) | clockSelectBits;
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:99:2: note: s</pre>
+
+					
+					<h4>examples/Interrupt</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/examples/Interrupt/Interrupt.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h: In member function &#39;void TimerFour::initialize(long unsigned int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:47:2: error: &#39;TCCR4B&#39; was not declared in this scope
+  TCCR4B = _BV(WGM43);        // set mode as phase and frequency correct pwm, stop the timer
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:47:2: note: suggested alternative: &#39;TCCR0B&#39;
+  TCCR4B = _BV(WGM43);        // set mode as phase and frequency correct pwm, stop the timer
+  ^~~~~~
+  TCCR0B
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:28,
+                 from /tmp/arduino-sketch-31FBC32FC63E3BEA8816E67A90EC8C70/sketch/Interrupt.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:47:15: error: &#39;WGM43&#39; was not declared in this scope
+  TCCR4B = _BV(WGM43);        // set mode as phase and frequency correct pwm, stop the timer
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:47:15: note: suggested alternative: &#39;WGM13&#39;
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/examples/Interrupt/Interrupt.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:48:2: error: &#39;TCCR4A&#39; was not declared in this scope
+  TCCR4A = 0;                 // clear control register A
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:48:2: note: suggested alternative: &#39;TCCR0A&#39;
+  TCCR4A = 0;                 // clear control register A
+  ^~~~~~
+  TCCR0A
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:28,
+                 from /tmp/arduino-sketch-31FBC32FC63E3BEA8816E67A90EC8C70/sketch/Interrupt.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h: In member function &#39;void TimerFour::setPeriod(long unsigned int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:58:25: error: &#39;CS40&#39; was not declared in this scope
+   clockSelectBits = _BV(CS40);
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:58:25: note: suggested alternative: &#39;CS00&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:62:25: error: &#39;CS41&#39; was not declared in this scope
+   clockSelectBits = _BV(CS41);
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:62:25: note: suggested alternative: &#39;CS01&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:66:25: error: &#39;CS41&#39; was not declared in this scope
+   clockSelectBits = _BV(CS41) | _BV(CS40);
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:66:25: note: suggested alternative: &#39;CS01&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:66:37: error: &#39;CS40&#39; was not declared in this scope
+   clockSelectBits = _BV(CS41) | _BV(CS40);
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:66:37: note: suggested alternative: &#39;CS00&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:70:25: error: &#39;CS42&#39; was not declared in this scope
+   clockSelectBits = _BV(CS42);
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:70:25: note: suggested alternative: &#39;CS12&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:74:25: error: &#39;CS42&#39; was not declared in this scope
+   clockSelectBits = _BV(CS42) | _BV(CS40);
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:74:25: note: suggested alternative: &#39;CS12&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:74:37: error: &#39;CS40&#39; was not declared in this scope
+   clockSelectBits = _BV(CS42) | _BV(CS40);
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:74:37: note: suggested alternative: &#39;CS00&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:77:25: error: &#39;CS42&#39; was not declared in this scope
+   clockSelectBits = _BV(CS42) | _BV(CS40);
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:77:25: note: suggested alternative: &#39;CS12&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:77:37: error: &#39;CS40&#39; was not declared in this scope
+   clockSelectBits = _BV(CS42) | _BV(CS40);
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:77:37: note: suggested alternative: &#39;CS00&#39;
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/examples/Interrupt/Interrupt.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:80:2: error: &#39;ICR4&#39; was not declared in this scope
+  ICR4 = pwmPeriod;
+  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:80:2: note: suggested alternative: &#39;ICR1&#39;
+  ICR4 = pwmPeriod;
+  ^~~~
+  ICR1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:81:2: error: &#39;TCCR4B&#39; was not declared in this scope
+  TCCR4B = _BV(WGM43) | clockSelectBits;
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:81:2: note: suggested alternative: &#39;TCCR0B&#39;
+  TCCR4B = _BV(WGM43) | clockSelectBits;
+  ^~~~~~
+  TCCR0B
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:28,
+                 from /tmp/arduino-sketch-31FBC32FC63E3BEA8816E67A90EC8C70/sketch/Interrupt.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:81:15: error: &#39;WGM43&#39; was not declared in this scope
+  TCCR4B = _BV(WGM43) | clockSelectBits;
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:81:15: note: suggested alternative: &#39;WGM13&#39;
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/examples/Interrupt/Interrupt.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h: In member function &#39;void TimerFour::start()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:88:2: error: &#39;TCCR4B&#39; was not declared in this scope
+  TCCR4B = 0;
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:88:2: note: suggested alternative: &#39;TCCR0B&#39;
+  TCCR4B = 0;
+  ^~~~~~
+  TCCR0B
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:89:2: error: &#39;TCNT4&#39; was not declared in this scope
+  TCNT4 = 0;  // TODO: does this cause an undesired interrupt?
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:89:2: note: suggested alternative: &#39;TCNT0&#39;
+  TCNT4 = 0;  // TODO: does this cause an undesired interrupt?
+  ^~~~~
+  TCNT0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h: In member function &#39;void TimerFour::stop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:93:2: error: &#39;TCCR4B&#39; was not declared in this scope
+  TCCR4B = _BV(WGM43);
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:93:2: note: suggested alternative: &#39;TCCR0B&#39;
+  TCCR4B = _BV(WGM43);
+  ^~~~~~
+  TCCR0B
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:28,
+                 from /tmp/arduino-sketch-31FBC32FC63E3BEA8816E67A90EC8C70/sketch/Interrupt.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:93:15: error: &#39;WGM43&#39; was not declared in this scope
+  TCCR4B = _BV(WGM43);
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:93:15: note: suggested alternative: &#39;WGM13&#39;
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/examples/Interrupt/Interrupt.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h: In member function &#39;voi</pre>
+					
+					<h4>examples/TestTimer4</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/examples/TestTimer4/TestTimer4.ino:8:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h: In member function &#39;void TimerFour::initialize(long unsigned int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:47:2: error: &#39;TCCR4B&#39; was not declared in this scope
+  TCCR4B = _BV(WGM43);        // set mode as phase and frequency correct pwm, stop the timer
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:47:2: note: suggested alternative: &#39;TCCR0B&#39;
+  TCCR4B = _BV(WGM43);        // set mode as phase and frequency correct pwm, stop the timer
+  ^~~~~~
+  TCCR0B
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:28,
+                 from /tmp/arduino-sketch-E47E524FD3FCBB4FA7450409D9B6CB50/sketch/TestTimer4.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:47:15: error: &#39;WGM43&#39; was not declared in this scope
+  TCCR4B = _BV(WGM43);        // set mode as phase and frequency correct pwm, stop the timer
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:47:15: note: suggested alternative: &#39;WGM13&#39;
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/examples/TestTimer4/TestTimer4.ino:8:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:48:2: error: &#39;TCCR4A&#39; was not declared in this scope
+  TCCR4A = 0;                 // clear control register A
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:48:2: note: suggested alternative: &#39;TCCR0A&#39;
+  TCCR4A = 0;                 // clear control register A
+  ^~~~~~
+  TCCR0A
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:28,
+                 from /tmp/arduino-sketch-E47E524FD3FCBB4FA7450409D9B6CB50/sketch/TestTimer4.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h: In member function &#39;void TimerFour::setPeriod(long unsigned int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:58:25: error: &#39;CS40&#39; was not declared in this scope
+   clockSelectBits = _BV(CS40);
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:58:25: note: suggested alternative: &#39;CS00&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:62:25: error: &#39;CS41&#39; was not declared in this scope
+   clockSelectBits = _BV(CS41);
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:62:25: note: suggested alternative: &#39;CS01&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:66:25: error: &#39;CS41&#39; was not declared in this scope
+   clockSelectBits = _BV(CS41) | _BV(CS40);
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:66:25: note: suggested alternative: &#39;CS01&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:66:37: error: &#39;CS40&#39; was not declared in this scope
+   clockSelectBits = _BV(CS41) | _BV(CS40);
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:66:37: note: suggested alternative: &#39;CS00&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:70:25: error: &#39;CS42&#39; was not declared in this scope
+   clockSelectBits = _BV(CS42);
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:70:25: note: suggested alternative: &#39;CS12&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:74:25: error: &#39;CS42&#39; was not declared in this scope
+   clockSelectBits = _BV(CS42) | _BV(CS40);
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:74:25: note: suggested alternative: &#39;CS12&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:74:37: error: &#39;CS40&#39; was not declared in this scope
+   clockSelectBits = _BV(CS42) | _BV(CS40);
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:74:37: note: suggested alternative: &#39;CS00&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:77:25: error: &#39;CS42&#39; was not declared in this scope
+   clockSelectBits = _BV(CS42) | _BV(CS40);
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:77:25: note: suggested alternative: &#39;CS12&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:77:37: error: &#39;CS40&#39; was not declared in this scope
+   clockSelectBits = _BV(CS42) | _BV(CS40);
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:77:37: note: suggested alternative: &#39;CS00&#39;
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/examples/TestTimer4/TestTimer4.ino:8:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:80:2: error: &#39;ICR4&#39; was not declared in this scope
+  ICR4 = pwmPeriod;
+  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:80:2: note: suggested alternative: &#39;ICR1&#39;
+  ICR4 = pwmPeriod;
+  ^~~~
+  ICR1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:81:2: error: &#39;TCCR4B&#39; was not declared in this scope
+  TCCR4B = _BV(WGM43) | clockSelectBits;
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:81:2: note: suggested alternative: &#39;TCCR0B&#39;
+  TCCR4B = _BV(WGM43) | clockSelectBits;
+  ^~~~~~
+  TCCR0B
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:28,
+                 from /tmp/arduino-sketch-E47E524FD3FCBB4FA7450409D9B6CB50/sketch/TestTimer4.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:81:15: error: &#39;WGM43&#39; was not declared in this scope
+  TCCR4B = _BV(WGM43) | clockSelectBits;
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:81:15: note: suggested alternative: &#39;WGM13&#39;
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/examples/TestTimer4/TestTimer4.ino:8:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h: In member function &#39;void TimerFour::start()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:88:2: error: &#39;TCCR4B&#39; was not declared in this scope
+  TCCR4B = 0;
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:88:2: note: suggested alternative: &#39;TCCR0B&#39;
+  TCCR4B = 0;
+  ^~~~~~
+  TCCR0B
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:89:2: error: &#39;TCNT4&#39; was not declared in this scope
+  TCNT4 = 0;  // TODO: does this cause an undesired interrupt?
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:89:2: note: suggested alternative: &#39;TCNT0&#39;
+  TCNT4 = 0;  // TODO: does this cause an undesired interrupt?
+  ^~~~~
+  TCNT0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h: In member function &#39;void TimerFour::stop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:93:2: error: &#39;TCCR4B&#39; was not declared in this scope
+  TCCR4B = _BV(WGM43);
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:93:2: note: suggested alternative: &#39;TCCR0B&#39;
+  TCCR4B = _BV(WGM43);
+  ^~~~~~
+  TCCR0B
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:28,
+                 from /tmp/arduino-sketch-E47E524FD3FCBB4FA7450409D9B6CB50/sketch/TestTimer4.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:93:15: error: &#39;WGM43&#39; was not declared in this scope
+  TCCR4B = _BV(WGM43);
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:93:15: note: suggested alternative: &#39;WGM13&#39;
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/examples/TestTimer4/TestTimer4.ino:8:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h: In member</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library TimerFour claims to run on avr architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.cpp:22:27: error: &#39;short unsigned int TimerFour::pwmPeriod&#39; is not a static data member of &#39;class TimerFour&#39;
+ unsigned short TimerFour::pwmPeriod = 0;
+                           ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.cpp:23:26: error: &#39;unsigned char TimerFour::clockSelectBits&#39; is not a static data member of &#39;class TimerFour&#39;
+ unsigned char TimerFour::clockSelectBits = 0;
+                          ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.cpp:24:32: error: &#39;void (* TimerFour::isrCallback)()&#39; is not a static data member of &#39;class TimerFour&#39;
+ void (*TimerFour::isrCallback)() = NULL;
+                                ^
+Multiple libraries were found for &#34;TimerFour.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour32u4
+</pre>
+
+					
+					<h4>examples/Interrupt</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library TimerFour claims to run on avr architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/examples/Interrupt/Interrupt.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/examples/Interrupt/Interrupt.ino:13:10: error: &#39;class TimerFour&#39; has no member named &#39;initialize&#39;
+   Timer4.initialize(150000);
+          ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/examples/Interrupt/Interrupt.ino:14:10: error: &#39;class TimerFour&#39; has no member named &#39;attachInterrupt&#39;
+   Timer4.attachInterrupt(blinkLED); // blinkLED to run every 0.15 seconds
+          ^~~~~~~~~~~~~~~
+Multiple libraries were found for &#34;TimerFour.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour32u4
+</pre>
+					
+					<h4>examples/TestTimer4</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library TimerFour claims to run on avr architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/examples/TestTimer4/TestTimer4.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/examples/TestTimer4/TestTimer4.ino:16:9: error: &#39;class TimerFour&#39; has no member named &#39;initialize&#39;
+  Timer4.initialize(1000000);
+         ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/examples/TestTimer4/TestTimer4.ino:17:9: error: &#39;class TimerFour&#39; has no member named &#39;pwm&#39;
+  Timer4.pwm(TIMER4_C_PIN, 256);
+         ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/examples/TestTimer4/TestTimer4.ino:17:13: error: &#39;TIMER4_C_PIN&#39; was not declared in this scope
+  Timer4.pwm(TIMER4_C_PIN, 256);
+             ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/examples/TestTimer4/TestTimer4.ino:17:13: note: suggested alternative: &#39;TIMER_IRQ_2&#39;
+  Timer4.pwm(TIMER4_C_PIN, 256);
+             ^~~~~~~~~~~~
+             TIMER_IRQ_2
+Multiple libraries were found for &#34;TimerFour.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour32u4
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library TimerFour claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /tmp/arduino-testlib3361068424/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h: In member function &#39;void TimerFour::initialize(long unsigned int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:47:2: error: &#39;TCCR4B&#39; was not declared in this scope
+  TCCR4B = _BV(WGM43);        // set mode as phase and frequency correct pwm, stop the timer
+  ^~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /tmp/arduino-sketch-0CD33693906E36EA0BF1D585C2EC247A/sketch/test.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:47:15: error: &#39;WGM43&#39; was not declared in this scope
+  TCCR4B = _BV(WGM43);        // set mode as phase and frequency correct pwm, stop the timer
+               ^
+In file included from /tmp/arduino-testlib3361068424/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:48:2: error: &#39;TCCR4A&#39; was not declared in this scope
+  TCCR4A = 0;                 // clear control register A
+  ^~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /tmp/arduino-sketch-0CD33693906E36EA0BF1D585C2EC247A/sketch/test.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h: In member function &#39;void TimerFour::setPeriod(long unsigned int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:58:25: error: &#39;CS40&#39; was not declared in this scope
+   clockSelectBits = _BV(CS40);
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:62:25: error: &#39;CS41&#39; was not declared in this scope
+   clockSelectBits = _BV(CS41);
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:66:25: error: &#39;CS41&#39; was not declared in this scope
+   clockSelectBits = _BV(CS41) | _BV(CS40);
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:66:37: error: &#39;CS40&#39; was not declared in this scope
+   clockSelectBits = _BV(CS41) | _BV(CS40);
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:70:25: error: &#39;CS42&#39; was not declared in this scope
+   clockSelectBits = _BV(CS42);
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:74:25: error: &#39;CS42&#39; was not declared in this scope
+   clockSelectBits = _BV(CS42) | _BV(CS40);
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:74:37: error: &#39;CS40&#39; was not declared in this scope
+   clockSelectBits = _BV(CS42) | _BV(CS40);
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:77:25: error: &#39;CS42&#39; was not declared in this scope
+   clockSelectBits = _BV(CS42) | _BV(CS40);
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:77:37: error: &#39;CS40&#39; was not declared in this scope
+   clockSelectBits = _BV(CS42) | _BV(CS40);
+                                     ^
+In file included from /tmp/arduino-testlib3361068424/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:80:2: error: &#39;ICR4&#39; was not declared in this scope
+  ICR4 = pwmPeriod;
+  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:80:2: note: suggested alternative: &#39;ISR&#39;
+  ICR4 = pwmPeriod;
+  ^~~~
+  ISR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:81:2: error: &#39;TCCR4B&#39; was not declared in this scope
+  TCCR4B = _BV(WGM43) | clockSelectBits;
+  ^~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /tmp/arduino-sketch-0CD33693906E36EA0BF1D585C2EC247A/sketch/test.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:81:15: error: &#39;WGM43&#39; was not declared in this scope
+  TCCR4B = _BV(WGM43) | clockSelectBits;
+               ^
+In file included from /tmp/arduino-testlib3361068424/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h: In member function &#39;void TimerFour::start()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:88:2: error: &#39;TCCR4B&#39; was not declared in this scope
+  TCCR4B = 0;
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:89:2: error: &#39;TCNT4&#39; was not declared in this scope
+  TCNT4 = 0;  // TODO: does this cause an undesired interrupt?
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h: In member function &#39;void TimerFour::stop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:93:2: error: &#39;TCCR4B&#39; was not declared in this scope
+  TCCR4B = _BV(WGM43);
+  ^~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /tmp/arduino-sketch-0CD33693906E36EA0BF1D585C2EC247A/sketch/test.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:93:15: error: &#39;WGM43&#39; was not declared in this scope
+  TCCR4B = _BV(WGM43);
+               ^
+In file included from /tmp/arduino-testlib3361068424/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h: In member function &#39;void TimerFour::resume()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:99:2: error: &#39;TCCR4B&#39; was not declared in this scope
+  TCCR4B = _BV(WGM43) | clockSelectBits;
+  ^~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino</pre>
+
+					
+					<h4>examples/Interrupt</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library TimerFour claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/examples/Interrupt/Interrupt.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h: In member function &#39;void TimerFour::initialize(long unsigned int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:47:2: error: &#39;TCCR4B&#39; was not declared in this scope
+  TCCR4B = _BV(WGM43);        // set mode as phase and frequency correct pwm, stop the timer
+  ^~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /tmp/arduino-sketch-31FBC32FC63E3BEA8816E67A90EC8C70/sketch/Interrupt.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:47:15: error: &#39;WGM43&#39; was not declared in this scope
+  TCCR4B = _BV(WGM43);        // set mode as phase and frequency correct pwm, stop the timer
+               ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/examples/Interrupt/Interrupt.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:48:2: error: &#39;TCCR4A&#39; was not declared in this scope
+  TCCR4A = 0;                 // clear control register A
+  ^~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /tmp/arduino-sketch-31FBC32FC63E3BEA8816E67A90EC8C70/sketch/Interrupt.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h: In member function &#39;void TimerFour::setPeriod(long unsigned int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:58:25: error: &#39;CS40&#39; was not declared in this scope
+   clockSelectBits = _BV(CS40);
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:62:25: error: &#39;CS41&#39; was not declared in this scope
+   clockSelectBits = _BV(CS41);
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:66:25: error: &#39;CS41&#39; was not declared in this scope
+   clockSelectBits = _BV(CS41) | _BV(CS40);
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:66:37: error: &#39;CS40&#39; was not declared in this scope
+   clockSelectBits = _BV(CS41) | _BV(CS40);
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:70:25: error: &#39;CS42&#39; was not declared in this scope
+   clockSelectBits = _BV(CS42);
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:74:25: error: &#39;CS42&#39; was not declared in this scope
+   clockSelectBits = _BV(CS42) | _BV(CS40);
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:74:37: error: &#39;CS40&#39; was not declared in this scope
+   clockSelectBits = _BV(CS42) | _BV(CS40);
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:77:25: error: &#39;CS42&#39; was not declared in this scope
+   clockSelectBits = _BV(CS42) | _BV(CS40);
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:77:37: error: &#39;CS40&#39; was not declared in this scope
+   clockSelectBits = _BV(CS42) | _BV(CS40);
+                                     ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/examples/Interrupt/Interrupt.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:80:2: error: &#39;ICR4&#39; was not declared in this scope
+  ICR4 = pwmPeriod;
+  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:80:2: note: suggested alternative: &#39;ISR&#39;
+  ICR4 = pwmPeriod;
+  ^~~~
+  ISR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:81:2: error: &#39;TCCR4B&#39; was not declared in this scope
+  TCCR4B = _BV(WGM43) | clockSelectBits;
+  ^~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /tmp/arduino-sketch-31FBC32FC63E3BEA8816E67A90EC8C70/sketch/Interrupt.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:81:15: error: &#39;WGM43&#39; was not declared in this scope
+  TCCR4B = _BV(WGM43) | clockSelectBits;
+               ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/examples/Interrupt/Interrupt.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h: In member function &#39;void TimerFour::start()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:88:2: error: &#39;TCCR4B&#39; was not declared in this scope
+  TCCR4B = 0;
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:89:2: error: &#39;TCNT4&#39; was not declared in this scope
+  TCNT4 = 0;  // TODO: does this cause an undesired interrupt?
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h: In member function &#39;void TimerFour::stop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:93:2: error: &#39;TCCR4B&#39; was not declared in this scope
+  TCCR4B = _BV(WGM43);
+  ^~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /tmp/arduino-sketch-31FBC32FC63E3BEA8816E67A90EC8C70/sketch/Interrupt.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:93:15: error: &#39;WGM43&#39; was not declared in this scope
+  TCCR4B = _BV(WGM43);
+               ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/examples/Interrupt/Interrupt.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h: In member function &#39;void TimerFour::resume()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:99:2: error: &#39;TCCR4B&#39; was not declared in this scope
+  TCCR4B = _BV(WGM43) | clockSelectBits;
+  ^~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packa</pre>
+					
+					<h4>examples/TestTimer4</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library TimerFour claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/examples/TestTimer4/TestTimer4.ino:8:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h: In member function &#39;void TimerFour::initialize(long unsigned int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:47:2: error: &#39;TCCR4B&#39; was not declared in this scope
+  TCCR4B = _BV(WGM43);        // set mode as phase and frequency correct pwm, stop the timer
+  ^~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /tmp/arduino-sketch-E47E524FD3FCBB4FA7450409D9B6CB50/sketch/TestTimer4.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:47:15: error: &#39;WGM43&#39; was not declared in this scope
+  TCCR4B = _BV(WGM43);        // set mode as phase and frequency correct pwm, stop the timer
+               ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/examples/TestTimer4/TestTimer4.ino:8:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:48:2: error: &#39;TCCR4A&#39; was not declared in this scope
+  TCCR4A = 0;                 // clear control register A
+  ^~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /tmp/arduino-sketch-E47E524FD3FCBB4FA7450409D9B6CB50/sketch/TestTimer4.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h: In member function &#39;void TimerFour::setPeriod(long unsigned int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:58:25: error: &#39;CS40&#39; was not declared in this scope
+   clockSelectBits = _BV(CS40);
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:62:25: error: &#39;CS41&#39; was not declared in this scope
+   clockSelectBits = _BV(CS41);
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:66:25: error: &#39;CS41&#39; was not declared in this scope
+   clockSelectBits = _BV(CS41) | _BV(CS40);
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:66:37: error: &#39;CS40&#39; was not declared in this scope
+   clockSelectBits = _BV(CS41) | _BV(CS40);
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:70:25: error: &#39;CS42&#39; was not declared in this scope
+   clockSelectBits = _BV(CS42);
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:74:25: error: &#39;CS42&#39; was not declared in this scope
+   clockSelectBits = _BV(CS42) | _BV(CS40);
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:74:37: error: &#39;CS40&#39; was not declared in this scope
+   clockSelectBits = _BV(CS42) | _BV(CS40);
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:77:25: error: &#39;CS42&#39; was not declared in this scope
+   clockSelectBits = _BV(CS42) | _BV(CS40);
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:77:37: error: &#39;CS40&#39; was not declared in this scope
+   clockSelectBits = _BV(CS42) | _BV(CS40);
+                                     ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/examples/TestTimer4/TestTimer4.ino:8:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:80:2: error: &#39;ICR4&#39; was not declared in this scope
+  ICR4 = pwmPeriod;
+  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:80:2: note: suggested alternative: &#39;ISR&#39;
+  ICR4 = pwmPeriod;
+  ^~~~
+  ISR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:81:2: error: &#39;TCCR4B&#39; was not declared in this scope
+  TCCR4B = _BV(WGM43) | clockSelectBits;
+  ^~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /tmp/arduino-sketch-E47E524FD3FCBB4FA7450409D9B6CB50/sketch/TestTimer4.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:81:15: error: &#39;WGM43&#39; was not declared in this scope
+  TCCR4B = _BV(WGM43) | clockSelectBits;
+               ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/examples/TestTimer4/TestTimer4.ino:8:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h: In member function &#39;void TimerFour::start()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:88:2: error: &#39;TCCR4B&#39; was not declared in this scope
+  TCCR4B = 0;
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:89:2: error: &#39;TCNT4&#39; was not declared in this scope
+  TCNT4 = 0;  // TODO: does this cause an undesired interrupt?
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h: In member function &#39;void TimerFour::stop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:93:2: error: &#39;TCCR4B&#39; was not declared in this scope
+  TCCR4B = _BV(WGM43);
+  ^~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /tmp/arduino-sketch-E47E524FD3FCBB4FA7450409D9B6CB50/sketch/TestTimer4.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:93:15: error: &#39;WGM43&#39; was not declared in this scope
+  TCCR4B = _BV(WGM43);
+               ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/examples/TestTimer4/TestTimer4.ino:8:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h: In member function &#39;void TimerFour::resume()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.h:99:2: error: &#39;TCCR4B&#39; was not declared in this scope
+  TCCR4B = _BV(WGM43) | clockSelectBits;
+  ^~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-data</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library TimerFour claims to run on avr architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.cpp:22:27: error: &#39;short unsigned int TimerFour::pwmPeriod&#39; is not a static data member of &#39;class TimerFour&#39;
+ unsigned short TimerFour::pwmPeriod = 0;
+                           ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.cpp:23:26: error: &#39;unsigned char TimerFour::clockSelectBits&#39; is not a static data member of &#39;class TimerFour&#39;
+ unsigned char TimerFour::clockSelectBits = 0;
+                          ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.cpp:24:32: error: &#39;void (* TimerFour::isrCallback)()&#39; is not a static data member of &#39;class TimerFour&#39;
+ void (*TimerFour::isrCallback)() = NULL;
+                                ^
+Multiple libraries were found for &#34;TimerFour.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour32u4
+</pre>
+
+					
+					<h4>examples/Interrupt</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library TimerFour claims to run on avr architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/examples/Interrupt/Interrupt.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/examples/Interrupt/Interrupt.ino:13:10: error: &#39;class TimerFour&#39; has no member named &#39;initialize&#39;
+   Timer4.initialize(150000);
+          ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/examples/Interrupt/Interrupt.ino:14:10: error: &#39;class TimerFour&#39; has no member named &#39;attachInterrupt&#39;
+   Timer4.attachInterrupt(blinkLED); // blinkLED to run every 0.15 seconds
+          ^~~~~~~~~~~~~~~
+Multiple libraries were found for &#34;TimerFour.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour32u4
+</pre>
+					
+					<h4>examples/TestTimer4</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library TimerFour claims to run on avr architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/examples/TestTimer4/TestTimer4.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/examples/TestTimer4/TestTimer4.ino:16:9: error: &#39;class TimerFour&#39; has no member named &#39;initialize&#39;
+  Timer4.initialize(1000000);
+         ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/examples/TestTimer4/TestTimer4.ino:17:9: error: &#39;class TimerFour&#39; has no member named &#39;pwm&#39;
+  Timer4.pwm(TIMER4_C_PIN, 256);
+         ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/examples/TestTimer4/TestTimer4.ino:17:13: error: &#39;TIMER4_C_PIN&#39; was not declared in this scope
+  Timer4.pwm(TIMER4_C_PIN, 256);
+             ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/examples/TestTimer4/TestTimer4.ino:17:13: note: suggested alternative: &#39;_TIMER_T_&#39;
+  Timer4.pwm(TIMER4_C_PIN, 256);
+             ^~~~~~~~~~~~
+             _TIMER_T_
+Multiple libraries were found for &#34;TimerFour.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour32u4
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library TimerFour claims to run on avr architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.cpp:22:27: error: &#39;short unsigned int TimerFour::pwmPeriod&#39; is not a static data member of &#39;class TimerFour&#39;
+ unsigned short TimerFour::pwmPeriod = 0;
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.cpp:23:26: error: &#39;unsigned char TimerFour::clockSelectBits&#39; is not a static data member of &#39;class TimerFour&#39;
+ unsigned char TimerFour::clockSelectBits = 0;
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/TimerFour.cpp:24:32: error: &#39;void (* TimerFour::isrCallback)()&#39; is not a static data member of &#39;class TimerFour&#39;
+ void (*TimerFour::isrCallback)() = NULL;
+                                ^
+Multiple libraries were found for &#34;TimerFour.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour32u4
+</pre>
+
+					
+					<h4>examples/Interrupt</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library TimerFour claims to run on avr architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/examples/Interrupt/Interrupt.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/examples/Interrupt/Interrupt.ino:13:10: error: &#39;class TimerFour&#39; has no member named &#39;initialize&#39;
+   Timer4.initialize(150000);
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/examples/Interrupt/Interrupt.ino:14:10: error: &#39;class TimerFour&#39; has no member named &#39;attachInterrupt&#39;
+   Timer4.attachInterrupt(blinkLED); // blinkLED to run every 0.15 seconds
+          ^
+Multiple libraries were found for &#34;TimerFour.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour32u4
+</pre>
+					
+					<h4>examples/TestTimer4</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library TimerFour claims to run on avr architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/examples/TestTimer4/TestTimer4.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/examples/TestTimer4/TestTimer4.ino:16:9: error: &#39;class TimerFour&#39; has no member named &#39;initialize&#39;
+  Timer4.initialize(1000000);
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/examples/TestTimer4/TestTimer4.ino:17:9: error: &#39;class TimerFour&#39; has no member named &#39;pwm&#39;
+  Timer4.pwm(TIMER4_C_PIN, 256);
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour/examples/TestTimer4/TestTimer4.ino:17:13: error: &#39;TIMER4_C_PIN&#39; was not declared in this scope
+  Timer4.pwm(TIMER4_C_PIN, 256);
+             ^
+Multiple libraries were found for &#34;TimerFour.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TimerFour32u4
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

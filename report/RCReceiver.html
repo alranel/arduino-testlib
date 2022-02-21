@@ -1,0 +1,609 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>RCReceiver - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>RCReceiver</h2>
+				<p>
+					Version: <b>1.4.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/rcreceiver/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>RC_Int_Template</pre></th>
+						
+						<th><pre>RC_Template</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+									
+										
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-testlib3307966722/test/test.ino:1:10: fatal error: RCReceiver.h: No such file or directory
+ #include &lt;RCReceiver.h&gt;
+          ^~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/RC_Int_Template</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 1792 bytes (5%) of program storage space. Maximum is 32256 bytes.
+Global variables use 54 bytes (2%) of dynamic memory, leaving 1994 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+					
+					<h4>examples/RC_Template</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 1702 bytes (5%) of program storage space. Maximum is 32256 bytes.
+Global variables use 49 bytes (2%) of dynamic memory, leaving 1999 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-testlib1975777005/test/test.ino:1:10: fatal error: RCReceiver.h: No such file or directory
+ #include &lt;RCReceiver.h&gt;
+          ^~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/RC_Int_Template</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RCReceiver/RCReceive.cpp:2:10: fatal error: wiring.c: No such file or directory
+ #include &#34;wiring.c&#34;
+          ^~~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+					<h4>examples/RC_Template</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RCReceiver/RCReceive.cpp:2:10: fatal error: wiring.c: No such file or directory
+ #include &#34;wiring.c&#34;
+          ^~~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-testlib1975777005/test/test.ino:1:10: fatal error: RCReceiver.h: No such file or directory
+ #include &lt;RCReceiver.h&gt;
+          ^~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/RC_Int_Template</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library RCReceiver claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+wiring.c.o (symbol from plugin): In function `clockCyclesPerMicrosecondComp&#39;:
+(.text&#43;0x0): multiple definition of `F_CPU_CORRECTED&#39;
+/tmp/arduino-sketch-B8D65C35F1D08E495ED5767C08D4CB0A/libraries/RCReceiver/RCReceive.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+wiring.c.o (symbol from plugin): In function `clockCyclesPerMicrosecondComp&#39;:
+(.text&#43;0x0): multiple definition of `__vector_36&#39;
+/tmp/arduino-sketch-B8D65C35F1D08E495ED5767C08D4CB0A/libraries/RCReceiver/RCReceive.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+wiring.c.o (symbol from plugin): In function `clockCyclesPerMicrosecondComp&#39;:
+(.text&#43;0x0): multiple definition of `timer_millis&#39;
+/tmp/arduino-sketch-B8D65C35F1D08E495ED5767C08D4CB0A/libraries/RCReceiver/RCReceive.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+wiring.c.o (symbol from plugin): In function `clockCyclesPerMicrosecondComp&#39;:
+(.text&#43;0x0): multiple definition of `timer_overflow_count&#39;
+/tmp/arduino-sketch-B8D65C35F1D08E495ED5767C08D4CB0A/libraries/RCReceiver/RCReceive.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+wiring.c.o (symbol from plugin): In function `clockCyclesPerMicrosecondComp&#39;:
+(.text&#43;0x0): multiple definition of `millis&#39;
+/tmp/arduino-sketch-B8D65C35F1D08E495ED5767C08D4CB0A/libraries/RCReceiver/RCReceive.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+wiring.c.o (symbol from plugin): In function `clockCyclesPerMicrosecondComp&#39;:
+(.text&#43;0x0): multiple definition of `micros&#39;
+/tmp/arduino-sketch-B8D65C35F1D08E495ED5767C08D4CB0A/libraries/RCReceiver/RCReceive.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+wiring.c.o (symbol from plugin): In function `clockCyclesPerMicrosecondComp&#39;:
+(.text&#43;0x0): multiple definition of `delay&#39;
+/tmp/arduino-sketch-B8D65C35F1D08E495ED5767C08D4CB0A/libraries/RCReceiver/RCReceive.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+wiring.c.o (symbol from plugin): In function `clockCyclesPerMicrosecondComp&#39;:
+(.text&#43;0x0): multiple definition of `delayMicroseconds&#39;
+/tmp/arduino-sketch-B8D65C35F1D08E495ED5767C08D4CB0A/libraries/RCReceiver/RCReceive.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+wiring.c.o (symbol from plugin): In function `clockCyclesPerMicrosecondComp&#39;:
+(.text&#43;0x0): multiple definition of `init&#39;
+/tmp/arduino-sketch-B8D65C35F1D08E495ED5767C08D4CB0A/libraries/RCReceiver/RCReceive.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+collect2: error: ld returned 1 exit status
+
+</pre>
+					
+					<h4>examples/RC_Template</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library RCReceiver claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+wiring.c.o (symbol from plugin): In function `clockCyclesPerMicrosecondComp&#39;:
+(.text&#43;0x0): multiple definition of `F_CPU_CORRECTED&#39;
+/tmp/arduino-sketch-AE164BFA3627CD1663E95B2A75E2D131/libraries/RCReceiver/RCReceive.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+wiring.c.o (symbol from plugin): In function `clockCyclesPerMicrosecondComp&#39;:
+(.text&#43;0x0): multiple definition of `__vector_36&#39;
+/tmp/arduino-sketch-AE164BFA3627CD1663E95B2A75E2D131/libraries/RCReceiver/RCReceive.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+wiring.c.o (symbol from plugin): In function `clockCyclesPerMicrosecondComp&#39;:
+(.text&#43;0x0): multiple definition of `timer_millis&#39;
+/tmp/arduino-sketch-AE164BFA3627CD1663E95B2A75E2D131/libraries/RCReceiver/RCReceive.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+wiring.c.o (symbol from plugin): In function `clockCyclesPerMicrosecondComp&#39;:
+(.text&#43;0x0): multiple definition of `timer_overflow_count&#39;
+/tmp/arduino-sketch-AE164BFA3627CD1663E95B2A75E2D131/libraries/RCReceiver/RCReceive.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+wiring.c.o (symbol from plugin): In function `clockCyclesPerMicrosecondComp&#39;:
+(.text&#43;0x0): multiple definition of `millis&#39;
+/tmp/arduino-sketch-AE164BFA3627CD1663E95B2A75E2D131/libraries/RCReceiver/RCReceive.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+wiring.c.o (symbol from plugin): In function `clockCyclesPerMicrosecondComp&#39;:
+(.text&#43;0x0): multiple definition of `micros&#39;
+/tmp/arduino-sketch-AE164BFA3627CD1663E95B2A75E2D131/libraries/RCReceiver/RCReceive.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+wiring.c.o (symbol from plugin): In function `clockCyclesPerMicrosecondComp&#39;:
+(.text&#43;0x0): multiple definition of `delay&#39;
+/tmp/arduino-sketch-AE164BFA3627CD1663E95B2A75E2D131/libraries/RCReceiver/RCReceive.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+wiring.c.o (symbol from plugin): In function `clockCyclesPerMicrosecondComp&#39;:
+(.text&#43;0x0): multiple definition of `delayMicroseconds&#39;
+/tmp/arduino-sketch-AE164BFA3627CD1663E95B2A75E2D131/libraries/RCReceiver/RCReceive.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+wiring.c.o (symbol from plugin): In function `clockCyclesPerMicrosecondComp&#39;:
+(.text&#43;0x0): multiple definition of `init&#39;
+/tmp/arduino-sketch-AE164BFA3627CD1663E95B2A75E2D131/libraries/RCReceiver/RCReceive.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+collect2: error: ld returned 1 exit status
+
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-testlib3307966722/test/test.ino:1:10: fatal error: RCReceiver.h: No such file or directory
+ #include &lt;RCReceiver.h&gt;
+          ^~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/RC_Int_Template</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library RCReceiver claims to run on avr architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RCReceiver/RCReceive.cpp: In member function &#39;void RCReceive::handleInterrupt()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RCReceiver/RCReceive.cpp:203:18: error: &#39;SREG&#39; was not declared in this scope
+   uint8_t sreg = SREG;
+                  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RCReceiver/RCReceive.cpp:203:18: note: suggested alternative: &#39;SING&#39;
+   uint8_t sreg = SREG;
+                  ^~~~
+                  SING
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RCReceiver/RCReceive.cpp:204:3: error: &#39;cli&#39; was not declared in this scope
+   cli();
+   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RCReceiver/RCReceive.cpp:204:3: note: suggested alternative: &#39;cbi&#39;
+   cli();
+   ^~~
+   cbi
+
+</pre>
+					
+					<h4>examples/RC_Template</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library RCReceiver claims to run on avr architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RCReceiver/RCReceive.cpp: In member function &#39;void RCReceive::handleInterrupt()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RCReceiver/RCReceive.cpp:203:18: error: &#39;SREG&#39; was not declared in this scope
+   uint8_t sreg = SREG;
+                  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RCReceiver/RCReceive.cpp:203:18: note: suggested alternative: &#39;SING&#39;
+   uint8_t sreg = SREG;
+                  ^~~~
+                  SING
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RCReceiver/RCReceive.cpp:204:3: error: &#39;cli&#39; was not declared in this scope
+   cli();
+   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RCReceiver/RCReceive.cpp:204:3: note: suggested alternative: &#39;cbi&#39;
+   cli();
+   ^~~
+   cbi
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-testlib618911476/test/test.ino:1:24: fatal error: RCReceiver.h: No such file or directory
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/RC_Int_Template</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RCReceiver/RCReceive.cpp:2:20: fatal error: wiring.c: No such file or directory
+compilation terminated.
+
+</pre>
+					
+					<h4>examples/RC_Template</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RCReceiver/RCReceive.cpp:2:20: fatal error: wiring.c: No such file or directory
+compilation terminated.
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

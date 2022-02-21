@@ -1,0 +1,544 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>ESP8266Scheduler - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>ESP8266Scheduler</h2>
+				<p>
+					Version: <b>0.2</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/esp8266scheduler/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>simple</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/src/Scheduler.h:4:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/src/Scheduler.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/src/Task.h:8:10: fatal error: cont.h: No such file or directory
+ #include &#34;cont.h&#34;
+          ^~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/simple</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino:4:31: error: expected class-name before &#39;{&#39; token
+ class PrintTask : public Task {
+                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino:17:31: error: expected class-name before &#39;{&#39; token
+ class BlinkTask : public Task {
+                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino:37:29: error: expected class-name before &#39;{&#39; token
+ class MemTask : public Task {
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino: In member function &#39;void MemTask::loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino:41:22: error: &#39;ESP&#39; was not declared in this scope
+         Serial.print(ESP.getFreeHeap());
+                      ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino:41:22: note: suggested alternative: &#39;SP&#39;
+         Serial.print(ESP.getFreeHeap());
+                      ^~~
+                      SP
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino:55:14: error: expected unqualified-id before &#39;.&#39; token
+     Scheduler.start(&amp;print_task);
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino:56:14: error: expected unqualified-id before &#39;.&#39; token
+     Scheduler.start(&amp;blink_task);
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino:57:14: error: expected unqualified-id before &#39;.&#39; token
+     Scheduler.start(&amp;mem_task);
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino:59:14: error: expected unqualified-id before &#39;.&#39; token
+     Scheduler.begin();
+              ^
+Multiple libraries were found for &#34;Scheduler.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Taskrunner
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/BlueFairy
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Scheduler
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/src/Scheduler.h:4:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/src/Scheduler.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/src/Task.h:8:10: fatal error: cont.h: No such file or directory
+ #include &#34;cont.h&#34;
+          ^~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/simple</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino:4:31: error: expected class-name before &#39;{&#39; token
+ class PrintTask : public Task {
+                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino:17:31: error: expected class-name before &#39;{&#39; token
+ class BlinkTask : public Task {
+                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino:37:29: error: expected class-name before &#39;{&#39; token
+ class MemTask : public Task {
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino: In member function &#39;void MemTask::loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino:41:22: error: &#39;ESP&#39; was not declared in this scope
+         Serial.print(ESP.getFreeHeap());
+                      ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino:55:32: error: no matching function for call to &#39;SchedulerClass::start(PrintTask*)&#39;
+     Scheduler.start(&amp;print_task);
+                                ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/libraries/Scheduler/src/Scheduler.h:34:7: note: candidate: void SchedulerClass::start(SchedulerTask, uint32_t)
+  void start(SchedulerTask task, uint32_t stackSize = 1024);
+       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/libraries/Scheduler/src/Scheduler.h:34:7: note:   no known conversion for argument 1 from &#39;PrintTask*&#39; to &#39;SchedulerTask {aka void (*)()}&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/libraries/Scheduler/src/Scheduler.h:35:7: note: candidate: void SchedulerClass::start(SchedulerParametricTask, void*, uint32_t)
+  void start(SchedulerParametricTask task, void *data, uint32_t stackSize = 1024);
+       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/libraries/Scheduler/src/Scheduler.h:35:7: note:   candidate expects 3 arguments, 1 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino:56:32: error: no matching function for call to &#39;SchedulerClass::start(BlinkTask*)&#39;
+     Scheduler.start(&amp;blink_task);
+                                ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/libraries/Scheduler/src/Scheduler.h:34:7: note: candidate: void SchedulerClass::start(SchedulerTask, uint32_t)
+  void start(SchedulerTask task, uint32_t stackSize = 1024);
+       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/libraries/Scheduler/src/Scheduler.h:34:7: note:   no known conversion for argument 1 from &#39;BlinkTask*&#39; to &#39;SchedulerTask {aka void (*)()}&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/libraries/Scheduler/src/Scheduler.h:35:7: note: candidate: void SchedulerClass::start(SchedulerParametricTask, void*, uint32_t)
+  void start(SchedulerParametricTask task, void *data, uint32_t stackSize = 1024);
+       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/libraries/Scheduler/src/Scheduler.h:35:7: note:   candidate expects 3 arguments, 1 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino:57:30: error: no matching function for call to &#39;SchedulerClass::start(MemTask*)&#39;
+     Scheduler.start(&amp;mem_task);
+                              ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/libraries/Scheduler/src/Scheduler.h:34:7: note: candidate: void SchedulerClass::start(SchedulerTask, uint32_t)
+  void start(SchedulerTask task, uint32_t stackSize = 1024);
+       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/libraries/Scheduler/src/Scheduler.h:34:7: note:   no known conversion for argument 1 from &#39;MemTask*&#39; to &#39;SchedulerTask {aka void (*)()}&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/libraries/Scheduler/src/Scheduler.h:35:7: note: candidate: void SchedulerClass::start(SchedulerParametricTask, void*, uint32_t)
+  void start(SchedulerParametricTask task, void *data, uint32_t stackSize = 1024);
+       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/libraries/Scheduler/src/Scheduler.h:35:7: note:   candidate expects 3 arguments, 1 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino:59:15: error: &#39;class SchedulerClass&#39; has no member named &#39;begin&#39;
+     Scheduler.begin();
+               ^~~~~
+Multiple libraries were found for &#34;Scheduler.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/libraries/Scheduler
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Taskrunner
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Scheduler
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/BlueFairy
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/src/Scheduler.h:4:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/src/Scheduler.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/src/Task.h:8:10: fatal error: cont.h: No such file or directory
+ #include &#34;cont.h&#34;
+          ^~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/simple</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino:4:31: error: expected class-name before &#39;{&#39; token
+ class PrintTask : public Task {
+                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino:17:31: error: expected class-name before &#39;{&#39; token
+ class BlinkTask : public Task {
+                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino:37:29: error: expected class-name before &#39;{&#39; token
+ class MemTask : public Task {
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino: In member function &#39;void MemTask::loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino:41:22: error: &#39;ESP&#39; was not declared in this scope
+         Serial.print(ESP.getFreeHeap());
+                      ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino:41:22: note: suggested alternative: &#39;SP&#39;
+         Serial.print(ESP.getFreeHeap());
+                      ^~~
+                      SP
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino:55:14: error: expected unqualified-id before &#39;.&#39; token
+     Scheduler.start(&amp;print_task);
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino:56:14: error: expected unqualified-id before &#39;.&#39; token
+     Scheduler.start(&amp;blink_task);
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino:57:14: error: expected unqualified-id before &#39;.&#39; token
+     Scheduler.start(&amp;mem_task);
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino:59:14: error: expected unqualified-id before &#39;.&#39; token
+     Scheduler.begin();
+              ^
+Multiple libraries were found for &#34;Scheduler.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Taskrunner
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/BlueFairy
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Scheduler
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/src/Scheduler.h:4:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/src/Scheduler.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/src/Task.h:8:10: fatal error: cont.h: No such file or directory
+ #include &#34;cont.h&#34;
+          ^~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/simple</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino:4:31: error: expected class-name before &#39;{&#39; token
+ class PrintTask : public Task {
+                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino:17:31: error: expected class-name before &#39;{&#39; token
+ class BlinkTask : public Task {
+                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino:37:29: error: expected class-name before &#39;{&#39; token
+ class MemTask : public Task {
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino: In member function &#39;void MemTask::loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino:41:22: error: &#39;ESP&#39; was not declared in this scope
+         Serial.print(ESP.getFreeHeap());
+                      ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino:55:32: error: no matching function for call to &#39;SchedulerClass::start(PrintTask*)&#39;
+     Scheduler.start(&amp;print_task);
+                                ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Scheduler/src/Scheduler.h:31:14: note: candidate: static void SchedulerClass::start(SchedulerTask, uint32_t)
+  static void start(SchedulerTask task, uint32_t stackSize = 1024);
+              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Scheduler/src/Scheduler.h:31:14: note:   no known conversion for argument 1 from &#39;PrintTask*&#39; to &#39;SchedulerTask {aka void (*)()}&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Scheduler/src/Scheduler.h:32:14: note: candidate: static void SchedulerClass::start(SchedulerParametricTask, void*, uint32_t)
+  static void start(SchedulerParametricTask task, void *data, uint32_t stackSize = 1024);
+              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Scheduler/src/Scheduler.h:32:14: note:   candidate expects 3 arguments, 1 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino:56:32: error: no matching function for call to &#39;SchedulerClass::start(BlinkTask*)&#39;
+     Scheduler.start(&amp;blink_task);
+                                ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Scheduler/src/Scheduler.h:31:14: note: candidate: static void SchedulerClass::start(SchedulerTask, uint32_t)
+  static void start(SchedulerTask task, uint32_t stackSize = 1024);
+              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Scheduler/src/Scheduler.h:31:14: note:   no known conversion for argument 1 from &#39;BlinkTask*&#39; to &#39;SchedulerTask {aka void (*)()}&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Scheduler/src/Scheduler.h:32:14: note: candidate: static void SchedulerClass::start(SchedulerParametricTask, void*, uint32_t)
+  static void start(SchedulerParametricTask task, void *data, uint32_t stackSize = 1024);
+              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Scheduler/src/Scheduler.h:32:14: note:   candidate expects 3 arguments, 1 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino:57:30: error: no matching function for call to &#39;SchedulerClass::start(MemTask*)&#39;
+     Scheduler.start(&amp;mem_task);
+                              ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Scheduler/src/Scheduler.h:31:14: note: candidate: static void SchedulerClass::start(SchedulerTask, uint32_t)
+  static void start(SchedulerTask task, uint32_t stackSize = 1024);
+              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Scheduler/src/Scheduler.h:31:14: note:   no known conversion for argument 1 from &#39;MemTask*&#39; to &#39;SchedulerTask {aka void (*)()}&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Scheduler/src/Scheduler.h:32:14: note: candidate: static void SchedulerClass::start(SchedulerParametricTask, void*, uint32_t)
+  static void start(SchedulerParametricTask task, void *data, uint32_t stackSize = 1024);
+              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Scheduler/src/Scheduler.h:32:14: note:   candidate expects 3 arguments, 1 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/examples/simple/simple.ino:59:15: error: &#39;class SchedulerClass&#39; has no member named &#39;begin&#39;
+     Scheduler.begin();
+               ^~~~~
+Multiple libraries were found for &#34;Scheduler.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Scheduler
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/BlueFairy
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Taskrunner
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/src/Scheduler.h:4:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/src/Scheduler.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler/src/Task.h:8:18: fatal error: cont.h: No such file or directory
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/simple</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">&lt;built-in&gt;: fatal error: when writing output to /tmp/arduino-sketch-55C166F8E14FBF857D9E821FD327B8AD/preproc/ctags_target_for_gcc_minus_e.cpp: No space left on device
+compilation terminated.
+Multiple libraries were found for &#34;Scheduler.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/BlueFairy
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266Scheduler
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Scheduler
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Taskrunner
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

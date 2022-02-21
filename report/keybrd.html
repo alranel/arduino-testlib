@@ -1,0 +1,693 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>keybrd - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>keybrd</h2>
+				<p>
+					Version: <b>0.6.7</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/keybrd/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>IOE_PCA9655E_development</pre></th>
+						
+						<th><pre>keybrd_MCP23017</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/src/Debug.cpp: In member function &#39;void Debug::printMicrosecondsPerScan()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/src/Debug.cpp:10:9: error: &#39;Keyboard&#39; was not declared in this scope
+         Keyboard.print(1000000/scanCount);      //print microseconds per scan
+         ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/src/Debug.cpp: In member function &#39;void Debug::printScansPerSecond()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/src/Debug.cpp:24:9: error: &#39;Keyboard&#39; was not declared in this scope
+         Keyboard.print(scanCount);              //print scans per second
+         ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/src/Debug.cpp: In member function &#39;void Debug::wait_for_OS(LEDInterface&amp;, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/src/De/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/src/Key_LayeredCodeScBase.cpp: In member function &#39;virtual void Key_LayeredCodeScBase::pressCode()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/src/Key_LayeredCodeScBase.cpp:7:9: error: &#39;Keyboard&#39; was not declared in this scope
+         Keyboard.press(scancode1);
+         ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/src/Key_LayeredCodeScBase.cpp: In member function &#39;virtual void Key_LayeredCodeScBase::release()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/src/Key_LayeredCodeScBase.cpp:19:9: error: &#39;Keyboard&#39; was not declared in this scope
+         Keyboard.release(scancode1);
+         ^~~~~~~~
+c.cpp: In member function &#39;virtual void Code_Sc::press()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/src/Code_Sc.cpp:5:5: error: &#39;Keyboard&#39; was not declared in this scope
+     Keyboard.press(scancode);
+     ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/src/Code_Sc.cpp: In member function &#39;virtual void Code_Sc::release()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/src/Code_Sc.cpp:10:5: error: &#39;Keyboard&#39; was not declared in this scope
+     Keyboard.release(scancode);
+     ^~~~~~~~
+:24: error: &#39;MODIFIERKEY_LEFT_SHIFT&#39; was not declared in this scope
+         Keyboard.press(MODIFIERKEY_LEFT_SHIFT); //temporarily shift
+                        ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/src/Code_ScS.cpp: In member function &#39;virtual void Code_ScS::release()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/src/Code_ScS.cpp:19:5: error: &#39;Keyboard&#39; was not declared in this scope
+     Keyboard.release(scancode);
+     ^~~~~~~~
+
+</pre>
+
+					
+					<h4>examples/IOE_PCA9655E_development</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable"></pre>
+					
+					<h4>examples/keybrd_MCP23017</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:99:13: error: &#39;KEY_A&#39; was not declared in this scope
+ Code_Sc s_a(KEY_A);
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:100:13: error: &#39;KEY_B&#39; was not declared in this scope
+ Code_Sc s_b(KEY_B);
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:101:13: error: &#39;KEY_Z&#39; was not declared in this scope
+ Code_Sc s_z(KEY_Z);
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:101:13: note: suggested alternative: &#39;SREG_Z&#39;
+ Code_Sc s_z(KEY_Z);
+             ^~~~~
+             SREG_Z
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:103:13: error: &#39;KEY_1&#39; was not declared in this scope
+ Code_Sc s_1(KEY_1);
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:104:13: error: &#39;KEY_2&#39; was not declared in this scope
+ Code_Sc s_2(KEY_2);
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:105:13: error: &#39;KEY_3&#39; was not declared in this scope
+ Code_Sc s_3(KEY_3);
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:106:13: error: &#39;KEY_4&#39; was not declared in this scope
+ Code_Sc s_4(KEY_4);
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:107:13: error: &#39;KEY_9&#39; was not declared in this scope
+ Code_Sc s_9(KEY_9);
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:138:5: error: &#39;Keyboard&#39; was not declared in this scope
+     Keyboard.print(&#34;keybrd_MCP23017.ino &#34;);
+     ^~~~~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/src/Code_ScNS.cpp: In member function &#39;virtual void Code_ScNS::press()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/src/Code_ScNS.cpp:6:5: error: &#39;Keyboard&#39; was not declared in this scope
+     Keyboard.press(scancode);
+     ^~~/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/src/Code_Sc.cpp: In member function &#39;virtual void Code_Sc::release()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/src/Code_Sc.cpp:10:5: error: &#39;Keyboard&#39; was not declared in this scope
+     Keyboard.release(scancode);
+     ^~~~~~~~
+k.cpp:13:10:
+</pre>
+
+					
+					<h4>examples/IOE_PCA9655E_development</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable"></pre>
+					
+					<h4>examples/keybrd_MCP23017</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:99:13: error: &#39;KEY_A&#39; was not declared in this scope
+ Code_Sc s_a(KEY_A);
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:100:13: error: &#39;KEY_B&#39; was not declared in this scope
+ Code_Sc s_b(KEY_B);
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:101:13: error: &#39;KEY_Z&#39; was not declared in this scope
+ Code_Sc s_z(KEY_Z);
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:103:13: error: &#39;KEY_1&#39; was not declared in this scope
+ Code_Sc s_1(KEY_1);
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:104:13: error: &#39;KEY_2&#39; was not declared in this scope
+ Code_Sc s_2(KEY_2);
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:105:13: error: &#39;KEY_3&#39; was not declared in this scope
+ Code_Sc s_3(KEY_3);
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:106:13: error: &#39;KEY_4&#39; was not declared in this scope
+ Code_Sc s_4(KEY_4);
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:107:13: error: &#39;KEY_9&#39; was not declared in this scope
+ Code_Sc s_9(KEY_9);
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:138:5: error: &#39;Keyboard&#39; was not declared in this scope
+     Keyboard.print(&#34;keybrd_MCP23017.ino &#34;);
+     ^~~~~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/src/Code_Sc.cpp: In member function &#39;virtual void Code_Sc::press()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/src/Code_Sc.cpp:5:5: error: &#39;Keyboard&#39; was not declared in this scope
+     Keyboard.press(scancode);
+     ^~~~~~~~
+/home//home/ec2-user/arduino-testlib/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/src/Key_LayeredScScBase.cpp: In member function &#39;virtual void Key_LayeredScScBase::release()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/src/Key_LayeredScScBase.cpp:19:5: error: &#39;Keyboard&#39; was not declared in this scope
+     Keyboard.release(scancode);
+     ^~~~~~~~
+   case KEY_CAPS_LOCK:
+          ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/src/Code_LEDLock.cpp:16:10: error: &#39;KEY_SCROLL_LOCK&#39; was not declared in this scope
+     case KEY_SCROLL_LOCK:
+          ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/src/Code_L/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/src/Code_ScS.cpp:11:9: error: &#39;Keyboard&#39; was not declared in this scope
+         Keyboard.press(MODIFIERKEY_LEFT_SHIFT); //temporarily shift
+         ^~~~~~~~
+/home/ec2-user/arduino-t/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/src/Code_Shift.cpp: In member function &#39;virtual void Code_Shift::release()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/src/Code_Shift.cpp:11:5: error: &#39;Keyboard&#39; was not declared in this scope
+     Keyboard.release(scancode);
+     ^~~~~~~~
+/home/ec2-use
+</pre>
+
+					
+					<h4>examples/IOE_PCA9655E_development</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable"></pre>
+					
+					<h4>examples/keybrd_MCP23017</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:99:13: error: &#39;KEY_A&#39; was not declared in this scope
+ Code_Sc s_a(KEY_A);
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:100:13: error: &#39;KEY_B&#39; was not declared in this scope
+ Code_Sc s_b(KEY_B);
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:101:13: error: &#39;KEY_Z&#39; was not declared in this scope
+ Code_Sc s_z(KEY_Z);
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:101:13: note: suggested alternative: &#39;SREG_Z&#39;
+ Code_Sc s_z(KEY_Z);
+             ^~~~~
+             SREG_Z
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:103:13: error: &#39;KEY_1&#39; was not declared in this scope
+ Code_Sc s_1(KEY_1);
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:104:13: error: &#39;KEY_2&#39; was not declared in this scope
+ Code_Sc s_2(KEY_2);
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:105:13: error: &#39;KEY_3&#39; was not declared in this scope
+ Code_Sc s_3(KEY_3);
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:106:13: error: &#39;KEY_4&#39; was not declared in this scope
+ Code_Sc s_4(KEY_4);
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:107:13: error: &#39;KEY_9&#39; was not declared in this scope
+ Code_Sc s_9(KEY_9);
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:138:5: error: &#39;Keyboard&#39; was not declared in this scope
+     Keyboard.print(&#34;keybrd_MCP23017.ino &#34;);
+     ^~~~~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">
+</pre>
+
+					
+					<h4>examples/IOE_PCA9655E_development</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable"></pre>
+					
+					<h4>examples/keybrd_MCP23017</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:99:13: error: &#39;KEY_A&#39; was not declared in this scope
+ Code_Sc s_a(KEY_A);
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:99:13: note: suggested alternative: &#39;REV_AC&#39;
+ Code_Sc s_a(KEY_A);
+             ^~~~~
+             REV_AC
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:100:13: error: &#39;KEY_B&#39; was not declared in this scope
+ Code_Sc s_b(KEY_B);
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:101:13: error: &#39;KEY_Z&#39; was not declared in this scope
+ Code_Sc s_z(KEY_Z);
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:103:13: error: &#39;KEY_1&#39; was not declared in this scope
+ Code_Sc s_1(KEY_1);
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:104:13: error: &#39;KEY_2&#39; was not declared in this scope
+ Code_Sc s_2(KEY_2);
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:105:13: error: &#39;KEY_3&#39; was not declared in this scope
+ Code_Sc s_3(KEY_3);
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:106:13: error: &#39;KEY_4&#39; was not declared in this scope
+ Code_Sc s_4(KEY_4);
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:107:13: error: &#39;KEY_9&#39; was not declared in this scope
+ Code_Sc s_9(KEY_9);
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:138:5: error: &#39;Keyboard&#39; was not declared in this scope
+     Keyboard.print(&#34;keybrd_MCP23017.ino &#34;);
+     ^~~~~~~~
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">
+</pre>
+
+					
+					<h4>examples/IOE_PCA9655E_development</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable"></pre>
+					
+					<h4>examples/keybrd_MCP23017</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:99:13: error: &#39;KEY_A&#39; was not declared in this scope
+ Code_Sc s_a(KEY_A);
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:100:13: error: &#39;KEY_B&#39; was not declared in this scope
+ Code_Sc s_b(KEY_B);
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:101:13: error: &#39;KEY_Z&#39; was not declared in this scope
+ Code_Sc s_z(KEY_Z);
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:103:13: error: &#39;KEY_1&#39; was not declared in this scope
+ Code_Sc s_1(KEY_1);
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:104:13: error: &#39;KEY_2&#39; was not declared in this scope
+ Code_Sc s_2(KEY_2);
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:105:13: error: &#39;KEY_3&#39; was not declared in this scope
+ Code_Sc s_3(KEY_3);
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:106:13: error: &#39;KEY_4&#39; was not declared in this scope
+ Code_Sc s_4(KEY_4);
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:107:13: error: &#39;KEY_9&#39; was not declared in this scope
+ Code_Sc s_9(KEY_9);
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/keybrd/examples/keybrd_MCP23017/keybrd_MCP23017.ino:138:5: error: &#39;Keyboard&#39; was not declared in this scope
+     Keyboard.print(&#34;keybrd_MCP23017.ino &#34;);
+     ^
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

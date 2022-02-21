@@ -1,0 +1,855 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>SensorFusion - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>SensorFusion</h2>
+				<p>
+					Version: <b>1.0.4</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/sensorfusion/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>MPU9250_SPI_SF</pre></th>
+						
+						<th><pre>SensorFusion</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+									
+										
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+									
+										
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 444 bytes (1%) of program storage space. Maximum is 32256 bytes.
+Global variables use 9 bytes (0%) of dynamic memory, leaving 2039 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+
+					
+					<h4>examples/MPU9250_SPI_SF</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:11:1: error: &#39;SPIClass&#39; does not name a type; did you mean &#39;class&#39;?
+ SPIClass mySPI (2);
+ ^~~~~~~~
+ class
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:12:13: error: &#39;mySPI&#39; was not declared in this scope
+ MPU9250 IMU(mySPI, SS_PIN);
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:12:13: note: suggested alternative: &#39;PRSPI&#39;
+ MPU9250 IMU(mySPI, SS_PIN);
+             ^~~~~
+             PRSPI
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:10:16: error: &#39;PB12&#39; was not declared in this scope
+ #define SS_PIN PB12
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:12:20: note: in expansion of macro &#39;SS_PIN&#39;
+ MPU9250 IMU(mySPI, SS_PIN);
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:10:16: note: suggested alternative: &#39;PB2&#39;
+ #define SS_PIN PB12
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:12:20: note: in expansion of macro &#39;SS_PIN&#39;
+ MPU9250 IMU(mySPI, SS_PIN);
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:27:16: error: &#39;using MPU9250 = class MPU9250_&lt;TwoWire&gt; {aka class MPU9250_&lt;TwoWire&gt;}&#39; has no member named &#39;begin&#39;
+   status = IMU.begin();
+                ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:39:7: error: &#39;using MPU9250 = class MPU9250_&lt;TwoWire&gt; {aka class MPU9250_&lt;TwoWire&gt;}&#39; has no member named &#39;readSensor&#39;
+   IMU.readSensor();
+       ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:41:12: error: &#39;using MPU9250 = class MPU9250_&lt;TwoWire&gt; {aka class MPU9250_&lt;TwoWire&gt;}&#39; has no member named &#39;getAccelX_mss&#39;; did you mean &#39;getAccX&#39;?
+   ax = IMU.getAccelX_mss();
+            ^~~~~~~~~~~~~
+            getAccX
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:42:12: error: &#39;using MPU9250 = class MPU9250_&lt;TwoWire&gt; {aka class MPU9250_&lt;TwoWire&gt;}&#39; has no member named &#39;getAccelY_mss&#39;; did you mean &#39;getAccY&#39;?
+   ay = IMU.getAccelY_mss();
+            ^~~~~~~~~~~~~
+            getAccY
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:43:12: error: &#39;using MPU9250 = class MPU9250_&lt;TwoWire&gt; {aka class MPU9250_&lt;TwoWire&gt;}&#39; has no member named &#39;getAccelZ_mss&#39;; did you mean &#39;getAccZ&#39;?
+   az = IMU.getAccelZ_mss();
+            ^~~~~~~~~~~~~
+            getAccZ
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:44:12: error: &#39;using MPU9250 = class MPU9250_&lt;TwoWire&gt; {aka class MPU9250_&lt;TwoWire&gt;}&#39; has no member named &#39;getGyroX_rads&#39;; did you mean &#39;getGyroBias&#39;?
+   gx = IMU.getGyroX_rads();
+            ^~~~~~~~~~~~~
+            getGyroBias
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:45:12: error: &#39;using MPU9250 = class MPU9250_&lt;TwoWire&gt; {aka class MPU9250_&lt;TwoWire&gt;}&#39; has no member named &#39;getGyroY_rads&#39;; did you mean &#39;getGyroBias&#39;?
+   gy = IMU.getGyroY_rads();
+            ^~~~~~~~~~~~~
+            getGyroBias
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:46:12: error: &#39;using MPU9250 = class MPU9250_&lt;TwoWire&gt; {aka class MPU9250_&lt;TwoWire&gt;}&#39; has no member named &#39;getGyroZ_rads&#39;; did you mean &#39;getGyroBias&#39;?
+   gz = IMU.getGyroZ_rads();
+            ^~~~~~~~~~~~~
+            getGyroBias
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:47:12: error: &#39;using MPU9250 = class MPU9250_&lt;TwoWire&gt; {aka class MPU9250_&lt;TwoWire&gt;}&#39; has no member named &#39;getMagX_uT&#39;; did you mean &#39;getMagX&#39;?
+   mx = IMU.getMagX_uT();
+            ^~~~~~~~~~
+            getMagX
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:48:12: error: &#39;using MPU9250 = class MPU9250_&lt;TwoWire&gt; {aka class MPU9250_&lt;TwoWire&gt;}&#39; has no member named &#39;getMagY_uT&#39;; did you mean &#39;getMagY&#39;?
+   my = IMU.getMagY_uT();
+            ^~~~~~~~~~
+            getMagY
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:49:12: error: &#39;using MPU9250 = class MPU9250_&lt;TwoWire&gt; {aka class MPU9250_&lt;TwoWire&gt;}&#39; has no member named &#39;getMagZ_uT&#39;; did you mean &#39;getMagZ&#39;?
+   mz = IMU.getMagZ_uT();
+            ^~~~~~~~~~
+            getMagZ
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:50:14: error: &#39;using MPU9250 = class MPU9250_&lt;TwoWire&gt; {aka class MPU9250_&lt;TwoWire&gt;}&#39; has no member named &#39;getTemperature_C&#39;; did you mean &#39;getTemperature&#39;?
+   temp = IMU.getTemperature_C();
+              ^~~~~~~~~~~~~~~~
+              getTemperature
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:69:84: error: &#39;newl&#39; was not declared in this scope
+   Serial &lt;&lt; &#34;Pitch:\t&#34; &lt;&lt; pitch &lt;&lt; &#34;\t\tRoll:\t&#34; &lt;&lt; roll &lt;&lt; &#34;\t\tYaw:\t&#34; &lt;&lt; yaw &lt;&lt; newl &lt;&lt; newl;
+                                                                                    ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:69:84: note: suggested alternative: &#39;ceil&#39;
+   Serial &lt;&lt; &#34;Pitch:\t&#34; &lt;&lt; pitch &lt;&lt; &#34;\t\tRoll:\t&#34; &lt;&lt; roll &lt;&lt; &#34;\t\tYaw:\t&#34; &lt;&lt; yaw &lt;&lt; newl &lt;&lt; newl;
+                                                                                    ^~~~
+                                                                                    ceil
+Multiple libraries were found for &#34;MPU9250.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPU9250
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ClimaStick
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_MPU-9250_9_DOF_IMU_Breakout
+</pre>
+					
+					<h4>examples/SensorFusion</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 5842 bytes (18%) of program storage space. Maximum is 32256 bytes.
+Global variables use 313 bytes (15%) of dynamic memory, leaving 1735 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 78756 bytes (0%) of program storage space. Maximum is 16777216 bytes.
+Global variables use 43444 bytes (16%) of dynamic memory, leaving 226892 bytes for local variables. Maximum is 270336 bytes.
+</pre>
+
+					
+					<h4>examples/MPU9250_SPI_SF</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:11:1: error: &#39;SPIClass&#39; does not name a type; did you mean &#39;DhcpClass&#39;?
+ SPIClass mySPI (2);
+ ^~~~~~~~
+ DhcpClass
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:12:13: error: &#39;mySPI&#39; was not declared in this scope
+ MPU9250 IMU(mySPI, SS_PIN);
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:10:16: error: &#39;PB12&#39; was not declared in this scope
+ #define SS_PIN PB12
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:12:20: note: in expansion of macro &#39;SS_PIN&#39;
+ MPU9250 IMU(mySPI, SS_PIN);
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:10:16: note: suggested alternative: &#39;B11&#39;
+ #define SS_PIN PB12
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:12:20: note: in expansion of macro &#39;SS_PIN&#39;
+ MPU9250 IMU(mySPI, SS_PIN);
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:27:16: error: &#39;using MPU9250 = class MPU9250_&lt;arduino::MbedI2C&gt; {aka class MPU9250_&lt;arduino::MbedI2C&gt;}&#39; has no member named &#39;begin&#39;
+   status = IMU.begin();
+                ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:39:7: error: &#39;using MPU9250 = class MPU9250_&lt;arduino::MbedI2C&gt; {aka class MPU9250_&lt;arduino::MbedI2C&gt;}&#39; has no member named &#39;readSensor&#39;
+   IMU.readSensor();
+       ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:41:12: error: &#39;using MPU9250 = class MPU9250_&lt;arduino::MbedI2C&gt; {aka class MPU9250_&lt;arduino::MbedI2C&gt;}&#39; has no member named &#39;getAccelX_mss&#39;; did you mean &#39;getAccX&#39;?
+   ax = IMU.getAccelX_mss();
+            ^~~~~~~~~~~~~
+            getAccX
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:42:12: error: &#39;using MPU9250 = class MPU9250_&lt;arduino::MbedI2C&gt; {aka class MPU9250_&lt;arduino::MbedI2C&gt;}&#39; has no member named &#39;getAccelY_mss&#39;; did you mean &#39;getAccY&#39;?
+   ay = IMU.getAccelY_mss();
+            ^~~~~~~~~~~~~
+            getAccY
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:43:12: error: &#39;using MPU9250 = class MPU9250_&lt;arduino::MbedI2C&gt; {aka class MPU9250_&lt;arduino::MbedI2C&gt;}&#39; has no member named &#39;getAccelZ_mss&#39;; did you mean &#39;getAccZ&#39;?
+   az = IMU.getAccelZ_mss();
+            ^~~~~~~~~~~~~
+            getAccZ
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:44:12: error: &#39;using MPU9250 = class MPU9250_&lt;arduino::MbedI2C&gt; {aka class MPU9250_&lt;arduino::MbedI2C&gt;}&#39; has no member named &#39;getGyroX_rads&#39;; did you mean &#39;getGyroBias&#39;?
+   gx = IMU.getGyroX_rads();
+            ^~~~~~~~~~~~~
+            getGyroBias
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:45:12: error: &#39;using MPU9250 = class MPU9250_&lt;arduino::MbedI2C&gt; {aka class MPU9250_&lt;arduino::MbedI2C&gt;}&#39; has no member named &#39;getGyroY_rads&#39;; did you mean &#39;getGyroBias&#39;?
+   gy = IMU.getGyroY_rads();
+            ^~~~~~~~~~~~~
+            getGyroBias
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:46:12: error: &#39;using MPU9250 = class MPU9250_&lt;arduino::MbedI2C&gt; {aka class MPU9250_&lt;arduino::MbedI2C&gt;}&#39; has no member named &#39;getGyroZ_rads&#39;; did you mean &#39;getGyroBias&#39;?
+   gz = IMU.getGyroZ_rads();
+            ^~~~~~~~~~~~~
+            getGyroBias
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:47:12: error: &#39;using MPU9250 = class MPU9250_&lt;arduino::MbedI2C&gt; {aka class MPU9250_&lt;arduino::MbedI2C&gt;}&#39; has no member named &#39;getMagX_uT&#39;; did you mean &#39;getMagX&#39;?
+   mx = IMU.getMagX_uT();
+            ^~~~~~~~~~
+            getMagX
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:48:12: error: &#39;using MPU9250 = class MPU9250_&lt;arduino::MbedI2C&gt; {aka class MPU9250_&lt;arduino::MbedI2C&gt;}&#39; has no member named &#39;getMagY_uT&#39;; did you mean &#39;getMagY&#39;?
+   my = IMU.getMagY_uT();
+            ^~~~~~~~~~
+            getMagY
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:49:12: error: &#39;using MPU9250 = class MPU9250_&lt;arduino::MbedI2C&gt; {aka class MPU9250_&lt;arduino::MbedI2C&gt;}&#39; has no member named &#39;getMagZ_uT&#39;; did you mean &#39;getMagZ&#39;?
+   mz = IMU.getMagZ_uT();
+            ^~~~~~~~~~
+            getMagZ
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:50:14: error: &#39;using MPU9250 = class MPU9250_&lt;arduino::MbedI2C&gt; {aka class MPU9250_&lt;arduino::MbedI2C&gt;}&#39; has no member named &#39;getTemperature_C&#39;; did you mean &#39;getTemperature&#39;?
+   temp = IMU.getTemperature_C();
+              ^~~~~~~~~~~~~~~~
+              getTemperature
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:69:84: error: &#39;newl&#39; was not declared in this scope
+   Serial &lt;&lt; &#34;Pitch:\t&#34; &lt;&lt; pitch &lt;&lt; &#34;\t\tRoll:\t&#34; &lt;&lt; roll &lt;&lt; &#34;\t\tYaw:\t&#34; &lt;&lt; yaw &lt;&lt; newl &lt;&lt; newl;
+                                                                                    ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:69:84: note: suggested alternative: &#39;powl&#39;
+   Serial &lt;&lt; &#34;Pitch:\t&#34; &lt;&lt; pitch &lt;&lt; &#34;\t\tRoll:\t&#34; &lt;&lt; roll &lt;&lt; &#34;\t\tYaw:\t&#34; &lt;&lt; yaw &lt;&lt; newl &lt;&lt; newl;
+                                                                                    ^~~~
+                                                                                    powl
+Multiple libraries were found for &#34;MPU9250.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPU9250
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ClimaStick
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_MPU-9250_9_DOF_IMU_Breakout
+</pre>
+					
+					<h4>examples/SensorFusion</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 86774 bytes (0%) of program storage space. Maximum is 16777216 bytes.
+Global variables use 43572 bytes (16%) of dynamic memory, leaving 226764 bytes for local variables. Maximum is 270336 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 802 bytes (1%) of program storage space. Maximum is 49152 bytes.
+Global variables use 22 bytes (0%) of dynamic memory, leaving 6122 bytes for local variables. Maximum is 6144 bytes.
+</pre>
+
+					
+					<h4>examples/MPU9250_SPI_SF</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:11:1: error: &#39;SPIClass&#39; does not name a type; did you mean &#39;DDRDClass&#39;?
+ SPIClass mySPI (2);
+ ^~~~~~~~
+ DDRDClass
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:12:13: error: &#39;mySPI&#39; was not declared in this scope
+ MPU9250 IMU(mySPI, SS_PIN);
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:10:16: error: &#39;PB12&#39; was not declared in this scope
+ #define SS_PIN PB12
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:12:20: note: in expansion of macro &#39;SS_PIN&#39;
+ MPU9250 IMU(mySPI, SS_PIN);
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:10:16: note: suggested alternative: &#39;B11&#39;
+ #define SS_PIN PB12
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:12:20: note: in expansion of macro &#39;SS_PIN&#39;
+ MPU9250 IMU(mySPI, SS_PIN);
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:27:16: error: &#39;using MPU9250 = class MPU9250_&lt;TwoWire&gt; {aka class MPU9250_&lt;TwoWire&gt;}&#39; has no member named &#39;begin&#39;
+   status = IMU.begin();
+                ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:39:7: error: &#39;using MPU9250 = class MPU9250_&lt;TwoWire&gt; {aka class MPU9250_&lt;TwoWire&gt;}&#39; has no member named &#39;readSensor&#39;
+   IMU.readSensor();
+       ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:41:12: error: &#39;using MPU9250 = class MPU9250_&lt;TwoWire&gt; {aka class MPU9250_&lt;TwoWire&gt;}&#39; has no member named &#39;getAccelX_mss&#39;; did you mean &#39;getAccX&#39;?
+   ax = IMU.getAccelX_mss();
+            ^~~~~~~~~~~~~
+            getAccX
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:42:12: error: &#39;using MPU9250 = class MPU9250_&lt;TwoWire&gt; {aka class MPU9250_&lt;TwoWire&gt;}&#39; has no member named &#39;getAccelY_mss&#39;; did you mean &#39;getAccY&#39;?
+   ay = IMU.getAccelY_mss();
+            ^~~~~~~~~~~~~
+            getAccY
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:43:12: error: &#39;using MPU9250 = class MPU9250_&lt;TwoWire&gt; {aka class MPU9250_&lt;TwoWire&gt;}&#39; has no member named &#39;getAccelZ_mss&#39;; did you mean &#39;getAccZ&#39;?
+   az = IMU.getAccelZ_mss();
+            ^~~~~~~~~~~~~
+            getAccZ
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:44:12: error: &#39;using MPU9250 = class MPU9250_&lt;TwoWire&gt; {aka class MPU9250_&lt;TwoWire&gt;}&#39; has no member named &#39;getGyroX_rads&#39;; did you mean &#39;getGyroBias&#39;?
+   gx = IMU.getGyroX_rads();
+            ^~~~~~~~~~~~~
+            getGyroBias
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:45:12: error: &#39;using MPU9250 = class MPU9250_&lt;TwoWire&gt; {aka class MPU9250_&lt;TwoWire&gt;}&#39; has no member named &#39;getGyroY_rads&#39;; did you mean &#39;getGyroBias&#39;?
+   gy = IMU.getGyroY_rads();
+            ^~~~~~~~~~~~~
+            getGyroBias
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:46:12: error: &#39;using MPU9250 = class MPU9250_&lt;TwoWire&gt; {aka class MPU9250_&lt;TwoWire&gt;}&#39; has no member named &#39;getGyroZ_rads&#39;; did you mean &#39;getGyroBias&#39;?
+   gz = IMU.getGyroZ_rads();
+            ^~~~~~~~~~~~~
+            getGyroBias
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:47:12: error: &#39;using MPU9250 = class MPU9250_&lt;TwoWire&gt; {aka class MPU9250_&lt;TwoWire&gt;}&#39; has no member named &#39;getMagX_uT&#39;; did you mean &#39;getMagX&#39;?
+   mx = IMU.getMagX_uT();
+            ^~~~~~~~~~
+            getMagX
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:48:12: error: &#39;using MPU9250 = class MPU9250_&lt;TwoWire&gt; {aka class MPU9250_&lt;TwoWire&gt;}&#39; has no member named &#39;getMagY_uT&#39;; did you mean &#39;getMagY&#39;?
+   my = IMU.getMagY_uT();
+            ^~~~~~~~~~
+            getMagY
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:49:12: error: &#39;using MPU9250 = class MPU9250_&lt;TwoWire&gt; {aka class MPU9250_&lt;TwoWire&gt;}&#39; has no member named &#39;getMagZ_uT&#39;; did you mean &#39;getMagZ&#39;?
+   mz = IMU.getMagZ_uT();
+            ^~~~~~~~~~
+            getMagZ
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:50:14: error: &#39;using MPU9250 = class MPU9250_&lt;TwoWire&gt; {aka class MPU9250_&lt;TwoWire&gt;}&#39; has no member named &#39;getTemperature_C&#39;; did you mean &#39;getTemperature&#39;?
+   temp = IMU.getTemperature_C();
+              ^~~~~~~~~~~~~~~~
+              getTemperature
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:69:84: error: &#39;newl&#39; was not declared in this scope
+   Serial &lt;&lt; &#34;Pitch:\t&#34; &lt;&lt; pitch &lt;&lt; &#34;\t\tRoll:\t&#34; &lt;&lt; roll &lt;&lt; &#34;\t\tYaw:\t&#34; &lt;&lt; yaw &lt;&lt; newl &lt;&lt; newl;
+                                                                                    ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:69:84: note: suggested alternative: &#39;ceil&#39;
+   Serial &lt;&lt; &#34;Pitch:\t&#34; &lt;&lt; pitch &lt;&lt; &#34;\t\tRoll:\t&#34; &lt;&lt; roll &lt;&lt; &#34;\t\tYaw:\t&#34; &lt;&lt; yaw &lt;&lt; newl &lt;&lt; newl;
+                                                                                    ^~~~
+                                                                                    ceil
+Multiple libraries were found for &#34;MPU9250.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPU9250
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_MPU-9250_9_DOF_IMU_Breakout
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ClimaStick
+</pre>
+					
+					<h4>examples/SensorFusion</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 6946 bytes (14%) of program storage space. Maximum is 49152 bytes.
+Global variables use 270 bytes (4%) of dynamic memory, leaving 5874 bytes for local variables. Maximum is 6144 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 12156 bytes (4%) of program storage space. Maximum is 262144 bytes.
+Global variables use 2996 bytes (9%) of dynamic memory, leaving 29772 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+
+					
+					<h4>examples/MPU9250_SPI_SF</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:11:1: error: &#39;SPIClass&#39; does not name a type; did you mean &#39;DhcpClass&#39;?
+ SPIClass mySPI (2);
+ ^~~~~~~~
+ DhcpClass
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:12:13: error: &#39;mySPI&#39; was not declared in this scope
+ MPU9250 IMU(mySPI, SS_PIN);
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:10:16: error: &#39;PB12&#39; was not declared in this scope
+ #define SS_PIN PB12
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:12:20: note: in expansion of macro &#39;SS_PIN&#39;
+ MPU9250 IMU(mySPI, SS_PIN);
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:10:16: note: suggested alternative: &#39;._12&#39;
+ #define SS_PIN PB12
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:12:20: note: in expansion of macro &#39;SS_PIN&#39;
+ MPU9250 IMU(mySPI, SS_PIN);
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:27:16: error: &#39;using MPU9250 = class MPU9250_&lt;arduino::TwoWire&gt; {aka class MPU9250_&lt;arduino::TwoWire&gt;}&#39; has no member named &#39;begin&#39;
+   status = IMU.begin();
+                ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:39:7: error: &#39;using MPU9250 = class MPU9250_&lt;arduino::TwoWire&gt; {aka class MPU9250_&lt;arduino::TwoWire&gt;}&#39; has no member named &#39;readSensor&#39;
+   IMU.readSensor();
+       ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:41:12: error: &#39;using MPU9250 = class MPU9250_&lt;arduino::TwoWire&gt; {aka class MPU9250_&lt;arduino::TwoWire&gt;}&#39; has no member named &#39;getAccelX_mss&#39;; did you mean &#39;getAccX&#39;?
+   ax = IMU.getAccelX_mss();
+            ^~~~~~~~~~~~~
+            getAccX
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:42:12: error: &#39;using MPU9250 = class MPU9250_&lt;arduino::TwoWire&gt; {aka class MPU9250_&lt;arduino::TwoWire&gt;}&#39; has no member named &#39;getAccelY_mss&#39;; did you mean &#39;getAccY&#39;?
+   ay = IMU.getAccelY_mss();
+            ^~~~~~~~~~~~~
+            getAccY
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:43:12: error: &#39;using MPU9250 = class MPU9250_&lt;arduino::TwoWire&gt; {aka class MPU9250_&lt;arduino::TwoWire&gt;}&#39; has no member named &#39;getAccelZ_mss&#39;; did you mean &#39;getAccZ&#39;?
+   az = IMU.getAccelZ_mss();
+            ^~~~~~~~~~~~~
+            getAccZ
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:44:12: error: &#39;using MPU9250 = class MPU9250_&lt;arduino::TwoWire&gt; {aka class MPU9250_&lt;arduino::TwoWire&gt;}&#39; has no member named &#39;getGyroX_rads&#39;; did you mean &#39;getGyroBias&#39;?
+   gx = IMU.getGyroX_rads();
+            ^~~~~~~~~~~~~
+            getGyroBias
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:45:12: error: &#39;using MPU9250 = class MPU9250_&lt;arduino::TwoWire&gt; {aka class MPU9250_&lt;arduino::TwoWire&gt;}&#39; has no member named &#39;getGyroY_rads&#39;; did you mean &#39;getGyroBias&#39;?
+   gy = IMU.getGyroY_rads();
+            ^~~~~~~~~~~~~
+            getGyroBias
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:46:12: error: &#39;using MPU9250 = class MPU9250_&lt;arduino::TwoWire&gt; {aka class MPU9250_&lt;arduino::TwoWire&gt;}&#39; has no member named &#39;getGyroZ_rads&#39;; did you mean &#39;getGyroBias&#39;?
+   gz = IMU.getGyroZ_rads();
+            ^~~~~~~~~~~~~
+            getGyroBias
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:47:12: error: &#39;using MPU9250 = class MPU9250_&lt;arduino::TwoWire&gt; {aka class MPU9250_&lt;arduino::TwoWire&gt;}&#39; has no member named &#39;getMagX_uT&#39;; did you mean &#39;getMagX&#39;?
+   mx = IMU.getMagX_uT();
+            ^~~~~~~~~~
+            getMagX
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:48:12: error: &#39;using MPU9250 = class MPU9250_&lt;arduino::TwoWire&gt; {aka class MPU9250_&lt;arduino::TwoWire&gt;}&#39; has no member named &#39;getMagY_uT&#39;; did you mean &#39;getMagY&#39;?
+   my = IMU.getMagY_uT();
+            ^~~~~~~~~~
+            getMagY
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:49:12: error: &#39;using MPU9250 = class MPU9250_&lt;arduino::TwoWire&gt; {aka class MPU9250_&lt;arduino::TwoWire&gt;}&#39; has no member named &#39;getMagZ_uT&#39;; did you mean &#39;getMagZ&#39;?
+   mz = IMU.getMagZ_uT();
+            ^~~~~~~~~~
+            getMagZ
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:50:14: error: &#39;using MPU9250 = class MPU9250_&lt;arduino::TwoWire&gt; {aka class MPU9250_&lt;arduino::TwoWire&gt;}&#39; has no member named &#39;getTemperature_C&#39;; did you mean &#39;getTemperature&#39;?
+   temp = IMU.getTemperature_C();
+              ^~~~~~~~~~~~~~~~
+              getTemperature
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:69:84: error: &#39;newl&#39; was not declared in this scope
+   Serial &lt;&lt; &#34;Pitch:\t&#34; &lt;&lt; pitch &lt;&lt; &#34;\t\tRoll:\t&#34; &lt;&lt; roll &lt;&lt; &#34;\t\tYaw:\t&#34; &lt;&lt; yaw &lt;&lt; newl &lt;&lt; newl;
+                                                                                    ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:69:84: note: suggested alternative: &#39;powl&#39;
+   Serial &lt;&lt; &#34;Pitch:\t&#34; &lt;&lt; pitch &lt;&lt; &#34;\t\tRoll:\t&#34; &lt;&lt; roll &lt;&lt; &#34;\t\tYaw:\t&#34; &lt;&lt; yaw &lt;&lt; newl &lt;&lt; newl;
+                                                                                    ^~~~
+                                                                                    powl
+Multiple libraries were found for &#34;MPU9250.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPU9250
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ClimaStick
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_MPU-9250_9_DOF_IMU_Breakout
+</pre>
+					
+					<h4>examples/SensorFusion</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 27732 bytes (10%) of program storage space. Maximum is 262144 bytes.
+Global variables use 3120 bytes (9%) of dynamic memory, leaving 29648 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 197856 bytes (15%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 13092 bytes (3%) of dynamic memory, leaving 314588 bytes for local variables. Maximum is 327680 bytes.
+</pre>
+
+					
+					<h4>examples/MPU9250_SPI_SF</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:11:1: error: &#39;SPIClass&#39; does not name a type
+ SPIClass mySPI (2);
+ ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:12:13: error: &#39;mySPI&#39; was not declared in this scope
+ MPU9250 IMU(mySPI, SS_PIN);
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:10:16: error: &#39;PB12&#39; was not declared in this scope
+ #define SS_PIN PB12
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:12:20: note: in expansion of macro &#39;SS_PIN&#39;
+ MPU9250 IMU(mySPI, SS_PIN);
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:27:16: error: &#39;using MPU9250 = class MPU9250_&lt;TwoWire&gt; {aka class MPU9250_&lt;TwoWire&gt;}&#39; has no member named &#39;begin&#39;
+   status = IMU.begin();
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:39:7: error: &#39;using MPU9250 = class MPU9250_&lt;TwoWire&gt; {aka class MPU9250_&lt;TwoWire&gt;}&#39; has no member named &#39;readSensor&#39;
+   IMU.readSensor();
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:41:12: error: &#39;using MPU9250 = class MPU9250_&lt;TwoWire&gt; {aka class MPU9250_&lt;TwoWire&gt;}&#39; has no member named &#39;getAccelX_mss&#39;
+   ax = IMU.getAccelX_mss();
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:42:12: error: &#39;using MPU9250 = class MPU9250_&lt;TwoWire&gt; {aka class MPU9250_&lt;TwoWire&gt;}&#39; has no member named &#39;getAccelY_mss&#39;
+   ay = IMU.getAccelY_mss();
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:43:12: error: &#39;using MPU9250 = class MPU9250_&lt;TwoWire&gt; {aka class MPU9250_&lt;TwoWire&gt;}&#39; has no member named &#39;getAccelZ_mss&#39;
+   az = IMU.getAccelZ_mss();
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:44:12: error: &#39;using MPU9250 = class MPU9250_&lt;TwoWire&gt; {aka class MPU9250_&lt;TwoWire&gt;}&#39; has no member named &#39;getGyroX_rads&#39;
+   gx = IMU.getGyroX_rads();
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:45:12: error: &#39;using MPU9250 = class MPU9250_&lt;TwoWire&gt; {aka class MPU9250_&lt;TwoWire&gt;}&#39; has no member named &#39;getGyroY_rads&#39;
+   gy = IMU.getGyroY_rads();
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:46:12: error: &#39;using MPU9250 = class MPU9250_&lt;TwoWire&gt; {aka class MPU9250_&lt;TwoWire&gt;}&#39; has no member named &#39;getGyroZ_rads&#39;
+   gz = IMU.getGyroZ_rads();
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:47:12: error: &#39;using MPU9250 = class MPU9250_&lt;TwoWire&gt; {aka class MPU9250_&lt;TwoWire&gt;}&#39; has no member named &#39;getMagX_uT&#39;
+   mx = IMU.getMagX_uT();
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:48:12: error: &#39;using MPU9250 = class MPU9250_&lt;TwoWire&gt; {aka class MPU9250_&lt;TwoWire&gt;}&#39; has no member named &#39;getMagY_uT&#39;
+   my = IMU.getMagY_uT();
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:49:12: error: &#39;using MPU9250 = class MPU9250_&lt;TwoWire&gt; {aka class MPU9250_&lt;TwoWire&gt;}&#39; has no member named &#39;getMagZ_uT&#39;
+   mz = IMU.getMagZ_uT();
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:50:14: error: &#39;using MPU9250 = class MPU9250_&lt;TwoWire&gt; {aka class MPU9250_&lt;TwoWire&gt;}&#39; has no member named &#39;getTemperature_C&#39;
+   temp = IMU.getTemperature_C();
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SensorFusion/examples/MPU9250_SPI_SF/MPU9250_SPI_SF.ino:69:84: error: &#39;newl&#39; was not declared in this scope
+   Serial &lt;&lt; &#34;Pitch:\t&#34; &lt;&lt; pitch &lt;&lt; &#34;\t\tRoll:\t&#34; &lt;&lt; roll &lt;&lt; &#34;\t\tYaw:\t&#34; &lt;&lt; yaw &lt;&lt; newl &lt;&lt; newl;
+                                                                                    ^
+Multiple libraries were found for &#34;MPU9250.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPU9250
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_MPU-9250_9_DOF_IMU_Breakout
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ClimaStick
+</pre>
+					
+					<h4>examples/SensorFusion</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 208162 bytes (15%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 13544 bytes (4%) of dynamic memory, leaving 314136 bytes for local variables. Maximum is 327680 bytes.
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

@@ -1,0 +1,943 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>Ticker - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>Ticker</h2>
+				<p>
+					Version: <b>4.4.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/ticker/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>FunctionalARM</pre></th>
+						
+						<th><pre>Ticker</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+									
+										
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 444 bytes (1%) of program storage space. Maximum is 32256 bytes.
+Global variables use 9 bytes (0%) of dynamic memory, leaving 2039 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+
+					
+					<h4>examples/FunctionalARM</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino: In member function &#39;void A::func()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:15:12: error: &#39;class HardwareSerial&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+     Serial.printf(&#34;A::func: %s.\n&#34;, flag ? &#34;true&#34; : &#34;false&#34;);
+            ^~~~~~
+            print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino: In constructor &#39;B::B(bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:33:77: error: no matching function for call to &#39;Ticker::Ticker(&lt;brace-enclosed initializer list&gt;)&#39;
+   B(bool flag) : flag(flag), ticker{[this](){this-&gt;func();}, 1000, 0, MILLIS} {
+                                                                             ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/Ticker.h:74:2: note: candidate: Ticker::Ticker(fptr, uint32_t, uint32_t, resolution_t)
+  Ticker(fptr callback, uint32_t timer, uint32_t repeat = 0, resolution_t resolution = MICROS);
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/Ticker.h:74:2: note:   no known conversion for argument 1 from &#39;B::B(bool)::&lt;lambda()&gt;&#39; to &#39;fptr {aka void (*)()}&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/Ticker.h:62:7: note: candidate: constexpr Ticker::Ticker(const Ticker&amp;)
+ class Ticker {
+       ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/Ticker.h:62:7: note:   candidate expects 1 argument, 4 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino: In member function &#39;void B::func()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:38:12: error: &#39;class HardwareSerial&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+     Serial.printf(&#34;B::func: %s.\n&#34;, flag ? &#34;true&#34; : &#34;false&#34;);
+            ^~~~~~
+            print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino: In member function &#39;void C::operator()() const&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:53:12: error: &#39;class HardwareSerial&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+     Serial.printf(&#34;C(): %d.\n&#34;, num);
+            ^~~~~~
+            print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:60:34: error: no matching function for call to &#39;Ticker::Ticker(C&amp;, int, int, resolution_t)&#39;
+ Ticker ticker4(c, 1000, 0, MILLIS);
+                                  ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/Ticker.h:74:2: note: candidate: Ticker::Ticker(fptr, uint32_t, uint32_t, resolution_t)
+  Ticker(fptr callback, uint32_t timer, uint32_t repeat = 0, resolution_t resolution = MICROS);
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/Ticker.h:74:2: note:   no known conversion for argument 1 from &#39;C&#39; to &#39;fptr {aka void (*)()}&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/Ticker.h:62:7: note: candidate: constexpr Ticker::Ticker(const Ticker&amp;)
+ class Ticker {
+       ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/Ticker.h:62:7: note:   candidate expects 1 argument, 4 provided
+Multiple libraries were found for &#34;Ticker.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SimpleTicker
+</pre>
+					
+					<h4>examples/Ticker</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 3124 bytes (9%) of program storage space. Maximum is 32256 bytes.
+Global variables use 366 bytes (17%) of dynamic memory, leaving 1682 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 78756 bytes (0%) of program storage space. Maximum is 16777216 bytes.
+Global variables use 43444 bytes (16%) of dynamic memory, leaving 226892 bytes for local variables. Maximum is 270336 bytes.
+</pre>
+
+					
+					<h4>examples/FunctionalARM</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:7:1: error: &#39;Ticker&#39; does not name a type
+ Ticker ticker1(func, 1000, 0, MILLIS);
+ ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino: In member function &#39;void A::func()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:15:12: error: &#39;class arduino::UART&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+     Serial.printf(&#34;A::func: %s.\n&#34;, flag ? &#34;true&#34; : &#34;false&#34;);
+            ^~~~~~
+            print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:24:1: error: &#39;Ticker&#39; does not name a type
+ Ticker ticker2([](){a1.func();}, 1000, 0, MILLIS);
+ ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:24:32: error: expected unqualified-id before &#39;,&#39; token
+ Ticker ticker2([](){a1.func();}, 1000, 0, MILLIS);
+                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:24:34: error: expected unqualified-id before numeric constant
+ Ticker ticker2([](){a1.func();}, 1000, 0, MILLIS);
+                                  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:28:1: error: &#39;Ticker&#39; does not name a type
+ Ticker ticker3([](){a2.func();}, 1000, 0, MILLIS);
+ ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:28:32: error: expected unqualified-id before &#39;,&#39; token
+ Ticker ticker3([](){a2.func();}, 1000, 0, MILLIS);
+                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:28:34: error: expected unqualified-id before numeric constant
+ Ticker ticker3([](){a2.func();}, 1000, 0, MILLIS);
+                                  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:41:3: error: &#39;Ticker&#39; does not name a type
+   Ticker ticker;
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino: In constructor &#39;B::B(bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:33:30: error: class &#39;B&#39; does not have any field named &#39;ticker&#39;
+   B(bool flag) : flag(flag), ticker{[this](){this-&gt;func();}, 1000, 0, MILLIS} {
+                              ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:33:71: error: &#39;MILLIS&#39; was not declared in this scope
+   B(bool flag) : flag(flag), ticker{[this](){this-&gt;func();}, 1000, 0, MILLIS} {
+                                                                       ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:33:71: note: suggested alternative: &#39;POLLIN&#39;
+   B(bool flag) : flag(flag), ticker{[this](){this-&gt;func();}, 1000, 0, MILLIS} {
+                                                                       ^~~~~~
+                                                                       POLLIN
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:34:5: error: &#39;ticker&#39; was not declared in this scope
+     ticker.start();
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:34:5: note: suggested alternative: &#39;time&#39;
+     ticker.start();
+     ^~~~~~
+     time
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino: In member function &#39;void B::func()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:38:12: error: &#39;class arduino::UART&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+     Serial.printf(&#34;B::func: %s.\n&#34;, flag ? &#34;true&#34; : &#34;false&#34;);
+            ^~~~~~
+            print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino: In member function &#39;void C::operator()() const&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:53:12: error: &#39;class arduino::UART&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+     Serial.printf(&#34;C(): %d.\n&#34;, num);
+            ^~~~~~
+            print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:60:1: error: &#39;Ticker&#39; does not name a type
+ Ticker ticker4(c, 1000, 0, MILLIS);
+ ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:67:3: error: &#39;ticker1&#39; was not declared in this scope
+   ticker1.start();
+   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:68:3: error: &#39;ticker2&#39; was not declared in this scope
+   ticker2.start();
+   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:69:3: error: &#39;ticker3&#39; was not declared in this scope
+   ticker3.start();
+   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:70:3: error: &#39;ticker4&#39; was not declared in this scope
+   ticker4.start();
+   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:74:3: error: &#39;ticker1&#39; was not declared in this scope
+   ticker1.update();
+   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:75:3: error: &#39;ticker2&#39; was not declared in this scope
+   ticker2.update();
+   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:76:3: error: &#39;ticker3&#39; was not declared in this scope
+   ticker3.update();
+   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:77:5: error: &#39;class B&#39; has no member named &#39;ticker&#39;
+   b.ticker.update();
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:78:3: error: &#39;ticker4&#39; was not declared in this scope
+   ticker4.update();
+   ^~~~~~~
+
+</pre>
+					
+					<h4>examples/Ticker</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:12:1: error: &#39;Ticker&#39; does not name a type
+ Ticker timer1(printMessage, 0, 1);
+ ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:13:1: error: &#39;Ticker&#39; does not name a type
+ Ticker timer2(printCounter, 1000, 0, MILLIS);
+ ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:14:1: error: &#39;Ticker&#39; does not name a type
+ Ticker timer3(printCountdown, 1000, 5);
+ ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:15:1: error: &#39;Ticker&#39; does not name a type
+ Ticker timer4(blink, 500);
+ ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:16:1: error: &#39;Ticker&#39; does not name a type
+ Ticker timer5(printCountUS, 100, 0, MICROS_MICROS);
+ ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:23:3: error: &#39;timer1&#39; was not declared in this scope
+   timer1.start();
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:23:3: note: suggested alternative: &#39;time&#39;
+   timer1.start();
+   ^~~~~~
+   time
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:24:3: error: &#39;timer2&#39; was not declared in this scope
+   timer2.start();
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:24:3: note: suggested alternative: &#39;time&#39;
+   timer2.start();
+   ^~~~~~
+   time
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:25:3: error: &#39;timer3&#39; was not declared in this scope
+   timer3.start();
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:25:3: note: suggested alternative: &#39;time&#39;
+   timer3.start();
+   ^~~~~~
+   time
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:26:3: error: &#39;timer4&#39; was not declared in this scope
+   timer4.start();
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:26:3: note: suggested alternative: &#39;time&#39;
+   timer4.start();
+   ^~~~~~
+   time
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:27:3: error: &#39;timer5&#39; was not declared in this scope
+   timer5.start();
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:27:3: note: suggested alternative: &#39;time&#39;
+   timer5.start();
+   ^~~~~~
+   time
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:31:3: error: &#39;timer1&#39; was not declared in this scope
+   timer1.update();
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:31:3: note: suggested alternative: &#39;time&#39;
+   timer1.update();
+   ^~~~~~
+   time
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:32:3: error: &#39;timer2&#39; was not declared in this scope
+   timer2.update();
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:32:3: note: suggested alternative: &#39;time&#39;
+   timer2.update();
+   ^~~~~~
+   time
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:33:3: error: &#39;timer3&#39; was not declared in this scope
+   timer3.update();
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:33:3: note: suggested alternative: &#39;time&#39;
+   timer3.update();
+   ^~~~~~
+   time
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:34:3: error: &#39;timer4&#39; was not declared in this scope
+   timer4.update();
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:34:3: note: suggested alternative: &#39;time&#39;
+   timer4.update();
+   ^~~~~~
+   time
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:35:3: error: &#39;timer5&#39; was not declared in this scope
+   timer5.update();
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:35:3: note: suggested alternative: &#39;time&#39;
+   timer5.update();
+   ^~~~~~
+   time
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino: In function &#39;void printCounter()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:42:18: error: &#39;timer2&#39; was not declared in this scope
+   Serial.println(timer2.counter());
+                  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:42:18: note: suggested alternative: &#39;time&#39;
+   Serial.println(timer2.counter());
+                  ^~~~~~
+                  time
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino: In function &#39;void printCountdown()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:47:22: error: &#39;timer3&#39; was not declared in this scope
+   Serial.println(5 - timer3.counter());
+                      ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:47:22: note: suggested alternative: &#39;time&#39;
+   Serial.println(5 - timer3.counter());
+                      ^~~~~~
+                      time
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 802 bytes (1%) of program storage space. Maximum is 49152 bytes.
+Global variables use 22 bytes (0%) of dynamic memory, leaving 6122 bytes for local variables. Maximum is 6144 bytes.
+</pre>
+
+					
+					<h4>examples/FunctionalARM</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino: In member function &#39;void A::func()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:15:12: error: &#39;class UartClass&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+     Serial.printf(&#34;A::func: %s.\n&#34;, flag ? &#34;true&#34; : &#34;false&#34;);
+            ^~~~~~
+            print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino: In constructor &#39;B::B(bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:33:77: error: no matching function for call to &#39;Ticker::Ticker(&lt;brace-enclosed initializer list&gt;)&#39;
+   B(bool flag) : flag(flag), ticker{[this](){this-&gt;func();}, 1000, 0, MILLIS} {
+                                                                             ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/Ticker.h:74:2: note: candidate: Ticker::Ticker(fptr, uint32_t, uint32_t, resolution_t)
+  Ticker(fptr callback, uint32_t timer, uint32_t repeat = 0, resolution_t resolution = MICROS);
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/Ticker.h:74:2: note:   no known conversion for argument 1 from &#39;B::B(bool)::&lt;lambda()&gt;&#39; to &#39;fptr {aka void (*)()}&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/Ticker.h:62:7: note: candidate: constexpr Ticker::Ticker(const Ticker&amp;)
+ class Ticker {
+       ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/Ticker.h:62:7: note:   candidate expects 1 argument, 4 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino: In member function &#39;void B::func()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:38:12: error: &#39;class UartClass&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+     Serial.printf(&#34;B::func: %s.\n&#34;, flag ? &#34;true&#34; : &#34;false&#34;);
+            ^~~~~~
+            print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino: In member function &#39;void C::operator()() const&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:53:12: error: &#39;class UartClass&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+     Serial.printf(&#34;C(): %d.\n&#34;, num);
+            ^~~~~~
+            print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:60:34: error: no matching function for call to &#39;Ticker::Ticker(C&amp;, int, int, resolution_t)&#39;
+ Ticker ticker4(c, 1000, 0, MILLIS);
+                                  ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/Ticker.h:74:2: note: candidate: Ticker::Ticker(fptr, uint32_t, uint32_t, resolution_t)
+  Ticker(fptr callback, uint32_t timer, uint32_t repeat = 0, resolution_t resolution = MICROS);
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/Ticker.h:74:2: note:   no known conversion for argument 1 from &#39;C&#39; to &#39;fptr {aka void (*)()}&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/Ticker.h:62:7: note: candidate: constexpr Ticker::Ticker(const Ticker&amp;)
+ class Ticker {
+       ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/Ticker.h:62:7: note:   candidate expects 1 argument, 4 provided
+Multiple libraries were found for &#34;Ticker.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SimpleTicker
+</pre>
+					
+					<h4>examples/Ticker</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 4020 bytes (8%) of program storage space. Maximum is 49152 bytes.
+Global variables use 315 bytes (5%) of dynamic memory, leaving 5829 bytes for local variables. Maximum is 6144 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 12156 bytes (4%) of program storage space. Maximum is 262144 bytes.
+Global variables use 2996 bytes (9%) of dynamic memory, leaving 29772 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+
+					
+					<h4>examples/FunctionalARM</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino: In member function &#39;void A::func()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:15:12: error: &#39;class Serial_&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+     Serial.printf(&#34;A::func: %s.\n&#34;, flag ? &#34;true&#34; : &#34;false&#34;);
+            ^~~~~~
+            print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino: In member function &#39;void B::func()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:38:12: error: &#39;class Serial_&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+     Serial.printf(&#34;B::func: %s.\n&#34;, flag ? &#34;true&#34; : &#34;false&#34;);
+            ^~~~~~
+            print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino: In member function &#39;void C::operator()() const&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:53:12: error: &#39;class Serial_&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+     Serial.printf(&#34;C(): %d.\n&#34;, num);
+            ^~~~~~
+            print
+Multiple libraries were found for &#34;Ticker.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SimpleTicker
+</pre>
+					
+					<h4>examples/Ticker</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 13676 bytes (5%) of program storage space. Maximum is 262144 bytes.
+Global variables use 3244 bytes (9%) of dynamic memory, leaving 29524 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 197848 bytes (15%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 13084 bytes (3%) of dynamic memory, leaving 314596 bytes for local variables. Maximum is 327680 bytes.
+</pre>
+
+					
+					<h4>examples/FunctionalARM</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:7:31: error: &#39;MILLIS&#39; was not declared in this scope
+ Ticker ticker1(func, 1000, 0, MILLIS);
+                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:24:43: error: &#39;MILLIS&#39; was not declared in this scope
+ Ticker ticker2([](){a1.func();}, 1000, 0, MILLIS);
+                                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:28:43: error: &#39;MILLIS&#39; was not declared in this scope
+ Ticker ticker3([](){a2.func();}, 1000, 0, MILLIS);
+                                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino: In constructor &#39;B::B(bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:33:71: error: &#39;MILLIS&#39; was not declared in this scope
+   B(bool flag) : flag(flag), ticker{[this](){this-&gt;func();}, 1000, 0, MILLIS} {
+                                                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:33:77: error: no matching function for call to &#39;Ticker::Ticker(&lt;brace-enclosed initializer list&gt;)&#39;
+   B(bool flag) : flag(flag), ticker{[this](){this-&gt;func();}, 1000, 0, MILLIS} {
+                                                                             ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/Ticker/src/Ticker.h:35:3: note: candidate: Ticker::Ticker()
+   Ticker();
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/Ticker/src/Ticker.h:35:3: note:   candidate expects 0 arguments, 4 provided
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/Ticker/src/Ticker.h:32:7: note: candidate: constexpr Ticker::Ticker(const Ticker&amp;)
+ class Ticker
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/Ticker/src/Ticker.h:32:7: note:   candidate expects 1 argument, 4 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:34:12: error: &#39;class Ticker&#39; has no member named &#39;start&#39;
+     ticker.start();
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:60:28: error: &#39;MILLIS&#39; was not declared in this scope
+ Ticker ticker4(c, 1000, 0, MILLIS);
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:67:11: error: &#39;class Ticker&#39; has no member named &#39;start&#39;
+   ticker1.start();
+           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:68:11: error: &#39;class Ticker&#39; has no member named &#39;start&#39;
+   ticker2.start();
+           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:69:11: error: &#39;class Ticker&#39; has no member named &#39;start&#39;
+   ticker3.start();
+           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:70:11: error: &#39;class Ticker&#39; has no member named &#39;start&#39;
+   ticker4.start();
+           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:74:11: error: &#39;class Ticker&#39; has no member named &#39;update&#39;
+   ticker1.update();
+           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:75:11: error: &#39;class Ticker&#39; has no member named &#39;update&#39;
+   ticker2.update();
+           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:76:11: error: &#39;class Ticker&#39; has no member named &#39;update&#39;
+   ticker3.update();
+           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:77:12: error: &#39;class Ticker&#39; has no member named &#39;update&#39;
+   b.ticker.update();
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/FunctionalARM/FunctionalARM.ino:78:11: error: &#39;class Ticker&#39; has no member named &#39;update&#39;
+   ticker4.update();
+           ^
+Multiple libraries were found for &#34;Ticker.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/Ticker
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SimpleTicker
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker
+</pre>
+					
+					<h4>examples/Ticker</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:12:33: error: no matching function for call to &#39;Ticker::Ticker(void (&amp;)(), int, int)&#39;
+ Ticker timer1(printMessage, 0, 1);
+                                 ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/Ticker/src/Ticker.h:35:3: note: candidate: Ticker::Ticker()
+   Ticker();
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/Ticker/src/Ticker.h:35:3: note:   candidate expects 0 arguments, 3 provided
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/Ticker/src/Ticker.h:32:7: note: candidate: constexpr Ticker::Ticker(const Ticker&amp;)
+ class Ticker
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/Ticker/src/Ticker.h:32:7: note:   candidate expects 1 argument, 3 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:13:38: error: &#39;MILLIS&#39; was not declared in this scope
+ Ticker timer2(printCounter, 1000, 0, MILLIS);
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:14:38: error: no matching function for call to &#39;Ticker::Ticker(void (&amp;)(), int, int)&#39;
+ Ticker timer3(printCountdown, 1000, 5);
+                                      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/Ticker/src/Ticker.h:35:3: note: candidate: Ticker::Ticker()
+   Ticker();
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/Ticker/src/Ticker.h:35:3: note:   candidate expects 0 arguments, 3 provided
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/Ticker/src/Ticker.h:32:7: note: candidate: constexpr Ticker::Ticker(const Ticker&amp;)
+ class Ticker
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/Ticker/src/Ticker.h:32:7: note:   candidate expects 1 argument, 3 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:15:25: error: no matching function for call to &#39;Ticker::Ticker(void (&amp;)(), int)&#39;
+ Ticker timer4(blink, 500);
+                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/Ticker/src/Ticker.h:35:3: note: candidate: Ticker::Ticker()
+   Ticker();
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/Ticker/src/Ticker.h:35:3: note:   candidate expects 0 arguments, 2 provided
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/Ticker/src/Ticker.h:32:7: note: candidate: constexpr Ticker::Ticker(const Ticker&amp;)
+ class Ticker
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/Ticker/src/Ticker.h:32:7: note:   candidate expects 1 argument, 2 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:16:37: error: &#39;MICROS_MICROS&#39; was not declared in this scope
+ Ticker timer5(printCountUS, 100, 0, MICROS_MICROS);
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:23:10: error: &#39;class Ticker&#39; has no member named &#39;start&#39;
+   timer1.start();
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:24:10: error: &#39;class Ticker&#39; has no member named &#39;start&#39;
+   timer2.start();
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:25:10: error: &#39;class Ticker&#39; has no member named &#39;start&#39;
+   timer3.start();
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:26:10: error: &#39;class Ticker&#39; has no member named &#39;start&#39;
+   timer4.start();
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:27:10: error: &#39;class Ticker&#39; has no member named &#39;start&#39;
+   timer5.start();
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:31:10: error: &#39;class Ticker&#39; has no member named &#39;update&#39;
+   timer1.update();
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:32:10: error: &#39;class Ticker&#39; has no member named &#39;update&#39;
+   timer2.update();
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:33:10: error: &#39;class Ticker&#39; has no member named &#39;update&#39;
+   timer3.update();
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:34:10: error: &#39;class Ticker&#39; has no member named &#39;update&#39;
+   timer4.update();
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:35:10: error: &#39;class Ticker&#39; has no member named &#39;update&#39;
+   timer5.update();
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:36:14: error: &#39;class Ticker&#39; has no member named &#39;counter&#39;
+   if (timer4.counter() == 20) timer4.interval(200);
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:36:38: error: &#39;class Ticker&#39; has no member named &#39;interval&#39;
+   if (timer4.counter() == 20) timer4.interval(200);
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:37:14: error: &#39;class Ticker&#39; has no member named &#39;counter&#39;
+   if (timer4.counter() == 80) timer4.interval(1000);
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:37:38: error: &#39;class Ticker&#39; has no member named &#39;interval&#39;
+   if (timer4.counter() == 80) timer4.interval(1000);
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino: In function &#39;void printCounter()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:42:25: error: &#39;class Ticker&#39; has no member named &#39;counter&#39;
+   Serial.println(timer2.counter());
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino: In function &#39;void printCountdown()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker/examples/Ticker/Ticker.ino:47:29: error: &#39;class Ticker&#39; has no member named &#39;counter&#39;
+   Serial.println(5 - timer3.counter());
+                             ^
+Multiple libraries were found for &#34;Ticker.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/Ticker
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ticker
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SimpleTicker
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

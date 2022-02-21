@@ -1,0 +1,392 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>SmartEverything NFC NT3H1101 - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>SmartEverything NFC NT3H1101</h2>
+				<p>
+					Version: <b>1.1.1</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/smarteverything-nfc-nt3h1101/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>Sme_NFC</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 2256 bytes (6%) of program storage space. Maximum is 32256 bytes.
+Global variables use 132 bytes (6%) of dynamic memory, leaving 1916 bytes for local variables. Maximum is 2048 bytes.
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SmartEverything_NFC_NT3H1101/src/nfc/NT3H1101.cpp:3:0:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/Wire/src/Wire.h: In function &#39;bool readRegisters(byte, byte, int, byte*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/Wire/src/Wire.h:68:13: note: candidate 1: uint8_t TwoWire::requestFrom(int, int)
+     uint8_t requestFrom(int, int);
+             ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/Wire/src/Wire.h:65:13: note: candidate 2: uint8_t TwoWire::requestFrom(uint8_t, uint8_t)
+     uint8_t requestFrom(uint8_t, uint8_t);
+             ^~~~~~~~~~~
+</pre>
+
+					
+					<h4>examples/Sme_NFC</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable"></pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 81778 bytes (0%) of program storage space. Maximum is 16777216 bytes.
+Global variables use 44236 bytes (16%) of dynamic memory, leaving 226100 bytes for local variables. Maximum is 270336 bytes.
+</pre>
+
+					
+					<h4>examples/Sme_NFC</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable"></pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 3702 bytes (7%) of program storage space. Maximum is 49152 bytes.
+Global variables use 327 bytes (5%) of dynamic memory, leaving 5817 bytes for local variables. Maximum is 6144 bytes.
+</pre>
+
+					
+					<h4>examples/Sme_NFC</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable"></pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 13728 bytes (5%) of program storage space. Maximum is 262144 bytes.
+Global variables use 3592 bytes (10%) of dynamic memory, leaving 29176 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+
+					
+					<h4>examples/Sme_NFC</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable"></pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:24:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SmartEverything_NFC_NT3H1101/src/SmeNfc.h:32,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SmartEverything_NFC_NT3H1101/src/nfc/NT3H1101.h:6,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SmartEverything_NFC_NT3H1101/src/nfc/NT3Hibraries/SmartEverything_NFC_NT3H1101/src/nfc/ndef/ndef.h:14,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SmartEverything_NFC_NT3H1101/src/nfc/ndef/ndef.cpp:8:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/lib/gcc/xtensa-esp32-elf/5.2.0/include/stdint-gcc.h:40:24: error: conflicting declaration &#39;typedef long int int32_t&#39;
+ typedef __INT32_TYPE__ int32_t;
+                        ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:24:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SmartEverything_NFC_NT3H1101/src/nfc/ndef/../../SmeNfc.h:32,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SmartEverything_NFC_NT3H1101/src/nfc/ndef/ndef.h:14,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SmartEverything_NFC_NT3H1101/src/nfc/ndef/ndef.cpp:8:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/stdint.h:44:19: note: previous declaration as &#39;typedef __int32_t int32_t&#39;
+ typedef __int32_t int32_t ;
+                   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SmartEverything_NFC_NT3H1101/src/nfc/ndef/../../nfc/NT3H1101_model.h:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SmartEverything_NFC_NT3H1101/src/nfc/ndef/../../nfc/NT3H1101.h:5,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SmartEverything_NFC_NT3H1101/src/nfc/ndef/../../SmeNfc.h:34,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SmartEverything_NFC_NT3H1101/src/nfc/ndef/ndef.h:14,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SmartEverything_NFC_NT3H1101/src/nfc/ndef/ndef.cpp:8:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/lib/gcc/xtensa-esp32-elf/5.2.0/include/stdint-gcc.h:52:25: error: conflicting declaration &#39;typedef long unsigned int uint32_t&#39;
+ typedef __UINT32_TYPE__ uint32_t;
+                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:24:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SmartEverything_NFC_NT3H1101/src/nfc/ndef/../../SmeNfc.h:32,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SmartEverything_NFC_NT3H1101/src/nfc/ndef/ndef.h:14,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SmartEverything_NFC_NT3H1101/src/nfc/ndef/ndef.cpp:8:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/stdint.h:45:20: note: previous declaration as &#39;typedef __uint32_t uint32_t&#39;
+ typedef __uint32_t uint32_t ;
+                    ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SmartEverything_NFC_NT3H1101/src/nfc/ndef/../../nfc/NT3H1101_model.h:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SmartEverything_NFC_NT3H1101/src/nfc/ndef/../../nfc/NT3H1101.h:5,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SmartEverything_NFC_NT3H1101/src/nfc/ndef/../../SmeNfc.h:34,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SmartEverything_NFC_NT3H1101/src/nfc/ndef/ndef.h:14,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SmartEverything_NFC_NT3H1101/src/nfc/ndef/ndef.cpp:8:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/lib/gcc/xtensa-esp32-elf/5.2.0/include/stdint-gcc.h:62:30: error: conflicting declaration &#39;typedef long int int_least32_t&#39;
+ typedef __INT_LEAST32_TYPE__ int_least32_t;
+                              ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:24:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SmartEverything_NFC_NT3H1101/src/nfc/ndef/../../SmeNfc.h:32,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SmartEverything_NFC_NT3H1101/src/nfc/ndef/ndef.h:14,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SmartEverything_NFC_NT3H1101/src/nfc/ndef/ndef.cpp:8:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/stdint.h:50:25: note: previous declaration as &#39;typedef __int_least32_t int_least32_t&#39;
+ typedef __int_least32_t int_least32_t;
+                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SmartEverything_NFC_NT3H1101/src/nfc/ndef/../../nfc/NT3H1101_model.h:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SmartEverything_NFC_NT3H1101/src/nfc/ndef/../../nfc/NT3H1101.h:5,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SmartEverything_NFC_NT3H1101/src/nfc/ndef/../../SmeNfc.h:34,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SmartEverything_NFC_NT3H1101/src/nfc/ndef/ndef.h:14,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SmartEverything_NFC_NT3H1101/src/nfc/ndef/ndef.cpp:8:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/lib/gcc/xtensa-esp32-elf/5.2.0/include/stdint-gcc.h:66:31: error: conflicting declaration &#39;typedef long unsigned int uint_least32_t&#39;
+ typedef __UINT_LEAST32_TYPE__ uint_least32_t;
+                               ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:24:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SmartEverything_NFC_NT3H1101/src/nfc/ndef/../../SmeNfc.h:32,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SmartEverything_NFC_NT3H1101/src/nfc/ndef/ndef.h:14,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SmartEverything_NFC_NT3H1101/src/nfc/ndef/ndef.cpp:8:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/stdint.h:51:26: note: previous declaration as &#39;typedef __uint_least32_t uint_least32_t&#39;
+ typedef __uint_least32_t uint_least32_t;
+                          ^
+
+</pre>
+
+					
+					<h4>examples/Sme_NFC</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable"></pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

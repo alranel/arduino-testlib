@@ -1,0 +1,786 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>Teensy_3X_Multipurpose_Board - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>Teensy_3X_Multipurpose_Board</h2>
+				<p>
+					Version: <b>1.2.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/teensy_3x_multipurpose_board/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp: In member function &#39;void MPBoard::begin()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:49:2: error: &#39;Serial1&#39; was not declared in this scope
+  Serial1.begin(serial1_baud);
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:49:2: note: suggested alternative: &#39;Serial&#39;
+  Serial1.begin(serial1_baud);
+  ^~~~~~~
+  Serial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:50:2: error: &#39;Serial2&#39; was not declared in this scope
+  Serial2.begin(serial2_baud);
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:50:2: note: suggested alternative: &#39;Serial&#39;
+  Serial2.begin(serial2_baud);
+  ^~~~~~~
+  Serial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:51:2: error: &#39;Serial3&#39; was not declared in this scope
+  Serial3.begin(serial3_baud);
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:51:2: note: suggested alternative: &#39;Serial&#39;
+  Serial3.begin(serial3_baud);
+  ^~~~~~~
+  Serial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:52:2: error: &#39;Serial4&#39; was not declared in this scope
+  Serial4.begin(serial4_baud);
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:52:2: note: suggested alternative: &#39;Serial&#39;
+  Serial4.begin(serial4_baud);
+  ^~~~~~~
+  Serial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:53:2: error: &#39;Serial5&#39; was not declared in this scope
+  Serial5.begin(serial5_baud);
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:53:2: note: suggested alternative: &#39;Serial&#39;
+  Serial5.begin(serial5_baud);
+  ^~~~~~~
+  Serial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:56:2: error: &#39;Wire1&#39; was not declared in this scope
+  Wire1.begin();
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:56:2: note: suggested alternative: &#39;Wire&#39;
+  Wire1.begin();
+  ^~~~~
+  Wire
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:57:2: error: &#39;Wire2&#39; was not declared in this scope
+  Wire2.begin();
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:57:2: note: suggested alternative: &#39;Wire&#39;
+  Wire2.begin();
+  ^~~~~
+  Wire
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:75:2: error: &#39;analogReadResolution&#39; was not declared in this scope
+  analogReadResolution(16);
+  ^~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:75:2: note: suggested alternative: &#39;analogRead&#39;
+  analogReadResolution(16);
+  ^~~~~~~~~~~~~~~~~~~~
+  analogRead
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp: In member function &#39;void MPBoard::begin(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:100:2: error: &#39;Serial1&#39; was not declared in this scope
+  Serial1.begin(serial1_baud);
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:100:2: note: suggested alternative: &#39;Serial&#39;
+  Serial1.begin(serial1_baud);
+  ^~~~~~~
+  Serial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:101:2: error: &#39;Serial2&#39; was not declared in this scope
+  Serial2.begin(serial2_baud);
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:101:2: note: suggested alternative: &#39;Serial&#39;
+  Serial2.begin(serial2_baud);
+  ^~~~~~~
+  Serial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:102:2: error: &#39;Serial3&#39; was not declared in this scope
+  Serial3.begin(serial3_baud);
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:102:2: note: suggested alternative: &#39;Serial&#39;
+  Serial3.begin(serial3_baud);
+  ^~~~~~~
+  Serial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:103:2: error: &#39;Serial4&#39; was not declared in this scope
+  Serial4.begin(serial4_baud);
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:103:2: note: suggested alternative: &#39;Serial&#39;
+  Serial4.begin(serial4_baud);
+  ^~~~~~~
+  Serial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:104:2: error: &#39;Serial5&#39; was not declared in this scope
+  Serial5.begin(serial5_baud);
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:104:2: note: suggested alternative: &#39;Serial&#39;
+  Serial5.begin(serial5_baud);
+  ^~~~~~~
+  Serial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:107:2: error: &#39;Wire1&#39; was not declared in this scope
+  Wire1.begin();
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:107:2: note: suggested alternative: &#39;Wire&#39;
+  Wire1.begin();
+  ^~~~~
+  Wire
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:108:2: error: &#39;Wire2&#39; was not declared in this scope
+  Wire2.begin();
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:108:2: note: suggested alternative: &#39;Wire&#39;
+  Wire2.begin();
+  ^~~~~
+  Wire
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp: In member function &#39;bool MPBoard::configureAsComms(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:526:3: error: &#39;Serial1&#39; was not declared in this scope
+   Serial1.setRX(SERIAL1_RX_PIN);
+   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:526:3: note: suggested alternative: &#39;Serial&#39;
+   Serial1.setRX(SERIAL1_RX_PIN);
+   ^~~~~~~
+   Serial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:532:3: error: &#39;Serial1&#39; was not declared in this scope
+   Serial1.setTX(SERIAL1_TX_PIN);
+   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:532:3: note: suggested alternative: &#39;Serial&#39;
+   Serial1.setTX(SERIAL1_TX_PIN);
+   ^~~~~~~
+   Serial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:538:3: error: &#39;Serial2&#39; was not declared in this scope
+   Serial2.setRX(SERIAL2_RX_PIN);
+   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:538:3: note: suggested alternative: &#39;Serial&#39;
+   Serial2.setRX(SERIAL2_RX_PIN);
+   ^~~~~~~
+   Serial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:544:3: error: &#39;Serial2&#39; was not declared in this scope
+   Serial2.setTX(SERIAL2_TX_PIN);
+   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:544:3: note: suggested alternative: &#39;Serial&#39;
+   Serial2.setTX(SERIAL2_TX_PIN);
+   ^~~~~~~
+   Serial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:550:3: error: &#39;Serial3&#39; was not declared in this scope
+   Serial3.setRX(SERIAL3_RX_PIN);
+   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:550:3: note: suggested alternative: &#39;Serial&#39;
+   Serial3.setRX(SERIAL3_RX_PIN);
+   ^~~~~~~
+   Serial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:556:3: error: &#39;Serial3&#39; was not declared in this scope
+   Serial3.setTX(SERIAL3_TX_PIN);
+   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:556:3: note: suggested alternative: &#39;Serial&#39;
+   Serial3.setTX(SERIAL3_TX_PIN);
+   ^~~~~~~
+   Serial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:562:3: error: &#39;Serial4&#39; was not declared in this scope
+   Serial4.setRX(SERIAL4_RX_PIN);
+   ^~~~~~~
+/hom</pre>
+
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp: In member function &#39;void MPBoard::begin()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:53:2: error: &#39;Serial5&#39; was not declared in this scope
+  Serial5.begin(serial5_baud);
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:53:2: note: suggested alternative: &#39;Serial&#39;
+  Serial5.begin(serial5_baud);
+  ^~~~~~~
+  Serial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:56:2: error: &#39;Wire1&#39; was not declared in this scope
+  Wire1.begin();
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:56:2: note: suggested alternative: &#39;Wire&#39;
+  Wire1.begin();
+  ^~~~~
+  Wire
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:57:2: error: &#39;Wire2&#39; was not declared in this scope
+  Wire2.begin();
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:57:2: note: suggested alternative: &#39;Wire&#39;
+  Wire2.begin();
+  ^~~~~
+  Wire
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp: In member function &#39;void MPBoard::begin(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:104:2: error: &#39;Serial5&#39; was not declared in this scope
+  Serial5.begin(serial5_baud);
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:104:2: note: suggested alternative: &#39;Serial&#39;
+  Serial5.begin(serial5_baud);
+  ^~~~~~~
+  Serial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:107:2: error: &#39;Wire1&#39; was not declared in this scope
+  Wire1.begin();
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:107:2: note: suggested alternative: &#39;Wire&#39;
+  Wire1.begin();
+  ^~~~~
+  Wire
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:108:2: error: &#39;Wire2&#39; was not declared in this scope
+  Wire2.begin();
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:108:2: note: suggested alternative: &#39;Wire&#39;
+  Wire2.begin();
+  ^~~~~
+  Wire
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp: In member function &#39;bool MPBoard::configureAsComms(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:526:11: error: &#39;class arduino::UART&#39; has no member named &#39;setRX&#39;
+   Serial1.setRX(SERIAL1_RX_PIN);
+           ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:532:11: error: &#39;class arduino::UART&#39; has no member named &#39;setTX&#39;
+   Serial1.setTX(SERIAL1_TX_PIN);
+           ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:538:11: error: &#39;class arduino::UART&#39; has no member named &#39;setRX&#39;
+   Serial2.setRX(SERIAL2_RX_PIN);
+           ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:544:11: error: &#39;class arduino::UART&#39; has no member named &#39;setTX&#39;
+   Serial2.setTX(SERIAL2_TX_PIN);
+           ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:550:11: error: &#39;class arduino::UART&#39; has no member named &#39;setRX&#39;
+   Serial3.setRX(SERIAL3_RX_PIN);
+           ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:556:11: error: &#39;class arduino::UART&#39; has no member named &#39;setTX&#39;
+   Serial3.setTX(SERIAL3_TX_PIN);
+           ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:562:11: error: &#39;class arduino::UART&#39; has no member named &#39;setRX&#39;
+   Serial4.setRX(SERIAL4_RX_PIN);
+           ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:568:11: error: &#39;class arduino::UART&#39; has no member named &#39;setTX&#39;
+   Serial4.setTX(SERIAL4_TX_PIN);
+           ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:574:3: error: &#39;Serial5&#39; was not declared in this scope
+   Serial5.setRX(SERIAL5_RX_PIN);
+   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:574:3: note: suggested alternative: &#39;Serial&#39;
+   Serial5.setRX(SERIAL5_RX_PIN);
+   ^~~~~~~
+   Serial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:580:3: error: &#39;Serial5&#39; was not declared in this scope
+   Serial5.setTX(SERIAL5_TX_PIN);
+   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:580:3: note: suggested alternative: &#39;Serial&#39;
+   Serial5.setTX(SERIAL5_TX_PIN);
+   ^~~~~~~
+   Serial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:586:8: error: &#39;class arduino::MbedI2C&#39; has no member named &#39;setSCL&#39;
+   Wire.setSCL(I2C0_SCL_PIN);
+        ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:592:8: error: &#39;class arduino::MbedI2C&#39; has no member named &#39;setSDA&#39;
+   Wire.setSDA(I2C0_SDA_PIN);
+        ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:598:3: error: &#39;Wire1&#39; was not declared in this scope
+   Wire1.setSCL(I2C1_SCL_PIN);
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:598:3: note: suggested alternative: &#39;Wire&#39;
+   Wire1.setSCL(I2C1_SCL_PIN);
+   ^~~~~
+   Wire
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:604:3: error: &#39;Wire1&#39; was not declared in this scope
+   Wire1.setSDA(I2C1_SDA_PIN);
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:604:3: note: suggested alternative: &#39;Wire&#39;
+   Wire1.setSDA(I2C1_SDA_PIN);
+   ^~~~~
+   Wire
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:610:3: error: &#39;Wire2&#39; was not declared in this scope
+   Wire2.setSCL(I2C2_SCL_PIN);
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:610:3: note: suggested alternative: &#39;Wire&#39;
+   Wire2.setSCL(I2C2_SCL_PIN);
+   ^~~~~
+   Wire
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:616:3: error: &#39;Wire2&#39; was not declared in this scope
+   Wire2.setSDA(I2C2_SDA_PIN);
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:616:3: note: suggested alternative: &#39;Wire&#39;
+   Wire2.setSDA(I2C2_SDA_PIN);
+   ^~~~~
+   Wire
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:628:7: error: &#39;class arduino::MbedSPI&#39; has no member named &#39;setMOSI&#39;
+   SPI.setMOSI(SPI0_MOSI_PIN);
+       ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:634:7: error: &#39;class arduino::MbedSPI&#39; has no member named &#39;setMISO&#39;
+   SPI.setMISO(SPI0_MISO_PIN);
+       ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:640:7: error: &#39;class arduino::MbedSPI&#39; has no member named &#39;setSCK&#39;
+   SPI.setSCK(SPI0_SCK_PIN);
+       ^~~~~~
+Multiple libraries were found for &#34;Servo.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Servo
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XMC_Servo
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ServoESP32
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/evive
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Printoo_Library
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RokitSmart
+</pre>
+
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp: In member function &#39;void MPBoard::begin()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:50:2: error: &#39;Serial2&#39; was not declared in this scope
+  Serial2.begin(serial2_baud);
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:50:2: note: suggested alternative: &#39;Serial1&#39;
+  Serial2.begin(serial2_baud);
+  ^~~~~~~
+  Serial1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:51:2: error: &#39;Serial3&#39; was not declared in this scope
+  Serial3.begin(serial3_baud);
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:51:2: note: suggested alternative: &#39;Serial1&#39;
+  Serial3.begin(serial3_baud);
+  ^~~~~~~
+  Serial1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:52:2: error: &#39;Serial4&#39; was not declared in this scope
+  Serial4.begin(serial4_baud);
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:52:2: note: suggested alternative: &#39;Serial1&#39;
+  Serial4.begin(serial4_baud);
+  ^~~~~~~
+  Serial1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:53:2: error: &#39;Serial5&#39; was not declared in this scope
+  Serial5.begin(serial5_baud);
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:53:2: note: suggested alternative: &#39;Serial1&#39;
+  Serial5.begin(serial5_baud);
+  ^~~~~~~
+  Serial1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:56:2: error: &#39;Wire1&#39; was not declared in this scope
+  Wire1.begin();
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:56:2: note: suggested alternative: &#39;Wire&#39;
+  Wire1.begin();
+  ^~~~~
+  Wire
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:57:2: error: &#39;Wire2&#39; was not declared in this scope
+  Wire2.begin();
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:57:2: note: suggested alternative: &#39;Wire&#39;
+  Wire2.begin();
+  ^~~~~
+  Wire
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:75:2: error: &#39;analogReadResolution&#39; was not declared in this scope
+  analogReadResolution(16);
+  ^~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:75:2: note: suggested alternative: &#39;analogRead&#39;
+  analogReadResolution(16);
+  ^~~~~~~~~~~~~~~~~~~~
+  analogRead
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp: In member function &#39;void MPBoard::begin(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:101:2: error: &#39;Serial2&#39; was not declared in this scope
+  Serial2.begin(serial2_baud);
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:101:2: note: suggested alternative: &#39;Serial1&#39;
+  Serial2.begin(serial2_baud);
+  ^~~~~~~
+  Serial1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:102:2: error: &#39;Serial3&#39; was not declared in this scope
+  Serial3.begin(serial3_baud);
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:102:2: note: suggested alternative: &#39;Serial1&#39;
+  Serial3.begin(serial3_baud);
+  ^~~~~~~
+  Serial1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:103:2: error: &#39;Serial4&#39; was not declared in this scope
+  Serial4.begin(serial4_baud);
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:103:2: note: suggested alternative: &#39;Serial1&#39;
+  Serial4.begin(serial4_baud);
+  ^~~~~~~
+  Serial1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:104:2: error: &#39;Serial5&#39; was not declared in this scope
+  Serial5.begin(serial5_baud);
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:104:2: note: suggested alternative: &#39;Serial1&#39;
+  Serial5.begin(serial5_baud);
+  ^~~~~~~
+  Serial1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:107:2: error: &#39;Wire1&#39; was not declared in this scope
+  Wire1.begin();
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:107:2: note: suggested alternative: &#39;Wire&#39;
+  Wire1.begin();
+  ^~~~~
+  Wire
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:108:2: error: &#39;Wire2&#39; was not declared in this scope
+  Wire2.begin();
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:108:2: note: suggested alternative: &#39;Wire&#39;
+  Wire2.begin();
+  ^~~~~
+  Wire
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp: In member function &#39;bool MPBoard::configureAsComms(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:526:11: error: &#39;class UartClass&#39; has no member named &#39;setRX&#39;
+   Serial1.setRX(SERIAL1_RX_PIN);
+           ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:532:11: error: &#39;class UartClass&#39; has no member named &#39;setTX&#39;
+   Serial1.setTX(SERIAL1_TX_PIN);
+           ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:538:3: error: &#39;Serial2&#39; was not declared in this scope
+   Serial2.setRX(SERIAL2_RX_PIN);
+   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:538:3: note: suggested alternative: &#39;Serial1&#39;
+   Serial2.setRX(SERIAL2_RX_PIN);
+   ^~~~~~~
+   Serial1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:544:3: error: &#39;Serial2&#39; was not declared in this scope
+   Serial2.setTX(SERIAL2_TX_PIN);
+   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:544:3: note: suggested alternative: &#39;Serial1&#39;
+   Serial2.setTX(SERIAL2_TX_PIN);
+   ^~~~~~~
+   Serial1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:550:3: error: &#39;Serial3&#39; was not declared in this scope
+   Serial3.setRX(SERIAL3_RX_PIN);
+   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:550:3: note: suggested alternative: &#39;Serial1&#39;
+   Serial3.setRX(SERIAL3_RX_PIN);
+   ^~~~~~~
+   Serial1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:556:3: error: &#39;Serial3&#39; was not declared in this scope
+   Serial3.setTX(SERIAL3_TX_PIN);
+   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:556:3: note: suggested alternative: &#39;Serial1&#39;
+   Serial3.setTX(SERIAL3_TX_PIN);
+   ^~~~~~~
+   Serial1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:562:3: error: &#39;Serial4&#39; was not declared in this scope
+   Serial4.setRX(SERIAL4_RX_PIN);
+   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:562:3: note: suggested alternative: &#39;Serial1&#39;
+   Serial4.setRX(SERIAL4_RX_PIN);
+   ^~~~~~~
+   Serial1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:568:3: error: &#39;Serial4&#39; was not declared in this scope
+   Serial4.setTX(SERIAL4_TX_PIN);
+   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:568:3: note: suggested alternative: &#39;Serial1&#39;
+   Serial4.setTX(SERIAL4_TX_PIN);
+   ^~~~~~~
+   Serial1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:574:3: error: &#39;Serial5&#39; was not declared in this scope
+   Serial5.setRX(SERIAL5_RX_PIN);
+   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:574:3: note: suggested alternative: &#39;Serial1&#39;
+   Serial5.setRX(SERIAL5_RX_PIN);
+   ^~~~~~~
+   Serial1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:580:3: error: &#39;Serial5&#39; was not</pre>
+
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp: In member function &#39;void MPBoard::begin()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:51:2: error: &#39;Serial3&#39; was not declared in this scope
+  Serial3.begin(serial3_baud);
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:51:2: note: suggested alternative: &#39;Serial_&#39;
+  Serial3.begin(serial3_baud);
+  ^~~~~~~
+  Serial_
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:52:2: error: &#39;Serial4&#39; was not declared in this scope
+  Serial4.begin(serial4_baud);
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:52:2: note: suggested alternative: &#39;Serial_&#39;
+  Serial4.begin(serial4_baud);
+  ^~~~~~~
+  Serial_
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:53:2: error: &#39;Serial5&#39; was not declared in this scope
+  Serial5.begin(serial5_baud);
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:53:2: note: suggested alternative: &#39;Serial_&#39;
+  Serial5.begin(serial5_baud);
+  ^~~~~~~
+  Serial_
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:56:2: error: &#39;Wire1&#39; was not declared in this scope
+  Wire1.begin();
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:56:2: note: suggested alternative: &#39;Wire&#39;
+  Wire1.begin();
+  ^~~~~
+  Wire
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:57:2: error: &#39;Wire2&#39; was not declared in this scope
+  Wire2.begin();
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:57:2: note: suggested alternative: &#39;Wire&#39;
+  Wire2.begin();
+  ^~~~~
+  Wire
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp: In member function &#39;void MPBoard::begin(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:102:2: error: &#39;Serial3&#39; was not declared in this scope
+  Serial3.begin(serial3_baud);
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:102:2: note: suggested alternative: &#39;Serial_&#39;
+  Serial3.begin(serial3_baud);
+  ^~~~~~~
+  Serial_
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:103:2: error: &#39;Serial4&#39; was not declared in this scope
+  Serial4.begin(serial4_baud);
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:103:2: note: suggested alternative: &#39;Serial_&#39;
+  Serial4.begin(serial4_baud);
+  ^~~~~~~
+  Serial_
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:104:2: error: &#39;Serial5&#39; was not declared in this scope
+  Serial5.begin(serial5_baud);
+  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:104:2: note: suggested alternative: &#39;Serial_&#39;
+  Serial5.begin(serial5_baud);
+  ^~~~~~~
+  Serial_
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:107:2: error: &#39;Wire1&#39; was not declared in this scope
+  Wire1.begin();
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:107:2: note: suggested alternative: &#39;Wire&#39;
+  Wire1.begin();
+  ^~~~~
+  Wire
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:108:2: error: &#39;Wire2&#39; was not declared in this scope
+  Wire2.begin();
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:108:2: note: suggested alternative: &#39;Wire&#39;
+  Wire2.begin();
+  ^~~~~
+  Wire
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp: In member function &#39;bool MPBoard::configureAsComms(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:526:11: error: &#39;class Uart&#39; has no member named &#39;setRX&#39;
+   Serial1.setRX(SERIAL1_RX_PIN);
+           ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:532:11: error: &#39;class Uart&#39; has no member named &#39;setTX&#39;
+   Serial1.setTX(SERIAL1_TX_PIN);
+           ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:538:11: error: &#39;class Uart&#39; has no member named &#39;setRX&#39;
+   Serial2.setRX(SERIAL2_RX_PIN);
+           ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:544:11: error: &#39;class Uart&#39; has no member named &#39;setTX&#39;
+   Serial2.setTX(SERIAL2_TX_PIN);
+           ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:550:3: error: &#39;Serial3&#39; was not declared in this scope
+   Serial3.setRX(SERIAL3_RX_PIN);
+   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:550:3: note: suggested alternative: &#39;Serial_&#39;
+   Serial3.setRX(SERIAL3_RX_PIN);
+   ^~~~~~~
+   Serial_
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:556:3: error: &#39;Serial3&#39; was not declared in this scope
+   Serial3.setTX(SERIAL3_TX_PIN);
+   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:556:3: note: suggested alternative: &#39;Serial_&#39;
+   Serial3.setTX(SERIAL3_TX_PIN);
+   ^~~~~~~
+   Serial_
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:562:3: error: &#39;Serial4&#39; was not declared in this scope
+   Serial4.setRX(SERIAL4_RX_PIN);
+   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:562:3: note: suggested alternative: &#39;Serial_&#39;
+   Serial4.setRX(SERIAL4_RX_PIN);
+   ^~~~~~~
+   Serial_
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:568:3: error: &#39;Serial4&#39; was not declared in this scope
+   Serial4.setTX(SERIAL4_TX_PIN);
+   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:568:3: note: suggested alternative: &#39;Serial_&#39;
+   Serial4.setTX(SERIAL4_TX_PIN);
+   ^~~~~~~
+   Serial_
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:574:3: error: &#39;Serial5&#39; was not declared in this scope
+   Serial5.setRX(SERIAL5_RX_PIN);
+   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:574:3: note: suggested alternative: &#39;Serial_&#39;
+   Serial5.setRX(SERIAL5_RX_PIN);
+   ^~~~~~~
+   Serial_
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:580:3: error: &#39;Serial5&#39; was not declared in this scope
+   Serial5.setTX(SERIAL5_TX_PIN);
+   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:580:3: note: suggested alternative: &#39;Serial_&#39;
+   Serial5.setTX(SERIAL5_TX_PIN);
+   ^~~~~~~
+   Serial_
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:586:8: error: &#39;class arduino::TwoWire&#39; has no member named &#39;setSCL&#39;
+   Wire.setSCL(I2C0_SCL_PIN);
+        ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:592:8: error: &#39;class arduino::TwoWire&#39; has no member named &#39;setSDA&#39;
+   Wire.setSDA(I2C0_SDA_PIN);
+        ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:598:3: error: &#39;Wire1&#39; was not declared in this scope
+   Wire1.setSCL(I2C1_SCL_PIN);
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:598:3: note: suggested alternative: &#39;Wire&#39;
+   Wire1.setSCL(I2C1_SCL_PIN);
+   ^~~~~
+   Wire
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:604:3: error: &#39;Wire1&#39; was not declared in this scope
+   Wire1.setSDA(I2C1_SDA_PIN);
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:604:3: note: suggested alternative: &#39;Wire&#39;
+   Wire1.setSDA(I2C1_SDA_PIN);
+   ^~~~~
+   Wire
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.cpp:610:3: error: &#39;Wire2&#39; was not declared in this sc</pre>
+
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/esp32-hal.h:53:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:35,
+                 from /tmp/arduino-sketch-1E45A4F91CFA4EA2D2DDB47CD7762030/sketch/test.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/esp32-hal-gpio.h:48:27: error: expected unqualified-id before numeric constant
+ #define ANALOG            0xC0
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Teensy_3X_Multipurpose_Board/src/Teensy_3X_Multipurpose_Board.h:104:15: note: in expansion of macro &#39;ANALOG&#39;
+ const uint8_t ANALOG   = -1;
+               ^
+Multiple libraries were found for &#34;Servo.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ServoESP32
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RokitSmart
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Printoo_Library
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XMC_Servo
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Servo
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/evive
+</pre>
+
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

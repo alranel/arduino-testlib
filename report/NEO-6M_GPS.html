@@ -1,0 +1,723 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>NEO-6M_GPS - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>NEO-6M_GPS</h2>
+				<p>
+					Version: <b>1.0.2</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/neo-6m_gps/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>ExampleLatLon</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.h:157:13: error: &#39;usb_serial_class&#39; has not been declared
+  void begin(usb_serial_class &amp;port);
+             ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.h:159:13: error: &#39;usb_serial_class&#39; has not been declared
+  void begin(usb_serial_class &amp;port, uint32_t baud, uint16_t hertz);
+             ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.h:174:2: error: &#39;usb_serial_class&#39; does not name a type
+  usb_serial_class* usb_port;
+  ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:17:22: error: variable or field &#39;begin&#39; declared void
+ void neo6mGPS::begin(usb_serial_class &amp;port)
+                      ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:17:22: error: &#39;usb_serial_class&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:17:40: error: &#39;port&#39; was not declared in this scope
+ void neo6mGPS::begin(usb_serial_class &amp;port)
+                                        ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:17:40: note: suggested alternative: &#39;word&#39;
+ void neo6mGPS::begin(usb_serial_class &amp;port)
+                                        ^~~~
+                                        word
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:40:22: error: variable or field &#39;begin&#39; declared void
+ void neo6mGPS::begin(usb_serial_class &amp;port, uint32_t baud, uint16_t hertz)
+                      ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:40:22: error: &#39;usb_serial_class&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:40:40: error: &#39;port&#39; was not declared in this scope
+ void neo6mGPS::begin(usb_serial_class &amp;port, uint32_t baud, uint16_t hertz)
+                                        ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:40:40: note: suggested alternative: &#39;word&#39;
+ void neo6mGPS::begin(usb_serial_class &amp;port, uint32_t baud, uint16_t hertz)
+                                        ^~~~
+                                        word
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:40:55: error: expected primary-expression before &#39;baud&#39;
+ void neo6mGPS::begin(usb_serial_class &amp;port, uint32_t baud, uint16_t hertz)
+                                                       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:40:70: error: expected primary-expression before &#39;hertz&#39;
+ void neo6mGPS::begin(usb_serial_class &amp;port, uint32_t baud, uint16_t hertz)
+                                                                      ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp: In member function &#39;void neo6mGPS::changeBaud(uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:121:3: error: &#39;usb_port&#39; was not declared in this scope
+   usb_port-&gt;flush();
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:121:3: note: suggested alternative: &#39;_port&#39;
+   usb_port-&gt;flush();
+   ^~~~~~~~
+   _port
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp: In member function &#39;bool neo6mGPS::available()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:157:10: error: &#39;usb_port&#39; was not declared in this scope
+   while (usb_port-&gt;available())
+          ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:157:10: note: suggested alternative: &#39;_port&#39;
+   while (usb_port-&gt;available())
+          ^~~~~~~~
+          _port
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp: In member function &#39;void neo6mGPS::sendPacket(char*, byte)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:381:3: error: &#39;usb_port&#39; was not declared in this scope
+   usb_port-&gt;write(packet, len);
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:381:3: note: suggested alternative: &#39;_port&#39;
+   usb_port-&gt;write(packet, len);
+   ^~~~~~~~
+   _port
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp: In member function &#39;void neo6mGPS::sendPacket(const char*, byte)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:392:3: error: &#39;usb_port&#39; was not declared in this scope
+   usb_port-&gt;write(packet, len);
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:392:3: note: suggested alternative: &#39;_port&#39;
+   usb_port-&gt;write(packet, len);
+   ^~~~~~~~
+   _port
+
+</pre>
+
+					
+					<h4>examples/ExampleLatLon</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/examples/ExampleLatLon/ExampleLatLon.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.h:157:13: error: &#39;usb_serial_class&#39; has not been declared
+  void begin(usb_serial_class &amp;port);
+             ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.h:159:13: error: &#39;usb_serial_class&#39; has not been declared
+  void begin(usb_serial_class &amp;port, uint32_t baud, uint16_t hertz);
+             ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.h:174:2: error: &#39;usb_serial_class&#39; does not name a type
+  usb_serial_class* usb_port;
+  ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/examples/ExampleLatLon/ExampleLatLon.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/examples/ExampleLatLon/ExampleLatLon.ino:20:15: error: &#39;Serial1&#39; was not declared in this scope
+   myGPS.begin(Serial1);
+               ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/examples/ExampleLatLon/ExampleLatLon.ino:20:15: note: suggested alternative: &#39;Serial&#39;
+   myGPS.begin(Serial1);
+               ^~~~~~~
+               Serial
+
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.h:157:13: error: &#39;usb_serial_class&#39; has not been declared
+  void begin(usb_serial_class &amp;port);
+             ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.h:159:13: error: &#39;usb_serial_class&#39; has not been declared
+  void begin(usb_serial_class &amp;port, uint32_t baud, uint16_t hertz);
+             ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.h:174:2: error: &#39;usb_serial_class&#39; does not name a type; did you mean &#39;serial_s&#39;?
+  usb_serial_class* usb_port;
+  ^~~~~~~~~~~~~~~~
+  serial_s
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:17:22: error: variable or field &#39;begin&#39; declared void
+ void neo6mGPS::begin(usb_serial_class &amp;port)
+                      ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:17:22: error: &#39;usb_serial_class&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:17:22: note: suggested alternative: &#39;serial_s&#39;
+ void neo6mGPS::begin(usb_serial_class &amp;port)
+                      ^~~~~~~~~~~~~~~~
+                      serial_s
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:17:40: error: &#39;port&#39; was not declared in this scope
+ void neo6mGPS::begin(usb_serial_class &amp;port)
+                                        ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:17:40: note: suggested alternative: &#39;port_s&#39;
+ void neo6mGPS::begin(usb_serial_class &amp;port)
+                                        ^~~~
+                                        port_s
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:40:22: error: variable or field &#39;begin&#39; declared void
+ void neo6mGPS::begin(usb_serial_class &amp;port, uint32_t baud, uint16_t hertz)
+                      ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:40:22: error: &#39;usb_serial_class&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:40:22: note: suggested alternative: &#39;serial_s&#39;
+ void neo6mGPS::begin(usb_serial_class &amp;port, uint32_t baud, uint16_t hertz)
+                      ^~~~~~~~~~~~~~~~
+                      serial_s
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:40:40: error: &#39;port&#39; was not declared in this scope
+ void neo6mGPS::begin(usb_serial_class &amp;port, uint32_t baud, uint16_t hertz)
+                                        ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:40:40: note: suggested alternative: &#39;port_s&#39;
+ void neo6mGPS::begin(usb_serial_class &amp;port, uint32_t baud, uint16_t hertz)
+                                        ^~~~
+                                        port_s
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:40:55: error: expected primary-expression before &#39;baud&#39;
+ void neo6mGPS::begin(usb_serial_class &amp;port, uint32_t baud, uint16_t hertz)
+                                                       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:40:70: error: expected primary-expression before &#39;hertz&#39;
+ void neo6mGPS::begin(usb_serial_class &amp;port, uint32_t baud, uint16_t hertz)
+                                                                      ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp: In member function &#39;void neo6mGPS::changeBaud(uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:121:3: error: &#39;usb_port&#39; was not declared in this scope
+   usb_port-&gt;flush();
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:121:3: note: suggested alternative: &#39;_port&#39;
+   usb_port-&gt;flush();
+   ^~~~~~~~
+   _port
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp: In member function &#39;bool neo6mGPS::available()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:157:10: error: &#39;usb_port&#39; was not declared in this scope
+   while (usb_port-&gt;available())
+          ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:157:10: note: suggested alternative: &#39;_port&#39;
+   while (usb_port-&gt;available())
+          ^~~~~~~~
+          _port
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp: In member function &#39;void neo6mGPS::sendPacket(char*, byte)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:381:3: error: &#39;usb_port&#39; was not declared in this scope
+   usb_port-&gt;write(packet, len);
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:381:3: note: suggested alternative: &#39;_port&#39;
+   usb_port-&gt;write(packet, len);
+   ^~~~~~~~
+   _port
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp: In member function &#39;void neo6mGPS::sendPacket(const char*, byte)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:392:3: error: &#39;usb_port&#39; was not declared in this scope
+   usb_port-&gt;write(packet, len);
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:392:3: note: suggested alternative: &#39;_port&#39;
+   usb_port-&gt;write(packet, len);
+   ^~~~~~~~
+   _port
+
+</pre>
+
+					
+					<h4>examples/ExampleLatLon</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/examples/ExampleLatLon/ExampleLatLon.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.h:157:13: error: &#39;usb_serial_class&#39; has not been declared
+  void begin(usb_serial_class &amp;port);
+             ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.h:159:13: error: &#39;usb_serial_class&#39; has not been declared
+  void begin(usb_serial_class &amp;port, uint32_t baud, uint16_t hertz);
+             ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.h:174:2: error: &#39;usb_serial_class&#39; does not name a type; did you mean &#39;serial_s&#39;?
+  usb_serial_class* usb_port;
+  ^~~~~~~~~~~~~~~~
+  serial_s
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.h:157:13: error: &#39;usb_serial_class&#39; has not been declared
+  void begin(usb_serial_class &amp;port);
+             ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.h:159:13: error: &#39;usb_serial_class&#39; has not been declared
+  void begin(usb_serial_class &amp;port, uint32_t baud, uint16_t hertz);
+             ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.h:174:2: error: &#39;usb_serial_class&#39; does not name a type
+  usb_serial_class* usb_port;
+  ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:17:22: error: variable or field &#39;begin&#39; declared void
+ void neo6mGPS::begin(usb_serial_class &amp;port)
+                      ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:17:22: error: &#39;usb_serial_class&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:17:40: error: &#39;port&#39; was not declared in this scope
+ void neo6mGPS::begin(usb_serial_class &amp;port)
+                                        ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:17:40: note: suggested alternative: &#39;word&#39;
+ void neo6mGPS::begin(usb_serial_class &amp;port)
+                                        ^~~~
+                                        word
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:40:22: error: variable or field &#39;begin&#39; declared void
+ void neo6mGPS::begin(usb_serial_class &amp;port, uint32_t baud, uint16_t hertz)
+                      ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:40:22: error: &#39;usb_serial_class&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:40:40: error: &#39;port&#39; was not declared in this scope
+ void neo6mGPS::begin(usb_serial_class &amp;port, uint32_t baud, uint16_t hertz)
+                                        ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:40:40: note: suggested alternative: &#39;word&#39;
+ void neo6mGPS::begin(usb_serial_class &amp;port, uint32_t baud, uint16_t hertz)
+                                        ^~~~
+                                        word
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:40:55: error: expected primary-expression before &#39;baud&#39;
+ void neo6mGPS::begin(usb_serial_class &amp;port, uint32_t baud, uint16_t hertz)
+                                                       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:40:70: error: expected primary-expression before &#39;hertz&#39;
+ void neo6mGPS::begin(usb_serial_class &amp;port, uint32_t baud, uint16_t hertz)
+                                                                      ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp: In member function &#39;void neo6mGPS::changeBaud(uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:121:3: error: &#39;usb_port&#39; was not declared in this scope
+   usb_port-&gt;flush();
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:121:3: note: suggested alternative: &#39;_port&#39;
+   usb_port-&gt;flush();
+   ^~~~~~~~
+   _port
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp: In member function &#39;bool neo6mGPS::available()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:157:10: error: &#39;usb_port&#39; was not declared in this scope
+   while (usb_port-&gt;available())
+          ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:157:10: note: suggested alternative: &#39;_port&#39;
+   while (usb_port-&gt;available())
+          ^~~~~~~~
+          _port
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp: In member function &#39;void neo6mGPS::sendPacket(char*, byte)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:381:3: error: &#39;usb_port&#39; was not declared in this scope
+   usb_port-&gt;write(packet, len);
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:381:3: note: suggested alternative: &#39;_port&#39;
+   usb_port-&gt;write(packet, len);
+   ^~~~~~~~
+   _port
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp: In member function &#39;void neo6mGPS::sendPacket(const char*, byte)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:392:3: error: &#39;usb_port&#39; was not declared in this scope
+   usb_port-&gt;write(packet, len);
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:392:3: note: suggested alternative: &#39;_port&#39;
+   usb_port-&gt;write(packet, len);
+   ^~~~~~~~
+   _port
+
+</pre>
+
+					
+					<h4>examples/ExampleLatLon</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/examples/ExampleLatLon/ExampleLatLon.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.h:157:13: error: &#39;usb_serial_class&#39; has not been declared
+  void begin(usb_serial_class &amp;port);
+             ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.h:159:13: error: &#39;usb_serial_class&#39; has not been declared
+  void begin(usb_serial_class &amp;port, uint32_t baud, uint16_t hertz);
+             ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.h:174:2: error: &#39;usb_serial_class&#39; does not name a type
+  usb_serial_class* usb_port;
+  ^~~~~~~~~~~~~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.h:157:13: error: &#39;usb_serial_class&#39; has not been declared
+  void begin(usb_serial_class &amp;port);
+             ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.h:159:13: error: &#39;usb_serial_class&#39; has not been declared
+  void begin(usb_serial_class &amp;port, uint32_t baud, uint16_t hertz);
+             ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.h:174:2: error: &#39;usb_serial_class&#39; does not name a type
+  usb_serial_class* usb_port;
+  ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:17:22: error: variable or field &#39;begin&#39; declared void
+ void neo6mGPS::begin(usb_serial_class &amp;port)
+                      ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:17:22: error: &#39;usb_serial_class&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:17:40: error: &#39;port&#39; was not declared in this scope
+ void neo6mGPS::begin(usb_serial_class &amp;port)
+                                        ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:17:40: note: suggested alternative: &#39;Port&#39;
+ void neo6mGPS::begin(usb_serial_class &amp;port)
+                                        ^~~~
+                                        Port
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:40:22: error: variable or field &#39;begin&#39; declared void
+ void neo6mGPS::begin(usb_serial_class &amp;port, uint32_t baud, uint16_t hertz)
+                      ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:40:22: error: &#39;usb_serial_class&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:40:40: error: &#39;port&#39; was not declared in this scope
+ void neo6mGPS::begin(usb_serial_class &amp;port, uint32_t baud, uint16_t hertz)
+                                        ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:40:40: note: suggested alternative: &#39;Port&#39;
+ void neo6mGPS::begin(usb_serial_class &amp;port, uint32_t baud, uint16_t hertz)
+                                        ^~~~
+                                        Port
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:40:55: error: expected primary-expression before &#39;baud&#39;
+ void neo6mGPS::begin(usb_serial_class &amp;port, uint32_t baud, uint16_t hertz)
+                                                       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:40:70: error: expected primary-expression before &#39;hertz&#39;
+ void neo6mGPS::begin(usb_serial_class &amp;port, uint32_t baud, uint16_t hertz)
+                                                                      ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp: In member function &#39;void neo6mGPS::changeBaud(uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:121:3: error: &#39;usb_port&#39; was not declared in this scope
+   usb_port-&gt;flush();
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:121:3: note: suggested alternative: &#39;_port&#39;
+   usb_port-&gt;flush();
+   ^~~~~~~~
+   _port
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp: In member function &#39;bool neo6mGPS::available()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:157:10: error: &#39;usb_port&#39; was not declared in this scope
+   while (usb_port-&gt;available())
+          ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:157:10: note: suggested alternative: &#39;_port&#39;
+   while (usb_port-&gt;available())
+          ^~~~~~~~
+          _port
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp: In member function &#39;void neo6mGPS::sendPacket(char*, byte)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:381:3: error: &#39;usb_port&#39; was not declared in this scope
+   usb_port-&gt;write(packet, len);
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:381:3: note: suggested alternative: &#39;_port&#39;
+   usb_port-&gt;write(packet, len);
+   ^~~~~~~~
+   _port
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp: In member function &#39;void neo6mGPS::sendPacket(const char*, byte)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:392:3: error: &#39;usb_port&#39; was not declared in this scope
+   usb_port-&gt;write(packet, len);
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:392:3: note: suggested alternative: &#39;_port&#39;
+   usb_port-&gt;write(packet, len);
+   ^~~~~~~~
+   _port
+
+</pre>
+
+					
+					<h4>examples/ExampleLatLon</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/examples/ExampleLatLon/ExampleLatLon.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.h:157:13: error: &#39;usb_serial_class&#39; has not been declared
+  void begin(usb_serial_class &amp;port);
+             ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.h:159:13: error: &#39;usb_serial_class&#39; has not been declared
+  void begin(usb_serial_class &amp;port, uint32_t baud, uint16_t hertz);
+             ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.h:174:2: error: &#39;usb_serial_class&#39; does not name a type
+  usb_serial_class* usb_port;
+  ^~~~~~~~~~~~~~~~
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.h:157:13: error: &#39;usb_serial_class&#39; has not been declared
+  void begin(usb_serial_class &amp;port);
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.h:159:13: error: &#39;usb_serial_class&#39; has not been declared
+  void begin(usb_serial_class &amp;port, uint32_t baud, uint16_t hertz);
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.h:174:2: error: &#39;usb_serial_class&#39; does not name a type
+  usb_serial_class* usb_port;
+  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:17:22: error: variable or field &#39;begin&#39; declared void
+ void neo6mGPS::begin(usb_serial_class &amp;port)
+                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:17:22: error: &#39;usb_serial_class&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:17:40: error: &#39;port&#39; was not declared in this scope
+ void neo6mGPS::begin(usb_serial_class &amp;port)
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:40:22: error: variable or field &#39;begin&#39; declared void
+ void neo6mGPS::begin(usb_serial_class &amp;port, uint32_t baud, uint16_t hertz)
+                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:40:22: error: &#39;usb_serial_class&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:40:40: error: &#39;port&#39; was not declared in this scope
+ void neo6mGPS::begin(usb_serial_class &amp;port, uint32_t baud, uint16_t hertz)
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:40:55: error: expected primary-expression before &#39;baud&#39;
+ void neo6mGPS::begin(usb_serial_class &amp;port, uint32_t baud, uint16_t hertz)
+                                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:40:70: error: expected primary-expression before &#39;hertz&#39;
+ void neo6mGPS::begin(usb_serial_class &amp;port, uint32_t baud, uint16_t hertz)
+                                                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp: In member function &#39;void neo6mGPS::changeBaud(uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:121:3: error: &#39;usb_port&#39; was not declared in this scope
+   usb_port-&gt;flush();
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp: In member function &#39;bool neo6mGPS::available()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:157:10: error: &#39;usb_port&#39; was not declared in this scope
+   while (usb_port-&gt;available())
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp: In member function &#39;void neo6mGPS::sendPacket(char*, byte)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:381:3: error: &#39;usb_port&#39; was not declared in this scope
+   usb_port-&gt;write(packet, len);
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp: In member function &#39;void neo6mGPS::sendPacket(const char*, byte)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.cpp:392:3: error: &#39;usb_port&#39; was not declared in this scope
+   usb_port-&gt;write(packet, len);
+   ^
+
+</pre>
+
+					
+					<h4>examples/ExampleLatLon</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/examples/ExampleLatLon/ExampleLatLon.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.h:157:13: error: &#39;usb_serial_class&#39; has not been declared
+  void begin(usb_serial_class &amp;port);
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.h:159:13: error: &#39;usb_serial_class&#39; has not been declared
+  void begin(usb_serial_class &amp;port, uint32_t baud, uint16_t hertz);
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NEO-6M_GPS/src/neo6mGPS.h:174:2: error: &#39;usb_serial_class&#39; does not name a type
+  usb_serial_class* usb_port;
+  ^
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

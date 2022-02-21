@@ -1,0 +1,906 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>HTTP - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>HTTP</h2>
+				<p>
+					Version: <b>1.0.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/http/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>CustomWebServer</pre></th>
+						
+						<th><pre>TestWebServer</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 3372 bytes (10%) of program storage space. Maximum is 32256 bytes.
+Global variables use 1233 bytes (60%) of dynamic memory, leaving 815 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+
+					
+					<h4>examples/CustomWebServer</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 24364 bytes (75%) of program storage space. Maximum is 32256 bytes.
+Global variables use 2693 bytes (131%) of dynamic memory, leaving -645 bytes for local variables. Maximum is 2048 bytes.
+Not enough memory; see https://support.arduino.cc/hc/en-us/articles/360013825179 for tips on reducing your footprint.
+</pre>
+					
+					<h4>examples/TestWebServer</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino:37:56: error: &#39;tcpServer&#39; was not declared in this scope
+   http::RemoteClient &lt; EthernetClient &gt; remoteClient = tcpServer.available() ;
+                                                        ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino:37:56: note: suggested alternative: &#39;httpServer&#39;
+   http::RemoteClient &lt; EthernetClient &gt; remoteClient = tcpServer.available() ;
+                                                        ^~~~~~~~~
+                                                        httpServer
+Multiple libraries were found for &#34;Ethernet.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ethernet
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/UIPEthernet
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EthernetENC
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpHeader.cpp: In member function &#39;http::ResponseHeader&amp; http::ResponseHeader::operator=(const http::ResponseHeader&amp;)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpHeader.cpp:178:52: error: passing &#39;const arduino::String&#39; as &#39;this&#39; argument discards qualifiers [-fpermissive]
+    fieldArray[ n ]-&gt;value = other.fieldArray[ n ]-&gt;value ;
+                                                    ^~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/IPAddress.h:24:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:27,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpHeader.hpp:8,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpHeader.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/String.h:98:11: note:   in call to &#39;arduino::String&amp; arduino::String::operator=(const arduino::String&amp;)&#39;
+  String &amp; operator = (const String &amp;rhs);
+           ^~~~~~~~
+
+</pre>
+
+					
+					<h4>examples/CustomWebServer</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/CustomWebServer/CustomWebServer.ino:10:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp: In instantiation of &#39;bool http::RemoteClient&lt;Client_t&gt;::available() const [with Client_t = EthernetClient]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:74:7:   required from &#39;void http::Server::replyTo(const http::RemoteClient&lt;Client_t&gt;&amp;) [with Client_t = EthernetClient]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/CustomWebServer/CustomWebServer.ino:56:36:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp:39:30: error: passing &#39;const EthernetClient&#39; as &#39;this&#39; argument discards qualifiers [-fpermissive]
+      return client.available() ;
+                              ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/CustomWebServer/CustomWebServer.ino:9:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ethernet/src/Ethernet.h:225:14: note:   in call to &#39;virtual int EthernetClient::available()&#39;
+  virtual int available();
+              ^~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/CustomWebServer/CustomWebServer.ino:10:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp: In instantiation of &#39;void http::RemoteClient&lt;Client_t&gt;::write(const http::ResponseMessage&amp;) const [with Client_t = EthernetClient]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:101:3:   required from &#39;void http::Server::replyTo(const http::RemoteClient&lt;Client_t&gt;&amp;) [with Client_t = EthernetClient]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/CustomWebServer/CustomWebServer.ino:56:36:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp:29:6: error: passing &#39;const EthernetClient&#39; as &#39;this&#39; argument discards qualifiers [-fpermissive]
+      client.write( String( message ).c_str() ) ;
+      ^~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/ArduinoAPI.h:31:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:27,
+                 from /tmp/arduino-sketch-E228DE47C0FDD8FDC9DB97BCAF45A2B7/sketch/CustomWebServer.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Print.h:50:12: note:   in call to &#39;size_t arduino::Print::write(const char*)&#39;
+     size_t write(const char *str) {
+            ^~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/CustomWebServer/CustomWebServer.ino:10:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp: In instantiation of &#39;void http::RemoteClient&lt;Client_t&gt;::close() const [with Client_t = EthernetClient]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:102:3:   required from &#39;void http::Server::replyTo(const http::RemoteClient&lt;Client_t&gt;&amp;) [with Client_t = EthernetClient]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/CustomWebServer/CustomWebServer.ino:56:36:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp:44:6: error: passing &#39;const EthernetClient&#39; as &#39;this&#39; argument discards qualifiers [-fpermissive]
+      client.stop() ;
+      ^~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/CustomWebServer/CustomWebServer.ino:9:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ethernet/src/Ethernet.h:230:15: note:   in call to &#39;virtual void EthernetClient::stop()&#39;
+  virtual void stop();
+               ^~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/CustomWebServer/CustomWebServer.ino:10:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp: In instantiation of &#39;char http::RemoteClient&lt;Client_t&gt;::read() const [with Client_t = EthernetClient]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:118:8:   required from &#39;http::RequestMessage http::parseRawMessageFrom(const http::RemoteClient&lt;Client_t&gt;&amp;) [with Client_t = EthernetClient]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:76:54:   required from &#39;void http::Server::replyTo(const http::RemoteClient&lt;Client_t&gt;&amp;) [with Client_t = EthernetClient]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/CustomWebServer/CustomWebServer.ino:56:36:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp:34:25: error: passing &#39;const EthernetClient&#39; as &#39;this&#39; argument discards qualifiers [-fpermissive]
+      return client.read() ;
+                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/CustomWebServer/CustomWebServer.ino:9:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ethernet/src/Ethernet.h:226:14: note:   in call to &#39;virtual int EthernetClient::read()&#39;
+  virtual int read();
+              ^~~~
+Multiple libraries were found for &#34;Ethernet.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ethernet
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/UIPEthernet
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EthernetENC
+</pre>
+					
+					<h4>examples/TestWebServer</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino:37:56: error: &#39;tcpServer&#39; was not declared in this scope
+   http::RemoteClient &lt; EthernetClient &gt; remoteClient = tcpServer.available() ;
+                                                        ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino:37:56: note: suggested alternative: &#39;httpServer&#39;
+   http::RemoteClient &lt; EthernetClient &gt; remoteClient = tcpServer.available() ;
+                                                        ^~~~~~~~~
+                                                        httpServer
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino:9:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp: In instantiation of &#39;bool http::RemoteClient&lt;Client_t&gt;::available() const [with Client_t = EthernetClient]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:74:7:   required from &#39;void http::Server::replyTo(const http::RemoteClient&lt;Client_t&gt;&amp;) [with Client_t = EthernetClient]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino:40:36:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp:39:30: error: passing &#39;const EthernetClient&#39; as &#39;this&#39; argument discards qualifiers [-fpermissive]
+      return client.available() ;
+                              ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino:8:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ethernet/src/Ethernet.h:225:14: note:   in call to &#39;virtual int EthernetClient::available()&#39;
+  virtual int available();
+              ^~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino:9:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp: In instantiation of &#39;void http::RemoteClient&lt;Client_t&gt;::write(const http::ResponseMessage&amp;) const [with Client_t = EthernetClient]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:101:3:   required from &#39;void http::Server::replyTo(const http::RemoteClient&lt;Client_t&gt;&amp;) [with Client_t = EthernetClient]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino:40:36:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp:29:6: error: passing &#39;const EthernetClient&#39; as &#39;this&#39; argument discards qualifiers [-fpermissive]
+      client.write( String( message ).c_str() ) ;
+      ^~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/ArduinoAPI.h:31:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:27,
+                 from /tmp/arduino-sketch-DE39483BFCB31A81AD006E270F53F3B6/sketch/TestWebServer.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Print.h:50:12: note:   in call to &#39;size_t arduino::Print::write(const char*)&#39;
+     size_t write(const char *str) {
+            ^~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino:9:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp: In instantiation of &#39;void http::RemoteClient&lt;Client_t&gt;::close() const [with Client_t = EthernetClient]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:102:3:   required from &#39;void http::Server::replyTo(const http::RemoteClient&lt;Client_t&gt;&amp;) [with Client_t = EthernetClient]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino:40:36:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp:44:6: error: passing &#39;const EthernetClient&#39; as &#39;this&#39; argument discards qualifiers [-fpermissive]
+      client.stop() ;
+      ^~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino:8:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ethernet/src/Ethernet.h:230:15: note:   in call to &#39;virtual void EthernetClient::stop()&#39;
+  virtual void stop();
+               ^~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino:9:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp: In instantiation of &#39;char http::RemoteClient&lt;Client_t&gt;::read() const [with Client_t = EthernetClient]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:118:8:   required from &#39;http::RequestMessage http::parseRawMessageFrom(const http::RemoteClient&lt;Client_t&gt;&amp;) [with Client_t = EthernetClient]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:76:54:   required from &#39;void http::Server::replyTo(const http::RemoteClient&lt;Client_t&gt;&amp;) [with Client_t = EthernetClient]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino:40:36:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp:34:25: error: passing &#39;const EthernetClient&#39; as &#39;this&#39; argument discards qualifiers [-fpermissive]
+      return client.read() ;
+                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino:8:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ethernet/src/Ethernet.h:226:14: note:   in call to &#39;virtual int EthernetClient::read()&#39;
+  virtual int read();
+              ^~~~
+Multiple libraries were found for &#34;Ethernet.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ethernet
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/UIPEthernet
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EthernetENC
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 3695 bytes (7%) of program storage space. Maximum is 49152 bytes.
+Global variables use 344 bytes (5%) of dynamic memory, leaving 5800 bytes for local variables. Maximum is 6144 bytes.
+</pre>
+
+					
+					<h4>examples/CustomWebServer</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 28170 bytes (57%) of program storage space. Maximum is 49152 bytes.
+Global variables use 1047 bytes (17%) of dynamic memory, leaving 5097 bytes for local variables. Maximum is 6144 bytes.
+</pre>
+					
+					<h4>examples/TestWebServer</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino:37:56: error: &#39;tcpServer&#39; was not declared in this scope
+   http::RemoteClient &lt; EthernetClient &gt; remoteClient = tcpServer.available() ;
+                                                        ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino:37:56: note: suggested alternative: &#39;httpServer&#39;
+   http::RemoteClient &lt; EthernetClient &gt; remoteClient = tcpServer.available() ;
+                                                        ^~~~~~~~~
+                                                        httpServer
+Multiple libraries were found for &#34;Ethernet.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ethernet
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/UIPEthernet
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EthernetENC
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpHeader.cpp: In member function &#39;http::ResponseHeader&amp; http::ResponseHeader::operator=(const http::ResponseHeader&amp;)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpHeader.cpp:178:52: error: passing &#39;const arduino::String&#39; as &#39;this&#39; argument discards qualifiers [-fpermissive]
+    fieldArray[ n ]-&gt;value = other.fieldArray[ n ]-&gt;value ;
+                                                    ^~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/IPAddress.h:24:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpHeader.hpp:8,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpHeader.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/String.h:99:11: note:   in call to &#39;arduino::String&amp; arduino::String::operator=(const arduino::String&amp;)&#39;
+  String &amp; operator = (const String &amp;rhs);
+           ^~~~~~~~
+
+</pre>
+
+					
+					<h4>examples/CustomWebServer</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/CustomWebServer/CustomWebServer.ino:10:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp: In instantiation of &#39;bool http::RemoteClient&lt;Client_t&gt;::available() const [with Client_t = EthernetClient]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:74:7:   required from &#39;void http::Server::replyTo(const http::RemoteClient&lt;Client_t&gt;&amp;) [with Client_t = EthernetClient]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/CustomWebServer/CustomWebServer.ino:56:36:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp:39:30: error: passing &#39;const EthernetClient&#39; as &#39;this&#39; argument discards qualifiers [-fpermissive]
+      return client.available() ;
+                              ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/CustomWebServer/CustomWebServer.ino:9:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ethernet/src/Ethernet.h:225:14: note:   in call to &#39;virtual int EthernetClient::available()&#39;
+  virtual int available();
+              ^~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/CustomWebServer/CustomWebServer.ino:10:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp: In instantiation of &#39;void http::RemoteClient&lt;Client_t&gt;::write(const http::ResponseMessage&amp;) const [with Client_t = EthernetClient]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:101:3:   required from &#39;void http::Server::replyTo(const http::RemoteClient&lt;Client_t&gt;&amp;) [with Client_t = EthernetClient]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/CustomWebServer/CustomWebServer.ino:56:36:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp:29:6: error: passing &#39;const EthernetClient&#39; as &#39;this&#39; argument discards qualifiers [-fpermissive]
+      client.write( String( message ).c_str() ) ;
+      ^~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/ArduinoAPI.h:31:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:23,
+                 from /tmp/arduino-sketch-E228DE47C0FDD8FDC9DB97BCAF45A2B7/sketch/CustomWebServer.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Print.h:50:12: note:   in call to &#39;size_t arduino::Print::write(const char*)&#39;
+     size_t write(const char *str) {
+            ^~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/CustomWebServer/CustomWebServer.ino:10:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp: In instantiation of &#39;void http::RemoteClient&lt;Client_t&gt;::close() const [with Client_t = EthernetClient]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:102:3:   required from &#39;void http::Server::replyTo(const http::RemoteClient&lt;Client_t&gt;&amp;) [with Client_t = EthernetClient]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/CustomWebServer/CustomWebServer.ino:56:36:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp:44:6: error: passing &#39;const EthernetClient&#39; as &#39;this&#39; argument discards qualifiers [-fpermissive]
+      client.stop() ;
+      ^~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/CustomWebServer/CustomWebServer.ino:9:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ethernet/src/Ethernet.h:230:15: note:   in call to &#39;virtual void EthernetClient::stop()&#39;
+  virtual void stop();
+               ^~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/CustomWebServer/CustomWebServer.ino:10:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp: In instantiation of &#39;char http::RemoteClient&lt;Client_t&gt;::read() const [with Client_t = EthernetClient]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:118:8:   required from &#39;http::RequestMessage http::parseRawMessageFrom(const http::RemoteClient&lt;Client_t&gt;&amp;) [with Client_t = EthernetClient]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:76:54:   required from &#39;void http::Server::replyTo(const http::RemoteClient&lt;Client_t&gt;&amp;) [with Client_t = EthernetClient]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/CustomWebServer/CustomWebServer.ino:56:36:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp:34:25: error: passing &#39;const EthernetClient&#39; as &#39;this&#39; argument discards qualifiers [-fpermissive]
+      return client.read() ;
+                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/CustomWebServer/CustomWebServer.ino:9:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ethernet/src/Ethernet.h:226:14: note:   in call to &#39;virtual int EthernetClient::read()&#39;
+  virtual int read();
+              ^~~~
+Multiple libraries were found for &#34;Ethernet.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ethernet
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EthernetENC
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/UIPEthernet
+</pre>
+					
+					<h4>examples/TestWebServer</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino:37:56: error: &#39;tcpServer&#39; was not declared in this scope
+   http::RemoteClient &lt; EthernetClient &gt; remoteClient = tcpServer.available() ;
+                                                        ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino:37:56: note: suggested alternative: &#39;httpServer&#39;
+   http::RemoteClient &lt; EthernetClient &gt; remoteClient = tcpServer.available() ;
+                                                        ^~~~~~~~~
+                                                        httpServer
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino:9:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp: In instantiation of &#39;bool http::RemoteClient&lt;Client_t&gt;::available() const [with Client_t = EthernetClient]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:74:7:   required from &#39;void http::Server::replyTo(const http::RemoteClient&lt;Client_t&gt;&amp;) [with Client_t = EthernetClient]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino:40:36:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp:39:30: error: passing &#39;const EthernetClient&#39; as &#39;this&#39; argument discards qualifiers [-fpermissive]
+      return client.available() ;
+                              ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino:8:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ethernet/src/Ethernet.h:225:14: note:   in call to &#39;virtual int EthernetClient::available()&#39;
+  virtual int available();
+              ^~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino:9:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp: In instantiation of &#39;void http::RemoteClient&lt;Client_t&gt;::write(const http::ResponseMessage&amp;) const [with Client_t = EthernetClient]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:101:3:   required from &#39;void http::Server::replyTo(const http::RemoteClient&lt;Client_t&gt;&amp;) [with Client_t = EthernetClient]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino:40:36:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp:29:6: error: passing &#39;const EthernetClient&#39; as &#39;this&#39; argument discards qualifiers [-fpermissive]
+      client.write( String( message ).c_str() ) ;
+      ^~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/ArduinoAPI.h:31:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:23,
+                 from /tmp/arduino-sketch-DE39483BFCB31A81AD006E270F53F3B6/sketch/TestWebServer.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Print.h:50:12: note:   in call to &#39;size_t arduino::Print::write(const char*)&#39;
+     size_t write(const char *str) {
+            ^~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino:9:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp: In instantiation of &#39;void http::RemoteClient&lt;Client_t&gt;::close() const [with Client_t = EthernetClient]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:102:3:   required from &#39;void http::Server::replyTo(const http::RemoteClient&lt;Client_t&gt;&amp;) [with Client_t = EthernetClient]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino:40:36:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp:44:6: error: passing &#39;const EthernetClient&#39; as &#39;this&#39; argument discards qualifiers [-fpermissive]
+      client.stop() ;
+      ^~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino:8:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ethernet/src/Ethernet.h:230:15: note:   in call to &#39;virtual void EthernetClient::stop()&#39;
+  virtual void stop();
+               ^~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino:9:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp: In instantiation of &#39;char http::RemoteClient&lt;Client_t&gt;::read() const [with Client_t = EthernetClient]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:118:8:   required from &#39;http::RequestMessage http::parseRawMessageFrom(const http::RemoteClient&lt;Client_t&gt;&amp;) [with Client_t = EthernetClient]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:76:54:   required from &#39;void http::Server::replyTo(const http::RemoteClient&lt;Client_t&gt;&amp;) [with Client_t = EthernetClient]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino:40:36:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp:34:25: error: passing &#39;const EthernetClient&#39; as &#39;this&#39; argument discards qualifiers [-fpermissive]
+      return client.read() ;
+                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino:8:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ethernet/src/Ethernet.h:226:14: note:   in call to &#39;virtual int EthernetClient::read()&#39;
+  virtual int read();
+              ^~~~
+Multiple libraries were found for &#34;Ethernet.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ethernet
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EthernetENC
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/UIPEthernet
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpHeader.cpp: In member function &#39;http::ResponseHeader&amp; http::ResponseHeader::operator=(const http::ResponseHeader&amp;)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpHeader.cpp:178:27: error: passing &#39;const String&#39; as &#39;this&#39; argument discards qualifiers [-fpermissive]
+    fieldArray[ n ]-&gt;value = other.fieldArray[ n ]-&gt;value ;
+                           ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:146:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpHeader.hpp:8,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpHeader.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/WString.h:96:18: note:   in call to &#39;String&amp; String::operator=(const String&amp;)&#39;
+         String &amp; operator =(const String &amp;rhs);
+                  ^
+
+</pre>
+
+					
+					<h4>examples/CustomWebServer</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/CustomWebServer/CustomWebServer.ino:17:16: error: cannot declare variable &#39;ethernetServer&#39; to be of abstract type &#39;EthernetServer&#39;
+ EthernetServer ethernetServer( 80 ) ;
+                ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/CustomWebServer/CustomWebServer.ino:9:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ethernet/src/Ethernet.h:253:7: note:   because the following virtual functions are pure within &#39;EthernetServer&#39;:
+ class EthernetServer : public Server {
+       ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:152:0,
+                 from /tmp/arduino-sketch-E228DE47C0FDD8FDC9DB97BCAF45A2B7/sketch/CustomWebServer.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Server.h:28:18: note: 	virtual void Server::begin(uint16_t)
+     virtual void begin(uint16_t port=0) =0;
+                  ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/CustomWebServer/CustomWebServer.ino:10:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp: In instantiation of &#39;bool http::RemoteClient&lt;Client_t&gt;::available() const [with Client_t = EthernetClient]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:74:7:   required from &#39;void http::Server::replyTo(const http::RemoteClient&lt;Client_t&gt;&amp;) [with Client_t = EthernetClient]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/CustomWebServer/CustomWebServer.ino:56:36:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp:39:30: error: passing &#39;const EthernetClient&#39; as &#39;this&#39; argument discards qualifiers [-fpermissive]
+      return client.available() ;
+                              ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/CustomWebServer/CustomWebServer.ino:9:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ethernet/src/Ethernet.h:225:14: note:   in call to &#39;virtual int EthernetClient::available()&#39;
+  virtual int available();
+              ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/CustomWebServer/CustomWebServer.ino:10:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp: In instantiation of &#39;void http::RemoteClient&lt;Client_t&gt;::write(const http::ResponseMessage&amp;) const [with Client_t = EthernetClient]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:101:3:   required from &#39;void http::Server::replyTo(const http::RemoteClient&lt;Client_t&gt;&amp;) [with Client_t = EthernetClient]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/CustomWebServer/CustomWebServer.ino:56:36:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp:29:6: error: passing &#39;const EthernetClient&#39; as &#39;this&#39; argument discards qualifiers [-fpermissive]
+      client.write( String( message ).c_str() ) ;
+      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Stream.h:26:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:147,
+                 from /tmp/arduino-sketch-E228DE47C0FDD8FDC9DB97BCAF45A2B7/sketch/CustomWebServer.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Print.h:62:12: note:   in call to &#39;size_t Print::write(const char*)&#39;
+     size_t write(const char *str)
+            ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/CustomWebServer/CustomWebServer.ino:10:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp: In instantiation of &#39;void http::RemoteClient&lt;Client_t&gt;::close() const [with Client_t = EthernetClient]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:102:3:   required from &#39;void http::Server::replyTo(const http::RemoteClient&lt;Client_t&gt;&amp;) [with Client_t = EthernetClient]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/CustomWebServer/CustomWebServer.ino:56:36:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp:44:6: error: passing &#39;const EthernetClient&#39; as &#39;this&#39; argument discards qualifiers [-fpermissive]
+      client.stop() ;
+      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/CustomWebServer/CustomWebServer.ino:9:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ethernet/src/Ethernet.h:230:15: note:   in call to &#39;virtual void EthernetClient::stop()&#39;
+  virtual void stop();
+               ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/CustomWebServer/CustomWebServer.ino:10:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp: In instantiation of &#39;char http::RemoteClient&lt;Client_t&gt;::read() const [with Client_t = EthernetClient]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:118:33:   required from &#39;http::RequestMessage http::parseRawMessageFrom(const http::RemoteClient&lt;Client_t&gt;&amp;) [with Client_t = EthernetClient]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:76:54:   required from &#39;void http::Server::replyTo(const http::RemoteClient&lt;Client_t&gt;&amp;) [with Client_t = EthernetClient]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/CustomWebServer/CustomWebServer.ino:56:36:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp:34:25: error: passing &#39;const EthernetClient&#39; as &#39;this&#39; argument discards qualifiers [-fpermissive]
+      return client.read() ;
+                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/CustomWebServer/CustomWebServer.ino:9:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ethernet/src/Ethernet.h:226:14: note:   in call to &#39;virtual int EthernetClient::read()&#39;
+  virtual int read();
+              ^
+Multiple libraries were found for &#34;Ethernet.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ethernet
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/UIPEthernet
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EthernetENC
+</pre>
+					
+					<h4>examples/TestWebServer</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino:16:16: error: cannot declare variable &#39;ethernetServer&#39; to be of abstract type &#39;EthernetServer&#39;
+ EthernetServer ethernetServer( 80 ) ;
+                ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino:8:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ethernet/src/Ethernet.h:253:7: note:   because the following virtual functions are pure within &#39;EthernetServer&#39;:
+ class EthernetServer : public Server {
+       ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:152:0,
+                 from /tmp/arduino-sketch-DE39483BFCB31A81AD006E270F53F3B6/sketch/TestWebServer.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Server.h:28:18: note: 	virtual void Server::begin(uint16_t)
+     virtual void begin(uint16_t port=0) =0;
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino:37:56: error: &#39;tcpServer&#39; was not declared in this scope
+   http::RemoteClient &lt; EthernetClient &gt; remoteClient = tcpServer.available() ;
+                                                        ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino:9:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp: In instantiation of &#39;bool http::RemoteClient&lt;Client_t&gt;::available() const [with Client_t = EthernetClient]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:74:7:   required from &#39;void http::Server::replyTo(const http::RemoteClient&lt;Client_t&gt;&amp;) [with Client_t = EthernetClient]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino:40:36:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp:39:30: error: passing &#39;const EthernetClient&#39; as &#39;this&#39; argument discards qualifiers [-fpermissive]
+      return client.available() ;
+                              ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino:8:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ethernet/src/Ethernet.h:225:14: note:   in call to &#39;virtual int EthernetClient::available()&#39;
+  virtual int available();
+              ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino:9:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp: In instantiation of &#39;void http::RemoteClient&lt;Client_t&gt;::write(const http::ResponseMessage&amp;) const [with Client_t = EthernetClient]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:101:3:   required from &#39;void http::Server::replyTo(const http::RemoteClient&lt;Client_t&gt;&amp;) [with Client_t = EthernetClient]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino:40:36:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp:29:6: error: passing &#39;const EthernetClient&#39; as &#39;this&#39; argument discards qualifiers [-fpermissive]
+      client.write( String( message ).c_str() ) ;
+      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Stream.h:26:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:147,
+                 from /tmp/arduino-sketch-DE39483BFCB31A81AD006E270F53F3B6/sketch/TestWebServer.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Print.h:62:12: note:   in call to &#39;size_t Print::write(const char*)&#39;
+     size_t write(const char *str)
+            ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino:9:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp: In instantiation of &#39;void http::RemoteClient&lt;Client_t&gt;::close() const [with Client_t = EthernetClient]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:102:3:   required from &#39;void http::Server::replyTo(const http::RemoteClient&lt;Client_t&gt;&amp;) [with Client_t = EthernetClient]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino:40:36:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp:44:6: error: passing &#39;const EthernetClient&#39; as &#39;this&#39; argument discards qualifiers [-fpermissive]
+      client.stop() ;
+      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino:8:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ethernet/src/Ethernet.h:230:15: note:   in call to &#39;virtual void EthernetClient::stop()&#39;
+  virtual void stop();
+               ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino:9:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp: In instantiation of &#39;char http::RemoteClient&lt;Client_t&gt;::read() const [with Client_t = EthernetClient]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:118:33:   required from &#39;http::RequestMessage http::parseRawMessageFrom(const http::RemoteClient&lt;Client_t&gt;&amp;) [with Client_t = EthernetClient]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpServer.hpp:76:54:   required from &#39;void http::Server::replyTo(const http::RemoteClient&lt;Client_t&gt;&amp;) [with Client_t = EthernetClient]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino:40:36:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/src/httpRemoteClient.hpp:34:25: error: passing &#39;const EthernetClient&#39; as &#39;this&#39; argument discards qualifiers [-fpermissive]
+      return client.read() ;
+                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/HTTP/examples/TestWebServer/TestWebServer.ino:8:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ethernet/src/Ethernet.h:226:14: note:   in call to &#39;virtual int EthernetClient::read()&#39;
+  virtual int read();
+              ^
+Multiple libraries were found for &#34;Ethernet.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ethernet
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/UIPEthernet
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EthernetENC
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

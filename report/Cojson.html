@@ -1,0 +1,758 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>Cojson - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>Cojson</h2>
+				<p>
+					Version: <b>2.2.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/cojson/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>json_via_arduino_serial</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 444 bytes (1%) of program storage space. Maximum is 32256 bytes.
+Global variables use 9 bytes (0%) of dynamic memory, leaving 2039 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+
+					
+					<h4>examples/json_via_arduino_serial</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Cojson/src/cojson.hpp:26:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Cojson/src/cojson.h:52,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Cojson/examples/json_via_arduino_serial/json_via_arduino_serial.ino:22:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Cojson/src/cojson.hpp: In instantiation of &#39;constexpr const bool cojson::accessor::methods&lt;MyApp::MyClass, bool, &amp;MyApp::MyClass::led_get, &amp;MyApp::MyClass::led_set&gt;::canset&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Cojson/src/cojson.hpp:188:54:   required from &#39;static constexpr bool cojson::accessor::methods&lt;C, T, G, S&gt;::is() [with C = MyApp::MyClass; T = bool; T (C::* G)() const noexcept = &amp;MyApp::MyClass::led_get; void (C::* S)(T) noexcept = &amp;MyApp::MyClass::led_set]&#39;
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Cojson/src/cojson.hpp:1486:13:   required from &#39;bool cojson::details::propertyx&lt;X&gt;::read(cojson::details::propertyx&lt;X&gt;::C&amp;, cojson::details::lexer&amp;) const [with X = cojson::accessor::methods&lt;MyApp::MyClass, bool, &amp;MyApp::MyClass::led_get, &amp;MyApp::MyClass::led_set&gt;; cojson::details::propertyx&lt;X&gt;::C = MyApp::MyClass]&#39;
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Cojson/examples/json_via_arduino_serial/json_via_arduino_serial.ino:126:1:   required from here
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Cojson/src/cojson.hpp:183:70:   in constexpr expansion of &#39;elemental::is_null&lt;void (MyApp::MyClass::*)(bool) noexcept, &amp;MyApp::MyClass::led_set&gt;(&amp;MyApp::MyClass::led_set)&#39;
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Cojson/src/elemental.hpp:247:11: error: &#39;(MyApp::MyClass::led_set == 0)&#39; is not a constant expression
+  return v == nullptr;
+         ~~^~~~~~~~~~
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Cojson/src/cojson.h:52:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Cojson/examples/json_via_arduino_serial/json_via_arduino_serial.ino:22:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Cojson/src/cojson.hpp: In instantiation of &#39;static constexpr bool cojson::accessor::methods&lt;C, T, G, S&gt;::is() [with C = MyApp::MyClass; T = bool; T (C::* G)() const noexcept = &amp;MyApp::MyClass::led_get; void (C::* S)(T) noexcept = &amp;MyApp::MyClass::led_set]&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Cojson/src/cojson.hpp:1486:13:   required from &#39;bool cojson::details::propertyx&lt;X&gt;::read(cojson::details::propertyx&lt;X&gt;::C&amp;, cojson::details::lexer&amp;) const [with X = cojson::accessor::methods&lt;MyApp::MyClass, bool, &amp;MyApp::MyClass::led_get, &amp;MyApp::MyClass::led_set&gt;; cojson::details::propertyx&lt;X&gt;::C = MyApp::MyClass]&#39;
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Cojson/examples/json_via_arduino_serial/json_via_arduino_serial.ino:126:1:   required from here
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Cojson/src/cojson.hpp:188:62: error: body of constexpr function &#39;static constexpr bool cojson::accessor::methods&lt;C, T, G, S&gt;::is() [with C = MyApp::MyClass; T = bool; T (C::* G)() const noexcept = &amp;MyApp::MyClass::led_get; void (C::* S)(T) noexcept = &amp;MyApp::MyClass::led_set]&#39; not a return-statement
+  static inline constexpr bool is() noexcept { return canset; }
+                                                              ^
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Cojson/src/cojson.hpp:26:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Cojson/src/cojson.h:52,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Cojson/examples/json_via_arduino_serial/json_via_arduino_serial.ino:22:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Cojson/src/cojson.hpp: In instantiation of &#39;constexpr const bool cojson::accessor::methods&lt;MyApp::MyClass, bool, &amp;MyApp::MyClass::led_get, &amp;MyApp::MyClass::led_set&gt;::canget&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Cojson/src/cojson.hpp:1506:10:   required from &#39;bool cojson::details::propertyx&lt;X&gt;::write(const C&amp;, cojson::details::ostream&amp;) const [with X = cojson::accessor::methods&lt;MyApp::MyClass, bool, &amp;MyApp::MyClass::led_get, &amp;MyApp::MyClass::led_set&gt;; cojson::details::propertyx&lt;X&gt;::C = MyApp::MyClass]&#39;
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Cojson/examples/json_via_arduino_serial/json_via_arduino_serial.ino:126:1:   required from here
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Cojson/src/cojson.hpp:182:70:   in constexpr expansion of &#39;elemental::is_null&lt;bool (MyApp::MyClass::*)() const noexcept, &amp;MyApp::MyClass::led_get&gt;(&amp;MyApp::MyClass::led_get)&#39;
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Cojson/src/elemental.hpp:247:11: error: &#39;(MyApp::MyClass::led_get == 0)&#39; is not a constant expression
+  return v == nullptr;
+         ~~^~~~~~~~~~
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Cojson/src/cojson.h:52:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Cojson/examples/json_via_arduino_serial/json_via_arduino_serial.ino:22:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Cojson/src/cojson.hpp: In instantiation of &#39;static constexpr bool cojson::accessor::methods&lt;C, T, G, S&gt;::has(const C&amp;) [with C = MyApp::MyClass; T = bool; T (C::* G)() const noexcept = &amp;MyApp::MyClass::led_get; void (C::* S)(T) noexcept = &amp;MyApp::MyClass::led_set]&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Cojson/src/cojson.hpp:1512:16:   required from &#39;bool cojson::details::propertyx&lt;X&gt;::has(const C&amp;) const [with X = cojson::accessor::methods&lt;MyApp::MyClass, bool, &amp;MyApp::MyClass::led_get, &amp;MyApp::MyClass::led_set&gt;; cojson::details::propertyx&lt;X&gt;::C = MyApp::MyClass]&#39;
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Cojson/examples/json_via_arduino_serial/json_via_arduino_serial.ino:126:1:   required from here
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Cojson/src/cojson.hpp:189:71: error: body of constexpr function &#39;static constexpr bool cojson::accessor::methods&lt;C, T, G, S&gt;::has(const C&amp;) [with C = MyApp::MyClass; T = bool; T (C::* G)() const noexcept = &amp;MyApp::MyClass::led_get; void (C::* S)(T) noexcept = &amp;MyApp::MyClass::led_set]&#39; not a return-statement
+  static inline constexpr bool has(const C&amp;) noexcept { return canget; }
+                                                                       ^
+
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/IPAddress.h:23:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:27,
+                 from /tmp/arduino-sketch-9EF3B4F531F618A0973768FA08D5D764/sketch/test.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Printable.h:36:13: error: &#39;size_t&#39; does not name a type; did you mean &#39;pin_size_t&#39;?
+     virtual size_t printTo(Print&amp; p) const = 0;
+             ^~~~~~
+             pin_size_t
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/exception:38:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/new:40,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/cxxsupport/mstd_new:27,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/Callback.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/FileHandle.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/macros.h:41,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/variants/NANO_RP2040_CONNECT/pins_arduino.h:2,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:76,
+                 from /tmp/arduino-sketch-9EF3B4F531F618A0973768FA08D5D764/sketch/test.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/bits/exception.h:64:24: error: expected &#39;;&#39; at end of member declaration
+     virtual ~exception() _GLIBCXX_TXN_SAFE_DYN _GLIBCXX_USE_NOEXCEPT;
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/bits/exception.h:64:26: error: &#39;_GLIBCXX_TXN_SAFE_DYN&#39; does not name a type; did you mean &#39;_GLIBCXX_NUM_FACETS&#39;?
+     virtual ~exception() _GLIBCXX_TXN_SAFE_DYN _GLIBCXX_USE_NOEXCEPT;
+                          ^~~~~~~~~~~~~~~~~~~~~
+                          _GLIBCXX_NUM_FACETS
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/bits/exception.h:69:12: error: expected &#39;;&#39; at end of member declaration
+     what() const _GLIBCXX_TXN_SAFE_DYN _GLIBCXX_USE_NOEXCEPT;
+            ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/bits/exception.h:69:18: error: &#39;_GLIBCXX_TXN_SAFE_DYN&#39; does not name a type; did you mean &#39;_GLIBCXX_NUM_FACETS&#39;?
+     what() const _GLIBCXX_TXN_SAFE_DYN _GLIBCXX_USE_NOEXCEPT;
+                  ^~~~~~~~~~~~~~~~~~~~~
+                  _GLIBCXX_NUM_FACETS
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/new:40:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/cxxsupport/mstd_new:27,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/Callback.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/FileHandle.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/macros.h:41,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/variants/NANO_RP2040_CONNECT/pins_arduino.h:2,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:76,
+                 from /tmp/arduino-sketch-9EF3B4F531F618A0973768FA08D5D764/sketch/test.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/exception:53:28: error: expected &#39;;&#39; at end of member declaration
+     virtual ~bad_exception() _GLIBCXX_TXN_SAFE_DYN _GLIBCXX_USE_NOEXCEPT;
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/exception:53:30: error: &#39;_GLIBCXX_TXN_SAFE_DYN&#39; does not name a type; did you mean &#39;_GLIBCXX_NUM_FACETS&#39;?
+     virtual ~bad_exception() _GLIBCXX_TXN_SAFE_DYN _GLIBCXX_USE_NOEXCEPT;
+                              ^~~~~~~~~~~~~~~~~~~~~
+                              _GLIBCXX_NUM_FACETS
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/exception:57:12: error: expected &#39;;&#39; at end of member declaration
+     what() const _GLIBCXX_TXN_SAFE_DYN _GLIBCXX_USE_NOEXCEPT;
+            ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/exception:57:18: error: &#39;_GLIBCXX_TXN_SAFE_DYN&#39; does not name a type; did you mean &#39;_GLIBCXX_NUM_FACETS&#39;?
+     what() const _GLIBCXX_TXN_SAFE_DYN _GLIBCXX_USE_NOEXCEPT;
+                  ^~~~~~~~~~~~~~~~~~~~~
+                  _GLIBCXX_NUM_FACETS
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/bits/nested_exception.h:40:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/exception:143,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/new:40,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/cxxsupport/mstd_new:27,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/Callback.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/FileHandle.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/macros.h:41,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/variants/NANO_RP2040_CONNECT/pins_arduino.h:2,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:76,
+                 from /tmp/arduino-sketch-9EF3B4F531F618A0973768FA08D5D764/sketch/test.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/bits/move.h:136:12: error: &#39;_GLIBCXX17_CONSTEXPR&#39; does not name a type; did you mean &#39;_GLIBCXX_CONSTEXPR&#39;?
+     inline _GLIBCXX17_CONSTEXPR _Tp*
+            ^~~~~~~~~~~~~~~~~~~~
+            _GLIBCXX_CONSTEXPR
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/bits/move.h:184:38: error: &#39;__is_tuple_like&#39; was not declared in this scope
+     typename enable_if&lt;__and_&lt;__not_&lt;__is_tuple_like&lt;_Tp&gt;&gt;,
+                                      ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/bits/move.h:184:38: note: suggested alternative: &#39;__strfmonlike&#39;
+     typename enable_if&lt;__and_&lt;__not_&lt;__is_tuple_like&lt;_Tp&gt;&gt;,
+                                      ^~~~~~~~~~~~~~~
+                                      __strfmonlike
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/bits/move.h:184:54: error: template argument 1 is invalid
+     typename enable_if&lt;__and_&lt;__not_&lt;__is_tuple_like&lt;_Tp&gt;&gt;,
+                                                      ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/bits/move.h:184:57: error: template argument 1 is invalid
+     typename enable_if&lt;__and_&lt;__not_&lt;__is_tuple_like&lt;_Tp&gt;&gt;,
+                                                         ^~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/bits/move.h:186:32: error: wrong number of template arguments (3, should be at least 1)
+          is_move_assignable&lt;_Tp&gt;&gt;::value&gt;::type
+                                ^~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/bits/move.h:54:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/bits/nested_exception.h:40,
+           </pre>
+
+					
+					<h4>examples/json_via_arduino_serial</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/IPAddress.h:23:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:27,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cojson/examples/json_via_arduino_serial/json_via_arduino_serial.ino:21:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Printable.h:36:13: error: &#39;size_t&#39; does not name a type; did you mean &#39;pin_size_t&#39;?
+     virtual size_t printTo(Print&amp; p) const = 0;
+             ^~~~~~
+             pin_size_t
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/exception:38:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/new:40,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/cxxsupport/mstd_new:27,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/Callback.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/FileHandle.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/macros.h:41,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/variants/NANO_RP2040_CONNECT/pins_arduino.h:2,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:76,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cojson/examples/json_via_arduino_serial/json_via_arduino_serial.ino:21:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/bits/exception.h:64:24: error: expected &#39;;&#39; at end of member declaration
+     virtual ~exception() _GLIBCXX_TXN_SAFE_DYN _GLIBCXX_USE_NOEXCEPT;
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/bits/exception.h:64:26: error: &#39;_GLIBCXX_TXN_SAFE_DYN&#39; does not name a type; did you mean &#39;_GLIBCXX_NUM_FACETS&#39;?
+     virtual ~exception() _GLIBCXX_TXN_SAFE_DYN _GLIBCXX_USE_NOEXCEPT;
+                          ^~~~~~~~~~~~~~~~~~~~~
+                          _GLIBCXX_NUM_FACETS
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/bits/exception.h:69:12: error: expected &#39;;&#39; at end of member declaration
+     what() const _GLIBCXX_TXN_SAFE_DYN _GLIBCXX_USE_NOEXCEPT;
+            ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/bits/exception.h:69:18: error: &#39;_GLIBCXX_TXN_SAFE_DYN&#39; does not name a type; did you mean &#39;_GLIBCXX_NUM_FACETS&#39;?
+     what() const _GLIBCXX_TXN_SAFE_DYN _GLIBCXX_USE_NOEXCEPT;
+                  ^~~~~~~~~~~~~~~~~~~~~
+                  _GLIBCXX_NUM_FACETS
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/new:40:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/cxxsupport/mstd_new:27,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/Callback.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/FileHandle.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/macros.h:41,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/variants/NANO_RP2040_CONNECT/pins_arduino.h:2,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:76,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cojson/examples/json_via_arduino_serial/json_via_arduino_serial.ino:21:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/exception:53:28: error: expected &#39;;&#39; at end of member declaration
+     virtual ~bad_exception() _GLIBCXX_TXN_SAFE_DYN _GLIBCXX_USE_NOEXCEPT;
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/exception:53:30: error: &#39;_GLIBCXX_TXN_SAFE_DYN&#39; does not name a type; did you mean &#39;_GLIBCXX_NUM_FACETS&#39;?
+     virtual ~bad_exception() _GLIBCXX_TXN_SAFE_DYN _GLIBCXX_USE_NOEXCEPT;
+                              ^~~~~~~~~~~~~~~~~~~~~
+                              _GLIBCXX_NUM_FACETS
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/exception:57:12: error: expected &#39;;&#39; at end of member declaration
+     what() const _GLIBCXX_TXN_SAFE_DYN _GLIBCXX_USE_NOEXCEPT;
+            ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/exception:57:18: error: &#39;_GLIBCXX_TXN_SAFE_DYN&#39; does not name a type; did you mean &#39;_GLIBCXX_NUM_FACETS&#39;?
+     what() const _GLIBCXX_TXN_SAFE_DYN _GLIBCXX_USE_NOEXCEPT;
+                  ^~~~~~~~~~~~~~~~~~~~~
+                  _GLIBCXX_NUM_FACETS
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/bits/nested_exception.h:40:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/exception:143,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/new:40,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/cxxsupport/mstd_new:27,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/Callback.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/mbed/platform/include/platform/FileHandle.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/macros.h:41,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/variants/NANO_RP2040_CONNECT/pins_arduino.h:2,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:76,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cojson/examples/json_via_arduino_serial/json_via_arduino_serial.ino:21:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/bits/move.h:136:12: error: &#39;_GLIBCXX17_CONSTEXPR&#39; does not name a type; did you mean &#39;_GLIBCXX_CONSTEXPR&#39;?
+     inline _GLIBCXX17_CONSTEXPR _Tp*
+            ^~~~~~~~~~~~~~~~~~~~
+            _GLIBCXX_CONSTEXPR
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/bits/move.h:184:38: error: &#39;__is_tuple_like&#39; was not declared in this scope
+     typename enable_if&lt;__and_&lt;__not_&lt;__is_tuple_like&lt;_Tp&gt;&gt;,
+                                      ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/bits/move.h:184:38: note: suggested alternative: &#39;__strfmonlike&#39;
+     typename enable_if&lt;__and_&lt;__not_&lt;__is_tuple_like&lt;_Tp&gt;&gt;,
+                                      ^~~~~~~~~~~~~~~
+                                      __strfmonlike
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/bits/move.h:184:54: error: template argument 1 is invalid
+     typename enable_if&lt;__and_&lt;__not_&lt;__is_tuple_like&lt;_Tp&gt;&gt;,
+                                                      ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/bits/move.h:184:57: error: template argument 1 is invalid
+     typename enable_if&lt;__and_&lt;__not_&lt;__is_tuple_like&lt;_Tp&gt;&gt;,
+                                                         ^~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/bits/move.h:186:32: error: wrong number of template arguments (3, should be at least 1)
+          is_move_assignable&lt;_Tp&gt;&gt;::value&gt;::type
+                                ^~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 802 bytes (1%) of program storage space. Maximum is 49152 bytes.
+Global variables use 22 bytes (0%) of dynamic memory, leaving 6122 bytes for local variables. Maximum is 6144 bytes.
+</pre>
+
+					
+					<h4>examples/json_via_arduino_serial</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cojson/src/cojson.hpp:26:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cojson/src/cojson.h:52,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cojson/examples/json_via_arduino_serial/json_via_arduino_serial.ino:22:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cojson/src/cojson.hpp: In instantiation of &#39;constexpr const bool cojson::accessor::methods&lt;MyApp::MyClass, bool, &amp;MyApp::MyClass::led_get, &amp;MyApp::MyClass::led_set&gt;::canset&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cojson/src/cojson.hpp:188:54:   required from &#39;static constexpr bool cojson::accessor::methods&lt;C, T, G, S&gt;::is() [with C = MyApp::MyClass; T = bool; T (C::* G)() const noexcept = &amp;MyApp::MyClass::led_get; void (C::* S)(T) noexcept = &amp;MyApp::MyClass::led_set]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cojson/src/cojson.hpp:1486:13:   required from &#39;bool cojson::details::propertyx&lt;X&gt;::read(cojson::details::propertyx&lt;X&gt;::C&amp;, cojson::details::lexer&amp;) const [with X = cojson::accessor::methods&lt;MyApp::MyClass, bool, &amp;MyApp::MyClass::led_get, &amp;MyApp::MyClass::led_set&gt;; cojson::details::propertyx&lt;X&gt;::C = MyApp::MyClass]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cojson/examples/json_via_arduino_serial/json_via_arduino_serial.ino:126:1:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cojson/src/cojson.hpp:183:70:   in constexpr expansion of &#39;elemental::is_null&lt;void (MyApp::MyClass::*)(bool) noexcept, &amp;MyApp::MyClass::led_set&gt;(&amp;MyApp::MyClass::led_set)&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cojson/src/elemental.hpp:247:11: error: &#39;(MyApp::MyClass::led_set == 0)&#39; is not a constant expression
+  return v == nullptr;
+         ~~^~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cojson/src/cojson.h:52:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cojson/examples/json_via_arduino_serial/json_via_arduino_serial.ino:22:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cojson/src/cojson.hpp: In instantiation of &#39;static constexpr bool cojson::accessor::methods&lt;C, T, G, S&gt;::is() [with C = MyApp::MyClass; T = bool; T (C::* G)() const noexcept = &amp;MyApp::MyClass::led_get; void (C::* S)(T) noexcept = &amp;MyApp::MyClass::led_set]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cojson/src/cojson.hpp:1486:13:   required from &#39;bool cojson::details::propertyx&lt;X&gt;::read(cojson::details::propertyx&lt;X&gt;::C&amp;, cojson::details::lexer&amp;) const [with X = cojson::accessor::methods&lt;MyApp::MyClass, bool, &amp;MyApp::MyClass::led_get, &amp;MyApp::MyClass::led_set&gt;; cojson::details::propertyx&lt;X&gt;::C = MyApp::MyClass]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cojson/examples/json_via_arduino_serial/json_via_arduino_serial.ino:126:1:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cojson/src/cojson.hpp:188:62: error: body of constexpr function &#39;static constexpr bool cojson::accessor::methods&lt;C, T, G, S&gt;::is() [with C = MyApp::MyClass; T = bool; T (C::* G)() const noexcept = &amp;MyApp::MyClass::led_get; void (C::* S)(T) noexcept = &amp;MyApp::MyClass::led_set]&#39; not a return-statement
+  static inline constexpr bool is() noexcept { return canset; }
+                                                              ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cojson/src/cojson.hpp:26:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cojson/src/cojson.h:52,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cojson/examples/json_via_arduino_serial/json_via_arduino_serial.ino:22:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cojson/src/cojson.hpp: In instantiation of &#39;constexpr const bool cojson::accessor::methods&lt;MyApp::MyClass, bool, &amp;MyApp::MyClass::led_get, &amp;MyApp::MyClass::led_set&gt;::canget&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cojson/src/cojson.hpp:1506:10:   required from &#39;bool cojson::details::propertyx&lt;X&gt;::write(const C&amp;, cojson::details::ostream&amp;) const [with X = cojson::accessor::methods&lt;MyApp::MyClass, bool, &amp;MyApp::MyClass::led_get, &amp;MyApp::MyClass::led_set&gt;; cojson::details::propertyx&lt;X&gt;::C = MyApp::MyClass]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cojson/examples/json_via_arduino_serial/json_via_arduino_serial.ino:126:1:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cojson/src/cojson.hpp:182:70:   in constexpr expansion of &#39;elemental::is_null&lt;bool (MyApp::MyClass::*)() const noexcept, &amp;MyApp::MyClass::led_get&gt;(&amp;MyApp::MyClass::led_get)&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cojson/src/elemental.hpp:247:11: error: &#39;(MyApp::MyClass::led_get == 0)&#39; is not a constant expression
+  return v == nullptr;
+         ~~^~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cojson/src/cojson.h:52:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cojson/examples/json_via_arduino_serial/json_via_arduino_serial.ino:22:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cojson/src/cojson.hpp: In instantiation of &#39;static constexpr bool cojson::accessor::methods&lt;C, T, G, S&gt;::has(const C&amp;) [with C = MyApp::MyClass; T = bool; T (C::* G)() const noexcept = &amp;MyApp::MyClass::led_get; void (C::* S)(T) noexcept = &amp;MyApp::MyClass::led_set]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cojson/src/cojson.hpp:1512:16:   required from &#39;bool cojson::details::propertyx&lt;X&gt;::has(const C&amp;) const [with X = cojson::accessor::methods&lt;MyApp::MyClass, bool, &amp;MyApp::MyClass::led_get, &amp;MyApp::MyClass::led_set&gt;; cojson::details::propertyx&lt;X&gt;::C = MyApp::MyClass]&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cojson/examples/json_via_arduino_serial/json_via_arduino_serial.ino:126:1:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cojson/src/cojson.hpp:189:71: error: body of constexpr function &#39;static constexpr bool cojson::accessor::methods&lt;C, T, G, S&gt;::has(const C&amp;) [with C = MyApp::MyClass; T = bool; T (C::* G)() const noexcept = &amp;MyApp::MyClass::led_get; void (C::* S)(T) noexcept = &amp;MyApp::MyClass::led_set]&#39; not a return-statement
+  static inline constexpr bool has(const C&amp;) noexcept { return canget; }
+                                                                       ^
+
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/IPAddress.h:23:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/ArduinoAPI.h:30,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:23,
+                 from /private/var/folders/47/_57rjy4111jc7dfpgjmcc93w0000gp/T/arduino-sketch-1734ACEE5BF962D8DB9B6FEDF67205D1/sketch/test.ino.cpp:1:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Printable.h:36:13: error: &#39;size_t&#39; does not name a type; did you mean &#39;pin_size_t&#39;?
+     virtual size_t printTo(Print&amp; p) const = 0;
+             ^~~~~~
+             pin_size_t
+
+</pre>
+
+					
+					<h4>examples/json_via_arduino_serial</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/IPAddress.h:23:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/ArduinoAPI.h:30,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:23,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Cojson/examples/json_via_arduino_serial/json_via_arduino_serial.ino:21:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/Printable.h:36:13: error: &#39;size_t&#39; does not name a type; did you mean &#39;pin_size_t&#39;?
+     virtual size_t printTo(Print&amp; p) const = 0;
+             ^~~~~~
+             pin_size_t
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algobase.h:65:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/algorithm:61,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:142,
+                 from /tmp/arduino-sketch-D143C63230A62F8A1A6EDE7E8C43F0C6/sketch/test.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_iterator_base_types.h:143:43: error: &#39;__void_t&#39; does not name a type
+   template&lt;typename _Iterator, typename = __void_t&lt;&gt;&gt;
+                                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_iterator_base_types.h:143:51: error: expected &#39;&gt;&#39; before &#39;&lt;&#39; token
+   template&lt;typename _Iterator, typename = __void_t&lt;&gt;&gt;
+                                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_iterator_base_types.h:148:9: error: &#39;__void_t&#39; was not declared in this scope
+         __void_t&lt;typename _Iterator::iterator_category,
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_iterator_base_types.h:152:31: error: wrong number of template arguments (6, should be at least 1)
+           typename _Iterator::reference&gt;&gt;
+                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_iterator_base_types.h:144:12: note: provided for &#39;template&lt;class _Iterator, class&gt; struct std::__iterator_traits&#39;
+     struct __iterator_traits { };
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_iterator_base_types.h:152:40: error: expected unqualified-id before &#39;&gt;&#39; token
+           typename _Iterator::reference&gt;&gt;
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_iterator_base_types.h:163:41: error: template argument 2 is invalid
+     : public __iterator_traits&lt;_Iterator&gt; { };
+                                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algobase.h:71:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/algorithm:61,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:142,
+                 from /tmp/arduino-sketch-D143C63230A62F8A1A6EDE7E8C43F0C6/sketch/test.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/predefined_ops.h:40:7: error: &#39;_GLIBCXX14_CONSTEXPR&#39; does not name a type
+       _GLIBCXX14_CONSTEXPR
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/predefined_ops.h:45:3: error: &#39;_GLIBCXX14_CONSTEXPR&#39; does not name a type
+   _GLIBCXX14_CONSTEXPR
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/predefined_ops.h:114:7: error: &#39;_GLIBCXX14_CONSTEXPR&#39; does not name a type
+       _GLIBCXX14_CONSTEXPR
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/predefined_ops.h:120:9: error: &#39;_GLIBCXX14_CONSTEXPR&#39; does not name a type
+         _GLIBCXX14_CONSTEXPR
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/predefined_ops.h:127:5: error: &#39;_GLIBCXX14_CONSTEXPR&#39; does not name a type
+     _GLIBCXX14_CONSTEXPR
+     ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/algorithm:61:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:142,
+                 from /tmp/arduino-sketch-D143C63230A62F8A1A6EDE7E8C43F0C6/sketch/test.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algobase.h:193:5: error: &#39;_GLIBCXX14_CONSTEXPR&#39; does not name a type
+     _GLIBCXX14_CONSTEXPR
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algobase.h:217:5: error: &#39;_GLIBCXX14_CONSTEXPR&#39; does not name a type
+     _GLIBCXX14_CONSTEXPR
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algobase.h:241:5: error: &#39;_GLIBCXX14_CONSTEXPR&#39; does not name a type
+     _GLIBCXX14_CONSTEXPR
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algobase.h:263:5: error: &#39;_GLIBCXX14_CONSTEXPR&#39; does not name a type
+     _GLIBCXX14_CONSTEXPR
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algobase.h: In static member function &#39;static bool std::__lexicographical_compare&lt;_BoolType&gt;::__lc(_II1, _II1, _II2, _II2)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algobase.h:918:6: error: &#39;__iter_less_iter&#39; is not a member of &#39;__gnu_cxx::__ops&#39;
+      __gnu_cxx::__ops::__iter_less_iter());
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algobase.h: In static member function &#39;static bool std::__lexicographical_compare&lt;true&gt;::__lc(const _Tp*, const _Tp*, const _Up*, const _Up*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algobase.h:931:29: error: &#39;min&#39; is not a member of &#39;std&#39;
+    if (const size_t __len = std::min(__len1, __len2))
+                             ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algo.h:60:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/algorithm:62,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:142,
+                 from /tmp/arduino-sketch-D143C63230A62F8A1A6EDE7E8C43F0C6/sketch/test.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/algorithmfwd.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/algorithmfwd.h:355:5: error: &#39;_GLIBCXX14_CONSTEXPR&#39; does not name a type
+     _GLIBCXX14_CONSTEXPR
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/algorithmfwd.h:360:5: error: &#39;_GLIBCXX14_CONSTEXPR&#39; does not name a type
+     _GLIBCXX14_CONSTEXPR
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/algorithmfwd.h:368:5: error: &#39;_GLIBCXX14_CONSTEXPR&#39; does not name a type
+     _GLIBCXX14_CONSTEXPR
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/algorithmfwd.h:373:5: error: &#39;_GLIBCXX14_CONSTEXPR&#39; does not name a type
+     _GLIBCXX14_CONSTEXPR
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/algorithmfwd.h:381:5: error: &#39;_GLIBCXX14_CONSTEXPR&#39; does not name a type
+     _GLIBCXX14_CONSTEXPR
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/algorithmfwd.h:386:5: error: &#39;_GLIBCXX14_CONSTEXPR&#39; does not name a type
+     _GLIBCXX14_CONSTEXPR
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/algorithmfwd.h:39</pre>
+
+					
+					<h4>examples/json_via_arduino_serial</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algobase.h:65:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/algorithm:61,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:142,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cojson/examples/json_via_arduino_serial/json_via_arduino_serial.ino:21:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_iterator_base_types.h:143:43: error: &#39;__void_t&#39; does not name a type
+   template&lt;typename _Iterator, typename = __void_t&lt;&gt;&gt;
+                                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_iterator_base_types.h:143:51: error: expected &#39;&gt;&#39; before &#39;&lt;&#39; token
+   template&lt;typename _Iterator, typename = __void_t&lt;&gt;&gt;
+                                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_iterator_base_types.h:148:9: error: &#39;__void_t&#39; was not declared in this scope
+         __void_t&lt;typename _Iterator::iterator_category,
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_iterator_base_types.h:152:31: error: wrong number of template arguments (6, should be at least 1)
+           typename _Iterator::reference&gt;&gt;
+                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_iterator_base_types.h:144:12: note: provided for &#39;template&lt;class _Iterator, class&gt; struct std::__iterator_traits&#39;
+     struct __iterator_traits { };
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_iterator_base_types.h:152:40: error: expected unqualified-id before &#39;&gt;&#39; token
+           typename _Iterator::reference&gt;&gt;
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_iterator_base_types.h:163:41: error: template argument 2 is invalid
+     : public __iterator_traits&lt;_Iterator&gt; { };
+                                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algobase.h:71:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/algorithm:61,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:142,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cojson/examples/json_via_arduino_serial/json_via_arduino_serial.ino:21:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/predefined_ops.h:40:7: error: &#39;_GLIBCXX14_CONSTEXPR&#39; does not name a type
+       _GLIBCXX14_CONSTEXPR
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/predefined_ops.h:45:3: error: &#39;_GLIBCXX14_CONSTEXPR&#39; does not name a type
+   _GLIBCXX14_CONSTEXPR
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/predefined_ops.h:114:7: error: &#39;_GLIBCXX14_CONSTEXPR&#39; does not name a type
+       _GLIBCXX14_CONSTEXPR
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/predefined_ops.h:120:9: error: &#39;_GLIBCXX14_CONSTEXPR&#39; does not name a type
+         _GLIBCXX14_CONSTEXPR
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/predefined_ops.h:127:5: error: &#39;_GLIBCXX14_CONSTEXPR&#39; does not name a type
+     _GLIBCXX14_CONSTEXPR
+     ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/algorithm:61:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:142,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cojson/examples/json_via_arduino_serial/json_via_arduino_serial.ino:21:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algobase.h:193:5: error: &#39;_GLIBCXX14_CONSTEXPR&#39; does not name a type
+     _GLIBCXX14_CONSTEXPR
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algobase.h:217:5: error: &#39;_GLIBCXX14_CONSTEXPR&#39; does not name a type
+     _GLIBCXX14_CONSTEXPR
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algobase.h:241:5: error: &#39;_GLIBCXX14_CONSTEXPR&#39; does not name a type
+     _GLIBCXX14_CONSTEXPR
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algobase.h:263:5: error: &#39;_GLIBCXX14_CONSTEXPR&#39; does not name a type
+     _GLIBCXX14_CONSTEXPR
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algobase.h: In static member function &#39;static bool std::__lexicographical_compare&lt;_BoolType&gt;::__lc(_II1, _II1, _II2, _II2)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algobase.h:918:6: error: &#39;__iter_less_iter&#39; is not a member of &#39;__gnu_cxx::__ops&#39;
+      __gnu_cxx::__ops::__iter_less_iter());
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algobase.h: In static member function &#39;static bool std::__lexicographical_compare&lt;true&gt;::__lc(const _Tp*, const _Tp*, const _Up*, const _Up*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algobase.h:931:29: error: &#39;min&#39; is not a member of &#39;std&#39;
+    if (const size_t __len = std::min(__len1, __len2))
+                             ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algo.h:60:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/algorithm:62,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:142,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cojson/examples/json_via_arduino_serial/json_via_arduino_serial.ino:21:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/algorithmfwd.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/algorithmfwd.h:355:5: error: &#39;_GLIBCXX14_CONSTEXPR&#39; does not name a type
+     _GLIBCXX14_CONSTEXPR
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/algorithmfwd.h:360:5: error: &#39;_GLIBCXX14_CONSTEXPR&#39; does not name a type
+     _GLIBCXX14_CONSTEXPR
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/algorithmfwd.h:368:5: error: &#39;_GLIBCXX14_CONSTEXPR&#39; does not name a type
+     _GLIBCXX14_CONSTEXPR
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/algorithmfwd.h:373:5: error: &#39;_GLIBCXX14_CONSTEXPR&#39; does not name a type
+     _GLIBCXX14_CONSTEXPR
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/algorithmfwd.h:381:5: error: &#39;_GLIBCXX14_CONSTEXPR&#39; does not name a type
+     _GLIBCXX14_CONSTEXPR
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/algorithmfwd.h:386:5: error: &#39;_GLIBCXX14_CONSTEXPR&#39; does not n</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

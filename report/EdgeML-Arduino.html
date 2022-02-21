@@ -1,0 +1,652 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>EdgeML-Arduino - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>EdgeML-Arduino</h2>
+				<p>
+					Version: <b>1.1.2</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/edgeml-arduino/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>App</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EdgeML-Arduino/src/ble33nano/BLEHandler_Nano.h:10:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EdgeML-Arduino/src/ble33nano/Edge_ML_Nano.h:8,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EdgeML-Arduino/src/EdgeML.h:10,
+                 from /tmp/arduino-testlib3899757559/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EdgeML-Arduino/src/ble33nano/sensors/SensorTypes.h:8:10: fatal error: cstdint: No such file or directory
+ #include &lt;cstdint&gt;
+          ^~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/App</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EdgeML-Arduino/src/ble33nano/BLEHandler_Nano.h:10:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EdgeML-Arduino/src/ble33nano/Edge_ML_Nano.h:8,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EdgeML-Arduino/src/EdgeML.h:10,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EdgeML-Arduino/examples/App/App.ino:11:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EdgeML-Arduino/src/ble33nano/sensors/SensorTypes.h:8:10: fatal error: cstdint: No such file or directory
+ #include &lt;cstdint&gt;
+          ^~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EdgeML-Arduino/src/nicla/bosch/common/common.cpp:108:15: error: &#39;SPI_PSELMOSI0&#39; was not declared in this scope
+ mbed::SPI spi(SPI_PSELMOSI0, SPI_PSELMISO0, SPI_PSELSCK0 /*, SPI_PSELSS0 */);
+               ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EdgeML-Arduino/src/nicla/bosch/common/common.cpp:108:15: note: suggested alternative: &#39;SPI_MOSI1&#39;
+ mbed::SPI spi(SPI_PSELMOSI0, SPI_PSELMISO0, SPI_PSELSCK0 /*, SPI_PSELSS0 */);
+               ^~~~~~~~~~~~~
+               SPI_MOSI1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EdgeML-Arduino/src/nicla/bosch/common/common.cpp:108:30: error: &#39;SPI_PSELMISO0&#39; was not declared in this scope
+ mbed::SPI spi(SPI_PSELMOSI0, SPI_PSELMISO0, SPI_PSELSCK0 /*, SPI_PSELSS0 */);
+                              ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EdgeML-Arduino/src/nicla/bosch/common/common.cpp:108:30: note: suggested alternative: &#39;SPI_MISO&#39;
+ mbed::SPI spi(SPI_PSELMOSI0, SPI_PSELMISO0, SPI_PSELSCK0 /*, SPI_PSELSS0 */);
+                              ^~~~~~~~~~~~~
+                              SPI_MISO
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EdgeML-Arduino/src/nicla/bosch/common/common.cpp:108:45: error: &#39;SPI_PSELSCK0&#39; was not declared in this scope
+ mbed::SPI spi(SPI_PSELMOSI0, SPI_PSELMISO0, SPI_PSELSCK0 /*, SPI_PSELSS0 */);
+                                             ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EdgeML-Arduino/src/nicla/bosch/common/common.cpp:108:45: note: suggested alternative: &#39;SPI_SCK1&#39;
+ mbed::SPI spi(SPI_PSELMOSI0, SPI_PSELMISO0, SPI_PSELSCK0 /*, SPI_PSELSS0 */);
+                                             ^~~~~~~~~~~~
+                                             SPI_SCK1
+
+</pre>
+
+					
+					<h4>examples/App</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EdgeML-Arduino/src/nicla/bosch/common/common.cpp:108:15: error: &#39;SPI_PSELMOSI0&#39; was not declared in this scope
+ mbed::SPI spi(SPI_PSELMOSI0, SPI_PSELMISO0, SPI_PSELSCK0 /*, SPI_PSELSS0 */);
+               ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EdgeML-Arduino/src/nicla/bosch/common/common.cpp:108:15: note: suggested alternative: &#39;SPI_MOSI1&#39;
+ mbed::SPI spi(SPI_PSELMOSI0, SPI_PSELMISO0, SPI_PSELSCK0 /*, SPI_PSELSS0 */);
+               ^~~~~~~~~~~~~
+               SPI_MOSI1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EdgeML-Arduino/src/nicla/bosch/common/common.cpp:108:30: error: &#39;SPI_PSELMISO0&#39; was not declared in this scope
+ mbed::SPI spi(SPI_PSELMOSI0, SPI_PSELMISO0, SPI_PSELSCK0 /*, SPI_PSELSS0 */);
+                              ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EdgeML-Arduino/src/nicla/bosch/common/common.cpp:108:30: note: suggested alternative: &#39;SPI_MISO&#39;
+ mbed::SPI spi(SPI_PSELMOSI0, SPI_PSELMISO0, SPI_PSELSCK0 /*, SPI_PSELSS0 */);
+                              ^~~~~~~~~~~~~
+                              SPI_MISO
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EdgeML-Arduino/src/nicla/bosch/common/common.cpp:108:45: error: &#39;SPI_PSELSCK0&#39; was not declared in this scope
+ mbed::SPI spi(SPI_PSELMOSI0, SPI_PSELMISO0, SPI_PSELSCK0 /*, SPI_PSELSS0 */);
+                                             ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EdgeML-Arduino/src/nicla/bosch/common/common.cpp:108:45: note: suggested alternative: &#39;SPI_SCK1&#39;
+ mbed::SPI spi(SPI_PSELMOSI0, SPI_PSELMISO0, SPI_PSELSCK0 /*, SPI_PSELSS0 */);
+                                             ^~~~~~~~~~~~
+                                             SPI_SCK1
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EdgeML-Arduino/src/ble33nano/BLEHandler_Nano.h:10:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EdgeML-Arduino/src/ble33nano/Edge_ML_Nano.h:8,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EdgeML-Arduino/src/EdgeML.h:10,
+                 from /tmp/arduino-testlib1913975922/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EdgeML-Arduino/src/ble33nano/sensors/SensorTypes.h:8:10: fatal error: cstdint: No such file or directory
+ #include &lt;cstdint&gt;
+          ^~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/App</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EdgeML-Arduino/src/ble33nano/BLEHandler_Nano.h:10:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EdgeML-Arduino/src/ble33nano/Edge_ML_Nano.h:8,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EdgeML-Arduino/src/EdgeML.h:10,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EdgeML-Arduino/examples/App/App.ino:11:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EdgeML-Arduino/src/ble33nano/sensors/SensorTypes.h:8:10: fatal error: cstdint: No such file or directory
+ #include &lt;cstdint&gt;
+          ^~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library EdgeML-Arduino claims to run on mbed_nicla, mbed_nano architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+WARNING: library mbino claims to run on avr architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/platform/device.h:19:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/platform/platform.h:49,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/mbed.h:39,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EdgeML-Arduino/src/nicla/BoschParser.h:5,
+                 from /home/ec2-user/arduino-testlib/cli-data/cli-datadir/user/libraries/EdgeML-Arduino/src/nicla/BoschSensortec.h:7,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EdgeML-Arduino/src/nicla/BLEHandler.cpp:4:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/device.h:22:2: error: #error &#34;In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/drivers/DigitalIn.h:21:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/mbed.h:53,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EdgeML-Arduino/src/nicla/BoschParser.h:5,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EdgeML-Arduino/src/nicla/BoschParser.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:39:19: error: &#39;PinName&#39; was not declared in this scope
+ uint32_t gpio_set(PinName pin);
+                   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/scpp:3:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:39:19: error: &#39;PinName&#39; was not declared in this scope
+ uint32_t gpio_set(PinName pin);
+                   ^~~~~~~
+s/mbino/src/hal/gpio_api.h:44:29: error: &#39;gpio_t&#39; does not name a type; did you mean &#39;gpio_set&#39;?
+ int gpio_is_connected(const gpio_t *obj);
+                             ^~~~~~
+                             gpio_/hom/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:44:29: error: &#39;gpio_t&#39; does not name a type; did you mean &#39;gpio_set&#39;?
+ int gpio_is_connected(const gpio_t *obj);
+                             ^~~~~~
+                             gpio_set
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:51:16: error: variable or field &#39;gpio_init&#39; declared void
+ void gpio_init(gpio_t *obj, PinName pin);
+                ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:51:16: error: &#39;gpio_t&#39; was not declared in this sc/hom/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:51:16: note: suggested alternative: &#39;gpio_set&#39;
+ void gpio_init(gpio_t *obj, PinName pin);
+                ^~~~~~
+                gpio_set
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:51:24: error: &#39;obj&#39; was not declared in this scope
+ void gpio_init(gpio_t *obj, PinName pin);
+                        /hom/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:51:29: error: &#39;PinName&#39; was not declared in this scope
+ void gpio_init(gpio_t *obj, PinName pin);
+                             ^~~~/hom/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:51:29: note: suggested alternative: &#39;rename&#39;
+ void gpio_init(gpio_t *obj, PinName pin);
+                             ^~~~~~~
+                             rename
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:58:16: error: variable or field &#39;gpio_mode&#39; declared void
+ void gpio_mode(gpio_t *obj, PinMode mode);
+                ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:58:16: error: &#39;gpio_t&#39; was not declared in this sc/hom/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:58:16: note: suggested alternative: &#39;gpio_set&#39;
+ void gpio_mode(gpio_t *obj, PinMode mode);
+                ^~~~~~
+                gpio_set
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:58:24: error: &#39;obj&#39; was not declared in this scope
+ void gpio_mode(gpio_t *obj, PinMode mode);
+                        /hom/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:58:37: error: expected primary-expression before &#39;mode&#39;
+ void gpio_mode(gpio_t *obj, PinMode mode);
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:65:15: error: variable or field &#39;gpio_dir&#39; declared void
+ void gpio_dir(gpio_t *obj, PinDirection direction);
+               ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:65:15: error: &#39;gpio_t&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:65:15: note: suggested alternative: &#39;gpio_set&#39;
+ void gpio_dir(gpio_t *obj, PinDirection direction);
+               ^~~~~~
+               gpio_set
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:65:23: error: &#39;obj&#39; was not declared in this scope
+ void gpio_dir(gpio_t *obj, PinDirection direction);
+                       ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:65:28: error: &#39;PinDirection&#39; was not declared in this scope
+ void gpio_dir(gpio_t *obj, PinDirection direction);
+                            ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:65:28: note: suggested alternative: &#39;PinDescription&#39;
+ void gpio_dir(gpio_t *obj, PinDirection direction);
+                            ^~~~~~~~~~~~
+                            PinDescription
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:72:17: error: variable or field &#39;gpio_write&#39; declared void
+ void gpio_write(gpio_t *obj, int value);
+                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:72:17: error: &#39;gpio_t&#39; was not declared in this scope
+libraries/mbino/src/hal/gpio_api.h:72:25: error: &#39;obj&#39; was not declared in this scope
+ void gpio_write(gpio_t *obj, int value);
+                         ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbi/hom/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:72:25: error: &#39;obj&#39; was not declared in this scope
+ void gpio_write(gpio_t *obj, int value);
+                         /hom/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:72:30: error: expected primary-expression before &#39;int&#39;
+ void gpio_write(gpio_t *obj, int value);
+                              ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:79:15: error: &#39;gpio_t&#39; was not declared in this scope
+ int gpio_read(gpio_t *obj);
+               ^~~/hom/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:79:15: note: suggested alternative: &#39;gpio_set&#39;
+ int gpio_read(gpio_t *obj);
+               ^~~~~~
+               gpio_set
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:79:23: error: &#39;obj&#39; was not declared in this scope
+ int gpio_read(gpio_t *obj);
+                       /hom/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:89:19: error: variable or field &#39;gpio_init_in&#39; declared void
+ void gpio_init_in(gpio_t *gpio, PinName pin);
+                   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:89:19: error: &#39;gpio_t&#39; was not declared in this sc/hom/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:89:19: note: suggested alternative: &#39;gpio_set&#39;
+ void gpio_init_in(gpio_t *gpio, PinName pin);
+                   ^~~~~~
+                   gpio_set
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:89:27: error: &#39;gpio&#39; was not declared in this scope
+ void gpio_init_in(gpio_t *gpio, PinName pin);
+                           ^/hom/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:89:33: error: &#39;PinName&#39; was not declared in this scope
+ void gpio_init_in(gpio_t *gpio, PinName pin);
+                                 ^~~~/hom/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:89:33: note: suggested alternative: &#39;rename&#39;
+ void gpio_init_in(gpio_t *gpio, PinName pin);
+                                 ^~~~~~~
+                                 rename
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:97:22: error: variable or field &#39;gpio_init_in_ex&#39; declared void
+ void gpio_init_in_ex(gpio_t *gpio, PinName pin, PinMode mode);
+                      ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:97:22: error: &#39;gpio_t&#39; was not declared in this sc/hom/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:97:22: note: suggested alternative: &#39;gpio_set&#39;
+ void gpio_init_in_ex(gpio_t *gpio, PinName pin, PinMode mode);
+                      ^~~~~~
+                      gpio_set
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:97:30: error: &#39;gpio&#39; was not declared in this scope
+ void gpio_init_in_ex(gpio_t *gpio, PinName pin, PinMode mode);
+                              ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:97:36: error: &#39;PinName&#39; was not declared in this scope
+ void gpio_init_in_ex(gpio_t *gpio, PinName pin, PinMode mode);
+        </pre>
+
+					
+					<h4>examples/App</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library EdgeML-Arduino claims to run on mbed_nicla, mbed_nano architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+WARNING: library mbino claims to run on avr architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/platform/device.h:19:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/platform/platform.h:49,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/mbed.h:39,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EdgeML-Arduino/src/nicla/bosch/common/common.h:43,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EdgeML-Arduino/src/nicla/BoschSensortec.h:7,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EdgeML-Arduino/src/nicla/BLEHandler.cpp:4:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/device.h:22:2: error: #error &#34;In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/drivers/DigitalIn.h:21:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/mbed.h:53,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EdgeML-Arduino/src/nicla/BoschParser.h:5,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EdgeML-Arduino/src/nicla/BoschParser.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:39:19: error: &#39;PinName&#39; was not declared in this scope
+ uint32_t gpio_set(PinName pin);
+                   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/s4:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:39:19: error: &#39;PinName&#39; was not declared in this scope
+ uint32_t gpio_set(PinName pin);
+                   ^~~~~~~
+~~~
+s/mbino/src/hal/gpio_api.h:44:29: error: &#39;gpio_t&#39; does not name a type; did you mean &#39;gpio_set&#39;?
+ int gpio_is_connected(const gpio_t *obj);
+                             ^~~~~~
+                             gpio_/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:44:29: error: &#39;gpio_t&#39; does not name a type; did you mean &#39;gpio_set&#39;?
+ int gpio_is_connected(const gpio_t *obj);
+                             ^~~~~~
+                             gpio_set
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:51:16: error: variable or field &#39;gpio_init&#39; declared void
+ void gpio_init(gpio_t *obj, PinName pin);
+                ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:51:16: error: &#39;gpio_t&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:51:16: note: suggested alternative: &#39;gpio_set&#39;
+ void gpio_init(gpio_t *obj, PinName pin);
+                ^~~~~~
+                gpio_set
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:51:24: error: &#39;obj&#39; was not declared in this scope
+ void gpio_init(gpio_t *obj, PinName pin);
+                        ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:51:29: error: &#39;PinName&#39; was not declared in this scope
+ void gpio_init(gpio_t *obj, PinName pin);
+                             ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:51:29: note: suggested alternative: &#39;rename&#39;
+ void gpio_init(gpio_t *obj, PinName pin);
+                             ^~~~~~~
+                             rename
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:58:16: error: variable or field &#39;gpio_mode&#39; declared void
+ void gpio_mode(gpio_t *obj, PinMode mode);
+                ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:58:16: error: &#39;gpio_t&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:58:16: note: suggested alternative: &#39;gpio_set&#39;
+ void gpio_mode(gpio_t *obj, PinMode mode);
+                ^~~~~~
+                gpio_set
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:58:24: error: &#39;obj&#39; was not declared in this scope
+ void gpio_mode(gpio_t *obj, PinMode mode);
+                        ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:58:37: error: expected primary-expression before &#39;mode&#39;
+ void gpio_mode(gpio_t *obj, PinMode mode);
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:65:15: error: variable or field &#39;gpio_dir&#39; declared void
+ void gpio_dir(gpio_t *obj, PinDirection direction);
+               ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:65:15: error: &#39;gpio_t&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:65:15: note: suggested alternative: &#39;gpio_set&#39;
+ void gpio_dir(gpio_t *obj, PinDirection direction);
+               ^~~~~~
+               gpio_set
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:65:23: error: &#39;obj&#39; was not declared in this scope
+ void gpio_dir(gpio_t *obj, PinDirection direction)/home/ec2-user/arduino-testli/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:65:28: error: &#39;PinDirection&#39; was not declared in this scope
+ void gpio_dir(gpio_t *obj, PinDirection direction);
+                            ^~~~~~~~~~~~
+~~~
+on
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:72:17: error: variable or field &#39;gpio_write&#39; declared void
+ void gpio_write(gpio_t *obj, int value);
+                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries//home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:72:17: error: variable or field &#39;gpio_write&#39; declared void
+ void gpio_write(gpio_t *obj, int value);
+                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:72:17: error: &#39;gpio_t&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:72:17: note: suggested alternative: &#39;gpio_set&#39;
+ void gpio_write(gpio_t *obj, int value);
+                 ^~~~~~
+                 gpio_set
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:72:25: error: &#39;obj&#39; was not declared in this scope
+ void gpio_write(gpio_t *obj, int value);
+                         ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:72:30: error: expected primary-expression before &#39;int&#39;
+ void gpio_write(gpio_t *obj, int value);
+                              ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:79:15: error: &#39;gpio_t&#39; was not declared in this scope
+ int gpio_read(gpio_t *obj);
+               ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:79:15: note: suggested alternative: &#39;gpio_set&#39;
+ int gpio_read(gpio_t *obj);
+               ^~~~~~
+               gpio_set
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:79:23: error: &#39;obj&#39; was not declared in this scope
+ int gpio_read(gpio_t *obj);
+                       ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:89:19: error: variable or field &#39;gpio_init_in&#39; declared void
+ void gpio_init_in(gpio_t *gpio, PinName pin);
+                   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:89:19: error: &#39;gpio_t&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:89:19: note: suggested alternative: &#39;gpio_set&#39;
+ void gpio_init_in(gpio_t *gpio, PinName pin);
+                   ^~~~~~
+                   gpio_set
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:89:27: error: &#39;gpio&#39; was not declared in this scope
+ void gpio_init_in(gpio_t *gpio, PinName pin);
+                           ^~~~
+/hom/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:89:33: error: &#39;PinName&#39; was not declared in this scope
+ void gpio_init_in(gpio_t *gpio, PinName pin);
+                                 ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:89:33: note: suggested alternative: &#39;rename&#39;
+ void gpio_init_in(gpio_t *gpio, PinName pin);
+                                 ^~~~~~~
+                                 rename
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:97:22: error: variable or field &#39;gpio_init_in_ex&#39; declared void
+ void gpio_init_in_ex(gpio_t *gpio, PinName pin, PinMode mode);
+                      ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:97:22: error: &#39;gpio_t&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:97:22: note: suggested alternative: &#39;gpio_set&#39;
+ void gpio_init_in_ex(gpio_t *gpio, PinName pin, PinMode mode);
+                      ^~~~~~
+                      gpio_set
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:97:30: error: &#39;gpio&#39; was not declared in this scope
+ void gpio_init_in_ex(gpio_t *gpio, PinName pin, PinMode mode);
+                              ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mbino/src/hal/gpio_api.h:97:36: error: &#39;PinName&#39; was not declared in this scope
+ void gpio_init_in_ex(gpio_t *gpio, PinName pin, PinMode mode);
+        </pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library EdgeML-Arduino claims to run on mbed_nicla, mbed_nano architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+WARNING: library ArduinoBLE claims to run on samd, megaavr, mbed, apollo3, mbed_nano, mbed_portenta architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+WARNING: library mbino claims to run on avr architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+
+</pre>
+
+					
+					<h4>examples/App</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library EdgeML-Arduino claims to run on mbed_nicla, mbed_nano architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+WARNING: library ArduinoBLE claims to run on samd, megaavr, mbed, apollo3, mbed_nano, mbed_portenta architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+WARNING: library mbino claims to run on avr architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

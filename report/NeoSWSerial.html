@@ -1,0 +1,651 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>NeoSWSerial - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>NeoSWSerial</h2>
+				<p>
+					Version: <b>3.0.5</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/neoswserial/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 718 bytes (2%) of program storage space. Maximum is 32256 bytes.
+Global variables use 13 bytes (0%) of dynamic memory, leaving 2035 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library NeoSWSerial claims to run on avr architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:511:6: error: #error MCU not supported by NeoSWSerial!
+     #error MCU not supported by NeoSWSerial!
+      ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp: In member function &#39;void NeoSWSerial::listen()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:139:15: error: &#39;digitalPinToBitMask&#39; was not declared in this scope
+   rxBitMask = digitalPinToBitMask( rxPin );
+               ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:139:15: note: suggested alternative: &#39;digitalPinToPinName&#39;
+   rxBitMask = digitalPinToBitMask( rxPin );
+               ^~~~~~~~~~~~~~~~~~~
+               digitalPinToPinName
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:140:15: error: &#39;portInputRegister&#39; was not declared in this scope
+   rxPort    = portInputRegister( digitalPinToPort( rxPin ) );
+               ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:143:15: error: &#39;portOutputRegister&#39; was not declared in this scope
+   txPort    = portOutputRegister( digitalPinToPort( txPin ) );
+               ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:148:7: error: &#39;F_CPU&#39; was not declared in this scope
+   if (F_CPU == 8000000L) {
+       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:155:7: error: &#39;TCCR2A&#39; was not declared in this scope
+       TCCR2A = 0x00;
+       ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:156:7: error: &#39;TCCR2B&#39; was not declared in this scope
+       TCCR2B = 0x03;  // divide by 32
+       ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:160:29: error: &#39;digitalPinToPCMSK&#39; was not declared in this scope
+   volatile uint8_t *pcmsk = digitalPinToPCMSK(rxPin);
+                             ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:160:29: note: suggested alternative: &#39;digitalPinToPort&#39;
+   volatile uint8_t *pcmsk = digitalPinToPCMSK(rxPin);
+                             ^~~~~~~~~~~~~~~~~
+                             digitalPinToPort
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:175:13: error: &#39;F_CPU&#39; was not declared in this scope
+         if (F_CPU &gt; 12000000L) {
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:182:13: error: &#39;F_CPU&#39; was not declared in this scope
+         if (F_CPU &gt; 12000000L) {
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:197:24: error: &#39;SREG&#39; was not declared in this scope
+     uint8_t prevSREG = SREG;
+                        ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:197:24: note: suggested alternative: &#39;SING&#39;
+     uint8_t prevSREG = SREG;
+                        ^~~~
+                        SING
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:198:5: error: &#39;cli&#39; was not declared in this scope
+     cli();
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:200:40: error: &#39;digitalPinToPCMSKbit&#39; was not declared in this scope
+       *pcmsk                    |= _BV(digitalPinToPCMSKbit(rxPin));
+                                        ^~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:200:40: note: suggested alternative: &#39;digitalPinToPort&#39;
+       *pcmsk                    |= _BV(digitalPinToPCMSKbit(rxPin));
+                                        ^~~~~~~~~~~~~~~~~~~~
+                                        digitalPinToPort
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:200:36: error: &#39;_BV&#39; was not declared in this scope
+       *pcmsk                    |= _BV(digitalPinToPCMSKbit(rxPin));
+                                    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:200:36: note: suggested alternative: &#39;_B&#39;
+       *pcmsk                    |= _BV(digitalPinToPCMSKbit(rxPin));
+                                    ^~~
+                                    _B
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:201:8: error: &#39;digitalPinToPCICR&#39; was not declared in this scope
+       *digitalPinToPCICR(rxPin) |= _BV(digitalPinToPCICRbit(rxPin));
+        ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:201:8: note: suggested alternative: &#39;digitalPinToPort&#39;
+       *digitalPinToPCICR(rxPin) |= _BV(digitalPinToPCICRbit(rxPin));
+        ^~~~~~~~~~~~~~~~~
+        digitalPinToPort
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:201:40: error: &#39;digitalPinToPCICRbit&#39; was not declared in this scope
+       *digitalPinToPCICR(rxPin) |= _BV(digitalPinToPCICRbit(rxPin));
+                                        ^~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:201:40: note: suggested alternative: &#39;digitalPinToPort&#39;
+       *digitalPinToPCICR(rxPin) |= _BV(digitalPinToPCICRbit(rxPin));
+                                        ^~~~~~~~~~~~~~~~~~~~
+                                        digitalPinToPort
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp: In member function &#39;void NeoSWSerial::ignore()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:214:31: error: &#39;digitalPinToPCMSK&#39; was not declared in this scope
+     volatile uint8_t *pcmsk = digitalPinToPCMSK(rxPin);
+                               ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:214:31: note: suggested alternative: &#39;digitalPinToPort&#39;
+     volatile uint8_t *pcmsk = digitalPinToPCMSK(rxPin);
+                               ^~~~~~~~~~~~~~~~~
+                               digitalPinToPort
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:216:24: error: &#39;SREG&#39; was not declared in this scope
+     uint8_t prevSREG = SREG;
+                        ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:216:24: note: suggested alternative: &#39;SING&#39;
+     uint8_t prevSREG = SREG;
+                        ^~~~
+                        SING
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:217:5: error: &#39;cli&#39; was not declared in this scope
+     cli();
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:221:10: error: &#39;digitalPinToPCICR&#39; was not declared in this scope
+         *digitalPinToPCICR(rxPin) &amp;= ~_BV(digitalPinToPCICRbit(rxPin));
+          ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:221:10: note: suggested alternative: &#39;digitalPinToPort&#39;
+         *digitalPinToPCICR(rxPin) &amp;= ~_BV(digitalPinToPCICRbit(rxPin));
+          ^~~~~~~~~~~~~~~~~
+          digitalPinToPort
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:221:43: error: &#39;digitalPinToPCICRbit&#39; was not declared in this scope
+         *digitalPinToPCICR(rxPin) &amp;= ~_BV(digitalPinToPCICRbit(rxPin));
+                                           ^~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:221:43: note: suggested alternative: &#39;digitalPinToPort&#39;
+         *digitalPinToPCICR(rxPin) &amp;= ~_BV(digitalPinToPCICRbit(rxPin));
+                                           ^~~~~~~~~~~~~~~~~~~~
+                                           digitalPinToPort
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:221:39: error: &#39;_BV&#39; was not declared in this scope
+         *digitalPinToPCICR(rxPin) &amp;= ~_BV(digitalPinToPCICRbit(rxPin));
+                                       ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:221:39: note: suggested alternative: &#39;_B&#39;
+         *digitalPinToPCICR(rxPin) &amp;= ~_BV(digitalPinToPCICRbit(rxPin));
+                                       ^~~
+                                       _B
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:222:24: error: &#39;digitalPinToPCMSKbit&#39; was not declared in this scope
+         *pcmsk &amp;= ~_BV(digitalPinToPCMSKbit(rxPin));
+                        ^~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:222:24: note: suggested alternative: &#39;digitalPinToPort&#39;
+         *pcmsk &amp;= ~_BV(digitalPinToPCMSKbit(rxPin));
+                        ^~~~~~~~~~~~~~~~~~~~
+                        digitalPinToPort
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp: In member function &#39;void NeoSWSerial::setBaudRate(uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:237:34: error: &#39;F_CPU&#39; was not declared in this scope
+         ((baudRate == 31250) &amp;&amp; (F_CPU == 16000000L)) ||
+                                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp: In member function &#39;virtual int NeoSWSerial::available()&#39;:
+/home/e</pre>
+
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library NeoSWSerial claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:511:6: error: #error MCU not supported by NeoSWSerial!
+     #error MCU not supported by NeoSWSerial!
+      ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp: In member function &#39;void NeoSWSerial::listen()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:155:7: error: &#39;TCCR2A&#39; was not declared in this scope
+       TCCR2A = 0x00;
+       ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:155:7: note: suggested alternative: &#39;TCB2&#39;
+       TCCR2A = 0x00;
+       ^~~~~~
+       TCB2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:156:7: error: &#39;TCCR2B&#39; was not declared in this scope
+       TCCR2B = 0x03;  // divide by 32
+       ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:156:7: note: suggested alternative: &#39;TCB2&#39;
+       TCCR2B = 0x03;  // divide by 32
+       ^~~~~~
+       TCB2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:160:29: error: &#39;digitalPinToPCMSK&#39; was not declared in this scope
+   volatile uint8_t *pcmsk = digitalPinToPCMSK(rxPin);
+                             ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:160:29: note: suggested alternative: &#39;digitalPinToPort&#39;
+   volatile uint8_t *pcmsk = digitalPinToPCMSK(rxPin);
+                             ^~~~~~~~~~~~~~~~~
+                             digitalPinToPort
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.h:4,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:32:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:200:40: error: &#39;digitalPinToPCMSKbit&#39; was not declared in this scope
+       *pcmsk                    |= _BV(digitalPinToPCMSKbit(rxPin));
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:200:40: note: suggested alternative: &#39;digitalPinToPort&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:201:8: error: &#39;digitalPinToPCICR&#39; was not declared in this scope
+       *digitalPinToPCICR(rxPin) |= _BV(digitalPinToPCICRbit(rxPin));
+        ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:201:8: note: suggested alternative: &#39;digitalPinToPort&#39;
+       *digitalPinToPCICR(rxPin) |= _BV(digitalPinToPCICRbit(rxPin));
+        ^~~~~~~~~~~~~~~~~
+        digitalPinToPort
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.h:4,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:32:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:201:40: error: &#39;digitalPinToPCICRbit&#39; was not declared in this scope
+       *digitalPinToPCICR(rxPin) |= _BV(digitalPinToPCICRbit(rxPin));
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:201:40: note: suggested alternative: &#39;digitalPinToPort&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp: In member function &#39;void NeoSWSerial::ignore()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:214:31: error: &#39;digitalPinToPCMSK&#39; was not declared in this scope
+     volatile uint8_t *pcmsk = digitalPinToPCMSK(rxPin);
+                               ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:214:31: note: suggested alternative: &#39;digitalPinToPort&#39;
+     volatile uint8_t *pcmsk = digitalPinToPCMSK(rxPin);
+                               ^~~~~~~~~~~~~~~~~
+                               digitalPinToPort
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:221:10: error: &#39;digitalPinToPCICR&#39; was not declared in this scope
+         *digitalPinToPCICR(rxPin) &amp;= ~_BV(digitalPinToPCICRbit(rxPin));
+          ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:221:10: note: suggested alternative: &#39;digitalPinToPort&#39;
+         *digitalPinToPCICR(rxPin) &amp;= ~_BV(digitalPinToPCICRbit(rxPin));
+          ^~~~~~~~~~~~~~~~~
+          digitalPinToPort
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.h:4,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:32:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:221:43: error: &#39;digitalPinToPCICRbit&#39; was not declared in this scope
+         *digitalPinToPCICR(rxPin) &amp;= ~_BV(digitalPinToPCICRbit(rxPin));
+                                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:221:43: note: suggested alternative: &#39;digitalPinToPort&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:222:24: error: &#39;digitalPinToPCMSKbit&#39; was not declared in this scope
+         *pcmsk &amp;= ~_BV(digitalPinToPCMSKbit(rxPin));
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:222:24: note: suggested alternative: &#39;digitalPinToPort&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp: In static member function &#39;static void NeoSWSerial::rxISR(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:46:17: error: &#39;TCNT0&#39; was not declared in this scope
+   #define TCNTX TCNT0
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:308:16: note: in expansion of macro &#39;TCNTX&#39;
+   uint8_t t0 = TCNTX;            // time of data transition (plus ISR latency)
+                ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:46:17: note: suggested alternative: &#39;TCNTX&#39;
+   #define TCNTX TCNT0
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:308:16: note: in expansion of macro &#39;TCNTX&#39;
+   uint8_t t0 = TCNTX;            // time of data transition (plus ISR latency)
+                ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp: In member function &#39;bool NeoSWSerial::checkRxTime()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:46:17: error: &#39;TCNT0&#39; was not declared in this scope
+   #define TCNTX TCNT0
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:383:28: note: in expansion of macro &#39;TCNTX&#39;
+       uint8_t  t0  </pre>
+
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library NeoSWSerial claims to run on avr architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:511:6: error: #error MCU not supported by NeoSWSerial!
+     #error MCU not supported by NeoSWSerial!
+      ^~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:51:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.h:4,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:32:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp: In member function &#39;void NeoSWSerial::listen()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/variants/mkrwifi1010/variant.h:53:50: error: cannot convert &#39;volatile uint32_t* {aka volatile long unsigned int*}&#39; to &#39;volatile uint8_t* {aka volatile unsigned char*}&#39; in assignment
+ #define portInputRegister(port)  (&amp;(port-&gt;IN.reg))
+                                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:140:15: note: in expansion of macro &#39;portInputRegister&#39;
+   rxPort    = portInputRegister( digitalPinToPort( rxPin ) );
+               ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/variants/mkrwifi1010/variant.h:52:51: error: cannot convert &#39;volatile uint32_t* {aka volatile long unsigned int*}&#39; to &#39;volatile uint8_t* {aka volatile unsigned char*}&#39; in assignment
+ #define portOutputRegister(port) (&amp;(port-&gt;OUT.reg))
+                                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:143:15: note: in expansion of macro &#39;portOutputRegister&#39;
+   txPort    = portOutputRegister( digitalPinToPort( txPin ) );
+               ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:155:7: error: &#39;TCCR2A&#39; was not declared in this scope
+       TCCR2A = 0x00;
+       ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:155:7: note: suggested alternative: &#39;TCC2&#39;
+       TCCR2A = 0x00;
+       ^~~~~~
+       TCC2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:156:7: error: &#39;TCCR2B&#39; was not declared in this scope
+       TCCR2B = 0x03;  // divide by 32
+       ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:156:7: note: suggested alternative: &#39;TCC2&#39;
+       TCCR2B = 0x03;  // divide by 32
+       ^~~~~~
+       TCC2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:160:29: error: &#39;digitalPinToPCMSK&#39; was not declared in this scope
+   volatile uint8_t *pcmsk = digitalPinToPCMSK(rxPin);
+                             ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:160:29: note: suggested alternative: &#39;digitalPinToPort&#39;
+   volatile uint8_t *pcmsk = digitalPinToPCMSK(rxPin);
+                             ^~~~~~~~~~~~~~~~~
+                             digitalPinToPort
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:197:24: error: &#39;SREG&#39; was not declared in this scope
+     uint8_t prevSREG = SREG;
+                        ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:197:24: note: suggested alternative: &#39;SING&#39;
+     uint8_t prevSREG = SREG;
+                        ^~~~
+                        SING
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:198:5: error: &#39;cli&#39; was not declared in this scope
+     cli();
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:198:5: note: suggested alternative: &#39;Gclk&#39;
+     cli();
+     ^~~
+     Gclk
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:200:40: error: &#39;digitalPinToPCMSKbit&#39; was not declared in this scope
+       *pcmsk                    |= _BV(digitalPinToPCMSKbit(rxPin));
+                                        ^~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:200:40: note: suggested alternative: &#39;digitalPinToPort&#39;
+       *pcmsk                    |= _BV(digitalPinToPCMSKbit(rxPin));
+                                        ^~~~~~~~~~~~~~~~~~~~
+                                        digitalPinToPort
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:200:36: error: &#39;_BV&#39; was not declared in this scope
+       *pcmsk                    |= _BV(digitalPinToPCMSKbit(rxPin));
+                                    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:200:36: note: suggested alternative: &#39;_B&#39;
+       *pcmsk                    |= _BV(digitalPinToPCMSKbit(rxPin));
+                                    ^~~
+                                    _B
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:201:8: error: &#39;digitalPinToPCICR&#39; was not declared in this scope
+       *digitalPinToPCICR(rxPin) |= _BV(digitalPinToPCICRbit(rxPin));
+        ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:201:8: note: suggested alternative: &#39;digitalPinToPort&#39;
+       *digitalPinToPCICR(rxPin) |= _BV(digitalPinToPCICRbit(rxPin));
+        ^~~~~~~~~~~~~~~~~
+        digitalPinToPort
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:201:40: error: &#39;digitalPinToPCICRbit&#39; was not declared in this scope
+       *digitalPinToPCICR(rxPin) |= _BV(digitalPinToPCICRbit(rxPin));
+                                        ^~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:201:40: note: suggested alternative: &#39;digitalPinToPort&#39;
+       *digitalPinToPCICR(rxPin) |= _BV(digitalPinToPCICRbit(rxPin));
+                                        ^~~~~~~~~~~~~~~~~~~~
+                                        digitalPinToPort
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp: In member function &#39;void NeoSWSerial::ignore()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:214:31: error: &#39;digitalPinToPCMSK&#39; was not declared in this scope
+     volatile uint8_t *pcmsk = digitalPinToPCMSK(rxPin);
+                               ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:214:31: note: suggested alternative: &#39;digitalPinToPort&#39;
+     volatile uint8_t *pcmsk = digitalPinToPCMSK(rxPin);
+                               ^~~~~~~~~~~~~~~~~
+                               digitalPinToPort
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:216:24: error: &#39;SREG&#39; was not declared in this scope
+     uint8_t prevSREG = SREG;
+                        ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:216:24: note: suggested alternative: &#39;SING&#39;
+     uint8_t prevSREG = SREG;
+                        ^~~~
+                        SING
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:217:5: error: &#39;cli&#39; was not declared in this scope
+     cli();
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:217:5: note: suggested alternative: &#39;Gclk&#39;
+     cli();
+     ^~~
+     Gclk
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:221:10: error: &#39;digitalPinToPCICR&#39; was not declared in this scope
+         *digitalPinToPCICR(rxPin) &amp;= ~_BV(digitalPinToPCICRbit(rxPin));
+          ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:221:10: note: suggested alternative: &#39;digitalPinToPort&#39;
+         *digitalPinToPCICR(rxPin) &amp;= ~_BV(digitalPinToPCICRbit(rxPin));
+          ^~~~~~~~~~~~~~~~~
+          digitalPinToPort
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:221:43: error: &#39;digitalPinToPCICRbit&#39; was not declared in this scope
+         *digitalPinToPCICR(rxPin) &amp;= ~_BV(digitalPinToPCICRbit(rxPin));
+                                           ^~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:221:43: note: suggested alternative: &#39;digitalPinToPort&#39;
+         *digitalPinToPCICR(rxPin) &amp;= ~_BV(digitalPinToPCICRbit(rxPin));
+                                           ^~~~~~~~~~~~~~~~~~~~
+                                           digitalPinToPort
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:221:39: error: &#39;_BV&#39; was not declared in this scope
+         *digitalPinToPCICR(rxPin) &amp;= ~_BV(digitalPinToPCICRbit(rxPin));
+                                       ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:221:39: note: suggested alternative: &#39;_B&#39;
+         *digitalPinToPCICR(rxPin) &amp;= ~_BV(digitalPinToPCICRbit(rxPin));
+                                       ^~~
+                                       _B
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:222:24: error: &#39;digitalPinToPCMSKbit&#39; was not declared in this scope
+         *pcmsk &amp;= ~_BV(digitalPinToPCMSKbit(rxPin));
+                        ^~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:222:24: note: suggested alternati</pre>
+
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library NeoSWSerial claims to run on avr architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:511:6: error: #error MCU not supported by NeoSWSerial!
+     #error MCU not supported by NeoSWSerial!
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp: In member function &#39;void NeoSWSerial::listen()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:140:13: error: cannot convert &#39;volatile uint32_t* {aka volatile unsigned int*}&#39; to &#39;volatile uint8_t* {aka volatile unsigned char*}&#39; in assignment
+   rxPort    = portInputRegister( digitalPinToPort( rxPin ) );
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:143:13: error: cannot convert &#39;volatile uint32_t* {aka volatile unsigned int*}&#39; to &#39;volatile uint8_t* {aka volatile unsigned char*}&#39; in assignment
+   txPort    = portOutputRegister( digitalPinToPort( txPin ) );
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:155:7: error: &#39;TCCR2A&#39; was not declared in this scope
+       TCCR2A = 0x00;
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:156:7: error: &#39;TCCR2B&#39; was not declared in this scope
+       TCCR2B = 0x03;  // divide by 32
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:160:52: error: &#39;digitalPinToPCMSK&#39; was not declared in this scope
+   volatile uint8_t *pcmsk = digitalPinToPCMSK(rxPin);
+                                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:197:24: error: &#39;SREG&#39; was not declared in this scope
+     uint8_t prevSREG = SREG;
+                        ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.h:4:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:32:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:200:66: error: &#39;digitalPinToPCMSKbit&#39; was not declared in this scope
+       *pcmsk                    |= _BV(digitalPinToPCMSKbit(rxPin));
+                                                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:201:31: error: &#39;digitalPinToPCICR&#39; was not declared in this scope
+       *digitalPinToPCICR(rxPin) |= _BV(digitalPinToPCICRbit(rxPin));
+                               ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.h:4:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:32:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:201:66: error: &#39;digitalPinToPCICRbit&#39; was not declared in this scope
+       *digitalPinToPCICR(rxPin) |= _BV(digitalPinToPCICRbit(rxPin));
+                                                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp: In member function &#39;void NeoSWSerial::ignore()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:214:54: error: &#39;digitalPinToPCMSK&#39; was not declared in this scope
+     volatile uint8_t *pcmsk = digitalPinToPCMSK(rxPin);
+                                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:216:24: error: &#39;SREG&#39; was not declared in this scope
+     uint8_t prevSREG = SREG;
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:221:33: error: &#39;digitalPinToPCICR&#39; was not declared in this scope
+         *digitalPinToPCICR(rxPin) &amp;= ~_BV(digitalPinToPCICRbit(rxPin));
+                                 ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.h:4:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:32:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:221:69: error: &#39;digitalPinToPCICRbit&#39; was not declared in this scope
+         *digitalPinToPCICR(rxPin) &amp;= ~_BV(digitalPinToPCICRbit(rxPin));
+                                                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:222:50: error: &#39;digitalPinToPCMSKbit&#39; was not declared in this scope
+         *pcmsk &amp;= ~_BV(digitalPinToPCMSKbit(rxPin));
+                                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp: In member function &#39;void NeoSWSerial::attachInterrupt(NeoSWSerial::isr_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:285:21: error: &#39;SREG&#39; was not declared in this scope
+   uint8_t oldSREG = SREG;
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp: In static member function &#39;static void NeoSWSerial::rxISR(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:308:16: error: &#39;TCNTX&#39; was not declared in this scope
+   uint8_t t0 = TCNTX;            // time of data transition (plus ISR latency)
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp: In member function &#39;bool NeoSWSerial::checkRxTime()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:383:28: error: &#39;TCNTX&#39; was not declared in this scope
+       uint8_t  t0        = TCNTX; // now
+                            ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.h:4:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:32:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp: In member function &#39;virtual size_t NeoSWSerial::write(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:531:50: error: &#39;digitalPinToPCICRbit&#39; was not declared in this scope
+   uint8_t PCIbit = bit(digitalPinToPCICRbit(rxPin));
+                                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:98:25: note: in definition of macro &#39;bit&#39;
+ #define bit(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:533:22: error: &#39;SREG&#39; was not declared in this scope
+   uint8_t prevSREG = SREG;
+                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:536:18: error: &#39;TCNTX&#39; was not declared in this scope
+     uint8_t t0 = TCNTX; // start time
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NeoSWSerial/src/NeoSWSerial.cpp:561:13: error: &#39;PCI_FLAG_REGISTER&#39; was not declared in this scope
+         if (PCI_FLAG_REGISTER &amp; PCIbit) {
+             ^
+
+</pre>
+
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

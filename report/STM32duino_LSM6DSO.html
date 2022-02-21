@@ -1,0 +1,395 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>STM32duino LSM6DSO - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>STM32duino LSM6DSO</h2>
+				<p>
+					Version: <b>2.0.1</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/stm32duino-lsm6dso/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+							<td>No ⚠️</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+							<td>No ⚠️</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.c:20:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.h:1568:8: error: unknown type name &#39;float_t&#39;
+ extern float_t lsm6dso_from_fs2_to_mg(int16_t lsb);
+        ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.h:1569:8: error: unknown type name &#39;float_t&#39;
+ extern float_t lsm6dso_from_fs4_to_mg(int16_t lsb);
+        ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.h:1570:8: error: unknown type name &#39;float_t&#39;
+ extern float_t lsm6dso_from_fs8_to_mg(int16_t lsb);
+        ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.h:1571:8: error: unknown type name &#39;float_t&#39;
+ extern float_t lsm6dso_from_fs16_to_mg(int16_t lsb);
+        ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.h:1572:8: error: unknown type name &#39;float_t&#39;
+ extern float_t lsm6dso_from_fs125_to_mdps(int16_t lsb);
+        ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.h:1573:8: error: unknown type name &#39;float_t&#39;
+ extern float_t lsm6dso_from_fs500_to_mdps(int16_t lsb);
+        ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.h:1574:8: error: unknown type name &#39;float_t&#39;
+ extern float_t lsm6dso_from_fs250_to_mdps(int16_t lsb);
+        ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.h:1575:8: error: unknown type name &#39;float_t&#39;
+ extern float_t lsm6dso_from_fs1000_to_mdps(int16_t lsb);
+        ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.h:1576:8: error: unknown type name &#39;float_t&#39;
+ extern float_t lsm6dso_from_fs2000_to_mdps(int16_t lsb);
+        ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.h:1577:8: error: unknown type name &#39;float_t&#39;
+ extern float_t lsm6dso_from_lsb_to_celsius(int16_t lsb);
+        ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.h:1578:8: error: unknown type name &#39;float_t&#39;
+ extern float_t lsm6dso_from_lsb_to_nsec(int16_t lsb);
+        ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.c:100:1: error: unknown type name &#39;float_t&#39;; did you mean &#39;float&#39;?
+ float_t lsm6dso_from_fs2_to_mg(int16_t lsb)
+ ^~~~~~~
+ float
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.c: In function &#39;lsm6dso_from_fs2_to_mg&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.c:102:12: error: &#39;float_t&#39; undeclared (first use in this function); did you mean &#39;float&#39;?
+   return ((float_t)lsb) * 0.061f;
+            ^~~~~~~
+            float
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.c:102:12: note: each undeclared identifier is reported only once for each function it appears in
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.c:102:20: error: expected &#39;)&#39; before &#39;lsb&#39;
+   return ((float_t)lsb) * 0.061f;
+                    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.c: At top level:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.c:105:1: error: unknown type name &#39;float_t&#39;; did you mean &#39;float&#39;?
+ float_t lsm6dso_from_fs4_to_mg(int16_t lsb)
+ ^~~~~~~
+ float
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.c: In function &#39;lsm6dso_from_fs4_to_mg&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.c:107:12: error: &#39;float_t&#39; undeclared (first use in this function); did you mean &#39;float&#39;?
+   return ((float_t)lsb) * 0.122f;
+            ^~~~~~~
+            float
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.c:107:20: error: expected &#39;)&#39; before &#39;lsb&#39;
+   return ((float_t)lsb) * 0.122f;
+                    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.c: At top level:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.c:110:1: error: unknown type name &#39;float_t&#39;; did you mean &#39;float&#39;?
+ float_t lsm6dso_from_fs8_to_mg(int16_t lsb)
+ ^~~~~~~
+ float
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.c: In function &#39;lsm6dso_from_fs8_to_mg&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.c:112:12: error: &#39;float_t&#39; undeclared (first use in this function); did you mean &#39;float&#39;?
+   return ((float_t)lsb) * 0.244f;
+            ^~~~~~~
+            float
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.c:112:20: error: expected &#39;)&#39; before &#39;lsb&#39;
+   return ((float_t)lsb) * 0.244f;
+                    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.c: At top level:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.c:115:1: error: unknown type name &#39;float_t&#39;; did you mean &#39;float&#39;?
+ float_t lsm6dso_from_fs16_to_mg(int16_t lsb)
+ ^~~~~~~
+ float
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.c: In function &#39;lsm6dso_from_fs16_to_mg&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.c:117:12: error: &#39;float_t&#39; undeclared (first use in this function); did you mean &#39;float&#39;?
+   return ((float_t)lsb) *0.488f;
+            ^~~~~~~
+            float
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.c:117:20: error: expected &#39;)&#39; before &#39;lsb&#39;
+   return ((float_t)lsb) *0.488f;
+                    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.c: At top level:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.c:120:1: error: unknown type name &#39;float_t&#39;; did you mean &#39;float&#39;?
+ float_t lsm6dso_from_fs125_to_mdps(int16_t lsb)
+ ^~~~~~~
+ float
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.c: In function &#39;lsm6dso_from_fs125_to_mdps&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.c:122:12: error: &#39;float_t&#39; undeclared (first use in this function); did you mean &#39;float&#39;?
+   return ((float_t)lsb) *4.375f;
+            ^~~~~~~
+            float
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.c:122:20: error: expected &#39;)&#39; before &#39;lsb&#39;
+   return ((float_t)lsb) *4.375f;
+                    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.c: At top level:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.c:125:1: error: unknown type name &#39;float_t&#39;; did you mean &#39;float&#39;?
+ float_t lsm6dso_from_fs500_to_mdps(int16_t lsb)
+ ^~~~~~~
+ float
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.c: In function &#39;lsm6dso_from_fs500_to_mdps&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.c:127:12: error: &#39;float_t&#39; undeclared (first use in this function); did you mean &#39;float&#39;?
+   return ((float_t)lsb) *17.50f;
+            ^~~~~~~
+            float
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.c:127:20: error: expected &#39;)&#39; before &#39;lsb&#39;
+   return ((float_t)lsb) *17.50f;
+                    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.c: At top level:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.c:130:1: error: unknown type name &#39;float_t&#39;; did you mean &#39;float&#39;?
+ float_t lsm6dso_from_fs250_to_mdps(int16_t lsb)
+ ^~~~~~~
+ float
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.c: In function &#39;lsm6dso_from_fs250_to_mdps&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.c:132:12: error: &#39;float_t&#39; undeclared (first use in this function); did you mean &#39;float&#39;?
+   return ((float_t)lsb) *8.750f;
+            ^~~~~~~
+            float
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.c:132:20: error: expected &#39;)&#39; before &#39;lsb&#39;
+   return ((float_t)lsb) *8.750f;
+                    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.c: At top level:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.c:135:1: error: unknown type name &#39;float_t&#39;; did you mean &#39;float&#39;?
+ float_t lsm6dso_from_fs1000_to_mdps(int16_t lsb)
+ ^~~~~~~
+ float
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.c: In function &#39;lsm6dso_from_fs1000_to_mdps&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.c:137:12: error: &#39;float_t&#39; undeclared (first use in this function); did you mean &#39;float&#39;?
+   return ((float_t)lsb) *35.0f;
+            ^~~~~~~
+            float
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.c:137:20: error: expected &#39;)&#39; before &#39;lsb&#39;
+   return ((float_t)lsb) *35.0f;
+                    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.c: At top level:
+/home/ec2-user/arduino-testl</pre>
+
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library STM32duino_LSM6DSO claims to run on stm32, avr, sam architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+Sketch uses 83608 bytes (0%) of program storage space. Maximum is 16777216 bytes.
+Global variables use 44392 bytes (16%) of dynamic memory, leaving 225944 bytes for local variables. Maximum is 270336 bytes.
+</pre>
+
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library STM32duino_LSM6DSO claims to run on stm32, avr, sam architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.c:20:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.h:1568:8: error: unknown type name &#39;float_t&#39;
+ extern float_t lsm6dso_from_fs2_to_mg(int16_t lsb);
+        ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.h:1569:8: error: unknown type name &#39;float_t&#39;
+ extern float_t lsm6dso_from_/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.h:1569:8: error: &#39;float_t&#39; does not name a type; did you mean &#39;float&#39;?
+ extern float_t lsm6dso_from_fs4_to_mg(int16_t lsb);
+        ^~~~~~~
+        float
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.h:1570:8: error: &#39;float_t&#39; does not name a type; did you mean &#39;float&#39;?
+ extern float_t lsm6dso_from_fs8_to_mg(int16_t lsb);
+        ^~~~~~~
+        float
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.h:1571:8: error: &#39;float_t&#39; does not name a type; did you mean &#39;float&#39;?
+ extern float_t lsm6dso_from_fs16_to_mg(int16_t lsb);
+        ^~~~~~~
+        float
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.h:1572:8: error: &#39;float_t&#39; does not name a type; did you mean &#39;float&#39;?
+ extern float_t lsm6dso_from_fs125_to_mdps(int16_t lsb);
+        ^~~~~~~
+        float
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.h:1573:8: error: &#39;float_t&#39; does not name a type; did you mean &#39;float&#39;?
+ extern float_t lsm6dso_from_fs500_to_mdps(int16_t lsb);
+        ^~~~~~~
+        float
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.h:1574:8: error: &#39;float_t&#39; does not name a type; did you mean &#39;float&#39;?
+ extern float_t lsm6dso_from_fs250_to_mdps(int16_t lsb);
+        ^~~~~~~
+        float
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.h:1575:8: error: &#39;float_t&#39; does not name a type; did you mean &#39;float&#39;?
+ extern float_t lsm6dso_from_fs1000_to_mdps(int16_t lsb);
+        ^~~~~~~
+        float
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.h:1576:8: error: &#39;float_t&#39; does not name a type; did you mean &#39;float&#39;?
+ extern float_t lsm6dso_from_fs2000_to_mdps(int16_t lsb);
+        ^~~~~~~
+        float
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.h:1577:8: error: &#39;float_t&#39; does not name a type; did you mean &#39;float&#39;?
+ extern float_t lsm6dso_from_lsb_to_celsius(int16_t lsb);
+        ^~~~~~~
+        float
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/lsm6dso_reg.h:1578:8: error: &#39;float_t&#39; does not name a type; did you mean &#39;float&#39;?
+ extern float_t lsm6dso_from_lsb_to_nsec(int16_t lsb);
+        ^~~~~~~
+        float
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/LSM6DSOSensor.h:48:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_LSM6DSO/src/LSM6DSOSensor.cpp:42:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h: In member function &#39;uint8_t LSM6DSOSensor::IO_Read(uint8_t*, uint8_t, uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:63:12: note: candidate 1: size_t TwoWire::requestFrom(int, int)
+     size_t requestFrom(int, int);
+            ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:61:12: note: candidate 2: virtual size_t TwoWire::requestFrom(uint8_t, size_t)
+     size_t requestFrom(uint8_t, size_t);
+            ^~~~~~~~~~~
+
+</pre>
+
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library STM32duino_LSM6DSO claims to run on stm32, avr, sam architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+Sketch uses 14780 bytes (5%) of program storage space. Maximum is 262144 bytes.
+Global variables use 3656 bytes (11%) of dynamic memory, leaving 29112 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library STM32duino_LSM6DSO claims to run on stm32, avr, sam architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+
+</pre>
+
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

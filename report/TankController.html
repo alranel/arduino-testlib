@@ -1,0 +1,493 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>TankController - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>TankController</h2>
+				<p>
+					Version: <b>21.9.1</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/tankcontroller/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>TankController</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">Multiple libraries were found for &#34;RTClib.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTClib
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/BasicsLibrary
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCLib_by_NeiroN
+Multiple libraries were found for &#34;Keypad.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Keypad
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AceMenu
+Multiple libraries were found for &#34;PID_v1.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PreMo_-_Virtual_Path_Following
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PID
+Multiple libraries were found for &#34;EEPROM.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/EEPROM
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/arduino-NVM
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum
+Multiple libraries were found for &#34;Ethernet.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ethernet
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EthernetENC
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/UIPEthernet
+Multiple libraries were found for &#34;SdFat.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SdFat
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/InkplateLibrary
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SdFat_-_Adafruit_Fork
+</pre>
+
+					
+					<h4>examples/TankController</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">Multiple libraries were found for &#34;EEPROM.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/EEPROM
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/arduino-NVM
+Multiple libraries were found for &#34;SdFat.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SdFat
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/InkplateLibrary
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SdFat_-_Adafruit_Fork
+Multiple libraries were found for &#34;Keypad.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Keypad
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AceMenu
+Multiple libraries were found for &#34;PID_v1.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PreMo_-_Virtual_Path_Following
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PID
+Multiple libraries were found for &#34;RTClib.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTClib
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/BasicsLibrary
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCLib_by_NeiroN
+Multiple libraries were found for &#34;Ethernet.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ethernet
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/UIPEthernet
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EthernetENC
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TankController/src/Devices/EEPROM_TC.cpp:3:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum/src/EEPROM.h:25:10: fatal error: avr/eeprom.h: No such file or directory
+ #include &lt;avr/eeprom.h&gt;
+          ^~~~~~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;RTClib.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTClib
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/BasicsLibrary
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCLib_by_NeiroN
+Multiple libraries were found for &#34;EEPROM.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/arduino-NVM
+</pre>
+
+					
+					<h4>examples/TankController</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TankController/src/Devices/EEPROM_TC.cpp:3:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum/src/EEPROM.h:25:10: fatal error: avr/eeprom.h: No such file or directory
+ #include &lt;avr/eeprom.h&gt;
+          ^~~~~~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;RTClib.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTClib
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/BasicsLibrary
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCLib_by_NeiroN
+Multiple libraries were found for &#34;EEPROM.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/arduino-NVM
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library TankController claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TankController/src/TankController.cpp:3:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TankController/src/TankController.cpp: In member function &#39;void TankController::setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TankController/src/TankController.cpp:195:14: error: &#39;WDTO_8S&#39; was not declared in this scope
+   wdt_enable(WDTO_8S);
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TankController/src/TankController.cpp:195:14: note: suggested alternative: &#39;WDTO_1S&#39;
+Multiple libraries were found for &#34;SdFat.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SdFat
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SdFat_-_Adafruit_Fork
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/InkplateLibrary
+Multiple libraries were found for &#34;Keypad.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Keypad
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AceMenu
+Multiple libraries were found for &#34;RTClib.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTClib
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCLib_by_NeiroN
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/BasicsLibrary
+Multiple libraries were found for &#34;EEPROM.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/EEPROM
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/arduino-NVM
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum
+Multiple libraries were found for &#34;Ethernet.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ethernet
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/UIPEthernet
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EthernetENC
+Multiple libraries were found for &#34;PID_v1.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PreMo_-_Virtual_Path_Following
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PID
+</pre>
+
+					
+					<h4>examples/TankController</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library TankController claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TankController/src/TankController.cpp:3:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TankController/src/TankController.cpp: In member function &#39;void TankController::setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TankController/src/TankController.cpp:195:14: error: &#39;WDTO_8S&#39; was not declared in this scope
+   wdt_enable(WDTO_8S);
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TankController/src/TankController.cpp:195:14: note: suggested alternative: &#39;WDTO_1S&#39;
+Multiple libraries were found for &#34;EEPROM.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/EEPROM
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/arduino-NVM
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum
+Multiple libraries were found for &#34;PID_v1.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PreMo_-_Virtual_Path_Following
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PID
+Multiple libraries were found for &#34;Keypad.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Keypad
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AceMenu
+Multiple libraries were found for &#34;RTClib.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTClib
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCLib_by_NeiroN
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/BasicsLibrary
+Multiple libraries were found for &#34;Ethernet.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ethernet
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/UIPEthernet
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EthernetENC
+Multiple libraries were found for &#34;SdFat.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SdFat
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/InkplateLibrary
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SdFat_-_Adafruit_Fork
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TankController/src/Devices/EEPROM_TC.cpp:3:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum/src/EEPROM.h:25:10: fatal error: avr/eeprom.h: No such file or directory
+ #include &lt;avr/eeprom.h&gt;
+          ^~~~~~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;RTClib.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTClib
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/BasicsLibrary
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCLib_by_NeiroN
+Multiple libraries were found for &#34;EEPROM.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/arduino-NVM
+</pre>
+
+					
+					<h4>examples/TankController</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TankController/src/Devices/EEPROM_TC.cpp:3:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum/src/EEPROM.h:25:10: fatal error: avr/eeprom.h: No such file or directory
+ #include &lt;avr/eeprom.h&gt;
+          ^~~~~~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;EEPROM.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/arduino-NVM
+Multiple libraries were found for &#34;RTClib.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTClib
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/BasicsLibrary
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCLib_by_NeiroN
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TankController/src/Devices/EthernetServer_TC.cpp:3:21: fatal error: avr/wdt.h: No such file or directory
+compilation terminated.
+Multiple libraries were found for &#34;RTClib.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTClib
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCLib_by_NeiroN
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/BasicsLibrary
+Multiple libraries were found for &#34;EEPROM.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/EEPROM
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/arduino-NVM
+Multiple libraries were found for &#34;Ethernet.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ethernet
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EthernetENC
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/UIPEthernet
+</pre>
+
+					
+					<h4>examples/TankController</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TankController/src/Devices/EthernetServer_TC.cpp:3:21: fatal error: avr/wdt.h: No such file or directory
+compilation terminated.
+Multiple libraries were found for &#34;RTClib.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTClib
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTCLib_by_NeiroN
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/BasicsLibrary
+Multiple libraries were found for &#34;EEPROM.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/EEPROM
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/arduino-NVM
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum
+Multiple libraries were found for &#34;Ethernet.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Ethernet
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/UIPEthernet
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EthernetENC
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

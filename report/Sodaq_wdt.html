@@ -1,0 +1,726 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>Sodaq_wdt - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>Sodaq_wdt</h2>
+				<p>
+					Version: <b>1.0.2</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/sodaq_wdt/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>wdt_sleep_test</pre></th>
+						
+						<th><pre>wdt_test</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+									
+										
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+										
+									
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 474 bytes (1%) of program storage space. Maximum is 32256 bytes.
+Global variables use 10 bytes (0%) of dynamic memory, leaving 2038 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+
+					
+					<h4>examples/wdt_sleep_test</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino:7:19: error: &#39;LED1&#39; was not declared in this scope
+ #define SLEEP_LED LED1
+                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino:43:11: note: in expansion of macro &#39;SLEEP_LED&#39;
+   pinMode(SLEEP_LED, OUTPUT);
+           ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino:7:19: note: suggested alternative: &#39;EEDR&#39;
+ #define SLEEP_LED LED1
+                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino:43:11: note: in expansion of macro &#39;SLEEP_LED&#39;
+   pinMode(SLEEP_LED, OUTPUT);
+           ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino:8:17: error: &#39;LED2&#39; was not declared in this scope
+ #define WDT_LED LED2
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino:44:11: note: in expansion of macro &#39;WDT_LED&#39;
+   pinMode(WDT_LED, OUTPUT);
+           ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino:8:17: note: suggested alternative: &#39;EEDR&#39;
+ #define WDT_LED LED2
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino:44:11: note: in expansion of macro &#39;WDT_LED&#39;
+   pinMode(WDT_LED, OUTPUT);
+           ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino:8:17: error: &#39;LED2&#39; was not declared in this scope
+ #define WDT_LED LED2
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino:61:18: note: in expansion of macro &#39;WDT_LED&#39;
+     digitalWrite(WDT_LED, HIGH);
+                  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino:8:17: note: suggested alternative: &#39;EEDR&#39;
+ #define WDT_LED LED2
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino:61:18: note: in expansion of macro &#39;WDT_LED&#39;
+     digitalWrite(WDT_LED, HIGH);
+                  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino: In function &#39;void systemSleep()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino:7:19: error: &#39;LED1&#39; was not declared in this scope
+ #define SLEEP_LED LED1
+                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino:98:18: note: in expansion of macro &#39;SLEEP_LED&#39;
+     digitalWrite(SLEEP_LED, HIGH);
+                  ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino:7:19: note: suggested alternative: &#39;EEDR&#39;
+ #define SLEEP_LED LED1
+                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino:98:18: note: in expansion of macro &#39;SLEEP_LED&#39;
+     digitalWrite(SLEEP_LED, HIGH);
+                  ^~~~~~~~~
+Multiple libraries were found for &#34;Sodaq_wdt.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK
+</pre>
+					
+					<h4>examples/wdt_test</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 1776 bytes (5%) of program storage space. Maximum is 32256 bytes.
+Global variables use 231 bytes (11%) of dynamic memory, leaving 1817 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /tmp/arduino-testlib3132782692/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK/src/Sodaq_wdt.h:105:43: error: &#39;WDT_PERIOD_1X&#39; was not declared in this scope
+ void sodaq_wdt_enable(wdt_period period = WDT_PERIOD_1X);
+                                           ^~~~~~~~~~~~~
+Multiple libraries were found for &#34;Sodaq_wdt.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt
+</pre>
+
+					
+					<h4>examples/wdt_sleep_test</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK/src/Sodaq_wdt.h:105:43: error: &#39;WDT_PERIOD_1X&#39; was not declared in this scope
+ void sodaq_wdt_enable(wdt_period period = WDT_PERIOD_1X);
+                                           ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino:40:20: error: &#39;WDT_PERIOD_1X&#39; was not declared in this scope
+   sodaq_wdt_enable(WDT_PERIOD_1X);
+                    ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino:43:11: error: &#39;SLEEP_LED&#39; was not declared in this scope
+   pinMode(SLEEP_LED, OUTPUT);
+           ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino:43:11: note: suggested alternative: &#39;SEEK_SET&#39;
+   pinMode(SLEEP_LED, OUTPUT);
+           ^~~~~~~~~
+           SEEK_SET
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino:44:11: error: &#39;WDT_LED&#39; was not declared in this scope
+   pinMode(WDT_LED, OUTPUT);
+           ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino:44:11: note: suggested alternative: &#39;DT_LNK&#39;
+   pinMode(WDT_LED, OUTPUT);
+           ^~~~~~~
+           DT_LNK
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino:47:3: error: &#39;DIAG_STREAM&#39; was not declared in this scope
+   DIAG_STREAM.begin(57600);
+   ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino:58:5: error: &#39;DIAG_STREAM&#39; was not declared in this scope
+     DIAG_STREAM.println(&#34;WDT interrupt has been triggered&#34;);
+     ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino:61:18: error: &#39;WDT_LED&#39; was not declared in this scope
+     digitalWrite(WDT_LED, HIGH);
+                  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino:61:18: note: suggested alternative: &#39;DT_LNK&#39;
+     digitalWrite(WDT_LED, HIGH);
+                  ^~~~~~~
+                  DT_LNK
+Multiple libraries were found for &#34;Sodaq_wdt.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt
+</pre>
+					
+					<h4>examples/wdt_test</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_test/wdt_test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK/src/Sodaq_wdt.h:105:43: error: &#39;WDT_PERIOD_1X&#39; was not declared in this scope
+ void sodaq_wdt_enable(wdt_period period = WDT_PERIOD_1X);
+                                           ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_test/wdt_test.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_test/wdt_test.ino:32:20: error: &#39;WDT_PERIOD_2X&#39; was not declared in this scope
+   sodaq_wdt_enable(WDT_PERIOD_2X);
+                    ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_test/wdt_test.ino:35:3: error: &#39;DIAG_STREAM&#39; was not declared in this scope
+   DIAG_STREAM.begin(57600);
+   ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_test/wdt_test.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_test/wdt_test.ino:46:5: error: &#39;DIAG_STREAM&#39; was not declared in this scope
+     DIAG_STREAM.println(&#34;WDT interrupt has been triggered&#34;);
+     ^~~~~~~~~~~
+Multiple libraries were found for &#34;Sodaq_wdt.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /tmp/arduino-testlib3132782692/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK/src/Sodaq_wdt.h:105:43: error: &#39;WDT_PERIOD_1X&#39; was not declared in this scope
+ void sodaq_wdt_enable(wdt_period period = WDT_PERIOD_1X);
+                                           ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK/src/Sodaq_wdt.h:105:43: note: suggested alternative: &#39;WDT_PERIOD_t&#39;
+ void sodaq_wdt_enable(wdt_period period = WDT_PERIOD_1X);
+                                           ^~~~~~~~~~~~~
+                                           WDT_PERIOD_t
+Multiple libraries were found for &#34;Sodaq_wdt.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt
+</pre>
+
+					
+					<h4>examples/wdt_sleep_test</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK/src/Sodaq_wdt.h:105:43: error: &#39;WDT_PERIOD_1X&#39; was not declared in this scope
+ void sodaq_wdt_enable(wdt_period period = WDT_PERIOD_1X);
+                                           ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK/src/Sodaq_wdt.h:105:43: note: suggested alternative: &#39;WDT_PERIOD_t&#39;
+ void sodaq_wdt_enable(wdt_period period = WDT_PERIOD_1X);
+                                           ^~~~~~~~~~~~~
+                                           WDT_PERIOD_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino:40:20: error: &#39;WDT_PERIOD_1X&#39; was not declared in this scope
+   sodaq_wdt_enable(WDT_PERIOD_1X);
+                    ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino:40:20: note: suggested alternative: &#39;WDT_PERIOD_t&#39;
+   sodaq_wdt_enable(WDT_PERIOD_1X);
+                    ^~~~~~~~~~~~~
+                    WDT_PERIOD_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino:43:11: error: &#39;SLEEP_LED&#39; was not declared in this scope
+   pinMode(SLEEP_LED, OUTPUT);
+           ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino:43:11: note: suggested alternative: &#39;SLEEP_t&#39;
+   pinMode(SLEEP_LED, OUTPUT);
+           ^~~~~~~~~
+           SLEEP_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino:44:11: error: &#39;WDT_LED&#39; was not declared in this scope
+   pinMode(WDT_LED, OUTPUT);
+           ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino:44:11: note: suggested alternative: &#39;WDT_t&#39;
+   pinMode(WDT_LED, OUTPUT);
+           ^~~~~~~
+           WDT_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino:47:3: error: &#39;DIAG_STREAM&#39; was not declared in this scope
+   DIAG_STREAM.begin(57600);
+   ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino:58:5: error: &#39;DIAG_STREAM&#39; was not declared in this scope
+     DIAG_STREAM.println(&#34;WDT interrupt has been triggered&#34;);
+     ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino:61:18: error: &#39;WDT_LED&#39; was not declared in this scope
+     digitalWrite(WDT_LED, HIGH);
+                  ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino:61:18: note: suggested alternative: &#39;WDT_t&#39;
+     digitalWrite(WDT_LED, HIGH);
+                  ^~~~~~~
+                  WDT_t
+Multiple libraries were found for &#34;Sodaq_wdt.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt
+</pre>
+					
+					<h4>examples/wdt_test</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_test/wdt_test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK/src/Sodaq_wdt.h:105:43: error: &#39;WDT_PERIOD_1X&#39; was not declared in this scope
+ void sodaq_wdt_enable(wdt_period period = WDT_PERIOD_1X);
+                                           ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK/src/Sodaq_wdt.h:105:43: note: suggested alternative: &#39;WDT_PERIOD_t&#39;
+ void sodaq_wdt_enable(wdt_period period = WDT_PERIOD_1X);
+                                           ^~~~~~~~~~~~~
+                                           WDT_PERIOD_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_test/wdt_test.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_test/wdt_test.ino:32:20: error: &#39;WDT_PERIOD_2X&#39; was not declared in this scope
+   sodaq_wdt_enable(WDT_PERIOD_2X);
+                    ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_test/wdt_test.ino:32:20: note: suggested alternative: &#39;WDT_PERIOD_t&#39;
+   sodaq_wdt_enable(WDT_PERIOD_2X);
+                    ^~~~~~~~~~~~~
+                    WDT_PERIOD_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_test/wdt_test.ino:35:3: error: &#39;DIAG_STREAM&#39; was not declared in this scope
+   DIAG_STREAM.begin(57600);
+   ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_test/wdt_test.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_test/wdt_test.ino:46:5: error: &#39;DIAG_STREAM&#39; was not declared in this scope
+     DIAG_STREAM.println(&#34;WDT interrupt has been triggered&#34;);
+     ^~~~~~~~~~~
+Multiple libraries were found for &#34;Sodaq_wdt.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 12176 bytes (4%) of program storage space. Maximum is 262144 bytes.
+Global variables use 3000 bytes (9%) of dynamic memory, leaving 29768 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+
+					
+					<h4>examples/wdt_sleep_test</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 12776 bytes (4%) of program storage space. Maximum is 262144 bytes.
+Global variables use 3000 bytes (9%) of dynamic memory, leaving 29768 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+					
+					<h4>examples/wdt_test</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 12584 bytes (4%) of program storage space. Maximum is 262144 bytes.
+Global variables use 3000 bytes (9%) of dynamic memory, leaving 29768 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /tmp/arduino-testlib770114578/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK/src/Sodaq_wdt.h:105:43: error: &#39;WDT_PERIOD_1X&#39; was not declared in this scope
+ void sodaq_wdt_enable(wdt_period period = WDT_PERIOD_1X);
+                                           ^
+Multiple libraries were found for &#34;Sodaq_wdt.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt
+</pre>
+
+					
+					<h4>examples/wdt_sleep_test</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK/src/Sodaq_wdt.h:105:43: error: &#39;WDT_PERIOD_1X&#39; was not declared in this scope
+ void sodaq_wdt_enable(wdt_period period = WDT_PERIOD_1X);
+                                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino:40:20: error: &#39;WDT_PERIOD_1X&#39; was not declared in this scope
+   sodaq_wdt_enable(WDT_PERIOD_1X);
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino:43:11: error: &#39;SLEEP_LED&#39; was not declared in this scope
+   pinMode(SLEEP_LED, OUTPUT);
+           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino:44:11: error: &#39;WDT_LED&#39; was not declared in this scope
+   pinMode(WDT_LED, OUTPUT);
+           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino:47:3: error: &#39;DIAG_STREAM&#39; was not declared in this scope
+   DIAG_STREAM.begin(57600);
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino:58:5: error: &#39;DIAG_STREAM&#39; was not declared in this scope
+     DIAG_STREAM.println(&#34;WDT interrupt has been triggered&#34;);
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_sleep_test/wdt_sleep_test.ino:61:18: error: &#39;WDT_LED&#39; was not declared in this scope
+     digitalWrite(WDT_LED, HIGH);
+                  ^
+Multiple libraries were found for &#34;Sodaq_wdt.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt
+</pre>
+					
+					<h4>examples/wdt_test</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_test/wdt_test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK/src/Sodaq_wdt.h:105:43: error: &#39;WDT_PERIOD_1X&#39; was not declared in this scope
+ void sodaq_wdt_enable(wdt_period period = WDT_PERIOD_1X);
+                                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_test/wdt_test.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_test/wdt_test.ino:32:20: error: &#39;WDT_PERIOD_2X&#39; was not declared in this scope
+   sodaq_wdt_enable(WDT_PERIOD_2X);
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_test/wdt_test.ino:35:3: error: &#39;DIAG_STREAM&#39; was not declared in this scope
+   DIAG_STREAM.begin(57600);
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_test/wdt_test.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt/examples/wdt_test/wdt_test.ino:46:5: error: &#39;DIAG_STREAM&#39; was not declared in this scope
+     DIAG_STREAM.println(&#34;WDT interrupt has been triggered&#34;);
+     ^
+Multiple libraries were found for &#34;Sodaq_wdt.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sodaq_wdt
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

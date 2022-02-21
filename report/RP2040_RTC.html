@@ -1,0 +1,725 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>RP2040_RTC - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>RP2040_RTC</h2>
+				<p>
+					Version: <b>1.0.8</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/rp2040_rtc/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>Alarm</pre></th>
+						
+						<th><pre>Time</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+							<td>No ⚠️</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library RP2040_RTC claims to run on rp2040, mbed_rp2040, mbed_nano architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+In file included from /private/tmp/arduino-testlib2226165757/test/test.ino:1:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:47:28: error: &#39;datetime_t&#39; was not declared in this scope
+   bool rtc_set_datetime   (datetime_t *t);
+                            ^~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:47:28: note: suggested alternative: &#39;atexit&#39;
+   bool rtc_set_datetime   (datetime_t *t);
+                            ^~~~~~~~~~
+                            atexit
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:47:40: error: &#39;t&#39; was not declared in this scope
+   bool rtc_set_datetime   (datetime_t *t);
+                                        ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:48:28: error: &#39;datetime_t&#39; was not declared in this scope
+   bool rtc_get_datetime   (datetime_t *t);
+                            ^~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:48:28: note: suggested alternative: &#39;atexit&#39;
+   bool rtc_get_datetime   (datetime_t *t);
+                            ^~~~~~~~~~
+                            atexit
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:48:40: error: &#39;t&#39; was not declared in this scope
+   bool rtc_get_datetime   (datetime_t *t);
+                                        ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:49:28: error: variable or field &#39;rtc_set_alarm&#39; declared void
+   void rtc_set_alarm      (datetime_t *t, rtc_callback_t user_callback);
+                            ^~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:49:28: error: &#39;datetime_t&#39; was not declared in this scope
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:49:28: note: suggested alternative: &#39;atexit&#39;
+   void rtc_set_alarm      (datetime_t *t, rtc_callback_t user_callback);
+                            ^~~~~~~~~~
+                            atexit
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:49:40: error: &#39;t&#39; was not declared in this scope
+   void rtc_set_alarm      (datetime_t *t, rtc_callback_t user_callback);
+                                        ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:49:58: error: expected primary-expression before &#39;user_callback&#39;
+   void rtc_set_alarm      (datetime_t *t, rtc_callback_t user_callback);
+                                                          ^~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:53:26: error: &#39;datetime_t&#39; was not declared in this scope
+   bool rtc_alarm_repeats(datetime_t *t);
+                          ^~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:53:26: note: suggested alternative: &#39;atexit&#39;
+   bool rtc_alarm_repeats(datetime_t *t);
+                          ^~~~~~~~~~
+                          atexit
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:53:38: error: &#39;t&#39; was not declared in this scope
+   bool rtc_alarm_repeats(datetime_t *t);
+                                      ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:55:35: error: &#39;uint&#39; has not been declared
+   void datetime_to_str(char *buf, uint buf_size, const datetime_t *t);
+                                   ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:55:56: error: &#39;datetime_t&#39; does not name a type; did you mean &#39;atexit&#39;?
+   void datetime_to_str(char *buf, uint buf_size, const datetime_t *t);
+                                                        ^~~~~~~~~~
+                                                        atexit
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:58:0,
+                 from /private/tmp/arduino-testlib2226165757/test/test.ino:1:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/DateTime_Generic.h: In member function &#39;DateTime DateTime::operator&#43;(const TimeSpan&amp;)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/DateTime_Generic.h:373:71: error: call of overloaded &#39;DateTime(uint32_t)&#39; is ambiguous
+       return DateTime( ( unixtime() &#43; (uint32_t) span.totalseconds() ));
+                                                                       ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/DateTime_Generic.h:200:5: note: candidate: DateTime::DateTime(const time_t&amp;)
+     DateTime (const time_t&amp; timeInput)
+     ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/DateTime_Generic.h:161:5: note: candidate: DateTime::DateTime(const DateTime&amp;)
+     DateTime (const DateTime&amp; copy)
+     ^~~~~~~~
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:58:0,
+                 from /private/tmp/arduino-testlib2226165757/test/test.ino:1:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/DateTime_Generic.h:107:5: note: candidate: DateTime::DateTime(uint32_t)
+     DateTime (uint32_t t = SECONDS_FROM_1970_TO_2000)
+     ^~~~~~~~
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:58:0,
+                 from /private/tmp/arduino-testlib2226165757/test/test.ino:1:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/DateTime_Generic.h: In member function &#39;DateTime DateTime::operator-(const TimeSpan&amp;)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/DateTime_Generic.h:378:71: error: call of overloaded &#39;DateTime(uint32_t)&#39; is ambiguous
+       return DateTime( ( unixtime() - (uint32_t) span.totalseconds() ));
+                                                                       ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/DateTime_Generic.h:200:5: note: candidate: DateTime::DateTime(const time_t&amp;)
+     DateTime (const time_t&amp; timeInput)
+     ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/DateTime_Generic.h:161:5: note: candidate: DateTime::DateTime(const DateTime&amp;)
+     DateTime (const DateTime&amp; copy)
+     ^~~~~~~~
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:58:0,
+                 from /private/tmp/arduino-testlib2226165757/test/test.ino:1:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/DateTime_Generic.h:107:5: note: candidate: DateTime::DateTime(uint32_t)
+     DateTime (uint32_t t = SECONDS_FROM_1970_TO_2000)
+     ^~~~~~~~
+
+</pre>
+
+					
+					<h4>examples/Alarm</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable"></pre>
+					
+					<h4>examples/Time</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable"></pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 78756 bytes (0%) of program storage space. Maximum is 16777216 bytes.
+Global variables use 43444 bytes (16%) of dynamic memory, leaving 226892 bytes for local variables. Maximum is 270336 bytes.
+</pre>
+
+					
+					<h4>examples/Alarm</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable"></pre>
+					
+					<h4>examples/Time</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable"></pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library RP2040_RTC claims to run on rp2040, mbed_rp2040, mbed_nano architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /tmp/arduino-testlib1256668553/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:47:28: error: &#39;datetime_t&#39; was not declared in this scope
+   bool rtc_set_datetime   (datetime_t *t);
+                            ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:47:28: note: suggested alternative: &#39;atexit&#39;
+   bool rtc_set_datetime   (datetime_t *t);
+                            ^~~~~~~~~~
+                            atexit
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:47:40: error: &#39;t&#39; was not declared in this scope
+   bool rtc_set_datetime   (datetime_t *t);
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:48:28: error: &#39;datetime_t&#39; was not declared in this scope
+   bool rtc_get_datetime   (datetime_t *t);
+                            ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:48:28: note: suggested alternative: &#39;atexit&#39;
+   bool rtc_get_datetime   (datetime_t *t);
+                            ^~~~~~~~~~
+                            atexit
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:48:40: error: &#39;t&#39; was not declared in this scope
+   bool rtc_get_datetime   (datetime_t *t);
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:49:28: error: variable or field &#39;rtc_set_alarm&#39; declared void
+   void rtc_set_alarm      (datetime_t *t, rtc_callback_t user_callback);
+                            ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:49:28: error: &#39;datetime_t&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:49:28: note: suggested alternative: &#39;atexit&#39;
+   void rtc_set_alarm      (datetime_t *t, rtc_callback_t user_callback);
+                            ^~~~~~~~~~
+                            atexit
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:49:40: error: &#39;t&#39; was not declared in this scope
+   void rtc_set_alarm      (datetime_t *t, rtc_callback_t user_callback);
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:49:58: error: expected primary-expression before &#39;user_callback&#39;
+   void rtc_set_alarm      (datetime_t *t, rtc_callback_t user_callback);
+                                                          ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:53:26: error: &#39;datetime_t&#39; was not declared in this scope
+   bool rtc_alarm_repeats(datetime_t *t);
+                          ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:53:26: note: suggested alternative: &#39;atexit&#39;
+   bool rtc_alarm_repeats(datetime_t *t);
+                          ^~~~~~~~~~
+                          atexit
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:53:38: error: &#39;t&#39; was not declared in this scope
+   bool rtc_alarm_repeats(datetime_t *t);
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:55:35: error: &#39;uint&#39; has not been declared
+   void datetime_to_str(char *buf, uint buf_size, const datetime_t *t);
+                                   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:55:56: error: &#39;datetime_t&#39; does not name a type; did you mean &#39;atexit&#39;?
+   void datetime_to_str(char *buf, uint buf_size, const datetime_t *t);
+                                                        ^~~~~~~~~~
+                                                        atexit
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:58:0,
+                 from /tmp/arduino-testlib1256668553/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/DateTime_Generic.h: In member function &#39;DateTime DateTime::operator&#43;(const TimeSpan&amp;)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/DateTime_Generic.h:373:71: error: call of overloaded &#39;DateTime(uint32_t)&#39; is ambiguous
+       return DateTime( ( unixtime() &#43; (uint32_t) span.totalseconds() ));
+                                                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/DateTime_Generic.h:200:5: note: candidate: DateTime::DateTime(const time_t&amp;)
+     DateTime (const time_t&amp; timeInput)
+     ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/DateTime_Generic.h:161:5: note: candidate: DateTime::DateTime(const DateTime&amp;)
+     DateTime (const DateTime&amp; copy)
+     ^~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:58:0,
+                 from /tmp/arduino-testlib1256668553/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/DateTime_Generic.h:107:5: note: candidate: DateTime::DateTime(uint32_t)
+     DateTime (uint32_t t = SECONDS_FROM_1970_TO_2000)
+     ^~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:58:0,
+                 from /tmp/arduino-testlib1256668553/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/DateTime_Generic.h: In member function &#39;DateTime DateTime::operator-(const TimeSpan&amp;)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/DateTime_Generic.h:378:71: error: call of overloaded &#39;DateTime(uint32_t)&#39; is ambiguous
+       return DateTime( ( unixtime() - (uint32_t) span.totalseconds() ));
+                                                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/DateTime_Generic.h:200:5: note: candidate: DateTime::DateTime(const time_t&amp;)
+     DateTime (const time_t&amp; timeInput)
+     ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/DateTime_Generic.h:161:5: note: candidate: DateTime::DateTime(const DateTime&amp;)
+     DateTime (const DateTime&amp; copy)
+     ^~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:58:0,
+                 from /tmp/arduino-testlib1256668553/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/DateTime_Generic.h:107:5: note: candidate: DateTime::DateTime(uint32_t)
+     DateTime (uint32_t t = SECONDS_FROM_1970_TO_2000)
+     ^~~~~~~~
+
+</pre>
+
+					
+					<h4>examples/Alarm</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable"></pre>
+					
+					<h4>examples/Time</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable"></pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library RP2040_RTC claims to run on rp2040, mbed_rp2040, mbed_nano architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+In file included from /private/tmp/arduino-testlib2226165757/test/test.ino:1:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:47:28: error: &#39;datetime_t&#39; was not declared in this scope
+   bool rtc_set_datetime   (datetime_t *t);
+                            ^~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:47:28: note: suggested alternative: &#39;sbintime_t&#39;
+   bool rtc_set_datetime   (datetime_t *t);
+                            ^~~~~~~~~~
+                            sbintime_t
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:47:40: error: &#39;t&#39; was not declared in this scope
+   bool rtc_set_datetime   (datetime_t *t);
+                                        ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:48:28: error: &#39;datetime_t&#39; was not declared in this scope
+   bool rtc_get_datetime   (datetime_t *t);
+                            ^~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:48:28: note: suggested alternative: &#39;sbintime_t&#39;
+   bool rtc_get_datetime   (datetime_t *t);
+                            ^~~~~~~~~~
+                            sbintime_t
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:48:40: error: &#39;t&#39; was not declared in this scope
+   bool rtc_get_datetime   (datetime_t *t);
+                                        ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:49:28: error: variable or field &#39;rtc_set_alarm&#39; declared void
+   void rtc_set_alarm      (datetime_t *t, rtc_callback_t user_callback);
+                            ^~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:49:28: error: &#39;datetime_t&#39; was not declared in this scope
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:49:28: note: suggested alternative: &#39;sbintime_t&#39;
+   void rtc_set_alarm      (datetime_t *t, rtc_callback_t user_callback);
+                            ^~~~~~~~~~
+                            sbintime_t
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:49:40: error: &#39;t&#39; was not declared in this scope
+   void rtc_set_alarm      (datetime_t *t, rtc_callback_t user_callback);
+                                        ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:49:58: error: expected primary-expression before &#39;user_callback&#39;
+   void rtc_set_alarm      (datetime_t *t, rtc_callback_t user_callback);
+                                                          ^~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:53:26: error: &#39;datetime_t&#39; was not declared in this scope
+   bool rtc_alarm_repeats(datetime_t *t);
+                          ^~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:53:26: note: suggested alternative: &#39;sbintime_t&#39;
+   bool rtc_alarm_repeats(datetime_t *t);
+                          ^~~~~~~~~~
+                          sbintime_t
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:53:38: error: &#39;t&#39; was not declared in this scope
+   bool rtc_alarm_repeats(datetime_t *t);
+                                      ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:55:56: error: &#39;datetime_t&#39; does not name a type; did you mean &#39;sbintime_t&#39;?
+   void datetime_to_str(char *buf, uint buf_size, const datetime_t *t);
+                                                        ^~~~~~~~~~
+                                                        sbintime_t
+
+</pre>
+
+					
+					<h4>examples/Alarm</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable"></pre>
+					
+					<h4>examples/Time</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable"></pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library RP2040_RTC claims to run on rp2040, mbed_rp2040, mbed_nano architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+In file included from /tmp/arduino-testlib3575206272/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:47:28: error: &#39;datetime_t&#39; was not declared in this scope
+   bool rtc_set_datetime   (datetime_t *t);
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:47:40: error: &#39;t&#39; was not declared in this scope
+   bool rtc_set_datetime   (datetime_t *t);
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:48:28: error: &#39;datetime_t&#39; was not declared in this scope
+   bool rtc_get_datetime   (datetime_t *t);
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:48:40: error: &#39;t&#39; was not declared in this scope
+   bool rtc_get_datetime   (datetime_t *t);
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:49:28: error: variable or field &#39;rtc_set_alarm&#39; declared void
+   void rtc_set_alarm      (datetime_t *t, rtc_callback_t user_callback);
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:49:28: error: &#39;datetime_t&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:49:40: error: &#39;t&#39; was not declared in this scope
+   void rtc_set_alarm      (datetime_t *t, rtc_callback_t user_callback);
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:49:58: error: expected primary-expression before &#39;user_callback&#39;
+   void rtc_set_alarm      (datetime_t *t, rtc_callback_t user_callback);
+                                                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:53:26: error: &#39;datetime_t&#39; was not declared in this scope
+   bool rtc_alarm_repeats(datetime_t *t);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:53:38: error: &#39;t&#39; was not declared in this scope
+   bool rtc_alarm_repeats(datetime_t *t);
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RP2040_RTC/src/RP2040_RTC.h:55:56: error: &#39;datetime_t&#39; does not name a type
+   void datetime_to_str(char *buf, uint buf_size, const datetime_t *t);
+                                                        ^
+
+</pre>
+
+					
+					<h4>examples/Alarm</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable"></pre>
+					
+					<h4>examples/Time</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable"></pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

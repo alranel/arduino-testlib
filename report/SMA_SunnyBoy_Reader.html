@@ -1,0 +1,919 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>SMA SunnyBoy Reader - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>SMA SunnyBoy Reader</h2>
+				<p>
+					Version: <b>0.1.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/sma-sunnyboy-reader/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>SMAReader_Demo</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+							<td>No ⚠️</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library SMA_SunnyBoy_Reader claims to run on esp8266 architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/src/SMAReader.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/src/SMAReader.h:135:6: error: &#39;HTTPClient&#39; does not name a type; did you mean &#39;DNSClient&#39;?
+      HTTPClient http;
+      ^~~~~~~~~~
+      DNSClient
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/src/SMAReader.cpp: In member function &#39;bool SMAReader::postSMA(const char*, const char*, ArduinoJson6192_1::DynamicJsonDocument&amp;)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/src/SMAReader.cpp:8:5: error: &#39;http&#39; was not declared in this scope
+     http.useHTTP10(true);
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/src/SMAReader.cpp:15:18: error: &#39;HTTP_CODE_OK&#39; was not declared in this scope
+     if(httpCode!=HTTP_CODE_OK) {
+                  ^~~~~~~~~~~~
+Multiple libraries were found for &#34;ArduinoJson.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Antares_ESP8266_HTTP
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ThingsIoT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ThingESP
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CoogleIOT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/BaleMessengerBot_Arduino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Antares_ESP8266_MQTT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CMMC_MQTT_Connector
+Multiple libraries were found for &#34;EEPROM.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/EEPROM
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/arduino-NVM
+</pre>
+
+					
+					<h4>examples/SMAReader_Demo</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library SMA_SunnyBoy_Reader claims to run on esp8266 architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:20:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/src/SMAReader.h:135:6: error: &#39;HTTPClient&#39; does not name a type; did you mean &#39;DNSClient&#39;?
+      HTTPClient http;
+      ^~~~~~~~~~
+      DNSClient
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino: In function &#39;int connectWifi(bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:47:5: error: &#39;WiFi&#39; was not declared in this scope
+     WiFi.reconnect();
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:49:5: error: &#39;WiFi&#39; was not declared in this scope
+     WiFi.mode(WIFI_STA);
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:49:15: error: &#39;WIFI_STA&#39; was not declared in this scope
+     WiFi.mode(WIFI_STA);
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:32:66: error: &#39;class HardwareSerial&#39; has no member named &#39;printf_P&#39;; did you mean &#39;print&#39;?
+ #define DEBUG_OUT(level, fmt, ...) if(DEBUG_LEVEL&gt;=level) Serial.printf_P( (PGM_P)PSTR(fmt), ## __VA_ARGS__ )
+                                                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:53:3: note: in expansion of macro &#39;DEBUG_OUT&#39;
+   DEBUG_OUT(DEBUG_MIN_INFO, &#34;%sonnecting to %s\n&#34;, firstConnect?&#34;C&#34;:&#34;Rec&#34;, WLANSSID);
+   ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:55:11: error: &#39;WiFi&#39; was not declared in this scope
+   while ((WiFi.status() != WL_CONNECTED) &amp;&amp; (retryCount &lt; 40)) {
+           ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:55:28: error: &#39;WL_CONNECTED&#39; was not declared in this scope
+   while ((WiFi.status() != WL_CONNECTED) &amp;&amp; (retryCount &lt; 40)) {
+                            ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:32:66: error: &#39;class HardwareSerial&#39; has no member named &#39;printf_P&#39;; did you mean &#39;print&#39;?
+ #define DEBUG_OUT(level, fmt, ...) if(DEBUG_LEVEL&gt;=level) Serial.printf_P( (PGM_P)PSTR(fmt), ## __VA_ARGS__ )
+                                                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:57:5: note: in expansion of macro &#39;DEBUG_OUT&#39;
+     DEBUG_OUT(DEBUG_MIN_INFO, &#34;.&#34;);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:60:15: error: &#39;WiFi&#39; was not declared in this scope
+   int success=WiFi.status();
+               ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:61:15: error: &#39;WL_CONNECTED&#39; was not declared in this scope
+   if(success==WL_CONNECTED) {
+               ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:32:66: error: &#39;class HardwareSerial&#39; has no member named &#39;printf_P&#39;; did you mean &#39;print&#39;?
+ #define DEBUG_OUT(level, fmt, ...) if(DEBUG_LEVEL&gt;=level) Serial.printf_P( (PGM_P)PSTR(fmt), ## __VA_ARGS__ )
+                                                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:62:5: note: in expansion of macro &#39;DEBUG_OUT&#39;
+     DEBUG_OUT(DEBUG_MIN_INFO, &#34;WiFi connected\nIP address: %s\n&#34;, WiFi.localIP().toString().c_str());
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:32:66: error: &#39;class HardwareSerial&#39; has no member named &#39;printf_P&#39;; did you mean &#39;print&#39;?
+ #define DEBUG_OUT(level, fmt, ...) if(DEBUG_LEVEL&gt;=level) Serial.printf_P( (PGM_P)PSTR(fmt), ## __VA_ARGS__ )
+                                                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:64:5: note: in expansion of macro &#39;DEBUG_OUT&#39;
+     DEBUG_OUT(DEBUG_ERROR, &#34;Failed to connect\n&#34;);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:32:66: error: &#39;class HardwareSerial&#39; has no member named &#39;printf_P&#39;; did you mean &#39;print&#39;?
+ #define DEBUG_OUT(level, fmt, ...) if(DEBUG_LEVEL&gt;=level) Serial.printf_P( (PGM_P)PSTR(fmt), ## __VA_ARGS__ )
+                                                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:66:3: note: in expansion of macro &#39;DEBUG_OUT&#39;
+   DEBUG_OUT(DEBUG_MIN_INFO, &#34;Number of tries: %d\n&#34;, retryCount);
+   ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:32:66: error: &#39;class HardwareSerial&#39; has no member named &#39;printf_P&#39;; did you mean &#39;print&#39;?
+ #define DEBUG_OUT(level, fmt, ...) if(DEBUG_LEVEL&gt;=level) Serial.printf_P( (PGM_P)PSTR(fmt), ## __VA_ARGS__ )
+                                                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:67:3: note: in expansion of macro &#39;DEBUG_OUT&#39;
+   DEBUG_OUT(DEBUG_MIN_INFO, &#34;Connecting time (microseconds): %lu\n&#34;, micros()-startwifi);
+   ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:79:8: error: &#39;WiFi&#39; was not declared in this scope
+     if(WiFi.status() == WL_CONNECTED) {
+        ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:79:25: error: &#39;WL_CONNECTED&#39; was not declared in this scope
+     if(WiFi.status() == WL_CONNECTED) {
+                         ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:84:14: error: &#39;class HardwareSerial&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+       Serial.printf(&#34;Getting values: %s\n&#34;, isSuccess?&#34;success&#34;:&#34;fail&#34;);
+              ^~~~~~
+              print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:87:20: error: &#39;class HardwareSerial&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+             Serial.printf(&#34;Value: %d\n&#34;, val);
+                    ^~~~~~
+                    print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:94:14: error: &#39;class HardwareSerial&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+       Serial.printf(&#34;Getting values: %s\n&#34;, isSuccess?&#34;success&#34;:&#34;fail&#34;);
+              ^~~~~~
+              print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:97:20: error: &#39;class HardwareSerial&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+             Serial.printf(&#34;Value: %s\n&#34;, val.c_str());
+                    ^~~~~~
+                    print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:101:7: error: &#39;tm&#39; was not declared in this scope
+       tm startTime;
+       ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:102:55: error: &#39;startTime&#39; was not declared in this scope
+       strptime(&#34;2020-10-19 16:00:00&#34;, &#34;%Y-%m-%d %T&#34;, &amp;startTime);
+                                                       ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:102:55: note: suggested alternative: &#39;static&#39;
+       strptime(&#34;2020-10-19 16:00:00&#34;, &#34;%Y-%m-%d %T&#34;, &amp;startTime);
+                                                       ^~~~~~~~~
+                                                       static
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:102:7: error: &#39;strptime&#39; was not declared in this scope
+       strptime(&#34;2020-10-19 16:00:00&#34;, &#34;%Y-%m-%d %T&#34;, &amp;startTime);
+       ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:102:7: note: suggested alternative: &#39;tmpfile&#39;
+       strptime(&#34;2020-10-19 16:00:00&#34;, &#34;%Y-%m-%d %T&#34;, &amp;startTime);
+       ^~~~~~~~
+       tmpfile
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:103:33: error: &#39;mktime&#39; was not declared in this scope
+       uint32_t startTimestamp = mktime(&amp;startTime);
+                                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:104:14: error: &#39;class HardwareSerial&#39; has no member nam</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library SMA_SunnyBoy_Reader claims to run on esp8266 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/src/SMAReader.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/src/SMAReader.h:135:6: error: &#39;HTTPClient&#39; does not name a type; did you mean &#39;DNSClient&#39;?
+      HTTPClient http;
+      ^~~~~~~~~~
+      DNSClient
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/src/SMAReader.cpp: In member function &#39;bool SMAReader::postSMA(const char*, const char*, ArduinoJson6192_F1::DynamicJsonDocument&amp;)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/src/SMAReader.cpp:8:5: error: &#39;http&#39; was not declared in this scope
+     http.useHTTP10(true);
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/src/SMAReader.cpp:15:18: error: &#39;HTTP_CODE_OK&#39; was not declared in this scope
+     if(httpCode!=HTTP_CODE_OK) {
+                  ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/src/SMAReader.cpp:15:18: note: suggested alternative: &#39;PICO_OK&#39;
+     if(httpCode!=HTTP_CODE_OK) {
+                  ^~~~~~~~~~~~
+                  PICO_OK
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/src/SMAReader.cpp: In member function &#39;bool SMAReader::getValues(int, const arduino::String*, arduino::String*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/src/SMAReader.cpp:143:37: error: ambiguous overload for &#39;operator=&#39; (operand types are &#39;arduino::String&#39; and &#39;ArduinoJson6192_F1::enable_if&lt;true, int&gt;::type {aka int}&#39;)
+               values[i]=val.as&lt;int&gt;();
+                                     ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/IPAddress.h:24:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:27,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/src/SMAReader.h:13,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/src/SMAReader.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/String.h:98:11: note: candidate: arduino::String&amp; arduino::String::operator=(const arduino::String&amp;) &lt;near match&gt;
+  String &amp; operator = (const String &amp;rhs);
+           ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/String.h:98:11: note:   conversion of argument 1 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/src/SMAReader.cpp:143:37: error: conversion from &#39;ArduinoJson6192_F1::enable_if&lt;true, int&gt;::type {aka int}&#39; to &#39;const arduino::String&#39; is ambiguous
+               values[i]=val.as&lt;int&gt;();
+                                     ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/IPAddress.h:24:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:27,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/src/SMAReader.h:13,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/src/SMAReader.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/String.h:74:2: note: candidate: arduino::String::String(const arduino::__FlashStringHelper*) &lt;near match&gt;
+  String(const __FlashStringHelper *str);
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/String.h:74:2: note:   conversion of argument 1 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/src/SMAReader.cpp:143:36: error: invalid conversion from &#39;ArduinoJson6192_F1::enable_if&lt;true, int&gt;::type {aka int}&#39; to &#39;const arduino::__FlashStringHelper*&#39; [-fpermissive]
+               values[i]=val.as&lt;int&gt;();
+                         ~~~~~~~~~~~^~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/IPAddress.h:24:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:27,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/src/SMAReader.h:13,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/src/SMAReader.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/String.h:70:2: note: candidate: arduino::String::String(const char*) &lt;near match&gt;
+  String(const char *cstr = &#34;&#34;);
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/String.h:70:2: note:   conversion of argument 1 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/src/SMAReader.cpp:143:36: error: invalid conversion from &#39;ArduinoJson6192_F1::enable_if&lt;true, int&gt;::type {aka int}&#39; to &#39;const char*&#39; [-fpermissive]
+               values[i]=val.as&lt;int&gt;();
+                         ~~~~~~~~~~~^~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/IPAddress.h:24:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:27,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/src/SMAReader.h:13,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/src/SMAReader.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/String.h:99:11: note: candidate: arduino::String&amp; arduino::String::operator=(const char*) &lt;near match&gt;
+  String &amp; operator = (const char *cstr);
+           ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/String.h:99:11: note:   conversion of argument 1 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/src/SMAReader.cpp:143:36: error: invalid conversion from &#39;ArduinoJson6192_F1::enable_if&lt;true, int&gt;::type {aka int}&#39; to &#39;const char*&#39; [-fpermissive]
+               values[i]=val.as&lt;int&gt;();
+                         ~~~~~~~~~~~^~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/IPAddress.h:24:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:27,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/src/SMAReader.h:13,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/src/SMAReader.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/String.h:100:11: note: candidate: arduino::String&amp; arduino::String::operator=(const arduino::__FlashStringHelper*) &lt;near match&gt;
+  String &amp; operator = (const __FlashStringHelper *str);
+           ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/String.h:100:11: note:   conversion of argument 1 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/src/SMAReader.cpp:143:36: error: invalid conversion from &#39;ArduinoJson6192_F1::enable_if&lt;true, int&gt;::type {aka int}&#39; to &#39;const arduino::__FlashStringHelper*&#39; [-fpermissive]
+               values[i]=val.as&lt;int&gt;();
+                         ~~~~~~~~~~~^~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/IPAddress.h:24:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:27,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/src/SMAReader.h:13,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/src/SMAReader.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/String.h:102:11: note: candidate: arduino::String&amp; arduino::String::operator=(arduino::String&amp;&amp;) &lt;near match&gt;
+  Stri</pre>
+
+					
+					<h4>examples/SMAReader_Demo</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library SMA_SunnyBoy_Reader claims to run on esp8266 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:20:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/src/SMAReader.h:135:6: error: &#39;HTTPClient&#39; does not name a type; did you mean &#39;DNSClient&#39;?
+      HTTPClient http;
+      ^~~~~~~~~~
+      DNSClient
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino: In function &#39;int connectWifi(bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:47:5: error: &#39;WiFi&#39; was not declared in this scope
+     WiFi.reconnect();
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:49:5: error: &#39;WiFi&#39; was not declared in this scope
+     WiFi.mode(WIFI_STA);
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:49:15: error: &#39;WIFI_STA&#39; was not declared in this scope
+     WiFi.mode(WIFI_STA);
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:49:15: note: suggested alternative: &#39;I2C_SDA&#39;
+     WiFi.mode(WIFI_STA);
+               ^~~~~~~~
+               I2C_SDA
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:32:66: error: &#39;class arduino::UART&#39; has no member named &#39;printf_P&#39;; did you mean &#39;print&#39;?
+ #define DEBUG_OUT(level, fmt, ...) if(DEBUG_LEVEL&gt;=level) Serial.printf_P( (PGM_P)PSTR(fmt), ## __VA_ARGS__ )
+                                                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:53:3: note: in expansion of macro &#39;DEBUG_OUT&#39;
+   DEBUG_OUT(DEBUG_MIN_INFO, &#34;%sonnecting to %s\n&#34;, firstConnect?&#34;C&#34;:&#34;Rec&#34;, WLANSSID);
+   ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:55:11: error: &#39;WiFi&#39; was not declared in this scope
+   while ((WiFi.status() != WL_CONNECTED) &amp;&amp; (retryCount &lt; 40)) {
+           ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:55:28: error: &#39;WL_CONNECTED&#39; was not declared in this scope
+   while ((WiFi.status() != WL_CONNECTED) &amp;&amp; (retryCount &lt; 40)) {
+                            ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:32:66: error: &#39;class arduino::UART&#39; has no member named &#39;printf_P&#39;; did you mean &#39;print&#39;?
+ #define DEBUG_OUT(level, fmt, ...) if(DEBUG_LEVEL&gt;=level) Serial.printf_P( (PGM_P)PSTR(fmt), ## __VA_ARGS__ )
+                                                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:57:5: note: in expansion of macro &#39;DEBUG_OUT&#39;
+     DEBUG_OUT(DEBUG_MIN_INFO, &#34;.&#34;);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:60:15: error: &#39;WiFi&#39; was not declared in this scope
+   int success=WiFi.status();
+               ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:61:15: error: &#39;WL_CONNECTED&#39; was not declared in this scope
+   if(success==WL_CONNECTED) {
+               ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:32:66: error: &#39;class arduino::UART&#39; has no member named &#39;printf_P&#39;; did you mean &#39;print&#39;?
+ #define DEBUG_OUT(level, fmt, ...) if(DEBUG_LEVEL&gt;=level) Serial.printf_P( (PGM_P)PSTR(fmt), ## __VA_ARGS__ )
+                                                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:62:5: note: in expansion of macro &#39;DEBUG_OUT&#39;
+     DEBUG_OUT(DEBUG_MIN_INFO, &#34;WiFi connected\nIP address: %s\n&#34;, WiFi.localIP().toString().c_str());
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:32:66: error: &#39;class arduino::UART&#39; has no member named &#39;printf_P&#39;; did you mean &#39;print&#39;?
+ #define DEBUG_OUT(level, fmt, ...) if(DEBUG_LEVEL&gt;=level) Serial.printf_P( (PGM_P)PSTR(fmt), ## __VA_ARGS__ )
+                                                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:64:5: note: in expansion of macro &#39;DEBUG_OUT&#39;
+     DEBUG_OUT(DEBUG_ERROR, &#34;Failed to connect\n&#34;);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:32:66: error: &#39;class arduino::UART&#39; has no member named &#39;printf_P&#39;; did you mean &#39;print&#39;?
+ #define DEBUG_OUT(level, fmt, ...) if(DEBUG_LEVEL&gt;=level) Serial.printf_P( (PGM_P)PSTR(fmt), ## __VA_ARGS__ )
+                                                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:66:3: note: in expansion of macro &#39;DEBUG_OUT&#39;
+   DEBUG_OUT(DEBUG_MIN_INFO, &#34;Number of tries: %d\n&#34;, retryCount);
+   ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:32:66: error: &#39;class arduino::UART&#39; has no member named &#39;printf_P&#39;; did you mean &#39;print&#39;?
+ #define DEBUG_OUT(level, fmt, ...) if(DEBUG_LEVEL&gt;=level) Serial.printf_P( (PGM_P)PSTR(fmt), ## __VA_ARGS__ )
+                                                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:67:3: note: in expansion of macro &#39;DEBUG_OUT&#39;
+   DEBUG_OUT(DEBUG_MIN_INFO, &#34;Connecting time (microseconds): %lu\n&#34;, micros()-startwifi);
+   ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:79:8: error: &#39;WiFi&#39; was not declared in this scope
+     if(WiFi.status() == WL_CONNECTED) {
+        ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:79:25: error: &#39;WL_CONNECTED&#39; was not declared in this scope
+     if(WiFi.status() == WL_CONNECTED) {
+                         ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:84:14: error: &#39;class arduino::UART&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+       Serial.printf(&#34;Getting values: %s\n&#34;, isSuccess?&#34;success&#34;:&#34;fail&#34;);
+              ^~~~~~
+              print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:87:20: error: &#39;class arduino::UART&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+             Serial.printf(&#34;Value: %d\n&#34;, val);
+                    ^~~~~~
+                    print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:94:14: error: &#39;class arduino::UART&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+       Serial.printf(&#34;Getting values: %s\n&#34;, isSuccess?&#34;success&#34;:&#34;fail&#34;);
+              ^~~~~~
+              print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:97:20: error: &#39;class arduino::UART&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+             Serial.printf(&#34;Value: %s\n&#34;, val.c_str());
+                    ^~~~~~
+                    print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:102:7: error: &#39;strptime&#39; was not declared in this scope
+       strptime(&#34;2020-10-19 16:00:00&#34;, &#34;%Y-%m-%d %T&#34;, &amp;startTime);
+       ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:102:7: note: suggested alternative: &#39;strftime&#39;
+       strptime(&#34;2020-10-19 16:00:00&#34;, &#34;%Y-%m-%d %T&#34;, &amp;startTime);
+       ^~~~~~~~
+       strftime
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:104:14: error: &#39;class arduino::UART&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+       Serial.printf(&#34;Timestamp: %lu\n&#34;, startTimestamp);
+              ^~~~~~
+              print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:109:14: error: &#39;class arduino::UART&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+       Serial.printf(&#34;Logger: %s\n&#34;, numValues==-1?&#34;fail&#34;:&#34;success&#34;);
+              ^~~~~~
+              print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:111:16: error: &#39;class arduino::UART&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+         Serial.printf(&#34;Timestamp: %sTotal energy production: %lu Wh\n&#34;, asctime(localtime((time_t *)&amp;timestamps[i])), values_log[i]);
+                ^~~~~~
+                print
+Multiple libraries were found for &#34;ArduinoJson.h&#34;
+  Used: /ho</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library SMA_SunnyBoy_Reader claims to run on esp8266 architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/src/SMAReader.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/src/SMAReader.h:135:6: error: &#39;HTTPClient&#39; does not name a type; did you mean &#39;DNSClient&#39;?
+      HTTPClient http;
+      ^~~~~~~~~~
+      DNSClient
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/src/SMAReader.cpp: In member function &#39;bool SMAReader::postSMA(const char*, const char*, ArduinoJson6192_B1::DynamicJsonDocument&amp;)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/src/SMAReader.cpp:8:5: error: &#39;http&#39; was not declared in this scope
+     http.useHTTP10(true);
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/src/SMAReader.cpp:15:18: error: &#39;HTTP_CODE_OK&#39; was not declared in this scope
+     if(httpCode!=HTTP_CODE_OK) {
+                  ^~~~~~~~~~~~
+Multiple libraries were found for &#34;ArduinoJson.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ThingESP
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CMMC_MQTT_Connector
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ThingsIoT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Antares_ESP8266_MQTT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CoogleIOT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/BaleMessengerBot_Arduino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Antares_ESP8266_HTTP
+</pre>
+
+					
+					<h4>examples/SMAReader_Demo</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library SMA_SunnyBoy_Reader claims to run on esp8266 architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:20:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/src/SMAReader.h:135:6: error: &#39;HTTPClient&#39; does not name a type; did you mean &#39;DNSClient&#39;?
+      HTTPClient http;
+      ^~~~~~~~~~
+      DNSClient
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino: In function &#39;int connectWifi(bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:47:5: error: &#39;WiFi&#39; was not declared in this scope
+     WiFi.reconnect();
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:49:5: error: &#39;WiFi&#39; was not declared in this scope
+     WiFi.mode(WIFI_STA);
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:49:15: error: &#39;WIFI_STA&#39; was not declared in this scope
+     WiFi.mode(WIFI_STA);
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:32:66: error: &#39;class UartClass&#39; has no member named &#39;printf_P&#39;; did you mean &#39;print&#39;?
+ #define DEBUG_OUT(level, fmt, ...) if(DEBUG_LEVEL&gt;=level) Serial.printf_P( (PGM_P)PSTR(fmt), ## __VA_ARGS__ )
+                                                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:53:3: note: in expansion of macro &#39;DEBUG_OUT&#39;
+   DEBUG_OUT(DEBUG_MIN_INFO, &#34;%sonnecting to %s\n&#34;, firstConnect?&#34;C&#34;:&#34;Rec&#34;, WLANSSID);
+   ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:55:11: error: &#39;WiFi&#39; was not declared in this scope
+   while ((WiFi.status() != WL_CONNECTED) &amp;&amp; (retryCount &lt; 40)) {
+           ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:55:28: error: &#39;WL_CONNECTED&#39; was not declared in this scope
+   while ((WiFi.status() != WL_CONNECTED) &amp;&amp; (retryCount &lt; 40)) {
+                            ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:55:28: note: suggested alternative: &#39;F_CPU_CORRECTED&#39;
+   while ((WiFi.status() != WL_CONNECTED) &amp;&amp; (retryCount &lt; 40)) {
+                            ^~~~~~~~~~~~
+                            F_CPU_CORRECTED
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:32:66: error: &#39;class UartClass&#39; has no member named &#39;printf_P&#39;; did you mean &#39;print&#39;?
+ #define DEBUG_OUT(level, fmt, ...) if(DEBUG_LEVEL&gt;=level) Serial.printf_P( (PGM_P)PSTR(fmt), ## __VA_ARGS__ )
+                                                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:57:5: note: in expansion of macro &#39;DEBUG_OUT&#39;
+     DEBUG_OUT(DEBUG_MIN_INFO, &#34;.&#34;);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:60:15: error: &#39;WiFi&#39; was not declared in this scope
+   int success=WiFi.status();
+               ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:61:15: error: &#39;WL_CONNECTED&#39; was not declared in this scope
+   if(success==WL_CONNECTED) {
+               ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:61:15: note: suggested alternative: &#39;F_CPU_CORRECTED&#39;
+   if(success==WL_CONNECTED) {
+               ^~~~~~~~~~~~
+               F_CPU_CORRECTED
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:32:66: error: &#39;class UartClass&#39; has no member named &#39;printf_P&#39;; did you mean &#39;print&#39;?
+ #define DEBUG_OUT(level, fmt, ...) if(DEBUG_LEVEL&gt;=level) Serial.printf_P( (PGM_P)PSTR(fmt), ## __VA_ARGS__ )
+                                                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:62:5: note: in expansion of macro &#39;DEBUG_OUT&#39;
+     DEBUG_OUT(DEBUG_MIN_INFO, &#34;WiFi connected\nIP address: %s\n&#34;, WiFi.localIP().toString().c_str());
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:32:66: error: &#39;class UartClass&#39; has no member named &#39;printf_P&#39;; did you mean &#39;print&#39;?
+ #define DEBUG_OUT(level, fmt, ...) if(DEBUG_LEVEL&gt;=level) Serial.printf_P( (PGM_P)PSTR(fmt), ## __VA_ARGS__ )
+                                                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:64:5: note: in expansion of macro &#39;DEBUG_OUT&#39;
+     DEBUG_OUT(DEBUG_ERROR, &#34;Failed to connect\n&#34;);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:32:66: error: &#39;class UartClass&#39; has no member named &#39;printf_P&#39;; did you mean &#39;print&#39;?
+ #define DEBUG_OUT(level, fmt, ...) if(DEBUG_LEVEL&gt;=level) Serial.printf_P( (PGM_P)PSTR(fmt), ## __VA_ARGS__ )
+                                                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:66:3: note: in expansion of macro &#39;DEBUG_OUT&#39;
+   DEBUG_OUT(DEBUG_MIN_INFO, &#34;Number of tries: %d\n&#34;, retryCount);
+   ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:32:66: error: &#39;class UartClass&#39; has no member named &#39;printf_P&#39;; did you mean &#39;print&#39;?
+ #define DEBUG_OUT(level, fmt, ...) if(DEBUG_LEVEL&gt;=level) Serial.printf_P( (PGM_P)PSTR(fmt), ## __VA_ARGS__ )
+                                                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:67:3: note: in expansion of macro &#39;DEBUG_OUT&#39;
+   DEBUG_OUT(DEBUG_MIN_INFO, &#34;Connecting time (microseconds): %lu\n&#34;, micros()-startwifi);
+   ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:79:8: error: &#39;WiFi&#39; was not declared in this scope
+     if(WiFi.status() == WL_CONNECTED) {
+        ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:79:25: error: &#39;WL_CONNECTED&#39; was not declared in this scope
+     if(WiFi.status() == WL_CONNECTED) {
+                         ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:79:25: note: suggested alternative: &#39;F_CPU_CORRECTED&#39;
+     if(WiFi.status() == WL_CONNECTED) {
+                         ^~~~~~~~~~~~
+                         F_CPU_CORRECTED
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:84:14: error: &#39;class UartClass&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+       Serial.printf(&#34;Getting values: %s\n&#34;, isSuccess?&#34;success&#34;:&#34;fail&#34;);
+              ^~~~~~
+              print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:87:20: error: &#39;class UartClass&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+             Serial.printf(&#34;Value: %d\n&#34;, val);
+                    ^~~~~~
+                    print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:94:14: error: &#39;class UartClass&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+       Serial.printf(&#34;Getting values: %s\n&#34;, isSuccess?&#34;success&#34;:&#34;fail&#34;);
+              ^~~~~~
+              print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:97:20: error: &#39;class UartClass&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+             Serial.printf(&#34;Value: %s\n&#34;, val.c_str());
+                    ^~~~~~
+                    print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:101:7: error: &#39;tm&#39; was not declared in this scope
+       tm startTime;
+       ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:102:55: error: &#39;startTime&#39; was not declared in this scope
+       strptime(&#34;2020-10-19 16:00:00&#34;, &#34;%Y-%m-%d %T&#34;, &amp;startTime);
+                                                       ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:102:55: note: suggested alternative: &#39;static&#39;
+       strptime(&#34;2020-10-19 16:00:00&#34;, &#34;%Y-%m-%d %T&#34;, &amp;startTime);
+                                                       ^~~~~~~~~
+                                                       static
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:102:7: er</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library SMA_SunnyBoy_Reader claims to run on esp8266 architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/src/SMAReader.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/src/SMAReader.h:135:6: error: &#39;HTTPClient&#39; does not name a type; did you mean &#39;DNSClient&#39;?
+      HTTPClient http;
+      ^~~~~~~~~~
+      DNSClient
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/src/SMAReader.cpp: In member function &#39;bool SMAReader::postSMA(const char*, const char*, ArduinoJson6192_F1::DynamicJsonDocument&amp;)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/src/SMAReader.cpp:8:5: error: &#39;http&#39; was not declared in this scope
+     http.useHTTP10(true);
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/src/SMAReader.cpp:15:18: error: &#39;HTTP_CODE_OK&#39; was not declared in this scope
+     if(httpCode!=HTTP_CODE_OK) {
+                  ^~~~~~~~~~~~
+Multiple libraries were found for &#34;ArduinoJson.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Antares_ESP8266_HTTP
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CMMC_MQTT_Connector
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/BaleMessengerBot_Arduino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CoogleIOT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Antares_ESP8266_MQTT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ThingsIoT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ThingESP
+</pre>
+
+					
+					<h4>examples/SMAReader_Demo</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library SMA_SunnyBoy_Reader claims to run on esp8266 architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:20:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/src/SMAReader.h:135:6: error: &#39;HTTPClient&#39; does not name a type; did you mean &#39;DNSClient&#39;?
+      HTTPClient http;
+      ^~~~~~~~~~
+      DNSClient
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino: In function &#39;int connectWifi(bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:47:5: error: &#39;WiFi&#39; was not declared in this scope
+     WiFi.reconnect();
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:49:5: error: &#39;WiFi&#39; was not declared in this scope
+     WiFi.mode(WIFI_STA);
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:49:15: error: &#39;WIFI_STA&#39; was not declared in this scope
+     WiFi.mode(WIFI_STA);
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:32:66: error: &#39;class Serial_&#39; has no member named &#39;printf_P&#39;; did you mean &#39;print&#39;?
+ #define DEBUG_OUT(level, fmt, ...) if(DEBUG_LEVEL&gt;=level) Serial.printf_P( (PGM_P)PSTR(fmt), ## __VA_ARGS__ )
+                                                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:53:3: note: in expansion of macro &#39;DEBUG_OUT&#39;
+   DEBUG_OUT(DEBUG_MIN_INFO, &#34;%sonnecting to %s\n&#34;, firstConnect?&#34;C&#34;:&#34;Rec&#34;, WLANSSID);
+   ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:55:11: error: &#39;WiFi&#39; was not declared in this scope
+   while ((WiFi.status() != WL_CONNECTED) &amp;&amp; (retryCount &lt; 40)) {
+           ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:55:28: error: &#39;WL_CONNECTED&#39; was not declared in this scope
+   while ((WiFi.status() != WL_CONNECTED) &amp;&amp; (retryCount &lt; 40)) {
+                            ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:55:28: note: suggested alternative: &#39;UHD_STATE_CONNECTED&#39;
+   while ((WiFi.status() != WL_CONNECTED) &amp;&amp; (retryCount &lt; 40)) {
+                            ^~~~~~~~~~~~
+                            UHD_STATE_CONNECTED
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:32:66: error: &#39;class Serial_&#39; has no member named &#39;printf_P&#39;; did you mean &#39;print&#39;?
+ #define DEBUG_OUT(level, fmt, ...) if(DEBUG_LEVEL&gt;=level) Serial.printf_P( (PGM_P)PSTR(fmt), ## __VA_ARGS__ )
+                                                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:57:5: note: in expansion of macro &#39;DEBUG_OUT&#39;
+     DEBUG_OUT(DEBUG_MIN_INFO, &#34;.&#34;);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:60:15: error: &#39;WiFi&#39; was not declared in this scope
+   int success=WiFi.status();
+               ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:61:15: error: &#39;WL_CONNECTED&#39; was not declared in this scope
+   if(success==WL_CONNECTED) {
+               ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:61:15: note: suggested alternative: &#39;UHD_STATE_CONNECTED&#39;
+   if(success==WL_CONNECTED) {
+               ^~~~~~~~~~~~
+               UHD_STATE_CONNECTED
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:32:66: error: &#39;class Serial_&#39; has no member named &#39;printf_P&#39;; did you mean &#39;print&#39;?
+ #define DEBUG_OUT(level, fmt, ...) if(DEBUG_LEVEL&gt;=level) Serial.printf_P( (PGM_P)PSTR(fmt), ## __VA_ARGS__ )
+                                                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:62:5: note: in expansion of macro &#39;DEBUG_OUT&#39;
+     DEBUG_OUT(DEBUG_MIN_INFO, &#34;WiFi connected\nIP address: %s\n&#34;, WiFi.localIP().toString().c_str());
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:32:66: error: &#39;class Serial_&#39; has no member named &#39;printf_P&#39;; did you mean &#39;print&#39;?
+ #define DEBUG_OUT(level, fmt, ...) if(DEBUG_LEVEL&gt;=level) Serial.printf_P( (PGM_P)PSTR(fmt), ## __VA_ARGS__ )
+                                                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:64:5: note: in expansion of macro &#39;DEBUG_OUT&#39;
+     DEBUG_OUT(DEBUG_ERROR, &#34;Failed to connect\n&#34;);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:32:66: error: &#39;class Serial_&#39; has no member named &#39;printf_P&#39;; did you mean &#39;print&#39;?
+ #define DEBUG_OUT(level, fmt, ...) if(DEBUG_LEVEL&gt;=level) Serial.printf_P( (PGM_P)PSTR(fmt), ## __VA_ARGS__ )
+                                                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:66:3: note: in expansion of macro &#39;DEBUG_OUT&#39;
+   DEBUG_OUT(DEBUG_MIN_INFO, &#34;Number of tries: %d\n&#34;, retryCount);
+   ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:32:66: error: &#39;class Serial_&#39; has no member named &#39;printf_P&#39;; did you mean &#39;print&#39;?
+ #define DEBUG_OUT(level, fmt, ...) if(DEBUG_LEVEL&gt;=level) Serial.printf_P( (PGM_P)PSTR(fmt), ## __VA_ARGS__ )
+                                                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:67:3: note: in expansion of macro &#39;DEBUG_OUT&#39;
+   DEBUG_OUT(DEBUG_MIN_INFO, &#34;Connecting time (microseconds): %lu\n&#34;, micros()-startwifi);
+   ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:79:8: error: &#39;WiFi&#39; was not declared in this scope
+     if(WiFi.status() == WL_CONNECTED) {
+        ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:79:25: error: &#39;WL_CONNECTED&#39; was not declared in this scope
+     if(WiFi.status() == WL_CONNECTED) {
+                         ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:79:25: note: suggested alternative: &#39;UHD_STATE_CONNECTED&#39;
+     if(WiFi.status() == WL_CONNECTED) {
+                         ^~~~~~~~~~~~
+                         UHD_STATE_CONNECTED
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:84:14: error: &#39;class Serial_&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+       Serial.printf(&#34;Getting values: %s\n&#34;, isSuccess?&#34;success&#34;:&#34;fail&#34;);
+              ^~~~~~
+              print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:87:20: error: &#39;class Serial_&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+             Serial.printf(&#34;Value: %d\n&#34;, val);
+                    ^~~~~~
+                    print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:94:14: error: &#39;class Serial_&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+       Serial.printf(&#34;Getting values: %s\n&#34;, isSuccess?&#34;success&#34;:&#34;fail&#34;);
+              ^~~~~~
+              print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:97:20: error: &#39;class Serial_&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+             Serial.printf(&#34;Value: %s\n&#34;, val.c_str());
+                    ^~~~~~
+                    print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:101:10: error: aggregate &#39;tm startTime&#39; has incomplete type and cannot be defined
+       tm startTime;
+          ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:102:7: error: &#39;strptime&#39; was not declared in this scope
+       strptime(&#34;2020-10-19 16:00:00&#34;, &#34;%Y-%m-%d %T&#34;, &amp;startTime);
+       ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:102:7: note: suggested alternative: &#39;wcsftime&#39;
+       strptime(&#34;2020-10-19 16:00:00&#34;, &#34;%Y-%m-%d %T&#34;, &amp;startTime);
+       ^~~~~~~~
+       wcsftime
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SMA_SunnyBoy_Reader/examples/SMAReader_Demo/SMAReader_Demo.ino:103:33: error: &#39;mktime&#39; was not declared in this scope
+       uint32_t startTimestamp = mktime(&amp;startTime);
+  </pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library SMA_SunnyBoy_Reader claims to run on esp8266 architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+Sketch uses 263226 bytes (20%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 13696 bytes (4%) of dynamic memory, leaving 313984 bytes for local variables. Maximum is 327680 bytes.
+</pre>
+
+					
+					<h4>examples/SMAReader_Demo</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library SMA_SunnyBoy_Reader claims to run on esp8266 architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+Sketch uses 883882 bytes (67%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 39064 bytes (11%) of dynamic memory, leaving 288616 bytes for local variables. Maximum is 327680 bytes.
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

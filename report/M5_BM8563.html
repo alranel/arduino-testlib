@@ -1,0 +1,496 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>M5_BM8563 - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>M5_BM8563</h2>
+				<p>
+					Version: <b>0.0.1</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/m5_bm8563/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>set_date</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library M5_BM8563 claims to run on esp32 architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M5_BM8563/src/M5_BM8563.cpp: In member function &#39;void BM8563::begin(TwoWire*, uint8_t, uint8_t, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M5_BM8563/src/M5_BM8563.cpp:34:36: error: no matching function for call to &#39;TwoWire::begin(uint8_t&amp;, uint8_t&amp;, uint32_t&amp;)&#39;
+     _wire-&gt;begin(sda, scl, i2c_freq);
+                                    ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M5_BM8563/src/M5_BM8563.h:5:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M5_BM8563/src/M5_BM8563.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/Wire/src/Wire.h:53:10: note: candidate: void TwoWire::begin()
+     void begin();
+          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/Wire/src/Wire.h:53:10: note:   candidate expects 0 arguments, 3 provided
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/Wire/src/Wire.h:54:10: note: candidate: void TwoWire::begin(uint8_t)
+     void begin(uint8_t);
+          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/Wire/src/Wire.h:54:10: note:   candidate expects 1 argument, 3 provided
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/Wire/src/Wire.h:55:10: note: candidate: void TwoWire::begin(int)
+     void begin(int);
+          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/Wire/src/Wire.h:55:10: note:   candidate expects 1 argument, 3 provided
+
+</pre>
+
+					
+					<h4>examples/set_date</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library M5_BM8563 claims to run on esp32 architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M5_BM8563/src/M5_BM8563.cpp: In member function &#39;void BM8563::begin(TwoWire*, uint8_t, uint8_t, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M5_BM8563/src/M5_BM8563.cpp:34:36: error: no matching function for call to &#39;TwoWire::begin(uint8_t&amp;, uint8_t&amp;, uint32_t&amp;)&#39;
+     _wire-&gt;begin(sda, scl, i2c_freq);
+                                    ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M5_BM8563/src/M5_BM8563.h:5:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M5_BM8563/src/M5_BM8563.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/Wire/src/Wire.h:53:10: note: candidate: void TwoWire::begin()
+     void begin();
+          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/Wire/src/Wire.h:53:10: note:   candidate expects 0 arguments, 3 provided
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/Wire/src/Wire.h:54:10: note: candidate: void TwoWire::begin(uint8_t)
+     void begin(uint8_t);
+          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/Wire/src/Wire.h:54:10: note:   candidate expects 1 argument, 3 provided
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/Wire/src/Wire.h:55:10: note: candidate: void TwoWire::begin(int)
+     void begin(int);
+          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/Wire/src/Wire.h:55:10: note:   candidate expects 1 argument, 3 provided
+
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library M5_BM8563 claims to run on esp32 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M5_BM8563/src/M5_BM8563.cpp: In member function &#39;void BM8563::begin(TwoWire*, uint8_t, uint8_t, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M5_BM8563/src/M5_BM8563.cpp:34:36: error: no matching function for call to &#39;arduino::MbedI2C::begin(uint8_t&amp;, uint8_t&amp;, uint32_t&amp;)&#39;
+     _wire-&gt;begin(sda, scl, i2c_freq);
+                                    ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M5_BM8563/src/M5_BM8563.h:5:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M5_BM8563/src/M5_BM8563.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/libraries/Wire/Wire.h:39:18: note: candidate: virtual void arduino::MbedI2C::begin()
+     virtual void begin();
+                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/libraries/Wire/Wire.h:39:18: note:   candidate expects 0 arguments, 3 provided
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/libraries/Wire/Wire.h:43:18: note: candidate: virtual void arduino::MbedI2C::begin(uint8_t)
+     virtual void begin(uint8_t address);
+                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/libraries/Wire/Wire.h:43:18: note:   candidate expects 1 argument, 3 provided
+
+</pre>
+
+					
+					<h4>examples/set_date</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library M5_BM8563 claims to run on esp32 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M5_BM8563/src/M5_BM8563.cpp: In member function &#39;void BM8563::begin(TwoWire*, uint8_t, uint8_t, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M5_BM8563/src/M5_BM8563.cpp:34:36: error: no matching function for call to &#39;arduino::MbedI2C::begin(uint8_t&amp;, uint8_t&amp;, uint32_t&amp;)&#39;
+     _wire-&gt;begin(sda, scl, i2c_freq);
+                                    ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M5_BM8563/src/M5_BM8563.h:5:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M5_BM8563/src/M5_BM8563.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/libraries/Wire/Wire.h:39:18: note: candidate: virtual void arduino::MbedI2C::begin()
+     virtual void begin();
+                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/libraries/Wire/Wire.h:39:18: note:   candidate expects 0 arguments, 3 provided
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/libraries/Wire/Wire.h:43:18: note: candidate: virtual void arduino::MbedI2C::begin(uint8_t)
+     virtual void begin(uint8_t address);
+                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/libraries/Wire/Wire.h:43:18: note:   candidate expects 1 argument, 3 provided
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library M5_BM8563 claims to run on esp32 architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M5_BM8563/src/M5_BM8563.cpp: In member function &#39;void BM8563::begin(TwoWire*, uint8_t, uint8_t, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M5_BM8563/src/M5_BM8563.cpp:34:36: error: no matching function for call to &#39;TwoWire::begin(uint8_t&amp;, uint8_t&amp;, uint32_t&amp;)&#39;
+     _wire-&gt;begin(sda, scl, i2c_freq);
+                                    ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M5_BM8563/src/M5_BM8563.h:5:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M5_BM8563/src/M5_BM8563.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:52:10: note: candidate: virtual void TwoWire::begin()
+     void begin();
+          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:52:10: note:   candidate expects 0 arguments, 3 provided
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:53:10: note: candidate: virtual void TwoWire::begin(uint8_t)
+     void begin(uint8_t);
+          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:53:10: note:   candidate expects 1 argument, 3 provided
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:54:10: note: candidate: void TwoWire::begin(int)
+     void begin(int);
+          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:54:10: note:   candidate expects 1 argument, 3 provided
+
+</pre>
+
+					
+					<h4>examples/set_date</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library M5_BM8563 claims to run on esp32 architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:677:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /tmp/arduino-sketch-9B2EC2FC3C76356083920149C100A6A1/sketch/set_date.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M5_BM8563/examples/set_date/set_date.ino:3:8: error: expected &#39;)&#39; before &#39;*&#39; token
+ BM8563 RTC;
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M5_BM8563/examples/set_date/set_date.ino:3:8: error: expected &#39;)&#39; before &#39;*&#39; token
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M5_BM8563/examples/set_date/set_date.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M5_BM8563/examples/set_date/set_date.ino:21:7: error: &#39;RTC_t {aka struct RTC_struct}&#39; has no member named &#39;begin&#39;
+   RTC.begin();
+       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M5_BM8563/examples/set_date/set_date.ino:33:7: error: &#39;RTC_t {aka struct RTC_struct}&#39; has no member named &#39;setTime&#39;
+   RTC.setTime(&amp;rtc_time_unit);
+       ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M5_BM8563/examples/set_date/set_date.ino:34:7: error: &#39;RTC_t {aka struct RTC_struct}&#39; has no member named &#39;setDate&#39;
+   RTC.setDate(&amp;rtc_date_unit);
+       ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M5_BM8563/examples/set_date/set_date.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M5_BM8563/examples/set_date/set_date.ino:40:7: error: &#39;RTC_t {aka struct RTC_struct}&#39; has no member named &#39;getTime&#39;
+   RTC.getTime(&amp;rtc_time_unit);
+       ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M5_BM8563/examples/set_date/set_date.ino:41:7: error: &#39;RTC_t {aka struct RTC_struct}&#39; has no member named &#39;getDate&#39;
+   RTC.getDate(&amp;rtc_date_unit);
+       ^~~~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library M5_BM8563 claims to run on esp32 architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M5_BM8563/src/M5_BM8563.cpp: In member function &#39;void BM8563::begin(arduino::TwoWire*, uint8_t, uint8_t, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M5_BM8563/src/M5_BM8563.cpp:34:36: error: no matching function for call to &#39;arduino::TwoWire::begin(uint8_t&amp;, uint8_t&amp;, uint32_t&amp;)&#39;
+     _wire-&gt;begin(sda, scl, i2c_freq);
+                                    ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M5_BM8563/src/M5_BM8563.h:5:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M5_BM8563/src/M5_BM8563.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/libraries/Wire/Wire.h:36:10: note: candidate: virtual void arduino::TwoWire::begin()
+     void begin();
+          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/libraries/Wire/Wire.h:36:10: note:   candidate expects 0 arguments, 3 provided
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/libraries/Wire/Wire.h:37:10: note: candidate: void arduino::TwoWire::begin(uint8_t, bool)
+     void begin(uint8_t address, bool enableGeneralCall);
+          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/libraries/Wire/Wire.h:37:10: note:   candidate expects 2 arguments, 3 provided
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/libraries/Wire/Wire.h:38:10: note: candidate: virtual void arduino::TwoWire::begin(uint8_t)
+     void begin(uint8_t address) {
+          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/libraries/Wire/Wire.h:38:10: note:   candidate expects 1 argument, 3 provided
+
+</pre>
+
+					
+					<h4>examples/set_date</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library M5_BM8563 claims to run on esp32 architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/samd21.h:69:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd.h:105,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:38,
+                 from /tmp/arduino-sketch-9B2EC2FC3C76356083920149C100A6A1/sketch/set_date.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/samd21g18a.h:487:38: error: expected &#39;)&#39; before &#39;*&#39; token
+ #define RTC               ((Rtc      *)0x40001400UL) /**&lt; \brief (RTC) APB Base Address */
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M5_BM8563/examples/set_date/set_date.ino:3:8: note: in expansion of macro &#39;RTC&#39;
+ BM8563 RTC;
+        ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/samd21g18a.h:487:38: error: expected &#39;)&#39; before &#39;*&#39; token
+ #define RTC               ((Rtc      *)0x40001400UL) /**&lt; \brief (RTC) APB Base Address */
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M5_BM8563/examples/set_date/set_date.ino:3:8: note: in expansion of macro &#39;RTC&#39;
+ BM8563 RTC;
+        ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M5_BM8563/examples/set_date/set_date.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M5_BM8563/examples/set_date/set_date.ino:21:7: error: request for member &#39;begin&#39; in &#39;(Rtc*)1073746944&#39;, which is of pointer type &#39;Rtc*&#39; (maybe you meant to use &#39;-&gt;&#39; ?)
+   RTC.begin();
+       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M5_BM8563/examples/set_date/set_date.ino:33:7: error: request for member &#39;setTime&#39; in &#39;(Rtc*)1073746944&#39;, which is of pointer type &#39;Rtc*&#39; (maybe you meant to use &#39;-&gt;&#39; ?)
+   RTC.setTime(&amp;rtc_time_unit);
+       ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M5_BM8563/examples/set_date/set_date.ino:34:7: error: request for member &#39;setDate&#39; in &#39;(Rtc*)1073746944&#39;, which is of pointer type &#39;Rtc*&#39; (maybe you meant to use &#39;-&gt;&#39; ?)
+   RTC.setDate(&amp;rtc_date_unit);
+       ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M5_BM8563/examples/set_date/set_date.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M5_BM8563/examples/set_date/set_date.ino:40:7: error: request for member &#39;getTime&#39; in &#39;(Rtc*)1073746944&#39;, which is of pointer type &#39;Rtc*&#39; (maybe you meant to use &#39;-&gt;&#39; ?)
+   RTC.getTime(&amp;rtc_time_unit);
+       ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M5_BM8563/examples/set_date/set_date.ino:41:7: error: request for member &#39;getDate&#39; in &#39;(Rtc*)1073746944&#39;, which is of pointer type &#39;Rtc*&#39; (maybe you meant to use &#39;-&gt;&#39; ?)
+   RTC.getDate(&amp;rtc_date_unit);
+       ^~~~~~~
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 202754 bytes (15%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 13880 bytes (4%) of dynamic memory, leaving 313800 bytes for local variables. Maximum is 327680 bytes.
+</pre>
+
+					
+					<h4>examples/set_date</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 214574 bytes (16%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 14264 bytes (4%) of dynamic memory, leaving 313416 bytes for local variables. Maximum is 327680 bytes.
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

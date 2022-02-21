@@ -1,0 +1,460 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>jm_LiquidCrystal_I2C - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>jm_LiquidCrystal_I2C</h2>
+				<p>
+					Version: <b>1.0.2</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/jm_liquidcrystal_i2c/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>jm_LiquidCrystal_I2C_demo</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">
+</pre>
+
+					
+					<h4>examples/jm_LiquidCrystal_I2C_demo</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/jm_Wire/src/utility/jm_twi.c:25:10: fatal error: avr/io.h: No such file or directory
+ #include &lt;avr/io.h&gt;
+          ^~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/jm_LiquidCrystal_I2C_demo</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/jm_Wire/src/utility/jm_twi.c:25:10: fatal error: avr/io.h: No such file or directory
+ #include &lt;avr/io.h&gt;
+          ^~~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library jm_LiquidCrystal_I2C claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+WARNING: library jm_Wire claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+
+</pre>
+
+					
+					<h4>examples/jm_LiquidCrystal_I2C_demo</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library jm_Wire claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+WARNING: library jm_LiquidCrystal_I2C claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/jm_Wire/src/utility/jm_twi.c: In function &#39;twi_init&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/jm_Wire/src/utility/jm_twi.c:73:1: error: &#39;TWCR&#39; undeclared (first use in this function); did you mean &#39;TWI0&#39;?
+ TWCR = (0&lt;&lt;TWINT) | (0&lt;&lt;TWEA) | (0&lt;&lt;TWSTA) | (0&lt;&lt;TWSTO) | (0&lt;&lt;TWEN) | (0&lt;&lt;TWIE); // bits TWWC and 1 are R.
+ ^~~~
+ TWI0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/jm_Wire/src/utility/jm_twi.c:73:1: note: each undeclared identifier is reported only once for each function it appears in
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/jm_Wire/src/utility/jm_twi.c:73:12: error: &#39;TWINT&#39; undeclared (first use in this function); did you mean &#39;TWI_t&#39;?
+ TWCR = (0&lt;&lt;TWINT) | (0&lt;&lt;TWEA) | (0&lt;&lt;TWSTA) | (0&lt;&lt;TWSTO) | (0&lt;&lt;TWEN) | (0&lt;&lt;TWIE); // bits TWWC and 1 are R.
+            ^~~~~
+            TWI_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/jm_Wire/src/utility/jm_twi.c:73:25: error: &#39;TWEA&#39; undeclared (first use in this function); did you mean &#39;TWCR&#39;?
+ TWCR = (0&lt;&lt;TWINT) | (0&lt;&lt;TWEA) | (0&lt;&lt;TWSTA) | (0&lt;&lt;TWSTO) | (0&lt;&lt;TWEN) | (0&lt;&lt;TWIE); // bits TWWC and 1 are R.
+                         ^~~~
+                         TWCR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/jm_Wire/src/utility/jm_twi.c:73:37: error: &#39;TWSTA&#39; undeclared (first use in this function); did you mean &#39;TWEA&#39;?
+ TWCR = (0&lt;&lt;TWINT) | (0&lt;&lt;TWEA) | (0&lt;&lt;TWSTA) | (0&lt;&lt;TWSTO) | (0&lt;&lt;TWEN) | (0&lt;&lt;TWIE); // bits TWWC and 1 are R.
+                                     ^~~~~
+                                     TWEA
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/jm_Wire/src/utility/jm_twi.c:73:50: error: &#39;TWSTO&#39; undeclared (first use in this function); did you mean &#39;TWSTA&#39;?
+ TWCR = (0&lt;&lt;TWINT) | (0&lt;&lt;TWEA) | (0&lt;&lt;TWSTA) | (0&lt;&lt;TWSTO) | (0&lt;&lt;TWEN) | (0&lt;&lt;TWIE); // bits TWWC and 1 are R.
+                                                  ^~~~~
+                                                  TWSTA
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/jm_Wire/src/utility/jm_twi.c:73:63: error: &#39;TWEN&#39; undeclared (first use in this function); did you mean &#39;TWEA&#39;?
+ TWCR = (0&lt;&lt;TWINT) | (0&lt;&lt;TWEA) | (0&lt;&lt;TWSTA) | (0&lt;&lt;TWSTO) | (0&lt;&lt;TWEN) | (0&lt;&lt;TWIE); // bits TWWC and 1 are R.
+                                                               ^~~~
+                                                               TWEA
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/jm_Wire/src/utility/jm_twi.c:73:75: error: &#39;TWIE&#39; undeclared (first use in this function); did you mean &#39;TWI0&#39;?
+ TWCR = (0&lt;&lt;TWINT) | (0&lt;&lt;TWEA) | (0&lt;&lt;TWSTA) | (0&lt;&lt;TWSTO) | (0&lt;&lt;TWEN) | (0&lt;&lt;TWIE); // bits TWWC and 1 are R.
+                                                                           ^~~~
+                                                                           TWI0
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/jm_Wire/src/utility/jm_twi.c:25:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/jm_Wire/src/utility/jm_twi.c:87:6: error: &#39;TWSR&#39; undeclared (first use in this function); did you mean &#39;TWCR&#39;?
+  cbi(TWSR, TWPS0);
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/jm_Wire/src/utility/jm_twi.c:87:2: note: in expansion of macro &#39;cbi&#39;
+  cbi(TWSR, TWPS0);
+  ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/jm_Wire/src/utility/jm_twi.c:87:12: error: &#39;TWPS0&#39; undeclared (first use in this function); did you mean &#39;TWSR&#39;?
+  cbi(TWSR, TWPS0);
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/jm_Wire/src/utility/jm_twi.c:87:2: note: in expansion of macro &#39;cbi&#39;
+  cbi(TWSR, TWPS0);
+  ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/jm_Wire/src/utility/jm_twi.c:88:12: error: &#39;TWPS1&#39; undeclared (first use in this function); did you mean &#39;TWPS0&#39;?
+  cbi(TWSR, TWPS1);
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/jm_Wire/src/utility/jm_twi.c:88:2: note: in expansion of macro &#39;cbi&#39;
+  cbi(TWSR, TWPS1);
+  ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/jm_Wire/src/utility/jm_twi.c:89:2: error: &#39;TWBR&#39; undeclared (first use in this function); did you mean &#39;TWSR&#39;?
+  TWBR = ((F_CPU / TWI_FREQ) - 16) / 2;
+  ^~~~
+  TWSR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/jm_Wire/src/utility/jm_twi.c: In function &#39;twi_setAddress&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/jm_Wire/src/utility/jm_twi.c:136:2: error: &#39;TWAR&#39; undeclared (first use in this function); did you mean &#39;TWI0&#39;?
+  TWAR = address &lt;&lt; 1;
+  ^~~~
+  TWI0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/jm_Wire/src/utility/jm_twi.c: In function &#39;twi_readFrom&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/jm_Wire/src/utility/jm_twi.c:213:3: error: &#39;TWDR&#39; undeclared (first use in this function); did you mean &#39;TWI0&#39;?
+   TWDR = twi_slarw;
+   ^~~~
+   TWI0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/jm_Wire/src/utility/jm_twi.c:214:3: error: &#39;TWCR&#39; undeclared (first use in this function); did you mean &#39;TWDR&#39;?
+   TWCR = _BV(TWINT) | _BV(TWEA) | _BV(TWEN) | _BV(TWIE); // enable INTs, but not START
+   ^~~~
+   TWDR
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/jm_Wire/src/utility/jm_twi.c:25:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/jm_Wire/src/utility/jm_twi.c:214:14: error: &#39;TWINT&#39; undeclared (first use in this function); did you mean &#39;TWI_t&#39;?
+   TWCR = _BV(TWINT) | _BV(TWEA) | _BV(TWEN) | _BV(TWIE); // enable INTs, but not START
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/jm_Wire/src/utility/jm_twi.c:214:27: error: &#39;TWEA&#39; undeclared (first use in this function); did you mean &#39;TWCR&#39;?
+   TWCR = _BV(TWINT) | _BV(TWEA) | _BV(TWEN) | _BV(TWIE); // enable INTs, but not START
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/jm_Wire/src/utility/jm_twi.c:214:39: error: &#39;TWEN&#39; undeclared (first use in this function); did you mean &#39;TWEA&#39;?
+   TWCR = _BV(TWINT) | _BV(TWEA) | _BV(TWEN) | _BV(TWIE); // enable INTs, but not START
+                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/jm_Wire/src/utility/jm_twi.c:214:51: error: &#39;TWIE&#39; undeclared (first use in this function); did you mean &#39;TWI0&#39;?
+   TWCR = _BV(TWINT) | _BV(TWEA) | _BV(TWEN) | _BV(TWIE); // enable INTs, but not START
+                                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/jm_Wire/src/utility/jm_twi.c:218:63: error: &#39;TWSTA&#39; undeclared (first use in this function); did you mean &#39;TWEA&#39;?
+   TWCR = _BV(TWEN) | _BV(TWIE) | _BV(TWEA) | _BV(TWINT) | _BV(TWSTA);
+                                                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/jm_Wire/src/utility/jm_twi.c: In function &#39;twi_writeTo&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/jm_Wire/src/utility/jm_twi.c:315:3: error: &#39;TWDR&#39; undeclared (first use in this function); did you mean &#39;TWI0&#39;?
+   TWDR = twi_slarw;
+   ^~~~
+   TWI0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/jm_Wire/src/utility/jm_twi.c:316:3: error: &#39;TWCR&#39; undeclared (first use in this function); did you mean &#39;TWDR&#39;?
+   TWCR = _BV(TWINT) | _BV(TWEA) | _BV(TWEN) | _BV(TWIE); // enable INTs, but not START
+   ^~~~
+   TWDR
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/jm_Wire/src/utility/jm_twi.c:25:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/jm_Wire/src/utility/jm_twi.c:316:14: error: &#39;TWINT&#39; undeclared (first use in this function); did you mean &#39;TWI_t&#39;?
+   TWCR = _BV(TWINT) | _BV(TWEA) | _BV(TWEN) | _BV(TWIE); // enable INTs, but not START
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/jm_Wire/src/utility/jm_twi.c:316:27: error: &#39;TWEA&#39; undeclared (first use in this function); did you mean &#39;TWCR&#39;?
+   TWCR = _BV(TWINT) | _BV(TWEA) | _BV(TWEN) | _BV(TWIE); // enable INTs, but not START
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/jm_Wire/src/utility/jm_twi.c:316:39: error: &#39;TWEN&#39; undeclared (first use in this function); did you mean &#39;TWEA&#39;?
+   TWCR = _BV(TWINT) | _BV(TWEA) | _BV(TWEN) | _BV(TWIE); // enable INTs, but not START
+                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/jm_Wire/src/utility/jm_twi.c:316:51: error: &#39;TWIE&#39; undeclared (first use in this function); did you mean &#39;TWI0&#39;?
+   TWCR = _BV(TWINT) | _BV(TWEA) | _BV(TWEN) | _BV(TWIE); // enable INTs, but not START
+                                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/jm_Wire/src/utility/jm_twi.c:320:63: error: &#39;TWSTA&#39; undeclared (first use in this function); did you mean &#39;TWEA&#39;?
+   TWCR = _BV(TWINT) | _BV(TWEA) | _BV(TWEN) | _BV(TWIE) | _BV(TWSTA); // enable INTs
+                                                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/jm_Wire/src/utility/jm_twi.c: In function &#39;twi_reply&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/jm_Wire/src/utility/jm_twi.c:425:3: error: &#39;TWCR&#39; undeclared (first use in this f</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/jm_Wire/src/utility/jm_twi.c:25:10: fatal error: avr/io.h: No such file or directory
+ #include &lt;avr/io.h&gt;
+          ^~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/jm_LiquidCrystal_I2C_demo</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/jm_Wire/src/utility/jm_twi.c:25:10: fatal error: avr/io.h: No such file or directory
+ #include &lt;avr/io.h&gt;
+          ^~~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/jm_Wire/src/utility/jm_twi.c:25:20: fatal error: avr/io.h: No such file or directory
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/jm_LiquidCrystal_I2C_demo</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/jm_Wire/src/utility/jm_twi.c:25:20: fatal error: avr/io.h: No such file or directory
+compilation terminated.
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

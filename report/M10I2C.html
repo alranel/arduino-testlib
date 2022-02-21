@@ -1,0 +1,886 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>M10I2C - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>M10I2C</h2>
+				<p>
+					Version: <b>1.0.1</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/m10i2c/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>I2C_Master</pre></th>
+						
+						<th><pre>I2C_Slave</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library M10I2C claims to run on FP51 architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+In file included from /tmp/arduino-testlib4035314660/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:56:77: error: expected initializer before &#39;__reentrant&#39;
+ typedef  void (*I2C_SLAVE_FUNC)(uint8_t addr, void (*call_back_func)(void)) __reentrant;
+                                                                             ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:59:73: error: expected &#39;;&#39; at end of member declaration
+    uint8_t (*masterWrite)(uint16_t addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:59:75: error: &#39;__reentrant&#39; does not name a type
+    uint8_t (*masterWrite)(uint16_t addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                           ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:60:94: error: expected &#39;;&#39; at end of member declaration
+    uint8_t (*masterRead)(uint16_t i2c_addr, uint8_t reg_addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:60:96: error: &#39;__reentrant&#39; does not name a type
+    uint8_t (*masterRead)(uint16_t i2c_addr, uint8_t reg_addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                                                ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:61:4: error: &#39;I2C_SLAVE_FUNC&#39; does not name a type; did you mean &#39;I2C_SLAVE_DATA_REQ&#39;?
+    I2C_SLAVE_FUNC slave;
+    ^~~~~~~~~~~~~~
+    I2C_SLAVE_DATA_REQ
+
+</pre>
+
+					
+					<h4>examples/I2C_Master</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library M10I2C claims to run on FP51 architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Master/I2C_Master.ino:21:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:56:77: error: expected initializer before &#39;__reentrant&#39;
+ typedef  void (*I2C_SLAVE_FUNC)(uint8_t addr, void (*call_back_func)(void)) __reentrant;
+                                                                             ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:59:73: error: expected &#39;;&#39; at end of member declaration
+    uint8_t (*masterWrite)(uint16_t addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:59:75: error: &#39;__reentrant&#39; does not name a type
+    uint8_t (*masterWrite)(uint16_t addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                           ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:60:94: error: expected &#39;;&#39; at end of member declaration
+    uint8_t (*masterRead)(uint16_t i2c_addr, uint8_t reg_addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:60:96: error: &#39;__reentrant&#39; does not name a type
+    uint8_t (*masterRead)(uint16_t i2c_addr, uint8_t reg_addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                                                ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:61:4: error: &#39;I2C_SLAVE_FUNC&#39; does not name a type; did you mean &#39;I2C_SLAVE_DATA_REQ&#39;?
+    I2C_SLAVE_FUNC slave;
+    ^~~~~~~~~~~~~~
+    I2C_SLAVE_DATA_REQ
+
+</pre>
+					
+					<h4>examples/I2C_Slave</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library M10I2C claims to run on FP51 architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Slave/I2C_Slave.ino:21:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:56:77: error: expected initializer before &#39;__reentrant&#39;
+ typedef  void (*I2C_SLAVE_FUNC)(uint8_t addr, void (*call_back_func)(void)) __reentrant;
+                                                                             ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:59:73: error: expected &#39;;&#39; at end of member declaration
+    uint8_t (*masterWrite)(uint16_t addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:59:75: error: &#39;__reentrant&#39; does not name a type
+    uint8_t (*masterWrite)(uint16_t addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                           ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:60:94: error: expected &#39;;&#39; at end of member declaration
+    uint8_t (*masterRead)(uint16_t i2c_addr, uint8_t reg_addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:60:96: error: &#39;__reentrant&#39; does not name a type
+    uint8_t (*masterRead)(uint16_t i2c_addr, uint8_t reg_addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                                                ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:61:4: error: &#39;I2C_SLAVE_FUNC&#39; does not name a type; did you mean &#39;I2C_SLAVE_DATA_REQ&#39;?
+    I2C_SLAVE_FUNC slave;
+    ^~~~~~~~~~~~~~
+    I2C_SLAVE_DATA_REQ
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Slave/I2C_Slave.ino: In function &#39;void i2c_isr_handler()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Slave/I2C_Slave.ino:59:9: error: &#39;I2C_CSR&#39; was not declared in this scope
+     t = I2C_CSR;
+         ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Slave/I2C_Slave.ino:59:9: note: suggested alternative: &#39;I2C_STRUCT&#39;
+     t = I2C_CSR;
+         ^~~~~~~
+         I2C_STRUCT
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Slave/I2C_Slave.ino:61:11: error: &#39;I2C_ADDR_DATA&#39; was not declared in this scope
+       t = I2C_ADDR_DATA;
+           ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Slave/I2C_Slave.ino:65:7: error: &#39;I2C_ADDR_DATA&#39; was not declared in this scope
+       I2C_ADDR_DATA = data_out&#43;&#43;;
+       ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Slave/I2C_Slave.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Slave/I2C_Slave.ino:82:7: error: &#39;const struct I2C_STRUCT&#39; has no member named &#39;slave&#39;
+   I2C.slave (i2c_slave_addr, i2c_isr_handler);
+       ^~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library M10I2C claims to run on FP51 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+In file included from /tmp/arduino-testlib1148419777/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:56:77: error: expected initializer before &#39;__reentrant&#39;
+ typedef  void (*I2C_SLAVE_FUNC)(uint8_t addr, void (*call_back_func)(void)) __reentrant;
+                                                                             ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:59:73: error: expected &#39;;&#39; at end of member declaration
+    uint8_t (*masterWrite)(uint16_t addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:59:75: error: &#39;__reentrant&#39; does not name a type; did you mean &#39;__restrict&#39;?
+    uint8_t (*masterWrite)(uint16_t addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                           ^~~~~~~~~~~
+                                                                           __restrict
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:60:94: error: expected &#39;;&#39; at end of member declaration
+    uint8_t (*masterRead)(uint16_t i2c_addr, uint8_t reg_addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:60:96: error: &#39;__reentrant&#39; does not name a type; did you mean &#39;__restrict&#39;?
+    uint8_t (*masterRead)(uint16_t i2c_addr, uint8_t reg_addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                                                ^~~~~~~~~~~
+                                                                                                __restrict
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:61:4: error: &#39;I2C_SLAVE_FUNC&#39; does not name a type
+    I2C_SLAVE_FUNC slave;
+    ^~~~~~~~~~~~~~
+
+</pre>
+
+					
+					<h4>examples/I2C_Master</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library M10I2C claims to run on FP51 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Master/I2C_Master.ino:21:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:56:77: error: expected initializer before &#39;__reentrant&#39;
+ typedef  void (*I2C_SLAVE_FUNC)(uint8_t addr, void (*call_back_func)(void)) __reentrant;
+                                                                             ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:59:73: error: expected &#39;;&#39; at end of member declaration
+    uint8_t (*masterWrite)(uint16_t addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:59:75: error: &#39;__reentrant&#39; does not name a type; did you mean &#39;__restrict&#39;?
+    uint8_t (*masterWrite)(uint16_t addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                           ^~~~~~~~~~~
+                                                                           __restrict
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:60:94: error: expected &#39;;&#39; at end of member declaration
+    uint8_t (*masterRead)(uint16_t i2c_addr, uint8_t reg_addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:60:96: error: &#39;__reentrant&#39; does not name a type; did you mean &#39;__restrict&#39;?
+    uint8_t (*masterRead)(uint16_t i2c_addr, uint8_t reg_addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                                                ^~~~~~~~~~~
+                                                                                                __restrict
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:61:4: error: &#39;I2C_SLAVE_FUNC&#39; does not name a type
+    I2C_SLAVE_FUNC slave;
+    ^~~~~~~~~~~~~~
+
+</pre>
+					
+					<h4>examples/I2C_Slave</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library M10I2C claims to run on FP51 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Slave/I2C_Slave.ino:21:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:56:77: error: expected initializer before &#39;__reentrant&#39;
+ typedef  void (*I2C_SLAVE_FUNC)(uint8_t addr, void (*call_back_func)(void)) __reentrant;
+                                                                             ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:59:73: error: expected &#39;;&#39; at end of member declaration
+    uint8_t (*masterWrite)(uint16_t addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:59:75: error: &#39;__reentrant&#39; does not name a type; did you mean &#39;__restrict&#39;?
+    uint8_t (*masterWrite)(uint16_t addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                           ^~~~~~~~~~~
+                                                                           __restrict
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:60:94: error: expected &#39;;&#39; at end of member declaration
+    uint8_t (*masterRead)(uint16_t i2c_addr, uint8_t reg_addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:60:96: error: &#39;__reentrant&#39; does not name a type; did you mean &#39;__restrict&#39;?
+    uint8_t (*masterRead)(uint16_t i2c_addr, uint8_t reg_addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                                                ^~~~~~~~~~~
+                                                                                                __restrict
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:61:4: error: &#39;I2C_SLAVE_FUNC&#39; does not name a type
+    I2C_SLAVE_FUNC slave;
+    ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Slave/I2C_Slave.ino: In function &#39;void i2c_isr_handler()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Slave/I2C_Slave.ino:59:9: error: &#39;I2C_CSR&#39; was not declared in this scope
+     t = I2C_CSR;
+         ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Slave/I2C_Slave.ino:59:9: note: suggested alternative: &#39;I2C_1&#39;
+     t = I2C_CSR;
+         ^~~~~~~
+         I2C_1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Slave/I2C_Slave.ino:61:11: error: &#39;I2C_ADDR_DATA&#39; was not declared in this scope
+       t = I2C_ADDR_DATA;
+           ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Slave/I2C_Slave.ino:65:7: error: &#39;I2C_ADDR_DATA&#39; was not declared in this scope
+       I2C_ADDR_DATA = data_out&#43;&#43;;
+       ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Slave/I2C_Slave.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Slave/I2C_Slave.ino:82:7: error: &#39;const struct I2C_STRUCT&#39; has no member named &#39;slave&#39;
+   I2C.slave (i2c_slave_addr, i2c_isr_handler);
+       ^~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library M10I2C claims to run on FP51 architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /tmp/arduino-testlib1148419777/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:56:77: error: expected initializer before &#39;__reentrant&#39;
+ typedef  void (*I2C_SLAVE_FUNC)(uint8_t addr, void (*call_back_func)(void)) __reentrant;
+                                                                             ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:59:73: error: expected &#39;;&#39; at end of member declaration
+    uint8_t (*masterWrite)(uint16_t addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:59:75: error: &#39;__reentrant&#39; does not name a type
+    uint8_t (*masterWrite)(uint16_t addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                           ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:60:94: error: expected &#39;;&#39; at end of member declaration
+    uint8_t (*masterRead)(uint16_t i2c_addr, uint8_t reg_addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:60:96: error: &#39;__reentrant&#39; does not name a type
+    uint8_t (*masterRead)(uint16_t i2c_addr, uint8_t reg_addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                                                ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:61:4: error: &#39;I2C_SLAVE_FUNC&#39; does not name a type
+    I2C_SLAVE_FUNC slave;
+    ^~~~~~~~~~~~~~
+
+</pre>
+
+					
+					<h4>examples/I2C_Master</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library M10I2C claims to run on FP51 architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Master/I2C_Master.ino:21:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:56:77: error: expected initializer before &#39;__reentrant&#39;
+ typedef  void (*I2C_SLAVE_FUNC)(uint8_t addr, void (*call_back_func)(void)) __reentrant;
+                                                                             ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:59:73: error: expected &#39;;&#39; at end of member declaration
+    uint8_t (*masterWrite)(uint16_t addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:59:75: error: &#39;__reentrant&#39; does not name a type
+    uint8_t (*masterWrite)(uint16_t addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                           ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:60:94: error: expected &#39;;&#39; at end of member declaration
+    uint8_t (*masterRead)(uint16_t i2c_addr, uint8_t reg_addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:60:96: error: &#39;__reentrant&#39; does not name a type
+    uint8_t (*masterRead)(uint16_t i2c_addr, uint8_t reg_addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                                                ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:61:4: error: &#39;I2C_SLAVE_FUNC&#39; does not name a type
+    I2C_SLAVE_FUNC slave;
+    ^~~~~~~~~~~~~~
+
+</pre>
+					
+					<h4>examples/I2C_Slave</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library M10I2C claims to run on FP51 architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Slave/I2C_Slave.ino:21:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:56:77: error: expected initializer before &#39;__reentrant&#39;
+ typedef  void (*I2C_SLAVE_FUNC)(uint8_t addr, void (*call_back_func)(void)) __reentrant;
+                                                                             ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:59:73: error: expected &#39;;&#39; at end of member declaration
+    uint8_t (*masterWrite)(uint16_t addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:59:75: error: &#39;__reentrant&#39; does not name a type
+    uint8_t (*masterWrite)(uint16_t addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                           ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:60:94: error: expected &#39;;&#39; at end of member declaration
+    uint8_t (*masterRead)(uint16_t i2c_addr, uint8_t reg_addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:60:96: error: &#39;__reentrant&#39; does not name a type
+    uint8_t (*masterRead)(uint16_t i2c_addr, uint8_t reg_addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                                                ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:61:4: error: &#39;I2C_SLAVE_FUNC&#39; does not name a type
+    I2C_SLAVE_FUNC slave;
+    ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Slave/I2C_Slave.ino: In function &#39;void i2c_isr_handler()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Slave/I2C_Slave.ino:59:9: error: &#39;I2C_CSR&#39; was not declared in this scope
+     t = I2C_CSR;
+         ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Slave/I2C_Slave.ino:59:9: note: suggested alternative: &#39;I2C_STRUCT&#39;
+     t = I2C_CSR;
+         ^~~~~~~
+         I2C_STRUCT
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Slave/I2C_Slave.ino:61:11: error: &#39;I2C_ADDR_DATA&#39; was not declared in this scope
+       t = I2C_ADDR_DATA;
+           ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Slave/I2C_Slave.ino:65:7: error: &#39;I2C_ADDR_DATA&#39; was not declared in this scope
+       I2C_ADDR_DATA = data_out&#43;&#43;;
+       ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Slave/I2C_Slave.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Slave/I2C_Slave.ino:82:7: error: &#39;const struct I2C_STRUCT&#39; has no member named &#39;slave&#39;
+   I2C.slave (i2c_slave_addr, i2c_isr_handler);
+       ^~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library M10I2C claims to run on FP51 architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+In file included from /tmp/arduino-testlib4035314660/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:56:77: error: expected initializer before &#39;__reentrant&#39;
+ typedef  void (*I2C_SLAVE_FUNC)(uint8_t addr, void (*call_back_func)(void)) __reentrant;
+                                                                             ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:59:73: error: expected &#39;;&#39; at end of member declaration
+    uint8_t (*masterWrite)(uint16_t addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:59:75: error: &#39;__reentrant&#39; does not name a type; did you mean &#39;__restrict&#39;?
+    uint8_t (*masterWrite)(uint16_t addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                           ^~~~~~~~~~~
+                                                                           __restrict
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:60:94: error: expected &#39;;&#39; at end of member declaration
+    uint8_t (*masterRead)(uint16_t i2c_addr, uint8_t reg_addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:60:96: error: &#39;__reentrant&#39; does not name a type; did you mean &#39;__restrict&#39;?
+    uint8_t (*masterRead)(uint16_t i2c_addr, uint8_t reg_addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                                                ^~~~~~~~~~~
+                                                                                                __restrict
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:61:4: error: &#39;I2C_SLAVE_FUNC&#39; does not name a type
+    I2C_SLAVE_FUNC slave;
+    ^~~~~~~~~~~~~~
+
+</pre>
+
+					
+					<h4>examples/I2C_Master</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library M10I2C claims to run on FP51 architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Master/I2C_Master.ino:21:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:56:77: error: expected initializer before &#39;__reentrant&#39;
+ typedef  void (*I2C_SLAVE_FUNC)(uint8_t addr, void (*call_back_func)(void)) __reentrant;
+                                                                             ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:59:73: error: expected &#39;;&#39; at end of member declaration
+    uint8_t (*masterWrite)(uint16_t addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:59:75: error: &#39;__reentrant&#39; does not name a type; did you mean &#39;__restrict&#39;?
+    uint8_t (*masterWrite)(uint16_t addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                           ^~~~~~~~~~~
+                                                                           __restrict
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:60:94: error: expected &#39;;&#39; at end of member declaration
+    uint8_t (*masterRead)(uint16_t i2c_addr, uint8_t reg_addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:60:96: error: &#39;__reentrant&#39; does not name a type; did you mean &#39;__restrict&#39;?
+    uint8_t (*masterRead)(uint16_t i2c_addr, uint8_t reg_addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                                                ^~~~~~~~~~~
+                                                                                                __restrict
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:61:4: error: &#39;I2C_SLAVE_FUNC&#39; does not name a type
+    I2C_SLAVE_FUNC slave;
+    ^~~~~~~~~~~~~~
+
+</pre>
+					
+					<h4>examples/I2C_Slave</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library M10I2C claims to run on FP51 architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Slave/I2C_Slave.ino:21:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:56:77: error: expected initializer before &#39;__reentrant&#39;
+ typedef  void (*I2C_SLAVE_FUNC)(uint8_t addr, void (*call_back_func)(void)) __reentrant;
+                                                                             ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:59:73: error: expected &#39;;&#39; at end of member declaration
+    uint8_t (*masterWrite)(uint16_t addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:59:75: error: &#39;__reentrant&#39; does not name a type; did you mean &#39;__restrict&#39;?
+    uint8_t (*masterWrite)(uint16_t addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                           ^~~~~~~~~~~
+                                                                           __restrict
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:60:94: error: expected &#39;;&#39; at end of member declaration
+    uint8_t (*masterRead)(uint16_t i2c_addr, uint8_t reg_addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:60:96: error: &#39;__reentrant&#39; does not name a type; did you mean &#39;__restrict&#39;?
+    uint8_t (*masterRead)(uint16_t i2c_addr, uint8_t reg_addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                                                ^~~~~~~~~~~
+                                                                                                __restrict
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:61:4: error: &#39;I2C_SLAVE_FUNC&#39; does not name a type
+    I2C_SLAVE_FUNC slave;
+    ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Slave/I2C_Slave.ino: In function &#39;void i2c_isr_handler()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Slave/I2C_Slave.ino:59:9: error: &#39;I2C_CSR&#39; was not declared in this scope
+     t = I2C_CSR;
+         ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Slave/I2C_Slave.ino:59:9: note: suggested alternative: &#39;I2C_STRUCT&#39;
+     t = I2C_CSR;
+         ^~~~~~~
+         I2C_STRUCT
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Slave/I2C_Slave.ino:61:11: error: &#39;I2C_ADDR_DATA&#39; was not declared in this scope
+       t = I2C_ADDR_DATA;
+           ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Slave/I2C_Slave.ino:61:11: note: suggested alternative: &#39;I2S_DATA_DATA&#39;
+       t = I2C_ADDR_DATA;
+           ^~~~~~~~~~~~~
+           I2S_DATA_DATA
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Slave/I2C_Slave.ino:65:7: error: &#39;I2C_ADDR_DATA&#39; was not declared in this scope
+       I2C_ADDR_DATA = data_out&#43;&#43;;
+       ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Slave/I2C_Slave.ino:65:7: note: suggested alternative: &#39;I2S_DATA_DATA&#39;
+       I2C_ADDR_DATA = data_out&#43;&#43;;
+       ^~~~~~~~~~~~~
+       I2S_DATA_DATA
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Slave/I2C_Slave.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Slave/I2C_Slave.ino:82:7: error: &#39;const struct I2C_STRUCT&#39; has no member named &#39;slave&#39;
+   I2C.slave (i2c_slave_addr, i2c_isr_handler);
+       ^~~~~
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library M10I2C claims to run on FP51 architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+In file included from /tmp/arduino-testlib3785238107/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:56:77: error: expected initializer before &#39;__reentrant&#39;
+ typedef  void (*I2C_SLAVE_FUNC)(uint8_t addr, void (*call_back_func)(void)) __reentrant;
+                                                                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:59:73: error: expected &#39;;&#39; at end of member declaration
+    uint8_t (*masterWrite)(uint16_t addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:59:75: error: &#39;__reentrant&#39; does not name a type
+    uint8_t (*masterWrite)(uint16_t addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:60:94: error: expected &#39;;&#39; at end of member declaration
+    uint8_t (*masterRead)(uint16_t i2c_addr, uint8_t reg_addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:60:96: error: &#39;__reentrant&#39; does not name a type
+    uint8_t (*masterRead)(uint16_t i2c_addr, uint8_t reg_addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:61:4: error: &#39;I2C_SLAVE_FUNC&#39; does not name a type
+    I2C_SLAVE_FUNC slave;
+    ^
+
+</pre>
+
+					
+					<h4>examples/I2C_Master</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library M10I2C claims to run on FP51 architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Master/I2C_Master.ino:21:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:56:77: error: expected initializer before &#39;__reentrant&#39;
+ typedef  void (*I2C_SLAVE_FUNC)(uint8_t addr, void (*call_back_func)(void)) __reentrant;
+                                                                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:59:73: error: expected &#39;;&#39; at end of member declaration
+    uint8_t (*masterWrite)(uint16_t addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:59:75: error: &#39;__reentrant&#39; does not name a type
+    uint8_t (*masterWrite)(uint16_t addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:60:94: error: expected &#39;;&#39; at end of member declaration
+    uint8_t (*masterRead)(uint16_t i2c_addr, uint8_t reg_addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:60:96: error: &#39;__reentrant&#39; does not name a type
+    uint8_t (*masterRead)(uint16_t i2c_addr, uint8_t reg_addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:61:4: error: &#39;I2C_SLAVE_FUNC&#39; does not name a type
+    I2C_SLAVE_FUNC slave;
+    ^
+
+</pre>
+					
+					<h4>examples/I2C_Slave</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library M10I2C claims to run on FP51 architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Slave/I2C_Slave.ino:21:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:56:77: error: expected initializer before &#39;__reentrant&#39;
+ typedef  void (*I2C_SLAVE_FUNC)(uint8_t addr, void (*call_back_func)(void)) __reentrant;
+                                                                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:59:73: error: expected &#39;;&#39; at end of member declaration
+    uint8_t (*masterWrite)(uint16_t addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:59:75: error: &#39;__reentrant&#39; does not name a type
+    uint8_t (*masterWrite)(uint16_t addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:60:94: error: expected &#39;;&#39; at end of member declaration
+    uint8_t (*masterRead)(uint16_t i2c_addr, uint8_t reg_addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:60:96: error: &#39;__reentrant&#39; does not name a type
+    uint8_t (*masterRead)(uint16_t i2c_addr, uint8_t reg_addr, uint8_t buf[], uint8_t buf_size) __reentrant;
+                                                                                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/src/M10I2C.h:61:4: error: &#39;I2C_SLAVE_FUNC&#39; does not name a type
+    I2C_SLAVE_FUNC slave;
+    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Slave/I2C_Slave.ino: In function &#39;void i2c_isr_handler()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Slave/I2C_Slave.ino:59:9: error: &#39;I2C_CSR&#39; was not declared in this scope
+     t = I2C_CSR;
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Slave/I2C_Slave.ino:61:11: error: &#39;I2C_ADDR_DATA&#39; was not declared in this scope
+       t = I2C_ADDR_DATA;
+           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Slave/I2C_Slave.ino:65:7: error: &#39;I2C_ADDR_DATA&#39; was not declared in this scope
+       I2C_ADDR_DATA = data_out&#43;&#43;; 
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Slave/I2C_Slave.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/M10I2C/examples/I2C_Slave/I2C_Slave.ino:82:7: error: &#39;const struct I2C_STRUCT&#39; has no member named &#39;slave&#39;
+   I2C.slave (i2c_slave_addr, i2c_isr_handler);
+       ^
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

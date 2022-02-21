@@ -1,0 +1,853 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>MPR121 - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>MPR121</h2>
+				<p>
+					Version: <b>1.2.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/mpr121/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>TestTouch</pre></th>
+						
+						<th><pre>TestMultipleTouchDevices</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+									
+										
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 1636 bytes (5%) of program storage space. Maximum is 32256 bytes.
+Global variables use 122 bytes (5%) of dynamic memory, leaving 1926 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+
+					
+					<h4>examples/TestMultipleTouchDevices</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 7430 bytes (23%) of program storage space. Maximum is 32256 bytes.
+Global variables use 711 bytes (34%) of dynamic memory, leaving 1337 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+					
+					<h4>examples/TestTouch</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 7494 bytes (23%) of program storage space. Maximum is 32256 bytes.
+Global variables use 667 bytes (32%) of dynamic memory, leaving 1381 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 81706 bytes (0%) of program storage space. Maximum is 16777216 bytes.
+Global variables use 44220 bytes (16%) of dynamic memory, leaving 226116 bytes for local variables. Maximum is 270336 bytes.
+</pre>
+
+					
+					<h4>examples/TestMultipleTouchDevices</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 84812 bytes (0%) of program storage space. Maximum is 16777216 bytes.
+Global variables use 44280 bytes (16%) of dynamic memory, leaving 226056 bytes for local variables. Maximum is 270336 bytes.
+</pre>
+					
+					<h4>examples/TestTouch</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 84828 bytes (0%) of program storage space. Maximum is 16777216 bytes.
+Global variables use 44280 bytes (16%) of dynamic memory, leaving 226056 bytes for local variables. Maximum is 270336 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 3104 bytes (6%) of program storage space. Maximum is 49152 bytes.
+Global variables use 317 bytes (5%) of dynamic memory, leaving 5827 bytes for local variables. Maximum is 6144 bytes.
+</pre>
+
+					
+					<h4>examples/TestMultipleTouchDevices</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 8237 bytes (16%) of program storage space. Maximum is 49152 bytes.
+Global variables use 541 bytes (8%) of dynamic memory, leaving 5603 bytes for local variables. Maximum is 6144 bytes.
+</pre>
+					
+					<h4>examples/TestTouch</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 8291 bytes (16%) of program storage space. Maximum is 49152 bytes.
+Global variables use 541 bytes (8%) of dynamic memory, leaving 5603 bytes for local variables. Maximum is 6144 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 13588 bytes (5%) of program storage space. Maximum is 262144 bytes.
+Global variables use 3568 bytes (10%) of dynamic memory, leaving 29200 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+
+					
+					<h4>examples/TestMultipleTouchDevices</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 17144 bytes (6%) of program storage space. Maximum is 262144 bytes.
+Global variables use 3640 bytes (11%) of dynamic memory, leaving 29128 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+					
+					<h4>examples/TestTouch</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 17120 bytes (6%) of program storage space. Maximum is 262144 bytes.
+Global variables use 3640 bytes (11%) of dynamic memory, leaving 29128 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/esp32-hal.h:53:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:35,
+                 from /tmp/arduino-sketch-9909AF751AFC2B1DD8DAC9A80D929AEC/sketch/test.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/esp32-hal-gpio.h:51:19: error: expected identifier before numeric constant
+ #define DISABLED  0x00
+                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:39:6: note: in expansion of macro &#39;DISABLED&#39;
+      DISABLED = 0b00,
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/esp32-hal-gpio.h:51:19: error: expected &#39;}&#39; before numeric constant
+ #define DISABLED  0x00
+                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:39:6: note: in expansion of macro &#39;DISABLED&#39;
+      DISABLED = 0b00,
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/esp32-hal-gpio.h:51:19: error: expected unqualified-id before numeric constant
+ #define DISABLED  0x00
+                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:39:6: note: in expansion of macro &#39;DISABLED&#39;
+      DISABLED = 0b00,
+      ^
+In file included from /tmp/arduino-testlib1438474954/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:45:5: error: &#39;ProximityMode&#39; has not been declared
+     ProximityMode proximity_mode=DISABLED);
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:46:25: error: variable or field &#39;startAllChannels&#39; declared void
+   void startAllChannels(ProximityMode proximity_mode=DISABLED);
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:46:25: error: &#39;ProximityMode&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:70:18: error: variable or field &#39;addDevice&#39; declared void
+   void addDevice(DeviceAddress device_address);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:70:18: error: &#39;DeviceAddress&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:71:20: error: &#39;DeviceAddress&#39; was not declared in this scope
+   bool setupDevice(DeviceAddress device_address);
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:74:22: error: variable or field &#39;startChannels&#39; declared void
+   void startChannels(DeviceAddress device_address,
+                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:74:22: error: &#39;DeviceAddress&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:75:13: error: expected primary-expression before &#39;physical_channel_count&#39;
+     uint8_t physical_channel_count,
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:76:5: error: &#39;ProximityMode&#39; was not declared in this scope
+     ProximityMode proximity_mode=DISABLED);
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:78:5: error: &#39;ProximityMode&#39; has not been declared
+     ProximityMode proximity_mode=DISABLED);
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:79:25: error: variable or field &#39;startAllChannels&#39; declared void
+   void startAllChannels(DeviceAddress device_address,
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:79:25: error: &#39;DeviceAddress&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:80:5: error: &#39;ProximityMode&#39; was not declared in this scope
+     ProximityMode proximity_mode=DISABLED);
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:81:24: error: variable or field &#39;stopAllChannels&#39; declared void
+   void stopAllChannels(DeviceAddress device_address);
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:81:24: error: &#39;DeviceAddress&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:85:34: error: &#39;uint8_t getRunningChannelCount&#39; redeclared as different kind of symbol
+   uint8_t getRunningChannelCount(DeviceAddress device_address);
+                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:50:11: note: previous declaration &#39;uint8_t getRunningChannelCount()&#39;
+   uint8_t getRunningChannelCount();
+           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:85:34: error: &#39;DeviceAddress&#39; was not declared in this scope
+   uint8_t getRunningChannelCount(DeviceAddress device_address);
+                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:87:35: error: variable or field &#39;setDeviceChannelThresholds&#39; declared void
+   void setDeviceChannelThresholds(DeviceAddress device_address,
+                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:87:35: error: &#39;DeviceAddress&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:88:13: error: expected primary-expression before &#39;device_channel&#39;
+     uint8_t device_channel,
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:89:13: error: expected primary-expression before &#39;touch_threshold&#39;
+     uint8_t touch_threshold,
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:90:13: error: expected primary-expression before &#39;release_threshold&#39;
+     uint8_t release_threshold);
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:91:39: error: variable or field &#39;setAllDeviceChannelsThresholds&#39; declared void
+   void setAllDeviceChannelsThresholds(DeviceAddress device_address,
+                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:91:39: error: &#39;DeviceAddress&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:92:13: error: expected primary-expression before &#39;touch_threshold&#39;
+     uint8_t touch_threshold,
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:93:13: error: expected primary-expression before &#39;release_threshold&#39;
+     uint8_t release_threshold);
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:95:27: error: &#39;DeviceAddress&#39; was not declared in this scope
+   uint16_t getTouchStatus(DeviceAddress device_address);
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:102:32: error: &#39;DeviceAddress&#39; was not declared in this scope
+   uint16_t getOutOfRangeStatus(DeviceAddress device_address);
+                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:108:41: error: &#39;DeviceAddress&#39; was not declared in this scope
+   uint16_t getDeviceChannelFilteredData(DeviceAddress device_address,
+                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:109:13: error: expected primary-expression before &#39;device_channel&#39;
+     uint8_t device_channel);
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:109:27: error: expression list treated as compound expression in initializer [-fpermissive]
+     uint8_t device_channel);
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:110:41: error: &#39;DeviceAddress&#39; was not declared in this scope
+   uint16_t getDeviceChannelBaselineData(DeviceAddress device_address,
+                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:111:13: error: expected primary-expression before &#39;device_channel&#39;
+     uint8_t device_channel);
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:111:27: error: expression list treated as compound expression in initializer [-fpermissive]
+     uint8_t device_channel);
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:120:28: error: variable or field &#39;setBaselineTracking&#39; declared void
+   void setBaselineTracking(DeviceAddress device_address,
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:120:28: error: &#39;DeviceAddress&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:121:22: error: expected primary-expression before &#39;baseline_tracking&#39;
+     BaselineTracking baseline_tracking);
+                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:122:20: error: variable or field &#39;setDebounce&#39; declared void
+   void setDebounce(DeviceAddress device_address,
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:122:20: error: &#39;DeviceAddress&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:123:13: error: expected primary-expression before &#39;touch_debounce&#39;
+     uint8_t touch_debounce,
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:124:13: error: expecte</pre>
+
+					
+					<h4>examples/TestMultipleTouchDevices</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/esp32-hal.h:53:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:35,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/examples/TestMultipleTouchDevices/Constants.h:10,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/examples/TestMultiplsp32/esp32-hal-gpio.h:51:19: error: expected identifier before numeric constant
+ #define DISABLED  0x00
+                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:39:6: note: in expansion of macro &#39;DISABLED&#39;
+      DISABLED = 0b00,
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/esp32-hal-gpio.h:51:19: error: expected &#39;}&#39; before numeric constant
+ #define DISABLED  0x00
+                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:39:6: note: in expansion of macro &#39;DISABLED&#39;
+      DISABLED = 0b00,
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/esp32-hal-gpio.h:51:19: error: expected unqualified-id before numeric constant
+ #define DISABLED  0x00
+                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:39:6: note: in expansion of macro &#39;DISABLED&#39;
+      DISABLED = 0b00,
+      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/examples/TestMultipleTouchDevices/TestMultipleTouchDevices.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:45:5: error: &#39;ProximityMode&#39; has not been declared
+     ProximityMode proximity_mode=DISABLED);
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:46:25: error: variable or field &#39;startAllChannels&#39; declared void
+   void startAllChannels(ProximityMode proximity_mode=DISABLED);
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:46:25: error: &#39;ProximityMode&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:70:18: error: variable or field &#39;addDevice&#39; declared void
+   void addDevice(DeviceAddress device_address);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:70:18: error: &#39;DeviceAddress&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:71:20: error: &#39;DeviceAddress&#39; was not declared in this scope
+   bool setupDevice(DeviceAddress device_address);
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:74:22: error: variable or field &#39;startChannels&#39; declared void
+   void startChannels(DeviceAddress device_address,
+                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:74:22: error: &#39;DeviceAddress&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:75:13: error: expected primary-expression before &#39;physical_channel_count&#39;
+     uint8_t physical_channel_count,
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:76:5: error: &#39;ProximityMode&#39; was not declared in this scope
+     ProximityMode proximity_mode=DISABLED);
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:78:5: error: &#39;ProximityMode&#39; has not been declared
+     ProximityMode proximity_mode=DISABLED);
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:79:25: error: variable or field &#39;startAllChannels&#39; declared void
+   void startAllChannels(DeviceAddress device_address,
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:79:25: error: &#39;DeviceAddress&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:80:5: error: &#39;ProximityMode&#39; was not declared in this scope
+     ProximityMode proximity_mode=DISABLED);
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:81:24: error: variable or field &#39;stopAllChannels&#39; declared void
+   void stopAllChannels(DeviceAddress device_address);
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:81:24: error: &#39;DeviceAddress&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:85:34: error: &#39;uint8_t getRunningChannelCount&#39; redeclared as different kind of symbol
+   uint8_t getRunningChannelCount(DeviceAddress device_address);
+                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:50:11: note: previous declaration &#39;uint8_t getRunningChannelCount()&#39;
+   uint8_t getRunningChannelCount();
+           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:85:34: error: &#39;DeviceAddress&#39; was not declared in this scope
+   uint8_t getRunningChannelCount(DeviceAddress device_address);
+                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:87:35: error: variable or field &#39;setDeviceChannelThresholds&#39; declared void
+   void setDeviceChannelThresholds(DeviceAddress device_address,
+                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:87:35: error: &#39;DeviceAddress&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:88:13: error: expected primary-expression before &#39;device_channel&#39;
+     uint8_t device_channel,
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:89:13: error: expected primary-expression before &#39;touch_threshold&#39;
+     uint8_t touch_threshold,
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:90:13: error: expected primary-expression before &#39;release_threshold&#39;
+     uint8_t release_threshold);
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:91:39: error: variable or field &#39;setAllDeviceChannelsThresholds&#39; declared void
+   void setAllDeviceChannelsThresholds(DeviceAddress device_address,
+                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:91:39: error: &#39;DeviceAddress&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:92:13: error: expected primary-expression before &#39;touch_threshold&#39;
+     uint8_t touch_threshold,
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:93:13: error: expected primary-expression before &#39;release_threshold&#39;
+     uint8_t release_threshold);
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:95:27: error: &#39;DeviceAddress&#39; was not declared in this scope
+   uint16_t getTouchStatus(DeviceAddress device_address);
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:102:32: error: &#39;DeviceAddress&#39; was not declared in this scope
+   uint16_t getOutOfRangeStatus(DeviceAddress device_address);
+                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:108:41: error: &#39;DeviceAddress&#39; was not declared in this scope
+   uint16_t getDeviceChannelFilteredData(DeviceAddress device_address,
+                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:109:13: error: expected primary-expression before &#39;device_channel&#39;
+     uint8_t device_channel);
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:109:27: error: expression list treated as compound expression in initializer [-fpermissive]
+     uint8_t device_channel);
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:110:41: error: &#39;DeviceAddress&#39; was not declared in this scope
+   uint16_t getDeviceChannelBaselineData(DeviceAddress device_address,
+                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:111:13: error: expected primary-expression before &#39;device_channel&#39;
+     uint8_t device_channel);
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:111:27: error: expression list treated as compound expression in initializer [-fpermissive]
+     uint8_t device_channel);
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:120:28: error: variable or field &#39;setBaselineTracking&#39; declared void
+   void setBaselineTracking(DeviceAddress device_address,
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:120:28: error: &#39;DeviceAddress&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:121:22: error: expected primary-expression before &#39;baseline_tracking&#39;
+     BaselineTracking baseline_tracking);
+                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:122:20: error: variable or field &#39;setDebounce&#39; declared void
+   void setDebounce(DeviceAddress device_address,
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:122:20: error: &#39;DeviceAddress&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:123:13: error: expected primary-expression before &#39;touch_debounce&#39;
+     u</pre>
+					
+					<h4>examples/TestTouch</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/esp32-hal.h:53:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:35,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/examples/TestTouch/Constants.h:10,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/examples/TestTouch/Constants.cpp:8:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/esp32-hal-gpio.h:51:19: error: expected identifier before numeric constant
+ #define DISABLED  0x00
+                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:39:6: note: in expansion of macro &#39;DISABLED&#39;
+      DISABLED = 0b00,
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/esp32-hal-gpio.h:51:19: error: expected &#39;}&#39; before numeric constant
+ #define DISABLED  0x00
+                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:39:6: note: in expansion of macro &#39;DISABLED&#39;
+      DISABLED = 0b00,
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/esp32-hal-gpio.h:51:19: error: expected unqualified-id before numeric constant
+ #define DISABLED  0x00
+                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:39:6: note: in expansion of macro &#39;DISABLED&#39;
+      DISABLED = 0b00,
+      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/examples/TestTouch/Constants.h:11:0,
+                 from /home/ec2-user/arduino-testlib/cli-dat/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:46:25: error: variable or field &#39;startAllChannels&#39; declared void
+   void startAllChannels(ProximityMode proximity_mode=DISABLED);
+                         ^
+/home/ec2/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:46:25: error: variable or field &#39;startAllChannels&#39; d/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:70:18: error: variable or field &#39;addDevice&#39; declared void
+   void addDevice(DeviceAddress device_address);
+                  ^
+/home/ec2-user/arduino-testlib/cli-data/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:70:18: error: variable/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:71:20: error: &#39;DeviceAddress&#39; was not declared in this scope
+   bool setupDevice(DeviceAddress device_address);
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:74:22: error: variable or field &#39;startChannels&#39; declared void
+   void startChannels(DeviceAddress device_address,
+                      ^
+/home/ec2-user/arduino-testl/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:74:22: error: variable or field &#39;����������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:75:13: error: expected primary-expression before &#39;physical_channel_count/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:78:5: error: &#39;ProximityMode&#39; has not been declared
+     ProximityMode proximity_mode=DISABLED);
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:79:25: error: variable or field &#39;startAllChannels&#39; declared void
+   void startAllChannels(DeviceAddress device_address,
+                         ^
+/home/ec2-user/ardu/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:79:25: error: variable or field &#39;startAllC/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:80:5: error: &#39;ProximityMode&#39; was not declared in this scope
+     ProximityMode proximity_mode=DISABLED);
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:81:24: error: variable or field &#39;stopAllChannels&#39; declared void
+   void stopAllChannels(DeviceAddress device_address);
+                        ^
+/home/ec2-user/arduin/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:81:24: error: variable or field &#39;stopAll/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:85:34: error: &#39;uint8_t getRunningChannelCount&#39; redeclared as different kind of symbol
+   uint8_t getRunningChannelCount(DeviceAddress device_address);
+               /home/ec2-user/arduin/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:50:11: note: previous declaration &#39;uint8_t getRunningChannelCount()&#39;
+   uint8_t getRunningChannelCount();
+           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:85:34: error: &#39;DeviceAddress&#39; was not declared in this scope
+   uint8_t getRunningChannelCount(DeviceAddress device_address);
+                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:87:35: error: variable or field &#39;setDeviceChannelThresholds&#39; declared void
+   void setDeviceChannelThresholds(DeviceAddress device_address,
+                          /home/ec2-u/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:87:35: error: &#39;DeviceAddress&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:88:13: error: expected primary-expression before &#39;device_channel&#39;
+     uint8_t device_channel,
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:89:13: error: expected primary-expression before &#39;touch_threshold&#39;
+     uint8_t touch_threshold,
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/librar/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:89:13: error: expected primary-expression before &#39;touch_thresho/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:91:39: error: variable or field &#39;setAllDeviceChannelsThresholds&#39; declared void
+   void setAllDeviceChannelsThresholds(DeviceAddress device_address,
+                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:91:39: error: &#39;DeviceAddress&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:92:13: error: expected primary-expression before &#39;touch_threshold&#39;
+     uint8_t touch_threshold,
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/librar/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:92:13: error: expected primary-expression before &#39;touch_threshold&#39;
+     uint8_t touch_threshold,
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:93:13: error: expected primary-expression before &#39;release_threshold&#39;
+     uint8_t release_threshold/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:102:32: error: &#39;DeviceAddress&#39; was not declared in this scope
+   uint16_t getOutOfRangeStatus(DeviceAddress device_address);
+                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:108:41: error: &#39;DeviceAddress&#39; was not declared in this scope
+   uint16_t getDeviceChannelFilteredData(DeviceAddress device_address,
+                                 /home/ec2-/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:109:13: error: expected primary-expression before &#39;device_channel&#39;
+     uint8_t device_channel);
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:109:27: error: expression list treated as compound expression in initializer [-fpermissive]
+     uint8_t device_channel);
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:110:41: error: &#39;DeviceAddress&#39; was not declared in this scope
+   uint16_t getDeviceChannelBaselineData(DeviceAddress device_address,
+                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:111:13: error: expected primary-expression before &#39;device_channel&#39;
+     uint8_t device_channel);
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:111:27: error: expression list treated as compound expression in initializer [-fpermissive]
+     uint8_t device_channel);
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:120:28: error: variable or field &#39;setBaselineTracking&#39; declared void
+   void setBaselineTracking(DeviceAddress device_address,
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:120:28: error: &#39;DeviceAddress&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:121:22: error: expected primary-expression before &#39;baseline_tracking&#39;
+     BaselineTracking baseline_tracking);
+                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:122:20: error: variable or field &#39;setDebounce&#39; declared void
+   void setDebounce(DeviceAddress device_address,
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:122:20: error: &#39;DeviceAddress&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MPR121/src/MPR121.h:123:13: error: expected primary-expression before &#39;touch_debounce&#39;
+     uint8_t touch_debounce,
+             ^
+/home/ec2-user/arduino</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

@@ -1,0 +1,421 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>MB85_FRAM - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>MB85_FRAM</h2>
+				<p>
+					Version: <b>1.0.7</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/mb85_fram/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>ReadWrite</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 1636 bytes (5%) of program storage space. Maximum is 32256 bytes.
+Global variables use 122 bytes (5%) of dynamic memory, leaving 1926 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+
+					
+					<h4>examples/ReadWrite</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 7358 bytes (22%) of program storage space. Maximum is 32256 bytes.
+Global variables use 880 bytes (42%) of dynamic memory, leaving 1168 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MB85_FRAM/src/MB85_FRAM.cpp: In member function &#39;int8_t MB85_FRAM_Class::requestI2C(uint8_t, uint32_t, uint16_t, bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MB85_FRAM/src/MB85_FRAM.cpp:158:26: error: call of overloaded &#39;write(long unsigned int)&#39; is ambiguous
+   Wire.write(memAddr &gt;&gt; 8);                                 // Send MSB register address
+                          ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MB85_FRAM/src/MB85_FRAM.h:59:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MB85_FRAM/src/MB85_FRAM.cpp:7:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/libraries/Wire/Wire.h:59:20: note: candidate: virtual size_t arduino::MbedI2C::write(uint8_t)
+     virtual size_t write(uint8_t data);
+                    ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/libraries/Wire/Wire.h:60:20: note: candidate: virtual size_t arduino::MbedI2C::write(int)
+     virtual size_t write(int data) {
+                    ^~~~~
+
+</pre>
+
+					
+					<h4>examples/ReadWrite</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MB85_FRAM/src/MB85_FRAM.cpp: In member function &#39;int8_t MB85_FRAM_Class::requestI2C(uint8_t, uint32_t, uint16_t, bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MB85_FRAM/src/MB85_FRAM.cpp:158:26: error: call of overloaded &#39;write(long unsigned int)&#39; is ambiguous
+   Wire.write(memAddr &gt;&gt; 8);                                 // Send MSB register address
+                          ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MB85_FRAM/src/MB85_FRAM.h:59:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MB85_FRAM/src/MB85_FRAM.cpp:7:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/libraries/Wire/Wire.h:59:20: note: candidate: virtual size_t arduino::MbedI2C::write(uint8_t)
+     virtual size_t write(uint8_t data);
+                    ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/libraries/Wire/Wire.h:60:20: note: candidate: virtual size_t arduino::MbedI2C::write(int)
+     virtual size_t write(int data) {
+                    ^~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MB85_FRAM/src/MB85_FRAM.h:59:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MB85_FRAM/src/MB85_FRAM.cpp:7:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h: In member function &#39;uint8_t MB85_FRAM_Class::begin(uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:63:12: note: candidate 1: size_t TwoWire::requestFrom(int, int)
+     size_t requestFrom(int, int);
+            ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:61:12: note: candidate 2: virtual size_t TwoWire::requestFrom(uint8_t, size_t)
+     size_t requestFrom(uint8_t, size_t);
+            ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:63:12: note: candidate 1: size_t TwoWire::requestFrom(int, int)
+     size_t requestFrom(int, int);
+            ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:61:12: note: candidate 2: virtual size_t TwoWire::requestFrom(uint8_t, size_t)
+     size_t requestFrom(uint8_t, size_t);
+            ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:63:12: note: candidate 1: size_t TwoWire::requestFrom(int, int)
+     size_t requestFrom(int, int);
+            ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:61:12: note: candidate 2: virtual size_t TwoWire::requestFrom(uint8_t, size_t)
+     size_t requestFrom(uint8_t, size_t);
+            ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MB85_FRAM/src/MB85_FRAM.cpp: In member function &#39;int8_t MB85_FRAM_Class::requestI2C(uint8_t, uint32_t, uint16_t, bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MB85_FRAM/src/MB85_FRAM.cpp:162:57: error: call of overloaded &#39;requestFrom(int, const uint16_t&amp;)&#39; is ambiguous
+     Wire.requestFrom(device &#43; MB85_MIN_ADDRESS, dataSize);  // Request n-bytes of data
+                                                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MB85_FRAM/src/MB85_FRAM.h:59:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MB85_FRAM/src/MB85_FRAM.cpp:7:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:61:12: note: candidate: virtual size_t TwoWire::requestFrom(uint8_t, size_t)
+     size_t requestFrom(uint8_t, size_t);
+            ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:63:12: note: candidate: size_t TwoWire::requestFrom(int, int)
+     size_t requestFrom(int, int);
+            ^~~~~~~~~~~
+
+</pre>
+
+					
+					<h4>examples/ReadWrite</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MB85_FRAM/src/MB85_FRAM.h:59:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MB85_FRAM/src/MB85_FRAM.cpp:7:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h: In member function &#39;uint8_t MB85_FRAM_Class::begin(uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:63:12: note: candidate 1: size_t TwoWire::requestFrom(int, int)
+     size_t requestFrom(int, int);
+            ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:61:12: note: candidate 2: virtual size_t TwoWire::requestFrom(uint8_t, size_t)
+     size_t requestFrom(uint8_t, size_t);
+            ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:63:12: note: candidate 1: size_t TwoWire::requestFrom(int, int)
+     size_t requestFrom(int, int);
+            ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:61:12: note: candidate 2: virtual size_t TwoWire::requestFrom(uint8_t, size_t)
+     size_t requestFrom(uint8_t, size_t);
+            ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:63:12: note: candidate 1: size_t TwoWire::requestFrom(int, int)
+     size_t requestFrom(int, int);
+            ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:61:12: note: candidate 2: virtual size_t TwoWire::requestFrom(uint8_t, size_t)
+     size_t requestFrom(uint8_t, size_t);
+            ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MB85_FRAM/src/MB85_FRAM.cpp: In member function &#39;int8_t MB85_FRAM_Class::requestI2C(uint8_t, uint32_t, uint16_t, bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MB85_FRAM/src/MB85_FRAM.cpp:162:57: error: call of overloaded &#39;requestFrom(int, const uint16_t&amp;)&#39; is ambiguous
+     Wire.requestFrom(device &#43; MB85_MIN_ADDRESS, dataSize);  // Request n-bytes of data
+                                                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MB85_FRAM/src/MB85_FRAM.h:59:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MB85_FRAM/src/MB85_FRAM.cpp:7:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:61:12: note: candidate: virtual size_t TwoWire::requestFrom(uint8_t, size_t)
+     size_t requestFrom(uint8_t, size_t);
+            ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/Wire/src/Wire.h:63:12: note: candidate: size_t TwoWire::requestFrom(int, int)
+     size_t requestFrom(int, int);
+            ^~~~~~~~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 13588 bytes (5%) of program storage space. Maximum is 262144 bytes.
+Global variables use 3568 bytes (10%) of dynamic memory, leaving 29200 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+
+					
+					<h4>examples/ReadWrite</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 16824 bytes (6%) of program storage space. Maximum is 262144 bytes.
+Global variables use 3604 bytes (10%) of dynamic memory, leaving 29164 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 202442 bytes (15%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 13880 bytes (4%) of dynamic memory, leaving 313800 bytes for local variables. Maximum is 327680 bytes.
+</pre>
+
+					
+					<h4>examples/ReadWrite</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 215710 bytes (16%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 14168 bytes (4%) of dynamic memory, leaving 313512 bytes for local variables. Maximum is 327680 bytes.
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

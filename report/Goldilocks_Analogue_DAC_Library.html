@@ -1,0 +1,1138 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>Goldilocks Analogue DAC Library - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>Goldilocks Analogue DAC Library</h2>
+				<p>
+					Version: <b>1.0.3</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/goldilocks-analogue-dac-library/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>Simple_DAC</pre></th>
+						
+						<th><pre>Timer3_DAC</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c: In function &#39;DAC_init&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:48:2: error: &#39;UBRR1&#39; undeclared (first use in this function); did you mean &#39;UBRR0&#39;?
+  UBRR1 = 0x0000;       // Set Baud Rate to maximum, to speed XCK1 setting time.
+  ^~~~~
+  UBRR0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:48:2: note: each undeclared identifier is reported only once for each function it appears in
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:51:2: error: &#39;UCSR1C&#39; undeclared (first use in this function); did you mean &#39;UCSR0C&#39;?
+  UCSR1C = _BV(UMSEL11) | _BV(UMSEL10); // Set USART MSPI mode of operation using SPI data mode 0,0. UCPHA1 = UCSZ10
+  ^~~~~~
+  UCSR0C
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:51:15: error: &#39;UMSEL11&#39; undeclared (first use in this function); did you mean &#39;UMSEL01&#39;?
+  UCSR1C = _BV(UMSEL11) | _BV(UMSEL10); // Set USART MSPI mode of operation using SPI data mode 0,0. UCPHA1 = UCSZ10
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:51:30: error: &#39;UMSEL10&#39; undeclared (first use in this function); did you mean &#39;UMSEL11&#39;?
+  UCSR1C = _BV(UMSEL11) | _BV(UMSEL10); // Set USART MSPI mode of operation using SPI data mode 0,0. UCPHA1 = UCSZ10
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:52:2: error: &#39;UCSR1B&#39; undeclared (first use in this function); did you mean &#39;UCSR1C&#39;?
+  UCSR1B = _BV(TXEN1);     // Enable transmitter. Enable the TX1 (don&#39;t enable the RX1, and the rest of the interrupt enable bits leave set to 0 too).
+  ^~~~~~
+  UCSR1C
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:52:15: error: &#39;TXEN1&#39; undeclared (first use in this function); did you mean &#39;TXEN0&#39;?
+  UCSR1B = _BV(TXEN1);     // Enable transmitter. Enable the TX1 (don&#39;t enable the RX1, and the rest of the interrupt enable bits leave set to 0 too).
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c: In function &#39;DAC_Timer3_init&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:84:3: error: &#39;TIMSK3&#39; undeclared (first use in this function); did you mean &#39;TIMSK0&#39;?
+   TIMSK3  = 0x00;     // clear all Timer 3 interrupts.
+   ^~~~~~
+   TIMSK0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:85:3: error: &#39;TIFR3&#39; undeclared (first use in this function); did you mean &#39;TIFR0&#39;?
+   TIFR3 = _BV(ICF3) | _BV(OCF3B) | _BV(OCF3A) | _BV(TOV3);  // clear all Timer 3 flags.
+   ^~~~~
+   TIFR0
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:85:15: error: &#39;ICF3&#39; undeclared (first use in this function); did you mean &#39;ICF1&#39;?
+   TIFR3 = _BV(ICF3) | _BV(OCF3B) | _BV(OCF3A) | _BV(TOV3);  // clear all Timer 3 flags.
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:85:27: error: &#39;OCF3B&#39; undeclared (first use in this function); did you mean &#39;OCF0B&#39;?
+   TIFR3 = _BV(ICF3) | _BV(OCF3B) | _BV(OCF3A) | _BV(TOV3);  // clear all Timer 3 flags.
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:85:40: error: &#39;OCF3A&#39; undeclared (first use in this function); did you mean &#39;OCF3B&#39;?
+   TIFR3 = _BV(ICF3) | _BV(OCF3B) | _BV(OCF3A) | _BV(TOV3);  // clear all Timer 3 flags.
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:85:53: error: &#39;TOV3&#39; undeclared (first use in this function); did you mean &#39;TOV0&#39;?
+   TIFR3 = _BV(ICF3) | _BV(OCF3B) | _BV(OCF3A) | _BV(TOV3);  // clear all Timer 3 flags.
+                                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:86:3: error: &#39;TCCR3A&#39; undeclared (first use in this function); did you mean &#39;TCCR0A&#39;?
+   TCCR3A = 0x00;     // set to CTC Mode 12.
+   ^~~~~~
+   TCCR0A
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:87:3: error: &#39;TCCR3B&#39; undeclared (first use in this function); did you mean &#39;TCCR3A&#39;?
+   TCCR3B = _BV(WGM33) | _BV(WGM32) | _BV(CS30); // CTC Mode 12. TOP = ICR3. No prescaling.
+   ^~~~~~
+   TCCR3A
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:87:16: error: &#39;WGM33&#39; undeclared (first use in this function); did you mean &#39;WGM13&#39;?
+   TCCR3B = _BV(WGM33) | _BV(WGM32) | _BV(CS30); // CTC Mode 12. TOP = ICR3. No prescaling.
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:87:29: error: &#39;WGM32&#39; undeclared (first use in this function); did you mean &#39;WGM33&#39;?
+   TCCR3B = _BV(WGM33) | _BV(WGM32) | _BV(CS30); // CTC Mode 12. TOP = ICR3. No prescaling.
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:87:42: error: &#39;CS30&#39; undeclared (first use in this function); did you mean &#39;CS00&#39;?
+   TCCR3B = _BV(WGM33) | _BV(WGM32) | _BV(CS30); // CTC Mode 12. TOP = ICR3. No prescaling.
+                                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:88:3: error: &#39;TCCR3C&#39; undeclared (first use in this function); did you mean &#39;TCCR3B&#39;?
+   TCCR3C = 0x00;     // not used
+   ^~~~~~
+   TCCR3B
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:90:3: error: &#39;TCNT3&#39; undeclared (first use in this function); did you mean &#39;TCNT0&#39;?
+   TCNT3 =  0x0000;    // clear the counter, high byte first for 16bit writes. gcc compiler knows how to handle this.
+   ^~~~~
+   TCNT0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:91:3: error: &#39;ICR3&#39; undeclared (first use in this function); did you mean &#39;ICF3&#39;?
+   ICR3 = (F_CPU / ((uint32_t)samplesSecond)) -1; // Set ICR3 to be the TOP value.
+   ^~~~
+   ICF3
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:93:15: error: &#39;ICIE3&#39; undeclared (first use in this function); did you mean &#39;ICIE1&#39;?
+  TIMSK3 = _BV(ICIE3);    // turn on Input Capture interrupt (used for overflow interrupt when ICR3 is TOP.)
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c: In function &#39;DAC_Timer3_end&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:101:3: error: &#39;TIMSK3&#39; undeclared (first use in this function); did you mean &#39;TIMSK0&#39;?
+   TIMSK3  = 0x00;               // clear all Timer 3 interrupts.
+   ^~~~~~
+   TIMSK0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:102:3: error: &#39;TIFR3&#39; undeclared (first use in this function); did you mean &#39;TIFR0&#39;?
+   TIFR3 = _BV(ICF3) | _BV(OCF3B) | _BV(OCF3A) | _BV(TOV3);  // clear all Timer 3 flags.
+   ^~~~~
+   TIFR0
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:102:15: error: &#39;ICF3&#39; undeclared (first use in this function); did you mean &#39;ICF1&#39;?
+   TIFR3 = _BV(ICF3) | _BV(OCF3B) | _BV(OCF3A) | _BV(TOV3);  // clear all Timer 3 flags.
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:102:27: error: &#39;OCF3B&#39; undeclared (first use in this function); did you mean &#39;OCF0B&#39;?
+   TIFR3 = _BV(ICF3) | _BV(OCF3B) | _BV(OCF3A) | _BV(TOV3);  // clear all Timer 3 flags.
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:102:40: error: &#39;OCF3A&#39; undeclared (first use in this function); did you mean &#39;OCF3B&#39;?
+   TIFR3 = _BV(ICF</pre>
+
+					
+					<h4>examples/Simple_DAC</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c: In function &#39;DAC_init&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:48:2: error: &#39;UBRR1&#39; undeclared (first use in this function); did you mean &#39;UBRR0&#39;?
+  UBRR1 = 0x0000;       // Set Baud Rate to maximum, to speed XCK1 setting time.
+  ^~~~~
+  UBRR0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:48:2: note: each undeclared identifier is reported only once for each function it appears in
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:51:2: error: &#39;UCSR1C&#39; undeclared (first use in this function); did you mean &#39;UCSR0C&#39;?
+  UCSR1C = _BV(UMSEL11) | _BV(UMSEL10); // Set USART MSPI mode of operation using SPI data mode 0,0. UCPHA1 = UCSZ10
+  ^~~~~~
+  UCSR0C
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:51:15: error: &#39;UMSEL11&#39; undeclared (first use in this function); did you mean &#39;UMSEL01&#39;?
+  UCSR1C = _BV(UMSEL11) | _BV(UMSEL10); // Set USART MSPI mode of operation using SPI data mode 0,0. UCPHA1 = UCSZ10
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:51:30: error: &#39;UMSEL10&#39; undeclared (first use in this function); did you mean &#39;UMSEL11&#39;?
+  UCSR1C = _BV(UMSEL11) | _BV(UMSEL10); // Set USART MSPI mode of operation using SPI data mode 0,0. UCPHA1 = UCSZ10
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:52:2: error: &#39;UCSR1B&#39; undeclared (first use in this function); did you mean &#39;UCSR1C&#39;?
+  UCSR1B = _BV(TXEN1);     // Enable transmitter. Enable the TX1 (don&#39;t enable the RX1, and the rest of the interrupt enable bits leave set to 0 too).
+  ^~~~~~
+  UCSR1C
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:52:15: error: &#39;TXEN1&#39; undeclared (first use in this function); did you mean &#39;TXEN0&#39;?
+  UCSR1B = _BV(TXEN1);     // Enable transmitter. Enable the TX1 (don&#39;t enable the RX1, and the rest of the interrupt enable bits leave set to 0 too).
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c: In function &#39;DAC_Timer3_init&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:84:3: error: &#39;TIMSK3&#39; undeclared (first use in this function); did you mean &#39;TIMSK0&#39;?
+   TIMSK3  = 0x00;     // clear all Timer 3 interrupts.
+   ^~~~~~
+   TIMSK0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:85:3: error: &#39;TIFR3&#39; undeclared (first use in this function); did you mean &#39;TIFR0&#39;?
+   TIFR3 = _BV(ICF3) | _BV(OCF3B) | _BV(OCF3A) | _BV(TOV3);  // clear all Timer 3 flags.
+   ^~~~~
+   TIFR0
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:85:15: error: &#39;ICF3&#39; undeclared (first use in this function); did you mean &#39;ICF1&#39;?
+   TIFR3 = _BV(ICF3) | _BV(OCF3B) | _BV(OCF3A) | _BV(TOV3);  // clear all Timer 3 flags.
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:85:27: error: &#39;OCF3B&#39; undeclared (first use in this function); did you mean &#39;OCF0B&#39;?
+   TIFR3 = _BV(ICF3) | _BV(OCF3B) | _BV(OCF3A) | _BV(TOV3);  // clear all Timer 3 flags.
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:85:40: error: &#39;OCF3A&#39; undeclared (first use in this function); did you mean &#39;OCF3B&#39;?
+   TIFR3 = _BV(ICF3) | _BV(OCF3B) | _BV(OCF3A) | _BV(TOV3);  // clear all Timer 3 flags.
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:85:53: error: &#39;TOV3&#39; undeclared (first use in this function); did you mean &#39;TOV0&#39;?
+   TIFR3 = _BV(ICF3) | _BV(OCF3B) | _BV(OCF3A) | _BV(TOV3);  // clear all Timer 3 flags.
+                                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:86:3: error: &#39;TCCR3A&#39; undeclared (first use in this function); did you mean &#39;TCCR0A&#39;?
+   TCCR3A = 0x00;     // set to CTC Mode 12.
+   ^~~~~~
+   TCCR0A
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:87:3: error: &#39;TCCR3B&#39; undeclared (first use in this function); did you mean &#39;TCCR3A&#39;?
+   TCCR3B = _BV(WGM33) | _BV(WGM32) | _BV(CS30); // CTC Mode 12. TOP = ICR3. No prescaling.
+   ^~~~~~
+   TCCR3A
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:87:16: error: &#39;WGM33&#39; undeclared (first use in this function); did you mean &#39;WGM13&#39;?
+   TCCR3B = _BV(WGM33) | _BV(WGM32) | _BV(CS30); // CTC Mode 12. TOP = ICR3. No prescaling.
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:87:29: error: &#39;WGM32&#39; undeclared (first use in this function); did you mean &#39;WGM33&#39;?
+   TCCR3B = _BV(WGM33) | _BV(WGM32) | _BV(CS30); // CTC Mode 12. TOP = ICR3. No prescaling.
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:87:42: error: &#39;CS30&#39; undeclared (first use in this function); did you mean &#39;CS00&#39;?
+   TCCR3B = _BV(WGM33) | _BV(WGM32) | _BV(CS30); // CTC Mode 12. TOP = ICR3. No prescaling.
+                                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:88:3: error: &#39;TCCR3C&#39; undeclared (first use in this function); did you mean &#39;TCCR3B&#39;?
+   TCCR3C = 0x00;     // not used
+   ^~~~~~
+   TCCR3B
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:90:3: error: &#39;TCNT3&#39; undeclared (first use in this function); did you mean &#39;TCNT0&#39;?
+   TCNT3 =  0x0000;    // clear the counter, high byte first for 16bit writes. gcc compiler knows how to handle this.
+   ^~~~~
+   TCNT0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:91:3: error: &#39;ICR3&#39; undeclared (first use in this function); did you mean &#39;ICF3&#39;?
+   ICR3 = (F_CPU / ((uint32_t)samplesSecond)) -1; // Set ICR3 to be the TOP value.
+   ^~~~
+   ICF3
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:93:15: error: &#39;ICIE3&#39; undeclared (first use in this function); did you mean &#39;ICIE1&#39;?
+  TIMSK3 = _BV(ICIE3);    // turn on Input Capture interrupt (used for overflow interrupt when ICR3 is TOP.)
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c: In function &#39;DAC_Timer3_end&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:101:3: error: &#39;TIMSK3&#39; undeclared (first use in this function); did you mean &#39;TIMSK0&#39;?
+   TIMSK3  = 0x00;               // clear all Timer 3 interrupts.
+   ^~~~~~
+   TIMSK0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:102:3: error: &#39;TIFR3&#39; undeclared (first use in this function); did you mean &#39;TIFR0&#39;?
+   TIFR3 = _BV(ICF3) | _BV(OCF3B) | _BV(OCF3A) | _BV(TOV3);  // clear all Timer 3 flags.
+   ^~~~~
+   TIFR0
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:102:15: error: &#39;ICF3&#39; undeclared (first use in this function); did you mean &#39;ICF1&#39;?
+   TIFR3 = _BV(ICF3) | _BV(OCF3B) | _BV(OCF3A) | _BV(TOV3);  // clear all Timer 3 flags.
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:102:27: error: &#39;OCF3B&#39; undeclared (first use in this function); did you mean &#39;OCF0B&#39;?
+   TIFR3 = _BV(ICF3) | _BV(OCF3B) | _BV(OCF3A) | _BV(TOV3);  // clear all Timer 3 flags.
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:102:40: error: &#39;OCF3A&#39; undeclared (first use in this function); did you mean &#39;OCF3B&#39;?
+   TIFR3 = _BV(ICF</pre>
+					
+					<h4>examples/Timer3_DAC</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c: In function &#39;DAC_init&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:48:2: error: &#39;UBRR1&#39; undeclared (first use in this function); did you mean &#39;UBRR0&#39;?
+  UBRR1 = 0x0000;       // Set Baud Rate to maximum, to speed XCK1 setting time.
+  ^~~~~
+  UBRR0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:48:2: note: each undeclared identifier is reported only once for each function it appears in
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:51:2: error: &#39;UCSR1C&#39; undeclared (first use in this function); did you mean &#39;UCSR0C&#39;?
+  UCSR1C = _BV(UMSEL11) | _BV(UMSEL10); // Set USART MSPI mode of operation using SPI data mode 0,0. UCPHA1 = UCSZ10
+  ^~~~~~
+  UCSR0C
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:51:15: error: &#39;UMSEL11&#39; undeclared (first use in this function); did you mean &#39;UMSEL01&#39;?
+  UCSR1C = _BV(UMSEL11) | _BV(UMSEL10); // Set USART MSPI mode of operation using SPI data mode 0,0. UCPHA1 = UCSZ10
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:51:30: error: &#39;UMSEL10&#39; undeclared (first use in this function); did you mean &#39;UMSEL11&#39;?
+  UCSR1C = _BV(UMSEL11) | _BV(UMSEL10); // Set USART MSPI mode of operation using SPI data mode 0,0. UCPHA1 = UCSZ10
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:52:2: error: &#39;UCSR1B&#39; undeclared (first use in this function); did you mean &#39;UCSR1C&#39;?
+  UCSR1B = _BV(TXEN1);     // Enable transmitter. Enable the TX1 (don&#39;t enable the RX1, and the rest of the interrupt enable bits leave set to 0 too).
+  ^~~~~~
+  UCSR1C
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:52:15: error: &#39;TXEN1&#39; undeclared (first use in this function); did you mean &#39;TXEN0&#39;?
+  UCSR1B = _BV(TXEN1);     // Enable transmitter. Enable the TX1 (don&#39;t enable the RX1, and the rest of the interrupt enable bits leave set to 0 too).
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c: In function &#39;DAC_Timer3_init&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:84:3: error: &#39;TIMSK3&#39; undeclared (first use in this function); did you mean &#39;TIMSK0&#39;?
+   TIMSK3  = 0x00;     // clear all Timer 3 interrupts.
+   ^~~~~~
+   TIMSK0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:85:3: error: &#39;TIFR3&#39; undeclared (first use in this function); did you mean &#39;TIFR0&#39;?
+   TIFR3 = _BV(ICF3) | _BV(OCF3B) | _BV(OCF3A) | _BV(TOV3);  // clear all Timer 3 flags.
+   ^~~~~
+   TIFR0
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:85:15: error: &#39;ICF3&#39; undeclared (first use in this function); did you mean &#39;ICF1&#39;?
+   TIFR3 = _BV(ICF3) | _BV(OCF3B) | _BV(OCF3A) | _BV(TOV3);  // clear all Timer 3 flags.
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:85:27: error: &#39;OCF3B&#39; undeclared (first use in this function); did you mean &#39;OCF0B&#39;?
+   TIFR3 = _BV(ICF3) | _BV(OCF3B) | _BV(OCF3A) | _BV(TOV3);  // clear all Timer 3 flags.
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:85:40: error: &#39;OCF3A&#39; undeclared (first use in this function); did you mean &#39;OCF3B&#39;?
+   TIFR3 = _BV(ICF3) | _BV(OCF3B) | _BV(OCF3A) | _BV(TOV3);  // clear all Timer 3 flags.
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:85:53: error: &#39;TOV3&#39; undeclared (first use in this function); did you mean &#39;TOV0&#39;?
+   TIFR3 = _BV(ICF3) | _BV(OCF3B) | _BV(OCF3A) | _BV(TOV3);  // clear all Timer 3 flags.
+                                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:86:3: error: &#39;TCCR3A&#39; undeclared (first use in this function); did you mean &#39;TCCR0A&#39;?
+   TCCR3A = 0x00;     // set to CTC Mode 12.
+   ^~~~~~
+   TCCR0A
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:87:3: error: &#39;TCCR3B&#39; undeclared (first use in this function); did you mean &#39;TCCR3A&#39;?
+   TCCR3B = _BV(WGM33) | _BV(WGM32) | _BV(CS30); // CTC Mode 12. TOP = ICR3. No prescaling.
+   ^~~~~~
+   TCCR3A
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:87:16: error: &#39;WGM33&#39; undeclared (first use in this function); did you mean &#39;WGM13&#39;?
+   TCCR3B = _BV(WGM33) | _BV(WGM32) | _BV(CS30); // CTC Mode 12. TOP = ICR3. No prescaling.
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:87:29: error: &#39;WGM32&#39; undeclared (first use in this function); did you mean &#39;WGM33&#39;?
+   TCCR3B = _BV(WGM33) | _BV(WGM32) | _BV(CS30); // CTC Mode 12. TOP = ICR3. No prescaling.
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:87:42: error: &#39;CS30&#39; undeclared (first use in this function); did you mean &#39;CS00&#39;?
+   TCCR3B = _BV(WGM33) | _BV(WGM32) | _BV(CS30); // CTC Mode 12. TOP = ICR3. No prescaling.
+                                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:88:3: error: &#39;TCCR3C&#39; undeclared (first use in this function); did you mean &#39;TCCR3B&#39;?
+   TCCR3C = 0x00;     // not used
+   ^~~~~~
+   TCCR3B
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:90:3: error: &#39;TCNT3&#39; undeclared (first use in this function); did you mean &#39;TCNT0&#39;?
+   TCNT3 =  0x0000;    // clear the counter, high byte first for 16bit writes. gcc compiler knows how to handle this.
+   ^~~~~
+   TCNT0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:91:3: error: &#39;ICR3&#39; undeclared (first use in this function); did you mean &#39;ICF3&#39;?
+   ICR3 = (F_CPU / ((uint32_t)samplesSecond)) -1; // Set ICR3 to be the TOP value.
+   ^~~~
+   ICF3
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:93:15: error: &#39;ICIE3&#39; undeclared (first use in this function); did you mean &#39;ICIE1&#39;?
+  TIMSK3 = _BV(ICIE3);    // turn on Input Capture interrupt (used for overflow interrupt when ICR3 is TOP.)
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c: In function &#39;DAC_Timer3_end&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:101:3: error: &#39;TIMSK3&#39; undeclared (first use in this function); did you mean &#39;TIMSK0&#39;?
+   TIMSK3  = 0x00;               // clear all Timer 3 interrupts.
+   ^~~~~~
+   TIMSK0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:102:3: error: &#39;TIFR3&#39; undeclared (first use in this function); did you mean &#39;TIFR0&#39;?
+   TIFR3 = _BV(ICF3) | _BV(OCF3B) | _BV(OCF3A) | _BV(TOV3);  // clear all Timer 3 flags.
+   ^~~~~
+   TIFR0
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:102:15: error: &#39;ICF3&#39; undeclared (first use in this function); did you mean &#39;ICF1&#39;?
+   TIFR3 = _BV(ICF3) | _BV(OCF3B) | _BV(OCF3A) | _BV(TOV3);  // clear all Timer 3 flags.
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:102:27: error: &#39;OCF3B&#39; undeclared (first use in this function); did you mean &#39;OCF0B&#39;?
+   TIFR3 = _BV(ICF3) | _BV(OCF3B) | _BV(OCF3A) | _BV(TOV3);  // clear all Timer 3 flags.
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:102:40: error: &#39;OCF3A&#39; undeclared (first use in this function); did you mean &#39;OCF3B&#39;?
+   TIFR3 = _BV(ICF</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:10: fatal error: avr/io.h: No such file or directory
+ #include &lt;avr/io.h&gt;
+          ^~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/Simple_DAC</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:10: fatal error: avr/io.h: No such file or directory
+ #include &lt;avr/io.h&gt;
+          ^~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;DAC.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Audio
+</pre>
+					
+					<h4>examples/Timer3_DAC</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:10: fatal error: avr/io.h: No such file or directory
+ #include &lt;avr/io.h&gt;
+          ^~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;DAC.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Audio
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library Goldilocks_Analogue_DAC_Library claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:15:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c: In function &#39;DAC_init&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.h:50:29: error: &#39;DDRB&#39; undeclared (first use in this function); did you mean &#39;DD7&#39;?
+ #define SPI_PORT_DIR_SS_DAC DDRB
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:42:2: note: in expansion of macro &#39;SPI_PORT_DIR_SS_DAC&#39;
+  SPI_PORT_DIR_SS_DAC |= SPI_BIT_SS_DAC; // Set the _SS as output pin.
+  ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.h:50:29: note: each undeclared identifier is reported only once for each function it appears in
+ #define SPI_PORT_DIR_SS_DAC DDRB
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:42:2: note: in expansion of macro &#39;SPI_PORT_DIR_SS_DAC&#39;
+  SPI_PORT_DIR_SS_DAC |= SPI_BIT_SS_DAC; // Set the _SS as output pin.
+  ^~~~~~~~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.h:52:29: error: &#39;PB1&#39; undeclared (first use in this function); did you mean &#39;PIN1&#39;?
+ #define SPI_BIT_SS_DAC  _BV(PB1) // added for support of integrated DAC card on PB1 Goldilocks Analogue MCP4822
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:42:25: note: in expansion of macro &#39;SPI_BIT_SS_DAC&#39;
+  SPI_PORT_DIR_SS_DAC |= SPI_BIT_SS_DAC; // Set the _SS as output pin.
+                         ^~~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:15:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.h:61:27: error: &#39;DDRC&#39; undeclared (first use in this function); did you mean &#39;DDRB&#39;?
+ #define DAC_PORT_DIR_LDAC DDRC
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:45:2: note: in expansion of macro &#39;DAC_PORT_DIR_LDAC&#39;
+  DAC_PORT_DIR_LDAC |= DAC_BIT_LDAC;  // Set MCP4822 _LDAC as output pin.
+  ^~~~~~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.h:63:27: error: &#39;PC3&#39; undeclared (first use in this function)
+ #define DAC_BIT_LDAC  _BV(PC3)
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:45:23: note: in expansion of macro &#39;DAC_BIT_LDAC&#39;
+  DAC_PORT_DIR_LDAC |= DAC_BIT_LDAC;  // Set MCP4822 _LDAC as output pin.
+                       ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:48:2: error: &#39;UBRR1&#39; undeclared (first use in this function)
+  UBRR1 = 0x0000;       // Set Baud Rate to maximum, to speed XCK1 setting time.
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:50:2: error: &#39;DDRD&#39; undeclared (first use in this function); did you mean &#39;DDRC&#39;?
+  DDRD |= _BV(PD4);      // Setting the XCK1 port pin as output, enables USART master SPI mode.
+  ^~~~
+  DDRC
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:50:14: error: &#39;PD4&#39; undeclared (first use in this function); did you mean &#39;DD4&#39;?
+  DDRD |= _BV(PD4);      // Setting the XCK1 port pin as output, enables USART master SPI mode.
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:51:2: error: &#39;UCSR1C&#39; undeclared (first use in this function); did you mean &#39;UBRR1&#39;?
+  UCSR1C = _BV(UMSEL11) | _BV(UMSEL10); // Set USART MSPI mode of operation using SPI data mode 0,0. UCPHA1 = UCSZ10
+  ^~~~~~
+  UBRR1
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:51:15: error: &#39;UMSEL11&#39; undeclared (first use in this function)
+  UCSR1C = _BV(UMSEL11) | _BV(UMSEL10); // Set USART MSPI mode of operation using SPI data mode 0,0. UCPHA1 = UCSZ10
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:51:30: error: &#39;UMSEL10&#39; undeclared (first use in this function); did you mean &#39;UMSEL11&#39;?
+  UCSR1C = _BV(UMSEL11) | _BV(UMSEL10); // Set USART MSPI mode of operation using SPI data mode 0,0. UCPHA1 = UCSZ10
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:52:2: error: &#39;UCSR1B&#39; undeclared (first use in this function); did you mean &#39;UCSR1C&#39;?
+  UCSR1B = _BV(TXEN1);     // Enable transmitter. Enable the TX1 (don&#39;t enable the RX1, and the rest of the interrupt enable bits leave set to 0 too).
+  ^~~~~~
+  UCSR1C
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:52:15: error: &#39;TXEN1&#39; undeclared (first use in this function)
+  UCSR1B = _BV(TXEN1);     // Enable transmitter. Enable the TX1 (don&#39;t enable the RX1, and the rest of the interrupt enable bits leave set to 0 too).
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c: In function &#39;DAC_Timer3_init&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:84:3: error: &#39;TIMSK3&#39; undeclared (first use in this function)
+   TIMSK3  = 0x00;     // clear all Timer 3 interrupts.
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:85:3: error: &#39;TIFR3&#39; undeclared (first use in this function); did you mean &#39;TIMSK3&#39;?
+   TIFR3 = _BV(ICF3) | _BV(OCF3B) | _BV(OCF3A) | _BV(TOV3);  // clear all Timer 3 flags.
+   ^~~~~
+   TIMSK3
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:85:15: error: &#39;ICF3&#39; undeclared (first use in this function); did you mean &#39;TCB3&#39;?
+   TIFR3 = _BV(ICF3) | _BV(OCF3B) | _BV(OCF3A) | _BV(TOV3);  // clear all Timer 3 flags.
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:85:27: error: &#39;OCF3B&#39; undeclared (first use in this function); did you mean &#39;ICF3&#39;?
+   TIFR3 = _BV(ICF3) | _BV(OCF3B) | _BV(OCF3A) | _BV(TOV3);  // clear all Timer 3 flags.
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:85:40: error: &#39;OCF3A&#39; undeclared (first use in this function); did you mean &#39;OCF3B&#39;?
+   TIFR3 = _BV(ICF3) | _BV(OCF3B) | _BV(OCF3A) | _BV(TOV3);  // clear all Timer 3 flags.
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:85:53: error: &#39;TOV3&#39; undeclared (first use in this function); did you mean &#39;TCB3&#39;?
+   TIFR3 = _BV(ICF3) | _BV(OCF3B) | _BV(OCF3A) | _BV(TOV3);  // clear all Timer 3 flags.
+                                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:86:3: error: &#39;TCCR3A&#39; undeclared (first use in this function); did you mean &#39;OCF3A&#39;?
+   TCCR3A = 0x00;     // set to CTC Mode 12.
+   ^~~~~~
+   OCF3A
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:87:3: error: &#39;TCCR3B&#39; undeclared (first use in this function); did you mean &#39;TCCR3A&#39;?
+   TCCR3B = _BV(WGM33) | _BV(WGM32) | _BV(CS30); // CTC Mode 12. TOP = ICR3. No prescaling.
+   ^~~~~~
+   TCCR3A
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:
+/home/ec2-user/ard</pre>
+
+					
+					<h4>examples/Simple_DAC</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library Goldilocks_Analogue_DAC_Library claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:15:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c: In function &#39;DAC_init&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.h:50:29: error: &#39;DDRB&#39; undeclared (first use in this function); did you mean &#39;DD7&#39;?
+ #define SPI_PORT_DIR_SS_DAC DDRB
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:42:2: note: in expansion of macro &#39;SPI_PORT_DIR_SS_DAC&#39;
+  SPI_PORT_DIR_SS_DAC |= SPI_BIT_SS_DAC; // Set the _SS as output pin.
+  ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.h:50:29: note: each undeclared identifier is reported only once for each function it appears in
+ #define SPI_PORT_DIR_SS_DAC DDRB
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:42:2: note: in expansion of macro &#39;SPI_PORT_DIR_SS_DAC&#39;
+  SPI_PORT_DIR_SS_DAC |= SPI_BIT_SS_DAC; // Set the _SS as output pin.
+  ^~~~~~~~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.h:52:29: error: &#39;PB1&#39; undeclared (first use in this function); did you mean &#39;PIN1&#39;?
+ #define SPI_BIT_SS_DAC  _BV(PB1) // added for support of integrated DAC card on PB1 Goldilocks Analogue MCP4822
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:42:25: note: in expansion of macro &#39;SPI_BIT_SS_DAC&#39;
+  SPI_PORT_DIR_SS_DAC |= SPI_BIT_SS_DAC; // Set the _SS as output pin.
+                         ^~~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:15:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.h:61:27: error: &#39;DDRC&#39; undeclared (first use in this function); did you mean &#39;DDRB&#39;?
+ #define DAC_PORT_DIR_LDAC DDRC
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:45:2: note: in expansion of macro &#39;DAC_PORT_DIR_LDAC&#39;
+  DAC_PORT_DIR_LDAC |= DAC_BIT_LDAC;  // Set MCP4822 _LDAC as output pin.
+  ^~~~~~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.h:63:27: error: &#39;PC3&#39; undeclared (first use in this function)
+ #define DAC_BIT_LDAC  _BV(PC3)
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:45:23: note: in expansion of macro &#39;DAC_BIT_LDAC&#39;
+  DAC_PORT_DIR_LDAC |= DAC_BIT_LDAC;  // Set MCP4822 _LDAC as output pin.
+                       ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:48:2: error: &#39;UBRR1&#39; undeclared (first use in this function)
+  UBRR1 = 0x0000;       // Set Baud Rate to maximum, to speed XCK1 setting time.
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:50:2: error: &#39;DDRD&#39; undeclared (first use in this function); did you mean &#39;DDRC&#39;?
+  DDRD |= _BV(PD4);      // Setting the XCK1 port pin as output, enables USART master SPI mode.
+  ^~~~
+  DDRC
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:50:14: error: &#39;PD4&#39; undeclared (first use in this function); did you mean &#39;DD4&#39;?
+  DDRD |= _BV(PD4);      // Setting the XCK1 port pin as output, enables USART master SPI mode.
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:51:2: error: &#39;UCSR1C&#39; undeclared (first use in this function); did you mean &#39;UBRR1&#39;?
+  UCSR1C = _BV(UMSEL11) | _BV(UMSEL10); // Set USART MSPI mode of operation using SPI data mode 0,0. UCPHA1 = UCSZ10
+  ^~~~~~
+  UBRR1
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:51:15: error: &#39;UMSEL11&#39; undeclared (first use in this function)
+  UCSR1C = _BV(UMSEL11) | _BV(UMSEL10); // Set USART MSPI mode of operation using SPI data mode 0,0. UCPHA1 = UCSZ10
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:51:30: error: &#39;UMSEL10&#39; undeclared (first use in this function); did you mean &#39;UMSEL11&#39;?
+  UCSR1C = _BV(UMSEL11) | _BV(UMSEL10); // Set USART MSPI mode of operation using SPI data mode 0,0. UCPHA1 = UCSZ10
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:52:2: error: &#39;UCSR1B&#39; undeclared (first use in this function); did you mean &#39;UCSR1C&#39;?
+  UCSR1B = _BV(TXEN1);     // Enable transmitter. Enable the TX1 (don&#39;t enable the RX1, and the rest of the interrupt enable bits leave set to 0 too).
+  ^~~~~~
+  UCSR1C
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:52:15: error: &#39;TXEN1&#39; undeclared (first use in this function)
+  UCSR1B = _BV(TXEN1);     // Enable transmitter. Enable the TX1 (don&#39;t enable the RX1, and the rest of the interrupt enable bits leave set to 0 too).
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c: In function &#39;DAC_Timer3_init&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:84:3: error: &#39;TIMSK3&#39; undeclared (first use in this function)
+   TIMSK3  = 0x00;     // clear all Timer 3 interrupts.
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:85:3: error: &#39;TIFR3&#39; undeclared (first use in this function); did you mean &#39;TIMSK3&#39;?
+   TIFR3 = _BV(ICF3) | _BV(OCF3B) | _BV(OCF3A) | _BV(TOV3);  // clear all Timer 3 flags.
+   ^~~~~
+   TIMSK3
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:85:15: error: &#39;ICF3&#39; undeclared (first use in this function); did you mean &#39;TCB3&#39;?
+   TIFR3 = _BV(ICF3) | _BV(OCF3B) | _BV(OCF3A) | _BV(TOV3);  // clear all Timer 3 flags.
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:85:27: error: &#39;OCF3B&#39; undeclared (first use in this function); did you mean &#39;ICF3&#39;?
+   TIFR3 = _BV(ICF3) | _BV(OCF3B) | _BV(OCF3A) | _BV(TOV3);  // clear all Timer 3 flags.
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:85:40: error: &#39;OCF3A&#39; undeclared (first use in this function); did you mean &#39;OCF3B&#39;?
+   TIFR3 = _BV(ICF3) | _BV(OCF3B) | _BV(OCF3A) | _BV(TOV3);  // clear all Timer 3 flags.
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:85:53: error: &#39;TOV3&#39; undeclared (first use in this function); did you mean &#39;TCB3&#39;?
+   TIFR3 = _BV(ICF3) | _BV(OCF3B) | _BV(OCF3A) | _BV(TOV3);  // clear all Timer 3 flags.
+                                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:86:3: error: &#39;TCCR3A&#39; undeclared (first use in this function); did you mean &#39;OCF3A&#39;?
+   TCCR3A = 0x00;     // set to CTC Mode 12.
+   ^~~~~~
+   OCF3A
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:87:3: error: &#39;TCCR3B&#39; undeclared (first use in this function); did you mean &#39;TCCR3A&#39;?
+   TCCR3B = _BV(WGM33) | _BV(WGM32) | _BV(CS30); // CTC Mode 12. TOP = ICR3. No prescaling.
+   ^~~~~~
+   TCCR3A
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:
+/home/ec2-user/ard</pre>
+					
+					<h4>examples/Timer3_DAC</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library Goldilocks_Analogue_DAC_Library claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:15:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c: In function &#39;DAC_init&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.h:50:29: error: &#39;DDRB&#39; undeclared (first use in this function); did you mean &#39;DD7&#39;?
+ #define SPI_PORT_DIR_SS_DAC DDRB
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:42:2: note: in expansion of macro &#39;SPI_PORT_DIR_SS_DAC&#39;
+  SPI_PORT_DIR_SS_DAC |= SPI_BIT_SS_DAC; // Set the _SS as output pin.
+  ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.h:50:29: note: each undeclared identifier is reported only once for each function it appears in
+ #define SPI_PORT_DIR_SS_DAC DDRB
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:42:2: note: in expansion of macro &#39;SPI_PORT_DIR_SS_DAC&#39;
+  SPI_PORT_DIR_SS_DAC |= SPI_BIT_SS_DAC; // Set the _SS as output pin.
+  ^~~~~~~~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.h:52:29: error: &#39;PB1&#39; undeclared (first use in this function); did you mean &#39;PIN1&#39;?
+ #define SPI_BIT_SS_DAC  _BV(PB1) // added for support of integrated DAC card on PB1 Goldilocks Analogue MCP4822
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:42:25: note: in expansion of macro &#39;SPI_BIT_SS_DAC&#39;
+  SPI_PORT_DIR_SS_DAC |= SPI_BIT_SS_DAC; // Set the _SS as output pin.
+                         ^~~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:15:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.h:61:27: error: &#39;DDRC&#39; undeclared (first use in this function); did you mean &#39;DDRB&#39;?
+ #define DAC_PORT_DIR_LDAC DDRC
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:45:2: note: in expansion of macro &#39;DAC_PORT_DIR_LDAC&#39;
+  DAC_PORT_DIR_LDAC |= DAC_BIT_LDAC;  // Set MCP4822 _LDAC as output pin.
+  ^~~~~~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.h:63:27: error: &#39;PC3&#39; undeclared (first use in this function)
+ #define DAC_BIT_LDAC  _BV(PC3)
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:45:23: note: in expansion of macro &#39;DAC_BIT_LDAC&#39;
+  DAC_PORT_DIR_LDAC |= DAC_BIT_LDAC;  // Set MCP4822 _LDAC as output pin.
+                       ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:48:2: error: &#39;UBRR1&#39; undeclared (first use in this function)
+  UBRR1 = 0x0000;       // Set Baud Rate to maximum, to speed XCK1 setting time.
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:50:2: error: &#39;DDRD&#39; undeclared (first use in this function); did you mean &#39;DDRC&#39;?
+  DDRD |= _BV(PD4);      // Setting the XCK1 port pin as output, enables USART master SPI mode.
+  ^~~~
+  DDRC
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:50:14: error: &#39;PD4&#39; undeclared (first use in this function); did you mean &#39;DD4&#39;?
+  DDRD |= _BV(PD4);      // Setting the XCK1 port pin as output, enables USART master SPI mode.
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:51:2: error: &#39;UCSR1C&#39; undeclared (first use in this function); did you mean &#39;UBRR1&#39;?
+  UCSR1C = _BV(UMSEL11) | _BV(UMSEL10); // Set USART MSPI mode of operation using SPI data mode 0,0. UCPHA1 = UCSZ10
+  ^~~~~~
+  UBRR1
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:51:15: error: &#39;UMSEL11&#39; undeclared (first use in this function)
+  UCSR1C = _BV(UMSEL11) | _BV(UMSEL10); // Set USART MSPI mode of operation using SPI data mode 0,0. UCPHA1 = UCSZ10
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:51:30: error: &#39;UMSEL10&#39; undeclared (first use in this function); did you mean &#39;UMSEL11&#39;?
+  UCSR1C = _BV(UMSEL11) | _BV(UMSEL10); // Set USART MSPI mode of operation using SPI data mode 0,0. UCPHA1 = UCSZ10
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:52:2: error: &#39;UCSR1B&#39; undeclared (first use in this function); did you mean &#39;UCSR1C&#39;?
+  UCSR1B = _BV(TXEN1);     // Enable transmitter. Enable the TX1 (don&#39;t enable the RX1, and the rest of the interrupt enable bits leave set to 0 too).
+  ^~~~~~
+  UCSR1C
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:52:15: error: &#39;TXEN1&#39; undeclared (first use in this function)
+  UCSR1B = _BV(TXEN1);     // Enable transmitter. Enable the TX1 (don&#39;t enable the RX1, and the rest of the interrupt enable bits leave set to 0 too).
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c: In function &#39;DAC_Timer3_init&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:84:3: error: &#39;TIMSK3&#39; undeclared (first use in this function)
+   TIMSK3  = 0x00;     // clear all Timer 3 interrupts.
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:85:3: error: &#39;TIFR3&#39; undeclared (first use in this function); did you mean &#39;TIMSK3&#39;?
+   TIFR3 = _BV(ICF3) | _BV(OCF3B) | _BV(OCF3A) | _BV(TOV3);  // clear all Timer 3 flags.
+   ^~~~~
+   TIMSK3
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:85:15: error: &#39;ICF3&#39; undeclared (first use in this function); did you mean &#39;TCB3&#39;?
+   TIFR3 = _BV(ICF3) | _BV(OCF3B) | _BV(OCF3A) | _BV(TOV3);  // clear all Timer 3 flags.
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:85:27: error: &#39;OCF3B&#39; undeclared (first use in this function); did you mean &#39;ICF3&#39;?
+   TIFR3 = _BV(ICF3) | _BV(OCF3B) | _BV(OCF3A) | _BV(TOV3);  // clear all Timer 3 flags.
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:85:40: error: &#39;OCF3A&#39; undeclared (first use in this function); did you mean &#39;OCF3B&#39;?
+   TIFR3 = _BV(ICF3) | _BV(OCF3B) | _BV(OCF3A) | _BV(TOV3);  // clear all Timer 3 flags.
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:85:53: error: &#39;TOV3&#39; undeclared (first use in this function); did you mean &#39;TCB3&#39;?
+   TIFR3 = _BV(ICF3) | _BV(OCF3B) | _BV(OCF3A) | _BV(TOV3);  // clear all Timer 3 flags.
+                                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:86:3: error: &#39;TCCR3A&#39; undeclared (first use in this function); did you mean &#39;OCF3A&#39;?
+   TCCR3A = 0x00;     // set to CTC Mode 12.
+   ^~~~~~
+   OCF3A
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:87:3: error: &#39;TCCR3B&#39; undeclared (first use in this function); did you mean &#39;TCCR3A&#39;?
+   TCCR3B = _BV(WGM33) | _BV(WGM32) | _BV(CS30); // CTC Mode 12. TOP = ICR3. No prescaling.
+   ^~~~~~
+   TCCR3A
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:
+/home/ec2-user/ard</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:10: fatal error: avr/io.h: No such file or directory
+ #include &lt;avr/io.h&gt;
+          ^~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/Simple_DAC</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:10: fatal error: avr/io.h: No such file or directory
+ #include &lt;avr/io.h&gt;
+          ^~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;DAC.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Audio
+</pre>
+					
+					<h4>examples/Timer3_DAC</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:10: fatal error: avr/io.h: No such file or directory
+ #include &lt;avr/io.h&gt;
+          ^~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;DAC.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Audio
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:20: fatal error: avr/io.h: No such file or directory
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/Simple_DAC</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:20: fatal error: avr/io.h: No such file or directory
+compilation terminated.
+Multiple libraries were found for &#34;DAC.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Audio
+</pre>
+					
+					<h4>examples/Timer3_DAC</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library/src/DAC.c:7:20: fatal error: avr/io.h: No such file or directory
+compilation terminated.
+Multiple libraries were found for &#34;DAC.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Goldilocks_Analogue_DAC_Library
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Audio
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

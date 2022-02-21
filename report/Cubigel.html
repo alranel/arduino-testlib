@@ -1,0 +1,469 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>Cubigel - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>Cubigel</h2>
+				<p>
+					Version: <b>1.0.3</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/cubigel/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>CubigelExample</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 2156 bytes (6%) of program storage space. Maximum is 32256 bytes.
+Global variables use 11 bytes (0%) of dynamic memory, leaving 2037 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+
+					
+					<h4>examples/CubigelExample</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Cubigel/examples/CubigelExample/CubigelExample.ino:40:39: error: &#39;Serial1&#39; was not declared in this scope
+ CubigelClass   Cubigel(&amp;FridgeSerial,&amp;Serial1);                               // one software serial port and one //
+                                       ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Cubigel/examples/CubigelExample/CubigelExample.ino:40:39: note: suggested alternative: &#39;Serial&#39;
+ CubigelClass   Cubigel(&amp;FridgeSerial,&amp;Serial1);                               // one software serial port and one //
+                                       ^~~~~~~
+                                       Serial
+Multiple libraries were found for &#34;SoftwareSerial.h&#34;
+  Used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/SoftwareSerial
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Printoo_Library
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Dabble
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/EspSoftwareSerial
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dabble/src/SoftwareSerial.cpp:45:10: fatal error: util/delay_basic.h: No such file or directory
+ #include &lt;util/delay_basic.h&gt;
+          ^~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;SoftwareSerial.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dabble
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Printoo_Library
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EspSoftwareSerial
+</pre>
+
+					
+					<h4>examples/CubigelExample</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dabble/src/SoftwareSerial.cpp:45:10: fatal error: util/delay_basic.h: No such file or directory
+ #include &lt;util/delay_basic.h&gt;
+          ^~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;SoftwareSerial.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dabble
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Printoo_Library
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EspSoftwareSerial
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cubigel/src/Cubigel.cpp: In member function &#39;void CubigelClass::StartTimer()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cubigel/src/Cubigel.cpp:85:3: error: &#39;OCR0A&#39; was not declared in this scope
+   OCR0A   = 0x40;                                                             // Comparison register A to 64      //
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cubigel/src/Cubigel.cpp:86:3: error: &#39;TIMSK0&#39; was not declared in this scope
+   TIMSK0 |= _BV(OCIE0A);                                                      // TIMER0_COMPA trigger on 0x01     //
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cubigel/src/Cubigel.cpp:86:3: note: suggested alternative: &#39;TIMERA0&#39;
+   TIMSK0 |= _BV(OCIE0A);                                                      // TIMER0_COMPA trigger on 0x01     //
+   ^~~~~~
+   TIMERA0
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/deprecated/../String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/deprecated/../Print.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/deprecated/../Stream.h:25,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/deprecated/Stream.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/SoftwareSerial/src/SoftwareSerial.h:36,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cubigel/src/Cubigel.cpp:12:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cubigel/src/Cubigel.cpp:86:17: error: &#39;OCIE0A&#39; was not declared in this scope
+   TIMSK0 |= _BV(OCIE0A);                                                      // TIMER0_COMPA trigger on 0x01     //
+                 ^
+Multiple libraries were found for &#34;SoftwareSerial.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/SoftwareSerial
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dabble
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EspSoftwareSerial
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Printoo_Library
+</pre>
+
+					
+					<h4>examples/CubigelExample</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cubigel/src/Cubigel.cpp: In member function &#39;void CubigelClass::StartTimer()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cubigel/src/Cubigel.cpp:85:3: error: &#39;OCR0A&#39; was not declared in this scope
+   OCR0A   = 0x40;                                                             // Comparison register A to 64      //
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cubigel/src/Cubigel.cpp:86:3: error: &#39;TIMSK0&#39; was not declared in this scope
+   TIMSK0 |= _BV(OCIE0A);                                                      // TIMER0_COMPA trigger on 0x01     //
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cubigel/src/Cubigel.cpp:86:3: note: suggested alternative: &#39;TIMERA0&#39;
+   TIMSK0 |= _BV(OCIE0A);                                                      // TIMER0_COMPA trigger on 0x01     //
+   ^~~~~~
+   TIMERA0
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/deprecated/../String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/deprecated/../Print.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/deprecated/../Stream.h:25,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/deprecated/Stream.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/SoftwareSerial/src/SoftwareSerial.h:36,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cubigel/src/Cubigel.cpp:12:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cubigel/src/Cubigel.cpp:86:17: error: &#39;OCIE0A&#39; was not declared in this scope
+   TIMSK0 |= _BV(OCIE0A);                                                      // TIMER0_COMPA trigger on 0x01     //
+                 ^
+Multiple libraries were found for &#34;SoftwareSerial.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/SoftwareSerial
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EspSoftwareSerial
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dabble
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Printoo_Library
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Dabble/src/SoftwareSerial.cpp:45:10: fatal error: util/delay_basic.h: No such file or directory
+ #include &lt;util/delay_basic.h&gt;
+          ^~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;SoftwareSerial.h&#34;
+  Used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Dabble
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/EspSoftwareSerial
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Printoo_Library
+</pre>
+
+					
+					<h4>examples/CubigelExample</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Dabble/src/SoftwareSerial.cpp:45:10: fatal error: util/delay_basic.h: No such file or directory
+ #include &lt;util/delay_basic.h&gt;
+          ^~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;SoftwareSerial.h&#34;
+  Used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Dabble
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Printoo_Library
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/EspSoftwareSerial
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cubigel/src/Cubigel.cpp: In member function &#39;void CubigelClass::StartTimer()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cubigel/src/Cubigel.cpp:85:3: error: &#39;OCR0A&#39; was not declared in this scope
+   OCR0A   = 0x40;                                                             // Comparison register A to 64      //
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cubigel/src/Cubigel.cpp:86:3: error: &#39;TIMSK0&#39; was not declared in this scope
+   TIMSK0 |= _BV(OCIE0A);                                                      // TIMER0_COMPA trigger on 0x01     //
+   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EspSoftwareSerial/src/circular_queue/circular_queue.h:24:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EspSoftwareSerial/src/SoftwareSerial.h:27,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cubigel/src/Cubigel.cpp:12:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cubigel/src/Cubigel.cpp:86:17: error: &#39;OCIE0A&#39; was not declared in this scope
+   TIMSK0 |= _BV(OCIE0A);                                                      // TIMER0_COMPA trigger on 0x01     //
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cubigel/src/Cubigel.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cubigel/src/Cubigel.cpp:95:4: error: expected constructor, destructor, or type conversion before &#39;(&#39; token
+ ISR(TIMER0_COMPA_vect) {CubigelClass::TimerISR();}                            // Call the ISR every millisecond   //
+    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cubigel/src/Cubigel.cpp:96:36: error: cannot declare member function &#39;static void CubigelClass::TimerISR()&#39; to have static linkage [-fpermissive]
+ static void CubigelClass::TimerISR()     {ClassPtr-&gt;TimerHandler();}          // Redirect to real handler function//
+                                    ^
+Multiple libraries were found for &#34;SoftwareSerial.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EspSoftwareSerial
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Printoo_Library
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dabble
+</pre>
+
+					
+					<h4>examples/CubigelExample</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cubigel/src/Cubigel.cpp: In member function &#39;void CubigelClass::StartTimer()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cubigel/src/Cubigel.cpp:85:3: error: &#39;OCR0A&#39; was not declared in this scope
+   OCR0A   = 0x40;                                                             // Comparison register A to 64      //
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cubigel/src/Cubigel.cpp:86:3: error: &#39;TIMSK0&#39; was not declared in this scope
+   TIMSK0 |= _BV(OCIE0A);                                                      // TIMER0_COMPA trigger on 0x01     //
+   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EspSoftwareSerial/src/circular_queue/circular_queue.h:24:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EspSoftwareSerial/src/SoftwareSerial.h:27,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cubigel/src/Cubigel.cpp:12:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cubigel/src/Cubigel.cpp:86:17: error: &#39;OCIE0A&#39; was not declared in this scope
+   TIMSK0 |= _BV(OCIE0A);                                                      // TIMER0_COMPA trigger on 0x01     //
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cubigel/src/Cubigel.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cubigel/src/Cubigel.cpp:95:4: error: expected constructor, destructor, or type conversion before &#39;(&#39; token
+ ISR(TIMER0_COMPA_vect) {CubigelClass::TimerISR();}                            // Call the ISR every millisecond   //
+    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Cubigel/src/Cubigel.cpp:96:36: error: cannot declare member function &#39;static void CubigelClass::TimerISR()&#39; to have static linkage [-fpermissive]
+ static void CubigelClass::TimerISR()     {ClassPtr-&gt;TimerHandler();}          // Redirect to real handler function//
+                                    ^
+Multiple libraries were found for &#34;SoftwareSerial.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EspSoftwareSerial
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Dabble
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Printoo_Library
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

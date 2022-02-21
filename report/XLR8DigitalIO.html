@@ -1,0 +1,628 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>XLR8DigitalIO - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>XLR8DigitalIO</h2>
+				<p>
+					Version: <b>1.0.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/xlr8digitalio/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 444 bytes (1%) of program storage space. Maximum is 32256 bytes.
+Global variables use 9 bytes (0%) of dynamic memory, leaving 2039 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library XLR8DigitalIO claims to run on avr architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+In file included from /tmp/arduino-testlib171000087/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h: In function &#39;void XLR8pinMode(int, int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:20:37: error: &#39;DDRD&#39; was not declared in this scope
+     if ((pin &gt;=  0) &amp;&amp; (pin &lt;=  7)) DDRD = DDRD | (0x01 &lt;&lt; (pin -  0));
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:20:37: note: suggested alternative: &#39;DDRG&#39;
+     if ((pin &gt;=  0) &amp;&amp; (pin &lt;=  7)) DDRD = DDRD | (0x01 &lt;&lt; (pin -  0));
+                                     ^~~~
+                                     DDRG
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:22:37: error: &#39;DDRB&#39; was not declared in this scope
+     if ((pin &gt;=  8) &amp;&amp; (pin &lt;= 13)) DDRB = DDRB | (0x01 &lt;&lt; (pin -  8));
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:22:37: note: suggested alternative: &#39;DDRG&#39;
+     if ((pin &gt;=  8) &amp;&amp; (pin &lt;= 13)) DDRB = DDRB | (0x01 &lt;&lt; (pin -  8));
+                                     ^~~~
+                                     DDRG
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:24:37: error: &#39;DDRC&#39; was not declared in this scope
+     if ((pin &gt;= 14) &amp;&amp; (pin &lt;= 19)) DDRC = DDRC | (0x01 &lt;&lt; (pin - 14));
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:24:37: note: suggested alternative: &#39;DDRG&#39;
+     if ((pin &gt;= 14) &amp;&amp; (pin &lt;= 19)) DDRC = DDRC | (0x01 &lt;&lt; (pin - 14));
+                                     ^~~~
+                                     DDRG
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:14:0,
+                 from /tmp/arduino-testlib171000087/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIOAddr.h:14:15: error: &#39;_SFR_IO8&#39; was not declared in this scope
+ #define DDRA  _SFR_IO8(0x01)
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:26:37: note: in expansion of macro &#39;DDRA&#39;
+     if ((pin &gt;= 22) &amp;&amp; (pin &lt;= 27)) DDRA = DDRA | (0x01 &lt;&lt; (pin - 22));
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIOAddr.h:14:15: note: suggested alternative: &#39;_SHP_IDX&#39;
+ #define DDRA  _SFR_IO8(0x01)
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:26:37: note: in expansion of macro &#39;DDRA&#39;
+     if ((pin &gt;= 22) &amp;&amp; (pin &lt;= 27)) DDRA = DDRA | (0x01 &lt;&lt; (pin - 22));
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIOAddr.h:18:15: error: &#39;_SFR_IO8&#39; was not declared in this scope
+ #define DDRE  _SFR_IO8(0x0d)
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:28:37: note: in expansion of macro &#39;DDRE&#39;
+     if ((pin &gt;= 28) &amp;&amp; (pin &lt;= 33)) DDRE = DDRE | (0x01 &lt;&lt; (pin - 28));
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIOAddr.h:18:15: note: suggested alternative: &#39;_SHP_IDX&#39;
+ #define DDRE  _SFR_IO8(0x0d)
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:28:37: note: in expansion of macro &#39;DDRE&#39;
+     if ((pin &gt;= 28) &amp;&amp; (pin &lt;= 33)) DDRE = DDRE | (0x01 &lt;&lt; (pin - 28));
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIOAddr.h:22:15: error: &#39;_SFR_IO8&#39; was not declared in this scope
+ #define DDRG  _SFR_IO8(0x13)
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:30:37: note: in expansion of macro &#39;DDRG&#39;
+     if ((pin &gt;= 34) &amp;&amp; (pin &lt;= 39)) DDRG = DDRG | (0x01 &lt;&lt; (pin - 34));
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIOAddr.h:22:15: note: suggested alternative: &#39;_SHP_IDX&#39;
+ #define DDRG  _SFR_IO8(0x13)
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:30:37: note: in expansion of macro &#39;DDRG&#39;
+     if ((pin &gt;= 34) &amp;&amp; (pin &lt;= 39)) DDRG = DDRG | (0x01 &lt;&lt; (pin - 34));
+                                     ^~~~
+In file included from /tmp/arduino-testlib171000087/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:34:37: error: &#39;DDRD&#39; was not declared in this scope
+     if ((pin &gt;=  0) &amp;&amp; (pin &lt;=  7)) DDRD = DDRD &amp; ~(0x01 &lt;&lt; (pin -  0));
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:34:37: note: suggested alternative: &#39;DDRG&#39;
+     if ((pin &gt;=  0) &amp;&amp; (pin &lt;=  7)) DDRD = DDRD &amp; ~(0x01 &lt;&lt; (pin -  0));
+                                     ^~~~
+                                     DDRG
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:36:37: error: &#39;DDRB&#39; was not declared in this scope
+     if ((pin &gt;=  8) &amp;&amp; (pin &lt;= 13)) DDRB = DDRB &amp; ~(0x01 &lt;&lt; (pin -  8));
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:36:37: note: suggested alternative: &#39;DDRG&#39;
+     if ((pin &gt;=  8) &amp;&amp; (pin &lt;= 13)) DDRB = DDRB &amp; ~(0x01 &lt;&lt; (pin -  8));
+                                     ^~~~
+                                     DDRG
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:38:37: error: &#39;DDRC&#39; was not declared in this scope
+     if ((pin &gt;= 14) &amp;&amp; (pin &lt;= 19)) DDRC = DDRC &amp; ~(0x01 &lt;&lt; (pin - 14));
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:38:37: note: suggested alternative: &#39;DDRG&#39;
+     if ((pin &gt;= 14) &amp;&amp; (pin &lt;= 19)) DDRC = DDRC &amp; ~(0x01 &lt;&lt; (pin - 14));
+                                     ^~~~
+                                     DDRG
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:14:0,
+                 from /tmp/arduino-testlib171000087/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIOAddr.h:14:15: error: &#39;_SFR_IO8&#39; was not declared in this scope
+ #define DDRA  _SFR_IO8(0x01)
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:40:37: note: in expansion of macro &#39;DDRA&#39;
+     if ((pin &gt;= 22) &amp;&amp; (pin &lt;= 27)) DDRA = DDRA &amp; ~(0x01 &lt;&lt; (pin - 22));
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIOAddr.h:14:15: note: suggested alternative: &#39;_SHP_IDX&#39;
+ #define DDRA  _SFR_IO8(0x01)
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:40:37: note: in expansion of macro &#39;DDRA&#39;
+     if ((pin &gt;= 22) &amp;&amp; (pin &lt;= 27)) DDRA = DDRA &amp; ~(0x01 &lt;&lt; (pin - 22));
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIOAddr.h:18:15: error: &#39;_SFR_IO8&#39; was not declared in this scope
+ #define DDRE  _SFR_IO8(0x0d)
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:42:37: note: in expansion of macro &#39;DDRE&#39;
+     if ((pin &gt;= 28) &amp;&amp; (pin &lt;= 33)) DDRE = DDRE &amp; ~(0x01 &lt;&lt; (pin - 28));
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIOAddr.h:18:15: note: suggested alternative: &#39;_SHP_IDX&#39;
+ #define DDRE  _SFR_IO8(0x0d)
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:42:37: note: in expansion of macro &#39;DDRE&#39;
+     if ((pin &gt;= 28) &amp;&amp; (pin &lt;= 33)) DDRE = DDRE &amp; ~(0x01 &lt;&lt; (pin - 28));
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIOAddr.h:22:15: error: &#39;_SFR_IO8&#39; was not declared in this scope
+ #define DDRG  _SFR_IO8(0x13)
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:44:37: note: in expansion of macro &#39;DDRG&#39;
+     if ((pin &gt;= 34) &amp;&amp; (pin &lt;= 39)) DDRG = DDRG &amp; ~(0x01 &lt;&lt; (pin - 34));
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIOAddr.h:22:15: note: suggested alternative: &#39;_SHP_IDX&#39;
+ #define DDRG  _SFR_IO8(0x13)
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:44:37: note: in expansion of macro &#39;DDRG&#39;
+     if ((pin &gt;= 34) &amp;&amp; (pin &lt;= 39)) DDRG = DDRG &amp; ~(0x01 &lt;&lt; (pin - 34));
+                                     ^~~~
+In file included from /tmp/arduino-testlib171000087/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h: In function &#39;void XLR8digitalWrite(int, int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:51:37: error: &#39;PORTD&#39; was not declared in this scope
+     if ((pin &gt;=  0) &amp;&amp; (pin &lt;=  7)) PORTD = PORTD | (0x01 &lt;&lt; (pin -  0));
+                                     ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/sr</pre>
+
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library XLR8DigitalIO claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /tmp/arduino-testlib171000087/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h: In function &#39;void XLR8pinMode(int, int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:20:49: error: no match for &#39;operator|&#39; (operand types are &#39;DDRDClass&#39; and &#39;int&#39;)
+     if ((pin &gt;=  0) &amp;&amp; (pin &lt;=  7)) DDRD = DDRD | (0x01 &lt;&lt; (pin -  0));
+                                            ~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:22:49: error: no match for &#39;operator|&#39; (operand types are &#39;DDRBClass&#39; and &#39;int&#39;)
+     if ((pin &gt;=  8) &amp;&amp; (pin &lt;= 13)) DDRB = DDRB | (0x01 &lt;&lt; (pin -  8));
+                                            ~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:24:49: error: no match for &#39;operator|&#39; (operand types are &#39;DDRCClass&#39; and &#39;int&#39;)
+     if ((pin &gt;= 14) &amp;&amp; (pin &lt;= 19)) DDRC = DDRC | (0x01 &lt;&lt; (pin - 14));
+                                            ~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:34:49: error: no match for &#39;operator&amp;&#39; (operand types are &#39;DDRDClass&#39; and &#39;int&#39;)
+     if ((pin &gt;=  0) &amp;&amp; (pin &lt;=  7)) DDRD = DDRD &amp; ~(0x01 &lt;&lt; (pin -  0));
+                                            ~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:36:49: error: no match for &#39;operator&amp;&#39; (operand types are &#39;DDRBClass&#39; and &#39;int&#39;)
+     if ((pin &gt;=  8) &amp;&amp; (pin &lt;= 13)) DDRB = DDRB &amp; ~(0x01 &lt;&lt; (pin -  8));
+                                            ~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:38:49: error: no match for &#39;operator&amp;&#39; (operand types are &#39;DDRCClass&#39; and &#39;int&#39;)
+     if ((pin &gt;= 14) &amp;&amp; (pin &lt;= 19)) DDRC = DDRC &amp; ~(0x01 &lt;&lt; (pin - 14));
+                                            ~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h: In function &#39;void XLR8digitalWrite(int, int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:51:51: error: no match for &#39;operator|&#39; (operand types are &#39;PORTDClass&#39; and &#39;int&#39;)
+     if ((pin &gt;=  0) &amp;&amp; (pin &lt;=  7)) PORTD = PORTD | (0x01 &lt;&lt; (pin -  0));
+                                             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:53:51: error: no match for &#39;operator|&#39; (operand types are &#39;PORTBClass&#39; and &#39;int&#39;)
+     if ((pin &gt;=  8) &amp;&amp; (pin &lt;= 13)) PORTB = PORTB | (0x01 &lt;&lt; (pin -  8));
+                                             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:55:51: error: no match for &#39;operator|&#39; (operand types are &#39;PORTCClass&#39; and &#39;int&#39;)
+     if ((pin &gt;= 14) &amp;&amp; (pin &lt;= 19)) PORTC = PORTC | (0x01 &lt;&lt; (pin - 14));
+                                             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:65:51: error: no match for &#39;operator&amp;&#39; (operand types are &#39;PORTDClass&#39; and &#39;int&#39;)
+     if ((pin &gt;=  0) &amp;&amp; (pin &lt;=  7)) PORTD = PORTD &amp; ~(0x01 &lt;&lt; (pin -  0));
+                                             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:67:51: error: no match for &#39;operator&amp;&#39; (operand types are &#39;PORTBClass&#39; and &#39;int&#39;)
+     if ((pin &gt;=  8) &amp;&amp; (pin &lt;= 13)) PORTB = PORTB &amp; ~(0x01 &lt;&lt; (pin -  8));
+                                             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:69:51: error: no match for &#39;operator&amp;&#39; (operand types are &#39;PORTCClass&#39; and &#39;int&#39;)
+     if ((pin &gt;= 14) &amp;&amp; (pin &lt;= 19)) PORTC = PORTC &amp; ~(0x01 &lt;&lt; (pin - 14));
+                                             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h: In function &#39;int XLR8digitalRead(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:81:55: error: &#39;PIND&#39; was not declared in this scope
+   if ((pin &gt;=  0) &amp;&amp; (pin &lt;=  7)) return B00000001 &amp; (PIND &gt;&gt; (pin -  0));
+                                                       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:81:55: note: suggested alternative: &#39;PIN0&#39;
+   if ((pin &gt;=  0) &amp;&amp; (pin &lt;=  7)) return B00000001 &amp; (PIND &gt;&gt; (pin -  0));
+                                                       ^~~~
+                                                       PIN0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:83:55: error: &#39;PINB&#39; was not declared in this scope
+   if ((pin &gt;=  8) &amp;&amp; (pin &lt;= 13)) return B00000001 &amp; (PINB &gt;&gt; (pin -  8));
+                                                       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:83:55: note: suggested alternative: &#39;PIN0&#39;
+   if ((pin &gt;=  8) &amp;&amp; (pin &lt;= 13)) return B00000001 &amp; (PINB &gt;&gt; (pin -  8));
+                                                       ^~~~
+                                                       PIN0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:85:55: error: &#39;PINC&#39; was not declared in this scope
+   if ((pin &gt;= 14) &amp;&amp; (pin &lt;= 19)) return B00000001 &amp; (PINC &gt;&gt; (pin - 14));
+                                                       ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:85:55: note: suggested alternative: &#39;PIN0&#39;
+   if ((pin &gt;= 14) &amp;&amp; (pin &lt;= 19)) return B00000001 &amp; (PINC &gt;&gt; (pin - 14));
+                                                       ^~~~
+                                                       PIN0
+
+</pre>
+
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library XLR8DigitalIO claims to run on avr architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+In file included from /tmp/arduino-testlib554449380/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h: In function &#39;void XLR8pinMode(int, int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:20:37: error: &#39;DDRD&#39; was not declared in this scope
+     if ((pin &gt;=  0) &amp;&amp; (pin &lt;=  7)) DDRD = DDRD | (0x01 &lt;&lt; (pin -  0));
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:20:37: note: suggested alternative: &#39;DDRA&#39;
+     if ((pin &gt;=  0) &amp;&amp; (pin &lt;=  7)) DDRD = DDRD | (0x01 &lt;&lt; (pin -  0));
+                                     ^~~~
+                                     DDRA
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:22:37: error: &#39;DDRB&#39; was not declared in this scope
+     if ((pin &gt;=  8) &amp;&amp; (pin &lt;= 13)) DDRB = DDRB | (0x01 &lt;&lt; (pin -  8));
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:22:37: note: suggested alternative: &#39;DDRA&#39;
+     if ((pin &gt;=  8) &amp;&amp; (pin &lt;= 13)) DDRB = DDRB | (0x01 &lt;&lt; (pin -  8));
+                                     ^~~~
+                                     DDRA
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:24:37: error: &#39;DDRC&#39; was not declared in this scope
+     if ((pin &gt;= 14) &amp;&amp; (pin &lt;= 19)) DDRC = DDRC | (0x01 &lt;&lt; (pin - 14));
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:24:37: note: suggested alternative: &#39;DDRA&#39;
+     if ((pin &gt;= 14) &amp;&amp; (pin &lt;= 19)) DDRC = DDRC | (0x01 &lt;&lt; (pin - 14));
+                                     ^~~~
+                                     DDRA
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:14:0,
+                 from /tmp/arduino-testlib554449380/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIOAddr.h:14:15: error: &#39;_SFR_IO8&#39; was not declared in this scope
+ #define DDRA  _SFR_IO8(0x01)
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:26:37: note: in expansion of macro &#39;DDRA&#39;
+     if ((pin &gt;= 22) &amp;&amp; (pin &lt;= 27)) DDRA = DDRA | (0x01 &lt;&lt; (pin - 22));
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIOAddr.h:14:15: note: suggested alternative: &#39;__IOM&#39;
+ #define DDRA  _SFR_IO8(0x01)
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:26:37: note: in expansion of macro &#39;DDRA&#39;
+     if ((pin &gt;= 22) &amp;&amp; (pin &lt;= 27)) DDRA = DDRA | (0x01 &lt;&lt; (pin - 22));
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIOAddr.h:18:15: error: &#39;_SFR_IO8&#39; was not declared in this scope
+ #define DDRE  _SFR_IO8(0x0d)
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:28:37: note: in expansion of macro &#39;DDRE&#39;
+     if ((pin &gt;= 28) &amp;&amp; (pin &lt;= 33)) DDRE = DDRE | (0x01 &lt;&lt; (pin - 28));
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIOAddr.h:18:15: note: suggested alternative: &#39;__IOM&#39;
+ #define DDRE  _SFR_IO8(0x0d)
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:28:37: note: in expansion of macro &#39;DDRE&#39;
+     if ((pin &gt;= 28) &amp;&amp; (pin &lt;= 33)) DDRE = DDRE | (0x01 &lt;&lt; (pin - 28));
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIOAddr.h:22:15: error: &#39;_SFR_IO8&#39; was not declared in this scope
+ #define DDRG  _SFR_IO8(0x13)
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:30:37: note: in expansion of macro &#39;DDRG&#39;
+     if ((pin &gt;= 34) &amp;&amp; (pin &lt;= 39)) DDRG = DDRG | (0x01 &lt;&lt; (pin - 34));
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIOAddr.h:22:15: note: suggested alternative: &#39;__IOM&#39;
+ #define DDRG  _SFR_IO8(0x13)
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:30:37: note: in expansion of macro &#39;DDRG&#39;
+     if ((pin &gt;= 34) &amp;&amp; (pin &lt;= 39)) DDRG = DDRG | (0x01 &lt;&lt; (pin - 34));
+                                     ^~~~
+In file included from /tmp/arduino-testlib554449380/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:34:37: error: &#39;DDRD&#39; was not declared in this scope
+     if ((pin &gt;=  0) &amp;&amp; (pin &lt;=  7)) DDRD = DDRD &amp; ~(0x01 &lt;&lt; (pin -  0));
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:34:37: note: suggested alternative: &#39;DDRA&#39;
+     if ((pin &gt;=  0) &amp;&amp; (pin &lt;=  7)) DDRD = DDRD &amp; ~(0x01 &lt;&lt; (pin -  0));
+                                     ^~~~
+                                     DDRA
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:36:37: error: &#39;DDRB&#39; was not declared in this scope
+     if ((pin &gt;=  8) &amp;&amp; (pin &lt;= 13)) DDRB = DDRB &amp; ~(0x01 &lt;&lt; (pin -  8));
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:36:37: note: suggested alternative: &#39;DDRA&#39;
+     if ((pin &gt;=  8) &amp;&amp; (pin &lt;= 13)) DDRB = DDRB &amp; ~(0x01 &lt;&lt; (pin -  8));
+                                     ^~~~
+                                     DDRA
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:38:37: error: &#39;DDRC&#39; was not declared in this scope
+     if ((pin &gt;= 14) &amp;&amp; (pin &lt;= 19)) DDRC = DDRC &amp; ~(0x01 &lt;&lt; (pin - 14));
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:38:37: note: suggested alternative: &#39;DDRA&#39;
+     if ((pin &gt;= 14) &amp;&amp; (pin &lt;= 19)) DDRC = DDRC &amp; ~(0x01 &lt;&lt; (pin - 14));
+                                     ^~~~
+                                     DDRA
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:14:0,
+                 from /tmp/arduino-testlib554449380/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIOAddr.h:14:15: error: &#39;_SFR_IO8&#39; was not declared in this scope
+ #define DDRA  _SFR_IO8(0x01)
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:40:37: note: in expansion of macro &#39;DDRA&#39;
+     if ((pin &gt;= 22) &amp;&amp; (pin &lt;= 27)) DDRA = DDRA &amp; ~(0x01 &lt;&lt; (pin - 22));
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIOAddr.h:14:15: note: suggested alternative: &#39;__IOM&#39;
+ #define DDRA  _SFR_IO8(0x01)
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:40:37: note: in expansion of macro &#39;DDRA&#39;
+     if ((pin &gt;= 22) &amp;&amp; (pin &lt;= 27)) DDRA = DDRA &amp; ~(0x01 &lt;&lt; (pin - 22));
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIOAddr.h:18:15: error: &#39;_SFR_IO8&#39; was not declared in this scope
+ #define DDRE  _SFR_IO8(0x0d)
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:42:37: note: in expansion of macro &#39;DDRE&#39;
+     if ((pin &gt;= 28) &amp;&amp; (pin &lt;= 33)) DDRE = DDRE &amp; ~(0x01 &lt;&lt; (pin - 28));
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIOAddr.h:18:15: note: suggested alternative: &#39;__IOM&#39;
+ #define DDRE  _SFR_IO8(0x0d)
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:42:37: note: in expansion of macro &#39;DDRE&#39;
+     if ((pin &gt;= 28) &amp;&amp; (pin &lt;= 33)) DDRE = DDRE &amp; ~(0x01 &lt;&lt; (pin - 28));
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIOAddr.h:22:15: error: &#39;_SFR_IO8&#39; was not declared in this scope
+ #define DDRG  _SFR_IO8(0x13)
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:44:37: note: in expansion of macro &#39;DDRG&#39;
+     if ((pin &gt;= 34) &amp;&amp; (pin &lt;= 39)) DDRG = DDRG &amp; ~(0x01 &lt;&lt; (pin - 34));
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIOAddr.h:22:15: note: suggested alternative: &#39;__IOM&#39;
+ #define DDRG  _SFR_IO8(0x13)
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:44:37: note: in expansion of macro &#39;DDRG&#39;
+     if ((pin &gt;= 34) &amp;&amp; (pin &lt;= 39)) DDRG = DDRG &amp; ~(0x01 &lt;&lt; (pin - 34));
+                                     ^~~~
+In file included from /tmp/arduino-testlib554449380/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h: In function &#39;void XLR8digitalWrite(int, int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:51:37: error: &#39;PORTD&#39; was not declared in this scope
+     if ((pin &gt;=  0) &amp;&amp; (pin &lt;=  7)) PORTD = PORTD | (0x01 &lt;&lt; (pin -  0));
+                                     ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:51:37</pre>
+
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library XLR8DigitalIO claims to run on avr architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+In file included from /tmp/arduino-testlib1457719093/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h: In function &#39;void XLR8pinMode(int, int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:20:37: error: &#39;DDRD&#39; was not declared in this scope
+     if ((pin &gt;=  0) &amp;&amp; (pin &lt;=  7)) DDRD = DDRD | (0x01 &lt;&lt; (pin -  0));
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:22:37: error: &#39;DDRB&#39; was not declared in this scope
+     if ((pin &gt;=  8) &amp;&amp; (pin &lt;= 13)) DDRB = DDRB | (0x01 &lt;&lt; (pin -  8));
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:24:37: error: &#39;DDRC&#39; was not declared in this scope
+     if ((pin &gt;= 14) &amp;&amp; (pin &lt;= 19)) DDRC = DDRC | (0x01 &lt;&lt; (pin - 14));
+                                     ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:14:0,
+                 from /tmp/arduino-testlib1457719093/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIOAddr.h:14:28: error: &#39;_SFR_IO8&#39; was not declared in this scope
+ #define DDRA  _SFR_IO8(0x01)
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:26:37: note: in expansion of macro &#39;DDRA&#39;
+     if ((pin &gt;= 22) &amp;&amp; (pin &lt;= 27)) DDRA = DDRA | (0x01 &lt;&lt; (pin - 22));
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIOAddr.h:18:28: error: &#39;_SFR_IO8&#39; was not declared in this scope
+ #define DDRE  _SFR_IO8(0x0d)
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:28:37: note: in expansion of macro &#39;DDRE&#39;
+     if ((pin &gt;= 28) &amp;&amp; (pin &lt;= 33)) DDRE = DDRE | (0x01 &lt;&lt; (pin - 28));
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIOAddr.h:22:28: error: &#39;_SFR_IO8&#39; was not declared in this scope
+ #define DDRG  _SFR_IO8(0x13)
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:30:37: note: in expansion of macro &#39;DDRG&#39;
+     if ((pin &gt;= 34) &amp;&amp; (pin &lt;= 39)) DDRG = DDRG | (0x01 &lt;&lt; (pin - 34));
+                                     ^
+In file included from /tmp/arduino-testlib1457719093/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:34:37: error: &#39;DDRD&#39; was not declared in this scope
+     if ((pin &gt;=  0) &amp;&amp; (pin &lt;=  7)) DDRD = DDRD &amp; ~(0x01 &lt;&lt; (pin -  0));
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:36:37: error: &#39;DDRB&#39; was not declared in this scope
+     if ((pin &gt;=  8) &amp;&amp; (pin &lt;= 13)) DDRB = DDRB &amp; ~(0x01 &lt;&lt; (pin -  8));
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:38:37: error: &#39;DDRC&#39; was not declared in this scope
+     if ((pin &gt;= 14) &amp;&amp; (pin &lt;= 19)) DDRC = DDRC &amp; ~(0x01 &lt;&lt; (pin - 14));
+                                     ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:14:0,
+                 from /tmp/arduino-testlib1457719093/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIOAddr.h:14:28: error: &#39;_SFR_IO8&#39; was not declared in this scope
+ #define DDRA  _SFR_IO8(0x01)
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:40:37: note: in expansion of macro &#39;DDRA&#39;
+     if ((pin &gt;= 22) &amp;&amp; (pin &lt;= 27)) DDRA = DDRA &amp; ~(0x01 &lt;&lt; (pin - 22));
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIOAddr.h:18:28: error: &#39;_SFR_IO8&#39; was not declared in this scope
+ #define DDRE  _SFR_IO8(0x0d)
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:42:37: note: in expansion of macro &#39;DDRE&#39;
+     if ((pin &gt;= 28) &amp;&amp; (pin &lt;= 33)) DDRE = DDRE &amp; ~(0x01 &lt;&lt; (pin - 28));
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIOAddr.h:22:28: error: &#39;_SFR_IO8&#39; was not declared in this scope
+ #define DDRG  _SFR_IO8(0x13)
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:44:37: note: in expansion of macro &#39;DDRG&#39;
+     if ((pin &gt;= 34) &amp;&amp; (pin &lt;= 39)) DDRG = DDRG &amp; ~(0x01 &lt;&lt; (pin - 34));
+                                     ^
+In file included from /tmp/arduino-testlib1457719093/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h: In function &#39;void XLR8digitalWrite(int, int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:51:37: error: &#39;PORTD&#39; was not declared in this scope
+     if ((pin &gt;=  0) &amp;&amp; (pin &lt;=  7)) PORTD = PORTD | (0x01 &lt;&lt; (pin -  0));
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:53:37: error: &#39;PORTB&#39; was not declared in this scope
+     if ((pin &gt;=  8) &amp;&amp; (pin &lt;= 13)) PORTB = PORTB | (0x01 &lt;&lt; (pin -  8));
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:55:37: error: &#39;PORTC&#39; was not declared in this scope
+     if ((pin &gt;= 14) &amp;&amp; (pin &lt;= 19)) PORTC = PORTC | (0x01 &lt;&lt; (pin - 14));
+                                     ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:14:0,
+                 from /tmp/arduino-testlib1457719093/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIOAddr.h:15:28: error: &#39;_SFR_IO8&#39; was not declared in this scope
+ #define PORTA _SFR_IO8(0x02)
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:57:37: note: in expansion of macro &#39;PORTA&#39;
+     if ((pin &gt;= 22) &amp;&amp; (pin &lt;= 27)) PORTA = PORTA | (0x01 &lt;&lt; (pin - 22));
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIOAddr.h:19:28: error: &#39;_SFR_IO8&#39; was not declared in this scope
+ #define PORTE _SFR_IO8(0x0e)
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:59:37: note: in expansion of macro &#39;PORTE&#39;
+     if ((pin &gt;= 28) &amp;&amp; (pin &lt;= 33)) PORTE = PORTE | (0x01 &lt;&lt; (pin - 28));
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIOAddr.h:23:28: error: &#39;_SFR_IO8&#39; was not declared in this scope
+ #define PORTG _SFR_IO8(0x14)
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:61:37: note: in expansion of macro &#39;PORTG&#39;
+     if ((pin &gt;= 34) &amp;&amp; (pin &lt;= 39)) PORTG = PORTG | (0x01 &lt;&lt; (pin - 34));
+                                     ^
+In file included from /tmp/arduino-testlib1457719093/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:65:37: error: &#39;PORTD&#39; was not declared in this scope
+     if ((pin &gt;=  0) &amp;&amp; (pin &lt;=  7)) PORTD = PORTD &amp; ~(0x01 &lt;&lt; (pin -  0));
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:67:37: error: &#39;PORTB&#39; was not declared in this scope
+     if ((pin &gt;=  8) &amp;&amp; (pin &lt;= 13)) PORTB = PORTB &amp; ~(0x01 &lt;&lt; (pin -  8));
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:69:37: error: &#39;PORTC&#39; was not declared in this scope
+     if ((pin &gt;= 14) &amp;&amp; (pin &lt;= 19)) PORTC = PORTC &amp; ~(0x01 &lt;&lt; (pin - 14));
+                                     ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:14:0,
+                 from /tmp/arduino-testlib1457719093/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIOAddr.h:15:28: error: &#39;_SFR_IO8&#39; was not declared in this scope
+ #define PORTA _SFR_IO8(0x02)
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:71:37: note: in expansion of macro &#39;PORTA&#39;
+     if ((pin &gt;= 22) &amp;&amp; (pin &lt;= 27)) PORTA = PORTA &amp; ~(0x01 &lt;&lt; (pin - 22));
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIOAddr.h:19:28: error: &#39;_SFR_IO8&#39; was not declared in this scope
+ #define PORTE _SFR_IO8(0x0e)
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:73:37: note: in expansion of macro &#39;PORTE&#39;
+     if ((pin &gt;= 28) &amp;&amp; (pin &lt;= 33)) PORTE = PORTE &amp; ~(0x01 &lt;&lt; (pin - 28));
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIOAddr.h:23:28: error: &#39;_SFR_IO8&#39; was not declared in this scope
+ #define PORTG _SFR_IO8(0x14)
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8DigitalIO/src/XLR8DigitalIO.h:75:37: note: in expansion of macro &#39;PORTG&#39;
+     if ((pin &gt;= 34) &amp;&amp;</pre>
+
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

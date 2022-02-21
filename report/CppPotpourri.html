@@ -1,0 +1,557 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>CppPotpourri - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>CppPotpourri</h2>
+				<p>
+					Version: <b>2.15.3</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/cpppotpourri/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/BusQueue.h:32:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/AbstractPlatform.h:7,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/I2CDevice.cpp:22:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/SringBuilder.h:117:17: error: &#39;uint&#39; has not been declared
+     void concat(uint nu);
+                 ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:117:10: error: &#39;void StringBuilder::concat(int)&#39; cannot be overloaded
+     void concat(uint nu);
+          ^~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:116:10: error: with &#39;void StringBuilder::concat(int)&#39;
+     void concat(int nu);
+          ^~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:152:28: error: &#39;uint&#39; has not been declared
+     bool     drop_position(uint pos);   // And use this to reap the tokens that you&#39;ve used.
+                            ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:164:66: error: &#39;uint&#39; has not been declared
+     static void printBuffer(StringBuilder* output, uint8_t* buf, uint len, const char* indent = &#34;\t&#34;);
+                                                                  ^~~~
+~
+pourri.cpp:57:27: error: &#39;alloca&#39; was not declared in this scope
+   char* tmp_buf = (char*) alloca(20);
+                           ^~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/CppPotpourri.cpp:57:27: note: suggested alternative: &#39;malloc&#39;
+   char* tmp_buf = (char*) alloca(20);
+         /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:117:10: error: &#39;void StringBuil/U/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:117:10: error: &#39;void StringBuilder::concat(int)&#39; cannot be overloaded
+     void concat(uint nu);
+          ^~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:116:10: error: with &#39;void StringBuilder::concat(int)&#39;
+     void concat(int nu/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:117:10: error: &#39;void StringBuilder::concat(int)&#39; cannot be overloaded
+     void concat(uint nu);
+          ^~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:116:10: error: with &#39;void StringBuilder::concat(int)&#39;
+     void concat(int nu);
+          ^~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:152:28: error: &#39;uint&#39; has not been declared
+     bool     drop_position(uint pos);   // And use this to reap the tokens that you&#39;ve used.
+                            ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:164:66: error: &#39;uint&#39; has not been declared
+     static void printBuffer(StringBuilder* output, uint8_t* buf, uint len, const char* indent = &#34;\t&#34;);
+                                                                  ^~~~
+     ^~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ParsingConsole.cpp:432:28: note: suggested alternative: &#39;malloc&#39;
+     char* sc_str = (char*) alloca(4);
+                            ^~~~~~
+                            malloc
+er/libraries/CppPotpourri/src/GPSWrapper.h:308:25: note: forward declaration of &#39;struct timespec&#39;
+     int _gettime(struct timespec*, const struct minmea_date*, const struct minmea_time*);
+                         ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/GPSWrapper.cpp:874:11: error: invalid use of incomplete type &#39;struct timespec&#39;
+       ts-&gt;tv_nsec = tval-&gt;microseconds * 1000;
+           ^~~~~~~
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/GPSWrapper.cpp:22:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/GPSWrapper.h:308:25: note: forward declaration of &#39;struct timespec&#39;
+     int _gettime(struct timespec*, const struct minmea_date*, const struct minmea_time*);
+                         ^~~~~~~~
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/BusQueue.h:32:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/AbstractPlatform.h:7,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/SPIBusOp.cpp:23:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:117:17: error: &#39;uint&#39; has not been declared
+     void concat(uint nu);
+                 ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:117:10: error: &#39;void StringBuilder::concat(int)&#39; cannot be overloaded
+     void concat(uint nu);
+          ^~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:116:10: error: with &#39;void StringBuilder::concat(int)&#39;
+     void concat(int nu);
+          ^~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:152:28: error: &#39;uint&#39; has not been declared
+     bool     drop_position(uint pos);   // And use this to reap the tokens that you&#39;ve used.
+                            ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:164:66: error: &#39;uint&#39; has not been declared
+     static void printBuffer(StringBuilder* output, uint8_t* buf, uint len, const char* indent = &#34;\t&#34;);
+                                                                  ^~~~
+
+</pre>
+
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/../ElementPool.h:26:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/ManuvrLink.h:67,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/ManuvrLink.cpp:21:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/../RingBuffer.h:67:20: error: reference to RingBuffer&#39; is ambiguous
+ template &lt;class T&gt; RingBuffer&lt;T&gt;::RingBuffer(const unsigned int c) : _CAPAC(c), _E_SIZE(sizeof(T)) {
+                    ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/../RingBuffer.h:33:26: note: candidates are: template&lt;class T&gt; class RingBuffer
+ template &lt;class T&gt; class RingBuffer {
+                          ^~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Serial.h:23:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:102,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/../StringBuilder.h:32,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/ManuvrLink.h:61,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/ManuvrMsg.cpp:21:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/RingBuffer.h:59:41: note:                 typedef class arduino::RingBufferN&lt;64&gt; arduino::RingBuffer
+ typedef RingBufferN&lt;SERIAL_BUFFER_SIZE&gt; RingBuffer;
+                                         ^~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/../ElementPool.h:26:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/ManuvrLink.h:67,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/ManuvrMsg.cpp:21:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/../RingBuffer.h:79:20: error: reference to &#39;RingBuffer&#39; is ambiguous
+ template &lt;class T&gt; RingBuffer&lt;T&gt;::~RingBuffer() {
+                    ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/../RingBuffer.h:33:26: note: candidates are: template&lt;class T&gt; class RingBuffer
+ template &lt;class T&gt; class RingBuffer {
+                          ^~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Serial.h:23:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:102,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/../StringBuilder.h:32,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/ManuvrLink.h:61,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/ManuvrMsg.cpp:21:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/RingBuffer.h:59:41: note:                 typedef class arduino::RingBufferN&lt;64&gt; arduino::RingBuffer
+ typedef RingBufferN&lt;SERIAL_BUFFER_SIZE&gt; RingBuffer;
+                                         ^~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/../ElementPool.h:26:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/ManuvrLink.h:67,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/ManuvrMsg.cpp:21:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/../RingBuffer.h:89:35: error: expected initializer before &#39;&lt;&#39; token
+ template &lt;class T&gt; void RingBuffer&lt;T&gt;::clear() {
+                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/../RingBuffer.h:109:34: error: expected initializer before &#39;&lt;&#39; token
+ template &lt;class T&gt; int RingBuffer&lt;T&gt;::insert(T d) {
+                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/../RingBuffer.h:131:35: error: expected initializer before &#39;&lt;&#39; token
+ template &lt;class T&gt; bool RingBuffer&lt;T&gt;::contains(T d) {
+                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/../RingBuffer.h:155:32: error: expected initializer before &#39;&lt;&#39; token
+ template &lt;class T&gt; T RingBuffer&lt;T&gt;::get() {
+                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/../RingBuffer.h:171:32: error: expected initializer before &#39;&lt;&#39; token
+ template &lt;class T&gt; T RingBuffer&lt;T&gt;::get(unsigned int idx) {
+                                ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/ManuvrLink.h:67:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/ManuvrMsg.cpp:21:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/../ElementPool.h:34:47: error: reference to &#39;RingBuffer&#39; is ambiguous
+ template &lt;class T&gt; class ElementPool : public RingBuffer&lt;T*&gt;  {
+                                               ^~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/../ElementPool.h:26:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/ManuvrLink.h:67,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/ManuvrMsg.cpp:21:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/../RingBuffer.h:33:26: note: candidates are: template&lt;class T&gt; class RingBuffer
+ template &lt;class T&gt; class RingBuffer {
+                          ^~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Serial.h:23:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:102,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/../StringBuilder.h:32,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/ManuvrLink.h:61,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/ManuvrMsg.cpp:21:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/RingBuffer.h:59:41: note:                 typedef class arduino::RingBufferN&lt;64&gt; arduino::RingBuffer
+ typedef RingBufferN&lt;SERIAL_BUFFER_SIZE&gt; RingBuffer;
+                                         ^~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/ManuvrLink.h:67:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/ManuvrMsg.cpp:21:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/../ElementPool.h:34:57: error: expected template-name before &#39;&lt;&#39; token
+ template &lt;class T&gt; class ElementPool : public RingBuffer&lt;T*&gt;  {
+                                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/../ElementPool.h:34:57: error: expected &#39;{&#39; before &#39;&lt;&#39; token
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/ManuvrLink.h:67:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/ManuvrMsg.cpp:21:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/../ElementPool.h:67:83: error: invalid use of incomplete type &#39;class ElementPool&lt;T&gt;&#39;
+ template &lt;class T&gt; ElementPool&lt;T&gt;::ElementPool(const unsigned int c, const T* _mem) : RingBuffer&lt;T*&gt;(c), _pool(_mem) {
+                                                                                   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/ManuvrLink.h:67:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/ManuvrMsg.cpp:21:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/../ElementPool.h:34:26: note: declaration of &#39;class ElementPool&lt;T&gt;&#39;
+ template &lt;class T&gt; class ElementPool : public RingBuffer&lt;T*&gt;  {
+                          ^~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/ManuvrLink.h:67:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/ManuvrMsg.cpp:21:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/../ElementPool.h:95:49: error: invalid use of incomplete type &#39;class ElementPool&lt;T&gt;&#39;
+ template &lt;class T&gt; int ElementPool&lt;T&gt;::give(T* e) {
+                                                 ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/ManuvrLink.h:67:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadi</pre>
+
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/CppPotpourri.cpp:22:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:117:17: error: &#39;uint&#39; has not been declared
+     void concat(uint nu);
+              /home//ho/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:117:10: error: &#39;void StringBuilder::concat(int)&#39; cannot be overloaded
+     void concat(uint nu);
+          ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:116:10: error: with &#39;void StringBuilder::concat(int)&#39;
+     void concat(int nu);
+          ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:152:28: error: &#39;uint&#39; has not been declared
+     bool     drop_position(uint pos);   // And use this to reap the tokens that you&#39;ve used.
+                            ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:164:66: error: &#39;uint&#39; has not been declared
+     static void printBuffer(StringBuilder* output, uint8_t* buf, uint len, const char* indent = &#34;\t&#34;);
+                                                                  ^~~~
+ilder.h:164:66: error: &#39;uint&#39; has not been declared
+     static void printBuffer(StringBuilder* output, uint8_t* buf, uint len, const char* indent = &#34;\t&#34;);
+                                                                  ^~~~
+xisCompass.h:6:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/TripleAxisCompass.cpp:2:
+/home/ec2-user/In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.cpp:21:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:164:17: error: candidate is: static void StringBuilder::printBuffer(StringBuilder*, uint8_t*, int, const char*)
+     static void printBuffer(StringBuilder* output, uint8_t* buf, uint len, const char* indent = &#34;\t&#34;);
+                 ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.cpp:267:16: error: prototype for &#39;short unsigned int StringBuilder::count()&#39; does not match any in class &#39;StringBuilder&#39;
+ unsigned short StringBuilder::count() {
+                ^~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.cpp:21:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:146:14: error: candidate is: uint16_t StringBuilder::count()
+     uint16_t count();                   // Count the tokens.
+              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.cpp:445:6: error: prototype for &#39;bool StringBuilder::drop_position(unsigned int)&#39; does not match any in class &#39;StringBuilder&#39;
+ bool StringBuilder::drop_position(unsigned int pos) {
+      ^~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.cpp:21:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:152:14: error: candidate is: bool StringBuilder::drop_position(int)
+     bool     drop_position(uint pos);   // And use this to reap the tokens that you&#39;ve used.
+              ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.cpp: In member function &#39;void StringBuilder::concat(unsigned char)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.cpp:679:36: error: &#39;alloca&#39; was not declared in this scope
+   unsigned char* temp = (uint8_t*) alloca(1);
+                                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.cpp:679:36: note: suggested alternative: &#39;malloc&#39;
+   unsigned char* temp = (uint8_t*) alloca(1);
+                                    ^~~~~~
+                                    malloc
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.cpp: In member function &#39;void StringBuilder::concat(char)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.cpp:684:25: error: &#39;alloca&#39; was not declared in this scope
+   char* temp = (char *) alloca(2);
+                         ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.cpp:684:25: note: suggested alternative: &#39;malloc&#39;
+   char* temp = (char *) alloca(2);
+                         ^~~~~~
+                         malloc
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.cpp: In member function &#39;void StringBuilder::concat(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.cpp:690:26: error: &#39;alloca&#39; was not declared in this scope
+   char * temp = (char *) alloca(12);
+                          ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.cpp:690:26: note: suggested alternative: &#39;malloc&#39;
+   char * temp = (char *) alloca(12);
+                          ^~~~~~
+                          malloc
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.cpp:695:6: error: prototype for &#39;void StringBuilder::concat(unsigned int)&#39; does not match any in class &#39;StringBuilder&#39;
+ void StringBuilder::concat(unsigned int nu) {
+      ^~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.cpp:21:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:124:10: error: candidates are: void StringBuilder::concat(arduino::String)
+     void concat(String);
+          ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:121:17: error:                 void StringBuilder::concat(bool)
+     inline void concat(bool nu) {   concat(nu ? &#34;T&#34; : &#34;F&#34;); };
+                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:120:17: error:                 void StringBuilder::concat(float)
+     inline void concat(float nu) {  concat((double) nu);    };  // Floats are upgraded to doubles.
+                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:118:10: error:                 void StringBuilder::concat(double)
+     void concat(double nu);
+          ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.cpp:689:6: error:                 void StringBuilder::concat(int)
+ void StringBuilder::concat(int nu) {
+      ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.cpp:678:6: error:                 void StringBuilder::concat(unsigned char)
+ void StringBuilder::concat(unsigned char nu) {
+      ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.cpp:683:6: error:                 void StringBuilder::concat(char)
+ void StringBuilder::concat(char nu) {
+      ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.cpp:621:6: error:                 void StringBuilder::concat(uint8_t*, int)
+ void StringBuilder::concat(uint8_t* nu, int len) {
+      ^~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.cpp:21:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:112:10: error:                 void StringBuilder::concat(StringBuilder*)
+     void concat(StringBuilder *nu);
+          ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.cpp:653:6: error:                 void StringBuilder::concat(const char*)
+ void StringBuilder::concat(const char *nu) {
+      ^~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.cpp:21:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.h:103:17: error:                 void StringBuilder::concat(char*)
+     inline void concat(char* nu) {  concat((uint8_t*) nu, strlen(nu));  };
+                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.cpp: In member function &#39;void StringBuilder::concat(double)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.cpp:702:26: error: &#39;alloca&#39; was not declared in this scope
+   char * temp = (char *) alloca(16);
+                          ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.cpp:702:26: note: suggested alternative: &#39;malloc&#39;
+   char * temp = (char *) alloca(16);
+                          ^~~~~~
+                          malloc
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.cpp: In member function &#39;int StringBuilder::concatf(const char*, ...)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.cpp:732:25: error: &#39;alloca&#39; was not declared in this scope
+   char *temp = (char *) alloca(est_len);
+                         ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.cpp:732:25: note: suggested alternative: &#39;malloc&#39;
+   char *temp = (char *) alloca(est_len);
+                         ^~~~~~
+                         malloc
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/StringBuilder.cpp: In member function &#39;void StringBuilder::concat(arduino::Stri</pre>
+
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/../ElementPool.h:26:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/ManuvrLink.h:67,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/ManuvrMsg.cpp:21:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadirdir/user/libraries/CppPotpourri/src/ManuvrLink/../RingBuffer.h:67:20: error: reference to &#39;RingBuffer&#39; is ambiguous
+ template &lt;class T&gt; RingBuffer&lt;T&gt;::RingBuffer(const unsigned int c) : _CAPAC(c), _E_SIZE(sizeof(T)) {
+                    ^~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/../RingBuffer.h:33:26: note: candidates are: template&lt;class T&gt; class RingBuffer
+ template &lt;class T&gt; class RingBuffer {
+                          ^~~~~~~~~~
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/SafeRingBuffer.h:24:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Uart.h:23,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/variants/mkrwifi1010/variant.h:165,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:51,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/../StringBuilder.h:32,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/ManuvrLink.h:61,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/ManuvrMsgHdr.cpp:21:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/RingBuffer.h:59:41: note:                 typedef class arduino::RingBufferN&lt;64&gt; arduino::RingBuffer
+ typedef RingBufferN&lt;SERIAL_BUFFER_SIZE&gt; RingBuffer;
+                                         ^~~~~~~~~~
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/../ElementPool.h:26:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/ManuvrLink.h:67,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/ManuvrMsgHdr.cpp:21:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/../RingBuffer.h:79:20: error: reference to &#39;RingBuffer&#39; is ambiguous
+ template &lt;class T&gt; RingBuffer&lt;T&gt;::~RingBuffer() {
+                    ^~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/../RingBuffer.h:33:26: note: candidates are: template&lt;class T&gt; class RingBuffer
+ template &lt;class T&gt; class RingBuffer {
+                          ^~~~~~~~~~
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/SafeRingBuffer.h:24:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Uart.h:23,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/variants/mkrwifi1010/variant.h:165,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:51,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/../StringBuilder.h:32,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/ManuvrLink.h:61,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/ManuvrMsgHdr.cpp:21:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/RingBuffer.h:59:41: note:                 typedef class arduino::RingBufferN&lt;64&gt; arduino::RingBuffer
+ typedef RingBufferN&lt;SERIAL_BUFFER_SIZE&gt; RingBuffer;
+                                         ^~~~~~~~~~
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/../ElementPool.h:26:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/ManuvrLink.h:67,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/ManuvrMsgHdr.cpp:21:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/../RingBuffer.h:89:35: error: expected initializer before &#39;&lt;&#39; token
+ template &lt;class T&gt; void RingBuffer&lt;T&gt;::clear() {
+                                   ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/../RingBuffer.h:109:34: error: expected initializer before &#39;&lt;&#39; token
+ template &lt;class T&gt; int RingBuffer&lt;T&gt;::insert(T d) {
+                                  ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/../RingBuffer.h:131:35: error: expected initializer before &#39;&lt;&#39; token
+ template &lt;class T&gt; bool RingBuffer&lt;T&gt;::contains(T d) {
+                                   ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/../RingBuffer.h:155:32: error: expected initializer before &#39;&lt;&#39; token
+ template &lt;class T&gt; T RingBuffer&lt;T&gt;::get() {
+                                ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/../RingBuffer.h:171:32: error: expected initializer before &#39;&lt;&#39; token
+ template &lt;class T&gt; T RingBuffer&lt;T&gt;::get(unsigned int idx) {
+                                ^
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/ManuvrLink.h:67:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/ManuvrMsgHdr.cpp:21:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/../ElementPool.h:34:47: error: reference to &#39;RingBuffer&#39; is ambiguous
+ template &lt;class T&gt; class ElementPool : public RingBuffer&lt;T*&gt;  {
+                                               ^~~~~~~~~~
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/../ElementPool.h:26:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/ManuvrLink.h:67,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/ManuvrMsgHdr.cpp:21:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/../RingBuffer.h:33:26: note: candidates are: template&lt;class T&gt; class RingBuffer
+ template &lt;class T&gt; class RingBuffer {
+                          ^~~~~~~~~~
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/SafeRingBuffer.h:24:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Uart.h:23,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/variants/mkrwifi1010/variant.h:165,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:51,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/../StringBuilder.h:32,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/ManuvrLink.h:61,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/ManuvrMsgHdr.cpp:21:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/RingBuffer.h:59:41: note:                 typedef class arduino::RingBufferN&lt;64&gt; arduino::RingBuffer
+ typedef RingBufferN&lt;SERIAL_BUFFER_SIZE&gt; RingBuffer;
+                                         ^~~~~~~~~~
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/ManuvrLink.h:67:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/ManuvrMsgHdr.cpp:21:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/CppPotpourri/src/ManuvrLink/../ElementPool.h:34:57: error: expected template-name before &#39;&lt;&#39; token
+ template &lt;class T&gt; class ElementPool : public RingBuffer&lt;T*&gt;  {
+                                                         ^
+/Users/alranel/Do</pre>
+
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 205782 bytes (15%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 13368 bytes (4%) of dynamic memory, leaving 314312 bytes for local variables. Maximum is 327680 bytes.
+</pre>
+
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

@@ -1,0 +1,414 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>XBeeATCmds - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>XBeeATCmds</h2>
+				<p>
+					Version: <b>0.1.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/xbeeatcmds/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /private/tmp/arduino-testlib2525783045/test/test.ino:1:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:20:41: error: &#39;enable_if&#39; in namespace &#39;std&#39; does not name a template type
+     template &lt;typename T, typename std::enable_if&lt;std::is_floating_point&lt;T&gt;::value&gt;::type* = nullptr&gt;
+                                         ^~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:20:50: error: expected &#39;&gt;&#39; before &#39;&lt;&#39; token
+     template &lt;typename T, typename std::enable_if&lt;std::is_floating_point&lt;T&gt;::value&gt;::type* = nullptr&gt;
+                                                  ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:29:56: error: wrong number of template arguments (1, should be 2)
+     using IntFloatUnion = typename IntFloatUnion_impl&lt;T&gt;::type;
+                                                        ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:21:12: note: provided for &#39;template&lt;class T, &lt;typeprefixerror&gt;&lt;anonymous&gt; &gt; struct XBeeATCmdsUtil::IntFloatUnion_impl&#39;
+     struct IntFloatUnion_impl {
+            ^~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:33:22: error: &#39;enable_if&#39; in namespace &#39;std&#39; does not name a template type
+     -&gt; typename std::enable_if&lt;std::is_integral&lt;T&gt;::value, String&gt;::type
+                      ^~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:33:31: error: expected initializer before &#39;&lt;&#39; token
+     -&gt; typename std::enable_if&lt;std::is_integral&lt;T&gt;::value, String&gt;::type
+                               ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:44:22: error: &#39;enable_if&#39; in namespace &#39;std&#39; does not name a template type
+     -&gt; typename std::enable_if&lt;std::is_floating_point&lt;T&gt;::value, String&gt;::type
+                      ^~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:44:31: error: expected initializer before &#39;&lt;&#39; token
+     -&gt; typename std::enable_if&lt;std::is_floating_point&lt;T&gt;::value, String&gt;::type
+                               ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h: In member function &#39;bool XBeeATCmds::channel(uint8_t)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:123:46: error: &#39;toHex&#39; is not a member of &#39;XBeeATCmdsUtil&#39;
+         else serial-&gt;println(XBeeATCmdsUtil::toHex(ch));
+                                              ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h: In member function &#39;bool XBeeATCmds::panID(uint16_t)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:133:41: error: &#39;toHex&#39; is not a member of &#39;XBeeATCmdsUtil&#39;
+         serial-&gt;println(XBeeATCmdsUtil::toHex(pan));
+                                         ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h: In member function &#39;bool XBeeATCmds::dstAddrH(uint32_t)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:143:41: error: &#39;toHex&#39; is not a member of &#39;XBeeATCmdsUtil&#39;
+         serial-&gt;println(XBeeATCmdsUtil::toHex(addr));
+                                         ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h: In member function &#39;bool XBeeATCmds::dstAddrL(uint32_t)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:153:41: error: &#39;toHex&#39; is not a member of &#39;XBeeATCmdsUtil&#39;
+         serial-&gt;println(XBeeATCmdsUtil::toHex(addr));
+                                         ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h: In member function &#39;bool XBeeATCmds::sourceAddr(uint16_t)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:163:41: error: &#39;toHex&#39; is not a member of &#39;XBeeATCmdsUtil&#39;
+         serial-&gt;println(XBeeATCmdsUtil::toHex(addr));
+                                         ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h: In member function &#39;bool XBeeATCmds::retries(uint8_t)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:173:41: error: &#39;toHex&#39; is not a member of &#39;XBeeATCmdsUtil&#39;
+         serial-&gt;println(XBeeATCmdsUtil::toHex(times));
+                                         ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h: In member function &#39;bool XBeeATCmds::coordinator(bool)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:183:41: error: &#39;toHex&#39; is not a member of &#39;XBeeATCmdsUtil&#39;
+         serial-&gt;println(XBeeATCmdsUtil::toHex((uint8_t)b));
+                                         ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h: In member function &#39;bool XBeeATCmds::powerLevel(uint8_t)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:217:41: error: &#39;toHex&#39; is not a member of &#39;XBeeATCmdsUtil&#39;
+         serial-&gt;println(XBeeATCmdsUtil::toHex(lvl));
+                                         ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h: In member function &#39;bool XBeeATCmds::baudrate(uint8_t)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:237:47: error: &#39;toHex&#39; is not a member of &#39;XBeeATCmdsUtil&#39;
+         String baudrate_str = XBeeATCmdsUtil::toHex(baudrate);
+                                               ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h: In member function &#39;bool XBeeATCmds::packtizationTimeout(uint8_t)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:254:41: error: &#39;toHex&#39; is not a member of &#39;XBeeATCmdsUtil&#39;
+         serial-&gt;println(XBeeATCmdsUtil::toHex(num));
+                                         ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h: In member function &#39;bool XBeeATCmds::apiEnable(uint8_t)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:264:41: error: &#39;toHex&#39; is not a member of &#39;XBeeATCmdsUtil&#39;
+         serial-&gt;println(XBeeATCmdsUtil::toHex(en));
+                                         ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h: In member function &#39;bool XBeeATCmds::parity(uint8_t)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:274:41: error: &#39;toHex&#39; is not a member of &#39;XBeeATCmdsUtil&#39;
+         serial-&gt;println(XBeeATCmdsUtil::toHex(parity));
+                                         ^~~~~
+
+</pre>
+
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 78756 bytes (0%) of program storage space. Maximum is 16777216 bytes.
+Global variables use 43444 bytes (16%) of dynamic memory, leaving 226892 bytes for local variables. Maximum is 270336 bytes.
+</pre>
+
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /tmp/arduino-testlib1789861455/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:20:41: error: &#39;enable_if&#39; in namespace &#39;std&#39; does not name a template type
+     template &lt;typename T, typename std::enable_if&lt;std::is_floating_point&lt;T&gt;::value&gt;::type* = nullptr&gt;
+                                         ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:20:50: error: expected &#39;&gt;&#39; before &#39;&lt;&#39; token
+     template &lt;typename T, typename std::enable_if&lt;std::is_floating_point&lt;T&gt;::value&gt;::type* = nullptr&gt;
+                                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:29:56: error: wrong number of template arguments (1, should be 2)
+     using IntFloatUnion = typename IntFloatUnion_impl&lt;T&gt;::type;
+                                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:21:12: note: provided for &#39;template&lt;class T, &lt;typeprefixerror&gt;&lt;anonymous&gt; &gt; struct XBeeATCmdsUtil::IntFloatUnion_impl&#39;
+     struct IntFloatUnion_impl {
+            ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:33:22: error: &#39;enable_if&#39; in namespace &#39;std&#39; does not name a template type
+     -&gt; typename std::enable_if&lt;std::is_integral&lt;T&gt;::value, String&gt;::type
+                      ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:33:31: error: expected initializer before &#39;&lt;&#39; token
+     -&gt; typename std::enable_if&lt;std::is_integral&lt;T&gt;::value, String&gt;::type
+                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:44:22: error: &#39;enable_if&#39; in namespace &#39;std&#39; does not name a template type
+     -&gt; typename std::enable_if&lt;std::is_floating_point&lt;T&gt;::value, String&gt;::type
+                      ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:44:31: error: expected initializer before &#39;&lt;&#39; token
+     -&gt; typename std::enable_if&lt;std::is_floating_point&lt;T&gt;::value, String&gt;::type
+                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h: In member function &#39;bool XBeeATCmds::channel(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:123:46: error: &#39;toHex&#39; is not a member of &#39;XBeeATCmdsUtil&#39;
+         else serial-&gt;println(XBeeATCmdsUtil::toHex(ch));
+                                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h: In member function &#39;bool XBeeATCmds::panID(uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:133:41: error: &#39;toHex&#39; is not a member of &#39;XBeeATCmdsUtil&#39;
+         serial-&gt;println(XBeeATCmdsUtil::toHex(pan));
+                                         ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h: In member function &#39;bool XBeeATCmds::dstAddrH(uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:143:41: error: &#39;toHex&#39; is not a member of &#39;XBeeATCmdsUtil&#39;
+         serial-&gt;println(XBeeATCmdsUtil::toHex(addr));
+                                         ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h: In member function &#39;bool XBeeATCmds::dstAddrL(uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:153:41: error: &#39;toHex&#39; is not a member of &#39;XBeeATCmdsUtil&#39;
+         serial-&gt;println(XBeeATCmdsUtil::toHex(addr));
+                                         ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h: In member function &#39;bool XBeeATCmds::sourceAddr(uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:163:41: error: &#39;toHex&#39; is not a member of &#39;XBeeATCmdsUtil&#39;
+         serial-&gt;println(XBeeATCmdsUtil::toHex(addr));
+                                         ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h: In member function &#39;bool XBeeATCmds::retries(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:173:41: error: &#39;toHex&#39; is not a member of &#39;XBeeATCmdsUtil&#39;
+         serial-&gt;println(XBeeATCmdsUtil::toHex(times));
+                                         ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h: In member function &#39;bool XBeeATCmds::coordinator(bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:183:41: error: &#39;toHex&#39; is not a member of &#39;XBeeATCmdsUtil&#39;
+         serial-&gt;println(XBeeATCmdsUtil::toHex((uint8_t)b));
+                                         ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h: In member function &#39;bool XBeeATCmds::powerLevel(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:217:41: error: &#39;toHex&#39; is not a member of &#39;XBeeATCmdsUtil&#39;
+         serial-&gt;println(XBeeATCmdsUtil::toHex(lvl));
+                                         ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h: In member function &#39;bool XBeeATCmds::baudrate(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:237:47: error: &#39;toHex&#39; is not a member of &#39;XBeeATCmdsUtil&#39;
+         String baudrate_str = XBeeATCmdsUtil::toHex(baudrate);
+                                               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h: In member function &#39;bool XBeeATCmds::packtizationTimeout(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:254:41: error: &#39;toHex&#39; is not a member of &#39;XBeeATCmdsUtil&#39;
+         serial-&gt;println(XBeeATCmdsUtil::toHex(num));
+                                         ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h: In member function &#39;bool XBeeATCmds::apiEnable(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:264:41: error: &#39;toHex&#39; is not a member of &#39;XBeeATCmdsUtil&#39;
+         serial-&gt;println(XBeeATCmdsUtil::toHex(en));
+                                         ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h: In member function &#39;bool XBeeATCmds::parity(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:274:41: error: &#39;toHex&#39; is not a member of &#39;XBeeATCmdsUtil&#39;
+         serial-&gt;println(XBeeATCmdsUtil::toHex(parity));
+                                         ^~~~~
+
+</pre>
+
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /tmp/arduino-testlib3887884724/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:20:41: error: &#39;enable_if&#39; in namespace &#39;std&#39; does not name a template type
+     template &lt;typename T, typename std::enable_if&lt;std::is_floating_point&lt;T&gt;::value&gt;::type* = nullptr&gt;
+                                         ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:20:50: error: expected &#39;&gt;&#39; before &#39;&lt;&#39; token
+     template &lt;typename T, typename std::enable_if&lt;std::is_floating_point&lt;T&gt;::value&gt;::type* = nullptr&gt;
+                                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:29:56: error: wrong number of template arguments (1, should be 2)
+     using IntFloatUnion = typename IntFloatUnion_impl&lt;T&gt;::type;
+                                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:21:12: note: provided for &#39;template&lt;class T, &lt;typeprefixerror&gt;&lt;anonymous&gt; &gt; struct XBeeATCmdsUtil::IntFloatUnion_impl&#39;
+     struct IntFloatUnion_impl {
+            ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:33:22: error: &#39;enable_if&#39; in namespace &#39;std&#39; does not name a template type
+     -&gt; typename std::enable_if&lt;std::is_integral&lt;T&gt;::value, String&gt;::type
+                      ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:33:31: error: expected initializer before &#39;&lt;&#39; token
+     -&gt; typename std::enable_if&lt;std::is_integral&lt;T&gt;::value, String&gt;::type
+                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:44:22: error: &#39;enable_if&#39; in namespace &#39;std&#39; does not name a template type
+     -&gt; typename std::enable_if&lt;std::is_floating_point&lt;T&gt;::value, String&gt;::type
+                      ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:44:31: error: expected initializer before &#39;&lt;&#39; token
+     -&gt; typename std::enable_if&lt;std::is_floating_point&lt;T&gt;::value, String&gt;::type
+                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h: In member function &#39;bool XBeeATCmds::channel(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:123:46: error: &#39;toHex&#39; is not a member of &#39;XBeeATCmdsUtil&#39;
+         else serial-&gt;println(XBeeATCmdsUtil::toHex(ch));
+                                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h: In member function &#39;bool XBeeATCmds::panID(uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:133:41: error: &#39;toHex&#39; is not a member of &#39;XBeeATCmdsUtil&#39;
+         serial-&gt;println(XBeeATCmdsUtil::toHex(pan));
+                                         ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h: In member function &#39;bool XBeeATCmds::dstAddrH(uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:143:41: error: &#39;toHex&#39; is not a member of &#39;XBeeATCmdsUtil&#39;
+         serial-&gt;println(XBeeATCmdsUtil::toHex(addr));
+                                         ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h: In member function &#39;bool XBeeATCmds::dstAddrL(uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:153:41: error: &#39;toHex&#39; is not a member of &#39;XBeeATCmdsUtil&#39;
+         serial-&gt;println(XBeeATCmdsUtil::toHex(addr));
+                                         ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h: In member function &#39;bool XBeeATCmds::sourceAddr(uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:163:41: error: &#39;toHex&#39; is not a member of &#39;XBeeATCmdsUtil&#39;
+         serial-&gt;println(XBeeATCmdsUtil::toHex(addr));
+                                         ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h: In member function &#39;bool XBeeATCmds::retries(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:173:41: error: &#39;toHex&#39; is not a member of &#39;XBeeATCmdsUtil&#39;
+         serial-&gt;println(XBeeATCmdsUtil::toHex(times));
+                                         ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h: In member function &#39;bool XBeeATCmds::coordinator(bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:183:41: error: &#39;toHex&#39; is not a member of &#39;XBeeATCmdsUtil&#39;
+         serial-&gt;println(XBeeATCmdsUtil::toHex((uint8_t)b));
+                                         ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h: In member function &#39;bool XBeeATCmds::powerLevel(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:217:41: error: &#39;toHex&#39; is not a member of &#39;XBeeATCmdsUtil&#39;
+         serial-&gt;println(XBeeATCmdsUtil::toHex(lvl));
+                                         ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h: In member function &#39;bool XBeeATCmds::baudrate(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:237:47: error: &#39;toHex&#39; is not a member of &#39;XBeeATCmdsUtil&#39;
+         String baudrate_str = XBeeATCmdsUtil::toHex(baudrate);
+                                               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h: In member function &#39;bool XBeeATCmds::packtizationTimeout(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:254:41: error: &#39;toHex&#39; is not a member of &#39;XBeeATCmdsUtil&#39;
+         serial-&gt;println(XBeeATCmdsUtil::toHex(num));
+                                         ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h: In member function &#39;bool XBeeATCmds::apiEnable(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:264:41: error: &#39;toHex&#39; is not a member of &#39;XBeeATCmdsUtil&#39;
+         serial-&gt;println(XBeeATCmdsUtil::toHex(en));
+                                         ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h: In member function &#39;bool XBeeATCmds::parity(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XBeeATCmds/XBeeATCmds.h:274:41: error: &#39;toHex&#39; is not a member of &#39;XBeeATCmdsUtil&#39;
+         serial-&gt;println(XBeeATCmdsUtil::toHex(parity));
+                                         ^~~~~
+
+</pre>
+
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 197736 bytes (15%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 13084 bytes (3%) of dynamic memory, leaving 314596 bytes for local variables. Maximum is 327680 bytes.
+</pre>
+
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

@@ -1,0 +1,1291 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>microWire - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>microWire</h2>
+				<p>
+					Version: <b>2.2</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/microwire/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>microWire_example</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 444 bytes (1%) of program storage space. Maximum is 32256 bytes.
+Global variables use 9 bytes (0%) of dynamic memory, leaving 2039 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+
+					
+					<h4>examples/microWire_example</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 2248 bytes (6%) of program storage space. Maximum is 32256 bytes.
+Global variables use 192 bytes (9%) of dynamic memory, leaving 1856 bytes for local variables. Maximum is 2048 bytes.
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/examples/microWire_example/microWire_example.ino:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.h: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.h:50:13: note: candidate 1: uint8_t TwoWire::requestFrom(int, int)
+     uint8_t requestFrom(int address, int quantity);
+             ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.h:43:13: note: candidate 2: uint8_t TwoWire::requestFrom(uint8_t, uint8_t)
+     uint8_t requestFrom(uint8_t address , uint8_t length);     //открыть соединение и запросить данные от устройства, отпустить шину
+             ^~~~~~~~~~~
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library microWire claims to run on avr architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp: In member function &#39;void TwoWire::begin()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:5:13: error: &#39;SDA&#39; was not declared in this scope
+     pinMode(SDA, INPUT_PULLUP);      // Подтяжка шины
+             ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:6:13: error: &#39;SCL&#39; was not declared in this scope
+     pinMode(SCL, INPUT_PULLUP);      // Подтяжка шины
+             ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:6:13: note: suggested alternative: &#39;SCK&#39;
+     pinMode(SCL, INPUT_PULLUP);      // Подтяжка шины
+             ^~~
+             SCK
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:7:5: error: &#39;TWBR&#39; was not declared in this scope
+     TWBR = 72;          // Стандартная скорость - 100kHz
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:8:5: error: &#39;TWSR&#39; was not declared in this scope
+     TWSR = 0;          // Делитель - /1 , статус - 0;
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp: In member function &#39;void TwoWire::setClock(uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:13:5: error: &#39;TWBR&#39; was not declared in this scope
+     TWBR = (((long)F_CPU / clock) - 16) / 2;   // Расчет baudrate - регистра
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:13:20: error: &#39;F_CPU&#39; was not declared in this scope
+     TWBR = (((long)F_CPU / clock) - 16) / 2;   // Расчет baudrate - регистра
+                    ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp: In member function &#39;size_t TwoWire::write(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:44:5: error: &#39;TWDR&#39; was not declared in this scope
+     TWDR = data;         // Записать данные в data - регистр
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:44:5: note: suggested alternative: &#39;LEDR&#39;
+     TWDR = data;         // Записать данные в data - регистр
+     ^~~~
+     LEDR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:45:5: error: &#39;TWCR&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);        // Запустить передачу
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:45:16: error: &#39;TWEN&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);        // Запустить передачу
+                ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:45:12: error: &#39;_BV&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);        // Запустить передачу
+            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:45:12: note: suggested alternative: &#39;_B&#39;
+     TWCR = _BV(TWEN) | _BV(TWINT);        // Запустить передачу
+            ^~~
+            _B
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:45:28: error: &#39;TWINT&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);        // Запустить передачу
+                            ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:47:27: error: &#39;TWSR&#39; was not declared in this scope
+     uint8_t _bus_status = TWSR &amp; 0xF8;    // Чтение статуса шины
+                           ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp: In member function &#39;uint8_t TwoWire::read()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:9: error: &#39;TWCR&#39; was not declared in this scope
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+         ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:20: error: &#39;TWEN&#39; was not declared in this scope
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+                    ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:16: error: &#39;_BV&#39; was not declared in this scope
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+                ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:16: note: suggested alternative: &#39;_B&#39;
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+                ^~~
+                _B
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:32: error: &#39;TWINT&#39; was not declared in this scope
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+                                ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:45: error: &#39;TWEA&#39; was not declared in this scope
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+                                             ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:45: note: suggested alternative: &#39;WEAK&#39;
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+                                             ^~~~
+                                             WEAK
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:63:16: error: &#39;TWDR&#39; was not declared in this scope
+         return TWDR;        // Вернуть принятые данные , это содержимое data - регистра
+                ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:63:16: note: suggested alternative: &#39;LEDR&#39;
+         return TWDR;        // Вернуть принятые данные , это содержимое data - регистра
+                ^~~~
+                LEDR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:66:5: error: &#39;TWCR&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);     // Запустить чтение шины (БЕЗ подтверждения &#34;NACK&#34;)
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:66:16: error: &#39;TWEN&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);     // Запустить чтение шины (БЕЗ подтверждения &#34;NACK&#34;)
+                ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:66:12: error: &#39;_BV&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);     // Запустить чтение шины (БЕЗ подтверждения &#34;NACK&#34;)
+            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:66:12: note: suggested alternative: &#39;_B&#39;
+     TWCR = _BV(TWEN) | _BV(TWINT);     // Запустить чтение шины (БЕЗ подтверждения &#34;NACK&#34;)
+            ^~~
+            _B
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:66:28: error: &#39;TWINT&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);     // Запустить чтение шины (БЕЗ подтверждения &#34;NACK&#34;)
+                            ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:70:12: error: &#39;TWDR&#39; was not declared in this scope
+     return TWDR;         // Вернуть принятый ранее байт из data - регистра
+            ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:70:12: note: suggested alternative: &#39;LEDR&#39;
+     return TWDR;         // Вернуть принятый ранее байт из data - регистра
+            ^~~~
+            LEDR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp: In member function &#39;void TwoWire::start()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:132:5: error: &#39;TWCR&#39; was not declared in this scope
+     TWCR = _BV(TWSTA) | _BV(TWEN) | _BV(TWINT);  // start &#43; TwoWire enable &#43; установка флага &#34;выполнить задачу&#34;
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:132:16: error: &#39;TWSTA&#39; was not declared in this scope
+     TWCR = _BV(TWSTA) | _BV(TWEN) | _BV(TWINT);  // start &#43; TwoWire enable &#43; установка флага &#34;выполнить задачу&#34;
+                ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:132:12: error: &#39;_BV&#39; was not declared in this scope
+     TWCR = _BV(TWSTA) | _BV(TWEN) | _BV(TWINT);  // start &#43; TwoWire enable &#43; установка флага &#34;выполнить задачу&#34;
+            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:132:12: note: suggested alternative: &#39;_B&#39;
+     TWCR = _BV(TWSTA) | _BV(TWEN) | _BV(TWINT);  // start &#43; TwoWire enable &#43; установка флага &#34;выполнить задачу&#34;
+            ^~~
+            _B
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:132:29: error: &#39;TWEN&#39; was not declared in this scope
+     TWCR = _BV(TWSTA) | _BV(TWEN) | _BV(TWINT);  // start &#43; TwoWire enable &#43; установка флага &#34;выполнить задачу&#34;
+                             ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:132:41: error: &#39;TWINT&#39; was not declared in this scope
+     TWCR = _BV(TWSTA) | _BV(TWEN) | _BV(TWINT);  // start &#43; TwoWire enable &#43; установка флага &#34;выполнить задачу&#34;
+                                         ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mic</pre>
+
+					
+					<h4>examples/microWire_example</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library microWire claims to run on avr architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/examples/microWire_example/microWire_example.ino:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.h: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.h:50:13: note: candidate 1: uint8_t TwoWire::requestFrom(int, int)
+     uint8_t requestFrom(int address, int quantity);
+             ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.h:43:13: note: candidate 2: uint8_t TwoWire::requestFrom(uint8_t, uint8_t)
+     uint8_t requestFrom(uint8_t address , uint8_t length);     //открыть соединение и запросить данные от устройства, отпустить шину
+             ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp: In member function &#39;void TwoWire::begin()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:5:13: error: &#39;SDA&#39; was not declared in this scope
+     pinMode(SDA, INPUT_PULLUP);      // Подтяжка шины
+             ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:6:13: error: &#39;SCL&#39; was not declared in this scope
+     pinMode(SCL, INPUT_PULLUP);      // Подтяжка шины
+             ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:6:13: note: suggested alternative: &#39;SCK&#39;
+     pinMode(SCL, INPUT_PULLUP);      // Подтяжка шины
+             ^~~
+             SCK
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:7:5: error: &#39;TWBR&#39; was not declared in this scope
+     TWBR = 72;          // Стандартная скорость - 100kHz
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:8:5: error: &#39;TWSR&#39; was not declared in this scope
+     TWSR = 0;          // Делитель - /1 , статус - 0;
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp: In member function &#39;void TwoWire::setClock(uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:13:5: error: &#39;TWBR&#39; was not declared in this scope
+     TWBR = (((long)F_CPU / clock) - 16) / 2;   // Расчет baudrate - регистра
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:13:20: error: &#39;F_CPU&#39; was not declared in this scope
+     TWBR = (((long)F_CPU / clock) - 16) / 2;   // Расчет baudrate - регистра
+                    ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp: In member function &#39;size_t TwoWire::write(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:44:5: error: &#39;TWDR&#39; was not declared in this scope
+     TWDR = data;         // Записать данные в data - регистр
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:44:5: note: suggested alternative: &#39;LEDR&#39;
+     TWDR = data;         // Записать данные в data - регистр
+     ^~~~
+     LEDR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:45:5: error: &#39;TWCR&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);        // Запустить передачу
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:45:16: error: &#39;TWEN&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);        // Запустить передачу
+                ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:45:12: error: &#39;_BV&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);        // Запустить передачу
+            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:45:12: note: suggested alternative: &#39;_B&#39;
+     TWCR = _BV(TWEN) | _BV(TWINT);        // Запустить передачу
+            ^~~
+            _B
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:45:28: error: &#39;TWINT&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);        // Запустить передачу
+                            ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:47:27: error: &#39;TWSR&#39; was not declared in this scope
+     uint8_t _bus_status = TWSR &amp; 0xF8;    // Чтение статуса шины
+                           ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp: In member function &#39;uint8_t TwoWire::read()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:9: error: &#39;TWCR&#39; was not declared in this scope
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+         ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:20: error: &#39;TWEN&#39; was not declared in this scope
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+                    ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:16: error: &#39;_BV&#39; was not declared in this scope
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+                ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:16: note: suggested alternative: &#39;_B&#39;
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+                ^~~
+                _B
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:32: error: &#39;TWINT&#39; was not declared in this scope
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+                                ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:45: error: &#39;TWEA&#39; was not declared in this scope
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+                                             ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:45: note: suggested alternative: &#39;WEAK&#39;
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+                                             ^~~~
+                                             WEAK
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:63:16: error: &#39;TWDR&#39; was not declared in this scope
+         return TWDR;        // Вернуть принятые данные , это содержимое data - регистра
+                ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:63:16: note: suggested alternative: &#39;LEDR&#39;
+         return TWDR;        // Вернуть принятые данные , это содержимое data - регистра
+                ^~~~
+                LEDR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:66:5: error: &#39;TWCR&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);     // Запустить чтение шины (БЕЗ подтверждения &#34;NACK&#34;)
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:66:16: error: &#39;TWEN&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);     // Запустить чтение шины (БЕЗ подтверждения &#34;NACK&#34;)
+                ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:66:12: error: &#39;_BV&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);     // Запустить чтение шины (БЕЗ подтверждения &#34;NACK&#34;)
+            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:66:12: note: suggested alternative: &#39;_B&#39;
+     TWCR = _BV(TWEN) | _BV(TWINT);     // Запустить чтение шины (БЕЗ подтверждения &#34;NACK&#34;)
+            ^~~
+            _B
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:66:28: error: &#39;TWINT&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);     // Запустить чтение шины (БЕЗ подтверждения &#34;NACK&#34;)
+                            ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:70:12: error: &#39;TWDR&#39; was not declared in this scope
+     return TWDR;         // Вернуть принятый ранее байт из data - регистра
+            ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:70:12: note: suggested alternative: &#39;LEDR&#39;
+     return TWDR;         // Вернуть принятый ранее байт из data - регистра
+            ^~~~
+            LEDR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp: In member function &#39;void TwoWire::start()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:132:5: error: &#39;TWCR&#39; was not declared in this scope
+     TWCR = _BV(TWSTA) | _BV(TWEN) | _BV(TWINT);  // start &#43; TwoWire enable &#43; установка флага &#34;выполнить задачу&#34;
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:132:16: error: &#39;TWSTA&#39; was not declared in this scope
+     TWCR = _BV(TWSTA) | _BV(TWEN) | _BV(TWINT);  // start &#43; TwoWire enable &#43; установка флага &#34;выполнить задачу&#34;
+                ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:132:12: error: &#39;_BV&#39; was not declared in this scope
+     TWCR = _BV(TWSTA) | _BV(TWEN) | _BV(TWINT);  // start &#43; TwoWire enable &#43; установка флага &#34;выполнить задачу&#34;
+            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:132:12: note: suggested alternati</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library microWire claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp: In member function &#39;void TwoWire::begin()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:7:5: error: &#39;TWBR&#39; was not declared in this scope
+     TWBR = 72;          // Стандартная скорость - 100kHz
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:7:5: note: suggested alternative: &#39;TWI0&#39;
+     TWBR = 72;          // Стандартная скорость - 100kHz
+     ^~~~
+     TWI0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:8:5: error: &#39;TWSR&#39; was not declared in this scope
+     TWSR = 0;          // Делитель - /1 , статус - 0;
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:8:5: note: suggested alternative: &#39;TWI0&#39;
+     TWSR = 0;          // Делитель - /1 , статус - 0;
+     ^~~~
+     TWI0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp: In member function &#39;void TwoWire::setClock(uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:13:5: error: &#39;TWBR&#39; was not declared in this scope
+     TWBR = (((long)F_CPU / clock) - 16) / 2;   // Расчет baudrate - регистра
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:13:5: note: suggested alternative: &#39;TWI0&#39;
+     TWBR = (((long)F_CPU / clock) - 16) / 2;   // Расчет baudrate - регистра
+     ^~~~
+     TWI0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp: In member function &#39;size_t TwoWire::write(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:44:5: error: &#39;TWDR&#39; was not declared in this scope
+     TWDR = data;         // Записать данные в data - регистр
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:44:5: note: suggested alternative: &#39;TWI0&#39;
+     TWDR = data;         // Записать данные в data - регистр
+     ^~~~
+     TWI0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:45:5: error: &#39;TWCR&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);        // Запустить передачу
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:45:5: note: suggested alternative: &#39;TWI0&#39;
+     TWCR = _BV(TWEN) | _BV(TWINT);        // Запустить передачу
+     ^~~~
+     TWI0
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.h:28,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:45:16: error: &#39;TWEN&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);        // Запустить передачу
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:45:16: note: suggested alternative: &#39;TWI0&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:45:28: error: &#39;TWINT&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);        // Запустить передачу
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:45:28: note: suggested alternative: &#39;TWI_t&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:47:27: error: &#39;TWSR&#39; was not declared in this scope
+     uint8_t _bus_status = TWSR &amp; 0xF8;    // Чтение статуса шины
+                           ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:47:27: note: suggested alternative: &#39;TWI0&#39;
+     uint8_t _bus_status = TWSR &amp; 0xF8;    // Чтение статуса шины
+                           ^~~~
+                           TWI0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp: In member function &#39;uint8_t TwoWire::read()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:9: error: &#39;TWCR&#39; was not declared in this scope
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+         ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:9: note: suggested alternative: &#39;TWI0&#39;
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+         ^~~~
+         TWI0
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.h:28,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:20: error: &#39;TWEN&#39; was not declared in this scope
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:20: note: suggested alternative: &#39;TWI0&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:32: error: &#39;TWINT&#39; was not declared in this scope
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:32: note: suggested alternative: &#39;TWI_t&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:45: error: &#39;TWEA&#39; was not declared in this scope
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+                                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:45: note: suggested alternative: &#39;TWI0&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:63:16: error: &#39;TWDR&#39; was not declared in this scope
+         return TWDR;        // Вернуть принятые данные , это содержимое data - регистра
+                ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:63:16: note: suggested alternative: &#39;TWI0&#39;
+         return TWDR;        // Вернуть принятые данные , это содержимое data - регистра
+                ^~~~
+                TWI0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:66:5: error: &#39;TWCR&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);     // Запустить чтение шины (БЕЗ подтверждения &#34;NACK&#34;)
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:66:5: note: suggested alternative: &#39;TWI0&#39;
+     TWCR = _BV(TWEN) | _BV(TWINT);     // Запустить чтение шины (БЕЗ подтверждения &#34;NACK&#34;)
+     ^~~~
+     TWI0
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.h:28,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/micro</pre>
+
+					
+					<h4>examples/microWire_example</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library microWire claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/examples/microWire_example/microWire_example.ino:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.h: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.h:50:13: note: candidate 1: uint8_t TwoWire::requestFrom(int, int)
+     uint8_t requestFrom(int address, int quantity);
+             ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.h:43:13: note: candidate 2: uint8_t TwoWire::requestFrom(uint8_t, uint8_t)
+     uint8_t requestFrom(uint8_t address , uint8_t length);     //открыть соединение и запросить данные от устройства, отпустить шину
+             ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp: In member function &#39;void TwoWire::begin()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:7:5: error: &#39;TWBR&#39; was not declared in this scope
+     TWBR = 72;          // Стандартная скорость - 100kHz
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:7:5: note: suggested alternative: &#39;TWI0&#39;
+     TWBR = 72;          // Стандартная скорость - 100kHz
+     ^~~~
+     TWI0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:8:5: error: &#39;TWSR&#39; was not declared in this scope
+     TWSR = 0;          // Делитель - /1 , статус - 0;
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:8:5: note: suggested alternative: &#39;TWI0&#39;
+     TWSR = 0;          // Делитель - /1 , статус - 0;
+     ^~~~
+     TWI0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp: In member function &#39;void TwoWire::setClock(uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:13:5: error: &#39;TWBR&#39; was not declared in this scope
+     TWBR = (((long)F_CPU / clock) - 16) / 2;   // Расчет baudrate - регистра
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:13:5: note: suggested alternative: &#39;TWI0&#39;
+     TWBR = (((long)F_CPU / clock) - 16) / 2;   // Расчет baudrate - регистра
+     ^~~~
+     TWI0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp: In member function &#39;size_t TwoWire::write(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:44:5: error: &#39;TWDR&#39; was not declared in this scope
+     TWDR = data;         // Записать данные в data - регистр
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:44:5: note: suggested alternative: &#39;TWI0&#39;
+     TWDR = data;         // Записать данные в data - регистр
+     ^~~~
+     TWI0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:45:5: error: &#39;TWCR&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);        // Запустить передачу
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:45:5: note: suggested alternative: &#39;TWI0&#39;
+     TWCR = _BV(TWEN) | _BV(TWINT);        // Запустить передачу
+     ^~~~
+     TWI0
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.h:28,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:45:16: error: &#39;TWEN&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);        // Запустить передачу
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:45:16: note: suggested alternative: &#39;TWI0&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:45:28: error: &#39;TWINT&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);        // Запустить передачу
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:45:28: note: suggested alternative: &#39;TWI_t&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:47:27: error: &#39;TWSR&#39; was not declared in this scope
+     uint8_t _bus_status = TWSR &amp; 0xF8;    // Чтение статуса шины
+                           ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:47:27: note: suggested alternative: &#39;TWI0&#39;
+     uint8_t _bus_status = TWSR &amp; 0xF8;    // Чтение статуса шины
+                           ^~~~
+                           TWI0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp: In member function &#39;uint8_t TwoWire::read()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:9: error: &#39;TWCR&#39; was not declared in this scope
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+         ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:9: note: suggested alternative: &#39;TWI0&#39;
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+         ^~~~
+         TWI0
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.h:28,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:20: error: &#39;TWEN&#39; was not declared in this scope
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:20: note: suggested alternative: &#39;TWI0&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:32: error: &#39;TWINT&#39; was not declared in this scope
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:32: note: suggested alternative: &#39;TWI_t&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:45: error: &#39;TWEA&#39; was not declared in this scope
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+                                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:45: note: suggested alternative: &#39;TWI0&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:63:16: error: &#39;TWDR&#39; was not declared in this scope
+         return TWDR;        // Вернуть принятые данные , это содержимое data - регистра
+                ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:63:16: note: suggested alternative: &#39;TWI0&#39;
+         return TWDR;        // Вернуть принятые данные , это содержимое data - регистра
+                ^~~~
+                TWI0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:66:5: error: &#39;TWCR&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);     // Запустить чтение шины (БЕЗ подтверждения &#34;NACK&#34;)
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:66:5: note: suggested alternative: &#39;TWI0&#39;
+     TWCR = _BV(TWEN) | _BV(TWINT);     // Запустить чтение шины (БЕЗ подтверждения &#34;NACK&#34;)
+     ^~~~
+     TWI0
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-ard</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library microWire claims to run on avr architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp: In member function &#39;void TwoWire::begin()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:7:5: error: &#39;TWBR&#39; was not declared in this scope
+     TWBR = 72;          // Стандартная скорость - 100kHz
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:8:5: error: &#39;TWSR&#39; was not declared in this scope
+     TWSR = 0;          // Делитель - /1 , статус - 0;
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp: In member function &#39;void TwoWire::setClock(uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:13:5: error: &#39;TWBR&#39; was not declared in this scope
+     TWBR = (((long)F_CPU / clock) - 16) / 2;   // Расчет baudrate - регистра
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp: In member function &#39;size_t TwoWire::write(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:44:5: error: &#39;TWDR&#39; was not declared in this scope
+     TWDR = data;         // Записать данные в data - регистр
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:44:5: note: suggested alternative: &#39;WDT&#39;
+     TWDR = data;         // Записать данные в data - регистр
+     ^~~~
+     WDT
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:45:5: error: &#39;TWCR&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);        // Запустить передачу
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:45:5: note: suggested alternative: &#39;TC5&#39;
+     TWCR = _BV(TWEN) | _BV(TWINT);        // Запустить передачу
+     ^~~~
+     TC5
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:45:16: error: &#39;TWEN&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);        // Запустить передачу
+                ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:45:12: error: &#39;_BV&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);        // Запустить передачу
+            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:45:12: note: suggested alternative: &#39;_B&#39;
+     TWCR = _BV(TWEN) | _BV(TWINT);        // Запустить передачу
+            ^~~
+            _B
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:45:28: error: &#39;TWINT&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);        // Запустить передачу
+                            ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:47:27: error: &#39;TWSR&#39; was not declared in this scope
+     uint8_t _bus_status = TWSR &amp; 0xF8;    // Чтение статуса шины
+                           ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp: In member function &#39;uint8_t TwoWire::read()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:9: error: &#39;TWCR&#39; was not declared in this scope
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+         ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:9: note: suggested alternative: &#39;TC5&#39;
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+         ^~~~
+         TC5
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:20: error: &#39;TWEN&#39; was not declared in this scope
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+                    ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:16: error: &#39;_BV&#39; was not declared in this scope
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+                ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:16: note: suggested alternative: &#39;_B&#39;
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+                ^~~
+                _B
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:32: error: &#39;TWINT&#39; was not declared in this scope
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+                                ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:45: error: &#39;TWEA&#39; was not declared in this scope
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+                                             ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:63:16: error: &#39;TWDR&#39; was not declared in this scope
+         return TWDR;        // Вернуть принятые данные , это содержимое data - регистра
+                ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:63:16: note: suggested alternative: &#39;WDT&#39;
+         return TWDR;        // Вернуть принятые данные , это содержимое data - регистра
+                ^~~~
+                WDT
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:66:5: error: &#39;TWCR&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);     // Запустить чтение шины (БЕЗ подтверждения &#34;NACK&#34;)
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:66:5: note: suggested alternative: &#39;TC5&#39;
+     TWCR = _BV(TWEN) | _BV(TWINT);     // Запустить чтение шины (БЕЗ подтверждения &#34;NACK&#34;)
+     ^~~~
+     TC5
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:66:16: error: &#39;TWEN&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);     // Запустить чтение шины (БЕЗ подтверждения &#34;NACK&#34;)
+                ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:66:12: error: &#39;_BV&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);     // Запустить чтение шины (БЕЗ подтверждения &#34;NACK&#34;)
+            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:66:12: note: suggested alternative: &#39;_B&#39;
+     TWCR = _BV(TWEN) | _BV(TWINT);     // Запустить чтение шины (БЕЗ подтверждения &#34;NACK&#34;)
+            ^~~
+            _B
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:66:28: error: &#39;TWINT&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);     // Запустить чтение шины (БЕЗ подтверждения &#34;NACK&#34;)
+                            ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:70:12: error: &#39;TWDR&#39; was not declared in this scope
+     return TWDR;         // Вернуть принятый ранее байт из data - регистра
+            ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:70:12: note: suggested alternative: &#39;WDT&#39;
+     return TWDR;         // Вернуть принятый ранее байт из data - регистра
+            ^~~~
+            WDT
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp: In member function &#39;void TwoWire::start()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:132:5: error: &#39;TWCR&#39; was not declared in this scope
+     TWCR = _BV(TWSTA) | _BV(TWEN) | _BV(TWINT);  // start &#43; TwoWire enable &#43; установка флага &#34;выполнить задачу&#34;
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:132:5: note: suggested alternative: &#39;TC5&#39;
+     TWCR = _BV(TWSTA) | _BV(TWEN) | _BV(TWINT);  // start &#43; TwoWire enable &#43; установка флага &#34;выполнить задачу&#34;
+     ^~~~
+     TC5
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:132:16: error: &#39;TWSTA&#39; was not declared in this scope
+     TWCR = _BV(TWSTA) | _BV(TWEN) | _BV(TWINT);  // start &#43; TwoWire enable &#43; установка флага &#34;выполнить задачу&#34;
+                ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:132:12: error: &#39;_BV&#39; was not declared in this scope
+     TWCR = _BV(TWSTA) | _BV(TWEN) | _BV(TWINT);  // start &#43; TwoWire enable &#43; установка флага &#34;выполнить задачу&#34;
+            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:132:12: note: suggested alternative: &#39;_B&#39;
+     TWCR = _BV(TWSTA) | _BV(TWEN) | _BV(TWINT);  // start &#43; TwoWire enable &#43; установка флага &#34;выполнить задачу&#34;
+            ^~~
+            _B
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:132:29: error: &#39;TWEN&#39; was not declared in this scope
+     TWCR = _BV(TWSTA) | _BV(TWEN) | _BV(TWINT);  // start &#43; TwoWire enable &#43; установка флага &#34;выполнить задачу&#34;
+                             ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:132:41: error: &#39;TWINT&#39; was not declared in this scope
+     TWCR = _BV(TWSTA) | _BV(TWEN) | _BV(TWINT);  // start &#43; TwoWire enable &#43; установка флага &#34;выполнить задачу&#34;
+                                         ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp: In member function &#39;void TwoWire::stop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:138:5: error: &#39;TWCR&#39; was not declared in this scope
+     TWCR = _BV(TWSTO) | _BV(TWEN) | _BV(TWIN</pre>
+
+					
+					<h4>examples/microWire_example</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library microWire claims to run on avr architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/examples/microWire_example/microWire_example.ino:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.h: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.h:50:13: note: candidate 1: uint8_t TwoWire::requestFrom(int, int)
+     uint8_t requestFrom(int address, int quantity);
+             ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.h:43:13: note: candidate 2: uint8_t TwoWire::requestFrom(uint8_t, uint8_t)
+     uint8_t requestFrom(uint8_t address , uint8_t length);     //открыть соединение и запросить данные от устройства, отпустить шину
+             ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp: In member function &#39;void TwoWire::begin()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:7:5: error: &#39;TWBR&#39; was not declared in this scope
+     TWBR = 72;          // Стандартная скорость - 100kHz
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:8:5: error: &#39;TWSR&#39; was not declared in this scope
+     TWSR = 0;          // Делитель - /1 , статус - 0;
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp: In member function &#39;void TwoWire::setClock(uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:13:5: error: &#39;TWBR&#39; was not declared in this scope
+     TWBR = (((long)F_CPU / clock) - 16) / 2;   // Расчет baudrate - регистра
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp: In member function &#39;size_t TwoWire::write(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:44:5: error: &#39;TWDR&#39; was not declared in this scope
+     TWDR = data;         // Записать данные в data - регистр
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:44:5: note: suggested alternative: &#39;WDT&#39;
+     TWDR = data;         // Записать данные в data - регистр
+     ^~~~
+     WDT
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:45:5: error: &#39;TWCR&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);        // Запустить передачу
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:45:5: note: suggested alternative: &#39;TC5&#39;
+     TWCR = _BV(TWEN) | _BV(TWINT);        // Запустить передачу
+     ^~~~
+     TC5
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:45:16: error: &#39;TWEN&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);        // Запустить передачу
+                ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:45:12: error: &#39;_BV&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);        // Запустить передачу
+            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:45:12: note: suggested alternative: &#39;_B&#39;
+     TWCR = _BV(TWEN) | _BV(TWINT);        // Запустить передачу
+            ^~~
+            _B
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:45:28: error: &#39;TWINT&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);        // Запустить передачу
+                            ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:47:27: error: &#39;TWSR&#39; was not declared in this scope
+     uint8_t _bus_status = TWSR &amp; 0xF8;    // Чтение статуса шины
+                           ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp: In member function &#39;uint8_t TwoWire::read()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:9: error: &#39;TWCR&#39; was not declared in this scope
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+         ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:9: note: suggested alternative: &#39;TC5&#39;
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+         ^~~~
+         TC5
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:20: error: &#39;TWEN&#39; was not declared in this scope
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+                    ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:16: error: &#39;_BV&#39; was not declared in this scope
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+                ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:16: note: suggested alternative: &#39;_B&#39;
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+                ^~~
+                _B
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:32: error: &#39;TWINT&#39; was not declared in this scope
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+                                ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:45: error: &#39;TWEA&#39; was not declared in this scope
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+                                             ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:63:16: error: &#39;TWDR&#39; was not declared in this scope
+         return TWDR;        // Вернуть принятые данные , это содержимое data - регистра
+                ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:63:16: note: suggested alternative: &#39;WDT&#39;
+         return TWDR;        // Вернуть принятые данные , это содержимое data - регистра
+                ^~~~
+                WDT
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:66:5: error: &#39;TWCR&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);     // Запустить чтение шины (БЕЗ подтверждения &#34;NACK&#34;)
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:66:5: note: suggested alternative: &#39;TC5&#39;
+     TWCR = _BV(TWEN) | _BV(TWINT);     // Запустить чтение шины (БЕЗ подтверждения &#34;NACK&#34;)
+     ^~~~
+     TC5
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:66:16: error: &#39;TWEN&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);     // Запустить чтение шины (БЕЗ подтверждения &#34;NACK&#34;)
+                ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:66:12: error: &#39;_BV&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);     // Запустить чтение шины (БЕЗ подтверждения &#34;NACK&#34;)
+            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:66:12: note: suggested alternative: &#39;_B&#39;
+     TWCR = _BV(TWEN) | _BV(TWINT);     // Запустить чтение шины (БЕЗ подтверждения &#34;NACK&#34;)
+            ^~~
+            _B
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:66:28: error: &#39;TWINT&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);     // Запустить чтение шины (БЕЗ подтверждения &#34;NACK&#34;)
+                            ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:70:12: error: &#39;TWDR&#39; was not declared in this scope
+     return TWDR;         // Вернуть принятый ранее байт из data - регистра
+            ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:70:12: note: suggested alternative: &#39;WDT&#39;
+     return TWDR;         // Вернуть принятый ранее байт из data - регистра
+            ^~~~
+            WDT
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp: In member function &#39;void TwoWire::start()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:132:5: error: &#39;TWCR&#39; was not declared in this scope
+     TWCR = _BV(TWSTA) | _BV(TWEN) | _BV(TWINT);  // start &#43; TwoWire enable &#43; установка флага &#34;выполнить задачу&#34;
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:132:5: note: suggested alternative: &#39;TC5&#39;
+     TWCR = _BV(TWSTA) | _BV(TWEN) | _BV(TWINT);  // start &#43; TwoWire enable &#43; установка флага &#34;выполнить задачу&#34;
+     ^~~~
+     TC5
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:132:16: error: &#39;TWSTA&#39; was not declared in this scope
+     TWCR = _BV(TWSTA) | _BV(TWEN) | _BV(TWINT);  // start &#43; TwoWire enable &#43; установка флага &#34;выполнить задачу&#34;
+                ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:132:12: error: &#39;_BV&#39; was not declared in this scope
+     TWCR = _BV(TWSTA) | _BV(TWEN) | _BV(TWINT);  // start &#43; TwoWire enable &#43; установка флага &#34;выполнить задачу&#34;
+            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:132:12: note: suggested alternative: &#39;_B&#39;
+     TWCR = _BV(TWSTA) | _BV(TWEN) | _BV(TWINT);  // start &#43; TwoWire enable &#43; установка флага &#34;выполнить задачу&#34;
+            ^~~
+            _B
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:132:29: error</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library microWire claims to run on avr architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp: In member function &#39;void TwoWire::begin()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:7:5: error: &#39;TWBR&#39; was not declared in this scope
+     TWBR = 72;          // Стандартная скорость - 100kHz
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:8:5: error: &#39;TWSR&#39; was not declared in this scope
+     TWSR = 0;          // Делитель - /1 , статус - 0;
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp: In member function &#39;void TwoWire::setClock(uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:13:5: error: &#39;TWBR&#39; was not declared in this scope
+     TWBR = (((long)F_CPU / clock) - 16) / 2;   // Расчет baudrate - регистра
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp: In member function &#39;size_t TwoWire::write(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:44:5: error: &#39;TWDR&#39; was not declared in this scope
+     TWDR = data;         // Записать данные в data - регистр
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:45:5: error: &#39;TWCR&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);        // Запустить передачу
+     ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.h:28:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:45:16: error: &#39;TWEN&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);        // Запустить передачу
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:45:28: error: &#39;TWINT&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);        // Запустить передачу
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:47:27: error: &#39;TWSR&#39; was not declared in this scope
+     uint8_t _bus_status = TWSR &amp; 0xF8;    // Чтение статуса шины
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp: In member function &#39;uint8_t TwoWire::read()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:9: error: &#39;TWCR&#39; was not declared in this scope
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.h:28:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:20: error: &#39;TWEN&#39; was not declared in this scope
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:32: error: &#39;TWINT&#39; was not declared in this scope
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:45: error: &#39;TWEA&#39; was not declared in this scope
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+                                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:63:16: error: &#39;TWDR&#39; was not declared in this scope
+         return TWDR;        // Вернуть принятые данные , это содержимое data - регистра 
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:66:5: error: &#39;TWCR&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);     // Запустить чтение шины (БЕЗ подтверждения &#34;NACK&#34;)
+     ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.h:28:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:66:16: error: &#39;TWEN&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);     // Запустить чтение шины (БЕЗ подтверждения &#34;NACK&#34;)
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:66:28: error: &#39;TWINT&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);     // Запустить чтение шины (БЕЗ подтверждения &#34;NACK&#34;)
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:70:12: error: &#39;TWDR&#39; was not declared in this scope
+     return TWDR;         // Вернуть принятый ранее байт из data - регистра
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp: In member function &#39;void TwoWire::start()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:132:5: error: &#39;TWCR&#39; was not declared in this scope
+     TWCR = _BV(TWSTA) | _BV(TWEN) | _BV(TWINT);  // start &#43; TwoWire enable &#43; установка флага &#34;выполнить задачу&#34;
+     ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.h:28:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:132:16: error: &#39;TWSTA&#39; was not declared in this scope
+     TWCR = _BV(TWSTA) | _BV(TWEN) | _BV(TWINT);  // start &#43; TwoWire enable &#43; установка флага &#34;выполнить задачу&#34;
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:132:29: error: &#39;TWEN&#39; was not declared in this scope
+     TWCR = _BV(TWSTA) | _BV(TWEN) | _BV(TWINT);  // start &#43; TwoWire enable &#43; установка флага &#34;выполнить задачу&#34;
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:132:41: error: &#39;TWINT&#39; was not declared in this scope
+     TWCR = _BV(TWSTA) | _BV(TWEN) | _BV(TWINT);  // start &#43; TwoWire enable &#43; установка флага &#34;выполнить задачу&#34;
+                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp: In member function &#39;void TwoWire::stop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:138:5: error: &#39;TWCR&#39; was not declared in this scope
+     TWCR = _BV(TWSTO) | _BV(TWEN) | _BV(TWINT);  // stop &#43; TwoWire enable &#43; установка флага &#34;выполнить задачу&#34;
+     ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.h:28:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:138:16: error: &#39;TWSTO&#39; was not declared in this scope
+     TWCR = _BV(TWSTO) | _BV(TWEN) | _BV(TWINT);  // stop &#43; TwoWire enable &#43; установка флага &#34;выполнить задачу&#34;
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cl</pre>
+
+					
+					<h4>examples/microWire_example</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library microWire claims to run on avr architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/examples/microWire_example/microWire_example.ino:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.h: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.h:50:13: note: candidate 1: uint8_t TwoWire::requestFrom(int, int)
+     uint8_t requestFrom(int address, int quantity);
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.h:43:13: note: candidate 2: uint8_t TwoWire::requestFrom(uint8_t, uint8_t)
+     uint8_t requestFrom(uint8_t address , uint8_t length);     //открыть соединение и запросить данные от устройства, отпустить шину
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp: In member function &#39;void TwoWire::begin()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:7:5: error: &#39;TWBR&#39; was not declared in this scope
+     TWBR = 72;          // Стандартная скорость - 100kHz
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:8:5: error: &#39;TWSR&#39; was not declared in this scope
+     TWSR = 0;          // Делитель - /1 , статус - 0;
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp: In member function &#39;void TwoWire::setClock(uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:13:5: error: &#39;TWBR&#39; was not declared in this scope
+     TWBR = (((long)F_CPU / clock) - 16) / 2;   // Расчет baudrate - регистра
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp: In member function &#39;size_t TwoWire::write(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:44:5: error: &#39;TWDR&#39; was not declared in this scope
+     TWDR = data;         // Записать данные в data - регистр
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:45:5: error: &#39;TWCR&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);        // Запустить передачу
+     ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.h:28:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:45:16: error: &#39;TWEN&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);        // Запустить передачу
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:45:28: error: &#39;TWINT&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);        // Запустить передачу
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:47:27: error: &#39;TWSR&#39; was not declared in this scope
+     uint8_t _bus_status = TWSR &amp; 0xF8;    // Чтение статуса шины
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp: In member function &#39;uint8_t TwoWire::read()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:9: error: &#39;TWCR&#39; was not declared in this scope
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.h:28:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:20: error: &#39;TWEN&#39; was not declared in this scope
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:32: error: &#39;TWINT&#39; was not declared in this scope
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:61:45: error: &#39;TWEA&#39; was not declared in this scope
+         TWCR = _BV(TWEN) | _BV(TWINT) | _BV(TWEA); // Запустить чтение шины (с подтверждением &#34;ACK&#34;)
+                                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:63:16: error: &#39;TWDR&#39; was not declared in this scope
+         return TWDR;        // Вернуть принятые данные , это содержимое data - регистра 
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:66:5: error: &#39;TWCR&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);     // Запустить чтение шины (БЕЗ подтверждения &#34;NACK&#34;)
+     ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.h:28:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:66:16: error: &#39;TWEN&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);     // Запустить чтение шины (БЕЗ подтверждения &#34;NACK&#34;)
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:66:28: error: &#39;TWINT&#39; was not declared in this scope
+     TWCR = _BV(TWEN) | _BV(TWINT);     // Запустить чтение шины (БЕЗ подтверждения &#34;NACK&#34;)
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:70:12: error: &#39;TWDR&#39; was not declared in this scope
+     return TWDR;         // Вернуть принятый ранее байт из data - регистра
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp: In member function &#39;void TwoWire::start()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:132:5: error: &#39;TWCR&#39; was not declared in this scope
+     TWCR = _BV(TWSTA) | _BV(TWEN) | _BV(TWINT);  // start &#43; TwoWire enable &#43; установка флага &#34;выполнить задачу&#34;
+     ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.h:28:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:132:16: error: &#39;TWSTA&#39; was not declared in this scope
+     TWCR = _BV(TWSTA) | _BV(TWEN) | _BV(TWINT);  // start &#43; TwoWire enable &#43; установка флага &#34;выполнить задачу&#34;
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:132:29: error: &#39;TWEN&#39; was not declared in this scope
+     TWCR = _BV(TWSTA) | _BV(TWEN) | _BV(TWINT);  // start &#43; TwoWire enable &#43; установка флага &#34;выполнить задачу&#34;
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:132:41: error: &#39;TWINT&#39; was not declared in this scope
+     TWCR = _BV(TWSTA) | _BV(TWEN) | _BV(TWINT);  // start &#43; TwoWire enable &#43; установка флага &#34;выполнить задачу&#34;
+                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp: In member function &#39;void TwoWire::stop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/microWire/src/microWire.cpp:138:5: error: &#39;TWCR&#39; was not declared in this scope
+     TWCR = _BV(TWSTO) | _BV(TWEN) | _BV(TWINT);  // stop &#43; TwoWire e</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

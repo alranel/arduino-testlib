@@ -1,0 +1,1575 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>SoundPlayer - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>SoundPlayer</h2>
+				<p>
+					Version: <b>1.1.1</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/soundplayer/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>ChordPlayer</pre></th>
+						
+						<th><pre>SimpleSoundVisualizer</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+									
+										
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 486 bytes (1%) of program storage space. Maximum is 32256 bytes.
+Global variables use 18 bytes (0%) of dynamic memory, leaving 2030 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+
+					
+					<h4>examples/ChordPlayer</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 4874 bytes (15%) of program storage space. Maximum is 32256 bytes.
+Global variables use 66 bytes (3%) of dynamic memory, leaving 1982 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+					
+					<h4>examples/SimpleSoundVisualizer</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 3870 bytes (11%) of program storage space. Maximum is 32256 bytes.
+Global variables use 217 bytes (10%) of dynamic memory, leaving 1831 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library SoundPlayer claims to run on avr architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:16:38: error: &#39;F_CPU&#39; was not declared in this scope
+ static const float CLOCK_FREQUENCY = F_CPU;
+                                      ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:25:96: error: default argument given for parameter 2 of &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39; [-fpermissive]
+ SoundPlayer::SoundPlayer(uint8_t offset, ReadMode mode = MEMORY, SamplingFrequency freq = Hz40k) {
+                                                                                                ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.h:54:9: note: previous specification in &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39; here
+         SoundPlayer(uint8_t offset, ReadMode mode = MEMORY, SamplingFrequency freq = Hz40k);
+         ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:25:96: error: default argument given for parameter 3 of &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39; [-fpermissive]
+ SoundPlayer::SoundPlayer(uint8_t offset, ReadMode mode = MEMORY, SamplingFrequency freq = Hz40k) {
+                                                                                                ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.h:54:9: note: previous specification in &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39; here
+         SoundPlayer(uint8_t offset, ReadMode mode = MEMORY, SamplingFrequency freq = Hz40k);
+         ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp: In constructor &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:26:5: error: &#39;cli&#39; was not declared in this scope
+     cli(); // Stop all interrupts...
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:29:5: error: &#39;TCCR2A&#39; was not declared in this scope
+     TCCR2A = 0;
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:30:5: error: &#39;TCCR2B&#39; was not declared in this scope
+     TCCR2B = 0;
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:31:5: error: &#39;TCNT2&#39; was not declared in this scope
+     TCNT2  = 0;
+     ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:33:5: error: &#39;OCR2A&#39; was not declared in this scope
+     OCR2A = freq;
+     ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:35:21: error: &#39;WGM21&#39; was not declared in this scope
+     TCCR2A |= (1 &lt;&lt; WGM21);
+                     ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:37:21: error: &#39;CS21&#39; was not declared in this scope
+     TCCR2B |= (1 &lt;&lt; CS21);
+                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:37:21: note: suggested alternative: &#39;._21&#39;
+     TCCR2B |= (1 &lt;&lt; CS21);
+                     ^~~~
+                     ._21
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:39:5: error: &#39;TIMSK2&#39; was not declared in this scope
+     TIMSK2 |= (1 &lt;&lt; OCIE2A);
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:39:5: note: suggested alternative: &#39;TIMER&#39;
+     TIMSK2 |= (1 &lt;&lt; OCIE2A);
+     ^~~~~~
+     TIMER
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:39:21: error: &#39;OCIE2A&#39; was not declared in this scope
+     TIMSK2 |= (1 &lt;&lt; OCIE2A);
+                     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:51:5: error: &#39;DDRD&#39; was not declared in this scope
+     DDRD = DDRD | upperMask;  // Init lower selected ports (offset-7) as outputs.
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:51:5: note: suggested alternative: &#39;DIR&#39;
+     DDRD = DDRD | upperMask;  // Init lower selected ports (offset-7) as outputs.
+     ^~~~
+     DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:52:5: error: &#39;DDRB&#39; was not declared in this scope
+     DDRB = DDRB | lowerMask; // Init ports (8 - (offset &#43; 8)) as outputs.
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:52:5: note: suggested alternative: &#39;DIR&#39;
+     DDRB = DDRB | lowerMask; // Init ports (8 - (offset &#43; 8)) as outputs.
+     ^~~~
+     DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:58:5: error: &#39;sei&#39; was not declared in this scope
+     sei(); // Allow all interrupts run again.
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp: In member function &#39;void SoundPlayer::stop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:62:5: error: &#39;cli&#39; was not declared in this scope
+     cli();
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:67:5: error: &#39;sei&#39; was not declared in this scope
+     sei();
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp: In member function &#39;void SoundPlayer::play(Sound**, unsigned int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:71:5: error: &#39;cli&#39; was not declared in this scope
+     cli();
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:81:16: error: invalid conversion from &#39;Sound**&#39; to &#39;volatile Sound**&#39; [-fpermissive]
+     soundPtr = soundArray;
+                ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:84:5: error: &#39;sei&#39; was not declared in this scope
+     sei();
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:87:109: error: default argument given for parameter 4 of &#39;Sound* SoundPlayer::newSound(const uint8_t*, size_t, float, TimeUnit)&#39; [-fpermissive]
+ Sound* SoundPlayer::newSound(const uint8_t data[], size_t length, float soundDuration, TimeUnit unit = HERTZ) {
+                                                                                                             ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.h:80:16: note: previous specification in &#39;Sound* SoundPlayer::newSound(const uint8_t*, size_t, float, TimeUnit)&#39; here
+         Sound* newSound(const uint8_t data[], size_t length, float soundDuration, TimeUnit unit = HERTZ);
+                ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:93:121: error: default argument given for parameter 5 of &#39;void SoundPlayer::setSound(Sound*, const uint8_t*, size_t, float, TimeUnit)&#39; [-fpermissive]
+ void SoundPlayer::setSound(Sound *sound, const uint8_t data[], size_t length, float soundDuration, TimeUnit unit = HERTZ) {
+                                                                                                                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.h:91:14: note: previous specification in &#39;void SoundPlayer::setSound(Sound*, const uint8_t*, size_t, float, TimeUnit)&#39; here
+         void setSound(Sound *sound, const uint8_t data[], size_t length, float soundDuration, TimeUnit unit = HERTZ);
+              ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:117:92: error: default argument given for parameter 3 of &#39;void SoundPlayer::setSoundDuration(Sound*, float, TimeUnit)&#39; [-fpermissive]
+ void SoundPlayer::setSoundDuration(Sound *sound, float soundDuration, TimeUnit unit = HERTZ) {
+                                                                                            ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.h:100:14: note: previous specification in &#39;void SoundPlayer::setSoundDuration(Sound*, float, TimeUnit)&#39; here
+         void setSoundDuration(Sound *sound, float soundDuration, TimeUnit unit = HERTZ);
+              ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:126:4: error: expected constructor, destructor, or type conversion before &#39;(&#39; token
+ ISR(TIMER2_COMPA_vect) {
+    ^
+
+</pre>
+
+					
+					<h4>examples/ChordPlayer</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library SoundPlayer claims to run on avr architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:16:38: error: &#39;F_CPU&#39; was not declared in this scope
+ static const float CLOCK_FREQUENCY = F_CPU;
+                                      ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:25:96: error: default argument given for parameter 2 of &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39; [-fpermissive]
+ SoundPlayer::SoundPlayer(uint8_t offset, ReadMode mode = MEMORY, SamplingFrequency freq = Hz40k) {
+                                                                                                ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.h:54:9: note: previous specification in &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39; here
+         SoundPlayer(uint8_t offset, ReadMode mode = MEMORY, SamplingFrequency freq = Hz40k);
+         ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:25:96: error: default argument given for parameter 3 of &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39; [-fpermissive]
+ SoundPlayer::SoundPlayer(uint8_t offset, ReadMode mode = MEMORY, SamplingFrequency freq = Hz40k) {
+                                                                                                ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.h:54:9: note: previous specification in &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39; here
+         SoundPlayer(uint8_t offset, ReadMode mode = MEMORY, SamplingFrequency freq = Hz40k);
+         ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp: In constructor &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:26:5: error: &#39;cli&#39; was not declared in this scope
+     cli(); // Stop all interrupts...
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:29:5: error: &#39;TCCR2A&#39; was not declared in this scope
+     TCCR2A = 0;
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:30:5: error: &#39;TCCR2B&#39; was not declared in this scope
+     TCCR2B = 0;
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:31:5: error: &#39;TCNT2&#39; was not declared in this scope
+     TCNT2  = 0;
+     ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:33:5: error: &#39;OCR2A&#39; was not declared in this scope
+     OCR2A = freq;
+     ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:35:21: error: &#39;WGM21&#39; was not declared in this scope
+     TCCR2A |= (1 &lt;&lt; WGM21);
+                     ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:37:21: error: &#39;CS21&#39; was not declared in this scope
+     TCCR2B |= (1 &lt;&lt; CS21);
+                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:37:21: note: suggested alternative: &#39;._21&#39;
+     TCCR2B |= (1 &lt;&lt; CS21);
+                     ^~~~
+                     ._21
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:39:5: error: &#39;TIMSK2&#39; was not declared in this scope
+     TIMSK2 |= (1 &lt;&lt; OCIE2A);
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:39:5: note: suggested alternative: &#39;TIMER&#39;
+     TIMSK2 |= (1 &lt;&lt; OCIE2A);
+     ^~~~~~
+     TIMER
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:39:21: error: &#39;OCIE2A&#39; was not declared in this scope
+     TIMSK2 |= (1 &lt;&lt; OCIE2A);
+                     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:51:5: error: &#39;DDRD&#39; was not declared in this scope
+     DDRD = DDRD | upperMask;  // Init lower selected ports (offset-7) as outputs.
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:51:5: note: suggested alternative: &#39;DIR&#39;
+     DDRD = DDRD | upperMask;  // Init lower selected ports (offset-7) as outputs.
+     ^~~~
+     DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:52:5: error: &#39;DDRB&#39; was not declared in this scope
+     DDRB = DDRB | lowerMask; // Init ports (8 - (offset &#43; 8)) as outputs.
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:52:5: note: suggested alternative: &#39;DIR&#39;
+     DDRB = DDRB | lowerMask; // Init ports (8 - (offset &#43; 8)) as outputs.
+     ^~~~
+     DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:58:5: error: &#39;sei&#39; was not declared in this scope
+     sei(); // Allow all interrupts run again.
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp: In member function &#39;void SoundPlayer::stop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:62:5: error: &#39;cli&#39; was not declared in this scope
+     cli();
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:67:5: error: &#39;sei&#39; was not declared in this scope
+     sei();
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp: In member function &#39;void SoundPlayer::play(Sound**, unsigned int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:71:5: error: &#39;cli&#39; was not declared in this scope
+     cli();
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:81:16: error: invalid conversion from &#39;Sound**&#39; to &#39;volatile Sound**&#39; [-fpermissive]
+     soundPtr = soundArray;
+                ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:84:5: error: &#39;sei&#39; was not declared in this scope
+     sei();
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:87:109: error: default argument given for parameter 4 of &#39;Sound* SoundPlayer::newSound(const uint8_t*, size_t, float, TimeUnit)&#39; [-fpermissive]
+ Sound* SoundPlayer::newSound(const uint8_t data[], size_t length, float soundDuration, TimeUnit unit = HERTZ) {
+                                                                                                             ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.h:80:16: note: previous specification in &#39;Sound* SoundPlayer::newSound(const uint8_t*, size_t, float, TimeUnit)&#39; here
+         Sound* newSound(const uint8_t data[], size_t length, float soundDuration, TimeUnit unit = HERTZ);
+                ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:93:121: error: default argument given for parameter 5 of &#39;void SoundPlayer::setSound(Sound*, const uint8_t*, size_t, float, TimeUnit)&#39; [-fpermissive]
+ void SoundPlayer::setSound(Sound *sound, const uint8_t data[], size_t length, float soundDuration, TimeUnit unit = HERTZ) {
+                                                                                                                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.h:91:14: note: previous specification in &#39;void SoundPlayer::setSound(Sound*, const uint8_t*, size_t, float, TimeUnit)&#39; here
+         void setSound(Sound *sound, const uint8_t data[], size_t length, float soundDuration, TimeUnit unit = HERTZ);
+              ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:117:92: error: default argument given for parameter 3 of &#39;void SoundPlayer::setSoundDuration(Sound*, float, TimeUnit)&#39; [-fpermissive]
+ void SoundPlayer::setSoundDuration(Sound *sound, float soundDuration, TimeUnit unit = HERTZ) {
+                                                                                            ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.h:100:14: note: previous specification in &#39;void SoundPlayer::setSoundDuration(Sound*, float, TimeUnit)&#39; here
+         void setSoundDuration(Sound *sound, float soundDuration, TimeUnit unit = HERTZ);
+              ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:126:4: error: expected constructor, destructor, or type conversion before &#39;(&#39; token
+ ISR(TIMER2_COMPA_vect) {
+    ^
+
+</pre>
+					
+					<h4>examples/SimpleSoundVisualizer</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library SoundPlayer claims to run on avr architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:16:38: error: &#39;F_CPU&#39; was not declared in this scope
+ static const float CLOCK_FREQUENCY = F_CPU;
+                                      ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:25:96: error: default argument given for parameter 2 of &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39; [-fpermissive]
+ SoundPlayer::SoundPlayer(uint8_t offset, ReadMode mode = MEMORY, SamplingFrequency freq = Hz40k) {
+                                                                                                ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.h:54:9: note: previous specification in &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39; here
+         SoundPlayer(uint8_t offset, ReadMode mode = MEMORY, SamplingFrequency freq = Hz40k);
+         ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:25:96: error: default argument given for parameter 3 of &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39; [-fpermissive]
+ SoundPlayer::SoundPlayer(uint8_t offset, ReadMode mode = MEMORY, SamplingFrequency freq = Hz40k) {
+                                                                                                ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.h:54:9: note: previous specification in &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39; here
+         SoundPlayer(uint8_t offset, ReadMode mode = MEMORY, SamplingFrequency freq = Hz40k);
+         ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp: In constructor &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:26:5: error: &#39;cli&#39; was not declared in this scope
+     cli(); // Stop all interrupts...
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:29:5: error: &#39;TCCR2A&#39; was not declared in this scope
+     TCCR2A = 0;
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:30:5: error: &#39;TCCR2B&#39; was not declared in this scope
+     TCCR2B = 0;
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:31:5: error: &#39;TCNT2&#39; was not declared in this scope
+     TCNT2  = 0;
+     ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:33:5: error: &#39;OCR2A&#39; was not declared in this scope
+     OCR2A = freq;
+     ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:35:21: error: &#39;WGM21&#39; was not declared in this scope
+     TCCR2A |= (1 &lt;&lt; WGM21);
+                     ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:37:21: error: &#39;CS21&#39; was not declared in this scope
+     TCCR2B |= (1 &lt;&lt; CS21);
+                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:37:21: note: suggested alternative: &#39;._21&#39;
+     TCCR2B |= (1 &lt;&lt; CS21);
+                     ^~~~
+                     ._21
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:39:5: error: &#39;TIMSK2&#39; was not declared in this scope
+     TIMSK2 |= (1 &lt;&lt; OCIE2A);
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:39:5: note: suggested alternative: &#39;TIMER&#39;
+     TIMSK2 |= (1 &lt;&lt; OCIE2A);
+     ^~~~~~
+     TIMER
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:39:21: error: &#39;OCIE2A&#39; was not declared in this scope
+     TIMSK2 |= (1 &lt;&lt; OCIE2A);
+                     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:51:5: error: &#39;DDRD&#39; was not declared in this scope
+     DDRD = DDRD | upperMask;  // Init lower selected ports (offset-7) as outputs.
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:51:5: note: suggested alternative: &#39;DIR&#39;
+     DDRD = DDRD | upperMask;  // Init lower selected ports (offset-7) as outputs.
+     ^~~~
+     DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:52:5: error: &#39;DDRB&#39; was not declared in this scope
+     DDRB = DDRB | lowerMask; // Init ports (8 - (offset &#43; 8)) as outputs.
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:52:5: note: suggested alternative: &#39;DIR&#39;
+     DDRB = DDRB | lowerMask; // Init ports (8 - (offset &#43; 8)) as outputs.
+     ^~~~
+     DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:58:5: error: &#39;sei&#39; was not declared in this scope
+     sei(); // Allow all interrupts run again.
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp: In member function &#39;void SoundPlayer::stop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:62:5: error: &#39;cli&#39; was not declared in this scope
+     cli();
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:67:5: error: &#39;sei&#39; was not declared in this scope
+     sei();
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp: In member function &#39;void SoundPlayer::play(Sound**, unsigned int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:71:5: error: &#39;cli&#39; was not declared in this scope
+     cli();
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:81:16: error: invalid conversion from &#39;Sound**&#39; to &#39;volatile Sound**&#39; [-fpermissive]
+     soundPtr = soundArray;
+                ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:84:5: error: &#39;sei&#39; was not declared in this scope
+     sei();
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:87:109: error: default argument given for parameter 4 of &#39;Sound* SoundPlayer::newSound(const uint8_t*, size_t, float, TimeUnit)&#39; [-fpermissive]
+ Sound* SoundPlayer::newSound(const uint8_t data[], size_t length, float soundDuration, TimeUnit unit = HERTZ) {
+                                                                                                             ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.h:80:16: note: previous specification in &#39;Sound* SoundPlayer::newSound(const uint8_t*, size_t, float, TimeUnit)&#39; here
+         Sound* newSound(const uint8_t data[], size_t length, float soundDuration, TimeUnit unit = HERTZ);
+                ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:93:121: error: default argument given for parameter 5 of &#39;void SoundPlayer::setSound(Sound*, const uint8_t*, size_t, float, TimeUnit)&#39; [-fpermissive]
+ void SoundPlayer::setSound(Sound *sound, const uint8_t data[], size_t length, float soundDuration, TimeUnit unit = HERTZ) {
+                                                                                                                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.h:91:14: note: previous specification in &#39;void SoundPlayer::setSound(Sound*, const uint8_t*, size_t, float, TimeUnit)&#39; here
+         void setSound(Sound *sound, const uint8_t data[], size_t length, float soundDuration, TimeUnit unit = HERTZ);
+              ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:117:92: error: default argument given for parameter 3 of &#39;void SoundPlayer::setSoundDuration(Sound*, float, TimeUnit)&#39; [-fpermissive]
+ void SoundPlayer::setSoundDuration(Sound *sound, float soundDuration, TimeUnit unit = HERTZ) {
+                                                                                            ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.h:100:14: note: previous specification in &#39;void SoundPlayer::setSoundDuration(Sound*, float, TimeUnit)&#39; here
+         void setSoundDuration(Sound *sound, float soundDuration, TimeUnit unit = HERTZ);
+              ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:126:4: error: expected constructor, destructor, or type conversion before &#39;(&#39; token
+ ISR(TIMER2_COMPA_vect) {
+    ^
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library SoundPlayer claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp: In constructor &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:29:5: error: &#39;TCCR2A&#39; was not declared in this scope
+     TCCR2A = 0;
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:29:5: note: suggested alternative: &#39;TCB2&#39;
+     TCCR2A = 0;
+     ^~~~~~
+     TCB2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:30:5: error: &#39;TCCR2B&#39; was not declared in this scope
+     TCCR2B = 0;
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:30:5: note: suggested alternative: &#39;TCB2&#39;
+     TCCR2B = 0;
+     ^~~~~~
+     TCB2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:31:5: error: &#39;TCNT2&#39; was not declared in this scope
+     TCNT2  = 0;
+     ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:31:5: note: suggested alternative: &#39;TCB2&#39;
+     TCNT2  = 0;
+     ^~~~~
+     TCB2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:33:5: error: &#39;OCR2A&#39; was not declared in this scope
+     OCR2A = freq;
+     ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:35:21: error: &#39;WGM21&#39; was not declared in this scope
+     TCCR2A |= (1 &lt;&lt; WGM21);
+                     ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:37:21: error: &#39;CS21&#39; was not declared in this scope
+     TCCR2B |= (1 &lt;&lt; CS21);
+                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:39:5: error: &#39;TIMSK2&#39; was not declared in this scope
+     TIMSK2 |= (1 &lt;&lt; OCIE2A);
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:39:5: note: suggested alternative: &#39;TIMERB2&#39;
+     TIMSK2 |= (1 &lt;&lt; OCIE2A);
+     ^~~~~~
+     TIMERB2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:39:21: error: &#39;OCIE2A&#39; was not declared in this scope
+     TIMSK2 |= (1 &lt;&lt; OCIE2A);
+                     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:51:17: error: no match for &#39;operator|&#39; (operand types are &#39;DDRDClass&#39; and &#39;volatile uint8_t {aka volatile unsigned char}&#39;)
+     DDRD = DDRD | upperMask;  // Init lower selected ports (offset-7) as outputs.
+            ~~~~~^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:52:17: error: no match for &#39;operator|&#39; (operand types are &#39;DDRBClass&#39; and &#39;volatile uint8_t {aka volatile unsigned char}&#39;)
+     DDRB = DDRB | lowerMask; // Init ports (8 - (offset &#43; 8)) as outputs.
+            ~~~~~^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp: In function &#39;void TIMER2_COMPA_vect()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:157:20: error: no match for &#39;operator&amp;&#39; (operand types are &#39;PORTDClass&#39; and &#39;volatile uint8_t {aka volatile unsigned char}&#39;)
+     PORTD = (PORTD &amp; lowerMask) | (sound &lt;&lt; soundOutOffset);
+              ~~~~~~^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:158:20: error: no match for &#39;operator&amp;&#39; (operand types are &#39;PORTBClass&#39; and &#39;volatile uint8_t {aka volatile unsigned char}&#39;)
+     PORTB = (PORTB &amp; upperMask) | (sound &gt;&gt; (8 - soundOutOffset));
+              ~~~~~~^~~~~~~~~~~
+
+</pre>
+
+					
+					<h4>examples/ChordPlayer</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library SoundPlayer claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp: In constructor &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:29:5: error: &#39;TCCR2A&#39; was not declared in this scope
+     TCCR2A = 0;
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:29:5: note: suggested alternative: &#39;TCB2&#39;
+     TCCR2A = 0;
+     ^~~~~~
+     TCB2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:30:5: error: &#39;TCCR2B&#39; was not declared in this scope
+     TCCR2B = 0;
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:30:5: note: suggested alternative: &#39;TCB2&#39;
+     TCCR2B = 0;
+     ^~~~~~
+     TCB2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:31:5: error: &#39;TCNT2&#39; was not declared in this scope
+     TCNT2  = 0;
+     ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:31:5: note: suggested alternative: &#39;TCB2&#39;
+     TCNT2  = 0;
+     ^~~~~
+     TCB2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:33:5: error: &#39;OCR2A&#39; was not declared in this scope
+     OCR2A = freq;
+     ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:35:21: error: &#39;WGM21&#39; was not declared in this scope
+     TCCR2A |= (1 &lt;&lt; WGM21);
+                     ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:37:21: error: &#39;CS21&#39; was not declared in this scope
+     TCCR2B |= (1 &lt;&lt; CS21);
+                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:39:5: error: &#39;TIMSK2&#39; was not declared in this scope
+     TIMSK2 |= (1 &lt;&lt; OCIE2A);
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:39:5: note: suggested alternative: &#39;TIMERB2&#39;
+     TIMSK2 |= (1 &lt;&lt; OCIE2A);
+     ^~~~~~
+     TIMERB2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:39:21: error: &#39;OCIE2A&#39; was not declared in this scope
+     TIMSK2 |= (1 &lt;&lt; OCIE2A);
+                     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:51:17: error: no match for &#39;operator|&#39; (operand types are &#39;DDRDClass&#39; and &#39;volatile uint8_t {aka volatile unsigned char}&#39;)
+     DDRD = DDRD | upperMask;  // Init lower selected ports (offset-7) as outputs.
+            ~~~~~^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:52:17: error: no match for &#39;operator|&#39; (operand types are &#39;DDRBClass&#39; and &#39;volatile uint8_t {aka volatile unsigned char}&#39;)
+     DDRB = DDRB | lowerMask; // Init ports (8 - (offset &#43; 8)) as outputs.
+            ~~~~~^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp: In function &#39;void TIMER2_COMPA_vect()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:157:20: error: no match for &#39;operator&amp;&#39; (operand types are &#39;PORTDClass&#39; and &#39;volatile uint8_t {aka volatile unsigned char}&#39;)
+     PORTD = (PORTD &amp; lowerMask) | (sound &lt;&lt; soundOutOffset);
+              ~~~~~~^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:158:20: error: no match for &#39;operator&amp;&#39; (operand types are &#39;PORTBClass&#39; and &#39;volatile uint8_t {aka volatile unsigned char}&#39;)
+     PORTB = (PORTB &amp; upperMask) | (sound &gt;&gt; (8 - soundOutOffset));
+              ~~~~~~^~~~~~~~~~~
+
+</pre>
+					
+					<h4>examples/SimpleSoundVisualizer</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library SoundPlayer claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp: In constructor &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:29:5: error: &#39;TCCR2A&#39; was not declared in this scope
+     TCCR2A = 0;
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:29:5: note: suggested alternative: &#39;TCB2&#39;
+     TCCR2A = 0;
+     ^~~~~~
+     TCB2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:30:5: error: &#39;TCCR2B&#39; was not declared in this scope
+     TCCR2B = 0;
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:30:5: note: suggested alternative: &#39;TCB2&#39;
+     TCCR2B = 0;
+     ^~~~~~
+     TCB2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:31:5: error: &#39;TCNT2&#39; was not declared in this scope
+     TCNT2  = 0;
+     ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:31:5: note: suggested alternative: &#39;TCB2&#39;
+     TCNT2  = 0;
+     ^~~~~
+     TCB2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:33:5: error: &#39;OCR2A&#39; was not declared in this scope
+     OCR2A = freq;
+     ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:35:21: error: &#39;WGM21&#39; was not declared in this scope
+     TCCR2A |= (1 &lt;&lt; WGM21);
+                     ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:37:21: error: &#39;CS21&#39; was not declared in this scope
+     TCCR2B |= (1 &lt;&lt; CS21);
+                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:39:5: error: &#39;TIMSK2&#39; was not declared in this scope
+     TIMSK2 |= (1 &lt;&lt; OCIE2A);
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:39:5: note: suggested alternative: &#39;TIMERB2&#39;
+     TIMSK2 |= (1 &lt;&lt; OCIE2A);
+     ^~~~~~
+     TIMERB2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:39:21: error: &#39;OCIE2A&#39; was not declared in this scope
+     TIMSK2 |= (1 &lt;&lt; OCIE2A);
+                     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:51:17: error: no match for &#39;operator|&#39; (operand types are &#39;DDRDClass&#39; and &#39;volatile uint8_t {aka volatile unsigned char}&#39;)
+     DDRD = DDRD | upperMask;  // Init lower selected ports (offset-7) as outputs.
+            ~~~~~^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:52:17: error: no match for &#39;operator|&#39; (operand types are &#39;DDRBClass&#39; and &#39;volatile uint8_t {aka volatile unsigned char}&#39;)
+     DDRB = DDRB | lowerMask; // Init ports (8 - (offset &#43; 8)) as outputs.
+            ~~~~~^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp: In function &#39;void TIMER2_COMPA_vect()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:157:20: error: no match for &#39;operator&amp;&#39; (operand types are &#39;PORTDClass&#39; and &#39;volatile uint8_t {aka volatile unsigned char}&#39;)
+     PORTD = (PORTD &amp; lowerMask) | (sound &lt;&lt; soundOutOffset);
+              ~~~~~~^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:158:20: error: no match for &#39;operator&amp;&#39; (operand types are &#39;PORTBClass&#39; and &#39;volatile uint8_t {aka volatile unsigned char}&#39;)
+     PORTB = (PORTB &amp; upperMask) | (sound &gt;&gt; (8 - soundOutOffset));
+              ~~~~~~^~~~~~~~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library SoundPlayer claims to run on avr architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:25:96: error: default argument given for parameter 2 of &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39; [-fpermissive]
+ SoundPlayer::SoundPlayer(uint8_t offset, ReadMode mode = MEMORY, SamplingFrequency freq = Hz40k) {
+                                                                                                ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.h:54:9: note: previous specification in &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39; here
+         SoundPlayer(uint8_t offset, ReadMode mode = MEMORY, SamplingFrequency freq = Hz40k);
+         ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:25:96: error: default argument given for parameter 3 of &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39; [-fpermissive]
+ SoundPlayer::SoundPlayer(uint8_t offset, ReadMode mode = MEMORY, SamplingFrequency freq = Hz40k) {
+                                                                                                ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.h:54:9: note: previous specification in &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39; here
+         SoundPlayer(uint8_t offset, ReadMode mode = MEMORY, SamplingFrequency freq = Hz40k);
+         ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp: In constructor &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:26:5: error: &#39;cli&#39; was not declared in this scope
+     cli(); // Stop all interrupts...
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:26:5: note: suggested alternative: &#39;Gclk&#39;
+     cli(); // Stop all interrupts...
+     ^~~
+     Gclk
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:29:5: error: &#39;TCCR2A&#39; was not declared in this scope
+     TCCR2A = 0;
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:29:5: note: suggested alternative: &#39;TCC2&#39;
+     TCCR2A = 0;
+     ^~~~~~
+     TCC2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:30:5: error: &#39;TCCR2B&#39; was not declared in this scope
+     TCCR2B = 0;
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:30:5: note: suggested alternative: &#39;TCC2&#39;
+     TCCR2B = 0;
+     ^~~~~~
+     TCC2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:31:5: error: &#39;TCNT2&#39; was not declared in this scope
+     TCNT2  = 0;
+     ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:31:5: note: suggested alternative: &#39;TCC2&#39;
+     TCNT2  = 0;
+     ^~~~~
+     TCC2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:33:5: error: &#39;OCR2A&#39; was not declared in this scope
+     OCR2A = freq;
+     ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:35:21: error: &#39;WGM21&#39; was not declared in this scope
+     TCCR2A |= (1 &lt;&lt; WGM21);
+                     ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:37:21: error: &#39;CS21&#39; was not declared in this scope
+     TCCR2B |= (1 &lt;&lt; CS21);
+                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:37:21: note: suggested alternative: &#39;SS1&#39;
+     TCCR2B |= (1 &lt;&lt; CS21);
+                     ^~~~
+                     SS1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:39:5: error: &#39;TIMSK2&#39; was not declared in this scope
+     TIMSK2 |= (1 &lt;&lt; OCIE2A);
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:39:21: error: &#39;OCIE2A&#39; was not declared in this scope
+     TIMSK2 |= (1 &lt;&lt; OCIE2A);
+                     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:51:5: error: &#39;DDRD&#39; was not declared in this scope
+     DDRD = DDRD | upperMask;  // Init lower selected ports (offset-7) as outputs.
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:52:5: error: &#39;DDRB&#39; was not declared in this scope
+     DDRB = DDRB | lowerMask; // Init ports (8 - (offset &#43; 8)) as outputs.
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:58:5: error: &#39;sei&#39; was not declared in this scope
+     sei(); // Allow all interrupts run again.
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp: In member function &#39;void SoundPlayer::stop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:62:5: error: &#39;cli&#39; was not declared in this scope
+     cli();
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:62:5: note: suggested alternative: &#39;Gclk&#39;
+     cli();
+     ^~~
+     Gclk
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:67:5: error: &#39;sei&#39; was not declared in this scope
+     sei();
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp: In member function &#39;void SoundPlayer::play(Sound**, unsigned int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:71:5: error: &#39;cli&#39; was not declared in this scope
+     cli();
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:71:5: note: suggested alternative: &#39;Gclk&#39;
+     cli();
+     ^~~
+     Gclk
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:81:16: error: invalid conversion from &#39;Sound**&#39; to &#39;volatile Sound**&#39; [-fpermissive]
+     soundPtr = soundArray;
+                ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:84:5: error: &#39;sei&#39; was not declared in this scope
+     sei();
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:87:109: error: default argument given for parameter 4 of &#39;Sound* SoundPlayer::newSound(const uint8_t*, size_t, float, TimeUnit)&#39; [-fpermissive]
+ Sound* SoundPlayer::newSound(const uint8_t data[], size_t length, float soundDuration, TimeUnit unit = HERTZ) {
+                                                                                                             ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.h:80:16: note: previous specification in &#39;Sound* SoundPlayer::newSound(const uint8_t*, size_t, float, TimeUnit)&#39; here
+         Sound* newSound(const uint8_t data[], size_t length, float soundDuration, TimeUnit unit = HERTZ);
+                ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:93:121: error: default argument given for parameter 5 of &#39;void SoundPlayer::setSound(Sound*, const uint8_t*, size_t, float, TimeUnit)&#39; [-fpermissive]
+ void SoundPlayer::setSound(Sound *sound, const uint8_t data[], size_t length, float soundDuration, TimeUnit unit = HERTZ) {
+                                                                                                                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.h:91:14: note: previous specification in &#39;void SoundPlayer::setSound(Sound*, const uint8_t*, size_t, float, TimeUnit)&#39; here
+         void setSound(Sound *sound, const uint8_t data[], size_t length, float soundDuration, TimeUnit unit = HERTZ);
+              ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:117:92: error: default argument given for parameter 3 of &#39;void SoundPlayer::setSoundDuration(Sound*, float, TimeUnit)&#39; [-fpermissive]
+ void SoundPlayer::setSoundDuration(Sound *sound, float soundDuration, TimeUnit unit = HERTZ) {
+                                                                                            ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.h:100:14: note: previous specification in &#39;void SoundPlayer::setSoundDuration(Sound*, float, TimeUnit)&#39; here
+         void setSoundDuration(Sound *sound, float soundDuration, TimeUnit unit = HERTZ);
+              ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:126:4: error: expected constructor, destructor, or type conversion before &#39;(&#39; token
+ ISR(TIMER2_COMPA_vect) {
+    ^
+
+</pre>
+
+					
+					<h4>examples/ChordPlayer</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library SoundPlayer claims to run on avr architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:25:96: error: default argument given for parameter 2 of &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39; [-fpermissive]
+ SoundPlayer::SoundPlayer(uint8_t offset, ReadMode mode = MEMORY, SamplingFrequency freq = Hz40k) {
+                                                                                                ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.h:54:9: note: previous specification in &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39; here
+         SoundPlayer(uint8_t offset, ReadMode mode = MEMORY, SamplingFrequency freq = Hz40k);
+         ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:25:96: error: default argument given for parameter 3 of &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39; [-fpermissive]
+ SoundPlayer::SoundPlayer(uint8_t offset, ReadMode mode = MEMORY, SamplingFrequency freq = Hz40k) {
+                                                                                                ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.h:54:9: note: previous specification in &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39; here
+         SoundPlayer(uint8_t offset, ReadMode mode = MEMORY, SamplingFrequency freq = Hz40k);
+         ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp: In constructor &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:26:5: error: &#39;cli&#39; was not declared in this scope
+     cli(); // Stop all interrupts...
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:26:5: note: suggested alternative: &#39;Gclk&#39;
+     cli(); // Stop all interrupts...
+     ^~~
+     Gclk
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:29:5: error: &#39;TCCR2A&#39; was not declared in this scope
+     TCCR2A = 0;
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:29:5: note: suggested alternative: &#39;TCC2&#39;
+     TCCR2A = 0;
+     ^~~~~~
+     TCC2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:30:5: error: &#39;TCCR2B&#39; was not declared in this scope
+     TCCR2B = 0;
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:30:5: note: suggested alternative: &#39;TCC2&#39;
+     TCCR2B = 0;
+     ^~~~~~
+     TCC2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:31:5: error: &#39;TCNT2&#39; was not declared in this scope
+     TCNT2  = 0;
+     ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:31:5: note: suggested alternative: &#39;TCC2&#39;
+     TCNT2  = 0;
+     ^~~~~
+     TCC2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:33:5: error: &#39;OCR2A&#39; was not declared in this scope
+     OCR2A = freq;
+     ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:35:21: error: &#39;WGM21&#39; was not declared in this scope
+     TCCR2A |= (1 &lt;&lt; WGM21);
+                     ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:37:21: error: &#39;CS21&#39; was not declared in this scope
+     TCCR2B |= (1 &lt;&lt; CS21);
+                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:37:21: note: suggested alternative: &#39;SS1&#39;
+     TCCR2B |= (1 &lt;&lt; CS21);
+                     ^~~~
+                     SS1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:39:5: error: &#39;TIMSK2&#39; was not declared in this scope
+     TIMSK2 |= (1 &lt;&lt; OCIE2A);
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:39:21: error: &#39;OCIE2A&#39; was not declared in this scope
+     TIMSK2 |= (1 &lt;&lt; OCIE2A);
+                     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:51:5: error: &#39;DDRD&#39; was not declared in this scope
+     DDRD = DDRD | upperMask;  // Init lower selected ports (offset-7) as outputs.
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:52:5: error: &#39;DDRB&#39; was not declared in this scope
+     DDRB = DDRB | lowerMask; // Init ports (8 - (offset &#43; 8)) as outputs.
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:58:5: error: &#39;sei&#39; was not declared in this scope
+     sei(); // Allow all interrupts run again.
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp: In member function &#39;void SoundPlayer::stop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:62:5: error: &#39;cli&#39; was not declared in this scope
+     cli();
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:62:5: note: suggested alternative: &#39;Gclk&#39;
+     cli();
+     ^~~
+     Gclk
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:67:5: error: &#39;sei&#39; was not declared in this scope
+     sei();
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp: In member function &#39;void SoundPlayer::play(Sound**, unsigned int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:71:5: error: &#39;cli&#39; was not declared in this scope
+     cli();
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:71:5: note: suggested alternative: &#39;Gclk&#39;
+     cli();
+     ^~~
+     Gclk
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:81:16: error: invalid conversion from &#39;Sound**&#39; to &#39;volatile Sound**&#39; [-fpermissive]
+     soundPtr = soundArray;
+                ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:84:5: error: &#39;sei&#39; was not declared in this scope
+     sei();
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:87:109: error: default argument given for parameter 4 of &#39;Sound* SoundPlayer::newSound(const uint8_t*, size_t, float, TimeUnit)&#39; [-fpermissive]
+ Sound* SoundPlayer::newSound(const uint8_t data[], size_t length, float soundDuration, TimeUnit unit = HERTZ) {
+                                                                                                             ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.h:80:16: note: previous specification in &#39;Sound* SoundPlayer::newSound(const uint8_t*, size_t, float, TimeUnit)&#39; here
+         Sound* newSound(const uint8_t data[], size_t length, float soundDuration, TimeUnit unit = HERTZ);
+                ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:93:121: error: default argument given for parameter 5 of &#39;void SoundPlayer::setSound(Sound*, const uint8_t*, size_t, float, TimeUnit)&#39; [-fpermissive]
+ void SoundPlayer::setSound(Sound *sound, const uint8_t data[], size_t length, float soundDuration, TimeUnit unit = HERTZ) {
+                                                                                                                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.h:91:14: note: previous specification in &#39;void SoundPlayer::setSound(Sound*, const uint8_t*, size_t, float, TimeUnit)&#39; here
+         void setSound(Sound *sound, const uint8_t data[], size_t length, float soundDuration, TimeUnit unit = HERTZ);
+              ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:117:92: error: default argument given for parameter 3 of &#39;void SoundPlayer::setSoundDuration(Sound*, float, TimeUnit)&#39; [-fpermissive]
+ void SoundPlayer::setSoundDuration(Sound *sound, float soundDuration, TimeUnit unit = HERTZ) {
+                                                                                            ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.h:100:14: note: previous specification in &#39;void SoundPlayer::setSoundDuration(Sound*, float, TimeUnit)&#39; here
+         void setSoundDuration(Sound *sound, float soundDuration, TimeUnit unit = HERTZ);
+              ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:126:4: error: expected constructor, destructor, or type conversion before &#39;(&#39; token
+ ISR(TIMER2_COMPA_vect) {
+    ^
+
+</pre>
+					
+					<h4>examples/SimpleSoundVisualizer</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library SoundPlayer claims to run on avr architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:25:96: error: default argument given for parameter 2 of &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39; [-fpermissive]
+ SoundPlayer::SoundPlayer(uint8_t offset, ReadMode mode = MEMORY, SamplingFrequency freq = Hz40k) {
+                                                                                                ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.h:54:9: note: previous specification in &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39; here
+         SoundPlayer(uint8_t offset, ReadMode mode = MEMORY, SamplingFrequency freq = Hz40k);
+         ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:25:96: error: default argument given for parameter 3 of &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39; [-fpermissive]
+ SoundPlayer::SoundPlayer(uint8_t offset, ReadMode mode = MEMORY, SamplingFrequency freq = Hz40k) {
+                                                                                                ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.h:54:9: note: previous specification in &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39; here
+         SoundPlayer(uint8_t offset, ReadMode mode = MEMORY, SamplingFrequency freq = Hz40k);
+         ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp: In constructor &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:26:5: error: &#39;cli&#39; was not declared in this scope
+     cli(); // Stop all interrupts...
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:26:5: note: suggested alternative: &#39;Gclk&#39;
+     cli(); // Stop all interrupts...
+     ^~~
+     Gclk
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:29:5: error: &#39;TCCR2A&#39; was not declared in this scope
+     TCCR2A = 0;
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:29:5: note: suggested alternative: &#39;TCC2&#39;
+     TCCR2A = 0;
+     ^~~~~~
+     TCC2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:30:5: error: &#39;TCCR2B&#39; was not declared in this scope
+     TCCR2B = 0;
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:30:5: note: suggested alternative: &#39;TCC2&#39;
+     TCCR2B = 0;
+     ^~~~~~
+     TCC2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:31:5: error: &#39;TCNT2&#39; was not declared in this scope
+     TCNT2  = 0;
+     ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:31:5: note: suggested alternative: &#39;TCC2&#39;
+     TCNT2  = 0;
+     ^~~~~
+     TCC2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:33:5: error: &#39;OCR2A&#39; was not declared in this scope
+     OCR2A = freq;
+     ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:35:21: error: &#39;WGM21&#39; was not declared in this scope
+     TCCR2A |= (1 &lt;&lt; WGM21);
+                     ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:37:21: error: &#39;CS21&#39; was not declared in this scope
+     TCCR2B |= (1 &lt;&lt; CS21);
+                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:37:21: note: suggested alternative: &#39;SS1&#39;
+     TCCR2B |= (1 &lt;&lt; CS21);
+                     ^~~~
+                     SS1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:39:5: error: &#39;TIMSK2&#39; was not declared in this scope
+     TIMSK2 |= (1 &lt;&lt; OCIE2A);
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:39:21: error: &#39;OCIE2A&#39; was not declared in this scope
+     TIMSK2 |= (1 &lt;&lt; OCIE2A);
+                     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:51:5: error: &#39;DDRD&#39; was not declared in this scope
+     DDRD = DDRD | upperMask;  // Init lower selected ports (offset-7) as outputs.
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:52:5: error: &#39;DDRB&#39; was not declared in this scope
+     DDRB = DDRB | lowerMask; // Init ports (8 - (offset &#43; 8)) as outputs.
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:58:5: error: &#39;sei&#39; was not declared in this scope
+     sei(); // Allow all interrupts run again.
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp: In member function &#39;void SoundPlayer::stop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:62:5: error: &#39;cli&#39; was not declared in this scope
+     cli();
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:62:5: note: suggested alternative: &#39;Gclk&#39;
+     cli();
+     ^~~
+     Gclk
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:67:5: error: &#39;sei&#39; was not declared in this scope
+     sei();
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp: In member function &#39;void SoundPlayer::play(Sound**, unsigned int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:71:5: error: &#39;cli&#39; was not declared in this scope
+     cli();
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:71:5: note: suggested alternative: &#39;Gclk&#39;
+     cli();
+     ^~~
+     Gclk
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:81:16: error: invalid conversion from &#39;Sound**&#39; to &#39;volatile Sound**&#39; [-fpermissive]
+     soundPtr = soundArray;
+                ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:84:5: error: &#39;sei&#39; was not declared in this scope
+     sei();
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:87:109: error: default argument given for parameter 4 of &#39;Sound* SoundPlayer::newSound(const uint8_t*, size_t, float, TimeUnit)&#39; [-fpermissive]
+ Sound* SoundPlayer::newSound(const uint8_t data[], size_t length, float soundDuration, TimeUnit unit = HERTZ) {
+                                                                                                             ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.h:80:16: note: previous specification in &#39;Sound* SoundPlayer::newSound(const uint8_t*, size_t, float, TimeUnit)&#39; here
+         Sound* newSound(const uint8_t data[], size_t length, float soundDuration, TimeUnit unit = HERTZ);
+                ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:93:121: error: default argument given for parameter 5 of &#39;void SoundPlayer::setSound(Sound*, const uint8_t*, size_t, float, TimeUnit)&#39; [-fpermissive]
+ void SoundPlayer::setSound(Sound *sound, const uint8_t data[], size_t length, float soundDuration, TimeUnit unit = HERTZ) {
+                                                                                                                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.h:91:14: note: previous specification in &#39;void SoundPlayer::setSound(Sound*, const uint8_t*, size_t, float, TimeUnit)&#39; here
+         void setSound(Sound *sound, const uint8_t data[], size_t length, float soundDuration, TimeUnit unit = HERTZ);
+              ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:117:92: error: default argument given for parameter 3 of &#39;void SoundPlayer::setSoundDuration(Sound*, float, TimeUnit)&#39; [-fpermissive]
+ void SoundPlayer::setSoundDuration(Sound *sound, float soundDuration, TimeUnit unit = HERTZ) {
+                                                                                            ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.h:100:14: note: previous specification in &#39;void SoundPlayer::setSoundDuration(Sound*, float, TimeUnit)&#39; here
+         void setSoundDuration(Sound *sound, float soundDuration, TimeUnit unit = HERTZ);
+              ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:126:4: error: expected constructor, destructor, or type conversion before &#39;(&#39; token
+ ISR(TIMER2_COMPA_vect) {
+    ^
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library SoundPlayer claims to run on avr architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:25:96: error: default argument given for parameter 2 of &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39; [-fpermissive]
+ SoundPlayer::SoundPlayer(uint8_t offset, ReadMode mode = MEMORY, SamplingFrequency freq = Hz40k) {
+                                                                                                ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.h:54:9: note: previous specification in &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39; here
+         SoundPlayer(uint8_t offset, ReadMode mode = MEMORY, SamplingFrequency freq = Hz40k);
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:25:96: error: default argument given for parameter 3 of &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39; [-fpermissive]
+ SoundPlayer::SoundPlayer(uint8_t offset, ReadMode mode = MEMORY, SamplingFrequency freq = Hz40k) {
+                                                                                                ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.h:54:9: note: previous specification in &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39; here
+         SoundPlayer(uint8_t offset, ReadMode mode = MEMORY, SamplingFrequency freq = Hz40k);
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp: In constructor &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:29:5: error: &#39;TCCR2A&#39; was not declared in this scope
+     TCCR2A = 0;
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:30:5: error: &#39;TCCR2B&#39; was not declared in this scope
+     TCCR2B = 0;
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:31:5: error: &#39;TCNT2&#39; was not declared in this scope
+     TCNT2  = 0;
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:33:5: error: &#39;OCR2A&#39; was not declared in this scope
+     OCR2A = freq;
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:35:21: error: &#39;WGM21&#39; was not declared in this scope
+     TCCR2A |= (1 &lt;&lt; WGM21);
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:37:21: error: &#39;CS21&#39; was not declared in this scope
+     TCCR2B |= (1 &lt;&lt; CS21);   
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:39:5: error: &#39;TIMSK2&#39; was not declared in this scope
+     TIMSK2 |= (1 &lt;&lt; OCIE2A);
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:39:21: error: &#39;OCIE2A&#39; was not declared in this scope
+     TIMSK2 |= (1 &lt;&lt; OCIE2A);
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:51:5: error: &#39;DDRD&#39; was not declared in this scope
+     DDRD = DDRD | upperMask;  // Init lower selected ports (offset-7) as outputs.
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:52:5: error: &#39;DDRB&#39; was not declared in this scope
+     DDRB = DDRB | lowerMask; // Init ports (8 - (offset &#43; 8)) as outputs.
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp: In member function &#39;void SoundPlayer::play(Sound**, unsigned int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:81:14: error: invalid conversion from &#39;Sound**&#39; to &#39;volatile Sound**&#39; [-fpermissive]
+     soundPtr = soundArray;
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:87:109: error: default argument given for parameter 4 of &#39;Sound* SoundPlayer::newSound(const uint8_t*, size_t, float, TimeUnit)&#39; [-fpermissive]
+ Sound* SoundPlayer::newSound(const uint8_t data[], size_t length, float soundDuration, TimeUnit unit = HERTZ) {
+                                                                                                             ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.h:80:16: note: previous specification in &#39;Sound* SoundPlayer::newSound(const uint8_t*, size_t, float, TimeUnit)&#39; here
+         Sound* newSound(const uint8_t data[], size_t length, float soundDuration, TimeUnit unit = HERTZ);
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:93:121: error: default argument given for parameter 5 of &#39;void SoundPlayer::setSound(Sound*, const uint8_t*, size_t, float, TimeUnit)&#39; [-fpermissive]
+ void SoundPlayer::setSound(Sound *sound, const uint8_t data[], size_t length, float soundDuration, TimeUnit unit = HERTZ) {
+                                                                                                                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.h:91:14: note: previous specification in &#39;void SoundPlayer::setSound(Sound*, const uint8_t*, size_t, float, TimeUnit)&#39; here
+         void setSound(Sound *sound, const uint8_t data[], size_t length, float soundDuration, TimeUnit unit = HERTZ);
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:117:92: error: default argument given for parameter 3 of &#39;void SoundPlayer::setSoundDuration(Sound*, float, TimeUnit)&#39; [-fpermissive]
+ void SoundPlayer::setSoundDuration(Sound *sound, float soundDuration, TimeUnit unit = HERTZ) {
+                                                                                            ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.h:100:14: note: previous specification in &#39;void SoundPlayer::setSoundDuration(Sound*, float, TimeUnit)&#39; here
+         void setSoundDuration(Sound *sound, float soundDuration, TimeUnit unit = HERTZ);
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:126:4: error: expected constructor, destructor, or type conversion before &#39;(&#39; token
+ ISR(TIMER2_COMPA_vect) {
+    ^
+
+</pre>
+
+					
+					<h4>examples/ChordPlayer</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library SoundPlayer claims to run on avr architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:25:96: error: default argument given for parameter 2 of &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39; [-fpermissive]
+ SoundPlayer::SoundPlayer(uint8_t offset, ReadMode mode = MEMORY, SamplingFrequency freq = Hz40k) {
+                                                                                                ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.h:54:9: note: previous specification in &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39; here
+         SoundPlayer(uint8_t offset, ReadMode mode = MEMORY, SamplingFrequency freq = Hz40k);
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:25:96: error: default argument given for parameter 3 of &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39; [-fpermissive]
+ SoundPlayer::SoundPlayer(uint8_t offset, ReadMode mode = MEMORY, SamplingFrequency freq = Hz40k) {
+                                                                                                ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.h:54:9: note: previous specification in &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39; here
+         SoundPlayer(uint8_t offset, ReadMode mode = MEMORY, SamplingFrequency freq = Hz40k);
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp: In constructor &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:29:5: error: &#39;TCCR2A&#39; was not declared in this scope
+     TCCR2A = 0;
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:30:5: error: &#39;TCCR2B&#39; was not declared in this scope
+     TCCR2B = 0;
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:31:5: error: &#39;TCNT2&#39; was not declared in this scope
+     TCNT2  = 0;
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:33:5: error: &#39;OCR2A&#39; was not declared in this scope
+     OCR2A = freq;
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:35:21: error: &#39;WGM21&#39; was not declared in this scope
+     TCCR2A |= (1 &lt;&lt; WGM21);
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:37:21: error: &#39;CS21&#39; was not declared in this scope
+     TCCR2B |= (1 &lt;&lt; CS21);   
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:39:5: error: &#39;TIMSK2&#39; was not declared in this scope
+     TIMSK2 |= (1 &lt;&lt; OCIE2A);
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:39:21: error: &#39;OCIE2A&#39; was not declared in this scope
+     TIMSK2 |= (1 &lt;&lt; OCIE2A);
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:51:5: error: &#39;DDRD&#39; was not declared in this scope
+     DDRD = DDRD | upperMask;  // Init lower selected ports (offset-7) as outputs.
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:52:5: error: &#39;DDRB&#39; was not declared in this scope
+     DDRB = DDRB | lowerMask; // Init ports (8 - (offset &#43; 8)) as outputs.
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp: In member function &#39;void SoundPlayer::play(Sound**, unsigned int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:81:14: error: invalid conversion from &#39;Sound**&#39; to &#39;volatile Sound**&#39; [-fpermissive]
+     soundPtr = soundArray;
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:87:109: error: default argument given for parameter 4 of &#39;Sound* SoundPlayer::newSound(const uint8_t*, size_t, float, TimeUnit)&#39; [-fpermissive]
+ Sound* SoundPlayer::newSound(const uint8_t data[], size_t length, float soundDuration, TimeUnit unit = HERTZ) {
+                                                                                                             ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.h:80:16: note: previous specification in &#39;Sound* SoundPlayer::newSound(const uint8_t*, size_t, float, TimeUnit)&#39; here
+         Sound* newSound(const uint8_t data[], size_t length, float soundDuration, TimeUnit unit = HERTZ);
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:93:121: error: default argument given for parameter 5 of &#39;void SoundPlayer::setSound(Sound*, const uint8_t*, size_t, float, TimeUnit)&#39; [-fpermissive]
+ void SoundPlayer::setSound(Sound *sound, const uint8_t data[], size_t length, float soundDuration, TimeUnit unit = HERTZ) {
+                                                                                                                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.h:91:14: note: previous specification in &#39;void SoundPlayer::setSound(Sound*, const uint8_t*, size_t, float, TimeUnit)&#39; here
+         void setSound(Sound *sound, const uint8_t data[], size_t length, float soundDuration, TimeUnit unit = HERTZ);
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:117:92: error: default argument given for parameter 3 of &#39;void SoundPlayer::setSoundDuration(Sound*, float, TimeUnit)&#39; [-fpermissive]
+ void SoundPlayer::setSoundDuration(Sound *sound, float soundDuration, TimeUnit unit = HERTZ) {
+                                                                                            ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.h:100:14: note: previous specification in &#39;void SoundPlayer::setSoundDuration(Sound*, float, TimeUnit)&#39; here
+         void setSoundDuration(Sound *sound, float soundDuration, TimeUnit unit = HERTZ);
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:126:4: error: expected constructor, destructor, or type conversion before &#39;(&#39; token
+ ISR(TIMER2_COMPA_vect) {
+    ^
+
+</pre>
+					
+					<h4>examples/SimpleSoundVisualizer</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library SoundPlayer claims to run on avr architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:25:96: error: default argument given for parameter 2 of &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39; [-fpermissive]
+ SoundPlayer::SoundPlayer(uint8_t offset, ReadMode mode = MEMORY, SamplingFrequency freq = Hz40k) {
+                                                                                                ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.h:54:9: note: previous specification in &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39; here
+         SoundPlayer(uint8_t offset, ReadMode mode = MEMORY, SamplingFrequency freq = Hz40k);
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:25:96: error: default argument given for parameter 3 of &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39; [-fpermissive]
+ SoundPlayer::SoundPlayer(uint8_t offset, ReadMode mode = MEMORY, SamplingFrequency freq = Hz40k) {
+                                                                                                ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.h:54:9: note: previous specification in &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39; here
+         SoundPlayer(uint8_t offset, ReadMode mode = MEMORY, SamplingFrequency freq = Hz40k);
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp: In constructor &#39;SoundPlayer::SoundPlayer(uint8_t, ReadMode, SamplingFrequency)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:29:5: error: &#39;TCCR2A&#39; was not declared in this scope
+     TCCR2A = 0;
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:30:5: error: &#39;TCCR2B&#39; was not declared in this scope
+     TCCR2B = 0;
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:31:5: error: &#39;TCNT2&#39; was not declared in this scope
+     TCNT2  = 0;
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:33:5: error: &#39;OCR2A&#39; was not declared in this scope
+     OCR2A = freq;
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:35:21: error: &#39;WGM21&#39; was not declared in this scope
+     TCCR2A |= (1 &lt;&lt; WGM21);
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:37:21: error: &#39;CS21&#39; was not declared in this scope
+     TCCR2B |= (1 &lt;&lt; CS21);   
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:39:5: error: &#39;TIMSK2&#39; was not declared in this scope
+     TIMSK2 |= (1 &lt;&lt; OCIE2A);
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:39:21: error: &#39;OCIE2A&#39; was not declared in this scope
+     TIMSK2 |= (1 &lt;&lt; OCIE2A);
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:51:5: error: &#39;DDRD&#39; was not declared in this scope
+     DDRD = DDRD | upperMask;  // Init lower selected ports (offset-7) as outputs.
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:52:5: error: &#39;DDRB&#39; was not declared in this scope
+     DDRB = DDRB | lowerMask; // Init ports (8 - (offset &#43; 8)) as outputs.
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp: In member function &#39;void SoundPlayer::play(Sound**, unsigned int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:81:14: error: invalid conversion from &#39;Sound**&#39; to &#39;volatile Sound**&#39; [-fpermissive]
+     soundPtr = soundArray;
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:87:109: error: default argument given for parameter 4 of &#39;Sound* SoundPlayer::newSound(const uint8_t*, size_t, float, TimeUnit)&#39; [-fpermissive]
+ Sound* SoundPlayer::newSound(const uint8_t data[], size_t length, float soundDuration, TimeUnit unit = HERTZ) {
+                                                                                                             ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.h:80:16: note: previous specification in &#39;Sound* SoundPlayer::newSound(const uint8_t*, size_t, float, TimeUnit)&#39; here
+         Sound* newSound(const uint8_t data[], size_t length, float soundDuration, TimeUnit unit = HERTZ);
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:93:121: error: default argument given for parameter 5 of &#39;void SoundPlayer::setSound(Sound*, const uint8_t*, size_t, float, TimeUnit)&#39; [-fpermissive]
+ void SoundPlayer::setSound(Sound *sound, const uint8_t data[], size_t length, float soundDuration, TimeUnit unit = HERTZ) {
+                                                                                                                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.h:91:14: note: previous specification in &#39;void SoundPlayer::setSound(Sound*, const uint8_t*, size_t, float, TimeUnit)&#39; here
+         void setSound(Sound *sound, const uint8_t data[], size_t length, float soundDuration, TimeUnit unit = HERTZ);
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:117:92: error: default argument given for parameter 3 of &#39;void SoundPlayer::setSoundDuration(Sound*, float, TimeUnit)&#39; [-fpermissive]
+ void SoundPlayer::setSoundDuration(Sound *sound, float soundDuration, TimeUnit unit = HERTZ) {
+                                                                                            ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.h:100:14: note: previous specification in &#39;void SoundPlayer::setSoundDuration(Sound*, float, TimeUnit)&#39; here
+         void setSoundDuration(Sound *sound, float soundDuration, TimeUnit unit = HERTZ);
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SoundPlayer/src/SoundPlayer.cpp:126:4: error: expected constructor, destructor, or type conversion before &#39;(&#39; token
+ ISR(TIMER2_COMPA_vect) {
+    ^
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

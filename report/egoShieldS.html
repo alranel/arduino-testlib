@@ -1,0 +1,479 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>egoShieldS - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>egoShieldS</h2>
+				<p>
+					Version: <b>1.1.1</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/egoshields/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp: In function &#39;void TIMER4_COMPA_vect()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:40:20: error: &#39;TCCR3B&#39; was not declared in this scope
+     uint8_t temp = TCCR3B, temp1 = TCC��������������������������������/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:40:20: note: suggested alternative: &#39;TCCR0B&#39;
+     uint8_t temp = TCCR3B, temp1 = TCCR1B;
+                    ^~~~~~
+                    TCCR0B
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:41:22: error: &#39;CS30&#39; was not declared in this scope
+     TCCR3B &amp;= ~(1 &lt;&lt; CS30);
+                      ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:41:22: note: suggested alternat/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/screen.cpp:43:16: error: &#39;SDA1&#39; was not declared in this scope
+   digitalWrite(SDA1, HIGH);
+                ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/screen.cpp:43:16: note: suggested alternative: &#39;SDA&#39;
+   digitalWrite(SDA1, HIGH);
+                ^~~~
+                SDA
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/screen.cpp:44:16: error: &#39;SCL1&#39; was not declared in this scope
+   digitalWrite(SCL1, HIGH);
+                ^~~~
+unction &#39;void egoShield::setup(uint16_t, uint16_t, float, float, float, float, int8_t, uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:85:5: error: &#39;stepper&#39; was not declared in this scope
+     stepper.setMaxVelocity(this-&gt;velocity);
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:85:5: note: suggested alternative: &#39;strupr&#39;
+     stepper.setMaxVelocity(this-&gt;velocity);
+     ^~~~~~~
+     strupr
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:93:/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/screen.cpp:68:33: note: suggested alternative: &#39;TWEN&#39;
+   _SFR_MEM8(this-&gt;twcr) = (1 &lt;&lt; TWEN0)| (1 &lt;&lt; TWINT0) | (1 &lt;&lt; TWSTO0);         // Send STOP
+                                 ^~~~~
+                                 TWEN
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/screen.cpp:68:47: error: &#39;TWINT0&#39; was not declared in this scope
+   _SFR_MEM8(this-&gt;twcr) = (1 &lt;&lt; TWEN0)| (1 &lt;&lt; TWINT0) | (1 &lt;&lt; TWSTO0);         // Send STOP
+                                               ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/screen.cpp:68:47: note: suggested alternative: &#39;TWINT&#39;
+   _SFR_MEM8(this-&gt;twcr) = (1 &lt;&lt; TWEN0)| (1 &lt;&lt; TWINT0) | (1 &lt;&lt; TWSTO0);         // Send STOP
+                                               ^~~~~~
+                                               TWINT
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/screen.cpp:68:63: error: &#39;TWSTO0&#39; was not declared in this scope
+   _SFR_MEM8(this-&gt;twcr) = (1 &lt;&lt; TWEN0)| (1 &lt;&lt; TWINT0) | (1 &lt;&lt; TWSTO0);         // Send STOP
+                                                               ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/screen.cpp:68:63: note: suggested alternative: &#39;TWSTO&#39;
+   _SFR_MEM8(this-&gt;twcr) = (1 &lt;&lt; TWEN0)| (1 &lt;&lt; TWINT0) | (1 &lt;&lt; TWSTO0);         // Send STOP
+                                                               ^~~~~~
+                                                               TWSTO
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/screen.h:33,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/screen.cpp:29:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/screen.cpp:82:30: error: &#39;TWEN0&#39; was not declared in this scope
+  _SFR_MEM8(this-&gt;twcr) = _BV(TWEN0);
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/screen.cpp:82:30: note: suggested alternative: &#39;TWEN&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/screen.cpp: In member function &#39;bool Screen::waitForAck()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/screen.cpp:123:40: error: &#39;TWINT0&#39; was not declared in this scope
+  while ((_SFR_MEM8(this-&gt;twcr) &amp; (1 &lt;&lt; TWINT0)) == 0)
+                                        ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/screen.cpp:123:40: note: suggested alternative: &#39;TWINT&#39;
+  while ((_SFR_MEM8(this-&gt;twcr) &amp; (1 &lt;&lt; TWINT0)) == 0)
+                                        ^~~~~~
+                                        TWINT
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/screen.cpp: In member function &#39;void Screen::clrScreen()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/screen.cpp:150:32: error: &#39;TWEN0&#39; was not declared in this scope
+  _SFR_MEM8(this-&gt;twcr) = (1 &lt;&lt; TWEN0) | (1 &lt;&lt; TWEA0) | (1 &lt;&lt; TWINT0) | (1 &lt;&lt; TWSTA0);
+                                ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/screen.cpp:150:32: note: suggested alternative: &#39;TWEN&#39;
+  _SFR_MEM8(this-&gt;twcr) = (1 &lt;&lt; TWEN0) | (1 &lt;&lt; TWEA0) | (1 &lt;&lt; TWINT0) | (1 &lt;&lt; TWSTA0);
+                                ^~~~~
+                                TWEN
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/screen.cpp:150:47: error: &#39;TWEA0&#39; was not declared in this scope
+  _SFR_MEM8(this-&gt;twcr) = (1 &lt;&lt; TWEN0) | (1 &lt;&lt; TWEA0) | (1 &lt;&lt; TWINT0) | (1 &lt;&lt; TWSTA0);
+                                               ^~~~~
+ &lt;&lt; WGM43) | ( 1 &lt;&lt; CS41);
+                  ^~~~~
+                  WGM12
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:138:33: error: &#39;WGM43&#39; was not declared in this scope
+   TCCR4B = (1 &lt;&lt; WGM42) | (1 &lt;&lt; WGM43) | ( 1 &lt;&lt; CS41);
+                                 ^~~~~
+/home/ec/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/screen.cpp:150:62: error: &#39;TWINT0&#39; was not declared in this scope
+  _SFR_MEM8(this-&gt;twcr) = (1 &lt;&lt; TWEN0) | (1 &lt;&lt; TWEA0) | (1 &lt;&lt; TWINT0) | (1 &lt;&lt; TWSTA0);
+                                                              ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/screen.cpp:150:62: note: suggested alternative: &#39;TWINT&#39;
+  _SFR_MEM8(this-&gt;twcr) = (1 &lt;&lt; TWEN0) | (1 &lt;&lt; TWEA0) | (1 &lt;&lt; TWINT0) | (1 &lt;&lt; TWSTA0);
+                                                              ^~~~~~
+                                                              TWINT
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/screen.cpp:150:78: error: &#39;TWSTA0&#39; was not declared in this scope
+  _SFR_MEM8(this-&gt;twcr) = (1 &lt;&lt; TWEN0) | (1 &lt;&lt; TWEA0) | (1 &lt;&lt; TWINT0) | (1 &lt;&lt; TWSTA0);
+                                                                              ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/screen.cpp:150:78: note: suggested alternative: &#39;TWSTA&#39;
+  _SFR_MEM8(this-&gt;twcr) = (1 &lt;&lt; TWEN0) | (1 &lt;&lt; TWEA0) | (1 &lt;&lt; TWINT0) | (1 &lt;&lt; TWSTA0);
+                                                                              ^~~~~~
+                                                                              TWSTA
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/screen.cpp:166:62: error: &#39;TWSTO0&#39; was not declared in this scope
+  _SFR_MEM8(this-&gt;twcr) = (1 &lt;&lt; TWEN0)| (1 &lt;&lt; TWINT0) | (1 &lt;&lt; TWSTO0);         // Send STOP
+                                                              ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/screen.cpp:166:62: note: suggested alternative: &#39;TWSTO&#39;
+  _SFR_MEM8(this-&gt;twcr) = (1 &lt;&lt; TWEN0)| (1 &lt;&lt; TWINT0) | (1 &lt;&lt; TWSTO0);         // Send STOP
+                                                              ^~~~~~
+                                                              TWSTO
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/screen.cpp: In member function &#39;void Screen::drawImage(const uint8_t*, uint8_t, uint8_t, uint8_t, uint8_t, bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/screen.cpp:189:32: e/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:200:7: note: suggested alternative: &#39;strupr&#39;
+       stepper.stop();
+       ^~~~~~~/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/screen.cpp:189:32: note: suggested alternative: &#39;TWEN&#39;
+  _SFR_MEM8(this-&gt;twcr) = (1 &lt;&lt; TWEN0) | (1 &lt;&lt; TWEA0) | (1 &lt;&lt; TWINT0/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:209:7: note: suggested alternative: &#39;strupr&#39;
+       stepper.stop();
+       ^~~~~~~
+       strupr
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:220:9: error: &#39;stepper&#39; was not declared in this scope
+         stepper.runContinous(CCW);
+         ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:220:9: note: suggested alternative: &#39;strupr&#39;
+         stepper.runContinous(CCW);
+         ^~~~~~~
+         strupr
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:220:30: error: &#39;CCW&#39; was not declared in this scope
+         stepper.runContinous(CCW);
+                              ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:227:7: error: &#39;stepper&#39; was not declared in this scope
+       stepper.moveAngle(-5.0);//move 5deg
+       ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:227:7: not</pre>
+
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.h:101:0,
+                 from /tmp/arduino-testlib237189989/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/screen.h:33:10: fatal error: avr/io.h: No such file or directory
+ #include &lt;avr/io.h&gt;
+          ^~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp: In function &#39;void TIMER4_COMPA_vect()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:40:20: error: &#39;TCCR3B&#39; was not declared in this scope
+     uint8_t temp = TCCR3B, temp1 = TCC��������������������������������/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:40:20: note: suggested alternative: &#39;TCB3&#39;
+     uint8_t temp = TCCR3B, temp1 = TCCR1B;
+                    ^~~~~~
+                    TCB3
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:41:22: error: &#39;CS30&#39; was not declar/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/screen.cpp:38:16: note: suggested alternative: &#39;SCL&#39;
+   digitalWrite(SCL0, HIGH);
+                ^~~~
+                SCL
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/e/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:42:5: note: suggested alternative: &#39;TCB1&#39;
+     TCCR1B &amp;= ~(1 &lt;&lt; CS10);
+     ^~~~~~
+     TCB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:42:22: error: &#39;CS10&#39; was not declared in this scope
+     TCCR1B &amp;= ~(1 &lt;&lt; CS10);
+                      ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:42:22: note: suggested alternative: &#39;B110&#39;
+     TCCR1B &amp;= ~(1 &lt;&lt; CS10);
+                      ^~~~
+                      B110
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:45:14: error: &#39;temp1&#39; was not declared in this scope
+     TCCR1B = temp1;
+              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:45:14: note: suggested alternative: &#39;temp&#39;
+     TCCR1B = temp1;
+              ^~~~~
+              temp
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp: In member function &#39;void egoShield::setup(uint16_t, uint16_t, float, float, float, float, int8_t, uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:85:5: error: &#39;stepper&#39; was not declared in this scope
+     stepper.setMaxVelocity(this-&gt;velocity);
+     ^~~~~~~
+                              TWI0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/screen.cpp:68:47: error: &#39;TWINT0&#39; was not declared in this scope
+   _SFR_MEM8(this-&gt;twcr) = (1/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:93:19: error: &#39;PID&#39; was not declared in this scope
+     stepper.setup(PID,3200.0,pTerm,iTerm,dTerm);
+                   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:93:19: note: suggested alternative: &#39;PD&#39;
+     stepper.setup(PID,3200.0,pTerm,iTerm,dTerm);
+                   ^~~
+                   PD
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:101:25: error: &#39;CCW&#39; was not declared in this scope
+       stepper.moveToEnd(CCW, map(stallsens, -64, 63, 0.0, 1.0));
+                         ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:101:25: note: suggested alternative: &#39;CCP&#39;
+       stepper.moveToEnd(CCW, map(stallsens, -64, 63, 0.0, 1.0));
+                         ^~~
+                         CCP
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:133:3: error: &#39;TCNT4&#39; was not declared in this scope
+   TCNT4 = 0;
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:133:3: note: suggested alternative: &#39;CNT&#39;
+   TCNT4 = 0;
+   ^~~~~
+   CNT
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:134:3: error: &#39;ICR4&#39; was not declared in this scope
+   ICR4 = 35000;
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:134:3: note: suggested alternative: &#39;ISR&#39;
+   ICR4 = 35000;
+   ^~~~
+   ISR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:135:3: error: &#39;TIFR4&#39; was not declared in this scope
+   TIFR4 = 0;
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:136:3: error: &#39;TIMSK4&#39; was not declared in this scope
+   TIMSK4 = (1 &lt;&lt; OCIE4A);
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:136:18: error: &#39;OCIE4A&#39; was not declared in this scope
+   TIMSK4 = (1 &lt;&lt; OCIE4A);
+                  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:137:3: error: &#39;TCCR4A&#39; was not declared in this scope
+   TCCR4A = (1 &lt;&lt; WGM41);
+   ^~~~~~
+ternative: &#39;TWI0&#39;
+  while ((_SFR_MEM8(this-&gt;twcr) &amp; (1 &lt;&lt; TWINT0)) == 0)
+                                        ^~~~~~
+                                        TWI0
+/home/ec2-user/arduino-test/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:138:3: error: &#39;TCCR4B&#39; was not declared in this scope
+   TCCR4B = (1 &lt;&lt; WGM42) | (1 &lt;&lt; WGM43) | ( 1 &lt;&lt; CS41);
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:138:18: error: &#39;WGM42&#39; was not declared in this scope
+   TCCR4B = (1 &lt;&lt; WGM42) | (1 &lt;&lt; WGM43) | ( 1 &lt;&lt; CS41);
+                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:138:33: error: &#39;WGM43&#39; was not declared in this scope
+   TCCR4B = (1 &lt;&lt; WGM42) | (1 &lt;&lt; WGM43) | ( 1 &lt;&lt; CS41);
+                                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:138:49: error: &#39;CS41&#39; was not declared in this scope
+   TCCR4B = (1 &lt;&lt; WGM42) | (1 &lt;&lt; WGM43) | ( 1 &lt;&lt; CS41);
+                                                 ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp: In member function &#39;void egoShieldTimeLapse::loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:144:14: error: &#39;stepper&#39; was not declared in this scope
+   setPoint = stepper.encoder.getAngleMoved();
+              ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:144:14: note: suggested alternative: &#39;strupr&#39;
+   setPoint = stepper.encoder.getAngleMoved();
+              ^~~~~~~
+              strupr
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp: In member function &#39;void egoShieldTeach::loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:168:14: error: &#39;stepper&#39; was not declared in this scope
+   setPoint = stepper.encoder.getAngleMoved();
+              ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:168:14: note: suggested alternative: &#39;strupr&#39;
+   setPoint = stepper.encoder.getAngleMoved();
+              ^~~~~~~
+              strupr
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp: In member function &#39;void egoShield::recordMode()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:200:7: error: &#39;stepper&#39; was not declared in this scope
+       stepper.stop();
+       ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:200:7: note: suggested alternative: &#39;strupr&#39;
+       stepper.stop();
+       ^~~~~~~
+       strupr
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:209:7: error: &#39;stepper&#39; was not declared in this scope
+       stepper.stop();
+       ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:209:7: note: suggested alternative: &#39;strupr&#39;
+       stepper.stop();
+       ^~~~~~~
+       strupr
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:220:9: error: &#39;stepper&#39; was not declared in this scope
+         stepper.runContinous(CCW);
+         ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:220:9: note: suggested alternative: &#39;strupr&#39;
+         stepper.runContinous(CCW);
+         ^~~~~~~
+         strupr
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:220:30: error: &#39;CCW&#39; was not declared in this scope
+         stepper.runContinous(CCW);
+                              ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:220:30: note: suggested alternative: &#39;CCP&#39;
+         stepper.runContinous(CCW);
+                              ^~~
+                              CCP
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:227:7: error: &#39;stepper&#39; was not declared in this scope
+       stepper.moveAngle(-5.0);//move 5deg
+       ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:227:7: note: suggested alternative: &#39;strupr&#39;
+       stepper.moveAngle(-5.0);//move 5deg
+       ^~~~~~~
+       strupr
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:237:9: error: &#39;stepper&#39; was not declared in this scope
+         stepper.runContinous(CW);
+         ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:237:9: note: suggested alternative: &#39;strupr&#39;
+         stepper.runContinous(CW);
+         ^~~~~~~
+         strupr
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.cpp:237:30: error: &#39;CW&#39; was not declared in this scope
+         stepper.runContinous(CW);
+                              ^~
+) | (1 &lt;&lt; TWSTA0);
+                                                              ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/screen.cpp:189:62: note: suggested alte/home</pre>
+
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.h:101:0,
+                 from /tmp/arduino-testlib2076536581/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/screen.h:33:10: fatal error: avr/io.h: No such file or directory
+ #include &lt;avr/io.h&gt;
+          ^~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /tmp/arduino-testlib237189989/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/egoShieldS/src/egoShieldS.h:100:26: fatal error: avr/pgmspace.h: No such file or directory
+compilation terminated.
+
+</pre>
+
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

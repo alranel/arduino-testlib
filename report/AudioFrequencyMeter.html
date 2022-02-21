@@ -1,0 +1,1143 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>AudioFrequencyMeter - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>AudioFrequencyMeter</h2>
+				<p>
+					Version: <b>1.0.3</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/audiofrequencymeter/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>SimpleAudioFrequencyMeter</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library AudioFrequencyMeter claims to run on samd architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;void AudioFrequencyMeter::ADCconfigure()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:163:6: error: base operand of &#39;-&gt;&#39; is not a pointer
+   ADC-&gt;CTRLB.bit.RESSEL = ADC_CTRLB_RESSEL_8BIT_Val;
+      ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:163:27: error: &#39;ADC_CTRLB_RESSEL_8BIT_Val&#39; was not declared in this scope
+   ADC-&gt;CTRLB.bit.RESSEL = ADC_CTRLB_RESSEL_8BIT_Val;
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:167:6: error: base operand of &#39;-&gt;&#39; is not a pointer
+   ADC-&gt;CTRLB.bit.PRESCALER = ADC_CTRLB_PRESCALER_DIV8_Val;     // Divide Clock by 8 -&gt; ~100kHz
+      ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:167:30: error: &#39;ADC_CTRLB_PRESCALER_DIV8_Val&#39; was not declared in this scope
+   ADC-&gt;CTRLB.bit.PRESCALER = ADC_CTRLB_PRESCALER_DIV8_Val;     // Divide Clock by 8 -&gt; ~100kHz
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:175:6: error: base operand of &#39;-&gt;&#39; is not a pointer
+   ADC-&gt;SAMPCTRL.reg = 0x1F;                                    // Set max Sampling Time Length
+      ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In function &#39;bool ADCisSyncing()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:184:14: error: base operand of &#39;-&gt;&#39; is not a pointer
+   return (ADC-&gt;STATUS.bit.SYNCBUSY);
+              ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;void AudioFrequencyMeter::ADCdisable()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:189:6: error: base operand of &#39;-&gt;&#39; is not a pointer
+   ADC-&gt;CTRLA.bit.ENABLE = 0x00;                               // Disable ADC
+      ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;void AudioFrequencyMeter::ADCenable()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:196:6: error: base operand of &#39;-&gt;&#39; is not a pointer
+   ADC-&gt;CTRLA.bit.ENABLE = 0x01;                               // Enable ADC
+      ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;void AudioFrequencyMeter::ADCsetMux()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:208:28: error: &#39;g_APinDescription&#39; was not declared in this scope
+   pinPeripheral(samplePin, g_APinDescription[samplePin].ulPinType);
+                            ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:208:3: error: &#39;pinPeripheral&#39; was not declared in this scope
+   pinPeripheral(samplePin, g_APinDescription[samplePin].ulPinType);
+   ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:212:6: error: base operand of &#39;-&gt;&#39; is not a pointer
+   ADC-&gt;INPUTCTRL.bit.MUXPOS = g_APinDescription[samplePin].ulADCChannelNumber; // Selection for the positive ADC input
+      ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;void AudioFrequencyMeter::tcConfigure()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:3: error: &#39;GCLK&#39; was not declared in this scope
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:3: note: suggested alternative: &#39;SCL&#39;
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+   ^~~~
+   SCL
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:35: error: &#39;GCLK_CLKCTRL_CLKEN&#39; was not declared in this scope
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+                                   ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:56: error: &#39;GCLK_CLKCTRL_GEN_GCLK0&#39; was not declared in this scope
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+                                                        ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:97: error: &#39;GCM_TC4_TC5&#39; was not declared in this scope
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+                                                                                                 ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:81: error: &#39;GCLK_CLKCTRL_ID&#39; was not declared in this scope
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+                                                                                 ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:224:3: error: &#39;TC5&#39; was not declared in this scope
+   TC5-&gt;COUNT16.CTRLA.reg |= TC_CTRLA_MODE_COUNT16;
+   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:224:3: note: suggested alternative: &#39;PC5&#39;
+   TC5-&gt;COUNT16.CTRLA.reg |= TC_CTRLA_MODE_COUNT16;
+   ^~~
+   PC5
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:224:29: error: &#39;TC_CTRLA_MODE_COUNT16&#39; was not declared in this scope
+   TC5-&gt;COUNT16.CTRLA.reg |= TC_CTRLA_MODE_COUNT16;
+                             ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:227:29: error: &#39;TC_CTRLA_WAVEGEN_MFRQ&#39; was not declared in this scope
+   TC5-&gt;COUNT16.CTRLA.reg |= TC_CTRLA_WAVEGEN_MFRQ;
+                             ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:229:29: error: &#39;TC_CTRLA_PRESCALER_DIV1&#39; was not declared in this scope
+   TC5-&gt;COUNT16.CTRLA.reg |= TC_CTRLA_PRESCALER_DIV1 | TC_CTRLA_ENABLE;
+                             ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:229:55: error: &#39;TC_CTRLA_ENABLE&#39; was not declared in this scope
+   TC5-&gt;COUNT16.CTRLA.reg |= TC_CTRLA_PRESCALER_DIV1 | TC_CTRLA_ENABLE;
+                                                       ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:231:40: error: &#39;SystemCoreClock&#39; was not declared in this scope
+   TC5-&gt;COUNT16.CC[0].reg = (uint16_t) (SystemCoreClock / sampleRate - 1);
+                                        ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:238:19: error: &#39;TC5_IRQn&#39; was not declared in this scope
+   NVIC_DisableIRQ(TC5_IRQn);
+                   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:238:3: error: &#39;NVIC_DisableIRQ&#39; was not declared in this scope
+   NVIC_DisableIRQ(TC5_IRQn);
+   ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:239:3: error: &#39;NVIC_ClearPendingIRQ&#39; was not declared in this scope
+   NVIC_ClearPendingIRQ(TC5_IRQn);
+   ^~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:240:3: error: &#39;NVIC_SetPriority&#39; was not declared in this scope
+   NVIC_SetPriority(TC5_IRQn, 0x00);
+   ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:241:3: error: &#39;NVIC_EnableIRQ&#39; was not declared in this scope
+   NVIC_EnableIRQ(TC5_IRQn);
+   ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;bool AudioFrequencyMeter::tcIsSyncing()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:251:10: error: &#39;TC5&#39; was not declared in this scope
+   return TC5-&gt;COUNT16.STATUS.reg &amp; TC_STATUS_SYNCBUSY;
+          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:251:10: note: suggested alternative: &#39;PC5&#39;
+   return TC5-&gt;COUNT16.STATUS.reg &amp; TC_STATUS_SYNCBUSY;
+          ^~~
+          PC5
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:251:36: error: &#39;TC_STATUS_SYNCBUSY&#39; was not declared in this scope
+   return TC5-&gt;COUNT16.STATUS.reg &amp; TC_STATUS_SYNCBUSY;
+                                    ^~~~~~~~~~~</pre>
+
+					
+					<h4>examples/SimpleAudioFrequencyMeter</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library AudioFrequencyMeter claims to run on samd architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;void AudioFrequencyMeter::ADCconfigure()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:163:6: error: base operand of &#39;-&gt;&#39; is not a pointer
+   ADC-&gt;CTRLB.bit.RESSEL = ADC_CTRLB_RESSEL_8BIT_Val;
+      ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:163:27: error: &#39;ADC_CTRLB_RESSEL_8BIT_Val&#39; was not declared in this scope
+   ADC-&gt;CTRLB.bit.RESSEL = ADC_CTRLB_RESSEL_8BIT_Val;
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:167:6: error: base operand of &#39;-&gt;&#39; is not a pointer
+   ADC-&gt;CTRLB.bit.PRESCALER = ADC_CTRLB_PRESCALER_DIV8_Val;     // Divide Clock by 8 -&gt; ~100kHz
+      ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:167:30: error: &#39;ADC_CTRLB_PRESCALER_DIV8_Val&#39; was not declared in this scope
+   ADC-&gt;CTRLB.bit.PRESCALER = ADC_CTRLB_PRESCALER_DIV8_Val;     // Divide Clock by 8 -&gt; ~100kHz
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:175:6: error: base operand of &#39;-&gt;&#39; is not a pointer
+   ADC-&gt;SAMPCTRL.reg = 0x1F;                                    // Set max Sampling Time Length
+      ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In function &#39;bool ADCisSyncing()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:184:14: error: base operand of &#39;-&gt;&#39; is not a pointer
+   return (ADC-&gt;STATUS.bit.SYNCBUSY);
+              ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;void AudioFrequencyMeter::ADCdisable()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:189:6: error: base operand of &#39;-&gt;&#39; is not a pointer
+   ADC-&gt;CTRLA.bit.ENABLE = 0x00;                               // Disable ADC
+      ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;void AudioFrequencyMeter::ADCenable()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:196:6: error: base operand of &#39;-&gt;&#39; is not a pointer
+   ADC-&gt;CTRLA.bit.ENABLE = 0x01;                               // Enable ADC
+      ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;void AudioFrequencyMeter::ADCsetMux()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:208:28: error: &#39;g_APinDescription&#39; was not declared in this scope
+   pinPeripheral(samplePin, g_APinDescription[samplePin].ulPinType);
+                            ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:208:3: error: &#39;pinPeripheral&#39; was not declared in this scope
+   pinPeripheral(samplePin, g_APinDescription[samplePin].ulPinType);
+   ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:212:6: error: base operand of &#39;-&gt;&#39; is not a pointer
+   ADC-&gt;INPUTCTRL.bit.MUXPOS = g_APinDescription[samplePin].ulADCChannelNumber; // Selection for the positive ADC input
+      ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;void AudioFrequencyMeter::tcConfigure()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:3: error: &#39;GCLK&#39; was not declared in this scope
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:3: note: suggested alternative: &#39;SCL&#39;
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+   ^~~~
+   SCL
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:35: error: &#39;GCLK_CLKCTRL_CLKEN&#39; was not declared in this scope
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+                                   ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:56: error: &#39;GCLK_CLKCTRL_GEN_GCLK0&#39; was not declared in this scope
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+                                                        ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:97: error: &#39;GCM_TC4_TC5&#39; was not declared in this scope
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+                                                                                                 ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:81: error: &#39;GCLK_CLKCTRL_ID&#39; was not declared in this scope
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+                                                                                 ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:224:3: error: &#39;TC5&#39; was not declared in this scope
+   TC5-&gt;COUNT16.CTRLA.reg |= TC_CTRLA_MODE_COUNT16;
+   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:224:3: note: suggested alternative: &#39;PC5&#39;
+   TC5-&gt;COUNT16.CTRLA.reg |= TC_CTRLA_MODE_COUNT16;
+   ^~~
+   PC5
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:224:29: error: &#39;TC_CTRLA_MODE_COUNT16&#39; was not declared in this scope
+   TC5-&gt;COUNT16.CTRLA.reg |= TC_CTRLA_MODE_COUNT16;
+                             ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:227:29: error: &#39;TC_CTRLA_WAVEGEN_MFRQ&#39; was not declared in this scope
+   TC5-&gt;COUNT16.CTRLA.reg |= TC_CTRLA_WAVEGEN_MFRQ;
+                             ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:229:29: error: &#39;TC_CTRLA_PRESCALER_DIV1&#39; was not declared in this scope
+   TC5-&gt;COUNT16.CTRLA.reg |= TC_CTRLA_PRESCALER_DIV1 | TC_CTRLA_ENABLE;
+                             ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:229:55: error: &#39;TC_CTRLA_ENABLE&#39; was not declared in this scope
+   TC5-&gt;COUNT16.CTRLA.reg |= TC_CTRLA_PRESCALER_DIV1 | TC_CTRLA_ENABLE;
+                                                       ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:231:40: error: &#39;SystemCoreClock&#39; was not declared in this scope
+   TC5-&gt;COUNT16.CC[0].reg = (uint16_t) (SystemCoreClock / sampleRate - 1);
+                                        ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:238:19: error: &#39;TC5_IRQn&#39; was not declared in this scope
+   NVIC_DisableIRQ(TC5_IRQn);
+                   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:238:3: error: &#39;NVIC_DisableIRQ&#39; was not declared in this scope
+   NVIC_DisableIRQ(TC5_IRQn);
+   ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:239:3: error: &#39;NVIC_ClearPendingIRQ&#39; was not declared in this scope
+   NVIC_ClearPendingIRQ(TC5_IRQn);
+   ^~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:240:3: error: &#39;NVIC_SetPriority&#39; was not declared in this scope
+   NVIC_SetPriority(TC5_IRQn, 0x00);
+   ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:241:3: error: &#39;NVIC_EnableIRQ&#39; was not declared in this scope
+   NVIC_EnableIRQ(TC5_IRQn);
+   ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;bool AudioFrequencyMeter::tcIsSyncing()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:251:10: error: &#39;TC5&#39; was not declared in this scope
+   return TC5-&gt;COUNT16.STATUS.reg &amp; TC_STATUS_SYNCBUSY;
+          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:251:10: note: suggested alternative: &#39;PC5&#39;
+   return TC5-&gt;COUNT16.STATUS.reg &amp; TC_STATUS_SYNCBUSY;
+          ^~~
+          PC5
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:251:36: error: &#39;TC_STATUS_SYNCBUSY&#39; was not declared in this scope
+   return TC5-&gt;COUNT16.STATUS.reg &amp; TC_STATUS_SYNCBUSY;
+                                    ^~~~~~~~~~~</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library AudioFrequencyMeter claims to run on samd architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:44:21: error: &#39;unsigned int time&#39; redeclared as different kind of symbol
+ static unsigned int time, totalTimer;                    // Variables used to compute period
+                     ^~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/stdlib.h:11:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/cstdlib:75,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/stdlib.h:36,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Interrupts.h:5,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/ArduinoAPI.h:29,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:27,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.h:28,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:27:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/time.h:59:11: note: previous declaration &#39;time_t time(time_t*)&#39;
+ time_t    _EXFUN(time,     (time_t *_timer));
+           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;void AudioFrequencyMeter::initializeVariables()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:150:10: error: assignment of function &#39;time_t time(time_t*)&#39;
+   time = 0;
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:150:10: error: cannot convert &#39;int&#39; to &#39;time_t(time_t*) {aka long long int(long long int*)}&#39; in assignment
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;void AudioFrequencyMeter::ADCconfigure()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:163:3: error: &#39;ADC&#39; was not declared in this scope
+   ADC-&gt;CTRLB.bit.RESSEL = ADC_CTRLB_RESSEL_8BIT_Val;
+   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:163:3: note: suggested alternative: &#39;ADC0&#39;
+   ADC-&gt;CTRLB.bit.RESSEL = ADC_CTRLB_RESSEL_8BIT_Val;
+   ^~~
+   ADC0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:163:27: error: &#39;ADC_CTRLB_RESSEL_8BIT_Val&#39; was not declared in this scope
+   ADC-&gt;CTRLB.bit.RESSEL = ADC_CTRLB_RESSEL_8BIT_Val;
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:163:27: note: suggested alternative: &#39;ADC_CS_AINSEL_BITS&#39;
+   ADC-&gt;CTRLB.bit.RESSEL = ADC_CTRLB_RESSEL_8BIT_Val;
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~
+                           ADC_CS_AINSEL_BITS
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:167:30: error: &#39;ADC_CTRLB_PRESCALER_DIV8_Val&#39; was not declared in this scope
+   ADC-&gt;CTRLB.bit.PRESCALER = ADC_CTRLB_PRESCALER_DIV8_Val;     // Divide Clock by 8 -&gt; ~100kHz
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In function &#39;bool ADCisSyncing()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:184:11: error: &#39;ADC&#39; was not declared in this scope
+   return (ADC-&gt;STATUS.bit.SYNCBUSY);
+           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:184:11: note: suggested alternative: &#39;ADC0&#39;
+   return (ADC-&gt;STATUS.bit.SYNCBUSY);
+           ^~~
+           ADC0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;void AudioFrequencyMeter::ADCdisable()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:189:3: error: &#39;ADC&#39; was not declared in this scope
+   ADC-&gt;CTRLA.bit.ENABLE = 0x00;                               // Disable ADC
+   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:189:3: note: suggested alternative: &#39;ADC0&#39;
+   ADC-&gt;CTRLA.bit.ENABLE = 0x00;                               // Disable ADC
+   ^~~
+   ADC0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;void AudioFrequencyMeter::ADCenable()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:196:3: error: &#39;ADC&#39; was not declared in this scope
+   ADC-&gt;CTRLA.bit.ENABLE = 0x01;                               // Enable ADC
+   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:196:3: note: suggested alternative: &#39;ADC0&#39;
+   ADC-&gt;CTRLA.bit.ENABLE = 0x01;                               // Enable ADC
+   ^~~
+   ADC0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;void AudioFrequencyMeter::ADCsetMux()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:208:55: error: invalid use of incomplete type &#39;PinDescription {aka struct _PinDescription}&#39;
+   pinPeripheral(samplePin, g_APinDescription[samplePin].ulPinType);
+                                                       ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.h:28:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:27:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:80:16: note: forward declaration of &#39;PinDescription {aka struct _PinDescription}&#39;
+ typedef struct _PinDescription PinDescription;
+                ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:208:3: error: &#39;pinPeripheral&#39; was not declared in this scope
+   pinPeripheral(samplePin, g_APinDescription[samplePin].ulPinType);
+   ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:212:3: error: &#39;ADC&#39; was not declared in this scope
+   ADC-&gt;INPUTCTRL.bit.MUXPOS = g_APinDescription[samplePin].ulADCChannelNumber; // Selection for the positive ADC input
+   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:212:3: note: suggested alternative: &#39;ADC0&#39;
+   ADC-&gt;INPUTCTRL.bit.MUXPOS = g_APinDescription[samplePin].ulADCChannelNumber; // Selection for the positive ADC input
+   ^~~
+   ADC0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:212:58: error: invalid use of incomplete type &#39;PinDescription {aka struct _PinDescription}&#39;
+   ADC-&gt;INPUTCTRL.bit.MUXPOS = g_APinDescription[samplePin].ulADCChannelNumber; // Selection for the positive ADC input
+                                                          ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.h:28:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:27:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:80:16: note: forward declaration of &#39;PinDescription {aka struct _PinDescription}&#39;
+ typedef struct _PinDescription PinDescription;
+                ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;void AudioFrequencyMeter::tcConfigure()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:3: error: &#39;GCLK&#39; was not declared in this scope
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:3: note: suggested alternative: &#39;SCK&#39;
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+   ^~~~
+   SCK
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:35: error: &#39;GCLK_CLKCTRL_CLKEN&#39; was not declared in this scope
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+                                   ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:56: error: &#39;GCLK_CLKCTRL_GEN_GCLK0&#39; was not declared in this scope
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(G</pre>
+
+					
+					<h4>examples/SimpleAudioFrequencyMeter</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library AudioFrequencyMeter claims to run on samd architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:44:21: error: &#39;unsigned int time&#39; redeclared as different kind of symbol
+ static unsigned int time, totalTimer;                    // Variables used to compute period
+                     ^~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/stdlib.h:11:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/cstdlib:75,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c&#43;&#43;/7.2.1/stdlib.h:36,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/Interrupts.h:5,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/ArduinoAPI.h:29,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:27,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.h:28,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:27:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/time.h:59:11: note: previous declaration &#39;time_t time(time_t*)&#39;
+ time_t    _EXFUN(time,     (time_t *_timer));
+           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;void AudioFrequencyMeter::initializeVariables()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:150:10: error: assignment of function &#39;time_t time(time_t*)&#39;
+   time = 0;
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:150:10: error: cannot convert &#39;int&#39; to &#39;time_t(time_t*) {aka long long int(long long int*)}&#39; in assignment
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;void AudioFrequencyMeter::ADCconfigure()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:163:3: error: &#39;ADC&#39; was not declared in this scope
+   ADC-&gt;CTRLB.bit.RESSEL = ADC_CTRLB_RESSEL_8BIT_Val;
+   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:163:3: note: suggested alternative: &#39;ADC0&#39;
+   ADC-&gt;CTRLB.bit.RESSEL = ADC_CTRLB_RESSEL_8BIT_Val;
+   ^~~
+   ADC0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:163:27: error: &#39;ADC_CTRLB_RESSEL_8BIT_Val&#39; was not declared in this scope
+   ADC-&gt;CTRLB.bit.RESSEL = ADC_CTRLB_RESSEL_8BIT_Val;
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:163:27: note: suggested alternative: &#39;ADC_CS_AINSEL_BITS&#39;
+   ADC-&gt;CTRLB.bit.RESSEL = ADC_CTRLB_RESSEL_8BIT_Val;
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~
+                           ADC_CS_AINSEL_BITS
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:167:30: error: &#39;ADC_CTRLB_PRESCALER_DIV8_Val&#39; was not declared in this scope
+   ADC-&gt;CTRLB.bit.PRESCALER = ADC_CTRLB_PRESCALER_DIV8_Val;     // Divide Clock by 8 -&gt; ~100kHz
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In function &#39;bool ADCisSyncing()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:184:11: error: &#39;ADC&#39; was not declared in this scope
+   return (ADC-&gt;STATUS.bit.SYNCBUSY);
+           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:184:11: note: suggested alternative: &#39;ADC0&#39;
+   return (ADC-&gt;STATUS.bit.SYNCBUSY);
+           ^~~
+           ADC0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;void AudioFrequencyMeter::ADCdisable()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:189:3: error: &#39;ADC&#39; was not declared in this scope
+   ADC-&gt;CTRLA.bit.ENABLE = 0x00;                               // Disable ADC
+   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:189:3: note: suggested alternative: &#39;ADC0&#39;
+   ADC-&gt;CTRLA.bit.ENABLE = 0x00;                               // Disable ADC
+   ^~~
+   ADC0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;void AudioFrequencyMeter::ADCenable()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:196:3: error: &#39;ADC&#39; was not declared in this scope
+   ADC-&gt;CTRLA.bit.ENABLE = 0x01;                               // Enable ADC
+   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:196:3: note: suggested alternative: &#39;ADC0&#39;
+   ADC-&gt;CTRLA.bit.ENABLE = 0x01;                               // Enable ADC
+   ^~~
+   ADC0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;void AudioFrequencyMeter::ADCsetMux()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:208:55: error: invalid use of incomplete type &#39;PinDescription {aka struct _PinDescription}&#39;
+   pinPeripheral(samplePin, g_APinDescription[samplePin].ulPinType);
+                                                       ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.h:28:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:27:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:80:16: note: forward declaration of &#39;PinDescription {aka struct _PinDescription}&#39;
+ typedef struct _PinDescription PinDescription;
+                ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:208:3: error: &#39;pinPeripheral&#39; was not declared in this scope
+   pinPeripheral(samplePin, g_APinDescription[samplePin].ulPinType);
+   ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:212:3: error: &#39;ADC&#39; was not declared in this scope
+   ADC-&gt;INPUTCTRL.bit.MUXPOS = g_APinDescription[samplePin].ulADCChannelNumber; // Selection for the positive ADC input
+   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:212:3: note: suggested alternative: &#39;ADC0&#39;
+   ADC-&gt;INPUTCTRL.bit.MUXPOS = g_APinDescription[samplePin].ulADCChannelNumber; // Selection for the positive ADC input
+   ^~~
+   ADC0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:212:58: error: invalid use of incomplete type &#39;PinDescription {aka struct _PinDescription}&#39;
+   ADC-&gt;INPUTCTRL.bit.MUXPOS = g_APinDescription[samplePin].ulADCChannelNumber; // Selection for the positive ADC input
+                                                          ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.h:28:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:27:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:80:16: note: forward declaration of &#39;PinDescription {aka struct _PinDescription}&#39;
+ typedef struct _PinDescription PinDescription;
+                ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;void AudioFrequencyMeter::tcConfigure()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:3: error: &#39;GCLK&#39; was not declared in this scope
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:3: note: suggested alternative: &#39;SCK&#39;
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+   ^~~~
+   SCK
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:35: error: &#39;GCLK_CLKCTRL_CLKEN&#39; was not declared in this scope
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+                                   ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:56: error: &#39;GCLK_CLKCTRL_GEN_GCLK0&#39; was not declared in this scope
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(G</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library AudioFrequencyMeter claims to run on samd architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;void AudioFrequencyMeter::ADCconfigure()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:163:3: error: &#39;ADC&#39; was not declared in this scope
+   ADC-&gt;CTRLB.bit.RESSEL = ADC_CTRLB_RESSEL_8BIT_Val;
+   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:163:3: note: suggested alternative: &#39;ADC0&#39;
+   ADC-&gt;CTRLB.bit.RESSEL = ADC_CTRLB_RESSEL_8BIT_Val;
+   ^~~
+   ADC0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:163:27: error: &#39;ADC_CTRLB_RESSEL_8BIT_Val&#39; was not declared in this scope
+   ADC-&gt;CTRLB.bit.RESSEL = ADC_CTRLB_RESSEL_8BIT_Val;
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:163:27: note: suggested alternative: &#39;ADC_RESSEL_8BIT_gc&#39;
+   ADC-&gt;CTRLB.bit.RESSEL = ADC_CTRLB_RESSEL_8BIT_Val;
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~
+                           ADC_RESSEL_8BIT_gc
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:167:30: error: &#39;ADC_CTRLB_PRESCALER_DIV8_Val&#39; was not declared in this scope
+   ADC-&gt;CTRLB.bit.PRESCALER = ADC_CTRLB_PRESCALER_DIV8_Val;     // Divide Clock by 8 -&gt; ~100kHz
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:167:30: note: suggested alternative: &#39;RTC_PRESCALER_DIV8_gc&#39;
+   ADC-&gt;CTRLB.bit.PRESCALER = ADC_CTRLB_PRESCALER_DIV8_Val;     // Divide Clock by 8 -&gt; ~100kHz
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                              RTC_PRESCALER_DIV8_gc
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In function &#39;bool ADCisSyncing()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:184:11: error: &#39;ADC&#39; was not declared in this scope
+   return (ADC-&gt;STATUS.bit.SYNCBUSY);
+           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:184:11: note: suggested alternative: &#39;ADC0&#39;
+   return (ADC-&gt;STATUS.bit.SYNCBUSY);
+           ^~~
+           ADC0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;void AudioFrequencyMeter::ADCdisable()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:189:3: error: &#39;ADC&#39; was not declared in this scope
+   ADC-&gt;CTRLA.bit.ENABLE = 0x00;                               // Disable ADC
+   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:189:3: note: suggested alternative: &#39;ADC0&#39;
+   ADC-&gt;CTRLA.bit.ENABLE = 0x00;                               // Disable ADC
+   ^~~
+   ADC0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;void AudioFrequencyMeter::ADCenable()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:196:3: error: &#39;ADC&#39; was not declared in this scope
+   ADC-&gt;CTRLA.bit.ENABLE = 0x01;                               // Enable ADC
+   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:196:3: note: suggested alternative: &#39;ADC0&#39;
+   ADC-&gt;CTRLA.bit.ENABLE = 0x01;                               // Enable ADC
+   ^~~
+   ADC0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;void AudioFrequencyMeter::ADCsetMux()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:208:28: error: &#39;g_APinDescription&#39; was not declared in this scope
+   pinPeripheral(samplePin, g_APinDescription[samplePin].ulPinType);
+                            ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:208:28: note: suggested alternative: &#39;IADDescriptor&#39;
+   pinPeripheral(samplePin, g_APinDescription[samplePin].ulPinType);
+                            ^~~~~~~~~~~~~~~~~
+                            IADDescriptor
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:208:3: error: &#39;pinPeripheral&#39; was not declared in this scope
+   pinPeripheral(samplePin, g_APinDescription[samplePin].ulPinType);
+   ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:212:3: error: &#39;ADC&#39; was not declared in this scope
+   ADC-&gt;INPUTCTRL.bit.MUXPOS = g_APinDescription[samplePin].ulADCChannelNumber; // Selection for the positive ADC input
+   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:212:3: note: suggested alternative: &#39;ADC0&#39;
+   ADC-&gt;INPUTCTRL.bit.MUXPOS = g_APinDescription[samplePin].ulADCChannelNumber; // Selection for the positive ADC input
+   ^~~
+   ADC0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;void AudioFrequencyMeter::tcConfigure()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:3: error: &#39;GCLK&#39; was not declared in this scope
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:3: note: suggested alternative: &#39;SCL&#39;
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+   ^~~~
+   SCL
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:677:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.h:28,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:27:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:9: error: expected unqualified-id before &#39;(&#39; token
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:35: error: &#39;GCLK_CLKCTRL_CLKEN&#39; was not declared in this scope
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+                                   ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:35: note: suggested alternative: &#39;CLKCTRL_CLKSEL_t&#39;
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+                                   ^~~~~~~~~~~~~~~~~~
+                                   CLKCTRL_CLKSEL_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:56: error: &#39;GCLK_CLKCTRL_GEN_GCLK0&#39; was not declared in this scope
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+                                                        ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:56: note: suggested alternative: &#39;CLKCTRL_PEN_bp&#39;
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+                                                        ^~~~~~~~~~~~~~~~~~~~~~
+                                                        CLKCTRL_PEN_bp
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:97: error: &#39;GCM_TC4_TC5&#39; was not declared in this scope
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+                                                                                                 ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:81: error: &#39;GCLK_CLKCTRL_ID&#39; was not declared in this scope
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+                                                                                 ^~~~~~~~~~~~~~~
+/home/ec2-user/ardu</pre>
+
+					
+					<h4>examples/SimpleAudioFrequencyMeter</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library AudioFrequencyMeter claims to run on samd architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;void AudioFrequencyMeter::ADCconfigure()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:163:3: error: &#39;ADC&#39; was not declared in this scope
+   ADC-&gt;CTRLB.bit.RESSEL = ADC_CTRLB_RESSEL_8BIT_Val;
+   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:163:3: note: suggested alternative: &#39;ADC0&#39;
+   ADC-&gt;CTRLB.bit.RESSEL = ADC_CTRLB_RESSEL_8BIT_Val;
+   ^~~
+   ADC0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:163:27: error: &#39;ADC_CTRLB_RESSEL_8BIT_Val&#39; was not declared in this scope
+   ADC-&gt;CTRLB.bit.RESSEL = ADC_CTRLB_RESSEL_8BIT_Val;
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:163:27: note: suggested alternative: &#39;ADC_RESSEL_8BIT_gc&#39;
+   ADC-&gt;CTRLB.bit.RESSEL = ADC_CTRLB_RESSEL_8BIT_Val;
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~
+                           ADC_RESSEL_8BIT_gc
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:167:30: error: &#39;ADC_CTRLB_PRESCALER_DIV8_Val&#39; was not declared in this scope
+   ADC-&gt;CTRLB.bit.PRESCALER = ADC_CTRLB_PRESCALER_DIV8_Val;     // Divide Clock by 8 -&gt; ~100kHz
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:167:30: note: suggested alternative: &#39;RTC_PRESCALER_DIV8_gc&#39;
+   ADC-&gt;CTRLB.bit.PRESCALER = ADC_CTRLB_PRESCALER_DIV8_Val;     // Divide Clock by 8 -&gt; ~100kHz
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                              RTC_PRESCALER_DIV8_gc
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In function &#39;bool ADCisSyncing()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:184:11: error: &#39;ADC&#39; was not declared in this scope
+   return (ADC-&gt;STATUS.bit.SYNCBUSY);
+           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:184:11: note: suggested alternative: &#39;ADC0&#39;
+   return (ADC-&gt;STATUS.bit.SYNCBUSY);
+           ^~~
+           ADC0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;void AudioFrequencyMeter::ADCdisable()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:189:3: error: &#39;ADC&#39; was not declared in this scope
+   ADC-&gt;CTRLA.bit.ENABLE = 0x00;                               // Disable ADC
+   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:189:3: note: suggested alternative: &#39;ADC0&#39;
+   ADC-&gt;CTRLA.bit.ENABLE = 0x00;                               // Disable ADC
+   ^~~
+   ADC0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;void AudioFrequencyMeter::ADCenable()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:196:3: error: &#39;ADC&#39; was not declared in this scope
+   ADC-&gt;CTRLA.bit.ENABLE = 0x01;                               // Enable ADC
+   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:196:3: note: suggested alternative: &#39;ADC0&#39;
+   ADC-&gt;CTRLA.bit.ENABLE = 0x01;                               // Enable ADC
+   ^~~
+   ADC0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;void AudioFrequencyMeter::ADCsetMux()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:208:28: error: &#39;g_APinDescription&#39; was not declared in this scope
+   pinPeripheral(samplePin, g_APinDescription[samplePin].ulPinType);
+                            ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:208:28: note: suggested alternative: &#39;IADDescriptor&#39;
+   pinPeripheral(samplePin, g_APinDescription[samplePin].ulPinType);
+                            ^~~~~~~~~~~~~~~~~
+                            IADDescriptor
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:208:3: error: &#39;pinPeripheral&#39; was not declared in this scope
+   pinPeripheral(samplePin, g_APinDescription[samplePin].ulPinType);
+   ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:212:3: error: &#39;ADC&#39; was not declared in this scope
+   ADC-&gt;INPUTCTRL.bit.MUXPOS = g_APinDescription[samplePin].ulADCChannelNumber; // Selection for the positive ADC input
+   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:212:3: note: suggested alternative: &#39;ADC0&#39;
+   ADC-&gt;INPUTCTRL.bit.MUXPOS = g_APinDescription[samplePin].ulADCChannelNumber; // Selection for the positive ADC input
+   ^~~
+   ADC0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;void AudioFrequencyMeter::tcConfigure()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:3: error: &#39;GCLK&#39; was not declared in this scope
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:3: note: suggested alternative: &#39;SCL&#39;
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+   ^~~~
+   SCL
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:677:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.h:28,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:27:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:9: error: expected unqualified-id before &#39;(&#39; token
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:35: error: &#39;GCLK_CLKCTRL_CLKEN&#39; was not declared in this scope
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+                                   ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:35: note: suggested alternative: &#39;CLKCTRL_CLKSEL_t&#39;
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+                                   ^~~~~~~~~~~~~~~~~~
+                                   CLKCTRL_CLKSEL_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:56: error: &#39;GCLK_CLKCTRL_GEN_GCLK0&#39; was not declared in this scope
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+                                                        ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:56: note: suggested alternative: &#39;CLKCTRL_PEN_bp&#39;
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+                                                        ^~~~~~~~~~~~~~~~~~~~~~
+                                                        CLKCTRL_PEN_bp
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:97: error: &#39;GCM_TC4_TC5&#39; was not declared in this scope
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+                                                                                                 ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:81: error: &#39;GCLK_CLKCTRL_ID&#39; was not declared in this scope
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+                                                                                 ^~~~~~~~~~~~~~~
+/home/ec2-user/ardu</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 12624 bytes (4%) of program storage space. Maximum is 262144 bytes.
+Global variables use 3216 bytes (9%) of dynamic memory, leaving 29552 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+
+					
+					<h4>examples/SimpleAudioFrequencyMeter</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 22056 bytes (8%) of program storage space. Maximum is 262144 bytes.
+Global variables use 3236 bytes (9%) of dynamic memory, leaving 29532 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library AudioFrequencyMeter claims to run on samd architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:44:21: error: &#39;unsigned int time&#39; redeclared as different kind of symbol
+ static unsigned int time, totalTimer;                    // Variables used to compute period
+                     ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/stdio.h:29:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:27,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.h:28,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:27:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/time.h:53:11: note: previous declaration &#39;time_t time(time_t*)&#39;
+ time_t    _EXFUN(time,     (time_t *_timer));
+           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;void AudioFrequencyMeter::initializeVariables()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:150:8: error: assignment of function &#39;time_t time(time_t*)&#39;
+   time = 0;
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:150:8: error: cannot convert &#39;int&#39; to &#39;time_t(time_t*) {aka long int(long int*)}&#39; in assignment
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;void AudioFrequencyMeter::ADCconfigure()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:163:3: error: &#39;ADC&#39; was not declared in this scope
+   ADC-&gt;CTRLB.bit.RESSEL = ADC_CTRLB_RESSEL_8BIT_Val;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:163:27: error: &#39;ADC_CTRLB_RESSEL_8BIT_Val&#39; was not declared in this scope
+   ADC-&gt;CTRLB.bit.RESSEL = ADC_CTRLB_RESSEL_8BIT_Val;
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:167:30: error: &#39;ADC_CTRLB_PRESCALER_DIV8_Val&#39; was not declared in this scope
+   ADC-&gt;CTRLB.bit.PRESCALER = ADC_CTRLB_PRESCALER_DIV8_Val;     // Divide Clock by 8 -&gt; ~100kHz
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In function &#39;bool ADCisSyncing()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:184:11: error: &#39;ADC&#39; was not declared in this scope
+   return (ADC-&gt;STATUS.bit.SYNCBUSY);
+           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;void AudioFrequencyMeter::ADCdisable()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:189:3: error: &#39;ADC&#39; was not declared in this scope
+   ADC-&gt;CTRLA.bit.ENABLE = 0x00;                               // Disable ADC
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;void AudioFrequencyMeter::ADCenable()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:196:3: error: &#39;ADC&#39; was not declared in this scope
+   ADC-&gt;CTRLA.bit.ENABLE = 0x01;                               // Enable ADC
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;void AudioFrequencyMeter::ADCsetMux()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:208:28: error: &#39;g_APinDescription&#39; was not declared in this scope
+   pinPeripheral(samplePin, g_APinDescription[samplePin].ulPinType);
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:208:66: error: &#39;pinPeripheral&#39; was not declared in this scope
+   pinPeripheral(samplePin, g_APinDescription[samplePin].ulPinType);
+                                                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:212:3: error: &#39;ADC&#39; was not declared in this scope
+   ADC-&gt;INPUTCTRL.bit.MUXPOS = g_APinDescription[samplePin].ulADCChannelNumber; // Selection for the positive ADC input
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;void AudioFrequencyMeter::tcConfigure()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:3: error: &#39;GCLK&#39; was not declared in this scope
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:35: error: &#39;GCLK_CLKCTRL_CLKEN&#39; was not declared in this scope
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:56: error: &#39;GCLK_CLKCTRL_GEN_GCLK0&#39; was not declared in this scope
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+                                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:97: error: &#39;GCM_TC4_TC5&#39; was not declared in this scope
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+                                                                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:108: error: &#39;GCLK_CLKCTRL_ID&#39; was not declared in this scope
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+                                                                                                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:224:3: error: &#39;TC5&#39; was not declared in this scope
+   TC5-&gt;COUNT16.CTRLA.reg |= TC_CTRLA_MODE_COUNT16;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:224:29: error: &#39;TC_CTRLA_MODE_COUNT16&#39; was not declared in this scope
+   TC5-&gt;COUNT16.CTRLA.reg |= TC_CTRLA_MODE_COUNT16;
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:227:29: error: &#39;TC_CTRLA_WAVEGEN_MFRQ&#39; was not declared in this scope
+   TC5-&gt;COUNT16.CTRLA.reg |= TC_CTRLA_WAVEGEN_MFRQ;
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:229:29: error: &#39;TC_CTRLA_PRESCALER_DIV1&#39; was not declared in this scope
+   TC5-&gt;COUNT16.CTRLA.reg |= TC_CTRLA_PRESCALER_DIV1 | TC_CTRLA_ENABLE;
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:229:55: error: &#39;TC_CTRLA_ENABLE&#39; was not declared in this scope
+   TC5-&gt;COUNT16.CTRLA.reg |= TC_CTRLA_PRESCALER_DIV1 | TC_CTRLA_ENABLE;
+                                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:231:40: error: &#39;SystemCoreClock&#39; was not declared in this scope
+   TC5-&gt;COUNT16.CC[0].reg = (uint16_t) (SystemCoreClock / sampleRate - 1);
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:238:19: error: &#39;TC5_IRQn&#39; was not declared in this scope
+   NVIC_DisableIRQ(TC5_IRQn);
+                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:238:27: error: &#39;NVIC_DisableIRQ&#39; was not declared in this scope
+   NVIC_DisableIRQ(TC5_IRQn);
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:239:32: error: &#39;NVIC_ClearPendingIRQ&#39; was not declared in this scope
+   NVIC_ClearPendingIRQ(TC5_IRQn);
+                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:240:34: error: &#39;NVIC_SetPriority&#39; was not declared in this scope
+   NVIC_SetPriority(TC5_IRQn, 0x00);
+                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:241:26: error: &#39;NVIC_EnableIRQ&#39; was not declared in this scope
+   NVIC_EnableIRQ(TC5_IRQn);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;bool AudioFrequencyMeter::tcIsSyncing()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:251:10: error: &#39;TC5&#39; was not declared in this scope
+   return TC5-&gt;COUNT16.STATUS.reg &amp; TC_STATUS_SYNCBUSY;
+          ^
+/home/ec2-user/</pre>
+
+					
+					<h4>examples/SimpleAudioFrequencyMeter</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library AudioFrequencyMeter claims to run on samd architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:44:21: error: &#39;unsigned int time&#39; redeclared as different kind of symbol
+ static unsigned int time, totalTimer;                    // Variables used to compute period
+                     ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/stdio.h:29:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:27,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.h:28,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:27:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/time.h:53:11: note: previous declaration &#39;time_t time(time_t*)&#39;
+ time_t    _EXFUN(time,     (time_t *_timer));
+           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;void AudioFrequencyMeter::initializeVariables()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:150:8: error: assignment of function &#39;time_t time(time_t*)&#39;
+   time = 0;
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:150:8: error: cannot convert &#39;int&#39; to &#39;time_t(time_t*) {aka long int(long int*)}&#39; in assignment
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;void AudioFrequencyMeter::ADCconfigure()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:163:3: error: &#39;ADC&#39; was not declared in this scope
+   ADC-&gt;CTRLB.bit.RESSEL = ADC_CTRLB_RESSEL_8BIT_Val;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:163:27: error: &#39;ADC_CTRLB_RESSEL_8BIT_Val&#39; was not declared in this scope
+   ADC-&gt;CTRLB.bit.RESSEL = ADC_CTRLB_RESSEL_8BIT_Val;
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:167:30: error: &#39;ADC_CTRLB_PRESCALER_DIV8_Val&#39; was not declared in this scope
+   ADC-&gt;CTRLB.bit.PRESCALER = ADC_CTRLB_PRESCALER_DIV8_Val;     // Divide Clock by 8 -&gt; ~100kHz
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In function &#39;bool ADCisSyncing()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:184:11: error: &#39;ADC&#39; was not declared in this scope
+   return (ADC-&gt;STATUS.bit.SYNCBUSY);
+           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;void AudioFrequencyMeter::ADCdisable()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:189:3: error: &#39;ADC&#39; was not declared in this scope
+   ADC-&gt;CTRLA.bit.ENABLE = 0x00;                               // Disable ADC
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;void AudioFrequencyMeter::ADCenable()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:196:3: error: &#39;ADC&#39; was not declared in this scope
+   ADC-&gt;CTRLA.bit.ENABLE = 0x01;                               // Enable ADC
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;void AudioFrequencyMeter::ADCsetMux()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:208:28: error: &#39;g_APinDescription&#39; was not declared in this scope
+   pinPeripheral(samplePin, g_APinDescription[samplePin].ulPinType);
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:208:66: error: &#39;pinPeripheral&#39; was not declared in this scope
+   pinPeripheral(samplePin, g_APinDescription[samplePin].ulPinType);
+                                                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:212:3: error: &#39;ADC&#39; was not declared in this scope
+   ADC-&gt;INPUTCTRL.bit.MUXPOS = g_APinDescription[samplePin].ulADCChannelNumber; // Selection for the positive ADC input
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;void AudioFrequencyMeter::tcConfigure()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:3: error: &#39;GCLK&#39; was not declared in this scope
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:35: error: &#39;GCLK_CLKCTRL_CLKEN&#39; was not declared in this scope
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:56: error: &#39;GCLK_CLKCTRL_GEN_GCLK0&#39; was not declared in this scope
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+                                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:97: error: &#39;GCM_TC4_TC5&#39; was not declared in this scope
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+                                                                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:218:108: error: &#39;GCLK_CLKCTRL_ID&#39; was not declared in this scope
+   GCLK-&gt;CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID(GCM_TC4_TC5)) ;
+                                                                                                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:224:3: error: &#39;TC5&#39; was not declared in this scope
+   TC5-&gt;COUNT16.CTRLA.reg |= TC_CTRLA_MODE_COUNT16;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:224:29: error: &#39;TC_CTRLA_MODE_COUNT16&#39; was not declared in this scope
+   TC5-&gt;COUNT16.CTRLA.reg |= TC_CTRLA_MODE_COUNT16;
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:227:29: error: &#39;TC_CTRLA_WAVEGEN_MFRQ&#39; was not declared in this scope
+   TC5-&gt;COUNT16.CTRLA.reg |= TC_CTRLA_WAVEGEN_MFRQ;
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:229:29: error: &#39;TC_CTRLA_PRESCALER_DIV1&#39; was not declared in this scope
+   TC5-&gt;COUNT16.CTRLA.reg |= TC_CTRLA_PRESCALER_DIV1 | TC_CTRLA_ENABLE;
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:229:55: error: &#39;TC_CTRLA_ENABLE&#39; was not declared in this scope
+   TC5-&gt;COUNT16.CTRLA.reg |= TC_CTRLA_PRESCALER_DIV1 | TC_CTRLA_ENABLE;
+                                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:231:40: error: &#39;SystemCoreClock&#39; was not declared in this scope
+   TC5-&gt;COUNT16.CC[0].reg = (uint16_t) (SystemCoreClock / sampleRate - 1);
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:238:19: error: &#39;TC5_IRQn&#39; was not declared in this scope
+   NVIC_DisableIRQ(TC5_IRQn);
+                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:238:27: error: &#39;NVIC_DisableIRQ&#39; was not declared in this scope
+   NVIC_DisableIRQ(TC5_IRQn);
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:239:32: error: &#39;NVIC_ClearPendingIRQ&#39; was not declared in this scope
+   NVIC_ClearPendingIRQ(TC5_IRQn);
+                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:240:34: error: &#39;NVIC_SetPriority&#39; was not declared in this scope
+   NVIC_SetPriority(TC5_IRQn, 0x00);
+                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:241:26: error: &#39;NVIC_EnableIRQ&#39; was not declared in this scope
+   NVIC_EnableIRQ(TC5_IRQn);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp: In member function &#39;bool AudioFrequencyMeter::tcIsSyncing()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AudioFrequencyMeter/src/AudioFrequencyMeter.cpp:251:10: error: &#39;TC5&#39; was not declared in this scope
+   return TC5-&gt;COUNT16.STATUS.reg &amp; TC_STATUS_SYNCBUSY;
+          ^
+/home/ec2-user/</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

@@ -1,0 +1,908 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>MLX90393_raw - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>MLX90393_raw</h2>
+				<p>
+					Version: <b>1.0.1</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/mlx90393_raw/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>basic</pre></th>
+						
+						<th><pre>debug_helper</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+									
+										
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+										
+									
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+										
+									
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 1636 bytes (5%) of program storage space. Maximum is 32256 bytes.
+Global variables use 122 bytes (5%) of dynamic memory, leaving 1926 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+
+					
+					<h4>examples/basic</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 5084 bytes (15%) of program storage space. Maximum is 32256 bytes.
+Global variables use 400 bytes (19%) of dynamic memory, leaving 1648 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+					
+					<h4>examples/debug_helper</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 14054 bytes (43%) of program storage space. Maximum is 32256 bytes.
+Global variables use 430 bytes (20%) of dynamic memory, leaving 1618 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 81706 bytes (0%) of program storage space. Maximum is 16777216 bytes.
+Global variables use 44220 bytes (16%) of dynamic memory, leaving 226116 bytes for local variables. Maximum is 270336 bytes.
+</pre>
+
+					
+					<h4>examples/basic</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 82672 bytes (0%) of program storage space. Maximum is 16777216 bytes.
+Global variables use 44220 bytes (16%) of dynamic memory, leaving 226116 bytes for local variables. Maximum is 270336 bytes.
+</pre>
+					
+					<h4>examples/debug_helper</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/examples/debug_helper/debug_helper.ino: In function &#39;void parser::static_parse(char, char)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/examples/debug_helper/debug_helper.ino:1017:60: error: invalid conversion from &#39;uint8_t {aka unsigned char}&#39; to &#39;output_mode_t::verbosity_t&#39; [-fpermissive]
+                         output_mode.verbosity = parse_digit(previous_char);
+                                                 ~~~~~~~~~~~^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/examples/debug_helper/debug_helper.ino:1029:56: error: invalid conversion from &#39;uint8_t {aka unsigned char}&#39; to &#39;output_mode_t::style_t&#39; [-fpermissive]
+                         output_mode.style = parse_digit(previous_char);
+                                             ~~~~~~~~~~~^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/examples/debug_helper/debug_helper.ino:1041:65: error: invalid conversion from &#39;uint8_t {aka unsigned char}&#39; to &#39;output_mode_t::read_behaviour_t&#39; [-fpermissive]
+                         output_mode.read_behaviour = parse_digit(previous_char);
+                                                      ~~~~~~~~~~~^~~~~~~~~~~~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /tmp/arduino-sketch-9F0C6C18A551772525DEC8A189FCE0C4/sketch/test.ino.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:104:12: error: expected nested-name-specifier before numeric constant
+ #define PD 3
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:386:20: note: in expansion of macro &#39;PD&#39;
+ template &lt;typename PD&gt;
+                    ^~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:104:12: error: expected &#39;&gt;&#39; before numeric constant
+ #define PD 3
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:386:20: note: in expansion of macro &#39;PD&#39;
+ template &lt;typename PD&gt;
+                    ^~
+In file included from /tmp/arduino-testlib4187406104/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h: In static member function &#39;static uint8_t MLX90393_raw&lt;A1, A0, i2c, DRDY_pin&gt;::get(uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:389:5: error: expected primary-expression before &#39;enum&#39;
+     enum { MASK = MLX90393::bitmask(PD::BITS) };
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:390:27: error: expected &#39;)&#39; before &#39;::&#39; token
+     return (reg_data &gt;&gt; PD::SHIFT) &amp; MASK;
+                           ^~
+In file included from /tmp/arduino-sketch-9F0C6C18A551772525DEC8A189FCE0C4/sketch/test.ino.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:104:12: error: expected nested-name-specifier before numeric constant
+ #define PD 3
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:394:20: note: in expansion of macro &#39;PD&#39;
+ template &lt;typename PD&gt;
+                    ^~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:104:12: error: expected &#39;&gt;&#39; before numeric constant
+ #define PD 3
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:394:20: note: in expansion of macro &#39;PD&#39;
+ template &lt;typename PD&gt;
+                    ^~
+In file included from /tmp/arduino-testlib4187406104/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h: In static member function &#39;static void MLX90393_raw&lt;A1, A0, i2c, DRDY_pin&gt;::set(uint16_t&amp;, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:398:5: error: expected primary-expression before &#39;enum&#39;
+     enum { MASK = bitmask(PD::BITS),
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:402:42: error: expected &#39;)&#39; before &#39;::&#39; token
+     reg |= ((uint16_t(value &amp; MASK) &lt;&lt; PD::SHIFT));
+                                          ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:402:51: error: expected &#39;)&#39; before &#39;;&#39; token
+     reg |= ((uint16_t(value &amp; MASK) &lt;&lt; PD::SHIFT));
+                                                   ^
+In file included from /tmp/arduino-sketch-9F0C6C18A551772525DEC8A189FCE0C4/sketch/test.ino.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:104:12: error: expected nested-name-specifier before numeric constant
+ #define PD 3
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:406:20: note: in expansion of macro &#39;PD&#39;
+ template &lt;typename PD, uint8_t size&gt;
+                    ^~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:104:12: error: expected &#39;&gt;&#39; before numeric constant
+ #define PD 3
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:406:20: note: in expansion of macro &#39;PD&#39;
+ template &lt;typename PD, uint8_t size&gt;
+                    ^~
+In file included from /tmp/arduino-testlib4187406104/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:408:21: error: &#39;size&#39; was not declared in this scope
+ get (uint16_t(&amp;reg)[size]) {
+                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:408:21: note: suggested alternative: &#39;Wire&#39;
+ get (uint16_t(&amp;reg)[size]) {
+                     ^~~~
+                     Wire
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:407:9: error: prototype for &#39;uint8_t MLX90393_raw&lt;A1, A0, i2c, DRDY_pin&gt;::get(...)&#39; does not match any in class &#39;MLX90393_raw&lt;A1, A0, i2c, DRDY_pin&gt;&#39;
+ uint8_t MLX90393_raw&lt;A1, A0, i2c, DRDY_pin&gt;::
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:199:76: error: candidates are: template&lt;unsigned char A1, unsigned char A0, TwoWire&amp; i2c, signed char DRDY_pin&gt; template&lt;class PARAMETER_DESCRIPTION, unsigned char size&gt; static uint8_t MLX90393_raw&lt;A1, A0, i2c, DRDY_pin&gt;::get(uint16_t (&amp;)[size])
+     template &lt;typename PARAMETER_DESCRIPTION, uint8_t size&gt; static uint8_t get (uint16_t(&amp;reg)[size]);
+                                                                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:196:62: error:                 template&lt;unsigned char A1, unsigned char A0, TwoWire&amp; i2c, signed char DRDY_pin&gt; template&lt;class PARAMETER_DESCRIPTION&gt; static uint8_t MLX90393_raw&lt;A1, A0, i2c, DRDY_pin&gt;::get(uint16_t)
+     template &lt;typename PARAMETER_DESCRIPTION&gt; static uint8_t get(uint16_t reg);
+                                                              ^~~
+In file included from /tmp/arduino-sketch-9F0C6C18A551772525DEC8A189FCE0C4/sketch/test.ino.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:104:12: error: expected nested-name-specifier before numeric constant
+ #define PD 3
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:415:20: note: in expansion of macro &#39;PD&#39;
+ template &lt;typename PD, uint8_t size&gt;
+                    ^~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:104:12: error: expected &#39;&gt;&#39; before numeric constant
+ #define PD 3
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:415:20: note: in expansion of macro &#39;PD&#39;
+ template &lt;typename PD, uint8_t size&gt;
+                    ^~
+In file included from /tmp/arduino-testlib4187406104/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:417:21: error: &#39;size&#39; was not declared in this scope
+ set (uint16_t(&amp;reg)[size], uint8_t value) {
+                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:417:21: note: suggested alternative: &#39;Wire&#39;
+ set (uint16_t(&amp;reg)[size], uint8_t value) {
+                     ^~~~
+                     Wire
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:417:25: error: variable or field &#39;set&#39; declared void
+ set (uint16_t(&amp;reg)[size], uint8_t value) {
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:417:16: error: &#39;reg&#39; was not declared in this scope
+ set (uint16_t(&amp;reg)[size], uint8_t value) {
+                ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:417:16: note: suggested alternative: &#39;free&#39;
+ set (uint16_t(&amp;reg)[size], uint8_t value) {
+                ^~~
+                free
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:417:21: error: &#39;size&#39; was not declared in this scope
+ set (uint16_t(&amp;reg)[size], uint8_t value) {
+                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:417:21: note: suggested alternative: &#39;Wire&#39;
+ set (uint16_t(&amp;reg)[size], uint8_t value) {
+                     ^~~~
+                     Wire
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:417:36: error: expected primary-expression before &#39;value&#39;
+ set (uint16_t(&amp;reg)[size], uint8_t value) {
+                                    ^~~~~
+In file included from /tmp/arduino-sketch-9F0C6C18A551772525DEC8A189FCE0C4/sketch/test.ino.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:104:12: error: expected nested-name-specifier before numeric constant
+ #define PD 3
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:424:20: note: in expansion of macro &#39;PD&#39;
+ template &lt;typename PD&gt;
+                    ^~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:104:12: error: expected &#39;&gt;&#39; before numeric constant
+ #define PD 3
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:424:20: note: in expansion of macro &#39;PD&#39;
+ template &lt;typename PD&gt;
+                    ^~
+In file included from /tmp/arduino-testlib4187406104/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h: In static member function &#39;static MLX90393::status_t MLX90393_raw&lt;A1, A0, i2c, DRDY_pin&gt;::read(uint8_t&amp;)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX</pre>
+
+					
+					<h4>examples/basic</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /tmp/arduino-sketch-4E40CACBD31C55F8F2E53FEBAD80E270/sketch/basic.ino.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:104:12: error: expected nested-name-specifier before numeric constant
+ #define PD 3
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:386:20: note: in expansion of macro &#39;PD&#39;
+ template &lt;typename PD&gt;
+                    ^~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:104:12: error: expected &#39;&gt;&#39; before numeric constant
+ #define PD 3
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:386:20: note: in expansion of macro &#39;PD&#39;
+ template &lt;typename PD&gt;
+                    ^~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/examples/basic/basic.ino:23:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h: In static member function &#39;static uint8_t MLX90393_raw&lt;A1, A0, i2c, DRDY_pin&gt;::get(uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:389:5: error: expected primary-expression before &#39;enum&#39;
+     enum { MASK = MLX90393::bitmask(PD::BITS) };
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:390:27: error: expected &#39;)&#39; before &#39;::&#39; token
+     return (reg_data &gt;&gt; PD::SHIFT) &amp; MASK;
+                           ^~
+In file included from /tmp/arduino-sketch-4E40CACBD31C55F8F2E53FEBAD80E270/sketch/basic.ino.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:104:12: error: expected nested-name-specifier before numeric constant
+ #define PD 3
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:394:20: note: in expansion of macro &#39;PD&#39;
+ template &lt;typename PD&gt;
+                    ^~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:104:12: error: expected &#39;&gt;&#39; before numeric constant
+ #define PD 3
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:394:20: note: in expansion of macro &#39;PD&#39;
+ template &lt;typename PD&gt;
+                    ^~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/examples/basic/basic.ino:23:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h: In static member function &#39;static void MLX90393_raw&lt;A1, A0, i2c, DRDY_pin&gt;::set(uint16_t&amp;, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:398:5: error: expected primary-expression before &#39;enum&#39;
+     enum { MASK = bitmask(PD::BITS),
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:402:42: error: expected &#39;)&#39; before &#39;::&#39; token
+     reg |= ((uint16_t(value &amp; MASK) &lt;&lt; PD::SHIFT));
+                                          ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:402:51: error: expected &#39;)&#39; before &#39;;&#39; token
+     reg |= ((uint16_t(value &amp; MASK) &lt;&lt; PD::SHIFT));
+                                                   ^
+In file included from /tmp/arduino-sketch-4E40CACBD31C55F8F2E53FEBAD80E270/sketch/basic.ino.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:104:12: error: expected nested-name-specifier before numeric constant
+ #define PD 3
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:406:20: note: in expansion of macro &#39;PD&#39;
+ template &lt;typename PD, uint8_t size&gt;
+                    ^~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:104:12: error: expected &#39;&gt;&#39; before numeric constant
+ #define PD 3
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:406:20: note: in expansion of macro &#39;PD&#39;
+ template &lt;typename PD, uint8_t size&gt;
+                    ^~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/examples/basic/basic.ino:23:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:408:21: error: &#39;size&#39; was not declared in this scope
+ get (uint16_t(&amp;reg)[size]) {
+                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:408:21: note: suggested alternative: &#39;Wire&#39;
+ get (uint16_t(&amp;reg)[size]) {
+                     ^~~~
+                     Wire
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:407:9: error: prototype for &#39;uint8_t MLX90393_raw&lt;A1, A0, i2c, DRDY_pin&gt;::get(...)&#39; does not match any in class &#39;MLX90393_raw&lt;A1, A0, i2c, DRDY_pin&gt;&#39;
+ uint8_t MLX90393_raw&lt;A1, A0, i2c, DRDY_pin&gt;::
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:199:76: error: candidates are: template&lt;unsigned char A1, unsigned char A0, TwoWire&amp; i2c, signed char DRDY_pin&gt; template&lt;class PARAMETER_DESCRIPTION, unsigned char size&gt; static uint8_t MLX90393_raw&lt;A1, A0, i2c, DRDY_pin&gt;::get(uint16_t (&amp;)[size])
+     template &lt;typename PARAMETER_DESCRIPTION, uint8_t size&gt; static uint8_t get (uint16_t(&amp;reg)[size]);
+                                                                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:196:62: error:                 template&lt;unsigned char A1, unsigned char A0, TwoWire&amp; i2c, signed char DRDY_pin&gt; template&lt;class PARAMETER_DESCRIPTION&gt; static uint8_t MLX90393_raw&lt;A1, A0, i2c, DRDY_pin&gt;::get(uint16_t)
+     template &lt;typename PARAMETER_DESCRIPTION&gt; static uint8_t get(uint16_t reg);
+                                                              ^~~
+In file included from /tmp/arduino-sketch-4E40CACBD31C55F8F2E53FEBAD80E270/sketch/basic.ino.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:104:12: error: expected nested-name-specifier before numeric constant
+ #define PD 3
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:415:20: note: in expansion of macro &#39;PD&#39;
+ template &lt;typename PD, uint8_t size&gt;
+                    ^~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:104:12: error: expected &#39;&gt;&#39; before numeric constant
+ #define PD 3
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:415:20: note: in expansion of macro &#39;PD&#39;
+ template &lt;typename PD, uint8_t size&gt;
+                    ^~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/examples/basic/basic.ino:23:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:417:21: error: &#39;size&#39; was not declared in this scope
+ set (uint16_t(&amp;reg)[size], uint8_t value) {
+                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:417:21: note: suggested alternative: &#39;Wire&#39;
+ set (uint16_t(&amp;reg)[size], uint8_t value) {
+                     ^~~~
+                     Wire
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:417:25: error: variable or field &#39;set&#39; declared void
+ set (uint16_t(&amp;reg)[size], uint8_t value) {
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:417:16: error: &#39;reg&#39; was not declared in this scope
+ set (uint16_t(&amp;reg)[size], uint8_t value) {
+                ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:417:16: note: suggested alternative: &#39;free&#39;
+ set (uint16_t(&amp;reg)[size], uint8_t value) {
+                ^~~
+                free
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:417:21: error: &#39;size&#39; was not declared in this scope
+ set (uint16_t(&amp;reg)[size], uint8_t value) {
+                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:417:21: note: suggested alternative: &#39;Wire&#39;
+ set (uint16_t(&amp;reg)[size], uint8_t value) {
+                     ^~~~
+                     Wire
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:417:36: error: expected primary-expression before &#39;value&#39;
+ set (uint16_t(&amp;reg)[size], uint8_t value) {
+                                    ^~~~~
+In file included from /tmp/arduino-sketch-4E40CACBD31C55F8F2E53FEBAD80E270/sketch/basic.ino.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:104:12: error: expected nested-name-specifier before numeric constant
+ #define PD 3
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:424:20: note: in expansion of macro &#39;PD&#39;
+ template &lt;typename PD&gt;
+                    ^~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:104:12: error: expected &#39;&gt;&#39; before numeric constant
+ #define PD 3
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:424:20: note: in expansion of macro &#39;PD&#39;
+ template &lt;typename PD&gt;
+                    ^~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/examples/basic/basic.</pre>
+					
+					<h4>examples/debug_helper</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /tmp/arduino-sketch-36620A49EFFC2DE15525B958DFA30F02/sketch/debug_helper.ino.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:104:12: error: expected nested-name-specifier before numeric constant
+ #define PD 3
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:386:20: note: in expansion of macro &#39;PD&#39;
+ template &lt;typename PD&gt;
+                    ^~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:104:12: error: expected &#39;&gt;&#39; before numeric constant
+ #define PD 3
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:386:20: note: in expansion of macro &#39;PD&#39;
+ template &lt;typename PD&gt;
+                    ^~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/examples/debug_helper/debug_helper.ino:23:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h: In static member function &#39;static uint8_t MLX90393_raw&lt;A1, A0, i2c, DRDY_pin&gt;::get(uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:389:5: error: expected primary-expression before &#39;enum&#39;
+     enum { MASK = MLX90393::bitmask(PD::BITS) };
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:390:27: error: expected &#39;)&#39; before &#39;::&#39; token
+     return (reg_data &gt;&gt; PD::SHIFT) &amp; MASK;
+                           ^~
+In file included from /tmp/arduino-sketch-36620A49EFFC2DE15525B958DFA30F02/sketch/debug_helper.ino.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:104:12: error: expected nested-name-specifier before numeric constant
+ #define PD 3
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:394:20: note: in expansion of macro &#39;PD&#39;
+ template &lt;typename PD&gt;
+                    ^~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:104:12: error: expected &#39;&gt;&#39; before numeric constant
+ #define PD 3
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:394:20: note: in expansion of macro &#39;PD&#39;
+ template &lt;typename PD&gt;
+                    ^~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/examples/debug_helper/debug_helper.ino:23:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h: In static member function &#39;static void MLX90393_raw&lt;A1, A0, i2c, DRDY_pin&gt;::set(uint16_t&amp;, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:398:5: error: expected primary-expression before &#39;enum&#39;
+     enum { MASK = bitmask(PD::BITS),
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:402:42: error: expected &#39;)&#39; before &#39;::&#39; token
+     reg |= ((uint16_t(value &amp; MASK) &lt;&lt; PD::SHIFT));
+                                          ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:402:51: error: expected &#39;)&#39; before &#39;;&#39; token
+     reg |= ((uint16_t(value &amp; MASK) &lt;&lt; PD::SHIFT));
+                                                   ^
+In file included from /tmp/arduino-sketch-36620A49EFFC2DE15525B958DFA30F02/sketch/debug_helper.ino.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:104:12: error: expected nested-name-specifier before numeric constant
+ #define PD 3
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:406:20: note: in expansion of macro &#39;PD&#39;
+ template &lt;typename PD, uint8_t size&gt;
+                    ^~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:104:12: error: expected &#39;&gt;&#39; before numeric constant
+ #define PD 3
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:406:20: note: in expansion of macro &#39;PD&#39;
+ template &lt;typename PD, uint8_t size&gt;
+                    ^~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/examples/debug_helper/debug_helper.ino:23:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:408:21: error: &#39;size&#39; was not declared in this scope
+ get (uint16_t(&amp;reg)[size]) {
+                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:408:21: note: suggested alternative: &#39;Wire&#39;
+ get (uint16_t(&amp;reg)[size]) {
+                     ^~~~
+                     Wire
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:407:9: error: prototype for &#39;uint8_t MLX90393_raw&lt;A1, A0, i2c, DRDY_pin&gt;::get(...)&#39; does not match any in class &#39;MLX90393_raw&lt;A1, A0, i2c, DRDY_pin&gt;&#39;
+ uint8_t MLX90393_raw&lt;A1, A0, i2c, DRDY_pin&gt;::
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:199:76: error: candidates are: template&lt;unsigned char A1, unsigned char A0, TwoWire&amp; i2c, signed char DRDY_pin&gt; template&lt;class PARAMETER_DESCRIPTION, unsigned char size&gt; static uint8_t MLX90393_raw&lt;A1, A0, i2c, DRDY_pin&gt;::get(uint16_t (&amp;)[size])
+     template &lt;typename PARAMETER_DESCRIPTION, uint8_t size&gt; static uint8_t get (uint16_t(&amp;reg)[size]);
+                                                                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:196:62: error:                 template&lt;unsigned char A1, unsigned char A0, TwoWire&amp; i2c, signed char DRDY_pin&gt; template&lt;class PARAMETER_DESCRIPTION&gt; static uint8_t MLX90393_raw&lt;A1, A0, i2c, DRDY_pin&gt;::get(uint16_t)
+     template &lt;typename PARAMETER_DESCRIPTION&gt; static uint8_t get(uint16_t reg);
+                                                              ^~~
+In file included from /tmp/arduino-sketch-36620A49EFFC2DE15525B958DFA30F02/sketch/debug_helper.ino.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:104:12: error: expected nested-name-specifier before numeric constant
+ #define PD 3
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:415:20: note: in expansion of macro &#39;PD&#39;
+ template &lt;typename PD, uint8_t size&gt;
+                    ^~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:104:12: error: expected &#39;&gt;&#39; before numeric constant
+ #define PD 3
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:415:20: note: in expansion of macro &#39;PD&#39;
+ template &lt;typename PD, uint8_t size&gt;
+                    ^~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/examples/debug_helper/debug_helper.ino:23:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:417:21: error: &#39;size&#39; was not declared in this scope
+ set (uint16_t(&amp;reg)[size], uint8_t value) {
+                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:417:21: note: suggested alternative: &#39;Wire&#39;
+ set (uint16_t(&amp;reg)[size], uint8_t value) {
+                     ^~~~
+                     Wire
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:417:25: error: variable or field &#39;set&#39; declared void
+ set (uint16_t(&amp;reg)[size], uint8_t value) {
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:417:16: error: &#39;reg&#39; was not declared in this scope
+ set (uint16_t(&amp;reg)[size], uint8_t value) {
+                ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:417:16: note: suggested alternative: &#39;free&#39;
+ set (uint16_t(&amp;reg)[size], uint8_t value) {
+                ^~~
+                free
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:417:21: error: &#39;size&#39; was not declared in this scope
+ set (uint16_t(&amp;reg)[size], uint8_t value) {
+                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:417:21: note: suggested alternative: &#39;Wire&#39;
+ set (uint16_t(&amp;reg)[size], uint8_t value) {
+                     ^~~~
+                     Wire
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:417:36: error: expected primary-expression before &#39;value&#39;
+ set (uint16_t(&amp;reg)[size], uint8_t value) {
+                                    ^~~~~
+In file included from /tmp/arduino-sketch-36620A49EFFC2DE15525B958DFA30F02/sketch/debug_helper.ino.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:104:12: error: expected nested-name-specifier before numeric constant
+ #define PD 3
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:424:20: note: in expansion of macro &#39;PD&#39;
+ template &lt;typename PD&gt;
+                    ^~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:104:12: error: expected &#39;&gt;&#39; before numeric constant
+ #define PD 3
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/MLX90393_raw.h:424:20: note: in expansion of macro &#39;PD&#39;
+ template &lt;typename PD&gt;
+                    ^~
+In file included from /</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 13588 bytes (5%) of program storage space. Maximum is 262144 bytes.
+Global variables use 3568 bytes (10%) of dynamic memory, leaving 29200 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+
+					
+					<h4>examples/basic</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 14692 bytes (5%) of program storage space. Maximum is 262144 bytes.
+Global variables use 3568 bytes (10%) of dynamic memory, leaving 29200 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+					
+					<h4>examples/debug_helper</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/examples/debug_helper/debug_helper.ino: In function &#39;void parser::static_parse(char, char)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/examples/debug_helper/debug_helper.ino:1017:60: error: invalid conversion from &#39;uint8_t {aka unsigned char}&#39; to &#39;output_mode_t::verbosity_t&#39; [-fpermissive]
+                         output_mode.verbosity = parse_digit(previous_char);
+                                                 ~~~~~~~~~~~^~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/examples/debug_helper/debug_helper.ino:1029:56: error: invalid conversion from &#39;uint8_t {aka unsigned char}&#39; to &#39;output_mode_t::style_t&#39; [-fpermissive]
+                         output_mode.style = parse_digit(previous_char);
+                                             ~~~~~~~~~~~^~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/examples/debug_helper/debug_helper.ino:1041:65: error: invalid conversion from &#39;uint8_t {aka unsigned char}&#39; to &#39;output_mode_t::read_behaviour_t&#39; [-fpermissive]
+                         output_mode.read_behaviour = parse_digit(previous_char);
+                                                      ~~~~~~~~~~~^~~~~~~~~~~~~~~
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 202322 bytes (15%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 13872 bytes (4%) of dynamic memory, leaving 313808 bytes for local variables. Maximum is 327680 bytes.
+</pre>
+
+					
+					<h4>examples/basic</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 213770 bytes (16%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 14128 bytes (4%) of dynamic memory, leaving 313552 bytes for local variables. Maximum is 327680 bytes.
+</pre>
+					
+					<h4>examples/debug_helper</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/examples/debug_helper/debug_helper.ino: In function &#39;void parser::static_parse(char, char)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/examples/debug_helper/debug_helper.ino:1017:60: error: invalid conversion from &#39;uint8_t {aka unsigned char}&#39; to &#39;output_mode_t::verbosity_t&#39; [-fpermissive]
+                         output_mode.verbosity = parse_digit(previous_char);
+                                                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/examples/debug_helper/debug_helper.ino:1029:56: error: invalid conversion from &#39;uint8_t {aka unsigned char}&#39; to &#39;output_mode_t::style_t&#39; [-fpermissive]
+                         output_mode.style = parse_digit(previous_char);
+                                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MLX90393_raw/examples/debug_helper/debug_helper.ino:1041:65: error: invalid conversion from &#39;uint8_t {aka unsigned char}&#39; to &#39;output_mode_t::read_behaviour_t&#39; [-fpermissive]
+                         output_mode.read_behaviour = parse_digit(previous_char);
+                                                                 ^
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

@@ -1,0 +1,246 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>uStepper - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>uStepper</h2>
+				<p>
+					Version: <b>1.3.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/ustepper/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper/src/uStepper.cpp: In member function &#39;float uStepperTemp::getTemp()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper/src/uStepper.cpp:671:20: error: &#39;TEMP&#39; was not declared in this scope
+  Vout = analogRead(TEMP)*0.0048828125; //0.0048828125 = 5V/1024
+                    ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper/src/uStepper.cpp:671:20: note: suggested alternative: &#39;TSM&#39;
+  Vout = analogRead(TEMP)*0.0048828125; //0.0048828125 = 5V/1024
+                    ^~~~
+                    TSM
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper/src/uStepper.cpp: In member function &#39;void uStepper::runContinous(bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper/src/uStepper.cpp:890:25: error: &#39;DIR&#39; was not declared in this scope
+   if(dir != digitalRead(DIR))       //If motor is currently running the opposite direction as desired
+                         ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper/src/uStepper.cpp:890:25: note: suggested alternative: &#39;EIFR&#39;
+   if(dir != digitalRead(DIR))       //If motor is currently running the opposite direction as desired
+                         ^~~
+                         EIFR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper/src/uStepper.cpp: In member function &#39;void uStepper::moveSteps(int32_t, bool, bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper/src/uStepper.cpp:1004:25: error: &#39;DIR&#39; was not declared in this scope
+   if(dir != digitalRead(DIR))         //If current direction is different from desired direction
+                         ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper/src/uStepper.cpp:1004:25: note: suggested alternative: &#39;EIFR&#39;
+   if(dir != digitalRead(DIR))         //If current direction is different from desired direction
+                         ^~~
+                         EIFR
+
+</pre>
+
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /tmp/arduino-testlib3166134821/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper/src/uStepper.h:203:2: error: #error !!This library only supports the ATmega328p MCU!!
+ #error !!This library only supports the ATmega328p MCU!!
+  ^~~~~
+In file included from /tmp/arduino-testlib3166134821/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper/src/uStepper.h:207:10: fatal error: avr/io.h: No such file or directory
+ #include &lt;avr/io.h&gt;
+          ^~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /tmp/arduino-testlib3166134821/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper/src/uStepper.h:203:2: error: #error !!This library only supports the ATmega328p MCU!!
+ #error !!This library only supports the ATmega328p MCU!!
+  ^~~~~
+
+</pre>
+
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /tmp/arduino-testlib3166134821/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper/src/uStepper.h:203:2: error: #error !!This library only supports the ATmega328p MCU!!
+ #error !!This library only supports the ATmega328p MCU!!
+  ^~~~~
+In file included from /tmp/arduino-testlib3166134821/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper/src/uStepper.h:207:10: fatal error: avr/io.h: No such file or directory
+ #include &lt;avr/io.h&gt;
+          ^~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /tmp/arduino-testlib3166134821/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper/src/uStepper.h:203:2: error: #error !!This library only supports the ATmega328p MCU!!
+ #error !!This library only supports the ATmega328p MCU!!
+  ^
+In file included from /tmp/arduino-testlib3166134821/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/uStepper/src/uStepper.h:207:20: fatal error: avr/io.h: No such file or directory
+compilation terminated.
+
+</pre>
+
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

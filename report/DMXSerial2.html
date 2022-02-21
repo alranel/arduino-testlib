@@ -1,0 +1,617 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>DMXSerial2 - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>DMXSerial2</h2>
+				<p>
+					Version: <b>1.4.2</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/dmxserial2/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>RDMSerialRecv</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 1004 bytes (3%) of program storage space. Maximum is 32256 bytes.
+Global variables use 784 bytes (38%) of dynamic memory, leaving 1264 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+
+					
+					<h4>examples/RDMSerialRecv</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 5604 bytes (17%) of program storage space. Maximum is 32256 bytes.
+Global variables use 932 bytes (45%) of dynamic memory, leaving 1116 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:20:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum/src/EEPROM.h:25:10: fatal error: avr/eeprom.h: No such file or directory
+ #include &lt;avr/eeprom.h&gt;
+          ^~~~~~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;EEPROM.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/arduino-NVM
+</pre>
+
+					
+					<h4>examples/RDMSerialRecv</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:20:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum/src/EEPROM.h:25:10: fatal error: avr/eeprom.h: No such file or directory
+ #include &lt;avr/eeprom.h&gt;
+          ^~~~~~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;EEPROM.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/arduino-NVM
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp: In member function &#39;void DMXSerialClass2::init(RDMINIT*, RDMCallbackFunction, RDMGetSensorValue, uint8_t, uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:381:3: error: &#39;UCSRnB&#39; was not declared in this scope
+   UCSRnB = (1&lt;&lt;RXENn) | (1&lt;&lt;RXCIEn);
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:381:16: error: &#39;RXENn&#39; was not declared in this scope
+   UCSRnB = (1&lt;&lt;RXENn) | (1&lt;&lt;RXCIEn);
+                ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:381:16: note: suggested alternative: &#39;RAMEND&#39;
+   UCSRnB = (1&lt;&lt;RXENn) | (1&lt;&lt;RXCIEn);
+                ^~~~~
+                RAMEND
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:381:29: error: &#39;RXCIEn&#39; was not declared in this scope
+   UCSRnB = (1&lt;&lt;RXENn) | (1&lt;&lt;RXCIEn);
+                             ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp: In member function &#39;void DMXSerialClass2::tick()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:524:15: error: &#39;UCSRnB&#39; was not declared in this scope
+               UCSRnB = (1&lt;&lt;TXENn); // no interrupts !
+               ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:524:28: error: &#39;TXENn&#39; was not declared in this scope
+               UCSRnB = (1&lt;&lt;TXENn); // no interrupts !
+                            ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:531:17: error: &#39;UDRn&#39; was not declared in this scope
+                 UDRn = _rdm.buffer[i];
+                 ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:531:17: note: suggested alternative: &#39;DDRD&#39;
+                 UDRn = _rdm.buffer[i];
+                 ^~~~
+                 DDRD
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:532:17: error: &#39;UCSRnA&#39; was not declared in this scope
+                 UCSRnA= (1&lt;&lt;TXCn);
+                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:532:29: error: &#39;TXCn&#39; was not declared in this scope
+                 UCSRnA= (1&lt;&lt;TXCn);
+                             ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:540:28: error: &#39;RXENn&#39; was not declared in this scope
+               UCSRnB = (1&lt;&lt;RXENn) | (1&lt;&lt;RXCIEn);
+                            ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:540:28: note: suggested alternative: &#39;RAMEND&#39;
+               UCSRnB = (1&lt;&lt;RXENn) | (1&lt;&lt;RXCIEn);
+                            ^~~~~
+                            RAMEND
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:540:41: error: &#39;RXCIEn&#39; was not declared in this scope
+               UCSRnB = (1&lt;&lt;RXENn) | (1&lt;&lt;RXCIEn);
+                                         ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp: In member function &#39;void DMXSerialClass2::term()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:592:3: error: &#39;UCSRnB&#39; was not declared in this scope
+   UCSRnB = 0;
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp: In function &#39;void _DMXSerialBaud(uint16_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:943:3: error: &#39;UCSRnA&#39; was not declared in this scope
+   UCSRnA = 0;                 // 04.06.2012: use normal speed operation
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:944:3: error: &#39;UBRRnH&#39; was not declared in this scope
+   UBRRnH = baud_setting &gt;&gt; 8;
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:945:3: error: &#39;UBRRnL&#39; was not declared in this scope
+   UBRRnL = baud_setting;
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:948:3: error: &#39;UCSRnC&#39; was not declared in this scope
+   UCSRnC = format;
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp: In function &#39;void _DMXSerialWriteByte(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:956:3: error: &#39;UDRn&#39; was not declared in this scope
+   UDRn = data;
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:956:3: note: suggested alternative: &#39;DDRD&#39;
+   UDRn = data;
+   ^~~~
+   DDRD
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp: In function &#39;void USARTn_RX_vect()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:964:24: error: &#39;UCSRnA&#39; was not declared in this scope
+   uint8_t  USARTstate= UCSRnA;    //get state before data!
+                        ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:965:24: error: &#39;UDRn&#39; was not declared in this scope
+   uint8_t  DmxByte   = UDRn;      //get data
+                        ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:965:24: note: suggested alternative: &#39;DDRD&#39;
+   uint8_t  DmxByte   = UDRn;      //get data
+                        ^~~~
+                        DDRD
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:968:24: error: &#39;FEn&#39; was not declared in this scope
+   if (USARTstate &amp; (1&lt;&lt;FEn)) { //check for break
+                        ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp: In function &#39;void USARTn_TX_vect()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:1055:5: error: &#39;UCSRnB&#39; was not declared in this scope
+     UCSRnB = (1&lt;&lt;TXENn) | (1&lt;&lt;UDRIEn);
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:1055:18: error: &#39;TXENn&#39; was not declared in this scope
+     UCSRnB = (1&lt;&lt;TXENn) | (1&lt;&lt;UDRIEn);
+                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:1055:31: error: &#39;UDRIEn&#39; was not declared in this scope
+     UCSRnB = (1&lt;&lt;TXENn) | (1&lt;&lt;UDRIEn);
+                               ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp: In function &#39;void respondMessage(bool8, uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:1101:3: error: &#39;UCSRnB&#39; was not declared in this scope
+   UCSRnB = (1&lt;&lt;TXENn); // send without no interrupts !
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:1101:16: error: &#39;TXENn&#39; was not declared in this scope
+   UCSRnB = (1&lt;&lt;TXENn); // send without no interrupts !
+                ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:1105:3: error: &#39;UDRn&#39; was not declared in this scope
+   UDRn = 0;
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:1105:3: note: suggested alternative: &#39;DDRD&#39;
+   UDRn = 0;
+   ^~~~
+   DDRD
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:1106:3: error: &#39;UCSRnA&#39; was not declared in this scope
+   UCSRnA= (1&lt;&lt;TXCn);
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:1106:15: error: &#39;TXCn&#39; was not declared in this scope
+   UCSRnA= (1&lt;&lt;TXCn);
+               ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:1133:16: error: &#39;RXENn&#39; was not declared in this scope
+   UCSRnB = (1&lt;&lt;RXENn) | (1&lt;&lt;RXCIEn);
+                ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:1133:16: note: suggested alternative: &#39;RAMEND&#39;
+   UCSRnB = (1&lt;&lt;RXENn) | (1&lt;&lt;RXCIEn);
+                ^~~~~
+                RAMEND
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:1133:29: error: &#39;RXCIEn&#39; was not declared in this scope
+   UCSRnB = (1&lt;&lt;RXENn) | (1&lt;&lt;RXCIEn);
+                             ^~~~~~
+Multiple libraries were found for &#34;EEPROM.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/EEPROM
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/arduino-NVM
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum
+</pre>
+
+					
+					<h4>examples/RDMSerialRecv</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp: In member function &#39;void DMXSerialClass2::init(RDMINIT*, RDMCallbackFunction, RDMGetSensorValue, uint8_t, uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:381:3: error: &#39;UCSRnB&#39; was not declared in this scope
+   UCSRnB = (1&lt;&lt;RXENn) | (1&lt;&lt;RXCIEn);
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:381:16: error: &#39;RXENn&#39; was not declared in this scope
+   UCSRnB = (1&lt;&lt;RXENn) | (1&lt;&lt;RXCIEn);
+                ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:381:16: note: suggested alternative: &#39;RAMEND&#39;
+   UCSRnB = (1&lt;&lt;RXENn) | (1&lt;&lt;RXCIEn);
+                ^~~~~
+                RAMEND
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:381:29: error: &#39;RXCIEn&#39; was not declared in this scope
+   UCSRnB = (1&lt;&lt;RXENn) | (1&lt;&lt;RXCIEn);
+                             ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp: In member function &#39;void DMXSerialClass2::tick()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:524:15: error: &#39;UCSRnB&#39; was not declared in this scope
+               UCSRnB = (1&lt;&lt;TXENn); // no interrupts !
+               ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:524:28: error: &#39;TXENn&#39; was not declared in this scope
+               UCSRnB = (1&lt;&lt;TXENn); // no interrupts !
+                            ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:531:17: error: &#39;UDRn&#39; was not declared in this scope
+                 UDRn = _rdm.buffer[i];
+                 ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:531:17: note: suggested alternative: &#39;DDRD&#39;
+                 UDRn = _rdm.buffer[i];
+                 ^~~~
+                 DDRD
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:532:17: error: &#39;UCSRnA&#39; was not declared in this scope
+                 UCSRnA= (1&lt;&lt;TXCn);
+                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:532:29: error: &#39;TXCn&#39; was not declared in this scope
+                 UCSRnA= (1&lt;&lt;TXCn);
+                             ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:540:28: error: &#39;RXENn&#39; was not declared in this scope
+               UCSRnB = (1&lt;&lt;RXENn) | (1&lt;&lt;RXCIEn);
+                            ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:540:28: note: suggested alternative: &#39;RAMEND&#39;
+               UCSRnB = (1&lt;&lt;RXENn) | (1&lt;&lt;RXCIEn);
+                            ^~~~~
+                            RAMEND
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:540:41: error: &#39;RXCIEn&#39; was not declared in this scope
+               UCSRnB = (1&lt;&lt;RXENn) | (1&lt;&lt;RXCIEn);
+                                         ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp: In member function &#39;void DMXSerialClass2::term()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:592:3: error: &#39;UCSRnB&#39; was not declared in this scope
+   UCSRnB = 0;
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp: In function &#39;void _DMXSerialBaud(uint16_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:943:3: error: &#39;UCSRnA&#39; was not declared in this scope
+   UCSRnA = 0;                 // 04.06.2012: use normal speed operation
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:944:3: error: &#39;UBRRnH&#39; was not declared in this scope
+   UBRRnH = baud_setting &gt;&gt; 8;
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:945:3: error: &#39;UBRRnL&#39; was not declared in this scope
+   UBRRnL = baud_setting;
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:948:3: error: &#39;UCSRnC&#39; was not declared in this scope
+   UCSRnC = format;
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp: In function &#39;void _DMXSerialWriteByte(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:956:3: error: &#39;UDRn&#39; was not declared in this scope
+   UDRn = data;
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:956:3: note: suggested alternative: &#39;DDRD&#39;
+   UDRn = data;
+   ^~~~
+   DDRD
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp: In function &#39;void USARTn_RX_vect()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:964:24: error: &#39;UCSRnA&#39; was not declared in this scope
+   uint8_t  USARTstate= UCSRnA;    //get state before data!
+                        ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:965:24: error: &#39;UDRn&#39; was not declared in this scope
+   uint8_t  DmxByte   = UDRn;      //get data
+                        ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:965:24: note: suggested alternative: &#39;DDRD&#39;
+   uint8_t  DmxByte   = UDRn;      //get data
+                        ^~~~
+                        DDRD
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:968:24: error: &#39;FEn&#39; was not declared in this scope
+   if (USARTstate &amp; (1&lt;&lt;FEn)) { //check for break
+                        ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp: In function &#39;void USARTn_TX_vect()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:1055:5: error: &#39;UCSRnB&#39; was not declared in this scope
+     UCSRnB = (1&lt;&lt;TXENn) | (1&lt;&lt;UDRIEn);
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:1055:18: error: &#39;TXENn&#39; was not declared in this scope
+     UCSRnB = (1&lt;&lt;TXENn) | (1&lt;&lt;UDRIEn);
+                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:1055:31: error: &#39;UDRIEn&#39; was not declared in this scope
+     UCSRnB = (1&lt;&lt;TXENn) | (1&lt;&lt;UDRIEn);
+                               ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp: In function &#39;void respondMessage(bool8, uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:1101:3: error: &#39;UCSRnB&#39; was not declared in this scope
+   UCSRnB = (1&lt;&lt;TXENn); // send without no interrupts !
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:1101:16: error: &#39;TXENn&#39; was not declared in this scope
+   UCSRnB = (1&lt;&lt;TXENn); // send without no interrupts !
+                ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:1105:3: error: &#39;UDRn&#39; was not declared in this scope
+   UDRn = 0;
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:1105:3: note: suggested alternative: &#39;DDRD&#39;
+   UDRn = 0;
+   ^~~~
+   DDRD
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:1106:3: error: &#39;UCSRnA&#39; was not declared in this scope
+   UCSRnA= (1&lt;&lt;TXCn);
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:1106:15: error: &#39;TXCn&#39; was not declared in this scope
+   UCSRnA= (1&lt;&lt;TXCn);
+               ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:1133:16: error: &#39;RXENn&#39; was not declared in this scope
+   UCSRnB = (1&lt;&lt;RXENn) | (1&lt;&lt;RXCIEn);
+                ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:1133:16: note: suggested alternative: &#39;RAMEND&#39;
+   UCSRnB = (1&lt;&lt;RXENn) | (1&lt;&lt;RXCIEn);
+                ^~~~~
+                RAMEND
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:1133:29: error: &#39;RXCIEn&#39; was not declared in this scope
+   UCSRnB = (1&lt;&lt;RXENn) | (1&lt;&lt;RXCIEn);
+                             ^~~~~~
+Multiple libraries were found for &#34;EEPROM.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/EEPROM
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/arduino-NVM
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:20:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum/src/EEPROM.h:25:10: fatal error: avr/eeprom.h: No such file or directory
+ #include &lt;avr/eeprom.h&gt;
+          ^~~~~~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;EEPROM.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/arduino-NVM
+</pre>
+
+					
+					<h4>examples/RDMSerialRecv</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:20:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum/src/EEPROM.h:25:10: fatal error: avr/eeprom.h: No such file or directory
+ #include &lt;avr/eeprom.h&gt;
+          ^~~~~~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;EEPROM.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/arduino-NVM
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:23:27: fatal error: avr/interrupt.h: No such file or directory
+compilation terminated.
+Multiple libraries were found for &#34;EEPROM.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/EEPROM
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/arduino-NVM
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum
+</pre>
+
+					
+					<h4>examples/RDMSerialRecv</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DMXSerial2/src/DMXSerial2.cpp:23:27: fatal error: avr/interrupt.h: No such file or directory
+compilation terminated.
+Multiple libraries were found for &#34;EEPROM.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/EEPROM
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/arduino-NVM
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

@@ -1,0 +1,2220 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>PulsePosition - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>PulsePosition</h2>
+				<p>
+					Version: <b>1.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/pulseposition/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>LoopBack</pre></th>
+						
+						<th><pre>ShiftRegisterOutput</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In constructor &#39;PulsePositionOutput::PulsePositionOutput()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:83:65: error: &#39;CLOCKS_PER_MICROSECOND&#39; was not declared in this scope
+ #define TX_MINIMUM_FRAME_CLOCKS   (uint32_t)(TX_MINIMUM_FRAME * CLOCKS_PER_MICROSECOND)
+                                                                 ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:109:19: note: in expansion of macro &#39;TX_MINIMUM_FRAME_CLOCKS&#39;
+  pulse_width[0] = TX_MINIMUM_FRAME_CLOCKS;
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In constructor &#39;PulsePositionOutput::PulsePositionOutput(int)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:83:65: error: &#39;CLOCKS_PER_MICROSECOND&#39; was not declared in this scope
+ #define TX_MINIMUM_FRAME_CLOCKS   (uint32_t)(TX_MINIMUM_FRAME * CLOCKS_PER_MICROSECOND)
+                                                                 ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:119:19: note: in expansion of macro &#39;TX_MINIMUM_FRAME_CLOCKS&#39;
+  pulse_width[0] = TX_MINIMUM_FRAME_CLOCKS;
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In member function &#39;bool PulsePositionOutput::begin(uint8_t, uint8_t)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:6: error: &#39;FTM0_MOD&#39; was not declared in this scope
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+      ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:29: error: &#39;FTM0_SC&#39; was not declared in this scope
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                             ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:24: error: &#39;FTM_SC_TOIE&#39; was not declared in this scope
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                        ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:24: note: suggested alternative: &#39;FTM0_SC_VALUE&#39;
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                        ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:38: error: &#39;FTM_SC_CLKS&#39; was not declared in this scope
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                                      ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:38: note: suggested alternative: &#39;FTM0_SC_VALUE&#39;
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                                      ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:55: error: &#39;FTM_SC_PS&#39; was not declared in this scope
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                                                       ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:144:3: error: &#39;FTM0_CNT&#39; was not declared in this scope
+   FTM0_CNT = 0;
+   ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:152:33: error: &#39;FTM0_C4SC&#39; was not declared in this scope
+    case  6: channel = 4; reg = &amp;FTM0_C4SC; break;
+                                 ^~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:153:33: error: &#39;FTM0_C2SC&#39; was not declared in this scope
+    case  9: channel = 2; reg = &amp;FTM0_C2SC; break;
+                                 ^~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:154:33: error: &#39;FTM0_C3SC&#39; was not declared in this scope
+    case 10: channel = 3; reg = &amp;FTM0_C3SC; break;
+                                 ^~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:155:33: error: &#39;FTM0_C5SC&#39; was not declared in this scope
+    case 20: channel = 5; reg = &amp;FTM0_C5SC; break;
+                                 ^~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:156:33: error: &#39;FTM0_C0SC&#39; was not declared in this scope
+    case 22: channel = 0; reg = &amp;FTM0_C0SC; break;
+                                 ^~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:157:33: error: &#39;FTM0_C1SC&#39; was not declared in this scope
+    case 23: channel = 1; reg = &amp;FTM0_C1SC; break;
+                                 ^~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:169:3: error: &#39;FRAME_PIN_SET&#39; was not declared in this scope
+   FRAME_PIN_SET();
+   ^~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:178:2: error: &#39;CSC_CHANGE&#39; was not declared in this scope
+  CSC_CHANGE(ftm, cscSet); // set on compare match &amp; interrupt
+  ^~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:178:2: note: suggested alternative: &#39;CHANGE&#39;
+  CSC_CHANGE(ftm, cscSet); // set on compare match &amp; interrupt
+  ^~~~~~~~~~
+  CHANGE
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:3: error: &#39;portConfigRegister&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+   ^~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:3: note: suggested alternative: &#39;portModeRegister&#39;
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+   ^~~~~~~~~~~~~~~~~~
+   portModeRegister
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:31: error: &#39;PORT_PCR_MUX&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                               ^~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:31: note: suggested alternative: &#39;UINTPTR_MAX&#39;
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                               ^~~~~~~~~~~~
+                               UINTPTR_MAX
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:49: error: &#39;PORT_PCR_DSE&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                                                 ^~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:64: error: &#39;PORT_PCR_SRE&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                                                                ^~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:182:20: error: &#39;IRQ_FTM0&#39; was not declared in this scope
+  NVIC_SET_PRIORITY(IRQ_FTM0, 32);
+                    ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:182:2: error: &#39;NVIC_SET_PRIORITY&#39; was not declared in this scope
+  NVIC_SET_PRIORITY(IRQ_FTM0, 32);
+  ^~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:183:2: error: &#39;NVIC_ENABLE_IRQ&#39; was</pre>
+
+					
+					<h4>examples/LoopBack</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In constructor &#39;PulsePositionOutput::PulsePositionOutput()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:83:65: error: &#39;CLOCKS_PER_MICROSECOND&#39; was not declared in this scope
+ #define TX_MINIMUM_FRAME_CLOCKS   (uint32_t)(TX_MINIMUM_FRAME * CLOCKS_PER_MICROSECOND)
+                                                                 ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:109:19: note: in expansion of macro &#39;TX_MINIMUM_FRAME_CLOCKS&#39;
+  pulse_width[0] = TX_MINIMUM_FRAME_CLOCKS;
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In constructor &#39;PulsePositionOutput::PulsePositionOutput(int)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:83:65: error: &#39;CLOCKS_PER_MICROSECOND&#39; was not declared in this scope
+ #define TX_MINIMUM_FRAME_CLOCKS   (uint32_t)(TX_MINIMUM_FRAME * CLOCKS_PER_MICROSECOND)
+                                                                 ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:119:19: note: in expansion of macro &#39;TX_MINIMUM_FRAME_CLOCKS&#39;
+  pulse_width[0] = TX_MINIMUM_FRAME_CLOCKS;
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In member function &#39;bool PulsePositionOutput::begin(uint8_t, uint8_t)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:6: error: &#39;FTM0_MOD&#39; was not declared in this scope
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+      ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:29: error: &#39;FTM0_SC&#39; was not declared in this scope
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                             ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:24: error: &#39;FTM_SC_TOIE&#39; was not declared in this scope
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                        ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:24: note: suggested alternative: &#39;FTM0_SC_VALUE&#39;
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                        ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:38: error: &#39;FTM_SC_CLKS&#39; was not declared in this scope
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                                      ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:38: note: suggested alternative: &#39;FTM0_SC_VALUE&#39;
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                                      ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:55: error: &#39;FTM_SC_PS&#39; was not declared in this scope
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                                                       ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:144:3: error: &#39;FTM0_CNT&#39; was not declared in this scope
+   FTM0_CNT = 0;
+   ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:152:33: error: &#39;FTM0_C4SC&#39; was not declared in this scope
+    case  6: channel = 4; reg = &amp;FTM0_C4SC; break;
+                                 ^~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:153:33: error: &#39;FTM0_C2SC&#39; was not declared in this scope
+    case  9: channel = 2; reg = &amp;FTM0_C2SC; break;
+                                 ^~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:154:33: error: &#39;FTM0_C3SC&#39; was not declared in this scope
+    case 10: channel = 3; reg = &amp;FTM0_C3SC; break;
+                                 ^~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:155:33: error: &#39;FTM0_C5SC&#39; was not declared in this scope
+    case 20: channel = 5; reg = &amp;FTM0_C5SC; break;
+                                 ^~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:156:33: error: &#39;FTM0_C0SC&#39; was not declared in this scope
+    case 22: channel = 0; reg = &amp;FTM0_C0SC; break;
+                                 ^~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:157:33: error: &#39;FTM0_C1SC&#39; was not declared in this scope
+    case 23: channel = 1; reg = &amp;FTM0_C1SC; break;
+                                 ^~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:169:3: error: &#39;FRAME_PIN_SET&#39; was not declared in this scope
+   FRAME_PIN_SET();
+   ^~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:178:2: error: &#39;CSC_CHANGE&#39; was not declared in this scope
+  CSC_CHANGE(ftm, cscSet); // set on compare match &amp; interrupt
+  ^~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:178:2: note: suggested alternative: &#39;CHANGE&#39;
+  CSC_CHANGE(ftm, cscSet); // set on compare match &amp; interrupt
+  ^~~~~~~~~~
+  CHANGE
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:3: error: &#39;portConfigRegister&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+   ^~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:3: note: suggested alternative: &#39;portModeRegister&#39;
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+   ^~~~~~~~~~~~~~~~~~
+   portModeRegister
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:31: error: &#39;PORT_PCR_MUX&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                               ^~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:31: note: suggested alternative: &#39;UINTPTR_MAX&#39;
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                               ^~~~~~~~~~~~
+                               UINTPTR_MAX
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:49: error: &#39;PORT_PCR_DSE&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                                                 ^~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:64: error: &#39;PORT_PCR_SRE&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                                                                ^~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:182:20: error: &#39;IRQ_FTM0&#39; was not declared in this scope
+  NVIC_SET_PRIORITY(IRQ_FTM0, 32);
+                    ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:182:2: error: &#39;NVIC_SET_PRIORITY&#39; was not declared in this scope
+  NVIC_SET_PRIORITY(IRQ_FTM0, 32);
+  ^~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:183:2: error: &#39;NVIC_ENABLE_IRQ&#39; was</pre>
+					
+					<h4>examples/ShiftRegisterOutput</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In constructor &#39;PulsePositionOutput::PulsePositionOutput()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:83:65: error: &#39;CLOCKS_PER_MICROSECOND&#39; was not declared in this scope
+ #define TX_MINIMUM_FRAME_CLOCKS   (uint32_t)(TX_MINIMUM_FRAME * CLOCKS_PER_MICROSECOND)
+                                                                 ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:109:19: note: in expansion of macro &#39;TX_MINIMUM_FRAME_CLOCKS&#39;
+  pulse_width[0] = TX_MINIMUM_FRAME_CLOCKS;
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In constructor &#39;PulsePositionOutput::PulsePositionOutput(int)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:83:65: error: &#39;CLOCKS_PER_MICROSECOND&#39; was not declared in this scope
+ #define TX_MINIMUM_FRAME_CLOCKS   (uint32_t)(TX_MINIMUM_FRAME * CLOCKS_PER_MICROSECOND)
+                                                                 ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:119:19: note: in expansion of macro &#39;TX_MINIMUM_FRAME_CLOCKS&#39;
+  pulse_width[0] = TX_MINIMUM_FRAME_CLOCKS;
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In member function &#39;bool PulsePositionOutput::begin(uint8_t, uint8_t)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:6: error: &#39;FTM0_MOD&#39; was not declared in this scope
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+      ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:29: error: &#39;FTM0_SC&#39; was not declared in this scope
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                             ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:24: error: &#39;FTM_SC_TOIE&#39; was not declared in this scope
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                        ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:24: note: suggested alternative: &#39;FTM0_SC_VALUE&#39;
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                        ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:38: error: &#39;FTM_SC_CLKS&#39; was not declared in this scope
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                                      ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:38: note: suggested alternative: &#39;FTM0_SC_VALUE&#39;
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                                      ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:55: error: &#39;FTM_SC_PS&#39; was not declared in this scope
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                                                       ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:144:3: error: &#39;FTM0_CNT&#39; was not declared in this scope
+   FTM0_CNT = 0;
+   ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:152:33: error: &#39;FTM0_C4SC&#39; was not declared in this scope
+    case  6: channel = 4; reg = &amp;FTM0_C4SC; break;
+                                 ^~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:153:33: error: &#39;FTM0_C2SC&#39; was not declared in this scope
+    case  9: channel = 2; reg = &amp;FTM0_C2SC; break;
+                                 ^~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:154:33: error: &#39;FTM0_C3SC&#39; was not declared in this scope
+    case 10: channel = 3; reg = &amp;FTM0_C3SC; break;
+                                 ^~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:155:33: error: &#39;FTM0_C5SC&#39; was not declared in this scope
+    case 20: channel = 5; reg = &amp;FTM0_C5SC; break;
+                                 ^~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:156:33: error: &#39;FTM0_C0SC&#39; was not declared in this scope
+    case 22: channel = 0; reg = &amp;FTM0_C0SC; break;
+                                 ^~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:157:33: error: &#39;FTM0_C1SC&#39; was not declared in this scope
+    case 23: channel = 1; reg = &amp;FTM0_C1SC; break;
+                                 ^~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:169:3: error: &#39;FRAME_PIN_SET&#39; was not declared in this scope
+   FRAME_PIN_SET();
+   ^~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:178:2: error: &#39;CSC_CHANGE&#39; was not declared in this scope
+  CSC_CHANGE(ftm, cscSet); // set on compare match &amp; interrupt
+  ^~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:178:2: note: suggested alternative: &#39;CHANGE&#39;
+  CSC_CHANGE(ftm, cscSet); // set on compare match &amp; interrupt
+  ^~~~~~~~~~
+  CHANGE
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:3: error: &#39;portConfigRegister&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+   ^~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:3: note: suggested alternative: &#39;portModeRegister&#39;
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+   ^~~~~~~~~~~~~~~~~~
+   portModeRegister
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:31: error: &#39;PORT_PCR_MUX&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                               ^~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:31: note: suggested alternative: &#39;UINTPTR_MAX&#39;
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                               ^~~~~~~~~~~~
+                               UINTPTR_MAX
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:49: error: &#39;PORT_PCR_DSE&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                                                 ^~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:64: error: &#39;PORT_PCR_SRE&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                                                                ^~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:182:20: error: &#39;IRQ_FTM0&#39; was not declared in this scope
+  NVIC_SET_PRIORITY(IRQ_FTM0, 32);
+                    ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:182:2: error: &#39;NVIC_SET_PRIORITY&#39; was not declared in this scope
+  NVIC_SET_PRIORITY(IRQ_FTM0, 32);
+  ^~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:183:2: error: &#39;NVIC_ENABLE_IRQ&#39; was</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In constructor &#39;PulsePositionOutput::PulsePositionOutput()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:83:65: error: &#39;CLOCKS_PER_MICROSECOND&#39; was not declared in this scope
+ #define TX_MINIMUM_FRAME_CLOCKS   (uint32_t)(TX_MINIMUM_FRAME * CLOCKS_PER_MICROSECOND)
+                                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:109:19: note: in expansion of macro &#39;TX_MINIMUM_FRAME_CLOCKS&#39;
+  pulse_width[0] = TX_MINIMUM_FRAME_CLOCKS;
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:83:65: note: suggested alternative: &#39;CLOCKS_PER_SEC&#39;
+ #define TX_MINIMUM_FRAME_CLOCKS   (uint32_t)(TX_MINIMUM_FRAME * CLOCKS_PER_MICROSECOND)
+                                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:109:19: note: in expansion of macro &#39;TX_MINIMUM_FRAME_CLOCKS&#39;
+  pulse_width[0] = TX_MINIMUM_FRAME_CLOCKS;
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In constructor &#39;PulsePositionOutput::PulsePositionOutput(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:83:65: error: &#39;CLOCKS_PER_MICROSECOND&#39; was not declared in this scope
+ #define TX_MINIMUM_FRAME_CLOCKS   (uint32_t)(TX_MINIMUM_FRAME * CLOCKS_PER_MICROSECOND)
+                                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:119:19: note: in expansion of macro &#39;TX_MINIMUM_FRAME_CLOCKS&#39;
+  pulse_width[0] = TX_MINIMUM_FRAME_CLOCKS;
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:83:65: note: suggested alternative: &#39;CLOCKS_PER_SEC&#39;
+ #define TX_MINIMUM_FRAME_CLOCKS   (uint32_t)(TX_MINIMUM_FRAME * CLOCKS_PER_MICROSECOND)
+                                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:119:19: note: in expansion of macro &#39;TX_MINIMUM_FRAME_CLOCKS&#39;
+  pulse_width[0] = TX_MINIMUM_FRAME_CLOCKS;
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In member function &#39;bool PulsePositionOutput::begin(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:6: error: &#39;FTM0_MOD&#39; was not declared in this scope
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+      ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:6: note: suggested alternative: &#39;TMP_MAX&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+      ^~~~~~~~
+      TMP_MAX
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:29: error: &#39;FTM0_SC&#39; was not declared in this scope
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                             ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:24: error: &#39;FTM_SC_TOIE&#39; was not declared in this scope
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:24: note: suggested alternative: &#39;FTM0_SC_VALUE&#39;
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:38: error: &#39;FTM_SC_CLKS&#39; was not declared in this scope
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:38: note: suggested alternative: &#39;FTM0_SC_VALUE&#39;
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:55: error: &#39;FTM_SC_PS&#39; was not declared in this scope
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:144:3: error: &#39;FTM0_CNT&#39; was not declared in this scope
+   FTM0_CNT = 0;
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:144:3: note: suggested alternative: &#39;F_CNVT&#39;
+   FTM0_CNT = 0;
+   ^~~~~~~~
+   F_CNVT
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:152:33: error: &#39;FTM0_C4SC&#39; was not declared in this scope
+    case  6: channel = 4; reg = &amp;FTM0_C4SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:153:33: error: &#39;FTM0_C2SC&#39; was not declared in this scope
+    case  9: channel = 2; reg = &amp;FTM0_C2SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:154:33: error: &#39;FTM0_C3SC&#39; was not declared in this scope
+    case 10: channel = 3; reg = &amp;FTM0_C3SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:155:33: error: &#39;FTM0_C5SC&#39; was not declared in this scope
+    case 20: channel = 5; reg = &amp;FTM0_C5SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:156:33: error: &#39;FTM0_C0SC&#39; was not declared in this scope
+    case 22: channel = 0; reg = &amp;FTM0_C0SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:157:33: error: &#39;FTM0_C1SC&#39; was not declared in this scope
+    case 23: channel = 1; reg = &amp;FTM0_C1SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:166:17: error: &#39;portOutputRegister&#39; was not declared in this scope
+   framePinReg = portOutputRegister(framePin);
+                 ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:167:18: error: &#39;digitalPinToBitMask&#39; was not declared in this scope
+   framePinMask = digitalPinToBitMask(framePin);
+                  ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:167:18: note: suggested alternative: &#39;digitalPinToPinName&#39;
+   framePinMask = digitalPinToBitMask(framePin);
+                  ^~~~~~~~~~~~~~~~~~~
+                  digitalPinToPinName
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:169:3: error: &#39;FRAME_PIN_SET&#39; was not declared in this scope
+   FRAME_PIN_SET();
+   ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:169:3: note: suggested alternative: &#39;DEBUG_PINS_SET&#39;
+   FRAME_PIN_SET();
+   ^~~~~~~~~~~~~
+   DEBUG_PINS_SET
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:178:2: error: &#39;CSC_CHANGE&#39; was not declared in this scope
+  CSC_CHANGE(ftm, cscSet); // set on compare match &amp; interrupt
+  ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:178:2: note: suggested alternative: &#39;CHANGE&#39;
+  CSC_CHANGE(ftm, cscSet); // set on compare match &amp; interrupt
+  ^~~~~~~~~~
+  CHANGE
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:3: error: &#39;portConfigRegister&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+   ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:31: error: &#39;PORT_PCR_MUX&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                               ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:31: note: suggested</pre>
+
+					
+					<h4>examples/LoopBack</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In constructor &#39;PulsePositionOutput::PulsePositionOutput()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:83:65: error: &#39;CLOCKS_PER_MICROSECOND&#39; was not declared in this scope
+ #define TX_MINIMUM_FRAME_CLOCKS   (uint32_t)(TX_MINIMUM_FRAME * CLOCKS_PER_MICROSECOND)
+                                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:109:19: note: in expansion of macro &#39;TX_MINIMUM_FRAME_CLOCKS&#39;
+  pulse_width[0] = TX_MINIMUM_FRAME_CLOCKS;
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:83:65: note: suggested alternative: &#39;CLOCKS_PER_SEC&#39;
+ #define TX_MINIMUM_FRAME_CLOCKS   (uint32_t)(TX_MINIMUM_FRAME * CLOCKS_PER_MICROSECOND)
+                                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:109:19: note: in expansion of macro &#39;TX_MINIMUM_FRAME_CLOCKS&#39;
+  pulse_width[0] = TX_MINIMUM_FRAME_CLOCKS;
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In constructor &#39;PulsePositionOutput::PulsePositionOutput(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:83:65: error: &#39;CLOCKS_PER_MICROSECOND&#39; was not declared in this scope
+ #define TX_MINIMUM_FRAME_CLOCKS   (uint32_t)(TX_MINIMUM_FRAME * CLOCKS_PER_MICROSECOND)
+                                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:119:19: note: in expansion of macro &#39;TX_MINIMUM_FRAME_CLOCKS&#39;
+  pulse_width[0] = TX_MINIMUM_FRAME_CLOCKS;
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:83:65: note: suggested alternative: &#39;CLOCKS_PER_SEC&#39;
+ #define TX_MINIMUM_FRAME_CLOCKS   (uint32_t)(TX_MINIMUM_FRAME * CLOCKS_PER_MICROSECOND)
+                                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:119:19: note: in expansion of macro &#39;TX_MINIMUM_FRAME_CLOCKS&#39;
+  pulse_width[0] = TX_MINIMUM_FRAME_CLOCKS;
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In member function &#39;bool PulsePositionOutput::begin(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:6: error: &#39;FTM0_MOD&#39; was not declared in this scope
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+      ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:6: note: suggested alternative: &#39;TMP_MAX&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+      ^~~~~~~~
+      TMP_MAX
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:29: error: &#39;FTM0_SC&#39; was not declared in this scope
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                             ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:24: error: &#39;FTM_SC_TOIE&#39; was not declared in this scope
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:24: note: suggested alternative: &#39;FTM0_SC_VALUE&#39;
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:38: error: &#39;FTM_SC_CLKS&#39; was not declared in this scope
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:38: note: suggested alternative: &#39;FTM0_SC_VALUE&#39;
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:55: error: &#39;FTM_SC_PS&#39; was not declared in this scope
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:144:3: error: &#39;FTM0_CNT&#39; was not declared in this scope
+   FTM0_CNT = 0;
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:144:3: note: suggested alternative: &#39;F_CNVT&#39;
+   FTM0_CNT = 0;
+   ^~~~~~~~
+   F_CNVT
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:152:33: error: &#39;FTM0_C4SC&#39; was not declared in this scope
+    case  6: channel = 4; reg = &amp;FTM0_C4SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:153:33: error: &#39;FTM0_C2SC&#39; was not declared in this scope
+    case  9: channel = 2; reg = &amp;FTM0_C2SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:154:33: error: &#39;FTM0_C3SC&#39; was not declared in this scope
+    case 10: channel = 3; reg = &amp;FTM0_C3SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:155:33: error: &#39;FTM0_C5SC&#39; was not declared in this scope
+    case 20: channel = 5; reg = &amp;FTM0_C5SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:156:33: error: &#39;FTM0_C0SC&#39; was not declared in this scope
+    case 22: channel = 0; reg = &amp;FTM0_C0SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:157:33: error: &#39;FTM0_C1SC&#39; was not declared in this scope
+    case 23: channel = 1; reg = &amp;FTM0_C1SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:166:17: error: &#39;portOutputRegister&#39; was not declared in this scope
+   framePinReg = portOutputRegister(framePin);
+                 ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:167:18: error: &#39;digitalPinToBitMask&#39; was not declared in this scope
+   framePinMask = digitalPinToBitMask(framePin);
+                  ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:167:18: note: suggested alternative: &#39;digitalPinToPinName&#39;
+   framePinMask = digitalPinToBitMask(framePin);
+                  ^~~~~~~~~~~~~~~~~~~
+                  digitalPinToPinName
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:169:3: error: &#39;FRAME_PIN_SET&#39; was not declared in this scope
+   FRAME_PIN_SET();
+   ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:169:3: note: suggested alternative: &#39;DEBUG_PINS_SET&#39;
+   FRAME_PIN_SET();
+   ^~~~~~~~~~~~~
+   DEBUG_PINS_SET
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:178:2: error: &#39;CSC_CHANGE&#39; was not declared in this scope
+  CSC_CHANGE(ftm, cscSet); // set on compare match &amp; interrupt
+  ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:178:2: note: suggested alternative: &#39;CHANGE&#39;
+  CSC_CHANGE(ftm, cscSet); // set on compare match &amp; interrupt
+  ^~~~~~~~~~
+  CHANGE
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:3: error: &#39;portConfigRegister&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+   ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:31: error: &#39;PORT_PCR_MUX&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                               ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:31: note: suggested</pre>
+					
+					<h4>examples/ShiftRegisterOutput</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In constructor &#39;PulsePositionOutput::PulsePositionOutput()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:83:65: error: &#39;CLOCKS_PER_MICROSECOND&#39; was not declared in this scope
+ #define TX_MINIMUM_FRAME_CLOCKS   (uint32_t)(TX_MINIMUM_FRAME * CLOCKS_PER_MICROSECOND)
+                                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:109:19: note: in expansion of macro &#39;TX_MINIMUM_FRAME_CLOCKS&#39;
+  pulse_width[0] = TX_MINIMUM_FRAME_CLOCKS;
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:83:65: note: suggested alternative: &#39;CLOCKS_PER_SEC&#39;
+ #define TX_MINIMUM_FRAME_CLOCKS   (uint32_t)(TX_MINIMUM_FRAME * CLOCKS_PER_MICROSECOND)
+                                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:109:19: note: in expansion of macro &#39;TX_MINIMUM_FRAME_CLOCKS&#39;
+  pulse_width[0] = TX_MINIMUM_FRAME_CLOCKS;
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In constructor &#39;PulsePositionOutput::PulsePositionOutput(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:83:65: error: &#39;CLOCKS_PER_MICROSECOND&#39; was not declared in this scope
+ #define TX_MINIMUM_FRAME_CLOCKS   (uint32_t)(TX_MINIMUM_FRAME * CLOCKS_PER_MICROSECOND)
+                                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:119:19: note: in expansion of macro &#39;TX_MINIMUM_FRAME_CLOCKS&#39;
+  pulse_width[0] = TX_MINIMUM_FRAME_CLOCKS;
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:83:65: note: suggested alternative: &#39;CLOCKS_PER_SEC&#39;
+ #define TX_MINIMUM_FRAME_CLOCKS   (uint32_t)(TX_MINIMUM_FRAME * CLOCKS_PER_MICROSECOND)
+                                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:119:19: note: in expansion of macro &#39;TX_MINIMUM_FRAME_CLOCKS&#39;
+  pulse_width[0] = TX_MINIMUM_FRAME_CLOCKS;
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In member function &#39;bool PulsePositionOutput::begin(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:6: error: &#39;FTM0_MOD&#39; was not declared in this scope
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+      ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:6: note: suggested alternative: &#39;TMP_MAX&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+      ^~~~~~~~
+      TMP_MAX
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:29: error: &#39;FTM0_SC&#39; was not declared in this scope
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                             ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:24: error: &#39;FTM_SC_TOIE&#39; was not declared in this scope
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:24: note: suggested alternative: &#39;FTM0_SC_VALUE&#39;
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:38: error: &#39;FTM_SC_CLKS&#39; was not declared in this scope
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:38: note: suggested alternative: &#39;FTM0_SC_VALUE&#39;
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:55: error: &#39;FTM_SC_PS&#39; was not declared in this scope
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:144:3: error: &#39;FTM0_CNT&#39; was not declared in this scope
+   FTM0_CNT = 0;
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:144:3: note: suggested alternative: &#39;F_CNVT&#39;
+   FTM0_CNT = 0;
+   ^~~~~~~~
+   F_CNVT
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:152:33: error: &#39;FTM0_C4SC&#39; was not declared in this scope
+    case  6: channel = 4; reg = &amp;FTM0_C4SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:153:33: error: &#39;FTM0_C2SC&#39; was not declared in this scope
+    case  9: channel = 2; reg = &amp;FTM0_C2SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:154:33: error: &#39;FTM0_C3SC&#39; was not declared in this scope
+    case 10: channel = 3; reg = &amp;FTM0_C3SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:155:33: error: &#39;FTM0_C5SC&#39; was not declared in this scope
+    case 20: channel = 5; reg = &amp;FTM0_C5SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:156:33: error: &#39;FTM0_C0SC&#39; was not declared in this scope
+    case 22: channel = 0; reg = &amp;FTM0_C0SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:157:33: error: &#39;FTM0_C1SC&#39; was not declared in this scope
+    case 23: channel = 1; reg = &amp;FTM0_C1SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:166:17: error: &#39;portOutputRegister&#39; was not declared in this scope
+   framePinReg = portOutputRegister(framePin);
+                 ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:167:18: error: &#39;digitalPinToBitMask&#39; was not declared in this scope
+   framePinMask = digitalPinToBitMask(framePin);
+                  ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:167:18: note: suggested alternative: &#39;digitalPinToPinName&#39;
+   framePinMask = digitalPinToBitMask(framePin);
+                  ^~~~~~~~~~~~~~~~~~~
+                  digitalPinToPinName
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:169:3: error: &#39;FRAME_PIN_SET&#39; was not declared in this scope
+   FRAME_PIN_SET();
+   ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:169:3: note: suggested alternative: &#39;DEBUG_PINS_SET&#39;
+   FRAME_PIN_SET();
+   ^~~~~~~~~~~~~
+   DEBUG_PINS_SET
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:178:2: error: &#39;CSC_CHANGE&#39; was not declared in this scope
+  CSC_CHANGE(ftm, cscSet); // set on compare match &amp; interrupt
+  ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:178:2: note: suggested alternative: &#39;CHANGE&#39;
+  CSC_CHANGE(ftm, cscSet); // set on compare match &amp; interrupt
+  ^~~~~~~~~~
+  CHANGE
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:3: error: &#39;portConfigRegister&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+   ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:31: error: &#39;PORT_PCR_MUX&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                               ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:31: note: suggested</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In constructor &#39;PulsePositionOutput::PulsePositionOutput()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:83:65: error: &#39;CLOCKS_PER_MICROSECOND&#39; was not declared in this scope
+ #define TX_MINIMUM_FRAME_CLOCKS   (uint32_t)(TX_MINIMUM_FRAME * CLOCKS_PER_MICROSECOND)
+                                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:109:19: note: in expansion of macro &#39;TX_MINIMUM_FRAME_CLOCKS&#39;
+  pulse_width[0] = TX_MINIMUM_FRAME_CLOCKS;
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In constructor &#39;PulsePositionOutput::PulsePositionOutput(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:83:65: error: &#39;CLOCKS_PER_MICROSECOND&#39; was not declared in this scope
+ #define TX_MINIMUM_FRAME_CLOCKS   (uint32_t)(TX_MINIMUM_FRAME * CLOCKS_PER_MICROSECOND)
+                                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:119:19: note: in expansion of macro &#39;TX_MINIMUM_FRAME_CLOCKS&#39;
+  pulse_width[0] = TX_MINIMUM_FRAME_CLOCKS;
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In member function &#39;bool PulsePositionOutput::begin(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:6: error: &#39;FTM0_MOD&#39; was not declared in this scope
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+      ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:29: error: &#39;FTM0_SC&#39; was not declared in this scope
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                             ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:24: error: &#39;FTM_SC_TOIE&#39; was not declared in this scope
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:24: note: suggested alternative: &#39;FTM0_SC_VALUE&#39;
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:38: error: &#39;FTM_SC_CLKS&#39; was not declared in this scope
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:38: note: suggested alternative: &#39;FTM0_SC_VALUE&#39;
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:55: error: &#39;FTM_SC_PS&#39; was not declared in this scope
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:144:3: error: &#39;FTM0_CNT&#39; was not declared in this scope
+   FTM0_CNT = 0;
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:144:3: note: suggested alternative: &#39;RTC_CNT&#39;
+   FTM0_CNT = 0;
+   ^~~~~~~~
+   RTC_CNT
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:152:33: error: &#39;FTM0_C4SC&#39; was not declared in this scope
+    case  6: channel = 4; reg = &amp;FTM0_C4SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:153:33: error: &#39;FTM0_C2SC&#39; was not declared in this scope
+    case  9: channel = 2; reg = &amp;FTM0_C2SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:154:33: error: &#39;FTM0_C3SC&#39; was not declared in this scope
+    case 10: channel = 3; reg = &amp;FTM0_C3SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:155:33: error: &#39;FTM0_C5SC&#39; was not declared in this scope
+    case 20: channel = 5; reg = &amp;FTM0_C5SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:156:33: error: &#39;FTM0_C0SC&#39; was not declared in this scope
+    case 22: channel = 0; reg = &amp;FTM0_C0SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:157:33: error: &#39;FTM0_C1SC&#39; was not declared in this scope
+    case 23: channel = 1; reg = &amp;FTM0_C1SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:169:3: error: &#39;FRAME_PIN_SET&#39; was not declared in this scope
+   FRAME_PIN_SET();
+   ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:178:2: error: &#39;CSC_CHANGE&#39; was not declared in this scope
+  CSC_CHANGE(ftm, cscSet); // set on compare match &amp; interrupt
+  ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:178:2: note: suggested alternative: &#39;CHANGE&#39;
+  CSC_CHANGE(ftm, cscSet); // set on compare match &amp; interrupt
+  ^~~~~~~~~~
+  CHANGE
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:3: error: &#39;portConfigRegister&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+   ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:3: note: suggested alternative: &#39;portModeRegister&#39;
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+   ^~~~~~~~~~~~~~~~~~
+   portModeRegister
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:31: error: &#39;PORT_PCR_MUX&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                               ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:31: note: suggested alternative: &#39;PORTC_OUT&#39;
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                               ^~~~~~~~~~~~
+                               PORTC_OUT
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:49: error: &#39;PORT_PCR_DSE&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                                                 ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:49: note: suggested alternative: &#39;PORTC_DIR&#39;
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                                                 ^~~~~~~~~~~~
+                                                 PORTC_DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:64: error: &#39;PORT_PCR_SRE&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                                                                ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:64: note: suggested alternative: &#39;PORT_ISC_t&#39;
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                                                                ^~~~~~~~~~~~
+                                                                PORT_ISC_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:182:20: error: &#39;IRQ_FTM0&#39; was not declared in this scope
+  NVIC_SET_PRIORITY(IRQ_FTM0, 32);
+                    ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:182:2: error: &#39;NVIC_SET_PRIORITY&#39; was not declared in this scope
+  NVIC_SET_PRIORITY(IRQ_FTM0, 32);
+  ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosi</pre>
+
+					
+					<h4>examples/LoopBack</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In constructor &#39;PulsePositionOutput::PulsePositionOutput()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:83:65: error: &#39;CLOCKS_PER_MICROSECOND&#39; was not declared in this scope
+ #define TX_MINIMUM_FRAME_CLOCKS   (uint32_t)(TX_MINIMUM_FRAME * CLOCKS_PER_MICROSECOND)
+                                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:109:19: note: in expansion of macro &#39;TX_MINIMUM_FRAME_CLOCKS&#39;
+  pulse_width[0] = TX_MINIMUM_FRAME_CLOCKS;
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In constructor &#39;PulsePositionOutput::PulsePositionOutput(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:83:65: error: &#39;CLOCKS_PER_MICROSECOND&#39; was not declared in this scope
+ #define TX_MINIMUM_FRAME_CLOCKS   (uint32_t)(TX_MINIMUM_FRAME * CLOCKS_PER_MICROSECOND)
+                                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:119:19: note: in expansion of macro &#39;TX_MINIMUM_FRAME_CLOCKS&#39;
+  pulse_width[0] = TX_MINIMUM_FRAME_CLOCKS;
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In member function &#39;bool PulsePositionOutput::begin(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:6: error: &#39;FTM0_MOD&#39; was not declared in this scope
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+      ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:29: error: &#39;FTM0_SC&#39; was not declared in this scope
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                             ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:24: error: &#39;FTM_SC_TOIE&#39; was not declared in this scope
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:24: note: suggested alternative: &#39;FTM0_SC_VALUE&#39;
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:38: error: &#39;FTM_SC_CLKS&#39; was not declared in this scope
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:38: note: suggested alternative: &#39;FTM0_SC_VALUE&#39;
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:55: error: &#39;FTM_SC_PS&#39; was not declared in this scope
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:144:3: error: &#39;FTM0_CNT&#39; was not declared in this scope
+   FTM0_CNT = 0;
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:144:3: note: suggested alternative: &#39;RTC_CNT&#39;
+   FTM0_CNT = 0;
+   ^~~~~~~~
+   RTC_CNT
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:152:33: error: &#39;FTM0_C4SC&#39; was not declared in this scope
+    case  6: channel = 4; reg = &amp;FTM0_C4SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:153:33: error: &#39;FTM0_C2SC&#39; was not declared in this scope
+    case  9: channel = 2; reg = &amp;FTM0_C2SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:154:33: error: &#39;FTM0_C3SC&#39; was not declared in this scope
+    case 10: channel = 3; reg = &amp;FTM0_C3SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:155:33: error: &#39;FTM0_C5SC&#39; was not declared in this scope
+    case 20: channel = 5; reg = &amp;FTM0_C5SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:156:33: error: &#39;FTM0_C0SC&#39; was not declared in this scope
+    case 22: channel = 0; reg = &amp;FTM0_C0SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:157:33: error: &#39;FTM0_C1SC&#39; was not declared in this scope
+    case 23: channel = 1; reg = &amp;FTM0_C1SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:169:3: error: &#39;FRAME_PIN_SET&#39; was not declared in this scope
+   FRAME_PIN_SET();
+   ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:178:2: error: &#39;CSC_CHANGE&#39; was not declared in this scope
+  CSC_CHANGE(ftm, cscSet); // set on compare match &amp; interrupt
+  ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:178:2: note: suggested alternative: &#39;CHANGE&#39;
+  CSC_CHANGE(ftm, cscSet); // set on compare match &amp; interrupt
+  ^~~~~~~~~~
+  CHANGE
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:3: error: &#39;portConfigRegister&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+   ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:3: note: suggested alternative: &#39;portModeRegister&#39;
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+   ^~~~~~~~~~~~~~~~~~
+   portModeRegister
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:31: error: &#39;PORT_PCR_MUX&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                               ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:31: note: suggested alternative: &#39;PORTC_OUT&#39;
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                               ^~~~~~~~~~~~
+                               PORTC_OUT
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:49: error: &#39;PORT_PCR_DSE&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                                                 ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:49: note: suggested alternative: &#39;PORTC_DIR&#39;
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                                                 ^~~~~~~~~~~~
+                                                 PORTC_DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:64: error: &#39;PORT_PCR_SRE&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                                                                ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:64: note: suggested alternative: &#39;PORT_ISC_t&#39;
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                                                                ^~~~~~~~~~~~
+                                                                PORT_ISC_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:182:20: error: &#39;IRQ_FTM0&#39; was not declared in this scope
+  NVIC_SET_PRIORITY(IRQ_FTM0, 32);
+                    ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:182:2: error: &#39;NVIC_SET_PRIORITY&#39; was not declared in this scope
+  NVIC_SET_PRIORITY(IRQ_FTM0, 32);
+  ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosi</pre>
+					
+					<h4>examples/ShiftRegisterOutput</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In constructor &#39;PulsePositionOutput::PulsePositionOutput()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:83:65: error: &#39;CLOCKS_PER_MICROSECOND&#39; was not declared in this scope
+ #define TX_MINIMUM_FRAME_CLOCKS   (uint32_t)(TX_MINIMUM_FRAME * CLOCKS_PER_MICROSECOND)
+                                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:109:19: note: in expansion of macro &#39;TX_MINIMUM_FRAME_CLOCKS&#39;
+  pulse_width[0] = TX_MINIMUM_FRAME_CLOCKS;
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In constructor &#39;PulsePositionOutput::PulsePositionOutput(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:83:65: error: &#39;CLOCKS_PER_MICROSECOND&#39; was not declared in this scope
+ #define TX_MINIMUM_FRAME_CLOCKS   (uint32_t)(TX_MINIMUM_FRAME * CLOCKS_PER_MICROSECOND)
+                                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:119:19: note: in expansion of macro &#39;TX_MINIMUM_FRAME_CLOCKS&#39;
+  pulse_width[0] = TX_MINIMUM_FRAME_CLOCKS;
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In member function &#39;bool PulsePositionOutput::begin(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:6: error: &#39;FTM0_MOD&#39; was not declared in this scope
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+      ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:29: error: &#39;FTM0_SC&#39; was not declared in this scope
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                             ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:24: error: &#39;FTM_SC_TOIE&#39; was not declared in this scope
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:24: note: suggested alternative: &#39;FTM0_SC_VALUE&#39;
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:38: error: &#39;FTM_SC_CLKS&#39; was not declared in this scope
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:38: note: suggested alternative: &#39;FTM0_SC_VALUE&#39;
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:55: error: &#39;FTM_SC_PS&#39; was not declared in this scope
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:144:3: error: &#39;FTM0_CNT&#39; was not declared in this scope
+   FTM0_CNT = 0;
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:144:3: note: suggested alternative: &#39;RTC_CNT&#39;
+   FTM0_CNT = 0;
+   ^~~~~~~~
+   RTC_CNT
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:152:33: error: &#39;FTM0_C4SC&#39; was not declared in this scope
+    case  6: channel = 4; reg = &amp;FTM0_C4SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:153:33: error: &#39;FTM0_C2SC&#39; was not declared in this scope
+    case  9: channel = 2; reg = &amp;FTM0_C2SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:154:33: error: &#39;FTM0_C3SC&#39; was not declared in this scope
+    case 10: channel = 3; reg = &amp;FTM0_C3SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:155:33: error: &#39;FTM0_C5SC&#39; was not declared in this scope
+    case 20: channel = 5; reg = &amp;FTM0_C5SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:156:33: error: &#39;FTM0_C0SC&#39; was not declared in this scope
+    case 22: channel = 0; reg = &amp;FTM0_C0SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:157:33: error: &#39;FTM0_C1SC&#39; was not declared in this scope
+    case 23: channel = 1; reg = &amp;FTM0_C1SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:169:3: error: &#39;FRAME_PIN_SET&#39; was not declared in this scope
+   FRAME_PIN_SET();
+   ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:178:2: error: &#39;CSC_CHANGE&#39; was not declared in this scope
+  CSC_CHANGE(ftm, cscSet); // set on compare match &amp; interrupt
+  ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:178:2: note: suggested alternative: &#39;CHANGE&#39;
+  CSC_CHANGE(ftm, cscSet); // set on compare match &amp; interrupt
+  ^~~~~~~~~~
+  CHANGE
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:3: error: &#39;portConfigRegister&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+   ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:3: note: suggested alternative: &#39;portModeRegister&#39;
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+   ^~~~~~~~~~~~~~~~~~
+   portModeRegister
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:31: error: &#39;PORT_PCR_MUX&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                               ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:31: note: suggested alternative: &#39;PORTC_OUT&#39;
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                               ^~~~~~~~~~~~
+                               PORTC_OUT
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:49: error: &#39;PORT_PCR_DSE&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                                                 ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:49: note: suggested alternative: &#39;PORTC_DIR&#39;
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                                                 ^~~~~~~~~~~~
+                                                 PORTC_DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:64: error: &#39;PORT_PCR_SRE&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                                                                ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:64: note: suggested alternative: &#39;PORT_ISC_t&#39;
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                                                                ^~~~~~~~~~~~
+                                                                PORT_ISC_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:182:20: error: &#39;IRQ_FTM0&#39; was not declared in this scope
+  NVIC_SET_PRIORITY(IRQ_FTM0, 32);
+                    ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:182:2: error: &#39;NVIC_SET_PRIORITY&#39; was not declared in this scope
+  NVIC_SET_PRIORITY(IRQ_FTM0, 32);
+  ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosi</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In constructor &#39;PulsePositionOutput::PulsePositionOutput()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:83:65: error: &#39;CLOCKS_PER_MICROSECOND&#39; was not declared in this scope
+ #define TX_MINIMUM_FRAME_CLOCKS   (uint32_t)(TX_MINIMUM_FRAME * CLOCKS_PER_MICROSECOND)
+                                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:109:19: note: in expansion of macro &#39;TX_MINIMUM_FRAME_CLOCKS&#39;
+  pulse_width[0] = TX_MINIMUM_FRAME_CLOCKS;
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In constructor &#39;PulsePositionOutput::PulsePositionOutput(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:83:65: error: &#39;CLOCKS_PER_MICROSECOND&#39; was not declared in this scope
+ #define TX_MINIMUM_FRAME_CLOCKS   (uint32_t)(TX_MINIMUM_FRAME * CLOCKS_PER_MICROSECOND)
+                                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:119:19: note: in expansion of macro &#39;TX_MINIMUM_FRAME_CLOCKS&#39;
+  pulse_width[0] = TX_MINIMUM_FRAME_CLOCKS;
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In member function &#39;bool PulsePositionOutput::begin(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:6: error: &#39;FTM0_MOD&#39; was not declared in this scope
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+      ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:6: note: suggested alternative: &#39;TMP_MAX&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+      ^~~~~~~~
+      TMP_MAX
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:29: error: &#39;FTM0_SC&#39; was not declared in this scope
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                             ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:24: error: &#39;FTM_SC_TOIE&#39; was not declared in this scope
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:24: note: suggested alternative: &#39;FTM0_SC_VALUE&#39;
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:38: error: &#39;FTM_SC_CLKS&#39; was not declared in this scope
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:38: note: suggested alternative: &#39;PIO_AC_CLK&#39;
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:55: error: &#39;FTM_SC_PS&#39; was not declared in this scope
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:144:3: error: &#39;FTM0_CNT&#39; was not declared in this scope
+   FTM0_CNT = 0;
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:144:3: note: suggested alternative: &#39;PWM0_CH7&#39;
+   FTM0_CNT = 0;
+   ^~~~~~~~
+   PWM0_CH7
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:152:33: error: &#39;FTM0_C4SC&#39; was not declared in this scope
+    case  6: channel = 4; reg = &amp;FTM0_C4SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:153:33: error: &#39;FTM0_C2SC&#39; was not declared in this scope
+    case  9: channel = 2; reg = &amp;FTM0_C2SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:154:33: error: &#39;FTM0_C3SC&#39; was not declared in this scope
+    case 10: channel = 3; reg = &amp;FTM0_C3SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:155:33: error: &#39;FTM0_C5SC&#39; was not declared in this scope
+    case 20: channel = 5; reg = &amp;FTM0_C5SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:156:33: error: &#39;FTM0_C0SC&#39; was not declared in this scope
+    case 22: channel = 0; reg = &amp;FTM0_C0SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:157:33: error: &#39;FTM0_C1SC&#39; was not declared in this scope
+    case 23: channel = 1; reg = &amp;FTM0_C1SC; break;
+                                 ^~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:51:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.h:29,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:31:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/variants/mkrwifi1010/variant.h:52:41: error: base operand of &#39;-&gt;&#39; is not a pointer
+ #define portOutputRegister(port) (&amp;(port-&gt;OUT.reg))
+                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:166:17: note: in expansion of macro &#39;portOutputRegister&#39;
+   framePinReg = portOutputRegister(framePin);
+                 ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:169:3: error: &#39;FRAME_PIN_SET&#39; was not declared in this scope
+   FRAME_PIN_SET();
+   ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:178:2: error: &#39;CSC_CHANGE&#39; was not declared in this scope
+  CSC_CHANGE(ftm, cscSet); // set on compare match &amp; interrupt
+  ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:178:2: note: suggested alternative: &#39;CHANGE&#39;
+  CSC_CHANGE(ftm, cscSet); // set on compare match &amp; interrupt
+  ^~~~~~~~~~
+  CHANGE
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:3: error: &#39;portConfigRegister&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+   ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:3: note: suggested alternative: &#39;portInputRegister&#39;
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+   ^~~~~~~~~~~~~~~~~~
+   portInputRegister
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:31: error: &#39;PORT_PCR_MUX&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                               ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:31: note: suggested alternative: &#39;PORT_OUT_OUT&#39;
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                               ^~~~~~~~~~~~
+                               PORT_OUT_OUT
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:49: error: &#39;PORT_PCR_DSE&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                                                 ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:49: note: suggested alternative: &#39;PORT_DIR_DIR&#39;
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                                                 ^~~~~~~~~~~~
+                                                 PORT_DIR_DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/</pre>
+
+					
+					<h4>examples/LoopBack</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In constructor &#39;PulsePositionOutput::PulsePositionOutput()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:83:65: error: &#39;CLOCKS_PER_MICROSECOND&#39; was not declared in this scope
+ #define TX_MINIMUM_FRAME_CLOCKS   (uint32_t)(TX_MINIMUM_FRAME * CLOCKS_PER_MICROSECOND)
+                                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:109:19: note: in expansion of macro &#39;TX_MINIMUM_FRAME_CLOCKS&#39;
+  pulse_width[0] = TX_MINIMUM_FRAME_CLOCKS;
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In constructor &#39;PulsePositionOutput::PulsePositionOutput(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:83:65: error: &#39;CLOCKS_PER_MICROSECOND&#39; was not declared in this scope
+ #define TX_MINIMUM_FRAME_CLOCKS   (uint32_t)(TX_MINIMUM_FRAME * CLOCKS_PER_MICROSECOND)
+                                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:119:19: note: in expansion of macro &#39;TX_MINIMUM_FRAME_CLOCKS&#39;
+  pulse_width[0] = TX_MINIMUM_FRAME_CLOCKS;
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In member function &#39;bool PulsePositionOutput::begin(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:6: error: &#39;FTM0_MOD&#39; was not declared in this scope
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+      ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:6: note: suggested alternative: &#39;TMP_MAX&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+      ^~~~~~~~
+      TMP_MAX
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:29: error: &#39;FTM0_SC&#39; was not declared in this scope
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                             ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:24: error: &#39;FTM_SC_TOIE&#39; was not declared in this scope
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:24: note: suggested alternative: &#39;FTM0_SC_VALUE&#39;
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:38: error: &#39;FTM_SC_CLKS&#39; was not declared in this scope
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:38: note: suggested alternative: &#39;PIO_AC_CLK&#39;
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:55: error: &#39;FTM_SC_PS&#39; was not declared in this scope
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:144:3: error: &#39;FTM0_CNT&#39; was not declared in this scope
+   FTM0_CNT = 0;
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:144:3: note: suggested alternative: &#39;PWM0_CH7&#39;
+   FTM0_CNT = 0;
+   ^~~~~~~~
+   PWM0_CH7
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:152:33: error: &#39;FTM0_C4SC&#39; was not declared in this scope
+    case  6: channel = 4; reg = &amp;FTM0_C4SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:153:33: error: &#39;FTM0_C2SC&#39; was not declared in this scope
+    case  9: channel = 2; reg = &amp;FTM0_C2SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:154:33: error: &#39;FTM0_C3SC&#39; was not declared in this scope
+    case 10: channel = 3; reg = &amp;FTM0_C3SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:155:33: error: &#39;FTM0_C5SC&#39; was not declared in this scope
+    case 20: channel = 5; reg = &amp;FTM0_C5SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:156:33: error: &#39;FTM0_C0SC&#39; was not declared in this scope
+    case 22: channel = 0; reg = &amp;FTM0_C0SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:157:33: error: &#39;FTM0_C1SC&#39; was not declared in this scope
+    case 23: channel = 1; reg = &amp;FTM0_C1SC; break;
+                                 ^~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:51:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.h:29,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:31:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/variants/mkrwifi1010/variant.h:52:41: error: base operand of &#39;-&gt;&#39; is not a pointer
+ #define portOutputRegister(port) (&amp;(port-&gt;OUT.reg))
+                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:166:17: note: in expansion of macro &#39;portOutputRegister&#39;
+   framePinReg = portOutputRegister(framePin);
+                 ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:169:3: error: &#39;FRAME_PIN_SET&#39; was not declared in this scope
+   FRAME_PIN_SET();
+   ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:178:2: error: &#39;CSC_CHANGE&#39; was not declared in this scope
+  CSC_CHANGE(ftm, cscSet); // set on compare match &amp; interrupt
+  ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:178:2: note: suggested alternative: &#39;CHANGE&#39;
+  CSC_CHANGE(ftm, cscSet); // set on compare match &amp; interrupt
+  ^~~~~~~~~~
+  CHANGE
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:3: error: &#39;portConfigRegister&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+   ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:3: note: suggested alternative: &#39;portInputRegister&#39;
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+   ^~~~~~~~~~~~~~~~~~
+   portInputRegister
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:31: error: &#39;PORT_PCR_MUX&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                               ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:31: note: suggested alternative: &#39;PORT_OUT_OUT&#39;
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                               ^~~~~~~~~~~~
+                               PORT_OUT_OUT
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:49: error: &#39;PORT_PCR_DSE&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                                                 ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:49: note: suggested alternative: &#39;PORT_DIR_DIR&#39;
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                                                 ^~~~~~~~~~~~
+                                                 PORT_DIR_DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/</pre>
+					
+					<h4>examples/ShiftRegisterOutput</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In constructor &#39;PulsePositionOutput::PulsePositionOutput()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:83:65: error: &#39;CLOCKS_PER_MICROSECOND&#39; was not declared in this scope
+ #define TX_MINIMUM_FRAME_CLOCKS   (uint32_t)(TX_MINIMUM_FRAME * CLOCKS_PER_MICROSECOND)
+                                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:109:19: note: in expansion of macro &#39;TX_MINIMUM_FRAME_CLOCKS&#39;
+  pulse_width[0] = TX_MINIMUM_FRAME_CLOCKS;
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In constructor &#39;PulsePositionOutput::PulsePositionOutput(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:83:65: error: &#39;CLOCKS_PER_MICROSECOND&#39; was not declared in this scope
+ #define TX_MINIMUM_FRAME_CLOCKS   (uint32_t)(TX_MINIMUM_FRAME * CLOCKS_PER_MICROSECOND)
+                                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:119:19: note: in expansion of macro &#39;TX_MINIMUM_FRAME_CLOCKS&#39;
+  pulse_width[0] = TX_MINIMUM_FRAME_CLOCKS;
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In member function &#39;bool PulsePositionOutput::begin(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:6: error: &#39;FTM0_MOD&#39; was not declared in this scope
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+      ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:6: note: suggested alternative: &#39;TMP_MAX&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+      ^~~~~~~~
+      TMP_MAX
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:29: error: &#39;FTM0_SC&#39; was not declared in this scope
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                             ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:24: error: &#39;FTM_SC_TOIE&#39; was not declared in this scope
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:24: note: suggested alternative: &#39;FTM0_SC_VALUE&#39;
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:38: error: &#39;FTM_SC_CLKS&#39; was not declared in this scope
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:38: note: suggested alternative: &#39;PIO_AC_CLK&#39;
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:55: error: &#39;FTM_SC_PS&#39; was not declared in this scope
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:144:3: error: &#39;FTM0_CNT&#39; was not declared in this scope
+   FTM0_CNT = 0;
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:144:3: note: suggested alternative: &#39;PWM0_CH7&#39;
+   FTM0_CNT = 0;
+   ^~~~~~~~
+   PWM0_CH7
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:152:33: error: &#39;FTM0_C4SC&#39; was not declared in this scope
+    case  6: channel = 4; reg = &amp;FTM0_C4SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:153:33: error: &#39;FTM0_C2SC&#39; was not declared in this scope
+    case  9: channel = 2; reg = &amp;FTM0_C2SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:154:33: error: &#39;FTM0_C3SC&#39; was not declared in this scope
+    case 10: channel = 3; reg = &amp;FTM0_C3SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:155:33: error: &#39;FTM0_C5SC&#39; was not declared in this scope
+    case 20: channel = 5; reg = &amp;FTM0_C5SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:156:33: error: &#39;FTM0_C0SC&#39; was not declared in this scope
+    case 22: channel = 0; reg = &amp;FTM0_C0SC; break;
+                                 ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:157:33: error: &#39;FTM0_C1SC&#39; was not declared in this scope
+    case 23: channel = 1; reg = &amp;FTM0_C1SC; break;
+                                 ^~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:51:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.h:29,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:31:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/variants/mkrwifi1010/variant.h:52:41: error: base operand of &#39;-&gt;&#39; is not a pointer
+ #define portOutputRegister(port) (&amp;(port-&gt;OUT.reg))
+                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:166:17: note: in expansion of macro &#39;portOutputRegister&#39;
+   framePinReg = portOutputRegister(framePin);
+                 ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:169:3: error: &#39;FRAME_PIN_SET&#39; was not declared in this scope
+   FRAME_PIN_SET();
+   ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:178:2: error: &#39;CSC_CHANGE&#39; was not declared in this scope
+  CSC_CHANGE(ftm, cscSet); // set on compare match &amp; interrupt
+  ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:178:2: note: suggested alternative: &#39;CHANGE&#39;
+  CSC_CHANGE(ftm, cscSet); // set on compare match &amp; interrupt
+  ^~~~~~~~~~
+  CHANGE
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:3: error: &#39;portConfigRegister&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+   ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:3: note: suggested alternative: &#39;portInputRegister&#39;
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+   ^~~~~~~~~~~~~~~~~~
+   portInputRegister
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:31: error: &#39;PORT_PCR_MUX&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                               ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:31: note: suggested alternative: &#39;PORT_OUT_OUT&#39;
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                               ^~~~~~~~~~~~
+                               PORT_OUT_OUT
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:49: error: &#39;PORT_PCR_DSE&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                                                 ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:49: note: suggested alternative: &#39;PORT_DIR_DIR&#39;
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                                                 ^~~~~~~~~~~~
+                                                 PORT_DIR_DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In constructor &#39;PulsePositionOutput::PulsePositionOutput()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:83:65: error: &#39;CLOCKS_PER_MICROSECOND&#39; was not declared in this scope
+ #define TX_MINIMUM_FRAME_CLOCKS   (uint32_t)(TX_MINIMUM_FRAME * CLOCKS_PER_MICROSECOND)
+                                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:109:19: note: in expansion of macro &#39;TX_MINIMUM_FRAME_CLOCKS&#39;
+  pulse_width[0] = TX_MINIMUM_FRAME_CLOCKS;
+                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In constructor &#39;PulsePositionOutput::PulsePositionOutput(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:83:65: error: &#39;CLOCKS_PER_MICROSECOND&#39; was not declared in this scope
+ #define TX_MINIMUM_FRAME_CLOCKS   (uint32_t)(TX_MINIMUM_FRAME * CLOCKS_PER_MICROSECOND)
+                                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:119:19: note: in expansion of macro &#39;TX_MINIMUM_FRAME_CLOCKS&#39;
+  pulse_width[0] = TX_MINIMUM_FRAME_CLOCKS;
+                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In member function &#39;bool PulsePositionOutput::begin(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:6: error: &#39;FTM0_MOD&#39; was not declared in this scope
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:29: error: &#39;FTM0_SC&#39; was not declared in this scope
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:24: error: &#39;FTM_SC_TOIE&#39; was not declared in this scope
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:51: error: &#39;FTM_SC_CLKS&#39; was not declared in this scope
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:66: error: &#39;FTM_SC_PS&#39; was not declared in this scope
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                                                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:144:3: error: &#39;FTM0_CNT&#39; was not declared in this scope
+   FTM0_CNT = 0;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:152:33: error: &#39;FTM0_C4SC&#39; was not declared in this scope
+    case  6: channel = 4; reg = &amp;FTM0_C4SC; break;
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:153:33: error: &#39;FTM0_C2SC&#39; was not declared in this scope
+    case  9: channel = 2; reg = &amp;FTM0_C2SC; break;
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:154:33: error: &#39;FTM0_C3SC&#39; was not declared in this scope
+    case 10: channel = 3; reg = &amp;FTM0_C3SC; break;
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:155:33: error: &#39;FTM0_C5SC&#39; was not declared in this scope
+    case 20: channel = 5; reg = &amp;FTM0_C5SC; break;
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:156:33: error: &#39;FTM0_C0SC&#39; was not declared in this scope
+    case 22: channel = 0; reg = &amp;FTM0_C0SC; break;
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:157:33: error: &#39;FTM0_C1SC&#39; was not declared in this scope
+    case 23: channel = 1; reg = &amp;FTM0_C1SC; break;
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:166:15: error: cannot convert &#39;volatile uint32_t* {aka volatile unsigned int*}&#39; to &#39;volatile uint8_t* {aka volatile unsigned char*}&#39; in assignment
+   framePinReg = portOutputRegister(framePin);
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:169:17: error: &#39;FRAME_PIN_SET&#39; was not declared in this scope
+   FRAME_PIN_SET();
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:178:24: error: &#39;CSC_CHANGE&#39; was not declared in this scope
+  CSC_CHANGE(ftm, cscSet); // set on compare match &amp; interrupt
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:27: error: &#39;portConfigRegister&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:45: error: &#39;PORT_PCR_MUX&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:49: error: &#39;PORT_PCR_DSE&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:64: error: &#39;PORT_PCR_SRE&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                                                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:182:20: error: &#39;IRQ_FTM0&#39; was not declared in this scope
+  NVIC_SET_PRIORITY(IRQ_FTM0, 32);
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:182:32: error: &#39;NVIC_SET_PRIORITY&#39; was not declared in this scope
+  NVIC_SET_PRIORITY(IRQ_FTM0, 32);
+                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:183:26: error: &#39;NVIC_ENABLE_IRQ&#39; was not declared in this scope
+  NVIC_ENABLE_IRQ(IRQ_FTM0);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In member function &#39;bool PulsePositionOutput::write(uint8_t, float)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:193:26: error: &#39;CLOCKS_PER_MICROSECOND&#39; was not declared in this scope
+  clocks = microseconds * CLOCKS_PER_MICROSECOND;
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:208:16: error: &#39;__disable_irq&#39; was not declared in this scope
+  __disable_irq();
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:212:15: error: &#39;__enable_irq&#39; was not declared in this scope
+  __enable_irq();
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In member function &#39;void PulsePositionOutput::isr()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:84:63: error: &#39;CLOCKS_PER_MICROSECOND&#39; was not declared in this scope
+ #define TX_PULSE_WIDTH_CLOCKS     (uint32_t)(TX_PULSE_WIDTH * CLOCKS_PER_MICROSECOND)
+                                                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:223:14: note: in expansion of macro &#39;TX_PULSE_WIDTH_CLOCKS&#39;
+   ftm-&gt;cv &#43;= TX_PULSE_WIDTH_CLOCKS;
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:224:34: error: &#39;CSC_CHANGE_INTACK&#39; was not declared in this scope
+   CSC_CHANGE_INTACK(ftm, cscClear); // clear on compare match &amp; interrupt
+                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:84:63: error: &#39;CLOCKS_PER_MICROSECOND&#39; was not declared in this scope
+ #define TX_PULSE_WIDTH_CLOCKS     (uint32_t)(TX_PULSE_WIDTH * CLOCKS_PER_MICROSECOND)
+                                                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:237:36: note: in expansion of macro &#39;TX_PULSE_WIDTH_CLOCKS&#39;
+    width = pulse_buffer[channel] - TX_PULSE_WIDTH_CLOCKS;
+                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:244:20: error: &#39;FRAME_PIN</pre>
+
+					
+					<h4>examples/LoopBack</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In constructor &#39;PulsePositionOutput::PulsePositionOutput()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:83:65: error: &#39;CLOCKS_PER_MICROSECOND&#39; was not declared in this scope
+ #define TX_MINIMUM_FRAME_CLOCKS   (uint32_t)(TX_MINIMUM_FRAME * CLOCKS_PER_MICROSECOND)
+                                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:109:19: note: in expansion of macro &#39;TX_MINIMUM_FRAME_CLOCKS&#39;
+  pulse_width[0] = TX_MINIMUM_FRAME_CLOCKS;
+                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In constructor &#39;PulsePositionOutput::PulsePositionOutput(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:83:65: error: &#39;CLOCKS_PER_MICROSECOND&#39; was not declared in this scope
+ #define TX_MINIMUM_FRAME_CLOCKS   (uint32_t)(TX_MINIMUM_FRAME * CLOCKS_PER_MICROSECOND)
+                                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:119:19: note: in expansion of macro &#39;TX_MINIMUM_FRAME_CLOCKS&#39;
+  pulse_width[0] = TX_MINIMUM_FRAME_CLOCKS;
+                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In member function &#39;bool PulsePositionOutput::begin(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:6: error: &#39;FTM0_MOD&#39; was not declared in this scope
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:29: error: &#39;FTM0_SC&#39; was not declared in this scope
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:24: error: &#39;FTM_SC_TOIE&#39; was not declared in this scope
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:51: error: &#39;FTM_SC_CLKS&#39; was not declared in this scope
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:66: error: &#39;FTM_SC_PS&#39; was not declared in this scope
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                                                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:144:3: error: &#39;FTM0_CNT&#39; was not declared in this scope
+   FTM0_CNT = 0;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:152:33: error: &#39;FTM0_C4SC&#39; was not declared in this scope
+    case  6: channel = 4; reg = &amp;FTM0_C4SC; break;
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:153:33: error: &#39;FTM0_C2SC&#39; was not declared in this scope
+    case  9: channel = 2; reg = &amp;FTM0_C2SC; break;
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:154:33: error: &#39;FTM0_C3SC&#39; was not declared in this scope
+    case 10: channel = 3; reg = &amp;FTM0_C3SC; break;
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:155:33: error: &#39;FTM0_C5SC&#39; was not declared in this scope
+    case 20: channel = 5; reg = &amp;FTM0_C5SC; break;
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:156:33: error: &#39;FTM0_C0SC&#39; was not declared in this scope
+    case 22: channel = 0; reg = &amp;FTM0_C0SC; break;
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:157:33: error: &#39;FTM0_C1SC&#39; was not declared in this scope
+    case 23: channel = 1; reg = &amp;FTM0_C1SC; break;
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:166:15: error: cannot convert &#39;volatile uint32_t* {aka volatile unsigned int*}&#39; to &#39;volatile uint8_t* {aka volatile unsigned char*}&#39; in assignment
+   framePinReg = portOutputRegister(framePin);
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:169:17: error: &#39;FRAME_PIN_SET&#39; was not declared in this scope
+   FRAME_PIN_SET();
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:178:24: error: &#39;CSC_CHANGE&#39; was not declared in this scope
+  CSC_CHANGE(ftm, cscSet); // set on compare match &amp; interrupt
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:27: error: &#39;portConfigRegister&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:45: error: &#39;PORT_PCR_MUX&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:49: error: &#39;PORT_PCR_DSE&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:64: error: &#39;PORT_PCR_SRE&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                                                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:182:20: error: &#39;IRQ_FTM0&#39; was not declared in this scope
+  NVIC_SET_PRIORITY(IRQ_FTM0, 32);
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:182:32: error: &#39;NVIC_SET_PRIORITY&#39; was not declared in this scope
+  NVIC_SET_PRIORITY(IRQ_FTM0, 32);
+                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:183:26: error: &#39;NVIC_ENABLE_IRQ&#39; was not declared in this scope
+  NVIC_ENABLE_IRQ(IRQ_FTM0);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In member function &#39;bool PulsePositionOutput::write(uint8_t, float)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:193:26: error: &#39;CLOCKS_PER_MICROSECOND&#39; was not declared in this scope
+  clocks = microseconds * CLOCKS_PER_MICROSECOND;
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:208:16: error: &#39;__disable_irq&#39; was not declared in this scope
+  __disable_irq();
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:212:15: error: &#39;__enable_irq&#39; was not declared in this scope
+  __enable_irq();
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In member function &#39;void PulsePositionOutput::isr()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:84:63: error: &#39;CLOCKS_PER_MICROSECOND&#39; was not declared in this scope
+ #define TX_PULSE_WIDTH_CLOCKS     (uint32_t)(TX_PULSE_WIDTH * CLOCKS_PER_MICROSECOND)
+                                                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:223:14: note: in expansion of macro &#39;TX_PULSE_WIDTH_CLOCKS&#39;
+   ftm-&gt;cv &#43;= TX_PULSE_WIDTH_CLOCKS;
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:224:34: error: &#39;CSC_CHANGE_INTACK&#39; was not declared in this scope
+   CSC_CHANGE_INTACK(ftm, cscClear); // clear on compare match &amp; interrupt
+                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:84:63: error: &#39;CLOCKS_PER_MICROSECOND&#39; was not declared in this scope
+ #define TX_PULSE_WIDTH_CLOCKS     (uint32_t)(TX_PULSE_WIDTH * CLOCKS_PER_MICROSECOND)
+                                                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:237:36: note: in expansion of macro &#39;TX_PULSE_WIDTH_CLOCKS&#39;
+    width = pulse_buffer[channel] - TX_PULSE_WIDTH_CLOCKS;
+                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:244:20: error: &#39;FRAME_PIN</pre>
+					
+					<h4>examples/ShiftRegisterOutput</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In constructor &#39;PulsePositionOutput::PulsePositionOutput()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:83:65: error: &#39;CLOCKS_PER_MICROSECOND&#39; was not declared in this scope
+ #define TX_MINIMUM_FRAME_CLOCKS   (uint32_t)(TX_MINIMUM_FRAME * CLOCKS_PER_MICROSECOND)
+                                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:109:19: note: in expansion of macro &#39;TX_MINIMUM_FRAME_CLOCKS&#39;
+  pulse_width[0] = TX_MINIMUM_FRAME_CLOCKS;
+                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In constructor &#39;PulsePositionOutput::PulsePositionOutput(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:83:65: error: &#39;CLOCKS_PER_MICROSECOND&#39; was not declared in this scope
+ #define TX_MINIMUM_FRAME_CLOCKS   (uint32_t)(TX_MINIMUM_FRAME * CLOCKS_PER_MICROSECOND)
+                                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:119:19: note: in expansion of macro &#39;TX_MINIMUM_FRAME_CLOCKS&#39;
+  pulse_width[0] = TX_MINIMUM_FRAME_CLOCKS;
+                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In member function &#39;bool PulsePositionOutput::begin(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:6: error: &#39;FTM0_MOD&#39; was not declared in this scope
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:29: error: &#39;FTM0_SC&#39; was not declared in this scope
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:24: error: &#39;FTM_SC_TOIE&#39; was not declared in this scope
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:51: error: &#39;FTM_SC_CLKS&#39; was not declared in this scope
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:88:66: error: &#39;FTM_SC_PS&#39; was not declared in this scope
+ #define FTM0_SC_VALUE (FTM_SC_TOIE | FTM_SC_CLKS(1) | FTM_SC_PS(0))
+                                                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:142:48: note: in expansion of macro &#39;FTM0_SC_VALUE&#39;
+  if (FTM0_MOD != 0xFFFF || (FTM0_SC &amp; 0x7F) != FTM0_SC_VALUE) {
+                                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:144:3: error: &#39;FTM0_CNT&#39; was not declared in this scope
+   FTM0_CNT = 0;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:152:33: error: &#39;FTM0_C4SC&#39; was not declared in this scope
+    case  6: channel = 4; reg = &amp;FTM0_C4SC; break;
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:153:33: error: &#39;FTM0_C2SC&#39; was not declared in this scope
+    case  9: channel = 2; reg = &amp;FTM0_C2SC; break;
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:154:33: error: &#39;FTM0_C3SC&#39; was not declared in this scope
+    case 10: channel = 3; reg = &amp;FTM0_C3SC; break;
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:155:33: error: &#39;FTM0_C5SC&#39; was not declared in this scope
+    case 20: channel = 5; reg = &amp;FTM0_C5SC; break;
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:156:33: error: &#39;FTM0_C0SC&#39; was not declared in this scope
+    case 22: channel = 0; reg = &amp;FTM0_C0SC; break;
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:157:33: error: &#39;FTM0_C1SC&#39; was not declared in this scope
+    case 23: channel = 1; reg = &amp;FTM0_C1SC; break;
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:166:15: error: cannot convert &#39;volatile uint32_t* {aka volatile unsigned int*}&#39; to &#39;volatile uint8_t* {aka volatile unsigned char*}&#39; in assignment
+   framePinReg = portOutputRegister(framePin);
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:169:17: error: &#39;FRAME_PIN_SET&#39; was not declared in this scope
+   FRAME_PIN_SET();
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:178:24: error: &#39;CSC_CHANGE&#39; was not declared in this scope
+  CSC_CHANGE(ftm, cscSet); // set on compare match &amp; interrupt
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:27: error: &#39;portConfigRegister&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:45: error: &#39;PORT_PCR_MUX&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:49: error: &#39;PORT_PCR_DSE&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:181:64: error: &#39;PORT_PCR_SRE&#39; was not declared in this scope
+  *portConfigRegister(txPin) = PORT_PCR_MUX(4) | PORT_PCR_DSE | PORT_PCR_SRE;
+                                                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:182:20: error: &#39;IRQ_FTM0&#39; was not declared in this scope
+  NVIC_SET_PRIORITY(IRQ_FTM0, 32);
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:182:32: error: &#39;NVIC_SET_PRIORITY&#39; was not declared in this scope
+  NVIC_SET_PRIORITY(IRQ_FTM0, 32);
+                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:183:26: error: &#39;NVIC_ENABLE_IRQ&#39; was not declared in this scope
+  NVIC_ENABLE_IRQ(IRQ_FTM0);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In member function &#39;bool PulsePositionOutput::write(uint8_t, float)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:193:26: error: &#39;CLOCKS_PER_MICROSECOND&#39; was not declared in this scope
+  clocks = microseconds * CLOCKS_PER_MICROSECOND;
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:208:16: error: &#39;__disable_irq&#39; was not declared in this scope
+  __disable_irq();
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:212:15: error: &#39;__enable_irq&#39; was not declared in this scope
+  __enable_irq();
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp: In member function &#39;void PulsePositionOutput::isr()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:84:63: error: &#39;CLOCKS_PER_MICROSECOND&#39; was not declared in this scope
+ #define TX_PULSE_WIDTH_CLOCKS     (uint32_t)(TX_PULSE_WIDTH * CLOCKS_PER_MICROSECOND)
+                                                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:223:14: note: in expansion of macro &#39;TX_PULSE_WIDTH_CLOCKS&#39;
+   ftm-&gt;cv &#43;= TX_PULSE_WIDTH_CLOCKS;
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:224:34: error: &#39;CSC_CHANGE_INTACK&#39; was not declared in this scope
+   CSC_CHANGE_INTACK(ftm, cscClear); // clear on compare match &amp; interrupt
+                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:84:63: error: &#39;CLOCKS_PER_MICROSECOND&#39; was not declared in this scope
+ #define TX_PULSE_WIDTH_CLOCKS     (uint32_t)(TX_PULSE_WIDTH * CLOCKS_PER_MICROSECOND)
+                                                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:237:36: note: in expansion of macro &#39;TX_PULSE_WIDTH_CLOCKS&#39;
+    width = pulse_buffer[channel] - TX_PULSE_WIDTH_CLOCKS;
+                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/PulsePosition/PulsePosition.cpp:244:20: error: &#39;FRAME_PIN</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

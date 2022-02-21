@@ -1,0 +1,1382 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>RTC4543lib - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>RTC4543lib</h2>
+				<p>
+					Version: <b>1.0.2</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/rtc4543lib/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>Rtc4543Serial</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:29:1: error: &#39;RTC4543&#39; does not name a type
+ RTC4543::RTC4543(uint8_t dataPin, uint8_t clkPin, uint8_t wrPin, uint8_t cePin){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:45:6: error: &#39;RTC4543&#39; has not been declared
+ void RTC4543::now(){
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp: In function &#39;void now()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:46:8: error: &#39;DATA_READ&#39; was not declared in this scope
+   open(DATA_READ);
+        ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:46:3: error: &#39;open&#39; was not declared in this scope
+   open(DATA_READ);
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:48:3: error: &#39;_bcdSeconds&#39; was not declared in this scope
+   _bcdSeconds = readBits(8) &amp; 0x7F;
+   ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:48:17: error: &#39;readBits&#39; was not declared in this scope
+   _bcdSeconds = readBits(8) &amp; 0x7F;
+                 ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:49:3: error: &#39;_bcdMinutes&#39; was not declared in this scope
+   _bcdMinutes = readBits(8) &amp; 0x7F;
+   ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:50:3: error: &#39;_bcdHours&#39; was not declared in this scope
+   _bcdHours   = readBits(8) &amp; 0x3F;
+   ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:51:3: error: &#39;_bcdDay&#39; was not declared in this scope
+   _bcdDay     = readBits(4) &amp; 0x07;
+   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:52:3: error: &#39;_bcdDate&#39; was not declared in this scope
+   _bcdDate    = readBits(8) &amp; 0x3F;
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:53:3: error: &#39;_bcdMonth&#39; was not declared in this scope
+   _bcdMonth   = readBits(8) &amp; 0x1F;
+   ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:54:3: error: &#39;_bcdYear&#39; was not declared in this scope
+   _bcdYear    = readBits(8);
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:56:3: error: &#39;close&#39; was not declared in this scope
+   close();
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:56:3: note: suggested alternative: &#39;class&#39;
+   close();
+   ^~~~~
+   class
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:6: error: &#39;RTC4543&#39; has not been declared
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:19: error: variable or field &#39;set&#39; declared void
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:19: error: &#39;uint8_t&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:30: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                              ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:41: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                                         ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:53: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                                                     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:64: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                                                                ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:75: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                                                                           ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:86: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                                                                                      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:73:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getHours(uint8_t form){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:80:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getMinutes(uint8_t form){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:87:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getSeconds(uint8_t form){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:94:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getYear(uint8_t form){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:101:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getMonth(uint8_t form){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:108:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getDate(uint8_t form){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:115:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getDay(uint8_t form){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:122:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::isRunning(){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:131:6: error: &#39;RTC4543&#39; has not been declared
+ void RTC4543::open(uint8_t wr){
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:131:20: error: variable or field &#39;open&#39; declared void
+ void RTC4543::open(uint8_t wr){
+                    ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:131:20: error: &#39;uint8_t&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:150:6: error: &#39;RTC4543&#39; has not been declared
+ void RTC4543::close(){
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp: In function &#39;void close()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:151:16: error: &#39;_clkPin&#39; was not declared in this scope
+   digitalWrite(_clkPin, LOW);
+                ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:151:25: error: &#39;LOW&#39; was not declared in this scope
+   digitalWrite(_clkPin, LOW);
+                         ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:151:3: error: &#39;digitalWrite&#39; was not declared in this scope
+   digitalWrite(_clkPin, LOW);
+   ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:152:16: error: &#39;_cePin&#39; was not declared in this scope
+   digitalWrite(_cePin, LOW);
+                ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:155:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::readBits(uint8_t size){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:171:6: error: &#39;RTC4543&#39; has not been declared
+ void RTC4543::writeBits(uint8_t data, uint8_t size){
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:171:25: error: variable or field &#39;writeBits&#39; declared void
+ void RTC4543::writeBits(uint8_t data, uint8_t size){
+                         ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:171:25: error: &#39;uint8_t&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:171:39: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::writeBits(uint8_t data, uint8_t size){
+                                       ^~~~~~~
+
+</pre>
+
+					
+					<h4>examples/Rtc4543Serial</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:29:1: error: &#39;RTC4543&#39; does not name a type
+ RTC4543::RTC4543(uint8_t dataPin, uint8_t clkPin, uint8_t wrPin, uint8_t cePin){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:45:6: error: &#39;RTC4543&#39; has not been declared
+ void RTC4543::now(){
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp: In function &#39;void now()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:46:8: error: &#39;DATA_READ&#39; was not declared in this scope
+   open(DATA_READ);
+        ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:46:3: error: &#39;open&#39; was not declared in this scope
+   open(DATA_READ);
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:48:3: error: &#39;_bcdSeconds&#39; was not declared in this scope
+   _bcdSeconds = readBits(8) &amp; 0x7F;
+   ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:48:17: error: &#39;readBits&#39; was not declared in this scope
+   _bcdSeconds = readBits(8) &amp; 0x7F;
+                 ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:49:3: error: &#39;_bcdMinutes&#39; was not declared in this scope
+   _bcdMinutes = readBits(8) &amp; 0x7F;
+   ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:50:3: error: &#39;_bcdHours&#39; was not declared in this scope
+   _bcdHours   = readBits(8) &amp; 0x3F;
+   ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:51:3: error: &#39;_bcdDay&#39; was not declared in this scope
+   _bcdDay     = readBits(4) &amp; 0x07;
+   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:52:3: error: &#39;_bcdDate&#39; was not declared in this scope
+   _bcdDate    = readBits(8) &amp; 0x3F;
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:53:3: error: &#39;_bcdMonth&#39; was not declared in this scope
+   _bcdMonth   = readBits(8) &amp; 0x1F;
+   ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:54:3: error: &#39;_bcdYear&#39; was not declared in this scope
+   _bcdYear    = readBits(8);
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:56:3: error: &#39;close&#39; was not declared in this scope
+   close();
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:56:3: note: suggested alternative: &#39;class&#39;
+   close();
+   ^~~~~
+   class
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:6: error: &#39;RTC4543&#39; has not been declared
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:19: error: variable or field &#39;set&#39; declared void
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:19: error: &#39;uint8_t&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:30: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                              ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:41: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                                         ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:53: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                                                     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:64: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                                                                ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:75: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                                                                           ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:86: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                                                                                      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:73:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getHours(uint8_t form){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:80:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getMinutes(uint8_t form){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:87:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getSeconds(uint8_t form){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:94:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getYear(uint8_t form){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:101:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getMonth(uint8_t form){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:108:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getDate(uint8_t form){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:115:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getDay(uint8_t form){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:122:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::isRunning(){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:131:6: error: &#39;RTC4543&#39; has not been declared
+ void RTC4543::open(uint8_t wr){
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:131:20: error: variable or field &#39;open&#39; declared void
+ void RTC4543::open(uint8_t wr){
+                    ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:131:20: error: &#39;uint8_t&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:150:6: error: &#39;RTC4543&#39; has not been declared
+ void RTC4543::close(){
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp: In function &#39;void close()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:151:16: error: &#39;_clkPin&#39; was not declared in this scope
+   digitalWrite(_clkPin, LOW);
+                ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:151:25: error: &#39;LOW&#39; was not declared in this scope
+   digitalWrite(_clkPin, LOW);
+                         ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:151:3: error: &#39;digitalWrite&#39; was not declared in this scope
+   digitalWrite(_clkPin, LOW);
+   ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:152:16: error: &#39;_cePin&#39; was not declared in this scope
+   digitalWrite(_cePin, LOW);
+                ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:155:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::readBits(uint8_t size){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:171:6: error: &#39;RTC4543&#39; has not been declared
+ void RTC4543::writeBits(uint8_t data, uint8_t size){
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:171:25: error: variable or field &#39;writeBits&#39; declared void
+ void RTC4543::writeBits(uint8_t data, uint8_t size){
+                         ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:171:25: error: &#39;uint8_t&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:171:39: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::writeBits(uint8_t data, uint8_t size){
+                                       ^~~~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:29:1: error: &#39;RTC4543&#39; does not name a type
+ RTC4543::RTC4543(uint8_t dataPin, uint8_t clkPin, uint8_t wrPin, uint8_t cePin){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:45:6: error: &#39;RTC4543&#39; has not been declared
+ void RTC4543::now(){
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp: In function &#39;void now()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:46:8: error: &#39;DATA_READ&#39; was not declared in this scope
+   open(DATA_READ);
+        ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:46:3: error: &#39;open&#39; was not declared in this scope
+   open(DATA_READ);
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:48:3: error: &#39;_bcdSeconds&#39; was not declared in this scope
+   _bcdSeconds = readBits(8) &amp; 0x7F;
+   ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:48:17: error: &#39;readBits&#39; was not declared in this scope
+   _bcdSeconds = readBits(8) &amp; 0x7F;
+                 ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:49:3: error: &#39;_bcdMinutes&#39; was not declared in this scope
+   _bcdMinutes = readBits(8) &amp; 0x7F;
+   ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:50:3: error: &#39;_bcdHours&#39; was not declared in this scope
+   _bcdHours   = readBits(8) &amp; 0x3F;
+   ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:51:3: error: &#39;_bcdDay&#39; was not declared in this scope
+   _bcdDay     = readBits(4) &amp; 0x07;
+   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:52:3: error: &#39;_bcdDate&#39; was not declared in this scope
+   _bcdDate    = readBits(8) &amp; 0x3F;
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:53:3: error: &#39;_bcdMonth&#39; was not declared in this scope
+   _bcdMonth   = readBits(8) &amp; 0x1F;
+   ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:54:3: error: &#39;_bcdYear&#39; was not declared in this scope
+   _bcdYear    = readBits(8);
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:56:3: error: &#39;close&#39; was not declared in this scope
+   close();
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:56:3: note: suggested alternative: &#39;class&#39;
+   close();
+   ^~~~~
+   class
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:6: error: &#39;RTC4543&#39; has not been declared
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:19: error: variable or field &#39;set&#39; declared void
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:19: error: &#39;uint8_t&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:30: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                              ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:41: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                                         ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:53: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                                                     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:64: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                                                                ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:75: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                                                                           ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:86: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                                                                                      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:73:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getHours(uint8_t form){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:80:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getMinutes(uint8_t form){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:87:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getSeconds(uint8_t form){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:94:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getYear(uint8_t form){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:101:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getMonth(uint8_t form){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:108:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getDate(uint8_t form){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:115:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getDay(uint8_t form){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:122:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::isRunning(){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:131:6: error: &#39;RTC4543&#39; has not been declared
+ void RTC4543::open(uint8_t wr){
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:131:20: error: variable or field &#39;open&#39; declared void
+ void RTC4543::open(uint8_t wr){
+                    ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:131:20: error: &#39;uint8_t&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:150:6: error: &#39;RTC4543&#39; has not been declared
+ void RTC4543::close(){
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp: In function &#39;void close()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:151:16: error: &#39;_clkPin&#39; was not declared in this scope
+   digitalWrite(_clkPin, LOW);
+                ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:151:25: error: &#39;LOW&#39; was not declared in this scope
+   digitalWrite(_clkPin, LOW);
+                         ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:151:3: error: &#39;digitalWrite&#39; was not declared in this scope
+   digitalWrite(_clkPin, LOW);
+   ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:152:16: error: &#39;_cePin&#39; was not declared in this scope
+   digitalWrite(_cePin, LOW);
+                ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:155:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::readBits(uint8_t size){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:171:6: error: &#39;RTC4543&#39; has not been declared
+ void RTC4543::writeBits(uint8_t data, uint8_t size){
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:171:25: error: variable or field &#39;writeBits&#39; declared void
+ void RTC4543::writeBits(uint8_t data, uint8_t size){
+                         ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:171:25: error: &#39;uint8_t&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:171:39: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::writeBits(uint8_t data, uint8_t size){
+                                       ^~~~~~~
+
+</pre>
+
+					
+					<h4>examples/Rtc4543Serial</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:29:1: error: &#39;RTC4543&#39; does not name a type
+ RTC4543::RTC4543(uint8_t dataPin, uint8_t clkPin, uint8_t wrPin, uint8_t cePin){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:45:6: error: &#39;RTC4543&#39; has not been declared
+ void RTC4543::now(){
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp: In function &#39;void now()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:46:8: error: &#39;DATA_READ&#39; was not declared in this scope
+   open(DATA_READ);
+        ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:46:3: error: &#39;open&#39; was not declared in this scope
+   open(DATA_READ);
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:48:3: error: &#39;_bcdSeconds&#39; was not declared in this scope
+   _bcdSeconds = readBits(8) &amp; 0x7F;
+   ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:48:17: error: &#39;readBits&#39; was not declared in this scope
+   _bcdSeconds = readBits(8) &amp; 0x7F;
+                 ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:49:3: error: &#39;_bcdMinutes&#39; was not declared in this scope
+   _bcdMinutes = readBits(8) &amp; 0x7F;
+   ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:50:3: error: &#39;_bcdHours&#39; was not declared in this scope
+   _bcdHours   = readBits(8) &amp; 0x3F;
+   ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:51:3: error: &#39;_bcdDay&#39; was not declared in this scope
+   _bcdDay     = readBits(4) &amp; 0x07;
+   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:52:3: error: &#39;_bcdDate&#39; was not declared in this scope
+   _bcdDate    = readBits(8) &amp; 0x3F;
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:53:3: error: &#39;_bcdMonth&#39; was not declared in this scope
+   _bcdMonth   = readBits(8) &amp; 0x1F;
+   ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:54:3: error: &#39;_bcdYear&#39; was not declared in this scope
+   _bcdYear    = readBits(8);
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:56:3: error: &#39;close&#39; was not declared in this scope
+   close();
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:56:3: note: suggested alternative: &#39;class&#39;
+   close();
+   ^~~~~
+   class
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:6: error: &#39;RTC4543&#39; has not been declared
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:19: error: variable or field &#39;set&#39; declared void
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:19: error: &#39;uint8_t&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:30: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                              ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:41: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                                         ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:53: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                                                     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:64: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                                                                ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:75: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                                                                           ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:86: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                                                                                      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:73:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getHours(uint8_t form){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:80:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getMinutes(uint8_t form){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:87:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getSeconds(uint8_t form){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:94:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getYear(uint8_t form){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:101:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getMonth(uint8_t form){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:108:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getDate(uint8_t form){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:115:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getDay(uint8_t form){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:122:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::isRunning(){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:131:6: error: &#39;RTC4543&#39; has not been declared
+ void RTC4543::open(uint8_t wr){
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:131:20: error: variable or field &#39;open&#39; declared void
+ void RTC4543::open(uint8_t wr){
+                    ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:131:20: error: &#39;uint8_t&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:150:6: error: &#39;RTC4543&#39; has not been declared
+ void RTC4543::close(){
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp: In function &#39;void close()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:151:16: error: &#39;_clkPin&#39; was not declared in this scope
+   digitalWrite(_clkPin, LOW);
+                ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:151:25: error: &#39;LOW&#39; was not declared in this scope
+   digitalWrite(_clkPin, LOW);
+                         ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:151:3: error: &#39;digitalWrite&#39; was not declared in this scope
+   digitalWrite(_clkPin, LOW);
+   ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:152:16: error: &#39;_cePin&#39; was not declared in this scope
+   digitalWrite(_cePin, LOW);
+                ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:155:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::readBits(uint8_t size){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:171:6: error: &#39;RTC4543&#39; has not been declared
+ void RTC4543::writeBits(uint8_t data, uint8_t size){
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:171:25: error: variable or field &#39;writeBits&#39; declared void
+ void RTC4543::writeBits(uint8_t data, uint8_t size){
+                         ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:171:25: error: &#39;uint8_t&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:171:39: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::writeBits(uint8_t data, uint8_t size){
+                                       ^~~~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:29:1: error: &#39;RTC4543&#39; does not name a type
+ RTC4543::RTC4543(uint8_t dataPin, uint8_t clkPin, uint8_t wrPin, uint8_t cePin){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:45:6: error: &#39;RTC4543&#39; has not been declared
+ void RTC4543::now(){
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp: In function &#39;void now()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:46:8: error: &#39;DATA_READ&#39; was not declared in this scope
+   open(DATA_READ);
+        ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:46:3: error: &#39;open&#39; was not declared in this scope
+   open(DATA_READ);
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:48:3: error: &#39;_bcdSeconds&#39; was not declared in this scope
+   _bcdSeconds = readBits(8) &amp; 0x7F;
+   ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:48:17: error: &#39;readBits&#39; was not declared in this scope
+   _bcdSeconds = readBits(8) &amp; 0x7F;
+                 ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:49:3: error: &#39;_bcdMinutes&#39; was not declared in this scope
+   _bcdMinutes = readBits(8) &amp; 0x7F;
+   ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:50:3: error: &#39;_bcdHours&#39; was not declared in this scope
+   _bcdHours   = readBits(8) &amp; 0x3F;
+   ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:51:3: error: &#39;_bcdDay&#39; was not declared in this scope
+   _bcdDay     = readBits(4) &amp; 0x07;
+   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:52:3: error: &#39;_bcdDate&#39; was not declared in this scope
+   _bcdDate    = readBits(8) &amp; 0x3F;
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:53:3: error: &#39;_bcdMonth&#39; was not declared in this scope
+   _bcdMonth   = readBits(8) &amp; 0x1F;
+   ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:54:3: error: &#39;_bcdYear&#39; was not declared in this scope
+   _bcdYear    = readBits(8);
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:56:3: error: &#39;close&#39; was not declared in this scope
+   close();
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:56:3: note: suggested alternative: &#39;class&#39;
+   close();
+   ^~~~~
+   class
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:6: error: &#39;RTC4543&#39; has not been declared
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:19: error: variable or field &#39;set&#39; declared void
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:19: error: &#39;uint8_t&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:30: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                              ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:41: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                                         ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:53: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                                                     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:64: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                                                                ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:75: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                                                                           ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:86: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                                                                                      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:73:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getHours(uint8_t form){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:80:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getMinutes(uint8_t form){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:87:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getSeconds(uint8_t form){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:94:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getYear(uint8_t form){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:101:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getMonth(uint8_t form){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:108:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getDate(uint8_t form){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:115:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getDay(uint8_t form){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:122:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::isRunning(){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:131:6: error: &#39;RTC4543&#39; has not been declared
+ void RTC4543::open(uint8_t wr){
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:131:20: error: variable or field &#39;open&#39; declared void
+ void RTC4543::open(uint8_t wr){
+                    ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:131:20: error: &#39;uint8_t&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:150:6: error: &#39;RTC4543&#39; has not been declared
+ void RTC4543::close(){
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp: In function &#39;void close()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:151:16: error: &#39;_clkPin&#39; was not declared in this scope
+   digitalWrite(_clkPin, LOW);
+                ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:151:25: error: &#39;LOW&#39; was not declared in this scope
+   digitalWrite(_clkPin, LOW);
+                         ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:151:3: error: &#39;digitalWrite&#39; was not declared in this scope
+   digitalWrite(_clkPin, LOW);
+   ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:152:16: error: &#39;_cePin&#39; was not declared in this scope
+   digitalWrite(_cePin, LOW);
+                ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:155:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::readBits(uint8_t size){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:171:6: error: &#39;RTC4543&#39; has not been declared
+ void RTC4543::writeBits(uint8_t data, uint8_t size){
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:171:25: error: variable or field &#39;writeBits&#39; declared void
+ void RTC4543::writeBits(uint8_t data, uint8_t size){
+                         ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:171:25: error: &#39;uint8_t&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:171:39: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::writeBits(uint8_t data, uint8_t size){
+                                       ^~~~~~~
+
+</pre>
+
+					
+					<h4>examples/Rtc4543Serial</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:677:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /tmp/arduino-sketch-318EEFA5ADE49091E75A4EBA621EEFB0/sketch/Rtc4543Serial.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/examples/Rtc4543Serial/Rtc4543Serial.ino:14:9: error: expected &#39;)&#39; before &#39;*&#39; token
+ RTC4543 RTC(dataPin,clkPin, wrPin, cePin);
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/examples/Rtc4543Serial/Rtc4543Serial.ino:14:9: error: expected &#39;)&#39; before &#39;*&#39; token
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/examples/Rtc4543Serial/Rtc4543Serial.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/examples/Rtc4543Serial/Rtc4543Serial.ino:27:9: error: &#39;RTC_t {aka struct RTC_struct}&#39; has no member named &#39;now&#39;
+     RTC.now(); //Get (Update) current date and time from RTC4543.
+         ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/examples/Rtc4543Serial/Rtc4543Serial.ino:29:15: error: &#39;RTC_t {aka struct RTC_struct}&#39; has no member named &#39;getYear&#39;
+     val = RTC.getYear(RTC4543::IN_BIN); //Get Year in BIN.
+               ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/examples/Rtc4543Serial/Rtc4543Serial.ino:34:15: error: &#39;RTC_t {aka struct RTC_struct}&#39; has no member named &#39;getMonth&#39;
+     val = RTC.getMonth(RTC4543::IN_BIN);  //Get month in BIN.
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/examples/Rtc4543Serial/Rtc4543Serial.ino:38:15: error: &#39;RTC_t {aka struct RTC_struct}&#39; has no member named &#39;getDate&#39;
+     val = RTC.getDate(RTC4543::IN_BIN);  //Get date in BIN.
+               ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/examples/Rtc4543Serial/Rtc4543Serial.ino:42:15: error: &#39;RTC_t {aka struct RTC_struct}&#39; has no member named &#39;getDay&#39;
+     val = RTC.getDay(RTC4543::IN_BIN);  //Get day in BIN.
+               ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/examples/Rtc4543Serial/Rtc4543Serial.ino:46:15: error: &#39;RTC_t {aka struct RTC_struct}&#39; has no member named &#39;getHours&#39;
+     val = RTC.getHours(RTC4543::IN_BCD);  //Get hours in BCD.
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/examples/Rtc4543Serial/Rtc4543Serial.ino:50:15: error: &#39;RTC_t {aka struct RTC_struct}&#39; has no member named &#39;getMinutes&#39;
+     val = RTC.getMinutes(RTC4543::IN_BIN);  //Get minutes in BIN.
+               ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/examples/Rtc4543Serial/Rtc4543Serial.ino:54:15: error: &#39;RTC_t {aka struct RTC_struct}&#39; has no member named &#39;getSeconds&#39;
+     val = RTC.getSeconds(RTC4543::IN_BIN);  //Get seconds in BIN.
+               ^~~~~~~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:29:1: error: &#39;RTC4543&#39; does not name a type
+ RTC4543::RTC4543(uint8_t dataPin, uint8_t clkPin, uint8_t wrPin, uint8_t cePin){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:45:6: error: &#39;RTC4543&#39; has not been declared
+ void RTC4543::now(){
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp: In function &#39;void now()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:46:8: error: &#39;DATA_READ&#39; was not declared in this scope
+   open(DATA_READ);
+        ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:46:3: error: &#39;open&#39; was not declared in this scope
+   open(DATA_READ);
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:48:3: error: &#39;_bcdSeconds&#39; was not declared in this scope
+   _bcdSeconds = readBits(8) &amp; 0x7F;
+   ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:48:17: error: &#39;readBits&#39; was not declared in this scope
+   _bcdSeconds = readBits(8) &amp; 0x7F;
+                 ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:49:3: error: &#39;_bcdMinutes&#39; was not declared in this scope
+   _bcdMinutes = readBits(8) &amp; 0x7F;
+   ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:50:3: error: &#39;_bcdHours&#39; was not declared in this scope
+   _bcdHours   = readBits(8) &amp; 0x3F;
+   ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:51:3: error: &#39;_bcdDay&#39; was not declared in this scope
+   _bcdDay     = readBits(4) &amp; 0x07;
+   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:52:3: error: &#39;_bcdDate&#39; was not declared in this scope
+   _bcdDate    = readBits(8) &amp; 0x3F;
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:53:3: error: &#39;_bcdMonth&#39; was not declared in this scope
+   _bcdMonth   = readBits(8) &amp; 0x1F;
+   ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:54:3: error: &#39;_bcdYear&#39; was not declared in this scope
+   _bcdYear    = readBits(8);
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:56:3: error: &#39;close&#39; was not declared in this scope
+   close();
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:56:3: note: suggested alternative: &#39;class&#39;
+   close();
+   ^~~~~
+   class
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:6: error: &#39;RTC4543&#39; has not been declared
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:19: error: variable or field &#39;set&#39; declared void
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:19: error: &#39;uint8_t&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:30: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                              ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:41: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                                         ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:53: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                                                     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:64: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                                                                ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:75: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                                                                           ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:86: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                                                                                      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:73:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getHours(uint8_t form){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:80:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getMinutes(uint8_t form){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:87:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getSeconds(uint8_t form){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:94:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getYear(uint8_t form){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:101:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getMonth(uint8_t form){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:108:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getDate(uint8_t form){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:115:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getDay(uint8_t form){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:122:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::isRunning(){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:131:6: error: &#39;RTC4543&#39; has not been declared
+ void RTC4543::open(uint8_t wr){
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:131:20: error: variable or field &#39;open&#39; declared void
+ void RTC4543::open(uint8_t wr){
+                    ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:131:20: error: &#39;uint8_t&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:150:6: error: &#39;RTC4543&#39; has not been declared
+ void RTC4543::close(){
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp: In function &#39;void close()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:151:16: error: &#39;_clkPin&#39; was not declared in this scope
+   digitalWrite(_clkPin, LOW);
+                ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:151:25: error: &#39;LOW&#39; was not declared in this scope
+   digitalWrite(_clkPin, LOW);
+                         ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:151:3: error: &#39;digitalWrite&#39; was not declared in this scope
+   digitalWrite(_clkPin, LOW);
+   ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:152:16: error: &#39;_cePin&#39; was not declared in this scope
+   digitalWrite(_cePin, LOW);
+                ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:155:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::readBits(uint8_t size){
+ ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:171:6: error: &#39;RTC4543&#39; has not been declared
+ void RTC4543::writeBits(uint8_t data, uint8_t size){
+      ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:171:25: error: variable or field &#39;writeBits&#39; declared void
+ void RTC4543::writeBits(uint8_t data, uint8_t size){
+                         ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:171:25: error: &#39;uint8_t&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:171:39: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::writeBits(uint8_t data, uint8_t size){
+                                       ^~~~~~~
+
+</pre>
+
+					
+					<h4>examples/Rtc4543Serial</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/samd21.h:69:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd.h:105,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:38,
+                 from /tmp/arduino-sketch-318EEFA5ADE49091E75A4EBA621EEFB0/sketch/Rtc4543Serial.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/samd21g18a.h:487:38: error: expected &#39;)&#39; before &#39;*&#39; token
+ #define RTC               ((Rtc      *)0x40001400UL) /**&lt; \brief (RTC) APB Base Address */
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/examples/Rtc4543Serial/Rtc4543Serial.ino:14:9: note: in expansion of macro &#39;RTC&#39;
+ RTC4543 RTC(dataPin,clkPin, wrPin, cePin);
+         ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/samd21g18a.h:487:38: error: expected &#39;)&#39; before &#39;*&#39; token
+ #define RTC               ((Rtc      *)0x40001400UL) /**&lt; \brief (RTC) APB Base Address */
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/examples/Rtc4543Serial/Rtc4543Serial.ino:14:9: note: in expansion of macro &#39;RTC&#39;
+ RTC4543 RTC(dataPin,clkPin, wrPin, cePin);
+         ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/examples/Rtc4543Serial/Rtc4543Serial.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/examples/Rtc4543Serial/Rtc4543Serial.ino:27:9: error: request for member &#39;now&#39; in &#39;(Rtc*)1073746944&#39;, which is of pointer type &#39;Rtc*&#39; (maybe you meant to use &#39;-&gt;&#39; ?)
+     RTC.now(); //Get (Update) current date and time from RTC4543.
+         ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/examples/Rtc4543Serial/Rtc4543Serial.ino:29:15: error: request for member &#39;getYear&#39; in &#39;(Rtc*)1073746944&#39;, which is of pointer type &#39;Rtc*&#39; (maybe you meant to use &#39;-&gt;&#39; ?)
+     val = RTC.getYear(RTC4543::IN_BIN); //Get Year in BIN.
+               ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/examples/Rtc4543Serial/Rtc4543Serial.ino:34:15: error: request for member &#39;getMonth&#39; in &#39;(Rtc*)1073746944&#39;, which is of pointer type &#39;Rtc*&#39; (maybe you meant to use &#39;-&gt;&#39; ?)
+     val = RTC.getMonth(RTC4543::IN_BIN);  //Get month in BIN.
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/examples/Rtc4543Serial/Rtc4543Serial.ino:38:15: error: request for member &#39;getDate&#39; in &#39;(Rtc*)1073746944&#39;, which is of pointer type &#39;Rtc*&#39; (maybe you meant to use &#39;-&gt;&#39; ?)
+     val = RTC.getDate(RTC4543::IN_BIN);  //Get date in BIN.
+               ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/examples/Rtc4543Serial/Rtc4543Serial.ino:42:15: error: request for member &#39;getDay&#39; in &#39;(Rtc*)1073746944&#39;, which is of pointer type &#39;Rtc*&#39; (maybe you meant to use &#39;-&gt;&#39; ?)
+     val = RTC.getDay(RTC4543::IN_BIN);  //Get day in BIN.
+               ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/examples/Rtc4543Serial/Rtc4543Serial.ino:46:15: error: request for member &#39;getHours&#39; in &#39;(Rtc*)1073746944&#39;, which is of pointer type &#39;Rtc*&#39; (maybe you meant to use &#39;-&gt;&#39; ?)
+     val = RTC.getHours(RTC4543::IN_BCD);  //Get hours in BCD.
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/examples/Rtc4543Serial/Rtc4543Serial.ino:50:15: error: request for member &#39;getMinutes&#39; in &#39;(Rtc*)1073746944&#39;, which is of pointer type &#39;Rtc*&#39; (maybe you meant to use &#39;-&gt;&#39; ?)
+     val = RTC.getMinutes(RTC4543::IN_BIN);  //Get minutes in BIN.
+               ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/examples/Rtc4543Serial/Rtc4543Serial.ino:54:15: error: request for member &#39;getSeconds&#39; in &#39;(Rtc*)1073746944&#39;, which is of pointer type &#39;Rtc*&#39; (maybe you meant to use &#39;-&gt;&#39; ?)
+     val = RTC.getSeconds(RTC4543::IN_BIN);  //Get seconds in BIN.
+               ^~~~~~~~~~
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:29:1: error: &#39;RTC4543&#39; does not name a type
+ RTC4543::RTC4543(uint8_t dataPin, uint8_t clkPin, uint8_t wrPin, uint8_t cePin){
+ ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:45:6: error: &#39;RTC4543&#39; has not been declared
+ void RTC4543::now(){
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp: In function &#39;void now()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:46:8: error: &#39;DATA_READ&#39; was not declared in this scope
+   open(DATA_READ);
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:46:17: error: &#39;open&#39; was not declared in this scope
+   open(DATA_READ);
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:48:3: error: &#39;_bcdSeconds&#39; was not declared in this scope
+   _bcdSeconds = readBits(8) &amp; 0x7F;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:48:27: error: &#39;readBits&#39; was not declared in this scope
+   _bcdSeconds = readBits(8) &amp; 0x7F;
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:49:3: error: &#39;_bcdMinutes&#39; was not declared in this scope
+   _bcdMinutes = readBits(8) &amp; 0x7F;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:50:3: error: &#39;_bcdHours&#39; was not declared in this scope
+   _bcdHours   = readBits(8) &amp; 0x3F;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:51:3: error: &#39;_bcdDay&#39; was not declared in this scope
+   _bcdDay     = readBits(4) &amp; 0x07;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:52:3: error: &#39;_bcdDate&#39; was not declared in this scope
+   _bcdDate    = readBits(8) &amp; 0x3F;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:53:3: error: &#39;_bcdMonth&#39; was not declared in this scope
+   _bcdMonth   = readBits(8) &amp; 0x1F;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:54:3: error: &#39;_bcdYear&#39; was not declared in this scope
+   _bcdYear    = readBits(8);
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:56:9: error: &#39;close&#39; was not declared in this scope
+   close();
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:6: error: &#39;RTC4543&#39; has not been declared
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:19: error: variable or field &#39;set&#39; declared void
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:19: error: &#39;uint8_t&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:30: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:41: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:53: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:64: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                                                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:75: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                                                                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:86: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                                                                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:73:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getHours(uint8_t form){
+ ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:80:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getMinutes(uint8_t form){
+ ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:87:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getSeconds(uint8_t form){
+ ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:94:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getYear(uint8_t form){
+ ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:101:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getMonth(uint8_t form){
+ ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:108:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getDate(uint8_t form){
+ ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:115:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getDay(uint8_t form){
+ ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:122:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::isRunning(){
+ ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:131:6: error: &#39;RTC4543&#39; has not been declared
+ void RTC4543::open(uint8_t wr){
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:131:20: error: variable or field &#39;open&#39; declared void
+ void RTC4543::open(uint8_t wr){
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:131:20: error: &#39;uint8_t&#39; was not declared in this scope
+
+</pre>
+
+					
+					<h4>examples/Rtc4543Serial</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:29:1: error: &#39;RTC4543&#39; does not name a type
+ RTC4543::RTC4543(uint8_t dataPin, uint8_t clkPin, uint8_t wrPin, uint8_t cePin){
+ ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:45:6: error: &#39;RTC4543&#39; has not been declared
+ void RTC4543::now(){
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp: In function &#39;void now()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:46:8: error: &#39;DATA_READ&#39; was not declared in this scope
+   open(DATA_READ);
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:46:17: error: &#39;open&#39; was not declared in this scope
+   open(DATA_READ);
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:48:3: error: &#39;_bcdSeconds&#39; was not declared in this scope
+   _bcdSeconds = readBits(8) &amp; 0x7F;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:48:27: error: &#39;readBits&#39; was not declared in this scope
+   _bcdSeconds = readBits(8) &amp; 0x7F;
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:49:3: error: &#39;_bcdMinutes&#39; was not declared in this scope
+   _bcdMinutes = readBits(8) &amp; 0x7F;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:50:3: error: &#39;_bcdHours&#39; was not declared in this scope
+   _bcdHours   = readBits(8) &amp; 0x3F;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:51:3: error: &#39;_bcdDay&#39; was not declared in this scope
+   _bcdDay     = readBits(4) &amp; 0x07;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:52:3: error: &#39;_bcdDate&#39; was not declared in this scope
+   _bcdDate    = readBits(8) &amp; 0x3F;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:53:3: error: &#39;_bcdMonth&#39; was not declared in this scope
+   _bcdMonth   = readBits(8) &amp; 0x1F;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:54:3: error: &#39;_bcdYear&#39; was not declared in this scope
+   _bcdYear    = readBits(8);
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:56:9: error: &#39;close&#39; was not declared in this scope
+   close();
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:6: error: &#39;RTC4543&#39; has not been declared
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:19: error: variable or field &#39;set&#39; declared void
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:19: error: &#39;uint8_t&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:30: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:41: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:53: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:64: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                                                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:75: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                                                                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:59:86: error: &#39;uint8_t&#39; was not declared in this scope
+ void RTC4543::set(uint8_t yy,uint8_t mo,uint8_t dd, uint8_t ww,uint8_t hh,uint8_t mi,uint8_t ss){
+                                                                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:73:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getHours(uint8_t form){
+ ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:80:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getMinutes(uint8_t form){
+ ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:87:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getSeconds(uint8_t form){
+ ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:94:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getYear(uint8_t form){
+ ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:101:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getMonth(uint8_t form){
+ ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:108:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getDate(uint8_t form){
+ ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:115:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::getDay(uint8_t form){
+ ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:122:1: error: &#39;uint8_t&#39; does not name a type
+ uint8_t RTC4543::isRunning(){
+ ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:131:6: error: &#39;RTC4543&#39; has not been declared
+ void RTC4543::open(uint8_t wr){
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:131:20: error: variable or field &#39;open&#39; declared void
+ void RTC4543::open(uint8_t wr){
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC4543lib/src/rtc4543lib.cpp:131:20: error: &#39;uint8_t&#39; was not declared in this scope
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

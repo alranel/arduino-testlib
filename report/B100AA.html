@@ -1,0 +1,904 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>B100AA - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>B100AA</h2>
+				<p>
+					Version: <b>1.0.4</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/b100aa/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>Simple</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp: In member function &#39;void STF_B100AA::Pinout_Defination(uint8_t)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:38:3: error: &#39;DDRK&#39; was not declared in this scope
+   DDRK |= 0b11111111; PORTK &amp;= 0b00000000; // Selenoid 1-4
+   ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:38:3: note: suggested alternative: &#39;DDRB&#39;
+   DDRK |= 0b11111111; PORTK &amp;= 0b00000000; // Selenoid 1-4
+   ^~~~
+   DDRB
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:38:23: error: &#39;PORTK&#39; was not declared in this scope
+   DDRK |= 0b11111111; PORTK &amp;= 0b00000000; // Selenoid 1-4
+                       ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:38:23: note: suggested alternative: &#39;PORT0&#39;
+   DDRK |= 0b11111111; PORTK &amp;= 0b00000000; // Selenoid 1-4
+                       ^~~~~
+                       PORT0
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:40:3: error: &#39;DDRL&#39; was not declared in this scope
+   DDRL |= 0b11111111; PORTL &amp;= 0b00000000; // Selenoid 9-12
+   ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:40:3: note: suggested alternative: &#39;DDRB&#39;
+   DDRL |= 0b11111111; PORTL &amp;= 0b00000000; // Selenoid 9-12
+   ^~~~
+   DDRB
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:40:23: error: &#39;PORTL&#39; was not declared in this scope
+   DDRL |= 0b11111111; PORTL &amp;= 0b00000000; // Selenoid 9-12
+                       ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:40:23: note: suggested alternative: &#39;PORT0&#39;
+   DDRL |= 0b11111111; PORTL &amp;= 0b00000000; // Selenoid 9-12
+                       ^~~~~
+                       PORT0
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:41:3: error: &#39;DDRA&#39; was not declared in this scope
+   DDRA |= 0b11111111; PORTA &amp;= 0b00000000; // Selenoid 13-16
+   ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:41:3: note: suggested alternative: &#39;DDRB&#39;
+   DDRA |= 0b11111111; PORTA &amp;= 0b00000000; // Selenoid 13-16
+   ^~~~
+   DDRB
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:41:23: error: &#39;PORTA&#39; was not declared in this scope
+   DDRA |= 0b11111111; PORTA &amp;= 0b00000000; // Selenoid 13-16
+                       ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:41:23: note: suggested alternative: &#39;PORT0&#39;
+   DDRA |= 0b11111111; PORTA &amp;= 0b00000000; // Selenoid 13-16
+                       ^~~~~
+                       PORT0
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:44:3: error: &#39;DDRF&#39; was not declared in this scope
+   DDRF &amp;= 0b11110000; PORTF &amp;= 0b11110000; // Encoder Signals
+   ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:44:3: note: suggested alternative: &#39;WDRF&#39;
+   DDRF &amp;= 0b11110000; PORTF &amp;= 0b11110000; // Encoder Signals
+   ^~~~
+   WDRF
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:44:23: error: &#39;PORTF&#39; was not declared in this scope
+   DDRF &amp;= 0b11110000; PORTF &amp;= 0b11110000; // Encoder Signals
+                       ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:44:23: note: suggested alternative: &#39;PORT0&#39;
+   DDRF &amp;= 0b11110000; PORTF &amp;= 0b11110000; // Encoder Signals
+                       ^~~~~
+                       PORT0
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:56:3: error: &#39;DDRE&#39; was not declared in this scope
+   DDRE |= 0b00000100; PORTE &amp;= 0b11111011; // PE2 - Output / Pull Down [SD Mux Direction]
+   ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:56:3: note: suggested alternative: &#39;DDRB&#39;
+   DDRE |= 0b00000100; PORTE &amp;= 0b11111011; // PE2 - Output / Pull Down [SD Mux Direction]
+   ^~~~
+   DDRB
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:56:23: error: &#39;PORTE&#39; was not declared in this scope
+   DDRE |= 0b00000100; PORTE &amp;= 0b11111011; // PE2 - Output / Pull Down [SD Mux Direction]
+                       ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:56:23: note: suggested alternative: &#39;PORT0&#39;
+   DDRE |= 0b00000100; PORTE &amp;= 0b11111011; // PE2 - Output / Pull Down [SD Mux Direction]
+                       ^~~~~
+                       PORT0
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:68:3: error: &#39;DDRH&#39; was not declared in this scope
+   DDRH |= 0b00000100; PORTH &amp;= 0b11111011; // PH2 - Output / Pull Down [GSM Power EN]
+   ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:68:3: note: suggested alternative: &#39;DDRB&#39;
+   DDRH |= 0b00000100; PORTH &amp;= 0b11111011; // PH2 - Output / Pull Down [GSM Power EN]
+   ^~~~
+   DDRB
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:68:23: error: &#39;PORTH&#39; was not declared in this scope
+   DDRH |= 0b00000100; PORTH &amp;= 0b11111011; // PH2 - Output / Pull Down [GSM Power EN]
+                       ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:68:23: note: suggested alternative: &#39;PORT0&#39;
+   DDRH |= 0b00000100; PORTH &amp;= 0b11111011; // PH2 - Output / Pull Down [GSM Power EN]
+                       ^~~~~
+                       PORT0
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:76:3: error: &#39;DDRJ&#39; was not declared in this scope
+   DDRJ |= 0b00000100; PORTJ &amp;= 0b00000100; // PJ2 - Output / Pull Down [DTR]
+   ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:76:3: note: suggested alternative: &#39;DDRB&#39;
+   DDRJ |= 0b00000100; PORTJ &amp;= 0b00000100; // PJ2 - Output / Pull Down [DTR]
+   ^~~~
+   DDRB
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:76:23: error: &#39;PORTJ&#39; was not declared in this scope
+   DDRJ |= 0b00000100; PORTJ &amp;= 0b00000100; // PJ2 - Output / Pull Down [DTR]
+                       ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:76:23: note: suggested alternative: &#39;PORT0&#39;
+   DDRJ |= 0b00000100; PORTJ &amp;= 0b00000100; // PJ2 - Output / Pull Down [DTR]
+                       ^~~~~
+                       PORT0
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:107:3: error: &#39;DDRE&#39; was not declared in this scope
+   DDRE &amp;= 0b11011111; PORTE |= 0b00100000; // PE5 - Input / Pull Up [RTC Interrupt]
+   ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:107:3: note: suggested alternative: &#39;DDRB&#39;
+   DDRE &amp;= 0b11011111; PORTE |= 0b00100000; // PE5 - Input / Pull Up [RTC Interrupt]
+   ^~~~
+   DDRB
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:107:23: error: &#39;PORTE&#39; was not declared in this scope
+   DDRE &amp;= 0b11011111; PORTE |= 0b00100000; // PE5 - Input / Pull Up [RTC Interrupt]
+                       ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:107:23: note: suggested alternative: &#39;PORT0&#39;
+   DDRE &amp;= 0b11011111; PORTE |= 0b00100000; // PE5 - Input / Pull Up [RTC Interrupt]
+                       ^~~~~
+                       PORT0
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:116:3: error: &#39;DDRH&#39; was not declared in this scope
+   DDRH |= 0b00000100; PORTH &amp;= 0b11111011; // PH2 - Output / Pull Down [GSM Power EN]
+   ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:116:3: note: suggested alternative: &#39;DDRB&#39;
+   DDRH |= 0b00000100; PORTH &amp;= 0b11111011; // PH2 - Output / Pull Down [GSM Power EN]
+   ^~~~
+   DDRB
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:116:23: error: &#39;PORTH&#39; was not declared in this scope
+   DDRH |= 0b00000100; PORTH &amp;= 0b11111011; // PH2 - Output / Pull Down [GSM Power EN]
+                       ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:116:23: note: suggested alternative: &#39;PORT0&#39;
+   DDRH |= 0b00000100; PORTH &amp;= 0b11111011; // PH2 - Output / Pull Down [GSM Power EN]
+                       ^~~~~
+                       PORT0
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:124:3: error: &#39;DDRJ&#39; was not declared in this scope
+   DDRJ |= 0b00000100; PORTJ &amp;= 0b00000100; // PJ2 - Output / Pull Down [DTR]
+   ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:124:3: note: suggested alternative: &#39;DDRB&#39;
+   DDRJ |= 0b00000100; PORTJ &amp;= 0b00000100; // PJ2 - Output / Pull Down [DTR]
+   ^~~~
+   DDRB
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:124:23: error: &#39;PORTJ&#39; was not declared in this scope
+   DDRJ |= 0b00000100; PORTJ &amp;= 0b00000100; // PJ2 - Output / Pull Down [DTR]
+                       ^~~~~
+/Use</pre>
+
+					
+					<h4>examples/Simple</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/examples/Simple/Simple.ino: In function &#39;void setup()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/examples/Simple/Simple.ino:5:25: error: &#39;Serial1&#39; was not declared in this scope
+ #define  UART_Terminal  Serial1
+                         ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/examples/Simple/Simple.ino:30:18: note: in expansion of macro &#39;UART_Terminal&#39;
+  if (DIAGNOSTIC) UART_Terminal.begin(UART_Terminal_Baud);
+                  ^~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/examples/Simple/Simple.ino:5:25: note: suggested alternative: &#39;Serial&#39;
+ #define  UART_Terminal  Serial1
+                         ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/examples/Simple/Simple.ino:30:18: note: in expansion of macro &#39;UART_Terminal&#39;
+  if (DIAGNOSTIC) UART_Terminal.begin(UART_Terminal_Baud);
+                  ^~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/examples/Simple/Simple.ino:5:25: error: &#39;Serial1&#39; was not declared in this scope
+ #define  UART_Terminal  Serial1
+                         ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/examples/Simple/Simple.ino:47:3: note: in expansion of macro &#39;UART_Terminal&#39;
+   UART_Terminal.println(F(&#34;******************************************&#34;));
+   ^~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/examples/Simple/Simple.ino:5:25: note: suggested alternative: &#39;Serial&#39;
+ #define  UART_Terminal  Serial1
+                         ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/examples/Simple/Simple.ino:47:3: note: in expansion of macro &#39;UART_Terminal&#39;
+   UART_Terminal.println(F(&#34;******************************************&#34;));
+   ^~~~~~~~~~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library B100AA claims to run on avr architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:16:1: error: &#39;RV3028&#39; does not name a type
+ RV3028 RTC;
+ ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp: In member function &#39;void STF_B100AA::Pinout_Defination(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:38:3: error: &#39;DDRK&#39; was not declared in this scope
+   DDRK |= 0b11111111; PORTK &amp;= 0b00000000; // Selenoid 1-4
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:38:3: note: suggested alternative: &#39;DIR&#39;
+   DDRK |= 0b11111111; PORTK &amp;= 0b00000000; // Selenoid 1-4
+   ^~~~
+   DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:38:23: error: &#39;PORTK&#39; was not declared in this scope
+   DDRK |= 0b11111111; PORTK &amp;= 0b00000000; // Selenoid 1-4
+                       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:39:3: error: &#39;DDRC&#39; was not declared in this scope
+   DDRC |= 0b11111111; PORTC &amp;= 0b00000000; // Selenoid 5-8
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:39:3: note: suggested alternative: &#39;DIR&#39;
+   DDRC |= 0b11111111; PORTC &amp;= 0b00000000; // Selenoid 5-8
+   ^~~~
+   DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:39:23: error: &#39;PORTC&#39; was not declared in this scope
+   DDRC |= 0b11111111; PORTC &amp;= 0b00000000; // Selenoid 5-8
+                       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:40:3: error: &#39;DDRL&#39; was not declared in this scope
+   DDRL |= 0b11111111; PORTL &amp;= 0b00000000; // Selenoid 9-12
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:40:3: note: suggested alternative: &#39;DIR&#39;
+   DDRL |= 0b11111111; PORTL &amp;= 0b00000000; // Selenoid 9-12
+   ^~~~
+   DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:40:23: error: &#39;PORTL&#39; was not declared in this scope
+   DDRL |= 0b11111111; PORTL &amp;= 0b00000000; // Selenoid 9-12
+                       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:41:3: error: &#39;DDRA&#39; was not declared in this scope
+   DDRA |= 0b11111111; PORTA &amp;= 0b00000000; // Selenoid 13-16
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:41:3: note: suggested alternative: &#39;DIR&#39;
+   DDRA |= 0b11111111; PORTA &amp;= 0b00000000; // Selenoid 13-16
+   ^~~~
+   DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:41:23: error: &#39;PORTA&#39; was not declared in this scope
+   DDRA |= 0b11111111; PORTA &amp;= 0b00000000; // Selenoid 13-16
+                       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:44:3: error: &#39;DDRF&#39; was not declared in this scope
+   DDRF &amp;= 0b11110000; PORTF &amp;= 0b11110000; // Encoder Signals
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:44:3: note: suggested alternative: &#39;DIR&#39;
+   DDRF &amp;= 0b11110000; PORTF &amp;= 0b11110000; // Encoder Signals
+   ^~~~
+   DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:44:23: error: &#39;PORTF&#39; was not declared in this scope
+   DDRF &amp;= 0b11110000; PORTF &amp;= 0b11110000; // Encoder Signals
+                       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:56:3: error: &#39;DDRE&#39; was not declared in this scope
+   DDRE |= 0b00000100; PORTE &amp;= 0b11111011; // PE2 - Output / Pull Down [SD Mux Direction]
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:56:3: note: suggested alternative: &#39;DIR&#39;
+   DDRE |= 0b00000100; PORTE &amp;= 0b11111011; // PE2 - Output / Pull Down [SD Mux Direction]
+   ^~~~
+   DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:56:23: error: &#39;PORTE&#39; was not declared in this scope
+   DDRE |= 0b00000100; PORTE &amp;= 0b11111011; // PE2 - Output / Pull Down [SD Mux Direction]
+                       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:56:23: note: suggested alternative: &#39;PIRATES&#39;
+   DDRE |= 0b00000100; PORTE &amp;= 0b11111011; // PE2 - Output / Pull Down [SD Mux Direction]
+                       ^~~~~
+                       PIRATES
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:65:3: error: &#39;DDRD&#39; was not declared in this scope
+   DDRD |= 0b01110000; PORTD &amp;= 0b10001111; // PD4/PD5/PD6 - Output / Pull Down [MCU LED Outputs]
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:65:3: note: suggested alternative: &#39;DIR&#39;
+   DDRD |= 0b01110000; PORTD &amp;= 0b10001111; // PD4/PD5/PD6 - Output / Pull Down [MCU LED Outputs]
+   ^~~~
+   DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:65:23: error: &#39;PORTD&#39; was not declared in this scope
+   DDRD |= 0b01110000; PORTD &amp;= 0b10001111; // PD4/PD5/PD6 - Output / Pull Down [MCU LED Outputs]
+                       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:68:3: error: &#39;DDRH&#39; was not declared in this scope
+   DDRH |= 0b00000100; PORTH &amp;= 0b11111011; // PH2 - Output / Pull Down [GSM Power EN]
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:68:3: note: suggested alternative: &#39;DIR&#39;
+   DDRH |= 0b00000100; PORTH &amp;= 0b11111011; // PH2 - Output / Pull Down [GSM Power EN]
+   ^~~~
+   DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:68:23: error: &#39;PORTH&#39; was not declared in this scope
+   DDRH |= 0b00000100; PORTH &amp;= 0b11111011; // PH2 - Output / Pull Down [GSM Power EN]
+                       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:76:3: error: &#39;DDRJ&#39; was not declared in this scope
+   DDRJ |= 0b00000100; PORTJ &amp;= 0b00000100; // PJ2 - Output / Pull Down [DTR]
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:76:3: note: suggested alternative: &#39;DIR&#39;
+   DDRJ |= 0b00000100; PORTJ &amp;= 0b00000100; // PJ2 - Output / Pull Down [DTR]
+   ^~~~
+   DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:76:23: error: &#39;PORTJ&#39; was not declared in this scope
+   DDRJ |= 0b00000100; PORTJ &amp;= 0b00000100; // PJ2 - Output / Pull Down [DTR]
+                       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:107:3: error: &#39;DDRE&#39; was not declared in this scope
+   DDRE &amp;= 0b11011111; PORTE |= 0b00100000; // PE5 - Input / Pull Up [RTC Interrupt]
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:107:3: note: suggested alternative: &#39;DIR&#39;
+   DDRE &amp;= 0b11011111; PORTE |= 0b00100000; // PE5 - Input / Pull Up [RTC Interrupt]
+   ^~~~
+   DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:107:23: error: &#39;PORTE&#39; was not declared in this scope
+   DDRE &amp;= 0b11011111; PORTE |= 0b00100000; // PE5 - Input / Pull Up [RTC Interrupt]
+                       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:107:23: note: suggested alternative: &#39;PIRATES&#39;
+   DDRE &amp;= 0b11011111; PORTE |= 0b00100000; // PE5 - Input / Pull Up [RTC Interrupt]
+                       ^~~~~
+                       PIRATES
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:113:3: error: &#39;DDRD&#39; was not declared in this scope
+   DDRD |= 0b01110000; PORTD &amp;= 0b10001111; // PD4/PD5/PD6 - Output / Pull Down [MCU LED Outputs]
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:113:3: note: suggested alternative: &#39;DIR&#39;
+   DDRD |= 0b01110000; PORTD &amp;= 0b10001111; // PD4/PD5/PD6 - Output / Pull Down [MCU LED Outputs]
+   ^~~~
+   DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:113:23: error: &#39;PORTD&#39; was not declared in this scope
+   DDRD |= 0b01110000; PORTD &amp;= 0b10001111; // PD4/PD5/PD6 - Output / Pull Down [MCU LED Outputs]
+                       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:116:3: error: &#39;DDRH&#39; was not declared in this scope
+   DDRH |= 0b00000100; PORTH &amp;= 0b11111011; // PH2 - Output / Pull Down [GSM Power EN]
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:116:3: note: suggested alternative: &#39;DIR&#39;
+   DDRH |= 0b00000100; PORTH &amp;= 0b11111011; // PH2 - Output / Pull Down [GSM Power EN]
+   ^~~~
+   DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:116:23: error: &#39;PORTH&#39; was not declared in this scope
+   DDRH |= 0b00000100; PORTH &amp;= 0b11111011; // PH2 - Output / Pull Down [GSM Power EN]
+                       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:124:3: error: &#39;DDRJ&#39; was not declared in this scope
+   DDRJ |= 0b00000100; PORTJ &amp;= 0b00000100; // PJ2 - Output / Pull Down [DTR]
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:124:3: note: suggested alternative: &#39;DIR&#39;
+   DDRJ |= 0b00000100; PORTJ &amp;= 0b00000100; // PJ2 - Output / Pull Down [DTR]
+   ^~~~
+   DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:124:23: error: &#39;PORTJ&#39; was not declared in this scope
+   DDRJ |= 0b00000100; PORTJ &amp;= 0b00000100; // PJ2 - Output / Pull Down [DTR]
+                       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:134:3: error: &#39;DDRF&#39; was not declared in this scope
+   DDRF |= 0b10000000; PORTF &amp;= 0b01111111; // 12V Boost Enable Signal
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:13</pre>
+
+					
+					<h4>examples/Simple</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library B100AA claims to run on avr architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:16:1: error: &#39;RV3028&#39; does not name a type
+ RV3028 RTC;
+ ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp: In member function &#39;void STF_B100AA::Pinout_Defination(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:38:3: error: &#39;DDRK&#39; was not declared in this scope
+   DDRK |= 0b11111111; PORTK &amp;= 0b00000000; // Selenoid 1-4
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:38:3: note: suggested alternative: &#39;DIR&#39;
+   DDRK |= 0b11111111; PORTK &amp;= 0b00000000; // Selenoid 1-4
+   ^~~~
+   DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:38:23: error: &#39;PORTK&#39; was not declared in this scope
+   DDRK |= 0b11111111; PORTK &amp;= 0b00000000; // Selenoid 1-4
+                       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:39:3: error: &#39;DDRC&#39; was not declared in this scope
+   DDRC |= 0b11111111; PORTC &amp;= 0b00000000; // Selenoid 5-8
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:39:3: note: suggested alternative: &#39;DIR&#39;
+   DDRC |= 0b11111111; PORTC &amp;= 0b00000000; // Selenoid 5-8
+   ^~~~
+   DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:39:23: error: &#39;PORTC&#39; was not declared in this scope
+   DDRC |= 0b11111111; PORTC &amp;= 0b00000000; // Selenoid 5-8
+                       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:40:3: error: &#39;DDRL&#39; was not declared in this scope
+   DDRL |= 0b11111111; PORTL &amp;= 0b00000000; // Selenoid 9-12
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:40:3: note: suggested alternative: &#39;DIR&#39;
+   DDRL |= 0b11111111; PORTL &amp;= 0b00000000; // Selenoid 9-12
+   ^~~~
+   DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:40:23: error: &#39;PORTL&#39; was not declared in this scope
+   DDRL |= 0b11111111; PORTL &amp;= 0b00000000; // Selenoid 9-12
+                       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:41:3: error: &#39;DDRA&#39; was not declared in this scope
+   DDRA |= 0b11111111; PORTA &amp;= 0b00000000; // Selenoid 13-16
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:41:3: note: suggested alternative: &#39;DIR&#39;
+   DDRA |= 0b11111111; PORTA &amp;= 0b00000000; // Selenoid 13-16
+   ^~~~
+   DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:41:23: error: &#39;PORTA&#39; was not declared in this scope
+   DDRA |= 0b11111111; PORTA &amp;= 0b00000000; // Selenoid 13-16
+                       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:44:3: error: &#39;DDRF&#39; was not declared in this scope
+   DDRF &amp;= 0b11110000; PORTF &amp;= 0b11110000; // Encoder Signals
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:44:3: note: suggested alternative: &#39;DIR&#39;
+   DDRF &amp;= 0b11110000; PORTF &amp;= 0b11110000; // Encoder Signals
+   ^~~~
+   DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:44:23: error: &#39;PORTF&#39; was not declared in this scope
+   DDRF &amp;= 0b11110000; PORTF &amp;= 0b11110000; // Encoder Signals
+                       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:56:3: error: &#39;DDRE&#39; was not declared in this scope
+   DDRE |= 0b00000100; PORTE &amp;= 0b11111011; // PE2 - Output / Pull Down [SD Mux Direction]
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:56:3: note: suggested alternative: &#39;DIR&#39;
+   DDRE |= 0b00000100; PORTE &amp;= 0b11111011; // PE2 - Output / Pull Down [SD Mux Direction]
+   ^~~~
+   DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:56:23: error: &#39;PORTE&#39; was not declared in this scope
+   DDRE |= 0b00000100; PORTE &amp;= 0b11111011; // PE2 - Output / Pull Down [SD Mux Direction]
+                       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:56:23: note: suggested alternative: &#39;PIRATES&#39;
+   DDRE |= 0b00000100; PORTE &amp;= 0b11111011; // PE2 - Output / Pull Down [SD Mux Direction]
+                       ^~~~~
+                       PIRATES
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:65:3: error: &#39;DDRD&#39; was not declared in this scope
+   DDRD |= 0b01110000; PORTD &amp;= 0b10001111; // PD4/PD5/PD6 - Output / Pull Down [MCU LED Outputs]
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:65:3: note: suggested alternative: &#39;DIR&#39;
+   DDRD |= 0b01110000; PORTD &amp;= 0b10001111; // PD4/PD5/PD6 - Output / Pull Down [MCU LED Outputs]
+   ^~~~
+   DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:65:23: error: &#39;PORTD&#39; was not declared in this scope
+   DDRD |= 0b01110000; PORTD &amp;= 0b10001111; // PD4/PD5/PD6 - Output / Pull Down [MCU LED Outputs]
+                       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:68:3: error: &#39;DDRH&#39; was not declared in this scope
+   DDRH |= 0b00000100; PORTH &amp;= 0b11111011; // PH2 - Output / Pull Down [GSM Power EN]
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:68:3: note: suggested alternative: &#39;DIR&#39;
+   DDRH |= 0b00000100; PORTH &amp;= 0b11111011; // PH2 - Output / Pull Down [GSM Power EN]
+   ^~~~
+   DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:68:23: error: &#39;PORTH&#39; was not declared in this scope
+   DDRH |= 0b00000100; PORTH &amp;= 0b11111011; // PH2 - Output / Pull Down [GSM Power EN]
+                       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:76:3: error: &#39;DDRJ&#39; was not declared in this scope
+   DDRJ |= 0b00000100; PORTJ &amp;= 0b00000100; // PJ2 - Output / Pull Down [DTR]
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:76:3: note: suggested alternative: &#39;DIR&#39;
+   DDRJ |= 0b00000100; PORTJ &amp;= 0b00000100; // PJ2 - Output / Pull Down [DTR]
+   ^~~~
+   DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:76:23: error: &#39;PORTJ&#39; was not declared in this scope
+   DDRJ |= 0b00000100; PORTJ &amp;= 0b00000100; // PJ2 - Output / Pull Down [DTR]
+                       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:107:3: error: &#39;DDRE&#39; was not declared in this scope
+   DDRE &amp;= 0b11011111; PORTE |= 0b00100000; // PE5 - Input / Pull Up [RTC Interrupt]
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:107:3: note: suggested alternative: &#39;DIR&#39;
+   DDRE &amp;= 0b11011111; PORTE |= 0b00100000; // PE5 - Input / Pull Up [RTC Interrupt]
+   ^~~~
+   DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:107:23: error: &#39;PORTE&#39; was not declared in this scope
+   DDRE &amp;= 0b11011111; PORTE |= 0b00100000; // PE5 - Input / Pull Up [RTC Interrupt]
+                       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:107:23: note: suggested alternative: &#39;PIRATES&#39;
+   DDRE &amp;= 0b11011111; PORTE |= 0b00100000; // PE5 - Input / Pull Up [RTC Interrupt]
+                       ^~~~~
+                       PIRATES
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:113:3: error: &#39;DDRD&#39; was not declared in this scope
+   DDRD |= 0b01110000; PORTD &amp;= 0b10001111; // PD4/PD5/PD6 - Output / Pull Down [MCU LED Outputs]
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:113:3: note: suggested alternative: &#39;DIR&#39;
+   DDRD |= 0b01110000; PORTD &amp;= 0b10001111; // PD4/PD5/PD6 - Output / Pull Down [MCU LED Outputs]
+   ^~~~
+   DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:113:23: error: &#39;PORTD&#39; was not declared in this scope
+   DDRD |= 0b01110000; PORTD &amp;= 0b10001111; // PD4/PD5/PD6 - Output / Pull Down [MCU LED Outputs]
+                       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:116:3: error: &#39;DDRH&#39; was not declared in this scope
+   DDRH |= 0b00000100; PORTH &amp;= 0b11111011; // PH2 - Output / Pull Down [GSM Power EN]
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:116:3: note: suggested alternative: &#39;DIR&#39;
+   DDRH |= 0b00000100; PORTH &amp;= 0b11111011; // PH2 - Output / Pull Down [GSM Power EN]
+   ^~~~
+   DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:116:23: error: &#39;PORTH&#39; was not declared in this scope
+   DDRH |= 0b00000100; PORTH &amp;= 0b11111011; // PH2 - Output / Pull Down [GSM Power EN]
+                       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:124:3: error: &#39;DDRJ&#39; was not declared in this scope
+   DDRJ |= 0b00000100; PORTJ &amp;= 0b00000100; // PJ2 - Output / Pull Down [DTR]
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:124:3: note: suggested alternative: &#39;DIR&#39;
+   DDRJ |= 0b00000100; PORTJ &amp;= 0b00000100; // PJ2 - Output / Pull Down [DTR]
+   ^~~~
+   DIR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:124:23: error: &#39;PORTJ&#39; was not declared in this scope
+   DDRJ |= 0b00000100; PORTJ &amp;= 0b00000100; // PJ2 - Output / Pull Down [DTR]
+                       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:134:3: error: &#39;DDRF&#39; was not declared in this scope
+   DDRF |= 0b10000000; PORTF &amp;= 0b01111111; // 12V Boost Enable Signal
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.cpp:13</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library B100AA claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:677:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /tmp/arduino-sketch-922221F405C7B3B41661DF7B76F491B5/sketch/test.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.h:83:10: error: expected &#39;)&#39; before &#39;*&#39; token
+   bool   RTC;   // Realtime Clock
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.h:83:10: error: expected &#39;)&#39; before &#39;*&#39; token
+In file included from /tmp/arduino-testlib4013868025/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.h:101:2: error: too many initializers for &#39;STF_B100AA::Struct_Diag&#39;
+  };
+  ^
+Multiple libraries were found for &#34;RV-3028-C7.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RV-3028-C7
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC_RV-3028-C7_Arduino_Library
+</pre>
+
+					
+					<h4>examples/Simple</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library B100AA claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:677:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /tmp/arduino-sketch-8C544FAA313AA357FB92261E880660CF/sketch/Simple.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.h:83:10: error: expected &#39;)&#39; before &#39;*&#39; token
+   bool   RTC;   // Realtime Clock
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.h:83:10: error: expected &#39;)&#39; before &#39;*&#39; token
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/examples/Simple/Simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.h:101:2: error: too many initializers for &#39;STF_B100AA::Struct_Diag&#39;
+  };
+  ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:677:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /tmp/arduino-sketch-8C544FAA313AA357FB92261E880660CF/sketch/Simple.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/examples/Simple/Simple.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/examples/Simple/Simple.ino:57:25: error: expected unqualified-id before &#39;(&#39; token
+   if (B100AA.Diagnostic.RTC) {UART_Terminal.println(F(&#34;..[OK]&#34;));} else {UART_Terminal.println(F(&#34;[FAIL]&#34;));}
+                         ^
+Multiple libraries were found for &#34;RV-3028-C7.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RV-3028-C7
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC_RV-3028-C7_Arduino_Library
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library B100AA claims to run on avr architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/samd21.h:69:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd.h:105,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:38,
+                 from /private/var/folders/47/_57rjy4111jc7dfpgjmcc93w0000gp/T/arduino-sketch-501266C9EDD1B77AF365F42A528219A7/sketch/test.ino.cpp:1:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/samd21g18a.h:487:38: error: expected &#39;)&#39; before &#39;*&#39; token
+ #define RTC               ((Rtc      *)0x40001400UL) /**&lt; \brief (RTC) APB Base Address */
+                                      ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.h:83:10: note: in expansion of macro &#39;RTC&#39;
+   bool   RTC;   // Realtime Clock
+          ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/samd21g18a.h:487:38: error: expected &#39;)&#39; before &#39;*&#39; token
+ #define RTC               ((Rtc      *)0x40001400UL) /**&lt; \brief (RTC) APB Base Address */
+                                      ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.h:83:10: note: in expansion of macro &#39;RTC&#39;
+   bool   RTC;   // Realtime Clock
+          ^~~
+In file included from /private/tmp/arduino-testlib721954116/test/test.ino:1:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.h:101:2: error: too many initializers for &#39;STF_B100AA::Struct_Diag&#39;
+  };
+  ^
+
+</pre>
+
+					
+					<h4>examples/Simple</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library B100AA claims to run on avr architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/samd21.h:69:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd.h:105,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:38,
+                 from /private/var/folders/47/_57rjy4111jc7dfpgjmcc93w0000gp/T/arduino-sketch-1D60B301CC345D220AF437B42E9F6C04/sketch/Simple.ino.cpp:1:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/samd21g18a.h:487:38: error: expected &#39;)&#39; before &#39;*&#39; token
+ #define RTC               ((Rtc      *)0x40001400UL) /**&lt; \brief (RTC) APB Base Address */
+                                      ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.h:83:10: note: in expansion of macro &#39;RTC&#39;
+   bool   RTC;   // Realtime Clock
+          ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/samd21g18a.h:487:38: error: expected &#39;)&#39; before &#39;*&#39; token
+ #define RTC               ((Rtc      *)0x40001400UL) /**&lt; \brief (RTC) APB Base Address */
+                                      ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.h:83:10: note: in expansion of macro &#39;RTC&#39;
+   bool   RTC;   // Realtime Clock
+          ^~~
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/examples/Simple/Simple.ino:2:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.h:101:2: error: too many initializers for &#39;STF_B100AA::Struct_Diag&#39;
+  };
+  ^
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/samd21.h:69:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd.h:105,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:38,
+                 from /private/var/folders/47/_57rjy4111jc7dfpgjmcc93w0000gp/T/arduino-sketch-1D60B301CC345D220AF437B42E9F6C04/sketch/Simple.ino.cpp:1:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/examples/Simple/Simple.ino: In function &#39;void setup()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/samd21g18a.h:487:27: error: expected unqualified-id before &#39;(&#39; token
+ #define RTC               ((Rtc      *)0x40001400UL) /**&lt; \brief (RTC) APB Base Address */
+                           ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/B100AA/examples/Simple/Simple.ino:57:25: note: in expansion of macro &#39;RTC&#39;
+   if (B100AA.Diagnostic.RTC) {UART_Terminal.println(F(&#34;..[OK]&#34;));} else {UART_Terminal.println(F(&#34;[FAIL]&#34;));}
+                         ^~~
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library B100AA claims to run on avr architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SD/src/utility/Sd2Card.h:26:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SD/src/utility/SdFat.h:29,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SD/src/SD.h:20,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.h:30,
+                 from /tmp/arduino-testlib757822854/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SD/src/utility/Sd2PinMap.h:524:2: error: #error Architecture or board not supported.
+ #error Architecture or board not supported.
+  ^
+Multiple libraries were found for &#34;SD.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SD
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/SD
+Multiple libraries were found for &#34;RV-3028-C7.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RV-3028-C7
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC_RV-3028-C7_Arduino_Library
+</pre>
+
+					
+					<h4>examples/Simple</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library B100AA claims to run on avr architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SD/src/utility/Sd2Card.h:26:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SD/src/utility/SdFat.h:29,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SD/src/SD.h:20,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/src/B100AA.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/B100AA/examples/Simple/Simple.ino:2:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SD/src/utility/Sd2PinMap.h:524:2: error: #error Architecture or board not supported.
+ #error Architecture or board not supported.
+  ^
+Multiple libraries were found for &#34;SD.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SD
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/SD
+Multiple libraries were found for &#34;RV-3028-C7.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RV-3028-C7
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RTC_RV-3028-C7_Arduino_Library
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

@@ -1,0 +1,1041 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>SparkFun Quadstepper Motor Driver - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>SparkFun Quadstepper Motor Driver</h2>
+				<p>
+					Version: <b>1.0.1</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/sparkfun-quadstepper-motor-driver/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>SparkFunQuadStep</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp: In constructor &#39;quadstep::quadstep()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:26:6: error: &#39;PORTE&#39; was not declared in this scope
+  cbi(PORTE, 3);
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:26:6: note: suggested alternative: &#39;PORT0&#39;
+  cbi(PORTE, 3);
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:27:6: error: &#39;PORTH&#39; was not declared in this scope
+  cbi(PORTH, 3);
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:27:6: note: suggested alternative: &#39;PORT0&#39;
+  cbi(PORTH, 3);
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:28:6: error: &#39;PORTL&#39; was not declared in this scope
+  cbi(PORTL, 3);
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:28:6: note: suggested alternative: &#39;PORT0&#39;
+  cbi(PORTL, 3);
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp: In member function &#39;void quadstep::motor_go(int, int, int, int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:254:9: error: &#39;PORTE&#39; was not declared in this scope
+     sbi(PORTE, 3);
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:12:28: note: in definition of macro &#39;sbi&#39;
+ #define sbi(var, mask)   ((var) |= (uint8_t)(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:254:9: note: suggested alternative: &#39;PORT0&#39;
+     sbi(PORTE, 3);
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:12:28: note: in definition of macro &#39;sbi&#39;
+ #define sbi(var, mask)   ((var) |= (uint8_t)(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:259:8: error: &#39;PORTE&#39; was not declared in this scope
+    cbi(PORTE, 3);
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:259:8: note: suggested alternative: &#39;PORT0&#39;
+    cbi(PORTE, 3);
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:276:9: error: &#39;PORTE&#39; was not declared in this scope
+     sbi(PORTE, 3);
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:12:28: note: in definition of macro &#39;sbi&#39;
+ #define sbi(var, mask)   ((var) |= (uint8_t)(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:276:9: note: suggested alternative: &#39;PORT0&#39;
+     sbi(PORTE, 3);
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:12:28: note: in definition of macro &#39;sbi&#39;
+ #define sbi(var, mask)   ((var) |= (uint8_t)(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:281:8: error: &#39;PORTE&#39; was not declared in this scope
+    cbi(PORTE, 3);
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:281:8: note: suggested alternative: &#39;PORT0&#39;
+    cbi(PORTE, 3);
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:298:9: error: &#39;PORTE&#39; was not declared in this scope
+     sbi(PORTE, 3);
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:12:28: note: in definition of macro &#39;sbi&#39;
+ #define sbi(var, mask)   ((var) |= (uint8_t)(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:298:9: note: suggested alternative: &#39;PORT0&#39;
+     sbi(PORTE, 3);
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:12:28: note: in definition of macro &#39;sbi&#39;
+ #define sbi(var, mask)   ((var) |= (uint8_t)(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:303:8: error: &#39;PORTE&#39; was not declared in this scope
+    cbi(PORTE, 3);
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:303:8: note: suggested alternative: &#39;PORT0&#39;
+    cbi(PORTE, 3);
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:319:9: error: &#39;PORTE&#39; was not declared in this scope
+     sbi(PORTE, 3);
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:12:28: note: in definition of macro &#39;sbi&#39;
+ #define sbi(var, mask)   ((var) |= (uint8_t)(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:319:9: note: suggested alternative: &#39;PORT0&#39;
+     sbi(PORTE, 3);
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:12:28: note: in definition of macro &#39;sbi&#39;
+ #define sbi(var, mask)   ((var) |= (uint8_t)(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:324:8: error: &#39;PORTE&#39; was not declared in this scope
+    cbi(PORTE, 3);
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:324:8: note: suggested alternative: &#39;PORT0&#39;
+    cbi(PORTE, 3);
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro</pre>
+
+					
+					<h4>examples/SparkFunQuadStep</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/examples/SparkFunQuadStep/SparkFunQuadStep.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/examples/SparkFunQuadStep/SparkFunQuadStep.ino:51:31: error: &#39;A8&#39; was not declared in this scope
+   quadstep.motor_pins(1,A1,36,A8,A9,A10); //ch 1
+                               ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/examples/SparkFunQuadStep/SparkFunQuadStep.ino:51:31: note: suggested alternative: &#39;A7&#39;
+   quadstep.motor_pins(1,A1,36,A8,A9,A10); //ch 1
+                               ^~
+                               A7
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/examples/SparkFunQuadStep/SparkFunQuadStep.ino:51:34: error: &#39;A9&#39; was not declared in this scope
+   quadstep.motor_pins(1,A1,36,A8,A9,A10); //ch 1
+                                  ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/examples/SparkFunQuadStep/SparkFunQuadStep.ino:51:34: note: suggested alternative: &#39;A7&#39;
+   quadstep.motor_pins(1,A1,36,A8,A9,A10); //ch 1
+                                  ^~
+                                  A7
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/examples/SparkFunQuadStep/SparkFunQuadStep.ino:51:37: error: &#39;A10&#39; was not declared in this scope
+   quadstep.motor_pins(1,A1,36,A8,A9,A10); //ch 1
+                                     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/examples/SparkFunQuadStep/SparkFunQuadStep.ino:51:37: note: suggested alternative: &#39;A1&#39;
+   quadstep.motor_pins(1,A1,36,A8,A9,A10); //ch 1
+                                     ^~~
+                                     A1
+
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library SparkFun_Quadstepper_Motor_Driver claims to run on avr architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp: In constructor &#39;quadstep::quadstep()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:25:6: error: &#39;PORTB&#39; was not declared in this scope
+  cbi(PORTB, 5);
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:26:6: error: &#39;PORTE&#39; was not declared in this scope
+  cbi(PORTE, 3);
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:27:6: error: &#39;PORTH&#39; was not declared in this scope
+  cbi(PORTH, 3);
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:28:6: error: &#39;PORTL&#39; was not declared in this scope
+  cbi(PORTL, 3);
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp: In member function &#39;void quadstep::motor_go(int, int, int, int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:135:9: error: &#39;PORTB&#39; was not declared in this scope
+     sbi(PORTB, 5);
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:12:28: note: in definition of macro &#39;sbi&#39;
+ #define sbi(var, mask)   ((var) |= (uint8_t)(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:140:8: error: &#39;PORTB&#39; was not declared in this scope
+    cbi(PORTB, 5);
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:157:9: error: &#39;PORTB&#39; was not declared in this scope
+     sbi(PORTB, 5);
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:12:28: note: in definition of macro &#39;sbi&#39;
+ #define sbi(var, mask)   ((var) |= (uint8_t)(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:162:8: error: &#39;PORTB&#39; was not declared in this scope
+    cbi(PORTB, 5);
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:179:9: error: &#39;PORTB&#39; was not declared in this scope
+     sbi(PORTB, 5);
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:12:28: note: in definition of macro &#39;sbi&#39;
+ #define sbi(var, mask)   ((var) |= (uint8_t)(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:184:8: error: &#39;PORTB&#39; was not declared in this scope
+    cbi(PORTB, 5);
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:200:9: error: &#39;PORTB&#39; was not declared in this scope
+     sbi(PORTB, 5);
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:12:28: note: in definition of macro &#39;sbi&#39;
+ #define sbi(var, mask)   ((var) |= (uint8_t)(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:205:8: error: &#39;PORTB&#39; was not declared in this scope
+    cbi(PORTB, 5);
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:221:9: error: &#39;PORTB&#39; was not declared in this scope
+     sbi(PORTB, 5);
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:12:28: note: in definition of macro &#39;sbi&#39;
+ #define sbi(var, mask)   ((var) |= (uint8_t)(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:226:8: error: &#39;PORTB&#39; was not declared in this scope
+    cbi(PORTB, 5);
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:254:9: error: &#39;PORTE&#39; was not declared in this scope
+     sbi(PORTE, 3);
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:12:28: note: in definition of macro &#39;sbi&#39;
+ #define sbi(var, mask)   ((var) |= (uint8_t)(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:259:8: error: &#39;PORTE&#39; was not declared in this scope
+    cbi(PORTE, 3);
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:276:9: error: &#39;PORTE&#39; was not declared in this scope
+     sbi(PORTE, 3);
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:12:28: note: in definition of macro &#39;sbi&#39;
+ #define sbi(var, mask)   ((var) |= (uint8_t)(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:281:8: error: &#39;PORTE&#39; was not declared in this scope
+    cbi(PORTE, 3);
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:298:9: error: &#39;PORTE&#39; was not declared in this scope
+     sbi(PORTE, 3);
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:12:28: note: in definition of macro &#39;sbi&#39;
+ #define sbi(var, mask)   ((var) |= (uint8_t)(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:303:8: error: &#39;PORTE&#39; was not declared in this scope
+    cbi(PORTE, 3);
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:319:9: error: &#39;PORTE&#39; was not declared in this scope
+     sbi(PORTE, 3);
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:12:28: note: in definition of macro &#39;sbi&#39;
+ #define sbi(var, mask)   ((var) |= (uint8_t)(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkF</pre>
+
+					
+					<h4>examples/SparkFunQuadStep</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library SparkFun_Quadstepper_Motor_Driver claims to run on avr architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/examples/SparkFunQuadStep/SparkFunQuadStep.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/examples/SparkFunQuadStep/SparkFunQuadStep.ino:51:31: error: &#39;A8&#39; was not declared in this scope
+   quadstep.motor_pins(1,A1,36,A8,A9,A10); //ch 1
+                               ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/examples/SparkFunQuadStep/SparkFunQuadStep.ino:51:31: note: suggested alternative: &#39;A7&#39;
+   quadstep.motor_pins(1,A1,36,A8,A9,A10); //ch 1
+                               ^~
+                               A7
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/examples/SparkFunQuadStep/SparkFunQuadStep.ino:51:34: error: &#39;A9&#39; was not declared in this scope
+   quadstep.motor_pins(1,A1,36,A8,A9,A10); //ch 1
+                                  ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/examples/SparkFunQuadStep/SparkFunQuadStep.ino:51:34: note: suggested alternative: &#39;A7&#39;
+   quadstep.motor_pins(1,A1,36,A8,A9,A10); //ch 1
+                                  ^~
+                                  A7
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/examples/SparkFunQuadStep/SparkFunQuadStep.ino:51:37: error: &#39;A10&#39; was not declared in this scope
+   quadstep.motor_pins(1,A1,36,A8,A9,A10); //ch 1
+                                     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/examples/SparkFunQuadStep/SparkFunQuadStep.ino:51:37: note: suggested alternative: &#39;A1&#39;
+   quadstep.motor_pins(1,A1,36,A8,A9,A10); //ch 1
+                                     ^~~
+                                     A1
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library SparkFun_Quadstepper_Motor_Driver claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp: In constructor &#39;quadstep::quadstep()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:33: error: no match for &#39;operator&amp;=&#39; (operand types are &#39;PORT_t {aka PORT_struct}&#39; and &#39;uint8_t {aka unsigned char}&#39;)
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                           ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:26:2: note: in expansion of macro &#39;cbi&#39;
+  cbi(PORTE, 3);
+  ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:27:6: error: &#39;PORTH&#39; was not declared in this scope
+  cbi(PORTH, 3);
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:27:6: note: suggested alternative: &#39;PORTD&#39;
+  cbi(PORTH, 3);
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:28:6: error: &#39;PORTL&#39; was not declared in this scope
+  cbi(PORTL, 3);
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:28:6: note: suggested alternative: &#39;PORTD&#39;
+  cbi(PORTL, 3);
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp: In member function &#39;void quadstep::motor_go(int, int, int, int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:12:33: error: no match for &#39;operator|=&#39; (operand types are &#39;PORT_t {aka PORT_struct}&#39; and &#39;uint8_t {aka unsigned char}&#39;)
+ #define sbi(var, mask)   ((var) |= (uint8_t)(1 &lt;&lt; mask))
+                           ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:254:5: note: in expansion of macro &#39;sbi&#39;
+     sbi(PORTE, 3);
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:33: error: no match for &#39;operator&amp;=&#39; (operand types are &#39;PORT_t {aka PORT_struct}&#39; and &#39;uint8_t {aka unsigned char}&#39;)
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                           ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:256:5: note: in expansion of macro &#39;cbi&#39;
+     cbi(PORTE, 3);
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:33: error: no match for &#39;operator&amp;=&#39; (operand types are &#39;PORT_t {aka PORT_struct}&#39; and &#39;uint8_t {aka unsigned char}&#39;)
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                           ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:259:4: note: in expansion of macro &#39;cbi&#39;
+    cbi(PORTE, 3);
+    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:12:33: error: no match for &#39;operator|=&#39; (operand types are &#39;PORT_t {aka PORT_struct}&#39; and &#39;uint8_t {aka unsigned char}&#39;)
+ #define sbi(var, mask)   ((var) |= (uint8_t)(1 &lt;&lt; mask))
+                           ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:276:5: note: in expansion of macro &#39;sbi&#39;
+     sbi(PORTE, 3);
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:33: error: no match for &#39;operator&amp;=&#39; (operand types are &#39;PORT_t {aka PORT_struct}&#39; and &#39;uint8_t {aka unsigned char}&#39;)
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                           ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:278:5: note: in expansion of macro &#39;cbi&#39;
+     cbi(PORTE, 3);
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:33: error: no match for &#39;operator&amp;=&#39; (operand types are &#39;PORT_t {aka PORT_struct}&#39; and &#39;uint8_t {aka unsigned char}&#39;)
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                           ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:281:4: note: in expansion of macro &#39;cbi&#39;
+    cbi(PORTE, 3);
+    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:12:33: error: no match for &#39;operator|=&#39; (operand types are &#39;PORT_t {aka PORT_struct}&#39; and &#39;uint8_t {aka unsigned char}&#39;)
+ #define sbi(var, mask)   ((var) |= (uint8_t)(1 &lt;&lt; mask))
+                           ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:298:5: note: in expansion of macro &#39;sbi&#39;
+     sbi(PORTE, 3);
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:33: error: no match for &#39;operator&amp;=&#39; (operand types are &#39;PORT_t {aka PORT_struct}&#39; and &#39;uint8_t {aka unsigned char}&#39;)
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                           ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:300:5: note: in expansion of macro &#39;cbi&#39;
+     cbi(PORTE, 3);
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:33: error: no match for &#39;operator&amp;=&#39; (operand types are &#39;PORT_t {aka PORT_struct}&#39; and &#39;uint8_t {aka unsigned char}&#39;)
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                           ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:303:4: note: in expansion of macro &#39;cbi&#39;
+    cbi(PORTE, 3);
+    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:12:33: error: no match for &#39;operator|=&#39; (operand types are &#39;PORT_t {aka PORT_struct}&#39; and &#39;uint8_t {aka unsigned char}&#39;)
+ #define sbi(var, mask)   ((var) |= (uint8_t)(1 &lt;&lt; mask))
+                           ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:319:5: note: in expansion of macro &#39;sbi&#39;
+     sbi(PORTE, 3);
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:33: error: no match for &#39;operator&amp;=&#39; (operand types are &#39;PORT_t {aka PORT_struct}&#39; and &#39;uint8_t {aka unsigned char}&#39;)
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                           ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:321:5: note: in expansion of macro &#39;cbi&#39;
+     cbi(PORTE, 3);
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:33: error: no match for &#39;operator&amp;=&#39; (operand types are &#39;PORT_t {aka PORT_struct}&#39; and &#39;uint8_t {aka unsigned char}&#39;)
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                           ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:324:4: note: in expansion of macro &#39;cbi&#39;
+    cbi(PORTE, 3);
+    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:12:33: error: no match for &#39;operator|=&#39; (operand types are &#39;PORT_t {aka PORT_struct}&#39; and &#39;uint8_t {aka unsigned char}&#39;)
+ #define sbi(var, mask)   ((var) |= (uint8_t)(1 &lt;&lt; mask))
+                           ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:340:5: note: in expansion of macro &#39;sbi&#39;
+     sbi(PORTE, 3);
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:33: error: no match for &#39;operator&amp;=&#39; (opera</pre>
+
+					
+					<h4>examples/SparkFunQuadStep</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library SparkFun_Quadstepper_Motor_Driver claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/examples/SparkFunQuadStep/SparkFunQuadStep.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/examples/SparkFunQuadStep/SparkFunQuadStep.ino:51:31: error: &#39;A8&#39; was not declared in this scope
+   quadstep.motor_pins(1,A1,36,A8,A9,A10); //ch 1
+                               ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/examples/SparkFunQuadStep/SparkFunQuadStep.ino:51:31: note: suggested alternative: &#39;A7&#39;
+   quadstep.motor_pins(1,A1,36,A8,A9,A10); //ch 1
+                               ^~
+                               A7
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/examples/SparkFunQuadStep/SparkFunQuadStep.ino:51:34: error: &#39;A9&#39; was not declared in this scope
+   quadstep.motor_pins(1,A1,36,A8,A9,A10); //ch 1
+                                  ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/examples/SparkFunQuadStep/SparkFunQuadStep.ino:51:34: note: suggested alternative: &#39;A7&#39;
+   quadstep.motor_pins(1,A1,36,A8,A9,A10); //ch 1
+                                  ^~
+                                  A7
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/examples/SparkFunQuadStep/SparkFunQuadStep.ino:51:37: error: &#39;A10&#39; was not declared in this scope
+   quadstep.motor_pins(1,A1,36,A8,A9,A10); //ch 1
+                                     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/examples/SparkFunQuadStep/SparkFunQuadStep.ino:51:37: note: suggested alternative: &#39;A1&#39;
+   quadstep.motor_pins(1,A1,36,A8,A9,A10); //ch 1
+                                     ^~~
+                                     A1
+
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library SparkFun_Quadstepper_Motor_Driver claims to run on avr architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp: In constructor &#39;quadstep::quadstep()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:33: error: no match for &#39;operator&amp;=&#39; (operand types are &#39;_EPortType&#39; and &#39;uint8_t {aka unsigned char}&#39;)
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                           ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:25:2: note: in expansion of macro &#39;cbi&#39;
+  cbi(PORTB, 5);
+  ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:33: note: candidate: operator&amp;=(_EPortType&amp;, int) &lt;built-in&gt;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                           ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:25:2: note: in expansion of macro &#39;cbi&#39;
+  cbi(PORTB, 5);
+  ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:33: note:   conversion of argument 1 would be ill-formed:
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                           ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:25:2: note: in expansion of macro &#39;cbi&#39;
+  cbi(PORTB, 5);
+  ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:56: error: cannot bind non-const lvalue reference of type &#39;_EPortType&amp;&#39; to an rvalue of type &#39;_EPortType&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:25:2: note: in expansion of macro &#39;cbi&#39;
+  cbi(PORTB, 5);
+  ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:26:6: error: &#39;PORTE&#39; was not declared in this scope
+  cbi(PORTE, 3);
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:26:6: note: suggested alternative: &#39;PORTC&#39;
+  cbi(PORTE, 3);
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:27:6: error: &#39;PORTH&#39; was not declared in this scope
+  cbi(PORTH, 3);
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:27:6: note: suggested alternative: &#39;PORTC&#39;
+  cbi(PORTH, 3);
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:28:6: error: &#39;PORTL&#39; was not declared in this scope
+  cbi(PORTL, 3);
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:28:6: note: suggested alternative: &#39;PORTC&#39;
+  cbi(PORTL, 3);
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp: In member function &#39;void quadstep::motor_go(int, int, int, int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:12:33: error: no match for &#39;operator|=&#39; (operand types are &#39;_EPortType&#39; and &#39;uint8_t {aka unsigned char}&#39;)
+ #define sbi(var, mask)   ((var) |= (uint8_t)(1 &lt;&lt; mask))
+                           ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:135:5: note: in expansion of macro &#39;sbi&#39;
+     sbi(PORTB, 5);
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:12:33: note: candidate: operator|=(_EPortType&amp;, int) &lt;built-in&gt;
+ #define sbi(var, mask)   ((var) |= (uint8_t)(1 &lt;&lt; mask))
+                           ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:135:5: note: in expansion of macro &#39;sbi&#39;
+     sbi(PORTB, 5);
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:12:33: note:   conversion of argument 1 would be ill-formed:
+ #define sbi(var, mask)   ((var) |= (uint8_t)(1 &lt;&lt; mask))
+                           ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:135:5: note: in expansion of macro &#39;sbi&#39;
+     sbi(PORTB, 5);
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:12:55: error: cannot bind non-const lvalue reference of type &#39;_EPortType&amp;&#39; to an rvalue of type &#39;_EPortType&#39;
+ #define sbi(var, mask)   ((var) |= (uint8_t)(1 &lt;&lt; mask))
+                                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:135:5: note: in expansion of macro &#39;sbi&#39;
+     sbi(PORTB, 5);
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:33: error: no match for &#39;operator&amp;=&#39; (operand types are &#39;_EPortType&#39; and &#39;uint8_t {aka unsigned char}&#39;)
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                           ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:137:5: note: in expansion of macro &#39;cbi&#39;
+     cbi(PORTB, 5);
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:33: note: candidate: operator&amp;=(_EPortType&amp;, int) &lt;built-in&gt;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                           ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:137:5: note: in expansion of macro &#39;cbi&#39;
+     cbi(PORTB, 5);
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:33: note:   conversion of argument 1 would be ill-formed:
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                           ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:137:5: note: in expansion of macro &#39;cbi&#39;
+     cbi(PORTB, 5);
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:56: error: cannot bind non-const lvalue reference of type &#39;_EPortType&amp;&#39; to an rvalue of type &#39;_EPortType&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:137:5: note: in expansion of macro &#39;cbi&#39;
+     cbi(PORTB, 5);
+     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:33: error: no match for &#39;operator&amp;=&#39; (operand types are &#39;_EPortType&#39; and &#39;uint8_t {aka unsigned char}&#39;)
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                           ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:140:4: note: in expansion of macro &#39;cbi&#39;
+    cbi(PORTB, 5);
+    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:33: note: candidate: operator&amp;=(_EPortType&amp;, int) &lt;built-in&gt;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                           ~~~~~~^~~~~~~~~~~~</pre>
+
+					
+					<h4>examples/SparkFunQuadStep</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library SparkFun_Quadstepper_Motor_Driver claims to run on avr architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/examples/SparkFunQuadStep/SparkFunQuadStep.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/examples/SparkFunQuadStep/SparkFunQuadStep.ino:51:31: error: &#39;A8&#39; was not declared in this scope
+   quadstep.motor_pins(1,A1,36,A8,A9,A10); //ch 1
+                               ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/examples/SparkFunQuadStep/SparkFunQuadStep.ino:51:31: note: suggested alternative: &#39;A6&#39;
+   quadstep.motor_pins(1,A1,36,A8,A9,A10); //ch 1
+                               ^~
+                               A6
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/examples/SparkFunQuadStep/SparkFunQuadStep.ino:51:34: error: &#39;A9&#39; was not declared in this scope
+   quadstep.motor_pins(1,A1,36,A8,A9,A10); //ch 1
+                                  ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/examples/SparkFunQuadStep/SparkFunQuadStep.ino:51:34: note: suggested alternative: &#39;A6&#39;
+   quadstep.motor_pins(1,A1,36,A8,A9,A10); //ch 1
+                                  ^~
+                                  A6
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/examples/SparkFunQuadStep/SparkFunQuadStep.ino:51:37: error: &#39;A10&#39; was not declared in this scope
+   quadstep.motor_pins(1,A1,36,A8,A9,A10); //ch 1
+                                     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/examples/SparkFunQuadStep/SparkFunQuadStep.ino:51:37: note: suggested alternative: &#39;A1&#39;
+   quadstep.motor_pins(1,A1,36,A8,A9,A10); //ch 1
+                                     ^~~
+                                     A1
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library SparkFun_Quadstepper_Motor_Driver claims to run on avr architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp: In constructor &#39;quadstep::quadstep()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:25:6: error: &#39;PORTB&#39; was not declared in this scope
+  cbi(PORTB, 5);
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:26:6: error: &#39;PORTE&#39; was not declared in this scope
+  cbi(PORTE, 3);
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:27:6: error: &#39;PORTH&#39; was not declared in this scope
+  cbi(PORTH, 3);
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:28:6: error: &#39;PORTL&#39; was not declared in this scope
+  cbi(PORTL, 3);
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp: In member function &#39;void quadstep::motor_go(int, int, int, int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:135:9: error: &#39;PORTB&#39; was not declared in this scope
+     sbi(PORTB, 5);
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:12:28: note: in definition of macro &#39;sbi&#39;
+ #define sbi(var, mask)   ((var) |= (uint8_t)(1 &lt;&lt; mask))
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:140:8: error: &#39;PORTB&#39; was not declared in this scope
+    cbi(PORTB, 5);
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:157:9: error: &#39;PORTB&#39; was not declared in this scope
+     sbi(PORTB, 5);
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:12:28: note: in definition of macro &#39;sbi&#39;
+ #define sbi(var, mask)   ((var) |= (uint8_t)(1 &lt;&lt; mask))
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:162:8: error: &#39;PORTB&#39; was not declared in this scope
+    cbi(PORTB, 5);
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:179:9: error: &#39;PORTB&#39; was not declared in this scope
+     sbi(PORTB, 5);
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:12:28: note: in definition of macro &#39;sbi&#39;
+ #define sbi(var, mask)   ((var) |= (uint8_t)(1 &lt;&lt; mask))
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:184:8: error: &#39;PORTB&#39; was not declared in this scope
+    cbi(PORTB, 5);
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:200:9: error: &#39;PORTB&#39; was not declared in this scope
+     sbi(PORTB, 5);
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:12:28: note: in definition of macro &#39;sbi&#39;
+ #define sbi(var, mask)   ((var) |= (uint8_t)(1 &lt;&lt; mask))
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:205:8: error: &#39;PORTB&#39; was not declared in this scope
+    cbi(PORTB, 5);
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:221:9: error: &#39;PORTB&#39; was not declared in this scope
+     sbi(PORTB, 5);
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:12:28: note: in definition of macro &#39;sbi&#39;
+ #define sbi(var, mask)   ((var) |= (uint8_t)(1 &lt;&lt; mask))
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:226:8: error: &#39;PORTB&#39; was not declared in this scope
+    cbi(PORTB, 5);
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:254:9: error: &#39;PORTE&#39; was not declared in this scope
+     sbi(PORTE, 3);
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:12:28: note: in definition of macro &#39;sbi&#39;
+ #define sbi(var, mask)   ((var) |= (uint8_t)(1 &lt;&lt; mask))
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:259:8: error: &#39;PORTE&#39; was not declared in this scope
+    cbi(PORTE, 3);
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:276:9: error: &#39;PORTE&#39; was not declared in this scope
+     sbi(PORTE, 3);
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:12:28: note: in definition of macro &#39;sbi&#39;
+ #define sbi(var, mask)   ((var) |= (uint8_t)(1 &lt;&lt; mask))
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:281:8: error: &#39;PORTE&#39; was not declared in this scope
+    cbi(PORTE, 3);
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:298:9: error: &#39;PORTE&#39; was not declared in this scope
+     sbi(PORTE, 3);
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:12:28: note: in definition of macro &#39;sbi&#39;
+ #define sbi(var, mask)   ((var) |= (uint8_t)(1 &lt;&lt; mask))
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:303:8: error: &#39;PORTE&#39; was not declared in this scope
+    cbi(PORTE, 3);
+        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:13:28: note: in definition of macro &#39;cbi&#39;
+ #define cbi(var, mask)   ((var) &amp;= (uint8_t)~(1 &lt;&lt; mask))
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:319:9: error: &#39;PORTE&#39; was not declared in this scope
+     sbi(PORTE, 3);
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadstep.cpp:12:28: note: in definition of macro &#39;sbi&#39;
+ #define sbi(var, mask)   ((var) |= (uint8_t)(1 &lt;&lt; mask))
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/src/SparkFunQuadst</pre>
+
+					
+					<h4>examples/SparkFunQuadStep</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library SparkFun_Quadstepper_Motor_Driver claims to run on avr architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/examples/SparkFunQuadStep/SparkFunQuadStep.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/examples/SparkFunQuadStep/SparkFunQuadStep.ino:51:25: error: &#39;A1&#39; was not declared in this scope
+   quadstep.motor_pins(1,A1,36,A8,A9,A10); //ch 1
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/examples/SparkFunQuadStep/SparkFunQuadStep.ino:51:31: error: &#39;A8&#39; was not declared in this scope
+   quadstep.motor_pins(1,A1,36,A8,A9,A10); //ch 1
+                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Quadstepper_Motor_Driver/examples/SparkFunQuadStep/SparkFunQuadStep.ino:51:34: error: &#39;A9&#39; was not declared in this scope
+   quadstep.motor_pins(1,A1,36,A8,A9,A10); //ch 1
+                                  ^
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

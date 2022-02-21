@@ -1,0 +1,1085 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>IRRemoteControl - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>IRRemoteControl</h2>
+				<p>
+					Version: <b>1.0.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/irremotecontrol/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>IRRemoteControlDemo</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 628 bytes (1%) of program storage space. Maximum is 32256 bytes.
+Global variables use 13 bytes (0%) of dynamic memory, leaving 2035 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+
+					
+					<h4>examples/IRRemoteControlDemo</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 3122 bytes (9%) of program storage space. Maximum is 32256 bytes.
+Global variables use 1508 bytes (73%) of dynamic memory, leaving 540 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:11:30: error: &#39;static&#39; may not be used when defining (as opposed to declaring) a static data member [-fpermissive]
+ static unsigned int* IRRecv::irBuffer;
+                              ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:12:21: error: &#39;static&#39; may not be used when defining (as opposed to declaring) a static data member [-fpermissive]
+ static int* IRRecv::irBufferLength;
+                     ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:13:20: error: &#39;static&#39; may not be used when defining (as opposed to declaring) a static data member [-fpermissive]
+ static int IRRecv::maxIrBufferLength;
+                    ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:15:30: error: &#39;static&#39; may not be used when defining (as opposed to declaring) a static data member [-fpermissive]
+ static unsigned long IRRecv::currentMicros = 0;
+                              ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:16:30: error: &#39;static&#39; may not be used when defining (as opposed to declaring) a static data member [-fpermissive]
+ static unsigned long IRRecv::previousMicros = 0;
+                              ^~~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:9:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp: In member function &#39;void IRSend::enableIROut(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:74:33: error: &#39;TIMSK2&#39; was not declared in this scope
+     #define TIMER_DISABLE_INTR (TIMSK2 = 0)
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:73:3: note: in expansion of macro &#39;TIMER_DISABLE_INTR&#39;
+   TIMER_DISABLE_INTR; //Timer2 Overflow Interrupt
+   ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:74:33: note: suggested alternative: &#39;TIMER&#39;
+     #define TIMER_DISABLE_INTR (TIMSK2 = 0)
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:73:3: note: in expansion of macro &#39;TIMER_DISABLE_INTR&#39;
+   TIMER_DISABLE_INTR; //Timer2 Overflow Interrupt
+   ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:86: error: &#39;TCCR2A&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:99: error: &#39;WGM20&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:95: error: &#39;_BV&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:95: note: suggested alternative: &#39;_B&#39;
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:107: error: &#39;TCCR2B&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:120: error: &#39;WGM22&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:9:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:133: error: &#39;CS20&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:133: note: suggested alternative: &#39;._20&#39;
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:140: error: &#39;OCR2A&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                                                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:156: error: &#39;OCR2B&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                                                                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:9:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp: In member function &#39;void IRSend::mark(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:72:31: error: &#39;TCCR2A&#39; was not declared in this scope
+     #define TIMER_ENABLE_PWM (TCCR2A |= _BV(COM2B1))
+                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:89:3: note: in expansion of macro &#39;TIMER_ENABLE_PWM&#39;
+   TIMER_ENABLE_PWM; // Enable pin 3 PWM output
+   ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:72:45: error: &#39;COM2B1&#39; was not declared in </pre>
+
+					
+					<h4>examples/IRRemoteControlDemo</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:11:30: error: &#39;static&#39; may not be used when defining (as opposed to declaring) a static data member [-fpermissive]
+ static unsigned int* IRRecv::irBuffer;
+                              ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:12:21: error: &#39;static&#39; may not be used when defining (as opposed to declaring) a static data member [-fpermissive]
+ static int* IRRecv::irBufferLength;
+                     ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:13:20: error: &#39;static&#39; may not be used when defining (as opposed to declaring) a static data member [-fpermissive]
+ static int IRRecv::maxIrBufferLength;
+                    ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:15:30: error: &#39;static&#39; may not be used when defining (as opposed to declaring) a static data member [-fpermissive]
+ static unsigned long IRRecv::currentMicros = 0;
+                              ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:16:30: error: &#39;static&#39; may not be used when defining (as opposed to declaring) a static data member [-fpermissive]
+ static unsigned long IRRecv::previousMicros = 0;
+                              ^~~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:9:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp: In member function &#39;void IRSend::enableIROut(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:74:33: error: &#39;TIMSK2&#39; was not declared in this scope
+     #define TIMER_DISABLE_INTR (TIMSK2 = 0)
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:73:3: note: in expansion of macro &#39;TIMER_DISABLE_INTR&#39;
+   TIMER_DISABLE_INTR; //Timer2 Overflow Interrupt
+   ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:74:33: note: suggested alternative: &#39;TIMER&#39;
+     #define TIMER_DISABLE_INTR (TIMSK2 = 0)
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:73:3: note: in expansion of macro &#39;TIMER_DISABLE_INTR&#39;
+   TIMER_DISABLE_INTR; //Timer2 Overflow Interrupt
+   ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:86: error: &#39;TCCR2A&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:99: error: &#39;WGM20&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:95: error: &#39;_BV&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:95: note: suggested alternative: &#39;_B&#39;
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:107: error: &#39;TCCR2B&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:120: error: &#39;WGM22&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:9:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:133: error: &#39;CS20&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:133: note: suggested alternative: &#39;._20&#39;
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:140: error: &#39;OCR2A&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                                                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:156: error: &#39;OCR2B&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                                                                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:9:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp: In member function &#39;void IRSend::mark(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:72:31: error: &#39;TCCR2A&#39; was not declared in this scope
+     #define TIMER_ENABLE_PWM (TCCR2A |= _BV(COM2B1))
+                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:89:3: note: in expansion of macro &#39;TIMER_ENABLE_PWM&#39;
+   TIMER_ENABLE_PWM; // Enable pin 3 PWM output
+   ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:72:45: error: &#39;COM2B1&#39; was not declared in </pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:9:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp: In member function &#39;void IRSend::enableIROut(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:74:33: error: &#39;TIMSK2&#39; was not declared in this scope
+     #define TIMER_DISABLE_INTR (TIMSK2 = 0)
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:73:3: note: in expansion of macro &#39;TIMER_DISABLE_INTR&#39;
+   TIMER_DISABLE_INTR; //Timer2 Overflow Interrupt
+   ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:74:33: note: suggested alternative: &#39;TIMERB2&#39;
+     #define TIMER_DISABLE_INTR (TIMSK2 = 0)
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:73:3: note: in expansion of macro &#39;TIMER_DISABLE_INTR&#39;
+   TIMER_DISABLE_INTR; //Timer2 Overflow Interrupt
+   ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:86: error: &#39;TCCR2A&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:86: note: suggested alternative: &#39;TCB2&#39;
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:12,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:9:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:99: error: &#39;WGM20&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:9:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:107: error: &#39;TCCR2B&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:107: note: suggested alternative: &#39;TCB2&#39;
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:12,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:9:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:120: error: &#39;WGM22&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:133: error: &#39;CS20&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:9:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:140: error: &#39;OCR2A&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                                                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:156: error: &#39;OCR2B&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                                                                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:9:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp: In member function &#39;void IRSend::mark(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:72:31: error: &#39;TCCR2A&#39; was not declared in this scope
+     #define TIMER_ENABLE_PWM (TCCR2A |= _BV(COM2B1))
+                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:89:3: note</pre>
+
+					
+					<h4>examples/IRRemoteControlDemo</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:9:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp: In member function &#39;void IRSend::enableIROut(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:74:33: error: &#39;TIMSK2&#39; was not declared in this scope
+     #define TIMER_DISABLE_INTR (TIMSK2 = 0)
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:73:3: note: in expansion of macro &#39;TIMER_DISABLE_INTR&#39;
+   TIMER_DISABLE_INTR; //Timer2 Overflow Interrupt
+   ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:74:33: note: suggested alternative: &#39;TIMERB2&#39;
+     #define TIMER_DISABLE_INTR (TIMSK2 = 0)
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:73:3: note: in expansion of macro &#39;TIMER_DISABLE_INTR&#39;
+   TIMER_DISABLE_INTR; //Timer2 Overflow Interrupt
+   ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:86: error: &#39;TCCR2A&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:86: note: suggested alternative: &#39;TCB2&#39;
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:12,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:9:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:99: error: &#39;WGM20&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:9:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:107: error: &#39;TCCR2B&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:107: note: suggested alternative: &#39;TCB2&#39;
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:12,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:9:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:120: error: &#39;WGM22&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:133: error: &#39;CS20&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:9:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:140: error: &#39;OCR2A&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                                                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:156: error: &#39;OCR2B&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                                                                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:9:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp: In member function &#39;void IRSend::mark(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:72:31: error: &#39;TCCR2A&#39; was not declared in this scope
+     #define TIMER_ENABLE_PWM (TCCR2A |= _BV(COM2B1))
+                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:89:3: note</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:11:30: error: &#39;static&#39; may not be used when defining (as opposed to declaring) a static data member [-fpermissive]
+ static unsigned int* IRRecv::irBuffer;
+                              ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:12:21: error: &#39;static&#39; may not be used when defining (as opposed to declaring) a static data member [-fpermissive]
+ static int* IRRecv::irBufferLength;
+                     ^~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:13:20: error: &#39;static&#39; may not be used when defining (as opposed to declaring) a static data member [-fpermissive]
+ static int IRRecv::maxIrBufferLength;
+                    ^~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:15:30: error: &#39;static&#39; may not be used when defining (as opposed to declaring) a static data member [-fpermissive]
+ static unsigned long IRRecv::currentMicros = 0;
+                              ^~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:16:30: error: &#39;static&#39; may not be used when defining (as opposed to declaring) a static data member [-fpermissive]
+ static unsigned long IRRecv::previousMicros = 0;
+                              ^~~~~~~~~~~~~~
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:9:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp: In member function &#39;void IRSend::enableIROut(int)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:74:33: error: &#39;TIMSK2&#39; was not declared in this scope
+     #define TIMER_DISABLE_INTR (TIMSK2 = 0)
+                                 ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:73:3: note: in expansion of macro &#39;TIMER_DISABLE_INTR&#39;
+   TIMER_DISABLE_INTR; //Timer2 Overflow Interrupt
+   ^~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:86: error: &#39;TCCR2A&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                      ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:86: note: suggested alternative: &#39;TCC2&#39;
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                      ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:99: error: &#39;WGM20&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                   ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:95: error: &#39;_BV&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                               ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:95: note: suggested alternative: &#39;_B&#39;
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                               ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:107: error: &#39;TCCR2B&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                           ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:107: note: suggested alternative: &#39;TCC2&#39;
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                           ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:120: error: &#39;WGM22&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                                        ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:9:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:133: error: &#39;CS20&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                                                     ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:140: error: &#39;OCR2A&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                                                            ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:156: error: &#39;OCR2B&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                                                                            ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+In file inc</pre>
+
+					
+					<h4>examples/IRRemoteControlDemo</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:11:30: error: &#39;static&#39; may not be used when defining (as opposed to declaring) a static data member [-fpermissive]
+ static unsigned int* IRRecv::irBuffer;
+                              ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:12:21: error: &#39;static&#39; may not be used when defining (as opposed to declaring) a static data member [-fpermissive]
+ static int* IRRecv::irBufferLength;
+                     ^~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:13:20: error: &#39;static&#39; may not be used when defining (as opposed to declaring) a static data member [-fpermissive]
+ static int IRRecv::maxIrBufferLength;
+                    ^~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:15:30: error: &#39;static&#39; may not be used when defining (as opposed to declaring) a static data member [-fpermissive]
+ static unsigned long IRRecv::currentMicros = 0;
+                              ^~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:16:30: error: &#39;static&#39; may not be used when defining (as opposed to declaring) a static data member [-fpermissive]
+ static unsigned long IRRecv::previousMicros = 0;
+                              ^~~~~~~~~~~~~~
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:9:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp: In member function &#39;void IRSend::enableIROut(int)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:74:33: error: &#39;TIMSK2&#39; was not declared in this scope
+     #define TIMER_DISABLE_INTR (TIMSK2 = 0)
+                                 ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:73:3: note: in expansion of macro &#39;TIMER_DISABLE_INTR&#39;
+   TIMER_DISABLE_INTR; //Timer2 Overflow Interrupt
+   ^~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:86: error: &#39;TCCR2A&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                      ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:86: note: suggested alternative: &#39;TCC2&#39;
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                      ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:99: error: &#39;WGM20&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                   ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:95: error: &#39;_BV&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                               ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:95: note: suggested alternative: &#39;_B&#39;
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                               ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:107: error: &#39;TCCR2B&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                           ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:107: note: suggested alternative: &#39;TCC2&#39;
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                           ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:120: error: &#39;WGM22&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                                        ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:9:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:133: error: &#39;CS20&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                                                     ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:140: error: &#39;OCR2A&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                                                            ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:156: error: &#39;OCR2B&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                                                                            ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^~~~~~~~~~~~~~~~
+In file inc</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:11:30: error: &#39;static&#39; may not be used when defining (as opposed to declaring) a static data member [-fpermissive]
+ static unsigned int* IRRecv::irBuffer;
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:12:21: error: &#39;static&#39; may not be used when defining (as opposed to declaring) a static data member [-fpermissive]
+ static int* IRRecv::irBufferLength;
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:13:20: error: &#39;static&#39; may not be used when defining (as opposed to declaring) a static data member [-fpermissive]
+ static int IRRecv::maxIrBufferLength;
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:15:30: error: &#39;static&#39; may not be used when defining (as opposed to declaring) a static data member [-fpermissive]
+ static unsigned long IRRecv::currentMicros = 0;
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:16:30: error: &#39;static&#39; may not be used when defining (as opposed to declaring) a static data member [-fpermissive]
+ static unsigned long IRRecv::previousMicros = 0;
+                              ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:9:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp: In member function &#39;void IRSend::enableIROut(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:74:33: error: &#39;TIMSK2&#39; was not declared in this scope
+     #define TIMER_DISABLE_INTR (TIMSK2 = 0)
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:73:3: note: in expansion of macro &#39;TIMER_DISABLE_INTR&#39;
+   TIMER_DISABLE_INTR; //Timer2 Overflow Interrupt
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:86: error: &#39;TCCR2A&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:12:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:9:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:99: error: &#39;WGM20&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:9:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:107: error: &#39;TCCR2B&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:12:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:9:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:120: error: &#39;WGM22&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:133: error: &#39;CS20&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:9:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:140: error: &#39;OCR2A&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                                                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:156: error: &#39;OCR2B&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                                                                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:9:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp: In member function &#39;void IRSend::mark(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:72:31: error: &#39;TCCR2A&#39; was not declared in this scope
+     #define TIMER_ENABLE_PWM (TCCR2A |= _BV(COM2B1))
+                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:89:3: note: in expansion of macro &#39;TIMER_ENABLE_PWM&#39;
+   TIMER_ENABLE_PWM; // Enable pin 3 PWM output
+   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:12:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:9:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:72:45: error: &#39;COM2B1&#39; was not declared in this scope
+     #define TIMER_ENABLE_PWM (TCCR2A |= _BV(COM2B1))
+                                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:89:3: note: in expansion of macro &#39;TIMER_ENABLE_PWM&#39;
+   TIMER_ENABLE_PWM; // Enable pin 3 PWM output
+   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:9:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp: In member function &#39;void IRSend::space(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:73:32: error: &#39;TCCR2A&#39; was not declared in this scope
+     #define TIMER_DISABLE_PWM (TCCR2A &amp;= ~(_BV(COM2B1)))
+                                ^
+/home/ec2-user/arduino-testlib/cli-data</pre>
+
+					
+					<h4>examples/IRRemoteControlDemo</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:11:30: error: &#39;static&#39; may not be used when defining (as opposed to declaring) a static data member [-fpermissive]
+ static unsigned int* IRRecv::irBuffer;
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:12:21: error: &#39;static&#39; may not be used when defining (as opposed to declaring) a static data member [-fpermissive]
+ static int* IRRecv::irBufferLength;
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:13:20: error: &#39;static&#39; may not be used when defining (as opposed to declaring) a static data member [-fpermissive]
+ static int IRRecv::maxIrBufferLength;
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:15:30: error: &#39;static&#39; may not be used when defining (as opposed to declaring) a static data member [-fpermissive]
+ static unsigned long IRRecv::currentMicros = 0;
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:16:30: error: &#39;static&#39; may not be used when defining (as opposed to declaring) a static data member [-fpermissive]
+ static unsigned long IRRecv::previousMicros = 0;
+                              ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:9:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp: In member function &#39;void IRSend::enableIROut(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:74:33: error: &#39;TIMSK2&#39; was not declared in this scope
+     #define TIMER_DISABLE_INTR (TIMSK2 = 0)
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:73:3: note: in expansion of macro &#39;TIMER_DISABLE_INTR&#39;
+   TIMER_DISABLE_INTR; //Timer2 Overflow Interrupt
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:86: error: &#39;TCCR2A&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:12:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:9:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:99: error: &#39;WGM20&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:9:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:107: error: &#39;TCCR2B&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:12:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:9:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:120: error: &#39;WGM22&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:133: error: &#39;CS20&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:9:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:140: error: &#39;OCR2A&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                                                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:75:156: error: &#39;OCR2B&#39; was not declared in this scope
+     #define TIMER_CONFIG_KHZ(val) ({ const uint8_t pwmval = SYSCLOCK / 2000 / (val); TCCR2A = _BV(WGM20); TCCR2B = _BV(WGM22) | _BV(CS20); OCR2A = pwmval; OCR2B = pwmval / 3; })
+                                                                                                                                                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:83:3: note: in expansion of macro &#39;TIMER_CONFIG_KHZ&#39;
+   TIMER_CONFIG_KHZ(freqKhz);
+   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:9:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp: In member function &#39;void IRSend::mark(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:72:31: error: &#39;TCCR2A&#39; was not declared in this scope
+     #define TIMER_ENABLE_PWM (TCCR2A |= _BV(COM2B1))
+                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:89:3: note: in expansion of macro &#39;TIMER_ENABLE_PWM&#39;
+   TIMER_ENABLE_PWM; // Enable pin 3 PWM output
+   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:12:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:9:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:72:45: error: &#39;COM2B1&#39; was not declared in this scope
+     #define TIMER_ENABLE_PWM (TCCR2A |= _BV(COM2B1))
+                                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:89:3: note: in expansion of macro &#39;TIMER_ENABLE_PWM&#39;
+   TIMER_ENABLE_PWM; // Enable pin 3 PWM output
+   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp:9:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControl.cpp: In member function &#39;void IRSend::space(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/IRRemoteControl/IRRemoteControlInt.h:73:32: error: &#39;TCCR2A&#39; was not declared in this scope
+     #define TIMER_DISABLE_PWM (TCCR2A &amp;= ~(_BV(COM2B1)))
+                                ^
+/home/ec2-user/arduino-testlib/cli-data</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

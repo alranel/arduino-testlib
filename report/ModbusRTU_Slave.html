@@ -1,0 +1,861 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>ModbusRTU_Slave - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>ModbusRTU_Slave</h2>
+				<p>
+					Version: <b>1.0.1</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/modbusrtu_slave/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>SimpleModbus</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-testlib130275834/test/test.ino:1:10: fatal error: ModbusRTU_Slave.h: No such file or directory
+ #include &lt;ModbusRTU_Slave.h&gt;
+          ^~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/SimpleModbus</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave/examples/SimpleModbus/SimpleModbus.ino:6:24: error: &#39;Serial1&#39; was not declared in this scope
+ ModbusRTUSlave rtu(1, &amp;Serial1);
+                        ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave/examples/SimpleModbus/SimpleModbus.ino:6:24: note: suggested alternative: &#39;Serial&#39;
+ ModbusRTUSlave rtu(1, &amp;Serial1);
+                        ^~~~~~~
+                        Serial
+Multiple libraries were found for &#34;ModbusRTUSlave.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-testlib929680364/test/test.ino:1:10: fatal error: ModbusRTU_Slave.h: No such file or directory
+ #include &lt;ModbusRTU_Slave.h&gt;
+          ^~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/SimpleModbus</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library ModbusRTU_Slave_RS485 claims to run on avr architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:5:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave/examples/SimpleModbus/SimpleModbus.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/utility/LinkedList.h:311:3: error: redeclaration of &#39;T LinkedList&lt;T&gt;::get(int, bool)&#39; may not have default arguments [-fpermissive]
+ T LinkedList&lt;T&gt;::get(int index, bool useCached = false){
+   ^~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave/examples/SimpleModbus/SimpleModbus.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:10:3: error: &#39;u16&#39; does not name a type; did you mean &#39;p16&#39;?
+   u16 addr;
+   ^~~
+   p16
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:12:3: error: &#39;u16&#39; does not name a type; did you mean &#39;p16&#39;?
+   u16 *values;
+   ^~~
+   p16
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:13:33: error: expected &#39;)&#39; before &#39;Address&#39;
+   ModbusRTUSlaveWordAddress(u16 Address, u16* value, int cnt);
+                                 ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:19:3: error: &#39;u16&#39; does not name a type; did you mean &#39;p16&#39;?
+   u16 addr;
+   ^~~
+   p16
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:21:3: error: &#39;u8&#39; does not name a type; did you mean &#39;p8&#39;?
+   u8 *values;
+   ^~
+   p8
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:22:32: error: expected &#39;)&#39; before &#39;Address&#39;
+   ModbusRTUSlaveBitAddress(u16 Address, u8* value, int cnt);
+                                ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:28:53: error: &#39;u8&#39; has not been declared
+   ModbusRTUSlave(byte slaveId, HardwareSerial *ser, u8 conrolPinNumber);
+                                                     ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:30:23: error: &#39;u16&#39; has not been declared
+   boolean addWordArea(u16 Address, u16* values, int cnt);
+                       ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:30:36: error: &#39;u16&#39; has not been declared
+   boolean addWordArea(u16 Address, u16* values, int cnt);
+                                    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:31:22: error: &#39;u16&#39; has not been declared
+   boolean addBitArea(u16 Address, u8* values, int cnt);
+                      ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:31:35: error: &#39;u8&#39; has not been declared
+   boolean addBitArea(u16 Address, u8* values, int cnt);
+                                   ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:37:3: error: &#39;u8&#39; does not name a type; did you mean &#39;p8&#39;?
+   u8 const controlPin;
+   ^~
+   p8
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:42:30: error: expected &#39;;&#39; at end of member declaration
+   ModbusRTUSlaveWordAddress* getWordAddress(u16 Addr);
+                              ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:42:49: error: expected &#39;)&#39; before &#39;Addr&#39;
+   ModbusRTUSlaveWordAddress* getWordAddress(u16 Addr);
+                                                 ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:43:29: error: expected &#39;;&#39; at end of member declaration
+   ModbusRTUSlaveBitAddress* getBitAddress(u16 Addr);
+                             ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:43:47: error: expected &#39;)&#39; before &#39;Addr&#39;
+   ModbusRTUSlaveBitAddress* getBitAddress(u16 Addr);
+                                               ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:44:30: error: expected &#39;;&#39; at end of member declaration
+   ModbusRTUSlaveWordAddress* getWordAddress(u16 Addr,u16 Len);
+                              ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:44:45: error: redeclaration of &#39;ModbusRTUSlaveWordAddress* ModbusRTUSlave::getWordAddress&#39;
+   ModbusRTUSlaveWordAddress* getWordAddress(u16 Addr,u16 Len);
+                                             ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:42:45: note: previous declaration &#39;ModbusRTUSlaveWordAddress* ModbusRTUSlave::getWordAddress&#39;
+   ModbusRTUSlaveWordAddress* getWordAddress(u16 Addr);
+                                             ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:44:49: error: expected &#39;)&#39; before &#39;Addr&#39;
+   ModbusRTUSlaveWordAddress* getWordAddress(u16 Addr,u16 Len);
+                                                 ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:45:29: error: expected &#39;;&#39; at end of member declaration
+   ModbusRTUSlaveBitAddress* getBitAddress(u16 Addr,u16 Len);
+                             ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:45:43: error: redeclaration of &#39;ModbusRTUSlaveBitAddress* ModbusRTUSlave::getBitAddress&#39;
+   ModbusRTUSlaveBitAddress* getBitAddress(u16 Addr,u16 Len);
+                                           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:43:43: note: previous declaration &#39;ModbusRTUSlaveBitAddress* ModbusRTUSlave::getBitAddress&#39;
+   ModbusRTUSlaveBitAddress* getBitAddress(u16 Addr);
+                                           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:45:47: error: expected &#39;)&#39; before &#39;Addr&#39;
+   ModbusRTUSlaveBitAddress* getBitAddress(u16 Addr,u16 Len);
+                                               ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:97:16: error: &#39;u8&#39; was not declared in this scope
+ boolean getBit(u8* area, int index);
+                ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:97:16: note: suggested alternative: &#39;p8&#39;
+ boolean getBit(u8* area, int index);
+                ^~
+                p8
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:97:20: error: &#39;area&#39; was not declared in this scope
+ boolean getBit(u8* area, int index);
+                    ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:97:20: note: suggested alternative: &#39;read&#39;
+ boolean getBit(u8* area, int index);
+                    ^~~~
+                    read
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:97:26: error: expected primary-expression before &#39;int&#39;
+ boolean getBit(u8* area, int index);
+                          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:97:35: error: expression list treated as compound expression in initializer [-fpermissive]
+ boolean getBit(u8* area, int index);
+                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:98:13: error: variable or field &#39;setBit&#39; declared void
+ void setBit(u8* area, int index, bool value);
+             ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:98:13: error: &#39;u8&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:98:13: note: suggested alternative: &#39;p8&#39;
+ void setBit(u8* area, int index, bool value);
+             ^~
+             p8
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:98:17: error: &#39;area&#39; was not declared in this scope
+ void setBit(u8* area, int index, bool value);
+                 ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:98:17: note: suggested alternative: &#39;read&#39;
+ void setBit(u8* area, int index, bool value);
+                 ^~~~
+                 read
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:98:23: error: expected primary-expression before &#39;int&#39;
+ void setBit(u8* area, int index, bool value);
+                       ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:98:34: error: expected primary-expression before &#39;bool&#39;
+ void setBit(u8* area, int index, bool value);
+                                  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave/examples/SimpleModbus/SimpleModbus.ino:3:1: error: &#39;u16&#39; does not name a type; did you mean &#39;p16&#39;?
+ u16 _D[100];
+ ^~~
+ p16
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave/examples/SimpleModbus/SimpleModbus.ino:4:1: error: &#39;u8&#39; does not name a type; did you mean &#39;p8&#39;?
+ u8 _M[50];
+ ^~
+ p8
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave/examples/SimpleModbus/SimpleModbus.i</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-testlib929680364/test/test.ino:1:10: fatal error: ModbusRTU_Slave.h: No such file or directory
+ #include &lt;ModbusRTU_Slave.h&gt;
+          ^~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/SimpleModbus</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library ModbusRTU_Slave_RS485 claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave/examples/SimpleModbus/SimpleModbus.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:10:3: error: &#39;u16&#39; does not name a type
+   u16 addr;
+   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:12:3: error: &#39;u16&#39; does not name a type
+   u16 *values;
+   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:13:33: error: expected &#39;)&#39; before &#39;Address&#39;
+   ModbusRTUSlaveWordAddress(u16 Address, u16* value, int cnt);
+                                 ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:19:3: error: &#39;u16&#39; does not name a type
+   u16 addr;
+   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:21:3: error: &#39;u8&#39; does not name a type
+   u8 *values;
+   ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:22:32: error: expected &#39;)&#39; before &#39;Address&#39;
+   ModbusRTUSlaveBitAddress(u16 Address, u8* value, int cnt);
+                                ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:28:53: error: &#39;u8&#39; has not been declared
+   ModbusRTUSlave(byte slaveId, HardwareSerial *ser, u8 conrolPinNumber);
+                                                     ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:30:23: error: &#39;u16&#39; has not been declared
+   boolean addWordArea(u16 Address, u16* values, int cnt);
+                       ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:30:36: error: &#39;u16&#39; has not been declared
+   boolean addWordArea(u16 Address, u16* values, int cnt);
+                                    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:31:22: error: &#39;u16&#39; has not been declared
+   boolean addBitArea(u16 Address, u8* values, int cnt);
+                      ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:31:35: error: &#39;u8&#39; has not been declared
+   boolean addBitArea(u16 Address, u8* values, int cnt);
+                                   ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:37:3: error: &#39;u8&#39; does not name a type
+   u8 const controlPin;
+   ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:42:30: error: expected &#39;;&#39; at end of member declaration
+   ModbusRTUSlaveWordAddress* getWordAddress(u16 Addr);
+                              ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:42:49: error: expected &#39;)&#39; before &#39;Addr&#39;
+   ModbusRTUSlaveWordAddress* getWordAddress(u16 Addr);
+                                                 ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:43:29: error: expected &#39;;&#39; at end of member declaration
+   ModbusRTUSlaveBitAddress* getBitAddress(u16 Addr);
+                             ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:43:47: error: expected &#39;)&#39; before &#39;Addr&#39;
+   ModbusRTUSlaveBitAddress* getBitAddress(u16 Addr);
+                                               ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:44:30: error: expected &#39;;&#39; at end of member declaration
+   ModbusRTUSlaveWordAddress* getWordAddress(u16 Addr,u16 Len);
+                              ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:44:45: error: redeclaration of &#39;ModbusRTUSlaveWordAddress* ModbusRTUSlave::getWordAddress&#39;
+   ModbusRTUSlaveWordAddress* getWordAddress(u16 Addr,u16 Len);
+                                             ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:42:45: note: previous declaration &#39;ModbusRTUSlaveWordAddress* ModbusRTUSlave::getWordAddress&#39;
+   ModbusRTUSlaveWordAddress* getWordAddress(u16 Addr);
+                                             ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:44:49: error: expected &#39;)&#39; before &#39;Addr&#39;
+   ModbusRTUSlaveWordAddress* getWordAddress(u16 Addr,u16 Len);
+                                                 ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:45:29: error: expected &#39;;&#39; at end of member declaration
+   ModbusRTUSlaveBitAddress* getBitAddress(u16 Addr,u16 Len);
+                             ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:45:43: error: redeclaration of &#39;ModbusRTUSlaveBitAddress* ModbusRTUSlave::getBitAddress&#39;
+   ModbusRTUSlaveBitAddress* getBitAddress(u16 Addr,u16 Len);
+                                           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:43:43: note: previous declaration &#39;ModbusRTUSlaveBitAddress* ModbusRTUSlave::getBitAddress&#39;
+   ModbusRTUSlaveBitAddress* getBitAddress(u16 Addr);
+                                           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:45:47: error: expected &#39;)&#39; before &#39;Addr&#39;
+   ModbusRTUSlaveBitAddress* getBitAddress(u16 Addr,u16 Len);
+                                               ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:97:16: error: &#39;u8&#39; was not declared in this scope
+ boolean getBit(u8* area, int index);
+                ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:97:20: error: &#39;area&#39; was not declared in this scope
+ boolean getBit(u8* area, int index);
+                    ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:97:20: note: suggested alternative: &#39;fread&#39;
+ boolean getBit(u8* area, int index);
+                    ^~~~
+                    fread
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:97:26: error: expected primary-expression before &#39;int&#39;
+ boolean getBit(u8* area, int index);
+                          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:98:13: error: variable or field &#39;setBit&#39; declared void
+ void setBit(u8* area, int index, bool value);
+             ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:98:13: error: &#39;u8&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:98:17: error: &#39;area&#39; was not declared in this scope
+ void setBit(u8* area, int index, bool value);
+                 ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:98:17: note: suggested alternative: &#39;fread&#39;
+ void setBit(u8* area, int index, bool value);
+                 ^~~~
+                 fread
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:98:23: error: expected primary-expression before &#39;int&#39;
+ void setBit(u8* area, int index, bool value);
+                       ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:98:34: error: expected primary-expression before &#39;bool&#39;
+ void setBit(u8* area, int index, bool value);
+                                  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave/examples/SimpleModbus/SimpleModbus.ino:3:1: error: &#39;u16&#39; does not name a type
+ u16 _D[100];
+ ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave/examples/SimpleModbus/SimpleModbus.ino:4:1: error: &#39;u8&#39; does not name a type
+ u8 _M[50];
+ ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave/examples/SimpleModbus/SimpleModbus.ino:6:31: error: no matching function for call to &#39;ModbusRTUSlave::ModbusRTUSlave(int, UartClass*)&#39;
+ ModbusRTUSlave rtu(1, &amp;Serial1);
+                               ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave/examples/SimpleModbus/SimpleModbus.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:28:3: note: candidate: ModbusRTUSlave::ModbusRTUSlave(byte, arduino::HardwareSerial*, int)
+   ModbusRTUSlave(byte slaveId, HardwareSerial *ser, u8 conrolPinNumber);
+   ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:28:3: note:   candidate expects 3 arguments, 2 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:25:7: note: candidate: constexpr ModbusRTUSlave::ModbusRTUSlave(const ModbusRTUSlave&amp;)
+ class ModbusRTUSlave
+       ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:25:7: note:   candidate expects 1 argument, 2 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:25:7: note: candidate: constexpr ModbusRTUSlave::ModbusRTUSlave(ModbusRTUSlave&amp;&amp;)
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:25:7: note:   candidate expects </pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-testlib130275834/test/test.ino:1:10: fatal error: ModbusRTU_Slave.h: No such file or directory
+ #include &lt;ModbusRTU_Slave.h&gt;
+          ^~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/SimpleModbus</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library ModbusRTU_Slave_RS485 claims to run on avr architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:5:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave/examples/SimpleModbus/SimpleModbus.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/utility/LinkedList.h:311:3: error: redeclaration of &#39;T LinkedList&lt;T&gt;::get(int, bool)&#39; may not have default arguments [-fpermissive]
+ T LinkedList&lt;T&gt;::get(int index, bool useCached = false){
+   ^~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave/examples/SimpleModbus/SimpleModbus.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:10:3: error: &#39;u16&#39; does not name a type
+   u16 addr;
+   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:12:3: error: &#39;u16&#39; does not name a type
+   u16 *values;
+   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:13:33: error: expected &#39;)&#39; before &#39;Address&#39;
+   ModbusRTUSlaveWordAddress(u16 Address, u16* value, int cnt);
+                                 ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:19:3: error: &#39;u16&#39; does not name a type
+   u16 addr;
+   ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:21:3: error: &#39;u8&#39; does not name a type
+   u8 *values;
+   ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:22:32: error: expected &#39;)&#39; before &#39;Address&#39;
+   ModbusRTUSlaveBitAddress(u16 Address, u8* value, int cnt);
+                                ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:28:53: error: &#39;u8&#39; has not been declared
+   ModbusRTUSlave(byte slaveId, HardwareSerial *ser, u8 conrolPinNumber);
+                                                     ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:30:23: error: &#39;u16&#39; has not been declared
+   boolean addWordArea(u16 Address, u16* values, int cnt);
+                       ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:30:36: error: &#39;u16&#39; has not been declared
+   boolean addWordArea(u16 Address, u16* values, int cnt);
+                                    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:31:22: error: &#39;u16&#39; has not been declared
+   boolean addBitArea(u16 Address, u8* values, int cnt);
+                      ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:31:35: error: &#39;u8&#39; has not been declared
+   boolean addBitArea(u16 Address, u8* values, int cnt);
+                                   ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:37:3: error: &#39;u8&#39; does not name a type
+   u8 const controlPin;
+   ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:42:30: error: expected &#39;;&#39; at end of member declaration
+   ModbusRTUSlaveWordAddress* getWordAddress(u16 Addr);
+                              ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:42:49: error: expected &#39;)&#39; before &#39;Addr&#39;
+   ModbusRTUSlaveWordAddress* getWordAddress(u16 Addr);
+                                                 ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:43:29: error: expected &#39;;&#39; at end of member declaration
+   ModbusRTUSlaveBitAddress* getBitAddress(u16 Addr);
+                             ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:43:47: error: expected &#39;)&#39; before &#39;Addr&#39;
+   ModbusRTUSlaveBitAddress* getBitAddress(u16 Addr);
+                                               ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:44:30: error: expected &#39;;&#39; at end of member declaration
+   ModbusRTUSlaveWordAddress* getWordAddress(u16 Addr,u16 Len);
+                              ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:44:45: error: redeclaration of &#39;ModbusRTUSlaveWordAddress* ModbusRTUSlave::getWordAddress&#39;
+   ModbusRTUSlaveWordAddress* getWordAddress(u16 Addr,u16 Len);
+                                             ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:42:45: note: previous declaration &#39;ModbusRTUSlaveWordAddress* ModbusRTUSlave::getWordAddress&#39;
+   ModbusRTUSlaveWordAddress* getWordAddress(u16 Addr);
+                                             ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:44:49: error: expected &#39;)&#39; before &#39;Addr&#39;
+   ModbusRTUSlaveWordAddress* getWordAddress(u16 Addr,u16 Len);
+                                                 ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:45:29: error: expected &#39;;&#39; at end of member declaration
+   ModbusRTUSlaveBitAddress* getBitAddress(u16 Addr,u16 Len);
+                             ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:45:43: error: redeclaration of &#39;ModbusRTUSlaveBitAddress* ModbusRTUSlave::getBitAddress&#39;
+   ModbusRTUSlaveBitAddress* getBitAddress(u16 Addr,u16 Len);
+                                           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:43:43: note: previous declaration &#39;ModbusRTUSlaveBitAddress* ModbusRTUSlave::getBitAddress&#39;
+   ModbusRTUSlaveBitAddress* getBitAddress(u16 Addr);
+                                           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:45:47: error: expected &#39;)&#39; before &#39;Addr&#39;
+   ModbusRTUSlaveBitAddress* getBitAddress(u16 Addr,u16 Len);
+                                               ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:97:16: error: &#39;u8&#39; was not declared in this scope
+ boolean getBit(u8* area, int index);
+                ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:97:20: error: &#39;area&#39; was not declared in this scope
+ boolean getBit(u8* area, int index);
+                    ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:97:20: note: suggested alternative: &#39;fread&#39;
+ boolean getBit(u8* area, int index);
+                    ^~~~
+                    fread
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:97:26: error: expected primary-expression before &#39;int&#39;
+ boolean getBit(u8* area, int index);
+                          ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:97:35: error: expression list treated as compound expression in initializer [-fpermissive]
+ boolean getBit(u8* area, int index);
+                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:98:13: error: variable or field &#39;setBit&#39; declared void
+ void setBit(u8* area, int index, bool value);
+             ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:98:13: error: &#39;u8&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:98:17: error: &#39;area&#39; was not declared in this scope
+ void setBit(u8* area, int index, bool value);
+                 ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:98:17: note: suggested alternative: &#39;fread&#39;
+ void setBit(u8* area, int index, bool value);
+                 ^~~~
+                 fread
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:98:23: error: expected primary-expression before &#39;int&#39;
+ void setBit(u8* area, int index, bool value);
+                       ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:98:34: error: expected primary-expression before &#39;bool&#39;
+ void setBit(u8* area, int index, bool value);
+                                  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave/examples/SimpleModbus/SimpleModbus.ino:3:1: error: &#39;u16&#39; does not name a type
+ u16 _D[100];
+ ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave/examples/SimpleModbus/SimpleModbus.ino:4:1: error: &#39;u8&#39; does not name a type
+ u8 _M[50];
+ ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave/examples/SimpleModbus/SimpleModbus.ino:6:31: error: no matching function for call to &#39;ModbusRTUSlave::ModbusRTUSlave(int, Uart*)&#39;
+ ModbusRTUSlave rtu(1, &amp;Serial1);
+                               ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave/examples/SimpleModbus/SimpleModbus.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:28:3: note: candidate: ModbusRTUSlave::ModbusRTUSlave(byte, arduino::HardwareSerial*, int)
+   ModbusRTUSlave(byte slaveId, HardwareSerial *ser, u8 conrolPinNumber);
+   ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-da</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-testlib385754730/test/test.ino:1:29: fatal error: ModbusRTU_Slave.h: No such file or directory
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/SimpleModbus</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library ModbusRTU_Slave_RS485 claims to run on avr architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:5:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave/examples/SimpleModbus/SimpleModbus.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/utility/LinkedList.h:311:55: error: redeclaration of &#39;T LinkedList&lt;T&gt;::get(int, bool)&#39; may not have default arguments [-fpermissive]
+ T LinkedList&lt;T&gt;::get(int index, bool useCached = false){
+                                                       ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave/examples/SimpleModbus/SimpleModbus.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:10:3: error: &#39;u16&#39; does not name a type
+   u16 addr;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:12:3: error: &#39;u16&#39; does not name a type
+   u16 *values;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:13:33: error: expected &#39;)&#39; before &#39;Address&#39;
+   ModbusRTUSlaveWordAddress(u16 Address, u16* value, int cnt);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:19:3: error: &#39;u16&#39; does not name a type
+   u16 addr;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:21:3: error: &#39;u8&#39; does not name a type
+   u8 *values;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:22:32: error: expected &#39;)&#39; before &#39;Address&#39;
+   ModbusRTUSlaveBitAddress(u16 Address, u8* value, int cnt);
+                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:28:53: error: &#39;u8&#39; has not been declared
+   ModbusRTUSlave(byte slaveId, HardwareSerial *ser, u8 conrolPinNumber);
+                                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:30:23: error: &#39;u16&#39; has not been declared
+   boolean addWordArea(u16 Address, u16* values, int cnt);
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:30:36: error: &#39;u16&#39; has not been declared
+   boolean addWordArea(u16 Address, u16* values, int cnt);
+                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:31:22: error: &#39;u16&#39; has not been declared
+   boolean addBitArea(u16 Address, u8* values, int cnt);
+                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:31:35: error: &#39;u8&#39; has not been declared
+   boolean addBitArea(u16 Address, u8* values, int cnt);
+                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:37:3: error: &#39;u8&#39; does not name a type
+   u8 const controlPin;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:42:30: error: expected &#39;;&#39; at end of member declaration
+   ModbusRTUSlaveWordAddress* getWordAddress(u16 Addr);
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:42:49: error: expected &#39;)&#39; before &#39;Addr&#39;
+   ModbusRTUSlaveWordAddress* getWordAddress(u16 Addr);
+                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:43:29: error: expected &#39;;&#39; at end of member declaration
+   ModbusRTUSlaveBitAddress* getBitAddress(u16 Addr);
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:43:47: error: expected &#39;)&#39; before &#39;Addr&#39;
+   ModbusRTUSlaveBitAddress* getBitAddress(u16 Addr);
+                                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:44:30: error: expected &#39;;&#39; at end of member declaration
+   ModbusRTUSlaveWordAddress* getWordAddress(u16 Addr,u16 Len);
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:44:45: error: redeclaration of &#39;ModbusRTUSlaveWordAddress* ModbusRTUSlave::getWordAddress&#39;
+   ModbusRTUSlaveWordAddress* getWordAddress(u16 Addr,u16 Len);
+                                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:42:45: note: previous declaration &#39;ModbusRTUSlaveWordAddress* ModbusRTUSlave::getWordAddress&#39;
+   ModbusRTUSlaveWordAddress* getWordAddress(u16 Addr);
+                                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:44:49: error: expected &#39;)&#39; before &#39;Addr&#39;
+   ModbusRTUSlaveWordAddress* getWordAddress(u16 Addr,u16 Len);
+                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:45:29: error: expected &#39;;&#39; at end of member declaration
+   ModbusRTUSlaveBitAddress* getBitAddress(u16 Addr,u16 Len);
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:45:43: error: redeclaration of &#39;ModbusRTUSlaveBitAddress* ModbusRTUSlave::getBitAddress&#39;
+   ModbusRTUSlaveBitAddress* getBitAddress(u16 Addr,u16 Len);
+                                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:43:43: note: previous declaration &#39;ModbusRTUSlaveBitAddress* ModbusRTUSlave::getBitAddress&#39;
+   ModbusRTUSlaveBitAddress* getBitAddress(u16 Addr);
+                                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:45:47: error: expected &#39;)&#39; before &#39;Addr&#39;
+   ModbusRTUSlaveBitAddress* getBitAddress(u16 Addr,u16 Len);
+                                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:97:16: error: &#39;u8&#39; was not declared in this scope
+ boolean getBit(u8* area, int index);
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:97:20: error: &#39;area&#39; was not declared in this scope
+ boolean getBit(u8* area, int index);
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:97:26: error: expected primary-expression before &#39;int&#39;
+ boolean getBit(u8* area, int index);
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:97:35: error: expression list treated as compound expression in initializer [-fpermissive]
+ boolean getBit(u8* area, int index);
+                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:98:13: error: variable or field &#39;setBit&#39; declared void
+ void setBit(u8* area, int index, bool value);
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:98:13: error: &#39;u8&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:98:17: error: &#39;area&#39; was not declared in this scope
+ void setBit(u8* area, int index, bool value);
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:98:23: error: expected primary-expression before &#39;int&#39;
+ void setBit(u8* area, int index, bool value);
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:98:34: error: expected primary-expression before &#39;bool&#39;
+ void setBit(u8* area, int index, bool value);
+                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave/examples/SimpleModbus/SimpleModbus.ino:3:1: error: &#39;u16&#39; does not name a type
+ u16 _D[100];
+ ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave/examples/SimpleModbus/SimpleModbus.ino:4:1: error: &#39;u8&#39; does not name a type
+ u8 _M[50];
+ ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave/examples/SimpleModbus/SimpleModbus.ino:6:31: error: no matching function for call to &#39;ModbusRTUSlave::ModbusRTUSlave(int, HardwareSerial*)&#39;
+ ModbusRTUSlave rtu(1, &amp;Serial1);
+                               ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave/examples/SimpleModbus/SimpleModbus.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:28:3: note: candidate: ModbusRTUSlave::ModbusRTUSlave(byte, HardwareSerial*, int)
+   ModbusRTUSlave(byte slaveId, HardwareSerial *ser, u8 conrolPinNumber);
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:28:3: note:   candidate expects 3 arguments, 2 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:25:7: note: candidate: constexpr ModbusRTUSlave::ModbusRTUSlave(const ModbusRTUSlave&amp;)
+ class ModbusRTUSlave
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRTU_Slave_RS485/ModbusRTUSlave.h:25:7: note:   candidate expects 1 argument, 2 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ModbusRT</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

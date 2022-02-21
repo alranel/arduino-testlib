@@ -1,0 +1,581 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>EspNow2Mqtt - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>EspNow2Mqtt</h2>
+				<p>
+					Version: <b>1.3.1</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/espnow2mqtt/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>client</pre></th>
+						
+						<th><pre>server</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+							<td>No ⚠️</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_WipperSnapper_Beta/src/Wippersnapper.cpp:34:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_WipperSnapper_Beta/src/Wippersnapper.h:22:10: fatal error: vector: No such file or directory
+ #include &lt;vector&gt;
+          ^~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;pb.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_WipperSnapper_Beta
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/esp8266-google-home-notifier
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TheThingsNetwork
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SnappyProto
+</pre>
+
+					
+					<h4>examples/client</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable"></pre>
+					
+					<h4>examples/server</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable"></pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library EspNow2Mqtt claims to run on esp32 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+WARNING: library Adafruit_SleepyDog_Library claims to run on avr, samd, nrf52, teensy, esp32, esp8266 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_WipperSnapper_Beta/src/Wippersnapper.h:53:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_WipperSnapper_Beta/src/Wippersnapper.cpp:34:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/Adafruit_SleepyDog.h:38:2: error: #error Unsupported platform for the Adafruit Watchdog library!
+ #error Unsupported platform for the Adafruit Watchdog library!
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/Adafruit_SleepyDog.h:41:8: error: &#39;WatchdogType&#39; does not name a type
+ extern WatchdogType Watchdog;
+        ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_WipperSnapper_Beta/src/Wippersnapper.cpp: In member function &#39;bool Wippersnapper::buildWSTopics()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_WipperSnapper_Beta/src/Wippersnapper.cpp:1077:17: error: &#39;BOARD_ID&#39; was not declared in this scope
+   WS._boardId = BOARD_ID;
+                 ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_WipperSnapper_Beta/src/Wippersnapper.cpp:1077:17: note: suggested alternative: &#39;BOARD_NAME&#39;
+   WS._boardId = BOARD_ID;
+                 ^~~~~~~~
+                 BOARD_NAME
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_WipperSnapper_Beta/src/Wippersnapper.cpp: In member function &#39;void Wippersnapper::feedWDT()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_WipperSnapper_Beta/src/Wippersnapper.cpp:1435:3: error: &#39;Watchdog&#39; was not declared in this scope
+   Watchdog.reset();
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_WipperSnapper_Beta/src/Wippersnapper.cpp: In member function &#39;void Wippersnapper::enableWDT(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_WipperSnapper_Beta/src/Wippersnapper.cpp:1449:3: error: &#39;Watchdog&#39; was not declared in this scope
+   Watchdog.disable();
+   ^~~~~~~~
+Multiple libraries were found for &#34;Adafruit_MQTT.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_MQTT_Library
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LiveObjectsSDK
+Multiple libraries were found for &#34;pb.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_WipperSnapper_Beta
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TheThingsNetwork
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SnappyProto
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/esp8266-google-home-notifier
+Multiple libraries were found for &#34;Adafruit_Sensor.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_Unified_Sensor
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArdUAV
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ClimaStick
+Multiple libraries were found for &#34;Adafruit_NeoPixel.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_NeoPixel
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Leaphy_Extra_Extension
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pinduino
+</pre>
+
+					
+					<h4>examples/client</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable"></pre>
+					
+					<h4>examples/server</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable"></pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_WipperSnapper_Beta/src/Wippersnapper.cpp:34:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_WipperSnapper_Beta/src/Wippersnapper.h:22:10: fatal error: vector: No such file or directory
+ #include &lt;vector&gt;
+          ^~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;pb.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_WipperSnapper_Beta
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SnappyProto
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/esp8266-google-home-notifier
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TheThingsNetwork
+</pre>
+
+					
+					<h4>examples/client</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable"></pre>
+					
+					<h4>examples/server</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable"></pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library EspNow2Mqtt claims to run on esp32 architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+Sketch uses 15436 bytes (5%) of program storage space. Maximum is 262144 bytes.
+Global variables use 5132 bytes (15%) of dynamic memory, leaving 27636 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+
+					
+					<h4>examples/client</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable"></pre>
+					
+					<h4>examples/server</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable"></pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EspNow2Mqtt/src/messages.pb.c:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EspNow2Mqtt/src/messages.pb.h:9:2: error: #error Regenerate this file with the current version of nanopb generator.
+ #error Regenerate this file with the current version of nanopb generator.
+  ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EspNow2Mqtt/src/messages.pb.c:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EspNow2Mqtt/src/messages.pb.h:158:14: error: unknown type name &#39;pb_msgdesc_t&#39;
+ extern const pb_msgdesc_t request_msg;
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EspNow2Mqtt/src/messages.pb.h:159:14: error: unknown type name &#39;pb_msgdesc_t&#39;
+ extern const pb_msgdesc_t request_Ping_msg;
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EspNow2Mqtt/src/messages.pb.h:160:14: error: unknown type name &#39;pb_msgdesc_t&#39;
+ extern const pb_msgdesc_t request_Send_msg;
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EspNow2Mqtt/src/messages.pb.h:161:14: error: unknown type name &#39;pb_msgdesc_t&#39;
+ extern const pb_msgdesc_t request_Subscribe_msg;
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EspNow2Mqtt/src/messages.pb.h:162:14: error: unknown type name &#39;pb_msgdesc_t&#39;
+ extern const pb_msgdesc_t request_Operation_msg;
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EspNow2Mqtt/src/messages.pb.h:163:14: error: unknown type name &#39;pb_msgdesc_t&#39;
+ extern const pb_msgdesc_t response_msg;
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EspNow2Mqtt/src/messages.pb.h:164:14: error: unknown type name &#39;pb_msgdesc_t&#39;
+ extern const pb_msgdesc_t response_OpResponse_msg;
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EspNow2Mqtt/src/messages.pb.c:6:2: error: #error Regenerate this file with the current version of nanopb generator.
+ #error Regenerate this file with the current version of nanopb generator.
+  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EspNow2Mqtt/src/messages.pb.c:9:27: error: expected declaration specifiers or &#39;...&#39; before numeric constant
+ PB_BIND(request, request, 2)
+                           ^
+Multiple libraries were found for &#34;pb.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/esp8266-google-home-notifier
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SnappyProto
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TheThingsNetwork
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_WipperSnapper_Beta
+Multiple libraries were found for &#34;WiFiClientSecure.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/WiFiClientSecure
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Seeed_Arduino_rpcWiFi
+Multiple libraries were found for &#34;WiFi.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/WiFi
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Seeed_Arduino_rpcWiFi
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiNINA
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiEspAT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi
+</pre>
+
+					
+					<h4>examples/client</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable"></pre>
+					
+					<h4>examples/server</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable"></pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

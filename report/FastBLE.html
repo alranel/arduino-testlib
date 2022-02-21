@@ -1,0 +1,831 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>FastBLE - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>FastBLE</h2>
+				<p>
+					Version: <b>0.2.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/fastble/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>multiplication</pre></th>
+						
+						<th><pre>SerialNINAPassthrough</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+							<td>No ⚠️</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library FastBLE claims to run on samd architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+In file included from /tmp/arduino-testlib3997516651/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h: In member function &#39;void BLETypes::Output&lt;T&gt;::write(T)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h:19:7: error: &#39;Serial2&#39; was not declared in this scope
+       Serial2.write((uint8_t*)&amp;_n, 2);
+       ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h:19:7: note: suggested alternative: &#39;Serial&#39;
+       Serial2.write((uint8_t*)&amp;_n, 2);
+       ^~~~~~~
+       Serial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h: In member function &#39;virtual void BLETypes::Input&lt;T&gt;::setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h:42:7: error: &#39;Serial2&#39; was not declared in this scope
+       Serial2.write((uint8_t*)&amp;msg, sizeof(SetupMessage));
+       ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h:42:7: note: suggested alternative: &#39;Serial&#39;
+       Serial2.write((uint8_t*)&amp;msg, sizeof(SetupMessage));
+       ^~~~~~~
+       Serial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h: In member function &#39;virtual void BLETypes::Input&lt;T&gt;::receive()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h:47:7: error: &#39;Serial2&#39; was not declared in this scope
+       Serial2.readBytes((uint8_t*)&amp;x, sizeof(T));
+       ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h:47:7: note: suggested alternative: &#39;Serial&#39;
+       Serial2.readBytes((uint8_t*)&amp;x, sizeof(T));
+       ^~~~~~~
+       Serial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h: In member function &#39;BLETypes::Output&lt;T&gt; BLEClass::add_output(ble_uuid_any_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h:68:5: error: &#39;Serial2&#39; was not declared in this scope
+     Serial2.write((uint8_t*)&amp;msg, sizeof(SetupMessage));
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h:68:5: note: suggested alternative: &#39;Serial&#39;
+     Serial2.write((uint8_t*)&amp;msg, sizeof(SetupMessage));
+     ^~~~~~~
+     Serial
+
+</pre>
+
+					
+					<h4>examples/SerialNINAPassthrough</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:40:3: error: &#39;SerialNina&#39; was not declared in this scope
+   SerialNina.begin(baud);
+   ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:40:3: note: suggested alternative: &#39;Serial&#39;
+   SerialNina.begin(baud);
+   ^~~~~~~~~~
+   Serial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:46:11: error: &#39;NINA_GPIO0&#39; was not declared in this scope
+   pinMode(NINA_GPIO0, OUTPUT);
+           ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:47:11: error: &#39;NINA_RESETN&#39; was not declared in this scope
+   pinMode(NINA_RESETN, OUTPUT);
+           ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:64:21: error: &#39;class HardwareSerial&#39; has no member named &#39;rts&#39;
+   if (rts != Serial.rts()) {
+                     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:70:18: error: &#39;NINA_RESETN&#39; was not declared in this scope
+     digitalWrite(NINA_RESETN, Serial.rts());
+                  ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:70:38: error: &#39;class HardwareSerial&#39; has no member named &#39;rts&#39;
+     digitalWrite(NINA_RESETN, Serial.rts());
+                                      ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:72:18: error: &#39;class HardwareSerial&#39; has no member named &#39;rts&#39;
+     rts = Serial.rts();
+                  ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:75:21: error: &#39;class HardwareSerial&#39; has no member named &#39;dtr&#39;
+   if (dtr != Serial.dtr()) {
+                     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:79:18: error: &#39;NINA_GPIO0&#39; was not declared in this scope
+     digitalWrite(NINA_GPIO0, (Serial.dtr() == 0) ? HIGH : LOW);
+                  ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:79:38: error: &#39;class HardwareSerial&#39; has no member named &#39;dtr&#39;
+     digitalWrite(NINA_GPIO0, (Serial.dtr() == 0) ? HIGH : LOW);
+                                      ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:81:18: error: &#39;class HardwareSerial&#39; has no member named &#39;dtr&#39;
+     dtr = Serial.dtr();
+                  ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:86:5: error: &#39;SerialNina&#39; was not declared in this scope
+     SerialNina.write(Serial.read());
+     ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:86:5: note: suggested alternative: &#39;Serial&#39;
+     SerialNina.write(Serial.read());
+     ^~~~~~~~~~
+     Serial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:89:7: error: &#39;SerialNina&#39; was not declared in this scope
+   if (SerialNina.available()) {
+       ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:89:7: note: suggested alternative: &#39;Serial&#39;
+   if (SerialNina.available()) {
+       ^~~~~~~~~~
+       Serial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:95:14: error: &#39;class HardwareSerial&#39; has no member named &#39;baud&#39;
+   if (Serial.baud() != baud) {
+              ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:99:19: error: &#39;class HardwareSerial&#39; has no member named &#39;baud&#39;
+     baud = Serial.baud();
+                   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:101:5: error: &#39;SerialNina&#39; was not declared in this scope
+     SerialNina.begin(baud);
+     ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:101:5: note: suggested alternative: &#39;Serial&#39;
+     SerialNina.begin(baud);
+     ^~~~~~~~~~
+     Serial
+
+</pre>
+					
+					<h4>examples/multiplication</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library FastBLE claims to run on samd architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/multiplication/multiplication.ino:8:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h: In member function &#39;void BLETypes::Output&lt;T&gt;::write(T)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h:19:7: error: &#39;Serial2&#39; was not declared in this scope
+       Serial2.write((uint8_t*)&amp;_n, 2);
+       ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h:19:7: note: suggested alternative: &#39;Serial&#39;
+       Serial2.write((uint8_t*)&amp;_n, 2);
+       ^~~~~~~
+       Serial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h: In member function &#39;virtual void BLETypes::Input&lt;T&gt;::setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h:42:7: error: &#39;Serial2&#39; was not declared in this scope
+       Serial2.write((uint8_t*)&amp;msg, sizeof(SetupMessage));
+       ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h:42:7: note: suggested alternative: &#39;Serial&#39;
+       Serial2.write((uint8_t*)&amp;msg, sizeof(SetupMessage));
+       ^~~~~~~
+       Serial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h: In member function &#39;virtual void BLETypes::Input&lt;T&gt;::receive()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h:47:7: error: &#39;Serial2&#39; was not declared in this scope
+       Serial2.readBytes((uint8_t*)&amp;x, sizeof(T));
+       ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h:47:7: note: suggested alternative: &#39;Serial&#39;
+       Serial2.readBytes((uint8_t*)&amp;x, sizeof(T));
+       ^~~~~~~
+       Serial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h: In member function &#39;BLETypes::Output&lt;T&gt; BLEClass::add_output(ble_uuid_any_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h:68:5: error: &#39;Serial2&#39; was not declared in this scope
+     Serial2.write((uint8_t*)&amp;msg, sizeof(SetupMessage));
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h:68:5: note: suggested alternative: &#39;Serial&#39;
+     Serial2.write((uint8_t*)&amp;msg, sizeof(SetupMessage));
+     ^~~~~~~
+     Serial
+
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library FastBLE claims to run on samd architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+Sketch uses 78776 bytes (0%) of program storage space. Maximum is 16777216 bytes.
+Global variables use 43460 bytes (16%) of dynamic memory, leaving 226876 bytes for local variables. Maximum is 270336 bytes.
+</pre>
+
+					
+					<h4>examples/SerialNINAPassthrough</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 79408 bytes (0%) of program storage space. Maximum is 16777216 bytes.
+Global variables use 43444 bytes (16%) of dynamic memory, leaving 226892 bytes for local variables. Maximum is 270336 bytes.
+</pre>
+					
+					<h4>examples/multiplication</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library FastBLE claims to run on samd architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+Sketch uses 79780 bytes (0%) of program storage space. Maximum is 16777216 bytes.
+Global variables use 43460 bytes (16%) of dynamic memory, leaving 226876 bytes for local variables. Maximum is 270336 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library FastBLE claims to run on samd architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /tmp/arduino-testlib1824253230/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h: In member function &#39;void BLETypes::Output&lt;T&gt;::write(T)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h:19:7: error: &#39;Serial2&#39; was not declared in this scope
+       Serial2.write((uint8_t*)&amp;_n, 2);
+       ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h:19:7: note: suggested alternative: &#39;Serial1&#39;
+       Serial2.write((uint8_t*)&amp;_n, 2);
+       ^~~~~~~
+       Serial1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h: In member function &#39;virtual void BLETypes::Input&lt;T&gt;::setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h:42:7: error: &#39;Serial2&#39; was not declared in this scope
+       Serial2.write((uint8_t*)&amp;msg, sizeof(SetupMessage));
+       ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h:42:7: note: suggested alternative: &#39;Serial1&#39;
+       Serial2.write((uint8_t*)&amp;msg, sizeof(SetupMessage));
+       ^~~~~~~
+       Serial1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h: In member function &#39;virtual void BLETypes::Input&lt;T&gt;::receive()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h:47:7: error: &#39;Serial2&#39; was not declared in this scope
+       Serial2.readBytes((uint8_t*)&amp;x, sizeof(T));
+       ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h:47:7: note: suggested alternative: &#39;Serial1&#39;
+       Serial2.readBytes((uint8_t*)&amp;x, sizeof(T));
+       ^~~~~~~
+       Serial1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h: In member function &#39;BLETypes::Output&lt;T&gt; BLEClass::add_output(ble_uuid_any_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h:68:5: error: &#39;Serial2&#39; was not declared in this scope
+     Serial2.write((uint8_t*)&amp;msg, sizeof(SetupMessage));
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h:68:5: note: suggested alternative: &#39;Serial1&#39;
+     Serial2.write((uint8_t*)&amp;msg, sizeof(SetupMessage));
+     ^~~~~~~
+     Serial1
+
+</pre>
+
+					
+					<h4>examples/SerialNINAPassthrough</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:40:3: error: &#39;SerialNina&#39; was not declared in this scope
+   SerialNina.begin(baud);
+   ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:40:3: note: suggested alternative: &#39;Serial1&#39;
+   SerialNina.begin(baud);
+   ^~~~~~~~~~
+   Serial1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:46:11: error: &#39;NINA_GPIO0&#39; was not declared in this scope
+   pinMode(NINA_GPIO0, OUTPUT);
+           ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:46:11: note: suggested alternative: &#39;GPIO_GPIO0&#39;
+   pinMode(NINA_GPIO0, OUTPUT);
+           ^~~~~~~~~~
+           GPIO_GPIO0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:47:11: error: &#39;NINA_RESETN&#39; was not declared in this scope
+   pinMode(NINA_RESETN, OUTPUT);
+           ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:47:11: note: suggested alternative: &#39;MSC_RESET&#39;
+   pinMode(NINA_RESETN, OUTPUT);
+           ^~~~~~~~~~~
+           MSC_RESET
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:64:21: error: &#39;class UartClass&#39; has no member named &#39;rts&#39;
+   if (rts != Serial.rts()) {
+                     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:70:18: error: &#39;NINA_RESETN&#39; was not declared in this scope
+     digitalWrite(NINA_RESETN, Serial.rts());
+                  ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:70:18: note: suggested alternative: &#39;MSC_RESET&#39;
+     digitalWrite(NINA_RESETN, Serial.rts());
+                  ^~~~~~~~~~~
+                  MSC_RESET
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:70:38: error: &#39;class UartClass&#39; has no member named &#39;rts&#39;
+     digitalWrite(NINA_RESETN, Serial.rts());
+                                      ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:72:18: error: &#39;class UartClass&#39; has no member named &#39;rts&#39;
+     rts = Serial.rts();
+                  ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:75:21: error: &#39;class UartClass&#39; has no member named &#39;dtr&#39;
+   if (dtr != Serial.dtr()) {
+                     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:79:18: error: &#39;NINA_GPIO0&#39; was not declared in this scope
+     digitalWrite(NINA_GPIO0, (Serial.dtr() == 0) ? HIGH : LOW);
+                  ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:79:18: note: suggested alternative: &#39;GPIO_GPIO0&#39;
+     digitalWrite(NINA_GPIO0, (Serial.dtr() == 0) ? HIGH : LOW);
+                  ^~~~~~~~~~
+                  GPIO_GPIO0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:79:38: error: &#39;class UartClass&#39; has no member named &#39;dtr&#39;
+     digitalWrite(NINA_GPIO0, (Serial.dtr() == 0) ? HIGH : LOW);
+                                      ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:81:18: error: &#39;class UartClass&#39; has no member named &#39;dtr&#39;
+     dtr = Serial.dtr();
+                  ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:86:5: error: &#39;SerialNina&#39; was not declared in this scope
+     SerialNina.write(Serial.read());
+     ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:86:5: note: suggested alternative: &#39;Serial1&#39;
+     SerialNina.write(Serial.read());
+     ^~~~~~~~~~
+     Serial1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:89:7: error: &#39;SerialNina&#39; was not declared in this scope
+   if (SerialNina.available()) {
+       ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:89:7: note: suggested alternative: &#39;Serial1&#39;
+   if (SerialNina.available()) {
+       ^~~~~~~~~~
+       Serial1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:95:14: error: &#39;class UartClass&#39; has no member named &#39;baud&#39;; did you mean &#39;bind&#39;?
+   if (Serial.baud() != baud) {
+              ^~~~
+              bind
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:99:19: error: &#39;class UartClass&#39; has no member named &#39;baud&#39;; did you mean &#39;bind&#39;?
+     baud = Serial.baud();
+                   ^~~~
+                   bind
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:101:5: error: &#39;SerialNina&#39; was not declared in this scope
+     SerialNina.begin(baud);
+     ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:101:5: note: suggested alternative: &#39;Serial1&#39;
+     SerialNina.begin(baud);
+     ^~~~~~~~~~
+     Serial1
+
+</pre>
+					
+					<h4>examples/multiplication</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library FastBLE claims to run on samd architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/multiplication/multiplication.ino:8:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h: In member function &#39;void BLETypes::Output&lt;T&gt;::write(T)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h:19:7: error: &#39;Serial2&#39; was not declared in this scope
+       Serial2.write((uint8_t*)&amp;_n, 2);
+       ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h:19:7: note: suggested alternative: &#39;Serial1&#39;
+       Serial2.write((uint8_t*)&amp;_n, 2);
+       ^~~~~~~
+       Serial1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h: In member function &#39;virtual void BLETypes::Input&lt;T&gt;::setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h:42:7: error: &#39;Serial2&#39; was not declared in this scope
+       Serial2.write((uint8_t*)&amp;msg, sizeof(SetupMessage));
+       ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h:42:7: note: suggested alternative: &#39;Serial1&#39;
+       Serial2.write((uint8_t*)&amp;msg, sizeof(SetupMessage));
+       ^~~~~~~
+       Serial1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h: In member function &#39;virtual void BLETypes::Input&lt;T&gt;::receive()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h:47:7: error: &#39;Serial2&#39; was not declared in this scope
+       Serial2.readBytes((uint8_t*)&amp;x, sizeof(T));
+       ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h:47:7: note: suggested alternative: &#39;Serial1&#39;
+       Serial2.readBytes((uint8_t*)&amp;x, sizeof(T));
+       ^~~~~~~
+       Serial1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h: In member function &#39;BLETypes::Output&lt;T&gt; BLEClass::add_output(ble_uuid_any_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h:68:5: error: &#39;Serial2&#39; was not declared in this scope
+     Serial2.write((uint8_t*)&amp;msg, sizeof(SetupMessage));
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBLE.h:68:5: note: suggested alternative: &#39;Serial1&#39;
+     Serial2.write((uint8_t*)&amp;msg, sizeof(SetupMessage));
+     ^~~~~~~
+     Serial1
+
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 12172 bytes (4%) of program storage space. Maximum is 262144 bytes.
+Global variables use 3008 bytes (9%) of dynamic memory, leaving 29760 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+
+					
+					<h4>examples/SerialNINAPassthrough</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 12448 bytes (4%) of program storage space. Maximum is 262144 bytes.
+Global variables use 3012 bytes (9%) of dynamic memory, leaving 29756 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+					
+					<h4>examples/multiplication</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 12948 bytes (4%) of program storage space. Maximum is 262144 bytes.
+Global variables use 3012 bytes (9%) of dynamic memory, leaving 29756 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library FastBLE claims to run on samd architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBle.cpp: In member function &#39;void BLEClass::init_if_not_initialized()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBle.cpp:12:11: error: &#39;NINA_RESETN&#39; was not declared in this scope
+   pinMode(NINA_RESETN, OUTPUT);
+           ^
+
+</pre>
+
+					
+					<h4>examples/SerialNINAPassthrough</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:40:3: error: &#39;SerialNina&#39; was not declared in this scope
+   SerialNina.begin(baud);
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:46:11: error: &#39;NINA_GPIO0&#39; was not declared in this scope
+   pinMode(NINA_GPIO0, OUTPUT);
+           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:47:11: error: &#39;NINA_RESETN&#39; was not declared in this scope
+   pinMode(NINA_RESETN, OUTPUT);
+           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:64:21: error: &#39;class HardwareSerial&#39; has no member named &#39;rts&#39;
+   if (rts != Serial.rts()) {
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:70:18: error: &#39;NINA_RESETN&#39; was not declared in this scope
+     digitalWrite(NINA_RESETN, Serial.rts());
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:70:38: error: &#39;class HardwareSerial&#39; has no member named &#39;rts&#39;
+     digitalWrite(NINA_RESETN, Serial.rts());
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:72:18: error: &#39;class HardwareSerial&#39; has no member named &#39;rts&#39;
+     rts = Serial.rts();
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:75:21: error: &#39;class HardwareSerial&#39; has no member named &#39;dtr&#39;
+   if (dtr != Serial.dtr()) {
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:79:18: error: &#39;NINA_GPIO0&#39; was not declared in this scope
+     digitalWrite(NINA_GPIO0, (Serial.dtr() == 0) ? HIGH : LOW);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:79:38: error: &#39;class HardwareSerial&#39; has no member named &#39;dtr&#39;
+     digitalWrite(NINA_GPIO0, (Serial.dtr() == 0) ? HIGH : LOW);
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:81:18: error: &#39;class HardwareSerial&#39; has no member named &#39;dtr&#39;
+     dtr = Serial.dtr();
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:86:5: error: &#39;SerialNina&#39; was not declared in this scope
+     SerialNina.write(Serial.read());
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:89:7: error: &#39;SerialNina&#39; was not declared in this scope
+   if (SerialNina.available()) {
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:95:14: error: &#39;class HardwareSerial&#39; has no member named &#39;baud&#39;
+   if (Serial.baud() != baud) {
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:99:19: error: &#39;class HardwareSerial&#39; has no member named &#39;baud&#39;
+     baud = Serial.baud();
+                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/examples/SerialNINAPassthrough/SerialNINAPassthrough.ino:101:5: error: &#39;SerialNina&#39; was not declared in this scope
+     SerialNina.begin(baud);
+     ^
+
+</pre>
+					
+					<h4>examples/multiplication</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library FastBLE claims to run on samd architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBle.cpp: In member function &#39;void BLEClass::init_if_not_initialized()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/FastBLE/src/FastBle.cpp:12:11: error: &#39;NINA_RESETN&#39; was not declared in this scope
+   pinMode(NINA_RESETN, OUTPUT);
+           ^
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

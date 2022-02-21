@@ -1,0 +1,434 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>WearLeveling - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>WearLeveling</h2>
+				<p>
+					Version: <b>1.0.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/wearleveling/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>SimpleConfiguration</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+							<td>No ⚠️</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 444 bytes (1%) of program storage space. Maximum is 32256 bytes.
+Global variables use 9 bytes (0%) of dynamic memory, leaving 2039 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+
+					
+					<h4>examples/SimpleConfiguration</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/WearLeveling/examples/SimpleConfiguration/SimpleConfiguration.ino: In function &#39;void setup()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/WearLeveling/examples/SimpleConfiguration/SimpleConfiguration.ino:12:35: error: no matching function for call to &#39;EEPROMWearLevel::begin(int)&#39;
+   EEPROMwl.begin(AMOUNT_OF_INDEXES);
+                                   ^
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/WearLeveling/examples/SimpleConfiguration/SimpleConfiguration.ino:1:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/EEPROMWearLevel/src/EEPROMWearLevel.h:69:10: note: candidate: void EEPROMWearLevel::begin(byte, int)
+     void begin(const byte layoutVersion, const int amountOfIndexes);
+          ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/EEPROMWearLevel/src/EEPROMWearLevel.h:69:10: note:   candidate expects 2 arguments, 1 provided
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/EEPROMWearLevel/src/EEPROMWearLevel.h:81:10: note: candidate: void EEPROMWearLevel::begin(byte, int, int)
+     void begin(const byte layoutVersion, const int amountOfIndexes, const int eepromLengthToUse);
+          ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/EEPROMWearLevel/src/EEPROMWearLevel.h:81:10: note:   candidate expects 3 arguments, 1 provided
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/EEPROMWearLevel/src/EEPROMWearLevel.h:95:10: note: candidate: void EEPROMWearLevel::begin(byte, const int*, int)
+     void begin(const byte layoutVersion, const int lengths[], const int amountOfIndexes);
+          ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/EEPROMWearLevel/src/EEPROMWearLevel.h:95:10: note:   candidate expects 3 arguments, 1 provided
+Multiple libraries were found for &#34;EEPROMWearLevel.h&#34;
+  Used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/EEPROMWearLevel
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/WearLeveling
+Multiple libraries were found for &#34;EEPROM.h&#34;
+  Used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/EEPROM
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Hello_Drum
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/arduino-NVM
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WearLeveling/src/EEPROMWearLevel.cpp:1:10: fatal error: avr/io.h: No such file or directory
+ #include &lt;avr/io.h&gt;
+          ^~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/SimpleConfiguration</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EEPROMWearLevel/src/EEPROMWearLevel.h:23:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WearLeveling/examples/SimpleConfiguration/SimpleConfiguration.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum/src/EEPROM.h:25:10: fatal error: avr/eeprom.h: No such file or directory
+ #include &lt;avr/eeprom.h&gt;
+          ^~~~~~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;EEPROM.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/arduino-NVM
+Multiple libraries were found for &#34;EEPROMWearLevel.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EEPROMWearLevel
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WearLeveling
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library WearLeveling claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+Sketch uses 802 bytes (1%) of program storage space. Maximum is 49152 bytes.
+Global variables use 22 bytes (0%) of dynamic memory, leaving 6122 bytes for local variables. Maximum is 6144 bytes.
+</pre>
+
+					
+					<h4>examples/SimpleConfiguration</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WearLeveling/examples/SimpleConfiguration/SimpleConfiguration.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WearLeveling/examples/SimpleConfiguration/SimpleConfiguration.ino:12:35: error: no matching function for call to &#39;EEPROMWearLevel::begin(int)&#39;
+   EEPROMwl.begin(AMOUNT_OF_INDEXES);
+                                   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WearLeveling/examples/SimpleConfiguration/SimpleConfiguration.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EEPROMWearLevel/src/EEPROMWearLevel.h:69:10: note: candidate: void EEPROMWearLevel::begin(byte, int)
+     void begin(const byte layoutVersion, const int amountOfIndexes);
+          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EEPROMWearLevel/src/EEPROMWearLevel.h:69:10: note:   candidate expects 2 arguments, 1 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EEPROMWearLevel/src/EEPROMWearLevel.h:81:10: note: candidate: void EEPROMWearLevel::begin(byte, int, int)
+     void begin(const byte layoutVersion, const int amountOfIndexes, const int eepromLengthToUse);
+          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EEPROMWearLevel/src/EEPROMWearLevel.h:81:10: note:   candidate expects 3 arguments, 1 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EEPROMWearLevel/src/EEPROMWearLevel.h:95:10: note: candidate: void EEPROMWearLevel::begin(byte, const int*, int)
+     void begin(const byte layoutVersion, const int lengths[], const int amountOfIndexes);
+          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EEPROMWearLevel/src/EEPROMWearLevel.h:95:10: note:   candidate expects 3 arguments, 1 provided
+Multiple libraries were found for &#34;EEPROMWearLevel.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EEPROMWearLevel
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WearLeveling
+Multiple libraries were found for &#34;EEPROM.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/EEPROM
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/arduino-NVM
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/WearLeveling/src/EEPROMWearLevel.cpp:1:10: fatal error: avr/io.h: No such file or directory
+ #include &lt;avr/io.h&gt;
+          ^~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/SimpleConfiguration</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/EEPROMWearLevel/src/EEPROMWearLevel.h:23:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/WearLeveling/examples/SimpleConfiguration/SimpleConfiguration.ino:1:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Hello_Drum/src/EEPROM.h:25:10: fatal error: avr/eeprom.h: No such file or directory
+ #include &lt;avr/eeprom.h&gt;
+          ^~~~~~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;EEPROMWearLevel.h&#34;
+  Used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/EEPROMWearLevel
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/WearLeveling
+Multiple libraries were found for &#34;EEPROM.h&#34;
+  Used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Hello_Drum
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/arduino-NVM
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WearLeveling/src/EEPROMWearLevel.cpp:1:20: fatal error: avr/io.h: No such file or directory
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/SimpleConfiguration</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library EEPROMWearLevel claims to run on avr, megaavr architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WearLeveling/examples/SimpleConfiguration/SimpleConfiguration.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WearLeveling/examples/SimpleConfiguration/SimpleConfiguration.ino:12:35: error: no matching function for call to &#39;EEPROMWearLevel::begin(int)&#39;
+   EEPROMwl.begin(AMOUNT_OF_INDEXES);
+                                   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WearLeveling/examples/SimpleConfiguration/SimpleConfiguration.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EEPROMWearLevel/src/EEPROMWearLevel.h:69:10: note: candidate: void EEPROMWearLevel::begin(byte, int)
+     void begin(const byte layoutVersion, const int amountOfIndexes);
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EEPROMWearLevel/src/EEPROMWearLevel.h:69:10: note:   candidate expects 2 arguments, 1 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EEPROMWearLevel/src/EEPROMWearLevel.h:81:10: note: candidate: void EEPROMWearLevel::begin(byte, int, int)
+     void begin(const byte layoutVersion, const int amountOfIndexes, const int eepromLengthToUse);
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EEPROMWearLevel/src/EEPROMWearLevel.h:81:10: note:   candidate expects 3 arguments, 1 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EEPROMWearLevel/src/EEPROMWearLevel.h:95:10: note: candidate: void EEPROMWearLevel::begin(byte, const int*, int)
+     void begin(const byte layoutVersion, const int lengths[], const int amountOfIndexes);
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EEPROMWearLevel/src/EEPROMWearLevel.h:95:10: note:   candidate expects 3 arguments, 1 provided
+Multiple libraries were found for &#34;EEPROMWearLevel.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/EEPROMWearLevel
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WearLeveling
+Multiple libraries were found for &#34;EEPROM.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/EEPROM
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/arduino-NVM
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

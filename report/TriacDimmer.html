@@ -1,0 +1,575 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>TriacDimmer - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>TriacDimmer</h2>
+				<p>
+					Version: <b>1.1.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/triacdimmer/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>basic_example</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 1014 bytes (3%) of program storage space. Maximum is 32256 bytes.
+Global variables use 27 bytes (1%) of dynamic memory, leaving 2021 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+
+					
+					<h4>examples/basic_example</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 3118 bytes (9%) of program storage space. Maximum is 32256 bytes.
+Global variables use 39 bytes (1%) of dynamic memory, leaving 2009 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:4:10: fatal error: util/atomic.h: No such file or directory
+ #include &lt;util/atomic.h&gt;
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/basic_example</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:4:10: fatal error: util/atomic.h: No such file or directory
+ #include &lt;util/atomic.h&gt;
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library TriacDimmer claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp: In function &#39;void TriacDimmer::begin(uint16_t, uint16_t, float, float)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:32:2: error: &#39;TCCR1A&#39; was not declared in this scope
+  TCCR1A = 0;
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:32:2: note: suggested alternative: &#39;TCB1&#39;
+  TCCR1A = 0;
+  ^~~~~~
+  TCB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:33:2: error: &#39;TCCR1B&#39; was not declared in this scope
+  TCCR1B = _BV(ICNC1)  //input capture noise cancel
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:33:2: note: suggested alternative: &#39;TCB1&#39;
+  TCCR1B = _BV(ICNC1)  //input capture noise cancel
+  ^~~~~~
+  TCB1
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.h:11,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:33:15: error: &#39;ICNC1&#39; was not declared in this scope
+  TCCR1B = _BV(ICNC1)  //input capture noise cancel
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:34:10: error: &#39;ICES1&#39; was not declared in this scope
+    | _BV(ICES1) //positive edge
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:35:10: error: &#39;CS11&#39; was not declared in this scope
+    | _BV(CS11); // /8 prescaler
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:35:10: note: suggested alternative: &#39;B111&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:39:2: error: &#39;TIFR1&#39; was not declared in this scope
+  TIFR1 = _BV(ICF1); //clear IC interrupt flag
+  ^~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.h:11,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:39:14: error: &#39;ICF1&#39; was not declared in this scope
+  TIFR1 = _BV(ICF1); //clear IC interrupt flag
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:39:14: note: suggested alternative: &#39;TCB1&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:40:2: error: &#39;TIMSK1&#39; was not declared in this scope
+  TIMSK1 = _BV(ICIE1); //enable input capture interrupt
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:40:2: note: suggested alternative: &#39;TIMERB1&#39;
+  TIMSK1 = _BV(ICIE1); //enable input capture interrupt
+  ^~~~~~
+  TIMERB1
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.h:11,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:40:15: error: &#39;ICIE1&#39; was not declared in this scope
+  TIMSK1 = _BV(ICIE1); //enable input capture interrupt
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp: In function &#39;void TriacDimmer::end()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:44:2: error: &#39;TIMSK1&#39; was not declared in this scope
+  TIMSK1 = 0; //disable the interrupts first!
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:44:2: note: suggested alternative: &#39;TIMERB1&#39;
+  TIMSK1 = 0; //disable the interrupts first!
+  ^~~~~~
+  TIMERB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:45:2: error: &#39;TIFR1&#39; was not declared in this scope
+  TIFR1 = 0xFF; //clear all flags
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:46:2: error: &#39;TCCR1A&#39; was not declared in this scope
+  TCCR1A = 0; //clear to reset state
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:46:2: note: suggested alternative: &#39;TCB1&#39;
+  TCCR1A = 0; //clear to reset state
+  ^~~~~~
+  TCB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:47:2: error: &#39;TCCR1B&#39; was not declared in this scope
+  TCCR1B = 0;
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:47:2: note: suggested alternative: &#39;TCB1&#39;
+  TCCR1B = 0;
+  ^~~~~~
+  TCB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp: In function &#39;void TriacDimmer::detail::disableChannelA()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:139:2: error: &#39;TCCR1A&#39; was not declared in this scope
+  TCCR1A &amp;=~ _BV(COM1A0) | _BV(COM1A1);
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:139:2: note: suggested alternative: &#39;TCB1&#39;
+  TCCR1A &amp;=~ _BV(COM1A0) | _BV(COM1A1);
+  ^~~~~~
+  TCB1
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.h:11,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:139:17: error: &#39;COM1A0&#39; was not declared in this scope
+  TCCR1A &amp;=~ _BV(COM1A0) | _BV(COM1A1);
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:139:31: error: &#39;COM1A1&#39; was not declared in this scope
+  TCCR1A &amp;=~ _BV(COM1A0) | _BV(COM1A1);
+                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp: In function &#39;void TriacDimmer::detail::disableChannelB()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:144:2: error: &#39;TCC</pre>
+
+					
+					<h4>examples/basic_example</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library TriacDimmer claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp: In function &#39;void TriacDimmer::begin(uint16_t, uint16_t, float, float)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:32:2: error: &#39;TCCR1A&#39; was not declared in this scope
+  TCCR1A = 0;
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:32:2: note: suggested alternative: &#39;TCB1&#39;
+  TCCR1A = 0;
+  ^~~~~~
+  TCB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:33:2: error: &#39;TCCR1B&#39; was not declared in this scope
+  TCCR1B = _BV(ICNC1)  //input capture noise cancel
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:33:2: note: suggested alternative: &#39;TCB1&#39;
+  TCCR1B = _BV(ICNC1)  //input capture noise cancel
+  ^~~~~~
+  TCB1
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.h:11,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:33:15: error: &#39;ICNC1&#39; was not declared in this scope
+  TCCR1B = _BV(ICNC1)  //input capture noise cancel
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:34:10: error: &#39;ICES1&#39; was not declared in this scope
+    | _BV(ICES1) //positive edge
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:35:10: error: &#39;CS11&#39; was not declared in this scope
+    | _BV(CS11); // /8 prescaler
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:35:10: note: suggested alternative: &#39;B111&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:39:2: error: &#39;TIFR1&#39; was not declared in this scope
+  TIFR1 = _BV(ICF1); //clear IC interrupt flag
+  ^~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.h:11,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:39:14: error: &#39;ICF1&#39; was not declared in this scope
+  TIFR1 = _BV(ICF1); //clear IC interrupt flag
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:39:14: note: suggested alternative: &#39;TCB1&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:40:2: error: &#39;TIMSK1&#39; was not declared in this scope
+  TIMSK1 = _BV(ICIE1); //enable input capture interrupt
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:40:2: note: suggested alternative: &#39;TIMERB1&#39;
+  TIMSK1 = _BV(ICIE1); //enable input capture interrupt
+  ^~~~~~
+  TIMERB1
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.h:11,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:40:15: error: &#39;ICIE1&#39; was not declared in this scope
+  TIMSK1 = _BV(ICIE1); //enable input capture interrupt
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp: In function &#39;void TriacDimmer::end()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:44:2: error: &#39;TIMSK1&#39; was not declared in this scope
+  TIMSK1 = 0; //disable the interrupts first!
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:44:2: note: suggested alternative: &#39;TIMERB1&#39;
+  TIMSK1 = 0; //disable the interrupts first!
+  ^~~~~~
+  TIMERB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:45:2: error: &#39;TIFR1&#39; was not declared in this scope
+  TIFR1 = 0xFF; //clear all flags
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:46:2: error: &#39;TCCR1A&#39; was not declared in this scope
+  TCCR1A = 0; //clear to reset state
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:46:2: note: suggested alternative: &#39;TCB1&#39;
+  TCCR1A = 0; //clear to reset state
+  ^~~~~~
+  TCB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:47:2: error: &#39;TCCR1B&#39; was not declared in this scope
+  TCCR1B = 0;
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:47:2: note: suggested alternative: &#39;TCB1&#39;
+  TCCR1B = 0;
+  ^~~~~~
+  TCB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp: In function &#39;void TriacDimmer::detail::disableChannelA()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:139:2: error: &#39;TCCR1A&#39; was not declared in this scope
+  TCCR1A &amp;=~ _BV(COM1A0) | _BV(COM1A1);
+  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:139:2: note: suggested alternative: &#39;TCB1&#39;
+  TCCR1A &amp;=~ _BV(COM1A0) | _BV(COM1A1);
+  ^~~~~~
+  TCB1
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.h:11,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:139:17: error: &#39;COM1A0&#39; was not declared in this scope
+  TCCR1A &amp;=~ _BV(COM1A0) | _BV(COM1A1);
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:139:31: error: &#39;COM1A1&#39; was not declared in this scope
+  TCCR1A &amp;=~ _BV(COM1A0) | _BV(COM1A1);
+                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp: In function &#39;void TriacDimmer::detail::disableChannelB()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:144:2: error: &#39;TCC</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:4:10: fatal error: util/atomic.h: No such file or directory
+ #include &lt;util/atomic.h&gt;
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/basic_example</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:4:10: fatal error: util/atomic.h: No such file or directory
+ #include &lt;util/atomic.h&gt;
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:4:25: fatal error: util/atomic.h: No such file or directory
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/basic_example</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TriacDimmer/src/TriacDimmer.cpp:4:25: fatal error: util/atomic.h: No such file or directory
+compilation terminated.
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

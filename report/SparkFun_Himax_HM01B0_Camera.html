@@ -1,0 +1,382 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>SparkFun Himax HM01B0 Camera - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>SparkFun Himax HM01B0 Camera</h2>
+				<p>
+					Version: <b>0.0.3</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/sparkfun-himax-hm01b0-camera/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>SparkFun_Edge</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/SparkFun_Himax_HM01B0_Camera/src/hm01b0_arduino.cpp:23:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/SparkFun_Himax_HM01B0_Camera/src/hm01b0_arduino.h:44:58: error: overflow in constant expression
+   uint8_t               frameBuffer[frameBufferSize] = {0};
+                                                          ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/SparkFun_Himax_HM01B0_Camera/src/hm01b0_arduino.h:44:58: error: size of array &#39;frameBuffer&#39; is too large
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/SparkFun_Himax_HM01B0_Camera/src/hm01b0_arduino.cpp: In member function &#39;hm01b0_status_e HM01B0::calibrateAutoExposure()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/SparkFun_Himax_HM01B0_Camera/src/hm01b0_arduino.cpp:59:36: error: &#39;frameBuffer&#39; was not declared in this scope
+   status = hm01b0_cal_ae(&amp;cfg, 10, frameBuffer, sizeof(frameBuffer), &amp;aecfg);
+                                    ^~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/SparkFun_Himax_HM01B0_Camera/src/hm01b0_arduino.cpp:59:36: note: suggested alternative: &#39;frameBufferSize&#39;
+   status = hm01b0_cal_ae(&amp;cfg, 10, frameBuffer, sizeof(frameBuffer), &amp;aecfg);
+                                    ^~~~~~~~~~~
+                                    frameBufferSize
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/SparkFun_Himax_HM01B0_Camera/src/hm01b0_arduino.cpp: In member function &#39;uint32_t HM01B0::countTestMismatches()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/SparkFun_Himax_HM01B0_Camera/src/hm01b0_arduino.cpp:70:56: error: &#39;frameBuffer&#39; was not declared in this scope
+   mismatches = hm01b0_test_walking1s_check_data_sanity(frameBuffer, sizeof(frameBuffer));
+                                                        ^~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/SparkFun_Himax_HM01B0_Camera/src/hm01b0_arduino.cpp:70:56: note: suggested alternative: &#39;frameBufferSize&#39;
+   mismatches = hm01b0_test_walking1s_check_data_sanity(frameBuffer, sizeof(frameBuffer));
+                                                        ^~~~~~~~~~~
+                                                        frameBufferSize
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/SparkFun_Himax_HM01B0_Camera/src/hm01b0_arduino.cpp: In member function &#39;hm01b0_status_e HM01B0::capture()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/SparkFun_Himax_HM01B0_Camera/src/hm01b0_arduino.cpp:85:39: error: &#39;frameBuffer&#39; was not declared in this scope
+   hm01b0_blocking_read_oneframe(&amp;cfg, frameBuffer, sizeof(frameBuffer));
+                                       ^~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/SparkFun_Himax_HM01B0_Camera/src/hm01b0_arduino.cpp:85:39: note: suggested alternative: &#39;frameBufferSize&#39;
+   hm01b0_blocking_read_oneframe(&amp;cfg, frameBuffer, sizeof(frameBuffer));
+                                       ^~~~~~~~~~~
+                                       frameBufferSize
+
+</pre>
+
+					
+					<h4>examples/SparkFun_Edge</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable"></pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">
+</pre>
+
+					
+					<h4>examples/SparkFun_Edge</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable"></pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Himax_HM01B0_Camera/src/hm01b0_c/src/hm01b0_c.c:20:2: error: #error &#34;Unsupported platform: Submit an issue / pull request to https://github.com/sparkfun/SparkFun_HM01B0_Camera_ArduinoLibrary to add support for your target&#34;
+ #error &#34;Unsupported platform: Submit an issue / pull request to https://github.com/sparkfun/SparkFun_HM01B0_Camera_Arduino/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Himax_HM01B0_Camera/src/hm01b0_arduino.h:44:58: error: size of array &#39;frameBuffer&#39; is too large
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Himax_HM01B0_Camera/src/hm01b0_arduino.cpp: In member function &#39;hm01b0_status_e HM01B0::calibrateAutoExposure()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Himax_HM01B0_Camera/src/hm01b0_arduino.cpp:59:36: error: &#39;frameBuffer&#39; was not declared in this scope
+   status = hm01b0_cal_ae(&amp;cfg, 10, frameBuffer, sizeof(frameBuffer), &amp;aecfg);
+                                    ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Himax_HM01B0_Camera/src/hm01b0_arduino.cpp:59:36: note: suggested alternative: &#39;frameBufferSize&#39;
+   status = hm01b0_cal_ae(&amp;cfg, 10, frameBuffer, sizeof(frameBuffer), &amp;aecfg);
+                                    ^~~~~~~~~~~
+                                    frameBufferSize
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Himax_HM01B0_Camera/src/hm01b0_arduino.cpp: In member function &#39;uint32_t HM01B0::countTestMismatches()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Himax_HM01B0_Camera/src/hm01b0_arduino.cpp:70:56: error: &#39;frameBuffer&#39; was not declared in this scope
+   mismatches = hm01b0_test_walking1s_check_data_sanity(frameBuffer, sizeof(frameBuffer));
+                                                        ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Himax_HM01B0_Camera/src/hm01b0_arduino.cpp:70:56: note: suggested alternative: &#39;frameBufferSize&#39;
+   mismatches = hm01b0_test_walking1s_check_data_sanity(frameBuffer, sizeof(frameBuffer));
+                                                        ^~~~~~~~~~~
+                                                        frameBufferSize
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Himax_HM01B0_Camera/src/hm01b0_arduino.cpp: In member function &#39;hm01b0_status_e HM01B0::capture()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Himax_HM01B0_Camera/src/hm01b0_arduino.cpp:85:39: error: &#39;frameBuffer&#39; was not declared in this scope
+   hm01b0_blocking_read_oneframe(&amp;cfg, frameBuffer, sizeof(frameBuffer));
+                                       ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SparkFun_Himax_HM01B0_Camera/src/hm01b0_arduino.cpp:85:39: note: suggested alternative: &#39;frameBufferSize&#39;
+   hm01b0_blocking_read_oneframe(&amp;cfg, frameBuffer, sizeof(frameBuffer));
+                                       ^~~~~~~~~~~
+                                       frameBufferSize
+
+</pre>
+
+					
+					<h4>examples/SparkFun_Edge</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable"></pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/SparkFun_Himax_HM01B0_Camera/src/hm01b0_c/src/hm01b0_c.c:20:2: error: #error &#34;Unsupported platform: Submit an issue / pull request to https://github.com/sparkfun/SparkFun_HM01B0_Camera_ArduinoLibrary to add support for your target&#34;
+ #error &#34;Unsupported platform: Submit an issue / pull request to https://github.com/sparkfun/SparkFun_HM01B0_Camera_ArduinoLibrary to add support for your target&#34;
+  ^~~~~
+
+</pre>
+
+					
+					<h4>examples/SparkFun_Edge</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable"></pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">
+</pre>
+
+					
+					<h4>examples/SparkFun_Edge</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable"></pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

@@ -1,0 +1,818 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>STM32duino X-NUCLEO-IHM02A1 - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>STM32duino X-NUCLEO-IHM02A1</h2>
+				<p>
+					Version: <b>1.0.2</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/stm32duino-x-nucleo-ihm02a1/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>X_NUCLEO_IHM02A1_HelloWorld</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library STM32duino_X-NUCLEO-IHM02A1 claims to run on stm32 architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/L6470.cpp:51:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/L6470.h: In member function &#39;status_t L6470::ReadWrite(uint8_t*, uint8_t*, uint16_t)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/L6470.h:1418:66: error: no matching function for ca
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/L6470.h:1418:66: error: no matching function for call to &#39;SPIClass::transfer(uint8_t*&amp;, uint8_t*&amp;, uint16_t&amp;)&#39;
+         dev_spi-&gt;transfer(pBufferToWrite, pBufferToRead, NumBytes);
+                                                                  ^
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/XNucleoIHM02A1.cpp:48:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/SPI/src/SPI.h:208:25: note: candidate: static uint8_t SPIClass::transfer(uint8_t)
+   inline static uint8_t transfer(uint8_t data) {
+                         ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/SPI/src/SPI.h:208:25: note:   candidate expects 1 argument, 3 provided
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/SPI/src/SPI.h:244:22: note: candidate: static void SPIClass::transfer(void*, size_t)
+   inline static void transfer(void *buf, size_t count) {
+                      ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/SPI/src/SPI.h:244:22: note:   candidate expects 2 arguments, 3 provided
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/XNucleoIHM02A1.h:58:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/XNucleoIHM02A1.cpp:52:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/XNucleoIHM02A1.cpp: In constructor &#39;XNucleoIHM02A1::XNucleoIHM02A1(L6470_init_t*, L64/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/L6470.cpp:1278:50: note: suggested alternative: &#39;_NOP&#39;
+     for (delay_cnt=0; delay_cnt&lt;20; delay_cnt&#43;&#43;) __NOP();   //!&lt;Simply deselect time delay for SPI nCS
+                                                  ^~~~~
+                                                  _NOP
+
+</pre>
+
+					
+					<h4>examples/X_NUCLEO_IHM02A1_HelloWorld</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library STM32duino_X-NUCLEO-IHM02A1 claims to run on stm32 architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/XNucleoIHM02A1.h:66:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:49:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/L6470.h: In member function &#39;status_t L6470::ReadWrite(uint8_t*, uint8_t*, uint16_t)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/L6470.h:1418:66: error: no matching function for call to &#39;SPIClass::transfer(uint8_t*&amp;, uint8_t*&amp;, uint16_t&amp;)&#39;
+         dev_spi-&gt;transfer(pBufferToWrite, pBufferToRead, NumBytes);
+                                                                  ^
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:46:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/SPI/src/SPI.h:208:25: note: candidate: static uint8_t SPIClass::transfer(uint8_t)
+   inline static uint8_t transfer(uint8_t data) {
+                         ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/SPI/src/SPI.h:208:25: note:   candidate expects 1 argument, 3 provided
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/SPI/src/SPI.h:244:22: note: candidate: static void SPIClass::transfer(void*, size_t)
+   inline static void transfer(void *buf, size_t count) {
+                      ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/SPI/src/SPI.h:244:22: note:   candidate expects 2 arguments, 3 provided
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino: In function &#39;void setup()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:143:28: error: &#39;D11&#39; was not declared in this scope
+     dev_spi = new SPIClass(D11, D12, D3);
+                            ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:143:28: note: suggested alternative: &#39;B11&#39;
+     dev_spi = new SPIClass(D11, D12, D3);
+                            ^~~
+                            B11
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:143:33: error: &#39;D12&#39; was not declared in this scope
+     dev_spi = new SPIClass(D11, D12, D3);
+                                 ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:143:33: note: suggested alternative: &#39;DD2&#39;
+     dev_spi = new SPIClass(D11, D12, D3);
+                                 ^~~
+                                 DD2
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:143:38: error: &#39;D3&#39; was not declared in this scope
+     dev_spi = new SPIClass(D11, D12, D3);
+                                      ^~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:143:38: note: suggested alternative: &#39;A3&#39;
+     dev_spi = new SPIClass(D11, D12, D3);
+                                      ^~
+                                      A3
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:147:83: error: &#39;D4&#39; was not declared in this scope
+     x_nucleo_ihm02a1 = new XNucleoIHM02A1(&amp;L6470_init[0], &amp;L6470_init[1], A4, A5, D4, A2, dev_spi);
+                                                                                   ^~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:147:83: note: suggested alternative: &#39;A4&#39;
+     x_nucleo_ihm02a1 = new XNucleoIHM02A1(&amp;L6470_init[0], &amp;L6470_init[1], A4, A5, D4, A2, dev_spi);
+                                                                                   ^~
+                                                                                   A4
+
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library STM32duino_X-NUCLEO-IHM02A1 claims to run on stm32 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/L6470.cpp:51:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/L6470.h: In member function &#39;status_t L6470::ReadWrite(uint8_t*, uint8_t*, uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/L6470.h:1418:66: error: no matching function for call to &#39;arduino::HardwareSPI::transfer(uint8_t*&amp;, uint8_t*&amp;, uint16ino_X-NUCLEO-IHM02A1/src/L6470.h:1418:66: error: no matching function for call to &#39;arduino::HardwareSPI::transfer(uint8_t*&amp;, uint8_t*&amp;, uint16_t&amp;)&#39;
+         dev_spi-&gt;transfer(pBufferToWrite, pBufferToRead, NumBytes);
+                                                                  ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/libraries/SPI/SPI.h:22:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/XNucleoIHM02A1.cpp:48:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/HardwareSPI.h:109:21: note: candidate: virtual uint8_t arduino::HardwareSPI::transfer(uint8_t)
+     virtual uint8_t transfer(uint8_t data) = 0;
+                     ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/HardwareSPI.h:109:21: note:   candidate expects 1 argument, 3 provided
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/HardwareSPI.h:111:18: note: candidate: virtual void arduino::HardwareSPI::transfer(void*, size_t)
+     virtual void transfer(void *buf, size_t count) = 0;
+                  ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/HardwareSPI.h:111:18: note:   candidate expects 2 arguments, 3 provided
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/XNucleoIHM02A1.h:58:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/XNucleoIHM02A1.cpp:52:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/XNucleoIHM02A1.cpp: In constructor &#39;XNucleoIHM02A1::XNucleoIHM02A1(L6470_init_t*, L6470_init_t*, uint8_t, uint8_t, uint8_t, uint8_t, arduino::SPIClass*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/x_nucleo_ihm02a1_config.h:71:40: error: &#39;D11&#39; was not declared in this scope
+ #define X_NUCLEO_IHM02A1_PIN_SPI_MOSI (D11)
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/XNucleoIHM02A1.cpp:83:32: note: in expansion of macro &#39;X_NUCLEO_IHM02A1_PIN_SPI_MOSI&#39;
+         dev_spi = new SPIClass(X_NUCLEO_IHM02A1_PIN_SPI_MOSI, X_NUCLEO_IHM02A1_PIN_SPI_MISO, X_NUCLEO_IHM02A1_PIN_SPI_SCLK);
+                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/x_nucleo_ihm02a1_config.h:71:40: note: suggested alternative: &#39;B11&#39;
+ #define X_NUCLEO_IHM02A1_PIN_SPI_MOSI (D11)
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/XNucleoIHM02A1.cpp:83:32: note: in expansion of macro &#39;X_NUCLEO_IHM02A1_PIN_SPI_MOSI&#39;
+         dev_spi = new SPIClass(X_NUCLEO_IHM02A1_PIN_SPI_MOSI, X_NUCLEO_IHM02A1_PIN_SPI_MISO, X_NUCLEO_IHM02A1_PIN_SPI_SCLK);
+                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/x_nucleo_ihm02a1_config.h:72:40: error: &#39;D12&#39; was not declared in this scope
+ #define X_NUCLEO_IHM02A1_PIN_SPI_MISO (D12)
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/XNucleoIHM02A1.cpp:83:63: note: in expansion of macro &#39;X_NUCLEO_IHM02A1_PIN_SPI_MISO&#39;
+         dev_spi = new SPIClass(X_NUCLEO_IHM02A1_PIN_SPI_MOSI, X_NUCLEO_IHM02A1_PIN_SPI_MISO, X_NUCLEO_IHM02A1_PIN_SPI_SCLK);
+                                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/x_nucleo_ihm02a1_config.h:72:40: note: suggested alternative: &#39;p12&#39;
+ #define X_NUCLEO_IHM02A1_PIN_SPI_MISO (D12)
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/XNucleoIHM02A1.cpp:83:63: note: in expansion of macro &#39;X_NUCLEO_IHM02A1_PIN_SPI_MISO&#39;
+         dev_spi = new SPIClass(X_NUCLEO_IHM02A1_PIN_SPI_MOSI, X_NUCLEO_IHM02A1_PIN_SPI_MISO, X_NUCLEO_IHM02A1_PIN_SPI_SCLK);
+                                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/x_nucleo_ihm02a1_config.h:73:40: error: &#39;D13&#39; was not declared in this scope
+ #define X_NUCLEO_IHM02A1_PIN_SPI_SCLK (D13)
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/XNucleoIHM02A1.cpp:83:94: note: in expansion of macro &#39;X_NUCLEO_IHM02A1_PIN_SPI_SCLK&#39;
+         dev_spi = new SPIClass(X_NUCLEO_IHM02A1_PIN_SPI_MOSI, X_NUCLEO_IHM02A1_PIN_SPI_MISO, X_NUCLEO_IHM02A1_PIN_SPI_SCLK);
+                                                                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/x_nucleo_ihm02a1_config.h:73:40: note: suggested alternative: &#39;p13&#39;
+ #define X_NUCLEO_IHM02A1_PIN_SPI_SCLK (D13)
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/XNucleoIHM02A1.cpp:83:94: note: in expansion of macro &#39;X_NUCLEO_IHM02A1_PIN_SPI_SCLK&#39;
+         dev_spi = new SPIClass(X_NUCLEO_IHM02A1_PIN_SPI_MOSI, X_NUCLEO_IHM02A1_PIN_SPI_MISO, X_NUCLEO_IHM02A1_PIN_SPI_SCLK);
+                                                                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/XNucleoIHM02A1.cpp:83:123: error: invalid new-expression of abstract class type &#39;arduino::HardwareSPI&#39;
+         dev_spi = new SPIClass(X_NUCLEO_IHM02A1_PIN_SPI_MOSI, X_NUCLEO_IHM02A1_PIN_SPI_MISO, X_NUCLEO_IHM02A1_PIN_SPI_SCLK);
+                                                                                                                           ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/libraries/SPI/SPI.h:22:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/XNucleoIHM02A1.cpp:48:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/HardwareSPI.h:104:7: note:   because the following virtual functions are pure within &#39;arduino::HardwareSPI&#39;:
+ class HardwareSPI
+       ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/HardwareSPI.h:109:21: note: 	virtual uint8_t arduino::HardwareSPI::transfer(uint8_t)
+     virtual uint8_t transfer(uint8_t data) = 0;
+                     ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/HardwareSPI.h:110:22: note: 	virtual uint16_t arduino::HardwareSPI::transfer16(uint16_t)
+     virtual uint16_t transfer16(uint16_t data) = 0;
+                      ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/HardwareSPI.h:111:18: note: 	virtual void arduino::HardwareSPI::transfer(void*, size_t)
+     virtual void transfer(void *buf, size_t count) = 0;
+                  ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/HardwareSPI.h:114:18: note: 	virtual void arduino::HardwareSPI::usingInterrupt(int)
+     virtual void usingInterrupt(int interruptNumber) = 0;
+                  ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/HardwareSPI.h:115:18: note: 	virtual void arduino::HardwareSPI::notUsingInterrupt(int)
+     virtual void notUsingInterrupt(int interruptNumber) = 0;
+                  ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/HardwareSPI.h:116:18: note: 	virtual void arduino::HardwareSPI::beginTransaction(arduino::SPISettings)
+     virtual void beginTransaction(SPISettings settings) = 0;
+                  ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/HardwareSPI.h:117:18: note: 	virtual void arduino::HardwareSPI::endTransaction()
+     virtual void endTransaction(void) = 0;
+                  ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/HardwareSPI.h:120:18: note: 	virtual void arduino::HardwareSPI::attachInterrupt()
+     virtual void attachInterrupt() = 0;
+                  ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/HardwareSPI.h:121:18: note: 	virtual void arduino::HardwareSPI::detachInterrupt()
+     virtual void detachInterru</pre>
+
+					
+					<h4>examples/X_NUCLEO_IHM02A1_HelloWorld</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library STM32duino_X-NUCLEO-IHM02A1 claims to run on stm32 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/XNucleoIHM02A1.h:66:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:49:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/L6470.h: In member function &#39;status_t L6470::ReadWrite(uint8_t*, uint8_t*, uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/L6470.h:1418:66: error: no matching function for call to &#39;arduino::HardwareSPI::transfer(uint8_t*&amp;, uint8_t*&amp;, uint16_t&amp;)&#39;
+         dev_spi-&gt;transfer(pBufferToWrite, pBufferToRead, NumBytes);
+                                                                  ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/libraries/SPI/SPI.h:22:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:46:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/HardwareSPI.h:109:21: note: candidate: virtual uint8_t arduino::HardwareSPI::transfer(uint8_t)
+     virtual uint8_t transfer(uint8_t data) = 0;
+                     ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/HardwareSPI.h:109:21: note:   candidate expects 1 argument, 3 provided
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/HardwareSPI.h:111:18: note: candidate: virtual void arduino::HardwareSPI::transfer(void*, size_t)
+     virtual void transfer(void *buf, size_t count) = 0;
+                  ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/HardwareSPI.h:111:18: note:   candidate expects 2 arguments, 3 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:143:28: error: &#39;D11&#39; was not declared in this scope
+     dev_spi = new SPIClass(D11, D12, D3);
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:143:28: note: suggested alternative: &#39;B11&#39;
+     dev_spi = new SPIClass(D11, D12, D3);
+                            ^~~
+                            B11
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:143:33: error: &#39;D12&#39; was not declared in this scope
+     dev_spi = new SPIClass(D11, D12, D3);
+                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:143:33: note: suggested alternative: &#39;p12&#39;
+     dev_spi = new SPIClass(D11, D12, D3);
+                                 ^~~
+                                 p12
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:143:38: error: &#39;D3&#39; was not declared in this scope
+     dev_spi = new SPIClass(D11, D12, D3);
+                                      ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:143:38: note: suggested alternative: &#39;A3&#39;
+     dev_spi = new SPIClass(D11, D12, D3);
+                                      ^~
+                                      A3
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:143:40: error: invalid new-expression of abstract class type &#39;arduino::HardwareSPI&#39;
+     dev_spi = new SPIClass(D11, D12, D3);
+                                        ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/libraries/SPI/SPI.h:22:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:46:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/HardwareSPI.h:104:7: note:   because the following virtual functions are pure within &#39;arduino::HardwareSPI&#39;:
+ class HardwareSPI
+       ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/HardwareSPI.h:109:21: note: 	virtual uint8_t arduino::HardwareSPI::transfer(uint8_t)
+     virtual uint8_t transfer(uint8_t data) = 0;
+                     ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/HardwareSPI.h:110:22: note: 	virtual uint16_t arduino::HardwareSPI::transfer16(uint16_t)
+     virtual uint16_t transfer16(uint16_t data) = 0;
+                      ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/HardwareSPI.h:111:18: note: 	virtual void arduino::HardwareSPI::transfer(void*, size_t)
+     virtual void transfer(void *buf, size_t count) = 0;
+                  ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/HardwareSPI.h:114:18: note: 	virtual void arduino::HardwareSPI::usingInterrupt(int)
+     virtual void usingInterrupt(int interruptNumber) = 0;
+                  ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/HardwareSPI.h:115:18: note: 	virtual void arduino::HardwareSPI::notUsingInterrupt(int)
+     virtual void notUsingInterrupt(int interruptNumber) = 0;
+                  ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/HardwareSPI.h:116:18: note: 	virtual void arduino::HardwareSPI::beginTransaction(arduino::SPISettings)
+     virtual void beginTransaction(SPISettings settings) = 0;
+                  ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/HardwareSPI.h:117:18: note: 	virtual void arduino::HardwareSPI::endTransaction()
+     virtual void endTransaction(void) = 0;
+                  ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/HardwareSPI.h:120:18: note: 	virtual void arduino::HardwareSPI::attachInterrupt()
+     virtual void attachInterrupt() = 0;
+                  ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/HardwareSPI.h:121:18: note: 	virtual void arduino::HardwareSPI::detachInterrupt()
+     virtual void detachInterrupt() = 0;
+                  ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/HardwareSPI.h:123:18: note: 	virtual void arduino::HardwareSPI::begin()
+     virtual void begin() = 0;
+                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/HardwareSPI.h:124:18: note: 	virtual void arduino::HardwareSPI::end()
+     virtual void end() = 0;
+                  ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:147:83: error: &#39;D4&#39; was not declared in this scope
+     x_nucleo_ihm02a1 = new XNucleoIHM02A1(&amp;L6470_init[0], &amp;L6470_init[1], A4, A5, D4, A2, dev_spi);
+                                                                                   ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:147:83: note: suggested alternative: &#39;A4&#39;
+     x_nucleo_ihm02a1 = new XNucleoIHM02A1(&amp;L6470_init[0], &amp;L6470_init[1], A4, A5, D4, A2, dev_spi);
+                                                                                   ^~
+                                                                                   A4
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library STM32duino_X-NUCLEO-IHM02A1 claims to run on stm32 architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/XNucleoIHM02A1.h:66:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/XNucleoIHM02A1.cpp:52:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/L6470.h: In member function &#39;status_t L6470::ReadWrite(uint8_t*, uint8_t*, uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32du
+         dev_spi-&gt;transfer(pBufferToWrite, pBufferToRead, NumBytes);
+                                                                  ^
+t&amp;)&#39;
+         dev_spi-&gt;transfer(pBufferToWrite, pBufferToRead, NumBytes);
+                                                                  ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/XNucleoIHM02A1.cpp:48:0:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/SPI/src/SPI.h:155:8: note: candidate: virtual byte SPIClassMegaAVR::transfer(uint8_t)
+   byte transfer(uint8_t data);
+        ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/SPI/src/SPI.h:155:8: note:   candidate expe/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/SPI/src/SPI.h:157:8: note: candidate: virtual void SPIClassMegaAVR::transfer(void*, size_t)
+   void transfer(void *buf, size_t count);
+        ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/SPI/src/SPI.h:157:8: note:   candidate expects 2 arguments, 3 provided
+ts 2 arguments, 3 provided
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/XNucleoIHM02A1.h:58:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/XNucleoIHM02A1.cpp:52:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/XNucleoIHM02A1.cpp: In constructor &#39;XNucleoIHM02A1::XNucleoIHM02A1(L6470_init_t*, L6470_init_t*, uint8_t, u/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/L6470.cpp:1278:50: note: suggested alternative: &#39;_NOP&#39;
+     for (delay_cnt=0; delay_cnt&lt;20; delay_cnt&#43;&#43;) __NOP();   //!&lt;Simply deselect time delay for SPI nCS
+                                                  ^~~~~
+                                                  _NOP
+
+</pre>
+
+					
+					<h4>examples/X_NUCLEO_IHM02A1_HelloWorld</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library STM32duino_X-NUCLEO-IHM02A1 claims to run on stm32 architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/XNucleoIHM02A1.h:66:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:49:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/L6470.h: In member function &#39;status_t L6470::ReadWrite(uint8_t*, uint8_t*, uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/L6470.h:1418:66: error: no matching function for call to &#39;SPIClassMegaAVR::transfer(uint8_t*&amp;, uint8_t*&amp;, uint16_t&amp;)&#39;
+         dev_spi-&gt;transfer(pBufferToWrite, pBufferToRead, NumBytes);
+                                                                  ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:46:0:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/SPI/src/SPI.h:155:8: note: candidate: virtual byte SPIClassMegaAVR::transfer(uint8_t)
+   byte transfer(uint8_t data);
+        ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/SPI/src/SPI.h:155:8: note:   candidate expects 1 argument, 3 provided
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/SPI/src/SPI.h:157:8: note: candidate: virtual void SPIClassMegaAVR::transfer(void*, size_t)
+   void transfer(void *buf, size_t count);
+        ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/SPI/src/SPI.h:157:8: note:   candidate expects 2 arguments, 3 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:143:28: error: &#39;D11&#39; was not declared in this scope
+     dev_spi = new SPIClass(D11, D12, D3);
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:143:28: note: suggested alternative: &#39;B11&#39;
+     dev_spi = new SPIClass(D11, D12, D3);
+                            ^~~
+                            B11
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:143:33: error: &#39;D12&#39; was not declared in this scope
+     dev_spi = new SPIClass(D11, D12, D3);
+                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:143:33: note: suggested alternative: &#39;DD2&#39;
+     dev_spi = new SPIClass(D11, D12, D3);
+                                 ^~~
+                                 DD2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:143:38: error: &#39;D3&#39; was not declared in this scope
+     dev_spi = new SPIClass(D11, D12, D3);
+                                      ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:143:38: note: suggested alternative: &#39;A3&#39;
+     dev_spi = new SPIClass(D11, D12, D3);
+                                      ^~
+                                      A3
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:147:83: error: &#39;D4&#39; was not declared in this scope
+     x_nucleo_ihm02a1 = new XNucleoIHM02A1(&amp;L6470_init[0], &amp;L6470_init[1], A4, A5, D4, A2, dev_spi);
+                                                                                   ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:147:83: note: suggested alternative: &#39;A4&#39;
+     x_nucleo_ihm02a1 = new XNucleoIHM02A1(&amp;L6470_init[0], &amp;L6470_init[1], A4, A5, D4, A2, dev_spi);
+                                                                                   ^~
+                                                                                   A4
+
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library STM32duino_X-NUCLEO-IHM02A1 claims to run on stm32 architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/L6470.cpp:51:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/L6470.h: In member function &#39;status_t L6470::ReadWrite(uint8_t*, uint8_t*, uint16_t)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/L6470.h:1418:66: error: no matching function for call to &#39;arduino::HardwareSPI::transfer(uint8_t*&amp;, uint8_t*&amp;, uint16_t&amp;)&#39;
+         dev_spi-&gt;transfer(pBufferToWrite, pBufferToRead, NumBytes);
+                                                                  ^
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/libraries/SPI/SPI.h:24:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/L6470.h:62,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/L6470.cpp:51:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/HardwareSPI.h:109:21: note: candidate: virtual uint8_t arduino::HardwareSPI::transfer(uint8_t)
+     virtual uint8_t transfer(uint8_t data) = 0;
+                     ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/HardwareSPI.h:109:21: note:   candidate expects 1 argument, 3 provided
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/HardwareSPI.h:111:18: note: candidate: virtual void arduino::HardwareSPI::transfer(void*, size_t)
+     virtual void transfer(void *buf, size_t count) = 0;
+                  ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/HardwareSPI.h:111:18: note:   candidate expects 2 arguments, 3 provided
+
+</pre>
+
+					
+					<h4>examples/X_NUCLEO_IHM02A1_HelloWorld</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library STM32duino_X-NUCLEO-IHM02A1 claims to run on stm32 architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/XNucleoIHM02A1.h:66:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:49:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/L6470.h: In member function &#39;status_t L6470::ReadWrite(uint8_t*, uint8_t*, uint16_t)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/L6470.h:1418:66: error: no matching function for call to &#39;arduino::HardwareSPI::transfer(uint8_t*&amp;, uint8_t*&amp;, uint16_t&amp;)&#39;
+         dev_spi-&gt;transfer(pBufferToWrite, pBufferToRead, NumBytes);
+                                                                  ^
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/libraries/SPI/SPI.h:24:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:46:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/HardwareSPI.h:109:21: note: candidate: virtual uint8_t arduino::HardwareSPI::transfer(uint8_t)
+     virtual uint8_t transfer(uint8_t data) = 0;
+                     ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/HardwareSPI.h:109:21: note:   candidate expects 1 argument, 3 provided
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/HardwareSPI.h:111:18: note: candidate: virtual void arduino::HardwareSPI::transfer(void*, size_t)
+     virtual void transfer(void *buf, size_t count) = 0;
+                  ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/HardwareSPI.h:111:18: note:   candidate expects 2 arguments, 3 provided
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino: In function &#39;void setup()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:143:28: error: &#39;D11&#39; was not declared in this scope
+     dev_spi = new SPIClass(D11, D12, D3);
+                            ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:143:28: note: suggested alternative: &#39;B11&#39;
+     dev_spi = new SPIClass(D11, D12, D3);
+                            ^~~
+                            B11
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:143:33: error: &#39;D12&#39; was not declared in this scope
+     dev_spi = new SPIClass(D11, D12, D3);
+                                 ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:143:38: error: &#39;D3&#39; was not declared in this scope
+     dev_spi = new SPIClass(D11, D12, D3);
+                                      ^~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:143:38: note: suggested alternative: &#39;A3&#39;
+     dev_spi = new SPIClass(D11, D12, D3);
+                                      ^~
+                                      A3
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:143:40: error: invalid new-expression of abstract class type &#39;arduino::HardwareSPI&#39;
+     dev_spi = new SPIClass(D11, D12, D3);
+                                        ^
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/libraries/SPI/SPI.h:24:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:46:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/HardwareSPI.h:104:7: note:   because the following virtual functions are pure within &#39;arduino::HardwareSPI&#39;:
+ class HardwareSPI
+       ^~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/HardwareSPI.h:109:21: note: 	virtual uint8_t arduino::HardwareSPI::transfer(uint8_t)
+     virtual uint8_t transfer(uint8_t data) = 0;
+                     ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/HardwareSPI.h:110:22: note: 	virtual uint16_t arduino::HardwareSPI::transfer16(uint16_t)
+     virtual uint16_t transfer16(uint16_t data) = 0;
+                      ^~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/HardwareSPI.h:111:18: note: 	virtual void arduino::HardwareSPI::transfer(void*, size_t)
+     virtual void transfer(void *buf, size_t count) = 0;
+                  ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/HardwareSPI.h:114:18: note: 	virtual void arduino::HardwareSPI::usingInterrupt(int)
+     virtual void usingInterrupt(int interruptNumber) = 0;
+                  ^~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/HardwareSPI.h:115:18: note: 	virtual void arduino::HardwareSPI::notUsingInterrupt(int)
+     virtual void notUsingInterrupt(int interruptNumber) = 0;
+                  ^~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/HardwareSPI.h:116:18: note: 	virtual void arduino::HardwareSPI::beginTransaction(arduino::SPISettings)
+     virtual void beginTransaction(SPISettings settings) = 0;
+                  ^~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/HardwareSPI.h:117:18: note: 	virtual void arduino::HardwareSPI::endTransaction()
+     virtual void endTransaction(void) = 0;
+                  ^~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/HardwareSPI.h:120:18: note: 	virtual void arduino::HardwareSPI::attachInterrupt()
+     virtual void attachInterrupt() = 0;
+                  ^~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/HardwareSPI.h:121:18: note: 	virtual void arduino::HardwareSPI::detachInterrupt()
+     virtual void detachInterrupt() = 0;
+                  ^~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/HardwareSPI.h:123:18: note: 	virtual void arduino::HardwareSPI::begin()
+     virtual void begin() = 0;
+                  ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/api/HardwareSPI.h:124:18: note: 	virtual void arduino::HardwareSPI::end()
+     virtual void end() = 0;
+                  ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:147:83: error: &#39;D4&#39; was not declared in this scope
+     x_nucleo_ihm02a1 = new XNucleoIHM02A1(&amp;L6470_init[0], &amp;L6470_init[1], A4, A5, D4, A2, dev_spi);
+                                                                                   ^~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:147:83: note: suggested alternative: &#39;A4&#39;
+     x_nucleo_ihm02a1 = new XNucleoIHM02A1(&amp;L6470_init[0], &amp;L6470_init[1], A4, A5, D4, A2, dev_spi);
+                                                                                   ^~
+                                                                                   A4
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library STM32duino_X-NUCLEO-IHM02A1 claims to run on stm32 architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/L6470.cpp:51:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/L6470.h: In member function &#39;status_t L6470::ReadWrite(uint8_t*, uint8_t*, uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/L6470.h:1418:66: error: no matching function for call to &#39;SPIClass::transfer(uint8_t*&amp;, uint8_t*&amp;, uint16_t&amp;)&#39;
+      ino_X-NUCLEO-IHM02A1/src/L6470.h:1418:66: error: no matching function for call to &#39;SPIClass::transfer(uint8_t*&amp;, uint8_t*&amp;, uint16_t&amp;)&#39;
+         dev_spi-&gt;transfer(pBufferToWrite, pBufferToRead, NumBytes);
+                                                                  ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/XNucleoIHM02A1.cpp:48:0:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/SPI/src/SPI.h:70:10: note: candidate: void SPIClass::transfer(uint8_t*, uint32_t)
+     void transfer(uint8_t * data, uint32_t size);
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/SPI/src/SPI.h:70:10: note:   candidate expects 2 arguments, 3 provided
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/SPI/src/SPI.h:71:13: note: candidate: uint8_t SPIClass::transfer(uint8_t)
+     uint8_t transfer(uint8_t data);
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/SPI/src/SPI.h:71:13: note:   candidate expects 1 argument, 3 provided
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/XNucleoIHM02A1.h:58:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/XNucleoIHM02A1.cpp:52:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/XNucleoIHM02A1.cpp: In constructor &#39;XNucleoIHM02A1::XNucleoIHM02A1(L6470_init_t*, L6470_init_t*, uint8_t, uint8_t, uint8_t, uint8_t, SPIClass*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/x_nucleo_ihm02a1_config.h:71:40: error: &#39;D11&#39; was not declared in this scope
+ #define X_NUCLEO_IHM02A1_PIN_SPI_MOSI (D11)
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/XNucleoIHM02A1.cpp:83:32: note: in expansion of macro &#39;X_NUCLEO_IHM02A1_PIN_SPI_MOSI&#39;
+         dev_spi = new SPIClass(X_NUCLEO_IHM02A1_PIN_SPI_MOSI, X_NUCLEO_IHM02A1_PIN_SPI_MISO, X_NUCLEO_IHM02A1_PIN_SPI_SCLK);
+                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/x_nucleo_ihm02a1_config.h:72:40: error: &#39;D12&#39; was not declared in this scope
+ #define X_NUCLEO_IHM02A1_PIN_SPI_MISO (D12)
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/XNucleoIHM02A1.cpp:83:63: note: in expansion of macro &#39;X_NUCLEO_IHM02A1_PIN_SPI_MISO&#39;
+         dev_spi = new SPIClass(X_NUCLEO_IHM02A1_PIN_SPI_MOSI, X_NUCLEO_IHM02A1_PIN_SPI_MISO, X_NUCLEO_IHM02A1_PIN_SPI_SCLK);
+                                                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/x_nucleo_ihm02a1_config.h:73:40: error: &#39;D13&#39; was not declared in this scope
+ #define X_NUCLEO_IHM02A1_PIN_SPI_SCLK (D13)
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/XNucleoIHM02A1.cpp:83:94: note: in expansion of macro &#39;X_NUCLEO_IHM02A1_PIN_SPI_SCLK&#39;
+         dev_spi = new SPIClass(X_NUCLEO_IHM02A1_PIN_SPI_MOSI, X_NUCLEO_IHM02A1_PIN_SPI_MISO, X_NUCLEO_IHM02A1_PIN_SPI_SCLK);
+                                                                                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/XNucleoIHM02A1.cpp: In constructor &#39;XNucleoIHM02A1::XNucleoIHM02A1(L6470_init_t*, L6470_init_t*, uint8_t, uint8_t, uint8_t, uint8_t, uint8_t, uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/XNucleoIHM02A1.cpp:131:44: error: no matching function for call to &#39;SPIClass::SPIClass(uint8_t&amp;, uint8_t&amp;, uint8_t&amp;)&#39;
+     dev_spi = new SPIClass(mosi, miso, sclk);
+                                            ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/XNucleoIHM02A1.cpp:48:0:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/SPI/src/SPI.h:56:5: note: candidate: SPIClass::SPIClass(uint8_t)
+     SPIClass(uint8_t spi_bus=HSPI);
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/SPI/src/SPI.h:56:5: note:   candidate expects 1 argument, 3 provided
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/SPI/src/SPI.h:40:7: note: candidate: constexpr SPIClass::SPIClass(const SPIClass&amp;)
+ class SPIClass
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/SPI/src/SPI.h:40:7: note:   candidate expects 1 argument, 3 provided
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/SPI/src/SPI.h:40:7: note: candidate: constexpr SPIClass::SPIClass(SPIClass&amp;&amp;)
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/SPI/src/SPI.h:40:7: note:   candidate expects 1 argument, 3 provided
+
+</pre>
+
+					
+					<h4>examples/X_NUCLEO_IHM02A1_HelloWorld</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library STM32duino_X-NUCLEO-IHM02A1 claims to run on stm32 architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/XNucleoIHM02A1.h:66:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:49:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/L6470.h: In member function &#39;status_t L6470::ReadWrite(uint8_t*, uint8_t*, uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/src/L6470.h:1418:66: error: no matching function for call to &#39;SPIClass::transfer(uint8_t*&amp;, uint8_t*&amp;, uint16_t&amp;)&#39;
+         dev_spi-&gt;transfer(pBufferToWrite, pBufferToRead, NumBytes);
+                                                                  ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:46:0:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/SPI/src/SPI.h:70:10: note: candidate: void SPIClass::transfer(uint8_t*, uint32_t)
+     void transfer(uint8_t * data, uint32_t size);
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/SPI/src/SPI.h:70:10: note:   candidate expects 2 arguments, 3 provided
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/SPI/src/SPI.h:71:13: note: candidate: uint8_t SPIClass::transfer(uint8_t)
+     uint8_t transfer(uint8_t data);
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/SPI/src/SPI.h:71:13: note:   candidate expects 1 argument, 3 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:143:28: error: &#39;D11&#39; was not declared in this scope
+     dev_spi = new SPIClass(D11, D12, D3);
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:143:33: error: &#39;D12&#39; was not declared in this scope
+     dev_spi = new SPIClass(D11, D12, D3);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM02A1/examples/X_NUCLEO_IHM02A1_HelloWorld/X_NUCLEO_IHM02A1_HelloWorld.ino:147:87: error: &#39;A2&#39; was not declared in this scope
+     x_nucleo_ihm02a1 = new XNucleoIHM02A1(&amp;L6470_init[0], &amp;L6470_init[1], A4, A5, D4, A2, dev_spi);
+                                                                                       ^
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

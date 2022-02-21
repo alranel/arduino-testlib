@@ -1,0 +1,451 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>mrm-ir-finder-can - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>mrm-ir-finder-can</h2>
+				<p>
+					Version: <b>0.0.2</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/mrm-ir-finder-can/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>mrm-ir-finder-can</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/mrm-ir-finder-can/src/mrm-ir-finder-can.h:3:0,
+                 from /private/tmp/arduino-testlib4199426691/test/test.ino:1:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/mrm-board/src/mrm-board.h:7:10: fatal error: vector: No such file or directory
+ #include &lt;vector&gt;
+          ^~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/mrm-ir-finder-can</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/mrm-ir-finder-can/src/mrm-ir-finder-can.h:3:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/mrm-ir-finder-can/examples/mrm-ir-finder-can/mrm-ir-finder-can.ino:1:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/mrm-board/src/mrm-board.h:7:10: fatal error: vector: No such file or directory
+ #include &lt;vector&gt;
+          ^~~~~~~~
+compilation terminated.
+
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-ir-finder-can/src/mrm-ir-finder-can.cpp:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-robot/src/mrm-robot.h:6:10: fatal error: BluetoothSerial.h: No such file or directory
+ #include &lt;BluetoothSerial.h&gt;
+          ^~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/mrm-ir-finder-can</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-ir-finder-can/src/mrm-ir-finder-can.cpp:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-robot/src/mrm-robot.h:6:10: fatal error: BluetoothSerial.h: No such file or directory
+ #include &lt;BluetoothSerial.h&gt;
+          ^~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-ir-finder-can/src/mrm-ir-finder-can.h:3:0,
+                 from /tmp/arduino-testlib3706289539/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-board/src/mrm-board.h:7:10: fatal error: vector: No such file or directory
+ #include &lt;vector&gt;
+          ^~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/mrm-ir-finder-can</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-ir-finder-can/src/mrm-ir-finder-can.h:3:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-ir-finder-can/examples/mrm-ir-finder-can/mrm-ir-finder-can.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-board/src/mrm-board.h:7:10: fatal error: vector: No such file or directory
+ #include &lt;vector&gt;
+          ^~~~~~~~
+compilation terminated.
+
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/mrm-ir-finder-can/src/mrm-ir-finder-can.cpp:2:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/mrm-robot/src/mrm-robot.h:6:10: fatal error: BluetoothSerial.h: No such file or directory
+ #include &lt;BluetoothSerial.h&gt;
+          ^~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/mrm-ir-finder-can</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/mrm-ir-finder-can/src/mrm-ir-finder-can.cpp:2:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/mrm-robot/src/mrm-robot.h:6:10: fatal error: BluetoothSerial.h: No such file or directory
+ #include &lt;BluetoothSerial.h&gt;
+          ^~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-ir-finder-can/src/mrm-ir-finder-can.cpp: In constructor &#39;Mrm_ir_finder_can::Mrm_ir_finder_can(Robot*, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-ir-finder-can/src/mrm-ir-finder-can.cpp:8:155: error: no matching function for call to &#39;SensorBoard::SensorBoard(Robot*&amp;, int, const char [10], uint8_t&amp;, BoardId)&#39;
+ Mrm_ir_finder_can::Mrm_ir_finder_can(Robot* robot, uint8_t maxNumberOfBoards) : SensorBoard(robot, 1, &#34;IRFindCan&#34;, maxNumberOfBoards, ID_MRM_IR_FINDER_CAN) {
+                                                                                                                                                           ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-ir-finder-can/src/mrm-ir-finder-can.h:3:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-ir-finder-can/src/mrm-ir-finder-can.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-board/src/mrm-board.h:409:2: note: candidate: SensorBoard::SensorBoard(Robot*, uint8_t, const char*, uint8_t, BoardId, uint8_t)
+  SensorBoard(Robot* robot, uint8_t devicesOnABoard, const char* boardName, uint8_t maxNumberOfBoards, BoardId id,
+  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-board/src/mrm-board.h:409:2: note:   candidate expects 6 arguments, 5 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-board/src/mrm-board.h:377:7: note: candidate: constexpr SensorBoard::SensorBoard(const SensorBoard&amp;)
+ class SensorBoard : public Board {
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-board/src/mrm-board.h:377:7: note:   candidate expects 1 argument, 5 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-board/src/mrm-board.h:377:7: note: candidate: constexpr SensorBoard::SensorBoard(SensorBoard&amp;&amp;)
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-board/src/mrm-board.h:377:7: note:   candidate expects 1 argument, 5 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-ir-finder-can/src/mrm-ir-finder-can.cpp: In member function &#39;virtual bool Mrm_ir_finder_can::messageDecode(uint32_t, uint8_t*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-ir-finder-can/src/mrm-ir-finder-can.cpp:94:31: error: &#39;print&#39; was not declared in this scope
+      print(&#34;Unknown command. &#34;);
+                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-ir-finder-can/src/mrm-ir-finder-can.cpp: In member function &#39;void Mrm_ir_finder_can::readingsPrint()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-ir-finder-can/src/mrm-ir-finder-can.cpp:125:17: error: &#39;print&#39; was not declared in this scope
+  print(&#34;IRBall:&#34;);
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-ir-finder-can/src/mrm-ir-finder-can.cpp: In member function &#39;void Mrm_ir_finder_can::test()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-ir-finder-can/src/mrm-ir-finder-can.cpp:144:16: error: &#39;print&#39; was not declared in this scope
+      print(&#34;| &#34;);
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-ir-finder-can/src/mrm-ir-finder-can.cpp:146:47: error: &#39;print&#39; was not declared in this scope
+      print(&#34;%i &#34;, (*readings)[deviceNumber][i]);
+                                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-ir-finder-can/src/mrm-ir-finder-can.cpp:151:16: error: &#39;print&#39; was not declared in this scope
+    print(&#34;\n\r&#34;);
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-ir-finder-can/src/mrm-ir-finder-can.cpp: In member function &#39;void Mrm_ir_finder_can::testCalculated()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-ir-finder-can/src/mrm-ir-finder-can.cpp:164:51: error: &#39;print&#39; was not declared in this scope
+     print(&#34;%i deg., dist: %i\n\r&#34;, angle, distance);
+                                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-ir-finder-can/src/mrm-ir-finder-can.cpp:168:16: error: &#39;print&#39; was not declared in this scope
+    print(&#34;\n\r&#34;);
+                ^
+
+</pre>
+
+					
+					<h4>examples/mrm-ir-finder-can</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-ir-finder-can/src/mrm-ir-finder-can.cpp: In constructor &#39;Mrm_ir_finder_can::Mrm_ir_finder_can(Robot*, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-ir-finder-can/src/mrm-ir-finder-can.cpp:8:155: error: no matching function for call to &#39;SensorBoard::SensorBoard(Robot*&amp;, int, const char [10], uint8_t&amp;, BoardId)&#39;
+ Mrm_ir_finder_can::Mrm_ir_finder_can(Robot* robot, uint8_t maxNumberOfBoards) : SensorBoard(robot, 1, &#34;IRFindCan&#34;, maxNumberOfBoards, ID_MRM_IR_FINDER_CAN) {
+                                                                                                                                                           ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-ir-finder-can/src/mrm-ir-finder-can.h:3:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-ir-finder-can/src/mrm-ir-finder-can.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-board/src/mrm-board.h:409:2: note: candidate: SensorBoard::SensorBoard(Robot*, uint8_t, const char*, uint8_t, BoardId, uint8_t)
+  SensorBoard(Robot* robot, uint8_t devicesOnABoard, const char* boardName, uint8_t maxNumberOfBoards, BoardId id,
+  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-board/src/mrm-board.h:409:2: note:   candidate expects 6 arguments, 5 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-board/src/mrm-board.h:377:7: note: candidate: constexpr SensorBoard::SensorBoard(const SensorBoard&amp;)
+ class SensorBoard : public Board {
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-board/src/mrm-board.h:377:7: note:   candidate expects 1 argument, 5 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-board/src/mrm-board.h:377:7: note: candidate: constexpr SensorBoard::SensorBoard(SensorBoard&amp;&amp;)
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-board/src/mrm-board.h:377:7: note:   candidate expects 1 argument, 5 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-ir-finder-can/src/mrm-ir-finder-can.cpp: In member function &#39;virtual bool Mrm_ir_finder_can::messageDecode(uint32_t, uint8_t*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-ir-finder-can/src/mrm-ir-finder-can.cpp:94:31: error: &#39;print&#39; was not declared in this scope
+      print(&#34;Unknown command. &#34;);
+                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-ir-finder-can/src/mrm-ir-finder-can.cpp: In member function &#39;void Mrm_ir_finder_can::readingsPrint()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-ir-finder-can/src/mrm-ir-finder-can.cpp:125:17: error: &#39;print&#39; was not declared in this scope
+  print(&#34;IRBall:&#34;);
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-ir-finder-can/src/mrm-ir-finder-can.cpp: In member function &#39;void Mrm_ir_finder_can::test()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-ir-finder-can/src/mrm-ir-finder-can.cpp:144:16: error: &#39;print&#39; was not declared in this scope
+      print(&#34;| &#34;);
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-ir-finder-can/src/mrm-ir-finder-can.cpp:146:47: error: &#39;print&#39; was not declared in this scope
+      print(&#34;%i &#34;, (*readings)[deviceNumber][i]);
+                                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-ir-finder-can/src/mrm-ir-finder-can.cpp:151:16: error: &#39;print&#39; was not declared in this scope
+    print(&#34;\n\r&#34;);
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-ir-finder-can/src/mrm-ir-finder-can.cpp: In member function &#39;void Mrm_ir_finder_can::testCalculated()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-ir-finder-can/src/mrm-ir-finder-can.cpp:164:51: error: &#39;print&#39; was not declared in this scope
+     print(&#34;%i deg., dist: %i\n\r&#34;, angle, distance);
+                                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/mrm-ir-finder-can/src/mrm-ir-finder-can.cpp:168:16: error: &#39;print&#39; was not declared in this scope
+    print(&#34;\n\r&#34;);
+                ^
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

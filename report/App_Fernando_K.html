@@ -1,0 +1,441 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>App Fernando K - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>App Fernando K</h2>
+				<p>
+					Version: <b>1.0.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/app-fernando-k/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>Relay</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/private/tmp/arduino-testlib374415960/test/test.ino:1:10: fatal error: App_Fernando_K.h: No such file or directory
+ #include &lt;App_Fernando_K.h&gt;
+          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/Relay</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/App_Fernando_K/examples/Relay/Relay.ino:4:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/App_Fernando_K/AppFernandoK.h:26:10: fatal error: vector: No such file or directory
+ #include &lt;vector&gt;
+          ^~~~~~~~
+compilation terminated.
+
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-testlib2555693498/test/test.ino:1:10: fatal error: App_Fernando_K.h: No such file or directory
+ #include &lt;App_Fernando_K.h&gt;
+          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/Relay</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library App_Fernando_K claims to run on esp8266, esp32 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/App_Fernando_K/examples/Relay/Relay.ino:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/App_Fernando_K/AppFernandoK.h:39:9: error: &#39;WiFiServer&#39; does not name a type
+         WiFiServer wifiServer;
+         ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/App_Fernando_K/AppFernandoK.h:42:21: error: &#39;WiFiClient&#39; was not declared in this scope
+         std::vector&lt;WiFiClient&gt; clients;
+                     ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/App_Fernando_K/AppFernandoK.h:42:21: note: suggested alternative: &#39;DNSClient&#39;
+         std::vector&lt;WiFiClient&gt; clients;
+                     ^~~~~~~~~~
+                     DNSClient
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/App_Fernando_K/AppFernandoK.h:42:31: error: template argument 1 is invalid
+         std::vector&lt;WiFiClient&gt; clients;
+                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/App_Fernando_K/AppFernandoK.h:42:31: error: template argument 2 is invalid
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/App_Fernando_K/examples/Relay/Relay.ino: In function &#39;void setupWiFi()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/App_Fernando_K/examples/Relay/Relay.ino:42:5: error: &#39;WiFi&#39; was not declared in this scope
+     WiFi.begin(SSID, PASSWORD);
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/App_Fernando_K/examples/Relay/Relay.ino:45:29: error: &#39;WL_CONNECTED&#39; was not declared in this scope
+     while (WiFi.status() != WL_CONNECTED)
+                             ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/App_Fernando_K/examples/Relay/Relay.ino: In function &#39;void onMessage(arduino::String, arduino::IPAddress)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/App_Fernando_K/examples/Relay/Relay.ino:66:23: error: &#39;class arduino::IPAddress&#39; has no member named &#39;toString&#39;; did you mean &#39;fromString&#39;?
+     Serial.println(ip.toString());
+                       ^~~~~~~~
+                       fromString
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-testlib2555693498/test/test.ino:1:10: fatal error: App_Fernando_K.h: No such file or directory
+ #include &lt;App_Fernando_K.h&gt;
+          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/Relay</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/App_Fernando_K/examples/Relay/Relay.ino:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/App_Fernando_K/AppFernandoK.h:26:10: fatal error: vector: No such file or directory
+ #include &lt;vector&gt;
+          ^~~~~~~~
+compilation terminated.
+
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/private/tmp/arduino-testlib374415960/test/test.ino:1:10: fatal error: App_Fernando_K.h: No such file or directory
+ #include &lt;App_Fernando_K.h&gt;
+          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/Relay</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library App_Fernando_K claims to run on esp8266, esp32 architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/App_Fernando_K/examples/Relay/Relay.ino:4:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/App_Fernando_K/AppFernandoK.h:36:14: error: &#39;function&#39; in namespace &#39;std&#39; does not name a template type
+         std::function&lt;void(String, IPAddress)&gt; messageCallback;
+              ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/App_Fernando_K/AppFernandoK.h:39:9: error: &#39;WiFiServer&#39; does not name a type
+         WiFiServer wifiServer;
+         ^~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/App_Fernando_K/AppFernandoK.h:42:21: error: &#39;WiFiClient&#39; was not declared in this scope
+         std::vector&lt;WiFiClient&gt; clients;
+                     ^~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/App_Fernando_K/AppFernandoK.h:42:21: note: suggested alternative: &#39;DNSClient&#39;
+         std::vector&lt;WiFiClient&gt; clients;
+                     ^~~~~~~~~~
+                     DNSClient
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/App_Fernando_K/AppFernandoK.h:42:31: error: template argument 1 is invalid
+         std::vector&lt;WiFiClient&gt; clients;
+                               ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/App_Fernando_K/AppFernandoK.h:42:31: error: template argument 2 is invalid
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/App_Fernando_K/AppFernandoK.h:68:29: error: &#39;std::function&#39; has not been declared
+         void onMessage(std::function&lt;void(String, IPAddress)&gt; callback);
+                             ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/App_Fernando_K/AppFernandoK.h:68:37: error: expected &#39;,&#39; or &#39;...&#39; before &#39;&lt;&#39; token
+         void onMessage(std::function&lt;void(String, IPAddress)&gt; callback);
+                                     ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/App_Fernando_K/examples/Relay/Relay.ino: In function &#39;void setup()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/App_Fernando_K/examples/Relay/Relay.ino:33:28: error: invalid conversion from &#39;void (*)(arduino::String, arduino::IPAddress)&#39; to &#39;int&#39; [-fpermissive]
+     app.onMessage(onMessage);
+                            ^
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/App_Fernando_K/examples/Relay/Relay.ino:4:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/App_Fernando_K/AppFernandoK.h:68:14: note:   initializing argument 1 of &#39;void AppFernandoK::onMessage(int)&#39;
+         void onMessage(std::function&lt;void(String, IPAddress)&gt; callback);
+              ^~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/App_Fernando_K/examples/Relay/Relay.ino: In function &#39;void setupWiFi()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/App_Fernando_K/examples/Relay/Relay.ino:42:5: error: &#39;WiFi&#39; was not declared in this scope
+     WiFi.begin(SSID, PASSWORD);
+     ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/App_Fernando_K/examples/Relay/Relay.ino:45:29: error: &#39;WL_CONNECTED&#39; was not declared in this scope
+     while (WiFi.status() != WL_CONNECTED)
+                             ^~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/App_Fernando_K/examples/Relay/Relay.ino:45:29: note: suggested alternative: &#39;UHD_STATE_CONNECTED&#39;
+     while (WiFi.status() != WL_CONNECTED)
+                             ^~~~~~~~~~~~
+                             UHD_STATE_CONNECTED
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/App_Fernando_K/examples/Relay/Relay.ino: In function &#39;void onMessage(arduino::String, arduino::IPAddress)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/App_Fernando_K/examples/Relay/Relay.ino:66:23: error: &#39;class arduino::IPAddress&#39; has no member named &#39;toString&#39;; did you mean &#39;fromString&#39;?
+     Serial.println(ip.toString());
+                       ^~~~~~~~
+                       fromString
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-testlib1740754869/test/test.ino:1:28: fatal error: App_Fernando_K.h: No such file or directory
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/Relay</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 705562 bytes (53%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 38284 bytes (11%) of dynamic memory, leaving 289396 bytes for local variables. Maximum is 327680 bytes.
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

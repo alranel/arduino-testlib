@@ -1,0 +1,915 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>XLR8HardwareSerial - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>XLR8HardwareSerial</h2>
+				<p>
+					Version: <b>1.0.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/xlr8hardwareserial/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>XLR8SerialPassthrough</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 444 bytes (1%) of program storage space. Maximum is 32256 bytes.
+Global variables use 9 bytes (0%) of dynamic memory, leaving 2039 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+
+					
+					<h4>examples/XLR8SerialPassthrough</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 2062 bytes (6%) of program storage space. Maximum is 32256 bytes.
+Global variables use 359 bytes (17%) of dynamic memory, leaving 1689 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library XLR8HardwareSerial claims to run on avr architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp: In member function &#39;void XLR8HardwareSerial::tx_udr_empty_irq()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:56:45: error: &#39;SERIAL_TX_BUFFER_SIZE&#39; was not declared in this scope
+   _tx_buffer_tail = (_tx_buffer_tail &#43; 1) % SERIAL_TX_BUFFER_SIZE;
+                                             ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:56:45: note: suggested alternative: &#39;SERIAL_BUFFER_SIZE&#39;
+   _tx_buffer_tail = (_tx_buffer_tail &#43; 1) % SERIAL_TX_BUFFER_SIZE;
+                                             ^~~~~~~~~~~~~~~~~~~~~
+                                             SERIAL_BUFFER_SIZE
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:63:18: error: &#39;TXC0&#39; was not declared in this scope
+   *_ucsra |= (1&lt;&lt;TXC0);
+                  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:63:18: note: suggested alternative: &#39;ADC0&#39;
+   *_ucsra |= (1&lt;&lt;TXC0);
+                  ^~~~
+                  ADC0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:67:22: error: &#39;UDRIE0&#39; was not declared in this scope
+     *_ucsrb &amp;= ~(1&lt;&lt;(UDRIE0));
+                      ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:67:22: note: suggested alternative: &#39;UART_0&#39;
+     *_ucsrb &amp;= ~(1&lt;&lt;(UDRIE0));
+                      ^~~~~~
+                      UART_0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp: In member function &#39;void XLR8HardwareSerial::rx_complete_irq()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:73:29: error: &#39;UPE0&#39; was not declared in this scope
+   if (bit_is_clear(*_ucsra, UPE0)) {
+                             ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:73:7: error: &#39;bit_is_clear&#39; was not declared in this scope
+   if (bit_is_clear(*_ucsra, UPE0)) {
+       ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:73:7: note: suggested alternative: &#39;irq_clear&#39;
+   if (bit_is_clear(*_ucsra, UPE0)) {
+       ^~~~~~~~~~~~
+       irq_clear
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:77:65: error: &#39;SERIAL_RX_BUFFER_SIZE&#39; was not declared in this scope
+     rx_buffer_index_t i = (unsigned int)(_rx_buffer_head &#43; 1) % SERIAL_RX_BUFFER_SIZE;
+                                                                 ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:77:65: note: suggested alternative: &#39;SERIAL_BUFFER_SIZE&#39;
+     rx_buffer_index_t i = (unsigned int)(_rx_buffer_head &#43; 1) % SERIAL_RX_BUFFER_SIZE;
+                                                                 ^~~~~~~~~~~~~~~~~~~~~
+                                                                 SERIAL_BUFFER_SIZE
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp: In member function &#39;void XLR8HardwareSerial::begin(long unsigned int, byte)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:99:28: error: &#39;F_CPU&#39; was not declared in this scope
+   uint16_t baud_setting = (F_CPU / 4 / baud - 1) / 2;
+                            ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:100:18: error: &#39;U2X0&#39; was not declared in this scope
+   *_ucsra = 1 &lt;&lt; U2X0;
+                  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:100:18: note: suggested alternative: &#39;p20&#39;
+   *_ucsra = 1 &lt;&lt; U2X0;
+                  ^~~~
+                  p20
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:125:18: error: &#39;RXEN0&#39; was not declared in this scope
+   *_ucsrb |= (1&lt;&lt;RXEN0);
+                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:125:18: note: suggested alternative: &#39;_REENT&#39;
+   *_ucsrb |= (1&lt;&lt;RXEN0);
+                  ^~~~~
+                  _REENT
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:126:18: error: &#39;TXEN0&#39; was not declared in this scope
+   *_ucsrb |= (1&lt;&lt;TXEN0);
+                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:127:18: error: &#39;RXCIE0&#39; was not declared in this scope
+   *_ucsrb |= (1&lt;&lt;RXCIE0);
+                  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:128:20: error: &#39;UDRIE0&#39; was not declared in this scope
+   *_ucsrb &amp;= ~(1&lt;&lt;(UDRIE0));
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:128:20: note: suggested alternative: &#39;UART_0&#39;
+   *_ucsrb &amp;= ~(1&lt;&lt;(UDRIE0));
+                    ^~~~~~
+                    UART_0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp: In member function &#39;void XLR8HardwareSerial::end()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:136:20: error: &#39;RXEN0&#39; was not declared in this scope
+   *_ucsrb &amp;= ~(1&lt;&lt;(RXEN0));
+                    ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:136:20: note: suggested alternative: &#39;_REENT&#39;
+   *_ucsrb &amp;= ~(1&lt;&lt;(RXEN0));
+                    ^~~~~
+                    _REENT
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:137:20: error: &#39;TXEN0&#39; was not declared in this scope
+   *_ucsrb &amp;= ~(1&lt;&lt;(TXEN0));
+                    ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:138:20: error: &#39;RXCIE0&#39; was not declared in this scope
+   *_ucsrb &amp;= ~(1&lt;&lt;(RXCIE0));
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:139:20: error: &#39;UDRIE0&#39; was not declared in this scope
+   *_ucsrb &amp;= ~(1&lt;&lt;(UDRIE0));
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:139:20: note: suggested alternative: &#39;UART_0&#39;
+   *_ucsrb &amp;= ~(1&lt;&lt;(UDRIE0));
+                    ^~~~~~
+                    UART_0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp: In member function &#39;virtual void XLR8HardwareSerial::flush()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:194:30: error: &#39;UDRIE0&#39; was not declared in this scope
+   while (bit_is_set(*_ucsrb, UDRIE0) || bit_is_clear(*_ucsra, TXC0)) {
+                              ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:194:30: note: suggested alternative: &#39;UART_0&#39;
+   while (bit_is_set(*_ucsrb, UDRIE0) || bit_is_clear(*_ucsra, TXC0)) {
+                              ^~~~~~
+                              UART_0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:194:10: error: &#39;bit_is_set&#39; was not declared in this scope
+   while (bit_is_set(*_ucsrb, UDRIE0) || bit_is_clear(*_ucsra, TXC0)) {
+          ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:194:10: note: suggested alternative: &#39;timerisset&#39;
+   while (bit_is_set(*_ucsrb, UDRIE0) || bit_is_clear(*_ucsra, TXC0)) {
+          ^~~~~~~~~~
+          timerisset
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:194:63: error: &#39;TXC0&#39; was not declared in this scope
+   while (bit_is_set(*_ucsrb, UDRIE0) || bit_is_clear(*_ucsra, TXC0)) {
+                                                               ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:194:63: note: suggested alternative: &#39;ADC0&#39;
+   while (bit_is_set(*_ucsrb, UDRIE0) || bit_is_clear(*_ucsra, TXC0)) {
+                                                               ^~~~
+                                                               ADC0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:194:41: error: &#39;bit_is_clear&#39; was not declared in this scope
+   while (bit_is_set(*_ucsrb, UDRIE0) || bit_is_clear(*_ucsra, TXC0)) {
+                                         ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:194:41: note: suggested alternative: &#39;irq_clear&#39;
+   while (bit_is_set(*_ucsrb, UDRIE0) || bit_is_clear(*_ucsra, TXC0)) {
+                                         ^~~~~~~~~~~~
+                                         irq_clear
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:195:22: error: &#39;SREG&#39; was not declared in this scope
+     if (bit_is_clear(SREG, SREG_I) &amp;&amp; bit_is_set(*_ucsrb, UDRIE0))
+                      ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8Hardwa</pre>
+
+					
+					<h4>examples/XLR8SerialPassthrough</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library XLR8HardwareSerial claims to run on avr architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+WARNING: library XLR8AddrPack claims to run on avr architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/examples/XLR8SerialPassthrough/XLR8SerialPassthrough.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8Serial.h: In function &#39;void enableSerialInterrupts()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8Serial.h:16:21: error: &#39;_SFR_MEM8&#39; was not declared in this scope
+ #define XICR_Reg    _SFR_MEM8(XICR_Address)
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8Serial.h:35:3: note: in expansion of macro &#39;XICR_Reg&#39;
+   XICR_Reg |= 0x02;
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8Serial.h:16:21: note: suggested alternative: &#39;_SFR_BYTE&#39;
+ #define XICR_Reg    _SFR_MEM8(XICR_Address)
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8Serial.h:35:3: note: in expansion of macro &#39;XICR_Reg&#39;
+   XICR_Reg |= 0x02;
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8Serial.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8Serial.h:42:5: error: expected constructor, destructor, or type conversion before &#39;(&#39; token
+ ISR (OPENXLR8_vect) {
+     ^
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library XLR8HardwareSerial claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp: In member function &#39;void XLR8HardwareSerial::tx_udr_empty_irq()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:63:18: error: &#39;TXC0&#39; was not declared in this scope
+   *_ucsra |= (1&lt;&lt;TXC0);
+                  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:63:18: note: suggested alternative: &#39;ADC0&#39;
+   *_ucsra |= (1&lt;&lt;TXC0);
+                  ^~~~
+                  ADC0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:67:22: error: &#39;UDRIE0&#39; was not declared in this scope
+     *_ucsrb &amp;= ~(1&lt;&lt;(UDRIE0));
+                      ^~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:30:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp: In member function &#39;void XLR8HardwareSerial::rx_complete_irq()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:73:29: error: &#39;UPE0&#39; was not declared in this scope
+   if (bit_is_clear(*_ucsra, UPE0)) {
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:73:29: note: suggested alternative: &#39;SPI0&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp: In member function &#39;void XLR8HardwareSerial::begin(long unsigned int, byte)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:100:18: error: &#39;U2X0&#39; was not declared in this scope
+   *_ucsra = 1 &lt;&lt; U2X0;
+                  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:125:18: error: &#39;RXEN0&#39; was not declared in this scope
+   *_ucsrb |= (1&lt;&lt;RXEN0);
+                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:126:18: error: &#39;TXEN0&#39; was not declared in this scope
+   *_ucsrb |= (1&lt;&lt;TXEN0);
+                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:127:18: error: &#39;RXCIE0&#39; was not declared in this scope
+   *_ucsrb |= (1&lt;&lt;RXCIE0);
+                  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:128:20: error: &#39;UDRIE0&#39; was not declared in this scope
+   *_ucsrb &amp;= ~(1&lt;&lt;(UDRIE0));
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp: In member function &#39;void XLR8HardwareSerial::end()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:136:20: error: &#39;RXEN0&#39; was not declared in this scope
+   *_ucsrb &amp;= ~(1&lt;&lt;(RXEN0));
+                    ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:137:20: error: &#39;TXEN0&#39; was not declared in this scope
+   *_ucsrb &amp;= ~(1&lt;&lt;(TXEN0));
+                    ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:138:20: error: &#39;RXCIE0&#39; was not declared in this scope
+   *_ucsrb &amp;= ~(1&lt;&lt;(RXCIE0));
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:139:20: error: &#39;UDRIE0&#39; was not declared in this scope
+   *_ucsrb &amp;= ~(1&lt;&lt;(UDRIE0));
+                    ^~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:30:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp: In member function &#39;virtual void XLR8HardwareSerial::flush()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:194:30: error: &#39;UDRIE0&#39; was not declared in this scope
+   while (bit_is_set(*_ucsrb, UDRIE0) || bit_is_clear(*_ucsra, TXC0)) {
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:194:63: error: &#39;TXC0&#39; was not declared in this scope
+   while (bit_is_set(*_ucsrb, UDRIE0) || bit_is_clear(*_ucsra, TXC0)) {
+                                                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:194:63: note: suggested alternative: &#39;ADC0&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:199:26: error: &#39;UDRE0&#39; was not declared in this scope
+  if (bit_is_set(*_ucsra, UDRE0))
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp: In member function &#39;virtual size_t XLR8HardwareSerial::write(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:213:65: error: &#39;UDRE0&#39; was not declared in this scope
+   if (_tx_buffer_head == _tx_buffer_tail &amp;&amp; bit_is_set(*_ucsra, UDRE0)) {
+                                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:215:20: error: &#39;TXC0&#39; was not declared in this scope
+     *_ucsra |= (1&lt;&lt;TXC0);
+                    ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:215:20: note: suggested alternative: &#39;ADC0&#39;
+     *_ucsra |= (1&lt;&lt;TXC0);
+                    ^~~~
+                    ADC0
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:30:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:228:30: error: &#39;UDRE0&#39; was not declared in this scope
+       if(bit_is_set(*_ucsra, UDRE0))
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:238:18: error: &#39;UDRIE0&#39; was not declared in this scope
+   *_ucsrb |= (1&lt;&lt;UDRIE0);
+                  ^~~~~~
+
+</pre>
+
+					
+					<h4>examples/XLR8SerialPassthrough</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library XLR8HardwareSerial claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+WARNING: library XLR8AddrPack claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp: In member function &#39;void XLR8HardwareSerial::tx_udr_empty_irq()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:63:18: error: &#39;TXC0&#39; was not declared in this scope
+   *_ucsra |= (1&lt;&lt;TXC0);
+                  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:63:18: note: suggested alternative: &#39;ADC0&#39;
+   *_ucsra |= (1&lt;&lt;TXC0);
+                  ^~~~
+                  ADC0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:67:22: error: &#39;UDRIE0&#39; was not declared in this scope
+     *_ucsrb &amp;= ~(1&lt;&lt;(UDRIE0));
+                      ^~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:30:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp: In member function &#39;void XLR8HardwareSerial::rx_complete_irq()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:73:29: error: &#39;UPE0&#39; was not declared in this scope
+   if (bit_is_clear(*_ucsra, UPE0)) {
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:73:29: note: suggested alternative: &#39;SPI0&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp: In member function &#39;void XLR8HardwareSerial::begin(long unsigned int, byte)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:100:18: error: &#39;U2X0&#39; was not declared in this scope
+   *_ucsra = 1 &lt;&lt; U2X0;
+                  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:125:18: error: &#39;RXEN0&#39; was not declared in this scope
+   *_ucsrb |= (1&lt;&lt;RXEN0);
+                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:126:18: error: &#39;TXEN0&#39; was not declared in this scope
+   *_ucsrb |= (1&lt;&lt;TXEN0);
+                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:127:18: error: &#39;RXCIE0&#39; was not declared in this scope
+   *_ucsrb |= (1&lt;&lt;RXCIE0);
+                  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:128:20: error: &#39;UDRIE0&#39; was not declared in this scope
+   *_ucsrb &amp;= ~(1&lt;&lt;(UDRIE0));
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp: In member function &#39;void XLR8HardwareSerial::end()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:136:20: error: &#39;RXEN0&#39; was not declared in this scope
+   *_ucsrb &amp;= ~(1&lt;&lt;(RXEN0));
+                    ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:137:20: error: &#39;TXEN0&#39; was not declared in this scope
+   *_ucsrb &amp;= ~(1&lt;&lt;(TXEN0));
+                    ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:138:20: error: &#39;RXCIE0&#39; was not declared in this scope
+   *_ucsrb &amp;= ~(1&lt;&lt;(RXCIE0));
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:139:20: error: &#39;UDRIE0&#39; was not declared in this scope
+   *_ucsrb &amp;= ~(1&lt;&lt;(UDRIE0));
+                    ^~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:30:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp: In member function &#39;virtual void XLR8HardwareSerial::flush()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:194:30: error: &#39;UDRIE0&#39; was not declared in this scope
+   while (bit_is_set(*_ucsrb, UDRIE0) || bit_is_clear(*_ucsra, TXC0)) {
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:194:63: error: &#39;TXC0&#39; was not declared in this scope
+   while (bit_is_set(*_ucsrb, UDRIE0) || bit_is_clear(*_ucsra, TXC0)) {
+                                                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:194:63: note: suggested alternative: &#39;ADC0&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:199:26: error: &#39;UDRE0&#39; was not declared in this scope
+  if (bit_is_set(*_ucsra, UDRE0))
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp: In member function &#39;virtual size_t XLR8HardwareSerial::write(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:213:65: error: &#39;UDRE0&#39; was not declared in this scope
+   if (_tx_buffer_head == _tx_buffer_tail &amp;&amp; bit_is_set(*_ucsra, UDRE0)) {
+                                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:215:20: error: &#39;TXC0&#39; was not declared in this scope
+     *_ucsra |= (1&lt;&lt;TXC0);
+                    ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:215:20: note: suggested alternative: &#39;ADC0&#39;
+     *_ucsra |= (1&lt;&lt;TXC0);
+                    ^~~~
+                    ADC0
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:30:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:228:30: error: &#39;UDRE0&#39; was not declared in this scope
+       if(bit_is_set(*_ucsra, UDRE0))
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:238:18: error: &#39;UDRIE0&#39; was not declared in this scope
+   *_ucsrb |= (1&lt;&lt;UDRIE0);
+                  ^~~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library XLR8HardwareSerial claims to run on avr architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp: In member function &#39;void XLR8HardwareSerial::tx_udr_empty_irq()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:56:45: error: &#39;SERIAL_TX_BUFFER_SIZE&#39; was not declared in this scope
+   _tx_buffer_tail = (_tx_buffer_tail &#43; 1) % SERIAL_TX_BUFFER_SIZE;
+                                             ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:56:45: note: suggested alternative: &#39;SERIAL_BUFFER_SIZE&#39;
+   _tx_buffer_tail = (_tx_buffer_tail &#43; 1) % SERIAL_TX_BUFFER_SIZE;
+                                             ^~~~~~~~~~~~~~~~~~~~~
+                                             SERIAL_BUFFER_SIZE
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:63:18: error: &#39;TXC0&#39; was not declared in this scope
+   *_ucsra |= (1&lt;&lt;TXC0);
+                  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:63:18: note: suggested alternative: &#39;TCC0&#39;
+   *_ucsra |= (1&lt;&lt;TXC0);
+                  ^~~~
+                  TCC0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:67:22: error: &#39;UDRIE0&#39; was not declared in this scope
+     *_ucsrb &amp;= ~(1&lt;&lt;(UDRIE0));
+                      ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp: In member function &#39;void XLR8HardwareSerial::rx_complete_irq()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:73:29: error: &#39;UPE0&#39; was not declared in this scope
+   if (bit_is_clear(*_ucsra, UPE0)) {
+                             ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:73:29: note: suggested alternative: &#39;EP0&#39;
+   if (bit_is_clear(*_ucsra, UPE0)) {
+                             ^~~~
+                             EP0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:73:7: error: &#39;bit_is_clear&#39; was not declared in this scope
+   if (bit_is_clear(*_ucsra, UPE0)) {
+       ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:73:7: note: suggested alternative: &#39;bitClear&#39;
+   if (bit_is_clear(*_ucsra, UPE0)) {
+       ^~~~~~~~~~~~
+       bitClear
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:77:65: error: &#39;SERIAL_RX_BUFFER_SIZE&#39; was not declared in this scope
+     rx_buffer_index_t i = (unsigned int)(_rx_buffer_head &#43; 1) % SERIAL_RX_BUFFER_SIZE;
+                                                                 ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:77:65: note: suggested alternative: &#39;SERIAL_BUFFER_SIZE&#39;
+     rx_buffer_index_t i = (unsigned int)(_rx_buffer_head &#43; 1) % SERIAL_RX_BUFFER_SIZE;
+                                                                 ^~~~~~~~~~~~~~~~~~~~~
+                                                                 SERIAL_BUFFER_SIZE
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp: In member function &#39;void XLR8HardwareSerial::begin(long unsigned int, byte)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:100:18: error: &#39;U2X0&#39; was not declared in this scope
+   *_ucsra = 1 &lt;&lt; U2X0;
+                  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:125:18: error: &#39;RXEN0&#39; was not declared in this scope
+   *_ucsrb |= (1&lt;&lt;RXEN0);
+                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:126:18: error: &#39;TXEN0&#39; was not declared in this scope
+   *_ucsrb |= (1&lt;&lt;TXEN0);
+                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:127:18: error: &#39;RXCIE0&#39; was not declared in this scope
+   *_ucsrb |= (1&lt;&lt;RXCIE0);
+                  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:128:20: error: &#39;UDRIE0&#39; was not declared in this scope
+   *_ucsrb &amp;= ~(1&lt;&lt;(UDRIE0));
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp: In member function &#39;void XLR8HardwareSerial::end()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:136:20: error: &#39;RXEN0&#39; was not declared in this scope
+   *_ucsrb &amp;= ~(1&lt;&lt;(RXEN0));
+                    ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:137:20: error: &#39;TXEN0&#39; was not declared in this scope
+   *_ucsrb &amp;= ~(1&lt;&lt;(TXEN0));
+                    ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:138:20: error: &#39;RXCIE0&#39; was not declared in this scope
+   *_ucsrb &amp;= ~(1&lt;&lt;(RXCIE0));
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:139:20: error: &#39;UDRIE0&#39; was not declared in this scope
+   *_ucsrb &amp;= ~(1&lt;&lt;(UDRIE0));
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp: In member function &#39;virtual void XLR8HardwareSerial::flush()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:194:30: error: &#39;UDRIE0&#39; was not declared in this scope
+   while (bit_is_set(*_ucsrb, UDRIE0) || bit_is_clear(*_ucsra, TXC0)) {
+                              ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:194:10: error: &#39;bit_is_set&#39; was not declared in this scope
+   while (bit_is_set(*_ucsrb, UDRIE0) || bit_is_clear(*_ucsra, TXC0)) {
+          ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:194:10: note: suggested alternative: &#39;timerisset&#39;
+   while (bit_is_set(*_ucsrb, UDRIE0) || bit_is_clear(*_ucsra, TXC0)) {
+          ^~~~~~~~~~
+          timerisset
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:194:63: error: &#39;TXC0&#39; was not declared in this scope
+   while (bit_is_set(*_ucsrb, UDRIE0) || bit_is_clear(*_ucsra, TXC0)) {
+                                                               ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:194:63: note: suggested alternative: &#39;TCC0&#39;
+   while (bit_is_set(*_ucsrb, UDRIE0) || bit_is_clear(*_ucsra, TXC0)) {
+                                                               ^~~~
+                                                               TCC0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:194:41: error: &#39;bit_is_clear&#39; was not declared in this scope
+   while (bit_is_set(*_ucsrb, UDRIE0) || bit_is_clear(*_ucsra, TXC0)) {
+                                         ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:194:41: note: suggested alternative: &#39;bitClear&#39;
+   while (bit_is_set(*_ucsrb, UDRIE0) || bit_is_clear(*_ucsra, TXC0)) {
+                                         ^~~~~~~~~~~~
+                                         bitClear
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:195:22: error: &#39;SREG&#39; was not declared in this scope
+     if (bit_is_clear(SREG, SREG_I) &amp;&amp; bit_is_set(*_ucsrb, UDRIE0))
+                      ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:195:22: note: suggested alternative: &#39;SING&#39;
+     if (bit_is_clear(SREG, SREG_I) &amp;&amp; bit_is_set(*_ucsrb, UDRIE0))
+                      ^~~~
+                      SING
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:195:28: error: &#39;SREG_I&#39; was not declared in this scope
+     if (bit_is_clear(SREG, SREG_I) &amp;&amp; bit_is_set(*_ucsrb, UDRIE0))
+                            ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:199:26: error: &#39;UDRE0&#39; was not declared in this scope
+  if (bit_is_set(*_ucsra, UDRE0))
+                          ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp: In member function &#39;virtual size_t XLR8HardwareSerial::write(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:213:65: error: &#39;UDRE0&#39; was not declared in this scope
+   if (_tx_buffer_head == _tx_buffer_tail &amp;&amp; bit_is_set(*_ucsra, UDRE0)) {
+                                                                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:213:45: error: &#39;bit_is_set&#39; was not declared in this scope
+   if (_tx_buffer_head == _tx_buffer_tail &amp;&amp; bit_is_set(*_ucsra, UDRE0)) {
+                                             ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:213:45: note: suggested alternative: &#39;timerisset&#39;
+   if (_tx_buffer_head == _tx_buffer_tail &amp;&amp; bit_is_set(*_ucsra, UDRE0)) {
+           </pre>
+
+					
+					<h4>examples/XLR8SerialPassthrough</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library XLR8HardwareSerial claims to run on avr architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+WARNING: library XLR8AddrPack claims to run on avr architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/examples/XLR8SerialPassthrough/XLR8SerialPassthrough.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8Serial.h: In function &#39;void enableSerialInterrupts()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8Serial.h:16:21: error: &#39;_SFR_MEM8&#39; was not declared in this scope
+ #define XICR_Reg    _SFR_MEM8(XICR_Address)
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8Serial.h:35:3: note: in expansion of macro &#39;XICR_Reg&#39;
+   XICR_Reg |= 0x02;
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8Serial.h:16:21: note: suggested alternative: &#39;_SFR_BYTE&#39;
+ #define XICR_Reg    _SFR_MEM8(XICR_Address)
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8Serial.h:35:3: note: in expansion of macro &#39;XICR_Reg&#39;
+   XICR_Reg |= 0x02;
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8Serial.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8Serial.h:42:5: error: expected constructor, destructor, or type conversion before &#39;(&#39; token
+ ISR (OPENXLR8_vect) {
+     ^
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library XLR8HardwareSerial claims to run on avr architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp: In member function &#39;void XLR8HardwareSerial::tx_udr_empty_irq()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:56:45: error: &#39;SERIAL_TX_BUFFER_SIZE&#39; was not declared in this scope
+   _tx_buffer_tail = (_tx_buffer_tail &#43; 1) % SERIAL_TX_BUFFER_SIZE;
+                                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:63:18: error: &#39;TXC0&#39; was not declared in this scope
+   *_ucsra |= (1&lt;&lt;TXC0);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:67:22: error: &#39;UDRIE0&#39; was not declared in this scope
+     *_ucsrb &amp;= ~(1&lt;&lt;(UDRIE0));
+                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp: In member function &#39;void XLR8HardwareSerial::rx_complete_irq()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:73:29: error: &#39;UPE0&#39; was not declared in this scope
+   if (bit_is_clear(*_ucsra, UPE0)) {
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:73:33: error: &#39;bit_is_clear&#39; was not declared in this scope
+   if (bit_is_clear(*_ucsra, UPE0)) {
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:77:65: error: &#39;SERIAL_RX_BUFFER_SIZE&#39; was not declared in this scope
+     rx_buffer_index_t i = (unsigned int)(_rx_buffer_head &#43; 1) % SERIAL_RX_BUFFER_SIZE;
+                                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp: In member function &#39;void XLR8HardwareSerial::begin(long unsigned int, byte)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:100:18: error: &#39;U2X0&#39; was not declared in this scope
+   *_ucsra = 1 &lt;&lt; U2X0;
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:125:18: error: &#39;RXEN0&#39; was not declared in this scope
+   *_ucsrb |= (1&lt;&lt;RXEN0);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:126:18: error: &#39;TXEN0&#39; was not declared in this scope
+   *_ucsrb |= (1&lt;&lt;TXEN0);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:127:18: error: &#39;RXCIE0&#39; was not declared in this scope
+   *_ucsrb |= (1&lt;&lt;RXCIE0);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:128:20: error: &#39;UDRIE0&#39; was not declared in this scope
+   *_ucsrb &amp;= ~(1&lt;&lt;(UDRIE0));
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp: In member function &#39;void XLR8HardwareSerial::end()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:136:20: error: &#39;RXEN0&#39; was not declared in this scope
+   *_ucsrb &amp;= ~(1&lt;&lt;(RXEN0));
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:137:20: error: &#39;TXEN0&#39; was not declared in this scope
+   *_ucsrb &amp;= ~(1&lt;&lt;(TXEN0));
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:138:20: error: &#39;RXCIE0&#39; was not declared in this scope
+   *_ucsrb &amp;= ~(1&lt;&lt;(RXCIE0));
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:139:20: error: &#39;UDRIE0&#39; was not declared in this scope
+   *_ucsrb &amp;= ~(1&lt;&lt;(UDRIE0));
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp: In member function &#39;virtual void XLR8HardwareSerial::flush()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:194:30: error: &#39;UDRIE0&#39; was not declared in this scope
+   while (bit_is_set(*_ucsrb, UDRIE0) || bit_is_clear(*_ucsra, TXC0)) {
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:194:36: error: &#39;bit_is_set&#39; was not declared in this scope
+   while (bit_is_set(*_ucsrb, UDRIE0) || bit_is_clear(*_ucsra, TXC0)) {
+                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:194:63: error: &#39;TXC0&#39; was not declared in this scope
+   while (bit_is_set(*_ucsrb, UDRIE0) || bit_is_clear(*_ucsra, TXC0)) {
+                                                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:194:67: error: &#39;bit_is_clear&#39; was not declared in this scope
+   while (bit_is_set(*_ucsrb, UDRIE0) || bit_is_clear(*_ucsra, TXC0)) {
+                                                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:195:22: error: &#39;SREG&#39; was not declared in this scope
+     if (bit_is_clear(SREG, SREG_I) &amp;&amp; bit_is_set(*_ucsrb, UDRIE0))
+                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:195:28: error: &#39;SREG_I&#39; was not declared in this scope
+     if (bit_is_clear(SREG, SREG_I) &amp;&amp; bit_is_set(*_ucsrb, UDRIE0))
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:199:26: error: &#39;UDRE0&#39; was not declared in this scope
+  if (bit_is_set(*_ucsra, UDRE0))
+                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp: In member function &#39;virtual size_t XLR8HardwareSerial::write(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:213:65: error: &#39;UDRE0&#39; was not declared in this scope
+   if (_tx_buffer_head == _tx_buffer_tail &amp;&amp; bit_is_set(*_ucsra, UDRE0)) {
+                                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:213:70: error: &#39;bit_is_set&#39; was not declared in this scope
+   if (_tx_buffer_head == _tx_buffer_tail &amp;&amp; bit_is_set(*_ucsra, UDRE0)) {
+                                                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:215:20: error: &#39;TXC0&#39; was not declared in this scope
+     *_ucsra |= (1&lt;&lt;TXC0);
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:218:49: error: &#39;SERIAL_TX_BUFFER_SIZE&#39; was not declared in this scope
+   tx_buffer_index_t i = (_tx_buffer_head &#43; 1) % SERIAL_TX_BUFFER_SIZE;
+                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:223:22: error: &#39;SREG&#39; was not declared in this scope
+     if (bit_is_clear(SREG, SREG_I)) {
+                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:223:28: error: &#39;SREG_I&#39; was not declared in this scope
+     if (bit_is_clear(SREG, SREG_I)) {
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:223:34: error: &#39;bit_is_clear&#39; was not declared in this scope
+     if (bit_is_clear(SREG, SREG_I)) {
+                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:228:30: error: &#39;UDRE0&#39; was not declared in this scope
+       if(bit_is_set(*_ucsra, UDRE0))
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:228:35: error: &#39;bit_is_set&#39; was not declared in this scope
+       if(bit_is_set(*_ucsra, UDRE0))
+                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8HardwareSerial.cpp:238:18: error: &#39;UDRIE0&#39; was not declared in this scope
+   *_ucsrb |= (1&lt;&lt;UDRIE0);
+                  ^
+
+</pre>
+
+					
+					<h4>examples/XLR8SerialPassthrough</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library XLR8HardwareSerial claims to run on avr architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+WARNING: library XLR8AddrPack claims to run on avr architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/examples/XLR8SerialPassthrough/XLR8SerialPassthrough.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8Serial.h: In function &#39;void enableSerialInterrupts()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8Serial.h:16:43: error: &#39;_SFR_MEM8&#39; was not declared in this scope
+ #define XICR_Reg    _SFR_MEM8(XICR_Address)
+                                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8Serial.h:35:3: note: in expansion of macro &#39;XICR_Reg&#39;
+   XICR_Reg |= 0x02;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8Serial.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/XLR8HardwareSerial/src/XLR8Serial.h:42:5: error: expected constructor, destructor, or type conversion before &#39;(&#39; token
+ ISR (OPENXLR8_vect) {
+     ^
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

@@ -1,0 +1,893 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>Batflow - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>Batflow</h2>
+				<p>
+					Version: <b>1.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/batflow/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>read</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 466 bytes (1%) of program storage space. Maximum is 32256 bytes.
+Global variables use 9 bytes (0%) of dynamic memory, leaving 2039 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+
+					
+					<h4>examples/read</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 3922 bytes (12%) of program storage space. Maximum is 32256 bytes.
+Global variables use 242 bytes (11%) of dynamic memory, leaving 1806 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp: In member function &#39;Batflow Batflow::read()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:3: error: &#39;ADMUX&#39; was not declared in this scope
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:15: error: &#39;REFS0&#39; was not declared in this scope
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:11: error: &#39;_BV&#39; was not declared in this scope
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:11: note: suggested alternative: &#39;_B&#39;
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+           ^~~
+           _B
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:28: error: &#39;MUX3&#39; was not declared in this scope
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+                            ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:28: note: suggested alternative: &#39;MAX&#39;
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+                            ^~~~
+                            MAX
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:40: error: &#39;MUX2&#39; was not declared in this scope
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+                                        ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:40: note: suggested alternative: &#39;MAX&#39;
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+                                        ^~~~
+                                        MAX
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:52: error: &#39;MUX1&#39; was not declared in this scope
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+                                                    ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:52: note: suggested alternative: &#39;MAX&#39;
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+                                                    ^~~~
+                                                    MAX
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:8:3: error: &#39;ADCSRA&#39; was not declared in this scope
+   ADCSRA |= _BV(ADSC);
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:8:3: note: suggested alternative: &#39;ADC0&#39;
+   ADCSRA |= _BV(ADSC);
+   ^~~~~~
+   ADC0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:8:17: error: &#39;ADSC&#39; was not declared in this scope
+   ADCSRA |= _BV(ADSC);
+                 ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:8:17: note: suggested alternative: &#39;ADC0&#39;
+   ADCSRA |= _BV(ADSC);
+                 ^~~~
+                 ADC0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:9:10: error: &#39;bit_is_set&#39; was not declared in this scope
+   while (bit_is_set(ADCSRA, ADSC));
+          ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:9:10: note: suggested alternative: &#39;timerisset&#39;
+   while (bit_is_set(ADCSRA, ADSC));
+          ^~~~~~~~~~
+          timerisset
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:10:22: error: &#39;ADCL&#39; was not declared in this scope
+   _val = 1126400L / (ADCL | (ADCH &lt;&lt; 8));
+                      ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:10:22: note: suggested alternative: &#39;ADC0&#39;
+   _val = 1126400L / (ADCL | (ADCH &lt;&lt; 8));
+                      ^~~~
+                      ADC0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:10:30: error: &#39;ADCH&#39; was not declared in this scope
+   _val = 1126400L / (ADCL | (ADCH &lt;&lt; 8));
+                              ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:10:30: note: suggested alternative: &#39;ADC0&#39;
+   _val = 1126400L / (ADCL | (ADCH &lt;&lt; 8));
+                              ^~~~
+                              ADC0
+
+</pre>
+
+					
+					<h4>examples/read</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp: In member function &#39;Batflow Batflow::read()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:3: error: &#39;ADMUX&#39; was not declared in this scope
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:15: error: &#39;REFS0&#39; was not declared in this scope
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+               ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:11: error: &#39;_BV&#39; was not declared in this scope
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:11: note: suggested alternative: &#39;_B&#39;
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+           ^~~
+           _B
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:28: error: &#39;MUX3&#39; was not declared in this scope
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+                            ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:28: note: suggested alternative: &#39;MAX&#39;
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+                            ^~~~
+                            MAX
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:40: error: &#39;MUX2&#39; was not declared in this scope
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+                                        ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:40: note: suggested alternative: &#39;MAX&#39;
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+                                        ^~~~
+                                        MAX
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:52: error: &#39;MUX1&#39; was not declared in this scope
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+                                                    ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:52: note: suggested alternative: &#39;MAX&#39;
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+                                                    ^~~~
+                                                    MAX
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:8:3: error: &#39;ADCSRA&#39; was not declared in this scope
+   ADCSRA |= _BV(ADSC);
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:8:3: note: suggested alternative: &#39;ADC0&#39;
+   ADCSRA |= _BV(ADSC);
+   ^~~~~~
+   ADC0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:8:17: error: &#39;ADSC&#39; was not declared in this scope
+   ADCSRA |= _BV(ADSC);
+                 ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:8:17: note: suggested alternative: &#39;ADC0&#39;
+   ADCSRA |= _BV(ADSC);
+                 ^~~~
+                 ADC0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:9:10: error: &#39;bit_is_set&#39; was not declared in this scope
+   while (bit_is_set(ADCSRA, ADSC));
+          ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:9:10: note: suggested alternative: &#39;timerisset&#39;
+   while (bit_is_set(ADCSRA, ADSC));
+          ^~~~~~~~~~
+          timerisset
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:10:22: error: &#39;ADCL&#39; was not declared in this scope
+   _val = 1126400L / (ADCL | (ADCH &lt;&lt; 8));
+                      ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:10:22: note: suggested alternative: &#39;ADC0&#39;
+   _val = 1126400L / (ADCL | (ADCH &lt;&lt; 8));
+                      ^~~~
+                      ADC0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:10:30: error: &#39;ADCH&#39; was not declared in this scope
+   _val = 1126400L / (ADCL | (ADCH &lt;&lt; 8));
+                              ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:10:30: note: suggested alternative: &#39;ADC0&#39;
+   _val = 1126400L / (ADCL | (ADCH &lt;&lt; 8));
+                              ^~~~
+                              ADC0
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp: In member function &#39;Batflow Batflow::read()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:3: error: &#39;ADMUX&#39; was not declared in this scope
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+   ^~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.h:5,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:15: error: &#39;REFS0&#39; was not declared in this scope
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:15: note: suggested alternative: &#39;VREF_t&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:28: error: &#39;MUX3&#39; was not declared in this scope
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:40: error: &#39;MUX2&#39; was not declared in this scope
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:52: error: &#39;MUX1&#39; was not declared in this scope
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+                                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:8:3: error: &#39;ADCSRA&#39; was not declared in this scope
+   ADCSRA |= _BV(ADSC);
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:8:3: note: suggested alternative: &#39;ADC_t&#39;
+   ADCSRA |= _BV(ADSC);
+   ^~~~~~
+   ADC_t
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.h:5,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:8:17: error: &#39;ADSC&#39; was not declared in this scope
+   ADCSRA |= _BV(ADSC);
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:8:17: note: suggested alternative: &#39;DDRC&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:10:22: error: &#39;ADCL&#39; was not declared in this scope
+   _val = 1126400L / (ADCL | (ADCH &lt;&lt; 8));
+                      ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:10:22: note: suggested alternative: &#39;ADC0&#39;
+   _val = 1126400L / (ADCL | (ADCH &lt;&lt; 8));
+                      ^~~~
+                      ADC0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:10:30: error: &#39;ADCH&#39; was not declared in this scope
+   _val = 1126400L / (ADCL | (ADCH &lt;&lt; 8));
+                              ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:10:30: note: suggested alternative: &#39;ADC0&#39;
+   _val = 1126400L / (ADCL | (ADCH &lt;&lt; 8));
+                              ^~~~
+                              ADC0
+
+</pre>
+
+					
+					<h4>examples/read</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp: In member function &#39;Batflow Batflow::read()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:3: error: &#39;ADMUX&#39; was not declared in this scope
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+   ^~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.h:5,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:15: error: &#39;REFS0&#39; was not declared in this scope
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:15: note: suggested alternative: &#39;VREF_t&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:28: error: &#39;MUX3&#39; was not declared in this scope
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:40: error: &#39;MUX2&#39; was not declared in this scope
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:52: error: &#39;MUX1&#39; was not declared in this scope
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+                                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:8:3: error: &#39;ADCSRA&#39; was not declared in this scope
+   ADCSRA |= _BV(ADSC);
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:8:3: note: suggested alternative: &#39;ADC_t&#39;
+   ADCSRA |= _BV(ADSC);
+   ^~~~~~
+   ADC_t
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:99:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.h:5,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:8:17: error: &#39;ADSC&#39; was not declared in this scope
+   ADCSRA |= _BV(ADSC);
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:8:17: note: suggested alternative: &#39;DDRC&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:10:22: error: &#39;ADCL&#39; was not declared in this scope
+   _val = 1126400L / (ADCL | (ADCH &lt;&lt; 8));
+                      ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:10:22: note: suggested alternative: &#39;ADC0&#39;
+   _val = 1126400L / (ADCL | (ADCH &lt;&lt; 8));
+                      ^~~~
+                      ADC0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:10:30: error: &#39;ADCH&#39; was not declared in this scope
+   _val = 1126400L / (ADCL | (ADCH &lt;&lt; 8));
+                              ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:10:30: note: suggested alternative: &#39;ADC0&#39;
+   _val = 1126400L / (ADCL | (ADCH &lt;&lt; 8));
+                              ^~~~
+                              ADC0
+
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp: In member function &#39;Batflow Batflow::read()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:3: error: &#39;ADMUX&#39; was not declared in this scope
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+   ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:15: error: &#39;REFS0&#39; was not declared in this scope
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+               ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:11: error: &#39;_BV&#39; was not declared in this scope
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+           ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:11: note: suggested alternative: &#39;_B&#39;
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+           ^~~
+           _B
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:28: error: &#39;MUX3&#39; was not declared in this scope
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+                            ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:40: error: &#39;MUX2&#39; was not declared in this scope
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+                                        ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:52: error: &#39;MUX1&#39; was not declared in this scope
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+                                                    ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:8:3: error: &#39;ADCSRA&#39; was not declared in this scope
+   ADCSRA |= _BV(ADSC);
+   ^~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:8:3: note: suggested alternative: &#39;ADC&#39;
+   ADCSRA |= _BV(ADSC);
+   ^~~~~~
+   ADC
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:8:17: error: &#39;ADSC&#39; was not declared in this scope
+   ADCSRA |= _BV(ADSC);
+                 ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:8:17: note: suggested alternative: &#39;ADC&#39;
+   ADCSRA |= _BV(ADSC);
+                 ^~~~
+                 ADC
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:9:10: error: &#39;bit_is_set&#39; was not declared in this scope
+   while (bit_is_set(ADCSRA, ADSC));
+          ^~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:9:10: note: suggested alternative: &#39;timerisset&#39;
+   while (bit_is_set(ADCSRA, ADSC));
+          ^~~~~~~~~~
+          timerisset
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:10:22: error: &#39;ADCL&#39; was not declared in this scope
+   _val = 1126400L / (ADCL | (ADCH &lt;&lt; 8));
+                      ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:10:22: note: suggested alternative: &#39;ADC&#39;
+   _val = 1126400L / (ADCL | (ADCH &lt;&lt; 8));
+                      ^~~~
+                      ADC
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:10:30: error: &#39;ADCH&#39; was not declared in this scope
+   _val = 1126400L / (ADCL | (ADCH &lt;&lt; 8));
+                              ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:10:30: note: suggested alternative: &#39;ADC&#39;
+   _val = 1126400L / (ADCL | (ADCH &lt;&lt; 8));
+                              ^~~~
+                              ADC
+
+</pre>
+
+					
+					<h4>examples/read</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp: In member function &#39;Batflow Batflow::read()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:3: error: &#39;ADMUX&#39; was not declared in this scope
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+   ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:15: error: &#39;REFS0&#39; was not declared in this scope
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+               ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:11: error: &#39;_BV&#39; was not declared in this scope
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+           ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:11: note: suggested alternative: &#39;_B&#39;
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+           ^~~
+           _B
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:28: error: &#39;MUX3&#39; was not declared in this scope
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+                            ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:40: error: &#39;MUX2&#39; was not declared in this scope
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+                                        ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:52: error: &#39;MUX1&#39; was not declared in this scope
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+                                                    ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:8:3: error: &#39;ADCSRA&#39; was not declared in this scope
+   ADCSRA |= _BV(ADSC);
+   ^~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:8:3: note: suggested alternative: &#39;ADC&#39;
+   ADCSRA |= _BV(ADSC);
+   ^~~~~~
+   ADC
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:8:17: error: &#39;ADSC&#39; was not declared in this scope
+   ADCSRA |= _BV(ADSC);
+                 ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:8:17: note: suggested alternative: &#39;ADC&#39;
+   ADCSRA |= _BV(ADSC);
+                 ^~~~
+                 ADC
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:9:10: error: &#39;bit_is_set&#39; was not declared in this scope
+   while (bit_is_set(ADCSRA, ADSC));
+          ^~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:9:10: note: suggested alternative: &#39;timerisset&#39;
+   while (bit_is_set(ADCSRA, ADSC));
+          ^~~~~~~~~~
+          timerisset
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:10:22: error: &#39;ADCL&#39; was not declared in this scope
+   _val = 1126400L / (ADCL | (ADCH &lt;&lt; 8));
+                      ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:10:22: note: suggested alternative: &#39;ADC&#39;
+   _val = 1126400L / (ADCL | (ADCH &lt;&lt; 8));
+                      ^~~~
+                      ADC
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:10:30: error: &#39;ADCH&#39; was not declared in this scope
+   _val = 1126400L / (ADCL | (ADCH &lt;&lt; 8));
+                              ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:10:30: note: suggested alternative: &#39;ADC&#39;
+   _val = 1126400L / (ADCL | (ADCH &lt;&lt; 8));
+                              ^~~~
+                              ADC
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp: In member function &#39;Batflow Batflow::read()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:3: error: &#39;ADMUX&#39; was not declared in this scope
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.h:5:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:15: error: &#39;REFS0&#39; was not declared in this scope
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:28: error: &#39;MUX3&#39; was not declared in this scope
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:40: error: &#39;MUX2&#39; was not declared in this scope
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:52: error: &#39;MUX1&#39; was not declared in this scope
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+                                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:8:3: error: &#39;ADCSRA&#39; was not declared in this scope
+   ADCSRA |= _BV(ADSC);
+   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.h:5:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:8:17: error: &#39;ADSC&#39; was not declared in this scope
+   ADCSRA |= _BV(ADSC);
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:9:33: error: &#39;bit_is_set&#39; was not declared in this scope
+   while (bit_is_set(ADCSRA, ADSC));
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:10:22: error: &#39;ADCL&#39; was not declared in this scope
+   _val = 1126400L / (ADCL | (ADCH &lt;&lt; 8));
+                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:10:30: error: &#39;ADCH&#39; was not declared in this scope
+   _val = 1126400L / (ADCL | (ADCH &lt;&lt; 8));
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:12:70: error: no matching function for call to &#39;max(int, long int)&#39;
+   _level = max(0, map(_val, min(_val, low), max(_val, high), 0, full));
+                                                                      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/algorithm:62:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:142,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.h:5,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algo.h:3463:5: note: candidate: template&lt;class _Tp, class _Compare&gt; _Tp std::max(std::initializer_list&lt;_Tp&gt;, _Compare)
+     max(initializer_list&lt;_Tp&gt; __l, _Compare __comp)
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algo.h:3463:5: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:12:70: note:   mismatched types &#39;std::initializer_list&lt;_Tp&gt;&#39; and &#39;int&#39;
+   _level = max(0, map(_val, min(_val, low), max(_val, high), 0, full));
+                                                                      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/algorithm:62:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:142,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.h:5,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algo.h:3457:5: note: candidate: template&lt;class _Tp&gt; _Tp std::max(std::initializer_list&lt;_Tp&gt;)
+     max(initializer_list&lt;_Tp&gt; __l)
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algo.h:3457:5: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:12:70: note:   mismatched types &#39;std::initializer_list&lt;_Tp&gt;&#39; and &#39;int&#39;
+   _level = max(0, map(_val, min(_val, low), max(_val, high), 0, full));
+                                                                      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/algorithm:61:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:142,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.h:5,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algobase.h:265:5: note: candidate: template&lt;class _Tp, class _Compare&gt; const _Tp&amp; std::max(const _Tp&amp;, const _Tp&amp;, _Compare)
+     max(const _Tp&amp; __a, const _Tp&amp; __b, _Compare __comp)
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algobase.h:265:5: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:12:70: note:   deduced conflicting types for parameter &#39;const _Tp&#39; (&#39;int&#39; and &#39;long int&#39;)
+   _level = max(0, map(_val, min(_val, low), max(_val, high), 0, full));
+                                                                      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/algorithm:61:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:142,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.h:5,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algobase.h:219:5: note: candidate: template&lt;class _Tp&gt; const _Tp&amp; std::max(const _Tp&amp;, const _Tp&amp;)
+     max(const _Tp&amp; __a, const _Tp&amp; __b)
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algobase.h:219:5: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:12:70: note:   deduced conflicting types for parameter &#39;const _Tp&#39; (&#39;int&#39; and &#39;long int&#39;)
+   _level = max(0, map(_val, min(_val, low), max(_val, high), 0, full));
+                                                                      ^
+
+</pre>
+
+					
+					<h4>examples/read</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp: In member function &#39;Batflow Batflow::read()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:3: error: &#39;ADMUX&#39; was not declared in this scope
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.h:5:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:15: error: &#39;REFS0&#39; was not declared in this scope
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:28: error: &#39;MUX3&#39; was not declared in this scope
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:40: error: &#39;MUX2&#39; was not declared in this scope
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:6:52: error: &#39;MUX1&#39; was not declared in this scope
+   ADMUX = _BV(REFS0) | _BV(MUX3) | _BV(MUX2) | _BV(MUX1);
+                                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:8:3: error: &#39;ADCSRA&#39; was not declared in this scope
+   ADCSRA |= _BV(ADSC);
+   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.h:5:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:8:17: error: &#39;ADSC&#39; was not declared in this scope
+   ADCSRA |= _BV(ADSC);
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:99:25: note: in definition of macro &#39;_BV&#39;
+ #define _BV(b) (1UL &lt;&lt; (b))
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:9:33: error: &#39;bit_is_set&#39; was not declared in this scope
+   while (bit_is_set(ADCSRA, ADSC));
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:10:22: error: &#39;ADCL&#39; was not declared in this scope
+   _val = 1126400L / (ADCL | (ADCH &lt;&lt; 8));
+                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:10:30: error: &#39;ADCH&#39; was not declared in this scope
+   _val = 1126400L / (ADCL | (ADCH &lt;&lt; 8));
+                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:12:70: error: no matching function for call to &#39;max(int, long int)&#39;
+   _level = max(0, map(_val, min(_val, low), max(_val, high), 0, full));
+                                                                      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/algorithm:62:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:142,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.h:5,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algo.h:3463:5: note: candidate: template&lt;class _Tp, class _Compare&gt; _Tp std::max(std::initializer_list&lt;_Tp&gt;, _Compare)
+     max(initializer_list&lt;_Tp&gt; __l, _Compare __comp)
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algo.h:3463:5: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:12:70: note:   mismatched types &#39;std::initializer_list&lt;_Tp&gt;&#39; and &#39;int&#39;
+   _level = max(0, map(_val, min(_val, low), max(_val, high), 0, full));
+                                                                      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/algorithm:62:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:142,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.h:5,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algo.h:3457:5: note: candidate: template&lt;class _Tp&gt; _Tp std::max(std::initializer_list&lt;_Tp&gt;)
+     max(initializer_list&lt;_Tp&gt; __l)
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algo.h:3457:5: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:12:70: note:   mismatched types &#39;std::initializer_list&lt;_Tp&gt;&#39; and &#39;int&#39;
+   _level = max(0, map(_val, min(_val, low), max(_val, high), 0, full));
+                                                                      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/algorithm:61:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:142,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.h:5,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algobase.h:265:5: note: candidate: template&lt;class _Tp, class _Compare&gt; const _Tp&amp; std::max(const _Tp&amp;, const _Tp&amp;, _Compare)
+     max(const _Tp&amp; __a, const _Tp&amp; __b, _Compare __comp)
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algobase.h:265:5: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:12:70: note:   deduced conflicting types for parameter &#39;const _Tp&#39; (&#39;int&#39; and &#39;long int&#39;)
+   _level = max(0, map(_val, min(_val, low), max(_val, high), 0, full));
+                                                                      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/algorithm:61:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:142,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.h:5,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algobase.h:219:5: note: candidate: template&lt;class _Tp&gt; const _Tp&amp; std::max(const _Tp&amp;, const _Tp&amp;)
+     max(const _Tp&amp; __a, const _Tp&amp; __b)
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/xtensa-esp32-elf/include/c&#43;&#43;/5.2.0/bits/stl_algobase.h:219:5: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Batflow/Batflow.cpp:12:70: note:   deduced conflicting types for parameter &#39;const _Tp&#39; (&#39;int&#39; and &#39;long int&#39;)
+   _level = max(0, map(_val, min(_val, low), max(_val, high), 0, full));
+                                                                      ^
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

@@ -1,0 +1,914 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>Adafruit MiniMLX90614 - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>Adafruit MiniMLX90614</h2>
+				<p>
+					Version: <b>1.0.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/adafruit-minimlx90614/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>templight</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp: In function &#39;void USI_TWI_Master_Initialise()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:64:3: error: &#39;PORT_USI&#39; was not declared in this scope
+   PORT_USI |=
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:64:3: note: suggested alternative: &#39;PORT0&#39;
+   PORT_USI |=
+   ^~~~~~~~
+   PORT0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:66:11: error: &#39;PIN_USI_SDA&#39; was not declared in this scope
+        &lt;&lt; PIN_USI_SDA); // Enable pullup on SDA, to set high as released state.
+           ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:69:11: error: &#39;PIN_USI_SCL&#39; was not declared in this scope
+        &lt;&lt; PIN_USI_SCL); // Enable pullup on SCL, to set high as released state.
+           ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:71:3: error: &#39;DDR_USI&#39; was not declared in this scope
+   DDR_USI |= (1 &lt;&lt; PIN_USI_SCL); // Enable SCL as output.
+   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:74:3: error: &#39;USIDR&#39; was not declared in this scope
+   USIDR = 0xFF; // Preload dataregister with &#34;released level&#34; data.
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:74:3: note: suggested alternative: &#39;SPDR&#39;
+   USIDR = 0xFF; // Preload dataregister with &#34;released level&#34; data.
+   ^~~~~
+   SPDR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:75:3: error: &#39;USICR&#39; was not declared in this scope
+   USICR = (0 &lt;&lt; USISIE) | (0 &lt;&lt; USIOIE) | // Disable Interrupts.
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:75:3: note: suggested alternative: &#39;SPCR&#39;
+   USICR = (0 &lt;&lt; USISIE) | (0 &lt;&lt; USIOIE) | // Disable Interrupts.
+   ^~~~~
+   SPCR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:75:17: error: &#39;USISIE&#39; was not declared in this scope
+   USICR = (0 &lt;&lt; USISIE) | (0 &lt;&lt; USIOIE) | // Disable Interrupts.
+                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:75:17: note: suggested alternative: &#39;SPIE&#39;
+   USICR = (0 &lt;&lt; USISIE) | (0 &lt;&lt; USIOIE) | // Disable Interrupts.
+                 ^~~~~~
+                 SPIE
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:75:33: error: &#39;USIOIE&#39; was not declared in this scope
+   USICR = (0 &lt;&lt; USISIE) | (0 &lt;&lt; USIOIE) | // Disable Interrupts.
+                                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:75:33: note: suggested alternative: &#39;SPIE&#39;
+   USICR = (0 &lt;&lt; USISIE) | (0 &lt;&lt; USIOIE) | // Disable Interrupts.
+                                 ^~~~~~
+                                 SPIE
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:76:17: error: &#39;USIWM1&#39; was not declared in this scope
+           (1 &lt;&lt; USIWM1) | (0 &lt;&lt; USIWM0) | // Set USI in Two-wire mode.
+                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:76:17: note: suggested alternative: &#39;SM1&#39;
+           (1 &lt;&lt; USIWM1) | (0 &lt;&lt; USIWM0) | // Set USI in Two-wire mode.
+                 ^~~~~~
+                 SM1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:76:33: error: &#39;USIWM0&#39; was not declared in this scope
+           (1 &lt;&lt; USIWM1) | (0 &lt;&lt; USIWM0) | // Set USI in Two-wire mode.
+                                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:76:33: note: suggested alternative: &#39;USBS0&#39;
+           (1 &lt;&lt; USIWM1) | (0 &lt;&lt; USIWM0) | // Set USI in Two-wire mode.
+                                 ^~~~~~
+                                 USBS0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:77:17: error: &#39;USICS1&#39; was not declared in this scope
+           (1 &lt;&lt; USICS1) | (0 &lt;&lt; USICS0) |
+                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:77:17: note: suggested alternative: &#39;ISC11&#39;
+           (1 &lt;&lt; USICS1) | (0 &lt;&lt; USICS0) |
+                 ^~~~~~
+                 ISC11
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:77:33: error: &#39;USICS0&#39; was not declared in this scope
+           (1 &lt;&lt; USICS1) | (0 &lt;&lt; USICS0) |
+                                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:77:33: note: suggested alternative: &#39;USBS0&#39;
+           (1 &lt;&lt; USICS1) | (0 &lt;&lt; USICS0) |
+                                 ^~~~~~
+                                 USBS0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:78:17: error: &#39;USICLK&#39; was not declared in this scope
+           (1 &lt;&lt; USICLK) | // Software stobe as counter clock source
+                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:78:17: note: suggested alternative: &#39;EXCLK&#39;
+           (1 &lt;&lt; USICLK) | // Software stobe as counter clock source
+                 ^~~~~~
+                 EXCLK
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:79:17: error: &#39;USITC&#39; was not declared in this scope
+           (0 &lt;&lt; USITC);
+                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:80:3: error: &#39;USISR&#39; was not declared in this scope
+   USISR = (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) |
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:80:3: note: suggested alternative: &#39;SPSR&#39;
+   USISR = (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) |
+   ^~~~~
+   SPSR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:80:17: error: &#39;USISIF&#39; was not declared in this scope
+   USISR = (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) |
+                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:80:17: note: suggested alternative: &#39;SPIF&#39;
+   USISR = (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) |
+                 ^~~~~~
+                 SPIF
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:80:33: error: &#39;USIOIF&#39; was not declared in this scope
+   USISR = (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) |
+                                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:80:33: note: suggested alternative: &#39;SPIF&#39;
+   USISR = (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) |
+                                 ^~~~~~
+                                 SPIF
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:80:49: error: &#39;USIPF&#39; was not declared in this scope
+   USISR = (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) |
+                                                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:81:17: error: &#39;USIDC&#39; was not declared in this scope
+           (1 &lt;&lt; USIDC) |    // Clear flags,
+                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:82:19: error: &#39;USICNT0&#39; was not declared in this scope
+           (0x0 &lt;&lt; USICNT0); // and reset counter.
+                   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:82:19: note: suggested alternative: &#39;INT0&#39;
+           (0x0 &lt;&lt; USICNT0); // and reset counter.
+                   ^~~~~~~
+                   INT0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp: In function &#39;unsigned char USI_TWI_Start_Transceiver_With_Data(unsigned char*, unsigned char)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:161:13: error: &#39;USISIF&#39; was not declared in this scope
+       (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) |
+             ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:161:13: note: suggested alternative: &#39;SPIF&#39;
+       (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) |
+             ^~~~~~
+             SPIF
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:161:29: error: &#39;USIOIF&#39; was not declared in this scope
+       (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) |
+                             ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:161:29: note: suggested alternative: &#39;SPIF&#39;
+       (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) |
+                             ^~~~~~
+                             SPIF
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:161:45: error: &#39;USIPF&#39; was not declared in this scope
+       (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) |
+                                             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:162:13: error: &#39;USIDC&#39; was not declared in this scope
+       (1 &lt;&lt; USIDC) |    // Prepare register value to: Clear flags, and
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:163:15: error: &#39;USICNT0&#39; was not declared in this scope
+       (0x0 &lt;&lt; USICNT0); // set USI to shift 8 bits i.e. count 16 clock edges.
+               ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:163:15: note: suggested alternative: &#39;INT0&#39;
+       (0x0 &lt;&lt; USICNT0); // set USI to shift 8 bits i.e. count 16 clock edges.
+               ^~~~~~~
+               INT0
+/h</pre>
+
+					
+					<h4>examples/templight</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp: In function &#39;void USI_TWI_Master_Initialise()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:64:3: error: &#39;PORT_USI&#39; was not declared in this scope
+   PORT_USI |=
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:64:3: note: suggested alternative: &#39;PORT0&#39;
+   PORT_USI |=
+   ^~~~~~~~
+   PORT0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:66:11: error: &#39;PIN_USI_SDA&#39; was not declared in this scope
+        &lt;&lt; PIN_USI_SDA); // Enable pullup on SDA, to set high as released state.
+           ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:69:11: error: &#39;PIN_USI_SCL&#39; was not declared in this scope
+        &lt;&lt; PIN_USI_SCL); // Enable pullup on SCL, to set high as released state.
+           ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:71:3: error: &#39;DDR_USI&#39; was not declared in this scope
+   DDR_USI |= (1 &lt;&lt; PIN_USI_SCL); // Enable SCL as output.
+   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:74:3: error: &#39;USIDR&#39; was not declared in this scope
+   USIDR = 0xFF; // Preload dataregister with &#34;released level&#34; data.
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:74:3: note: suggested alternative: &#39;SPDR&#39;
+   USIDR = 0xFF; // Preload dataregister with &#34;released level&#34; data.
+   ^~~~~
+   SPDR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:75:3: error: &#39;USICR&#39; was not declared in this scope
+   USICR = (0 &lt;&lt; USISIE) | (0 &lt;&lt; USIOIE) | // Disable Interrupts.
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:75:3: note: suggested alternative: &#39;SPCR&#39;
+   USICR = (0 &lt;&lt; USISIE) | (0 &lt;&lt; USIOIE) | // Disable Interrupts.
+   ^~~~~
+   SPCR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:75:17: error: &#39;USISIE&#39; was not declared in this scope
+   USICR = (0 &lt;&lt; USISIE) | (0 &lt;&lt; USIOIE) | // Disable Interrupts.
+                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:75:17: note: suggested alternative: &#39;SPIE&#39;
+   USICR = (0 &lt;&lt; USISIE) | (0 &lt;&lt; USIOIE) | // Disable Interrupts.
+                 ^~~~~~
+                 SPIE
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:75:33: error: &#39;USIOIE&#39; was not declared in this scope
+   USICR = (0 &lt;&lt; USISIE) | (0 &lt;&lt; USIOIE) | // Disable Interrupts.
+                                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:75:33: note: suggested alternative: &#39;SPIE&#39;
+   USICR = (0 &lt;&lt; USISIE) | (0 &lt;&lt; USIOIE) | // Disable Interrupts.
+                                 ^~~~~~
+                                 SPIE
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:76:17: error: &#39;USIWM1&#39; was not declared in this scope
+           (1 &lt;&lt; USIWM1) | (0 &lt;&lt; USIWM0) | // Set USI in Two-wire mode.
+                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:76:17: note: suggested alternative: &#39;SM1&#39;
+           (1 &lt;&lt; USIWM1) | (0 &lt;&lt; USIWM0) | // Set USI in Two-wire mode.
+                 ^~~~~~
+                 SM1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:76:33: error: &#39;USIWM0&#39; was not declared in this scope
+           (1 &lt;&lt; USIWM1) | (0 &lt;&lt; USIWM0) | // Set USI in Two-wire mode.
+                                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:76:33: note: suggested alternative: &#39;USBS0&#39;
+           (1 &lt;&lt; USIWM1) | (0 &lt;&lt; USIWM0) | // Set USI in Two-wire mode.
+                                 ^~~~~~
+                                 USBS0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:77:17: error: &#39;USICS1&#39; was not declared in this scope
+           (1 &lt;&lt; USICS1) | (0 &lt;&lt; USICS0) |
+                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:77:17: note: suggested alternative: &#39;ISC11&#39;
+           (1 &lt;&lt; USICS1) | (0 &lt;&lt; USICS0) |
+                 ^~~~~~
+                 ISC11
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:77:33: error: &#39;USICS0&#39; was not declared in this scope
+           (1 &lt;&lt; USICS1) | (0 &lt;&lt; USICS0) |
+                                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:77:33: note: suggested alternative: &#39;USBS0&#39;
+           (1 &lt;&lt; USICS1) | (0 &lt;&lt; USICS0) |
+                                 ^~~~~~
+                                 USBS0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:78:17: error: &#39;USICLK&#39; was not declared in this scope
+           (1 &lt;&lt; USICLK) | // Software stobe as counter clock source
+                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:78:17: note: suggested alternative: &#39;EXCLK&#39;
+           (1 &lt;&lt; USICLK) | // Software stobe as counter clock source
+                 ^~~~~~
+                 EXCLK
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:79:17: error: &#39;USITC&#39; was not declared in this scope
+           (0 &lt;&lt; USITC);
+                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:80:3: error: &#39;USISR&#39; was not declared in this scope
+   USISR = (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) |
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:80:3: note: suggested alternative: &#39;SPSR&#39;
+   USISR = (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) |
+   ^~~~~
+   SPSR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:80:17: error: &#39;USISIF&#39; was not declared in this scope
+   USISR = (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) |
+                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:80:17: note: suggested alternative: &#39;SPIF&#39;
+   USISR = (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) |
+                 ^~~~~~
+                 SPIF
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:80:33: error: &#39;USIOIF&#39; was not declared in this scope
+   USISR = (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) |
+                                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:80:33: note: suggested alternative: &#39;SPIF&#39;
+   USISR = (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) |
+                                 ^~~~~~
+                                 SPIF
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:80:49: error: &#39;USIPF&#39; was not declared in this scope
+   USISR = (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) |
+                                                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:81:17: error: &#39;USIDC&#39; was not declared in this scope
+           (1 &lt;&lt; USIDC) |    // Clear flags,
+                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:82:19: error: &#39;USICNT0&#39; was not declared in this scope
+           (0x0 &lt;&lt; USICNT0); // and reset counter.
+                   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:82:19: note: suggested alternative: &#39;INT0&#39;
+           (0x0 &lt;&lt; USICNT0); // and reset counter.
+                   ^~~~~~~
+                   INT0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp: In function &#39;unsigned char USI_TWI_Start_Transceiver_With_Data(unsigned char*, unsigned char)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:161:13: error: &#39;USISIF&#39; was not declared in this scope
+       (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) |
+             ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:161:13: note: suggested alternative: &#39;SPIF&#39;
+       (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) |
+             ^~~~~~
+             SPIF
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:161:29: error: &#39;USIOIF&#39; was not declared in this scope
+       (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) |
+                             ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:161:29: note: suggested alternative: &#39;SPIF&#39;
+       (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) |
+                             ^~~~~~
+                             SPIF
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:161:45: error: &#39;USIPF&#39; was not declared in this scope
+       (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) |
+                                             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:162:13: error: &#39;USIDC&#39; was not declared in this scope
+       (1 &lt;&lt; USIDC) |    // Prepare register value to: Clear flags, and
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:163:15: error: &#39;USICNT0&#39; was not declared in this scope
+       (0x0 &lt;&lt; USICNT0); // set USI to shift 8 bits i.e. count 16 clock edges.
+               ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:163:15: note: suggested alternative: &#39;INT0&#39;
+       (0x0 &lt;&lt; USICNT0); // set USI to shift 8 bits i.e. count 16 clock edges.
+               ^~~~~~~
+               INT0
+/h</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:29:10: fatal error: avr/io.h: No such file or directory
+ #include &lt;avr/io.h&gt;
+          ^~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/templight</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:29:10: fatal error: avr/io.h: No such file or directory
+ #include &lt;avr/io.h&gt;
+          ^~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;Adafruit_NeoPixel.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_NeoPixel
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pinduino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Leaphy_Extra_Extension
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp: In function &#39;void USI_TWI_Master_Initialise()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:64:3: error: &#39;PORT_USI&#39; was not declared in this scope
+   PORT_USI |=
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:64:3: note: suggested alternative: &#39;PORT_t&#39;
+   PORT_USI |=
+   ^~~~~~~~
+   PORT_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:66:11: error: &#39;PIN_USI_SDA&#39; was not declared in this scope
+        &lt;&lt; PIN_USI_SDA); // Enable pullup on SDA, to set high as released state.
+           ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:69:11: error: &#39;PIN_USI_SCL&#39; was not declared in this scope
+        &lt;&lt; PIN_USI_SCL); // Enable pullup on SCL, to set high as released state.
+           ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:71:3: error: &#39;DDR_USI&#39; was not declared in this scope
+   DDR_USI |= (1 &lt;&lt; PIN_USI_SCL); // Enable SCL as output.
+   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:74:3: error: &#39;USIDR&#39; was not declared in this scope
+   USIDR = 0xFF; // Preload dataregister with &#34;released level&#34; data.
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:75:3: error: &#39;USICR&#39; was not declared in this scope
+   USICR = (0 &lt;&lt; USISIE) | (0 &lt;&lt; USIOIE) | // Disable Interrupts.
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:75:17: error: &#39;USISIE&#39; was not declared in this scope
+   USICR = (0 &lt;&lt; USISIE) | (0 &lt;&lt; USIOIE) | // Disable Interrupts.
+                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:75:33: error: &#39;USIOIE&#39; was not declared in this scope
+   USICR = (0 &lt;&lt; USISIE) | (0 &lt;&lt; USIOIE) | // Disable Interrupts.
+                                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:76:17: error: &#39;USIWM1&#39; was not declared in this scope
+           (1 &lt;&lt; USIWM1) | (0 &lt;&lt; USIWM0) | // Set USI in Two-wire mode.
+                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:76:17: note: suggested alternative: &#39;USART1&#39;
+           (1 &lt;&lt; USIWM1) | (0 &lt;&lt; USIWM0) | // Set USI in Two-wire mode.
+                 ^~~~~~
+                 USART1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:76:33: error: &#39;USIWM0&#39; was not declared in this scope
+           (1 &lt;&lt; USIWM1) | (0 &lt;&lt; USIWM0) | // Set USI in Two-wire mode.
+                                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:76:33: note: suggested alternative: &#39;USART0&#39;
+           (1 &lt;&lt; USIWM1) | (0 &lt;&lt; USIWM0) | // Set USI in Two-wire mode.
+                                 ^~~~~~
+                                 USART0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:77:17: error: &#39;USICS1&#39; was not declared in this scope
+           (1 &lt;&lt; USICS1) | (0 &lt;&lt; USICS0) |
+                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:77:17: note: suggested alternative: &#39;USART1&#39;
+           (1 &lt;&lt; USICS1) | (0 &lt;&lt; USICS0) |
+                 ^~~~~~
+                 USART1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:77:33: error: &#39;USICS0&#39; was not declared in this scope
+           (1 &lt;&lt; USICS1) | (0 &lt;&lt; USICS0) |
+                                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:77:33: note: suggested alternative: &#39;USART0&#39;
+           (1 &lt;&lt; USICS1) | (0 &lt;&lt; USICS0) |
+                                 ^~~~~~
+                                 USART0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:78:17: error: &#39;USICLK&#39; was not declared in this scope
+           (1 &lt;&lt; USICLK) | // Software stobe as counter clock source
+                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:79:17: error: &#39;USITC&#39; was not declared in this scope
+           (0 &lt;&lt; USITC);
+                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:80:3: error: &#39;USISR&#39; was not declared in this scope
+   USISR = (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) |
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:80:3: note: suggested alternative: &#39;ISR&#39;
+   USISR = (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) |
+   ^~~~~
+   ISR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:80:17: error: &#39;USISIF&#39; was not declared in this scope
+   USISR = (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) |
+                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:80:33: error: &#39;USIOIF&#39; was not declared in this scope
+   USISR = (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) |
+                                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:80:49: error: &#39;USIPF&#39; was not declared in this scope
+   USISR = (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) |
+                                                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:81:17: error: &#39;USIDC&#39; was not declared in this scope
+           (1 &lt;&lt; USIDC) |    // Clear flags,
+                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:82:19: error: &#39;USICNT0&#39; was not declared in this scope
+           (0x0 &lt;&lt; USICNT0); // and reset counter.
+                   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:82:19: note: suggested alternative: &#39;USART0&#39;
+           (0x0 &lt;&lt; USICNT0); // and reset counter.
+                   ^~~~~~~
+                   USART0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp: In function &#39;unsigned char USI_TWI_Start_Transceiver_With_Data(unsigned char*, unsigned char)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:161:13: error: &#39;USISIF&#39; was not declared in this scope
+       (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) |
+             ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:161:29: error: &#39;USIOIF&#39; was not declared in this scope
+       (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) |
+                             ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:161:45: error: &#39;USIPF&#39; was not declared in this scope
+       (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) |
+                                             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:162:13: error: &#39;USIDC&#39; was not declared in this scope
+       (1 &lt;&lt; USIDC) |    // Prepare register value to: Clear flags, and
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:163:15: error: &#39;USICNT0&#39; was not declared in this scope
+       (0x0 &lt;&lt; USICNT0); // set USI to shift 8 bits i.e. count 16 clock edges.
+               ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:163:15: note: suggested alternative: &#39;USART0&#39;
+       (0x0 &lt;&lt; USICNT0); // set USI to shift 8 bits i.e. count 16 clock edges.
+               ^~~~~~~
+               USART0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:229:7: error: &#39;PORT_USI&#39; was not declared in this scope
+       PORT_USI &amp;= ~(1 &lt;&lt; PIN_USI_SCL);         // Pull SCL LOW.
+       ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:229:7: note: suggested alternative: &#39;PORT_t&#39;
+       PORT_USI &amp;= ~(1 &lt;&lt; PIN_USI_SCL);         // Pull SCL LOW.
+       ^~~~~~~~
+       PORT_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:229:26: error: &#39;PIN_USI_SCL&#39; was not declared in this scope
+       PORT_USI &amp;= ~(1 &lt;&lt; PIN_USI_SCL);         // Pull SCL LOW.
+                          ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:230:7: error: &#39;USIDR&#39; was not declared in this scope
+       USIDR = *(msg&#43;&#43;);                        // Setup data.
+       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:234:7: error: &#39;DDR_USI&#39; was not declared in this scope
+       DDR_USI &amp;= ~(1 &lt;&lt; PIN_USI_SDA); // Enable SDA as input.
+       ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:234:25: error: &#39;PIN_USI_SDA&#39; was not declared in this scope
+       DDR_USI &amp;= ~(1 &lt;&lt; PIN_USI_SDA); // Enable SDA as input.
+                         ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:266:7: error: &#39;DDR_USI&#39; was not declared in this scope
+       DDR_USI &amp;= ~(1 &lt;&lt; PIN_USI_SDA); // Enable SDA as input.
+       ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:266:25: error: &#39;PIN_USI_SDA&#39; was not declared in this scope
+       DDR_USI &amp;= ~(1 &lt;&lt; PIN_USI_SDA); // Enable SDA as input.
+                         ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:272:9: error: &#39;USIDR&#39; was not declared in this scope
+         USIDR = 0xFF; // Load NACK to confirm End Of Transmission.
+         ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_</pre>
+
+					
+					<h4>examples/templight</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp: In function &#39;void USI_TWI_Master_Initialise()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:64:3: error: &#39;PORT_USI&#39; was not declared in this scope
+   PORT_USI |=
+   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:64:3: note: suggested alternative: &#39;PORT_t&#39;
+   PORT_USI |=
+   ^~~~~~~~
+   PORT_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:66:11: error: &#39;PIN_USI_SDA&#39; was not declared in this scope
+        &lt;&lt; PIN_USI_SDA); // Enable pullup on SDA, to set high as released state.
+           ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:69:11: error: &#39;PIN_USI_SCL&#39; was not declared in this scope
+        &lt;&lt; PIN_USI_SCL); // Enable pullup on SCL, to set high as released state.
+           ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:71:3: error: &#39;DDR_USI&#39; was not declared in this scope
+   DDR_USI |= (1 &lt;&lt; PIN_USI_SCL); // Enable SCL as output.
+   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:74:3: error: &#39;USIDR&#39; was not declared in this scope
+   USIDR = 0xFF; // Preload dataregister with &#34;released level&#34; data.
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:75:3: error: &#39;USICR&#39; was not declared in this scope
+   USICR = (0 &lt;&lt; USISIE) | (0 &lt;&lt; USIOIE) | // Disable Interrupts.
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:75:17: error: &#39;USISIE&#39; was not declared in this scope
+   USICR = (0 &lt;&lt; USISIE) | (0 &lt;&lt; USIOIE) | // Disable Interrupts.
+                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:75:33: error: &#39;USIOIE&#39; was not declared in this scope
+   USICR = (0 &lt;&lt; USISIE) | (0 &lt;&lt; USIOIE) | // Disable Interrupts.
+                                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:76:17: error: &#39;USIWM1&#39; was not declared in this scope
+           (1 &lt;&lt; USIWM1) | (0 &lt;&lt; USIWM0) | // Set USI in Two-wire mode.
+                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:76:17: note: suggested alternative: &#39;USART1&#39;
+           (1 &lt;&lt; USIWM1) | (0 &lt;&lt; USIWM0) | // Set USI in Two-wire mode.
+                 ^~~~~~
+                 USART1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:76:33: error: &#39;USIWM0&#39; was not declared in this scope
+           (1 &lt;&lt; USIWM1) | (0 &lt;&lt; USIWM0) | // Set USI in Two-wire mode.
+                                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:76:33: note: suggested alternative: &#39;USART0&#39;
+           (1 &lt;&lt; USIWM1) | (0 &lt;&lt; USIWM0) | // Set USI in Two-wire mode.
+                                 ^~~~~~
+                                 USART0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:77:17: error: &#39;USICS1&#39; was not declared in this scope
+           (1 &lt;&lt; USICS1) | (0 &lt;&lt; USICS0) |
+                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:77:17: note: suggested alternative: &#39;USART1&#39;
+           (1 &lt;&lt; USICS1) | (0 &lt;&lt; USICS0) |
+                 ^~~~~~
+                 USART1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:77:33: error: &#39;USICS0&#39; was not declared in this scope
+           (1 &lt;&lt; USICS1) | (0 &lt;&lt; USICS0) |
+                                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:77:33: note: suggested alternative: &#39;USART0&#39;
+           (1 &lt;&lt; USICS1) | (0 &lt;&lt; USICS0) |
+                                 ^~~~~~
+                                 USART0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:78:17: error: &#39;USICLK&#39; was not declared in this scope
+           (1 &lt;&lt; USICLK) | // Software stobe as counter clock source
+                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:79:17: error: &#39;USITC&#39; was not declared in this scope
+           (0 &lt;&lt; USITC);
+                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:80:3: error: &#39;USISR&#39; was not declared in this scope
+   USISR = (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) |
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:80:3: note: suggested alternative: &#39;ISR&#39;
+   USISR = (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) |
+   ^~~~~
+   ISR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:80:17: error: &#39;USISIF&#39; was not declared in this scope
+   USISR = (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) |
+                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:80:33: error: &#39;USIOIF&#39; was not declared in this scope
+   USISR = (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) |
+                                 ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:80:49: error: &#39;USIPF&#39; was not declared in this scope
+   USISR = (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) |
+                                                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:81:17: error: &#39;USIDC&#39; was not declared in this scope
+           (1 &lt;&lt; USIDC) |    // Clear flags,
+                 ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:82:19: error: &#39;USICNT0&#39; was not declared in this scope
+           (0x0 &lt;&lt; USICNT0); // and reset counter.
+                   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:82:19: note: suggested alternative: &#39;USART0&#39;
+           (0x0 &lt;&lt; USICNT0); // and reset counter.
+                   ^~~~~~~
+                   USART0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp: In function &#39;unsigned char USI_TWI_Start_Transceiver_With_Data(unsigned char*, unsigned char)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:161:13: error: &#39;USISIF&#39; was not declared in this scope
+       (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) |
+             ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:161:29: error: &#39;USIOIF&#39; was not declared in this scope
+       (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) |
+                             ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:161:45: error: &#39;USIPF&#39; was not declared in this scope
+       (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) |
+                                             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:162:13: error: &#39;USIDC&#39; was not declared in this scope
+       (1 &lt;&lt; USIDC) |    // Prepare register value to: Clear flags, and
+             ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:163:15: error: &#39;USICNT0&#39; was not declared in this scope
+       (0x0 &lt;&lt; USICNT0); // set USI to shift 8 bits i.e. count 16 clock edges.
+               ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:163:15: note: suggested alternative: &#39;USART0&#39;
+       (0x0 &lt;&lt; USICNT0); // set USI to shift 8 bits i.e. count 16 clock edges.
+               ^~~~~~~
+               USART0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:229:7: error: &#39;PORT_USI&#39; was not declared in this scope
+       PORT_USI &amp;= ~(1 &lt;&lt; PIN_USI_SCL);         // Pull SCL LOW.
+       ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:229:7: note: suggested alternative: &#39;PORT_t&#39;
+       PORT_USI &amp;= ~(1 &lt;&lt; PIN_USI_SCL);         // Pull SCL LOW.
+       ^~~~~~~~
+       PORT_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:229:26: error: &#39;PIN_USI_SCL&#39; was not declared in this scope
+       PORT_USI &amp;= ~(1 &lt;&lt; PIN_USI_SCL);         // Pull SCL LOW.
+                          ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:230:7: error: &#39;USIDR&#39; was not declared in this scope
+       USIDR = *(msg&#43;&#43;);                        // Setup data.
+       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:234:7: error: &#39;DDR_USI&#39; was not declared in this scope
+       DDR_USI &amp;= ~(1 &lt;&lt; PIN_USI_SDA); // Enable SDA as input.
+       ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:234:25: error: &#39;PIN_USI_SDA&#39; was not declared in this scope
+       DDR_USI &amp;= ~(1 &lt;&lt; PIN_USI_SDA); // Enable SDA as input.
+                         ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:266:7: error: &#39;DDR_USI&#39; was not declared in this scope
+       DDR_USI &amp;= ~(1 &lt;&lt; PIN_USI_SDA); // Enable SDA as input.
+       ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:266:25: error: &#39;PIN_USI_SDA&#39; was not declared in this scope
+       DDR_USI &amp;= ~(1 &lt;&lt; PIN_USI_SDA); // Enable SDA as input.
+                         ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:272:9: error: &#39;USIDR&#39; was not declared in this scope
+         USIDR = 0xFF; // Load NACK to confirm End Of Transmission.
+         ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:29:10: fatal error: avr/io.h: No such file or directory
+ #include &lt;avr/io.h&gt;
+          ^~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/templight</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:29:10: fatal error: avr/io.h: No such file or directory
+ #include &lt;avr/io.h&gt;
+          ^~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;Adafruit_NeoPixel.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_NeoPixel
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pinduino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Leaphy_Extra_Extension
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:28:27: fatal error: avr/interrupt.h: No such file or directory
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/templight</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TinyWireM/USI_TWI_Master.cpp:28:27: fatal error: avr/interrupt.h: No such file or directory
+compilation terminated.
+Multiple libraries were found for &#34;Adafruit_NeoPixel.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_NeoPixel
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Pinduino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Leaphy_Extra_Extension
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

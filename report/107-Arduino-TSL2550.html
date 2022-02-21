@@ -1,0 +1,357 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>107-Arduino-TSL2550 - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>107-Arduino-TSL2550</h2>
+				<p>
+					Version: <b>1.0.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/107-arduino-tsl2550/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>TSL2550-Basic</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+							<td>No ⚠️</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/107-Arduino-TSL2550/src/107-Arduino-TSL2550.h:15:0,
+                 from /tmp/arduino-testlib4227199439/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/107-Arduino-TSL2550/src/TSL2550/TSL2550_Io.h:17:10: fatal error: functional: No such file or directory
+ #include &lt;functional&gt;
+          ^~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/TSL2550-Basic</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/107-Arduino-TSL2550/src/107-Arduino-TSL2550.h:15:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/107-Arduino-TSL2550/examples/TSL2550-Basic/TSL2550-Basic.ino:11:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/107-Arduino-TSL2550/src/TSL2550/TSL2550_Io.h:17:10: fatal error: functional: No such file or directory
+ #include &lt;functional&gt;
+          ^~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 78804 bytes (0%) of program storage space. Maximum is 16777216 bytes.
+Global variables use 43464 bytes (16%) of dynamic memory, leaving 226872 bytes for local variables. Maximum is 270336 bytes.
+</pre>
+
+					
+					<h4>examples/TSL2550-Basic</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 93588 bytes (0%) of program storage space. Maximum is 16777216 bytes.
+Global variables use 44304 bytes (16%) of dynamic memory, leaving 226032 bytes for local variables. Maximum is 270336 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/107-Arduino-TSL2550/src/107-Arduino-TSL2550.h:15:0,
+                 from /tmp/arduino-testlib4227199439/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/107-Arduino-TSL2550/src/TSL2550/TSL2550_Io.h:17:10: fatal error: functional: No such file or directory
+ #include &lt;functional&gt;
+          ^~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/TSL2550-Basic</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/107-Arduino-TSL2550/src/107-Arduino-TSL2550.h:15:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/107-Arduino-TSL2550/examples/TSL2550-Basic/TSL2550-Basic.ino:11:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/107-Arduino-TSL2550/src/TSL2550/TSL2550_Io.h:17:10: fatal error: functional: No such file or directory
+ #include &lt;functional&gt;
+          ^~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 12156 bytes (4%) of program storage space. Maximum is 262144 bytes.
+Global variables use 2996 bytes (9%) of dynamic memory, leaving 29772 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+
+					
+					<h4>examples/TSL2550-Basic</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 25404 bytes (9%) of program storage space. Maximum is 262144 bytes.
+Global variables use 3624 bytes (11%) of dynamic memory, leaving 29144 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library 107-Arduino-TSL2550 claims to run on samd, mbed, mbed_nano, mbed_portenta, mbed_edge, esp8266 architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+Sketch uses 249384 bytes (19%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 13408 bytes (4%) of dynamic memory, leaving 314272 bytes for local variables. Maximum is 327680 bytes.
+</pre>
+
+					
+					<h4>examples/TSL2550-Basic</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library 107-Arduino-TSL2550 claims to run on samd, mbed, mbed_nano, mbed_portenta, mbed_edge, esp8266 architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+Sketch uses 268958 bytes (20%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 14520 bytes (4%) of dynamic memory, leaving 313160 bytes for local variables. Maximum is 327680 bytes.
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

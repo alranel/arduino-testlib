@@ -1,0 +1,1247 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>ESP8266_LED_64x16_Matrix - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>ESP8266_LED_64x16_Matrix</h2>
+				<p>
+					Version: <b>1.1</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/esp8266_led_64x16_matrix/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>simplescroll</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library ESP8266_LED_64x16_Matrix claims to run on ESP8266 architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp: In member function &#39;void ESP8266_LED_64x16_Matrix::setDisplay(uint8_t, uint8_t)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:39:2: error: &#39;timer1_attachInterrupt&#39; was not declared in this scope
+  timer1_attachInterrupt(interruptHandler);
+  ^~~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:39:2: note: suggested alternative: &#39;attachInterrupt&#39;
+  timer1_attachInterrupt(interruptHandler);
+  ^~~~~~~~~~~~~~~~~~~~~~
+  attachInterrupt
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:42:2: error: &#39;timer1_write&#39; was not declared in this scope
+  timer1_write(nextT);
+  ^~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:43:2: error: &#39;timer1_disable&#39; was not declared in this scope
+  timer1_disable();
+  ^~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp: In member function &#39;void ESP8266_LED_64x16_Matrix::turnOn()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:75:16: error: &#39;TIM_DIV16&#39; was not declared in this scope
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_SINGLE);
+                ^~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:75:27: error: &#39;TIM_EDGE&#39; was not declared in this scope
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_SINGLE);
+                           ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:75:27: note: suggested alternative: &#39;TIMER2&#39;
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_SINGLE);
+                           ^~~~~~~~
+                           TIMER2
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:75:37: error: &#39;TIM_SINGLE&#39; was not declared in this scope
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_SINGLE);
+                                     ^~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:75:37: note: suggested alternative: &#39;RISING&#39;
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_SINGLE);
+                                     ^~~~~~~~~~
+                                     RISING
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:75:2: error: &#39;timer1_enable&#39; was not declared in this scope
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_SINGLE);
+  ^~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp: In member function &#39;void ESP8266_LED_64x16_Matrix::turnOff()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:80:2: error: &#39;timer1_disable&#39; was not declared in this scope
+  timer1_disable();
+  ^~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp: In member function &#39;void ESP8266_LED_64x16_Matrix::shiftOutFast(byte)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:153:18: error: &#39;GPIO_OUT_W1TC_ADDRESS&#39; was not declared in this scope
+   GPIO_REG_WRITE(GPIO_OUT_W1TC_ADDRESS, 1 &lt;&lt; clockPin);
+                  ^~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:153:3: error: &#39;GPIO_REG_WRITE&#39; was not declared in this scope
+   GPIO_REG_WRITE(GPIO_OUT_W1TC_ADDRESS, 1 &lt;&lt; clockPin);
+   ^~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:155:19: error: &#39;GPIO_OUT_W1TS_ADDRESS&#39; was not declared in this scope
+    GPIO_REG_WRITE(GPIO_OUT_W1TS_ADDRESS, 1 &lt;&lt; data_R1);
+                   ^~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:158:18: error: &#39;GPIO_OUT_W1TS_ADDRESS&#39; was not declared in this scope
+   GPIO_REG_WRITE(GPIO_OUT_W1TS_ADDRESS, 1 &lt;&lt; clockPin);
+                  ^~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp: In member function &#39;void ESP8266_LED_64x16_Matrix::ISR_TIMER_SCAN()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:238:2: error: &#39;GPOS&#39; was not declared in this scope
+  GPOS |= 1 &lt;&lt; en_74138;
+  ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:238:2: note: suggested alternative: &#39;CPOL&#39;
+  GPOS |= 1 &lt;&lt; en_74138;
+  ^~~~
+  CPOL
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:242:17: error: &#39;PERIPHS_GPIO_BASEADDR&#39; was not declared in this scope
+  WRITE_PERI_REG(PERIPHS_GPIO_BASEADDR &#43; 8, rowPin);
+                 ^~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:242:2: error: &#39;WRITE_PERI_REG&#39; was not declared in this scope
+  WRITE_PERI_REG(PERIPHS_GPIO_BASEADDR &#43; 8, rowPin);
+  ^~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:266:2: error: &#39;GP16O&#39; was not declared in this scope
+  GP16O &amp;= ~1;
+  ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:280:2: error: &#39;GPOC&#39; was not declared in this scope
+  GPOC |= 1 &lt;&lt; en_74138;
+  ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:280:2: note: suggested alternative: &#39;CPOL&#39;
+  GPOC |= 1 &lt;&lt; en_74138;
+  ^~~~
+  CPOL
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:283:2: error: &#39;timer1_write&#39; was not declared in this scope
+  timer1_write(nextT);
+  ^~~~~~~~~~~~
+
+</pre>
+
+					
+					<h4>examples/simplescroll</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library ESP8266_LED_64x16_Matrix claims to run on ESP8266 architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino: In function &#39;void setup()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:5:18: error: &#39;D0&#39; was not declared in this scope
+ #define latchPin D0
+                  ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:19: note: in expansion of macro &#39;latchPin&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                   ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:5:18: note: suggested alternative: &#39;A0&#39;
+ #define latchPin D0
+                  ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:19: note: in expansion of macro &#39;latchPin&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                   ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:8:18: error: &#39;D1&#39; was not declared in this scope
+ #define clockPin D1
+                  ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:29: note: in expansion of macro &#39;clockPin&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                             ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:8:18: note: suggested alternative: &#39;A1&#39;
+ #define clockPin D1
+                  ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:29: note: in expansion of macro &#39;clockPin&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                             ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:9:17: error: &#39;D3&#39; was not declared in this scope
+ #define data_R1 D3
+                 ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:39: note: in expansion of macro &#39;data_R1&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                                       ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:9:17: note: suggested alternative: &#39;A3&#39;
+ #define data_R1 D3
+                 ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:39: note: in expansion of macro &#39;data_R1&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                                       ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:11:18: error: &#39;D4&#39; was not declared in this scope
+ #define en_74138 D4
+                  ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:48: note: in expansion of macro &#39;en_74138&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                                                ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:11:18: note: suggested alternative: &#39;A4&#39;
+ #define en_74138 D4
+                  ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:48: note: in expansion of macro &#39;en_74138&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                                                ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:12:18: error: &#39;D8&#39; was not declared in this scope
+ #define la_74138 D8
+                  ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:58: note: in expansion of macro &#39;la_74138&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                                                          ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:12:18: note: suggested alternative: &#39;u8&#39;
+ #define la_74138 D8
+                  ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:58: note: in expansion of macro &#39;la_74138&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                                                          ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:13:18: error: &#39;D7&#39; was not declared in this scope
+ #define lb_74138 D7
+                  ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:68: note: in expansion of macro &#39;lb_74138&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                                                                    ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:13:18: note: suggested alternative: &#39;A7&#39;
+ #define lb_74138 D7
+                  ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:68: note: in expansion of macro &#39;lb_74138&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                                                                    ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:14:18: error: &#39;D6&#39; was not declared in this scope
+ #define lc_74138 D6
+                  ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:78: note: in expansion of macro &#39;lc_74138&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                                                                              ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:14:18: note: suggested alternative: &#39;A6&#39;
+ #define lc_74138 D6
+                  ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:78: note: in expansion of macro &#39;lc_74138&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                                                                              ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:15:18: error: &#39;D5&#39; was not declared in this scope
+ #define ld_74138 D5
+                  ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:88: note: in expansion of macro &#39;ld_74138&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                                                                                        ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:15:18: note: suggested alternative: &#39;A5&#39;
+ #define ld_74138 D5
+                  ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:88: note: in expansion of macro &#39;ld_74138&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                                                                                        ^~~~~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library ESP8266_LED_64x16_Matrix claims to run on ESP8266 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp: In member function &#39;void ESP8266_LED_64x16_Matrix::setDisplay(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:39:2: error: &#39;timer1_attachInterrupt&#39; was not declared in this scope
+  timer1_attachInterrupt(interruptHandler);
+  ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:39:2: note: suggested alternative: &#39;attachInterrupt&#39;
+  timer1_attachInterrupt(interruptHandler);
+  ^~~~~~~~~~~~~~~~~~~~~~
+  attachInterrupt
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:42:2: error: &#39;timer1_write&#39; was not declared in this scope
+  timer1_write(nextT);
+  ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:42:2: note: suggested alternative: &#39;timer_hw_t&#39;
+  timer1_write(nextT);
+  ^~~~~~~~~~~~
+  timer_hw_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:43:2: error: &#39;timer1_disable&#39; was not declared in this scope
+  timer1_disable();
+  ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:43:2: note: suggested alternative: &#39;timerisset&#39;
+  timer1_disable();
+  ^~~~~~~~~~~~~~
+  timerisset
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp: In member function &#39;void ESP8266_LED_64x16_Matrix::turnOn()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:75:16: error: &#39;TIM_DIV16&#39; was not declared in this scope
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_SINGLE);
+                ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:75:27: error: &#39;TIM_EDGE&#39; was not declared in this scope
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_SINGLE);
+                           ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:75:27: note: suggested alternative: &#39;TIMER&#39;
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_SINGLE);
+                           ^~~~~~~~
+                           TIMER
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:75:37: error: &#39;TIM_SINGLE&#39; was not declared in this scope
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_SINGLE);
+                                     ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:75:37: note: suggested alternative: &#39;RISING&#39;
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_SINGLE);
+                                     ^~~~~~~~~~
+                                     RISING
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:75:2: error: &#39;timer1_enable&#39; was not declared in this scope
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_SINGLE);
+  ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:75:2: note: suggested alternative: &#39;timerclear&#39;
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_SINGLE);
+  ^~~~~~~~~~~~~
+  timerclear
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp: In member function &#39;void ESP8266_LED_64x16_Matrix::turnOff()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:80:2: error: &#39;timer1_disable&#39; was not declared in this scope
+  timer1_disable();
+  ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:80:2: note: suggested alternative: &#39;timerisset&#39;
+  timer1_disable();
+  ^~~~~~~~~~~~~~
+  timerisset
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp: In member function &#39;void ESP8266_LED_64x16_Matrix::shiftOutFast(byte)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:153:18: error: &#39;GPIO_OUT_W1TC_ADDRESS&#39; was not declared in this scope
+   GPIO_REG_WRITE(GPIO_OUT_W1TC_ADDRESS, 1 &lt;&lt; clockPin);
+                  ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:153:18: note: suggested alternative: &#39;SIO_GPIO_OUT_SET_ACCESS&#39;
+   GPIO_REG_WRITE(GPIO_OUT_W1TC_ADDRESS, 1 &lt;&lt; clockPin);
+                  ^~~~~~~~~~~~~~~~~~~~~
+                  SIO_GPIO_OUT_SET_ACCESS
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:153:3: error: &#39;GPIO_REG_WRITE&#39; was not declared in this scope
+   GPIO_REG_WRITE(GPIO_OUT_W1TC_ADDRESS, 1 &lt;&lt; clockPin);
+   ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:153:3: note: suggested alternative: &#39;GPIO_IRQ_EDGE_RISE&#39;
+   GPIO_REG_WRITE(GPIO_OUT_W1TC_ADDRESS, 1 &lt;&lt; clockPin);
+   ^~~~~~~~~~~~~~
+   GPIO_IRQ_EDGE_RISE
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:155:19: error: &#39;GPIO_OUT_W1TS_ADDRESS&#39; was not declared in this scope
+    GPIO_REG_WRITE(GPIO_OUT_W1TS_ADDRESS, 1 &lt;&lt; data_R1);
+                   ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:155:19: note: suggested alternative: &#39;SIO_GPIO_OUT_SET_ACCESS&#39;
+    GPIO_REG_WRITE(GPIO_OUT_W1TS_ADDRESS, 1 &lt;&lt; data_R1);
+                   ^~~~~~~~~~~~~~~~~~~~~
+                   SIO_GPIO_OUT_SET_ACCESS
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:158:18: error: &#39;GPIO_OUT_W1TS_ADDRESS&#39; was not declared in this scope
+   GPIO_REG_WRITE(GPIO_OUT_W1TS_ADDRESS, 1 &lt;&lt; clockPin);
+                  ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:158:18: note: suggested alternative: &#39;SIO_GPIO_OUT_SET_ACCESS&#39;
+   GPIO_REG_WRITE(GPIO_OUT_W1TS_ADDRESS, 1 &lt;&lt; clockPin);
+                  ^~~~~~~~~~~~~~~~~~~~~
+                  SIO_GPIO_OUT_SET_ACCESS
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp: In member function &#39;void ESP8266_LED_64x16_Matrix::ISR_TIMER_SCAN()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:238:2: error: &#39;GPOS&#39; was not declared in this scope
+  GPOS |= 1 &lt;&lt; en_74138;
+  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:242:17: error: &#39;PERIPHS_GPIO_BASEADDR&#39; was not declared in this scope
+  WRITE_PERI_REG(PERIPHS_GPIO_BASEADDR &#43; 8, rowPin);
+                 ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:242:2: error: &#39;WRITE_PERI_REG&#39; was not declared in this scope
+  WRITE_PERI_REG(PERIPHS_GPIO_BASEADDR &#43; 8, rowPin);
+  ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:266:2: error: &#39;GP16O&#39; was not declared in this scope
+  GP16O &amp;= ~1;
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:280:2: error: &#39;GPOC&#39; was not declared in this scope
+  GPOC |= 1 &lt;&lt; en_74138;
+  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:283:2: error: &#39;timer1_write&#39; was not declared in this scope
+  timer1_write(nextT);
+  ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:283:2: note: suggested alternative: &#39;timer_hw_t&#39;
+  timer1_write(nextT);
+  ^~~~~~~~~~~~
+  timer_hw_t
+
+</pre>
+
+					
+					<h4>examples/simplescroll</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library ESP8266_LED_64x16_Matrix claims to run on ESP8266 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:5:18: error: &#39;D0&#39; was not declared in this scope
+ #define latchPin D0
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:19: note: in expansion of macro &#39;latchPin&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:5:18: note: suggested alternative: &#39;A0&#39;
+ #define latchPin D0
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:19: note: in expansion of macro &#39;latchPin&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:8:18: error: &#39;D1&#39; was not declared in this scope
+ #define clockPin D1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:29: note: in expansion of macro &#39;clockPin&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                             ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:8:18: note: suggested alternative: &#39;A1&#39;
+ #define clockPin D1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:29: note: in expansion of macro &#39;clockPin&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                             ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:9:17: error: &#39;D3&#39; was not declared in this scope
+ #define data_R1 D3
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:39: note: in expansion of macro &#39;data_R1&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                                       ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:9:17: note: suggested alternative: &#39;A3&#39;
+ #define data_R1 D3
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:39: note: in expansion of macro &#39;data_R1&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                                       ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:11:18: error: &#39;D4&#39; was not declared in this scope
+ #define en_74138 D4
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:48: note: in expansion of macro &#39;en_74138&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                                                ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:11:18: note: suggested alternative: &#39;A4&#39;
+ #define en_74138 D4
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:48: note: in expansion of macro &#39;en_74138&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                                                ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:12:18: error: &#39;D8&#39; was not declared in this scope
+ #define la_74138 D8
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:58: note: in expansion of macro &#39;la_74138&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                                                          ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:12:18: note: suggested alternative: &#39;p8&#39;
+ #define la_74138 D8
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:58: note: in expansion of macro &#39;la_74138&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                                                          ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:13:18: error: &#39;D7&#39; was not declared in this scope
+ #define lb_74138 D7
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:68: note: in expansion of macro &#39;lb_74138&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                                                                    ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:13:18: note: suggested alternative: &#39;A7&#39;
+ #define lb_74138 D7
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:68: note: in expansion of macro &#39;lb_74138&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                                                                    ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:14:18: error: &#39;D6&#39; was not declared in this scope
+ #define lc_74138 D6
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:78: note: in expansion of macro &#39;lc_74138&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                                                                              ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:14:18: note: suggested alternative: &#39;A6&#39;
+ #define lc_74138 D6
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:78: note: in expansion of macro &#39;lc_74138&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                                                                              ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:15:18: error: &#39;D5&#39; was not declared in this scope
+ #define ld_74138 D5
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:88: note: in expansion of macro &#39;ld_74138&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                                                                                        ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:15:18: note: suggested alternative: &#39;A5&#39;
+ #define ld_74138 D5
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:88: note: in expansion of macro &#39;ld_74138&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                                                                                        ^~~~~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library ESP8266_LED_64x16_Matrix claims to run on ESP8266 architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp: In member function &#39;void ESP8266_LED_64x16_Matrix::setDisplay(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:39:2: error: &#39;timer1_attachInterrupt&#39; was not declared in this scope
+  timer1_attachInterrupt(interruptHandler);
+  ^~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:39:2: note: suggested alternative: &#39;attachInterrupt&#39;
+  timer1_attachInterrupt(interruptHandler);
+  ^~~~~~~~~~~~~~~~~~~~~~
+  attachInterrupt
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:42:2: error: &#39;timer1_write&#39; was not declared in this scope
+  timer1_write(nextT);
+  ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:43:2: error: &#39;timer1_disable&#39; was not declared in this scope
+  timer1_disable();
+  ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp: In member function &#39;void ESP8266_LED_64x16_Matrix::turnOn()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:75:16: error: &#39;TIM_DIV16&#39; was not declared in this scope
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_SINGLE);
+                ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:75:27: error: &#39;TIM_EDGE&#39; was not declared in this scope
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_SINGLE);
+                           ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:75:27: note: suggested alternative: &#39;TIMERA0&#39;
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_SINGLE);
+                           ^~~~~~~~
+                           TIMERA0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:75:37: error: &#39;TIM_SINGLE&#39; was not declared in this scope
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_SINGLE);
+                                     ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:75:37: note: suggested alternative: &#39;TCA_SINGLE_t&#39;
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_SINGLE);
+                                     ^~~~~~~~~~
+                                     TCA_SINGLE_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:75:2: error: &#39;timer1_enable&#39; was not declared in this scope
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_SINGLE);
+  ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp: In member function &#39;void ESP8266_LED_64x16_Matrix::turnOff()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:80:2: error: &#39;timer1_disable&#39; was not declared in this scope
+  timer1_disable();
+  ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp: In member function &#39;void ESP8266_LED_64x16_Matrix::shiftOutFast(byte)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:153:18: error: &#39;GPIO_OUT_W1TC_ADDRESS&#39; was not declared in this scope
+   GPIO_REG_WRITE(GPIO_OUT_W1TC_ADDRESS, 1 &lt;&lt; clockPin);
+                  ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:153:3: error: &#39;GPIO_REG_WRITE&#39; was not declared in this scope
+   GPIO_REG_WRITE(GPIO_OUT_W1TC_ADDRESS, 1 &lt;&lt; clockPin);
+   ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:153:3: note: suggested alternative: &#39;GPIO_GPIO0&#39;
+   GPIO_REG_WRITE(GPIO_OUT_W1TC_ADDRESS, 1 &lt;&lt; clockPin);
+   ^~~~~~~~~~~~~~
+   GPIO_GPIO0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:155:19: error: &#39;GPIO_OUT_W1TS_ADDRESS&#39; was not declared in this scope
+    GPIO_REG_WRITE(GPIO_OUT_W1TS_ADDRESS, 1 &lt;&lt; data_R1);
+                   ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:158:18: error: &#39;GPIO_OUT_W1TS_ADDRESS&#39; was not declared in this scope
+   GPIO_REG_WRITE(GPIO_OUT_W1TS_ADDRESS, 1 &lt;&lt; clockPin);
+                  ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp: In member function &#39;void ESP8266_LED_64x16_Matrix::ISR_TIMER_SCAN()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:238:2: error: &#39;GPOS&#39; was not declared in this scope
+  GPOS |= 1 &lt;&lt; en_74138;
+  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:238:2: note: suggested alternative: &#39;GPIO1&#39;
+  GPOS |= 1 &lt;&lt; en_74138;
+  ^~~~
+  GPIO1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:242:17: error: &#39;PERIPHS_GPIO_BASEADDR&#39; was not declared in this scope
+  WRITE_PERI_REG(PERIPHS_GPIO_BASEADDR &#43; 8, rowPin);
+                 ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:242:2: error: &#39;WRITE_PERI_REG&#39; was not declared in this scope
+  WRITE_PERI_REG(PERIPHS_GPIO_BASEADDR &#43; 8, rowPin);
+  ^~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:242:2: note: suggested alternative: &#39;WDT_PERIOD_t&#39;
+  WRITE_PERI_REG(PERIPHS_GPIO_BASEADDR &#43; 8, rowPin);
+  ^~~~~~~~~~~~~~
+  WDT_PERIOD_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:266:2: error: &#39;GP16O&#39; was not declared in this scope
+  GP16O &amp;= ~1;
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:280:2: error: &#39;GPOC&#39; was not declared in this scope
+  GPOC |= 1 &lt;&lt; en_74138;
+  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:280:2: note: suggested alternative: &#39;GPIO1&#39;
+  GPOC |= 1 &lt;&lt; en_74138;
+  ^~~~
+  GPIO1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:283:2: error: &#39;timer1_write&#39; was not declared in this scope
+  timer1_write(nextT);
+  ^~~~~~~~~~~~
+
+</pre>
+
+					
+					<h4>examples/simplescroll</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library ESP8266_LED_64x16_Matrix claims to run on ESP8266 architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:5:18: error: &#39;D0&#39; was not declared in this scope
+ #define latchPin D0
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:19: note: in expansion of macro &#39;latchPin&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:5:18: note: suggested alternative: &#39;A0&#39;
+ #define latchPin D0
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:19: note: in expansion of macro &#39;latchPin&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:8:18: error: &#39;D1&#39; was not declared in this scope
+ #define clockPin D1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:29: note: in expansion of macro &#39;clockPin&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                             ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:8:18: note: suggested alternative: &#39;A1&#39;
+ #define clockPin D1
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:29: note: in expansion of macro &#39;clockPin&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                             ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:9:17: error: &#39;D3&#39; was not declared in this scope
+ #define data_R1 D3
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:39: note: in expansion of macro &#39;data_R1&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                                       ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:9:17: note: suggested alternative: &#39;A3&#39;
+ #define data_R1 D3
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:39: note: in expansion of macro &#39;data_R1&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                                       ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:11:18: error: &#39;D4&#39; was not declared in this scope
+ #define en_74138 D4
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:48: note: in expansion of macro &#39;en_74138&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                                                ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:11:18: note: suggested alternative: &#39;A4&#39;
+ #define en_74138 D4
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:48: note: in expansion of macro &#39;en_74138&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                                                ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:12:18: error: &#39;D8&#39; was not declared in this scope
+ #define la_74138 D8
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:58: note: in expansion of macro &#39;la_74138&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                                                          ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:13:18: error: &#39;D7&#39; was not declared in this scope
+ #define lb_74138 D7
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:68: note: in expansion of macro &#39;lb_74138&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                                                                    ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:13:18: note: suggested alternative: &#39;A7&#39;
+ #define lb_74138 D7
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:68: note: in expansion of macro &#39;lb_74138&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                                                                    ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:14:18: error: &#39;D6&#39; was not declared in this scope
+ #define lc_74138 D6
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:78: note: in expansion of macro &#39;lc_74138&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                                                                              ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:14:18: note: suggested alternative: &#39;A6&#39;
+ #define lc_74138 D6
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:78: note: in expansion of macro &#39;lc_74138&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                                                                              ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:15:18: error: &#39;D5&#39; was not declared in this scope
+ #define ld_74138 D5
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:88: note: in expansion of macro &#39;ld_74138&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                                                                                        ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:15:18: note: suggested alternative: &#39;A5&#39;
+ #define ld_74138 D5
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:88: note: in expansion of macro &#39;ld_74138&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                                                                                        ^~~~~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library ESP8266_LED_64x16_Matrix claims to run on ESP8266 architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp: In member function &#39;void ESP8266_LED_64x16_Matrix::setDisplay(uint8_t, uint8_t)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:39:2: error: &#39;timer1_attachInterrupt&#39; was not declared in this scope
+  timer1_attachInterrupt(interruptHandler);
+  ^~~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:39:2: note: suggested alternative: &#39;attachInterrupt&#39;
+  timer1_attachInterrupt(interruptHandler);
+  ^~~~~~~~~~~~~~~~~~~~~~
+  attachInterrupt
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:42:2: error: &#39;timer1_write&#39; was not declared in this scope
+  timer1_write(nextT);
+  ^~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:42:2: note: suggested alternative: &#39;timer_t&#39;
+  timer1_write(nextT);
+  ^~~~~~~~~~~~
+  timer_t
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:43:2: error: &#39;timer1_disable&#39; was not declared in this scope
+  timer1_disable();
+  ^~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:43:2: note: suggested alternative: &#39;uhd_disable&#39;
+  timer1_disable();
+  ^~~~~~~~~~~~~~
+  uhd_disable
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp: In member function &#39;void ESP8266_LED_64x16_Matrix::turnOn()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:75:16: error: &#39;TIM_DIV16&#39; was not declared in this scope
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_SINGLE);
+                ^~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:75:27: error: &#39;TIM_EDGE&#39; was not declared in this scope
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_SINGLE);
+                           ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:75:37: error: &#39;TIM_SINGLE&#39; was not declared in this scope
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_SINGLE);
+                                     ^~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:75:37: note: suggested alternative: &#39;RISING&#39;
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_SINGLE);
+                                     ^~~~~~~~~~
+                                     RISING
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:75:2: error: &#39;timer1_enable&#39; was not declared in this scope
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_SINGLE);
+  ^~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:75:2: note: suggested alternative: &#39;timerclear&#39;
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_SINGLE);
+  ^~~~~~~~~~~~~
+  timerclear
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp: In member function &#39;void ESP8266_LED_64x16_Matrix::turnOff()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:80:2: error: &#39;timer1_disable&#39; was not declared in this scope
+  timer1_disable();
+  ^~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:80:2: note: suggested alternative: &#39;uhd_disable&#39;
+  timer1_disable();
+  ^~~~~~~~~~~~~~
+  uhd_disable
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp: In member function &#39;void ESP8266_LED_64x16_Matrix::shiftOutFast(byte)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:153:18: error: &#39;GPIO_OUT_W1TC_ADDRESS&#39; was not declared in this scope
+   GPIO_REG_WRITE(GPIO_OUT_W1TC_ADDRESS, 1 &lt;&lt; clockPin);
+                  ^~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:153:3: error: &#39;GPIO_REG_WRITE&#39; was not declared in this scope
+   GPIO_REG_WRITE(GPIO_OUT_W1TC_ADDRESS, 1 &lt;&lt; clockPin);
+   ^~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:155:19: error: &#39;GPIO_OUT_W1TS_ADDRESS&#39; was not declared in this scope
+    GPIO_REG_WRITE(GPIO_OUT_W1TS_ADDRESS, 1 &lt;&lt; data_R1);
+                   ^~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:158:18: error: &#39;GPIO_OUT_W1TS_ADDRESS&#39; was not declared in this scope
+   GPIO_REG_WRITE(GPIO_OUT_W1TS_ADDRESS, 1 &lt;&lt; clockPin);
+                  ^~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp: In member function &#39;void ESP8266_LED_64x16_Matrix::ISR_TIMER_SCAN()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:238:2: error: &#39;GPOS&#39; was not declared in this scope
+  GPOS |= 1 &lt;&lt; en_74138;
+  ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:242:17: error: &#39;PERIPHS_GPIO_BASEADDR&#39; was not declared in this scope
+  WRITE_PERI_REG(PERIPHS_GPIO_BASEADDR &#43; 8, rowPin);
+                 ^~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:242:17: note: suggested alternative: &#39;REG_DMAC_BASEADDR&#39;
+  WRITE_PERI_REG(PERIPHS_GPIO_BASEADDR &#43; 8, rowPin);
+                 ^~~~~~~~~~~~~~~~~~~~~
+                 REG_DMAC_BASEADDR
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:242:2: error: &#39;WRITE_PERI_REG&#39; was not declared in this scope
+  WRITE_PERI_REG(PERIPHS_GPIO_BASEADDR &#43; 8, rowPin);
+  ^~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:266:2: error: &#39;GP16O&#39; was not declared in this scope
+  GP16O &amp;= ~1;
+  ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:280:2: error: &#39;GPOC&#39; was not declared in this scope
+  GPOC |= 1 &lt;&lt; en_74138;
+  ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:283:2: error: &#39;timer1_write&#39; was not declared in this scope
+  timer1_write(nextT);
+  ^~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:283:2: note: suggested alternative: &#39;timer_t&#39;
+  timer1_write(nextT);
+  ^~~~~~~~~~~~
+  timer_t
+
+</pre>
+
+					
+					<h4>examples/simplescroll</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library ESP8266_LED_64x16_Matrix claims to run on ESP8266 architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino: In function &#39;void setup()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:5:18: error: &#39;D0&#39; was not declared in this scope
+ #define latchPin D0
+                  ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:19: note: in expansion of macro &#39;latchPin&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                   ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:5:18: note: suggested alternative: &#39;A0&#39;
+ #define latchPin D0
+                  ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:19: note: in expansion of macro &#39;latchPin&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                   ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:8:18: error: &#39;D1&#39; was not declared in this scope
+ #define clockPin D1
+                  ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:29: note: in expansion of macro &#39;clockPin&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                             ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:8:18: note: suggested alternative: &#39;A1&#39;
+ #define clockPin D1
+                  ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:29: note: in expansion of macro &#39;clockPin&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                             ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:9:17: error: &#39;D3&#39; was not declared in this scope
+ #define data_R1 D3
+                 ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:39: note: in expansion of macro &#39;data_R1&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                                       ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:9:17: note: suggested alternative: &#39;A3&#39;
+ #define data_R1 D3
+                 ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:39: note: in expansion of macro &#39;data_R1&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                                       ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:11:18: error: &#39;D4&#39; was not declared in this scope
+ #define en_74138 D4
+                  ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:48: note: in expansion of macro &#39;en_74138&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                                                ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:11:18: note: suggested alternative: &#39;A4&#39;
+ #define en_74138 D4
+                  ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:48: note: in expansion of macro &#39;en_74138&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                                                ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:12:18: error: &#39;D8&#39; was not declared in this scope
+ #define la_74138 D8
+                  ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:58: note: in expansion of macro &#39;la_74138&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                                                          ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:13:18: error: &#39;D7&#39; was not declared in this scope
+ #define lb_74138 D7
+                  ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:68: note: in expansion of macro &#39;lb_74138&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                                                                    ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:14:18: error: &#39;D6&#39; was not declared in this scope
+ #define lc_74138 D6
+                  ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:78: note: in expansion of macro &#39;lc_74138&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                                                                              ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:14:18: note: suggested alternative: &#39;A6&#39;
+ #define lc_74138 D6
+                  ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:78: note: in expansion of macro &#39;lc_74138&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                                                                              ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:15:18: error: &#39;D5&#39; was not declared in this scope
+ #define ld_74138 D5
+                  ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:88: note: in expansion of macro &#39;ld_74138&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                                                                                        ^~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:15:18: note: suggested alternative: &#39;A5&#39;
+ #define ld_74138 D5
+                  ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/examples/simplescroll/simplescroll.ino:30:88: note: in expansion of macro &#39;ld_74138&#39;
+  uint8_t t[8] = { latchPin, clockPin, data_R1, en_74138, la_74138, lb_74138, lc_74138, ld_74138};
+                                                                                        ^~~~~~~~
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library ESP8266_LED_64x16_Matrix claims to run on ESP8266 architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp: In member function &#39;void ESP8266_LED_64x16_Matrix::setDisplay(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:39:41: error: &#39;timer1_attachInterrupt&#39; was not declared in this scope
+  timer1_attachInterrupt(interruptHandler);
+                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:42:20: error: &#39;timer1_write&#39; was not declared in this scope
+  timer1_write(nextT);
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:43:17: error: &#39;timer1_disable&#39; was not declared in this scope
+  timer1_disable();
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp: In member function &#39;void ESP8266_LED_64x16_Matrix::turnOn()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:75:16: error: &#39;TIM_DIV16&#39; was not declared in this scope
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_SINGLE);
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:75:27: error: &#39;TIM_EDGE&#39; was not declared in this scope
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_SINGLE);
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:75:37: error: &#39;TIM_SINGLE&#39; was not declared in this scope
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_SINGLE);
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:75:47: error: &#39;timer1_enable&#39; was not declared in this scope
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_SINGLE);
+                                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp: In member function &#39;void ESP8266_LED_64x16_Matrix::turnOff()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:80:17: error: &#39;timer1_disable&#39; was not declared in this scope
+  timer1_disable();
+                 ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/soc/soc/soc.h:20:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/esp32/rom/ets_sys.h:21,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/freertos/freertos/FreeRTOSConfig.h:120,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/freertos/freertos/FreeRTOS.h:99,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:32,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.h:11,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp: In member function &#39;void ESP8266_LED_64x16_Matrix::shiftOutFast(byte)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:153:18: error: &#39;GPIO_OUT_W1TC_ADDRESS&#39; was not declared in this scope
+   GPIO_REG_WRITE(GPIO_OUT_W1TC_ADDRESS, 1 &lt;&lt; clockPin);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/esp32/esp_assert.h:29:38: note: in definition of macro &#39;TRY_STATIC_ASSERT&#39;
+             if (__builtin_constant_p(CONDITION) &amp;&amp; !(CONDITION)) {          \
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/soc/soc/soc.h:151:57: note: in expansion of macro &#39;IS_DPORT_REG&#39;
+ #define ASSERT_IF_DPORT_REG(_r, OP)  TRY_STATIC_ASSERT(!IS_DPORT_REG(_r), (Cannot use OP for DPORT registers use DPORT_##OP));
+                                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/soc/soc/soc.h:230:13: note: in expansion of macro &#39;ASSERT_IF_DPORT_REG&#39;
+             ASSERT_IF_DPORT_REG((addr), WRITE_PERI_REG);                                                               \
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/esp32/rom/gpio.h:38:41: note: in expansion of macro &#39;WRITE_PERI_REG&#39;
+ #define GPIO_REG_WRITE(reg, val)        WRITE_PERI_REG(reg, val)
+                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:153:3: note: in expansion of macro &#39;GPIO_REG_WRITE&#39;
+   GPIO_REG_WRITE(GPIO_OUT_W1TC_ADDRESS, 1 &lt;&lt; clockPin);
+   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/esp32/esp_err.h:18:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/esp32/esp_timer.h:44,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/freertos/freertos/portmacro.h:82,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/freertos/freertos/portable.h:96,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/freertos/freertos/FreeRTOS.h:105,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:32,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.h:11,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:153:18: error: &#39;GPIO_OUT_W1TC_ADDRESS&#39; was not declared in this scope
+   GPIO_REG_WRITE(GPIO_OUT_W1TC_ADDRESS, 1 &lt;&lt; clockPin);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/assert.h:16:24: note: in definition of macro &#39;assert&#39;
+ # define assert(__e) ((__e) ? (void)0 : __assert_func (__FILE__, __LINE__, \
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/soc/soc/soc.h:151:38: note: in expansion of macro &#39;TRY_STATIC_ASSERT&#39;
+ #define ASSERT_IF_DPORT_REG(_r, OP)  TRY_STATIC_ASSERT(!IS_DPORT_REG(_r), (Cannot use OP for DPORT registers use DPORT_##OP));
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/soc/soc/soc.h:151:57: note: in expansion of macro &#39;IS_DPORT_REG&#39;
+ #define ASSERT_IF_DPORT_REG(_r, OP)  TRY_STATIC_ASSERT(!IS_DPORT_REG(_r), (Cannot use OP for DPORT registers use DPORT_##OP));
+                                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/soc/soc/soc.h:230:13: note: in expansion of macro &#39;ASSERT_IF_DPORT_REG&#39;
+             ASSERT_IF_DPORT_REG((addr), WRITE_PERI_REG);                                                               \
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/esp32/rom/gpio.h:38:41: note: in expansion of macro &#39;WRITE_PERI_REG&#39;
+ #define GPIO_REG_WRITE(reg, val)        WRITE_PERI_REG(reg, val)
+                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:153:3: note: in expansion of macro &#39;GPIO_REG_WRITE&#39;
+   GPIO_REG_WRITE(GPIO_OUT_W1TC_ADDRESS, 1 &lt;&lt; clockPin);
+   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/esp32/rom/ets_sys.h:21:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/freertos/freertos/FreeRTOSConfig.h:120,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/freertos/freertos/FreeRTOS.h:99,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:32,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.h:11,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:153:18: error: &#39;GPIO_OUT_W1TC_ADDRESS&#39; was not declared in this scope
+   GPIO_REG_WRITE(GPIO_OUT_W1TC_ADDRESS, 1 &lt;&lt; clockPin);
+                </pre>
+
+					
+					<h4>examples/simplescroll</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library ESP8266_LED_64x16_Matrix claims to run on ESP8266 architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp: In member function &#39;void ESP8266_LED_64x16_Matrix::setDisplay(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:39:41: error: &#39;timer1_attachInterrupt&#39; was not declared in this scope
+  timer1_attachInterrupt(interruptHandler);
+                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:42:20: error: &#39;timer1_write&#39; was not declared in this scope
+  timer1_write(nextT);
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:43:17: error: &#39;timer1_disable&#39; was not declared in this scope
+  timer1_disable();
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp: In member function &#39;void ESP8266_LED_64x16_Matrix::turnOn()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:75:16: error: &#39;TIM_DIV16&#39; was not declared in this scope
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_SINGLE);
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:75:27: error: &#39;TIM_EDGE&#39; was not declared in this scope
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_SINGLE);
+                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:75:37: error: &#39;TIM_SINGLE&#39; was not declared in this scope
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_SINGLE);
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:75:47: error: &#39;timer1_enable&#39; was not declared in this scope
+  timer1_enable(TIM_DIV16, TIM_EDGE, TIM_SINGLE);
+                                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp: In member function &#39;void ESP8266_LED_64x16_Matrix::turnOff()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:80:17: error: &#39;timer1_disable&#39; was not declared in this scope
+  timer1_disable();
+                 ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/soc/soc/soc.h:20:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/esp32/rom/ets_sys.h:21,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/freertos/freertos/FreeRTOSConfig.h:120,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/freertos/freertos/FreeRTOS.h:99,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:32,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.h:11,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp: In member function &#39;void ESP8266_LED_64x16_Matrix::shiftOutFast(byte)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:153:18: error: &#39;GPIO_OUT_W1TC_ADDRESS&#39; was not declared in this scope
+   GPIO_REG_WRITE(GPIO_OUT_W1TC_ADDRESS, 1 &lt;&lt; clockPin);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/esp32/esp_assert.h:29:38: note: in definition of macro &#39;TRY_STATIC_ASSERT&#39;
+             if (__builtin_constant_p(CONDITION) &amp;&amp; !(CONDITION)) {          \
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/soc/soc/soc.h:151:57: note: in expansion of macro &#39;IS_DPORT_REG&#39;
+ #define ASSERT_IF_DPORT_REG(_r, OP)  TRY_STATIC_ASSERT(!IS_DPORT_REG(_r), (Cannot use OP for DPORT registers use DPORT_##OP));
+                                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/soc/soc/soc.h:230:13: note: in expansion of macro &#39;ASSERT_IF_DPORT_REG&#39;
+             ASSERT_IF_DPORT_REG((addr), WRITE_PERI_REG);                                                               \
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/esp32/rom/gpio.h:38:41: note: in expansion of macro &#39;WRITE_PERI_REG&#39;
+ #define GPIO_REG_WRITE(reg, val)        WRITE_PERI_REG(reg, val)
+                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:153:3: note: in expansion of macro &#39;GPIO_REG_WRITE&#39;
+   GPIO_REG_WRITE(GPIO_OUT_W1TC_ADDRESS, 1 &lt;&lt; clockPin);
+   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/esp32/esp_err.h:18:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/esp32/esp_timer.h:44,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/freertos/freertos/portmacro.h:82,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/freertos/freertos/portable.h:96,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/freertos/freertos/FreeRTOS.h:105,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:32,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.h:11,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:153:18: error: &#39;GPIO_OUT_W1TC_ADDRESS&#39; was not declared in this scope
+   GPIO_REG_WRITE(GPIO_OUT_W1TC_ADDRESS, 1 &lt;&lt; clockPin);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/newlib/assert.h:16:24: note: in definition of macro &#39;assert&#39;
+ # define assert(__e) ((__e) ? (void)0 : __assert_func (__FILE__, __LINE__, \
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/soc/soc/soc.h:151:38: note: in expansion of macro &#39;TRY_STATIC_ASSERT&#39;
+ #define ASSERT_IF_DPORT_REG(_r, OP)  TRY_STATIC_ASSERT(!IS_DPORT_REG(_r), (Cannot use OP for DPORT registers use DPORT_##OP));
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/soc/soc/soc.h:151:57: note: in expansion of macro &#39;IS_DPORT_REG&#39;
+ #define ASSERT_IF_DPORT_REG(_r, OP)  TRY_STATIC_ASSERT(!IS_DPORT_REG(_r), (Cannot use OP for DPORT registers use DPORT_##OP));
+                                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/soc/soc/soc.h:230:13: note: in expansion of macro &#39;ASSERT_IF_DPORT_REG&#39;
+             ASSERT_IF_DPORT_REG((addr), WRITE_PERI_REG);                                                               \
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/esp32/rom/gpio.h:38:41: note: in expansion of macro &#39;WRITE_PERI_REG&#39;
+ #define GPIO_REG_WRITE(reg, val)        WRITE_PERI_REG(reg, val)
+                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:153:3: note: in expansion of macro &#39;GPIO_REG_WRITE&#39;
+   GPIO_REG_WRITE(GPIO_OUT_W1TC_ADDRESS, 1 &lt;&lt; clockPin);
+   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/esp32/rom/ets_sys.h:21:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/freertos/freertos/FreeRTOSConfig.h:120,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/tools/sdk/include/freertos/freertos/FreeRTOS.h:99,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h:32,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.h:11,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:7:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP8266_LED_64x16_Matrix/src/ESP8266_LED_64x16_Matrix.cpp:153:18: error: &#39;GPIO_OUT_W1TC_ADDRESS&#39; was not declared in this scope
+   GPIO_REG_WRITE(GPIO_OUT_W1TC_ADDRESS, 1 &lt;&lt; clockPin);
+                </pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

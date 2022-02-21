@@ -1,0 +1,539 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>Charge n Boost - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>Charge n Boost</h2>
+				<p>
+					Version: <b>1.1.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/charge-n-boost/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>basic</pre></th>
+						
+						<th><pre>kitchensink</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/private/tmp/arduino-testlib3899505867/test/test.ino:2:10: fatal error: wire.h: No such file or directory
+ #include &lt;wire.h&gt;
+          ^~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/basic</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Charge_n_Boost/examples/basic/basic.ino:1:10: fatal error: Powerbank.h: No such file or directory
+ #include &#34;Powerbank.h&#34;
+          ^~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+					<h4>examples/kitchensink</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/var/folders/47/_57rjy4111jc7dfpgjmcc93w0000gp/T//ccCtG2mG.ltrans0.ltrans.o: In function `main&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/main.cpp:43: undefined reference to `setup&#39;
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/main.cpp:46: undefined reference to `loop&#39;
+collect2: error: ld returned 1 exit status
+
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-testlib1782195404/test/test.ino:2:10: fatal error: wire.h: No such file or directory
+ #include &lt;wire.h&gt;
+          ^~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/basic</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Charge_n_Boost/examples/basic/basic.ino:1:10: fatal error: Powerbank.h: No such file or directory
+ #include &#34;Powerbank.h&#34;
+          ^~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+					<h4>examples/kitchensink</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/tmp/arduino-sketch-F7F124B7F37E81FE20BC308B76E82D18/../arduino-core-cache/core_arduino_mbed_nano_nanorp2040connect_4289f737b5a3cce249bff14e88fef6de.a(main.cpp.o): In function `main&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/main.cpp:44: undefined reference to `setup&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/main.cpp:47: undefined reference to `loop&#39;
+collect2: error: ld returned 1 exit status
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-testlib1782195404/test/test.ino:2:10: fatal error: wire.h: No such file or directory
+ #include &lt;wire.h&gt;
+          ^~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/basic</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Charge_n_Boost/examples/basic/basic.ino:1:10: fatal error: Powerbank.h: No such file or directory
+ #include &#34;Powerbank.h&#34;
+          ^~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+					<h4>examples/kitchensink</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/tmp/cckQitef.ltrans0.ltrans.o: In function `main&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/main.cpp:43: undefined reference to `setup&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/main.cpp:46: undefined reference to `loop&#39;
+collect2: error: ld returned 1 exit status
+
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/private/tmp/arduino-testlib3899505867/test/test.ino:2:10: fatal error: wire.h: No such file or directory
+ #include &lt;wire.h&gt;
+          ^~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/basic</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Charge_n_Boost/examples/basic/basic.ino:1:10: fatal error: Powerbank.h: No such file or directory
+ #include &#34;Powerbank.h&#34;
+          ^~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+					<h4>examples/kitchensink</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/private/var/folders/47/_57rjy4111jc7dfpgjmcc93w0000gp/T/arduino-sketch-E2C0390075B33ABF59BD2AACADA271A2/../arduino-core-cache/core_arduino_samd_mkrwifi1010_a928593d5538a598cbe2fe4bd3b2162c.a(main.cpp.o): In function `main&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/main.cpp:49: undefined reference to `setup&#39;
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/main.cpp:53: undefined reference to `loop&#39;
+collect2: error: ld returned 1 exit status
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-testlib3944431128/test/test.ino:2:18: fatal error: wire.h: No such file or directory
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/basic</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Charge_n_Boost/examples/basic/basic.ino:1:23: fatal error: Powerbank.h: No such file or directory
+compilation terminated.
+
+</pre>
+					
+					<h4>examples/kitchensink</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/tmp/arduino-core-cache/core_esp32_esp32_d1_mini32_1d3768a583517067e9a654b3dfdad8d3.a(main.cpp.o):(.literal._Z8loopTaskPv&#43;0x8): undefined reference to `setup()&#39;
+/tmp/arduino-core-cache/core_esp32_esp32_d1_mini32_1d3768a583517067e9a654b3dfdad8d3.a(main.cpp.o):(.literal._Z8loopTaskPv&#43;0xc): undefined reference to `loop()&#39;
+/tmp/arduino-core-cache/core_esp32_esp32_d1_mini32_1d3768a583517067e9a654b3dfdad8d3.a(main.cpp.o): In function `loopTask(void*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/main.cpp:18: undefined reference to `setup()&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/cores/esp32/main.cpp:21: undefined reference to `loop()&#39;
+collect2: error: ld returned 1 exit status
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

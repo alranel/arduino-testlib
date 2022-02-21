@@ -1,0 +1,338 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>controlKeyboard - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>controlKeyboard</h2>
+				<p>
+					Version: <b>1.0.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/controlkeyboard/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+							<td>No ⚠️</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library controlKeyboard claims to run on sam architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+In file included from /tmp/arduino-testlib3801522766/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/controlKeyboard/controlKeyboard.h:22:28: error: expected &#39;)&#39; before &#39;&amp;&#39; token
+    controlKeyboard(USBHost &amp;usb) : hostKeyboard(&amp;usb), keyup(0),keydown(0), oemkey(0), modifiers(0) {
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/controlKeyboard/controlKeyboard.h:42:12: error: &#39;HID_PROTOCOL_KEYBOARD&#39; was not declared in this scope
+    HIDBoot&lt;HID_PROTOCOL_KEYBOARD&gt; hostKeyboard;
+            ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/controlKeyboard/controlKeyboard.h:42:12: note: suggested alternative: &#39;USB_HID_PROTOCOL_KEYBOARD&#39;
+    HIDBoot&lt;HID_PROTOCOL_KEYBOARD&gt; hostKeyboard;
+            ^~~~~~~~~~~~~~~~~~~~~
+            USB_HID_PROTOCOL_KEYBOARD
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/controlKeyboard/controlKeyboard.h:42:33: error: template argument 1 is invalid
+    HIDBoot&lt;HID_PROTOCOL_KEYBOARD&gt; hostKeyboard;
+                                 ^
+Multiple libraries were found for &#34;hidboot.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USBHost
+</pre>
+
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library controlKeyboard claims to run on sam architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/Usb.h:41:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/usbhid.h:20,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/hidboot.h:20,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/controlKeyboard/controlKeyboard.h:4,
+                 from /tmp/arduino-testlib3801522766/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/avrpins.h:1360:2: error: #error &#34;Please define board in avrpins.h&#34;
+ #error &#34;Please define board in avrpins.h&#34;
+  ^~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/Usb.h:43:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/usbhid.h:20,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/hidboot.h:20,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/controlKeyboard/controlKeyboard.h:4,
+                 from /tmp/arduino-testlib3801522766/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/usbhost.h:126:2: error: #error &#34;No SPI entry in usbhost.h&#34;
+ #error &#34;No SPI entry in usbhost.h&#34;
+  ^~~~~
+Multiple libraries were found for &#34;hidboot.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USBHost
+</pre>
+
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library controlKeyboard claims to run on sam architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/Usb.h:41:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/usbhid.h:20,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/hidboot.h:20,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/controlKeyboard/controlKeyboard.h:4,
+                 from /tmp/arduino-testlib3801522766/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/avrpins.h:807:2: error: #error &#34;Please define board in avrpins.h&#34;
+ #error &#34;Please define board in avrpins.h&#34;
+  ^~~~~
+Multiple libraries were found for &#34;hidboot.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USBHost
+</pre>
+
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library controlKeyboard claims to run on sam architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+Sketch uses 12148 bytes (4%) of program storage space. Maximum is 262144 bytes.
+Global variables use 2996 bytes (9%) of dynamic memory, leaving 29772 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library controlKeyboard claims to run on sam architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/Usb.h:43:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/usbhid.h:20,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/hidboot.h:20,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/controlKeyboard/controlKeyboard.h:4,
+                 from /tmp/arduino-testlib3801522766/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/usbhost.h:103:25: error: &#39;PSCK&#39; was not declared in this scope
+ #define APPEND_PIN(pin) P ## pin // Appends the pin to &#39;P&#39;, e.g. 1 becomes P1
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/usbhost.h:100:23: note: in expansion of macro &#39;APPEND_PIN&#39;
+ #define PASTE(x, ...) x ## __VA_ARGS__
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/usbhost.h:101:34: note: in expansion of macro &#39;PASTE&#39;
+ #define EVALUATING_PASTE(x, ...) PASTE(x, __VA_ARGS__)
+                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/usbhost.h:104:21: note: in expansion of macro &#39;EVALUATING_PASTE&#39;
+ #define MAKE_PIN(x) EVALUATING_PASTE(APPEND_, PIN(UNPAREN(x)))
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/usbhost.h:105:14: note: in expansion of macro &#39;MAKE_PIN&#39;
+ typedef SPi&lt; MAKE_PIN(PIN_SPI_SCK), MAKE_PIN(PIN_SPI_MOSI), MAKE_PIN(PIN_SPI_MISO), MAKE_PIN(PIN_SPI_SS) &gt; spi;
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/usbhost.h:103:25: error: &#39;PMOSI&#39; was not declared in this scope
+ #define APPEND_PIN(pin) P ## pin // Appends the pin to &#39;P&#39;, e.g. 1 becomes P1
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/usbhost.h:100:23: note: in expansion of macro &#39;APPEND_PIN&#39;
+ #define PASTE(x, ...) x ## __VA_ARGS__
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/usbhost.h:101:34: note: in expansion of macro &#39;PASTE&#39;
+ #define EVALUATING_PASTE(x, ...) PASTE(x, __VA_ARGS__)
+                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/usbhost.h:104:21: note: in expansion of macro &#39;EVALUATING_PASTE&#39;
+ #define MAKE_PIN(x) EVALUATING_PASTE(APPEND_, PIN(UNPAREN(x)))
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/usbhost.h:105:37: note: in expansion of macro &#39;MAKE_PIN&#39;
+ typedef SPi&lt; MAKE_PIN(PIN_SPI_SCK), MAKE_PIN(PIN_SPI_MOSI), MAKE_PIN(PIN_SPI_MISO), MAKE_PIN(PIN_SPI_SS) &gt; spi;
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/usbhost.h:103:25: error: &#39;PMISO&#39; was not declared in this scope
+ #define APPEND_PIN(pin) P ## pin // Appends the pin to &#39;P&#39;, e.g. 1 becomes P1
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/usbhost.h:100:23: note: in expansion of macro &#39;APPEND_PIN&#39;
+ #define PASTE(x, ...) x ## __VA_ARGS__
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/usbhost.h:101:34: note: in expansion of macro &#39;PASTE&#39;
+ #define EVALUATING_PASTE(x, ...) PASTE(x, __VA_ARGS__)
+                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/usbhost.h:104:21: note: in expansion of macro &#39;EVALUATING_PASTE&#39;
+ #define MAKE_PIN(x) EVALUATING_PASTE(APPEND_, PIN(UNPAREN(x)))
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/usbhost.h:105:61: note: in expansion of macro &#39;MAKE_PIN&#39;
+ typedef SPi&lt; MAKE_PIN(PIN_SPI_SCK), MAKE_PIN(PIN_SPI_MOSI), MAKE_PIN(PIN_SPI_MISO), MAKE_PIN(PIN_SPI_SS) &gt; spi;
+                                                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/usbhost.h:103:25: error: &#39;PSS&#39; was not declared in this scope
+ #define APPEND_PIN(pin) P ## pin // Appends the pin to &#39;P&#39;, e.g. 1 becomes P1
+                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/usbhost.h:100:23: note: in expansion of macro &#39;APPEND_PIN&#39;
+ #define PASTE(x, ...) x ## __VA_ARGS__
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/usbhost.h:101:34: note: in expansion of macro &#39;PASTE&#39;
+ #define EVALUATING_PASTE(x, ...) PASTE(x, __VA_ARGS__)
+                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/usbhost.h:104:21: note: in expansion of macro &#39;EVALUATING_PASTE&#39;
+ #define MAKE_PIN(x) EVALUATING_PASTE(APPEND_, PIN(UNPAREN(x)))
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/usbhost.h:105:85: note: in expansion of macro &#39;MAKE_PIN&#39;
+ typedef SPi&lt; MAKE_PIN(PIN_SPI_SCK), MAKE_PIN(PIN_SPI_MOSI), MAKE_PIN(PIN_SPI_MISO), MAKE_PIN(PIN_SPI_SS) &gt; spi;
+                                                                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/usbhost.h:105:106: error: template argument 1 is invalid
+ typedef SPi&lt; MAKE_PIN(PIN_SPI_SCK), MAKE_PIN(PIN_SPI_MOSI), MAKE_PIN(PIN_SPI_MISO), MAKE_PIN(PIN_SPI_SS) &gt; spi;
+                                                                                                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/usbhost.h:105:106: error: template argument 2 is invalid
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/usbhost.h:105:106: error: template argument 3 is invalid
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/usbhost.h:105:106: error: template argument 4 is invalid
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/Usb.h:43:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/usbhid.h:20,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/hidboot.h:20,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/controlKeyboard/controlKeyboard.h:4,
+                 from /tmp/arduino-testlib3801522766/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/usbhost.h: In member function &#39;int8_t MAX3421e&lt;SPI_SS, INTR&gt;::Init()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/usbhost.h:432:18: error: qualified-id in declaration before &#39;(&#39; token
+         spi::init();
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/usbhost.h: In member function &#39;int8_t MAX3421e&lt;SPI_SS, INTR&gt;::Init(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0/usbhost.h:469:18: error: qualified-id in declaration before &#39;(&#39; token
+         spi::init();
+                  ^
+In file included from /tmp/arduino-testlib3801522766/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/controlKeyboard/controlKeyboard.h: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/controlKeyboard/controlKeyboard.h:22:28: error: expected &#39;)&#39; before &#39;&amp;&#39; token
+    controlKeyboard(USBHost &amp;usb) : hostKeyboard(&amp;usb), keyup(0),keydown(0), oemkey(0), modifiers(0) {
+                            ^
+/tmp/arduino-testlib3801522766/test/test.ino:3:14: error: expected &#39;}&#39; at end of input
+ void loop() {}
+              ^
+/tmp/arduino-testlib3801522766/test/test.ino:3:14: error: expected unqualified-id at end of input
+Multiple libraries were found for &#34;hidboot.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USB_Host_Shield_Library_2.0
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USBHost
+</pre>
+
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

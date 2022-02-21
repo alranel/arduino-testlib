@@ -1,0 +1,1310 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>STM32duino X-NUCLEO-IHM01A1 - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>STM32duino X-NUCLEO-IHM01A1</h2>
+				<p>
+					Version: <b>1.0.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/stm32duino-x-nucleo-ihm01a1/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>X_NUCLEO_IHM01A1_HelloWorld</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library STM32duino_X-NUCLEO-IHM01A1 claims to run on stm32 architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.cpp:54:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:88:15: error: &#39;function&#39; in namespace &#39;std&#39; does not name a template type
+   static std::function&lt;Ret(Params...)&gt; func;
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:92:6: error: &#39;function&#39; in namespace &#39;std&#39; does not name a template type
+ std::function&lt;Ret(Params...)&gt; Callback&lt;Ret(Params...)&gt;::func;
+      ^~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.cpp:54:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:1024:5: error: &#39;HardwareTimer&#39; does not name a type; did you mean &#39;HardwareSerial&#39;?
+     HardwareTimer *pwm_timer;
+     ^~~~~~~~~~~~~
+     HardwareSerial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:1027:5: error: &#39;TIM_TypeDef&#39; does not name a type
+     TIM_TypeDef *pwm_instance;
+     ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h: In constructor &#39;L6474::L6474(uint8_t, uint8_t, uint8_t, uint8_t, uint8_t, SPIClass*, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:132:25: error: &#39;func&#39; is not a member of &#39;Callback&lt;void()&gt;&#39;
+       Callback&lt;void()&gt;::func = std::bind(&amp;L6474::L6474_StepClockHandler, this);
+                         ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:132:37: error: &#39;bind&#39; is not a member of &#39;std&#39;
+       Callback&lt;void()&gt;::func = std::bind(&amp;L6474::L6474_StepClockHandler, this);
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:135:7: error: &#39;pwm_instance&#39; was not declared in this scope
+       pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(pwm_pin), PinMap_PWM);
+       ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:135:7: note: suggested alternative: &#39;pwm_channel&#39;
+       pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(pwm_pin), PinMap_PWM);
+       ^~~~~~~~~~~~
+       pwm_channel
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:135:23: error: &#39;TIM_TypeDef&#39; was not declared in this scope
+       pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(pwm_pin), PinMap_PWM);
+                       ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:135:36: error: expected primary-expression before &#39;)&#39; token
+       pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(pwm_pin), PinMap_PWM);
+                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:53: error: &#39;digitalPinToPinName&#39; was not declared in this scope
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                                                     ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:53: note: suggested alternative: &#39;digitalPinToBitMask&#39;
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                                                     ^~~~~~~~~~~~~~~~~~~
+                                                     digitalPinToBitMask
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:83: error: &#39;PinMap_PWM&#39; was not declared in this scope
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                                                                                   ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:37: error: &#39;pinmap_function&#39; was not declared in this scope
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                                     ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:21: error: &#39;STM_PIN_CHANNEL&#39; was not declared in this scope
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                     ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:138:7: error: &#39;pwm_timer&#39; was not declared in this scope
+       pwm_timer = new HardwareTimer(pwm_instance);
+       ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:138:7: note: suggested alternative: &#39;pwm_pin&#39;
+       pwm_timer = new HardwareTimer(pwm_instance);
+       ^~~~~~~~~
+       pwm_pin
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:138:23: error: expected type-specifier before &#39;HardwareTimer&#39;
+       pwm_timer = new HardwareTimer(pwm_instance);
+                       ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h: In destructor &#39;virtual L6474::~L6474()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:159:12: error: &#39;pwm_timer&#39; was not declared in this scope
+       free(pwm_timer);
+            ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:159:12: note: suggested alternative: &#39;pwm_pin&#39;
+       free(pwm_timer);
+            ^~~~~~~~~
+            pwm_pin
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h: In member function &#39;void L6474::L6474_PwmSetFreq(uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:939:7: error: &#39;pwm_timer&#39; was not declared in this scope
+       pwm_timer-&gt;setPWM(pwm_channel, pwm_pin, frequency, 50, callback_handler, NULL);
+       ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:939:7: note: suggested alternative: &#39;pwm_pin&#39;
+       pwm_timer-&gt;setPWM(pwm_channel, pwm_pin, frequency, 50, callback_handler, NULL);
+       ^~~~~~~~~
+       pwm_pin
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h: In member function &#39;void L6474::L6474_PwmStop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:949:7: error: &#39;pwm_timer&#39; was not declared in this scope
+       pwm_timer-&gt;pause();
+       ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:949:7: note: suggested alternative: &#39;pwm_pin&#39;
+       pwm_timer-&gt;pause();
+       ^~~~~~~~~
+       pwm_pin
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.cpp:54:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h: In instantiation of &#39;static Ret Callback&lt;Ret(Params ...)&gt;::callback(Args ...) [with Args = {}; Ret = void; Params = {}]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:133:85:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:86:16: error: &#39;func&#39; was not declared in this scope
+     return func(args...);
+            ~~~~^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:86:16: note: suggested alternative: &#39;fputc&#39;
+     return func(args...);
+            ~~~~^~~~~~~~~
+            fputc
+
+</pre>
+
+					
+					<h4>examples/X_NUCLEO_IHM01A1_HelloWorld</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library STM32duino_X-NUCLEO-IHM01A1 claims to run on stm32 architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino:40:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:88:15: error: &#39;function&#39; in namespace &#39;std&#39; does not name a template type
+   static std::function&lt;Ret(Params...)&gt; func;
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:92:6: error: &#39;function&#39; in namespace &#39;std&#39; does not name a template type
+ std::function&lt;Ret(Params...)&gt; Callback&lt;Ret(Params...)&gt;::func;
+      ^~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino:40:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:1024:5: error: &#39;HardwareTimer&#39; does not name a type; did you mean &#39;HardwareSerial&#39;?
+     HardwareTimer *pwm_timer;
+     ^~~~~~~~~~~~~
+     HardwareSerial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:1027:5: error: &#39;TIM_TypeDef&#39; does not name a type
+     TIM_TypeDef *pwm_instance;
+     ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h: In constructor &#39;L6474::L6474(uint8_t, uint8_t, uint8_t, uint8_t, uint8_t, SPIClass*, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:132:25: error: &#39;func&#39; is not a member of &#39;Callback&lt;void()&gt;&#39;
+       Callback&lt;void()&gt;::func = std::bind(&amp;L6474::L6474_StepClockHandler, this);
+                         ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:132:37: error: &#39;bind&#39; is not a member of &#39;std&#39;
+       Callback&lt;void()&gt;::func = std::bind(&amp;L6474::L6474_StepClockHandler, this);
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:135:7: error: &#39;pwm_instance&#39; was not declared in this scope
+       pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(pwm_pin), PinMap_PWM);
+       ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:135:7: note: suggested alternative: &#39;pwm_channel&#39;
+       pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(pwm_pin), PinMap_PWM);
+       ^~~~~~~~~~~~
+       pwm_channel
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:135:23: error: &#39;TIM_TypeDef&#39; was not declared in this scope
+       pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(pwm_pin), PinMap_PWM);
+                       ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:135:36: error: expected primary-expression before &#39;)&#39; token
+       pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(pwm_pin), PinMap_PWM);
+                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:53: error: &#39;digitalPinToPinName&#39; was not declared in this scope
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                                                     ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:53: note: suggested alternative: &#39;digitalPinToBitMask&#39;
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                                                     ^~~~~~~~~~~~~~~~~~~
+                                                     digitalPinToBitMask
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:83: error: &#39;PinMap_PWM&#39; was not declared in this scope
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                                                                                   ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:37: error: &#39;pinmap_function&#39; was not declared in this scope
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                                     ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:21: error: &#39;STM_PIN_CHANNEL&#39; was not declared in this scope
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                     ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:138:7: error: &#39;pwm_timer&#39; was not declared in this scope
+       pwm_timer = new HardwareTimer(pwm_instance);
+       ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:138:7: note: suggested alternative: &#39;pwm_pin&#39;
+       pwm_timer = new HardwareTimer(pwm_instance);
+       ^~~~~~~~~
+       pwm_pin
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:138:23: error: expected type-specifier before &#39;HardwareTimer&#39;
+       pwm_timer = new HardwareTimer(pwm_instance);
+                       ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h: In destructor &#39;virtual L6474::~L6474()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:159:12: error: &#39;pwm_timer&#39; was not declared in this scope
+       free(pwm_timer);
+            ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:159:12: note: suggested alternative: &#39;pwm_pin&#39;
+       free(pwm_timer);
+            ^~~~~~~~~
+            pwm_pin
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h: In member function &#39;void L6474::L6474_PwmSetFreq(uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:939:7: error: &#39;pwm_timer&#39; was not declared in this scope
+       pwm_timer-&gt;setPWM(pwm_channel, pwm_pin, frequency, 50, callback_handler, NULL);
+       ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:939:7: note: suggested alternative: &#39;pwm_pin&#39;
+       pwm_timer-&gt;setPWM(pwm_channel, pwm_pin, frequency, 50, callback_handler, NULL);
+       ^~~~~~~~~
+       pwm_pin
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h: In member function &#39;void L6474::L6474_PwmStop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:949:7: error: &#39;pwm_timer&#39; was not declared in this scope
+       pwm_timer-&gt;pause();
+       ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:949:7: note: suggested alternative: &#39;pwm_pin&#39;
+       pwm_timer-&gt;pause();
+       ^~~~~~~~~
+       pwm_pin
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino:91:18: error: &#39;D11&#39; was not declared in this scope
+ SPIClass dev_spi(D11, D12, D13);
+                  ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino:91:18: note: suggested alternative: &#39;B11&#39;
+ SPIClass dev_spi(D11, D12, D13);
+                  ^~~
+                  B11
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino:91:23: error: &#39;D12&#39; was not declared in this scope
+ SPIClass dev_spi(D11, D12, D13);
+                       ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino:91:23: note: suggested alternative: &#39;DD2&#39;
+ SPIClass dev_spi(D11, D12, D13);
+                       ^~~
+                       DD2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino:91:28: error: &#39;D13&#39; was not declared in this scope
+ SPIClass dev_spi(D11, D12, D13);
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino:91:28: note: suggested alternative: &#39;DD3&#39;
+ SPIClass dev_spi(D11, D12, D13);
+                            ^~~
+                            DD3
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino:133:21: error: &#39;D2&#39; was not declared in this scope
+   motor = new L6474(D2, D8, D7, D9, D10, &amp;dev_spi);
+                     ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino:133:21: note: sugg</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library STM32duino_X-NUCLEO-IHM01A1 claims to run on stm32 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.cpp:54:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:1024:5: error: &#39;HardwareTimer&#39; does not name a type
+     HardwareTimer *pwm_timer;
+     ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:1027:5: error: &#39;TIM_TypeDef&#39; does not name a type
+     TIM_TypeDef *pwm_instance;
+     ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h: In constructor &#39;L6474::L6474(uint8_t, uint8_t, uint8_t, uint8_t, uint8_t, arduino::SPIClass*, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:135:7: error: &#39;pwm_instance&#39; was not declared in this scope
+       pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(pwm_pin), PinMap_PWM);
+       ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:135:7: note: suggested alternative: &#39;pwm_init&#39;
+       pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(pwm_pin), PinMap_PWM);
+       ^~~~~~~~~~~~
+       pwm_init
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:135:23: error: &#39;TIM_TypeDef&#39; was not declared in this scope
+       pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(pwm_pin), PinMap_PWM);
+                       ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:135:36: error: expected primary-expression before &#39;)&#39; token
+       pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(pwm_pin), PinMap_PWM);
+                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:83: error: &#39;PinMap_PWM&#39; was not declared in this scope
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                                                                                   ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:37: error: &#39;pinmap_function&#39; was not declared in this scope
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                                     ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:37: note: suggested alternative: &#39;gpio_function&#39;
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                                     ^~~~~~~~~~~~~~~
+                                     gpio_function
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:21: error: &#39;STM_PIN_CHANNEL&#39; was not declared in this scope
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                     ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:21: note: suggested alternative: &#39;NUM_DMA_CHANNELS&#39;
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                     ^~~~~~~~~~~~~~~
+                     NUM_DMA_CHANNELS
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:138:7: error: &#39;pwm_timer&#39; was not declared in this scope
+       pwm_timer = new HardwareTimer(pwm_instance);
+       ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:138:7: note: suggested alternative: &#39;pwm_pin&#39;
+       pwm_timer = new HardwareTimer(pwm_instance);
+       ^~~~~~~~~
+       pwm_pin
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:138:23: error: expected type-specifier before &#39;HardwareTimer&#39;
+       pwm_timer = new HardwareTimer(pwm_instance);
+                       ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h: In destructor &#39;virtual L6474::~L6474()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:159:12: error: &#39;pwm_timer&#39; was not declared in this scope
+       free(pwm_timer);
+            ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:159:12: note: suggested alternative: &#39;pwm_pin&#39;
+       free(pwm_timer);
+            ^~~~~~~~~
+            pwm_pin
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h: In member function &#39;void L6474::L6474_PwmSetFreq(uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:939:7: error: &#39;pwm_timer&#39; was not declared in this scope
+       pwm_timer-&gt;setPWM(pwm_channel, pwm_pin, frequency, 50, callback_handler, NULL);
+       ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:939:7: note: suggested alternative: &#39;pwm_pin&#39;
+       pwm_timer-&gt;setPWM(pwm_channel, pwm_pin, frequency, 50, callback_handler, NULL);
+       ^~~~~~~~~
+       pwm_pin
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h: In member function &#39;void L6474::L6474_PwmStop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:949:7: error: &#39;pwm_timer&#39; was not declared in this scope
+       pwm_timer-&gt;pause();
+       ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:949:7: note: suggested alternative: &#39;pwm_pin&#39;
+       pwm_timer-&gt;pause();
+       ^~~~~~~~~
+       pwm_pin
+
+</pre>
+
+					
+					<h4>examples/X_NUCLEO_IHM01A1_HelloWorld</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library STM32duino_X-NUCLEO-IHM01A1 claims to run on stm32 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino:40:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:1024:5: error: &#39;HardwareTimer&#39; does not name a type
+     HardwareTimer *pwm_timer;
+     ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:1027:5: error: &#39;TIM_TypeDef&#39; does not name a type
+     TIM_TypeDef *pwm_instance;
+     ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h: In constructor &#39;L6474::L6474(uint8_t, uint8_t, uint8_t, uint8_t, uint8_t, arduino::SPIClass*, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:135:7: error: &#39;pwm_instance&#39; was not declared in this scope
+       pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(pwm_pin), PinMap_PWM);
+       ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:135:7: note: suggested alternative: &#39;pwm_init&#39;
+       pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(pwm_pin), PinMap_PWM);
+       ^~~~~~~~~~~~
+       pwm_init
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:135:23: error: &#39;TIM_TypeDef&#39; was not declared in this scope
+       pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(pwm_pin), PinMap_PWM);
+                       ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:135:36: error: expected primary-expression before &#39;)&#39; token
+       pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(pwm_pin), PinMap_PWM);
+                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:83: error: &#39;PinMap_PWM&#39; was not declared in this scope
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                                                                                   ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:37: error: &#39;pinmap_function&#39; was not declared in this scope
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                                     ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:37: note: suggested alternative: &#39;gpio_function&#39;
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                                     ^~~~~~~~~~~~~~~
+                                     gpio_function
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:21: error: &#39;STM_PIN_CHANNEL&#39; was not declared in this scope
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                     ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:21: note: suggested alternative: &#39;NUM_DMA_CHANNELS&#39;
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                     ^~~~~~~~~~~~~~~
+                     NUM_DMA_CHANNELS
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:138:7: error: &#39;pwm_timer&#39; was not declared in this scope
+       pwm_timer = new HardwareTimer(pwm_instance);
+       ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:138:7: note: suggested alternative: &#39;pwm_pin&#39;
+       pwm_timer = new HardwareTimer(pwm_instance);
+       ^~~~~~~~~
+       pwm_pin
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:138:23: error: expected type-specifier before &#39;HardwareTimer&#39;
+       pwm_timer = new HardwareTimer(pwm_instance);
+                       ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h: In destructor &#39;virtual L6474::~L6474()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:159:12: error: &#39;pwm_timer&#39; was not declared in this scope
+       free(pwm_timer);
+            ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:159:12: note: suggested alternative: &#39;pwm_pin&#39;
+       free(pwm_timer);
+            ^~~~~~~~~
+            pwm_pin
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h: In member function &#39;void L6474::L6474_PwmSetFreq(uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:939:7: error: &#39;pwm_timer&#39; was not declared in this scope
+       pwm_timer-&gt;setPWM(pwm_channel, pwm_pin, frequency, 50, callback_handler, NULL);
+       ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:939:7: note: suggested alternative: &#39;pwm_pin&#39;
+       pwm_timer-&gt;setPWM(pwm_channel, pwm_pin, frequency, 50, callback_handler, NULL);
+       ^~~~~~~~~
+       pwm_pin
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h: In member function &#39;void L6474::L6474_PwmStop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:949:7: error: &#39;pwm_timer&#39; was not declared in this scope
+       pwm_timer-&gt;pause();
+       ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:949:7: note: suggested alternative: &#39;pwm_pin&#39;
+       pwm_timer-&gt;pause();
+       ^~~~~~~~~
+       pwm_pin
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino:91:18: error: &#39;D11&#39; was not declared in this scope
+ SPIClass dev_spi(D11, D12, D13);
+                  ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino:91:18: note: suggested alternative: &#39;B11&#39;
+ SPIClass dev_spi(D11, D12, D13);
+                  ^~~
+                  B11
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino:91:23: error: &#39;D12&#39; was not declared in this scope
+ SPIClass dev_spi(D11, D12, D13);
+                       ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino:91:23: note: suggested alternative: &#39;p12&#39;
+ SPIClass dev_spi(D11, D12, D13);
+                       ^~~
+                       p12
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino:91:28: error: &#39;D13&#39; was not declared in this scope
+ SPIClass dev_spi(D11, D12, D13);
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino:91:28: note: suggested alternative: &#39;p13&#39;
+ SPIClass dev_spi(D11, D12, D13);
+                            ^~~
+                            p13
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino:91:10: error: cannot declare variable &#39;dev_spi&#39; to be of abstract type &#39;arduino::HardwareSPI&#39;
+ SPIClass dev_spi(D11, D12, D13);
+          ^~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/libraries/SPI/SPI.h:22:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:63,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino:40:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/HardwareSPI.h:104:7: note:   because the following virtual functions are pure within &#39;arduino::HardwareSPI&#39;:
+ class HardwareSPI
+       ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/HardwareSPI.h:109:21: note: 	virtual uint8_t arduino::HardwareSPI::transfer(uint8_t)
+     virtual uint8_t transfer(uint8_t data) = 0;
+                     ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/HardwareSPI.h:110:22: note: 	virtual uint16_t arduino::HardwareSPI::transfer16(uint16_t)
+     virtual uint16_t transfer16(uint16_t data) = 0;
+                      ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/HardwareSPI.h:111:18: note: 	virtual void arduino::HardwareSPI::transfer(void*, size_t)
+     virtual void transfer(void *buf, size_t count) = 0;
+                  ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/api/HardwareSP</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library STM32duino_X-NUCLEO-IHM01A1 claims to run on stm32 architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.cpp:54:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:88:15: error: &#39;function&#39; in namespace &#39;std&#39; does not name a template type
+   static std::function&lt;Ret(Params...)&gt; func;
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:92:6: error: &#39;function&#39; in namespace &#39;std&#39; does not name a template type
+ std::function&lt;Ret(Params...)&gt; Callback&lt;Ret(Params...)&gt;::func;
+      ^~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.cpp:54:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:1024:5: error: &#39;HardwareTimer&#39; does not name a type
+     HardwareTimer *pwm_timer;
+     ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:1027:5: error: &#39;TIM_TypeDef&#39; does not name a type
+     TIM_TypeDef *pwm_instance;
+     ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h: In constructor &#39;L6474::L6474(uint8_t, uint8_t, uint8_t, uint8_t, uint8_t, SPIClassMegaAVR*, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:132:25: error: &#39;func&#39; is not a member of &#39;Callback&lt;void()&gt;&#39;
+       Callback&lt;void()&gt;::func = std::bind(&amp;L6474::L6474_StepClockHandler, this);
+                         ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:132:37: error: &#39;bind&#39; is not a member of &#39;std&#39;
+       Callback&lt;void()&gt;::func = std::bind(&amp;L6474::L6474_StepClockHandler, this);
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:135:7: error: &#39;pwm_instance&#39; was not declared in this scope
+       pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(pwm_pin), PinMap_PWM);
+       ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:135:7: note: suggested alternative: &#39;pwm_channel&#39;
+       pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(pwm_pin), PinMap_PWM);
+       ^~~~~~~~~~~~
+       pwm_channel
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:135:23: error: &#39;TIM_TypeDef&#39; was not declared in this scope
+       pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(pwm_pin), PinMap_PWM);
+                       ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:135:36: error: expected primary-expression before &#39;)&#39; token
+       pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(pwm_pin), PinMap_PWM);
+                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:53: error: &#39;digitalPinToPinName&#39; was not declared in this scope
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                                                     ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:53: note: suggested alternative: &#39;digitalPinToTimer&#39;
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                                                     ^~~~~~~~~~~~~~~~~~~
+                                                     digitalPinToTimer
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:83: error: &#39;PinMap_PWM&#39; was not declared in this scope
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                                                                                   ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:37: error: &#39;pinmap_function&#39; was not declared in this scope
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                                     ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:21: error: &#39;STM_PIN_CHANNEL&#39; was not declared in this scope
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                     ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:138:7: error: &#39;pwm_timer&#39; was not declared in this scope
+       pwm_timer = new HardwareTimer(pwm_instance);
+       ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:138:7: note: suggested alternative: &#39;pwm_pin&#39;
+       pwm_timer = new HardwareTimer(pwm_instance);
+       ^~~~~~~~~
+       pwm_pin
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:138:23: error: expected type-specifier before &#39;HardwareTimer&#39;
+       pwm_timer = new HardwareTimer(pwm_instance);
+                       ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h: In destructor &#39;virtual L6474::~L6474()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:159:12: error: &#39;pwm_timer&#39; was not declared in this scope
+       free(pwm_timer);
+            ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:159:12: note: suggested alternative: &#39;pwm_pin&#39;
+       free(pwm_timer);
+            ^~~~~~~~~
+            pwm_pin
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h: In member function &#39;void L6474::L6474_PwmSetFreq(uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:939:7: error: &#39;pwm_timer&#39; was not declared in this scope
+       pwm_timer-&gt;setPWM(pwm_channel, pwm_pin, frequency, 50, callback_handler, NULL);
+       ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:939:7: note: suggested alternative: &#39;pwm_pin&#39;
+       pwm_timer-&gt;setPWM(pwm_channel, pwm_pin, frequency, 50, callback_handler, NULL);
+       ^~~~~~~~~
+       pwm_pin
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h: In member function &#39;void L6474::L6474_PwmStop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:949:7: error: &#39;pwm_timer&#39; was not declared in this scope
+       pwm_timer-&gt;pause();
+       ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:949:7: note: suggested alternative: &#39;pwm_pin&#39;
+       pwm_timer-&gt;pause();
+       ^~~~~~~~~
+       pwm_pin
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.cpp:54:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h: In instantiation of &#39;static Ret Callback&lt;Ret(Params ...)&gt;::callback(Args ...) [with Args = {}; Ret = void; Params = {}]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:133:85:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:86:16: error: &#39;func&#39; was not declared in this scope
+     return func(args...);
+            ~~~~^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:86:16: note: suggested alternative: &#39;fputc&#39;
+     return func(args...);
+            ~~~~^~~~~~~~~
+            fputc
+
+</pre>
+
+					
+					<h4>examples/X_NUCLEO_IHM01A1_HelloWorld</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library STM32duino_X-NUCLEO-IHM01A1 claims to run on stm32 architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino:40:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:88:15: error: &#39;function&#39; in namespace &#39;std&#39; does not name a template type
+   static std::function&lt;Ret(Params...)&gt; func;
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:92:6: error: &#39;function&#39; in namespace &#39;std&#39; does not name a template type
+ std::function&lt;Ret(Params...)&gt; Callback&lt;Ret(Params...)&gt;::func;
+      ^~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino:40:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:1024:5: error: &#39;HardwareTimer&#39; does not name a type
+     HardwareTimer *pwm_timer;
+     ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:1027:5: error: &#39;TIM_TypeDef&#39; does not name a type
+     TIM_TypeDef *pwm_instance;
+     ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h: In constructor &#39;L6474::L6474(uint8_t, uint8_t, uint8_t, uint8_t, uint8_t, SPIClassMegaAVR*, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:132:25: error: &#39;func&#39; is not a member of &#39;Callback&lt;void()&gt;&#39;
+       Callback&lt;void()&gt;::func = std::bind(&amp;L6474::L6474_StepClockHandler, this);
+                         ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:132:37: error: &#39;bind&#39; is not a member of &#39;std&#39;
+       Callback&lt;void()&gt;::func = std::bind(&amp;L6474::L6474_StepClockHandler, this);
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:135:7: error: &#39;pwm_instance&#39; was not declared in this scope
+       pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(pwm_pin), PinMap_PWM);
+       ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:135:7: note: suggested alternative: &#39;pwm_channel&#39;
+       pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(pwm_pin), PinMap_PWM);
+       ^~~~~~~~~~~~
+       pwm_channel
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:135:23: error: &#39;TIM_TypeDef&#39; was not declared in this scope
+       pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(pwm_pin), PinMap_PWM);
+                       ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:135:36: error: expected primary-expression before &#39;)&#39; token
+       pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(pwm_pin), PinMap_PWM);
+                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:53: error: &#39;digitalPinToPinName&#39; was not declared in this scope
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                                                     ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:53: note: suggested alternative: &#39;digitalPinToTimer&#39;
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                                                     ^~~~~~~~~~~~~~~~~~~
+                                                     digitalPinToTimer
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:83: error: &#39;PinMap_PWM&#39; was not declared in this scope
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                                                                                   ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:37: error: &#39;pinmap_function&#39; was not declared in this scope
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                                     ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:21: error: &#39;STM_PIN_CHANNEL&#39; was not declared in this scope
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                     ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:138:7: error: &#39;pwm_timer&#39; was not declared in this scope
+       pwm_timer = new HardwareTimer(pwm_instance);
+       ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:138:7: note: suggested alternative: &#39;pwm_pin&#39;
+       pwm_timer = new HardwareTimer(pwm_instance);
+       ^~~~~~~~~
+       pwm_pin
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:138:23: error: expected type-specifier before &#39;HardwareTimer&#39;
+       pwm_timer = new HardwareTimer(pwm_instance);
+                       ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h: In destructor &#39;virtual L6474::~L6474()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:159:12: error: &#39;pwm_timer&#39; was not declared in this scope
+       free(pwm_timer);
+            ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:159:12: note: suggested alternative: &#39;pwm_pin&#39;
+       free(pwm_timer);
+            ^~~~~~~~~
+            pwm_pin
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h: In member function &#39;void L6474::L6474_PwmSetFreq(uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:939:7: error: &#39;pwm_timer&#39; was not declared in this scope
+       pwm_timer-&gt;setPWM(pwm_channel, pwm_pin, frequency, 50, callback_handler, NULL);
+       ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:939:7: note: suggested alternative: &#39;pwm_pin&#39;
+       pwm_timer-&gt;setPWM(pwm_channel, pwm_pin, frequency, 50, callback_handler, NULL);
+       ^~~~~~~~~
+       pwm_pin
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h: In member function &#39;void L6474::L6474_PwmStop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:949:7: error: &#39;pwm_timer&#39; was not declared in this scope
+       pwm_timer-&gt;pause();
+       ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:949:7: note: suggested alternative: &#39;pwm_pin&#39;
+       pwm_timer-&gt;pause();
+       ^~~~~~~~~
+       pwm_pin
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino:91:18: error: &#39;D11&#39; was not declared in this scope
+ SPIClass dev_spi(D11, D12, D13);
+                  ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino:91:18: note: suggested alternative: &#39;B11&#39;
+ SPIClass dev_spi(D11, D12, D13);
+                  ^~~
+                  B11
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino:91:23: error: &#39;D12&#39; was not declared in this scope
+ SPIClass dev_spi(D11, D12, D13);
+                       ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino:91:23: note: suggested alternative: &#39;DD2&#39;
+ SPIClass dev_spi(D11, D12, D13);
+                       ^~~
+                       DD2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino:91:28: error: &#39;D13&#39; was not declared in this scope
+ SPIClass dev_spi(D11, D12, D13);
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino:91:28: note: suggested alternative: &#39;DD3&#39;
+ SPIClass dev_spi(D11, D12, D13);
+                            ^~~
+                            DD3
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino:133:21: error: &#39;D2&#39; was not declared in this scope
+   motor = new L6474(D2, D8, D7, D9, D10, &amp;dev_spi);
+                     ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino:133:21: note: suggested alternative: &#39;A2&#39;
+   motor = new L6474(</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library STM32duino_X-NUCLEO-IHM01A1 claims to run on stm32 architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.cpp:54:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:88:15: error: &#39;function&#39; in namespace &#39;std&#39; does not name a template type
+   static std::function&lt;Ret(Params...)&gt; func;
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:92:6: error: &#39;function&#39; in namespace &#39;std&#39; does not name a template type
+ std::function&lt;Ret(Params...)&gt; Callback&lt;Ret(Params...)&gt;::func;
+      ^~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.cpp:54:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:1024:5: error: &#39;HardwareTimer&#39; does not name a type
+     HardwareTimer *pwm_timer;
+     ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:1027:5: error: &#39;TIM_TypeDef&#39; does not name a type
+     TIM_TypeDef *pwm_instance;
+     ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h: In constructor &#39;L6474::L6474(uint8_t, uint8_t, uint8_t, uint8_t, uint8_t, arduino::SPIClass*, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:132:25: error: &#39;func&#39; is not a member of &#39;Callback&lt;void()&gt;&#39;
+       Callback&lt;void()&gt;::func = std::bind(&amp;L6474::L6474_StepClockHandler, this);
+                         ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:132:37: error: &#39;bind&#39; is not a member of &#39;std&#39;
+       Callback&lt;void()&gt;::func = std::bind(&amp;L6474::L6474_StepClockHandler, this);
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:132:37: note: suggested alternative: &#39;rint&#39;
+       Callback&lt;void()&gt;::func = std::bind(&amp;L6474::L6474_StepClockHandler, this);
+                                     ^~~~
+                                     rint
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:135:7: error: &#39;pwm_instance&#39; was not declared in this scope
+       pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(pwm_pin), PinMap_PWM);
+       ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:135:7: note: suggested alternative: &#39;pwm_channel&#39;
+       pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(pwm_pin), PinMap_PWM);
+       ^~~~~~~~~~~~
+       pwm_channel
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:135:23: error: &#39;TIM_TypeDef&#39; was not declared in this scope
+       pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(pwm_pin), PinMap_PWM);
+                       ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:135:36: error: expected primary-expression before &#39;)&#39; token
+       pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(pwm_pin), PinMap_PWM);
+                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:53: error: &#39;digitalPinToPinName&#39; was not declared in this scope
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                                                     ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:53: note: suggested alternative: &#39;digitalPinToBitMask&#39;
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                                                     ^~~~~~~~~~~~~~~~~~~
+                                                     digitalPinToBitMask
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:83: error: &#39;PinMap_PWM&#39; was not declared in this scope
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                                                                                   ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:83: note: suggested alternative: &#39;PIO_PWM&#39;
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                                                                                   ^~~~~~~~~~
+                                                                                   PIO_PWM
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:37: error: &#39;pinmap_function&#39; was not declared in this scope
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                                     ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:21: error: &#39;STM_PIN_CHANNEL&#39; was not declared in this scope
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                     ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:21: note: suggested alternative: &#39;REG_EVSYS_CHANNEL&#39;
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                     ^~~~~~~~~~~~~~~
+                     REG_EVSYS_CHANNEL
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:138:7: error: &#39;pwm_timer&#39; was not declared in this scope
+       pwm_timer = new HardwareTimer(pwm_instance);
+       ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:138:7: note: suggested alternative: &#39;pwm_pin&#39;
+       pwm_timer = new HardwareTimer(pwm_instance);
+       ^~~~~~~~~
+       pwm_pin
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:138:23: error: expected type-specifier before &#39;HardwareTimer&#39;
+       pwm_timer = new HardwareTimer(pwm_instance);
+                       ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h: In destructor &#39;virtual L6474::~L6474()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:159:12: error: &#39;pwm_timer&#39; was not declared in this scope
+       free(pwm_timer);
+            ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:159:12: note: suggested alternative: &#39;pwm_pin&#39;
+       free(pwm_timer);
+            ^~~~~~~~~
+            pwm_pin
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h: In member function &#39;void L6474::L6474_PwmSetFreq(uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:939:7: error: &#39;pwm_timer&#39; was not declared in this scope
+       pwm_timer-&gt;setPWM(pwm_channel, pwm_pin, frequency, 50, callback_handler, NULL);
+       ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:939:7: note: suggested alternative: &#39;pwm_pin&#39;
+       pwm_timer-&gt;setPWM(pwm_channel, pwm_pin, frequency, 50, callback_handler, NULL);
+       ^~~~~~~~~
+       pwm_pin
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h: In member function &#39;void L6474::L6474_PwmStop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:949:7: error: &#39;pwm_timer&#39; was not declared in this scope
+       pwm_timer-&gt;pause();
+       ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:949:7: note: suggested alternative: &#39;pwm_pin&#39;
+       pwm_timer-&gt;pause();
+       ^~~~~~~~~
+       pwm_pin
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.cpp:54:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h: In instantiation of &#39;static Ret Callback&lt;Ret(Params ...)&gt;::callback(Args ...) [with Args = {}; Ret = void; Params = {}]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:133:85:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:86:16: error: &#39;func&#39; was not declared in this scope
+     return func(args...);
+            ~~~~^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:86:16: note: suggested alternative: &#39;fputc&#39;
+     return func(args...);
+            ~~~~^~~~~~~~~
+            fputc
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:86:24: error: return-statement with a value, in function returning &#39;void&#39; [-fpermissive]
+     return func(args...);
+                        ^
+
+</pre>
+
+					
+					<h4>examples/X_NUCLEO_IHM01A1_HelloWorld</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library STM32duino_X-NUCLEO-IHM01A1 claims to run on stm32 architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino:40:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:88:15: error: &#39;function&#39; in namespace &#39;std&#39; does not name a template type
+   static std::function&lt;Ret(Params...)&gt; func;
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:92:6: error: &#39;function&#39; in namespace &#39;std&#39; does not name a template type
+ std::function&lt;Ret(Params...)&gt; Callback&lt;Ret(Params...)&gt;::func;
+      ^~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino:40:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:1024:5: error: &#39;HardwareTimer&#39; does not name a type
+     HardwareTimer *pwm_timer;
+     ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:1027:5: error: &#39;TIM_TypeDef&#39; does not name a type
+     TIM_TypeDef *pwm_instance;
+     ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h: In constructor &#39;L6474::L6474(uint8_t, uint8_t, uint8_t, uint8_t, uint8_t, arduino::SPIClass*, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:132:25: error: &#39;func&#39; is not a member of &#39;Callback&lt;void()&gt;&#39;
+       Callback&lt;void()&gt;::func = std::bind(&amp;L6474::L6474_StepClockHandler, this);
+                         ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:132:37: error: &#39;bind&#39; is not a member of &#39;std&#39;
+       Callback&lt;void()&gt;::func = std::bind(&amp;L6474::L6474_StepClockHandler, this);
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:132:37: note: suggested alternative: &#39;rint&#39;
+       Callback&lt;void()&gt;::func = std::bind(&amp;L6474::L6474_StepClockHandler, this);
+                                     ^~~~
+                                     rint
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:135:7: error: &#39;pwm_instance&#39; was not declared in this scope
+       pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(pwm_pin), PinMap_PWM);
+       ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:135:7: note: suggested alternative: &#39;pwm_channel&#39;
+       pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(pwm_pin), PinMap_PWM);
+       ^~~~~~~~~~~~
+       pwm_channel
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:135:23: error: &#39;TIM_TypeDef&#39; was not declared in this scope
+       pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(pwm_pin), PinMap_PWM);
+                       ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:135:36: error: expected primary-expression before &#39;)&#39; token
+       pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(pwm_pin), PinMap_PWM);
+                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:53: error: &#39;digitalPinToPinName&#39; was not declared in this scope
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                                                     ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:53: note: suggested alternative: &#39;digitalPinToBitMask&#39;
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                                                     ^~~~~~~~~~~~~~~~~~~
+                                                     digitalPinToBitMask
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:83: error: &#39;PinMap_PWM&#39; was not declared in this scope
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                                                                                   ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:83: note: suggested alternative: &#39;PIO_PWM&#39;
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                                                                                   ^~~~~~~~~~
+                                                                                   PIO_PWM
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:37: error: &#39;pinmap_function&#39; was not declared in this scope
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                                     ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:21: error: &#39;STM_PIN_CHANNEL&#39; was not declared in this scope
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                     ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:21: note: suggested alternative: &#39;REG_EVSYS_CHANNEL&#39;
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                     ^~~~~~~~~~~~~~~
+                     REG_EVSYS_CHANNEL
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:138:7: error: &#39;pwm_timer&#39; was not declared in this scope
+       pwm_timer = new HardwareTimer(pwm_instance);
+       ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:138:7: note: suggested alternative: &#39;pwm_pin&#39;
+       pwm_timer = new HardwareTimer(pwm_instance);
+       ^~~~~~~~~
+       pwm_pin
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:138:23: error: expected type-specifier before &#39;HardwareTimer&#39;
+       pwm_timer = new HardwareTimer(pwm_instance);
+                       ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h: In destructor &#39;virtual L6474::~L6474()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:159:12: error: &#39;pwm_timer&#39; was not declared in this scope
+       free(pwm_timer);
+            ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:159:12: note: suggested alternative: &#39;pwm_pin&#39;
+       free(pwm_timer);
+            ^~~~~~~~~
+            pwm_pin
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h: In member function &#39;void L6474::L6474_PwmSetFreq(uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:939:7: error: &#39;pwm_timer&#39; was not declared in this scope
+       pwm_timer-&gt;setPWM(pwm_channel, pwm_pin, frequency, 50, callback_handler, NULL);
+       ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:939:7: note: suggested alternative: &#39;pwm_pin&#39;
+       pwm_timer-&gt;setPWM(pwm_channel, pwm_pin, frequency, 50, callback_handler, NULL);
+       ^~~~~~~~~
+       pwm_pin
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h: In member function &#39;void L6474::L6474_PwmStop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:949:7: error: &#39;pwm_timer&#39; was not declared in this scope
+       pwm_timer-&gt;pause();
+       ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:949:7: note: suggested alternative: &#39;pwm_pin&#39;
+       pwm_timer-&gt;pause();
+       ^~~~~~~~~
+       pwm_pin
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino:91:18: error: &#39;D11&#39; was not declared in this scope
+ SPIClass dev_spi(D11, D12, D13);
+                  ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino:91:18: note: suggested alternative: &#39;B11&#39;
+ SPIClass dev_spi(D11, D12, D13);
+                  ^~~
+                  B11
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino:91:23: error: &#39;D12&#39; was not declared in this scope
+ SPIClass dev_spi(D11, D12, D13);
+                       ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino:91:28: error: &#39;D13&#39; was not declared in this scope
+ SPIClass dev_spi(D11, D12, D13);
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino:91:10: error: cannot declare variable &#39;dev_sp</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library STM32duino_X-NUCLEO-IHM01A1 claims to run on stm32 architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.cpp:54:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:88:15: error: &#39;function&#39; in namespace &#39;std&#39; does not name a template type
+   static std::function&lt;Ret(Params...)&gt; func;
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:92:6: error: &#39;function&#39; in namespace &#39;std&#39; does not name a template type
+ std::function&lt;Ret(Params...)&gt; Callback&lt;Ret(Params...)&gt;::func;
+      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.cpp:54:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:1024:5: error: &#39;HardwareTimer&#39; does not name a type
+     HardwareTimer *pwm_timer;
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:1027:5: error: &#39;TIM_TypeDef&#39; does not name a type
+     TIM_TypeDef *pwm_instance;
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h: In constructor &#39;L6474::L6474(uint8_t, uint8_t, uint8_t, uint8_t, uint8_t, SPIClass*, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:132:7: error: &#39;func&#39; is not a member of &#39;Callback&lt;void()&gt;&#39;
+       Callback&lt;void()&gt;::func = std::bind(&amp;L6474::L6474_StepClockHandler, this);
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:132:32: error: &#39;bind&#39; is not a member of &#39;std&#39;
+       Callback&lt;void()&gt;::func = std::bind(&amp;L6474::L6474_StepClockHandler, this);
+                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:135:7: error: &#39;pwm_instance&#39; was not declared in this scope
+       pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(pwm_pin), PinMap_PWM);
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:135:23: error: &#39;TIM_TypeDef&#39; was not declared in this scope
+       pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(pwm_pin), PinMap_PWM);
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:135:36: error: expected primary-expression before &#39;)&#39; token
+       pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(pwm_pin), PinMap_PWM);
+                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:80: error: &#39;digitalPinToPinName&#39; was not declared in this scope
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                                                                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:83: error: &#39;PinMap_PWM&#39; was not declared in this scope
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                                                                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:93: error: &#39;pinmap_function&#39; was not declared in this scope
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                                                                                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:94: error: &#39;STM_PIN_CHANNEL&#39; was not declared in this scope
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                                                                                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:138:7: error: &#39;pwm_timer&#39; was not declared in this scope
+       pwm_timer = new HardwareTimer(pwm_instance);
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:138:23: error: expected type-specifier before &#39;HardwareTimer&#39;
+       pwm_timer = new HardwareTimer(pwm_instance);
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h: In destructor &#39;virtual L6474::~L6474()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:159:12: error: &#39;pwm_timer&#39; was not declared in this scope
+       free(pwm_timer);
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h: In member function &#39;void L6474::L6474_PwmSetFreq(uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:939:7: error: &#39;pwm_timer&#39; was not declared in this scope
+       pwm_timer-&gt;setPWM(pwm_channel, pwm_pin, frequency, 50, callback_handler, NULL);
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h: In member function &#39;void L6474::L6474_PwmStop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:949:7: error: &#39;pwm_timer&#39; was not declared in this scope
+       pwm_timer-&gt;pause();
+       ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.cpp:54:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h: In instantiation of &#39;static Ret Callback&lt;Ret(Params ...)&gt;::callback(Args ...) [with Args = {}; Ret = void; Params = {}]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:133:85:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:86:16: error: &#39;func&#39; was not declared in this scope
+     return func(args...);
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:86:24: error: return-statement with a value, in function returning &#39;void&#39; [-fpermissive]
+     return func(args...);
+                        ^
+
+</pre>
+
+					
+					<h4>examples/X_NUCLEO_IHM01A1_HelloWorld</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library STM32duino_X-NUCLEO-IHM01A1 claims to run on stm32 architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino:40:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:88:15: error: &#39;function&#39; in namespace &#39;std&#39; does not name a template type
+   static std::function&lt;Ret(Params...)&gt; func;
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:92:6: error: &#39;function&#39; in namespace &#39;std&#39; does not name a template type
+ std::function&lt;Ret(Params...)&gt; Callback&lt;Ret(Params...)&gt;::func;
+      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino:40:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:1024:5: error: &#39;HardwareTimer&#39; does not name a type
+     HardwareTimer *pwm_timer;
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:1027:5: error: &#39;TIM_TypeDef&#39; does not name a type
+     TIM_TypeDef *pwm_instance;
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h: In constructor &#39;L6474::L6474(uint8_t, uint8_t, uint8_t, uint8_t, uint8_t, SPIClass*, uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:132:7: error: &#39;func&#39; is not a member of &#39;Callback&lt;void()&gt;&#39;
+       Callback&lt;void()&gt;::func = std::bind(&amp;L6474::L6474_StepClockHandler, this);
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:132:32: error: &#39;bind&#39; is not a member of &#39;std&#39;
+       Callback&lt;void()&gt;::func = std::bind(&amp;L6474::L6474_StepClockHandler, this);
+                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:135:7: error: &#39;pwm_instance&#39; was not declared in this scope
+       pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(pwm_pin), PinMap_PWM);
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:135:23: error: &#39;TIM_TypeDef&#39; was not declared in this scope
+       pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(pwm_pin), PinMap_PWM);
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:135:36: error: expected primary-expression before &#39;)&#39; token
+       pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(pwm_pin), PinMap_PWM);
+                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:80: error: &#39;digitalPinToPinName&#39; was not declared in this scope
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                                                                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:83: error: &#39;PinMap_PWM&#39; was not declared in this scope
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                                                                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:93: error: &#39;pinmap_function&#39; was not declared in this scope
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                                                                                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:136:94: error: &#39;STM_PIN_CHANNEL&#39; was not declared in this scope
+       pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(pwm_pin), PinMap_PWM));
+                                                                                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:138:7: error: &#39;pwm_timer&#39; was not declared in this scope
+       pwm_timer = new HardwareTimer(pwm_instance);
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:138:23: error: expected type-specifier before &#39;HardwareTimer&#39;
+       pwm_timer = new HardwareTimer(pwm_instance);
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h: In destructor &#39;virtual L6474::~L6474()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:159:12: error: &#39;pwm_timer&#39; was not declared in this scope
+       free(pwm_timer);
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h: In member function &#39;void L6474::L6474_PwmSetFreq(uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:939:7: error: &#39;pwm_timer&#39; was not declared in this scope
+       pwm_timer-&gt;setPWM(pwm_channel, pwm_pin, frequency, 50, callback_handler, NULL);
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h: In member function &#39;void L6474::L6474_PwmStop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:949:7: error: &#39;pwm_timer&#39; was not declared in this scope
+       pwm_timer-&gt;pause();
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino:91:18: error: &#39;D11&#39; was not declared in this scope
+ SPIClass dev_spi(D11, D12, D13);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino:91:23: error: &#39;D12&#39; was not declared in this scope
+ SPIClass dev_spi(D11, D12, D13);
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino:91:28: error: &#39;D13&#39; was not declared in this scope
+ SPIClass dev_spi(D11, D12, D13);
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino:133:33: error: &#39;D9&#39; was not declared in this scope
+   motor = new L6474(D2, D8, D7, D9, D10, &amp;dev_spi);
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino:133:37: error: &#39;D10&#39; was not declared in this scope
+   motor = new L6474(D2, D8, D7, D9, D10, &amp;dev_spi);
+                                     ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/examples/X_NUCLEO_IHM01A1_HelloWorld/X_NUCLEO_IHM01A1_HelloWorld.ino:40:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h: In instantiation of &#39;static Ret Callback&lt;Ret(Params ...)&gt;::callback(Args ...) [with Args = {}; Ret = void; Params = {}]&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:133:85:   required from here
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:86:16: error: &#39;func&#39; was not declared in this scope
+     return func(args...);
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM01A1/src/L6474.h:86:24: error: return-statement with a value, in function returning &#39;void&#39; [-fpermissive]
+     return func(args...);
+                        ^
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

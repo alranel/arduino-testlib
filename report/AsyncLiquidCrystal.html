@@ -1,0 +1,553 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>AsyncLiquidCrystal - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>AsyncLiquidCrystal</h2>
+				<p>
+					Version: <b>1.0.1</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/asyncliquidcrystal/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>Marquee</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 444 bytes (1%) of program storage space. Maximum is 32256 bytes.
+Global variables use 9 bytes (0%) of dynamic memory, leaving 2039 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+
+					
+					<h4>examples/Marquee</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/examples/Marquee/Marquee.ino:14:24: error: &#39;PIN_PH7&#39; was not declared in this scope
+ AsyncLiquidCrystal lcd(PIN_PH7, PIN_PG3, PIN_PG4,
+                        ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/examples/Marquee/Marquee.ino:14:24: note: suggested alternative: &#39;PIN_A7&#39;
+ AsyncLiquidCrystal lcd(PIN_PH7, PIN_PG3, PIN_PG4,
+                        ^~~~~~~
+                        PIN_A7
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/examples/Marquee/Marquee.ino:14:33: error: &#39;PIN_PG3&#39; was not declared in this scope
+ AsyncLiquidCrystal lcd(PIN_PH7, PIN_PG3, PIN_PG4,
+                                 ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/examples/Marquee/Marquee.ino:14:33: note: suggested alternative: &#39;PIN_A3&#39;
+ AsyncLiquidCrystal lcd(PIN_PH7, PIN_PG3, PIN_PG4,
+                                 ^~~~~~~
+                                 PIN_A3
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/examples/Marquee/Marquee.ino:14:42: error: &#39;PIN_PG4&#39; was not declared in this scope
+ AsyncLiquidCrystal lcd(PIN_PH7, PIN_PG3, PIN_PG4,
+                                          ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/examples/Marquee/Marquee.ino:14:42: note: suggested alternative: &#39;PIN_A4&#39;
+ AsyncLiquidCrystal lcd(PIN_PH7, PIN_PG3, PIN_PG4,
+                                          ^~~~~~~
+                                          PIN_A4
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/examples/Marquee/Marquee.ino:15:19: error: &#39;PIN_PL0&#39; was not declared in this scope
+                   PIN_PL0, PIN_PL1, PIN_PL2, PIN_PL6);
+                   ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/examples/Marquee/Marquee.ino:15:19: note: suggested alternative: &#39;PIN_A0&#39;
+                   PIN_PL0, PIN_PL1, PIN_PL2, PIN_PL6);
+                   ^~~~~~~
+                   PIN_A0
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/examples/Marquee/Marquee.ino:15:28: error: &#39;PIN_PL1&#39; was not declared in this scope
+                   PIN_PL0, PIN_PL1, PIN_PL2, PIN_PL6);
+                            ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/examples/Marquee/Marquee.ino:15:28: note: suggested alternative: &#39;PIN_A1&#39;
+                   PIN_PL0, PIN_PL1, PIN_PL2, PIN_PL6);
+                            ^~~~~~~
+                            PIN_A1
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/examples/Marquee/Marquee.ino:15:37: error: &#39;PIN_PL2&#39; was not declared in this scope
+                   PIN_PL0, PIN_PL1, PIN_PL2, PIN_PL6);
+                                     ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/examples/Marquee/Marquee.ino:15:37: note: suggested alternative: &#39;PIN_A2&#39;
+                   PIN_PL0, PIN_PL1, PIN_PL2, PIN_PL6);
+                                     ^~~~~~~
+                                     PIN_A2
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/examples/Marquee/Marquee.ino:15:46: error: &#39;PIN_PL6&#39; was not declared in this scope
+                   PIN_PL0, PIN_PL1, PIN_PL2, PIN_PL6);
+                                              ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/examples/Marquee/Marquee.ino:15:46: note: suggested alternative: &#39;PIN_A6&#39;
+                   PIN_PL0, PIN_PL1, PIN_PL2, PIN_PL6);
+                                              ^~~~~~~
+                                              PIN_A6
+
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/src/AsyncLiquidCrystal.cpp: In constructor &#39;Interrupts::Interrupts(bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/src/AsyncLiquidCrystal.cpp:12:16: error: &#39;SREG&#39; was not declared in this scope
+         sreg = SREG;
+                ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/src/AsyncLiquidCrystal.cpp:12:16: note: suggested alternative: &#39;SING&#39;
+         sreg = SREG;
+                ^~~~
+                SING
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/src/AsyncLiquidCrystal.cpp: In destructor &#39;Interrupts::~Interrupts()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/src/AsyncLiquidCrystal.cpp:20:9: error: &#39;SREG&#39; was not declared in this scope
+         SREG = sreg;
+         ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/src/AsyncLiquidCrystal.cpp:20:9: note: suggested alternative: &#39;SING&#39;
+         SREG = sreg;
+         ^~~~
+         SING
+
+</pre>
+
+					
+					<h4>examples/Marquee</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DeepSleepScheduler/DeepSleepScheduler.h:702:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/examples/Marquee/Marquee.ino:8:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DeepSleepScheduler/DeepSleepScheduler_avr_implementation.h:2:10: fatal error: avr/sleep.h: No such file or directory
+ #include &lt;avr/sleep.h&gt;
+          ^~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 802 bytes (1%) of program storage space. Maximum is 49152 bytes.
+Global variables use 22 bytes (0%) of dynamic memory, leaving 6122 bytes for local variables. Maximum is 6144 bytes.
+</pre>
+
+					
+					<h4>examples/Marquee</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library DeepSleepScheduler claims to run on avr, esp32, esp8266 architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DeepSleepScheduler/DeepSleepScheduler.h:702:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/examples/Marquee/Marquee.ino:8:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DeepSleepScheduler/DeepSleepScheduler_avr_implementation.h: In member function &#39;void Scheduler::sleepIfRequired()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DeepSleepScheduler/DeepSleepScheduler_avr_implementation.h:81:20: error: &#39;ADCSRA&#39; was not declared in this scope
+       adcsraSave = ADCSRA;
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DeepSleepScheduler/DeepSleepScheduler_avr_implementation.h:81:20: note: suggested alternative: &#39;ADC_t&#39;
+       adcsraSave = ADCSRA;
+                    ^~~~~~
+                    ADC_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DeepSleepScheduler/DeepSleepScheduler_avr_implementation.h:99:7: error: &#39;ADCSRA&#39; was not declared in this scope
+       ADCSRA = adcsraSave;
+       ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DeepSleepScheduler/DeepSleepScheduler_avr_implementation.h:99:7: note: suggested alternative: &#39;ADC_t&#39;
+       ADCSRA = adcsraSave;
+       ^~~~~~
+       ADC_t
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DeepSleepScheduler/DeepSleepScheduler_avr_implementation.h:3:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DeepSleepScheduler/DeepSleepScheduler.h:702,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/examples/Marquee/Marquee.ino:8:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DeepSleepScheduler/DeepSleepScheduler_avr_implementation.h: In member function &#39;long unsigned int Scheduler::wdtEnableForSleep(long unsigned int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DeepSleepScheduler/DeepSleepScheduler_avr_implementation.h:177:16: error: &#39;WDTO_8S&#39; was not declared in this scope
+     wdt_enable(WDTO_8S);
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DeepSleepScheduler/DeepSleepScheduler_avr_implementation.h:177:16: note: suggested alternative: &#39;WDTO_1S&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DeepSleepScheduler/DeepSleepScheduler_avr_implementation.h:180:16: error: &#39;WDTO_4S&#39; was not declared in this scope
+     wdt_enable(WDTO_4S);
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DeepSleepScheduler/DeepSleepScheduler_avr_implementation.h:180:16: note: suggested alternative: &#39;WDTO_1S&#39;
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DeepSleepScheduler/DeepSleepScheduler.h:702:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/examples/Marquee/Marquee.ino:8:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DeepSleepScheduler/DeepSleepScheduler_avr_implementation.h: In member function &#39;void Scheduler::wdtEnableInterrupt()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DeepSleepScheduler/DeepSleepScheduler_avr_implementation.h:238:3: error: &#39;WDTCSR&#39; was not declared in this scope
+   WDTCSR |= (1 &lt;&lt; WDCE) | (1 &lt;&lt; WDIE);
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DeepSleepScheduler/DeepSleepScheduler_avr_implementation.h:238:3: note: suggested alternative: &#39;WDT_t&#39;
+   WDTCSR |= (1 &lt;&lt; WDCE) | (1 &lt;&lt; WDIE);
+   ^~~~~~
+   WDT_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DeepSleepScheduler/DeepSleepScheduler_avr_implementation.h:238:19: error: &#39;WDCE&#39; was not declared in this scope
+   WDTCSR |= (1 &lt;&lt; WDCE) | (1 &lt;&lt; WDIE);
+                   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DeepSleepScheduler/DeepSleepScheduler_avr_implementation.h:238:19: note: suggested alternative: &#39;IDLE&#39;
+   WDTCSR |= (1 &lt;&lt; WDCE) | (1 &lt;&lt; WDIE);
+                   ^~~~
+                   IDLE
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DeepSleepScheduler/DeepSleepScheduler_avr_implementation.h:238:33: error: &#39;WDIE&#39; was not declared in this scope
+   WDTCSR |= (1 &lt;&lt; WDCE) | (1 &lt;&lt; WDIE);
+                                 ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/DeepSleepScheduler/DeepSleepScheduler_avr_implementation.h:238:33: note: suggested alternative: &#39;IDLE&#39;
+   WDTCSR |= (1 &lt;&lt; WDCE) | (1 &lt;&lt; WDIE);
+                                 ^~~~
+                                 IDLE
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/examples/Marquee/Marquee.ino: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/examples/Marquee/Marquee.ino:14:24: error: &#39;PIN_PH7&#39; was not declared in this scope
+ AsyncLiquidCrystal lcd(PIN_PH7, PIN_PG3, PIN_PG4,
+                        ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/examples/Marquee/Marquee.ino:14:24: note: suggested alternative: &#39;PIN_A7&#39;
+ AsyncLiquidCrystal lcd(PIN_PH7, PIN_PG3, PIN_PG4,
+                        ^~~~~~~
+                        PIN_A7
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/examples/Marquee/Marquee.ino:14:33: error: &#39;PIN_PG3&#39; was not declared in this scope
+ AsyncLiquidCrystal lcd(PIN_PH7, PIN_PG3, PIN_PG4,
+                                 ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/examples/Marquee/Marquee.ino:14:33: note: suggested alternative: &#39;PIN_A3&#39;
+ AsyncLiquidCrystal lcd(PIN_PH7, PIN_PG3, PIN_PG4,
+                                 ^~~~~~~
+                                 PIN_A3
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/examples/Marquee/Marquee.ino:14:42: error: &#39;PIN_PG4&#39; was not declared in this scope
+ AsyncLiquidCrystal lcd(PIN_PH7, PIN_PG3, PIN_PG4,
+                                          ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/examples/Marquee/Marquee.ino:14:42: note: suggested alternative: &#39;PIN_A4&#39;
+ AsyncLiquidCrystal lcd(PIN_PH7, PIN_PG3, PIN_PG4,
+                                          ^~~~~~~
+                                          PIN_A4
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/examples/Marquee/Marquee.ino:15:19: error: &#39;PIN_PL0&#39; was not declared in this scope
+                   PIN_PL0, PIN_PL1, PIN_PL2, PIN_PL6);
+                   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/examples/Marquee/Marquee.ino:15:19: note: suggested alternative: &#39;PIN_A0&#39;
+                   PIN_PL0, PIN_PL1, PIN_PL2, PIN_PL6);
+                   ^~~~~~~
+                   PIN_A0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/examples/Marquee/Marquee.ino:15:28: error: &#39;PIN_PL1&#39; was not declared in this scope
+                   PIN_PL0, PIN_PL1, PIN_PL2, PIN_PL6);
+                            ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/examples/Marquee/Marquee.ino:15:28: note: suggested alternative: &#39;PIN_A1&#39;
+                   PIN_PL0, PIN_PL1, PIN_PL2, PIN_PL6);
+                            ^~~~~~~
+                            PIN_A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/examples/Marquee/Marquee.ino:15:37: error: &#39;PIN_PL2&#39; was not declared in this scope
+                   PIN_PL0, PIN_PL1, PIN_PL2, PIN_PL6);
+                                     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/examples/Marquee/Marquee.ino:15:37: note: suggested alternative: &#39;PIN_A2&#39;
+                   PIN_PL0, PIN_PL1, PIN_PL2, PIN_PL6);
+                                     ^~~~~~~
+                                     PIN_A2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/examples/Marquee/Marquee.ino:15:46: error: &#39;PIN_PL6&#39; was not declared in this scope
+                   PIN_PL0, PIN_PL1, PIN_PL2, PIN_PL6);
+                                              ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/examples/Marquee/Marquee.ino:15:46: note: suggested alternative: &#39;PIN_A6&#39;
+                   PIN_PL0, PIN_PL1, PIN_PL2, PIN_PL6);
+                                              ^~~~~~~
+                                              PIN_A6
+
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/src/AsyncLiquidCrystal.cpp: In constructor &#39;Interrupts::Interrupts(bool)&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/src/AsyncLiquidCrystal.cpp:12:16: error: &#39;SREG&#39; was not declared in this scope
+         sreg = SREG;
+                ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/src/AsyncLiquidCrystal.cpp:12:16: note: suggested alternative: &#39;SING&#39;
+         sreg = SREG;
+                ^~~~
+                SING
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/src/AsyncLiquidCrystal.cpp: In destructor &#39;Interrupts::~Interrupts()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/src/AsyncLiquidCrystal.cpp:20:9: error: &#39;SREG&#39; was not declared in this scope
+         SREG = sreg;
+         ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/src/AsyncLiquidCrystal.cpp:20:9: note: suggested alternative: &#39;SING&#39;
+         SREG = sreg;
+         ^~~~
+         SING
+
+</pre>
+
+					
+					<h4>examples/Marquee</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DeepSleepScheduler/DeepSleepScheduler.h:702:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/examples/Marquee/Marquee.ino:8:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/DeepSleepScheduler/DeepSleepScheduler_avr_implementation.h:2:10: fatal error: avr/sleep.h: No such file or directory
+ #include &lt;avr/sleep.h&gt;
+          ^~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/src/AsyncLiquidCrystal.cpp: In constructor &#39;Interrupts::Interrupts(bool)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/src/AsyncLiquidCrystal.cpp:12:16: error: &#39;SREG&#39; was not declared in this scope
+         sreg = SREG;
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/src/AsyncLiquidCrystal.cpp: In destructor &#39;Interrupts::~Interrupts()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/src/AsyncLiquidCrystal.cpp:20:9: error: &#39;SREG&#39; was not declared in this scope
+         SREG = sreg;
+         ^
+
+</pre>
+
+					
+					<h4>examples/Marquee</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/examples/Marquee/Marquee.ino:14:24: error: &#39;PIN_PH7&#39; was not declared in this scope
+ AsyncLiquidCrystal lcd(PIN_PH7, PIN_PG3, PIN_PG4,
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/examples/Marquee/Marquee.ino:14:33: error: &#39;PIN_PG3&#39; was not declared in this scope
+ AsyncLiquidCrystal lcd(PIN_PH7, PIN_PG3, PIN_PG4,
+                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/examples/Marquee/Marquee.ino:14:42: error: &#39;PIN_PG4&#39; was not declared in this scope
+ AsyncLiquidCrystal lcd(PIN_PH7, PIN_PG3, PIN_PG4,
+                                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/examples/Marquee/Marquee.ino:15:19: error: &#39;PIN_PL0&#39; was not declared in this scope
+                   PIN_PL0, PIN_PL1, PIN_PL2, PIN_PL6);
+                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/examples/Marquee/Marquee.ino:15:28: error: &#39;PIN_PL1&#39; was not declared in this scope
+                   PIN_PL0, PIN_PL1, PIN_PL2, PIN_PL6);
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/examples/Marquee/Marquee.ino:15:37: error: &#39;PIN_PL2&#39; was not declared in this scope
+                   PIN_PL0, PIN_PL1, PIN_PL2, PIN_PL6);
+                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AsyncLiquidCrystal/examples/Marquee/Marquee.ino:15:46: error: &#39;PIN_PL6&#39; was not declared in this scope
+                   PIN_PL0, PIN_PL1, PIN_PL2, PIN_PL6);
+                                              ^
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

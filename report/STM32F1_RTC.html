@@ -1,0 +1,1227 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>STM32F1_RTC - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>STM32F1_RTC</h2>
+				<p>
+					Version: <b>1.1.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/stm32f1_rtc/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>LCD2004_Clock_and_Calendar</pre></th>
+						
+						<th><pre>Serial_Clock_and_Calendar</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library STM32F1_RTC claims to run on stm32, STM32F1 architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.cpp:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:71:2: error: #error &#34;This library only suites for STM32F1xx development board.&#34;
+ #error &#34;This library only suites for STM32F1xx development board.&#34;
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:75:2: error: #error &#34;RTC configuration is missing. Check flag HAL_RTC_MODULE_ENABLED in stm32f1xx_hal_conf_default.h&#34;
+ #error &#34;RTC configuration is missing. Check flag HAL_RTC_MODULE_ENABLED in stm32f1xx_hal_conf_default.h&#34;
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;bool STM32F1_RTC::isCounterUpdated()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:79:18: error: &#39;RTC&#39; was not declared in this scope
+ #define RTC_CRL  RTC-&gt;CRL
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:198:13: note: in expansion of macro &#39;RTC_CRL&#39;
+     return (RTC_CRL &amp; RTC_CRL_SECF) == RTC_CRL_SECF;
+             ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:198:23: error: &#39;RTC_CRL_SECF&#39; was not declared in this scope
+     return (RTC_CRL &amp; RTC_CRL_SECF) == RTC_CRL_SECF;
+                       ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:198:23: note: suggested alternative: &#39;RTC_CRL&#39;
+     return (RTC_CRL &amp; RTC_CRL_SECF) == RTC_CRL_SECF;
+                       ^~~~~~~~~~~~
+                       RTC_CRL
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;bool STM32F1_RTC::isAlarmTriggered()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:79:18: error: &#39;RTC&#39; was not declared in this scope
+ #define RTC_CRL  RTC-&gt;CRL
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:202:13: note: in expansion of macro &#39;RTC_CRL&#39;
+     return (RTC_CRL &amp; RTC_CRL_ALRF) == RTC_CRL_ALRF;
+             ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:202:23: error: &#39;RTC_CRL_ALRF&#39; was not declared in this scope
+     return (RTC_CRL &amp; RTC_CRL_ALRF) == RTC_CRL_ALRF;
+                       ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:202:23: note: suggested alternative: &#39;RTC_CRL&#39;
+     return (RTC_CRL &amp; RTC_CRL_ALRF) == RTC_CRL_ALRF;
+                       ^~~~~~~~~~~~
+                       RTC_CRL
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;bool STM32F1_RTC::isCounterOverflow()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:79:18: error: &#39;RTC&#39; was not declared in this scope
+ #define RTC_CRL  RTC-&gt;CRL
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:206:13: note: in expansion of macro &#39;RTC_CRL&#39;
+     return (RTC_CRL &amp; RTC_CRL_OWF) == RTC_CRL_OWF;
+             ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:206:23: error: &#39;RTC_CRL_OWF&#39; was not declared in this scope
+     return (RTC_CRL &amp; RTC_CRL_OWF) == RTC_CRL_OWF;
+                       ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:206:23: note: suggested alternative: &#39;RTC_CRL&#39;
+     return (RTC_CRL &amp; RTC_CRL_OWF) == RTC_CRL_OWF;
+                       ^~~~~~~~~~~
+                       RTC_CRL
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;void STM32F1_RTC::clearSecondFlag()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:79:18: error: &#39;RTC&#39; was not declared in this scope
+ #define RTC_CRL  RTC-&gt;CRL
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:210:5: note: in expansion of macro &#39;RTC_CRL&#39;
+     RTC_CRL &amp;= ~RTC_CRL_SECF;
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:210:17: error: &#39;RTC_CRL_SECF&#39; was not declared in this scope
+     RTC_CRL &amp;= ~RTC_CRL_SECF;
+                 ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:210:17: note: suggested alternative: &#39;RTC_CRL&#39;
+     RTC_CRL &amp;= ~RTC_CRL_SECF;
+                 ^~~~~~~~~~~~
+                 RTC_CRL
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;void STM32F1_RTC::clearAlarmFlag()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:79:18: error: &#39;RTC&#39; was not declared in this scope
+ #define RTC_CRL  RTC-&gt;CRL
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:214:5: note: in expansion of macro &#39;RTC_CRL&#39;
+     RTC_CRL &amp;= ~RTC_CRL_ALRF;
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:214:17: error: &#39;RTC_CRL_ALRF&#39; was not declared in this scope
+     RTC_CRL &amp;= ~RTC_CRL_ALRF;
+                 ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:214:17: note: suggested alternative: &#39;RTC_CRL&#39;
+     RTC_CRL &amp;= ~RTC_CRL_ALRF;
+                 ^~~~~~~~~~~~
+                 RTC_CRL
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;void STM32F1_RTC::clearOverflowFlag()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:79:18: error: &#39;RTC&#39; was not declared in this scope
+ #define RTC_CRL  RTC-&gt;CRL
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:218:5: note: in expansion of macro &#39;RTC_CRL&#39;
+     RTC_CRL &amp;= ~RTC_CRL_OWF;
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:218:17: error: &#39;RTC_CRL_OWF&#39; was not declared in this scope
+     RTC_CRL &amp;= ~RTC_CRL_OWF;
+                 ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:218:17: note: suggested alternative: &#39;RTC_CRL&#39;
+     RTC_CRL &amp;= ~RTC_CRL_OWF;
+                 ^~~~~~~~~~~
+                 RTC_CRL
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;void STM32F1_RTC::enableClockInterface()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:89:21: error: &#39;RCC&#39; was not declared in this scope
+ #define RCC_APB1ENR RCC-&gt;APB1ENR
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:222:5: note: in expansion of macro &#39;RCC_APB1ENR&#39;
+     RCC_APB1ENR |= RCC_APB1ENR_PWREN | RCC_APB1ENR_BKPEN;
+     ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:222:20: error: &#39;RCC_APB1ENR_PWREN&#39; was not declared in this scope
+     RCC_APB1ENR |= RCC_APB1ENR_PWREN | RCC_APB1ENR_BKPEN;
+                    ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:222:20: note: suggested alternative: &#39;RCC_APB1ENR&#39;
+     RCC_APB1ENR |= RCC_APB1ENR_PWREN | RCC_APB1ENR_BKPEN;
+                    ^~~~~~~~~~~~~~~~~
+                    RCC_APB1ENR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:222:40: error: &#39;RCC_APB1ENR_BKPEN&#39; was not declared in this scope
+     RCC_APB1ENR |= RCC_APB1ENR_PWREN | RCC_APB1ENR_BKPEN;
+                                        ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:222:40: note: suggested alternative: &#39;RCC_APB1ENR&#39;
+     RCC_APB1ENR |= RCC_APB1ENR_PWREN | RCC_APB1ENR_BKPEN;
+                                        ^~~~~~~~~~~~~~~~~
+                                        RCC_APB1ENR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;void STM32F1_RTC::waitSync()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:79:18: error: &#39;RTC&#39; was not declared in this scope
+ #define RTC_CRL  RTC-&gt;CRL
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:226:5: note: in expansion of macro &#39;RTC_CRL&#39;
+     RTC_CRL &amp;= ~RTC_CRL_RSF;
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:226:17: error: &#39;RTC_CRL_RSF&#39; was not declared in this scope
+     RTC_CRL &amp;= ~RTC_CRL_RSF;
+                 ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:226:17: note: suggested alternative: &#39;RTC_CRL&#39;
+     RTC_CRL &amp;= ~RTC_CRL_RSF;
+                 ^~~~~~~~~~~
+                 RTC_CRL
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;void STM32F1_RTC::enableBackupWrites()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:91:21: error: &#39;PWR&#39; was not declared in this scope
+ #define PWR_CR      PWR-&gt;CR
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:231:5: note: in expansion of macro &#39;PWR_CR&#39;
+     PWR_CR |= PWR_CR_DBP;
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:91:21: not</pre>
+
+					
+					<h4>examples/LCD2004_Clock_and_Calendar</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library STM32F1_RTC claims to run on stm32, STM32F1 architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/examples/LCD2004_Clock_and_Calendar/LCD2004_Clock_and_Calendar.ino:39:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:71:2: error: #error &#34;This library only suites for STM32F1xx development board.&#34;
+ #error &#34;This library only suites for STM32F1xx development board.&#34;
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:75:2: error: #error &#34;RTC configuration is missing. Check flag HAL_RTC_MODULE_ENABLED in stm32f1xx_hal_conf_default.h&#34;
+ #error &#34;RTC configuration is missing. Check flag HAL_RTC_MODULE_ENABLED in stm32f1xx_hal_conf_default.h&#34;
+  ^~~~~
+
+</pre>
+					
+					<h4>examples/Serial_Clock_and_Calendar</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library STM32F1_RTC claims to run on stm32, STM32F1 architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/examples/Serial_Clock_and_Calendar/Serial_Clock_and_Calendar.ino:38:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:71:2: error: #error &#34;This library only suites for STM32F1xx development board.&#34;
+ #error &#34;This library only suites for STM32F1xx development board.&#34;
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:75:2: error: #error &#34;RTC configuration is missing. Check flag HAL_RTC_MODULE_ENABLED in stm32f1xx_hal_conf_default.h&#34;
+ #error &#34;RTC configuration is missing. Check flag HAL_RTC_MODULE_ENABLED in stm32f1xx_hal_conf_default.h&#34;
+  ^~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library STM32F1_RTC claims to run on stm32, STM32F1 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.cpp:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:71:2: error: #error &#34;This library only suites for STM32F1xx development board.&#34;
+ #error &#34;This library only suites for STM32F1xx development board.&#34;
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:75:2: error: #error &#34;RTC configuration is missing. Check flag HAL_RTC_MODULE_ENABLED in stm32f1xx_hal_conf_default.h&#34;
+ #error &#34;RTC configuration is missing. Check flag HAL_RTC_MODULE_ENABLED in stm32f1xx_hal_conf_default.h&#34;
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;bool STM32F1_RTC::isCounterUpdated()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:79:18: error: &#39;RTC&#39; was not declared in this scope
+ #define RTC_CRL  RTC-&gt;CRL
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:198:13: note: in expansion of macro &#39;RTC_CRL&#39;
+     return (RTC_CRL &amp; RTC_CRL_SECF) == RTC_CRL_SECF;
+             ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:198:23: error: &#39;RTC_CRL_SECF&#39; was not declared in this scope
+     return (RTC_CRL &amp; RTC_CRL_SECF) == RTC_CRL_SECF;
+                       ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:198:23: note: suggested alternative: &#39;RTC_CRL&#39;
+     return (RTC_CRL &amp; RTC_CRL_SECF) == RTC_CRL_SECF;
+                       ^~~~~~~~~~~~
+                       RTC_CRL
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;bool STM32F1_RTC::isAlarmTriggered()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:79:18: error: &#39;RTC&#39; was not declared in this scope
+ #define RTC_CRL  RTC-&gt;CRL
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:202:13: note: in expansion of macro &#39;RTC_CRL&#39;
+     return (RTC_CRL &amp; RTC_CRL_ALRF) == RTC_CRL_ALRF;
+             ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:202:23: error: &#39;RTC_CRL_ALRF&#39; was not declared in this scope
+     return (RTC_CRL &amp; RTC_CRL_ALRF) == RTC_CRL_ALRF;
+                       ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:202:23: note: suggested alternative: &#39;RTC_PRLL&#39;
+     return (RTC_CRL &amp; RTC_CRL_ALRF) == RTC_CRL_ALRF;
+                       ^~~~~~~~~~~~
+                       RTC_PRLL
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;bool STM32F1_RTC::isCounterOverflow()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:79:18: error: &#39;RTC&#39; was not declared in this scope
+ #define RTC_CRL  RTC-&gt;CRL
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:206:13: note: in expansion of macro &#39;RTC_CRL&#39;
+     return (RTC_CRL &amp; RTC_CRL_OWF) == RTC_CRL_OWF;
+             ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:206:23: error: &#39;RTC_CRL_OWF&#39; was not declared in this scope
+     return (RTC_CRL &amp; RTC_CRL_OWF) == RTC_CRL_OWF;
+                       ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:206:23: note: suggested alternative: &#39;RTC_CRL&#39;
+     return (RTC_CRL &amp; RTC_CRL_OWF) == RTC_CRL_OWF;
+                       ^~~~~~~~~~~
+                       RTC_CRL
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;void STM32F1_RTC::clearSecondFlag()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:79:18: error: &#39;RTC&#39; was not declared in this scope
+ #define RTC_CRL  RTC-&gt;CRL
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:210:5: note: in expansion of macro &#39;RTC_CRL&#39;
+     RTC_CRL &amp;= ~RTC_CRL_SECF;
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:210:17: error: &#39;RTC_CRL_SECF&#39; was not declared in this scope
+     RTC_CRL &amp;= ~RTC_CRL_SECF;
+                 ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:210:17: note: suggested alternative: &#39;RTC_CRL&#39;
+     RTC_CRL &amp;= ~RTC_CRL_SECF;
+                 ^~~~~~~~~~~~
+                 RTC_CRL
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;void STM32F1_RTC::clearAlarmFlag()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:79:18: error: &#39;RTC&#39; was not declared in this scope
+ #define RTC_CRL  RTC-&gt;CRL
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:214:5: note: in expansion of macro &#39;RTC_CRL&#39;
+     RTC_CRL &amp;= ~RTC_CRL_ALRF;
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:214:17: error: &#39;RTC_CRL_ALRF&#39; was not declared in this scope
+     RTC_CRL &amp;= ~RTC_CRL_ALRF;
+                 ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:214:17: note: suggested alternative: &#39;RTC_PRLL&#39;
+     RTC_CRL &amp;= ~RTC_CRL_ALRF;
+                 ^~~~~~~~~~~~
+                 RTC_PRLL
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;void STM32F1_RTC::clearOverflowFlag()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:79:18: error: &#39;RTC&#39; was not declared in this scope
+ #define RTC_CRL  RTC-&gt;CRL
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:218:5: note: in expansion of macro &#39;RTC_CRL&#39;
+     RTC_CRL &amp;= ~RTC_CRL_OWF;
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:218:17: error: &#39;RTC_CRL_OWF&#39; was not declared in this scope
+     RTC_CRL &amp;= ~RTC_CRL_OWF;
+                 ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:218:17: note: suggested alternative: &#39;RTC_CRL&#39;
+     RTC_CRL &amp;= ~RTC_CRL_OWF;
+                 ^~~~~~~~~~~
+                 RTC_CRL
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;void STM32F1_RTC::enableClockInterface()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:89:21: error: &#39;RCC&#39; was not declared in this scope
+ #define RCC_APB1ENR RCC-&gt;APB1ENR
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:222:5: note: in expansion of macro &#39;RCC_APB1ENR&#39;
+     RCC_APB1ENR |= RCC_APB1ENR_PWREN | RCC_APB1ENR_BKPEN;
+     ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:222:20: error: &#39;RCC_APB1ENR_PWREN&#39; was not declared in this scope
+     RCC_APB1ENR |= RCC_APB1ENR_PWREN | RCC_APB1ENR_BKPEN;
+                    ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:222:20: note: suggested alternative: &#39;RCC_APB1ENR&#39;
+     RCC_APB1ENR |= RCC_APB1ENR_PWREN | RCC_APB1ENR_BKPEN;
+                    ^~~~~~~~~~~~~~~~~
+                    RCC_APB1ENR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:222:40: error: &#39;RCC_APB1ENR_BKPEN&#39; was not declared in this scope
+     RCC_APB1ENR |= RCC_APB1ENR_PWREN | RCC_APB1ENR_BKPEN;
+                                        ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:222:40: note: suggested alternative: &#39;RCC_APB1ENR&#39;
+     RCC_APB1ENR |= RCC_APB1ENR_PWREN | RCC_APB1ENR_BKPEN;
+                                        ^~~~~~~~~~~~~~~~~
+                                        RCC_APB1ENR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;void STM32F1_RTC::waitSync()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:79:18: error: &#39;RTC&#39; was not declared in this scope
+ #define RTC_CRL  RTC-&gt;CRL
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:226:5: note: in expansion of macro &#39;RTC_CRL&#39;
+     RTC_CRL &amp;= ~RTC_CRL_RSF;
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:226:17: error: &#39;RTC_CRL_RSF&#39; was not declared in this scope
+     RTC_CRL &amp;= ~RTC_CRL_RSF;
+                 ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:226:17: note: suggested alternative: &#39;RTC_CRL&#39;
+     RTC_CRL &amp;= ~RTC_CRL_RSF;
+                 ^~~~~~~~~~~
+                 RTC_CRL
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;void STM32F1_RTC::enableBackupWrites()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:91:21: error: &#39;PWR&#39; was not declared in this scope
+ #define PWR_CR      PWR-&gt;CR
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:231:5: note: in expansion of macro &#39;PWR_CR&#39;
+     PWR_CR |= PWR_CR_DBP;
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:</pre>
+
+					
+					<h4>examples/LCD2004_Clock_and_Calendar</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library STM32F1_RTC claims to run on stm32, STM32F1 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/examples/LCD2004_Clock_and_Calendar/LCD2004_Clock_and_Calendar.ino:39:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:71:2: error: #error &#34;This library only suites for STM32F1xx development board.&#34;
+ #error &#34;This library only suites for STM32F1xx development board.&#34;
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:75:2: error: #error &#34;RTC configuration is missing. Check flag HAL_RTC_MODULE_ENABLED in stm32f1xx_hal_conf_default.h&#34;
+ #error &#34;RTC configuration is missing. Check flag HAL_RTC_MODULE_ENABLED in stm32f1xx_hal_conf_default.h&#34;
+  ^~~~~
+
+</pre>
+					
+					<h4>examples/Serial_Clock_and_Calendar</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library STM32F1_RTC claims to run on stm32, STM32F1 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/examples/Serial_Clock_and_Calendar/Serial_Clock_and_Calendar.ino:38:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:71:2: error: #error &#34;This library only suites for STM32F1xx development board.&#34;
+ #error &#34;This library only suites for STM32F1xx development board.&#34;
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:75:2: error: #error &#34;RTC configuration is missing. Check flag HAL_RTC_MODULE_ENABLED in stm32f1xx_hal_conf_default.h&#34;
+ #error &#34;RTC configuration is missing. Check flag HAL_RTC_MODULE_ENABLED in stm32f1xx_hal_conf_default.h&#34;
+  ^~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library STM32F1_RTC claims to run on stm32, STM32F1 architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.cpp:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:71:2: error: #error &#34;This library only suites for STM32F1xx development board.&#34;
+ #error &#34;This library only suites for STM32F1xx development board.&#34;
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:75:2: error: #error &#34;RTC configuration is missing. Check flag HAL_RTC_MODULE_ENABLED in stm32f1xx_hal_conf_default.h&#34;
+ #error &#34;RTC configuration is missing. Check flag HAL_RTC_MODULE_ENABLED in stm32f1xx_hal_conf_default.h&#34;
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;bool STM32F1_RTC::isCounterUpdated()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:79:21: error: base operand of &#39;-&gt;&#39; has non-pointer type &#39;RTC_t {aka RTC_struct}&#39;
+ #define RTC_CRL  RTC-&gt;CRL
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:198:13: note: in expansion of macro &#39;RTC_CRL&#39;
+     return (RTC_CRL &amp; RTC_CRL_SECF) == RTC_CRL_SECF;
+             ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:198:23: error: &#39;RTC_CRL_SECF&#39; was not declared in this scope
+     return (RTC_CRL &amp; RTC_CRL_SECF) == RTC_CRL_SECF;
+                       ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:198:23: note: suggested alternative: &#39;RTC_CLKSEL&#39;
+     return (RTC_CRL &amp; RTC_CRL_SECF) == RTC_CRL_SECF;
+                       ^~~~~~~~~~~~
+                       RTC_CLKSEL
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;bool STM32F1_RTC::isAlarmTriggered()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:79:21: error: base operand of &#39;-&gt;&#39; has non-pointer type &#39;RTC_t {aka RTC_struct}&#39;
+ #define RTC_CRL  RTC-&gt;CRL
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:202:13: note: in expansion of macro &#39;RTC_CRL&#39;
+     return (RTC_CRL &amp; RTC_CRL_ALRF) == RTC_CRL_ALRF;
+             ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:202:23: error: &#39;RTC_CRL_ALRF&#39; was not declared in this scope
+     return (RTC_CRL &amp; RTC_CRL_ALRF) == RTC_CRL_ALRF;
+                       ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:202:23: note: suggested alternative: &#39;RTC_PRLL&#39;
+     return (RTC_CRL &amp; RTC_CRL_ALRF) == RTC_CRL_ALRF;
+                       ^~~~~~~~~~~~
+                       RTC_PRLL
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;bool STM32F1_RTC::isCounterOverflow()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:79:21: error: base operand of &#39;-&gt;&#39; has non-pointer type &#39;RTC_t {aka RTC_struct}&#39;
+ #define RTC_CRL  RTC-&gt;CRL
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:206:13: note: in expansion of macro &#39;RTC_CRL&#39;
+     return (RTC_CRL &amp; RTC_CRL_OWF) == RTC_CRL_OWF;
+             ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:206:23: error: &#39;RTC_CRL_OWF&#39; was not declared in this scope
+     return (RTC_CRL &amp; RTC_CRL_OWF) == RTC_CRL_OWF;
+                       ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:206:23: note: suggested alternative: &#39;RTC_CRL&#39;
+     return (RTC_CRL &amp; RTC_CRL_OWF) == RTC_CRL_OWF;
+                       ^~~~~~~~~~~
+                       RTC_CRL
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;void STM32F1_RTC::clearSecondFlag()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:79:21: error: base operand of &#39;-&gt;&#39; has non-pointer type &#39;RTC_t {aka RTC_struct}&#39;
+ #define RTC_CRL  RTC-&gt;CRL
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:210:5: note: in expansion of macro &#39;RTC_CRL&#39;
+     RTC_CRL &amp;= ~RTC_CRL_SECF;
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:210:17: error: &#39;RTC_CRL_SECF&#39; was not declared in this scope
+     RTC_CRL &amp;= ~RTC_CRL_SECF;
+                 ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:210:17: note: suggested alternative: &#39;RTC_CLKSEL&#39;
+     RTC_CRL &amp;= ~RTC_CRL_SECF;
+                 ^~~~~~~~~~~~
+                 RTC_CLKSEL
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;void STM32F1_RTC::clearAlarmFlag()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:79:21: error: base operand of &#39;-&gt;&#39; has non-pointer type &#39;RTC_t {aka RTC_struct}&#39;
+ #define RTC_CRL  RTC-&gt;CRL
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:214:5: note: in expansion of macro &#39;RTC_CRL&#39;
+     RTC_CRL &amp;= ~RTC_CRL_ALRF;
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:214:17: error: &#39;RTC_CRL_ALRF&#39; was not declared in this scope
+     RTC_CRL &amp;= ~RTC_CRL_ALRF;
+                 ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:214:17: note: suggested alternative: &#39;RTC_PRLL&#39;
+     RTC_CRL &amp;= ~RTC_CRL_ALRF;
+                 ^~~~~~~~~~~~
+                 RTC_PRLL
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;void STM32F1_RTC::clearOverflowFlag()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:79:21: error: base operand of &#39;-&gt;&#39; has non-pointer type &#39;RTC_t {aka RTC_struct}&#39;
+ #define RTC_CRL  RTC-&gt;CRL
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:218:5: note: in expansion of macro &#39;RTC_CRL&#39;
+     RTC_CRL &amp;= ~RTC_CRL_OWF;
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:218:17: error: &#39;RTC_CRL_OWF&#39; was not declared in this scope
+     RTC_CRL &amp;= ~RTC_CRL_OWF;
+                 ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:218:17: note: suggested alternative: &#39;RTC_CRL&#39;
+     RTC_CRL &amp;= ~RTC_CRL_OWF;
+                 ^~~~~~~~~~~
+                 RTC_CRL
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;void STM32F1_RTC::enableClockInterface()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:89:21: error: &#39;RCC&#39; was not declared in this scope
+ #define RCC_APB1ENR RCC-&gt;APB1ENR
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:222:5: note: in expansion of macro &#39;RCC_APB1ENR&#39;
+     RCC_APB1ENR |= RCC_APB1ENR_PWREN | RCC_APB1ENR_BKPEN;
+     ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:89:21: note: suggested alternative: &#39;RTC&#39;
+ #define RCC_APB1ENR RCC-&gt;APB1ENR
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:222:5: note: in expansion of macro &#39;RCC_APB1ENR&#39;
+     RCC_APB1ENR |= RCC_APB1ENR_PWREN | RCC_APB1ENR_BKPEN;
+     ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:222:20: error: &#39;RCC_APB1ENR_PWREN&#39; was not declared in this scope
+     RCC_APB1ENR |= RCC_APB1ENR_PWREN | RCC_APB1ENR_BKPEN;
+                    ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:222:20: note: suggested alternative: &#39;RCC_APB1ENR&#39;
+     RCC_APB1ENR |= RCC_APB1ENR_PWREN | RCC_APB1ENR_BKPEN;
+                    ^~~~~~~~~~~~~~~~~
+                    RCC_APB1ENR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:222:40: error: &#39;RCC_APB1ENR_BKPEN&#39; was not declared in this scope
+     RCC_APB1ENR |= RCC_APB1ENR_PWREN | RCC_APB1ENR_BKPEN;
+                                        ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:222:40: note: suggested alternative: &#39;RCC_APB1ENR&#39;
+     RCC_APB1ENR |= RCC_APB1ENR_PWREN | RCC_APB1ENR_BKPEN;
+                                        ^~~~~~~~~~~~~~~~~
+                                        RCC_APB1ENR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;void STM32F1_RTC::waitSync()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:79:21: error: base operand of &#39;-&gt;&#39; has non-pointer type &#39;RTC_t {aka RTC_struct}&#39;
+ #define RTC_CRL  RTC-&gt;CRL
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:226:5: note: in expansion of macro &#39;RTC_CRL&#39;
+     RTC_CRL &amp;= ~RTC_CRL_RSF;
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:226:17: error: &#39;RTC_CRL_RSF&#39; was not declared in this scope
+     RTC_CRL &amp;= ~RTC_CRL_RSF;
+                 ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:226:17: note: suggested alternative: &#39;RTC_CRL&#39;
+     RTC_CRL &amp;= ~RTC_CRL_RSF;
+             </pre>
+
+					
+					<h4>examples/LCD2004_Clock_and_Calendar</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library STM32F1_RTC claims to run on stm32, STM32F1 architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/examples/LCD2004_Clock_and_Calendar/LCD2004_Clock_and_Calendar.ino:39:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:71:2: error: #error &#34;This library only suites for STM32F1xx development board.&#34;
+ #error &#34;This library only suites for STM32F1xx development board.&#34;
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:75:2: error: #error &#34;RTC configuration is missing. Check flag HAL_RTC_MODULE_ENABLED in stm32f1xx_hal_conf_default.h&#34;
+ #error &#34;RTC configuration is missing. Check flag HAL_RTC_MODULE_ENABLED in stm32f1xx_hal_conf_default.h&#34;
+  ^~~~~
+
+</pre>
+					
+					<h4>examples/Serial_Clock_and_Calendar</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library STM32F1_RTC claims to run on stm32, STM32F1 architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/examples/Serial_Clock_and_Calendar/Serial_Clock_and_Calendar.ino:38:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:71:2: error: #error &#34;This library only suites for STM32F1xx development board.&#34;
+ #error &#34;This library only suites for STM32F1xx development board.&#34;
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:75:2: error: #error &#34;RTC configuration is missing. Check flag HAL_RTC_MODULE_ENABLED in stm32f1xx_hal_conf_default.h&#34;
+ #error &#34;RTC configuration is missing. Check flag HAL_RTC_MODULE_ENABLED in stm32f1xx_hal_conf_default.h&#34;
+  ^~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library STM32F1_RTC claims to run on stm32, STM32F1 architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.cpp:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:71:2: error: #error &#34;This library only suites for STM32F1xx development board.&#34;
+ #error &#34;This library only suites for STM32F1xx development board.&#34;
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:75:2: error: #error &#34;RTC configuration is missing. Check flag HAL_RTC_MODULE_ENABLED in stm32f1xx_hal_conf_default.h&#34;
+ #error &#34;RTC configuration is missing. Check flag HAL_RTC_MODULE_ENABLED in stm32f1xx_hal_conf_default.h&#34;
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;bool STM32F1_RTC::isCounterUpdated()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:79:23: error: &#39;union Rtc&#39; has no member named &#39;CRL&#39;
+ #define RTC_CRL  RTC-&gt;CRL
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:198:13: note: in expansion of macro &#39;RTC_CRL&#39;
+     return (RTC_CRL &amp; RTC_CRL_SECF) == RTC_CRL_SECF;
+             ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:198:23: error: &#39;RTC_CRL_SECF&#39; was not declared in this scope
+     return (RTC_CRL &amp; RTC_CRL_SECF) == RTC_CRL_SECF;
+                       ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:198:23: note: suggested alternative: &#39;RTC_CRL&#39;
+     return (RTC_CRL &amp; RTC_CRL_SECF) == RTC_CRL_SECF;
+                       ^~~~~~~~~~~~
+                       RTC_CRL
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;bool STM32F1_RTC::isAlarmTriggered()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:79:23: error: &#39;union Rtc&#39; has no member named &#39;CRL&#39;
+ #define RTC_CRL  RTC-&gt;CRL
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:202:13: note: in expansion of macro &#39;RTC_CRL&#39;
+     return (RTC_CRL &amp; RTC_CRL_ALRF) == RTC_CRL_ALRF;
+             ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:202:23: error: &#39;RTC_CRL_ALRF&#39; was not declared in this scope
+     return (RTC_CRL &amp; RTC_CRL_ALRF) == RTC_CRL_ALRF;
+                       ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:202:23: note: suggested alternative: &#39;RTC_PRLL&#39;
+     return (RTC_CRL &amp; RTC_CRL_ALRF) == RTC_CRL_ALRF;
+                       ^~~~~~~~~~~~
+                       RTC_PRLL
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;bool STM32F1_RTC::isCounterOverflow()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:79:23: error: &#39;union Rtc&#39; has no member named &#39;CRL&#39;
+ #define RTC_CRL  RTC-&gt;CRL
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:206:13: note: in expansion of macro &#39;RTC_CRL&#39;
+     return (RTC_CRL &amp; RTC_CRL_OWF) == RTC_CRL_OWF;
+             ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:206:23: error: &#39;RTC_CRL_OWF&#39; was not declared in this scope
+     return (RTC_CRL &amp; RTC_CRL_OWF) == RTC_CRL_OWF;
+                       ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:206:23: note: suggested alternative: &#39;RTC_CRL&#39;
+     return (RTC_CRL &amp; RTC_CRL_OWF) == RTC_CRL_OWF;
+                       ^~~~~~~~~~~
+                       RTC_CRL
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;void STM32F1_RTC::clearSecondFlag()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:79:23: error: &#39;union Rtc&#39; has no member named &#39;CRL&#39;
+ #define RTC_CRL  RTC-&gt;CRL
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:210:5: note: in expansion of macro &#39;RTC_CRL&#39;
+     RTC_CRL &amp;= ~RTC_CRL_SECF;
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:210:17: error: &#39;RTC_CRL_SECF&#39; was not declared in this scope
+     RTC_CRL &amp;= ~RTC_CRL_SECF;
+                 ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:210:17: note: suggested alternative: &#39;RTC_CRL&#39;
+     RTC_CRL &amp;= ~RTC_CRL_SECF;
+                 ^~~~~~~~~~~~
+                 RTC_CRL
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;void STM32F1_RTC::clearAlarmFlag()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:79:23: error: &#39;union Rtc&#39; has no member named &#39;CRL&#39;
+ #define RTC_CRL  RTC-&gt;CRL
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:214:5: note: in expansion of macro &#39;RTC_CRL&#39;
+     RTC_CRL &amp;= ~RTC_CRL_ALRF;
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:214:17: error: &#39;RTC_CRL_ALRF&#39; was not declared in this scope
+     RTC_CRL &amp;= ~RTC_CRL_ALRF;
+                 ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:214:17: note: suggested alternative: &#39;RTC_PRLL&#39;
+     RTC_CRL &amp;= ~RTC_CRL_ALRF;
+                 ^~~~~~~~~~~~
+                 RTC_PRLL
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;void STM32F1_RTC::clearOverflowFlag()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:79:23: error: &#39;union Rtc&#39; has no member named &#39;CRL&#39;
+ #define RTC_CRL  RTC-&gt;CRL
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:218:5: note: in expansion of macro &#39;RTC_CRL&#39;
+     RTC_CRL &amp;= ~RTC_CRL_OWF;
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:218:17: error: &#39;RTC_CRL_OWF&#39; was not declared in this scope
+     RTC_CRL &amp;= ~RTC_CRL_OWF;
+                 ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:218:17: note: suggested alternative: &#39;RTC_CRL&#39;
+     RTC_CRL &amp;= ~RTC_CRL_OWF;
+                 ^~~~~~~~~~~
+                 RTC_CRL
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;void STM32F1_RTC::enableClockInterface()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:89:21: error: &#39;RCC&#39; was not declared in this scope
+ #define RCC_APB1ENR RCC-&gt;APB1ENR
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:222:5: note: in expansion of macro &#39;RCC_APB1ENR&#39;
+     RCC_APB1ENR |= RCC_APB1ENR_PWREN | RCC_APB1ENR_BKPEN;
+     ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:89:21: note: suggested alternative: &#39;RTC&#39;
+ #define RCC_APB1ENR RCC-&gt;APB1ENR
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:222:5: note: in expansion of macro &#39;RCC_APB1ENR&#39;
+     RCC_APB1ENR |= RCC_APB1ENR_PWREN | RCC_APB1ENR_BKPEN;
+     ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:222:20: error: &#39;RCC_APB1ENR_PWREN&#39; was not declared in this scope
+     RCC_APB1ENR |= RCC_APB1ENR_PWREN | RCC_APB1ENR_BKPEN;
+                    ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:222:20: note: suggested alternative: &#39;RCC_APB1ENR&#39;
+     RCC_APB1ENR |= RCC_APB1ENR_PWREN | RCC_APB1ENR_BKPEN;
+                    ^~~~~~~~~~~~~~~~~
+                    RCC_APB1ENR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:222:40: error: &#39;RCC_APB1ENR_BKPEN&#39; was not declared in this scope
+     RCC_APB1ENR |= RCC_APB1ENR_PWREN | RCC_APB1ENR_BKPEN;
+                                        ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:222:40: note: suggested alternative: &#39;RCC_APB1ENR&#39;
+     RCC_APB1ENR |= RCC_APB1ENR_PWREN | RCC_APB1ENR_BKPEN;
+                                        ^~~~~~~~~~~~~~~~~
+                                        RCC_APB1ENR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;void STM32F1_RTC::waitSync()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:79:23: error: &#39;union Rtc&#39; has no member named &#39;CRL&#39;
+ #define RTC_CRL  RTC-&gt;CRL
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:226:5: note: in expansion of macro &#39;RTC_CRL&#39;
+     RTC_CRL &amp;= ~RTC_CRL_RSF;
+     ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:226:17: error: &#39;RTC_CRL_RSF&#39; was not declared in this scope
+     RTC_CRL &amp;= ~RTC_CRL_RSF;
+                 ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:226:17: note: suggested alternative: &#39;RTC_CRL&#39;
+     RTC_CRL &amp;= ~RTC_CRL_RSF;
+                 ^~~~~~~~~~~
+                 RTC_CRL
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:79:23: error: &#39;union Rtc&#39; has no member named &#39;CRL&#39;
+ #define RTC_CRL  RTC-&gt;</pre>
+
+					
+					<h4>examples/LCD2004_Clock_and_Calendar</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library STM32F1_RTC claims to run on stm32, STM32F1 architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/examples/LCD2004_Clock_and_Calendar/LCD2004_Clock_and_Calendar.ino:39:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:71:2: error: #error &#34;This library only suites for STM32F1xx development board.&#34;
+ #error &#34;This library only suites for STM32F1xx development board.&#34;
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:75:2: error: #error &#34;RTC configuration is missing. Check flag HAL_RTC_MODULE_ENABLED in stm32f1xx_hal_conf_default.h&#34;
+ #error &#34;RTC configuration is missing. Check flag HAL_RTC_MODULE_ENABLED in stm32f1xx_hal_conf_default.h&#34;
+  ^~~~~
+
+</pre>
+					
+					<h4>examples/Serial_Clock_and_Calendar</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library STM32F1_RTC claims to run on stm32, STM32F1 architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/examples/Serial_Clock_and_Calendar/Serial_Clock_and_Calendar.ino:38:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:71:2: error: #error &#34;This library only suites for STM32F1xx development board.&#34;
+ #error &#34;This library only suites for STM32F1xx development board.&#34;
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:75:2: error: #error &#34;RTC configuration is missing. Check flag HAL_RTC_MODULE_ENABLED in stm32f1xx_hal_conf_default.h&#34;
+ #error &#34;RTC configuration is missing. Check flag HAL_RTC_MODULE_ENABLED in stm32f1xx_hal_conf_default.h&#34;
+  ^~~~~
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library STM32F1_RTC claims to run on stm32, STM32F1 architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.cpp:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:71:2: error: #error &#34;This library only suites for STM32F1xx development board.&#34;
+ #error &#34;This library only suites for STM32F1xx development board.&#34;
+  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:75:2: error: #error &#34;RTC configuration is missing. Check flag HAL_RTC_MODULE_ENABLED in stm32f1xx_hal_conf_default.h&#34;
+ #error &#34;RTC configuration is missing. Check flag HAL_RTC_MODULE_ENABLED in stm32f1xx_hal_conf_default.h&#34;
+  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;bool STM32F1_RTC::isCounterUpdated()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:79:18: error: &#39;RTC&#39; was not declared in this scope
+ #define RTC_CRL  RTC-&gt;CRL
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:198:13: note: in expansion of macro &#39;RTC_CRL&#39;
+     return (RTC_CRL &amp; RTC_CRL_SECF) == RTC_CRL_SECF;
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:198:23: error: &#39;RTC_CRL_SECF&#39; was not declared in this scope
+     return (RTC_CRL &amp; RTC_CRL_SECF) == RTC_CRL_SECF;
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;bool STM32F1_RTC::isAlarmTriggered()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:79:18: error: &#39;RTC&#39; was not declared in this scope
+ #define RTC_CRL  RTC-&gt;CRL
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:202:13: note: in expansion of macro &#39;RTC_CRL&#39;
+     return (RTC_CRL &amp; RTC_CRL_ALRF) == RTC_CRL_ALRF;
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:202:23: error: &#39;RTC_CRL_ALRF&#39; was not declared in this scope
+     return (RTC_CRL &amp; RTC_CRL_ALRF) == RTC_CRL_ALRF;
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;bool STM32F1_RTC::isCounterOverflow()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:79:18: error: &#39;RTC&#39; was not declared in this scope
+ #define RTC_CRL  RTC-&gt;CRL
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:206:13: note: in expansion of macro &#39;RTC_CRL&#39;
+     return (RTC_CRL &amp; RTC_CRL_OWF) == RTC_CRL_OWF;
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:206:23: error: &#39;RTC_CRL_OWF&#39; was not declared in this scope
+     return (RTC_CRL &amp; RTC_CRL_OWF) == RTC_CRL_OWF;
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;void STM32F1_RTC::clearSecondFlag()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:79:18: error: &#39;RTC&#39; was not declared in this scope
+ #define RTC_CRL  RTC-&gt;CRL
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:210:5: note: in expansion of macro &#39;RTC_CRL&#39;
+     RTC_CRL &amp;= ~RTC_CRL_SECF;
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:210:17: error: &#39;RTC_CRL_SECF&#39; was not declared in this scope
+     RTC_CRL &amp;= ~RTC_CRL_SECF;
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;void STM32F1_RTC::clearAlarmFlag()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:79:18: error: &#39;RTC&#39; was not declared in this scope
+ #define RTC_CRL  RTC-&gt;CRL
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:214:5: note: in expansion of macro &#39;RTC_CRL&#39;
+     RTC_CRL &amp;= ~RTC_CRL_ALRF;
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:214:17: error: &#39;RTC_CRL_ALRF&#39; was not declared in this scope
+     RTC_CRL &amp;= ~RTC_CRL_ALRF;
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;void STM32F1_RTC::clearOverflowFlag()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:79:18: error: &#39;RTC&#39; was not declared in this scope
+ #define RTC_CRL  RTC-&gt;CRL
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:218:5: note: in expansion of macro &#39;RTC_CRL&#39;
+     RTC_CRL &amp;= ~RTC_CRL_OWF;
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:218:17: error: &#39;RTC_CRL_OWF&#39; was not declared in this scope
+     RTC_CRL &amp;= ~RTC_CRL_OWF;
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;void STM32F1_RTC::enableClockInterface()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:89:21: error: &#39;RCC&#39; was not declared in this scope
+ #define RCC_APB1ENR RCC-&gt;APB1ENR
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:222:5: note: in expansion of macro &#39;RCC_APB1ENR&#39;
+     RCC_APB1ENR |= RCC_APB1ENR_PWREN | RCC_APB1ENR_BKPEN;
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:222:20: error: &#39;RCC_APB1ENR_PWREN&#39; was not declared in this scope
+     RCC_APB1ENR |= RCC_APB1ENR_PWREN | RCC_APB1ENR_BKPEN;
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:222:40: error: &#39;RCC_APB1ENR_BKPEN&#39; was not declared in this scope
+     RCC_APB1ENR |= RCC_APB1ENR_PWREN | RCC_APB1ENR_BKPEN;
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;void STM32F1_RTC::waitSync()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:79:18: error: &#39;RTC&#39; was not declared in this scope
+ #define RTC_CRL  RTC-&gt;CRL
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:226:5: note: in expansion of macro &#39;RTC_CRL&#39;
+     RTC_CRL &amp;= ~RTC_CRL_RSF;
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:226:17: error: &#39;RTC_CRL_RSF&#39; was not declared in this scope
+     RTC_CRL &amp;= ~RTC_CRL_RSF;
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;void STM32F1_RTC::enableBackupWrites()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:91:21: error: &#39;PWR&#39; was not declared in this scope
+ #define PWR_CR      PWR-&gt;CR
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:231:5: note: in expansion of macro &#39;PWR_CR&#39;
+     PWR_CR |= PWR_CR_DBP;
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:231:15: error: &#39;PWR_CR_DBP&#39; was not declared in this scope
+     PWR_CR |= PWR_CR_DBP;
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;void STM32F1_RTC::disableBackupWrites()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:91:21: error: &#39;PWR&#39; was not declared in this scope
+ #define PWR_CR      PWR-&gt;CR
+                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:235:5: note: in expansion of macro &#39;PWR_CR&#39;
+     PWR_CR &amp;= ~PWR_CR_DBP;
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:235:16: error: &#39;PWR_CR_DBP&#39; was not declared in this scope
+     PWR_CR &amp;= ~PWR_CR_DBP;
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;void STM32F1_RTC::waitFinished()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:79:18: error: &#39;RTC&#39; was not declared in this scope
+ #define RTC_CRL  RTC-&gt;CRL
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:250:13: note: in expansion of macro &#39;RTC_CRL&#39;
+     while ((RTC_CRL &amp; RTC_CRL_RTOFF) == 0);
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:250:23: error: &#39;RTC_CRL_RTOFF&#39; was not declared in this scope
+     while ((RTC_CRL &amp; RTC_CRL_RTOFF) == 0);
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;void STM32F1_RTC::enterConfigMode()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:79:18: error: &#39;RTC&#39; was not declared in this scope
+ #define RTC_CRL  RTC-&gt;CRL
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:254:5: note: in expansion of macro &#39;RTC_CRL&#39;
+     RTC_CRL |= RTC_CRL_CNF;
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:254:16: error: &#39;RTC_CRL_CNF&#39; was not declared in this scope
+     RTC_CRL |= RTC_CRL_CNF;
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h: In member function &#39;void STM32F1_RTC::exitConfigMode()&#39;:
+/home/e</pre>
+
+					
+					<h4>examples/LCD2004_Clock_and_Calendar</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library STM32F1_RTC claims to run on stm32, STM32F1 architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/examples/LCD2004_Clock_and_Calendar/LCD2004_Clock_and_Calendar.ino:39:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:71:2: error: #error &#34;This library only suites for STM32F1xx development board.&#34;
+ #error &#34;This library only suites for STM32F1xx development board.&#34;
+  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:75:2: error: #error &#34;RTC configuration is missing. Check flag HAL_RTC_MODULE_ENABLED in stm32f1xx_hal_conf_default.h&#34;
+ #error &#34;RTC configuration is missing. Check flag HAL_RTC_MODULE_ENABLED in stm32f1xx_hal_conf_default.h&#34;
+  ^
+
+</pre>
+					
+					<h4>examples/Serial_Clock_and_Calendar</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library STM32F1_RTC claims to run on stm32, STM32F1 architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/examples/Serial_Clock_and_Calendar/Serial_Clock_and_Calendar.ino:38:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:71:2: error: #error &#34;This library only suites for STM32F1xx development board.&#34;
+ #error &#34;This library only suites for STM32F1xx development board.&#34;
+  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32F1_RTC/src/stm32f1_rtc.h:75:2: error: #error &#34;RTC configuration is missing. Check flag HAL_RTC_MODULE_ENABLED in stm32f1xx_hal_conf_default.h&#34;
+ #error &#34;RTC configuration is missing. Check flag HAL_RTC_MODULE_ENABLED in stm32f1xx_hal_conf_default.h&#34;
+  ^
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

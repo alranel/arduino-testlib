@@ -1,0 +1,620 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>SNMP_Agent - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>SNMP_Agent</h2>
+				<p>
+					Version: <b>2.0.3</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/snmp_agent/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>ESP32_SNMP</pre></th>
+						
+						<th><pre>SNMP_Sensor</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+							<td>No ⚠️</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+							<td>No ⚠️</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+										
+									
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SNMP_Agent/src/SNMP_Agent.h:19:0,
+                 from /tmp/arduino-testlib2132338060/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SNMP_Agent/src/include/BER.h:5:10: fatal error: utility: No such file or directory
+ #include &lt;utility&gt;
+          ^~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/ESP32_SNMP</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SNMP_Agent/src/SNMP_Agent.h:19:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SNMP_Agent/examples/ESP32_SNMP/ESP32_SNMP.ino:8:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SNMP_Agent/src/include/BER.h:5:10: fatal error: utility: No such file or directory
+ #include &lt;utility&gt;
+          ^~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;WiFi.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiEspAT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Seeed_Arduino_rpcWiFi
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiNINA
+</pre>
+					
+					<h4>examples/SNMP_Sensor</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SNMP_Agent/src/SNMP_Agent.h:19:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SNMP_Agent/examples/SNMP_Sensor/SNMP_Sensor.ino:8:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SNMP_Agent/src/include/BER.h:5:10: fatal error: utility: No such file or directory
+ #include &lt;utility&gt;
+          ^~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;WiFi.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Seeed_Arduino_rpcWiFi
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiEspAT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiNINA
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library SNMP_Agent claims to run on esp32, esp8266 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+Sketch uses 78868 bytes (0%) of program storage space. Maximum is 16777216 bytes.
+Global variables use 43480 bytes (16%) of dynamic memory, leaving 226856 bytes for local variables. Maximum is 270336 bytes.
+</pre>
+
+					
+					<h4>examples/ESP32_SNMP</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library SNMP_Agent claims to run on esp32, esp8266 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SNMP_Agent/examples/ESP32_SNMP/ESP32_SNMP.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SNMP_Agent/examples/ESP32_SNMP/ESP32_SNMP.ino:40:30: error: invalid conversion from &#39;const char*&#39; to &#39;char*&#39; [-fpermissive]
+     WiFi.begin(ssid, password);
+                              ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SNMP_Agent/examples/ESP32_SNMP/ESP32_SNMP.ino:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFi.h:79:9: note:   initializing argument 1 of &#39;int WiFiClass::begin(char*, const char*)&#39;
+     int begin(char* ssid, const char *passphrase);
+         ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SNMP_Agent/examples/ESP32_SNMP/ESP32_SNMP.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SNMP_Agent/examples/ESP32_SNMP/ESP32_SNMP.ino:113:16: error: &#39;class arduino::UART&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+         Serial.printf(&#34;Number has been set to value: %i\n&#34;, settableNumber);
+                ^~~~~~
+                print
+Multiple libraries were found for &#34;WiFi.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiNINA
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiEspAT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Seeed_Arduino_rpcWiFi
+</pre>
+					
+					<h4>examples/SNMP_Sensor</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SNMP_Agent/examples/SNMP_Sensor/SNMP_Sensor.ino:10:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LittleFS_esp32/src/LITTLEFS.h:17:10: fatal error: FS.h: No such file or directory
+ #include &#34;FS.h&#34;
+          ^~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;WiFi.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Seeed_Arduino_rpcWiFi
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiNINA
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiEspAT
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SNMP_Agent/src/SNMP_Agent.h:19:0,
+                 from /tmp/arduino-testlib2132338060/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SNMP_Agent/src/include/BER.h:5:10: fatal error: utility: No such file or directory
+ #include &lt;utility&gt;
+          ^~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/ESP32_SNMP</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SNMP_Agent/src/SNMP_Agent.h:19:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SNMP_Agent/examples/ESP32_SNMP/ESP32_SNMP.ino:8:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SNMP_Agent/src/include/BER.h:5:10: fatal error: utility: No such file or directory
+ #include &lt;utility&gt;
+          ^~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;WiFi.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiEspAT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiNINA
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Seeed_Arduino_rpcWiFi
+</pre>
+					
+					<h4>examples/SNMP_Sensor</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SNMP_Agent/src/SNMP_Agent.h:19:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SNMP_Agent/examples/SNMP_Sensor/SNMP_Sensor.ino:8:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SNMP_Agent/src/include/BER.h:5:10: fatal error: utility: No such file or directory
+ #include &lt;utility&gt;
+          ^~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;WiFi.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiNINA
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Seeed_Arduino_rpcWiFi
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiEspAT
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library SNMP_Agent claims to run on esp32, esp8266 architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+Sketch uses 12632 bytes (4%) of program storage space. Maximum is 262144 bytes.
+Global variables use 3032 bytes (9%) of dynamic memory, leaving 29736 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+
+					
+					<h4>examples/ESP32_SNMP</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library SNMP_Agent claims to run on esp32, esp8266 architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SNMP_Agent/examples/ESP32_SNMP/ESP32_SNMP.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SNMP_Agent/examples/ESP32_SNMP/ESP32_SNMP.ino:40:30: error: invalid conversion from &#39;const char*&#39; to &#39;char*&#39; [-fpermissive]
+     WiFi.begin(ssid, password);
+                              ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SNMP_Agent/examples/ESP32_SNMP/ESP32_SNMP.ino:4:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFi.h:79:9: note:   initializing argument 1 of &#39;int WiFiClass::begin(char*, const char*)&#39;
+     int begin(char* ssid, const char *passphrase);
+         ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SNMP_Agent/examples/ESP32_SNMP/ESP32_SNMP.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SNMP_Agent/examples/ESP32_SNMP/ESP32_SNMP.ino:113:16: error: &#39;class Serial_&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+         Serial.printf(&#34;Number has been set to value: %i\n&#34;, settableNumber);
+                ^~~~~~
+                print
+Multiple libraries were found for &#34;WiFi.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Seeed_Arduino_rpcWiFi
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiEspAT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiNINA
+</pre>
+					
+					<h4>examples/SNMP_Sensor</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SNMP_Agent/examples/SNMP_Sensor/SNMP_Sensor.ino:10:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LittleFS_esp32/src/LITTLEFS.h:17:10: fatal error: FS.h: No such file or directory
+ #include &#34;FS.h&#34;
+          ^~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;WiFi.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiNINA
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiEspAT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Seeed_Arduino_rpcWiFi
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 259230 bytes (19%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 13696 bytes (4%) of dynamic memory, leaving 313984 bytes for local variables. Maximum is 327680 bytes.
+</pre>
+
+					
+					<h4>examples/ESP32_SNMP</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 748370 bytes (57%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 40308 bytes (12%) of dynamic memory, leaving 287372 bytes for local variables. Maximum is 327680 bytes.
+</pre>
+					
+					<h4>examples/SNMP_Sensor</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SNMP_Agent/examples/SNMP_Sensor/SNMP_Sensor.ino: In function &#39;void addRFC1213MIBHandler()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SNMP_Agent/examples/SNMP_Sensor/SNMP_Sensor.ino:325:54: error: invalid conversion from &#39;int*&#39; to &#39;uint32_t* {aka unsigned int*}&#39; [-fpermissive]
+     snmp.addTimestampHandler(oidSysUptime, &amp;sysUptime);
+                                                      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SNMP_Agent/examples/SNMP_Sensor/SNMP_Sensor.ino:8:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SNMP_Agent/src/SNMP_Agent.h:62:24: note:   initializing argument 2 of &#39;ValueCallback* SNMPAgent::addTimestampHandler(char*, uint32_t*, bool, bool)&#39;
+         ValueCallback* addTimestampHandler(char* oid, uint32_t* value, bool isSettable = false, bool overwritePrefix = false);
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SNMP_Agent/examples/SNMP_Sensor/SNMP_Sensor.ino: In function &#39;void addENTITYSENSORMIBHandler()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SNMP_Agent/examples/SNMP_Sensor/SNMP_Sensor.ino:364:92: error: invalid conversion from &#39;int*&#39; to &#39;uint32_t* {aka unsigned int*}&#39; [-fpermissive]
+     snmp.addTimestampHandler(oidentPhySensorValueTimeStamp_1, &amp;entPhySensorValueTimeStamp_1);
+                                                                                            ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SNMP_Agent/examples/SNMP_Sensor/SNMP_Sensor.ino:8:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SNMP_Agent/src/SNMP_Agent.h:62:24: note:   initializing argument 2 of &#39;ValueCallback* SNMPAgent::addTimestampHandler(char*, uint32_t*, bool, bool)&#39;
+         ValueCallback* addTimestampHandler(char* oid, uint32_t* value, bool isSettable = false, bool overwritePrefix = false);
+                        ^
+Multiple libraries were found for &#34;WiFi.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/WiFi
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiNINA
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiEspAT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Seeed_Arduino_rpcWiFi
+Multiple libraries were found for &#34;ArduinoJson.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduinoJson
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ThingESP
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Antares_ESP8266_MQTT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Antares_ESP8266_HTTP
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/BaleMessengerBot_Arduino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AllThingsTalk_LTE-M_SDK
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CoogleIOT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/CMMC_MQTT_Connector
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ThingsIoT
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

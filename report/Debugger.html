@@ -1,0 +1,657 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>Debugger - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>Debugger</h2>
+				<p>
+					Version: <b>1.0.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/debugger/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>DebugTest</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 6206 bytes (19%) of program storage space. Maximum is 32256 bytes.
+Global variables use 319 bytes (15%) of dynamic memory, leaving 1729 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+
+					
+					<h4>examples/DebugTest</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 7596 bytes (23%) of program storage space. Maximum is 32256 bytes.
+Global variables use 383 bytes (18%) of dynamic memory, leaving 1665 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library Debugger claims to run on avr architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp: In function &#39;void debugger_init()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:81:3: error: &#39;TCCR1A&#39; was not declared in this scope
+   TCCR1A = 0;
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:82:3: error: &#39;TCCR1B&#39; was not declared in this scope
+   TCCR1B = 0;
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:83:3: error: &#39;TCNT1&#39; was not declared in this scope
+   TCNT1  = 0;
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:83:3: note: suggested alternative: &#39;SCNd16&#39;
+   TCNT1  = 0;
+   ^~~~~
+   SCNd16
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:85:3: error: &#39;OCR1A&#39; was not declared in this scope
+   OCR1A = 0;              // compare match register
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:87:19: error: &#39;CS10&#39; was not declared in this scope
+   TCCR1B |= (1 &lt;&lt; CS10);    // no prescaler
+                   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:87:19: note: suggested alternative: &#39;B110&#39;
+   TCCR1B |= (1 &lt;&lt; CS10);    // no prescaler
+                   ^~~~
+                   B110
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:88:3: error: &#39;TIMSK1&#39; was not declared in this scope
+   TIMSK1 &amp;= ~(1 &lt;&lt; TOIE1);   // disable timer overflow interrupt
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:88:3: note: suggested alternative: &#39;TIMER&#39;
+   TIMSK1 &amp;= ~(1 &lt;&lt; TOIE1);   // disable timer overflow interrupt
+   ^~~~~~
+   TIMER
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:88:20: error: &#39;TOIE1&#39; was not declared in this scope
+   TIMSK1 &amp;= ~(1 &lt;&lt; TOIE1);   // disable timer overflow interrupt
+                    ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:158:4: error: expected constructor, destructor, or type conversion before &#39;(&#39; token
+ ISR(TIMER1_OVF_vect)          // timer compare interrupt service routine
+    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp: In function &#39;void serialEvent()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:327:25: error: invalid conversion from &#39;int&#39; to &#39;char*&#39; [-fpermissive]
+             char* ptr = *(int*)(int)(Vars[i].VarAddress);
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:335:25: error: invalid conversion from &#39;int&#39; to &#39;char*&#39; [-fpermissive]
+             char* ptr = *(int*)(int)(Vars[i].VarAddress);
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:374:5: error: &#39;TIMSK1&#39; was not declared in this scope
+     TIMSK1 &amp;= ~(1 &lt;&lt; TOIE1);   // disable timer overflow interrupt
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:374:5: note: suggested alternative: &#39;TIMER&#39;
+     TIMSK1 &amp;= ~(1 &lt;&lt; TOIE1);   // disable timer overflow interrupt
+     ^~~~~~
+     TIMER
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:374:22: error: &#39;TOIE1&#39; was not declared in this scope
+     TIMSK1 &amp;= ~(1 &lt;&lt; TOIE1);   // disable timer overflow interrupt
+                      ^~~~~
+
+</pre>
+
+					
+					<h4>examples/DebugTest</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library Debugger claims to run on avr architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/examples/DebugTest/DebugTest.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/examples/DebugTest/DebugTest.ino:16:17: error: invalid conversion from &#39;const char*&#39; to &#39;char&#39; [-fpermissive]
+ char myString = &#34;Test this one&#34;;
+                 ^~~~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/examples/DebugTest/DebugTest.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.h:78:19: error: invalid conversion from &#39;unsigned int*&#39; to &#39;int*&#39; [-fpermissive]
+ #define iSPLIT(a) &amp;a, (char*)#a
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.h:82:29: note: in expansion of macro &#39;iSPLIT&#39;
+ #define iWATCH(a) addWatchi(iSPLIT(a));
+                             ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/examples/DebugTest/DebugTest.ino:20:1: note: in expansion of macro &#39;iWATCH&#39;
+ iWATCH(Count);
+ ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.h:68:9: note:   initializing argument 1 of &#39;void addWatchi(int*, char*)&#39;
+    void addWatchi(int* var,  char*  VarNameStr);
+         ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.h:88:1: error: &#39;TIMSK1&#39; was not declared in this scope
+ TIMSK1 |= (1 &lt;&lt; TOIE1);   // enable timer overflow interrupt\
+ ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/examples/DebugTest/DebugTest.ino:22:1: note: in expansion of macro &#39;BREAK&#39;
+ BREAK(1);
+ ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.h:88:1: note: suggested alternative: &#39;TIMER&#39;
+ TIMSK1 |= (1 &lt;&lt; TOIE1);   // enable timer overflow interrupt\
+ ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/examples/DebugTest/DebugTest.ino:22:1: note: in expansion of macro &#39;BREAK&#39;
+ BREAK(1);
+ ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.h:88:17: error: &#39;TOIE1&#39; was not declared in this scope
+ TIMSK1 |= (1 &lt;&lt; TOIE1);   // enable timer overflow interrupt\
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/examples/DebugTest/DebugTest.ino:22:1: note: in expansion of macro &#39;BREAK&#39;
+ BREAK(1);
+ ^~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library Debugger claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp: In function &#39;void debugger_init()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:81:3: error: &#39;TCCR1A&#39; was not declared in this scope
+   TCCR1A = 0;
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:81:3: note: suggested alternative: &#39;TCB1&#39;
+   TCCR1A = 0;
+   ^~~~~~
+   TCB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:82:3: error: &#39;TCCR1B&#39; was not declared in this scope
+   TCCR1B = 0;
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:82:3: note: suggested alternative: &#39;TCB1&#39;
+   TCCR1B = 0;
+   ^~~~~~
+   TCB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:83:3: error: &#39;TCNT1&#39; was not declared in this scope
+   TCNT1  = 0;
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:83:3: note: suggested alternative: &#39;TCB1&#39;
+   TCNT1  = 0;
+   ^~~~~
+   TCB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:85:3: error: &#39;OCR1A&#39; was not declared in this scope
+   OCR1A = 0;              // compare match register
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:87:19: error: &#39;CS10&#39; was not declared in this scope
+   TCCR1B |= (1 &lt;&lt; CS10);    // no prescaler
+                   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:87:19: note: suggested alternative: &#39;B110&#39;
+   TCCR1B |= (1 &lt;&lt; CS10);    // no prescaler
+                   ^~~~
+                   B110
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:88:3: error: &#39;TIMSK1&#39; was not declared in this scope
+   TIMSK1 &amp;= ~(1 &lt;&lt; TOIE1);   // disable timer overflow interrupt
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:88:3: note: suggested alternative: &#39;TIMERB1&#39;
+   TIMSK1 &amp;= ~(1 &lt;&lt; TOIE1);   // disable timer overflow interrupt
+   ^~~~~~
+   TIMERB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:88:20: error: &#39;TOIE1&#39; was not declared in this scope
+   TIMSK1 &amp;= ~(1 &lt;&lt; TOIE1);   // disable timer overflow interrupt
+                    ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp: In function &#39;void TIMER1_OVF_vect()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:174:5: error: &#39;TIMSK1&#39; was not declared in this scope
+     TIMSK1 &amp;= ~(1 &lt;&lt; TOIE1);   // disable timer overflow interrupt
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:174:5: note: suggested alternative: &#39;TIMERB1&#39;
+     TIMSK1 &amp;= ~(1 &lt;&lt; TOIE1);   // disable timer overflow interrupt
+     ^~~~~~
+     TIMERB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:174:22: error: &#39;TOIE1&#39; was not declared in this scope
+     TIMSK1 &amp;= ~(1 &lt;&lt; TOIE1);   // disable timer overflow interrupt
+                      ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp: In function &#39;void serialEvent()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:374:5: error: &#39;TIMSK1&#39; was not declared in this scope
+     TIMSK1 &amp;= ~(1 &lt;&lt; TOIE1);   // disable timer overflow interrupt
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:374:5: note: suggested alternative: &#39;TIMERB1&#39;
+     TIMSK1 &amp;= ~(1 &lt;&lt; TOIE1);   // disable timer overflow interrupt
+     ^~~~~~
+     TIMERB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:374:22: error: &#39;TOIE1&#39; was not declared in this scope
+     TIMSK1 &amp;= ~(1 &lt;&lt; TOIE1);   // disable timer overflow interrupt
+                      ^~~~~
+
+</pre>
+
+					
+					<h4>examples/DebugTest</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library Debugger claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/examples/DebugTest/DebugTest.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/examples/DebugTest/DebugTest.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.h:88:1: error: &#39;TIMSK1&#39; was not declared in this scope
+ TIMSK1 |= (1 &lt;&lt; TOIE1);   // enable timer overflow interrupt\
+ ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/examples/DebugTest/DebugTest.ino:22:1: note: in expansion of macro &#39;BREAK&#39;
+ BREAK(1);
+ ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.h:88:1: note: suggested alternative: &#39;TIMERB1&#39;
+ TIMSK1 |= (1 &lt;&lt; TOIE1);   // enable timer overflow interrupt\
+ ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/examples/DebugTest/DebugTest.ino:22:1: note: in expansion of macro &#39;BREAK&#39;
+ BREAK(1);
+ ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.h:88:17: error: &#39;TOIE1&#39; was not declared in this scope
+ TIMSK1 |= (1 &lt;&lt; TOIE1);   // enable timer overflow interrupt\
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/examples/DebugTest/DebugTest.ino:22:1: note: in expansion of macro &#39;BREAK&#39;
+ BREAK(1);
+ ^~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library Debugger claims to run on avr architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp: In function &#39;void debugger_init()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:81:3: error: &#39;TCCR1A&#39; was not declared in this scope
+   TCCR1A = 0;
+   ^~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:81:3: note: suggested alternative: &#39;TCC1&#39;
+   TCCR1A = 0;
+   ^~~~~~
+   TCC1
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:82:3: error: &#39;TCCR1B&#39; was not declared in this scope
+   TCCR1B = 0;
+   ^~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:82:3: note: suggested alternative: &#39;TCC1&#39;
+   TCCR1B = 0;
+   ^~~~~~
+   TCC1
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:83:3: error: &#39;TCNT1&#39; was not declared in this scope
+   TCNT1  = 0;
+   ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:83:3: note: suggested alternative: &#39;TCC1&#39;
+   TCNT1  = 0;
+   ^~~~~
+   TCC1
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:85:3: error: &#39;OCR1A&#39; was not declared in this scope
+   OCR1A = 0;              // compare match register
+   ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:87:19: error: &#39;CS10&#39; was not declared in this scope
+   TCCR1B |= (1 &lt;&lt; CS10);    // no prescaler
+                   ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:87:19: note: suggested alternative: &#39;SS1&#39;
+   TCCR1B |= (1 &lt;&lt; CS10);    // no prescaler
+                   ^~~~
+                   SS1
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:88:3: error: &#39;TIMSK1&#39; was not declared in this scope
+   TIMSK1 &amp;= ~(1 &lt;&lt; TOIE1);   // disable timer overflow interrupt
+   ^~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:88:3: note: suggested alternative: &#39;MISO1&#39;
+   TIMSK1 &amp;= ~(1 &lt;&lt; TOIE1);   // disable timer overflow interrupt
+   ^~~~~~
+   MISO1
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:88:20: error: &#39;TOIE1&#39; was not declared in this scope
+   TIMSK1 &amp;= ~(1 &lt;&lt; TOIE1);   // disable timer overflow interrupt
+                    ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp: At global scope:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:158:4: error: expected constructor, destructor, or type conversion before &#39;(&#39; token
+ ISR(TIMER1_OVF_vect)          // timer compare interrupt service routine
+    ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp: In function &#39;void serialEvent()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:327:25: error: invalid conversion from &#39;int&#39; to &#39;char*&#39; [-fpermissive]
+             char* ptr = *(int*)(int)(Vars[i].VarAddress);
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:335:25: error: invalid conversion from &#39;int&#39; to &#39;char*&#39; [-fpermissive]
+             char* ptr = *(int*)(int)(Vars[i].VarAddress);
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:374:5: error: &#39;TIMSK1&#39; was not declared in this scope
+     TIMSK1 &amp;= ~(1 &lt;&lt; TOIE1);   // disable timer overflow interrupt
+     ^~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:374:5: note: suggested alternative: &#39;MISO1&#39;
+     TIMSK1 &amp;= ~(1 &lt;&lt; TOIE1);   // disable timer overflow interrupt
+     ^~~~~~
+     MISO1
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:374:22: error: &#39;TOIE1&#39; was not declared in this scope
+     TIMSK1 &amp;= ~(1 &lt;&lt; TOIE1);   // disable timer overflow interrupt
+                      ^~~~~
+
+</pre>
+
+					
+					<h4>examples/DebugTest</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library Debugger claims to run on avr architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Debugger/examples/DebugTest/DebugTest.ino: In function &#39;void loop()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Debugger/examples/DebugTest/DebugTest.ino:16:17: error: invalid conversion from &#39;const char*&#39; to &#39;char&#39; [-fpermissive]
+ char myString = &#34;Test this one&#34;;
+                 ^~~~~~~~~~~~~~~
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Debugger/examples/DebugTest/DebugTest.ino:1:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.h:78:19: error: invalid conversion from &#39;unsigned int*&#39; to &#39;int*&#39; [-fpermissive]
+ #define iSPLIT(a) &amp;a, (char*)#a
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.h:82:29: note: in expansion of macro &#39;iSPLIT&#39;
+ #define iWATCH(a) addWatchi(iSPLIT(a));
+                             ^~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Debugger/examples/DebugTest/DebugTest.ino:20:1: note: in expansion of macro &#39;iWATCH&#39;
+ iWATCH(Count);
+ ^~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.h:68:9: note:   initializing argument 1 of &#39;void addWatchi(int*, char*)&#39;
+    void addWatchi(int* var,  char*  VarNameStr);
+         ^~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.h:88:1: error: &#39;TIMSK1&#39; was not declared in this scope
+ TIMSK1 |= (1 &lt;&lt; TOIE1);   // enable timer overflow interrupt\
+ ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Debugger/examples/DebugTest/DebugTest.ino:22:1: note: in expansion of macro &#39;BREAK&#39;
+ BREAK(1);
+ ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.h:88:1: note: suggested alternative: &#39;MISO1&#39;
+ TIMSK1 |= (1 &lt;&lt; TOIE1);   // enable timer overflow interrupt\
+ ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Debugger/examples/DebugTest/DebugTest.ino:22:1: note: in expansion of macro &#39;BREAK&#39;
+ BREAK(1);
+ ^~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.h:88:17: error: &#39;TOIE1&#39; was not declared in this scope
+ TIMSK1 |= (1 &lt;&lt; TOIE1);   // enable timer overflow interrupt\
+                 ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Debugger/examples/DebugTest/DebugTest.ino:22:1: note: in expansion of macro &#39;BREAK&#39;
+ BREAK(1);
+ ^~~~~
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library Debugger claims to run on avr architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp: In function &#39;void debugger_init()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:81:3: error: &#39;TCCR1A&#39; was not declared in this scope
+   TCCR1A = 0;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:82:3: error: &#39;TCCR1B&#39; was not declared in this scope
+   TCCR1B = 0;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:83:3: error: &#39;TCNT1&#39; was not declared in this scope
+   TCNT1  = 0;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:85:3: error: &#39;OCR1A&#39; was not declared in this scope
+   OCR1A = 0;              // compare match register 
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:87:19: error: &#39;CS10&#39; was not declared in this scope
+   TCCR1B |= (1 &lt;&lt; CS10);    // no prescaler 
+                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:88:3: error: &#39;TIMSK1&#39; was not declared in this scope
+   TIMSK1 &amp;= ~(1 &lt;&lt; TOIE1);   // disable timer overflow interrupt
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:88:20: error: &#39;TOIE1&#39; was not declared in this scope
+   TIMSK1 &amp;= ~(1 &lt;&lt; TOIE1);   // disable timer overflow interrupt
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.cpp:158:4: error: expected constructor, destructor, or type conversion before &#39;(&#39; token
+ ISR(TIMER1_OVF_vect)          // timer compare interrupt service routine
+    ^
+
+</pre>
+
+					
+					<h4>examples/DebugTest</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library Debugger claims to run on avr architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/examples/DebugTest/DebugTest.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/examples/DebugTest/DebugTest.ino:16:17: error: invalid conversion from &#39;const char*&#39; to &#39;char&#39; [-fpermissive]
+ char myString = &#34;Test this one&#34;;
+                 ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/examples/DebugTest/DebugTest.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.h:82:38: error: invalid conversion from &#39;unsigned int*&#39; to &#39;int*&#39; [-fpermissive]
+ #define iWATCH(a) addWatchi(iSPLIT(a)); 
+                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/examples/DebugTest/DebugTest.ino:20:1: note: in expansion of macro &#39;iWATCH&#39;
+ iWATCH(Count); 
+ ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.h:68:9: note:   initializing argument 1 of &#39;void addWatchi(int*, char*)&#39;
+    void addWatchi(int* var,  char*  VarNameStr);
+         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.h:88:1: error: &#39;TIMSK1&#39; was not declared in this scope
+ TIMSK1 |= (1 &lt;&lt; TOIE1);   // enable timer overflow interrupt\
+ ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/examples/DebugTest/DebugTest.ino:22:1: note: in expansion of macro &#39;BREAK&#39;
+ BREAK(1);
+ ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/Debugger.h:88:17: error: &#39;TOIE1&#39; was not declared in this scope
+ TIMSK1 |= (1 &lt;&lt; TOIE1);   // enable timer overflow interrupt\
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Debugger/examples/DebugTest/DebugTest.ino:22:1: note: in expansion of macro &#39;BREAK&#39;
+ BREAK(1);
+ ^
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

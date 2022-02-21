@@ -1,0 +1,453 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>Clock - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>Clock</h2>
+				<p>
+					Version: <b>1.0.2</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/clock/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>Clock</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library Clock claims to run on esp8266 architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+In file included from /private/tmp/arduino-testlib1243836315/test/test.ino:1:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Clock/src/Clock.h:50:12: error: field &#39;suClock_m&#39; has incomplete type &#39;tm&#39;
+  struct tm suClock_m;
+            ^~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Clock/src/Clock.h:50:9: note: forward declaration of &#39;struct tm&#39;
+  struct tm suClock_m;
+         ^~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Clock/src/Clock.h:53:2: error: &#39;time_t&#39; does not name a type; did you mean &#39;size_t&#39;?
+  time_t  tsClock_m;
+  ^~~~~~
+  size_t
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Clock/src/Clock.h:159:22: error: &#39;time_t&#39; does not name a type; did you mean &#39;size_t&#39;?
+  bool SetClock(const time_t tsNow, const bool boUseUTC = true);
+                      ^~~~~~
+                      size_t
+Multiple libraries were found for &#34;EEPROM.h&#34;
+  Used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/EEPROM
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/arduino-NVM
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Hello_Drum
+</pre>
+
+					
+					<h4>examples/Clock</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library Clock claims to run on esp8266 architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Clock/examples/Clock/Clock.ino:17:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Clock/src/Clock.h:50:12: error: field &#39;suClock_m&#39; has incomplete type &#39;tm&#39;
+  struct tm suClock_m;
+            ^~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Clock/src/Clock.h:50:9: note: forward declaration of &#39;struct tm&#39;
+  struct tm suClock_m;
+         ^~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Clock/src/Clock.h:53:2: error: &#39;time_t&#39; does not name a type; did you mean &#39;size_t&#39;?
+  time_t  tsClock_m;
+  ^~~~~~
+  size_t
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Clock/src/Clock.h:159:22: error: &#39;time_t&#39; does not name a type; did you mean &#39;size_t&#39;?
+  bool SetClock(const time_t tsNow, const bool boUseUTC = true);
+                      ^~~~~~
+                      size_t
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Clock/examples/Clock/Clock.ino: In function &#39;void setup()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Clock/examples/Clock/Clock.ino:34:9: error: &#39;class HardwareSerial&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+  Serial.printf(&#34;Initialize clock: %s\n&#34;, (boResult) ? &#34;ok&#34; : &#34;FAILED&#34;);
+         ^~~~~~
+         print
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Clock/examples/Clock/Clock.ino: In function &#39;void loop()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Clock/examples/Clock/Clock.ino:60:10: error: &#39;class HardwareSerial&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+   Serial.printf(&#34;%s [%2u:%02u] (is %s)\n&#34;,
+          ^~~~~~
+          print
+Multiple libraries were found for &#34;EEPROM.h&#34;
+  Used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/libraries/EEPROM
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Hello_Drum
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/arduino-NVM
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Clock/src/Clock.cpp:59:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum/src/EEPROM.h:25:10: fatal error: avr/eeprom.h: No such file or directory
+ #include &lt;avr/eeprom.h&gt;
+          ^~~~~~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;EEPROM.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/arduino-NVM
+</pre>
+
+					
+					<h4>examples/Clock</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Clock/src/Clock.cpp:59:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum/src/EEPROM.h:25:10: fatal error: avr/eeprom.h: No such file or directory
+ #include &lt;avr/eeprom.h&gt;
+          ^~~~~~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;EEPROM.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/arduino-NVM
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library Clock claims to run on esp8266 architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /tmp/arduino-testlib166185854/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Clock/src/Clock.h:50:12: error: field &#39;suClock_m&#39; has incomplete type &#39;tm&#39;
+  struct tm suClock_m;
+            ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Clock/src/Clock.h:50:9: note: forward declaration of &#39;struct tm&#39;
+  struct tm suClock_m;
+         ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Clock/src/Clock.h:53:2: error: &#39;time_t&#39; does not name a type; did you mean &#39;size_t&#39;?
+  time_t  tsClock_m;
+  ^~~~~~
+  size_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Clock/src/Clock.h:159:22: error: &#39;time_t&#39; does not name a type; did you mean &#39;size_t&#39;?
+  bool SetClock(const time_t tsNow, const bool boUseUTC = true);
+                      ^~~~~~
+                      size_t
+Multiple libraries were found for &#34;EEPROM.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/EEPROM
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/arduino-NVM
+</pre>
+
+					
+					<h4>examples/Clock</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library Clock claims to run on esp8266 architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Clock/examples/Clock/Clock.ino:17:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Clock/src/Clock.h:50:12: error: field &#39;suClock_m&#39; has incomplete type &#39;tm&#39;
+  struct tm suClock_m;
+            ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Clock/src/Clock.h:50:9: note: forward declaration of &#39;struct tm&#39;
+  struct tm suClock_m;
+         ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Clock/src/Clock.h:53:2: error: &#39;time_t&#39; does not name a type; did you mean &#39;size_t&#39;?
+  time_t  tsClock_m;
+  ^~~~~~
+  size_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Clock/src/Clock.h:159:22: error: &#39;time_t&#39; does not name a type; did you mean &#39;size_t&#39;?
+  bool SetClock(const time_t tsNow, const bool boUseUTC = true);
+                      ^~~~~~
+                      size_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Clock/examples/Clock/Clock.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Clock/examples/Clock/Clock.ino:34:9: error: &#39;class UartClass&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+  Serial.printf(&#34;Initialize clock: %s\n&#34;, (boResult) ? &#34;ok&#34; : &#34;FAILED&#34;);
+         ^~~~~~
+         print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Clock/examples/Clock/Clock.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Clock/examples/Clock/Clock.ino:60:10: error: &#39;class UartClass&#39; has no member named &#39;printf&#39;; did you mean &#39;print&#39;?
+   Serial.printf(&#34;%s [%2u:%02u] (is %s)\n&#34;,
+          ^~~~~~
+          print
+Multiple libraries were found for &#34;EEPROM.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/libraries/EEPROM
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hello_Drum
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/arduino-NVM
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Clock/src/Clock.cpp:59:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Hello_Drum/src/EEPROM.h:25:10: fatal error: avr/eeprom.h: No such file or directory
+ #include &lt;avr/eeprom.h&gt;
+          ^~~~~~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;EEPROM.h&#34;
+  Used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Hello_Drum
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/arduino-NVM
+</pre>
+
+					
+					<h4>examples/Clock</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Clock/src/Clock.cpp:59:0:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Hello_Drum/src/EEPROM.h:25:10: fatal error: avr/eeprom.h: No such file or directory
+ #include &lt;avr/eeprom.h&gt;
+          ^~~~~~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;EEPROM.h&#34;
+  Used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/Hello_Drum
+  Not used: /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/arduino-NVM
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Clock/src/Clock.cpp:55:28: fatal error: avr/pgmspace.h: No such file or directory
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/Clock</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Clock/examples/Clock/Clock.ino:14:28: fatal error: avr/pgmspace.h: No such file or directory
+compilation terminated.
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

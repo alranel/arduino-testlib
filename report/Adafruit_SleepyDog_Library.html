@@ -1,0 +1,697 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>Adafruit SleepyDog Library - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>Adafruit SleepyDog Library</h2>
+				<p>
+					Version: <b>1.6.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/adafruit-sleepydog-library/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>BasicUsage</pre></th>
+						
+						<th><pre>Sleep</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+									
+										
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+										
+									
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+										
+									
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/private/tmp/arduino-testlib4053288560/test/test.ino:1:10: fatal error: Adafruit_SleepyDog_Library.h: No such file or directory
+ #include &lt;Adafruit_SleepyDog_Library.h&gt;
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/BasicUsage</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 2480 bytes (7%) of program storage space. Maximum is 32256 bytes.
+Global variables use 408 bytes (19%) of dynamic memory, leaving 1640 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+					
+					<h4>examples/Sleep</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 2410 bytes (7%) of program storage space. Maximum is 32256 bytes.
+Global variables use 302 bytes (14%) of dynamic memory, leaving 1746 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-testlib2138394597/test/test.ino:1:10: fatal error: Adafruit_SleepyDog_Library.h: No such file or directory
+ #include &lt;Adafruit_SleepyDog_Library.h&gt;
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/BasicUsage</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library Adafruit_SleepyDog_Library claims to run on avr, samd, nrf52, teensy, esp32, esp8266 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/examples/BasicUsage/BasicUsage.ino:7:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/Adafruit_SleepyDog.h:38:2: error: #error Unsupported platform for the Adafruit Watchdog library!
+ #error Unsupported platform for the Adafruit Watchdog library!
+  ^~~~~
+
+</pre>
+					
+					<h4>examples/Sleep</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library Adafruit_SleepyDog_Library claims to run on avr, samd, nrf52, teensy, esp32, esp8266 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/examples/Sleep/Sleep.ino:7:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/Adafruit_SleepyDog.h:38:2: error: #error Unsupported platform for the Adafruit Watchdog library!
+ #error Unsupported platform for the Adafruit Watchdog library!
+  ^~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-testlib2138394597/test/test.ino:1:10: fatal error: Adafruit_SleepyDog_Library.h: No such file or directory
+ #include &lt;Adafruit_SleepyDog_Library.h&gt;
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/BasicUsage</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library Adafruit_SleepyDog_Library claims to run on avr, samd, nrf52, teensy, esp32, esp8266 architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp: In member function &#39;int WatchdogAVR::sleep(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:45:49: error: &#39;WDP3&#39; was not declared in this scope
+   uint8_t wdps = ((sleepWDTO &amp; 0x08 ? 1 : 0) &lt;&lt; WDP3) |
+                                                 ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:45:49: note: suggested alternative: &#39;DD3&#39;
+   uint8_t wdps = ((sleepWDTO &amp; 0x08 ? 1 : 0) &lt;&lt; WDP3) |
+                                                 ^~~~
+                                                 DD3
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:46:49: error: &#39;WDP2&#39; was not declared in this scope
+                  ((sleepWDTO &amp; 0x04 ? 1 : 0) &lt;&lt; WDP2) |
+                                                 ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:46:49: note: suggested alternative: &#39;DD2&#39;
+                  ((sleepWDTO &amp; 0x04 ? 1 : 0) &lt;&lt; WDP2) |
+                                                 ^~~~
+                                                 DD2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:47:49: error: &#39;WDP1&#39; was not declared in this scope
+                  ((sleepWDTO &amp; 0x02 ? 1 : 0) &lt;&lt; WDP1) |
+                                                 ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:47:49: note: suggested alternative: &#39;DD1&#39;
+                  ((sleepWDTO &amp; 0x02 ? 1 : 0) &lt;&lt; WDP1) |
+                                                 ^~~~
+                                                 DD1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:48:49: error: &#39;WDP0&#39; was not declared in this scope
+                  ((sleepWDTO &amp; 0x01 ? 1 : 0) &lt;&lt; WDP0);
+                                                 ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:48:49: note: suggested alternative: &#39;ADC0&#39;
+                  ((sleepWDTO &amp; 0x01 ? 1 : 0) &lt;&lt; WDP0);
+                                                 ^~~~
+                                                 ADC0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:53:3: error: &#39;MCUSR&#39; was not declared in this scope
+   MCUSR &amp;= ~(1 &lt;&lt; WDRF);
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:53:19: error: &#39;WDRF&#39; was not declared in this scope
+   MCUSR &amp;= ~(1 &lt;&lt; WDRF);
+                   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:53:19: note: suggested alternative: &#39;WDT&#39;
+   MCUSR &amp;= ~(1 &lt;&lt; WDRF);
+                   ^~~~
+                   WDT
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:59:13: error: &#39;WDCE&#39; was not declared in this scope
+       (1 &lt;&lt; WDCE) | (1 &lt;&lt; WDE);   // Set WDCE and WDE to enable changes.
+             ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:59:13: note: suggested alternative: &#39;ADC0&#39;
+       (1 &lt;&lt; WDCE) | (1 &lt;&lt; WDE);   // Set WDCE and WDE to enable changes.
+             ^~~~
+             ADC0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:59:27: error: &#39;WDE&#39; was not declared in this scope
+       (1 &lt;&lt; WDCE) | (1 &lt;&lt; WDE);   // Set WDCE and WDE to enable changes.
+                           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:59:27: note: suggested alternative: &#39;WDT&#39;
+       (1 &lt;&lt; WDCE) | (1 &lt;&lt; WDE);   // Set WDCE and WDE to enable changes.
+                           ^~~
+                           WDT
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:60:21: error: no match for &#39;operator=&#39; (operand types are &#39;WDT_t {aka WDT_struct}&#39; and &#39;uint8_t {aka unsigned char}&#39;)
+   _WD_CONTROL_REG = wdps;         // Set the prescaler bit values.
+                     ^~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:677:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/interrupt.h:38,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:6:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/iom4809.h:2054:16: note: candidate: WDT_struct&amp; WDT_struct::operator=(const WDT_struct&amp;)
+ typedef struct WDT_struct
+                ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/iom4809.h:2054:16: note:   no known conversion for argument 1 from &#39;uint8_t {aka unsigned char}&#39; to &#39;const WDT_struct&amp;&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/iom4809.h:2054:16: note: candidate: WDT_struct&amp; WDT_struct::operator=(WDT_struct&amp;&amp;)
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/iom4809.h:2054:16: note:   no known conversion for argument 1 from &#39;uint8_t {aka unsigned char}&#39; to &#39;WDT_struct&amp;&amp;&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:61:28: error: &#39;WDIE&#39; was not declared in this scope
+   _WD_CONTROL_REG |= (1 &lt;&lt; WDIE); // Enable only watchdog interrupts.
+                            ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:61:28: note: suggested alternative: &#39;WDT&#39;
+   _WD_CONTROL_REG |= (1 &lt;&lt; WDIE); // Enable only watchdog interrupts.
+                            ^~~~
+                            WDT
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp: In member function &#39;void WatchdogAVR::_setPeriod(int, int&amp;, int&amp;)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:95:12: error: &#39;WDTO_8S&#39; was not declared in this scope
+     wdto = WDTO_8S;
+            ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:95:12: note: suggested alternative: &#39;WDTO_2S&#39;
+     wdto = WDTO_8S;
+            ^~~~~~~
+            WDTO_2S
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:98:12: error: &#39;WDTO_4S&#39; was not declared in this scope
+     wdto = WDTO_4S;
+            ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:98:12: note: suggested alternative: &#39;WDTO_2S&#39;
+     wdto = WDTO_4S;
+            ^~~~~~~
+            WDTO_2S
+
+</pre>
+					
+					<h4>examples/Sleep</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library Adafruit_SleepyDog_Library claims to run on avr, samd, nrf52, teensy, esp32, esp8266 architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp: In member function &#39;int WatchdogAVR::sleep(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:45:49: error: &#39;WDP3&#39; was not declared in this scope
+   uint8_t wdps = ((sleepWDTO &amp; 0x08 ? 1 : 0) &lt;&lt; WDP3) |
+                                                 ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:45:49: note: suggested alternative: &#39;DD3&#39;
+   uint8_t wdps = ((sleepWDTO &amp; 0x08 ? 1 : 0) &lt;&lt; WDP3) |
+                                                 ^~~~
+                                                 DD3
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:46:49: error: &#39;WDP2&#39; was not declared in this scope
+                  ((sleepWDTO &amp; 0x04 ? 1 : 0) &lt;&lt; WDP2) |
+                                                 ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:46:49: note: suggested alternative: &#39;DD2&#39;
+                  ((sleepWDTO &amp; 0x04 ? 1 : 0) &lt;&lt; WDP2) |
+                                                 ^~~~
+                                                 DD2
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:47:49: error: &#39;WDP1&#39; was not declared in this scope
+                  ((sleepWDTO &amp; 0x02 ? 1 : 0) &lt;&lt; WDP1) |
+                                                 ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:47:49: note: suggested alternative: &#39;DD1&#39;
+                  ((sleepWDTO &amp; 0x02 ? 1 : 0) &lt;&lt; WDP1) |
+                                                 ^~~~
+                                                 DD1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:48:49: error: &#39;WDP0&#39; was not declared in this scope
+                  ((sleepWDTO &amp; 0x01 ? 1 : 0) &lt;&lt; WDP0);
+                                                 ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:48:49: note: suggested alternative: &#39;ADC0&#39;
+                  ((sleepWDTO &amp; 0x01 ? 1 : 0) &lt;&lt; WDP0);
+                                                 ^~~~
+                                                 ADC0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:53:3: error: &#39;MCUSR&#39; was not declared in this scope
+   MCUSR &amp;= ~(1 &lt;&lt; WDRF);
+   ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:53:19: error: &#39;WDRF&#39; was not declared in this scope
+   MCUSR &amp;= ~(1 &lt;&lt; WDRF);
+                   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:53:19: note: suggested alternative: &#39;WDT&#39;
+   MCUSR &amp;= ~(1 &lt;&lt; WDRF);
+                   ^~~~
+                   WDT
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:59:13: error: &#39;WDCE&#39; was not declared in this scope
+       (1 &lt;&lt; WDCE) | (1 &lt;&lt; WDE);   // Set WDCE and WDE to enable changes.
+             ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:59:13: note: suggested alternative: &#39;ADC0&#39;
+       (1 &lt;&lt; WDCE) | (1 &lt;&lt; WDE);   // Set WDCE and WDE to enable changes.
+             ^~~~
+             ADC0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:59:27: error: &#39;WDE&#39; was not declared in this scope
+       (1 &lt;&lt; WDCE) | (1 &lt;&lt; WDE);   // Set WDCE and WDE to enable changes.
+                           ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:59:27: note: suggested alternative: &#39;WDT&#39;
+       (1 &lt;&lt; WDCE) | (1 &lt;&lt; WDE);   // Set WDCE and WDE to enable changes.
+                           ^~~
+                           WDT
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:60:21: error: no match for &#39;operator=&#39; (operand types are &#39;WDT_t {aka WDT_struct}&#39; and &#39;uint8_t {aka unsigned char}&#39;)
+   _WD_CONTROL_REG = wdps;         // Set the prescaler bit values.
+                     ^~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:677:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/interrupt.h:38,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:6:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/iom4809.h:2054:16: note: candidate: WDT_struct&amp; WDT_struct::operator=(const WDT_struct&amp;)
+ typedef struct WDT_struct
+                ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/iom4809.h:2054:16: note:   no known conversion for argument 1 from &#39;uint8_t {aka unsigned char}&#39; to &#39;const WDT_struct&amp;&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/iom4809.h:2054:16: note: candidate: WDT_struct&amp; WDT_struct::operator=(WDT_struct&amp;&amp;)
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/iom4809.h:2054:16: note:   no known conversion for argument 1 from &#39;uint8_t {aka unsigned char}&#39; to &#39;WDT_struct&amp;&amp;&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:61:28: error: &#39;WDIE&#39; was not declared in this scope
+   _WD_CONTROL_REG |= (1 &lt;&lt; WDIE); // Enable only watchdog interrupts.
+                            ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:61:28: note: suggested alternative: &#39;WDT&#39;
+   _WD_CONTROL_REG |= (1 &lt;&lt; WDIE); // Enable only watchdog interrupts.
+                            ^~~~
+                            WDT
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp: In member function &#39;void WatchdogAVR::_setPeriod(int, int&amp;, int&amp;)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:95:12: error: &#39;WDTO_8S&#39; was not declared in this scope
+     wdto = WDTO_8S;
+            ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:95:12: note: suggested alternative: &#39;WDTO_2S&#39;
+     wdto = WDTO_8S;
+            ^~~~~~~
+            WDTO_2S
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:98:12: error: &#39;WDTO_4S&#39; was not declared in this scope
+     wdto = WDTO_4S;
+            ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_SleepyDog_Library/utility/WatchdogAVR.cpp:98:12: note: suggested alternative: &#39;WDTO_2S&#39;
+     wdto = WDTO_4S;
+            ^~~~~~~
+            WDTO_2S
+
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/private/tmp/arduino-testlib4053288560/test/test.ino:1:10: fatal error: Adafruit_SleepyDog_Library.h: No such file or directory
+ #include &lt;Adafruit_SleepyDog_Library.h&gt;
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/BasicUsage</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 13936 bytes (5%) of program storage space. Maximum is 262144 bytes.
+Global variables use 3000 bytes (9%) of dynamic memory, leaving 29768 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+					
+					<h4>examples/Sleep</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 13720 bytes (5%) of program storage space. Maximum is 262144 bytes.
+Global variables use 3000 bytes (9%) of dynamic memory, leaving 29768 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-testlib1470419371/test/test.ino:1:40: fatal error: Adafruit_SleepyDog_Library.h: No such file or directory
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/BasicUsage</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 205446 bytes (15%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 13416 bytes (4%) of dynamic memory, leaving 314264 bytes for local variables. Maximum is 327680 bytes.
+</pre>
+					
+					<h4>examples/Sleep</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 212574 bytes (16%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 13472 bytes (4%) of dynamic memory, leaving 314208 bytes for local variables. Maximum is 327680 bytes.
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

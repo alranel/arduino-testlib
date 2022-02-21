@@ -1,0 +1,862 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>ADC_SAmpler - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>ADC_SAmpler</h2>
+				<p>
+					Version: <b>1.3.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/adc_sampler/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>ADC_Sampler_example</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library ADC_SAmpler claims to run on sam architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+In file included from /tmp/arduino-testlib1052097737/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.h:9:5: error: #error &#34;This libraries is for arduino DUE only !!!&#34;
+    #error &#34;This libraries is for arduino DUE only !!!&#34;
+     ^~~~~
+
+</pre>
+
+					
+					<h4>examples/ADC_Sampler_example</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library ADC_SAmpler claims to run on sam architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.h:9:5: error: #error &#34;This libraries is for arduino DUE only !!!&#34;
+    #error &#34;This libraries is for arduino DUE only !!!&#34;
+     ^~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library ADC_SAmpler claims to run on sam architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:5:9: error: &#39;ADC_Sampler_class&#39; has not been declared
+ uint8_t ADC_Sampler_class::numChannels = 0;
+         ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:8:21: error: &#39;ADC_Sampler_class&#39; has not been declared
+ volatile AdcBuffer *ADC_Sampler_class::bufferArray = new AdcBuffer(ADC_sequencer_size);
+                     ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:8:68: error: &#39;ADC_sequencer_size&#39; was not declared in this scope
+ volatile AdcBuffer *ADC_Sampler_class::bufferArray = new AdcBuffer(ADC_sequencer_size);
+                                                                    ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:10:6: error: &#39;ADC_Sampler_class&#39; has not been declared
+ void ADC_Sampler_class::TIAO_setup(uint32_t counter) {
+      ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp: In function &#39;void TIAO_setup(uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:11:25: error: &#39;TC_INTERFACE_ID&#39; was not declared in this scope
+  pmc_enable_periph_clk (TC_INTERFACE_ID &#43; 0*3&#43;0) ;  // clock the TC0 channel 0
+                         ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:11:2: error: &#39;pmc_enable_periph_clk&#39; was not declared in this scope
+  pmc_enable_periph_clk (TC_INTERFACE_ID &#43; 0*3&#43;0) ;  // clock the TC0 channel 0
+  ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:13:2: error: &#39;TcChannel&#39; was not declared in this scope
+  TcChannel * t = &amp;(TC0-&gt;TC_CHANNEL)[0] ;    // pointer to TC0 registers for its channel 0
+  ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:13:2: note: suggested alternative: &#39;numChannels&#39;
+  TcChannel * t = &amp;(TC0-&gt;TC_CHANNEL)[0] ;    // pointer to TC0 registers for its channel 0
+  ^~~~~~~~~
+  numChannels
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:13:14: error: &#39;t&#39; was not declared in this scope
+  TcChannel * t = &amp;(TC0-&gt;TC_CHANNEL)[0] ;    // pointer to TC0 registers for its channel 0
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:13:14: note: suggested alternative: &#39;tm&#39;
+  TcChannel * t = &amp;(TC0-&gt;TC_CHANNEL)[0] ;    // pointer to TC0 registers for its channel 0
+              ^
+              tm
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:13:20: error: &#39;TC0&#39; was not declared in this scope
+  TcChannel * t = &amp;(TC0-&gt;TC_CHANNEL)[0] ;    // pointer to TC0 registers for its channel 0
+                    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:14:14: error: &#39;TC_CCR_CLKDIS&#39; was not declared in this scope
+  t-&gt;TC_CCR = TC_CCR_CLKDIS ;  // disable internal clocking while setup regs
+              ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:15:14: error: &#39;MAX_FIELD&#39; was not declared in this scope
+  t-&gt;TC_IDR = MAX_FIELD ;     // disable interrupts
+              ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:17:14: error: &#39;TC_CMR_TCCLKS_TIMER_CLOCK1&#39; was not declared in this scope
+  t-&gt;TC_CMR = TC_CMR_TCCLKS_TIMER_CLOCK1 |   // use TCLK1 (prescale by 2, = 42MHz)
+              ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:18:11: error: &#39;TC_CMR_WAVE&#39; was not declared in this scope
+           TC_CMR_WAVE |                  // waveform mode
+           ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:19:11: error: &#39;TC_CMR_WAVSEL_UP_RC&#39; was not declared in this scope
+           TC_CMR_WAVSEL_UP_RC |          // count-up PWM using RC as threshold
+           ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:20:11: error: &#39;TC_CMR_EEVT_XC0&#39; was not declared in this scope
+           TC_CMR_EEVT_XC0 |     // Set external events from XC0 (this setup TIOB as output)
+           ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:21:11: error: &#39;TC_CMR_ACPA_CLEAR&#39; was not declared in this scope
+           TC_CMR_ACPA_CLEAR | TC_CMR_ACPC_CLEAR |
+           ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:21:31: error: &#39;TC_CMR_ACPC_CLEAR&#39; was not declared in this scope
+           TC_CMR_ACPA_CLEAR | TC_CMR_ACPC_CLEAR |
+                               ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:22:11: error: &#39;TC_CMR_BCPB_CLEAR&#39; was not declared in this scope
+           TC_CMR_BCPB_CLEAR | TC_CMR_BCPC_CLEAR ;
+           ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:22:31: error: &#39;TC_CMR_BCPC_CLEAR&#39; was not declared in this scope
+           TC_CMR_BCPB_CLEAR | TC_CMR_BCPC_CLEAR ;
+                               ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:26:31: error: &#39;TC_CMR_LDRA&#39; was not declared in this scope
+  t-&gt;TC_CMR = ( (t-&gt;TC_CMR &amp; ~(TC_CMR_LDRA(MAX_FIELD)) ) &amp; (t-&gt;TC_CMR &amp; ~(TC_CMR_LDRB(MAX_FIELD)) ) ) | TC_CMR_ACPA_CLEAR | TC_CMR_ACPC_SET ;  // set clear and set from RA and RC compares
+                               ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:26:74: error: &#39;TC_CMR_LDRB&#39; was not declared in this scope
+  t-&gt;TC_CMR = ( (t-&gt;TC_CMR &amp; ~(TC_CMR_LDRA(MAX_FIELD)) ) &amp; (t-&gt;TC_CMR &amp; ~(TC_CMR_LDRB(MAX_FIELD)) ) ) | TC_CMR_ACPA_CLEAR | TC_CMR_ACPC_SET ;  // set clear and set from RA and RC compares
+                                                                          ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:26:124: error: &#39;TC_CMR_ACPC_SET&#39; was not declared in this scope
+  t-&gt;TC_CMR = ( (t-&gt;TC_CMR &amp; ~(TC_CMR_LDRA(MAX_FIELD)) ) &amp; (t-&gt;TC_CMR &amp; ~(TC_CMR_LDRB(MAX_FIELD)) ) ) | TC_CMR_ACPA_CLEAR | TC_CMR_ACPC_SET ;  // set clear and set from RA and RC compares
+                                                                                                                            ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:28:14: error: &#39;TC_CCR_CLKEN&#39; was not declared in this scope
+  t-&gt;TC_CCR = TC_CCR_CLKEN | TC_CCR_SWTRG ;  // re-enable local clocking and switch to hardware trigger source.
+              ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:28:29: error: &#39;TC_CCR_SWTRG&#39; was not declared in this scope
+  t-&gt;TC_CCR = TC_CCR_CLKEN | TC_CCR_SWTRG ;  // re-enable local clocking and switch to hardware trigger source.
+                             ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:30:2: error: &#39;PIOB&#39; was not declared in this scope
+  PIOB-&gt;PIO_PDR = PIO_PB25B_TIOA0 ;  // disable PIO control
+  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:30:2: note: suggested alternative: &#39;EIO&#39;
+  PIOB-&gt;PIO_PDR = PIO_PB25B_TIOA0 ;  // disable PIO control
+  ^~~~
+  EIO
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:30:18: error: &#39;PIO_PB25B_TIOA0&#39; was not declared in this scope
+  PIOB-&gt;PIO_PDR = PIO_PB25B_TIOA0 ;  // disable PIO control
+                  ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:36:10: error: &#39;ADC_Sampler_class&#39; has not been declared
+ uint32_t ADC_Sampler_class::getClkFrequency(double f) {
+          ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp: In function &#39;uint32_t getClkFrequency(double)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:37:9: error: &#39;VARIANT_MCK&#39; was not declared in this scope
+  return VARIANT_MCK/2 /f;
+         ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:40:6: error: &#39;ADC_Sampler_class&#39; has not been declared
+ void ADC_Sampler_class::ADC_init(uint8_t trigSel) {
+      ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp: In function &#39;void ADC_init(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:41:24: error: &#39;ID_ADC&#39; was not declared in this scope
+  pmc_enable_periph_clk(ID_ADC);
+                        ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:41:2: error: &#39;pmc_enable_periph_clk&#39; was not declared in this scope
+  pmc_enable_periph_clk(ID_ADC);
+  ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:42:2: error: &#39;ADC&#39; was not declared in this scope
+  ADC-&gt;ADC_CR = ADC_CR_SWRST; //reset the adc
+  ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmp</pre>
+
+					
+					<h4>examples/ADC_Sampler_example</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library ADC_SAmpler claims to run on sam architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:10:3: error: &#39;ADC_Sampler&#39; was not declared in this scope
+   ADC_Sampler.begin(200, A7,A6,A5,A4,A3,A2,A0,A1,A9,A10,A11);
+   ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:10:3: note: suggested alternative: &#39;ADC_Sampler_h&#39;
+   ADC_Sampler.begin(200, A7,A6,A5,A4,A3,A2,A0,A1,A9,A10,A11);
+   ^~~~~~~~~~~
+   ADC_Sampler_h
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:10:50: error: &#39;A9&#39; was not declared in this scope
+   ADC_Sampler.begin(200, A7,A6,A5,A4,A3,A2,A0,A1,A9,A10,A11);
+                                                  ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:10:50: note: suggested alternative: &#39;A7&#39;
+   ADC_Sampler.begin(200, A7,A6,A5,A4,A3,A2,A0,A1,A9,A10,A11);
+                                                  ^~
+                                                  A7
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:10:53: error: &#39;A10&#39; was not declared in this scope
+   ADC_Sampler.begin(200, A7,A6,A5,A4,A3,A2,A0,A1,A9,A10,A11);
+                                                     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:10:53: note: suggested alternative: &#39;A1&#39;
+   ADC_Sampler.begin(200, A7,A6,A5,A4,A3,A2,A0,A1,A9,A10,A11);
+                                                     ^~~
+                                                     A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:10:57: error: &#39;A11&#39; was not declared in this scope
+   ADC_Sampler.begin(200, A7,A6,A5,A4,A3,A2,A0,A1,A9,A10,A11);
+                                                         ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:10:57: note: suggested alternative: &#39;A1&#39;
+   ADC_Sampler.begin(200, A7,A6,A5,A4,A3,A2,A0,A1,A9,A10,A11);
+                                                         ^~~
+                                                         A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:19:6: error: &#39;ADC_Sampler&#39; was not declared in this scope
+   if(ADC_Sampler.available()) Serial.println(&#34;A7,A6,A5,A4,A3,A2,A0,A1,A9,A10,A11&#34;);
+      ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:19:6: note: suggested alternative: &#39;ADC_Sampler_h&#39;
+   if(ADC_Sampler.available()) Serial.println(&#34;A7,A6,A5,A4,A3,A2,A0,A1,A9,A10,A11&#34;);
+      ^~~~~~~~~~~
+      ADC_Sampler_h
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:20:11: error: &#39;ADC_Sampler&#39; was not declared in this scope
+   while ( ADC_Sampler.available() ) {
+           ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:20:11: note: suggested alternative: &#39;ADC_Sampler_h&#39;
+   while ( ADC_Sampler.available() ) {
+           ^~~~~~~~~~~
+           ADC_Sampler_h
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:37:18: error: &#39;ADC_Sampler&#39; was not declared in this scope
+   Serial.println(ADC_Sampler.arrearSize()); // return the number of sample not treated yet to see if you can handle the sample rate
+                  ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:37:18: note: suggested alternative: &#39;ADC_Sampler_h&#39;
+   Serial.println(ADC_Sampler.arrearSize()); // return the number of sample not treated yet to see if you can handle the sample rate
+                  ^~~~~~~~~~~
+                  ADC_Sampler_h
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library ADC_SAmpler claims to run on sam architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:5:9: error: &#39;ADC_Sampler_class&#39; has not been declared
+ uint8_t ADC_Sampler_class::numChannels = 0;
+         ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:8:21: error: &#39;ADC_Sampler_class&#39; has not been declared
+ volatile AdcBuffer *ADC_Sampler_class::bufferArray = new AdcBuffer(ADC_sequencer_size);
+                     ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:8:68: error: &#39;ADC_sequencer_size&#39; was not declared in this scope
+ volatile AdcBuffer *ADC_Sampler_class::bufferArray = new AdcBuffer(ADC_sequencer_size);
+                                                                    ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:10:6: error: &#39;ADC_Sampler_class&#39; has not been declared
+ void ADC_Sampler_class::TIAO_setup(uint32_t counter) {
+      ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp: In function &#39;void TIAO_setup(uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:11:25: error: &#39;TC_INTERFACE_ID&#39; was not declared in this scope
+  pmc_enable_periph_clk (TC_INTERFACE_ID &#43; 0*3&#43;0) ;  // clock the TC0 channel 0
+                         ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:11:25: note: suggested alternative: &#39;D_INTERFACE&#39;
+  pmc_enable_periph_clk (TC_INTERFACE_ID &#43; 0*3&#43;0) ;  // clock the TC0 channel 0
+                         ^~~~~~~~~~~~~~~
+                         D_INTERFACE
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:11:2: error: &#39;pmc_enable_periph_clk&#39; was not declared in this scope
+  pmc_enable_periph_clk (TC_INTERFACE_ID &#43; 0*3&#43;0) ;  // clock the TC0 channel 0
+  ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:13:2: error: &#39;TcChannel&#39; was not declared in this scope
+  TcChannel * t = &amp;(TC0-&gt;TC_CHANNEL)[0] ;    // pointer to TC0 registers for its channel 0
+  ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:13:2: note: suggested alternative: &#39;numChannels&#39;
+  TcChannel * t = &amp;(TC0-&gt;TC_CHANNEL)[0] ;    // pointer to TC0 registers for its channel 0
+  ^~~~~~~~~
+  numChannels
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:13:14: error: &#39;t&#39; was not declared in this scope
+  TcChannel * t = &amp;(TC0-&gt;TC_CHANNEL)[0] ;    // pointer to TC0 registers for its channel 0
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:13:20: error: &#39;TC0&#39; was not declared in this scope
+  TcChannel * t = &amp;(TC0-&gt;TC_CHANNEL)[0] ;    // pointer to TC0 registers for its channel 0
+                    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:13:20: note: suggested alternative: &#39;AC0&#39;
+  TcChannel * t = &amp;(TC0-&gt;TC_CHANNEL)[0] ;    // pointer to TC0 registers for its channel 0
+                    ^~~
+                    AC0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:14:14: error: &#39;TC_CCR_CLKDIS&#39; was not declared in this scope
+  t-&gt;TC_CCR = TC_CCR_CLKDIS ;  // disable internal clocking while setup regs
+              ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:15:14: error: &#39;MAX_FIELD&#39; was not declared in this scope
+  t-&gt;TC_IDR = MAX_FIELD ;     // disable interrupts
+              ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:17:14: error: &#39;TC_CMR_TCCLKS_TIMER_CLOCK1&#39; was not declared in this scope
+  t-&gt;TC_CMR = TC_CMR_TCCLKS_TIMER_CLOCK1 |   // use TCLK1 (prescale by 2, = 42MHz)
+              ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:18:11: error: &#39;TC_CMR_WAVE&#39; was not declared in this scope
+           TC_CMR_WAVE |                  // waveform mode
+           ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:19:11: error: &#39;TC_CMR_WAVSEL_UP_RC&#39; was not declared in this scope
+           TC_CMR_WAVSEL_UP_RC |          // count-up PWM using RC as threshold
+           ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:20:11: error: &#39;TC_CMR_EEVT_XC0&#39; was not declared in this scope
+           TC_CMR_EEVT_XC0 |     // Set external events from XC0 (this setup TIOB as output)
+           ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:21:11: error: &#39;TC_CMR_ACPA_CLEAR&#39; was not declared in this scope
+           TC_CMR_ACPA_CLEAR | TC_CMR_ACPC_CLEAR |
+           ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:21:31: error: &#39;TC_CMR_ACPC_CLEAR&#39; was not declared in this scope
+           TC_CMR_ACPA_CLEAR | TC_CMR_ACPC_CLEAR |
+                               ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:22:11: error: &#39;TC_CMR_BCPB_CLEAR&#39; was not declared in this scope
+           TC_CMR_BCPB_CLEAR | TC_CMR_BCPC_CLEAR ;
+           ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:22:31: error: &#39;TC_CMR_BCPC_CLEAR&#39; was not declared in this scope
+           TC_CMR_BCPB_CLEAR | TC_CMR_BCPC_CLEAR ;
+                               ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:26:31: error: &#39;TC_CMR_LDRA&#39; was not declared in this scope
+  t-&gt;TC_CMR = ( (t-&gt;TC_CMR &amp; ~(TC_CMR_LDRA(MAX_FIELD)) ) &amp; (t-&gt;TC_CMR &amp; ~(TC_CMR_LDRB(MAX_FIELD)) ) ) | TC_CMR_ACPA_CLEAR | TC_CMR_ACPC_SET ;  // set clear and set from RA and RC compares
+                               ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:26:31: note: suggested alternative: &#39;RTC_CTRLA&#39;
+  t-&gt;TC_CMR = ( (t-&gt;TC_CMR &amp; ~(TC_CMR_LDRA(MAX_FIELD)) ) &amp; (t-&gt;TC_CMR &amp; ~(TC_CMR_LDRB(MAX_FIELD)) ) ) | TC_CMR_ACPA_CLEAR | TC_CMR_ACPC_SET ;  // set clear and set from RA and RC compares
+                               ^~~~~~~~~~~
+                               RTC_CTRLA
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:26:74: error: &#39;TC_CMR_LDRB&#39; was not declared in this scope
+  t-&gt;TC_CMR = ( (t-&gt;TC_CMR &amp; ~(TC_CMR_LDRA(MAX_FIELD)) ) &amp; (t-&gt;TC_CMR &amp; ~(TC_CMR_LDRB(MAX_FIELD)) ) ) | TC_CMR_ACPA_CLEAR | TC_CMR_ACPC_SET ;  // set clear and set from RA and RC compares
+                                                                          ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:26:124: error: &#39;TC_CMR_ACPC_SET&#39; was not declared in this scope
+  t-&gt;TC_CMR = ( (t-&gt;TC_CMR &amp; ~(TC_CMR_LDRA(MAX_FIELD)) ) &amp; (t-&gt;TC_CMR &amp; ~(TC_CMR_LDRB(MAX_FIELD)) ) ) | TC_CMR_ACPA_CLEAR | TC_CMR_ACPC_SET ;  // set clear and set from RA and RC compares
+                                                                                                                            ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:28:14: error: &#39;TC_CCR_CLKEN&#39; was not declared in this scope
+  t-&gt;TC_CCR = TC_CCR_CLKEN | TC_CCR_SWTRG ;  // re-enable local clocking and switch to hardware trigger source.
+              ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:28:29: error: &#39;TC_CCR_SWTRG&#39; was not declared in this scope
+  t-&gt;TC_CCR = TC_CCR_CLKEN | TC_CCR_SWTRG ;  // re-enable local clocking and switch to hardware trigger source.
+                             ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:30:2: error: &#39;PIOB&#39; was not declared in this scope
+  PIOB-&gt;PIO_PDR = PIO_PB25B_TIOA0 ;  // disable PIO control
+  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:30:2: note: suggested alternative: &#39;PIN0&#39;
+  PIOB-&gt;PIO_PDR = PIO_PB25B_TIOA0 ;  // disable PIO control
+  ^~~~
+  PIN0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:30:18: error: &#39;PIO_PB25B_TIOA0&#39; was not declared in this scope
+  PIOB-&gt;PIO_PDR = PIO_PB25B_TIOA0 ;  // disable PIO control
+                  ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:36:10: error: &#39;ADC_Sampler_class&#39; has not been declared
+ uint32_t ADC_Sampler_class::getClkFrequency(double f) {
+          ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp: In function &#39;uint32_t getClkFrequency(double)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:37:9: error: &#39;VARIANT_MCK&#39; was not declared in this scope
+  return VARIANT_MCK/2 /f;
+         ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp: At global scope:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:40:6: error: &#39;ADC_Sampler_class&#39; has not been declared
+ void ADC_Sampler_class::ADC_init(uint8_t trigSel) {
+      ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.</pre>
+
+					
+					<h4>examples/ADC_Sampler_example</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library ADC_SAmpler claims to run on sam architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:10:3: error: &#39;ADC_Sampler&#39; was not declared in this scope
+   ADC_Sampler.begin(200, A7,A6,A5,A4,A3,A2,A0,A1,A9,A10,A11);
+   ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:10:3: note: suggested alternative: &#39;ADC_Sampler_h&#39;
+   ADC_Sampler.begin(200, A7,A6,A5,A4,A3,A2,A0,A1,A9,A10,A11);
+   ^~~~~~~~~~~
+   ADC_Sampler_h
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:10:50: error: &#39;A9&#39; was not declared in this scope
+   ADC_Sampler.begin(200, A7,A6,A5,A4,A3,A2,A0,A1,A9,A10,A11);
+                                                  ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:10:50: note: suggested alternative: &#39;A7&#39;
+   ADC_Sampler.begin(200, A7,A6,A5,A4,A3,A2,A0,A1,A9,A10,A11);
+                                                  ^~
+                                                  A7
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:10:53: error: &#39;A10&#39; was not declared in this scope
+   ADC_Sampler.begin(200, A7,A6,A5,A4,A3,A2,A0,A1,A9,A10,A11);
+                                                     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:10:53: note: suggested alternative: &#39;A1&#39;
+   ADC_Sampler.begin(200, A7,A6,A5,A4,A3,A2,A0,A1,A9,A10,A11);
+                                                     ^~~
+                                                     A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:10:57: error: &#39;A11&#39; was not declared in this scope
+   ADC_Sampler.begin(200, A7,A6,A5,A4,A3,A2,A0,A1,A9,A10,A11);
+                                                         ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:10:57: note: suggested alternative: &#39;A1&#39;
+   ADC_Sampler.begin(200, A7,A6,A5,A4,A3,A2,A0,A1,A9,A10,A11);
+                                                         ^~~
+                                                         A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:19:6: error: &#39;ADC_Sampler&#39; was not declared in this scope
+   if(ADC_Sampler.available()) Serial.println(&#34;A7,A6,A5,A4,A3,A2,A0,A1,A9,A10,A11&#34;);
+      ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:19:6: note: suggested alternative: &#39;ADC_Sampler_h&#39;
+   if(ADC_Sampler.available()) Serial.println(&#34;A7,A6,A5,A4,A3,A2,A0,A1,A9,A10,A11&#34;);
+      ^~~~~~~~~~~
+      ADC_Sampler_h
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:20:11: error: &#39;ADC_Sampler&#39; was not declared in this scope
+   while ( ADC_Sampler.available() ) {
+           ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:20:11: note: suggested alternative: &#39;ADC_Sampler_h&#39;
+   while ( ADC_Sampler.available() ) {
+           ^~~~~~~~~~~
+           ADC_Sampler_h
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:37:18: error: &#39;ADC_Sampler&#39; was not declared in this scope
+   Serial.println(ADC_Sampler.arrearSize()); // return the number of sample not treated yet to see if you can handle the sample rate
+                  ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:37:18: note: suggested alternative: &#39;ADC_Sampler_h&#39;
+   Serial.println(ADC_Sampler.arrearSize()); // return the number of sample not treated yet to see if you can handle the sample rate
+                  ^~~~~~~~~~~
+                  ADC_Sampler_h
+
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library ADC_SAmpler claims to run on sam architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:5:9: error: &#39;ADC_Sampler_class&#39; has not been declared
+ uint8_t ADC_Sampler_class::numChannels = 0;
+         ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:8:21: error: &#39;ADC_Sampler_class&#39; has not been declared
+ volatile AdcBuffer *ADC_Sampler_class::bufferArray = new AdcBuffer(ADC_sequencer_size);
+                     ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:8:68: error: &#39;ADC_sequencer_size&#39; was not declared in this scope
+ volatile AdcBuffer *ADC_Sampler_class::bufferArray = new AdcBuffer(ADC_sequencer_size);
+                                                                    ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:10:6: error: &#39;ADC_Sampler_class&#39; has not been declared
+ void ADC_Sampler_class::TIAO_setup(uint32_t counter) {
+      ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp: In function &#39;void TIAO_setup(uint32_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:11:25: error: &#39;TC_INTERFACE_ID&#39; was not declared in this scope
+  pmc_enable_periph_clk (TC_INTERFACE_ID &#43; 0*3&#43;0) ;  // clock the TC0 channel 0
+                         ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:11:25: note: suggested alternative: &#39;D_INTERFACE&#39;
+  pmc_enable_periph_clk (TC_INTERFACE_ID &#43; 0*3&#43;0) ;  // clock the TC0 channel 0
+                         ^~~~~~~~~~~~~~~
+                         D_INTERFACE
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:11:2: error: &#39;pmc_enable_periph_clk&#39; was not declared in this scope
+  pmc_enable_periph_clk (TC_INTERFACE_ID &#43; 0*3&#43;0) ;  // clock the TC0 channel 0
+  ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:13:2: error: &#39;TcChannel&#39; was not declared in this scope
+  TcChannel * t = &amp;(TC0-&gt;TC_CHANNEL)[0] ;    // pointer to TC0 registers for its channel 0
+  ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:13:2: note: suggested alternative: &#39;ETCChannel&#39;
+  TcChannel * t = &amp;(TC0-&gt;TC_CHANNEL)[0] ;    // pointer to TC0 registers for its channel 0
+  ^~~~~~~~~
+  ETCChannel
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:13:14: error: &#39;t&#39; was not declared in this scope
+  TcChannel * t = &amp;(TC0-&gt;TC_CHANNEL)[0] ;    // pointer to TC0 registers for its channel 0
+              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:13:20: error: &#39;TC0&#39; was not declared in this scope
+  TcChannel * t = &amp;(TC0-&gt;TC_CHANNEL)[0] ;    // pointer to TC0 registers for its channel 0
+                    ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:13:20: note: suggested alternative: &#39;TC5&#39;
+  TcChannel * t = &amp;(TC0-&gt;TC_CHANNEL)[0] ;    // pointer to TC0 registers for its channel 0
+                    ^~~
+                    TC5
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:14:14: error: &#39;TC_CCR_CLKDIS&#39; was not declared in this scope
+  t-&gt;TC_CCR = TC_CCR_CLKDIS ;  // disable internal clocking while setup regs
+              ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:14:14: note: suggested alternative: &#39;TCC1_GCLK_ID&#39;
+  t-&gt;TC_CCR = TC_CCR_CLKDIS ;  // disable internal clocking while setup regs
+              ^~~~~~~~~~~~~
+              TCC1_GCLK_ID
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:15:14: error: &#39;MAX_FIELD&#39; was not declared in this scope
+  t-&gt;TC_IDR = MAX_FIELD ;     // disable interrupts
+              ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:17:14: error: &#39;TC_CMR_TCCLKS_TIMER_CLOCK1&#39; was not declared in this scope
+  t-&gt;TC_CMR = TC_CMR_TCCLKS_TIMER_CLOCK1 |   // use TCLK1 (prescale by 2, = 42MHz)
+              ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:18:11: error: &#39;TC_CMR_WAVE&#39; was not declared in this scope
+           TC_CMR_WAVE |                  // waveform mode
+           ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:19:11: error: &#39;TC_CMR_WAVSEL_UP_RC&#39; was not declared in this scope
+           TC_CMR_WAVSEL_UP_RC |          // count-up PWM using RC as threshold
+           ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:19:11: note: suggested alternative: &#39;TCC_WAVE_POL&#39;
+           TC_CMR_WAVSEL_UP_RC |          // count-up PWM using RC as threshold
+           ^~~~~~~~~~~~~~~~~~~
+           TCC_WAVE_POL
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:20:11: error: &#39;TC_CMR_EEVT_XC0&#39; was not declared in this scope
+           TC_CMR_EEVT_XC0 |     // Set external events from XC0 (this setup TIOB as output)
+           ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:21:11: error: &#39;TC_CMR_ACPA_CLEAR&#39; was not declared in this scope
+           TC_CMR_ACPA_CLEAR | TC_CMR_ACPC_CLEAR |
+           ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:21:11: note: suggested alternative: &#39;TC_CTRLA_PRESCALER&#39;
+           TC_CMR_ACPA_CLEAR | TC_CMR_ACPC_CLEAR |
+           ^~~~~~~~~~~~~~~~~
+           TC_CTRLA_PRESCALER
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:21:31: error: &#39;TC_CMR_ACPC_CLEAR&#39; was not declared in this scope
+           TC_CMR_ACPA_CLEAR | TC_CMR_ACPC_CLEAR |
+                               ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:21:31: note: suggested alternative: &#39;TC_CTRLA_PRESCALER&#39;
+           TC_CMR_ACPA_CLEAR | TC_CMR_ACPC_CLEAR |
+                               ^~~~~~~~~~~~~~~~~
+                               TC_CTRLA_PRESCALER
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:22:11: error: &#39;TC_CMR_BCPB_CLEAR&#39; was not declared in this scope
+           TC_CMR_BCPB_CLEAR | TC_CMR_BCPC_CLEAR ;
+           ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:22:11: note: suggested alternative: &#39;TC_CTRLBCLR_CMD&#39;
+           TC_CMR_BCPB_CLEAR | TC_CMR_BCPC_CLEAR ;
+           ^~~~~~~~~~~~~~~~~
+           TC_CTRLBCLR_CMD
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:22:31: error: &#39;TC_CMR_BCPC_CLEAR&#39; was not declared in this scope
+           TC_CMR_BCPB_CLEAR | TC_CMR_BCPC_CLEAR ;
+                               ^~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:22:31: note: suggested alternative: &#39;TC_CTRLBCLR_CMD&#39;
+           TC_CMR_BCPB_CLEAR | TC_CMR_BCPC_CLEAR ;
+                               ^~~~~~~~~~~~~~~~~
+                               TC_CTRLBCLR_CMD
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:26:31: error: &#39;TC_CMR_LDRA&#39; was not declared in this scope
+  t-&gt;TC_CMR = ( (t-&gt;TC_CMR &amp; ~(TC_CMR_LDRA(MAX_FIELD)) ) &amp; (t-&gt;TC_CMR &amp; ~(TC_CMR_LDRB(MAX_FIELD)) ) ) | TC_CMR_ACPA_CLEAR | TC_CMR_ACPC_SET ;  // set clear and set from RA and RC compares
+                               ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:26:74: error: &#39;TC_CMR_LDRB&#39; was not declared in this scope
+  t-&gt;TC_CMR = ( (t-&gt;TC_CMR &amp; ~(TC_CMR_LDRA(MAX_FIELD)) ) &amp; (t-&gt;TC_CMR &amp; ~(TC_CMR_LDRB(MAX_FIELD)) ) ) | TC_CMR_ACPA_CLEAR | TC_CMR_ACPC_SET ;  // set clear and set from RA and RC compares
+                                                                          ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:26:124: error: &#39;TC_CMR_ACPC_SET&#39; was not declared in this scope
+  t-&gt;TC_CMR = ( (t-&gt;TC_CMR &amp; ~(TC_CMR_LDRA(MAX_FIELD)) ) &amp; (t-&gt;TC_CMR &amp; ~(TC_CMR_LDRB(MAX_FIELD)) ) ) | TC_CMR_ACPA_CLEAR | TC_CMR_ACPC_SET ;  // set clear and set from RA and RC compares
+                                                                                                                            ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:26:124: note: suggested alternative: &#39;TC_CTRLA_OFFSET&#39;
+  t-&gt;TC_CMR = ( (t-&gt;TC_CMR &amp; ~(TC_CMR_LDRA(MAX_FIELD)) ) &amp; (t-&gt;TC_CMR &amp; ~(TC_CMR_LDRB(MAX_FIELD)) ) ) | TC_CMR_ACPA_CLEAR | TC_CMR_ACPC_SET ;  // set clear and set from RA and RC compares
+                                                                                                                            ^~~~~~~~~~~~~~~
+                                                                                                                            TC_CTRLA_OFFSET
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:28:14: error: &#39;TC_CCR_CLKEN&#39; was not declared in this scope
+  t-&gt;TC_CCR = TC_CCR_CLKEN | TC_CCR_SWTRG ;  // re-enable local clocking and switch to hardware trigger source.
+              ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/src/ADC_Sampler.cpp:28:14: note: suggested alternative: &#39;TC_CTRLC_CPTEN&#39;
+  t-&gt;TC_CCR = TC_CCR_CLKEN | TC_CCR_SWTRG ;  // re-enable local clock</pre>
+
+					
+					<h4>examples/ADC_Sampler_example</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library ADC_SAmpler claims to run on sam architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:10:3: error: &#39;ADC_Sampler&#39; was not declared in this scope
+   ADC_Sampler.begin(200, A7,A6,A5,A4,A3,A2,A0,A1,A9,A10,A11);
+   ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:10:3: note: suggested alternative: &#39;ADC_Sampler_h&#39;
+   ADC_Sampler.begin(200, A7,A6,A5,A4,A3,A2,A0,A1,A9,A10,A11);
+   ^~~~~~~~~~~
+   ADC_Sampler_h
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:10:26: error: &#39;A7&#39; was not declared in this scope
+   ADC_Sampler.begin(200, A7,A6,A5,A4,A3,A2,A0,A1,A9,A10,A11);
+                          ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:10:26: note: suggested alternative: &#39;A6&#39;
+   ADC_Sampler.begin(200, A7,A6,A5,A4,A3,A2,A0,A1,A9,A10,A11);
+                          ^~
+                          A6
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:10:50: error: &#39;A9&#39; was not declared in this scope
+   ADC_Sampler.begin(200, A7,A6,A5,A4,A3,A2,A0,A1,A9,A10,A11);
+                                                  ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:10:50: note: suggested alternative: &#39;A6&#39;
+   ADC_Sampler.begin(200, A7,A6,A5,A4,A3,A2,A0,A1,A9,A10,A11);
+                                                  ^~
+                                                  A6
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:10:53: error: &#39;A10&#39; was not declared in this scope
+   ADC_Sampler.begin(200, A7,A6,A5,A4,A3,A2,A0,A1,A9,A10,A11);
+                                                     ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:10:53: note: suggested alternative: &#39;A1&#39;
+   ADC_Sampler.begin(200, A7,A6,A5,A4,A3,A2,A0,A1,A9,A10,A11);
+                                                     ^~~
+                                                     A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:10:57: error: &#39;A11&#39; was not declared in this scope
+   ADC_Sampler.begin(200, A7,A6,A5,A4,A3,A2,A0,A1,A9,A10,A11);
+                                                         ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:10:57: note: suggested alternative: &#39;A1&#39;
+   ADC_Sampler.begin(200, A7,A6,A5,A4,A3,A2,A0,A1,A9,A10,A11);
+                                                         ^~~
+                                                         A1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:19:6: error: &#39;ADC_Sampler&#39; was not declared in this scope
+   if(ADC_Sampler.available()) Serial.println(&#34;A7,A6,A5,A4,A3,A2,A0,A1,A9,A10,A11&#34;);
+      ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:19:6: note: suggested alternative: &#39;ADC_Sampler_h&#39;
+   if(ADC_Sampler.available()) Serial.println(&#34;A7,A6,A5,A4,A3,A2,A0,A1,A9,A10,A11&#34;);
+      ^~~~~~~~~~~
+      ADC_Sampler_h
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:20:11: error: &#39;ADC_Sampler&#39; was not declared in this scope
+   while ( ADC_Sampler.available() ) {
+           ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:20:11: note: suggested alternative: &#39;ADC_Sampler_h&#39;
+   while ( ADC_Sampler.available() ) {
+           ^~~~~~~~~~~
+           ADC_Sampler_h
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:37:18: error: &#39;ADC_Sampler&#39; was not declared in this scope
+   Serial.println(ADC_Sampler.arrearSize()); // return the number of sample not treated yet to see if you can handle the sample rate
+                  ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:37:18: note: suggested alternative: &#39;ADC_Sampler_h&#39;
+   Serial.println(ADC_Sampler.arrearSize()); // return the number of sample not treated yet to see if you can handle the sample rate
+                  ^~~~~~~~~~~
+                  ADC_Sampler_h
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library ADC_SAmpler claims to run on sam architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+
+</pre>
+
+					
+					<h4>examples/ADC_Sampler_example</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library ADC_SAmpler claims to run on sam architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:10:3: error: &#39;ADC_Sampler&#39; was not declared in this scope
+   ADC_Sampler.begin(200, A7,A6,A5,A4,A3,A2,A0,A1,A9,A10,A11);
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:10:41: error: &#39;A2&#39; was not declared in this scope
+   ADC_Sampler.begin(200, A7,A6,A5,A4,A3,A2,A0,A1,A9,A10,A11);
+                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:10:47: error: &#39;A1&#39; was not declared in this scope
+   ADC_Sampler.begin(200, A7,A6,A5,A4,A3,A2,A0,A1,A9,A10,A11);
+                                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:10:50: error: &#39;A9&#39; was not declared in this scope
+   ADC_Sampler.begin(200, A7,A6,A5,A4,A3,A2,A0,A1,A9,A10,A11);
+                                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:19:6: error: &#39;ADC_Sampler&#39; was not declared in this scope
+   if(ADC_Sampler.available()) Serial.println(&#34;A7,A6,A5,A4,A3,A2,A0,A1,A9,A10,A11&#34;);
+      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:20:11: error: &#39;ADC_Sampler&#39; was not declared in this scope
+   while ( ADC_Sampler.available() ) {
+           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ADC_SAmpler/examples/ADC_Sampler_example/ADC_Sampler_example.ino:37:18: error: &#39;ADC_Sampler&#39; was not declared in this scope
+   Serial.println(ADC_Sampler.arrearSize()); // return the number of sample not treated yet to see if you can handle the sample rate
+                  ^
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

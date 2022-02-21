@@ -1,0 +1,1211 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>ESP32_easy_wifi_data - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>ESP32_easy_wifi_data</h2>
+				<p>
+					Version: <b>0.3.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/esp32_easy_wifi_data/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>fullExample</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library ESP32_easy_wifi_data claims to run on esp32 architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+In file included from /tmp/arduino-testlib460913778/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:46:20: error: variable or field &#39;wifiEvent&#39; declared void
+     void wifiEvent(WiFiEvent_t event)
+                    ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:46:20: error: &#39;WiFiEvent_t&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:46:20: note: suggested alternative: &#39;WiFiClient&#39;
+     void wifiEvent(WiFiEvent_t event)
+                    ^~~~~~~~~~~
+                    WiFiClient
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h: In function &#39;void EWD::setupWifi(void (*)(), void (*)())&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:120:25: error: no matching function for call to &#39;WiFiClass::disconnect(bool)&#39;
+     WiFi.disconnect(true);
+                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:4:0,
+                 from /tmp/arduino-testlib460913778/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFi.h:130:9: note: candidate: int WiFiClass::disconnect()
+     int disconnect(void);
+         ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFi.h:130:9: note:   candidate expects 0 arguments, 1 provided
+In file included from /tmp/arduino-testlib460913778/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:122:10: error: &#39;class WiFiClass&#39; has no member named &#39;onEvent&#39;
+     WiFi.onEvent(wifiEvent);
+          ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:122:18: error: &#39;wifiEvent&#39; was not declared in this scope
+     WiFi.onEvent(wifiEvent);
+                  ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:122:18: note: suggested alternative: &#39;wifiPort&#39;
+     WiFi.onEvent(wifiEvent);
+                  ^~~~~~~~~
+                  wifiPort
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:135:14: error: &#39;class WiFiClass&#39; has no member named &#39;mode&#39;
+         WiFi.mode(WIFI_STA);
+              ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:135:19: error: &#39;WIFI_STA&#39; was not declared in this scope
+         WiFi.mode(WIFI_STA);
+                   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:144:18: error: &#39;class WiFiClass&#39; has no member named &#39;reconnect&#39;; did you mean &#39;disconnect&#39;?
+             WiFi.reconnect();
+                  ^~~~~~~~~
+                  disconnect
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:156:29: error: no matching function for call to &#39;WiFiClass::disconnect(bool)&#39;
+         WiFi.disconnect(true);
+                             ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:4:0,
+                 from /tmp/arduino-testlib460913778/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFi.h:130:9: note: candidate: int WiFiClass::disconnect()
+     int disconnect(void);
+         ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFi.h:130:9: note:   candidate expects 0 arguments, 1 provided
+In file included from /tmp/arduino-testlib460913778/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:158:13: error: &#39;ESP&#39; was not declared in this scope
+             ESP.restart();
+             ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:158:13: note: suggested alternative: &#39;SP&#39;
+             ESP.restart();
+             ^~~
+             SP
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:171:14: error: &#39;class WiFiClass&#39; has no member named &#39;mode&#39;
+         WiFi.mode(WIFI_AP);
+              ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:171:19: error: &#39;WIFI_AP&#39; was not declared in this scope
+         WiFi.mode(WIFI_AP);
+                   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:173:14: error: &#39;class WiFiClass&#39; has no member named &#39;softAP&#39;
+         WiFi.softAP(APName.c_str(), APPass.c_str(), 1, 0, 1);
+              ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:175:14: error: &#39;class WiFiClass&#39; has no member named &#39;softAPConfig&#39;
+         WiFi.softAPConfig(hotspotAddress, hotspotAddress, IPAddress(255, 255, 255, 0));
+              ^~~~~~~~~~~~
+In file included from /tmp/arduino-testlib460913778/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h: In function &#39;void EWD::runWifiCommunication()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:191:14: error: &#39;class WiFiClass&#39; has no member named &#39;reconnect&#39;; did you mean &#39;disconnect&#39;?
+         WiFi.reconnect();
+              ^~~~~~~~~
+              disconnect
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:222:33: error: no matching function for call to &#39;WiFiUDP::beginPacket()&#39;
+                 udp.beginPacket();
+                                 ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:5:0,
+                 from /tmp/arduino-testlib460913778/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:41:15: note: candidate: virtual int WiFiUDP::beginPacket(IPAddress, uint16_t)
+   virtual int beginPacket(IPAddress ip, uint16_t port);
+               ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:41:15: note:   candidate expects 2 arguments, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:44:15: note: candidate: virtual int WiFiUDP::beginPacket(const char*, uint16_t)
+   virtual int beginPacket(const char *host, uint16_t port);
+               ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:44:15: note:   candidate expects 2 arguments, 0 provided
+In file included from /tmp/arduino-testlib460913778/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:237:29: error: no matching function for call to &#39;WiFiUDP::beginPacket()&#39;
+             udp.beginPacket();
+                             ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:5:0,
+                 from /tmp/arduino-testlib460913778/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:41:15: note: candidate: virtual int WiFiUDP::beginPacket(IPAddress, uint16_t)
+   virtual int beginPacket(IPAddress ip, uint16_t port);
+               ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:41:15: note:   candidate expects 2 arguments, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:44:15: note: candidate: virtual int WiFiUDP::beginPacket(const char*, uint16_t)
+   virtual int beginPacket(const char *host, uint16_t port);
+               ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:44:15: note:   candidate expects 2 arguments, 0 provided
+Multiple libraries were found for &#34;WiFi.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiEspAT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiNINA
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Seeed_Arduino_rpcWiFi
+</pre>
+
+					
+					<h4>examples/fullExample</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library ESP32_easy_wifi_data claims to run on esp32 architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/examples/fullExample/fullExample.ino:10:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:46:20: error: variable or field &#39;wifiEvent&#39; declared void
+     void wifiEvent(WiFiEvent_t event)
+                    ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:46:20: error: &#39;WiFiEvent_t&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:46:20: note: suggested alternative: &#39;WiFiClient&#39;
+     void wifiEvent(WiFiEvent_t event)
+                    ^~~~~~~~~~~
+                    WiFiClient
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h: In function &#39;void EWD::setupWifi(void (*)(), void (*)())&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:120:25: error: no matching function for call to &#39;WiFiClass::disconnect(bool)&#39;
+     WiFi.disconnect(true);
+                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:4:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/examples/fullExample/fullExample.ino:10:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFi.h:130:9: note: candidate: int WiFiClass::disconnect()
+     int disconnect(void);
+         ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFi.h:130:9: note:   candidate expects 0 arguments, 1 provided
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/examples/fullExample/fullExample.ino:10:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:122:10: error: &#39;class WiFiClass&#39; has no member named &#39;onEvent&#39;
+     WiFi.onEvent(wifiEvent);
+          ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:122:18: error: &#39;wifiEvent&#39; was not declared in this scope
+     WiFi.onEvent(wifiEvent);
+                  ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:122:18: note: suggested alternative: &#39;wifiPort&#39;
+     WiFi.onEvent(wifiEvent);
+                  ^~~~~~~~~
+                  wifiPort
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:135:14: error: &#39;class WiFiClass&#39; has no member named &#39;mode&#39;
+         WiFi.mode(WIFI_STA);
+              ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:135:19: error: &#39;WIFI_STA&#39; was not declared in this scope
+         WiFi.mode(WIFI_STA);
+                   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:144:18: error: &#39;class WiFiClass&#39; has no member named &#39;reconnect&#39;; did you mean &#39;disconnect&#39;?
+             WiFi.reconnect();
+                  ^~~~~~~~~
+                  disconnect
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:156:29: error: no matching function for call to &#39;WiFiClass::disconnect(bool)&#39;
+         WiFi.disconnect(true);
+                             ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:4:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/examples/fullExample/fullExample.ino:10:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFi.h:130:9: note: candidate: int WiFiClass::disconnect()
+     int disconnect(void);
+         ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFi.h:130:9: note:   candidate expects 0 arguments, 1 provided
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/examples/fullExample/fullExample.ino:10:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:158:13: error: &#39;ESP&#39; was not declared in this scope
+             ESP.restart();
+             ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:158:13: note: suggested alternative: &#39;SP&#39;
+             ESP.restart();
+             ^~~
+             SP
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:171:14: error: &#39;class WiFiClass&#39; has no member named &#39;mode&#39;
+         WiFi.mode(WIFI_AP);
+              ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:171:19: error: &#39;WIFI_AP&#39; was not declared in this scope
+         WiFi.mode(WIFI_AP);
+                   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:173:14: error: &#39;class WiFiClass&#39; has no member named &#39;softAP&#39;
+         WiFi.softAP(APName.c_str(), APPass.c_str(), 1, 0, 1);
+              ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:175:14: error: &#39;class WiFiClass&#39; has no member named &#39;softAPConfig&#39;
+         WiFi.softAPConfig(hotspotAddress, hotspotAddress, IPAddress(255, 255, 255, 0));
+              ^~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/examples/fullExample/fullExample.ino:10:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h: In function &#39;void EWD::runWifiCommunication()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:191:14: error: &#39;class WiFiClass&#39; has no member named &#39;reconnect&#39;; did you mean &#39;disconnect&#39;?
+         WiFi.reconnect();
+              ^~~~~~~~~
+              disconnect
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:222:33: error: no matching function for call to &#39;WiFiUDP::beginPacket()&#39;
+                 udp.beginPacket();
+                                 ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:5:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/examples/fullExample/fullExample.ino:10:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:41:15: note: candidate: virtual int WiFiUDP::beginPacket(IPAddress, uint16_t)
+   virtual int beginPacket(IPAddress ip, uint16_t port);
+               ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:41:15: note:   candidate expects 2 arguments, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:44:15: note: candidate: virtual int WiFiUDP::beginPacket(const char*, uint16_t)
+   virtual int beginPacket(const char *host, uint16_t port);
+               ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:44:15: note:   candidate expects 2 arguments, 0 provided
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/examples/fullExample/fullExample.ino:10:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:237:29: error: no matching function for call to &#39;WiFiUDP::beginPacket()&#39;
+             udp.beginPacket();
+                             ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:5:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/examples/fullExample/fullExample.ino:10:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:41:15: note: candidate: virtual int WiFiUDP::beginPacket(IPAddress, uint16_t)
+   virtual int beginPacket(IPAddress ip, uint16_t port);
+               ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:41:15: note:   candidate expects 2 arguments, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:44:15: note: candidate: virtual int WiFiUDP::beginPacket(const char*, uint16_t)
+   virtual int beginPacket(const char *host, uint16_t port);
+               ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:44:15: note:   candidate expects 2 arguments, 0 provided
+Multiple libraries were found for &#34;WiFi.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiEspAT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiNINA
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Seeed_Arduino_rpcWiFi
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library ESP32_easy_wifi_data claims to run on esp32 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+In file included from /tmp/arduino-testlib4115748454/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:46:20: error: variable or field &#39;wifiEvent&#39; declared void
+     void wifiEvent(WiFiEvent_t event)
+                    ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:46:20: error: &#39;WiFiEvent_t&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:46:20: note: suggested alternative: &#39;WiFiClient&#39;
+     void wifiEvent(WiFiEvent_t event)
+                    ^~~~~~~~~~~
+                    WiFiClient
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h: In function &#39;void EWD::setupWifi(void (*)(), void (*)())&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:120:25: error: no matching function for call to &#39;WiFiClass::disconnect(bool)&#39;
+     WiFi.disconnect(true);
+                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:4:0,
+                 from /tmp/arduino-testlib4115748454/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFi.h:130:9: note: candidate: int WiFiClass::disconnect()
+     int disconnect(void);
+         ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFi.h:130:9: note:   candidate expects 0 arguments, 1 provided
+In file included from /tmp/arduino-testlib4115748454/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:122:10: error: &#39;class WiFiClass&#39; has no member named &#39;onEvent&#39;
+     WiFi.onEvent(wifiEvent);
+          ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:122:18: error: &#39;wifiEvent&#39; was not declared in this scope
+     WiFi.onEvent(wifiEvent);
+                  ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:122:18: note: suggested alternative: &#39;wifiPort&#39;
+     WiFi.onEvent(wifiEvent);
+                  ^~~~~~~~~
+                  wifiPort
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:135:14: error: &#39;class WiFiClass&#39; has no member named &#39;mode&#39;
+         WiFi.mode(WIFI_STA);
+              ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:135:19: error: &#39;WIFI_STA&#39; was not declared in this scope
+         WiFi.mode(WIFI_STA);
+                   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:135:19: note: suggested alternative: &#39;I2C_SDA&#39;
+         WiFi.mode(WIFI_STA);
+                   ^~~~~~~~
+                   I2C_SDA
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:137:40: error: invalid conversion from &#39;const char*&#39; to &#39;char*&#39; [-fpermissive]
+             WiFi.begin(routerName.c_str());
+                        ~~~~~~~~~~~~~~~~^~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:4:0,
+                 from /tmp/arduino-testlib4115748454/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFi.h:60:9: note:   initializing argument 1 of &#39;int WiFiClass::begin(char*)&#39;
+     int begin(char* ssid);
+         ^~~~~
+In file included from /tmp/arduino-testlib4115748454/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:139:40: error: invalid conversion from &#39;const char*&#39; to &#39;char*&#39; [-fpermissive]
+             WiFi.begin(routerName.c_str(), routerPass.c_str());
+                        ~~~~~~~~~~~~~~~~^~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:4:0,
+                 from /tmp/arduino-testlib4115748454/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFi.h:79:9: note:   initializing argument 1 of &#39;int WiFiClass::begin(char*, const char*)&#39;
+     int begin(char* ssid, const char *passphrase);
+         ^~~~~
+In file included from /tmp/arduino-testlib4115748454/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:144:18: error: &#39;class WiFiClass&#39; has no member named &#39;reconnect&#39;; did you mean &#39;disconnect&#39;?
+             WiFi.reconnect();
+                  ^~~~~~~~~
+                  disconnect
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:156:29: error: no matching function for call to &#39;WiFiClass::disconnect(bool)&#39;
+         WiFi.disconnect(true);
+                             ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:4:0,
+                 from /tmp/arduino-testlib4115748454/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFi.h:130:9: note: candidate: int WiFiClass::disconnect()
+     int disconnect(void);
+         ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFi.h:130:9: note:   candidate expects 0 arguments, 1 provided
+In file included from /tmp/arduino-testlib4115748454/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:158:13: error: &#39;ESP&#39; was not declared in this scope
+             ESP.restart();
+             ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:171:14: error: &#39;class WiFiClass&#39; has no member named &#39;mode&#39;
+         WiFi.mode(WIFI_AP);
+              ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:171:19: error: &#39;WIFI_AP&#39; was not declared in this scope
+         WiFi.mode(WIFI_AP);
+                   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:173:14: error: &#39;class WiFiClass&#39; has no member named &#39;softAP&#39;
+         WiFi.softAP(APName.c_str(), APPass.c_str(), 1, 0, 1);
+              ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:175:14: error: &#39;class WiFiClass&#39; has no member named &#39;softAPConfig&#39;
+         WiFi.softAPConfig(hotspotAddress, hotspotAddress, IPAddress(255, 255, 255, 0));
+              ^~~~~~~~~~~~
+In file included from /tmp/arduino-testlib4115748454/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h: In function &#39;void EWD::runWifiCommunication()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:191:14: error: &#39;class WiFiClass&#39; has no member named &#39;reconnect&#39;; did you mean &#39;disconnect&#39;?
+         WiFi.reconnect();
+              ^~~~~~~~~
+              disconnect
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:222:33: error: no matching function for call to &#39;WiFiUDP::beginPacket()&#39;
+                 udp.beginPacket();
+                                 ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:5:0,
+                 from /tmp/arduino-testlib4115748454/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:41:15: note: candidate: virtual int WiFiUDP::beginPacket(arduino::IPAddress, uint16_t)
+   virtual int beginPacket(IPAddress ip, uint16_t port);
+               ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:41:15: note:   candidate expects 2 arguments, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:44:15: note: candidate: virtual int WiFiUDP::beginPacket(const char*, uint16_t)
+   virtual int beginPacket(const char *host, uint16_t port);
+               ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:44:15: note:   candidate expects 2 arguments, 0 provided
+In file included from /tmp/arduino-testlib4115748454/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:237:29: error: no matching function for call to &#39;WiFiUDP::beginPacket()&#39;
+             udp.beginPacket();
+                             ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:5:0,
+                 from /tmp/arduino-testlib4115748454/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:41:15: note: candidate: virtual int WiFiUDP::beginPacket(arduino::IPAddress, uint16_t)
+   virtual int beginPacket(IPAddress ip, uint16_t port);
+               ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:41:15: note:   candidate expects 2 arguments, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:44:15: note: candidate: virtual int WiFiUDP::beginPacket(const char*, uint16_t)
+   virtual int beginPacket(const char *host, uint16_t port);
+               ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:44:15: note: </pre>
+
+					
+					<h4>examples/fullExample</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library ESP32_easy_wifi_data claims to run on esp32 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/examples/fullExample/fullExample.ino:10:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:46:20: error: variable or field &#39;wifiEvent&#39; declared void
+     void wifiEvent(WiFiEvent_t event)
+                    ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:46:20: error: &#39;WiFiEvent_t&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:46:20: note: suggested alternative: &#39;WiFiClient&#39;
+     void wifiEvent(WiFiEvent_t event)
+                    ^~~~~~~~~~~
+                    WiFiClient
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h: In function &#39;void EWD::setupWifi(void (*)(), void (*)())&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:120:25: error: no matching function for call to &#39;WiFiClass::disconnect(bool)&#39;
+     WiFi.disconnect(true);
+                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:4:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/examples/fullExample/fullExample.ino:10:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFi.h:130:9: note: candidate: int WiFiClass::disconnect()
+     int disconnect(void);
+         ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFi.h:130:9: note:   candidate expects 0 arguments, 1 provided
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/examples/fullExample/fullExample.ino:10:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:122:10: error: &#39;class WiFiClass&#39; has no member named &#39;onEvent&#39;
+     WiFi.onEvent(wifiEvent);
+          ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:122:18: error: &#39;wifiEvent&#39; was not declared in this scope
+     WiFi.onEvent(wifiEvent);
+                  ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:122:18: note: suggested alternative: &#39;wifiPort&#39;
+     WiFi.onEvent(wifiEvent);
+                  ^~~~~~~~~
+                  wifiPort
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:135:14: error: &#39;class WiFiClass&#39; has no member named &#39;mode&#39;
+         WiFi.mode(WIFI_STA);
+              ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:135:19: error: &#39;WIFI_STA&#39; was not declared in this scope
+         WiFi.mode(WIFI_STA);
+                   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:135:19: note: suggested alternative: &#39;I2C_SDA&#39;
+         WiFi.mode(WIFI_STA);
+                   ^~~~~~~~
+                   I2C_SDA
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:137:40: error: invalid conversion from &#39;const char*&#39; to &#39;char*&#39; [-fpermissive]
+             WiFi.begin(routerName.c_str());
+                        ~~~~~~~~~~~~~~~~^~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:4:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/examples/fullExample/fullExample.ino:10:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFi.h:60:9: note:   initializing argument 1 of &#39;int WiFiClass::begin(char*)&#39;
+     int begin(char* ssid);
+         ^~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/examples/fullExample/fullExample.ino:10:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:139:40: error: invalid conversion from &#39;const char*&#39; to &#39;char*&#39; [-fpermissive]
+             WiFi.begin(routerName.c_str(), routerPass.c_str());
+                        ~~~~~~~~~~~~~~~~^~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:4:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/examples/fullExample/fullExample.ino:10:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFi.h:79:9: note:   initializing argument 1 of &#39;int WiFiClass::begin(char*, const char*)&#39;
+     int begin(char* ssid, const char *passphrase);
+         ^~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/examples/fullExample/fullExample.ino:10:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:144:18: error: &#39;class WiFiClass&#39; has no member named &#39;reconnect&#39;; did you mean &#39;disconnect&#39;?
+             WiFi.reconnect();
+                  ^~~~~~~~~
+                  disconnect
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:156:29: error: no matching function for call to &#39;WiFiClass::disconnect(bool)&#39;
+         WiFi.disconnect(true);
+                             ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:4:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/examples/fullExample/fullExample.ino:10:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFi.h:130:9: note: candidate: int WiFiClass::disconnect()
+     int disconnect(void);
+         ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFi.h:130:9: note:   candidate expects 0 arguments, 1 provided
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/examples/fullExample/fullExample.ino:10:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:158:13: error: &#39;ESP&#39; was not declared in this scope
+             ESP.restart();
+             ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:171:14: error: &#39;class WiFiClass&#39; has no member named &#39;mode&#39;
+         WiFi.mode(WIFI_AP);
+              ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:171:19: error: &#39;WIFI_AP&#39; was not declared in this scope
+         WiFi.mode(WIFI_AP);
+                   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:173:14: error: &#39;class WiFiClass&#39; has no member named &#39;softAP&#39;
+         WiFi.softAP(APName.c_str(), APPass.c_str(), 1, 0, 1);
+              ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:175:14: error: &#39;class WiFiClass&#39; has no member named &#39;softAPConfig&#39;
+         WiFi.softAPConfig(hotspotAddress, hotspotAddress, IPAddress(255, 255, 255, 0));
+              ^~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/examples/fullExample/fullExample.ino:10:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h: In function &#39;void EWD::runWifiCommunication()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:191:14: error: &#39;class WiFiClass&#39; has no member named &#39;reconnect&#39;; did you mean &#39;disconnect&#39;?
+         WiFi.reconnect();
+              ^~~~~~~~~
+              disconnect
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:222:33: error: no matching function for call to &#39;WiFiUDP::beginPacket()&#39;
+                 udp.beginPacket();
+                                 ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:5:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/examples/fullExample/fullExample.ino:10:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:41:15: note: candidate: virtual int WiFiUDP::beginPacket(arduino::IPAddress, uint16_t)
+   virtual int beginPacket(IPAddress ip, uint16_t port);
+               ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:41:15: note:   candidate expects 2 arguments, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:44:15: note: candidate: virtual int WiFiUDP::beginPacket(const char*, uint16_t)
+   virtual int beginPacket(const char *host, uint16_t port);
+               ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:44:15: note:   candidate expects 2 arguments, 0 provided
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/examples/fullExample/fullExample.ino:10:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:237:29: error: no matching function for call to &#39;WiFiUDP::beginPacket()&#39;
+             udp.beginPacket();
+                             ^
+In file included from /home/ec2-user/arduino-testlib/cli</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library ESP32_easy_wifi_data claims to run on esp32 architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /tmp/arduino-testlib4115748454/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:46:20: error: variable or field &#39;wifiEvent&#39; declared void
+     void wifiEvent(WiFiEvent_t event)
+                    ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:46:20: error: &#39;WiFiEvent_t&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:46:20: note: suggested alternative: &#39;WiFiClient&#39;
+     void wifiEvent(WiFiEvent_t event)
+                    ^~~~~~~~~~~
+                    WiFiClient
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h: In function &#39;void EWD::setupWifi(void (*)(), void (*)())&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:120:25: error: no matching function for call to &#39;WiFiClass::disconnect(bool)&#39;
+     WiFi.disconnect(true);
+                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:4:0,
+                 from /tmp/arduino-testlib4115748454/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFi.h:130:9: note: candidate: int WiFiClass::disconnect()
+     int disconnect(void);
+         ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFi.h:130:9: note:   candidate expects 0 arguments, 1 provided
+In file included from /tmp/arduino-testlib4115748454/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:122:10: error: &#39;class WiFiClass&#39; has no member named &#39;onEvent&#39;
+     WiFi.onEvent(wifiEvent);
+          ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:122:18: error: &#39;wifiEvent&#39; was not declared in this scope
+     WiFi.onEvent(wifiEvent);
+                  ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:122:18: note: suggested alternative: &#39;wifiPort&#39;
+     WiFi.onEvent(wifiEvent);
+                  ^~~~~~~~~
+                  wifiPort
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:135:14: error: &#39;class WiFiClass&#39; has no member named &#39;mode&#39;
+         WiFi.mode(WIFI_STA);
+              ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:135:19: error: &#39;WIFI_STA&#39; was not declared in this scope
+         WiFi.mode(WIFI_STA);
+                   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:144:18: error: &#39;class WiFiClass&#39; has no member named &#39;reconnect&#39;; did you mean &#39;disconnect&#39;?
+             WiFi.reconnect();
+                  ^~~~~~~~~
+                  disconnect
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:156:29: error: no matching function for call to &#39;WiFiClass::disconnect(bool)&#39;
+         WiFi.disconnect(true);
+                             ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:4:0,
+                 from /tmp/arduino-testlib4115748454/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFi.h:130:9: note: candidate: int WiFiClass::disconnect()
+     int disconnect(void);
+         ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFi.h:130:9: note:   candidate expects 0 arguments, 1 provided
+In file included from /tmp/arduino-testlib4115748454/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:158:13: error: &#39;ESP&#39; was not declared in this scope
+             ESP.restart();
+             ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:158:13: note: suggested alternative: &#39;SP&#39;
+             ESP.restart();
+             ^~~
+             SP
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:171:14: error: &#39;class WiFiClass&#39; has no member named &#39;mode&#39;
+         WiFi.mode(WIFI_AP);
+              ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:171:19: error: &#39;WIFI_AP&#39; was not declared in this scope
+         WiFi.mode(WIFI_AP);
+                   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:173:14: error: &#39;class WiFiClass&#39; has no member named &#39;softAP&#39;
+         WiFi.softAP(APName.c_str(), APPass.c_str(), 1, 0, 1);
+              ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:175:14: error: &#39;class WiFiClass&#39; has no member named &#39;softAPConfig&#39;
+         WiFi.softAPConfig(hotspotAddress, hotspotAddress, IPAddress(255, 255, 255, 0));
+              ^~~~~~~~~~~~
+In file included from /tmp/arduino-testlib4115748454/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h: In function &#39;void EWD::runWifiCommunication()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:191:14: error: &#39;class WiFiClass&#39; has no member named &#39;reconnect&#39;; did you mean &#39;disconnect&#39;?
+         WiFi.reconnect();
+              ^~~~~~~~~
+              disconnect
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:222:33: error: no matching function for call to &#39;WiFiUDP::beginPacket()&#39;
+                 udp.beginPacket();
+                                 ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:5:0,
+                 from /tmp/arduino-testlib4115748454/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:41:15: note: candidate: virtual int WiFiUDP::beginPacket(arduino::IPAddress, uint16_t)
+   virtual int beginPacket(IPAddress ip, uint16_t port);
+               ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:41:15: note:   candidate expects 2 arguments, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:44:15: note: candidate: virtual int WiFiUDP::beginPacket(const char*, uint16_t)
+   virtual int beginPacket(const char *host, uint16_t port);
+               ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:44:15: note:   candidate expects 2 arguments, 0 provided
+In file included from /tmp/arduino-testlib4115748454/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:237:29: error: no matching function for call to &#39;WiFiUDP::beginPacket()&#39;
+             udp.beginPacket();
+                             ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:5:0,
+                 from /tmp/arduino-testlib4115748454/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:41:15: note: candidate: virtual int WiFiUDP::beginPacket(arduino::IPAddress, uint16_t)
+   virtual int beginPacket(IPAddress ip, uint16_t port);
+               ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:41:15: note:   candidate expects 2 arguments, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:44:15: note: candidate: virtual int WiFiUDP::beginPacket(const char*, uint16_t)
+   virtual int beginPacket(const char *host, uint16_t port);
+               ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:44:15: note:   candidate expects 2 arguments, 0 provided
+Multiple libraries were found for &#34;WiFi.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Seeed_Arduino_rpcWiFi
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiEspAT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiNINA
+</pre>
+
+					
+					<h4>examples/fullExample</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library ESP32_easy_wifi_data claims to run on esp32 architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/examples/fullExample/fullExample.ino:10:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:46:20: error: variable or field &#39;wifiEvent&#39; declared void
+     void wifiEvent(WiFiEvent_t event)
+                    ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:46:20: error: &#39;WiFiEvent_t&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:46:20: note: suggested alternative: &#39;WiFiClient&#39;
+     void wifiEvent(WiFiEvent_t event)
+                    ^~~~~~~~~~~
+                    WiFiClient
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h: In function &#39;void EWD::setupWifi(void (*)(), void (*)())&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:120:25: error: no matching function for call to &#39;WiFiClass::disconnect(bool)&#39;
+     WiFi.disconnect(true);
+                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:4:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/examples/fullExample/fullExample.ino:10:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFi.h:130:9: note: candidate: int WiFiClass::disconnect()
+     int disconnect(void);
+         ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFi.h:130:9: note:   candidate expects 0 arguments, 1 provided
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/examples/fullExample/fullExample.ino:10:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:122:10: error: &#39;class WiFiClass&#39; has no member named &#39;onEvent&#39;
+     WiFi.onEvent(wifiEvent);
+          ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:122:18: error: &#39;wifiEvent&#39; was not declared in this scope
+     WiFi.onEvent(wifiEvent);
+                  ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:122:18: note: suggested alternative: &#39;wifiPort&#39;
+     WiFi.onEvent(wifiEvent);
+                  ^~~~~~~~~
+                  wifiPort
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:135:14: error: &#39;class WiFiClass&#39; has no member named &#39;mode&#39;
+         WiFi.mode(WIFI_STA);
+              ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:135:19: error: &#39;WIFI_STA&#39; was not declared in this scope
+         WiFi.mode(WIFI_STA);
+                   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:144:18: error: &#39;class WiFiClass&#39; has no member named &#39;reconnect&#39;; did you mean &#39;disconnect&#39;?
+             WiFi.reconnect();
+                  ^~~~~~~~~
+                  disconnect
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:156:29: error: no matching function for call to &#39;WiFiClass::disconnect(bool)&#39;
+         WiFi.disconnect(true);
+                             ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:4:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/examples/fullExample/fullExample.ino:10:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFi.h:130:9: note: candidate: int WiFiClass::disconnect()
+     int disconnect(void);
+         ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFi.h:130:9: note:   candidate expects 0 arguments, 1 provided
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/examples/fullExample/fullExample.ino:10:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:158:13: error: &#39;ESP&#39; was not declared in this scope
+             ESP.restart();
+             ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:158:13: note: suggested alternative: &#39;SP&#39;
+             ESP.restart();
+             ^~~
+             SP
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:171:14: error: &#39;class WiFiClass&#39; has no member named &#39;mode&#39;
+         WiFi.mode(WIFI_AP);
+              ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:171:19: error: &#39;WIFI_AP&#39; was not declared in this scope
+         WiFi.mode(WIFI_AP);
+                   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:173:14: error: &#39;class WiFiClass&#39; has no member named &#39;softAP&#39;
+         WiFi.softAP(APName.c_str(), APPass.c_str(), 1, 0, 1);
+              ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:175:14: error: &#39;class WiFiClass&#39; has no member named &#39;softAPConfig&#39;
+         WiFi.softAPConfig(hotspotAddress, hotspotAddress, IPAddress(255, 255, 255, 0));
+              ^~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/examples/fullExample/fullExample.ino:10:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h: In function &#39;void EWD::runWifiCommunication()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:191:14: error: &#39;class WiFiClass&#39; has no member named &#39;reconnect&#39;; did you mean &#39;disconnect&#39;?
+         WiFi.reconnect();
+              ^~~~~~~~~
+              disconnect
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:222:33: error: no matching function for call to &#39;WiFiUDP::beginPacket()&#39;
+                 udp.beginPacket();
+                                 ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:5:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/examples/fullExample/fullExample.ino:10:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:41:15: note: candidate: virtual int WiFiUDP::beginPacket(arduino::IPAddress, uint16_t)
+   virtual int beginPacket(IPAddress ip, uint16_t port);
+               ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:41:15: note:   candidate expects 2 arguments, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:44:15: note: candidate: virtual int WiFiUDP::beginPacket(const char*, uint16_t)
+   virtual int beginPacket(const char *host, uint16_t port);
+               ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:44:15: note:   candidate expects 2 arguments, 0 provided
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/examples/fullExample/fullExample.ino:10:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:237:29: error: no matching function for call to &#39;WiFiUDP::beginPacket()&#39;
+             udp.beginPacket();
+                             ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:5:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/examples/fullExample/fullExample.ino:10:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:41:15: note: candidate: virtual int WiFiUDP::beginPacket(arduino::IPAddress, uint16_t)
+   virtual int beginPacket(IPAddress ip, uint16_t port);
+               ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:41:15: note:   candidate expects 2 arguments, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:44:15: note: candidate: virtual int WiFiUDP::beginPacket(const char*, uint16_t)
+   virtual int beginPacket(const char *host, uint16_t port);
+               ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:44:15: note:   candidate expects 2 arguments, 0 provided
+Multiple libraries were found for &#34;WiFi.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Seeed_Arduino_rpcWiFi
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiEspAT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiNINA
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library ESP32_easy_wifi_data claims to run on esp32 architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+In file included from /tmp/arduino-testlib460913778/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:46:20: error: variable or field &#39;wifiEvent&#39; declared void
+     void wifiEvent(WiFiEvent_t event)
+                    ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:46:20: error: &#39;WiFiEvent_t&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:46:20: note: suggested alternative: &#39;WiFiClient&#39;
+     void wifiEvent(WiFiEvent_t event)
+                    ^~~~~~~~~~~
+                    WiFiClient
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h: In function &#39;void EWD::setupWifi(void (*)(), void (*)())&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:120:25: error: no matching function for call to &#39;WiFiClass::disconnect(bool)&#39;
+     WiFi.disconnect(true);
+                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:4:0,
+                 from /tmp/arduino-testlib460913778/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFi.h:130:9: note: candidate: int WiFiClass::disconnect()
+     int disconnect(void);
+         ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFi.h:130:9: note:   candidate expects 0 arguments, 1 provided
+In file included from /tmp/arduino-testlib460913778/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:122:10: error: &#39;class WiFiClass&#39; has no member named &#39;onEvent&#39;
+     WiFi.onEvent(wifiEvent);
+          ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:122:18: error: &#39;wifiEvent&#39; was not declared in this scope
+     WiFi.onEvent(wifiEvent);
+                  ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:122:18: note: suggested alternative: &#39;wifiPort&#39;
+     WiFi.onEvent(wifiEvent);
+                  ^~~~~~~~~
+                  wifiPort
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:135:14: error: &#39;class WiFiClass&#39; has no member named &#39;mode&#39;
+         WiFi.mode(WIFI_STA);
+              ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:135:19: error: &#39;WIFI_STA&#39; was not declared in this scope
+         WiFi.mode(WIFI_STA);
+                   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:137:40: error: invalid conversion from &#39;const char*&#39; to &#39;char*&#39; [-fpermissive]
+             WiFi.begin(routerName.c_str());
+                        ~~~~~~~~~~~~~~~~^~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:4:0,
+                 from /tmp/arduino-testlib460913778/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFi.h:60:9: note:   initializing argument 1 of &#39;int WiFiClass::begin(char*)&#39;
+     int begin(char* ssid);
+         ^~~~~
+In file included from /tmp/arduino-testlib460913778/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:139:40: error: invalid conversion from &#39;const char*&#39; to &#39;char*&#39; [-fpermissive]
+             WiFi.begin(routerName.c_str(), routerPass.c_str());
+                        ~~~~~~~~~~~~~~~~^~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:4:0,
+                 from /tmp/arduino-testlib460913778/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFi.h:79:9: note:   initializing argument 1 of &#39;int WiFiClass::begin(char*, const char*)&#39;
+     int begin(char* ssid, const char *passphrase);
+         ^~~~~
+In file included from /tmp/arduino-testlib460913778/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:144:18: error: &#39;class WiFiClass&#39; has no member named &#39;reconnect&#39;; did you mean &#39;disconnect&#39;?
+             WiFi.reconnect();
+                  ^~~~~~~~~
+                  disconnect
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:156:29: error: no matching function for call to &#39;WiFiClass::disconnect(bool)&#39;
+         WiFi.disconnect(true);
+                             ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:4:0,
+                 from /tmp/arduino-testlib460913778/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFi.h:130:9: note: candidate: int WiFiClass::disconnect()
+     int disconnect(void);
+         ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFi.h:130:9: note:   candidate expects 0 arguments, 1 provided
+In file included from /tmp/arduino-testlib460913778/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:158:13: error: &#39;ESP&#39; was not declared in this scope
+             ESP.restart();
+             ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:171:14: error: &#39;class WiFiClass&#39; has no member named &#39;mode&#39;
+         WiFi.mode(WIFI_AP);
+              ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:171:19: error: &#39;WIFI_AP&#39; was not declared in this scope
+         WiFi.mode(WIFI_AP);
+                   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:173:14: error: &#39;class WiFiClass&#39; has no member named &#39;softAP&#39;
+         WiFi.softAP(APName.c_str(), APPass.c_str(), 1, 0, 1);
+              ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:175:14: error: &#39;class WiFiClass&#39; has no member named &#39;softAPConfig&#39;
+         WiFi.softAPConfig(hotspotAddress, hotspotAddress, IPAddress(255, 255, 255, 0));
+              ^~~~~~~~~~~~
+In file included from /tmp/arduino-testlib460913778/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h: In function &#39;void EWD::runWifiCommunication()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:191:14: error: &#39;class WiFiClass&#39; has no member named &#39;reconnect&#39;; did you mean &#39;disconnect&#39;?
+         WiFi.reconnect();
+              ^~~~~~~~~
+              disconnect
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:222:33: error: no matching function for call to &#39;WiFiUDP::beginPacket()&#39;
+                 udp.beginPacket();
+                                 ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:5:0,
+                 from /tmp/arduino-testlib460913778/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:41:15: note: candidate: virtual int WiFiUDP::beginPacket(arduino::IPAddress, uint16_t)
+   virtual int beginPacket(IPAddress ip, uint16_t port);
+               ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:41:15: note:   candidate expects 2 arguments, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:44:15: note: candidate: virtual int WiFiUDP::beginPacket(const char*, uint16_t)
+   virtual int beginPacket(const char *host, uint16_t port);
+               ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:44:15: note:   candidate expects 2 arguments, 0 provided
+In file included from /tmp/arduino-testlib460913778/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:237:29: error: no matching function for call to &#39;WiFiUDP::beginPacket()&#39;
+             udp.beginPacket();
+                             ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:5:0,
+                 from /tmp/arduino-testlib460913778/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:41:15: note: candidate: virtual int WiFiUDP::beginPacket(arduino::IPAddress, uint16_t)
+   virtual int beginPacket(IPAddress ip, uint16_t port);
+               ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:41:15: note:   candidate expects 2 arguments, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:44:15: note: candidate: virtual int WiFiUDP::beginPacket(const char*, uint16_t)
+   virtual int beginPacket(const char *host, uint16_t port);
+               ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:44:15: note:   candidate expects 2 arguments, 0 provided
+Multiple libraries were found for &#34;WiFi.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiNINA
+  Not used: /home/e</pre>
+
+					
+					<h4>examples/fullExample</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library ESP32_easy_wifi_data claims to run on esp32 architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/examples/fullExample/fullExample.ino:10:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:46:20: error: variable or field &#39;wifiEvent&#39; declared void
+     void wifiEvent(WiFiEvent_t event)
+                    ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:46:20: error: &#39;WiFiEvent_t&#39; was not declared in this scope
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:46:20: note: suggested alternative: &#39;WiFiClient&#39;
+     void wifiEvent(WiFiEvent_t event)
+                    ^~~~~~~~~~~
+                    WiFiClient
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h: In function &#39;void EWD::setupWifi(void (*)(), void (*)())&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:120:25: error: no matching function for call to &#39;WiFiClass::disconnect(bool)&#39;
+     WiFi.disconnect(true);
+                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:4:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/examples/fullExample/fullExample.ino:10:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFi.h:130:9: note: candidate: int WiFiClass::disconnect()
+     int disconnect(void);
+         ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFi.h:130:9: note:   candidate expects 0 arguments, 1 provided
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/examples/fullExample/fullExample.ino:10:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:122:10: error: &#39;class WiFiClass&#39; has no member named &#39;onEvent&#39;
+     WiFi.onEvent(wifiEvent);
+          ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:122:18: error: &#39;wifiEvent&#39; was not declared in this scope
+     WiFi.onEvent(wifiEvent);
+                  ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:122:18: note: suggested alternative: &#39;wifiPort&#39;
+     WiFi.onEvent(wifiEvent);
+                  ^~~~~~~~~
+                  wifiPort
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:135:14: error: &#39;class WiFiClass&#39; has no member named &#39;mode&#39;
+         WiFi.mode(WIFI_STA);
+              ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:135:19: error: &#39;WIFI_STA&#39; was not declared in this scope
+         WiFi.mode(WIFI_STA);
+                   ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:137:40: error: invalid conversion from &#39;const char*&#39; to &#39;char*&#39; [-fpermissive]
+             WiFi.begin(routerName.c_str());
+                        ~~~~~~~~~~~~~~~~^~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:4:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/examples/fullExample/fullExample.ino:10:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFi.h:60:9: note:   initializing argument 1 of &#39;int WiFiClass::begin(char*)&#39;
+     int begin(char* ssid);
+         ^~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/examples/fullExample/fullExample.ino:10:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:139:40: error: invalid conversion from &#39;const char*&#39; to &#39;char*&#39; [-fpermissive]
+             WiFi.begin(routerName.c_str(), routerPass.c_str());
+                        ~~~~~~~~~~~~~~~~^~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:4:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/examples/fullExample/fullExample.ino:10:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFi.h:79:9: note:   initializing argument 1 of &#39;int WiFiClass::begin(char*, const char*)&#39;
+     int begin(char* ssid, const char *passphrase);
+         ^~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/examples/fullExample/fullExample.ino:10:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:144:18: error: &#39;class WiFiClass&#39; has no member named &#39;reconnect&#39;; did you mean &#39;disconnect&#39;?
+             WiFi.reconnect();
+                  ^~~~~~~~~
+                  disconnect
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:156:29: error: no matching function for call to &#39;WiFiClass::disconnect(bool)&#39;
+         WiFi.disconnect(true);
+                             ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:4:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/examples/fullExample/fullExample.ino:10:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFi.h:130:9: note: candidate: int WiFiClass::disconnect()
+     int disconnect(void);
+         ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFi.h:130:9: note:   candidate expects 0 arguments, 1 provided
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/examples/fullExample/fullExample.ino:10:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:158:13: error: &#39;ESP&#39; was not declared in this scope
+             ESP.restart();
+             ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:171:14: error: &#39;class WiFiClass&#39; has no member named &#39;mode&#39;
+         WiFi.mode(WIFI_AP);
+              ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:171:19: error: &#39;WIFI_AP&#39; was not declared in this scope
+         WiFi.mode(WIFI_AP);
+                   ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:173:14: error: &#39;class WiFiClass&#39; has no member named &#39;softAP&#39;
+         WiFi.softAP(APName.c_str(), APPass.c_str(), 1, 0, 1);
+              ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:175:14: error: &#39;class WiFiClass&#39; has no member named &#39;softAPConfig&#39;
+         WiFi.softAPConfig(hotspotAddress, hotspotAddress, IPAddress(255, 255, 255, 0));
+              ^~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/examples/fullExample/fullExample.ino:10:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h: In function &#39;void EWD::runWifiCommunication()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:191:14: error: &#39;class WiFiClass&#39; has no member named &#39;reconnect&#39;; did you mean &#39;disconnect&#39;?
+         WiFi.reconnect();
+              ^~~~~~~~~
+              disconnect
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:222:33: error: no matching function for call to &#39;WiFiUDP::beginPacket()&#39;
+                 udp.beginPacket();
+                                 ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:5:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/examples/fullExample/fullExample.ino:10:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:41:15: note: candidate: virtual int WiFiUDP::beginPacket(arduino::IPAddress, uint16_t)
+   virtual int beginPacket(IPAddress ip, uint16_t port);
+               ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:41:15: note:   candidate expects 2 arguments, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:44:15: note: candidate: virtual int WiFiUDP::beginPacket(const char*, uint16_t)
+   virtual int beginPacket(const char *host, uint16_t port);
+               ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi/src/WiFiUdp.h:44:15: note:   candidate expects 2 arguments, 0 provided
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/examples/fullExample/fullExample.ino:10:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:237:29: error: no matching function for call to &#39;WiFiUDP::beginPacket()&#39;
+             udp.beginPacket();
+                             ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/src/ESP32_easy_wifi_data.h:5:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ESP32_easy_wifi_data/examples/fullExample/fullExample.ino:10:
+/home/ec2-user/arduino-t</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 296594 bytes (22%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 16968 bytes (5%) of dynamic memory, leaving 310712 bytes for local variables. Maximum is 327680 bytes.
+</pre>
+
+					
+					<h4>examples/fullExample</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 649814 bytes (49%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 38436 bytes (11%) of dynamic memory, leaving 289244 bytes for local variables. Maximum is 327680 bytes.
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

@@ -1,0 +1,588 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>LCBUrl - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>LCBUrl</h2>
+				<p>
+					Version: <b>1.1.4</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/lcburl/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>Basic</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+							<td>No ⚠️</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /tmp/arduino-testlib247337788/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.h:74:5: error: &#39;IPAddress&#39; does not name a type
+     IPAddress getIP() __attribute__ ((deprecated));
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.h:75:5: error: &#39;IPAddress&#39; does not name a type
+     IPAddress getIP(const char * hostName);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.h:104:5: error: &#39;IPAddress&#39; does not name a type
+     IPAddress ipaddress;
+     ^~~~~~~~~
+
+</pre>
+
+					
+					<h4>examples/Basic</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/examples/Basic/Basic.ino:31:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.h:74:5: error: &#39;IPAddress&#39; does not name a type
+     IPAddress getIP() __attribute__ ((deprecated));
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.h:75:5: error: &#39;IPAddress&#39; does not name a type
+     IPAddress getIP(const char * hostName);
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.h:104:5: error: &#39;IPAddress&#39; does not name a type
+     IPAddress ipaddress;
+     ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/examples/Basic/Basic.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/examples/Basic/Basic.ino:52:18: error: &#39;BAUD&#39; was not declared in this scope
+     Serial.begin(BAUD);
+                  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/examples/Basic/Basic.ino:52:18: note: suggested alternative: &#39;ACD&#39;
+     Serial.begin(BAUD);
+                  ^~~~
+                  ACD
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/examples/Basic/Basic.ino:58:5: error: &#39;WiFi&#39; was not declared in this scope
+     WiFi.begin(ssid, password);
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/examples/Basic/Basic.ino:59:29: error: &#39;WL_CONNECTED&#39; was not declared in this scope
+     while (WiFi.status() != WL_CONNECTED)
+                             ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/examples/Basic/Basic.ino:66:5: error: &#39;MDNS&#39; was not declared in this scope
+     MDNS.begin(WiFi.getHostname());
+     ^~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library LCBUrl claims to run on avr architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp: In member function &#39;arduino::String LCBUrl::getIPAuthority()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp:303:57: error: &#39;class arduino::IPAddress&#39; has no member named &#39;toString&#39;; did you mean &#39;fromString&#39;?
+             ipauthority.concat(getIP(getHost().c_str()).toString());
+                                                         ^~~~~~~~
+                                                         fromString
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp:307:42: error: &#39;class arduino::IPAddress&#39; has no member named &#39;toString&#39;; did you mean &#39;fromString&#39;?
+             ipauthority.concat(ipaddress.toString());
+                                          ^~~~~~~~
+                                          fromString
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp: In member function &#39;bool LCBUrl::isMDNS(const char*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp:579:21: error: invalid conversion from &#39;char&#39; to &#39;char*&#39; [-fpermissive]
+  char * lastLabel = &#39;\0&#39;;
+                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp: In member function &#39;arduino::IPAddress LCBUrl::getIP(const char*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp:632:25: error: aggregate &#39;LCBUrl::getIP(const char*)::ip4_addr addr&#39; has incomplete type and cannot be defined
+         struct ip4_addr addr;
+                         ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp:634:9: error: &#39;esp_err_t&#39; was not declared in this scope
+         esp_err_t err = mdns_query_a(hn, 2000, &amp;addr);
+         ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp:634:9: note: suggested alternative: &#39;_stderr_r&#39;
+         esp_err_t err = mdns_query_a(hn, 2000, &amp;addr);
+         ^~~~~~~~~
+         _stderr_r
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp:636:13: error: &#39;err&#39; was not declared in this scope
+         if (err == ESP_OK)
+             ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp:636:13: note: suggested alternative: &#39;erf&#39;
+         if (err == ESP_OK)
+             ^~~
+             erf
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp:636:20: error: &#39;ESP_OK&#39; was not declared in this scope
+         if (err == ESP_OK)
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp:636:20: note: suggested alternative: &#39;ESPIPE&#39;
+         if (err == ESP_OK)
+                    ^~~~~~
+                    ESPIPE
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp:639:50: error: &#39;IPSTR&#39; was not declared in this scope
+             snprintf(ipstring, sizeof(ipstring), IPSTR, IP2STR(&amp;addr));
+                                                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp:639:50: note: suggested alternative: &#39;PSTR&#39;
+             snprintf(ipstring, sizeof(ipstring), IPSTR, IP2STR(&amp;addr));
+                                                  ^~~~~
+                                                  PSTR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp:639:57: error: &#39;IP2STR&#39; was not declared in this scope
+             snprintf(ipstring, sizeof(ipstring), IPSTR, IP2STR(&amp;addr));
+                                                         ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp:639:57: note: suggested alternative: &#39;PSTR&#39;
+             snprintf(ipstring, sizeof(ipstring), IPSTR, IP2STR(&amp;addr));
+                                                         ^~~~~~
+                                                         PSTR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp:650:13: error: &#39;WiFi&#39; was not declared in this scope
+         if (WiFi.hostByName(hostName, returnIP) == 1)
+             ^~~~
+
+</pre>
+
+					
+					<h4>examples/Basic</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library LCBUrl claims to run on avr architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/examples/Basic/Basic.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/examples/Basic/Basic.ino:52:18: error: &#39;BAUD&#39; was not declared in this scope
+     Serial.begin(BAUD);
+                  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/examples/Basic/Basic.ino:52:18: note: suggested alternative: &#39;_AND&#39;
+     Serial.begin(BAUD);
+                  ^~~~
+                  _AND
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/examples/Basic/Basic.ino:58:5: error: &#39;WiFi&#39; was not declared in this scope
+     WiFi.begin(ssid, password);
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/examples/Basic/Basic.ino:59:29: error: &#39;WL_CONNECTED&#39; was not declared in this scope
+     while (WiFi.status() != WL_CONNECTED)
+                             ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/examples/Basic/Basic.ino:66:5: error: &#39;MDNS&#39; was not declared in this scope
+     MDNS.begin(WiFi.getHostname());
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/examples/Basic/Basic.ino:66:5: note: suggested alternative: &#39;MIN&#39;
+     MDNS.begin(WiFi.getHostname());
+     ^~~~
+     MIN
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library LCBUrl claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp: In member function &#39;arduino::String LCBUrl::getIPAuthority()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp:303:57: error: &#39;class arduino::IPAddress&#39; has no member named &#39;toString&#39;; did you mean &#39;fromString&#39;?
+             ipauthority.concat(getIP(getHost().c_str()).toString());
+                                                         ^~~~~~~~
+                                                         fromString
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp:307:42: error: &#39;class arduino::IPAddress&#39; has no member named &#39;toString&#39;; did you mean &#39;fromString&#39;?
+             ipauthority.concat(ipaddress.toString());
+                                          ^~~~~~~~
+                                          fromString
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp: In member function &#39;arduino::IPAddress LCBUrl::getIP(const char*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp:632:25: error: aggregate &#39;LCBUrl::getIP(const char*)::ip4_addr addr&#39; has incomplete type and cannot be defined
+         struct ip4_addr addr;
+                         ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp:634:9: error: &#39;esp_err_t&#39; was not declared in this scope
+         esp_err_t err = mdns_query_a(hn, 2000, &amp;addr);
+         ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp:636:13: error: &#39;err&#39; was not declared in this scope
+         if (err == ESP_OK)
+             ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp:636:20: error: &#39;ESP_OK&#39; was not declared in this scope
+         if (err == ESP_OK)
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp:639:50: error: &#39;IPSTR&#39; was not declared in this scope
+             snprintf(ipstring, sizeof(ipstring), IPSTR, IP2STR(&amp;addr));
+                                                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp:639:50: note: suggested alternative: &#39;PSTR&#39;
+             snprintf(ipstring, sizeof(ipstring), IPSTR, IP2STR(&amp;addr));
+                                                  ^~~~~
+                                                  PSTR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp:639:57: error: &#39;IP2STR&#39; was not declared in this scope
+             snprintf(ipstring, sizeof(ipstring), IPSTR, IP2STR(&amp;addr));
+                                                         ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp:639:57: note: suggested alternative: &#39;PSTR&#39;
+             snprintf(ipstring, sizeof(ipstring), IPSTR, IP2STR(&amp;addr));
+                                                         ^~~~~~
+                                                         PSTR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp:650:13: error: &#39;WiFi&#39; was not declared in this scope
+         if (WiFi.hostByName(hostName, returnIP) == 1)
+             ^~~~
+
+</pre>
+
+					
+					<h4>examples/Basic</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library LCBUrl claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/examples/Basic/Basic.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/examples/Basic/Basic.ino:52:18: error: &#39;BAUD&#39; was not declared in this scope
+     Serial.begin(BAUD);
+                  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/examples/Basic/Basic.ino:52:18: note: suggested alternative: &#39;BOD&#39;
+     Serial.begin(BAUD);
+                  ^~~~
+                  BOD
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/examples/Basic/Basic.ino:58:5: error: &#39;WiFi&#39; was not declared in this scope
+     WiFi.begin(ssid, password);
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/examples/Basic/Basic.ino:59:29: error: &#39;WL_CONNECTED&#39; was not declared in this scope
+     while (WiFi.status() != WL_CONNECTED)
+                             ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/examples/Basic/Basic.ino:59:29: note: suggested alternative: &#39;F_CPU_CORRECTED&#39;
+     while (WiFi.status() != WL_CONNECTED)
+                             ^~~~~~~~~~~~
+                             F_CPU_CORRECTED
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/examples/Basic/Basic.ino:66:5: error: &#39;MDNS&#39; was not declared in this scope
+     MDNS.begin(WiFi.getHostname());
+     ^~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library LCBUrl claims to run on avr architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp: In member function &#39;arduino::String LCBUrl::getIPAuthority()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp:303:57: error: &#39;class arduino::IPAddress&#39; has no member named &#39;toString&#39;; did you mean &#39;fromString&#39;?
+             ipauthority.concat(getIP(getHost().c_str()).toString());
+                                                         ^~~~~~~~
+                                                         fromString
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp:307:42: error: &#39;class arduino::IPAddress&#39; has no member named &#39;toString&#39;; did you mean &#39;fromString&#39;?
+             ipauthority.concat(ipaddress.toString());
+                                          ^~~~~~~~
+                                          fromString
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp: In member function &#39;bool LCBUrl::isMDNS(const char*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp:579:21: error: invalid conversion from &#39;char&#39; to &#39;char*&#39; [-fpermissive]
+  char * lastLabel = &#39;\0&#39;;
+                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp: In member function &#39;arduino::IPAddress LCBUrl::getIP(const char*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp:632:25: error: aggregate &#39;LCBUrl::getIP(const char*)::ip4_addr addr&#39; has incomplete type and cannot be defined
+         struct ip4_addr addr;
+                         ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp:634:9: error: &#39;esp_err_t&#39; was not declared in this scope
+         esp_err_t err = mdns_query_a(hn, 2000, &amp;addr);
+         ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp:634:9: note: suggested alternative: &#39;_stderr_r&#39;
+         esp_err_t err = mdns_query_a(hn, 2000, &amp;addr);
+         ^~~~~~~~~
+         _stderr_r
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp:636:13: error: &#39;err&#39; was not declared in this scope
+         if (err == ESP_OK)
+             ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp:636:13: note: suggested alternative: &#39;erf&#39;
+         if (err == ESP_OK)
+             ^~~
+             erf
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp:636:20: error: &#39;ESP_OK&#39; was not declared in this scope
+         if (err == ESP_OK)
+                    ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp:639:50: error: &#39;IPSTR&#39; was not declared in this scope
+             snprintf(ipstring, sizeof(ipstring), IPSTR, IP2STR(&amp;addr));
+                                                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp:639:50: note: suggested alternative: &#39;PSTR&#39;
+             snprintf(ipstring, sizeof(ipstring), IPSTR, IP2STR(&amp;addr));
+                                                  ^~~~~
+                                                  PSTR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp:639:57: error: &#39;IP2STR&#39; was not declared in this scope
+             snprintf(ipstring, sizeof(ipstring), IPSTR, IP2STR(&amp;addr));
+                                                         ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp:639:57: note: suggested alternative: &#39;PSTR&#39;
+             snprintf(ipstring, sizeof(ipstring), IPSTR, IP2STR(&amp;addr));
+                                                         ^~~~~~
+                                                         PSTR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/src/LCBUrl.cpp:650:13: error: &#39;WiFi&#39; was not declared in this scope
+         if (WiFi.hostByName(hostName, returnIP) == 1)
+             ^~~~
+
+</pre>
+
+					
+					<h4>examples/Basic</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library LCBUrl claims to run on avr architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/examples/Basic/Basic.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/examples/Basic/Basic.ino:52:18: error: &#39;BAUD&#39; was not declared in this scope
+     Serial.begin(BAUD);
+                  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/examples/Basic/Basic.ino:52:18: note: suggested alternative: &#39;_AND&#39;
+     Serial.begin(BAUD);
+                  ^~~~
+                  _AND
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/examples/Basic/Basic.ino:58:5: error: &#39;WiFi&#39; was not declared in this scope
+     WiFi.begin(ssid, password);
+     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/examples/Basic/Basic.ino:59:29: error: &#39;WL_CONNECTED&#39; was not declared in this scope
+     while (WiFi.status() != WL_CONNECTED)
+                             ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/examples/Basic/Basic.ino:59:29: note: suggested alternative: &#39;UHD_STATE_CONNECTED&#39;
+     while (WiFi.status() != WL_CONNECTED)
+                             ^~~~~~~~~~~~
+                             UHD_STATE_CONNECTED
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/examples/Basic/Basic.ino:66:5: error: &#39;MDNS&#39; was not declared in this scope
+     MDNS.begin(WiFi.getHostname());
+     ^~~~
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library LCBUrl claims to run on avr architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+Sketch uses 263802 bytes (20%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 14464 bytes (4%) of dynamic memory, leaving 313216 bytes for local variables. Maximum is 327680 bytes.
+</pre>
+
+					
+					<h4>examples/Basic</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library LCBUrl claims to run on avr architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/examples/Basic/Basic.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LCBUrl/examples/Basic/Basic.ino:52:18: error: &#39;BAUD&#39; was not declared in this scope
+     Serial.begin(BAUD);
+                  ^
+Multiple libraries were found for &#34;WiFi.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/WiFi
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiEspAT
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFi
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Seeed_Arduino_rpcWiFi
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/WiFiNINA
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

@@ -1,0 +1,488 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>Touch Screen Driver - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>Touch Screen Driver</h2>
+				<p>
+					Version: <b>1.0.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/touch-screen-driver/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>touchScreen</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-testlib277387833/test/test.ino:1:10: fatal error: Touch_Screen_Driver.h: No such file or directory
+ #include &lt;Touch_Screen_Driver.h&gt;
+          ^~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/touchScreen</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 4306 bytes (13%) of program storage space. Maximum is 32256 bytes.
+Global variables use 230 bytes (11%) of dynamic memory, leaving 1818 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-testlib1299876562/test/test.ino:1:10: fatal error: Touch_Screen_Driver.h: No such file or directory
+ #include &lt;Touch_Screen_Driver.h&gt;
+          ^~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/touchScreen</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Touch_Screen_Driver/SeeedTouchScreen.cpp:14:10: fatal error: pgmspace.h: No such file or directory
+ #include &lt;pgmspace.h&gt;
+          ^~~~~~~~~~~~
+compilation terminated.
+Multiple libraries were found for &#34;SeeedTouchScreen.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Touch_Screen_Driver
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TFT_Touch_Shield_v2.0
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-testlib1299876562/test/test.ino:1:10: fatal error: Touch_Screen_Driver.h: No such file or directory
+ #include &lt;Touch_Screen_Driver.h&gt;
+          ^~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/touchScreen</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 5347 bytes (10%) of program storage space. Maximum is 49152 bytes.
+Global variables use 181 bytes (2%) of dynamic memory, leaving 5963 bytes for local variables. Maximum is 6144 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-testlib277387833/test/test.ino:1:10: fatal error: Touch_Screen_Driver.h: No such file or directory
+ #include &lt;Touch_Screen_Driver.h&gt;
+          ^~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/touchScreen</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Touch_Screen_Driver/SeeedTouchScreen.cpp: In function &#39;int avr_analog(int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Touch_Screen_Driver/SeeedTouchScreen.cpp:66:19: error: &#39;analogRead&#39; was not declared in this scope
+         int tmp = analogRead(adpin);
+                   ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Touch_Screen_Driver/SeeedTouchScreen.cpp:66:19: note: suggested alternative: &#39;__aligned&#39;
+         int tmp = analogRead(adpin);
+                   ^~~~~~~~~~
+                   __aligned
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/variants/mkrwifi1010/pins_arduino.h:20:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Touch_Screen_Driver/SeeedTouchScreen.cpp:8:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Touch_Screen_Driver/SeeedTouchScreen.cpp: In member function &#39;Point TouchScreen::getPoint()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/variants/mkrwifi1010/variant.h:49:35: error: invalid conversion from &#39;PortGroup*&#39; to &#39;uint8_t {aka unsigned char}&#39; [-fpermissive]
+ #define digitalPinToPort(P)      (&amp;(PORT-&gt;Group[g_APinDescription[P].ulPort]))
+                                  ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Touch_Screen_Driver/SeeedTouchScreen.cpp:86:23: note: in expansion of macro &#39;digitalPinToPort&#39;
+     uint8_t xp_port = digitalPinToPort(_xp);
+                       ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/variants/mkrwifi1010/variant.h:49:35: error: invalid conversion from &#39;PortGroup*&#39; to &#39;unsigned char&#39; [-fpermissive]
+ #define digitalPinToPort(P)      (&amp;(PORT-&gt;Group[g_APinDescription[P].ulPort]))
+                                  ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Touch_Screen_Driver/SeeedTouchScreen.cpp:87:29: note: in expansion of macro &#39;digitalPinToPort&#39;
+     unsigned char yp_port = digitalPinToPort(_yp);
+                             ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/variants/mkrwifi1010/variant.h:49:35: error: invalid conversion from &#39;PortGroup*&#39; to &#39;unsigned char&#39; [-fpermissive]
+ #define digitalPinToPort(P)      (&amp;(PORT-&gt;Group[g_APinDescription[P].ulPort]))
+                                  ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Touch_Screen_Driver/SeeedTouchScreen.cpp:88:29: note: in expansion of macro &#39;digitalPinToPort&#39;
+     unsigned char xm_port = digitalPinToPort(_xm);
+                             ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/variants/mkrwifi1010/variant.h:49:35: error: invalid conversion from &#39;PortGroup*&#39; to &#39;unsigned char&#39; [-fpermissive]
+ #define digitalPinToPort(P)      (&amp;(PORT-&gt;Group[g_APinDescription[P].ulPort]))
+                                  ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Touch_Screen_Driver/SeeedTouchScreen.cpp:89:29: note: in expansion of macro &#39;digitalPinToPort&#39;
+     unsigned char ym_port = digitalPinToPort(_ym);
+                             ^~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Touch_Screen_Driver/SeeedTouchScreen.cpp:96:18: error: &#39;INPUT&#39; was not declared in this scope
+     pinMode(_yp, INPUT);
+                  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Touch_Screen_Driver/SeeedTouchScreen.cpp:96:18: note: suggested alternative: &#39;PIO_INPUT&#39;
+     pinMode(_yp, INPUT);
+                  ^~~~~
+                  PIO_INPUT
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Touch_Screen_Driver/SeeedTouchScreen.cpp:96:5: error: &#39;pinMode&#39; was not declared in this scope
+     pinMode(_yp, INPUT);
+     ^~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/variants/mkrwifi1010/pins_arduino.h:20:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Touch_Screen_Driver/SeeedTouchScreen.cpp:8:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/variants/mkrwifi1010/variant.h:52:41: error: base operand of &#39;-&gt;&#39; is not a pointer
+ #define portOutputRegister(port) (&amp;(port-&gt;OUT.reg))
+                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Touch_Screen_Driver/SeeedTouchScreen.cpp:99:6: note: in expansion of macro &#39;portOutputRegister&#39;
+     *portOutputRegister(yp_port) &amp;= ~yp_pin;
+      ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/variants/mkrwifi1010/variant.h:52:41: error: base operand of &#39;-&gt;&#39; is not a pointer
+ #define portOutputRegister(port) (&amp;(port-&gt;OUT.reg))
+                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Touch_Screen_Driver/SeeedTouchScreen.cpp:100:6: note: in expansion of macro &#39;portOutputRegister&#39;
+     *portOutputRegister(ym_port) &amp;= ~ym_pin;
+      ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Touch_Screen_Driver/SeeedTouchScreen.cpp:102:18: error: &#39;OUTPUT&#39; was not declared in this scope
+     pinMode(_xp, OUTPUT);
+                  ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Touch_Screen_Driver/SeeedTouchScreen.cpp:102:18: note: suggested alternative: &#39;PIO_OUTPUT&#39;
+     pinMode(_xp, OUTPUT);
+                  ^~~~~~
+                  PIO_OUTPUT
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/variants/mkrwifi1010/pins_arduino.h:20:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Touch_Screen_Driver/SeeedTouchScreen.cpp:8:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/variants/mkrwifi1010/variant.h:52:41: error: base operand of &#39;-&gt;&#39; is not a pointer
+ #define portOutputRegister(port) (&amp;(port-&gt;OUT.reg))
+                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Touch_Screen_Driver/SeeedTouchScreen.cpp:105:6: note: in expansion of macro &#39;portOutputRegister&#39;
+     *portOutputRegister(xp_port) |= xp_pin;
+      ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/variants/mkrwifi1010/variant.h:52:41: error: base operand of &#39;-&gt;&#39; is not a pointer
+ #define portOutputRegister(port) (&amp;(port-&gt;OUT.reg))
+                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Touch_Screen_Driver/SeeedTouchScreen.cpp:106:6: note: in expansion of macro &#39;portOutputRegister&#39;
+     *portOutputRegister(xm_port) &amp;= ~xm_pin;
+      ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/variants/mkrwifi1010/variant.h:52:41: error: base operand of &#39;-&gt;&#39; is not a pointer
+ #define portOutputRegister(port) (&amp;(port-&gt;OUT.reg))
+                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Touch_Screen_Driver/SeeedTouchScreen.cpp:132:6: note: in expansion of macro &#39;portOutputRegister&#39;
+     *portOutputRegister(xp_port) &amp;= ~xp_pin;
+      ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/variants/mkrwifi1010/variant.h:52:41: error: base operand of &#39;-&gt;&#39; is not a pointer
+ #define portOutputRegister(port) (&amp;(port-&gt;OUT.reg))
+                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Touch_Screen_Driver/SeeedTouchScreen.cpp:135:6: note: in expansion of macro &#39;portOutputRegister&#39;
+     *portOutputRegister(yp_port) |= yp_pin;
+      ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/variants/mkrwifi1010/variant.h:52:41: error: base operand of &#39;-&gt;&#39; is not a pointer
+ #define portOutputRegister(port) (&amp;(port-&gt;OUT.reg))
+                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Touch_Screen_Driver/SeeedTouchScreen.cpp:158:6: note: in expansion of macro &#39;portOutputRegister&#39;
+     *portOutputRegister(xp_port) &amp;= ~xp_pin;            // Set X&#43; to ground
+      ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/variants/mkrwifi1010/variant.h:52:41: error: base operand of &#39;-&gt;&#39; is not a pointer
+ #define portOutputRegister(port) (&amp;(port-&gt;OUT.reg))
+                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Touch_Screen_Driver/SeeedTouchScreen.cpp:159:6: note: in expansion of macro &#39;portOutputRegister&#39;
+     *portOutputRegister(ym_port) |=  ym_pin;            // Set Y- to VCC
+      ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/variants/mkrwifi1010/variant.h:52:41: error: base operand of &#39;-&gt;&#39; is not a pointer
+ #define portOutputRegister(port) (&amp;(port-&gt;OUT.reg))
+                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Touch_Screen_Driver/SeeedTouchScreen.cpp:160:6: note: in expansion of macro &#39;portOutputRegister&#39;
+     *portOutputRegister(yp_port) &amp;= ~yp_pin;            // Hi-Z X- and Y&#43;
+      ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Touch_Screen_Driver/SeeedTouchScreen.cpp:163:23: error: &#39;analogRead&#39; was not declared in this scope
+     int z1          = analogRead(_xm);
+                       ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Touch_Screen_Driver/SeeedTouchScreen.cpp:163:23: note: suggested alternative: &#39;__aligned&#39;
+     int z1          = analog</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-testlib2589461360/test/test.ino:1:33: fatal error: Touch_Screen_Driver.h: No such file or directory
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/touchScreen</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Touch_Screen_Driver/examples/touchScreen/touchScreen.ino:17:12: error: &#39;A2&#39; was not declared in this scope
+ #define YP A2   // must be an analog pin, use &#34;An&#34; notation!
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Touch_Screen_Driver/examples/touchScreen/touchScreen.ino:39:34: note: in expansion of macro &#39;YP&#39;
+ TouchScreen ts = TouchScreen(XP, YP, XM, YM);
+                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Touch_Screen_Driver/examples/touchScreen/touchScreen.ino:18:12: error: &#39;A1&#39; was not declared in this scope
+ #define XM A1   // must be an analog pin, use &#34;An&#34; notation!
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Touch_Screen_Driver/examples/touchScreen/touchScreen.ino:39:38: note: in expansion of macro &#39;XM&#39;
+ TouchScreen ts = TouchScreen(XP, YP, XM, YM);
+                                      ^
+Multiple libraries were found for &#34;SeeedTouchScreen.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Touch_Screen_Driver
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/TFT_Touch_Shield_v2.0
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

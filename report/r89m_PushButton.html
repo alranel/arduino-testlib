@@ -1,0 +1,1392 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>r89m PushButton - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>r89m PushButton</h2>
+				<p>
+					Version: <b>1.0.1</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/r89m-pushbutton/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>BasicPushButton</pre></th>
+						
+						<th><pre>MultipleButtons</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/src/PushButton/PushButton.cpp: In constructor &#39;PushButton::PushButton(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/src/PushButton/PushButton.cpp:10:35: error: no matching function for call to &#39;Button::Button()&#39;
+ PushButton::PushButton(uint8_t pin){
+                                   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/src/PushButton.h:13:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/src/PushButton/PushButton.cpp:8:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:14:3: note: candidate: Button::Button(uint8_t)
+   Button(uint8_t pin);
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:14:3: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:11:7: note: candidate: constexpr Button::Button(const Button&amp;)
+ class Button
+       ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:11:7: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:11:7: note: candidate: constexpr Button::Button(Button&amp;&amp;)
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:11:7: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/src/PushButton/PushButton.cpp: In constructor &#39;PushButton::PushButton(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/src/PushButton/PushButton.cpp:15:52: error: no matching function for call to &#39;Button::Button()&#39;
+ PushButton::PushButton(uint8_t pin, uint8_t options){
+                                                    ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/src/PushButton.h:13:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/src/PushButton/PushButton.cpp:8:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:14:3: note: candidate: Button::Button(uint8_t)
+   Button(uint8_t pin);
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:14:3: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:11:7: note: candidate: constexpr Button::Button(const Button&amp;)
+ class Button
+       ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:11:7: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:11:7: note: candidate: constexpr Button::Button(Button&amp;&amp;)
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:11:7: note:   candidate expects 1 argument, 0 provided
+Multiple libraries were found for &#34;Button.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/OneSystemLibrary
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NanoPlayBoard
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hardware_Buttons
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/evive
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ViraLink-MQTT-Client
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Easyuino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button-Arduino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ezButton
+</pre>
+
+					
+					<h4>examples/BasicPushButton</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/BasicPushButton/BasicPushButton.ino:6:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:24:3: error: &#39;EventType&#39; does not name a type
+   EventType _type;
+   ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:33:3: error: &#39;ButtonOnEventCallback&#39; does not name a type; did you mean &#39;ButtonEventCallback&#39;?
+   ButtonOnEventCallback _callback;
+   ^~~~~~~~~~~~~~~~~~~~~
+   ButtonEventCallback
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:34:3: error: &#39;ButtonOnEventRepeatCallback&#39; does not name a type; did you mean &#39;ButtonEventCallback&#39;?
+   ButtonOnEventRepeatCallback _callback_repeating;
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ButtonEventCallback
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:42:3: error: &#39;EventType&#39; does not name a type
+   EventType getType();
+   ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:44:16: error: &#39;EventType&#39; has not been declared
+   void setType(EventType);
+                ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:48:20: error: &#39;ButtonOnEventCallback&#39; has not been declared
+   void setCallback(ButtonOnEventCallback);
+                    ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:49:29: error: &#39;ButtonOnEventRepeatCallback&#39; has not been declared
+   void setRepeatingCallback(ButtonOnEventRepeatCallback);
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/BasicPushButton/BasicPushButton.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/BasicPushButton/BasicPushButton.ino:22:15: error: &#39;class PushButton&#39; has no member named &#39;onPress&#39;
+        button.onPress(onButtonPressed);
+               ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/BasicPushButton/BasicPushButton.ino:24:16: error: &#39;class PushButton&#39; has no member named &#39;onHoldRepeat&#39;
+         button.onHoldRepeat(1000, 500, onButtonHeld);
+                ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/BasicPushButton/BasicPushButton.ino:26:16: error: &#39;class PushButton&#39; has no member named &#39;onRelease&#39;; did you mean &#39;released&#39;?
+         button.onRelease(onButtonReleased);
+                ^~~~~~~~~
+                released
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/BasicPushButton/BasicPushButton.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/BasicPushButton/BasicPushButton.ino:31:9: error: &#39;class PushButton&#39; has no member named &#39;update&#39;; did you mean &#39;_state&#39;?
+  button.update();
+         ^~~~~~
+         _state
+Multiple libraries were found for &#34;Button.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Easyuino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hardware_Buttons
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/evive
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button-Arduino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ezButton
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NanoPlayBoard
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ViraLink-MQTT-Client
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/OneSystemLibrary
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons
+</pre>
+					
+					<h4>examples/MultipleButtons</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:6:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:24:3: error: &#39;EventType&#39; does not name a type
+   EventType _type;
+   ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:33:3: error: &#39;ButtonOnEventCallback&#39; does not name a type; did you mean &#39;ButtonEventCallback&#39;?
+   ButtonOnEventCallback _callback;
+   ^~~~~~~~~~~~~~~~~~~~~
+   ButtonEventCallback
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:34:3: error: &#39;ButtonOnEventRepeatCallback&#39; does not name a type; did you mean &#39;ButtonEventCallback&#39;?
+   ButtonOnEventRepeatCallback _callback_repeating;
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ButtonEventCallback
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:42:3: error: &#39;EventType&#39; does not name a type
+   EventType getType();
+   ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:44:16: error: &#39;EventType&#39; has not been declared
+   void setType(EventType);
+                ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:48:20: error: &#39;ButtonOnEventCallback&#39; has not been declared
+   void setCallback(ButtonOnEventCallback);
+                    ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:49:29: error: &#39;ButtonOnEventRepeatCallback&#39; has not been declared
+   void setRepeatingCallback(ButtonOnEventRepeatCallback);
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:24:16: error: &#39;class PushButton&#39; has no member named &#39;onPress&#39;
+         button.onPress(onButtonPressed);
+                ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:25:17: error: &#39;class PushButton&#39; has no member named &#39;onPress&#39;
+         button2.onPress(onButtonPressed);
+                 ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:26:17: error: &#39;class PushButton&#39; has no member named &#39;onPress&#39;
+         button3.onPress(onButtonPressed);
+                 ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:29:16: error: &#39;class PushButton&#39; has no member named &#39;onHoldRepeat&#39;
+         button.onHoldRepeat(1000, 500, onButtonHeld);
+                ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:31:16: error: &#39;class PushButton&#39; has no member named &#39;onRelease&#39;; did you mean &#39;released&#39;?
+         button.onRelease(onButtonReleased);
+                ^~~~~~~~~
+                released
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:32:17: error: &#39;class PushButton&#39; has no member named &#39;onRelease&#39;; did you mean &#39;released&#39;?
+         button2.onRelease(onButtonReleased);
+                 ^~~~~~~~~
+                 released
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:33:17: error: &#39;class PushButton&#39; has no member named &#39;onRelease&#39;; did you mean &#39;released&#39;?
+         button3.onRelease(onButtonReleased);
+                 ^~~~~~~~~
+                 released
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:40:16: error: &#39;class PushButton&#39; has no member named &#39;update&#39;; did you mean &#39;_state&#39;?
+         button.update();
+                ^~~~~~
+                _state
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:41:17: error: &#39;class PushButton&#39; has no member named &#39;update&#39;; did you mean &#39;_state&#39;?
+         button2.update();
+                 ^~~~~~
+                 _state
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:42:17: error: &#39;class PushButton&#39; has no member named &#39;update&#39;; did you mean &#39;_state&#39;?
+         button3.update();
+                 ^~~~~~
+                 _state
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino: In function &#39;void onButtonPressed(Button&amp;)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:56:16: error: &#39;class Button&#39; has no member named &#39;is&#39;
+         if(btn.is(button)){
+                ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:58:24: error: &#39;class Button&#39; has no member named &#39;is&#39;
+         } else if (btn.is(button2)){
+                        ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:60:24: error: &#39;class Button&#39; has no member named &#39;is&#39;
+         } else if (btn.is(button3)){
+                        ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino: In function &#39;void onButtonHeld(Button&amp;, uint16_t, uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:80:20: error: &#39;class PushButton&#39; has no member named &#39;isPressed&#39;; did you mean &#39;pressed&#39;?
+         if(button2.isPressed()){
+                    ^~~~~~~~~
+                    pressed
+Multiple libraries were found for &#34;Button.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ezButton
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Easyuino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/OneSystemLibrary
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button-Arduino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/evive
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hardware_Buttons
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NanoPlayBoard
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ViraLink-MQTT-Client
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/src/PushButton/PushButton.cpp: In constructor &#39;PushButton::PushButton(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/src/PushButton/PushButton.cpp:10:35: error: no matching function for call to &#39;Button::Button()&#39;
+ PushButton::PushButton(uint8_t pin){
+                                   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/src/PushButton.h:13:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/src/PushButton/PushButton.cpp:8:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:14:3: note: candidate: Button::Button(uint8_t)
+   Button(uint8_t pin);
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:14:3: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:11:7: note: candidate: constexpr Button::Button(const Button&amp;)
+ class Button
+       ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:11:7: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:11:7: note: candidate: constexpr Button::Button(Button&amp;&amp;)
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:11:7: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/src/PushButton/PushButton.cpp: In constructor &#39;PushButton::PushButton(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/src/PushButton/PushButton.cpp:15:52: error: no matching function for call to &#39;Button::Button()&#39;
+ PushButton::PushButton(uint8_t pin, uint8_t options){
+                                                    ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/src/PushButton.h:13:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/src/PushButton/PushButton.cpp:8:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:14:3: note: candidate: Button::Button(uint8_t)
+   Button(uint8_t pin);
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:14:3: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:11:7: note: candidate: constexpr Button::Button(const Button&amp;)
+ class Button
+       ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:11:7: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:11:7: note: candidate: constexpr Button::Button(Button&amp;&amp;)
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:11:7: note:   candidate expects 1 argument, 0 provided
+Multiple libraries were found for &#34;Button.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NanoPlayBoard
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ezButton
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ViraLink-MQTT-Client
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/OneSystemLibrary
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Easyuino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button-Arduino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hardware_Buttons
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/evive
+</pre>
+
+					
+					<h4>examples/BasicPushButton</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/BasicPushButton/BasicPushButton.ino:6:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:24:3: error: &#39;EventType&#39; does not name a type; did you mean &#39;IRQn_Type&#39;?
+   EventType _type;
+   ^~~~~~~~~
+   IRQn_Type
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:33:3: error: &#39;ButtonOnEventCallback&#39; does not name a type; did you mean &#39;ButtonEventCallback&#39;?
+   ButtonOnEventCallback _callback;
+   ^~~~~~~~~~~~~~~~~~~~~
+   ButtonEventCallback
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:34:3: error: &#39;ButtonOnEventRepeatCallback&#39; does not name a type; did you mean &#39;ButtonEventCallback&#39;?
+   ButtonOnEventRepeatCallback _callback_repeating;
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ButtonEventCallback
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:42:3: error: &#39;EventType&#39; does not name a type; did you mean &#39;IRQn_Type&#39;?
+   EventType getType();
+   ^~~~~~~~~
+   IRQn_Type
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:44:16: error: &#39;EventType&#39; has not been declared
+   void setType(EventType);
+                ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:48:20: error: &#39;ButtonOnEventCallback&#39; has not been declared
+   void setCallback(ButtonOnEventCallback);
+                    ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:49:29: error: &#39;ButtonOnEventRepeatCallback&#39; has not been declared
+   void setRepeatingCallback(ButtonOnEventRepeatCallback);
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/BasicPushButton/BasicPushButton.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/BasicPushButton/BasicPushButton.ino:22:15: error: &#39;class PushButton&#39; has no member named &#39;onPress&#39;
+        button.onPress(onButtonPressed);
+               ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/BasicPushButton/BasicPushButton.ino:24:16: error: &#39;class PushButton&#39; has no member named &#39;onHoldRepeat&#39;
+         button.onHoldRepeat(1000, 500, onButtonHeld);
+                ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/BasicPushButton/BasicPushButton.ino:26:16: error: &#39;class PushButton&#39; has no member named &#39;onRelease&#39;; did you mean &#39;released&#39;?
+         button.onRelease(onButtonReleased);
+                ^~~~~~~~~
+                released
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/BasicPushButton/BasicPushButton.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/BasicPushButton/BasicPushButton.ino:31:9: error: &#39;class PushButton&#39; has no member named &#39;update&#39;; did you mean &#39;_state&#39;?
+  button.update();
+         ^~~~~~
+         _state
+Multiple libraries were found for &#34;Button.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NanoPlayBoard
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/OneSystemLibrary
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ezButton
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button-Arduino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/evive
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Easyuino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hardware_Buttons
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ViraLink-MQTT-Client
+</pre>
+					
+					<h4>examples/MultipleButtons</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:6:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:24:3: error: &#39;EventType&#39; does not name a type; did you mean &#39;IRQn_Type&#39;?
+   EventType _type;
+   ^~~~~~~~~
+   IRQn_Type
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:33:3: error: &#39;ButtonOnEventCallback&#39; does not name a type; did you mean &#39;ButtonEventCallback&#39;?
+   ButtonOnEventCallback _callback;
+   ^~~~~~~~~~~~~~~~~~~~~
+   ButtonEventCallback
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:34:3: error: &#39;ButtonOnEventRepeatCallback&#39; does not name a type; did you mean &#39;ButtonEventCallback&#39;?
+   ButtonOnEventRepeatCallback _callback_repeating;
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ButtonEventCallback
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:42:3: error: &#39;EventType&#39; does not name a type; did you mean &#39;IRQn_Type&#39;?
+   EventType getType();
+   ^~~~~~~~~
+   IRQn_Type
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:44:16: error: &#39;EventType&#39; has not been declared
+   void setType(EventType);
+                ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:48:20: error: &#39;ButtonOnEventCallback&#39; has not been declared
+   void setCallback(ButtonOnEventCallback);
+                    ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:49:29: error: &#39;ButtonOnEventRepeatCallback&#39; has not been declared
+   void setRepeatingCallback(ButtonOnEventRepeatCallback);
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:24:16: error: &#39;class PushButton&#39; has no member named &#39;onPress&#39;
+         button.onPress(onButtonPressed);
+                ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:25:17: error: &#39;class PushButton&#39; has no member named &#39;onPress&#39;
+         button2.onPress(onButtonPressed);
+                 ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:26:17: error: &#39;class PushButton&#39; has no member named &#39;onPress&#39;
+         button3.onPress(onButtonPressed);
+                 ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:29:16: error: &#39;class PushButton&#39; has no member named &#39;onHoldRepeat&#39;
+         button.onHoldRepeat(1000, 500, onButtonHeld);
+                ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:31:16: error: &#39;class PushButton&#39; has no member named &#39;onRelease&#39;; did you mean &#39;released&#39;?
+         button.onRelease(onButtonReleased);
+                ^~~~~~~~~
+                released
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:32:17: error: &#39;class PushButton&#39; has no member named &#39;onRelease&#39;; did you mean &#39;released&#39;?
+         button2.onRelease(onButtonReleased);
+                 ^~~~~~~~~
+                 released
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:33:17: error: &#39;class PushButton&#39; has no member named &#39;onRelease&#39;; did you mean &#39;released&#39;?
+         button3.onRelease(onButtonReleased);
+                 ^~~~~~~~~
+                 released
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:40:16: error: &#39;class PushButton&#39; has no member named &#39;update&#39;; did you mean &#39;_state&#39;?
+         button.update();
+                ^~~~~~
+                _state
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:41:17: error: &#39;class PushButton&#39; has no member named &#39;update&#39;; did you mean &#39;_state&#39;?
+         button2.update();
+                 ^~~~~~
+                 _state
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:42:17: error: &#39;class PushButton&#39; has no member named &#39;update&#39;; did you mean &#39;_state&#39;?
+         button3.update();
+                 ^~~~~~
+                 _state
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino: In function &#39;void onButtonPressed(Button&amp;)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:56:16: error: &#39;class Button&#39; has no member named &#39;is&#39;
+         if(btn.is(button)){
+                ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:58:24: error: &#39;class Button&#39; has no member named &#39;is&#39;
+         } else if (btn.is(button2)){
+                        ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:60:24: error: &#39;class Button&#39; has no member named &#39;is&#39;
+         } else if (btn.is(button3)){
+                        ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino: In function &#39;void onButtonHeld(Button&amp;, uint16_t, uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:80:20: error: &#39;class PushButton&#39; has no member named &#39;isPressed&#39;; did you mean &#39;pressed&#39;?
+         if(button2.isPressed()){
+                    ^~~~~~~~~
+                    pressed
+Multiple libraries were found for &#34;Button.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button-Arduino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/OneSystemLibrary
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ezButton
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Easyuino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NanoPlayBoard
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hardware_Buttons
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/evive
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ViraLink-MQTT-Client
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/src/PushButton/PushButton.cpp: In constructor &#39;PushButton::PushButton(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/src/PushButton/PushButton.cpp:10:35: error: no matching function for call to &#39;Button::Button()&#39;
+ PushButton::PushButton(uint8_t pin){
+                                   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/src/PushButton.h:13:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/src/PushButton/PushButton.cpp:8:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:14:3: note: candidate: Button::Button(uint8_t)
+   Button(uint8_t pin);
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:14:3: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:11:7: note: candidate: constexpr Button::Button(const Button&amp;)
+ class Button
+       ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:11:7: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:11:7: note: candidate: constexpr Button::Button(Button&amp;&amp;)
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:11:7: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/src/PushButton/PushButton.cpp: In constructor &#39;PushButton::PushButton(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/src/PushButton/PushButton.cpp:15:52: error: no matching function for call to &#39;Button::Button()&#39;
+ PushButton::PushButton(uint8_t pin, uint8_t options){
+                                                    ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/src/PushButton.h:13:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/src/PushButton/PushButton.cpp:8:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:14:3: note: candidate: Button::Button(uint8_t)
+   Button(uint8_t pin);
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:14:3: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:11:7: note: candidate: constexpr Button::Button(const Button&amp;)
+ class Button
+       ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:11:7: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:11:7: note: candidate: constexpr Button::Button(Button&amp;&amp;)
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:11:7: note:   candidate expects 1 argument, 0 provided
+Multiple libraries were found for &#34;Button.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ViraLink-MQTT-Client
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/evive
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NanoPlayBoard
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ezButton
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hardware_Buttons
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Easyuino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/OneSystemLibrary
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button-Arduino
+</pre>
+
+					
+					<h4>examples/BasicPushButton</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/BasicPushButton/BasicPushButton.ino:6:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:24:3: error: &#39;EventType&#39; does not name a type
+   EventType _type;
+   ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:33:3: error: &#39;ButtonOnEventCallback&#39; does not name a type; did you mean &#39;ButtonEventCallback&#39;?
+   ButtonOnEventCallback _callback;
+   ^~~~~~~~~~~~~~~~~~~~~
+   ButtonEventCallback
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:34:3: error: &#39;ButtonOnEventRepeatCallback&#39; does not name a type; did you mean &#39;ButtonEventCallback&#39;?
+   ButtonOnEventRepeatCallback _callback_repeating;
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ButtonEventCallback
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:42:3: error: &#39;EventType&#39; does not name a type
+   EventType getType();
+   ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:44:16: error: &#39;EventType&#39; has not been declared
+   void setType(EventType);
+                ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:48:20: error: &#39;ButtonOnEventCallback&#39; has not been declared
+   void setCallback(ButtonOnEventCallback);
+                    ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:49:29: error: &#39;ButtonOnEventRepeatCallback&#39; has not been declared
+   void setRepeatingCallback(ButtonOnEventRepeatCallback);
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/BasicPushButton/BasicPushButton.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/BasicPushButton/BasicPushButton.ino:22:15: error: &#39;class PushButton&#39; has no member named &#39;onPress&#39;
+        button.onPress(onButtonPressed);
+               ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/BasicPushButton/BasicPushButton.ino:24:16: error: &#39;class PushButton&#39; has no member named &#39;onHoldRepeat&#39;
+         button.onHoldRepeat(1000, 500, onButtonHeld);
+                ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/BasicPushButton/BasicPushButton.ino:26:16: error: &#39;class PushButton&#39; has no member named &#39;onRelease&#39;; did you mean &#39;released&#39;?
+         button.onRelease(onButtonReleased);
+                ^~~~~~~~~
+                released
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/BasicPushButton/BasicPushButton.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/BasicPushButton/BasicPushButton.ino:31:9: error: &#39;class PushButton&#39; has no member named &#39;update&#39;; did you mean &#39;_state&#39;?
+  button.update();
+         ^~~~~~
+         _state
+Multiple libraries were found for &#34;Button.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hardware_Buttons
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button-Arduino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NanoPlayBoard
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/evive
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Easyuino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ezButton
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/OneSystemLibrary
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ViraLink-MQTT-Client
+</pre>
+					
+					<h4>examples/MultipleButtons</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:6:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:24:3: error: &#39;EventType&#39; does not name a type
+   EventType _type;
+   ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:33:3: error: &#39;ButtonOnEventCallback&#39; does not name a type; did you mean &#39;ButtonEventCallback&#39;?
+   ButtonOnEventCallback _callback;
+   ^~~~~~~~~~~~~~~~~~~~~
+   ButtonEventCallback
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:34:3: error: &#39;ButtonOnEventRepeatCallback&#39; does not name a type; did you mean &#39;ButtonEventCallback&#39;?
+   ButtonOnEventRepeatCallback _callback_repeating;
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ButtonEventCallback
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:42:3: error: &#39;EventType&#39; does not name a type
+   EventType getType();
+   ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:44:16: error: &#39;EventType&#39; has not been declared
+   void setType(EventType);
+                ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:48:20: error: &#39;ButtonOnEventCallback&#39; has not been declared
+   void setCallback(ButtonOnEventCallback);
+                    ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:49:29: error: &#39;ButtonOnEventRepeatCallback&#39; has not been declared
+   void setRepeatingCallback(ButtonOnEventRepeatCallback);
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:24:16: error: &#39;class PushButton&#39; has no member named &#39;onPress&#39;
+         button.onPress(onButtonPressed);
+                ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:25:17: error: &#39;class PushButton&#39; has no member named &#39;onPress&#39;
+         button2.onPress(onButtonPressed);
+                 ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:26:17: error: &#39;class PushButton&#39; has no member named &#39;onPress&#39;
+         button3.onPress(onButtonPressed);
+                 ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:29:16: error: &#39;class PushButton&#39; has no member named &#39;onHoldRepeat&#39;
+         button.onHoldRepeat(1000, 500, onButtonHeld);
+                ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:31:16: error: &#39;class PushButton&#39; has no member named &#39;onRelease&#39;; did you mean &#39;released&#39;?
+         button.onRelease(onButtonReleased);
+                ^~~~~~~~~
+                released
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:32:17: error: &#39;class PushButton&#39; has no member named &#39;onRelease&#39;; did you mean &#39;released&#39;?
+         button2.onRelease(onButtonReleased);
+                 ^~~~~~~~~
+                 released
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:33:17: error: &#39;class PushButton&#39; has no member named &#39;onRelease&#39;; did you mean &#39;released&#39;?
+         button3.onRelease(onButtonReleased);
+                 ^~~~~~~~~
+                 released
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:40:16: error: &#39;class PushButton&#39; has no member named &#39;update&#39;; did you mean &#39;_state&#39;?
+         button.update();
+                ^~~~~~
+                _state
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:41:17: error: &#39;class PushButton&#39; has no member named &#39;update&#39;; did you mean &#39;_state&#39;?
+         button2.update();
+                 ^~~~~~
+                 _state
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:42:17: error: &#39;class PushButton&#39; has no member named &#39;update&#39;; did you mean &#39;_state&#39;?
+         button3.update();
+                 ^~~~~~
+                 _state
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino: In function &#39;void onButtonPressed(Button&amp;)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:56:16: error: &#39;class Button&#39; has no member named &#39;is&#39;
+         if(btn.is(button)){
+                ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:58:24: error: &#39;class Button&#39; has no member named &#39;is&#39;
+         } else if (btn.is(button2)){
+                        ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:60:24: error: &#39;class Button&#39; has no member named &#39;is&#39;
+         } else if (btn.is(button3)){
+                        ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino: In function &#39;void onButtonHeld(Button&amp;, uint16_t, uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:80:20: error: &#39;class PushButton&#39; has no member named &#39;isPressed&#39;; did you mean &#39;pressed&#39;?
+         if(button2.isPressed()){
+                    ^~~~~~~~~
+                    pressed
+Multiple libraries were found for &#34;Button.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NanoPlayBoard
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button-Arduino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/OneSystemLibrary
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Easyuino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ezButton
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/evive
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hardware_Buttons
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ViraLink-MQTT-Client
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/src/PushButton/PushButton.cpp: In constructor &#39;PushButton::PushButton(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/src/PushButton/PushButton.cpp:10:35: error: no matching function for call to &#39;Button::Button()&#39;
+ PushButton::PushButton(uint8_t pin){
+                                   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/src/PushButton.h:13:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/src/PushButton/PushButton.cpp:8:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:14:3: note: candidate: Button::Button(uint8_t)
+   Button(uint8_t pin);
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:14:3: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:11:7: note: candidate: constexpr Button::Button(const Button&amp;)
+ class Button
+       ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:11:7: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:11:7: note: candidate: constexpr Button::Button(Button&amp;&amp;)
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:11:7: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/src/PushButton/PushButton.cpp: In constructor &#39;PushButton::PushButton(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/src/PushButton/PushButton.cpp:15:52: error: no matching function for call to &#39;Button::Button()&#39;
+ PushButton::PushButton(uint8_t pin, uint8_t options){
+                                                    ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/src/PushButton.h:13:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/src/PushButton/PushButton.cpp:8:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:14:3: note: candidate: Button::Button(uint8_t)
+   Button(uint8_t pin);
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:14:3: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:11:7: note: candidate: constexpr Button::Button(const Button&amp;)
+ class Button
+       ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:11:7: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:11:7: note: candidate: constexpr Button::Button(Button&amp;&amp;)
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:11:7: note:   candidate expects 1 argument, 0 provided
+Multiple libraries were found for &#34;Button.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NanoPlayBoard
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ViraLink-MQTT-Client
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Easyuino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/evive
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/OneSystemLibrary
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button-Arduino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hardware_Buttons
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ezButton
+</pre>
+
+					
+					<h4>examples/BasicPushButton</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/BasicPushButton/BasicPushButton.ino:6:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:24:3: error: &#39;EventType&#39; does not name a type; did you mean &#39;EPortType&#39;?
+   EventType _type;
+   ^~~~~~~~~
+   EPortType
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:33:3: error: &#39;ButtonOnEventCallback&#39; does not name a type; did you mean &#39;ButtonEventCallback&#39;?
+   ButtonOnEventCallback _callback;
+   ^~~~~~~~~~~~~~~~~~~~~
+   ButtonEventCallback
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:34:3: error: &#39;ButtonOnEventRepeatCallback&#39; does not name a type; did you mean &#39;ButtonEventCallback&#39;?
+   ButtonOnEventRepeatCallback _callback_repeating;
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ButtonEventCallback
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:42:3: error: &#39;EventType&#39; does not name a type; did you mean &#39;EPortType&#39;?
+   EventType getType();
+   ^~~~~~~~~
+   EPortType
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:44:16: error: &#39;EventType&#39; has not been declared
+   void setType(EventType);
+                ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:48:20: error: &#39;ButtonOnEventCallback&#39; has not been declared
+   void setCallback(ButtonOnEventCallback);
+                    ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:49:29: error: &#39;ButtonOnEventRepeatCallback&#39; has not been declared
+   void setRepeatingCallback(ButtonOnEventRepeatCallback);
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/BasicPushButton/BasicPushButton.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/BasicPushButton/BasicPushButton.ino:22:15: error: &#39;class PushButton&#39; has no member named &#39;onPress&#39;
+        button.onPress(onButtonPressed);
+               ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/BasicPushButton/BasicPushButton.ino:24:16: error: &#39;class PushButton&#39; has no member named &#39;onHoldRepeat&#39;
+         button.onHoldRepeat(1000, 500, onButtonHeld);
+                ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/BasicPushButton/BasicPushButton.ino:26:16: error: &#39;class PushButton&#39; has no member named &#39;onRelease&#39;; did you mean &#39;released&#39;?
+         button.onRelease(onButtonReleased);
+                ^~~~~~~~~
+                released
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/BasicPushButton/BasicPushButton.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/BasicPushButton/BasicPushButton.ino:31:9: error: &#39;class PushButton&#39; has no member named &#39;update&#39;; did you mean &#39;_state&#39;?
+  button.update();
+         ^~~~~~
+         _state
+Multiple libraries were found for &#34;Button.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button-Arduino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Easyuino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/evive
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ezButton
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NanoPlayBoard
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hardware_Buttons
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/OneSystemLibrary
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ViraLink-MQTT-Client
+</pre>
+					
+					<h4>examples/MultipleButtons</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:6:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:24:3: error: &#39;EventType&#39; does not name a type; did you mean &#39;EPortType&#39;?
+   EventType _type;
+   ^~~~~~~~~
+   EPortType
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:33:3: error: &#39;ButtonOnEventCallback&#39; does not name a type; did you mean &#39;ButtonEventCallback&#39;?
+   ButtonOnEventCallback _callback;
+   ^~~~~~~~~~~~~~~~~~~~~
+   ButtonEventCallback
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:34:3: error: &#39;ButtonOnEventRepeatCallback&#39; does not name a type; did you mean &#39;ButtonEventCallback&#39;?
+   ButtonOnEventRepeatCallback _callback_repeating;
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ButtonEventCallback
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:42:3: error: &#39;EventType&#39; does not name a type; did you mean &#39;EPortType&#39;?
+   EventType getType();
+   ^~~~~~~~~
+   EPortType
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:44:16: error: &#39;EventType&#39; has not been declared
+   void setType(EventType);
+                ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:48:20: error: &#39;ButtonOnEventCallback&#39; has not been declared
+   void setCallback(ButtonOnEventCallback);
+                    ^~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:49:29: error: &#39;ButtonOnEventRepeatCallback&#39; has not been declared
+   void setRepeatingCallback(ButtonOnEventRepeatCallback);
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:24:16: error: &#39;class PushButton&#39; has no member named &#39;onPress&#39;
+         button.onPress(onButtonPressed);
+                ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:25:17: error: &#39;class PushButton&#39; has no member named &#39;onPress&#39;
+         button2.onPress(onButtonPressed);
+                 ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:26:17: error: &#39;class PushButton&#39; has no member named &#39;onPress&#39;
+         button3.onPress(onButtonPressed);
+                 ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:29:16: error: &#39;class PushButton&#39; has no member named &#39;onHoldRepeat&#39;
+         button.onHoldRepeat(1000, 500, onButtonHeld);
+                ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:31:16: error: &#39;class PushButton&#39; has no member named &#39;onRelease&#39;; did you mean &#39;released&#39;?
+         button.onRelease(onButtonReleased);
+                ^~~~~~~~~
+                released
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:32:17: error: &#39;class PushButton&#39; has no member named &#39;onRelease&#39;; did you mean &#39;released&#39;?
+         button2.onRelease(onButtonReleased);
+                 ^~~~~~~~~
+                 released
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:33:17: error: &#39;class PushButton&#39; has no member named &#39;onRelease&#39;; did you mean &#39;released&#39;?
+         button3.onRelease(onButtonReleased);
+                 ^~~~~~~~~
+                 released
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:40:16: error: &#39;class PushButton&#39; has no member named &#39;update&#39;; did you mean &#39;_state&#39;?
+         button.update();
+                ^~~~~~
+                _state
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:41:17: error: &#39;class PushButton&#39; has no member named &#39;update&#39;; did you mean &#39;_state&#39;?
+         button2.update();
+                 ^~~~~~
+                 _state
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:42:17: error: &#39;class PushButton&#39; has no member named &#39;update&#39;; did you mean &#39;_state&#39;?
+         button3.update();
+                 ^~~~~~
+                 _state
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino: In function &#39;void onButtonPressed(Button&amp;)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:56:16: error: &#39;class Button&#39; has no member named &#39;is&#39;
+         if(btn.is(button)){
+                ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:58:24: error: &#39;class Button&#39; has no member named &#39;is&#39;
+         } else if (btn.is(button2)){
+                        ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:60:24: error: &#39;class Button&#39; has no member named &#39;is&#39;
+         } else if (btn.is(button3)){
+                        ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino: In function &#39;void onButtonHeld(Button&amp;, uint16_t, uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:80:20: error: &#39;class PushButton&#39; has no member named &#39;isPressed&#39;; did you mean &#39;pressed&#39;?
+         if(button2.isPressed()){
+                    ^~~~~~~~~
+                    pressed
+Multiple libraries were found for &#34;Button.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/OneSystemLibrary
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button-Arduino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ViraLink-MQTT-Client
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ezButton
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NanoPlayBoard
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hardware_Buttons
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Easyuino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/evive
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/src/PushButton/PushButton.cpp: In constructor &#39;PushButton::PushButton(uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/src/PushButton/PushButton.cpp:10:35: error: no matching function for call to &#39;Button::Button()&#39;
+ PushButton::PushButton(uint8_t pin){
+                                   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/src/PushButton.h:13:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/src/PushButton/PushButton.cpp:8:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:14:3: note: candidate: Button::Button(uint8_t)
+   Button(uint8_t pin);
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:14:3: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:11:7: note: candidate: constexpr Button::Button(const Button&amp;)
+ class Button
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:11:7: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:11:7: note: candidate: constexpr Button::Button(Button&amp;&amp;)
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:11:7: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/src/PushButton/PushButton.cpp: In constructor &#39;PushButton::PushButton(uint8_t, uint8_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/src/PushButton/PushButton.cpp:15:52: error: no matching function for call to &#39;Button::Button()&#39;
+ PushButton::PushButton(uint8_t pin, uint8_t options){
+                                                    ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/src/PushButton.h:13:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/src/PushButton/PushButton.cpp:8:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:14:3: note: candidate: Button::Button(uint8_t)
+   Button(uint8_t pin);
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:14:3: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:11:7: note: candidate: constexpr Button::Button(const Button&amp;)
+ class Button
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:11:7: note:   candidate expects 1 argument, 0 provided
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:11:7: note: candidate: constexpr Button::Button(Button&amp;&amp;)
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button/Button.h:11:7: note:   candidate expects 1 argument, 0 provided
+Multiple libraries were found for &#34;Button.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ezButton
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/evive
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/OneSystemLibrary
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NanoPlayBoard
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button-Arduino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hardware_Buttons
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Easyuino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ViraLink-MQTT-Client
+</pre>
+
+					
+					<h4>examples/BasicPushButton</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/BasicPushButton/BasicPushButton.ino:6:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:24:3: error: &#39;EventType&#39; does not name a type
+   EventType _type;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:33:3: error: &#39;ButtonOnEventCallback&#39; does not name a type
+   ButtonOnEventCallback _callback;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:34:3: error: &#39;ButtonOnEventRepeatCallback&#39; does not name a type
+   ButtonOnEventRepeatCallback _callback_repeating;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:42:3: error: &#39;EventType&#39; does not name a type
+   EventType getType();
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:44:16: error: &#39;EventType&#39; has not been declared
+   void setType(EventType);
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:48:20: error: &#39;ButtonOnEventCallback&#39; has not been declared
+   void setCallback(ButtonOnEventCallback);
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:49:29: error: &#39;ButtonOnEventRepeatCallback&#39; has not been declared
+   void setRepeatingCallback(ButtonOnEventRepeatCallback);
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/BasicPushButton/BasicPushButton.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/BasicPushButton/BasicPushButton.ino:22:15: error: &#39;class PushButton&#39; has no member named &#39;onPress&#39;
+        button.onPress(onButtonPressed);
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/BasicPushButton/BasicPushButton.ino:24:16: error: &#39;class PushButton&#39; has no member named &#39;onHoldRepeat&#39;
+         button.onHoldRepeat(1000, 500, onButtonHeld);
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/BasicPushButton/BasicPushButton.ino:26:16: error: &#39;class PushButton&#39; has no member named &#39;onRelease&#39;
+         button.onRelease(onButtonReleased);
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/BasicPushButton/BasicPushButton.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/BasicPushButton/BasicPushButton.ino:31:9: error: &#39;class PushButton&#39; has no member named &#39;update&#39;
+  button.update();
+         ^
+Multiple libraries were found for &#34;Button.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button-Arduino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ViraLink-MQTT-Client
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/evive
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/OneSystemLibrary
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hardware_Buttons
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ezButton
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Easyuino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NanoPlayBoard
+</pre>
+					
+					<h4>examples/MultipleButtons</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:6:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:24:3: error: &#39;EventType&#39; does not name a type
+   EventType _type;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:33:3: error: &#39;ButtonOnEventCallback&#39; does not name a type
+   ButtonOnEventCallback _callback;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:34:3: error: &#39;ButtonOnEventRepeatCallback&#39; does not name a type
+   ButtonOnEventRepeatCallback _callback_repeating;
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:42:3: error: &#39;EventType&#39; does not name a type
+   EventType getType();
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:44:16: error: &#39;EventType&#39; has not been declared
+   void setType(EventType);
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:48:20: error: &#39;ButtonOnEventCallback&#39; has not been declared
+   void setCallback(ButtonOnEventCallback);
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons/src/ButtonEventCallback.h:49:29: error: &#39;ButtonOnEventRepeatCallback&#39; has not been declared
+   void setRepeatingCallback(ButtonOnEventRepeatCallback);
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:24:16: error: &#39;class PushButton&#39; has no member named &#39;onPress&#39;
+         button.onPress(onButtonPressed);
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:25:17: error: &#39;class PushButton&#39; has no member named &#39;onPress&#39;
+         button2.onPress(onButtonPressed);
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:26:17: error: &#39;class PushButton&#39; has no member named &#39;onPress&#39;
+         button3.onPress(onButtonPressed);
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:29:16: error: &#39;class PushButton&#39; has no member named &#39;onHoldRepeat&#39;
+         button.onHoldRepeat(1000, 500, onButtonHeld);
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:31:16: error: &#39;class PushButton&#39; has no member named &#39;onRelease&#39;
+         button.onRelease(onButtonReleased);
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:32:17: error: &#39;class PushButton&#39; has no member named &#39;onRelease&#39;
+         button2.onRelease(onButtonReleased);
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:33:17: error: &#39;class PushButton&#39; has no member named &#39;onRelease&#39;
+         button3.onRelease(onButtonReleased);
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:40:16: error: &#39;class PushButton&#39; has no member named &#39;update&#39;
+         button.update();
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:41:17: error: &#39;class PushButton&#39; has no member named &#39;update&#39;
+         button2.update();
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:42:17: error: &#39;class PushButton&#39; has no member named &#39;update&#39;
+         button3.update();
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino: In function &#39;void onButtonPressed(Button&amp;)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:56:16: error: &#39;class Button&#39; has no member named &#39;is&#39;
+         if(btn.is(button)){
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:58:24: error: &#39;class Button&#39; has no member named &#39;is&#39;
+         } else if (btn.is(button2)){
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:60:24: error: &#39;class Button&#39; has no member named &#39;is&#39;
+         } else if (btn.is(button3)){
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino: In function &#39;void onButtonHeld(Button&amp;, uint16_t, uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_PushButton/examples/MultipleButtons/MultipleButtons.ino:80:20: error: &#39;class PushButton&#39; has no member named &#39;isPressed&#39;
+         if(button2.isPressed()){
+                    ^
+Multiple libraries were found for &#34;Button.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/NanoPlayBoard
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/evive
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/r89m_Buttons
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/OneSystemLibrary
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Button-Arduino
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Hardware_Buttons
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ViraLink-MQTT-Client
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/AskSinPP
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ezButton
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Easyuino
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

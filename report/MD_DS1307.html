@@ -1,0 +1,811 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>MD_DS1307 - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>MD_DS1307</h2>
+				<p>
+					Version: <b>1.3.4</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/md_ds1307/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>MD_DS1307_LCD_Time</pre></th>
+						
+						<th><pre>MD_DS1307_Test</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+									
+										
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+									
+										
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+										
+									
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 1876 bytes (5%) of program storage space. Maximum is 32256 bytes.
+Global variables use 200 bytes (9%) of dynamic memory, leaving 1848 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+
+					
+					<h4>examples/MD_DS1307_LCD_Time</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 5008 bytes (15%) of program storage space. Maximum is 32256 bytes.
+Global variables use 348 bytes (16%) of dynamic memory, leaving 1700 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+					
+					<h4>examples/MD_DS1307_Test</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 8836 bytes (27%) of program storage space. Maximum is 32256 bytes.
+Global variables use 617 bytes (30%) of dynamic memory, leaving 1431 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 81762 bytes (0%) of program storage space. Maximum is 16777216 bytes.
+Global variables use 44232 bytes (16%) of dynamic memory, leaving 226104 bytes for local variables. Maximum is 270336 bytes.
+</pre>
+
+					
+					<h4>examples/MD_DS1307_LCD_Time</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 83784 bytes (0%) of program storage space. Maximum is 16777216 bytes.
+Global variables use 44272 bytes (16%) of dynamic memory, leaving 226064 bytes for local variables. Maximum is 270336 bytes.
+</pre>
+					
+					<h4>examples/MD_DS1307_Test</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 85404 bytes (0%) of program storage space. Maximum is 16777216 bytes.
+Global variables use 44240 bytes (16%) of dynamic memory, leaving 226096 bytes for local variables. Maximum is 270336 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:677:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /tmp/arduino-sketch-6C7C5AF9E6599DCC252AEB54C91ED410/sketch/test.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/src/MD_DS1307.h:354:18: error: expected &#39;)&#39; before &#39;*&#39; token
+ extern MD_DS1307 RTC;     ///&lt; Library created instance of the RTC class
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/src/MD_DS1307.h:354:18: error: expected &#39;)&#39; before &#39;*&#39; token
+
+</pre>
+
+					
+					<h4>examples/MD_DS1307_LCD_Time</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:677:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /tmp/arduino-sketch-76F9D5FD835F5D043E8E974E30E066BD/sketch/MD_DS1307_LCD_Time.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/src/MD_DS1307.h:354:18: error: expected &#39;)&#39; before &#39;*&#39; token
+ extern MD_DS1307 RTC;     ///&lt; Library created instance of the RTC class
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/src/MD_DS1307.h:354:18: error: expected &#39;)&#39; before &#39;*&#39; token
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_LCD_Time/MD_DS1307_LCD_Time.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_LCD_Time/MD_DS1307_LCD_Time.ino:19:12: error: &#39;RTC_t {aka struct RTC_struct}&#39; has no member named &#39;isRunning&#39;
+   if (!RTC.isRunning())
+            ^~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_LCD_Time/MD_DS1307_LCD_Time.ino:20:9: error: &#39;RTC_t {aka struct RTC_struct}&#39; has no member named &#39;control&#39;
+     RTC.control(DS1307_CLOCK_HALT, DS1307_OFF);
+         ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_LCD_Time/MD_DS1307_LCD_Time.ino: In function &#39;void printTime()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_LCD_Time/MD_DS1307_LCD_Time.ino:41:28: error: &#39;RTC_t {aka struct RTC_struct}&#39; has no member named &#39;dow&#39;
+   lcd.print(dow2String(RTC.dow));
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_LCD_Time/MD_DS1307_LCD_Time.ino:42:17: error: &#39;RTC_t {aka struct RTC_struct}&#39; has no member named &#39;yyyy&#39;
+   lcd.print(RTC.yyyy);
+                 ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_LCD_Time/MD_DS1307_LCD_Time.ino:44:13: error: &#39;RTC_t {aka struct RTC_struct}&#39; has no member named &#39;mm&#39;
+   p2dig(RTC.mm);
+             ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_LCD_Time/MD_DS1307_LCD_Time.ino:46:13: error: &#39;RTC_t {aka struct RTC_struct}&#39; has no member named &#39;dd&#39;
+   p2dig(RTC.dd);
+             ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_LCD_Time/MD_DS1307_LCD_Time.ino:49:13: error: &#39;RTC_t {aka struct RTC_struct}&#39; has no member named &#39;h&#39;
+   p2dig(RTC.h);
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_LCD_Time/MD_DS1307_LCD_Time.ino:51:13: error: &#39;RTC_t {aka struct RTC_struct}&#39; has no member named &#39;m&#39;
+   p2dig(RTC.m);
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_LCD_Time/MD_DS1307_LCD_Time.ino:53:13: error: &#39;RTC_t {aka struct RTC_struct}&#39; has no member named &#39;s&#39;
+   p2dig(RTC.s);
+             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_LCD_Time/MD_DS1307_LCD_Time.ino:54:11: error: &#39;RTC_t {aka struct RTC_struct}&#39; has no member named &#39;status&#39;
+   if (RTC.status(DS1307_12H) == DS1307_ON)
+           ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_LCD_Time/MD_DS1307_LCD_Time.ino:55:19: error: &#39;RTC_t {aka struct RTC_struct}&#39; has no member named &#39;pm&#39;
+     lcd.print(RTC.pm ? &#34; pm&#34; : &#34; am&#34;);
+                   ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_LCD_Time/MD_DS1307_LCD_Time.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_LCD_Time/MD_DS1307_LCD_Time.ino:60:7: error: &#39;RTC_t {aka struct RTC_struct}&#39; has no member named &#39;readTime&#39;
+   RTC.readTime();
+       ^~~~~~~~
+
+</pre>
+					
+					<h4>examples/MD_DS1307_Test</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/io.h:677:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/avr/pgmspace.h:90,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/String.h:31,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/IPAddress.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:30,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /tmp/arduino-sketch-E980EC0B9F314550418C41185626C3E3/sketch/MD_DS1307_Test.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/src/MD_DS1307.h:354:18: error: expected &#39;)&#39; before &#39;*&#39; token
+ extern MD_DS1307 RTC;     ///&lt; Library created instance of the RTC class
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/src/MD_DS1307.h:354:18: error: expected &#39;)&#39; before &#39;*&#39; token
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino: In function &#39;void showStatus()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:147:43: error: &#39;RTC_t {aka struct RTC_struct}&#39; has no member named &#39;status&#39;
+   PRINT(&#34;\nClock Halt:\t&#34;, sts2String(RTC.status(DS1307_CLOCK_HALT)));
+                                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:9:56: note: in definition of macro &#39;PRINT&#39;
+ #define PRINT(s, v) { Serial.print(F(s)); Serial.print(v); }
+                                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:148:32: error: &#39;RTC_t {aka struct RTC_struct}&#39; has no member named &#39;isRunning&#39;
+   PRINT(&#34;\nIs running:\t&#34;, RTC.isRunning());
+                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:9:56: note: in definition of macro &#39;PRINT&#39;
+ #define PRINT(s, v) { Serial.print(F(s)); Serial.print(v); }
+                                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:149:43: error: &#39;RTC_t {aka struct RTC_struct}&#39; has no member named &#39;status&#39;
+   PRINT(&#34;\nSQW Output:\t&#34;, sts2String(RTC.status(DS1307_SQW_RUN)));
+                                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:9:56: note: in definition of macro &#39;PRINT&#39;
+ #define PRINT(s, v) { Serial.print(F(s)); Serial.print(v); }
+                                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:150:46: error: &#39;RTC_t {aka struct RTC_struct}&#39; has no member named &#39;status&#39;
+   PRINT(&#34;\nSQW Type (on):\t&#34;, sts2String(RTC.status(DS1307_SQW_TYPE_ON)));
+                                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:9:56: note: in definition of macro &#39;PRINT&#39;
+ #define PRINT(s, v) { Serial.print(F(s)); Serial.print(v); }
+                                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:151:47: error: &#39;RTC_t {aka struct RTC_struct}&#39; has no member named &#39;status&#39;
+   PRINT(&#34;\nSQW Type (off):\t&#34;, sts2String(RTC.status(DS1307_SQW_TYPE_OFF)));
+                                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:9:56: note: in definition of macro &#39;PRINT&#39;
+ #define PRINT(s, v) { Serial.print(F(s)); Serial.print(v); }
+                                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:152:41: error: &#39;RTC_t {aka struct RTC_struct}&#39; has no member named &#39;status&#39;
+   PRINT(&#34;\n12h mode:\t&#34;, sts2String(RTC.status(DS1307_12H)));
+                                         ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:9:56: note: in definition of macro &#39;PRINT&#39;
+ #define PRINT(s, v) { Serial.print(F(s)); Serial.print(v); }
+                                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino: In function &#39;void printTime()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:157:17: error: &#39;RTC_t {aka struct RTC_struct}&#39; has no member named &#39;yyyy&#39;
+   PRINT(&#34;&#34;, RTC.yyyy);
+                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:9:56: note: in definition of macro &#39;PRINT&#39;
+ #define PRINT(s, v) { Serial.print(F(s)); Serial.print(v); }
+                                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:158:24: error: &#39;RTC_t {aka struct RTC_struct}&#39; has no member named &#39;mm&#39;
+   PRINT(&#34;-&#34;, p2dig(RTC.mm, DEC));
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:9:56: note: in definition of macro &#39;PRINT&#39;
+ #define PRINT(s, v) { Serial.print(F(s)); Serial.print(v); }
+                                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:159:24: error: &#39;RTC_t {aka struct RTC_struct}&#39; has no member named &#39;dd&#39;
+   PRINT(&#34;-&#34;, p2dig(RTC.dd, DEC));
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:9:56: note: in definition of macro &#39;PRINT&#39;
+ #define PRINT(s, v) { Serial.print(F(s)); Serial.print(v); }
+                                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:160:24: error: &#39;RTC_t {aka struct RTC_struct}&#39; has no member named &#39;h&#39;
+   PRINT(&#34; &#34;, p2dig(RTC.h, DEC));
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:9:56: note: in definition of macro &#39;PRINT&#39;
+ #define PRINT(s, v) { Serial.print(F(s)); Serial.print(v); }
+                                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:161:24: error: &#39;RTC_t {aka struct RTC_struct}&#39; has no member named &#39;m&#39;
+   PRINT(&#34;:&#34;, p2dig(RTC.m, DEC));
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:9:56: note: in definition of macro &#39;PRINT&#39;
+ #define PRINT(s, v) { Serial.print(F(s)); Serial.print(v); }
+                                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:162:24: error: &#39;RTC_t {aka struct RTC_struct}&#39; has no member named &#39;s&#39;
+   PRINT(&#34;:&#34;, p2dig(RTC.s, DEC));
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:9:56: note: in definition of macro &#39;PRINT&#39;
+ #define PRINT(s, v) { Serial.print(F(s)); Serial.print(v); }
+                                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:163:11: error: &#39;RTC_t {aka struct RTC_struct}&#39; has no member named &#39;status&#39;
+   if (RTC.status(DS1307_12H) == DS1307_ON)
+           ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:164:20: error: &#39;RTC_t {aka struct RTC_struct}&#39; has no member named &#39;pm&#39;
+     PRINT(&#34; &#34;, RTC.pm ? &#34;pm&#34; : &#34;am&#34;);
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:9:56: note: in definition of macro &#39;PRINT&#39;
+ #define PRINT(s, v) { Serial.print(F(s)); Serial.print(v); }
+                                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:165:29: error: &#39;RTC_t {aka struct RTC_struct}&#39; has no member named &#39;dow&#39;
+   PRINT(&#34; &#34;, dow2String(RTC.dow));
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:9:56: note: in definition of macro &#39;PRINT&#39;
+ #define PRINT(s, v) { Serial.print(F(s)); Serial.print(v); }
+                                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino: In function &#39;void showTime()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:170:7: error: &#39;RTC_t {aka struct RTC_struct}&#39; has no member named &#39;readTime&#39;
+   RTC.readTime();
+       ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino: In function &#39;void showRAM()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/samd21.h:69:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd.h:105,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:38,
+                 from /private/var/folders/47/_57rjy4111jc7dfpgjmcc93w0000gp/T/arduino-sketch-95D5CD28BB18A496CA4862A4AE7687E2/sketch/test.ino.cpp:1:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/samd21g18a.h:487:38: error: expected &#39;)&#39; before &#39;*&#39; token
+ #define RTC               ((Rtc      *)0x40001400UL) /**&lt; \brief (RTC) APB Base Address */
+                                      ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/src/MD_DS1307.h:354:18: note: in expansion of macro &#39;RTC&#39;
+ extern MD_DS1307 RTC;     ///&lt; Library created instance of the RTC class
+                  ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/samd21g18a.h:487:38: error: expected &#39;)&#39; before &#39;*&#39; token
+ #define RTC               ((Rtc      *)0x40001400UL) /**&lt; \brief (RTC) APB Base Address */
+                                      ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/src/MD_DS1307.h:354:18: note: in expansion of macro &#39;RTC&#39;
+ extern MD_DS1307 RTC;     ///&lt; Library created instance of the RTC class
+                  ^~~
+
+</pre>
+
+					
+					<h4>examples/MD_DS1307_LCD_Time</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/samd21.h:69:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd.h:105,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:38,
+                 from /private/var/folders/47/_57rjy4111jc7dfpgjmcc93w0000gp/T/arduino-sketch-045BD9A4CCC847E4401D4ADED835B415/sketch/MD_DS1307_LCD_Time.ino.cpp:1:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/samd21g18a.h:487:38: error: expected &#39;)&#39; before &#39;*&#39; token
+ #define RTC               ((Rtc      *)0x40001400UL) /**&lt; \brief (RTC) APB Base Address */
+                                      ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/src/MD_DS1307.h:354:18: note: in expansion of macro &#39;RTC&#39;
+ extern MD_DS1307 RTC;     ///&lt; Library created instance of the RTC class
+                  ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/samd21g18a.h:487:38: error: expected &#39;)&#39; before &#39;*&#39; token
+ #define RTC               ((Rtc      *)0x40001400UL) /**&lt; \brief (RTC) APB Base Address */
+                                      ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/src/MD_DS1307.h:354:18: note: in expansion of macro &#39;RTC&#39;
+ extern MD_DS1307 RTC;     ///&lt; Library created instance of the RTC class
+                  ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_LCD_Time/MD_DS1307_LCD_Time.ino: In function &#39;void setup()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_LCD_Time/MD_DS1307_LCD_Time.ino:19:12: error: request for member &#39;isRunning&#39; in &#39;(Rtc*)1073746944&#39;, which is of pointer type &#39;Rtc*&#39; (maybe you meant to use &#39;-&gt;&#39; ?)
+   if (!RTC.isRunning())
+            ^~~~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_LCD_Time/MD_DS1307_LCD_Time.ino:20:9: error: request for member &#39;control&#39; in &#39;(Rtc*)1073746944&#39;, which is of pointer type &#39;Rtc*&#39; (maybe you meant to use &#39;-&gt;&#39; ?)
+     RTC.control(DS1307_CLOCK_HALT, DS1307_OFF);
+         ^~~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_LCD_Time/MD_DS1307_LCD_Time.ino: In function &#39;void printTime()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_LCD_Time/MD_DS1307_LCD_Time.ino:41:28: error: request for member &#39;dow&#39; in &#39;(Rtc*)1073746944&#39;, which is of pointer type &#39;Rtc*&#39; (maybe you meant to use &#39;-&gt;&#39; ?)
+   lcd.print(dow2String(RTC.dow));
+                            ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_LCD_Time/MD_DS1307_LCD_Time.ino:42:17: error: request for member &#39;yyyy&#39; in &#39;(Rtc*)1073746944&#39;, which is of pointer type &#39;Rtc*&#39; (maybe you meant to use &#39;-&gt;&#39; ?)
+   lcd.print(RTC.yyyy);
+                 ^~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_LCD_Time/MD_DS1307_LCD_Time.ino:44:13: error: request for member &#39;mm&#39; in &#39;(Rtc*)1073746944&#39;, which is of pointer type &#39;Rtc*&#39; (maybe you meant to use &#39;-&gt;&#39; ?)
+   p2dig(RTC.mm);
+             ^~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_LCD_Time/MD_DS1307_LCD_Time.ino:46:13: error: request for member &#39;dd&#39; in &#39;(Rtc*)1073746944&#39;, which is of pointer type &#39;Rtc*&#39; (maybe you meant to use &#39;-&gt;&#39; ?)
+   p2dig(RTC.dd);
+             ^~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_LCD_Time/MD_DS1307_LCD_Time.ino:49:13: error: request for member &#39;h&#39; in &#39;(Rtc*)1073746944&#39;, which is of pointer type &#39;Rtc*&#39; (maybe you meant to use &#39;-&gt;&#39; ?)
+   p2dig(RTC.h);
+             ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_LCD_Time/MD_DS1307_LCD_Time.ino:51:13: error: request for member &#39;m&#39; in &#39;(Rtc*)1073746944&#39;, which is of pointer type &#39;Rtc*&#39; (maybe you meant to use &#39;-&gt;&#39; ?)
+   p2dig(RTC.m);
+             ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_LCD_Time/MD_DS1307_LCD_Time.ino:53:13: error: request for member &#39;s&#39; in &#39;(Rtc*)1073746944&#39;, which is of pointer type &#39;Rtc*&#39; (maybe you meant to use &#39;-&gt;&#39; ?)
+   p2dig(RTC.s);
+             ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_LCD_Time/MD_DS1307_LCD_Time.ino:54:11: error: request for member &#39;status&#39; in &#39;(Rtc*)1073746944&#39;, which is of pointer type &#39;Rtc*&#39; (maybe you meant to use &#39;-&gt;&#39; ?)
+   if (RTC.status(DS1307_12H) == DS1307_ON)
+           ^~~~~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_LCD_Time/MD_DS1307_LCD_Time.ino:55:19: error: request for member &#39;pm&#39; in &#39;(Rtc*)1073746944&#39;, which is of pointer type &#39;Rtc*&#39; (maybe you meant to use &#39;-&gt;&#39; ?)
+     lcd.print(RTC.pm ? &#34; pm&#34; : &#34; am&#34;);
+                   ^~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_LCD_Time/MD_DS1307_LCD_Time.ino: In function &#39;void loop()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_LCD_Time/MD_DS1307_LCD_Time.ino:60:7: error: request for member &#39;readTime&#39; in &#39;(Rtc*)1073746944&#39;, which is of pointer type &#39;Rtc*&#39; (maybe you meant to use &#39;-&gt;&#39; ?)
+   RTC.readTime();
+       ^~~~~~~~
+
+</pre>
+					
+					<h4>examples/MD_DS1307_Test</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/samd21.h:69:0,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd.h:105,
+                 from /Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/hardware/samd/1.8.12/cores/arduino/Arduino.h:38,
+                 from /private/var/folders/47/_57rjy4111jc7dfpgjmcc93w0000gp/T/arduino-sketch-9A4FA162B095566C0E78FA675A520589/sketch/MD_DS1307_Test.ino.cpp:1:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/samd21g18a.h:487:38: error: expected &#39;)&#39; before &#39;*&#39; token
+ #define RTC               ((Rtc      *)0x40001400UL) /**&lt; \brief (RTC) APB Base Address */
+                                      ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/src/MD_DS1307.h:354:18: note: in expansion of macro &#39;RTC&#39;
+ extern MD_DS1307 RTC;     ///&lt; Library created instance of the RTC class
+                  ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/data/packages/arduino/tools/CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/samd21g18a.h:487:38: error: expected &#39;)&#39; before &#39;*&#39; token
+ #define RTC               ((Rtc      *)0x40001400UL) /**&lt; \brief (RTC) APB Base Address */
+                                      ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/src/MD_DS1307.h:354:18: note: in expansion of macro &#39;RTC&#39;
+ extern MD_DS1307 RTC;     ///&lt; Library created instance of the RTC class
+                  ^~~
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino: In function &#39;void showStatus()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:147:43: error: request for member &#39;status&#39; in &#39;(Rtc*)1073746944&#39;, which is of pointer type &#39;Rtc*&#39; (maybe you meant to use &#39;-&gt;&#39; ?)
+   PRINT(&#34;\nClock Halt:\t&#34;, sts2String(RTC.status(DS1307_CLOCK_HALT)));
+                                           ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:9:56: note: in definition of macro &#39;PRINT&#39;
+ #define PRINT(s, v) { Serial.print(F(s)); Serial.print(v); }
+                                                        ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:148:32: error: request for member &#39;isRunning&#39; in &#39;(Rtc*)1073746944&#39;, which is of pointer type &#39;Rtc*&#39; (maybe you meant to use &#39;-&gt;&#39; ?)
+   PRINT(&#34;\nIs running:\t&#34;, RTC.isRunning());
+                                ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:9:56: note: in definition of macro &#39;PRINT&#39;
+ #define PRINT(s, v) { Serial.print(F(s)); Serial.print(v); }
+                                                        ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:149:43: error: request for member &#39;status&#39; in &#39;(Rtc*)1073746944&#39;, which is of pointer type &#39;Rtc*&#39; (maybe you meant to use &#39;-&gt;&#39; ?)
+   PRINT(&#34;\nSQW Output:\t&#34;, sts2String(RTC.status(DS1307_SQW_RUN)));
+                                           ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:9:56: note: in definition of macro &#39;PRINT&#39;
+ #define PRINT(s, v) { Serial.print(F(s)); Serial.print(v); }
+                                                        ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:150:46: error: request for member &#39;status&#39; in &#39;(Rtc*)1073746944&#39;, which is of pointer type &#39;Rtc*&#39; (maybe you meant to use &#39;-&gt;&#39; ?)
+   PRINT(&#34;\nSQW Type (on):\t&#34;, sts2String(RTC.status(DS1307_SQW_TYPE_ON)));
+                                              ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:9:56: note: in definition of macro &#39;PRINT&#39;
+ #define PRINT(s, v) { Serial.print(F(s)); Serial.print(v); }
+                                                        ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:151:47: error: request for member &#39;status&#39; in &#39;(Rtc*)1073746944&#39;, which is of pointer type &#39;Rtc*&#39; (maybe you meant to use &#39;-&gt;&#39; ?)
+   PRINT(&#34;\nSQW Type (off):\t&#34;, sts2String(RTC.status(DS1307_SQW_TYPE_OFF)));
+                                               ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:9:56: note: in definition of macro &#39;PRINT&#39;
+ #define PRINT(s, v) { Serial.print(F(s)); Serial.print(v); }
+                                                        ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:152:41: error: request for member &#39;status&#39; in &#39;(Rtc*)1073746944&#39;, which is of pointer type &#39;Rtc*&#39; (maybe you meant to use &#39;-&gt;&#39; ?)
+   PRINT(&#34;\n12h mode:\t&#34;, sts2String(RTC.status(DS1307_12H)));
+                                         ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:9:56: note: in definition of macro &#39;PRINT&#39;
+ #define PRINT(s, v) { Serial.print(F(s)); Serial.print(v); }
+                                                        ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino: In function &#39;void printTime()&#39;:
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:157:17: error: request for member &#39;yyyy&#39; in &#39;(Rtc*)1073746944&#39;, which is of pointer type &#39;Rtc*&#39; (maybe you meant to use &#39;-&gt;&#39; ?)
+   PRINT(&#34;&#34;, RTC.yyyy);
+                 ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:9:56: note: in definition of macro &#39;PRINT&#39;
+ #define PRINT(s, v) { Serial.print(F(s)); Serial.print(v); }
+                                                        ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:158:24: error: request for member &#39;mm&#39; in &#39;(Rtc*)1073746944&#39;, which is of pointer type &#39;Rtc*&#39; (maybe you meant to use &#39;-&gt;&#39; ?)
+   PRINT(&#34;-&#34;, p2dig(RTC.mm, DEC));
+                        ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:9:56: note: in definition of macro &#39;PRINT&#39;
+ #define PRINT(s, v) { Serial.print(F(s)); Serial.print(v); }
+                                                        ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:159:24: error: request for member &#39;dd&#39; in &#39;(Rtc*)1073746944&#39;, which is of pointer type &#39;Rtc*&#39; (maybe you meant to use &#39;-&gt;&#39; ?)
+   PRINT(&#34;-&#34;, p2dig(RTC.dd, DEC));
+                        ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:9:56: note: in definition of macro &#39;PRINT&#39;
+ #define PRINT(s, v) { Serial.print(F(s)); Serial.print(v); }
+                                                        ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:160:24: error: request for member &#39;h&#39; in &#39;(Rtc*)1073746944&#39;, which is of pointer type &#39;Rtc*&#39; (maybe you meant to use &#39;-&gt;&#39; ?)
+   PRINT(&#34; &#34;, p2dig(RTC.h, DEC));
+                        ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:9:56: note: in definition of macro &#39;PRINT&#39;
+ #define PRINT(s, v) { Serial.print(F(s)); Serial.print(v); }
+                                                        ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:161:24: error: request for member &#39;m&#39; in &#39;(Rtc*)1073746944&#39;, which is of pointer type &#39;Rtc*&#39; (maybe you meant to use &#39;-&gt;&#39; ?)
+   PRINT(&#34;:&#34;, p2dig(RTC.m, DEC));
+                        ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:9:56: note: in definition of macro &#39;PRINT&#39;
+ #define PRINT(s, v) { Serial.print(F(s)); Serial.print(v); }
+                                                        ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:162:24: error: request for member &#39;s&#39; in &#39;(Rtc*)1073746944&#39;, which is of pointer type &#39;Rtc*&#39; (maybe you meant to use &#39;-&gt;&#39; ?)
+   PRINT(&#34;:&#34;, p2dig(RTC.s, DEC));
+                        ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:9:56: note: in definition of macro &#39;PRINT&#39;
+ #define PRINT(s, v) { Serial.print(F(s)); Serial.print(v); }
+                                                        ^
+/Users/alranel/Documents/git/arduino/arduino-testlib/cli-datadir/user/libraries/MD_DS1307/examples/MD_DS1307_Test/MD_DS1307_Test.ino:163:11: error</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 204014 bytes (15%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 14008 bytes (4%) of dynamic memory, leaving 313672 bytes for local variables. Maximum is 327680 bytes.
+</pre>
+
+					
+					<h4>examples/MD_DS1307_LCD_Time</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 212098 bytes (16%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 14048 bytes (4%) of dynamic memory, leaving 313632 bytes for local variables. Maximum is 327680 bytes.
+</pre>
+					
+					<h4>examples/MD_DS1307_Test</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 218166 bytes (16%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 14168 bytes (4%) of dynamic memory, leaving 313512 bytes for local variables. Maximum is 327680 bytes.
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

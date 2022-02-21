@@ -1,0 +1,812 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>LoRaLayer2 - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>LoRaLayer2</h2>
+				<p>
+					Version: <b>1.0.1</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/loralayer2/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>router_beacon</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">���������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/packetBuffer.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.h:136:5: error: &#39;Layer1Class&#39; does not name a type; did you mean &#39;LL2Class&#39;?
+     Layer1Class *LoRa1;
+     ^~~~~~~~~~~
+     LL2Class
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.h:137:5: error: &#39;Layer1Class&#39; does not name a type; did you mean &#39;LL2Class&#39;?
+     Layer1Class *LoRa2;
+     ^~~~~~~~~~~
+     LL2Class
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/packetBuffer.cpp: In member function &#39;BufferEntry packetBuffer::read()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/packetBuffer.cpp:17:9: error: &#39;memset&#39; was not declared in this scope
+         memset(&amp;entry, 0, sizeof(entry));
+         ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/packetBuffer.cpp:23:9: error: &#39;memcpy&#39; was not declared in this scope
+         memcpy(&amp;entry, &amp;buffer[tail], sizeof(entry));
+         ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/packetBuffer.cpp:25:9: error: &#39;memset&#39; was not declared in this scope
+         memset(&amp;buffer[tail], 0, sizeof(buffer[tail]));
+         ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/packetBuffer.cpp: In member function &#39;int packetBuffer::write(BufferEntry)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/packetBuffer.cpp:37:9: error: &#39;memset&#39; was not declared in this scope
+         memset(&amp;buffer[head], 0, sizeof(buffer[head]));
+         ^~~~~~
+
+</pre>
+
+					
+					<h4>examples/router_beacon</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable"></pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/packetBuffer.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.h:75:26: error: expected &#39;)&#39; before &#39;*&#39; token
+     LL2Class(Layer1Class *lora_1, Layer1Class *lora_2 = NULL);
+                          In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.h:136:5: error: &#39;Layer1Class&#39; does not name a type; did you mean &#39;LL2Class&#39;?
+     Layer1Class *LoRa1;
+     ^~~~~~~~~~~
+     LL2Class
+ass
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.h:137:5: error: &#39;Layer1Class&#39; does not name a type; did you mean &#39;LL2Class&#39;?
+     Layer1Class *LoRa2;
+     ^~~~~~~~~~~
+     LL2Cl/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:9:19: error: expected constructor, destructor, or type conversion before &#39;(&#39; token
+ LL2Class::LL2Class(Layer1Class *lora_1, Layer1Class *lora_2)
+                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:10:18: err/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/packetBuffer.cpp:17:9: note: suggested alternative: &#39;fd_set&#39;
+         memset(&amp;entry, 0, sizeof(entry));
+         ^~~~~~
+         fd_set
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/packetBuffer.cpp:23:9: error: &#39;memcpy&#39; was not declared in this scope
+         memcpy(&amp;entry, &amp;buffer[tail], sizeof(entry));
+         ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/packetBuffer.cpp:23:9: note: suggested alternative: &#39;fmemopen&#39;
+         memcpy(&amp;entry, &amp;buffer[tail], sizeof(entry));
+         ^~~~~~
+         fmemopen
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/packetBuffer.cpp:25:9: error: &#39;memset&#39; was not declared in this scope
+         memset(&amp;buffer[tail], 0, sizeof(buffer[tail]));
+         ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/packetBuffer.cpp:25:9: note: suggested alternative: &#39;fd_set&#39;
+         memset(&amp;buffer[tail], 0, sizeof(buffer[tail])/home/ec2-user/arduino-testlib/cli-/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/packetBuffer.cpp: In member function &#39;int packetBuffer::write(BufferEntry)&#39;:
+/home/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:75:3: note: suggested alternative: &#39;fmemopen&#39;
+   memcpy(datagram.message, str, len);
+   ^~~~~~
+   fmemopen
+/home/ec2-user/a/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/packetBuffer.cpp:37:9: note: suggested alternative: &#39;fd_set&#39;
+         me/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:78:3: note: suggested alternative: &#39;fseek&#39;
+   free(str);
+   ^~~~
+   fseek
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In member function &#39;int LL2Class::writeToBuffer(packetBuffer*, Packet)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:105:5: error: &#39;memcpy&#39; was not declared in this scope
+     memcpy(&amp;entry, &amp;packet, packet.totalLength);
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:105:5: note: suggested alternative: &#39;fmemopen&#39;
+     memcpy(&amp;entry, &amp;packet, packet.totalLength);
+     ^~~~~~
+     fmemopen
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In member function &#39;Packet LL2Class::readFromBuffer(packetBuffer*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:113:5: error: &#39;memcpy&#39; was not declared in this scope
+     memcpy(&amp;packet, &amp;entry.data[0], sizeof(packet));
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:113:5: note: suggested alternative: &#39;fmemopen&#39;
+     memcpy(&amp;packet, &amp;entry.data[0], sizeof(packet));
+     ^~~~~~
+     fmemopen
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In member function &#39;Packet LL2Class::buildPacket(uint8_t, uint8_t*, uint8_t*, uint8_t, uint8_t, Datagram, size_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:208:5: error: &#39;memcpy&#39; was not declared in this scope
+     memcpy(packet.sender, _localAddress, ADDR_LENGTH);
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:208:5: note: suggested alternative: &#39;fmemopen&#39;
+     memcpy(packet.sender, _localAddress, ADDR_LENGTH);
+     ^~~~~~
+     fmemopen
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In member function &#39;Packet LL2Class::buildRoutingPacket()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:238:5: error: &#39;memcpy&#39; was not declared in this scope
+     memcpy(&amp;datagram, &amp;data, dataLength);
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:238:5: note: suggested alternative: &#39;fmemopen&#39;
+     memcpy(&amp;datagram, &amp;data, dataLength);
+     ^~~~~~
+     fmemopen
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In function &#39;double calculateAirtime(double, double, double, double, double, double)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:245:28: error: &#39;pow&#39; was not declared in this scope
+     double timePerSymbol = pow(2, spreadingFactor)/(bandwidth);
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:245:28: note: suggested alternative: &#39;putw&#39;
+     double timePerSymbol = pow(2, spreadingFactor)/(bandwidth);
+                            ^~~
+                            putw
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:246:18: error: &#39;ceil&#39; was not declared in this scope
+     double arg = ceil(((8*length)-(4*spreadingFactor)&#43;28&#43;16-(20*(1-explicitHeader)))/(4*(spreadingFactor-2*lowDR)))*(codingRate);
+                  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:247:33: error: &#39;fmax&#39; was not declared in this scope
+     double symbolsPerPayload=8&#43;(fmax(arg, 0.0));
+                                 ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:247:33: note: suggested alternative: &#39;_Kmax&#39;
+     double symbolsPerPayload=8&#43;(fmax(arg, 0.0));
+                                 ^~~~
+                                 _Kmax
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In member function &#39;int LL2Class::checkNeighborTable(NeighborTableEntry)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:283:12: error: &#39;memcmp&#39; was not declared in this scope
+         if(memcmp(neighbor.address, _neighborTable[i].address, sizeof(neighbor.address)) == 0){
+            ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:283:12: note: suggested alternative: &#39;timercmp&#39;
+         if(memcmp(neighbor.address, _neighborTable[i].address, sizeof(neighbor.address)) == 0){
+            ^~~~~~
+            timercmp
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In member function &#39;int LL2Class::checkRoutingTable(RoutingTableEntry)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:293:12: error: &#39;memcmp&#39; was not declared in this scope
+         if(memcmp(route.destination, localAddress(), sizeof(route.destination)) == 0){
+            ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:293:12: note: suggested alternative: &#39;timercmp&#39;
+         if(memcmp(route.destination, localAddress(), sizeof(route.destination)) == 0){
+            ^~~~~~
+            timercmp
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In member function &#39;int LL2Class::updateNeighborTable(NeighborTableEntry, int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:329:5: error: &#39;memcpy&#39; was not declared in this scope
+     memcpy(&amp;_neighborTable[entry], &amp;neighbor, sizeof(_neighborTable[entry]));
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:329:5: note: suggested alternative: &#39;fmemopen&#39;
+     memcpy(&amp;_neighborTable[entry], &amp;neighbor, sizeof(_neighborTable[entry]));
+     ^~~~~~
+     fmemopen
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In member function &#39;int LL2Class::updateRouteTable(RoutingTableEntry, int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:341:5: error: &#39;memcpy&#39; was not declared in this scope
+     memcpy(&amp;_routeTable[entry], &amp;route, sizeof(_routeTable[entry]));
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:341:5: note: suggested alternative: &#39;fmemopen&#39;
+     memcpy(&amp;_routeTable[entry], &amp;route, sizeof(_routeTable[entry]));
+     ^~~~~~
+     fmemopen
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In member function &#39;int LL2Class::selectRoute(uint8_t*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:354:12: error: &#39;memcmp&#39; was not declared in this scope
+         if(memcmp(destination, _routeTable[i].destination, ADDR_LENGTH) == 0){
+            ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:354:12: note: suggested alternative: &#39;timercmp&#39;
+         if(memcmp(destination, _routeTabl</pre>
+
+					
+					<h4>examples/router_beacon</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable"></pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/packetBuffer.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.h:75:26: error: expected &#39;)&#39; before &#39;*&#39; token
+     LL2Class(Layer1Class *lora_1, Layer1Class *lora_2 = NULL);
+                          In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.h:136:5: error: &#39;Layer1Class&#39; does not name a type; did you mean &#39;LL2Class&#39;?
+     Layer1Class *LoRa1;
+     ^~~~~~~~~~~
+     LL2Class
+ass
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.h:137:5: error: &#39;Layer1Class&#39; does not name a type; did you mean &#39;LL2Class&#39;?
+     Layer1Class *LoRa2;
+     ^~~~~~~~~~~
+     LL2Cl/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:9:19: error: expected constructor, destructor, or type conversion before &#39;(&#39; token
+ LL2Class::LL2Class(Layer1Class *lora_1, Layer1Class *lora_2)
+                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:10:18: error: expected unqualified-id before &#39;,&#39; token
+   : LoRa1{lora_1},
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:11:10: error: expected constructor, destructor, or type conversion before &#39;{&#39; token
+     LoRa2{lora_2},
+          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:11:18: error: expected unqualified-id before &#39;,&#39; toke/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/packetBuffer.cpp: In member function &#39;int packetBuffer::write(BufferEntry)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/packetBuffer.cpp:37:9: error: &#39;mem/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In member function &#39;void LL2Class::console_printf(const char*, ...)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:65:22: error: &#39;malloc&#39; was not declared in this scope
+   char *str = (char*)malloc(255);
+                      ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:75:3: error: &#39;memcpy&#39; was not declared in this scope
+   memcpy(datagram.message, str, len);
+   ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:78:3: error: &#39;free&#39; was not declared in this scope
+   free(str);
+   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:78:3: note: suggested alternative: &#39;fseek&#39;
+   free(str);
+   ^~~~
+   fseek
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In member function &#39;int LL2Class::writeToBuffer(packetBuffer*, Packet)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:105:5: error: &#39;memcpy&#39; was not declared in this scope
+     memcpy(&amp;entry, &amp;packet, packet.totalLength);
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In member function &#39;Packet LL2Class::readFromBuffer(packetBuffer*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:113:5: error: &#39;memcpy&#39; was not declared in this scope
+     memcpy(&amp;packet, &amp;entry.data[0], sizeof(packet));
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In member function &#39;Packet LL2Class::buildPacket(uint8_t, uint8_t*, uint8_t*, uint8_t, uint8_t, Datagram, size_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:208:5: error: &#39;memcpy&#39; was not declared in this scope
+     memcpy(packet.sender, _localAddress, ADDR_LENGTH);
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In member function &#39;Packet LL2Class::buildRoutingPacket()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:238:5: error: &#39;memcpy&#39; was not declared in this scope
+     memcpy(&amp;datagram, &amp;data, dataLength);
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In function &#39;double calculateAirtime(double, double, double, double, double, double)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:245:28: error: &#39;pow&#39; was not declared in this scope
+     double timePerSymbol = pow(2, spreadingFactor)/(bandwidth);
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:246:18: error: &#39;ceil&#39; was not declared in this scope
+     double arg = ceil(((8*length)-(4*spreadingFactor)&#43;28&#43;16-(20*(1-explicitHeader)))/(4*(spreadingFactor-2*lowDR)))*(codingRate);
+                  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:247:33: error: &#39;fmax&#39; was not declared in this scope
+     double symbolsPerPayload=8&#43;(fmax(arg, 0.0));
+                                 ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In member function &#39;int LL2Class::checkNeighborTable(NeighborTableEntry)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:283:12: error: &#39;memcmp&#39; was not declared in this scope
+         if(memcmp(neighbor.address, _neighborTable[i].address, sizeof(neighbor.address)) == 0){
+            ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In member function &#39;int LL2Class::checkRoutingTable(RoutingTableEntry)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:293:12: error: &#39;memcmp&#39; was not declared in this scope
+         if(memcmp(route.destination, localAddress(), sizeof(route.destination)) == 0){
+            ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In member function &#39;int LL2Class::updateNeighborTable(NeighborTableEntry, int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:329:5: error: &#39;memcpy&#39; was not declared in this scope
+     memcpy(&amp;_neighborTable[entry], &amp;neighbor, sizeof(_neighborTable[entry]));
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In member function &#39;int LL2Class::updateRouteTable(RoutingTableEntry, int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:341:5: error: &#39;memcpy&#39; was not declared in this scope
+     memcpy(&amp;_routeTable[entry], &amp;route, sizeof(_routeTable[entry]));
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In member function &#39;int LL2Class::selectRoute(uint8_t*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:354:12: error: &#39;memcmp&#39; was not declared in this scope
+         if(memcmp(destination, _routeTable[i].destination, ADDR_LENGTH) == 0){
+            ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In member function &#39;int LL2Class::parseNeighbor(Packet)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:364:5: error: &#39;memcpy&#39; was not declared in this scope
+     memcpy(neighbor.address, packet.sender, sizeof(neighbor.address));
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In member function &#39;int LL2Class::parseRoutingTable(Packet, int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:391:5: error: &#39;memcpy&#39; was not declared in this scope
+     memcpy(data, &amp;packet.datagram, sizeof(data));
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In member function &#39;void LL2Class::parseForRoutes(Packet)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:420:8: error: &#39;memcmp&#39; was not declared in this scope
+     if(memcmp(packet.receiver, ROUTING, ADDR_LENGTH) == 0){
+        ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:427:8: error: &#39;memcmp&#39; was not declared in this scope
+     if(memcmp(packet.receiver, _localAddress, ADDR_LENGTH) != 0 &amp;&amp;
+        ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:431:7: error: &#39;memcpy&#39; was not declared in this scope
+       memcpy(rcv_route.destination, packet.receiver, ADDR_LENGTH);
+       ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:444:8: error: &#39;memcmp&#39; was not declared in this scope
+     if(memcmp(packet.sender, packet.source, ADDR_LENGTH) != 0){
+        ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:447:7: error: &#39;memcpy&#39; was not declared in this scope
+       memcpy(src_route.destination, packet.source, ADDR_LENGTH);
+       ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:461:8: error: &#39;memcmp&#39; was not declared in this scope
+     if(memcmp(packet.datagram.destination, _localAddress, ADDR_LENGTH) != 0 &amp;&amp;
+        ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:466:7: error: &#39;memcpy&#39; was not declared in this scope
+       memcpy(dst_route.destination, packet.datagram.destination, ADDR_LENGTH);
+       ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In member function &#39;int LL2Class::route(uint8_t, uint8_t*, uint8_t, Datagram, size_t, int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:485:10: error</pre>
+
+					
+					<h4>examples/router_beacon</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable"></pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.h:75:26: error: expected &#39;)&#39; before &#39;*&#39; token
+     LL2Class(Layer1Class *lora_1, Layer1Class *lora_2 = NULL);
+                          ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Los/LoRaLayer2/src/LoRaLayer2.h:136:5: error: &#39;Layer1Class&#39; does not name a type; did you mean &#39;LL2Class&#39;?
+     Layer1Class *LoRa1;
+     ^~~~~~~~~~~
+     LL2Class
+e/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.h:137:5: error: &#39;Layer1Class&#39; does not name a type; did you mean &#39;LL2Class&#39;?
+     Layer1Class *LoRa2;
+     ^~~~~~~~~~~
+     LL2Class
+/hom/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/packetBuffer.cpp: In member function &#39;BufferEntry packetBuffer::read()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/packetBuffer.cpp:17:9: error: &#39;memset&#39; was not declared in this scope
+         memset(&amp;entry, 0, sizeof(entry));
+         ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/packetBuffer.cpp:17:9: note: suggested alternative: &#39;fd_set&#39;
+         memset(&amp;entry, 0, sizeof(entry));
+         ^~~~~~
+         fd_set
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/packetBuffer.cpp:23:9: error: &#39;memcpy&#39; was not declared in this scope
+         memcpy(&amp;entry, &amp;buffer[tail], sizeof(entry));
+         ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/packetBuffer.cpp:23:9: note: suggested alternative: &#39;fmemopen&#39;
+         memcpy(&amp;entry, &amp;buffer[tail], sizeof(entry));
+         ^~~~~~
+         fmemopen
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/packetBuffer.cpp:25:9: error: &#39;memset&#39; was not declared in this scope
+         memset(&amp;buffer[tail], 0, sizeof(buffer[tail]));
+         ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/packetBuffer.cpp:25:9: note: suggested alternative: &#39;fd_set&#39;
+         memset(&amp;buffer[tail], 0, sizeof(buffer[tail]));
+         ^~~~~~
+         fd_set
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/packetBuffer.cpp: In member function &#39;int packetBuffer::write(BufferEntry)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/packetBuffer.cpp:37:9: error: &#39;memset&#39; was not declared in this scope
+         memset(&amp;buffer[head], 0, sizeof(buffer[head]));
+         ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/packetBuffer.cpp:37:9: note: suggested alternative: &#39;fd_set&#39;
+         memset(&amp;buffer[head], 0, sizeof(buffer[head]));
+         ^~~~~~
+         fd_set
+ayer2.cpp:78:3: note: suggested alternative: &#39;fseek&#39;
+   free(str);
+   ^~~~
+   fseek
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In member function &#39;int LL2Class::writeToBuffer(packetBuffer*, Packet)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:105:5: error: &#39;memcpy&#39; was not declared in this scope
+     memcpy(&amp;entry, &amp;packet, packet.totalLength);
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:105:5: note: suggested alternative: &#39;fmemopen&#39;
+     memcpy(&amp;entry, &amp;packet, packet.totalLength);
+     ^~~~~~
+     fmemopen
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In member function &#39;Packet LL2Class::readFromBuffer(packetBuffer*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:113:5: error: &#39;memcpy&#39; was not declared in this scope
+     memcpy(&amp;packet, &amp;entry.data[0], sizeof(packet));
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:113:5: note: suggested alternative: &#39;fmemopen&#39;
+     memcpy(&amp;packet, &amp;entry.data[0], sizeof(packet));
+     ^~~~~~
+     fmemopen
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In member function &#39;Packet LL2Class::buildPacket(uint8_t, uint8_t*, uint8_t*, uint8_t, uint8_t, Datagram, size_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:208:5: error: &#39;memcpy&#39; was not declared in this scope
+     memcpy(packet.sender, _localAddress, ADDR_LENGTH);
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:208:5: note: suggested alternative: &#39;fmemopen&#39;
+     memcpy(packet.sender, _localAddress, ADDR_LENGTH);
+     ^~~~~~
+     fmemopen
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In member function &#39;Packet LL2Class::buildRoutingPacket()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:238:5: error: &#39;memcpy&#39; was not declared in this scope
+     memcpy(&amp;datagram, &amp;data, dataLength);
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:238:5: note: suggested alternative: &#39;fmemopen&#39;
+     memcpy(&amp;datagram, &amp;data, dataLength);
+     ^~~~~~
+     fmemopen
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In function &#39;double calculateAirtime(double, double, double, double, double, double)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:245:28: error: &#39;pow&#39; was not declared in this scope
+     double timePerSymbol = pow(2, spreadingFactor)/(bandwidth);
+                            ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:245:28: note: suggested alternative: &#39;putw&#39;
+     double timePerSymbol = pow(2, spreadingFactor)/(bandwidth);
+                            ^~~
+                            putw
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:246:18: error: &#39;ceil&#39; was not declared in this scope
+     double arg = ceil(((8*length)-(4*spreadingFactor)&#43;28&#43;16-(20*(1-explicitHeader)))/(4*(spreadingFactor-2*lowDR)))*(codingRate);
+                  ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:247:33: error: &#39;fmax&#39; was not declared in this scope
+     double symbolsPerPayload=8&#43;(fmax(arg, 0.0));
+                                 ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:247:33: note: suggested alternative: &#39;_Kmax&#39;
+     double symbolsPerPayload=8&#43;(fmax(arg, 0.0));
+                                 ^~~~
+                                 _Kmax
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In member function &#39;int LL2Class::checkNeighborTable(NeighborTableEntry)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:283:12: error: &#39;memcmp&#39; was not declared in this scope
+         if(memcmp(neighbor.address, _neighborTable[i].address, sizeof(neighbor.address)) == 0){
+            ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:283:12: note: suggested alternative: &#39;timercmp&#39;
+         if(memcmp(neighbor.address, _neighborTable[i].address, sizeof(neighbor.address)) == 0){
+            ^~~~~~
+            timercmp
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In member function &#39;int LL2Class::checkRoutingTable(RoutingTableEntry)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:293:12: error: &#39;memcmp&#39; was not declared in this scope
+         if(memcmp(route.destination, localAddress(), sizeof(route.destination)) == 0){
+            ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:293:12: note: suggested alternative: &#39;timercmp&#39;
+         if(memcmp(route.destination, localAddress(), sizeof(route.destination)) == 0){
+            ^~~~~~
+            timercmp
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In member function &#39;int LL2Class::updateNeighborTable(NeighborTableEntry, int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:329:5: error: &#39;memcpy&#39; was not declared in this scope
+     memcpy(&amp;_neighborTable[entry], &amp;neighbor, sizeof(_neighborTable[entry]));
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:329:5: note: suggested alternative: &#39;fmemopen&#39;
+     memcpy(&amp;_neighborTable[entry], &amp;neighbor, sizeof(_neighborTable[entry]));
+     ^~~~~~
+     fmemopen
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In member function &#39;int LL2Class::updateRouteTable(RoutingTableEntry, int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:341:5: error: &#39;memcpy&#39; was not declared in this scope
+     memcpy(&amp;_routeTable[entry], &amp;route, sizeof(_routeTable[entry]));
+     ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:341:5: note: suggested alternative: &#39;fmemopen&#39;
+     memcpy(&amp;_routeTable[entry], &amp;route, sizeof(_routeTable[entry]));
+     ^~~~~~
+     fmemopen
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In member function &#39;int LL2Class::selectRoute(uint8_t*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:354:12: error: &#39;memcmp&#39; was not declared in this scope
+         if(memcmp(destination, _routeTable[i].destination, ADDR_LENGTH) == 0){
+            ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:354:12: note: suggested alternative: &#39;timercmp&#39;
+         if(memcmp(destination, _routeTabl</pre>
+
+					
+					<h4>examples/router_beacon</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable"></pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/packetBuffer.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.h:75:26: error: expected &#39;)&#39; before &#39;*&#39; token
+     LL2Class(Layer1Class *lora_1, Layer1Class *lora_2 = NULL);
+                          In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.h:136:5: error: &#39;Layer1Class&#39; does not name a type
+     Layer1Class *LoRa1;
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.h:137:5: error: &#39;Layer1Class&#39; does not name a type
+     Layer1Class *LoRa2;
+     ^
+  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/packetBuffer.cpp: In member function &#39;BufferEntry packetBuffer::read()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/packetBuffer.cpp:17:40: error: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:10:18: error: expected unqualified-id/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/packetBuffer.cpp:23:52: error: &#39;memcpy&#39; was not declared in this scope
+         memcpy(&amp;entry, &amp;buffer[tail], sizeof(entry));
+                                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/packetBuffer.cpp:25:54: error: &#39;memset&#39; was not declared in this scope
+         memset(&amp;buffer[tail], 0, sizeof(buffer[tail]));
+                                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/packetBuffer.cpp: In member function &#39;int packetBuffer::write(BufferEntry)&#39;:
+/ho/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In member function &#39;void LL2Class::console_printf(const char*, ...)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:65:32: error: &#39;malloc&#39; was not declared in this scope
+   char *str = (char*)malloc(255);
+                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:75:36: error: &#39;memcpy&#39; was not declared in this scope
+   memcpy(datagram.message, str, len);
+                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:78:11: error: &#39;free&#39; was not declared in this scope
+   free(str);
+           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In member function &#39;int LL2Class::writeToBuffer(packetBuffer*, Packet)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:105:47: error: &#39;memcpy&#39; was not declared in this scope
+     memcpy(&amp;entry, &amp;packet, packet.totalLength);
+                                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In member function &#39;Packet LL2Class::readFromBuffer(packetBuffer*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:113:51: error: &#39;memcpy&#39; was not declared in this scope
+     memcpy(&amp;packet, &amp;entry.data[0], sizeof(packet));
+                                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In member function &#39;Packet LL2Class::buildPacket(uint8_t, uint8_t*, uint8_t*, uint8_t, uint8_t, Datagram, size_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:208:53: error: &#39;memcpy&#39; was not declared in this scope
+     memcpy(packet.sender, _localAddress, ADDR_LENGTH);
+                                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In member function &#39;Packet LL2Class::buildRoutingPacket()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:238:40: error: &#39;memcpy&#39; was not declared in this scope
+     memcpy(&amp;datagram, &amp;data, dataLength);
+                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In function &#39;double calculateAirtime(double, double, double, double, double, double)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:245:50: error: &#39;pow&#39; was not declared in this scope
+     double timePerSymbol = pow(2, spreadingFactor)/(bandwidth);
+                                                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:246:115: error: &#39;ceil&#39; was not declared in this scope
+     double arg = ceil(((8*length)-(4*spreadingFactor)&#43;28&#43;16-(20*(1-explicitHeader)))/(4*(spreadingFactor-2*lowDR)))*(codingRate);
+                                                                                                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:247:46: error: &#39;fmax&#39; was not declared in this scope
+     double symbolsPerPayload=8&#43;(fmax(arg, 0.0));
+                                              ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In member function &#39;int LL2Class::checkNeighborTable(NeighborTableEntry)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:283:88: error: &#39;memcmp&#39; was not declared in this scope
+         if(memcmp(neighbor.address, _neighborTable[i].address, sizeof(neighbor.address)) == 0){
+                                                                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In member function &#39;int LL2Class::checkRoutingTable(RoutingTableEntry)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:293:79: error: &#39;memcmp&#39; was not declared in this scope
+         if(memcmp(route.destination, localAddress(), sizeof(route.destination)) == 0){
+                                                                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In member function &#39;int LL2Class::updateNeighborTable(NeighborTableEntry, int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:329:76: error: &#39;memcpy&#39; was not declared in this scope
+     memcpy(&amp;_neighborTable[entry], &amp;neighbor, sizeof(_neighborTable[entry]));
+                                                                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In member function &#39;int LL2Class::updateRouteTable(RoutingTableEntry, int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:341:67: error: &#39;memcpy&#39; was not declared in this scope
+     memcpy(&amp;_routeTable[entry], &amp;route, sizeof(_routeTable[entry]));
+                                                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In member function &#39;int LL2Class::selectRoute(uint8_t*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:354:71: error: &#39;memcmp&#39; was not declared in this scope
+         if(memcmp(destination, _routeTable[i].destination, ADDR_LENGTH) == 0){
+                                                                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In member function &#39;int LL2Class::parseNeighbor(Packet)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:364:69: error: &#39;memcpy&#39; was not declared in this scope
+     memcpy(neighbor.address, packet.sender, sizeof(neighbor.address));
+                                                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In member function &#39;int LL2Class::parseRoutingTable(Packet, int)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:391:48: error: &#39;memcpy&#39; was not declared in this scope
+     memcpy(data, &amp;packet.datagram, sizeof(data));
+                                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp: In member function &#39;void LL2Class::parseForRoutes(Packet)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:420:52: error: &#39;memcmp&#39; was not declared in this scope
+     if(memcmp(packet.receiver, ROUTING, ADDR_LENGTH) == 0){
+                                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:427:58: error: &#39;memcmp&#39; was not declared in this scope
+     if(memcmp(packet.receiver, _localAddress, ADDR_LENGTH) != 0 &amp;&amp; 
+                                                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:431:65: error: &#39;memcpy&#39; was not declared in this scope
+       memcpy(rcv_route.destination, packet.receiver, ADDR_LENGTH);
+                                                                 ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:444:56: error: &#39;memcmp&#39; was not declared in this scope
+     if(memcmp(packet.sender, packet.source, ADDR_LENGTH) != 0){
+                                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LoRaLayer2/src/LoRaLayer2.cpp:447:63: error: &#39;memcpy&#39; was not declared in this scope
+       memcpy(src_route.destination, packet.source, ADDR_LENGTH);
+                                                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user</pre>
+
+					
+					<h4>examples/router_beacon</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable"></pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

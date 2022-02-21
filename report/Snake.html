@@ -1,0 +1,443 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>Snake - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>Snake</h2>
+				<p>
+					Version: <b>1.0.1</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/snake/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>SnakeBasic</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 466 bytes (1%) of program storage space. Maximum is 32256 bytes.
+Global variables use 9 bytes (0%) of dynamic memory, leaving 2039 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+
+					
+					<h4>examples/SnakeBasic</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 6104 bytes (18%) of program storage space. Maximum is 32256 bytes.
+Global variables use 369 bytes (18%) of dynamic memory, leaving 1679 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:76:0,
+                 from /tmp/arduino-sketch-878A810EE34F2F481AF58F6C793CE2F5/sketch/test.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/variants/NANO_RP2040_CONNECT/pins_arduino.h:57:23: error: expected identifier before &#39;(&#39; token
+ #define PIN_SPI_MOSI  (11u)
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/variants/NANO_RP2040_CONNECT/pins_arduino.h:91:40: note: in expansion of macro &#39;PIN_SPI_MOSI&#39;
+ #define SPI_MOSI  (digitalPinToPinName(PIN_SPI_MOSI))
+                                        ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LedControl/src/LedControl.h:71:13: note: in expansion of macro &#39;SPI_MOSI&#39;
+         int SPI_MOSI;
+             ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/variants/NANO_RP2040_CONNECT/pins_arduino.h:57:24: error: expected &#39;)&#39; before numeric constant
+ #define PIN_SPI_MOSI  (11u)
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/variants/NANO_RP2040_CONNECT/pins_arduino.h:91:40: note: in expansion of macro &#39;PIN_SPI_MOSI&#39;
+ #define SPI_MOSI  (digitalPinToPinName(PIN_SPI_MOSI))
+                                        ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LedControl/src/LedControl.h:71:13: note: in expansion of macro &#39;SPI_MOSI&#39;
+         int SPI_MOSI;
+             ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/variants/NANO_RP2040_CONNECT/pins_arduino.h:57:24: error: expected &#39;)&#39; before numeric constant
+ #define PIN_SPI_MOSI  (11u)
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/variants/NANO_RP2040_CONNECT/pins_arduino.h:91:40: note: in expansion of macro &#39;PIN_SPI_MOSI&#39;
+ #define SPI_MOSI  (digitalPinToPinName(PIN_SPI_MOSI))
+                                        ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LedControl/src/LedControl.h:71:13: note: in expansion of macro &#39;SPI_MOSI&#39;
+         int SPI_MOSI;
+             ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/variants/NANO_RP2040_CONNECT/pins_arduino.h:57:24: error: expected &#39;)&#39; before numeric constant
+ #define PIN_SPI_MOSI  (11u)
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/variants/NANO_RP2040_CONNECT/pins_arduino.h:91:40: note: in expansion of macro &#39;PIN_SPI_MOSI&#39;
+ #define SPI_MOSI  (digitalPinToPinName(PIN_SPI_MOSI))
+                                        ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LedControl/src/LedControl.h:71:13: note: in expansion of macro &#39;SPI_MOSI&#39;
+         int SPI_MOSI;
+             ^~~~~~~~
+Multiple libraries were found for &#34;Snake.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Snake
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sanke
+</pre>
+
+					
+					<h4>examples/SnakeBasic</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/cores/arduino/Arduino.h:76:0,
+                 from /tmp/arduino-sketch-BE9FC28EF1F351CA2DCB208AB0608CF6/sketch/SnakeBasic.ino.cpp:1:
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/variants/NANO_RP2040_CONNECT/pins_arduino.h:57:23: error: expected identifier before &#39;(&#39; token
+ #define PIN_SPI_MOSI  (11u)
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/variants/NANO_RP2040_CONNECT/pins_arduino.h:91:40: note: in expansion of macro &#39;PIN_SPI_MOSI&#39;
+ #define SPI_MOSI  (digitalPinToPinName(PIN_SPI_MOSI))
+                                        ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LedControl/src/LedControl.h:71:13: note: in expansion of macro &#39;SPI_MOSI&#39;
+         int SPI_MOSI;
+             ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/variants/NANO_RP2040_CONNECT/pins_arduino.h:57:24: error: expected &#39;)&#39; before numeric constant
+ #define PIN_SPI_MOSI  (11u)
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/variants/NANO_RP2040_CONNECT/pins_arduino.h:91:40: note: in expansion of macro &#39;PIN_SPI_MOSI&#39;
+ #define SPI_MOSI  (digitalPinToPinName(PIN_SPI_MOSI))
+                                        ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LedControl/src/LedControl.h:71:13: note: in expansion of macro &#39;SPI_MOSI&#39;
+         int SPI_MOSI;
+             ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/variants/NANO_RP2040_CONNECT/pins_arduino.h:57:24: error: expected &#39;)&#39; before numeric constant
+ #define PIN_SPI_MOSI  (11u)
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/variants/NANO_RP2040_CONNECT/pins_arduino.h:91:40: note: in expansion of macro &#39;PIN_SPI_MOSI&#39;
+ #define SPI_MOSI  (digitalPinToPinName(PIN_SPI_MOSI))
+                                        ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LedControl/src/LedControl.h:71:13: note: in expansion of macro &#39;SPI_MOSI&#39;
+         int SPI_MOSI;
+             ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/variants/NANO_RP2040_CONNECT/pins_arduino.h:57:24: error: expected &#39;)&#39; before numeric constant
+ #define PIN_SPI_MOSI  (11u)
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/mbed_nano/2.7.2/variants/NANO_RP2040_CONNECT/pins_arduino.h:91:40: note: in expansion of macro &#39;PIN_SPI_MOSI&#39;
+ #define SPI_MOSI  (digitalPinToPinName(PIN_SPI_MOSI))
+                                        ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LedControl/src/LedControl.h:71:13: note: in expansion of macro &#39;SPI_MOSI&#39;
+         int SPI_MOSI;
+             ^~~~~~~~
+Multiple libraries were found for &#34;Snake.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Snake
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sanke
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 802 bytes (1%) of program storage space. Maximum is 49152 bytes.
+Global variables use 22 bytes (0%) of dynamic memory, leaving 6122 bytes for local variables. Maximum is 6144 bytes.
+</pre>
+
+					
+					<h4>examples/SnakeBasic</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 6853 bytes (13%) of program storage space. Maximum is 49152 bytes.
+Global variables use 360 bytes (5%) of dynamic memory, leaving 5784 bytes for local variables. Maximum is 6144 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Snake/src/Snake.cpp:77:34: error: default argument given for parameter 1 of &#39;void Snake::stop(bool)&#39; [-fpermissive]
+ void Snake::stop(bool hide = true) {
+                                  ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Snake/src/Snake.cpp:5:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Snake/src/Snake.h:84:10: note: previous specification in &#39;void Snake::stop(bool)&#39; here
+     void stop(bool hide = true);
+          ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Snake/src/Snake.cpp:86:40: error: default argument given for parameter 1 of &#39;void Snake::start(bool)&#39; [-fpermissive]
+ void Snake::start(bool resetHead = true) {
+                                        ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Snake/src/Snake.cpp:5:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Snake/src/Snake.h:86:10: note: previous specification in &#39;void Snake::start(bool)&#39; here
+     void start(bool resetHead = true);
+          ^~~~~
+Multiple libraries were found for &#34;Snake.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Snake
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sanke
+</pre>
+
+					
+					<h4>examples/SnakeBasic</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Snake/examples/SnakeBasic/SnakeBasic.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Snake/examples/SnakeBasic/SnakeBasic.ino:22:27: error: &#39;A7&#39; was not declared in this scope
+     randomSeed(analogRead(A7));
+                           ^~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Snake/examples/SnakeBasic/SnakeBasic.ino:22:27: note: suggested alternative: &#39;A6&#39;
+     randomSeed(analogRead(A7));
+                           ^~
+                           A6
+Multiple libraries were found for &#34;Snake.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Snake
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sanke
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /tmp/arduino-testlib1850740380/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Snake/src/Snake.h:8:26: fatal error: avr/pgmspace.h: No such file or directory
+compilation terminated.
+Multiple libraries were found for &#34;Snake.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Snake
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Sanke
+</pre>
+
+					
+					<h4>examples/SnakeBasic</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Snake/examples/SnakeBasic/SnakeBasic.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/LedControl/src/LedControl.h:30:26: fatal error: avr/pgmspace.h: No such file or directory
+compilation terminated.
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

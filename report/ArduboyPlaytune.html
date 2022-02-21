@@ -1,0 +1,469 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>ArduboyPlaytune - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>ArduboyPlaytune</h2>
+				<p>
+					Version: <b>1.0.4</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/arduboyplaytune/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp: In static member function &#39;static void ArduboyPlaytune::initChannel(byte)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:149:7: error: &#39;power_timer3_enable&#39; was not declared in this scope
+       power_timer3_enable();
+       ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:149:7: note: suggested alternative: &#39;power_timer1_enable&#39;
+       power_timer3_enable();
+       ^~~~~~~~~~~~~~~~~~~
+       power_timer1_enable
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:150:7: error: &#39;TCCR3A&#39; was not declared in this scope
+       TCCR3A = 0;
+       ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:150:7: note: suggested alternative: &#39;TCCR0A&#39;
+       TCCR3A = 0;
+       ^~~~~~
+       TCCR0A
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:151:7: error: &#39;TCCR3B&#39; was not declared in this scope
+       TCCR3B = 0;
+       ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:151:7: note: suggested alternative: &#39;TCCR0B&#39;
+       TCCR3B = 0;
+       ^~~~~~
+       TCCR0B
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.h:50:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:62:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:152:24: error: &#39;WGM32&#39; was not declared in this scope
+       bitWrite(TCCR3B, WGM32, 1);
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:152:7: note: in expansion of macro &#39;bitWrite&#39;
+       bitWrite(TCCR3B, WGM32, 1);
+       ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:152:24: note: suggested alternative: &#39;WGM12&#39;
+       bitWrite(TCCR3B, WGM32, 1);
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:152:7: note: in expansion of macro &#39;bitWrite&#39;
+       bitWrite(TCCR3B, WGM32, 1);
+       ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:153:24: error: &#39;CS30&#39; was not declared in this scope
+       bitWrite(TCCR3B, CS30, 1);
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:153:7: note: in expansion of macro &#39;bitWrite&#39;
+       bitWrite(TCCR3B, CS30, 1);
+       ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:153:24: note: suggested alternative: &#39;CS00&#39;
+       bitWrite(TCCR3B, CS30, 1);
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:153:7: note: in expansion of macro &#39;bitWrite&#39;
+       bitWrite(TCCR3B, CS30, 1);
+       ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp: In static member function &#39;static void ArduboyPlaytune::playNote(byte, byte)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:210:7: error: &#39;TCCR3B&#39; was not declared in this scope
+       TCCR3B = (TCCR3B &amp; 0b11111000) | prescalar_bits;
+       ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:210:7: note: suggested alternative: &#39;TCCR0B&#39;
+       TCCR3B = (TCCR3B &amp; 0b11111000) | prescalar_bits;
+       ^~~~~~
+       TCCR0B
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:211:7: error: &#39;OCR3A&#39; was not declared in this scope
+       OCR3A = ocr;
+       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:211:7: note: suggested alternative: &#39;OCR2A&#39;
+       OCR3A = ocr;
+       ^~~~~
+       OCR2A
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:212:7: error: &#39;TCNT3&#39; was not declared in this scope
+       TCNT3 = 0;  //LJS
+       ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:212:7: note: suggested alternative: &#39;TCNT0&#39;
+       TCNT3 = 0;  //LJS
+       ^~~~~
+       TCNT0
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.h:50:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:62:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:215:16: error: &#39;TIMSK3&#39; was not declared in this scope
+       bitWrite(TIMSK3, OCIE3A, 1);
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:215:7: note: in expansion of macro &#39;bitWrite&#39;
+       bitWrite(TIMSK3, OCIE3A, 1);
+       ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:215:16: note: suggested alternative: &#39;TIMSK0&#39;
+       bitWrite(TIMSK3, OCIE3A, 1);
+                ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:215:7: note: in expansion of macro &#39;bitWrite&#39;
+       bitWrite(TIMSK3, OCIE3A, 1);
+       ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:215:24: error: &#39;OCIE3A&#39; was not declared in this scope
+       bitWrite(TIMSK3, OCIE3A, 1);
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:215:7: note: in expansion of macro &#39;bitWrite&#39;
+       bitWrite(TIMSK3, OCIE3A, 1);
+       ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:215:24: note: suggested alternative: &#39;OCIE0A&#39;
+       bitWrite(TIMSK3, OCIE3A, 1);
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/avr/1.8.4/cores/arduino/Arduino.h:112:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:215:7: note: in expansion of macro &#39;bitWrite&#39;
+       bitWrite(TIMSK3, OCIE3A, 1);
+       ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp: In member function &#39;void ArduboyPlaytune::closeChannels()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:310:9: error: &#39;TIMSK3&#39; was not declared in this scope
+         TIMSK3 &amp;= ~(1 &lt;&lt; OCIE3A);
+         ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:310:9: note: suggested alternative: &#39;TIMSK0&#39;
+         TIMSK3 &amp;= ~(1 &lt;&lt; OCIE3A);
+         ^~~~~~
+         TIMSK0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:310:26: error: &#39;OCIE3A&#39; was not declared in this scope
+         TIMSK3 &amp;= ~(1 &lt;&lt; OCIE3A);
+                          ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:310:26: note: suggested alternative: &#39;OCIE0A&#39;
+         TIMSK3 &amp;= ~(1 &lt;&lt; OCIE3A);
+                          ^~~~~~
+                          OCIE0A
+
+</pre>
+
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:63:10: fatal error: avr/power.h: No such file or directory
+ #include &lt;avr/power.h&gt;
+          ^~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library ArduboyPlaytune claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp: In static member function &#39;static void ArduboyPlaytune::initChannel(byte)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:140:7: error: &#39;power_timer1_enable&#39; was not declared in this scope
+       power_timer1_enable();
+       ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:140:7: note: suggested alternative: &#39;power_all_enable&#39;
+       power_timer1_enable();
+       ^~~~~~~~~~~~~~~~~~~
+       power_all_enable
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:141:7: error: &#39;TCCR1A&#39; was not declared in this scope
+       TCCR1A = 0;
+       ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:141:7: note: suggested alternative: &#39;TCB1&#39;
+       TCCR1A = 0;
+       ^~~~~~
+       TCB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:142:7: error: &#39;TCCR1B&#39; was not declared in this scope
+       TCCR1B = 0;
+       ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:142:7: note: suggested alternative: &#39;TCB1&#39;
+       TCCR1B = 0;
+       ^~~~~~
+       TCB1
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Interrupts.h:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:29,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.h:50,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:62:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:143:24: error: &#39;WGM12&#39; was not declared in this scope
+       bitWrite(TCCR1B, WGM12, 1);
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:143:7: note: in expansion of macro &#39;bitWrite&#39;
+       bitWrite(TCCR1B, WGM12, 1);
+       ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:144:24: error: &#39;CS10&#39; was not declared in this scope
+       bitWrite(TCCR1B, CS10, 1);
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:144:7: note: in expansion of macro &#39;bitWrite&#39;
+       bitWrite(TCCR1B, CS10, 1);
+       ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:144:24: note: suggested alternative: &#39;B110&#39;
+       bitWrite(TCCR1B, CS10, 1);
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:144:7: note: in expansion of macro &#39;bitWrite&#39;
+       bitWrite(TCCR1B, CS10, 1);
+       ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:149:7: error: &#39;power_timer3_enable&#39; was not declared in this scope
+       power_timer3_enable();
+       ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:149:7: note: suggested alternative: &#39;power_all_enable&#39;
+       power_timer3_enable();
+       ^~~~~~~~~~~~~~~~~~~
+       power_all_enable
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:150:7: error: &#39;TCCR3A&#39; was not declared in this scope
+       TCCR3A = 0;
+       ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:150:7: note: suggested alternative: &#39;TCB3&#39;
+       TCCR3A = 0;
+       ^~~~~~
+       TCB3
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:151:7: error: &#39;TCCR3B&#39; was not declared in this scope
+       TCCR3B = 0;
+       ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:151:7: note: suggested alternative: &#39;TCB3&#39;
+       TCCR3B = 0;
+       ^~~~~~
+       TCB3
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Interrupts.h:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:29,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.h:50,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:62:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:152:24: error: &#39;WGM32&#39; was not declared in this scope
+       bitWrite(TCCR3B, WGM32, 1);
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:152:7: note: in expansion of macro &#39;bitWrite&#39;
+       bitWrite(TCCR3B, WGM32, 1);
+       ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:153:24: error: &#39;CS30&#39; was not declared in this scope
+       bitWrite(TCCR3B, CS30, 1);
+                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:49: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                                                 ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:153:7: note: in expansion of macro &#39;bitWrite&#39;
+       bitWrite(TCCR3B, CS30, 1);
+       ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp: In static member function &#39;static void ArduboyPlaytune::playNote(byte, byte)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:203:9: error: &#39;TCCR1B&#39; was not declared in this scope
+         TCCR1B = (TCCR1B &amp; 0b11111000) | prescalar_bits;
+         ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:203:9: note: suggested alternative: &#39;TCB1&#39;
+         TCCR1B = (TCCR1B &amp; 0b11111000) | prescalar_bits;
+         ^~~~~~
+         TCB1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:204:9: error: &#39;OCR1A&#39; was not declared in this scope
+         OCR1A = ocr;
+         ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:205:9: error: &#39;TCNT1&#39; was not declared in this scope
+         TCNT1 = 0;  //LJS
+         ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:205:9: note: suggested alternative: &#39;TCB1&#39;
+         TCNT1 = 0;  //LJS
+         ^~~~~
+         TCB1
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Interrupts.h:8:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/ArduinoAPI.h:29,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/Arduino.h:23,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.h:50,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:62:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:206:18: error: &#39;TIMSK1&#39; was not declared in this scope
+         bitWrite(TIMSK1, OCIE1A, 1);
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/data/packages/arduino/hardware/megaavr/1.8.7/cores/arduino/api/Common.h:65:30: note: in definition of macro &#39;bitSet&#39;
+ #define bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))
+                              ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:206:9: note: in expansion of macro &#39;bitWrite&#39;
+         bitWrite(TIMSK1, OCIE1A, 1);
+         ^~~~~~~~
+/home/</pre>
+
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.cpp:63:10: fatal error: avr/power.h: No such file or directory
+ #include &lt;avr/power.h&gt;
+          ^~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /tmp/arduino-testlib3356640619/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ArduboyPlaytune/src/ArduboyPlaytune.h:51:26: fatal error: avr/pgmspace.h: No such file or directory
+compilation terminated.
+
+</pre>
+
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

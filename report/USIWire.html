@@ -1,0 +1,745 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>USIWire - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>USIWire</h2>
+				<p>
+					Version: <b>0.2.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/usiwire/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>TestMaster</pre></th>
+						
+						<th><pre>TestSlave</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+									
+										
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											<td class="pass">PASS</td>
+											
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c: In function &#39;USI_TWI_Master_Initialise&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:53:2: error: &#39;PORT_USI&#39; undeclared (first use in this function); did you mean &#39;PORT_USI_CL&#39;?
+  PORT_USI |= (1 &lt;&lt; PIN_USI_SDA); // Enable pullup on SDA, to set high as released state.
+  ^~~~~~~~
+  PORT_USI_CL
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:53:2: note: each undeclared identifier is reported only once for each function it appears in
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:53:20: error: &#39;PIN_USI_SDA&#39; undeclared (first use in this function); did you mean &#39;PIN_USI_CL&#39;?
+  PORT_USI |= (1 &lt;&lt; PIN_USI_SDA); // Enable pullup on SDA, to set high as released state.
+                    ^~~~~~~~~~~
+                    PIN_USI_CL
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:54:23: error: &#39;PIN_USI_SCL&#39; undeclared (first use in this function); did you mean &#39;PIN_USI_CL&#39;?
+  PORT_USI_CL |= (1 &lt;&lt; PIN_USI_SCL); // Enable pullup on SCL, to set high as released state.
+                       ^~~~~~~~~~~
+                       PIN_USI_CL
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.h:80:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:33:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/common/usi_io.h:147:22: error: &#39;DDR_USI&#39; undeclared (first use in this function); did you mean &#39;PORT_USI&#39;?
+ #  define DDR_USI_CL DDR_USI
+                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:56:2: note: in expansion of macro &#39;DDR_USI_CL&#39;
+  DDR_USI_CL |= (1 &lt;&lt; PIN_USI_SCL); // Enable SCL as output.
+  ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:59:2: error: &#39;USIDR&#39; undeclared (first use in this function); did you mean &#39;SPDR&#39;?
+  USIDR = 0xFF;                                           // Preload dataregister with &#34;released level&#34; data.
+  ^~~~~
+  SPDR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:60:2: error: &#39;USICR&#39; undeclared (first use in this function); did you mean &#39;USIDR&#39;?
+  USICR = (0 &lt;&lt; USISIE) | (0 &lt;&lt; USIOIE) |                 // Disable Interrupts.
+  ^~~~~
+  USIDR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:60:16: error: &#39;USISIE&#39; undeclared (first use in this function); did you mean &#39;USICR&#39;?
+  USICR = (0 &lt;&lt; USISIE) | (0 &lt;&lt; USIOIE) |                 // Disable Interrupts.
+                ^~~~~~
+                USICR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:60:32: error: &#39;USIOIE&#39; undeclared (first use in this function); did you mean &#39;USISIE&#39;?
+  USICR = (0 &lt;&lt; USISIE) | (0 &lt;&lt; USIOIE) |                 // Disable Interrupts.
+                                ^~~~~~
+                                USISIE
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:61:16: error: &#39;USIWM1&#39; undeclared (first use in this function); did you mean &#39;USIOIE&#39;?
+          (1 &lt;&lt; USIWM1) | (0 &lt;&lt; USIWM0) |                 // Set USI in Two-wire mode.
+                ^~~~~~
+                USIOIE
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:61:32: error: &#39;USIWM0&#39; undeclared (first use in this function); did you mean &#39;USIWM1&#39;?
+          (1 &lt;&lt; USIWM1) | (0 &lt;&lt; USIWM0) |                 // Set USI in Two-wire mode.
+                                ^~~~~~
+                                USIWM1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:62:16: error: &#39;USICS1&#39; undeclared (first use in this function); did you mean &#39;USIWM1&#39;?
+          (1 &lt;&lt; USICS1) | (0 &lt;&lt; USICS0) | (1 &lt;&lt; USICLK) | // Software stobe as counter clock source
+                ^~~~~~
+                USIWM1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:62:32: error: &#39;USICS0&#39; undeclared (first use in this function); did you mean &#39;USICS1&#39;?
+          (1 &lt;&lt; USICS1) | (0 &lt;&lt; USICS0) | (1 &lt;&lt; USICLK) | // Software stobe as counter clock source
+                                ^~~~~~
+                                USICS1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:62:48: error: &#39;USICLK&#39; undeclared (first use in this function); did you mean &#39;USICS0&#39;?
+          (1 &lt;&lt; USICS1) | (0 &lt;&lt; USICS0) | (1 &lt;&lt; USICLK) | // Software stobe as counter clock source
+                                                ^~~~~~
+                                                USICS0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:63:16: error: &#39;USITC&#39; undeclared (first use in this function); did you mean &#39;USICR&#39;?
+          (0 &lt;&lt; USITC);
+                ^~~~~
+                USICR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:64:2: error: &#39;USISR&#39; undeclared (first use in this function); did you mean &#39;USICR&#39;?
+  USISR = (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) | (1 &lt;&lt; USIDC) | // Clear flags,
+  ^~~~~
+  USICR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:64:16: error: &#39;USISIF&#39; undeclared (first use in this function); did you mean &#39;USISIE&#39;?
+  USISR = (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) | (1 &lt;&lt; USIDC) | // Clear flags,
+                ^~~~~~
+                USISIE
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:64:32: error: &#39;USIOIF&#39; undeclared (first use in this function); did you mean &#39;USISIF&#39;?
+  USISR = (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) | (1 &lt;&lt; USIDC) | // Clear flags,
+                                ^~~~~~
+                                USISIF
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:64:48: error: &#39;USIPF&#39; undeclared (first use in this function); did you mean &#39;USIOIF&#39;?
+  USISR = (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) | (1 &lt;&lt; USIDC) | // Clear flags,
+                                                ^~~~~
+                                                USIOIF
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:64:63: error: &#39;USIDC&#39; undeclared (first use in this function); did you mean &#39;USITC&#39;?
+  USISR = (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) | (1 &lt;&lt; USIDC) | // Clear flags,
+                                                               ^~~~~
+                                                               USITC
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:65:18: error: &#39;USICNT0&#39; undeclared (first use in this function); did you mean &#39;USICS0&#39;?
+          (0x0 &lt;&lt; USICNT0);                                             // and reset counter.
+                  ^~~~~~~
+                  USICS0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c: In function &#39;USI_TWI_Start_Transceiver_With_Data_Stop&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:104:39: error: &#39;USISIF&#39; undeclared (first use in this function); did you mean &#39;SPIF&#39;?
+  unsigned char tempUSISR_8bit = (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) | (1 &lt;&lt; USIDC)
+                                       ^~~~~~
+                                       SPIF
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:104:55: error: &#39;USIOIF&#39; undeclared (first use in this function); did you mean &#39;USISIF&#39;?
+  unsigned char tempUSISR_8bit = (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) | (1 &lt;&lt; USIDC)
+                                                       ^~~~~~
+                                                       USISIF
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:104:71: error: &#39;USIPF&#39; undeclared (first use in this function); did you mean &#39;USIOIF&#39;?
+  unsigned char tempUSISR_8bit = (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) | (1 &lt;&lt; USIDC)
+                                                                       ^~~~~
+                                                                       USIOIF
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:104:86: error: &#39;USIDC&#39; undeclared (first use in this function); did you mean &#39;USIPF&#39;?
+  unsigned char tempUSISR_8bit = (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) | (1 &lt;&lt; USIDC)
+                                                                                      ^~~~~
+                                                                                      USIPF
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:106:41: error: &#39;USICNT0&#39; undeclared (first use in this function); did you mean &#39;INT0&#39;?
+                                 (0x0 &lt;&lt; USICNT0); // set USI to shift 8 bits i.e. count 16 clock edges.
+                                         ^~~~~~~
+                                         INT0
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.h:80:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:33:
+/home/ec2-user/arduino-testlib/cli-datadir/user/librar</pre>
+
+					
+					<h4>examples/TestMaster</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 10540 bytes (32%) of program storage space. Maximum is 32256 bytes.
+Global variables use 959 bytes (46%) of dynamic memory, leaving 1089 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+					
+					<h4>examples/TestSlave</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 4188 bytes (12%) of program storage space. Maximum is 32256 bytes.
+Global variables use 427 bytes (20%) of dynamic memory, leaving 1621 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Slave/USI_TWI_Slave.h:82:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USIWire.cpp:26:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/common/usi_io.h:23:10: fatal error: avr/io.h: No such file or directory
+ #include &lt;avr/io.h&gt;
+          ^~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/TestMaster</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/examples/TestMaster/TestMaster.ino: In function &#39;void allTests()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/examples/TestMaster/TestMaster.ino:134:7: error: &#39;BUFFER_LENGTH&#39; was not declared in this scope
+   if (BUFFER_LENGTH &gt; SLAVE_BUFFER_SIZE) {
+       ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/examples/TestMaster/TestMaster.ino:134:7: note: suggested alternative: &#39;BLOCK_RESP_LENGTH&#39;
+   if (BUFFER_LENGTH &gt; SLAVE_BUFFER_SIZE) {
+       ^~~~~~~~~~~~~
+       BLOCK_RESP_LENGTH
+
+</pre>
+					
+					<h4>examples/TestSlave</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/examples/TestSlave/TestSlave.ino:27:10: fatal error: avr/sleep.h: No such file or directory
+ #include &lt;avr/sleep.h&gt;
+          ^~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library USIWire claims to run on avr architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Slave/USI_TWI_Slave.h:82:0,
+                /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:53:2: error: &#39;PORT_USI&#39; undeclared (first use in this function); did you mean &#39;PORT_t&#39;?
+  PORT_USI |= (1 &lt;&lt; PIN_USI_SDA); // Enable pullup on SDA, to set high as released state.
+  ^~~~~~~~
+  PORT_t
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:53:2: note: each undeclared identifier is reported only once for each function it appears in
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:53:20: error: &#39;PIN_USI_SDA&#39; undeclared (first use in this function); did you mean &#39;PIN_USI_CL&#39;?
+  PORT_USI |= (1 &lt;&lt; PIN_USI_SDA); // Enable pullup on SDA, to set high as released state.
+                    ^~~~~~~~~~~
+                    PIN_USI_CL
+y once for each function it appears in
+ #  define PORT_USI_CL PORT_USI
+                       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Slave/USI_TWI_Slave.c:71:2: note: in expansion of macro &#39;PORT_USI_CL&#39;
+  PORT_USI_CL |= (1 &lt;&lt; PORT_USI_SCL);     // Set SCL high
+  ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/uIn file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.h:80:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:33:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/common/usi_io.h:147:22: error: &#39;DDR_USI&#39; undeclared (first use in this function); did you mean &#39;PORT_USI&#39;?
+ #  define DDR_USI_CL DDR_USI
+                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:56:2: note: in expansion of macro &#39;DDR_USI_CL&#39;
+  DDR_USI_CL |= (1 &lt;&lt; PIN_USI_SCL); // Enable SCL as output.
+  ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:59:2: error: &#39;USIDR&#39; undeclared (first use in this function)
+  USIDR = 0xFF;                                           // Preload dataregister with &#34;released level&#34; data.
+  ^~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:60:2: error: &#39;USICR&#39; undeclared (first use in this function); did you mean &#39;USIDR&#39;?
+  USICR = (0 &lt;&lt; USISIE) | (0 &lt;&lt; USIOIE) |                 // Disable Interrupts.
+  ^~~~~
+  USIDR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:60:16: error: &#39;USISIE&#39; undeclared (first use in this function); did you mean &#39;USICR&#39;?
+  USICR = (0 &lt;&lt; USISIE) | (0 &lt;&lt; USIOIE) |                 // Disable Interrupts.
+                ^~~~~~
+                USICR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:60:32: error: &#39;USIOIE&#39; undeclared (first use in this function); did you mean &#39;USISIE&#39;?
+  USICR = (0 &lt;&lt; USISIE) | (0 &lt;&lt; USIOIE) |                 // Disable Interrupts.
+                                ^~~~~~
+                                USISIE
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:61:16: error: &#39;USIWM1&#39; undeclared (first use in this function); did you mean &#39;USIOIE&#39;?
+          (1 &lt;&lt; USIWM1) | (0 &lt;&lt; USIWM0) |                 // Set USI in Two-wire mode.
+                ^~~~~~
+                USIOIE
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:61:32: error: &#39;USIWM0&#39; undeclared (first use in this function); did you mean &#39;USIWM1&#39;?
+          (1 &lt;&lt; USIWM1) | (0 &lt;&lt; USIWM0) |                 // Set USI in Two-wire mode.
+                                ^~~~~~
+                                USIWM1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:62:16: error: &#39;USICS1&#39; undeclared (first use in this function); did you mean &#39;USIWM1&#39;?
+          (1 &lt;&lt; USICS1) | (0 &lt;&lt; USICS0) | (1 &lt;&lt; USICLK) | // Software stobe as counter clock source
+                ^~~~~~
+                USIWM1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:62:32: error: &#39;USICS0&#39; undeclared (first use in this function); did you mean &#39;USICS1&#39;?
+          (1 &lt;&lt; USICS1) | (0 &lt;&lt; USICS0) | (1 &lt;&lt; USICLK) | // Software stobe as counter clock source
+                                ^~~~~~
+                                USICS1
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:62:48: error: &#39;USICLK&#39; undeclared (first use in this function); did you mean &#39;USICS0&#39;?
+          (1 &lt;&lt; USICS1) | (0 &lt;&lt; USICS0) | (1 &lt;&lt; USICLK) | // Software stobe as counter clock source
+                                                ^~~~~~
+                                                USICS0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:63:16: error: &#39;USITC&#39; undeclared (first use in this function); did you mean &#39;USICR&#39;?
+          (0 &lt;&lt; USITC);
+                ^~~~~
+                USICR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:64:2: error: &#39;USISR&#39; undeclared (first use in this function); did you mean &#39;USICR&#39;?
+  USISR = (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) | (1 &lt;&lt; USIDC) | // Clear flags,
+  ^~~~~
+  USICR
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:64:16: error: &#39;USISIF&#39; undeclared (first use in this function); did you mean &#39;USISIE&#39;?
+  USISR = (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) | (1 &lt;&lt; USIDC) | // Clear flags,
+                ^~~~~~
+                USISIE
+R = 0xF0; // Clear all flags and reset overflow counter
+  ^~~~~
+  USICR
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Slave/USI_TWI_Slave.h:82:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Slave/USI_TWI_Slave.c:30:
+/home/ec2-user/arduino-testli/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:64:48: error: &#39;USIPF&#39; undeclared (first use in this function); did you mean &#39;USIOIF&#39;?
+  USISR = (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) | (1 &lt;&lt; USIDC) | // Clear flags,
+                                                ^~~~~
+                                                USIOIF
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:64:63: error: &#39;USIDC&#39; undeclared (first use in this function); did you mean &#39;USITC&#39;?
+  USISR = (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) | (1 &lt;&lt; USIDC) | // Clear flags,
+                                                               ^~~~~
+                                                               USITC
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:65:18: error: &#39;USICNT0&#39; undeclared (first use in this function); did you mean &#39;USICS0&#39;?
+          (0x0 &lt;&lt; USICNT0);                                             // and reset counter.
+                  ^~~~~~~
+                  USICS0
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c: In function &#39;USI_TWI_Start_Transceiver_With_Data_Stop&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:104:39: error: &#39;USISIF&#39; undeclared (first use in this function)
+  unsigned char tempUSISR_8bit = (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) | (1 &lt;&lt; USIDC)
+                                       ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:104:55: error: &#39;USIOIF&#39; undeclared (first use in this function); did you mean &#39;USISIF&#39;?
+  unsigned char tempUSISR_8bit = (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) | (1 &lt;&lt; USIDC)
+                                                       ^~~~~~
+                                                       USISIF
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:104:71: error: &#39;USIPF&#39; undeclared (first use in this function); did you mean &#39;USIOIF&#39;?
+  unsigned char tempUSISR_8bit = (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) | (1 &lt;&lt; USIDC)
+                                                                       ^~~~~
+                                                                       USIOIF
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:104:86: error: &#39;USIDC&#39; undeclared (first use in this function); did you mean &#39;USIPF&#39;?
+  unsigned char tempUSISR_8bit = (1 &lt;&lt; USISIF) | (1 &lt;&lt; USIOIF) | (1 &lt;&lt; USIPF) | (1 &lt;&lt; USIDC)
+                                                                                      ^~~~~
+                                                                                      USIPF
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:106:41: error: &#39;USICNT0&#39; undeclared (first use in this function); did you mean &#39;USART0&#39;?
+                                 (0x0 &lt;&lt; USICNT0); // set USI to shift 8 bits i.e. count 16 clock edges.
+                                         ^~~~~~~
+                                         USART0
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.h:80:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Master/USI_TWI_Master.c:33:
+/home/</pre>
+
+					
+					<h4>examples/TestMaster</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 11432 bytes (23%) of program storage space. Maximum is 49152 bytes.
+Global variables use 485 bytes (7%) of dynamic memory, leaving 5659 bytes for local variables. Maximum is 6144 bytes.
+</pre>
+					
+					<h4>examples/TestSlave</h4>
+					<p>
+						Result: <b>PASS</b>
+					</p>
+					<pre class="pre-scrollable">Sketch uses 5893 bytes (11%) of program storage space. Maximum is 49152 bytes.
+Global variables use 511 bytes (8%) of dynamic memory, leaving 5633 bytes for local variables. Maximum is 6144 bytes.
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Slave/USI_TWI_Slave.h:82:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USIWire.cpp:26:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/common/usi_io.h:23:10: fatal error: avr/io.h: No such file or directory
+ #include &lt;avr/io.h&gt;
+          ^~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/TestMaster</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/examples/TestMaster/TestMaster.ino: In function &#39;void allTests()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/examples/TestMaster/TestMaster.ino:134:7: error: &#39;BUFFER_LENGTH&#39; was not declared in this scope
+   if (BUFFER_LENGTH &gt; SLAVE_BUFFER_SIZE) {
+       ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/examples/TestMaster/TestMaster.ino:134:7: note: suggested alternative: &#39;REG_DSU_LENGTH&#39;
+   if (BUFFER_LENGTH &gt; SLAVE_BUFFER_SIZE) {
+       ^~~~~~~~~~~~~
+       REG_DSU_LENGTH
+
+</pre>
+					
+					<h4>examples/TestSlave</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/examples/TestSlave/TestSlave.ino:27:10: fatal error: avr/sleep.h: No such file or directory
+ #include &lt;avr/sleep.h&gt;
+          ^~~~~~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USI_TWI_Slave/USI_TWI_Slave.h:82:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/USIWire.cpp:26:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/src/common/usi_io.h:23:20: fatal error: avr/io.h: No such file or directory
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/TestMaster</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/examples/TestMaster/TestMaster.ino: In function &#39;void allTests()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/examples/TestMaster/TestMaster.ino:134:7: error: &#39;BUFFER_LENGTH&#39; was not declared in this scope
+   if (BUFFER_LENGTH &gt; SLAVE_BUFFER_SIZE) {
+       ^
+
+</pre>
+					
+					<h4>examples/TestSlave</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/USIWire/examples/TestSlave/TestSlave.ino:27:23: fatal error: avr/sleep.h: No such file or directory
+compilation terminated.
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

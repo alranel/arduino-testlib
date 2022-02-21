@@ -1,0 +1,1148 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>Adafruit OV7670 - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>Adafruit OV7670</h2>
+				<p>
+					Version: <b>1.2.2</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/adafruit-ov7670/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>cameratest</pre></th>
+						
+						<th><pre>selfie</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+										
+									
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_Zero_DMA_Library/Adafruit_ZeroDMA.cpp:30:10: fatal error: malloc.h: No such file or directory
+ #include &lt;malloc.h&gt; // memalign() function
+          ^~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/cameratest</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_Zero_DMA_Library/Adafruit_ZeroDMA.cpp:30:10: fatal error: malloc.h: No such file or directory
+ #include &lt;malloc.h&gt; // memalign() function
+          ^~~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+					<h4>examples/selfie</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_Zero_DMA_Library/Adafruit_ZeroDMA.cpp:30:10: fatal error: malloc.h: No such file or directory
+ #include &lt;malloc.h&gt; // memalign() function
+          ^~~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library Adafruit_OV7670 claims to run on samd architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+WARNING: library Adafruit_Zero_DMA_Library claims to run on samd architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/image_ops.h:6:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/Adafruit_OV7670.h:22,
+                 from /tmp/arduino-testlib4181410208/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:76:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin enable;  ///&lt; Also called PWDN, or set to -1 and tie to GND
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:77:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin reset;   ///&lt; Cam reset, or set to -1 and tie to 3.3V
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:78:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin xclk;    ///&lt; MCU clock out / cam clock in
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:79:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin pclk;    ///&lt; Cam clock out / MCU clock in
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:80:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin vsync;   ///&lt; Also called DEN1
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:81:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin hsync;   ///&lt; Also called DEN2
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:82:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin data[8]; ///&lt; Camera parallel data out
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:83:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin sda;     ///&lt; I2C data
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:84:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin scl;     ///&lt; I2C clock
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:95:3: error: &#39;OV7670_arch&#39; does not name a type; did you mean &#39;OV7670_pins&#39;?
+   OV7670_arch *arch; ///&lt; Architecture-specific config data
+   ^~~~~~~~~~~
+   OV7670_pins
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_Zero_DMA_Library/Adafruit_ZeroDMA.h:25:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/Adafruit_OV7670.h:24,
+                 from /tmp/arduino-testlib4181410208/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_Zero_DMA_Library/utility/dma.h:73:29: error: &#39;DMAC_CHCTRLB_TRIGACT_BLOCK_Val&#39; was not declared in this scope
+   DMA_TRIGGER_ACTON_BLOCK = DMAC_CHCTRLB_TRIGACT_BLOCK_Val,
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_Zero_DMA_Library/utility/dma.h:74:28: error: &#39;DMAC_CHCTRLB_TRIGACT_BEAT_Val&#39; was not declared in this scope
+   DMA_TRIGGER_ACTON_BEAT = DMAC_CHCTRLB_TRIGACT_BEAT_Val,
+                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_Zero_DMA_Library/utility/dma.h:75:35: error: &#39;DMAC_CHCTRLB_TRIGACT_TRANSACTION_Val&#39; was not declared in this scope
+   DMA_TRIGGER_ACTON_TRANSACTION = DMAC_CHCTRLB_TRIGACT_TRANSACTION_Val,
+                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/Adafruit_OV7670.h:24:0,
+                 from /tmp/arduino-testlib4181410208/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_Zero_DMA_Library/Adafruit_ZeroDMA.h:201:3: error: &#39;DmacDescriptor&#39; does not name a type; did you mean &#39;PinDescription&#39;?
+   DmacDescriptor *
+   ^~~~~~~~~~~~~~
+   PinDescription
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_Zero_DMA_Library/Adafruit_ZeroDMA.h:219:25: error: &#39;DmacDescriptor&#39; has not been declared
+   void changeDescriptor(DmacDescriptor *d, void *src = NULL, void *dst = NULL,
+                         ^~~~~~~~~~~~~~
+In file included from /tmp/arduino-testlib4181410208/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/Adafruit_OV7670.h:54:45: error: &#39;OV7670_arch&#39; has not been declared
+                   TwoWire *twi_ptr = &amp;Wire, OV7670_arch *arch_ptr = NULL);
+                                             ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/Adafruit_OV7670.h:325:3: error: &#39;OV7670_arch&#39; does not name a type; did you mean &#39;OV7670_flip&#39;?
+   OV7670_arch arch;          ///&lt; Architecture-specific peripheral info
+   ^~~~~~~~~~~
+   OV7670_flip
+
+</pre>
+
+					
+					<h4>examples/cameratest</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library Adafruit_OV7670 claims to run on samd architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+WARNING: library Adafruit_Zero_DMA_Library claims to run on samd architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/image_ops.h:6:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/Adafruit_OV7670.h:22,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/cameratest/cameratest.ino:13:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:76:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin enable;  ///&lt; Also called PWDN, or set to -1 and tie to GND
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:77:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin reset;   ///&lt; Cam reset, or set to -1 and tie to 3.3V
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:78:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin xclk;    ///&lt; MCU clock out / cam clock in
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:79:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin pclk;    ///&lt; Cam clock out / MCU clock in
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:80:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin vsync;   ///&lt; Also called DEN1
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:81:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin hsync;   ///&lt; Also called DEN2
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:82:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin data[8]; ///&lt; Camera parallel data out
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:83:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin sda;     ///&lt; I2C data
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:84:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin scl;     ///&lt; I2C clock
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:95:3: error: &#39;OV7670_arch&#39; does not name a type; did you mean &#39;OV7670_pins&#39;?
+   OV7670_arch *arch; ///&lt; Architecture-specific config data
+   ^~~~~~~~~~~
+   OV7670_pins
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_Zero_DMA_Library/Adafruit_ZeroDMA.h:25:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/Adafruit_OV7670.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/cameratest/cameratest.ino:13:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_Zero_DMA_Library/utility/dma.h:73:29: error: &#39;DMAC_CHCTRLB_TRIGACT_BLOCK_Val&#39; was not declared in this scope
+   DMA_TRIGGER_ACTON_BLOCK = DMAC_CHCTRLB_TRIGACT_BLOCK_Val,
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_Zero_DMA_Library/utility/dma.h:74:28: error: &#39;DMAC_CHCTRLB_TRIGACT_BEAT_Val&#39; was not declared in this scope
+   DMA_TRIGGER_ACTON_BEAT = DMAC_CHCTRLB_TRIGACT_BEAT_Val,
+                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_Zero_DMA_Library/utility/dma.h:75:35: error: &#39;DMAC_CHCTRLB_TRIGACT_TRANSACTION_Val&#39; was not declared in this scope
+   DMA_TRIGGER_ACTON_TRANSACTION = DMAC_CHCTRLB_TRIGACT_TRANSACTION_Val,
+                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/Adafruit_OV7670.h:24:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/cameratest/cameratest.ino:13:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_Zero_DMA_Library/Adafruit_ZeroDMA.h:201:3: error: &#39;DmacDescriptor&#39; does not name a type; did you mean &#39;PinDescription&#39;?
+   DmacDescriptor *
+   ^~~~~~~~~~~~~~
+   PinDescription
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_Zero_DMA_Library/Adafruit_ZeroDMA.h:219:25: error: &#39;DmacDescriptor&#39; has not been declared
+   void changeDescriptor(DmacDescriptor *d, void *src = NULL, void *dst = NULL,
+                         ^~~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/cameratest/cameratest.ino:13:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/Adafruit_OV7670.h:54:45: error: &#39;OV7670_arch&#39; has not been declared
+                   TwoWire *twi_ptr = &amp;Wire, OV7670_arch *arch_ptr = NULL);
+                                             ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/Adafruit_OV7670.h:325:3: error: &#39;OV7670_arch&#39; does not name a type; did you mean &#39;OV7670_flip&#39;?
+   OV7670_arch arch;          ///&lt; Architecture-specific peripheral info
+   ^~~~~~~~~~~
+   OV7670_flip
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/cameratest/cameratest.ino:30:35: error: &#39;pins&#39; was not declared in this scope
+ Adafruit_OV7670 cam(OV7670_ADDR, &amp;pins, &amp;CAM_I2C, &amp;arch);
+                                   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/cameratest/cameratest.ino:30:35: note: suggested alternative: &#39;spi_s&#39;
+ Adafruit_OV7670 cam(OV7670_ADDR, &amp;pins, &amp;CAM_I2C, &amp;arch);
+                                   ^~~~
+                                   spi_s
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/cameratest/cameratest.ino:30:42: error: &#39;CAM_I2C&#39; was not declared in this scope
+ Adafruit_OV7670 cam(OV7670_ADDR, &amp;pins, &amp;CAM_I2C, &amp;arch);
+                                          ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/cameratest/cameratest.ino:30:42: note: suggested alternative: &#39;CAM_SIZE&#39;
+ Adafruit_OV7670 cam(OV7670_ADDR, &amp;pins, &amp;CAM_I2C, &amp;arch);
+                                          ^~~~~~~
+                                          CAM_SIZE
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/cameratest/cameratest.ino:30:52: error: &#39;arch&#39; was not declared in this scope
+ Adafruit_OV7670 cam(OV7670_ADDR, &amp;pins, &amp;CAM_I2C, &amp;arch);
+                                                    ^~~~
+
+</pre>
+					
+					<h4>examples/selfie</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library Adafruit_OV7670 claims to run on samd architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+WARNING: library Adafruit_Zero_DMA_Library claims to run on samd architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/image_ops.h:6:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/Adafruit_OV7670.h:22,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/selfie/selfie.ino:27:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:76:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin enable;  ///&lt; Also called PWDN, or set to -1 and tie to GND
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:77:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin reset;   ///&lt; Cam reset, or set to -1 and tie to 3.3V
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:78:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin xclk;    ///&lt; MCU clock out / cam clock in
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:79:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin pclk;    ///&lt; Cam clock out / MCU clock in
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:80:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin vsync;   ///&lt; Also called DEN1
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:81:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin hsync;   ///&lt; Also called DEN2
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:82:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin data[8]; ///&lt; Camera parallel data out
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:83:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin sda;     ///&lt; I2C data
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:84:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin scl;     ///&lt; I2C clock
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:95:3: error: &#39;OV7670_arch&#39; does not name a type; did you mean &#39;OV7670_pins&#39;?
+   OV7670_arch *arch; ///&lt; Architecture-specific config data
+   ^~~~~~~~~~~
+   OV7670_pins
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_Zero_DMA_Library/Adafruit_ZeroDMA.h:25:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/Adafruit_OV7670.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/selfie/selfie.ino:27:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_Zero_DMA_Library/utility/dma.h:73:29: error: &#39;DMAC_CHCTRLB_TRIGACT_BLOCK_Val&#39; was not declared in this scope
+   DMA_TRIGGER_ACTON_BLOCK = DMAC_CHCTRLB_TRIGACT_BLOCK_Val,
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_Zero_DMA_Library/utility/dma.h:74:28: error: &#39;DMAC_CHCTRLB_TRIGACT_BEAT_Val&#39; was not declared in this scope
+   DMA_TRIGGER_ACTON_BEAT = DMAC_CHCTRLB_TRIGACT_BEAT_Val,
+                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_Zero_DMA_Library/utility/dma.h:75:35: error: &#39;DMAC_CHCTRLB_TRIGACT_TRANSACTION_Val&#39; was not declared in this scope
+   DMA_TRIGGER_ACTON_TRANSACTION = DMAC_CHCTRLB_TRIGACT_TRANSACTION_Val,
+                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/Adafruit_OV7670.h:24:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/selfie/selfie.ino:27:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_Zero_DMA_Library/Adafruit_ZeroDMA.h:201:3: error: &#39;DmacDescriptor&#39; does not name a type; did you mean &#39;PinDescription&#39;?
+   DmacDescriptor *
+   ^~~~~~~~~~~~~~
+   PinDescription
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_Zero_DMA_Library/Adafruit_ZeroDMA.h:219:25: error: &#39;DmacDescriptor&#39; has not been declared
+   void changeDescriptor(DmacDescriptor *d, void *src = NULL, void *dst = NULL,
+                         ^~~~~~~~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/selfie/selfie.ino:27:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/Adafruit_OV7670.h:54:45: error: &#39;OV7670_arch&#39; has not been declared
+                   TwoWire *twi_ptr = &amp;Wire, OV7670_arch *arch_ptr = NULL);
+                                             ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/Adafruit_OV7670.h:325:3: error: &#39;OV7670_arch&#39; does not name a type; did you mean &#39;OV7670_flip&#39;?
+   OV7670_arch arch;          ///&lt; Architecture-specific peripheral info
+   ^~~~~~~~~~~
+   OV7670_flip
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/selfie/selfie.ino:43:1: error: &#39;OV7670_arch&#39; does not name a type; did you mean &#39;OV7670_print&#39;?
+ OV7670_arch arch = {.timer = TCC1, .xclk_pdec = false};
+ ^~~~~~~~~~~
+ OV7670_print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/selfie/selfie.ino:44:31: error: &#39;PIN_PCC_D8&#39; was not declared in this scope
+ OV7670_pins pins = {.enable = PIN_PCC_D8, .reset = PIN_PCC_D9,
+                               ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/selfie/selfie.ino:44:31: note: suggested alternative: &#39;PIN_PDM_DIN&#39;
+ OV7670_pins pins = {.enable = PIN_PCC_D8, .reset = PIN_PCC_D9,
+                               ^~~~~~~~~~
+                               PIN_PDM_DIN
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/selfie/selfie.ino:44:52: error: &#39;PIN_PCC_D9&#39; was not declared in this scope
+ OV7670_pins pins = {.enable = PIN_PCC_D8, .reset = PIN_PCC_D9,
+                                                    ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/selfie/selfie.ino:44:52: note: suggested alternative: &#39;PIN_PDM_DIN&#39;
+ OV7670_pins pins = {.enable = PIN_PCC_D8, .reset = PIN_PCC_D9,
+                                                    ^~~~~~~~~~
+                                                    PIN_PDM_DIN
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/selfie/selfie.ino:45:29: error: &#39;PIN_PCC_XCLK&#39; was not declared in this scope
+                     .xclk = PIN_PCC_XCLK};
+                             ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/selfie/selfie.ino:45:29: note: suggested alternative: &#39;PIN_PDM_CLK&#39;
+                     .xclk = PIN_PCC_XCLK};
+                             ^~~~~~~~~~~~
+                             PIN_PDM_CLK
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/selfie/selfie.ino:46:18: error: &#39;Wire1&#39; was not declared in this scope
+ #define CAM_I2C  Wire1 // Second I2C bus next to PCC pins
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/selfie/selfie.ino:50:42: note: in expansion of macro &#39;CAM_I2C&#39;
+ Adafruit_OV7670 cam(OV7670_ADDR, &amp;pins, &amp;CAM_I2C, &amp;arch);
+                                          ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/selfie/selfie.ino:46:18: note: suggested alternative: &#39;Wire&#39;
+ #define CAM_I2C  Wire1 // Second I2C bus next to PCC pins
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/selfie/selfie.ino:50:42: note: in expansion of macro &#39;CAM_I2C&#39;
+ Adafruit_OV7670 cam(OV7670_ADDR, &amp;pins, &amp;CAM_I2C, &amp;arch);
+                                          ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/selfie/selfie.ino:50:52: error: &#39;arch&#39; was not declared in this scope
+ Adafruit_OV7670 cam(OV7670_ADDR, &amp;pins, &amp;CAM_I2C, &amp;arch);
+                                                    ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/selfie/selfie.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/selfie/selfie.ino:37:15: error: &#39;SDCARD_SS_PIN&#39; was not declared in this scope
+ #define SD_CS SDCARD_SS_PIN // Grand Central onboard SD card select
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/selfie/selfie.ino:78:11: note: in expansion of macro &#39;SD_CS&#39;
+   pinMode(SD_CS, OUTPUT);
+           ^~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_Zero_DMA_Library/Adafruit_ZeroDMA.cpp:30:10: fatal error: malloc.h: No such file or directory
+ #include &lt;malloc.h&gt; // memalign() function
+          ^~~~~~~~~~
+compilation terminated.
+
+</pre>
+
+					
+					<h4>examples/cameratest</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_Zero_DMA_Library/Adafruit_ZeroDMA.cpp:30:10: fatal error: malloc.h: No such file or directory
+ #include &lt;malloc.h&gt; // memalign() function
+          ^~~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+					<h4>examples/selfie</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_Zero_DMA_Library/Adafruit_ZeroDMA.cpp:30:10: fatal error: malloc.h: No such file or directory
+ #include &lt;malloc.h&gt; // memalign() function
+          ^~~~~~~~~~
+compilation terminated.
+
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/image_ops.h:6:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/Adafruit_OV7670.h:22,
+                 from /tmp/arduino-testlib886168059/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:76:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin enable;  ///&lt; Also called PWDN, or set to -1 and tie to GND
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:77:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin reset;   ///&lt; Cam reset, or set to -1 and tie to 3.3V
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:78:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin xclk;    ///&lt; MCU clock out / cam clock in
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:79:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin pclk;    ///&lt; Cam clock out / MCU clock in
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:80:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin vsync;   ///&lt; Also called DEN1
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:81:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin hsync;   ///&lt; Also called DEN2
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:82:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin data[8]; ///&lt; Camera parallel data out
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:83:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin sda;     ///&lt; I2C data
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:84:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin scl;     ///&lt; I2C clock
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:95:3: error: &#39;OV7670_arch&#39; does not name a type; did you mean &#39;OV7670_pins&#39;?
+   OV7670_arch *arch; ///&lt; Architecture-specific config data
+   ^~~~~~~~~~~
+   OV7670_pins
+In file included from /tmp/arduino-testlib886168059/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/Adafruit_OV7670.h:54:45: error: &#39;OV7670_arch&#39; has not been declared
+                   TwoWire *twi_ptr = &amp;Wire, OV7670_arch *arch_ptr = NULL);
+                                             ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/Adafruit_OV7670.h:325:3: error: &#39;OV7670_arch&#39; does not name a type; did you mean &#39;OV7670_flip&#39;?
+   OV7670_arch arch;          ///&lt; Architecture-specific peripheral info
+   ^~~~~~~~~~~
+   OV7670_flip
+
+</pre>
+
+					
+					<h4>examples/cameratest</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/image_ops.h:6:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/Adafruit_OV7670.h:22,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/cameratest/cameratest.ino:13:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:76:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin enable;  ///&lt; Also called PWDN, or set to -1 and tie to GND
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:77:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin reset;   ///&lt; Cam reset, or set to -1 and tie to 3.3V
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:78:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin xclk;    ///&lt; MCU clock out / cam clock in
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:79:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin pclk;    ///&lt; Cam clock out / MCU clock in
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:80:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin vsync;   ///&lt; Also called DEN1
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:81:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin hsync;   ///&lt; Also called DEN2
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:82:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin data[8]; ///&lt; Camera parallel data out
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:83:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin sda;     ///&lt; I2C data
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:84:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin scl;     ///&lt; I2C clock
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:95:3: error: &#39;OV7670_arch&#39; does not name a type; did you mean &#39;OV7670_pins&#39;?
+   OV7670_arch *arch; ///&lt; Architecture-specific config data
+   ^~~~~~~~~~~
+   OV7670_pins
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/cameratest/cameratest.ino:13:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/Adafruit_OV7670.h:54:45: error: &#39;OV7670_arch&#39; has not been declared
+                   TwoWire *twi_ptr = &amp;Wire, OV7670_arch *arch_ptr = NULL);
+                                             ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/Adafruit_OV7670.h:325:3: error: &#39;OV7670_arch&#39; does not name a type; did you mean &#39;OV7670_flip&#39;?
+   OV7670_arch arch;          ///&lt; Architecture-specific peripheral info
+   ^~~~~~~~~~~
+   OV7670_flip
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/cameratest/cameratest.ino:30:35: error: &#39;pins&#39; was not declared in this scope
+ Adafruit_OV7670 cam(OV7670_ADDR, &amp;pins, &amp;CAM_I2C, &amp;arch);
+                                   ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/cameratest/cameratest.ino:30:35: note: suggested alternative: &#39;uint&#39;
+ Adafruit_OV7670 cam(OV7670_ADDR, &amp;pins, &amp;CAM_I2C, &amp;arch);
+                                   ^~~~
+                                   uint
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/cameratest/cameratest.ino:30:42: error: &#39;CAM_I2C&#39; was not declared in this scope
+ Adafruit_OV7670 cam(OV7670_ADDR, &amp;pins, &amp;CAM_I2C, &amp;arch);
+                                          ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/cameratest/cameratest.ino:30:42: note: suggested alternative: &#39;CAM_SIZE&#39;
+ Adafruit_OV7670 cam(OV7670_ADDR, &amp;pins, &amp;CAM_I2C, &amp;arch);
+                                          ^~~~~~~
+                                          CAM_SIZE
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/cameratest/cameratest.ino:30:52: error: &#39;arch&#39; was not declared in this scope
+ Adafruit_OV7670 cam(OV7670_ADDR, &amp;pins, &amp;CAM_I2C, &amp;arch);
+                                                    ^~~~
+
+</pre>
+					
+					<h4>examples/selfie</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/image_ops.h:6:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/Adafruit_OV7670.h:22,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/selfie/selfie.ino:27:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:76:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin enable;  ///&lt; Also called PWDN, or set to -1 and tie to GND
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:77:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin reset;   ///&lt; Cam reset, or set to -1 and tie to 3.3V
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:78:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin xclk;    ///&lt; MCU clock out / cam clock in
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:79:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin pclk;    ///&lt; Cam clock out / MCU clock in
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:80:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin vsync;   ///&lt; Also called DEN1
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:81:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin hsync;   ///&lt; Also called DEN2
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:82:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin data[8]; ///&lt; Camera parallel data out
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:83:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin sda;     ///&lt; I2C data
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:84:3: error: &#39;OV7670_pin&#39; does not name a type; did you mean &#39;OV7670_size&#39;?
+   OV7670_pin scl;     ///&lt; I2C clock
+   ^~~~~~~~~~
+   OV7670_size
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:95:3: error: &#39;OV7670_arch&#39; does not name a type; did you mean &#39;OV7670_pins&#39;?
+   OV7670_arch *arch; ///&lt; Architecture-specific config data
+   ^~~~~~~~~~~
+   OV7670_pins
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/selfie/selfie.ino:27:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/Adafruit_OV7670.h:54:45: error: &#39;OV7670_arch&#39; has not been declared
+                   TwoWire *twi_ptr = &amp;Wire, OV7670_arch *arch_ptr = NULL);
+                                             ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/Adafruit_OV7670.h:325:3: error: &#39;OV7670_arch&#39; does not name a type; did you mean &#39;OV7670_flip&#39;?
+   OV7670_arch arch;          ///&lt; Architecture-specific peripheral info
+   ^~~~~~~~~~~
+   OV7670_flip
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/selfie/selfie.ino:43:1: error: &#39;OV7670_arch&#39; does not name a type; did you mean &#39;OV7670_print&#39;?
+ OV7670_arch arch = {.timer = TCC1, .xclk_pdec = false};
+ ^~~~~~~~~~~
+ OV7670_print
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/selfie/selfie.ino:44:31: error: &#39;PIN_PCC_D8&#39; was not declared in this scope
+ OV7670_pins pins = {.enable = PIN_PCC_D8, .reset = PIN_PCC_D9,
+                               ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/selfie/selfie.ino:44:31: note: suggested alternative: &#39;PIN_PA18&#39;
+ OV7670_pins pins = {.enable = PIN_PCC_D8, .reset = PIN_PCC_D9,
+                               ^~~~~~~~~~
+                               PIN_PA18
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/selfie/selfie.ino:44:52: error: &#39;PIN_PCC_D9&#39; was not declared in this scope
+ OV7670_pins pins = {.enable = PIN_PCC_D8, .reset = PIN_PCC_D9,
+                                                    ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/selfie/selfie.ino:44:52: note: suggested alternative: &#39;PIN_PA09&#39;
+ OV7670_pins pins = {.enable = PIN_PCC_D8, .reset = PIN_PCC_D9,
+                                                    ^~~~~~~~~~
+                                                    PIN_PA09
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/selfie/selfie.ino:45:29: error: &#39;PIN_PCC_XCLK&#39; was not declared in this scope
+                     .xclk = PIN_PCC_XCLK};
+                             ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/selfie/selfie.ino:45:29: note: suggested alternative: &#39;PIO_AC_CLK&#39;
+                     .xclk = PIN_PCC_XCLK};
+                             ^~~~~~~~~~~~
+                             PIO_AC_CLK
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/selfie/selfie.ino:46:18: error: &#39;Wire1&#39; was not declared in this scope
+ #define CAM_I2C  Wire1 // Second I2C bus next to PCC pins
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/selfie/selfie.ino:50:42: note: in expansion of macro &#39;CAM_I2C&#39;
+ Adafruit_OV7670 cam(OV7670_ADDR, &amp;pins, &amp;CAM_I2C, &amp;arch);
+                                          ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/selfie/selfie.ino:46:18: note: suggested alternative: &#39;Wire&#39;
+ #define CAM_I2C  Wire1 // Second I2C bus next to PCC pins
+                  ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/selfie/selfie.ino:50:42: note: in expansion of macro &#39;CAM_I2C&#39;
+ Adafruit_OV7670 cam(OV7670_ADDR, &amp;pins, &amp;CAM_I2C, &amp;arch);
+                                          ^~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/selfie/selfie.ino:50:52: error: &#39;arch&#39; was not declared in this scope
+ Adafruit_OV7670 cam(OV7670_ADDR, &amp;pins, &amp;CAM_I2C, &amp;arch);
+                                                    ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/selfie/selfie.ino: In function &#39;void setup()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/selfie/selfie.ino:37:15: error: &#39;SDCARD_SS_PIN&#39; was not declared in this scope
+ #define SD_CS SDCARD_SS_PIN // Grand Central onboard SD card select
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/selfie/selfie.ino:78:11: note: in expansion of macro &#39;SD_CS&#39;
+   pinMode(SD_CS, OUTPUT);
+           ^~~~~
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library Adafruit_OV7670 claims to run on samd architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+WARNING: library Adafruit_Zero_DMA_Library claims to run on samd architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/image_ops.h:6:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/Adafruit_OV7670.h:22,
+                 from /tmp/arduino-testlib1296278834/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:76:3: error: &#39;OV7670_pin&#39; does not name a type
+   OV7670_pin enable;  ///&lt; Also called PWDN, or set to -1 and tie to GND
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:77:3: error: &#39;OV7670_pin&#39; does not name a type
+   OV7670_pin reset;   ///&lt; Cam reset, or set to -1 and tie to 3.3V
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:78:3: error: &#39;OV7670_pin&#39; does not name a type
+   OV7670_pin xclk;    ///&lt; MCU clock out / cam clock in
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:79:3: error: &#39;OV7670_pin&#39; does not name a type
+   OV7670_pin pclk;    ///&lt; Cam clock out / MCU clock in
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:80:3: error: &#39;OV7670_pin&#39; does not name a type
+   OV7670_pin vsync;   ///&lt; Also called DEN1
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:81:3: error: &#39;OV7670_pin&#39; does not name a type
+   OV7670_pin hsync;   ///&lt; Also called DEN2
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:82:3: error: &#39;OV7670_pin&#39; does not name a type
+   OV7670_pin data[8]; ///&lt; Camera parallel data out
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:83:3: error: &#39;OV7670_pin&#39; does not name a type
+   OV7670_pin sda;     ///&lt; I2C data
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:84:3: error: &#39;OV7670_pin&#39; does not name a type
+   OV7670_pin scl;     ///&lt; I2C clock
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:95:3: error: &#39;OV7670_arch&#39; does not name a type
+   OV7670_arch *arch; ///&lt; Architecture-specific config data
+   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_Zero_DMA_Library/Adafruit_ZeroDMA.h:25:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/Adafruit_OV7670.h:24,
+                 from /tmp/arduino-testlib1296278834/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_Zero_DMA_Library/utility/dma.h:73:29: error: &#39;DMAC_CHCTRLB_TRIGACT_BLOCK_Val&#39; was not declared in this scope
+   DMA_TRIGGER_ACTON_BLOCK = DMAC_CHCTRLB_TRIGACT_BLOCK_Val,
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_Zero_DMA_Library/utility/dma.h:74:28: error: &#39;DMAC_CHCTRLB_TRIGACT_BEAT_Val&#39; was not declared in this scope
+   DMA_TRIGGER_ACTON_BEAT = DMAC_CHCTRLB_TRIGACT_BEAT_Val,
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_Zero_DMA_Library/utility/dma.h:75:35: error: &#39;DMAC_CHCTRLB_TRIGACT_TRANSACTION_Val&#39; was not declared in this scope
+   DMA_TRIGGER_ACTON_TRANSACTION = DMAC_CHCTRLB_TRIGACT_TRANSACTION_Val,
+                                   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/Adafruit_OV7670.h:24:0,
+                 from /tmp/arduino-testlib1296278834/test/test.ino:1:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_Zero_DMA_Library/Adafruit_ZeroDMA.h:201:3: error: &#39;DmacDescriptor&#39; does not name a type
+   DmacDescriptor *
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_Zero_DMA_Library/Adafruit_ZeroDMA.h:219:25: error: &#39;DmacDescriptor&#39; has not been declared
+   void changeDescriptor(DmacDescriptor *d, void *src = NULL, void *dst = NULL,
+                         ^
+In file included from /tmp/arduino-testlib1296278834/test/test.ino:1:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/Adafruit_OV7670.h:54:45: error: &#39;OV7670_arch&#39; has not been declared
+                   TwoWire *twi_ptr = &amp;Wire, OV7670_arch *arch_ptr = NULL);
+                                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/Adafruit_OV7670.h:325:3: error: &#39;OV7670_arch&#39; does not name a type
+   OV7670_arch arch;          ///&lt; Architecture-specific peripheral info
+   ^
+
+</pre>
+
+					
+					<h4>examples/cameratest</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library Adafruit_OV7670 claims to run on samd architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+WARNING: library Adafruit_Zero_DMA_Library claims to run on samd architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/image_ops.h:6:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/Adafruit_OV7670.h:22,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/cameratest/cameratest.ino:13:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:76:3: error: &#39;OV7670_pin&#39; does not name a type
+   OV7670_pin enable;  ///&lt; Also called PWDN, or set to -1 and tie to GND
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:77:3: error: &#39;OV7670_pin&#39; does not name a type
+   OV7670_pin reset;   ///&lt; Cam reset, or set to -1 and tie to 3.3V
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:78:3: error: &#39;OV7670_pin&#39; does not name a type
+   OV7670_pin xclk;    ///&lt; MCU clock out / cam clock in
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:79:3: error: &#39;OV7670_pin&#39; does not name a type
+   OV7670_pin pclk;    ///&lt; Cam clock out / MCU clock in
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:80:3: error: &#39;OV7670_pin&#39; does not name a type
+   OV7670_pin vsync;   ///&lt; Also called DEN1
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:81:3: error: &#39;OV7670_pin&#39; does not name a type
+   OV7670_pin hsync;   ///&lt; Also called DEN2
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:82:3: error: &#39;OV7670_pin&#39; does not name a type
+   OV7670_pin data[8]; ///&lt; Camera parallel data out
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:83:3: error: &#39;OV7670_pin&#39; does not name a type
+   OV7670_pin sda;     ///&lt; I2C data
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:84:3: error: &#39;OV7670_pin&#39; does not name a type
+   OV7670_pin scl;     ///&lt; I2C clock
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/ov7670.h:95:3: error: &#39;OV7670_arch&#39; does not name a type
+   OV7670_arch *arch; ///&lt; Architecture-specific config data
+   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_Zero_DMA_Library/Adafruit_ZeroDMA.h:25:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/Adafruit_OV7670.h:24,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/cameratest/cameratest.ino:13:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_Zero_DMA_Library/utility/dma.h:73:29: error: &#39;DMAC_CHCTRLB_TRIGACT_BLOCK_Val&#39; was not declared in this scope
+   DMA_TRIGGER_ACTON_BLOCK = DMAC_CHCTRLB_TRIGACT_BLOCK_Val,
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_Zero_DMA_Library/utility/dma.h:74:28: error: &#39;DMAC_CHCTRLB_TRIGACT_BEAT_Val&#39; was not declared in this scope
+   DMA_TRIGGER_ACTON_BEAT = DMAC_CHCTRLB_TRIGACT_BEAT_Val,
+                            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_Zero_DMA_Library/utility/dma.h:75:35: error: &#39;DMAC_CHCTRLB_TRIGACT_TRANSACTION_Val&#39; was not declared in this scope
+   DMA_TRIGGER_ACTON_TRANSACTION = DMAC_CHCTRLB_TRIGACT_TRANSACTION_Val,
+                                   ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/Adafruit_OV7670.h:24:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/cameratest/cameratest.ino:13:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_Zero_DMA_Library/Adafruit_ZeroDMA.h:201:3: error: &#39;DmacDescriptor&#39; does not name a type
+   DmacDescriptor *
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_Zero_DMA_Library/Adafruit_ZeroDMA.h:219:25: error: &#39;DmacDescriptor&#39; has not been declared
+   void changeDescriptor(DmacDescriptor *d, void *src = NULL, void *dst = NULL,
+                         ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/cameratest/cameratest.ino:13:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/Adafruit_OV7670.h:54:45: error: &#39;OV7670_arch&#39; has not been declared
+                   TwoWire *twi_ptr = &amp;Wire, OV7670_arch *arch_ptr = NULL);
+                                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/src/Adafruit_OV7670.h:325:3: error: &#39;OV7670_arch&#39; does not name a type
+   OV7670_arch arch;          ///&lt; Architecture-specific peripheral info
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/cameratest/cameratest.ino:30:35: error: &#39;pins&#39; was not declared in this scope
+ Adafruit_OV7670 cam(OV7670_ADDR, &amp;pins, &amp;CAM_I2C, &amp;arch);
+                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/cameratest/cameratest.ino:30:42: error: &#39;CAM_I2C&#39; was not declared in this scope
+ Adafruit_OV7670 cam(OV7670_ADDR, &amp;pins, &amp;CAM_I2C, &amp;arch);
+                                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/cameratest/cameratest.ino:30:52: error: &#39;arch&#39; was not declared in this scope
+ Adafruit_OV7670 cam(OV7670_ADDR, &amp;pins, &amp;CAM_I2C, &amp;arch);
+                                                    ^
+
+</pre>
+					
+					<h4>examples/selfie</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library Adafruit_OV7670 claims to run on samd architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+WARNING: library Adafruit_Zero_DMA_Library claims to run on samd architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SD/src/utility/Sd2Card.h:26:0,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SD/src/utility/SdFat.h:29,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SD/src/SD.h:20,
+                 from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Adafruit_OV7670/examples/selfie/selfie.ino:26:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SD/src/utility/Sd2PinMap.h:524:2: error: #error Architecture or board not supported.
+ #error Architecture or board not supported.
+  ^
+Multiple libraries were found for &#34;SD.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/SD
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/data/packages/esp32/hardware/esp32/1.0.6/libraries/SD
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

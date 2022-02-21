@@ -1,0 +1,253 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>wiring-timer - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>wiring-timer</h2>
+				<p>
+					Version: <b>2.9.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/wiring-timer/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+							<td>Yes ⚠️</td>
+							<td class="fail">FAIL</td>
+						
+						
+
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-sketch-3164B800BC4EB008C8B76325D990DAC2/libraries/wiring-timer/Timer.cpp.o (symbol from plugin): In function `Timer::~Timer()&#39;:
+(.text&#43;0x0): multiple definition of `Timer::~Timer()&#39;
+/tmp/arduino-sketch-3164B800BC4EB008C8B76325D990DAC2/libraries/Timer/Timer.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+/tmp/arduino-sketch-3164B800BC4EB008C8B76325D990DAC2/libraries/wiring-timer/Timer.cpp.o (symbol from plugin): In function `Timer::~Timer()&#39;:
+(.text&#43;0x0): multiple definition of `Timer::~Timer()&#39;
+/tmp/arduino-sketch-3164B800BC4EB008C8B76325D990DAC2/libraries/Timer/Timer.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+collect2: error: ld returned 1 exit status
+Multiple libraries were found for &#34;Timer.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Timer
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RBE1001Lib
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Plaquette
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wiring-timer
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wpi-32u4-library
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ZumoAutomation
+Multiple libraries were found for &#34;UptimeInfo.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wiring-timer
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/spin-timer
+</pre>
+
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 78756 bytes (0%) of program storage space. Maximum is 16777216 bytes.
+Global variables use 43444 bytes (16%) of dynamic memory, leaving 226892 bytes for local variables. Maximum is 270336 bytes.
+</pre>
+
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-sketch-3164B800BC4EB008C8B76325D990DAC2/libraries/wiring-timer/Timer.cpp.o (symbol from plugin): In function `Timer::~Timer()&#39;:
+(.text&#43;0x0): multiple definition of `Timer::~Timer()&#39;
+/tmp/arduino-sketch-3164B800BC4EB008C8B76325D990DAC2/libraries/Timer/Timer.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+/tmp/arduino-sketch-3164B800BC4EB008C8B76325D990DAC2/libraries/wiring-timer/Timer.cpp.o (symbol from plugin): In function `Timer::~Timer()&#39;:
+(.text&#43;0x0): multiple definition of `Timer::~Timer()&#39;
+/tmp/arduino-sketch-3164B800BC4EB008C8B76325D990DAC2/libraries/Timer/Timer.cpp.o (symbol from plugin):(.text&#43;0x0): first defined here
+collect2: error: ld returned 1 exit status
+Multiple libraries were found for &#34;Timer.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Timer
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wiring-timer
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RBE1001Lib
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ZumoAutomation
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Plaquette
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wpi-32u4-library
+Multiple libraries were found for &#34;UptimeInfo.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wiring-timer
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/spin-timer
+</pre>
+
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 12156 bytes (4%) of program storage space. Maximum is 262144 bytes.
+Global variables use 2996 bytes (9%) of dynamic memory, leaving 29772 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">/tmp/arduino-sketch-3164B800BC4EB008C8B76325D990DAC2/libraries/wiring-timer/Timer.cpp.o: In function `Timer::~Timer()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wiring-timer/Timer.cpp:54: multiple definition of `Timer::~Timer()&#39;
+/tmp/arduino-sketch-3164B800BC4EB008C8B76325D990DAC2/libraries/Timer/Timer.cpp.o:/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Timer/Timer.cpp:31: first defined here
+/tmp/arduino-sketch-3164B800BC4EB008C8B76325D990DAC2/libraries/wiring-timer/Timer.cpp.o: In function `Timer::~Timer()&#39;:
+Timer.cpp:(.text._ZN5TimerD2Ev&#43;0x0): multiple definition of `Timer::~Timer()&#39;
+/tmp/arduino-sketch-3164B800BC4EB008C8B76325D990DAC2/libraries/Timer/Timer.cpp.o:Timer.cpp:(.text._ZN5TimerD2Ev&#43;0x0): first defined here
+collect2: error: ld returned 1 exit status
+Multiple libraries were found for &#34;Timer.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Timer
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/ZumoAutomation
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Plaquette
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/RBE1001Lib
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wpi-32u4-library
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wiring-timer
+Multiple libraries were found for &#34;UptimeInfo.h&#34;
+  Used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/wiring-timer
+  Not used: /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/spin-timer
+</pre>
+
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

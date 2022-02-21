@@ -1,0 +1,797 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>JsmnStream - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>JsmnStream</h2>
+				<p>
+					Version: <b>1.0.1</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/jsmnstream/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>Simple</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+							<td>Yes</td>
+							<td class="pass">PASS</td>
+						
+						
+						
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 444 bytes (1%) of program storage space. Maximum is 32256 bytes.
+Global variables use 9 bytes (0%) of dynamic memory, leaving 2039 bytes for local variables. Maximum is 2048 bytes.
+</pre>
+
+					
+					<h4>examples/Simple</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:134:28: error: no match for &#39;operator&lt;&lt;&#39; (operand types are &#39;Print&#39; and &#39;char [(((ssizetype)str_len) &#43; 1)]&#39;)
+       Serial &lt;&lt; &#34;- User: &#34; &lt;&lt; str &lt;&lt; &#34;\n&#34;;
+       ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:106:15: note: candidate: template&lt;class T&gt; Print&amp; operator&lt;&lt;(Print&amp;, const T&amp;)
+ inline Print &amp;operator &lt;&lt;(Print &amp;stream, const T &amp;arg)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:106:15: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:134:31: note:   variable-sized array type &#39;char [(((ssizetype)str_len) &#43; 1)]&#39; is not a valid template argument
+       Serial &lt;&lt; &#34;- User: &#34; &lt;&lt; str &lt;&lt; &#34;\n&#34;;
+                               ^~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:128:15: note: candidate: Print&amp; operator&lt;&lt;(Print&amp;, const _BYTE_CODE&amp;) &lt;near match&gt;
+ inline Print &amp;operator &lt;&lt;(Print &amp;obj, const _BYTE_CODE &amp;arg)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:128:15: note:   conversion of argument 2 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:148:15: note: candidate: template&lt;class T&gt; Print&amp; operator&lt;&lt;(Print&amp;, const _BASED&lt;T&gt;&amp;)
+ inline Print &amp;operator &lt;&lt;(Print &amp;obj, const _BASED&lt;T&gt; &amp;arg)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:148:15: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:134:31: note:   mismatched types &#39;const _BASED&lt;T&gt;&#39; and &#39;char [(((ssizetype)str_len) &#43; 1)]&#39;
+       Serial &lt;&lt; &#34;- User: &#34; &lt;&lt; str &lt;&lt; &#34;\n&#34;;
+                               ^~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:166:15: note: candidate: Print&amp; operator&lt;&lt;(Print&amp;, const _FLOAT&amp;)
+ inline Print &amp;operator &lt;&lt;(Print &amp;obj, const _FLOAT &amp;arg)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:166:15: note:   no known conversion for argument 2 from &#39;char [(((ssizetype)str_len) &#43; 1)]&#39; to &#39;const _FLOAT&amp;&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:177:15: note: candidate: Print&amp; operator&lt;&lt;(Print&amp;, _EndLineCode)
+ inline Print &amp;operator &lt;&lt;(Print &amp;obj, _EndLineCode)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:177:15: note:   no known conversion for argument 2 from &#39;char [(((ssizetype)str_len) &#43; 1)]&#39; to &#39;_EndLineCode&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:193:15: note: candidate: Print&amp; operator&lt;&lt;(Print&amp;, const _PAD&amp;)
+ inline Print &amp;operator &lt;&lt;(Print&amp; stm, const _PAD &amp;arg)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:193:15: note:   no known conversion for argument 2 from &#39;char [(((ssizetype)str_len) &#43; 1)]&#39; to &#39;const _PAD&amp;&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:273:15: note: candidate: template&lt;class T&gt; Print&amp; operator&lt;&lt;(Print&amp;, const __WIDTH&lt;T&gt;&amp;)
+ inline Print &amp;operator &lt;&lt;(Print &amp;stm, const __WIDTH&lt;T&gt; &amp;arg)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:273:15: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:134:31: note:   mismatched types &#39;const __WIDTH&lt;T&gt;&#39; and &#39;char [(((ssizetype)str_len) &#43; 1)]&#39;
+       Serial &lt;&lt; &#34;- User: &#34; &lt;&lt; str &lt;&lt; &#34;\n&#34;;
+                               ^~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:285:15: note: candidate: Print&amp; operator&lt;&lt;(Print&amp;, const __WIDTH&lt;float&gt;&amp;)
+ inline Print &amp;operator &lt;&lt;(Print &amp;stm, const __WIDTH&lt;float&gt;  &amp;arg)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:285:15: note:   no known conversion for argument 2 from &#39;char [(((ssizetype)str_len) &#43; 1)]&#39; to &#39;const __WIDTH&lt;float&gt;&amp;&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:288:15: note: candidate: Print&amp; operator&lt;&lt;(Print&amp;, const __WIDTH&lt;double&gt;&amp;)
+ inline Print &amp;operator &lt;&lt;(Print &amp;stm, const __WIDTH&lt;double&gt; &amp;arg)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:288:15: note:   no known conversion for argument 2 from &#39;char [(((ssizetype)str_len) &#43; 1)]&#39; to &#39;const __WIDTH&lt;double&gt;&amp;&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:291:15: note: candidate: Print&amp; operator&lt;&lt;(Print&amp;, const __WIDTH&lt;_FLOAT&gt;&amp;)
+ inline Print &amp;operator &lt;&lt;(Print &amp;stm, const __WIDTH&lt;_FLOAT&gt; &amp;arg)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:291:15: note:   no known conversion for argument 2 from &#39;char [(((ssizetype)str_len) &#43; 1)]&#39; to &#39;const __WIDTH&lt;_FLOAT&gt;&amp;&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:386:15: note: candidate: template&lt;class Ft, class ... Ts&gt; Print&amp; operator&lt;&lt;(Print&amp;, const __FMT&lt;Ft, Ts ...&gt;&amp;)
+ inline Print&amp; operator &lt;&lt;(Print &amp;stm, const __FMT&lt;Ft, Ts...&gt; &amp;args)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:386:15: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:134:31: note:   mismatched types &#39;const __FMT&lt;Ft, Ts ...&gt;&#39; and &#39;char [(((ssizetype)str_len) &#43; 1)]&#39;
+       Serial &lt;&lt; &#34;- User: &#34; &lt;&lt; str &lt;&lt; &#34;\n&#34;;
+                               ^~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:394:15: note: candidate: template&lt;class Ft, class T, class ... Ts&gt; Print&amp; operator&lt;&lt;(Print&amp;, const __FMT&lt;Ft, T, Ts ...&gt;&amp;)
+ inline Print&amp; operator &lt;&lt;(Print &amp;stm, const __FMT&lt;Ft, T, Ts...&gt; &amp;args)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:394:15: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:134:31: note:   mismatched types &#39;const __FMT&lt;Ft, T, Ts ...&gt;&#39; and &#39;char [(((ssizetype)str_len) &#43; 1)]&#39;
+       Serial &lt;&lt; &#34;- User: &#34; &lt;&lt; str &lt;&lt; &#34;\n&#34;;
+                               ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:143:29: error: no match for &#39;operator&lt;&lt;&#39; (operand types are &#39;Print&#39; and &#39;char [(((ssizetype)str_len) &#43; 1)]&#39;)
+       Serial &lt;&lt; &#34;- Admin: &#34; &lt;&lt; str &lt;&lt; &#34;\n&#34;;
+       ~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:106:15: note: candidate: template&lt;class T&gt; Print&amp; operator&lt;&lt;(Print&amp;, const T&amp;)
+ inline Print &amp;operator &lt;&lt;(Print &amp;stream, const T &amp;arg)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:106:15: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:143:32: note:   variable-sized array type &#39;char [(((ssizetype)str_len) &#43; 1)]&#39; is not a valid template argument
+       Serial &lt;&lt; &#34;- Admin: &#34; &lt;&lt; str &lt;&lt; &#34;\n&#34;;
+                                ^~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:128:15: note: candidate: Print&amp; operator&lt;&lt;(Print&amp;, const _BYTE_CODE&amp;) &lt;near match&gt;
+ inline Print &amp;operator &lt;&lt;(Print &amp;obj, const _BYTE_CODE &amp;arg)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:128:15: note:   conversion of argument 2 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:148:15: note: candidate: template&lt;class T&gt; Print&amp; operator&lt;&lt;(Print&amp;, const _BASED&lt;T&gt;&amp;)
+ inline Print &amp;operator &lt;&lt;(Print &amp;obj, const _BASED&lt;T&gt; &amp;arg)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:148:15: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:143:32: note:   mismatched types &#39;const _BASED&lt;T&gt;&#39; and &#39;char [(((ssizetype)str_len) &#43; 1)]&#39;
+       Serial &lt;&lt; &#34;- Admin: &#34; &lt;&lt; str &lt;&lt; &#34;\n&#34;;
+                                ^~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 78756 bytes (0%) of program storage space. Maximum is 16777216 bytes.
+Global variables use 43444 bytes (16%) of dynamic memory, leaving 226892 bytes for local variables. Maximum is 270336 bytes.
+</pre>
+
+					
+					<h4>examples/Simple</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:134:28: error: no match for &#39;operator&lt;&lt;&#39; (operand types are &#39;arduino::Print&#39; and &#39;char [(((ssizetype)str_len) &#43; 1)]&#39;)
+       Serial &lt;&lt; &#34;- User: &#34; &lt;&lt; str &lt;&lt; &#34;\n&#34;;
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:106:15: note: candidate: template&lt;class T&gt; arduino::Print&amp; operator&lt;&lt;(arduino::Print&amp;, const T&amp;)
+ inline Print &amp;operator &lt;&lt;(Print &amp;stream, const T &amp;arg)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:106:15: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:134:31: note:   variable-sized array type &#39;char [(((ssizetype)str_len) &#43; 1)]&#39; is not a valid template argument
+       Serial &lt;&lt; &#34;- User: &#34; &lt;&lt; str &lt;&lt; &#34;\n&#34;;
+                               ^~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:128:15: note: candidate: arduino::Print&amp; operator&lt;&lt;(arduino::Print&amp;, const _BYTE_CODE&amp;) &lt;near match&gt;
+ inline Print &amp;operator &lt;&lt;(Print &amp;obj, const _BYTE_CODE &amp;arg)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:128:15: note:   conversion of argument 2 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:134:31: error: invalid user-defined conversion from &#39;char [(((ssizetype)str_len) &#43; 1)]&#39; to &#39;const _BYTE_CODE&amp;&#39; [-fpermissive]
+       Serial &lt;&lt; &#34;- User: &#34; &lt;&lt; str &lt;&lt; &#34;\n&#34;;
+                               ^~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:123:3: note: candidate is: _BYTE_CODE::_BYTE_CODE(byte) &lt;near match&gt;
+   _BYTE_CODE(byte v) : val(v)
+   ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:123:3: note:   conversion of argument 1 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:134:31: error: invalid conversion from &#39;char*&#39; to &#39;byte {aka unsigned char}&#39; [-fpermissive]
+       Serial &lt;&lt; &#34;- User: &#34; &lt;&lt; str &lt;&lt; &#34;\n&#34;;
+                               ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:134:31: error: invalid conversion from &#39;char*&#39; to &#39;byte {aka unsigned char}&#39; [-fpermissive]
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:123:3: note:   initializing argument 1 of &#39;_BYTE_CODE::_BYTE_CODE(byte)&#39;
+   _BYTE_CODE(byte v) : val(v)
+   ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:148:15: note: candidate: template&lt;class T&gt; arduino::Print&amp; operator&lt;&lt;(arduino::Print&amp;, const _BASED&lt;T&gt;&amp;)
+ inline Print &amp;operator &lt;&lt;(Print &amp;obj, const _BASED&lt;T&gt; &amp;arg)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:148:15: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:134:31: note:   mismatched types &#39;const _BASED&lt;T&gt;&#39; and &#39;char [(((ssizetype)str_len) &#43; 1)]&#39;
+       Serial &lt;&lt; &#34;- User: &#34; &lt;&lt; str &lt;&lt; &#34;\n&#34;;
+                               ^~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:166:15: note: candidate: arduino::Print&amp; operator&lt;&lt;(arduino::Print&amp;, const _FLOAT&amp;)
+ inline Print &amp;operator &lt;&lt;(Print &amp;obj, const _FLOAT &amp;arg)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:166:15: note:   no known conversion for argument 2 from &#39;char [(((ssizetype)str_len) &#43; 1)]&#39; to &#39;const _FLOAT&amp;&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:177:15: note: candidate: arduino::Print&amp; operator&lt;&lt;(arduino::Print&amp;, _EndLineCode)
+ inline Print &amp;operator &lt;&lt;(Print &amp;obj, _EndLineCode)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:177:15: note:   no known conversion for argument 2 from &#39;char [(((ssizetype)str_len) &#43; 1)]&#39; to &#39;_EndLineCode&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:193:15: note: candidate: arduino::Print&amp; operator&lt;&lt;(arduino::Print&amp;, const _PAD&amp;)
+ inline Print &amp;operator &lt;&lt;(Print&amp; stm, const _PAD &amp;arg)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:193:15: note:   no known conversion for argument 2 from &#39;char [(((ssizetype)str_len) &#43; 1)]&#39; to &#39;const _PAD&amp;&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:273:15: note: candidate: template&lt;class T&gt; arduino::Print&amp; operator&lt;&lt;(arduino::Print&amp;, const __WIDTH&lt;T&gt;&amp;)
+ inline Print &amp;operator &lt;&lt;(Print &amp;stm, const __WIDTH&lt;T&gt; &amp;arg)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:273:15: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:134:31: note:   mismatched types &#39;const __WIDTH&lt;T&gt;&#39; and &#39;char [(((ssizetype)str_len) &#43; 1)]&#39;
+       Serial &lt;&lt; &#34;- User: &#34; &lt;&lt; str &lt;&lt; &#34;\n&#34;;
+                               ^~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:285:15: note: candidate: arduino::Print&amp; operator&lt;&lt;(arduino::Print&amp;, const __WIDTH&lt;float&gt;&amp;)
+ inline Print &amp;operator &lt;&lt;(Print &amp;stm, const __WIDTH&lt;float&gt;  &amp;arg)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:285:15: note:   no known conversion for argument 2 from &#39;char [(((ssizetype)str_len) &#43; 1)]&#39; to &#39;const __WIDTH&lt;float&gt;&amp;&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:288:15: note: candidate: arduino::Print&amp; operator&lt;&lt;(arduino::Print&amp;, const __WIDTH&lt;double&gt;&amp;)
+ inline Print &amp;operator &lt;&lt;(Print &amp;stm, const __WIDTH&lt;double&gt; &amp;arg)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:288:15: note:   no known conversion for argument 2 from &#39;char [(((ssizetype)str_len) &#43; 1)]&#39; to &#39;const __WIDTH&lt;double&gt;&amp;&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:291:15: note: candidate: arduino::Print&amp; operator&lt;&lt;(arduino::Print&amp;, const __WIDTH&lt;_FLOAT&gt;&amp;)
+ inline Print &amp;operator &lt;&lt;(Print &amp;stm, const __WIDTH&lt;_FLOAT&gt; &amp;arg)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:291:15: note:   no known conversion for argument 2 from &#39;char [(((ssizetype)str_len) &#43; 1)]&#39; to &#39;const __WIDTH&lt;_FLOAT&gt;&amp;&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:386:15: note: candidate: template&lt;class Ft, class ... Ts&gt; arduino::Print&amp; operator&lt;&lt;(arduino::Print&amp;, const __FMT&lt;Ft, Ts ...&gt;&amp;)
+ inline Print&amp; operator &lt;&lt;(Print &amp;stm, const __FMT&lt;Ft, Ts...&gt; &amp;args)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:386:15: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:134:31: note:   mismatched types &#39;const __FMT&lt;Ft, Ts ...&gt;&#39; and &#39;char [(((ssizetype)str_len) &#43; 1)]&#39;
+       Serial &lt;&lt; &#34;- User: &#34; &lt;&lt; str &lt;&lt; &#34;\n&#34;;
+                               ^~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:394:15: note: candidate: template&lt;class Ft, class T, class ... Ts&gt; arduino::Print&amp; operator&lt;&lt;(arduino::Print&amp;, const __FMT&lt;Ft, T, Ts ...&gt;&amp;)
+ inline Print&amp; operator &lt;&lt;(Print &amp;stm, const __FMT&lt;Ft, T, Ts...&gt; &amp;args)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:394:15: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:134:31: note:   mismatched types &#39;const __FMT&lt;Ft, T, Ts ...&gt;&#39; and &#39;char [(((ssizetype)str_len) &#43; 1)]&#39;
+       Serial &lt;&lt; &#34;- User: &#34; &lt;&lt; str &lt;&lt; &#34;\n&#34;;
+                               ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:143:29: error: no match for &#39;operator&lt;&lt;&#39; (operand types are &#39;arduino::Print&#39; and &#39;char [(((ssizetype)str_len) &#43; 1)]&#39;)
+       Serial &lt;&lt; &#34;- Admin: &#34; &lt;&lt; str &lt;&lt; &#34;\n&#34;;
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:106:15: note: candidate: template&lt;class T&gt; arduino::Print&amp; operator&lt;&lt;(arduino::Print&amp;, const T&amp;)
+ inline Print &amp;operator &lt;&lt;(Print &amp;stream, const T &amp;arg)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:106:15: note:   template </pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 802 bytes (1%) of program storage space. Maximum is 49152 bytes.
+Global variables use 22 bytes (0%) of dynamic memory, leaving 6122 bytes for local variables. Maximum is 6144 bytes.
+</pre>
+
+					
+					<h4>examples/Simple</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:134:28: error: no match for &#39;operator&lt;&lt;&#39; (operand types are &#39;arduino::Print&#39; and &#39;char [(((ssizetype)str_len) &#43; 1)]&#39;)
+       Serial &lt;&lt; &#34;- User: &#34; &lt;&lt; str &lt;&lt; &#34;\n&#34;;
+       ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:106:15: note: candidate: template&lt;class T&gt; arduino::Print&amp; operator&lt;&lt;(arduino::Print&amp;, const T&amp;)
+ inline Print &amp;operator &lt;&lt;(Print &amp;stream, const T &amp;arg)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:106:15: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:134:31: note:   variable-sized array type &#39;char [(((ssizetype)str_len) &#43; 1)]&#39; is not a valid template argument
+       Serial &lt;&lt; &#34;- User: &#34; &lt;&lt; str &lt;&lt; &#34;\n&#34;;
+                               ^~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:128:15: note: candidate: arduino::Print&amp; operator&lt;&lt;(arduino::Print&amp;, const _BYTE_CODE&amp;) &lt;near match&gt;
+ inline Print &amp;operator &lt;&lt;(Print &amp;obj, const _BYTE_CODE &amp;arg)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:128:15: note:   conversion of argument 2 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:148:15: note: candidate: template&lt;class T&gt; arduino::Print&amp; operator&lt;&lt;(arduino::Print&amp;, const _BASED&lt;T&gt;&amp;)
+ inline Print &amp;operator &lt;&lt;(Print &amp;obj, const _BASED&lt;T&gt; &amp;arg)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:148:15: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:134:31: note:   mismatched types &#39;const _BASED&lt;T&gt;&#39; and &#39;char [(((ssizetype)str_len) &#43; 1)]&#39;
+       Serial &lt;&lt; &#34;- User: &#34; &lt;&lt; str &lt;&lt; &#34;\n&#34;;
+                               ^~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:166:15: note: candidate: arduino::Print&amp; operator&lt;&lt;(arduino::Print&amp;, const _FLOAT&amp;)
+ inline Print &amp;operator &lt;&lt;(Print &amp;obj, const _FLOAT &amp;arg)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:166:15: note:   no known conversion for argument 2 from &#39;char [(((ssizetype)str_len) &#43; 1)]&#39; to &#39;const _FLOAT&amp;&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:177:15: note: candidate: arduino::Print&amp; operator&lt;&lt;(arduino::Print&amp;, _EndLineCode)
+ inline Print &amp;operator &lt;&lt;(Print &amp;obj, _EndLineCode)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:177:15: note:   no known conversion for argument 2 from &#39;char [(((ssizetype)str_len) &#43; 1)]&#39; to &#39;_EndLineCode&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:193:15: note: candidate: arduino::Print&amp; operator&lt;&lt;(arduino::Print&amp;, const _PAD&amp;)
+ inline Print &amp;operator &lt;&lt;(Print&amp; stm, const _PAD &amp;arg)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:193:15: note:   no known conversion for argument 2 from &#39;char [(((ssizetype)str_len) &#43; 1)]&#39; to &#39;const _PAD&amp;&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:273:15: note: candidate: template&lt;class T&gt; arduino::Print&amp; operator&lt;&lt;(arduino::Print&amp;, const __WIDTH&lt;T&gt;&amp;)
+ inline Print &amp;operator &lt;&lt;(Print &amp;stm, const __WIDTH&lt;T&gt; &amp;arg)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:273:15: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:134:31: note:   mismatched types &#39;const __WIDTH&lt;T&gt;&#39; and &#39;char [(((ssizetype)str_len) &#43; 1)]&#39;
+       Serial &lt;&lt; &#34;- User: &#34; &lt;&lt; str &lt;&lt; &#34;\n&#34;;
+                               ^~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:285:15: note: candidate: arduino::Print&amp; operator&lt;&lt;(arduino::Print&amp;, const __WIDTH&lt;float&gt;&amp;)
+ inline Print &amp;operator &lt;&lt;(Print &amp;stm, const __WIDTH&lt;float&gt;  &amp;arg)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:285:15: note:   no known conversion for argument 2 from &#39;char [(((ssizetype)str_len) &#43; 1)]&#39; to &#39;const __WIDTH&lt;float&gt;&amp;&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:288:15: note: candidate: arduino::Print&amp; operator&lt;&lt;(arduino::Print&amp;, const __WIDTH&lt;double&gt;&amp;)
+ inline Print &amp;operator &lt;&lt;(Print &amp;stm, const __WIDTH&lt;double&gt; &amp;arg)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:288:15: note:   no known conversion for argument 2 from &#39;char [(((ssizetype)str_len) &#43; 1)]&#39; to &#39;const __WIDTH&lt;double&gt;&amp;&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:291:15: note: candidate: arduino::Print&amp; operator&lt;&lt;(arduino::Print&amp;, const __WIDTH&lt;_FLOAT&gt;&amp;)
+ inline Print &amp;operator &lt;&lt;(Print &amp;stm, const __WIDTH&lt;_FLOAT&gt; &amp;arg)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:291:15: note:   no known conversion for argument 2 from &#39;char [(((ssizetype)str_len) &#43; 1)]&#39; to &#39;const __WIDTH&lt;_FLOAT&gt;&amp;&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:386:15: note: candidate: template&lt;class Ft, class ... Ts&gt; arduino::Print&amp; operator&lt;&lt;(arduino::Print&amp;, const __FMT&lt;Ft, Ts ...&gt;&amp;)
+ inline Print&amp; operator &lt;&lt;(Print &amp;stm, const __FMT&lt;Ft, Ts...&gt; &amp;args)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:386:15: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:134:31: note:   mismatched types &#39;const __FMT&lt;Ft, Ts ...&gt;&#39; and &#39;char [(((ssizetype)str_len) &#43; 1)]&#39;
+       Serial &lt;&lt; &#34;- User: &#34; &lt;&lt; str &lt;&lt; &#34;\n&#34;;
+                               ^~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:394:15: note: candidate: template&lt;class Ft, class T, class ... Ts&gt; arduino::Print&amp; operator&lt;&lt;(arduino::Print&amp;, const __FMT&lt;Ft, T, Ts ...&gt;&amp;)
+ inline Print&amp; operator &lt;&lt;(Print &amp;stm, const __FMT&lt;Ft, T, Ts...&gt; &amp;args)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:394:15: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:134:31: note:   mismatched types &#39;const __FMT&lt;Ft, T, Ts ...&gt;&#39; and &#39;char [(((ssizetype)str_len) &#43; 1)]&#39;
+       Serial &lt;&lt; &#34;- User: &#34; &lt;&lt; str &lt;&lt; &#34;\n&#34;;
+                               ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:143:29: error: no match for &#39;operator&lt;&lt;&#39; (operand types are &#39;arduino::Print&#39; and &#39;char [(((ssizetype)str_len) &#43; 1)]&#39;)
+       Serial &lt;&lt; &#34;- Admin: &#34; &lt;&lt; str &lt;&lt; &#34;\n&#34;;
+       ~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:106:15: note: candidate: template&lt;class T&gt; arduino::Print&amp; operator&lt;&lt;(arduino::Print&amp;, const T&amp;)
+ inline Print &amp;operator &lt;&lt;(Print &amp;stream, const T &amp;arg)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:106:15: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:143:32: note:   variable-sized array type &#39;char [(((ssizetype)str_len) &#43; 1)]&#39; is not a valid template argument
+       Serial &lt;&lt; &#34;- Admin: &#34; &lt;&lt; str &lt;&lt; &#34;\n&#34;;
+                                ^~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:128:15: note: candidate: arduino::Print&amp; operator&lt;&lt;(arduino::Print&amp;, const _BYTE_CODE&amp;) &lt;near match&gt;
+ inline Print &amp;operator &lt;&lt;(Print &amp;obj, const _BYTE_CODE &amp;arg)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:128:15: note:   conversion of argument 2 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:148:15: note: candidate: template&lt;class T&gt; arduino::Print&amp; operator&lt;&lt;(arduino::Print&amp;, const _BASED&lt;T&gt;&amp;)
+ inline Print &amp;operator &lt;&lt;(Print &amp;obj, const _BASED&lt;T&gt; &amp;arg)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:148:15: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:143:32: note:   mismatched types &#39;const _BASED&lt;T&gt;&#39; and &#39;char [(((ssizetype)str_len) &#43; 1)]</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 12156 bytes (4%) of program storage space. Maximum is 262144 bytes.
+Global variables use 2996 bytes (9%) of dynamic memory, leaving 29772 bytes for local variables. Maximum is 32768 bytes.
+</pre>
+
+					
+					<h4>examples/Simple</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:134:28: error: no match for &#39;operator&lt;&lt;&#39; (operand types are &#39;arduino::Print&#39; and &#39;char [(((ssizetype)str_len) &#43; 1)]&#39;)
+       Serial &lt;&lt; &#34;- User: &#34; &lt;&lt; str &lt;&lt; &#34;\n&#34;;
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:106:15: note: candidate: template&lt;class T&gt; arduino::Print&amp; operator&lt;&lt;(arduino::Print&amp;, const T&amp;)
+ inline Print &amp;operator &lt;&lt;(Print &amp;stream, const T &amp;arg)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:106:15: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:134:31: note:   variable-sized array type &#39;char [(((ssizetype)str_len) &#43; 1)]&#39; is not a valid template argument
+       Serial &lt;&lt; &#34;- User: &#34; &lt;&lt; str &lt;&lt; &#34;\n&#34;;
+                               ^~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:128:15: note: candidate: arduino::Print&amp; operator&lt;&lt;(arduino::Print&amp;, const _BYTE_CODE&amp;) &lt;near match&gt;
+ inline Print &amp;operator &lt;&lt;(Print &amp;obj, const _BYTE_CODE &amp;arg)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:128:15: note:   conversion of argument 2 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:134:31: error: invalid user-defined conversion from &#39;char [(((ssizetype)str_len) &#43; 1)]&#39; to &#39;const _BYTE_CODE&amp;&#39; [-fpermissive]
+       Serial &lt;&lt; &#34;- User: &#34; &lt;&lt; str &lt;&lt; &#34;\n&#34;;
+                               ^~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:123:3: note: candidate is: _BYTE_CODE::_BYTE_CODE(byte) &lt;near match&gt;
+   _BYTE_CODE(byte v) : val(v)
+   ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:123:3: note:   conversion of argument 1 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:134:31: error: invalid conversion from &#39;char*&#39; to &#39;byte {aka unsigned char}&#39; [-fpermissive]
+       Serial &lt;&lt; &#34;- User: &#34; &lt;&lt; str &lt;&lt; &#34;\n&#34;;
+                               ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:134:31: error: invalid conversion from &#39;char*&#39; to &#39;byte {aka unsigned char}&#39; [-fpermissive]
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:123:3: note:   initializing argument 1 of &#39;_BYTE_CODE::_BYTE_CODE(byte)&#39;
+   _BYTE_CODE(byte v) : val(v)
+   ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:148:15: note: candidate: template&lt;class T&gt; arduino::Print&amp; operator&lt;&lt;(arduino::Print&amp;, const _BASED&lt;T&gt;&amp;)
+ inline Print &amp;operator &lt;&lt;(Print &amp;obj, const _BASED&lt;T&gt; &amp;arg)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:148:15: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:134:31: note:   mismatched types &#39;const _BASED&lt;T&gt;&#39; and &#39;char [(((ssizetype)str_len) &#43; 1)]&#39;
+       Serial &lt;&lt; &#34;- User: &#34; &lt;&lt; str &lt;&lt; &#34;\n&#34;;
+                               ^~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:166:15: note: candidate: arduino::Print&amp; operator&lt;&lt;(arduino::Print&amp;, const _FLOAT&amp;)
+ inline Print &amp;operator &lt;&lt;(Print &amp;obj, const _FLOAT &amp;arg)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:166:15: note:   no known conversion for argument 2 from &#39;char [(((ssizetype)str_len) &#43; 1)]&#39; to &#39;const _FLOAT&amp;&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:177:15: note: candidate: arduino::Print&amp; operator&lt;&lt;(arduino::Print&amp;, _EndLineCode)
+ inline Print &amp;operator &lt;&lt;(Print &amp;obj, _EndLineCode)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:177:15: note:   no known conversion for argument 2 from &#39;char [(((ssizetype)str_len) &#43; 1)]&#39; to &#39;_EndLineCode&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:193:15: note: candidate: arduino::Print&amp; operator&lt;&lt;(arduino::Print&amp;, const _PAD&amp;)
+ inline Print &amp;operator &lt;&lt;(Print&amp; stm, const _PAD &amp;arg)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:193:15: note:   no known conversion for argument 2 from &#39;char [(((ssizetype)str_len) &#43; 1)]&#39; to &#39;const _PAD&amp;&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:273:15: note: candidate: template&lt;class T&gt; arduino::Print&amp; operator&lt;&lt;(arduino::Print&amp;, const __WIDTH&lt;T&gt;&amp;)
+ inline Print &amp;operator &lt;&lt;(Print &amp;stm, const __WIDTH&lt;T&gt; &amp;arg)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:273:15: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:134:31: note:   mismatched types &#39;const __WIDTH&lt;T&gt;&#39; and &#39;char [(((ssizetype)str_len) &#43; 1)]&#39;
+       Serial &lt;&lt; &#34;- User: &#34; &lt;&lt; str &lt;&lt; &#34;\n&#34;;
+                               ^~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:285:15: note: candidate: arduino::Print&amp; operator&lt;&lt;(arduino::Print&amp;, const __WIDTH&lt;float&gt;&amp;)
+ inline Print &amp;operator &lt;&lt;(Print &amp;stm, const __WIDTH&lt;float&gt;  &amp;arg)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:285:15: note:   no known conversion for argument 2 from &#39;char [(((ssizetype)str_len) &#43; 1)]&#39; to &#39;const __WIDTH&lt;float&gt;&amp;&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:288:15: note: candidate: arduino::Print&amp; operator&lt;&lt;(arduino::Print&amp;, const __WIDTH&lt;double&gt;&amp;)
+ inline Print &amp;operator &lt;&lt;(Print &amp;stm, const __WIDTH&lt;double&gt; &amp;arg)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:288:15: note:   no known conversion for argument 2 from &#39;char [(((ssizetype)str_len) &#43; 1)]&#39; to &#39;const __WIDTH&lt;double&gt;&amp;&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:291:15: note: candidate: arduino::Print&amp; operator&lt;&lt;(arduino::Print&amp;, const __WIDTH&lt;_FLOAT&gt;&amp;)
+ inline Print &amp;operator &lt;&lt;(Print &amp;stm, const __WIDTH&lt;_FLOAT&gt; &amp;arg)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:291:15: note:   no known conversion for argument 2 from &#39;char [(((ssizetype)str_len) &#43; 1)]&#39; to &#39;const __WIDTH&lt;_FLOAT&gt;&amp;&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:386:15: note: candidate: template&lt;class Ft, class ... Ts&gt; arduino::Print&amp; operator&lt;&lt;(arduino::Print&amp;, const __FMT&lt;Ft, Ts ...&gt;&amp;)
+ inline Print&amp; operator &lt;&lt;(Print &amp;stm, const __FMT&lt;Ft, Ts...&gt; &amp;args)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:386:15: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:134:31: note:   mismatched types &#39;const __FMT&lt;Ft, Ts ...&gt;&#39; and &#39;char [(((ssizetype)str_len) &#43; 1)]&#39;
+       Serial &lt;&lt; &#34;- User: &#34; &lt;&lt; str &lt;&lt; &#34;\n&#34;;
+                               ^~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:394:15: note: candidate: template&lt;class Ft, class T, class ... Ts&gt; arduino::Print&amp; operator&lt;&lt;(arduino::Print&amp;, const __FMT&lt;Ft, T, Ts ...&gt;&amp;)
+ inline Print&amp; operator &lt;&lt;(Print &amp;stm, const __FMT&lt;Ft, T, Ts...&gt; &amp;args)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:394:15: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:134:31: note:   mismatched types &#39;const __FMT&lt;Ft, T, Ts ...&gt;&#39; and &#39;char [(((ssizetype)str_len) &#43; 1)]&#39;
+       Serial &lt;&lt; &#34;- User: &#34; &lt;&lt; str &lt;&lt; &#34;\n&#34;;
+                               ^~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:143:29: error: no match for &#39;operator&lt;&lt;&#39; (operand types are &#39;arduino::Print&#39; and &#39;char [(((ssizetype)str_len) &#43; 1)]&#39;)
+       Serial &lt;&lt; &#34;- Admin: &#34; &lt;&lt; str &lt;&lt; &#34;\n&#34;;
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:106:15: note: candidate: template&lt;class T&gt; arduino::Print&amp; operator&lt;&lt;(arduino::Print&amp;, const T&amp;)
+ inline Print &amp;operator &lt;&lt;(Print &amp;stream, const T &amp;arg)
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:106:15: note:   template </pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>PASS</b>
+					
+				</p>
+				<pre class="pre-scrollable">Sketch uses 197768 bytes (15%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 13092 bytes (3%) of dynamic memory, leaving 314588 bytes for local variables. Maximum is 327680 bytes.
+</pre>
+
+					
+					<h4>examples/Simple</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino: In function &#39;void loop()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:134:28: error: no match for &#39;operator&lt;&lt;&#39; (operand types are &#39;Print&#39; and &#39;char [(((ssizetype)str_len) &#43; 1)]&#39;)
+       Serial &lt;&lt; &#34;- User: &#34; &lt;&lt; str &lt;&lt; &#34;\n&#34;;
+                            ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:106:15: note: candidate: template&lt;class T&gt; Print&amp; operator&lt;&lt;(Print&amp;, const T&amp;)
+ inline Print &amp;operator &lt;&lt;(Print &amp;stream, const T &amp;arg)
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:106:15: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:134:31: note:   variable-sized array type &#39;char [(((ssizetype)str_len) &#43; 1)]&#39; is not a valid template argument
+       Serial &lt;&lt; &#34;- User: &#34; &lt;&lt; str &lt;&lt; &#34;\n&#34;;
+                               ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:128:15: note: candidate: Print&amp; operator&lt;&lt;(Print&amp;, const _BYTE_CODE&amp;) &lt;near match&gt;
+ inline Print &amp;operator &lt;&lt;(Print &amp;obj, const _BYTE_CODE &amp;arg)
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:128:15: note:   conversion of argument 2 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:134:31: error: invalid user-defined conversion from &#39;char [(((ssizetype)str_len) &#43; 1)]&#39; to &#39;const _BYTE_CODE&amp;&#39; [-fpermissive]
+       Serial &lt;&lt; &#34;- User: &#34; &lt;&lt; str &lt;&lt; &#34;\n&#34;;
+                               ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:123:3: note: candidate is: _BYTE_CODE::_BYTE_CODE(byte) &lt;near match&gt;
+   _BYTE_CODE(byte v) : val(v)
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:123:3: note:   conversion of argument 1 would be ill-formed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:134:31: error: invalid conversion from &#39;char*&#39; to &#39;byte {aka unsigned char}&#39; [-fpermissive]
+       Serial &lt;&lt; &#34;- User: &#34; &lt;&lt; str &lt;&lt; &#34;\n&#34;;
+                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:134:31: error: invalid conversion from &#39;char*&#39; to &#39;byte {aka unsigned char}&#39; [-fpermissive]
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:123:3: note:   initializing argument 1 of &#39;_BYTE_CODE::_BYTE_CODE(byte)&#39;
+   _BYTE_CODE(byte v) : val(v)
+   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:148:15: note: candidate: template&lt;class T&gt; Print&amp; operator&lt;&lt;(Print&amp;, const _BASED&lt;T&gt;&amp;)
+ inline Print &amp;operator &lt;&lt;(Print &amp;obj, const _BASED&lt;T&gt; &amp;arg)
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:148:15: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:134:31: note:   mismatched types &#39;const _BASED&lt;T&gt;&#39; and &#39;char [(((ssizetype)str_len) &#43; 1)]&#39;
+       Serial &lt;&lt; &#34;- User: &#34; &lt;&lt; str &lt;&lt; &#34;\n&#34;;
+                               ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:166:15: note: candidate: Print&amp; operator&lt;&lt;(Print&amp;, const _FLOAT&amp;)
+ inline Print &amp;operator &lt;&lt;(Print &amp;obj, const _FLOAT &amp;arg)
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:166:15: note:   no known conversion for argument 2 from &#39;char [(((ssizetype)str_len) &#43; 1)]&#39; to &#39;const _FLOAT&amp;&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:177:15: note: candidate: Print&amp; operator&lt;&lt;(Print&amp;, _EndLineCode)
+ inline Print &amp;operator &lt;&lt;(Print &amp;obj, _EndLineCode)
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:177:15: note:   no known conversion for argument 2 from &#39;char [(((ssizetype)str_len) &#43; 1)]&#39; to &#39;_EndLineCode&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:193:15: note: candidate: Print&amp; operator&lt;&lt;(Print&amp;, const _PAD&amp;)
+ inline Print &amp;operator &lt;&lt;(Print&amp; stm, const _PAD &amp;arg)
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:193:15: note:   no known conversion for argument 2 from &#39;char [(((ssizetype)str_len) &#43; 1)]&#39; to &#39;const _PAD&amp;&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:273:15: note: candidate: template&lt;class T&gt; Print&amp; operator&lt;&lt;(Print&amp;, const __WIDTH&lt;T&gt;&amp;)
+ inline Print &amp;operator &lt;&lt;(Print &amp;stm, const __WIDTH&lt;T&gt; &amp;arg)
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:273:15: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:134:31: note:   mismatched types &#39;const __WIDTH&lt;T&gt;&#39; and &#39;char [(((ssizetype)str_len) &#43; 1)]&#39;
+       Serial &lt;&lt; &#34;- User: &#34; &lt;&lt; str &lt;&lt; &#34;\n&#34;;
+                               ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:285:15: note: candidate: Print&amp; operator&lt;&lt;(Print&amp;, const __WIDTH&lt;float&gt;&amp;)
+ inline Print &amp;operator &lt;&lt;(Print &amp;stm, const __WIDTH&lt;float&gt;  &amp;arg) 
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:285:15: note:   no known conversion for argument 2 from &#39;char [(((ssizetype)str_len) &#43; 1)]&#39; to &#39;const __WIDTH&lt;float&gt;&amp;&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:288:15: note: candidate: Print&amp; operator&lt;&lt;(Print&amp;, const __WIDTH&lt;double&gt;&amp;)
+ inline Print &amp;operator &lt;&lt;(Print &amp;stm, const __WIDTH&lt;double&gt; &amp;arg) 
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:288:15: note:   no known conversion for argument 2 from &#39;char [(((ssizetype)str_len) &#43; 1)]&#39; to &#39;const __WIDTH&lt;double&gt;&amp;&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:291:15: note: candidate: Print&amp; operator&lt;&lt;(Print&amp;, const __WIDTH&lt;_FLOAT&gt;&amp;)
+ inline Print &amp;operator &lt;&lt;(Print &amp;stm, const __WIDTH&lt;_FLOAT&gt; &amp;arg) 
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:291:15: note:   no known conversion for argument 2 from &#39;char [(((ssizetype)str_len) &#43; 1)]&#39; to &#39;const __WIDTH&lt;_FLOAT&gt;&amp;&#39;
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:386:15: note: candidate: template&lt;class Ft, class ... Ts&gt; Print&amp; operator&lt;&lt;(Print&amp;, const __FMT&lt;Ft, Ts ...&gt;&amp;)
+ inline Print&amp; operator &lt;&lt;(Print &amp;stm, const __FMT&lt;Ft, Ts...&gt; &amp;args)
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:386:15: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:134:31: note:   mismatched types &#39;const __FMT&lt;Ft, Ts ...&gt;&#39; and &#39;char [(((ssizetype)str_len) &#43; 1)]&#39;
+       Serial &lt;&lt; &#34;- User: &#34; &lt;&lt; str &lt;&lt; &#34;\n&#34;;
+                               ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:394:15: note: candidate: template&lt;class Ft, class T, class ... Ts&gt; Print&amp; operator&lt;&lt;(Print&amp;, const __FMT&lt;Ft, T, Ts ...&gt;&amp;)
+ inline Print&amp; operator &lt;&lt;(Print &amp;stm, const __FMT&lt;Ft, T, Ts...&gt; &amp;args)
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:394:15: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:134:31: note:   mismatched types &#39;const __FMT&lt;Ft, T, Ts ...&gt;&#39; and &#39;char [(((ssizetype)str_len) &#43; 1)]&#39;
+       Serial &lt;&lt; &#34;- User: &#34; &lt;&lt; str &lt;&lt; &#34;\n&#34;;
+                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:143:29: error: no match for &#39;operator&lt;&lt;&#39; (operand types are &#39;Print&#39; and &#39;char [(((ssizetype)str_len) &#43; 1)]&#39;)
+       Serial &lt;&lt; &#34;- Admin: &#34; &lt;&lt; str &lt;&lt; &#34;\n&#34;;
+                             ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:2:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:106:15: note: candidate: template&lt;class T&gt; Print&amp; operator&lt;&lt;(Print&amp;, const T&amp;)
+ inline Print &amp;operator &lt;&lt;(Print &amp;stream, const T &amp;arg)
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/Streaming/src/Streaming.h:106:15: note:   template argument deduction/substitution failed:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/JsmnStream/examples/Simple/Simple.ino:143:32: note:   variable-sized array type &#39;char [(((ssizetype)str_len) &#43; 1)]&#39; is not a valid template argument
+       Serial &lt;&lt; &#34;- Admin: &#34; &lt;&lt; str &lt;&lt; &#34;\n&#34;;
+                   </pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

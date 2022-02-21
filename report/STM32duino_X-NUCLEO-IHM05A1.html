@@ -1,0 +1,875 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>arduino-testlib report</title>
+	<style>
+	.pass { background-color: #00FF00 !important; }
+	.fail { background-color: #FF0000 !important; }
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>STM32duino X-NUCLEO-IHM05A1 - compatibility matrix</h1>
+				<p>
+					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
+				</p>
+
+				<h2>STM32duino X-NUCLEO-IHM05A1</h2>
+				<p>
+					Version: <b>1.0.0</b>
+					<br />
+					<a href="https://www.arduino.cc/reference/en/libraries/stm32duino-x-nucleo-ihm05a1/">More details</a>
+				</p>
+
+				<h2>Compatibility matrix</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Board</th>
+						<th>Claims compatibility</th>
+						<th>Inclusion</th>
+						
+						<th><pre>X_NUCLEO_IHM05A1_HelloWorld</pre></th>
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3aavr%3auno"><b>arduino:avr:uno</b></a>
+							<br />
+							<small>1.8.4</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3ambed_nano%3ananorp2040connect"><b>arduino:mbed_nano:nanorp2040connect</b></a>
+							<br />
+							<small>2.7.2</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3amegaavr%3anona4809"><b>arduino:megaavr:nona4809</b></a>
+							<br />
+							<small>1.8.7</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#arduino%3asamd%3amkrwifi1010"><b>arduino:samd:mkrwifi1010</b></a>
+							<br />
+							<small>1.8.12</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+								
+							
+						
+					</tr>
+					
+					<tr>
+						<td>
+							<a href="#esp32%3aesp32%3ad1_mini32"><b>esp32:esp32:d1_mini32</b></a>
+							<br />
+							<small>1.0.6</small>
+						</td>
+
+						
+						
+						
+						
+							<td>No</td>
+							<td class="fail">FAIL</td>
+						
+
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									
+										
+											
+											<td class="fail">FAIL</td>
+										
+									
+								
+							
+						
+					</tr>
+					
+				</table>
+
+				<h2>Compilation logs</h2>
+				
+				<h3 id="arduino:avr:uno">arduino:avr:uno @ 1.8.4</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library STM32duino_X-NUCLEO-IHM05A1 claims to run on stm32 architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.cpp:41:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:77:15: error: &#39;function&#39; in namespace &#39;std&#39; does not name a template type
+   static std::function&lt;Ret(Params...)&gt; func;
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:81:6: error: &#39;function&#39; in namespace &#39;std&#39; does not name a template type
+ std::function&lt;Ret(Params...)&gt; Callback&lt;Ret(Params...)&gt;::func;
+      ^~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.cpp:41:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:107:191: error: &#39;TIM_TypeDef&#39; has not been declared
+     L6208(uint8_t flag_and_enable_pin, uint8_t reset_pin, uint8_t direction_pin, uint8_t half_full_pin, uint8_t control_pin, uint8_t clock_pin, uint8_t vrefA_pwm_pin, uint8_t vrefB_pwm_pin, TIM_TypeDef *ticker_instance) : StepperMotor(),
+                                                                                                                                                                                               ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:1065:5: error: &#39;HardwareTimer&#39; does not name a type; did you mean &#39;HardwareSerial&#39;?
+     HardwareTimer *vrefA_pwm_timer;
+     ^~~~~~~~~~~~~
+     HardwareSerial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:1068:5: error: &#39;TIM_TypeDef&#39; does not name a type
+     TIM_TypeDef *vrefA_pwm_instance;
+     ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:1069:5: error: &#39;TIM_TypeDef&#39; does not name a type
+     TIM_TypeDef *vrefB_pwm_instance;
+     ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:1071:5: error: &#39;HardwareTimer&#39; does not name a type; did you mean &#39;HardwareSerial&#39;?
+     HardwareTimer *vrefB_pwm_timer;
+     ^~~~~~~~~~~~~
+     HardwareSerial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:1074:5: error: &#39;TIM_TypeDef&#39; does not name a type
+     TIM_TypeDef *ticker_instance;
+     ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:1077:5: error: &#39;HardwareTimer&#39; does not name a type; did you mean &#39;HardwareSerial&#39;?
+     HardwareTimer *ticker;
+     ^~~~~~~~~~~~~
+     HardwareSerial
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h: In constructor &#39;L6208::L6208(uint8_t, uint8_t, uint8_t, uint8_t, uint8_t, uint8_t, uint8_t, uint8_t, int*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:116:7: error: class &#39;L6208&#39; does not have any field named &#39;ticker_instance&#39;
+       ticker_instance(ticker_instance)
+       ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:126:25: error: &#39;func&#39; is not a member of &#39;Callback&lt;void()&gt;&#39;
+       Callback&lt;void()&gt;::func = std::bind(&amp;L6208::L6208_TickHandler, this);
+                         ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:126:37: error: &#39;bind&#39; is not a member of &#39;std&#39;
+       Callback&lt;void()&gt;::func = std::bind(&amp;L6208::L6208_TickHandler, this);
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:129:7: error: &#39;vrefA_pwm_instance&#39; was not declared in this scope
+       vrefA_pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(vrefA_pwm), PinMap_PWM);
+       ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:129:7: note: suggested alternative: &#39;vrefA_pwm_channel&#39;
+       vrefA_pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(vrefA_pwm), PinMap_PWM);
+       ^~~~~~~~~~~~~~~~~~
+       vrefA_pwm_channel
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:129:29: error: &#39;TIM_TypeDef&#39; was not declared in this scope
+       vrefA_pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(vrefA_pwm), PinMap_PWM);
+                             ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:129:42: error: expected primary-expression before &#39;)&#39; token
+       vrefA_pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(vrefA_pwm), PinMap_PWM);
+                                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:130:59: error: &#39;digitalPinToPinName&#39; was not declared in this scope
+       vrefA_pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(vrefA_pwm), PinMap_PWM));
+                                                           ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:130:59: note: suggested alternative: &#39;digitalPinToBitMask&#39;
+       vrefA_pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(vrefA_pwm), PinMap_PWM));
+                                                           ^~~~~~~~~~~~~~~~~~~
+                                                           digitalPinToBitMask
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:130:91: error: &#39;PinMap_PWM&#39; was not declared in this scope
+       vrefA_pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(vrefA_pwm), PinMap_PWM));
+                                                                                           ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:130:43: error: &#39;pinmap_function&#39; was not declared in this scope
+       vrefA_pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(vrefA_pwm), PinMap_PWM));
+                                           ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:130:27: error: &#39;STM_PIN_CHANNEL&#39; was not declared in this scope
+       vrefA_pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(vrefA_pwm), PinMap_PWM));
+                           ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:132:7: error: &#39;vrefB_pwm_instance&#39; was not declared in this scope
+       vrefB_pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(vrefB_pwm), PinMap_PWM);
+       ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:132:7: note: suggested alternative: &#39;vrefB_pwm_channel&#39;
+       vrefB_pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(vrefB_pwm), PinMap_PWM);
+       ^~~~~~~~~~~~~~~~~~
+       vrefB_pwm_channel
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:132:42: error: expected primary-expression before &#39;)&#39; token
+       vrefB_pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(vrefB_pwm), PinMap_PWM);
+                                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:135:7: error: &#39;vrefA_pwm_timer&#39; was not declared in this scope
+       vrefA_pwm_timer = new HardwareTimer(vrefA_pwm_instance);
+       ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:135:7: note: suggested alternative: &#39;vrefA_pwm_pin&#39;
+       vrefA_pwm_timer = new HardwareTimer(vrefA_pwm_instance);
+       ^~~~~~~~~~~~~~~
+       vrefA_pwm_pin
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:135:29: error: expected type-specifier before &#39;HardwareTimer&#39;
+       vrefA_pwm_timer = new HardwareTimer(vrefA_pwm_instance);
+                             ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:136:51: error: &#39;TIMER_OUTPUT_COMPARE_PWM1&#39; was not declared in this scope
+       vrefA_pwm_timer-&gt;setMode(vrefA_pwm_channel, TIMER_OUTPUT_COMPARE_PWM1, vrefA_pwm_pin);
+                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:137:68: error: &#39;HERTZ_FORMAT&#39; was not declared in this scope
+       vrefA_pwm_timer -&gt;setOverflow(L6208_CONF_VREF_PWM_FREQUENCY, HERTZ_FORMAT);
+                                                                    ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:138:64: error: &#39;TICK_COMPARE_FORMAT&#39; was not declared in this scope
+       vrefA_pwm_timer-&gt;setCaptureCompare(vrefA_pwm_channel, 0, TICK_COMPARE_FORMAT);
+                                                                ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:140:7: error: &#39;vrefB_pwm_timer&#39; was not declared in this scope
+       vrefB_pwm_timer = new HardwareTimer(vrefB_pwm_instance);
+       ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:140:7: note: suggested alternative: &#39;vrefB_pwm_pin&#39;
+       vrefB_pwm_timer = new HardwareTimer(vrefB_pwm_instance);
+       ^~</pre>
+
+					
+					<h4>examples/X_NUCLEO_IHM05A1_HelloWorld</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library STM32duino_X-NUCLEO-IHM05A1 claims to run on stm32 architecture(s) and may be incompatible with your current board which runs on avr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/examples/X_NUCLEO_IHM05A1_HelloWorld/X_NUCLEO_IHM05A1_HelloWorld.ino:58:4: error: #error &#34;Target board not tested! Please, comment this line and define the good pins for VrefA and VrefB and a good instance for the Ticker Hardware Timer&#34;
+   #error &#34;Target board not tested! Please, comment this line and define the good pins for VrefA and VrefB and a good instance for the Ticker Hardware Timer&#34;
+    ^~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:mbed_nano:nanorp2040connect">arduino:mbed_nano:nanorp2040connect @ 2.7.2</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library STM32duino_X-NUCLEO-IHM05A1 claims to run on stm32 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.cpp:41:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:107:191: error: &#39;TIM_TypeDef&#39; has not been declared
+     L6208(uint8_t flag_and_enable_pin, uint8_t reset_pin, uint8_t direction_pin, uint8_t half_full_pin, uint8_t control_pin, uint8_t clock_pin, uint8_t vrefA_pwm_pin, uint8_t vrefB_pwm_pin, TIM_TypeDef *ticker_instance) : StepperMotor(),
+                                                                                                                                                                                               ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:1065:5: error: &#39;HardwareTimer&#39; does not name a type
+     HardwareTimer *vrefA_pwm_timer;
+     ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:1068:5: error: &#39;TIM_TypeDef&#39; does not name a type
+     TIM_TypeDef *vrefA_pwm_instance;
+     ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:1069:5: error: &#39;TIM_TypeDef&#39; does not name a type
+     TIM_TypeDef *vrefB_pwm_instance;
+     ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:1071:5: error: &#39;HardwareTimer&#39; does not name a type
+     HardwareTimer *vrefB_pwm_timer;
+     ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:1074:5: error: &#39;TIM_TypeDef&#39; does not name a type
+     TIM_TypeDef *ticker_instance;
+     ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:1077:5: error: &#39;HardwareTimer&#39; does not name a type
+     HardwareTimer *ticker;
+     ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h: In constructor &#39;L6208::L6208(uint8_t, uint8_t, uint8_t, uint8_t, uint8_t, uint8_t, uint8_t, uint8_t, int*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:116:7: error: class &#39;L6208&#39; does not have any field named &#39;ticker_instance&#39;
+       ticker_instance(ticker_instance)
+       ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:129:7: error: &#39;vrefA_pwm_instance&#39; was not declared in this scope
+       vrefA_pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(vrefA_pwm), PinMap_PWM);
+       ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:129:7: note: suggested alternative: &#39;vrefA_pwm_channel&#39;
+       vrefA_pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(vrefA_pwm), PinMap_PWM);
+       ^~~~~~~~~~~~~~~~~~
+       vrefA_pwm_channel
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:129:29: error: &#39;TIM_TypeDef&#39; was not declared in this scope
+       vrefA_pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(vrefA_pwm), PinMap_PWM);
+                             ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:129:42: error: expected primary-expression before &#39;)&#39; token
+       vrefA_pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(vrefA_pwm), PinMap_PWM);
+                                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:130:91: error: &#39;PinMap_PWM&#39; was not declared in this scope
+       vrefA_pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(vrefA_pwm), PinMap_PWM));
+                                                                                           ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:130:43: error: &#39;pinmap_function&#39; was not declared in this scope
+       vrefA_pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(vrefA_pwm), PinMap_PWM));
+                                           ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:130:43: note: suggested alternative: &#39;gpio_function&#39;
+       vrefA_pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(vrefA_pwm), PinMap_PWM));
+                                           ^~~~~~~~~~~~~~~
+                                           gpio_function
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:130:27: error: &#39;STM_PIN_CHANNEL&#39; was not declared in this scope
+       vrefA_pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(vrefA_pwm), PinMap_PWM));
+                           ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:130:27: note: suggested alternative: &#39;NUM_DMA_CHANNELS&#39;
+       vrefA_pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(vrefA_pwm), PinMap_PWM));
+                           ^~~~~~~~~~~~~~~
+                           NUM_DMA_CHANNELS
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:132:7: error: &#39;vrefB_pwm_instance&#39; was not declared in this scope
+       vrefB_pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(vrefB_pwm), PinMap_PWM);
+       ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:132:7: note: suggested alternative: &#39;vrefB_pwm_channel&#39;
+       vrefB_pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(vrefB_pwm), PinMap_PWM);
+       ^~~~~~~~~~~~~~~~~~
+       vrefB_pwm_channel
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:132:42: error: expected primary-expression before &#39;)&#39; token
+       vrefB_pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(vrefB_pwm), PinMap_PWM);
+                                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:135:7: error: &#39;vrefA_pwm_timer&#39; was not declared in this scope
+       vrefA_pwm_timer = new HardwareTimer(vrefA_pwm_instance);
+       ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:135:7: note: suggested alternative: &#39;vrefA_pwm_pin&#39;
+       vrefA_pwm_timer = new HardwareTimer(vrefA_pwm_instance);
+       ^~~~~~~~~~~~~~~
+       vrefA_pwm_pin
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:135:29: error: expected type-specifier before &#39;HardwareTimer&#39;
+       vrefA_pwm_timer = new HardwareTimer(vrefA_pwm_instance);
+                             ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:136:51: error: &#39;TIMER_OUTPUT_COMPARE_PWM1&#39; was not declared in this scope
+       vrefA_pwm_timer-&gt;setMode(vrefA_pwm_channel, TIMER_OUTPUT_COMPARE_PWM1, vrefA_pwm_pin);
+                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:137:68: error: &#39;HERTZ_FORMAT&#39; was not declared in this scope
+       vrefA_pwm_timer -&gt;setOverflow(L6208_CONF_VREF_PWM_FREQUENCY, HERTZ_FORMAT);
+                                                                    ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:138:64: error: &#39;TICK_COMPARE_FORMAT&#39; was not declared in this scope
+       vrefA_pwm_timer-&gt;setCaptureCompare(vrefA_pwm_channel, 0, TICK_COMPARE_FORMAT);
+                                                                ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:140:7: error: &#39;vrefB_pwm_timer&#39; was not declared in this scope
+       vrefB_pwm_timer = new HardwareTimer(vrefB_pwm_instance);
+       ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:140:7: note: suggested alternative: &#39;vrefB_pwm_pin&#39;
+       vrefB_pwm_timer = new HardwareTimer(vrefB_pwm_instance);
+       ^~~~~~~~~~~~~~~
+       vrefB_pwm_pin
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:140:29: error: expected type-specifier before &#39;HardwareTimer&#39;
+       vrefB_pwm_timer = new HardwareTimer(vrefB_pwm_instance);
+                             ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:145:7: error: &#39;ticker&#39; was not declared in this scope
+       ticker = new HardwareTimer(ticker_instance);
+       ^~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:145:7: note: suggested alternative: &#39;tickFreq&#39;
+       ticker = new HardwareTimer(ticker_instance);
+       ^~~~~~
+       tickFreq
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:145:20: error: expected type-specifier before &#39;HardwareTimer&#39;
+       ticker = new HardwareTimer(ticker_instance);
+                    ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h: In destructor &#39;virtual L6208::~L6208()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:159:12: error: &#39;vrefA_pwm_timer&#39; was not declared in this scope
+       free(vrefA_pwm_timer);
+            ^~~~~~~~~~~</pre>
+
+					
+					<h4>examples/X_NUCLEO_IHM05A1_HelloWorld</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library STM32duino_X-NUCLEO-IHM05A1 claims to run on stm32 architecture(s) and may be incompatible with your current board which runs on mbed_nano architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/examples/X_NUCLEO_IHM05A1_HelloWorld/X_NUCLEO_IHM05A1_HelloWorld.ino:58:4: error: #error &#34;Target board not tested! Please, comment this line and define the good pins for VrefA and VrefB and a good instance for the Ticker Hardware Timer&#34;
+   #error &#34;Target board not tested! Please, comment this line and define the good pins for VrefA and VrefB and a good instance for the Ticker Hardware Timer&#34;
+    ^~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:megaavr:nona4809">arduino:megaavr:nona4809 @ 1.8.7</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library STM32duino_X-NUCLEO-IHM05A1 claims to run on stm32 architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.cpp:41:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:77:15: error: &#39;function&#39; in namespace &#39;std&#39; does not name a template type
+   static std::function&lt;Ret(Params...)&gt; func;
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:81:6: error: &#39;function&#39; in namespace &#39;std&#39; does not name a template type
+ std::function&lt;Ret(Params...)&gt; Callback&lt;Ret(Params...)&gt;::func;
+      ^~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.cpp:41:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:107:191: error: &#39;TIM_TypeDef&#39; has not been declared
+     L6208(uint8_t flag_and_enable_pin, uint8_t reset_pin, uint8_t direction_pin, uint8_t half_full_pin, uint8_t control_pin, uint8_t clock_pin, uint8_t vrefA_pwm_pin, uint8_t vrefB_pwm_pin, TIM_TypeDef *ticker_instance) : StepperMotor(),
+                                                                                                                                                                                               ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:1065:5: error: &#39;HardwareTimer&#39; does not name a type
+     HardwareTimer *vrefA_pwm_timer;
+     ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:1068:5: error: &#39;TIM_TypeDef&#39; does not name a type
+     TIM_TypeDef *vrefA_pwm_instance;
+     ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:1069:5: error: &#39;TIM_TypeDef&#39; does not name a type
+     TIM_TypeDef *vrefB_pwm_instance;
+     ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:1071:5: error: &#39;HardwareTimer&#39; does not name a type
+     HardwareTimer *vrefB_pwm_timer;
+     ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:1074:5: error: &#39;TIM_TypeDef&#39; does not name a type
+     TIM_TypeDef *ticker_instance;
+     ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:1077:5: error: &#39;HardwareTimer&#39; does not name a type
+     HardwareTimer *ticker;
+     ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h: In constructor &#39;L6208::L6208(uint8_t, uint8_t, uint8_t, uint8_t, uint8_t, uint8_t, uint8_t, uint8_t, int*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:116:7: error: class &#39;L6208&#39; does not have any field named &#39;ticker_instance&#39;
+       ticker_instance(ticker_instance)
+       ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:126:25: error: &#39;func&#39; is not a member of &#39;Callback&lt;void()&gt;&#39;
+       Callback&lt;void()&gt;::func = std::bind(&amp;L6208::L6208_TickHandler, this);
+                         ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:126:37: error: &#39;bind&#39; is not a member of &#39;std&#39;
+       Callback&lt;void()&gt;::func = std::bind(&amp;L6208::L6208_TickHandler, this);
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:129:7: error: &#39;vrefA_pwm_instance&#39; was not declared in this scope
+       vrefA_pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(vrefA_pwm), PinMap_PWM);
+       ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:129:7: note: suggested alternative: &#39;vrefA_pwm_channel&#39;
+       vrefA_pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(vrefA_pwm), PinMap_PWM);
+       ^~~~~~~~~~~~~~~~~~
+       vrefA_pwm_channel
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:129:29: error: &#39;TIM_TypeDef&#39; was not declared in this scope
+       vrefA_pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(vrefA_pwm), PinMap_PWM);
+                             ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:129:42: error: expected primary-expression before &#39;)&#39; token
+       vrefA_pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(vrefA_pwm), PinMap_PWM);
+                                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:130:59: error: &#39;digitalPinToPinName&#39; was not declared in this scope
+       vrefA_pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(vrefA_pwm), PinMap_PWM));
+                                                           ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:130:59: note: suggested alternative: &#39;digitalPinToTimer&#39;
+       vrefA_pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(vrefA_pwm), PinMap_PWM));
+                                                           ^~~~~~~~~~~~~~~~~~~
+                                                           digitalPinToTimer
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:130:91: error: &#39;PinMap_PWM&#39; was not declared in this scope
+       vrefA_pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(vrefA_pwm), PinMap_PWM));
+                                                                                           ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:130:43: error: &#39;pinmap_function&#39; was not declared in this scope
+       vrefA_pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(vrefA_pwm), PinMap_PWM));
+                                           ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:130:27: error: &#39;STM_PIN_CHANNEL&#39; was not declared in this scope
+       vrefA_pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(vrefA_pwm), PinMap_PWM));
+                           ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:132:7: error: &#39;vrefB_pwm_instance&#39; was not declared in this scope
+       vrefB_pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(vrefB_pwm), PinMap_PWM);
+       ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:132:7: note: suggested alternative: &#39;vrefB_pwm_channel&#39;
+       vrefB_pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(vrefB_pwm), PinMap_PWM);
+       ^~~~~~~~~~~~~~~~~~
+       vrefB_pwm_channel
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:132:42: error: expected primary-expression before &#39;)&#39; token
+       vrefB_pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(vrefB_pwm), PinMap_PWM);
+                                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:135:7: error: &#39;vrefA_pwm_timer&#39; was not declared in this scope
+       vrefA_pwm_timer = new HardwareTimer(vrefA_pwm_instance);
+       ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:135:7: note: suggested alternative: &#39;vrefA_pwm_pin&#39;
+       vrefA_pwm_timer = new HardwareTimer(vrefA_pwm_instance);
+       ^~~~~~~~~~~~~~~
+       vrefA_pwm_pin
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:135:29: error: expected type-specifier before &#39;HardwareTimer&#39;
+       vrefA_pwm_timer = new HardwareTimer(vrefA_pwm_instance);
+                             ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:136:51: error: &#39;TIMER_OUTPUT_COMPARE_PWM1&#39; was not declared in this scope
+       vrefA_pwm_timer-&gt;setMode(vrefA_pwm_channel, TIMER_OUTPUT_COMPARE_PWM1, vrefA_pwm_pin);
+                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:137:68: error: &#39;HERTZ_FORMAT&#39; was not declared in this scope
+       vrefA_pwm_timer -&gt;setOverflow(L6208_CONF_VREF_PWM_FREQUENCY, HERTZ_FORMAT);
+                                                                    ^~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:138:64: error: &#39;TICK_COMPARE_FORMAT&#39; was not declared in this scope
+       vrefA_pwm_timer-&gt;setCaptureCompare(vrefA_pwm_channel, 0, TICK_COMPARE_FORMAT);
+                                                                ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:140:7: error: &#39;vrefB_pwm_timer&#39; was not declared in this scope
+       vrefB_pwm_timer = new HardwareTimer(vrefB_pwm_instance);
+       ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:140:7: note: suggested alternative: &#39;vrefB_pwm_pin&#39;
+       vrefB_pwm_timer = new HardwareTimer(vrefB_pwm_instance);
+       ^~~~~~~~~~~~~~~
+       vrefB_pwm_pin
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:140:29: error: expected</pre>
+
+					
+					<h4>examples/X_NUCLEO_IHM05A1_HelloWorld</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library STM32duino_X-NUCLEO-IHM05A1 claims to run on stm32 architecture(s) and may be incompatible with your current board which runs on megaavr architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/examples/X_NUCLEO_IHM05A1_HelloWorld/X_NUCLEO_IHM05A1_HelloWorld.ino:58:4: error: #error &#34;Target board not tested! Please, comment this line and define the good pins for VrefA and VrefB and a good instance for the Ticker Hardware Timer&#34;
+   #error &#34;Target board not tested! Please, comment this line and define the good pins for VrefA and VrefB and a good instance for the Ticker Hardware Timer&#34;
+    ^~~~~
+
+</pre>
+					
+				
+				<h3 id="arduino:samd:mkrwifi1010">arduino:samd:mkrwifi1010 @ 1.8.12</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+					<br />This library has no main header file so an empty one was created.
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library STM32duino_X-NUCLEO-IHM05A1 claims to run on stm32 architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.cpp:41:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:77:15: error: &#39;function&#39; in namespace &#39;std&#39; does not name a template type
+   static std::function&lt;Ret(Params...)&gt; func;
+               ^~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:81:6: error: &#39;function&#39; in namespace &#39;std&#39; does not name a template type
+ std::function&lt;Ret(Params...)&gt; Callback&lt;Ret(Params...)&gt;::func;
+      ^~~~~~~~
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.cpp:41:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:107:191: error: &#39;TIM_TypeDef&#39; has not been declared
+     L6208(uint8_t flag_and_enable_pin, uint8_t reset_pin, uint8_t direction_pin, uint8_t half_full_pin, uint8_t control_pin, uint8_t clock_pin, uint8_t vrefA_pwm_pin, uint8_t vrefB_pwm_pin, TIM_TypeDef *ticker_instance) : StepperMotor(),
+                                                                                                                                                                                               ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:1065:5: error: &#39;HardwareTimer&#39; does not name a type
+     HardwareTimer *vrefA_pwm_timer;
+     ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:1068:5: error: &#39;TIM_TypeDef&#39; does not name a type
+     TIM_TypeDef *vrefA_pwm_instance;
+     ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:1069:5: error: &#39;TIM_TypeDef&#39; does not name a type
+     TIM_TypeDef *vrefB_pwm_instance;
+     ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:1071:5: error: &#39;HardwareTimer&#39; does not name a type
+     HardwareTimer *vrefB_pwm_timer;
+     ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:1074:5: error: &#39;TIM_TypeDef&#39; does not name a type
+     TIM_TypeDef *ticker_instance;
+     ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:1077:5: error: &#39;HardwareTimer&#39; does not name a type
+     HardwareTimer *ticker;
+     ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h: In constructor &#39;L6208::L6208(uint8_t, uint8_t, uint8_t, uint8_t, uint8_t, uint8_t, uint8_t, uint8_t, int*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:116:7: error: class &#39;L6208&#39; does not have any field named &#39;ticker_instance&#39;
+       ticker_instance(ticker_instance)
+       ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:126:25: error: &#39;func&#39; is not a member of &#39;Callback&lt;void()&gt;&#39;
+       Callback&lt;void()&gt;::func = std::bind(&amp;L6208::L6208_TickHandler, this);
+                         ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:126:37: error: &#39;bind&#39; is not a member of &#39;std&#39;
+       Callback&lt;void()&gt;::func = std::bind(&amp;L6208::L6208_TickHandler, this);
+                                     ^~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:126:37: note: suggested alternative: &#39;rint&#39;
+       Callback&lt;void()&gt;::func = std::bind(&amp;L6208::L6208_TickHandler, this);
+                                     ^~~~
+                                     rint
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:129:7: error: &#39;vrefA_pwm_instance&#39; was not declared in this scope
+       vrefA_pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(vrefA_pwm), PinMap_PWM);
+       ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:129:7: note: suggested alternative: &#39;vrefA_pwm_channel&#39;
+       vrefA_pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(vrefA_pwm), PinMap_PWM);
+       ^~~~~~~~~~~~~~~~~~
+       vrefA_pwm_channel
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:129:29: error: &#39;TIM_TypeDef&#39; was not declared in this scope
+       vrefA_pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(vrefA_pwm), PinMap_PWM);
+                             ^~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:129:42: error: expected primary-expression before &#39;)&#39; token
+       vrefA_pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(vrefA_pwm), PinMap_PWM);
+                                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:130:59: error: &#39;digitalPinToPinName&#39; was not declared in this scope
+       vrefA_pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(vrefA_pwm), PinMap_PWM));
+                                                           ^~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:130:59: note: suggested alternative: &#39;digitalPinToBitMask&#39;
+       vrefA_pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(vrefA_pwm), PinMap_PWM));
+                                                           ^~~~~~~~~~~~~~~~~~~
+                                                           digitalPinToBitMask
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:130:91: error: &#39;PinMap_PWM&#39; was not declared in this scope
+       vrefA_pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(vrefA_pwm), PinMap_PWM));
+                                                                                           ^~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:130:91: note: suggested alternative: &#39;PIO_PWM&#39;
+       vrefA_pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(vrefA_pwm), PinMap_PWM));
+                                                                                           ^~~~~~~~~~
+                                                                                           PIO_PWM
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:130:43: error: &#39;pinmap_function&#39; was not declared in this scope
+       vrefA_pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(vrefA_pwm), PinMap_PWM));
+                                           ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:130:27: error: &#39;STM_PIN_CHANNEL&#39; was not declared in this scope
+       vrefA_pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(vrefA_pwm), PinMap_PWM));
+                           ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:130:27: note: suggested alternative: &#39;REG_EVSYS_CHANNEL&#39;
+       vrefA_pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(vrefA_pwm), PinMap_PWM));
+                           ^~~~~~~~~~~~~~~
+                           REG_EVSYS_CHANNEL
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:132:7: error: &#39;vrefB_pwm_instance&#39; was not declared in this scope
+       vrefB_pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(vrefB_pwm), PinMap_PWM);
+       ^~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:132:7: note: suggested alternative: &#39;vrefB_pwm_channel&#39;
+       vrefB_pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(vrefB_pwm), PinMap_PWM);
+       ^~~~~~~~~~~~~~~~~~
+       vrefB_pwm_channel
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:132:42: error: expected primary-expression before &#39;)&#39; token
+       vrefB_pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(vrefB_pwm), PinMap_PWM);
+                                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:135:7: error: &#39;vrefA_pwm_timer&#39; was not declared in this scope
+       vrefA_pwm_timer = new HardwareTimer(vrefA_pwm_instance);
+       ^~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:135:7: note: suggested alternative: &#39;vrefA_pwm_pin&#39;
+       vrefA_pwm_timer = new HardwareTimer(vrefA_pwm_instance);
+       ^~~~~~~~~~~~~~~
+       vrefA_pwm_pin
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:135:29: error: expected type-specifier before &#39;HardwareTimer&#39;
+       vrefA_pwm_timer = new HardwareTimer(vrefA_pwm_instance);
+                             ^~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:136:51: error: &#39;TIMER_OUTPUT_COMPARE_PWM1&#39; was not declared in this scope
+       vrefA_pwm_timer-&gt;setMode(vrefA_pwm_channel, TIMER_OUTPUT_COMPARE_PWM1, vrefA_pwm_pin);
+                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:137:68: error: &#39;HERTZ_FORMAT&#39; was not declared in this scope
+       vrefA_pwm_timer -&gt;</pre>
+
+					
+					<h4>examples/X_NUCLEO_IHM05A1_HelloWorld</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library STM32duino_X-NUCLEO-IHM05A1 claims to run on stm32 architecture(s) and may be incompatible with your current board which runs on samd architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/examples/X_NUCLEO_IHM05A1_HelloWorld/X_NUCLEO_IHM05A1_HelloWorld.ino:58:4: error: #error &#34;Target board not tested! Please, comment this line and define the good pins for VrefA and VrefB and a good instance for the Ticker Hardware Timer&#34;
+   #error &#34;Target board not tested! Please, comment this line and define the good pins for VrefA and VrefB and a good instance for the Ticker Hardware Timer&#34;
+    ^~~~~
+
+</pre>
+					
+				
+				<h3 id="esp32:esp32:d1_mini32">esp32:esp32:d1_mini32 @ 1.0.6</h3>
+				<h4>Inclusion</h4>
+				<p>
+					Result: <b>FAIL</b>
+					
+				</p>
+				<pre class="pre-scrollable">WARNING: library STM32duino_X-NUCLEO-IHM05A1 claims to run on stm32 architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.cpp:41:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:77:15: error: &#39;function&#39; in namespace &#39;std&#39; does not name a template type
+   static std::function&lt;Ret(Params...)&gt; func;
+               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:81:6: error: &#39;function&#39; in namespace &#39;std&#39; does not name a template type
+ std::function&lt;Ret(Params...)&gt; Callback&lt;Ret(Params...)&gt;::func;
+      ^
+In file included from /home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.cpp:41:0:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:107:191: error: &#39;TIM_TypeDef&#39; has not been declared
+     L6208(uint8_t flag_and_enable_pin, uint8_t reset_pin, uint8_t direction_pin, uint8_t half_full_pin, uint8_t control_pin, uint8_t clock_pin, uint8_t vrefA_pwm_pin, uint8_t vrefB_pwm_pin, TIM_TypeDef *ticker_instance) : StepperMotor(),
+                                                                                                                                                                                               ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:1065:5: error: &#39;HardwareTimer&#39; does not name a type
+     HardwareTimer *vrefA_pwm_timer;
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:1068:5: error: &#39;TIM_TypeDef&#39; does not name a type
+     TIM_TypeDef *vrefA_pwm_instance;
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:1069:5: error: &#39;TIM_TypeDef&#39; does not name a type
+     TIM_TypeDef *vrefB_pwm_instance;
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:1071:5: error: &#39;HardwareTimer&#39; does not name a type
+     HardwareTimer *vrefB_pwm_timer;
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:1074:5: error: &#39;TIM_TypeDef&#39; does not name a type
+     TIM_TypeDef *ticker_instance;
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:1077:5: error: &#39;HardwareTimer&#39; does not name a type
+     HardwareTimer *ticker;
+     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h: In constructor &#39;L6208::L6208(uint8_t, uint8_t, uint8_t, uint8_t, uint8_t, uint8_t, uint8_t, uint8_t, int*)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:116:7: error: class &#39;L6208&#39; does not have any field named &#39;ticker_instance&#39;
+       ticker_instance(ticker_instance)
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:126:7: error: &#39;func&#39; is not a member of &#39;Callback&lt;void()&gt;&#39;
+       Callback&lt;void()&gt;::func = std::bind(&amp;L6208::L6208_TickHandler, this);
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:126:32: error: &#39;bind&#39; is not a member of &#39;std&#39;
+       Callback&lt;void()&gt;::func = std::bind(&amp;L6208::L6208_TickHandler, this);
+                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:129:7: error: &#39;vrefA_pwm_instance&#39; was not declared in this scope
+       vrefA_pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(vrefA_pwm), PinMap_PWM);
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:129:29: error: &#39;TIM_TypeDef&#39; was not declared in this scope
+       vrefA_pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(vrefA_pwm), PinMap_PWM);
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:129:42: error: expected primary-expression before &#39;)&#39; token
+       vrefA_pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(vrefA_pwm), PinMap_PWM);
+                                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:130:88: error: &#39;digitalPinToPinName&#39; was not declared in this scope
+       vrefA_pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(vrefA_pwm), PinMap_PWM));
+                                                                                        ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:130:91: error: &#39;PinMap_PWM&#39; was not declared in this scope
+       vrefA_pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(vrefA_pwm), PinMap_PWM));
+                                                                                           ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:130:101: error: &#39;pinmap_function&#39; was not declared in this scope
+       vrefA_pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(vrefA_pwm), PinMap_PWM));
+                                                                                                     ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:130:102: error: &#39;STM_PIN_CHANNEL&#39; was not declared in this scope
+       vrefA_pwm_channel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(vrefA_pwm), PinMap_PWM));
+                                                                                                      ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:132:7: error: &#39;vrefB_pwm_instance&#39; was not declared in this scope
+       vrefB_pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(vrefB_pwm), PinMap_PWM);
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:132:42: error: expected primary-expression before &#39;)&#39; token
+       vrefB_pwm_instance = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(vrefB_pwm), PinMap_PWM);
+                                          ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:135:7: error: &#39;vrefA_pwm_timer&#39; was not declared in this scope
+       vrefA_pwm_timer = new HardwareTimer(vrefA_pwm_instance);
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:135:29: error: expected type-specifier before &#39;HardwareTimer&#39;
+       vrefA_pwm_timer = new HardwareTimer(vrefA_pwm_instance);
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:136:51: error: &#39;TIMER_OUTPUT_COMPARE_PWM1&#39; was not declared in this scope
+       vrefA_pwm_timer-&gt;setMode(vrefA_pwm_channel, TIMER_OUTPUT_COMPARE_PWM1, vrefA_pwm_pin);
+                                                   ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:137:68: error: &#39;HERTZ_FORMAT&#39; was not declared in this scope
+       vrefA_pwm_timer -&gt;setOverflow(L6208_CONF_VREF_PWM_FREQUENCY, HERTZ_FORMAT);
+                                                                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:138:64: error: &#39;TICK_COMPARE_FORMAT&#39; was not declared in this scope
+       vrefA_pwm_timer-&gt;setCaptureCompare(vrefA_pwm_channel, 0, TICK_COMPARE_FORMAT);
+                                                                ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:140:7: error: &#39;vrefB_pwm_timer&#39; was not declared in this scope
+       vrefB_pwm_timer = new HardwareTimer(vrefB_pwm_instance);
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:140:29: error: expected type-specifier before &#39;HardwareTimer&#39;
+       vrefB_pwm_timer = new HardwareTimer(vrefB_pwm_instance);
+                             ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:145:7: error: &#39;ticker&#39; was not declared in this scope
+       ticker = new HardwareTimer(ticker_instance);
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:145:20: error: expected type-specifier before &#39;HardwareTimer&#39;
+       ticker = new HardwareTimer(ticker_instance);
+                    ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h: In destructor &#39;virtual L6208::~L6208()&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:159:12: error: &#39;vrefA_pwm_timer&#39; was not declared in this scope
+       free(vrefA_pwm_timer);
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:160:12: error: &#39;vrefB_pwm_timer&#39; was not declared in this scope
+       free(vrefB_pwm_timer);
+            ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h: In member function &#39;void L6208::L6208_Board_TickStart(uint16_t)&#39;:
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:952:7: error: &#39;ticker&#39; was not declared in this scope
+       ticker-&gt;setOverflow(frequency, HERTZ_FORMAT);
+       ^
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/src/L6208.h:952:38: error: &#39;HERTZ_FORMAT&#39; was not declared in this scope
+       ticker-&gt;setOverflow(frequency, HERTZ_FOR</pre>
+
+					
+					<h4>examples/X_NUCLEO_IHM05A1_HelloWorld</h4>
+					<p>
+						Result: <b>FAIL</b>
+					</p>
+					<pre class="pre-scrollable">WARNING: library STM32duino_X-NUCLEO-IHM05A1 claims to run on stm32 architecture(s) and may be incompatible with your current board which runs on esp32 architecture(s).
+/home/ec2-user/arduino-testlib/cli-datadir/user/libraries/STM32duino_X-NUCLEO-IHM05A1/examples/X_NUCLEO_IHM05A1_HelloWorld/X_NUCLEO_IHM05A1_HelloWorld.ino:58:4: error: #error &#34;Target board not tested! Please, comment this line and define the good pins for VrefA and VrefB and a good instance for the Ticker Hardware Timer&#34;
+   #error &#34;Target board not tested! Please, comment this line and define the good pins for VrefA and VrefB and a good instance for the Ticker Hardware Timer&#34;
+    ^
+
+</pre>
+					
+				
+			</div>
+		</div>
+	</div>
+  </body>
+</html>
