@@ -7,10 +7,11 @@ var htmlTmpl = `
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>arduino-testlib report</title>
+	<title>arduino-testlib report</title>
 	<style>
 	.pass { background-color: #00FF00 !important; }
 	.fail { background-color: #FF0000 !important; }
+	.warning { background-color: #FFFF00 !important; }
 	</style>
   </head>
   <body>
@@ -27,14 +28,17 @@ var htmlTmpl = `
 				<p><b>{{ .NumLibs }}</b> libraries were tested on <b>{{ .NumBoards }} boards.</b></p>
 
 				<h2>Boards</h2>
-				<p>The following table represents how many libraries are compatible with each tested board, 
-					and how many claim compatibility with its architecture in their library.properties metadata file.</p>
+				<p>The following table summarizes how many libraries are compatible with each tested board, 
+					and how many libraries have a potentially inaccurate library.properties metadata file 
+					in terms of declared compatibility.</p>
 				<table class="table table-bordered">
 					<tr>
 						<th>Board</th>
-						<th class="text-end">Compatible</th>
-						<th class="text-end">Incompatible</th>
+						<th>Compatibility</th>
+						<th>Metadata Mismatch</th>
+						{{ if .HasUntested }}
 						<th class="text-end">Untested</th>
+						{{ end }}
 					</tr>
 					{{ range .Boards }}
 					<tr>
@@ -42,29 +46,47 @@ var htmlTmpl = `
 							<b>{{ .Name }}</b><br />
 							<small>{{ .Versions }}</small>
 						</td>
-						<td class="text-end">
-							{{ .TotPass }} ({{ .TotPassPercent }})<br />
-							<small>claiming compatibility: {{ .PassClaim }} ({{ .PassClaimPercent }})</small>
+						<td width="25%">
+							<div class="pass" style="font-size: 70%; width: {{ .TotPassPercent }}; padding: 3px"
+								data-bs-toggle="tooltip" data-bs-placement="top" title="{{ .TotPassPercent }} of the tested libs are compatible with {{ .Name }} (inclusion test only, no examples)">
+								{{ .TotPassPercent }}
+							</div>
 						</td>
-						<td class="text-end">
-							{{ .TotFail }} ({{ .TotFailPercent }})<br />
-							<small>claiming compatibility: {{ .FailClaim }} ({{ .FailClaimPercent }})</small>
+						<td width="25%">
+							<div class="warning" style="font-size: 70%; width: {{ .TotClaimMismatchPercent }}; padding: 3px"
+								data-bs-toggle="tooltip" data-bs-placement="top" title="{{ .FailClaimPercent }} of the tested libs declare compatibility with {{ .Name }} but fail compilation, while {{ .PassNoClaimPercent }} don't declare compatibility but can be compiled">
+								{{ .TotClaimMismatchPercent }}
+							</div>
 						</td>
+						{{ if $.HasUntested }}
 						<td class="text-end">
 							{{ .Untested }} ({{ .UntestedPercent }})
 						</td>
+						{{ end }}
 					</tr>
 					{{ end }}
 				</table>
-				<p>
-					<b>{{ .NumLibsAllBoards }}</b> libraries ({{ .NumLibsAllBoardsPercent }}) are compatible with all the tested boards.<br />
-					<b>{{ .NumLibsNoBoards }}</b> libraries ({{ .NumLibsNoBoardsPercent }}) are not compatible with any of them.<br />
-				</p>
+
+				<div class="row row-cols-1 row-cols-md-3 g-4">
+					<div class="col">
+						<div class="card border-success mb-3" style="max-width: 18rem;">
+							<div class="card-body text-success">
+								<h3 class="card-title">{{ .NumLibsAllBoardsPercent }}</h3>
+								<p class="card-text">Compatible with <b>all</b> boards.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card border-danger mb-3" style="max-width: 18rem;">
+							<div class="card-body text-danger">
+								<h3 class="card-title">{{ .NumLibsNoBoardsPercent }}</h3>
+								<p class="card-text">Compatible with <b>no</b> boards.</p>
+							</div>
+						</div>
+					</div>
+				</div>
 
 				<h2>Libraries</h2>
-				<p>The following table shows the compatibility status for each library.</p>
-				<p>The ⚠️ icon indicates those cases when compilation status does not match the compatibility
-					advertised in library.properties.</p>
 				<table class="table table-bordered table-sm">
 					<tr>
 						<th>Library</th>
@@ -81,8 +103,8 @@ var htmlTmpl = `
 						<td>{{ .Version }}</td>
 						{{ range $board := $.Boards }}
 						{{ if eq (index $lib.BoardCompatibility $board.Name) "PASS_CLAIM" }}<td class="pass">PASS</td>{{ end }}
-						{{ if eq (index $lib.BoardCompatibility $board.Name) "PASS_NOCLAIM" }}<td class="pass">PASS ⚠️</td>{{ end }}
-						{{ if eq (index $lib.BoardCompatibility $board.Name) "FAIL_CLAIM" }}<td class="fail">FAIL ⚠️</td>{{ end }}
+						{{ if eq (index $lib.BoardCompatibility $board.Name) "PASS_NOCLAIM" }}<td class="pass" data-bs-toggle="tooltip" data-bs-placement="top" title="This result does not match the architectures declared in library.properties">PASS ⚠️</td>{{ end }}
+						{{ if eq (index $lib.BoardCompatibility $board.Name) "FAIL_CLAIM" }}<td class="fail" data-bs-toggle="tooltip" data-bs-placement="top" title="This result does not match the architectures declared in library.properties">FAIL ⚠️</td>{{ end }}
 						{{ if eq (index $lib.BoardCompatibility $board.Name) "FAIL_NOCLAIM" }}<td class="fail">FAIL</td>{{ end }}
 						{{ if eq (index $lib.BoardCompatibility $board.Name) "" }}<td></td>{{ end }}
 						{{ end }}
@@ -95,23 +117,28 @@ var htmlTmpl = `
 				<p>The following table shows how many examples are provided per library.</p>
 				<table class="table table-bordered">
 					<tr>
-						<th>Number of examples</th>
-						<th>Number of libraries</th>
+						{{ range .Examples }}
+							<th>{{ .Num }}</th>
+						{{ end }}
 					</tr>
-					{{ range .Examples }}
 					<tr>
-						<td>
-							<b>{{ .Num }}</b>
-						</td>
-						<td>
-							{{ .Count }} ({{ .CountPercent }})
-						</td>
+						{{ range .Examples }}
+							<td style="{{ if eq .Num 0 }}color: red{{ end }}">
+								{{ .CountPercent }}
+							</td>
+						{{ end }}
 					</tr>
-					{{ end }}
 				</table>
 			</div>
 		</div>
 	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<script>
+		var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+		var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+			return new bootstrap.Tooltip(tooltipTriggerEl)
+		});
+	</script>
   </body>
 </html>
 `

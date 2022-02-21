@@ -94,10 +94,11 @@ func Generate(datadirPath string, outputDir string) {
 	percent := func(n int) string { return fmt.Sprintf("%.1f%%", float32(n)/float32(numLibs)*100) }
 
 	type boardReportData struct {
-		Name                                                                                string
-		Versions                                                                            string
-		TotPass, PassClaim, TotFail, FailClaim, Untested                                    int
-		TotPassPercent, PassClaimPercent, TotFailPercent, FailClaimPercent, UntestedPercent string
+		Name                                             string
+		Versions                                         string
+		TotPass, PassClaim, TotFail, FailClaim, Untested int
+		TotPassPercent, PassClaimPercent, PassNoClaimPercent, TotFailPercent,
+		FailClaimPercent, TotClaimMismatchPercent, UntestedPercent string
 	}
 	type libraryReportData struct {
 		Name, ReportFile, Version, URL string
@@ -114,6 +115,7 @@ func Generate(datadirPath string, outputDir string) {
 		NumLibs, NumBoards                              int
 		NumLibsNoBoards, NumLibsAllBoards               int
 		NumLibsNoBoardsPercent, NumLibsAllBoardsPercent string
+		HasUntested                                     bool
 		Boards                                          []boardReportData
 		Examples                                        []exampleReportData
 		Libraries                                       []libraryReportData
@@ -146,15 +148,23 @@ func Generate(datadirPath string, outputDir string) {
 		c.TotPassPercent = percent(c.TotPass)
 		c.PassClaim = cnt[PASS_CLAIM]
 		c.PassClaimPercent = percent(cnt[PASS_CLAIM])
+		c.PassNoClaimPercent = percent(cnt[PASS_NOCLAIM])
+		c.TotClaimMismatchPercent = percent(cnt[PASS_NOCLAIM] + cnt[FAIL_CLAIM])
 		c.TotFail = cnt[FAIL_CLAIM] + cnt[FAIL_NOCLAIM]
 		c.TotFailPercent = percent(c.TotFail)
 		c.FailClaim = cnt[FAIL_CLAIM]
 		c.FailClaimPercent = percent(cnt[FAIL_CLAIM])
 		c.Untested = numLibs - (c.TotPass + c.TotFail)
 		c.UntestedPercent = percent(c.Untested)
+		if c.Untested > 0 {
+			reportData.HasUntested = true
+		}
 
 		reportData.Boards = append(reportData.Boards, c)
 	}
+	sort.Slice(reportData.Boards, func(i, j int) bool {
+		return reportData.Boards[i].Name < reportData.Boards[j].Name
+	})
 
 	// Library statistics
 	var libNames []string
