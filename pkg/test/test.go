@@ -49,14 +49,14 @@ func TestLib(libName string, tr TestResults, force bool, instance *cliclient.Cli
 	libPath := util.LibPathFromName(libName)
 	if _, err := os.Stat(libPath); err != nil {
 		fmt.Fprintf(os.Stderr, "[%s] Library not found in %s\n", libName, libPath)
-		os.Exit(1)
+		return tr
 	}
 
 	// Get library name
 	properties, err := ini.Load(path.Join(libPath, "library.properties"))
 	if err != nil {
-		fmt.Println(err)
-		os.Exit(1)
+		fmt.Fprintf(os.Stderr, "[%s] Could not open library.properties\n", libName)
+		return tr
 	}
 	name := properties.Section("").Key("name").String()
 	version := properties.Section("").Key("version").String()
@@ -65,7 +65,7 @@ func TestLib(libName string, tr TestResults, force bool, instance *cliclient.Cli
 	includes := strings.Split(properties.Section("").Key("includes").String(), ",")
 	if name == "" {
 		fmt.Printf("[%s] No library name found in library.properties\n", libName)
-		os.Exit(1)
+		return tr
 	}
 
 	if tr.Name != "" && tr.Name != name {
