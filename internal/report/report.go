@@ -30,6 +30,7 @@ func Generate(datadirPath string, outputDir string) {
 		FAIL_NOCLAIM compatibilityStatus = "FAIL_NOCLAIM"
 	)
 	compatibility := make(map[libBoardPair]compatibilityStatus)
+	compatibilityAsterisk := make(map[string]bool) // lib => has_asterisk
 	testResults := make(map[libBoardPair]test.TestResult)
 	numExamples := make(map[int]int)
 
@@ -86,6 +87,13 @@ func Generate(datadirPath string, outputDir string) {
 			compatibility[libBoardPair{tr.Name, t.FQBN}] = cSt
 			testResults[libBoardPair{tr.Name, t.FQBN}] = t
 		}
+		if len(tr.Tests) > 0 {
+			for _, arch := range tr.Tests[len(tr.Tests)-1].Architectures {
+				if arch == "*" {
+					compatibilityAsterisk[tr.Name] = true
+				}
+			}
+		}
 		numExamples[nEx] = numExamples[nEx] + 1
 	}
 
@@ -94,11 +102,9 @@ func Generate(datadirPath string, outputDir string) {
 	percent := func(n int) string { return fmt.Sprintf("%.1f%%", float32(n)/float32(numLibs)*100) }
 
 	type boardReportData struct {
-		Name                                             string
-		Versions                                         string
-		TotPass, PassClaim, TotFail, FailClaim, Untested int
-		TotPassPercent, PassClaimPercent, PassNoClaimPercent, TotFailPercent,
-		FailClaimPercent, TotClaimMismatchPercent, UntestedPercent string
+		Name, Architecture, Versions                                            string
+		Claim, ExplicitClaim, ClaimMismatch, Pass, Fail, Untested               int
+		PassClaim, PassNoClaim, FailClaim, FailClaimAsterisk, FailExplicitClaim int
 	}
 	type libraryReportData struct {
 		Name, ReportFile, Version, URL string
@@ -107,22 +113,25 @@ func Generate(datadirPath string, outputDir string) {
 		Examples                       []string
 	}
 	type exampleReportData struct {
-		Num, Count   int
-		CountPercent string
+		Num, Count int
 	}
 	reportData := struct {
-		Timestamp                                       string
-		NumLibs, NumBoards                              int
-		NumLibsNoBoards, NumLibsAllBoards               int
-		NumLibsNoBoardsPercent, NumLibsAllBoardsPercent string
-		HasUntested                                     bool
-		Boards                                          []boardReportData
-		Examples                                        []exampleReportData
-		Libraries                                       []libraryReportData
+		Timestamp                                   string
+		NumLibs, NumBoards                          int
+		NumLibsCompatibilityAsterisk                int
+		NumLibsClaimNoBoards, NumLibsClaimAllBoards int
+		NumLibsPassNoBoards, NumLibsPassAllBoards   int
+		NumLibsFailClaim                            int
+		NumLibsAsteriskFail                         int
+		HasUntested                                 bool
+		Boards                                      []boardReportData
+		Examples                                    []exampleReportData
+		Libraries                                   []libraryReportData
 	}{
-		Timestamp: time.Now().Format(time.RFC850),
-		NumLibs:   numLibs,
-		NumBoards: len(boards),
+		Timestamp:                    time.Now().Format(time.RFC850),
+		NumLibs:                      numLibs,
+		NumBoards:                    len(boards),
+		NumLibsCompatibilityAsterisk: len(compatibilityAsterisk),
 	}
 
 	// Board statistics
@@ -134,28 +143,32 @@ func Generate(datadirPath string, outputDir string) {
 		semver.Sort(versions)
 
 		c := boardReportData{
-			Name:     board,
-			Versions: strings.Join(versions, ","),
+			Name:         board,
+			Architecture: util.ArchitectureFromFQBN(board),
+			Versions:     strings.Join(versions, ","),
 		}
 
 		cnt := make(map[compatibilityStatus]int)
+		failClaimAsterisk := 0
 		for pair, result := range compatibility {
 			if pair.board == board {
 				cnt[result] = cnt[result] + 1
+				if result == FAIL_CLAIM && compatibilityAsterisk[pair.lib] {
+					failClaimAsterisk = failClaimAsterisk + 1
+				}
 			}
 		}
-		c.TotPass = cnt[PASS_CLAIM] + cnt[PASS_NOCLAIM]
-		c.TotPassPercent = percent(c.TotPass)
+		c.Claim = cnt[PASS_CLAIM] + cnt[FAIL_CLAIM]
+		c.ExplicitClaim = c.Claim - reportData.NumLibsCompatibilityAsterisk
+		c.ClaimMismatch = cnt[PASS_NOCLAIM] + cnt[FAIL_CLAIM]
+		c.Pass = cnt[PASS_CLAIM] + cnt[PASS_NOCLAIM]
+		c.Fail = cnt[FAIL_CLAIM] + cnt[FAIL_NOCLAIM]
+		c.Untested = numLibs - (c.Pass + c.Fail)
 		c.PassClaim = cnt[PASS_CLAIM]
-		c.PassClaimPercent = percent(cnt[PASS_CLAIM])
-		c.PassNoClaimPercent = percent(cnt[PASS_NOCLAIM])
-		c.TotClaimMismatchPercent = percent(cnt[PASS_NOCLAIM] + cnt[FAIL_CLAIM])
-		c.TotFail = cnt[FAIL_CLAIM] + cnt[FAIL_NOCLAIM]
-		c.TotFailPercent = percent(c.TotFail)
+		c.PassNoClaim = cnt[PASS_NOCLAIM]
 		c.FailClaim = cnt[FAIL_CLAIM]
-		c.FailClaimPercent = percent(cnt[FAIL_CLAIM])
-		c.Untested = numLibs - (c.TotPass + c.TotFail)
-		c.UntestedPercent = percent(c.Untested)
+		c.FailClaimAsterisk = failClaimAsterisk
+		c.FailExplicitClaim = c.FailClaim - c.FailClaimAsterisk
 		if c.Untested > 0 {
 			reportData.HasUntested = true
 		}
@@ -181,12 +194,24 @@ func Generate(datadirPath string, outputDir string) {
 			BoardCompatibility: make(map[string]compatibilityStatus),
 			BoardTestResults:   make(map[string]test.TestResult),
 		}
+		totClaim := 0
+		totFailClaim := 0
 		totPass := 0
+		totFail := 0
 		for pair, result := range compatibility {
 			if pair.lib == lib {
 				lData.BoardCompatibility[pair.board] = result
+				if result == PASS_CLAIM || result == FAIL_CLAIM {
+					totClaim = totClaim + 1
+				}
+				if result == FAIL_CLAIM {
+					totFailClaim = totFailClaim + 1
+				}
 				if result == PASS_CLAIM || result == PASS_NOCLAIM {
 					totPass = totPass + 1
+				}
+				if result == FAIL_CLAIM || result == FAIL_NOCLAIM {
+					totFail = totFail + 1
 				}
 			}
 		}
@@ -203,19 +228,29 @@ func Generate(datadirPath string, outputDir string) {
 			lData.Examples = append(lData.Examples, e)
 		}
 		reportData.Libraries = append(reportData.Libraries, lData)
+		if totClaim == len(boards) {
+			reportData.NumLibsClaimAllBoards = reportData.NumLibsClaimAllBoards + 1
+		}
+		if totClaim == 0 {
+			reportData.NumLibsClaimNoBoards = reportData.NumLibsClaimNoBoards + 1
+		}
 		if totPass == len(boards) {
-			reportData.NumLibsAllBoards = reportData.NumLibsAllBoards + 1
+			reportData.NumLibsPassAllBoards = reportData.NumLibsPassAllBoards + 1
 		}
 		if totPass == 0 {
-			reportData.NumLibsNoBoards = reportData.NumLibsNoBoards + 1
+			reportData.NumLibsPassNoBoards = reportData.NumLibsPassNoBoards + 1
+		}
+		if totFailClaim > 0 {
+			reportData.NumLibsFailClaim = reportData.NumLibsFailClaim + 1
+		}
+		if totFail > 0 && compatibilityAsterisk[lib] {
+			reportData.NumLibsAsteriskFail = reportData.NumLibsAsteriskFail + 1
 		}
 	}
-	reportData.NumLibsAllBoardsPercent = percent(reportData.NumLibsAllBoards)
-	reportData.NumLibsNoBoardsPercent = percent(reportData.NumLibsNoBoards)
 
 	// Examples statistics
 	for num, cnt := range numExamples {
-		reportData.Examples = append(reportData.Examples, exampleReportData{num, cnt, percent(cnt)})
+		reportData.Examples = append(reportData.Examples, exampleReportData{num, cnt})
 	}
 	sort.Slice(reportData.Examples, func(i, j int) bool {
 		return reportData.Examples[i].Num < reportData.Examples[j].Num
@@ -226,27 +261,27 @@ func Generate(datadirPath string, outputDir string) {
 	for _, c := range reportData.Boards {
 		fmt.Printf("%s @ %s\n", c.Name, c.Versions)
 
-		if c.TotPass > 0 {
-			fmt.Printf("- Compatible libs:          %d (%s)\n", c.TotPass, c.TotPassPercent)
-			fmt.Printf("    claiming compatibility: %d (%s)\n", c.PassClaim, c.PassClaimPercent)
+		if c.Pass > 0 {
+			fmt.Printf("- Compatible libs:          %d (%s)\n", c.Pass, percent(c.Pass))
+			fmt.Printf("    claiming compatibility: %d (%s)\n", c.PassClaim, percent(c.PassClaim))
 		}
-		if c.TotFail > 0 {
-			fmt.Printf("- Incompatible libs:        %d (%s)\n", c.TotFail, c.TotFailPercent)
-			fmt.Printf("    claiming compatibility: %d (%s)\n", c.FailClaim, c.FailClaimPercent)
+		if c.Fail > 0 {
+			fmt.Printf("- Incompatible libs:        %d (%s)\n", c.Fail, percent(c.Fail))
+			fmt.Printf("    claiming compatibility: %d (%s)\n", c.FailClaim, percent(c.FailClaim))
 		}
 		if c.Untested > 0 {
-			fmt.Printf("- Untested libs:            %d (%s)\n", c.Untested, c.UntestedPercent)
+			fmt.Printf("- Untested libs:            %d (%s)\n", c.Untested, percent(c.Untested))
 		}
 	}
 	fmt.Printf("\n")
 	fmt.Printf("Number of examples (distribution):\n")
 	for _, e := range reportData.Examples {
-		fmt.Printf("- %d: %d (%s)\n", e.Num, e.Count, e.CountPercent)
+		fmt.Printf("- %d: %d (%s)\n", e.Num, e.Count, percent(e.Count))
 	}
 
 	// Write an HTML report
 	{
-		templ, err := template.New("report").Parse(htmlTmpl)
+		templ, err := template.New("report").Funcs(template.FuncMap{"percent": percent}).Parse(htmlTmpl)
 		if err != nil {
 			panic(err)
 		}
@@ -261,7 +296,7 @@ func Generate(datadirPath string, outputDir string) {
 	}
 
 	// Write per-library reports
-	templ, err := template.New("report").Parse(htmlTmplLibrary)
+	templ, err := template.New("report").Funcs(template.FuncMap{"percent": percent}).Parse(htmlTmplLibrary)
 	if err != nil {
 		panic(err)
 	}

@@ -23,6 +23,10 @@ func CoreFromFQBN(fqbn string) string {
 	return strings.Join(strings.Split(fqbn, ":")[0:2], ":")
 }
 
+func ArchitectureFromFQBN(fqbn string) string {
+	return strings.Split(fqbn, ":")[1]
+}
+
 // CoreInArchitectures returns true if the given core is compatible with the
 // given list of architectures.
 func CoreInArchitectures(core string, architectures []string) bool {

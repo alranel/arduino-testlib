@@ -12,6 +12,8 @@ var htmlTmpl = `
 	.pass { background-color: #00FF00 !important; }
 	.fail { background-color: #FF0000 !important; }
 	.warning { background-color: #FFFF00 !important; }
+	.bar { display: inline-block; height: 30px; min-width: 1px }
+	.bar-value { font-size: 70%; line-height: 30px; margin-left: 3px }
 	</style>
   </head>
   <body>
@@ -28,14 +30,12 @@ var htmlTmpl = `
 				<p><b>{{ .NumLibs }}</b> libraries were tested on <b>{{ .NumBoards }} boards.</b></p>
 
 				<h2>Boards</h2>
-				<p>The following table summarizes how many libraries are compatible with each tested board, 
-					and how many libraries have a potentially inaccurate library.properties metadata file 
-					in terms of declared compatibility.</p>
 				<table class="table table-bordered">
 					<tr>
 						<th>Board</th>
-						<th>Compatibility</th>
-						<th>Metadata Mismatch</th>
+						<th>Declare compatibility</th>
+						<th>Declare compatibility but fail to compile</th>
+						<th>Don't declare compatibility but compile successfully</th>
 						{{ if .HasUntested }}
 						<th class="text-end">Untested</th>
 						{{ end }}
@@ -47,40 +47,103 @@ var htmlTmpl = `
 							<small>{{ .Versions }}</small>
 						</td>
 						<td width="25%">
-							<div class="pass" style="font-size: 70%; width: {{ .TotPassPercent }}; padding: 3px"
-								data-bs-toggle="tooltip" data-bs-placement="top" title="{{ .TotPassPercent }} of the tested libs are compatible with {{ .Name }} (inclusion test only, no examples)">
-								{{ .TotPassPercent }}
+							<div class="pass bar" style="width: {{ percent $.NumLibsCompatibilityAsterisk }}"
+								data-bs-toggle="tooltip" data-bs-placement="top" title="{{ percent $.NumLibsCompatibilityAsterisk }} of the tested libs declare compatibility with any board (architectures=*)">
+								&nbsp;
 							</div>
+							<div class="pass bar" style="width: {{ percent .ExplicitClaim }}"
+								data-bs-toggle="tooltip" data-bs-placement="top" title="{{ percent .ExplicitClaim }} of the tested libs declare compatibility with {{ .Architecture }} explicitly">
+								&nbsp;
+							</div>
+							<span class="bar-value">{{ percent .Claim }}</span>
 						</td>
 						<td width="25%">
-							<div class="warning" style="font-size: 70%; width: {{ .TotClaimMismatchPercent }}; padding: 3px"
-								data-bs-toggle="tooltip" data-bs-placement="top" title="{{ .FailClaimPercent }} of the tested libs declare compatibility with {{ .Name }} but fail compilation, while {{ .PassNoClaimPercent }} don't declare compatibility but can be compiled">
-								{{ .TotClaimMismatchPercent }}
+							<div class="fail bar" style="width: {{ percent .FailClaimAsterisk }}"
+								data-bs-toggle="tooltip" data-bs-placement="top" title="{{ percent .FailClaimAsterisk }} of the tested libs declare generic compatibility (architectures=*) but fail compilation (simple inclusion, not considering examples)">
+								&nbsp;
 							</div>
+							<div class="fail bar" style="width: {{ percent .FailExplicitClaim }}"
+								data-bs-toggle="tooltip" data-bs-placement="top" title="{{ percent .FailExplicitClaim }} of the tested libs declare explicit compatibility with {{ .Architecture }} but fail compilation (simple inclusion, not considering examples)">
+								&nbsp;
+							</div>
+							<span class="bar-value">{{ percent .FailClaim }}</span>
+						</td>
+						<td width="25%">
+							<div class="warning bar" style="width: {{ percent .PassNoClaim }}"
+								data-bs-toggle="tooltip" data-bs-placement="top" title="{{ percent .PassNoClaim }} don't declare compatibility but can be still compiled for {{ .Name }}">
+								&nbsp;
+							</div>
+							<span class="bar-value">{{ percent .PassNoClaim }}</span>
 						</td>
 						{{ if $.HasUntested }}
 						<td class="text-end">
-							{{ .Untested }} ({{ .UntestedPercent }})
+							{{ .Untested }} ({{ percent .Untested }})
 						</td>
 						{{ end }}
 					</tr>
 					{{ end }}
 				</table>
 
-				<div class="row row-cols-1 row-cols-md-3 g-4">
-					<div class="col">
+				<div class="row">
+					<div class="w-25">
 						<div class="card border-success mb-3" style="max-width: 18rem;">
 							<div class="card-body text-success">
-								<h3 class="card-title">{{ .NumLibsAllBoardsPercent }}</h3>
-								<p class="card-text">Compatible with <b>all</b> boards.</p>
+								<h3 class="card-title">{{ percent .NumLibsCompatibilityAsterisk }}</h3>
+								<p class="card-text">Declare compatibility with <b>any</b> board (architectures=*).</p>
 							</div>
 						</div>
 					</div>
-					<div class="col">
+					<div class="w-25">
 						<div class="card border-danger mb-3" style="max-width: 18rem;">
 							<div class="card-body text-danger">
-								<h3 class="card-title">{{ .NumLibsNoBoardsPercent }}</h3>
-								<p class="card-text">Compatible with <b>no</b> boards.</p>
+								<h3 class="card-title">{{ percent .NumLibsAsteriskFail }}</h3>
+								<p class="card-text">Declare compatibility with <b>any</b> board (architectures=*) but had compilation failures.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="w-25">
+						<div class="card border-success mb-3" style="max-width: 18rem;">
+							<div class="card-body text-success">
+								<h3 class="card-title">{{ percent .NumLibsClaimAllBoards }}</h3>
+								<p class="card-text">Declare compatibility with <b>all</b> the tested boards.</p>
+							</div>
+						</div>
+					</div>
+					<div class="w-25">
+						<div class="card border-danger mb-3" style="max-width: 18rem;">
+							<div class="card-body text-danger">
+								<h3 class="card-title">{{ percent .NumLibsClaimNoBoards }}</h3>
+								<p class="card-text">Don't declare compatibility with <b>any</b> of the tested boards.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="w-25">
+						<div class="card border-success mb-3" style="max-width: 18rem;">
+							<div class="card-body text-success">
+								<h3 class="card-title">{{ percent .NumLibsPassAllBoards }}</h3>
+								<p class="card-text">Compile for <b>all</b> the tested boards.</p>
+							</div>
+						</div>
+					</div>
+					<div class="w-25">
+						<div class="card border-danger mb-3" style="max-width: 18rem;">
+							<div class="card-body text-danger">
+								<h3 class="card-title">{{ percent .NumLibsPassNoBoards }}</h3>
+								<p class="card-text">Do not compile for <b>any</b> of the tested boards.</p>
+							</div>
+						</div>
+					</div>
+					<div class="w-25">
+						<div class="card border-warning mb-3" style="max-width: 18rem;">
+							<div class="card-body text-warning">
+								<h3 class="card-title">{{ percent .NumLibsFailClaim }}</h3>
+								<p class="card-text">Do not compile on boards they declare to be compatible with.</p>
 							</div>
 						</div>
 					</div>
@@ -124,7 +187,7 @@ var htmlTmpl = `
 					<tr>
 						{{ range .Examples }}
 							<td style="{{ if eq .Num 0 }}color: red{{ end }}">
-								{{ .CountPercent }}
+								{{ percent .Count }}
 							</td>
 						{{ end }}
 					</tr>
