@@ -10,6 +10,8 @@
 	.pass { background-color: #00FF00 !important; }
 	.fail { background-color: #FF0000 !important; }
 	.warning { background-color: #FFFF00 !important; }
+	.bar { display: inline-block; height: 30px; min-width: 1px }
+	.bar-value { font-size: 70%; line-height: 30px; margin-left: 3px }
 	</style>
   </head>
   <body>
@@ -18,7 +20,7 @@
 			<div class="col">
 				<h1>Arduino libraries compatibility matrix</h1>
 				<p>
-					<small>This report was generated on Monday, 21-Feb-22 12:00:25 CET using 
+					<small>This report was generated on Wednesday, 23-Feb-22 22:48:15 CET using 
 					<a href="https://github.com/alranel/arduino-testlib">arduino-testlib</a>.</small>
 				</p>
 
@@ -26,14 +28,12 @@
 				<p><b>4621</b> libraries were tested on <b>5 boards.</b></p>
 
 				<h2>Boards</h2>
-				<p>The following table summarizes how many libraries are compatible with each tested board, 
-					and how many libraries have a potentially inaccurate library.properties metadata file 
-					in terms of declared compatibility.</p>
 				<table class="table table-bordered">
 					<tr>
 						<th>Board</th>
-						<th>Compatibility</th>
-						<th>Metadata Mismatch</th>
+						<th>Declare compatibility</th>
+						<th>Declare compatibility but fail to compile</th>
+						<th>Don't declare compatibility but compile successfully</th>
 						
 					</tr>
 					
@@ -43,16 +43,33 @@
 							<small>1.8.4</small>
 						</td>
 						<td width="25%">
-							<div class="pass" style="font-size: 70%; width: 63.7%; padding: 3px"
-								data-bs-toggle="tooltip" data-bs-placement="top" title="63.7% of the tested libs are compatible with arduino:avr:uno (inclusion test only, no examples)">
-								63.7%
+							<div class="pass bar" style="width: 67.6%"
+								data-bs-toggle="tooltip" data-bs-placement="top" title="67.6% of the tested libs declare compatibility with any board (architectures=*)">
+								&nbsp;
 							</div>
+							<div class="pass bar" style="width: 13.6%"
+								data-bs-toggle="tooltip" data-bs-placement="top" title="13.6% of the tested libs declare compatibility with avr explicitly">
+								&nbsp;
+							</div>
+							<span class="bar-value">81.2%</span>
 						</td>
 						<td width="25%">
-							<div class="warning" style="font-size: 70%; width: 26.0%; padding: 3px"
-								data-bs-toggle="tooltip" data-bs-placement="top" title="21.7% of the tested libs declare compatibility with arduino:avr:uno but fail compilation, while 4.3% don't declare compatibility but can be compiled">
-								26.0%
+							<div class="fail bar" style="width: 18.4%"
+								data-bs-toggle="tooltip" data-bs-placement="top" title="18.4% of the tested libs declare generic compatibility (architectures=*) but fail compilation (simple inclusion, not considering examples)">
+								&nbsp;
 							</div>
+							<div class="fail bar" style="width: 3.4%"
+								data-bs-toggle="tooltip" data-bs-placement="top" title="3.4% of the tested libs declare explicit compatibility with avr but fail compilation (simple inclusion, not considering examples)">
+								&nbsp;
+							</div>
+							<span class="bar-value">21.7%</span>
+						</td>
+						<td width="25%">
+							<div class="warning bar" style="width: 4.3%"
+								data-bs-toggle="tooltip" data-bs-placement="top" title="4.3% don't declare compatibility but can be still compiled for arduino:avr:uno">
+								&nbsp;
+							</div>
+							<span class="bar-value">4.3%</span>
 						</td>
 						
 					</tr>
@@ -63,16 +80,33 @@
 							<small>2.7.2</small>
 						</td>
 						<td width="25%">
-							<div class="pass" style="font-size: 70%; width: 50.6%; padding: 3px"
-								data-bs-toggle="tooltip" data-bs-placement="top" title="50.6% of the tested libs are compatible with arduino:mbed_nano:nanorp2040connect (inclusion test only, no examples)">
-								50.6%
+							<div class="pass bar" style="width: 67.6%"
+								data-bs-toggle="tooltip" data-bs-placement="top" title="67.6% of the tested libs declare compatibility with any board (architectures=*)">
+								&nbsp;
 							</div>
+							<div class="pass bar" style="width: 1.1%"
+								data-bs-toggle="tooltip" data-bs-placement="top" title="1.1% of the tested libs declare compatibility with mbed_nano explicitly">
+								&nbsp;
+							</div>
+							<span class="bar-value">68.7%</span>
 						</td>
 						<td width="25%">
-							<div class="warning" style="font-size: 70%; width: 36.1%; padding: 3px"
-								data-bs-toggle="tooltip" data-bs-placement="top" title="27.1% of the tested libs declare compatibility with arduino:mbed_nano:nanorp2040connect but fail compilation, while 9.0% don't declare compatibility but can be compiled">
-								36.1%
+							<div class="fail bar" style="width: 26.6%"
+								data-bs-toggle="tooltip" data-bs-placement="top" title="26.6% of the tested libs declare generic compatibility (architectures=*) but fail compilation (simple inclusion, not considering examples)">
+								&nbsp;
 							</div>
+							<div class="fail bar" style="width: 0.5%"
+								data-bs-toggle="tooltip" data-bs-placement="top" title="0.5% of the tested libs declare explicit compatibility with mbed_nano but fail compilation (simple inclusion, not considering examples)">
+								&nbsp;
+							</div>
+							<span class="bar-value">27.1%</span>
+						</td>
+						<td width="25%">
+							<div class="warning bar" style="width: 9.0%"
+								data-bs-toggle="tooltip" data-bs-placement="top" title="9.0% don't declare compatibility but can be still compiled for arduino:mbed_nano:nanorp2040connect">
+								&nbsp;
+							</div>
+							<span class="bar-value">9.0%</span>
 						</td>
 						
 					</tr>
@@ -83,16 +117,33 @@
 							<small>1.8.7</small>
 						</td>
 						<td width="25%">
-							<div class="pass" style="font-size: 70%; width: 56.7%; padding: 3px"
-								data-bs-toggle="tooltip" data-bs-placement="top" title="56.7% of the tested libs are compatible with arduino:megaavr:nona4809 (inclusion test only, no examples)">
-								56.7%
+							<div class="pass bar" style="width: 67.6%"
+								data-bs-toggle="tooltip" data-bs-placement="top" title="67.6% of the tested libs declare compatibility with any board (architectures=*)">
+								&nbsp;
 							</div>
+							<div class="pass bar" style="width: 1.0%"
+								data-bs-toggle="tooltip" data-bs-placement="top" title="1.0% of the tested libs declare compatibility with megaavr explicitly">
+								&nbsp;
+							</div>
+							<span class="bar-value">68.5%</span>
 						</td>
 						<td width="25%">
-							<div class="warning" style="font-size: 70%; width: 32.3%; padding: 3px"
-								data-bs-toggle="tooltip" data-bs-placement="top" title="22.1% of the tested libs declare compatibility with arduino:megaavr:nona4809 but fail compilation, while 10.2% don't declare compatibility but can be compiled">
-								32.3%
+							<div class="fail bar" style="width: 21.9%"
+								data-bs-toggle="tooltip" data-bs-placement="top" title="21.9% of the tested libs declare generic compatibility (architectures=*) but fail compilation (simple inclusion, not considering examples)">
+								&nbsp;
 							</div>
+							<div class="fail bar" style="width: 0.2%"
+								data-bs-toggle="tooltip" data-bs-placement="top" title="0.2% of the tested libs declare explicit compatibility with megaavr but fail compilation (simple inclusion, not considering examples)">
+								&nbsp;
+							</div>
+							<span class="bar-value">22.1%</span>
+						</td>
+						<td width="25%">
+							<div class="warning bar" style="width: 10.2%"
+								data-bs-toggle="tooltip" data-bs-placement="top" title="10.2% don't declare compatibility but can be still compiled for arduino:megaavr:nona4809">
+								&nbsp;
+							</div>
+							<span class="bar-value">10.2%</span>
 						</td>
 						
 					</tr>
@@ -103,16 +154,33 @@
 							<small>1.8.12</small>
 						</td>
 						<td width="25%">
-							<div class="pass" style="font-size: 70%; width: 54.3%; padding: 3px"
-								data-bs-toggle="tooltip" data-bs-placement="top" title="54.3% of the tested libs are compatible with arduino:samd:mkrwifi1010 (inclusion test only, no examples)">
-								54.3%
+							<div class="pass bar" style="width: 67.6%"
+								data-bs-toggle="tooltip" data-bs-placement="top" title="67.6% of the tested libs declare compatibility with any board (architectures=*)">
+								&nbsp;
 							</div>
+							<div class="pass bar" style="width: 4.3%"
+								data-bs-toggle="tooltip" data-bs-placement="top" title="4.3% of the tested libs declare compatibility with samd explicitly">
+								&nbsp;
+							</div>
+							<span class="bar-value">71.9%</span>
 						</td>
 						<td width="25%">
-							<div class="warning" style="font-size: 70%; width: 34.1%; padding: 3px"
-								data-bs-toggle="tooltip" data-bs-placement="top" title="25.9% of the tested libs declare compatibility with arduino:samd:mkrwifi1010 but fail compilation, while 8.2% don't declare compatibility but can be compiled">
-								34.1%
+							<div class="fail bar" style="width: 24.3%"
+								data-bs-toggle="tooltip" data-bs-placement="top" title="24.3% of the tested libs declare generic compatibility (architectures=*) but fail compilation (simple inclusion, not considering examples)">
+								&nbsp;
 							</div>
+							<div class="fail bar" style="width: 1.6%"
+								data-bs-toggle="tooltip" data-bs-placement="top" title="1.6% of the tested libs declare explicit compatibility with samd but fail compilation (simple inclusion, not considering examples)">
+								&nbsp;
+							</div>
+							<span class="bar-value">25.9%</span>
+						</td>
+						<td width="25%">
+							<div class="warning bar" style="width: 8.2%"
+								data-bs-toggle="tooltip" data-bs-placement="top" title="8.2% don't declare compatibility but can be still compiled for arduino:samd:mkrwifi1010">
+								&nbsp;
+							</div>
+							<span class="bar-value">8.2%</span>
 						</td>
 						
 					</tr>
@@ -123,36 +191,99 @@
 							<small>1.0.6</small>
 						</td>
 						<td width="25%">
-							<div class="pass" style="font-size: 70%; width: 57.1%; padding: 3px"
-								data-bs-toggle="tooltip" data-bs-placement="top" title="57.1% of the tested libs are compatible with esp32:esp32:d1_mini32 (inclusion test only, no examples)">
-								57.1%
+							<div class="pass bar" style="width: 67.6%"
+								data-bs-toggle="tooltip" data-bs-placement="top" title="67.6% of the tested libs declare compatibility with any board (architectures=*)">
+								&nbsp;
 							</div>
+							<div class="pass bar" style="width: 8.8%"
+								data-bs-toggle="tooltip" data-bs-placement="top" title="8.8% of the tested libs declare compatibility with esp32 explicitly">
+								&nbsp;
+							</div>
+							<span class="bar-value">76.3%</span>
 						</td>
 						<td width="25%">
-							<div class="warning" style="font-size: 70%; width: 33.6%; padding: 3px"
-								data-bs-toggle="tooltip" data-bs-placement="top" title="26.4% of the tested libs declare compatibility with esp32:esp32:d1_mini32 but fail compilation, while 7.2% don't declare compatibility but can be compiled">
-								33.6%
+							<div class="fail bar" style="width: 23.6%"
+								data-bs-toggle="tooltip" data-bs-placement="top" title="23.6% of the tested libs declare generic compatibility (architectures=*) but fail compilation (simple inclusion, not considering examples)">
+								&nbsp;
 							</div>
+							<div class="fail bar" style="width: 2.8%"
+								data-bs-toggle="tooltip" data-bs-placement="top" title="2.8% of the tested libs declare explicit compatibility with esp32 but fail compilation (simple inclusion, not considering examples)">
+								&nbsp;
+							</div>
+							<span class="bar-value">26.4%</span>
+						</td>
+						<td width="25%">
+							<div class="warning bar" style="width: 7.2%"
+								data-bs-toggle="tooltip" data-bs-placement="top" title="7.2% don't declare compatibility but can be still compiled for esp32:esp32:d1_mini32">
+								&nbsp;
+							</div>
+							<span class="bar-value">7.2%</span>
 						</td>
 						
 					</tr>
 					
 				</table>
 
-				<div class="row row-cols-1 row-cols-md-3 g-4">
-					<div class="col">
+				<div class="row">
+					<div class="w-25">
 						<div class="card border-success mb-3" style="max-width: 18rem;">
 							<div class="card-body text-success">
-								<h3 class="card-title">40.6%</h3>
-								<p class="card-text">Compatible with <b>all</b> boards.</p>
+								<h3 class="card-title">67.6%</h3>
+								<p class="card-text">Declare compatibility with <b>any</b> board (architectures=*).</p>
 							</div>
 						</div>
 					</div>
-					<div class="col">
+					<div class="w-25">
+						<div class="card border-danger mb-3" style="max-width: 18rem;">
+							<div class="card-body text-danger">
+								<h3 class="card-title">33.8%</h3>
+								<p class="card-text">Declare compatibility with <b>any</b> board (architectures=*) but had compilation failures.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="w-25">
+						<div class="card border-success mb-3" style="max-width: 18rem;">
+							<div class="card-body text-success">
+								<h3 class="card-title">67.8%</h3>
+								<p class="card-text">Declare compatibility with <b>all</b> the tested boards.</p>
+							</div>
+						</div>
+					</div>
+					<div class="w-25">
+						<div class="card border-danger mb-3" style="max-width: 18rem;">
+							<div class="card-body text-danger">
+								<h3 class="card-title">8.4%</h3>
+								<p class="card-text">Don't declare compatibility with <b>any</b> of the tested boards.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="w-25">
+						<div class="card border-success mb-3" style="max-width: 18rem;">
+							<div class="card-body text-success">
+								<h3 class="card-title">40.6%</h3>
+								<p class="card-text">Compile for <b>all</b> the tested boards.</p>
+							</div>
+						</div>
+					</div>
+					<div class="w-25">
 						<div class="card border-danger mb-3" style="max-width: 18rem;">
 							<div class="card-body text-danger">
 								<h3 class="card-title">24.9%</h3>
-								<p class="card-text">Compatible with <b>no</b> boards.</p>
+								<p class="card-text">Do not compile for <b>any</b> of the tested boards.</p>
+							</div>
+						</div>
+					</div>
+					<div class="w-25">
+						<div class="card border-warning mb-3" style="max-width: 18rem;">
+							<div class="card-body text-warning">
+								<h3 class="card-title">41.6%</h3>
+								<p class="card-text">Do not compile on boards they declare to be compatible with.</p>
 							</div>
 						</div>
 					</div>
