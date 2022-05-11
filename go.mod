@@ -3,7 +3,7 @@ module github.com/alranel/arduino-testlib
 go 1.17
 
 //replace github.com/arduino/arduino-cli => /Users/alranel/Documents/git/arduino/arduino-cli
-replace github.com/arduino/arduino-cli => github.com/alranel/arduino-cli v0.0.0-20220220122519-83c7baef4cca
+replace github.com/arduino/arduino-cli => github.com/alranel/arduino-cli v0.0.0-20220511143728-3071ac2d0fad
 
 require (
 	github.com/arduino/arduino-cli v0.0.0-00010101000000-000000000000
@@ -15,6 +15,11 @@ require (
 )
 
 require golang.org/x/sync v0.0.0-20210220032951-036812b2e83c
+
+require (
+	github.com/josharian/intern v1.0.0 // indirect
+	github.com/mailru/easyjson v0.7.7 // indirect
+)
 
 require (
 	github.com/arduino/go-paths-helper v1.7.0 // indirect
@@ -59,7 +64,7 @@ require (
 	github.com/xanzy/ssh-agent v0.2.1 // indirect
 	go.bug.st/cleanup v1.0.0 // indirect
 	go.bug.st/downloader/v2 v2.1.1 // indirect
-	go.bug.st/relaxed-semver v0.0.0-20190922224835-391e10178d18
+	go.bug.st/relaxed-semver v0.9.0
 	golang.org/x/crypto v0.0.0-20210817164053-32db794688a5 // indirect
 	golang.org/x/net v0.0.0-20210813160813-60bc85c4be6d // indirect
 	golang.org/x/sys v0.0.0-20211205182925-97ca703d548d // indirect
