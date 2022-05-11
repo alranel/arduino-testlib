@@ -113,7 +113,7 @@ func runTestall(cmd *cobra.Command, cliArguments []string) {
 			testResultsFile := path.Join(datadirPath, utils.SanitizeName(lib)+".json")
 			test.ReadResultsFile(testResultsFile, &tr)
 
-			tr = test.TestLib(lib, tr, force, instance)
+			tr = test.TestLibByName(lib, tr, force, instance)
 
 			// Write test results to datadir
 			{

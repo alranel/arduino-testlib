@@ -32,6 +32,14 @@ Available options:
 * `--fqbn`: use this option to specify the boards to test with; can be used multiple times
 * `--force`: use this with `testall` to force testing of library_version/core_version that were already seen; if not specified, they will be skipped to allow incremental runs
 
+### Testing individual libraries
+
+This tool can be also used to test a specific library. You can think about it as a wrapper around `arduino-cli compile` that will try to run all the possible compilation tests with a given library and print the result. You can use it like this:
+
+```
+./arduino-testlib test --fqbn arduino:avr:uno path/to/lib
+```
+
 ## Credits and license
 
 This tool was written by [Alessandro Ranellucci](https://github.com/alranel) and is licensed under the terms of the Affero GNU General Public License v3.

@@ -28,6 +28,10 @@ func runTest(cmd *cobra.Command, cliArguments []string) {
 		fmt.Fprintf(os.Stderr, "Invalid configuration: %v\n", err)
 		os.Exit(1)
 	}
+	if len(cliArguments) != 1 {
+		fmt.Fprintf(os.Stderr, "Invalid arguments: please supply the path to a library to test\n")
+		os.Exit(1)
+	}
 
 	instance := cliclient.NewInstance()
 	instance.InstallCores()

@@ -154,6 +154,7 @@ func (instance *CliInstance) CompileSketch(sketchPath string, libPath string, fq
 		Instance:   instance.Instance,
 		Fqbn:       fqbn,
 		SketchPath: sketchPath,
+		Library:    []string{libPath},
 	}
 	compileStdOut := new(bytes.Buffer)
 	compileStdErr := new(bytes.Buffer)
