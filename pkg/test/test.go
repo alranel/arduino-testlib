@@ -3,6 +3,7 @@ package test
 import (
 	"encoding/json"
 	"fmt"
+	"io/fs"
 	"io/ioutil"
 	"os"
 	"path"
@@ -176,13 +177,10 @@ fqbn:
 		}
 
 		// Test examples
-		examples, err := ioutil.ReadDir(path.Join(libPath, "examples"))
-		if err == nil {
-			for _, example := range examples {
-				if !example.IsDir() {
-					continue
-				}
-				resB, out := instance.CompileSketch(path.Join(libPath, "examples", example.Name()), libPath, fqbn)
+		filepath.Walk(path.Join(libPath, "examples"), func(path string, info fs.FileInfo, err error) error {
+			if strings.HasSuffix(info.Name(), ".ino") {
+				exampleDir := filepath.Dir(path)
+				resB, out := instance.CompileSketch(exampleDir, libPath, fqbn)
 				var res CompilationResult
 				if resB {
 					res = PASS
@@ -190,12 +188,13 @@ fqbn:
 					res = FAIL
 				}
 				result.Examples = append(result.Examples, exampleResult{
-					Name:   example.Name(),
+					Name:   filepath.Base(exampleDir),
 					Result: res,
 					Log:    out,
 				})
 			}
-		}
+			return nil
+		})
 
 		tr.Tests = append(tr.Tests, result)
 	}
