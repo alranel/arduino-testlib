@@ -31,6 +31,7 @@ func Generate(datadirPath string, outputDir string) {
 	)
 	compatibility := make(map[libBoardPair]compatibilityStatus)
 	compatibilityAsterisk := make(map[string]bool) // lib => has_asterisk
+	claimedCompatibility := make(map[string]int)   // core => number of libs
 	testResults := make(map[libBoardPair]test.TestResult)
 	numExamples := make(map[int]int)
 
@@ -89,9 +90,13 @@ func Generate(datadirPath string, outputDir string) {
 		}
 		if len(tr.Tests) > 0 {
 			for _, arch := range tr.Tests[len(tr.Tests)-1].Architectures {
+				arch = strings.TrimSpace(strings.ToLower(arch))
 				if arch == "*" {
 					compatibilityAsterisk[tr.Name] = true
+				} else if arch == "" {
+					continue
 				}
+				claimedCompatibility[arch] = claimedCompatibility[arch] + 1
 			}
 		}
 		numExamples[nEx] = numExamples[nEx] + 1
@@ -101,6 +106,10 @@ func Generate(datadirPath string, outputDir string) {
 	numLibs := len(libraries)
 	percent := func(n int) string { return fmt.Sprintf("%.1f%%", float32(n)/float32(numLibs)*100) }
 
+	type coreReportData struct {
+		Architecture string
+		Claim        int
+	}
 	type boardReportData struct {
 		Name, Architecture, Versions                                            string
 		Claim, ExplicitClaim, ClaimMismatch, Pass, Fail, Untested               int
@@ -124,6 +133,7 @@ func Generate(datadirPath string, outputDir string) {
 		NumLibsFailClaim                            int
 		NumLibsAsteriskFail                         int
 		HasUntested                                 bool
+		Cores                                       []coreReportData
 		Boards                                      []boardReportData
 		Examples                                    []exampleReportData
 		Libraries                                   []libraryReportData
@@ -133,6 +143,27 @@ func Generate(datadirPath string, outputDir string) {
 		NumBoards:                    len(boards),
 		NumLibsCompatibilityAsterisk: len(compatibilityAsterisk),
 	}
+
+	// Core statistics
+	var otherCoresCnt int
+	for arch, cnt := range claimedCompatibility {
+		if cnt < 20 {
+			otherCoresCnt = otherCoresCnt + cnt
+		} else {
+			c := coreReportData{
+				Architecture: arch,
+				Claim:        cnt,
+			}
+			reportData.Cores = append(reportData.Cores, c)
+		}
+	}
+	sort.Slice(reportData.Cores, func(i, j int) bool {
+		return reportData.Cores[i].Claim > reportData.Cores[j].Claim
+	})
+	reportData.Cores = append(reportData.Cores, coreReportData{
+		Architecture: "Others",
+		Claim:        otherCoresCnt,
+	})
 
 	// Board statistics
 	for board := range boards {

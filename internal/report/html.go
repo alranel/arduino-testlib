@@ -29,6 +29,38 @@ var htmlTmpl = `
 				<h2>Overview</h2>
 				<p><b>{{ .NumLibs }}</b> libraries were tested on <b>{{ .NumBoards }} boards.</b></p>
 
+				<h2>Cores</h2>
+				<table class="table table-bordered">
+					<tr>
+						<th>Core</th>
+						<th>Libs declaring compatibility</th>
+					</tr>
+					{{ range .Cores }}
+					<tr>
+						<td>
+							{{ if eq .Architecture "*" }}
+								<b>Any (*)</b>
+							{{ else }}
+								<b>{{ .Architecture }}</b>
+							{{ end }}
+						</td>
+						<td>
+							<div class="pass bar" style="width: {{ percent .Claim }}"
+								data-bs-toggle="tooltip" data-bs-placement="top" 
+								{{ if eq .Architecture "*" }}
+								title="{{ percent .Claim }} of the tested libs declare compatibility with any architecture"
+								{{ else }}
+								title="{{ percent .Claim }} of the tested libs declare compatibility with {{ .Architecture }} explicitly"
+								{{ end }}
+								>
+								&nbsp;
+							</div>
+							<span class="bar-value">{{ .Claim }}</span>
+						</td>
+					</tr>
+					{{ end }}
+				</table>
+
 				<h2>Boards</h2>
 				<table class="table table-bordered">
 					<tr>
@@ -55,7 +87,7 @@ var htmlTmpl = `
 								data-bs-toggle="tooltip" data-bs-placement="top" title="{{ percent .ExplicitClaim }} of the tested libs declare compatibility with {{ .Architecture }} explicitly">
 								&nbsp;
 							</div>
-							<span class="bar-value">{{ percent .Claim }}</span>
+							<span class="bar-value">{{ .Claim }}</span>
 						</td>
 						<td width="25%">
 							<div class="fail bar" style="width: {{ percent .FailClaimAsterisk }}"
@@ -66,14 +98,14 @@ var htmlTmpl = `
 								data-bs-toggle="tooltip" data-bs-placement="top" title="{{ percent .FailExplicitClaim }} of the tested libs declare explicit compatibility with {{ .Architecture }} but fail compilation (simple inclusion, not considering examples)">
 								&nbsp;
 							</div>
-							<span class="bar-value">{{ percent .FailClaim }}</span>
+							<span class="bar-value">{{ .FailClaim }}</span>
 						</td>
 						<td width="25%">
 							<div class="warning bar" style="width: {{ percent .PassNoClaim }}"
 								data-bs-toggle="tooltip" data-bs-placement="top" title="{{ percent .PassNoClaim }} don't declare compatibility but can be still compiled for {{ .Name }}">
 								&nbsp;
 							</div>
-							<span class="bar-value">{{ percent .PassNoClaim }}</span>
+							<span class="bar-value">{{ .PassNoClaim }}</span>
 						</td>
 						{{ if $.HasUntested }}
 						<td class="text-end">
@@ -103,6 +135,7 @@ var htmlTmpl = `
 					</div>
 				</div>
 
+				<!--
 				<div class="row">
 					<div class="w-25">
 						<div class="card border-success mb-3" style="max-width: 18rem;">
@@ -121,8 +154,10 @@ var htmlTmpl = `
 						</div>
 					</div>
 				</div>
+				-->
 
 				<div class="row">
+					<!--
 					<div class="w-25">
 						<div class="card border-success mb-3" style="max-width: 18rem;">
 							<div class="card-body text-success">
@@ -139,6 +174,7 @@ var htmlTmpl = `
 							</div>
 						</div>
 					</div>
+					-->
 					<div class="w-25">
 						<div class="card border-warning mb-3" style="max-width: 18rem;">
 							<div class="card-body text-warning">
@@ -166,9 +202,9 @@ var htmlTmpl = `
 						<td>{{ .Version }}</td>
 						{{ range $board := $.Boards }}
 						{{ if eq (index $lib.BoardCompatibility $board.Name) "PASS_CLAIM" }}<td class="pass">PASS</td>{{ end }}
-						{{ if eq (index $lib.BoardCompatibility $board.Name) "PASS_NOCLAIM" }}<td class="pass" data-bs-toggle="tooltip" data-bs-placement="top" title="This result does not match the architectures declared in library.properties">PASS ⚠️</td>{{ end }}
-						{{ if eq (index $lib.BoardCompatibility $board.Name) "FAIL_CLAIM" }}<td class="fail" data-bs-toggle="tooltip" data-bs-placement="top" title="This result does not match the architectures declared in library.properties">FAIL ⚠️</td>{{ end }}
-						{{ if eq (index $lib.BoardCompatibility $board.Name) "FAIL_NOCLAIM" }}<td class="fail">FAIL</td>{{ end }}
+						{{ if eq (index $lib.BoardCompatibility $board.Name) "PASS_NOCLAIM" }}<td class=""></td>{{ end }}
+						{{ if eq (index $lib.BoardCompatibility $board.Name) "FAIL_CLAIM" }}<td class="fail" data-bs-toggle="tooltip" data-bs-placement="top" title="Library claims to support this architecture but fails compilation">FAIL</td>{{ end }}
+						{{ if eq (index $lib.BoardCompatibility $board.Name) "FAIL_NOCLAIM" }}<td class=""></td>{{ end }}
 						{{ if eq (index $lib.BoardCompatibility $board.Name) "" }}<td></td>{{ end }}
 						{{ end }}
 					</tr>
