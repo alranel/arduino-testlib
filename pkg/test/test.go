@@ -75,9 +75,9 @@ func TestLib(libPath string, tr TestResults, force bool, instance *cliclient.Cli
 		return tr
 	}
 
-	if tr.Name != "" && tr.Name != name {
+	if tr.Name != "" && strings.ToLower(tr.Name) != strings.ToLower(name) {
 		fmt.Fprintf(os.Stderr, "[%s] Library name mismatch; known: %s, tested: %s\n", nameAndVersion, tr.Name, name)
-		os.Exit(1)
+		return tr
 	}
 	tr.Name = name
 	fmt.Printf("[%s] Start testing\n", nameAndVersion)
@@ -178,6 +178,10 @@ fqbn:
 
 		// Test examples
 		filepath.Walk(path.Join(libPath, "examples"), func(path string, info fs.FileInfo, err error) error {
+			if err != nil {
+				fmt.Printf("Skipping walk: %s\n", err.Error())
+				return nil
+			}
 			if strings.HasSuffix(info.Name(), ".ino") {
 				exampleDir := filepath.Dir(path)
 				resB, out := instance.CompileSketch(exampleDir, libPath, fqbn)
