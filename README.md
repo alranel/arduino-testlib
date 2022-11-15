@@ -33,6 +33,7 @@ Available options:
 * `--threads`: this can be used in combination with the `testall` command to parallelize tests
 * `--fqbn`: use this option to specify the boards to test with; can be used multiple times
 * `--force`: use this with `testall` to force testing of library_version/core_version that were already seen; if not specified, they will be skipped to allow incremental runs
+* `--additional-urls`: use this parameter to specify the package index URL for a 3rd party core (see [here](https://arduino.github.io/arduino-cli/0.19/getting-started/#adding-3rd-party-cores) for additional information).
 
 ### Testing individual libraries
 
